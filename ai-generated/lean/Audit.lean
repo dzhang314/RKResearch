@@ -14,3 +14,9 @@ import RKCert
 #print axioms RKCert.ChainOnly.chains_pass
 #print axioms RKCert.ChainOnly.fork_weight
 #print axioms RKCert.ChainOnly.not_order_three
+#print axioms RKCert.RationalDIRK7.lowerTriangular
+#print axioms RKCert.RationalDIRK7.row_sums
+#print axioms RKCert.RationalDIRK7.variable_diagonal
+#print axioms RKCert.RationalDIRK7.order_seven
+#print axioms RKCert.RationalDIRK7.bush_eight_weight
+#print axioms RKCert.RationalDIRK7.not_order_eight

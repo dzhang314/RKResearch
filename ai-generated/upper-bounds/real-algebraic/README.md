@@ -1,0 +1,14 @@
+# Real algebraic witnesses
+
+This first batch includes exact radical or isolated algebraic-root constructions. Floating values identify branches only. Follow the proof and replay together; interval containment is a diagnostic, not itself a proof that a rooted-tree residual vanishes identically.
+
+- [erk_four_mark_lobatto_order18_42_20261123.md](erk_four_mark_lobatto_order18_42_20261123.md)
+- [erk_four_mark_lobatto_order18_42_replay_20261123.md](erk_four_mark_lobatto_order18_42_replay_20261123.md)
+- [erk_nested_four_mark_contrasts_order20_51_20261123.md](erk_nested_four_mark_contrasts_order20_51_20261123.md)
+- [erk_nested_four_mark_contrasts_order20_51_replay_20261123.md](erk_nested_four_mark_contrasts_order20_51_replay_20261123.md)
+- [erk_stepanov15_four_marks_integer_input_20261123.md](erk_stepanov15_four_marks_integer_input_20261123.md)
+- [sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123.md](sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123.md)
+- [sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123_replay.md](sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123_replay.md)
+- [sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123.md](sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123.md)
+- [sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123_replay.md](sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123_replay.md)
+- [sdirk_p15_34_witnessed_dyadic_center_checkpoint_20261123.md](sdirk_p15_34_witnessed_dyadic_center_checkpoint_20261123.md)

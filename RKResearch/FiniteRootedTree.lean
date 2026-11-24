@@ -26,25 +26,52 @@ scoped infix:70 " ◂ " => butcherProduct
 @[expose, simp] def factorial (t : FiniteRootedTree) : ℕ+ :=
   t.order * t.forestFactorial
 
-@[expose, simp] def tallTree (n : ℕ+) : FiniteRootedTree :=
-  n.recOn leaf (fun _ t => leaf ◂ t)
+@[expose, simp] def addBush (t : FiniteRootedTree) : ℕ → FiniteRootedTree
+  | 0 => t
+  | k + 1 => t.addBush k ◂ leaf
 
-@[simp↓] theorem order_tallTree (n : ℕ+) : (tallTree n).order = n := by
-  induction n <;> simp_all [add_comm]
+@[simp↓] theorem order_addBush (t : FiniteRootedTree) (k : ℕ) :
+    (t.addBush k).order = t.order + k := by
+  induction k with
+  | zero => rfl
+  | succ _ ih => exact congrArg Nat.succ ih
 
-@[simp↓] theorem factorial_tallTree (n : ℕ+) : (tallTree n).factorial = Nat.factorial n := by
-  induction n <;> simp_all [Nat.factorial, dsimp% order_tallTree]
+@[simp↓] theorem forestFactorial_addBush (t : FiniteRootedTree) (k : ℕ) :
+    (t.addBush k).forestFactorial = t.forestFactorial := by
+  induction k <;> simp [*]
+
+@[simp↓] theorem factorial_addBush (t : FiniteRootedTree) (k : ℕ) :
+    (t.addBush k).factorial = (t.order + k) * t.forestFactorial := by
+  simp only [factorial, PNat.mul_coe, order_addBush, forestFactorial_addBush]
 
 @[expose, simp] def bushyTree (n : ℕ+) : FiniteRootedTree :=
-  n.recOn leaf (fun _ t => t ◂ leaf)
+  leaf.addBush n.natPred
 
-@[simp↓] theorem order_bushyTree (n : ℕ+) : (bushyTree n).order = n := by
-  induction n <;> simp_all
+@[simp↓] theorem order_bushyTree (n : ℕ+) : (bushyTree n).order = n :=
+  PNat.eq ((order_addBush leaf n.natPred).trans n.one_add_natPred)
 
-@[simp↓] theorem forestFactorial_bushyTree (n : ℕ+) : (bushyTree n).forestFactorial = 1 := by
-  induction n <;> simp_all
+@[simp↓] theorem forestFactorial_bushyTree (n : ℕ+) :
+    (bushyTree n).forestFactorial = 1 := by apply forestFactorial_addBush
 
-@[simp↓] theorem factorial_bushyTree (n : ℕ+) : (bushyTree n).factorial = n := by simp
+@[simp↓] theorem factorial_bushyTree (n : ℕ+) :
+    (bushyTree n).factorial = n := by simp
+
+@[expose, simp] def tallTree (n : ℕ+) : FiniteRootedTree := by
+  induction n with
+  | one => exact leaf
+  | succ _ t => exact leaf ◂ t
+
+@[simp↓] theorem order_tallTree (n : ℕ+) : (tallTree n).order = n := by
+  unfold tallTree
+  induction n with
+  | one => rfl
+  | succ n ih => simp only [PNat.recOn_succ, order, ih, add_comm 1 n]
+
+@[simp↓] theorem factorial_tallTree (n : ℕ+) :
+    (tallTree n).factorial = Nat.factorial n := by
+  induction n with
+  | one => rfl
+  | succ n ih => simp [Nat.factorial_succ, ← ih, dsimp% order_tallTree n]
 
 end FiniteRootedTree
 

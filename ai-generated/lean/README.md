@@ -191,3 +191,4 @@ Audit with `lake env lean FiniteERK16to19Audit.lean`, `lake env lean AuditDIRKEv
 - [DIRK orders 18 and 20](DIRK-ORDER18-20.md): 25 stages at order 18 and a certified intermediate lower bound of 28 at order 20, over characteristic-zero fields and commutative rings.
 - [DIRK order 16](DIRK-ORDER-SIXTEEN.md): 22 stages over characteristic-zero fields and commutative rings. The same argument reduces the order-14 analysis to one remaining case.
 - Supporting proofs: [the order-14 quartic rank test](P14-PORT-PRIMITIVE-RANK.md), [exact forward spaces](EXACT-FORWARD-TREE-HEAD.md), [polynomial moment tails](PAID-FORWARD-TAILS.md), and [the physical head-factor obstruction](PHYSICAL-HEAD-FACTOR.md).
+- [DIRK order 14](DIRK-ORDER-FOURTEEN.md): 19 stages over characteristic-zero fields and commutative rings. The [refunded fifth-debut argument](REFUNDED-FIFTH-DEBUT.md) closes the final one-head chart.

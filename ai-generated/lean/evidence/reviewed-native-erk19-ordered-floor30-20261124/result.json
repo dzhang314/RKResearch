@@ -1,0 +1,93 @@
+{
+  "base": "4d9a38ad448785b9e4a4c090fe71910884fa0097",
+  "reviewedHumanPin": "c35f5b900856c33eae15435ccebaabd049b56628",
+  "leanCommit": "611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9",
+  "mathlibCommit": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "theorem": "RKResearch.Certified.ERK19.ordered_erk19_stage_floor30",
+  "scope": "Any ordered field, any number of stages, strictly explicit A and reviewed HasOrder 19 A b. No seed or scalar assumption.",
+  "modules": {
+    "ERK19ZeroGlobalLocation": {
+      "sourceSHA256": "697309a8bd1082ec2edb9ef5ce93173e0f229eee033ad59fa5e61e4c087dccc4",
+      "objectSHA256": "cc498a32354a6c011338a797af193976ff268c394b7f348682677500874d3f51",
+      "kernelLogSHA256": "c5437bac37cb602149af6d23d3a02b63172282d0c9379f21a2943adfbb9a5f7d"
+    },
+    "ERK19ZeroLocalWindows": {
+      "sourceSHA256": "29c9d6458f61d05a980291a3e2b114862bcd000cb7529283ec3bf48e844c659f",
+      "objectSHA256": "259e6600becef1e3ccab51dabe190bf9447662c38fc9505130334b3454a8189d",
+      "kernelLogSHA256": "6d7be99dff61b259db187c7ee32045b93bd7663d05a5d897344cbd97dfebc040"
+    },
+    "ERK19ZeroScalarClose": {
+      "sourceSHA256": "5c10155d9550448ca65bd0c50cfc2796ca1fdbe692216cecdd8fe73dec744bff",
+      "objectSHA256": "499d451ebab1e4ecc6ac2fa2810ea78638cd54baa11ed7923095437aaa22f93b",
+      "kernelLogSHA256": "583c96c65ed740077a9095e6be3082698e7cb230279ae92d0ffb180e11ab6e4f"
+    },
+    "ERK19OrderedFloor30": {
+      "sourceSHA256": "d024b2e2f7d4451e3c426d116d7915688c71692787f7a1f044593fbd0734dbce",
+      "objectSHA256": "f76d634bf5a6248bbefc8d30c1ae6beebd5fcd131d118dfa32b6549f15dba727",
+      "kernelLogSHA256": "1ff90b18c1d2dad8407c0cf40ed194c58ed15ca7dd66b162caaaad04d1b66f9e"
+    },
+    "ERKOrder16StrongCenteredIncreasing": {
+      "sourceSHA256": "fe2572fab18939dcdfb295590eadbbdf325f3642d1491f430ba79b231488c171",
+      "objectSHA256": "bc027284fa13f464ae3160f2011c9ff016ab9024200d61efbc2a8cfbab20800b",
+      "kernelLogSHA256": "a6de23da06351634f730cf34c78054790b9cb459a79742296b2e04254816eb02"
+    }
+  },
+  "audits": {
+    "AuditReviewedNativeERK19ZeroGlobalLocation": {
+      "sourceSHA256": "828671ae1ad27b2e60961179db6e48b07775047a2a5eb3ada05090de1ee2dac3",
+      "auditLogSHA256": "3b40cf9e5e82871ca1a813c7fa7a2eb582aac3ef692bbd73f57f12be735ba88a",
+      "axioms": {
+        "RKCert.ReviewedNative.ERK19ZeroScalar.opposed_quintic_exterior_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.ERK19ZeroScalar.opposed_quintic_clock_location": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditReviewedNativeERK19OrderedFloor30": {
+      "sourceSHA256": "5aa9204b01b0046fee020cf368f04654b50931d5f49897b1bac682f82160492d",
+      "auditLogSHA256": "d77e4287065be3dead945450d2f390e07904e6432cb72db2d59c93fdb06d928b",
+      "axioms": {
+        "RKCert.ReviewedNative.ERK19ZeroScalar.opposed_quintic_clock_location": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.ERK19ZeroScalar.OpposedQuinticWindows.local_impossible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.ERK19ZeroScalar.opposed_quintic_windows_impossible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKResearch.Certified.ERK19.ordered_erk19_stage_floor30": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditReviewedNativeERK16StrongCenteredIncreasing": {
+      "sourceSHA256": "d4e192a698a09594cf145ee800c223212dcf64f648559199f0ecdcfbcdec0f52",
+      "auditLogSHA256": "6ebfd8af4a9b75f6d3fc2c5ff118c50e8dc5f54251ff05dbf0ad8ad8c191baed",
+      "axioms": {
+        "RKCert.ReviewedNative.StrongCentered16.increasing_local_impossible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "strongestOrderedEntriesCertified": 56,
+  "strongestCharZeroEntriesCertified": 60,
+  "strongestRingEntriesCertified": 60
+}

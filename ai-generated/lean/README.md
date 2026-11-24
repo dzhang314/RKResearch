@@ -1,5 +1,18 @@
 # Runge–Kutta certificates in Lean
 
+**General Q-type equivalence.** Write `c=A1`, let `Φ(t)` be the stage-weight vector and let `γ(t)` be the tree factorial. Over a characteristic-zero field, define the stage residual `Q(t)=AΦ(t)−c^|t|/γ(t)`, with componentwise powers. The central theorem, [`hasTreeOrderAtLeast_iff_rootCutTests`](RKCert/RootCuts.lean), proves that full order through `p` is equivalent to both:
+ 
+- `(k+1) b·c^k = 1` for every `k+1≤p`, including the constant moment when `p≥1`;
+- `b·(Q(t) ⊙ Φ(u))=0` for every nonleaf branch `t` and arbitrary rooted tree `u` with `|t|+|u|≤p`.
+
+No triangularity, stage order, or sign assumption enters. Replacing the branch `t` by `|t|` leaves changes the normalized output error by exactly `γ(attach t u) b·(Q(t) ⊙ Φ(u))`. Repeated cuts end at the bush of the same order. This is a formalization of rooted-tree order conditions, not a new stage-count bound.
+
+[An equivalent product formulation](RKCert/ResidualProducts.lean) replaces the second bullet by `b·(c^k ⊙ Q(t₁) ⊙ ⋯ ⊙ Q(tₘ))=0` for every nonempty list (repetitions allowed) satisfying `1+k+Σ|tᵢ|≤p`. No empty residual product is tested for zero; its conditions are the separate moments.
+
+[An eight-stage rational negative control](RKCert/RootCutRegression.lean) passes every order-five moment and every test against `Φ(u)=c^k` using just **one** residual. Yet `b·Q(chain 1)^2=1/8` for the two-vertex branch. The tree with two such branches has weight `7/40` rather than `1/20`. Thus the unrestricted partner in the first formulation, or multiple residuals in the second, matters.
+
+**Exact coefficient rings.** [`ScaledRootCuts.lean`](RKCert/ScaledRootCuts.lean) proves a division-free version of the first equivalence over *every commutative semiring*. The cut test is `γ(t) weight(attach t u) = weight(addLeaves |t| u)`. In any commutative ring this is exactly the vanishing of the paired **scaled** residual `γ(t) AΦ(t) − c^|t|`, even with zero divisors. No factorial is canceled without an inverse: necessity uses the exact weight of the bush-replaced tree as the inverse of its factorial. At fixed order `p`, the chain implies that `p!` is a unit, and Lean proves this unit condition is equivalent to invertibility of every tree factorial of order at most `p`. It does not assert existence of a tableau whenever `p!` is a unit. The unscaled product theorem above remains stated over characteristic-zero fields.
+
 **Research certificate.** A concrete seven-stage rational diagonally implicit tableau satisfies every rooted-tree condition through order seven. Its eight-vertex bush has weight `167931/1344560` instead of `1/8`, so its algebraic order is exactly seven. The source gives the actual coefficients, not just the generation recipe.
 
 **General theorem.** If a strictly lower-triangular `s`-stage tableau satisfies every rooted-tree order condition through `p`, then `p ≤ s`. For the classical four-stage rational tableau, Lean also proves that every condition through order four holds, and that order five is impossible.

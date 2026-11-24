@@ -48,3 +48,4 @@ public import RKCert.DirkOrder18Bound
 public import RKCert.DirkOrder20Bound
 public import RKCert.DirkOrder16Bound
 public import RKCert.DirkOrder14Bound
+public import RKCert.DirkOrderNineteen

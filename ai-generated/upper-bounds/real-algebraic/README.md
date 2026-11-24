@@ -12,3 +12,17 @@ This first batch includes exact radical or isolated algebraic-root constructions
 - [sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123.md](sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123.md)
 - [sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123_replay.md](sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123_replay.md)
 - [sdirk_p15_34_witnessed_dyadic_center_checkpoint_20261123.md](sdirk_p15_34_witnessed_dyadic_center_checkpoint_20261123.md)
+
+## Additional constructions and replays
+
+These include exact new tableaux, alternate tableaux at existing upper bounds, and explicitly labeled local-stage construction lemmas.
+
+- [Actual twenty-seven-row Hermite late-receiver replay](dirk_one_self_tapped_hermite_relay_p16_actual_rows_replay_20261124.md)
+- [One central Hermite receiver instead of a high pilot: DIRK 16/27, a 26-stage reciprocity obstruction, and sharp canonical dense stems through order ten](dirk_one_self_tapped_hermite_relay_p16_and_sharp_canonical_dense_stems_20261124.md)
+- [Order nineteen in 46 strictly explicit stages: a moving reflected helper and a causal two-row reciprocity solve](erk_moving_helper_two_sided_causal_reciprocity_order19_46_20261123.md)
+- [Standalone strict ERK(19,46) certificate, part A of 2](erk_moving_helper_two_sided_causal_reciprocity_order19_46_replay_A_20261123.md)
+- [Standalone strict ERK(19,46) certificate, part B of 2](erk_moving_helper_two_sided_causal_reciprocity_order19_46_replay_B_20261123.md)
+- [A Volterra-moment prefix: a second genuine local-ten port by row 21 and three by row 24](erk_volterra_three_knot_early_local_ten_21_and_24_20261124.md)
+- [Standalone exact-data reproduction: an early 21-row local-ten port, and three in 24](erk_volterra_three_knot_early_local_ten_21_and_24_replay_20261124.md)
+- [Order sixteen in 38 ordinary strictly common-diagonal RK stages](sdirk_order16_38_six_causal_entries_and_second_quadrature_reverse_20261123.md)
+- [Standalone order-16 strict real SDIRK proof with 38 actual stages](sdirk_order16_38_six_causal_entries_and_second_quadrature_reverse_20261123_replay.md)

@@ -21,3 +21,14 @@ These arguments need no ordering of the unknown coefficients. The strict SDIRK l
 - [erk_characteristic_zero_p16_p19_finite_gate_and_quadratic_quasirule_20261123.md](erk_characteristic_zero_p16_p19_finite_gate_and_quadratic_quasirule_20261123.md)
 
 - [dirk_order16_characteristic_zero_fixed_visible_reverse_clocks_20261123.md](dirk_order16_characteristic_zero_fixed_visible_reverse_clocks_20261123.md)
+
+## New characteristic-zero proof sources
+
+The project’s current numerical column is in [the lower-bound table](../README.md).
+
+- [Coefficient fields: algebraic cut lemmas, the order-twelve transfer, and where reality really enters](dirk_field_audit_refunded_cuts_and_order12_over_characteristic_zero_20261123.md)
+- [Standalone exact replay: unrestricted order-13 divided Jacobi pencil](dirk_order13_weighted_reverse_compound_pencil_exact_replay_20261123.md)
+- [Order 13 requires at least 17 stages, via the weighted reverse cut and a continuous Jacobi pencil](dirk_order13_weighted_reverse_nonlocal_and_compound_pencil_forbids_sixteen_20261123.md)
+- [A characteristic-zero proof of the logarithmic unrestricted ERK stage bound](erk_characteristic_zero_logarithmic_stage_bound_rodrigues_boundary_jets_20261123.md)
+- [Characteristic-zero transfer: ERK surgery, one-head structure, and elementary stage bounds](erk_field_independent_surgery_one_head_and_p12_baselines_20261123.md)
+- [Exact bidirectional flag duality at nonsingular RK stage saturation](sdirk_saturated_weighted_mirror_duality_20261123.md)

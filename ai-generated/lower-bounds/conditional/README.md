@@ -1,0 +1,28 @@
+# Recent structural results
+
+These proofs concern explicitly stated subclasses, extremal candidates, or fixed construction families. They do not raise the unrestricted stage table. Some results are designed to transfer across several orders.
+
+- [Four sharp canonical dense-order returns: same raw pure minor on every split coefficient branch, and the first causal extension obstruction](dirk_canonical_dense_stems_full_raw_rank_and_three_mode_replay_20261124.md)
+- [Every order-sixteen, 22-stage real DIRK has a genuine ordinary pure in the weight kernel by grade five](dirk_order16_every_twenty_two_stage_method_has_a_hidden_fifth_grade_pure_20261124.md)
+- [Exact replay: a Lobatto factor times one unknown affine factor cannot have the first two primitive moments zero at an omitted node](dirk_order16_hidden_five_lobatto_factor_with_one_free_root_replay_20261124.md)
+- [The last possible hidden debut at grade six is one node-local direction, with a signed cubic collision in an order-16 22-row DIRK](dirk_order16_hidden_six_last_debut_nodal_line_and_cubic_signed_collision_20261124.md)
+- [Exact replay: the two-ended Lobatto quintic with its actual ninth-grade leakage](dirk_order16_hidden_six_two_ended_lobatto_pivot_replay_20261123.md)
+- [Order sixteen: every 22-stage real DIRK has a genuine hidden ordinary defect by grade six](dirk_order16_hidden_six_two_ended_lobatto_reflection_20261123.md)
+- [Genuine top word rank on the actual three higher primary grids](dirk_raw_null_reciprocity_actual_three_grid_reverse_ranks_replay_20261124.md)
+- [All five current DIRK upper counts are sharp in their corresponding fixed two-ended architecture, even with active causal terminal copies](dirk_raw_null_reciprocity_sharp_fixed_two_ended_frontiers_p16_to_p20_20261124.md)
+- [A two-ended, three-pivot Lobatto obstruction at orders 16, 18, 20](dirk_two_ended_lobatto_third_pivot_affine_leakage_sixth_seventh_complete_20261124.md)
+- [Simultaneous causal row peeling at a lower order: actual stage-floor differences pay for lost marked rank](erk_cross_order_simultaneous_dark_rank_peeling_20261124.md)
+- [Standalone exact nonlinear control for simultaneous cross-order rank peeling](erk_cross_order_simultaneous_dark_rank_peeling_exact_replay_20261124.md)
+- [The fixed 30-row p20 reverse donor forces full nonlinear dense ten on every locally-nine rectangular completion](erk_fixed_thirty_reverse_forces_full_dense_ten_any_locally_nine_coupling_20261124.md)
+- [Exact full-rank seam replay, part A (sufficient on its own for the general theorem)](erk_fixed_thirty_reverse_forces_full_dense_ten_any_locally_nine_coupling_replay_A_20261124.md)
+- [Exact full-rank seam replay, part B (part A followed by this block verifies the application too)](erk_fixed_thirty_reverse_forces_full_dense_ten_any_locally_nine_coupling_replay_B_20261124.md)
+- [A genuine dark mask is a stage, not merely a rank: low order-19/20 frontier](erk_invisible_mask_is_a_physical_stage_and_nodal_escape_20261124.md)
+- [Exact physical ordinary controls for the invisible-mask and signed nodal-hull argument](erk_invisible_mask_stage_and_nodal_escape_exact_replay_20261124.md)
+- [Two genuine opposing flat flags force six completely invisible ghost stages on a low order-20 frontier](erk_opposing_two_flat_flags_force_six_noninitial_invisible_and_four_reverse_counts_20261124.md)
+- [Order 19/46 independent audit; obstruction to transferring its twenty-row jet prefix to local-ten ports](erk_order19_46_independent_audit_and_twenty_jet_two_pilot_no_go_20261123.md)
+- [A common physical filtration for noncommuting Gauss corrections, sharp two-ended leading updates, and unavoidable all-depth brackets](sdirk_common_noncommuting_gauss_correction_filtration_and_forced_two_boundary_brackets_20261124.md)
+- [Common correction/forced bracket replay](sdirk_common_noncommuting_gauss_correction_filtration_and_forced_two_boundary_brackets_20261124_replay.md)
+- [A physical signed nonlinear pencil: forced nilpotence, blind principal stages and the per-stage price of nonzero eigenvalues](sdirk_physical_nonlinear_defect_pencil_nilpotence_and_sharp_grade_caps_20261123.md)
+- [Physical signed-defect pencil replay](sdirk_physical_nonlinear_defect_pencil_nilpotence_and_sharp_grade_caps_20261123_replay.md)
+- [One nonlinear probe at the first unpaid boundary, and the exact price of a one-way parity repair](sdirk_single_probe_first_unpaid_cut_rank_and_mutual_parity_repair_20261123.md)
+- [Exact replay: nineteen split tests, full ordinary product response and mutual repair](sdirk_single_probe_first_unpaid_cut_rank_and_mutual_parity_repair_20261123_replay.md)

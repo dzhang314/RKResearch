@@ -17,10 +17,10 @@
 | 13 | 23 | 18 | 26 |
 | 14 | 26 | 21 | 30 |
 | 15 | 31 | 24 | 34 |
-| 16 | 34 | 27 | 39 |
+| 16 | 34 | 27 | 38 |
 | 17 | 38 | 30 | 43 |
 | 18 | 42 | 34 | 48 |
-| 19 | 47 | 38 | 54 |
+| 19 | 46 | 38 | 54 |
 | 20 | 51 | 42 | 59 |
 
 We seek constructive witnesses over the **real algebraic numbers**, and over **the rationals** wherever a rational witness is verified. A real algebraic label does not assert that rational coefficients are impossible.

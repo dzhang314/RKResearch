@@ -1,0 +1,19 @@
+import RKCert.ReviewedNative.ERK17LocalFourOrbit
+import RKCert.ReviewedNative.ERK17LocalFourAxisPayment
+import RKCert.ReviewedNative.ERK17LocalFourContrast
+
+#print axioms RKResearch.Certified.Graded.Reverse.LocalLinear.hiddenKernel_of_one_paid_head_clock
+#print axioms RKResearch.Certified.Graded.Reverse.LocalLinear.same_grade_trace_shift
+#print axioms RKResearch.Certified.Graded.Reverse.LocalLinear.paid_core_le_hidden_at_seven
+#print axioms RKResearch.Certified.Graded.Reverse.LocalLinear.local_core_preserved_at_paid_border
+#print axioms RKResearch.Certified.Graded.Reverse.LocalLinear.local_linear_weight_only_trace
+#print axioms RKResearch.Certified.Graded.Reverse.LocalLinear.local_linear_weight_only_power_refund
+#print axioms RKResearch.Certified.ERK17.width26_tiny_rank_four_refinement
+#print axioms RKResearch.Certified.ERK17.width26_tiny_rank_four_axes
+#print axioms RKResearch.Certified.ERK17.local_four_axis_paid_nonzero
+#print axioms RKResearch.Certified.ERK17.local_four_axis_one_clock_mode
+#print axioms RKResearch.Certified.ERK17.local_four_contrast_off_axis
+#print axioms RKResearch.Certified.ERK17.width26_local_four_census_inputs
+#print axioms RKResearch.Certified.Graded.Reverse.reverse_annihilator_invariant_gain
+#print axioms RKResearch.Certified.ERK17.width26_rank_four_reverse_invariant_cap
+#print axioms RKResearch.Certified.ERK17.width26_local_four_tau_at_least_eight

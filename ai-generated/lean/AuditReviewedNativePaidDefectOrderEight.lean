@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.PaidDefectOrderEight
+#print axioms RKResearch.Certified.PaidDefectBridge.hasOrder_eight_of_moment2
+#print axioms RKResearch.Certified.PaidDefectBridge.hasOrder_eight_of_coefficient_taps
+#print axioms RKResearch.Certified.PaidDefectBridge.calibration_zero_of_exact_order8_probe

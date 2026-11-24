@@ -1,0 +1,62 @@
+{
+  "scope": "Per-declaration differences in what the release reports, not a finding that a theorem is invalid or evidence identifying the cause. Lean and Mathlib versions both vary. All recorded reports are within the allowed three standard axioms.",
+  "declarations": {
+    "RKCert.Tree.density_attach_cut": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Tree.mem_through": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.factorial_isUnit_iff_treeDensities": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

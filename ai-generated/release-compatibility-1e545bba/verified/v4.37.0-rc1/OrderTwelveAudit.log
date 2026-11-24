@@ -1,0 +1,19 @@
+RKCert.explicit_order12_ge18_field.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {b : Vec K s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 12) : 18 ≤ s
+RKCert.explicit_order12_ge18_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 12) : 18 ≤ s
+'RKCert.Paired.OrderTwelve.saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.e7_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.mesh_at_end' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.no_double_leak_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.saturated_e9_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OrderTwelve.ghost_five_tests_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OrderTwelve.pure_divisor_moment_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.chronological_multiplier_contrast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.count_by_features' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.off_mask_bootstrap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.exclude_two_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.exclude_two_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrderTwelve.no_full_order_twelve_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order12_ge18_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order12_ge18_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]

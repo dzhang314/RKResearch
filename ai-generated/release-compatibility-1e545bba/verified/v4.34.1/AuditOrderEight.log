@@ -1,0 +1,16 @@
+'RKCert.Paired.on_primitive_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.on_primitive_zero_of_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.first_nonzero_on_forces_head_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.beta_probe_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.lobatto_cubic_decoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.lobatto_first_on_scalar_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_nodal_lobatto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.lobatto_physical_factor_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.on_hull_times_head_probes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_no_five_off_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_off_nodes_lt_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_off_count_one_or_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.Paired.order8_off_count_one_or_four.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 10 → Fin 10 → K}
+  {b : RKCert.Paired.Vec K 10} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 8) :
+  have n := (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card;
+  n = 1 ∨ n = 4

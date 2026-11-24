@@ -1,0 +1,1 @@
+The 4.36.0 lean-toolchain, lakefile.toml and complete lake-manifest.json are byte-identical to the published Git blobs.

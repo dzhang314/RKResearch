@@ -103,7 +103,7 @@ theorem radau_cardinal_integral_ne {a : K} {H : K[X]}
 variable {s p n : ℕ} {A : Fin s→Fin s→K} {b θ : Vec K s} {P : K[X]}
 
 namespace ReverseTrace
-theorem pair_polynomial (h : ReverseTrace A b p n θ P) (ho : HasTreeOrderAtLeast A b p)
+theorem pair_polynomial_radau (h : ReverseTrace A b p n θ P) (ho : HasTreeOrderAtLeast A b p)
     (Q : K[X]) (hp : n+Q.natDegree+1≤p) :
     row θ (weightedEval (mirror A) (1:Vec K s) Q)=unitIntegral (Q*P) := by
   let L := (row θ).comp (weightedEval (mirror A) (1:Vec K s))
@@ -149,7 +149,7 @@ theorem missing_radau_port (h : ReverseTrace A b p n θ P) (ho : HasTreeOrderAtL
       rw [hD,eval_mul,eval_sub,eval_X,eval_C] at e
       have hHi := (mul_eq_zero.mp e).resolve_left (sub_ne_zero.mpr hne)
       simp [hHi]
-  rw [h.pair_polynomial ho H (by omega),mul_comm H P,hProd] at hz
+  rw [h.pair_polynomial_radau ho H (by omega),mul_comm H P,hProd] at hz
   exact (mul_eq_zero.mp hz).resolve_right (radau_cardinal_integral_ne hD dH hH)
 
 end ReverseTrace

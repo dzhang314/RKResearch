@@ -96,3 +96,34 @@ this exclusion with the uniform commutator bound to certify all twenty
 characteristic-zero strict SDIRK floors. It also proves the same result over
 characteristic-zero commutative rings with a unit common diagonal. The bound
 of seven is not asserted over arbitrary positive-characteristic rings.
+
+
+## Characteristic-zero explicit Runge–Kutta lower bounds
+
+## Checked results
+
+`RKCert.Paired.grade_five_surplus` proves that a separated strictly explicit stage algebra has at least five independent pure defects at grade five. The next theorem, `RKCert.erk_stage_surplus_charZero`, derives separation from the actual denominator-cleared rooted-tree order hypotheses. For p ≥ 10, it proves
+
+    s ≥ ceil(3p / 2) − 1.
+
+It applies to every characteristic-zero commutative ring, including rings with zero divisors. There is no field ordering, distinctness, positivity or nonvanishing hypothesis on stage weights. Orders 10, 11 and 12 are exposed directly as at least 14, 16 and 17 stages, respectively. This is an existing lower bound formalized, not a sharpness claim. The stronger lower bound of 18 stages at order 12 is established on paper over characteristic-zero fields and ordered fields, but not by this Lean package. The separate all-characteristic uniform ERK theorem is available unchanged through `RKCert.UniformERKTable`.
+
+## Proof map
+
+* `ChronologicalCompression`: greedily retain independent chronological evaluation rows; reconstruct omitted inputs only from their own prefixes, and commute stage operations with restriction. The actual tree weights agree through the next grade.
+* `StagePrimitives` and `ReceiverPrefix`: normalized tree defects imply literal algebraic polynomial primitive identities. A clean nonzero grade-five node gives a genuine order-five strictly explicit prefix after scalar normalization, not merely a matched quadrature rule.
+* `NodeCompletion` and `ForwardAmplification`: use Mathlib's dot-product dual equivalence and Lagrange node projection to split annihilating rows by node. The earliest two chronological nonzero completions show that C-invariance forces at least two new ranks at the next grade, without an ambient basis assumption.
+* `GradeFiveSpace`, `GradeFiveCaseOne` and `QuarticPrimitive`: if the quadratic defect and its clock image are independent, a minimal grade-five rank forces one polynomial chain. Five distinct predecessors then make a degree-four polynomial difference vanish. The resulting polynomial divisibility forces the quadratic head to be a monomial, which contradicts clean primitive evaluation at a nonzero node.
+* `GradeFiveDependent`, `CaseIIScalars`, `CaseIIFiveRows` and `CaseIIStage`: the remaining minimal profile has a quadratic defect supported at the normalized second node and only one new clock chain. The first five physical rows, using their actual graded tree tests, then force a nonzero tap at a repeated node; the next clock word contradicts the pure span.
+* `GradeFiveReduction`, `GradeFiveCount`, `ERKGradeFive`: assemble both cases, propagate the rank surplus, apply the paired forward/backward count with the odd correction, and transfer to every characteristic-zero commutative ring.
+
+## Replay
+
+Lean 4.36.0 (commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9), Lake 5.0.0-src+611c117 and Mathlib v4.36.0 (commit fc4f59e577feb1a4956671bc04ac18aaaf8cd842). With the pinned Mathlib packages and normal dependency cache available:
+
+    lake build
+    lake env lean Audit.lean
+    lake env leanchecker --verbose RKCert.ERKGradeFive
+
+`Audit.lean` prints exact theorem types and axioms; it also elaborates exclusions at one stage below each promised order and a ring-with-zero-divisors test. Only standard Lean axioms are used. No admitted proof, custom axiom or native decision procedure is used.
+

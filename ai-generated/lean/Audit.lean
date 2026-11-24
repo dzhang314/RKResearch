@@ -132,3 +132,56 @@ example {K : Type*} [Field K] {s:ℕ} (A : Fin s → Fin s → K) (b : Fin s →
     (h : HasTreeOrderAtLeast A b 6) (ht : lower A) (hd : ∀i, A i i≠0) : 6≤s :=
   nonsingular_quadratic_le20 h ht hd (by decide) (by decide)
 
+
+/-! Additional characteristic-zero ERK certificates. -/
+
+
+#check RKCert.Paired.exists_causal_coord_family
+#check RKCert.Paired.exact_receiver_prefix_order
+#check RKCert.Paired.invariant_forces_two_forward
+#check RKCert.Paired.no_minimal_five_independent
+#check RKCert.Paired.CaseII.compressed_caseII_impossible
+#check RKCert.Paired.grade_five_surplus
+#check RKCert.erk_stage_surplus_charZero
+#check RKCert.explicit_order10_ge14_charZero
+#check RKCert.explicit_order11_ge16_charZero
+#check RKCert.explicit_order12_ge17_charZero
+
+#print axioms RKCert.Paired.invariant_forces_two_forward
+#print axioms RKCert.Paired.no_minimal_five_independent
+#print axioms RKCert.Paired.CaseII.compressed_caseII_impossible
+#print axioms RKCert.Paired.grade_five_surplus
+#print axioms RKCert.erk_stage_surplus_charZero
+#print axioms RKCert.explicit_order10_ge14_charZero
+#print axioms RKCert.explicit_order11_ge16_charZero
+#print axioms RKCert.explicit_order12_ge17_charZero
+#print axioms RKCert.uniform_erk_ring
+
+section BoundaryInputs
+open RKCert
+
+example {A : Fin 13 → Fin 13 → ℚ} {b : Fin 13 → ℚ} (ha : StrictLower A) :
+    ¬ HasTreeOrderAtLeast A b 10 := by
+  intro ht
+  have h := explicit_order10_ge14_charZero ha ht
+  omega
+
+example {A : Fin 15 → Fin 15 → ℚ} {b : Fin 15 → ℚ} (ha : StrictLower A) :
+    ¬ HasTreeOrderAtLeast A b 11 := by
+  intro ht
+  have h := explicit_order11_ge16_charZero ha ht
+  omega
+
+example {A : Fin 16 → Fin 16 → ℚ} {b : Fin 16 → ℚ} (ha : StrictLower A) :
+    ¬ HasTreeOrderAtLeast A b 12 := by
+  intro ht
+  have h := explicit_order12_ge17_charZero ha ht
+  omega
+
+example {A : Fin 15 → Fin 15 → ℚ × ℚ} {b : Fin 15 → ℚ × ℚ} (ha : StrictLower A) :
+    ¬ HasTreeOrderAtLeast A b 11 := by
+  intro ht
+  have h := explicit_order11_ge16_charZero ha ht
+  omega
+
+end BoundaryInputs

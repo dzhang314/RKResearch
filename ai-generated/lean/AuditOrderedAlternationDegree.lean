@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.OrderedAlternationDegree
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.natDegree_ge_of_alternating_samples
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.variation_le_natDegree
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.HasAlternationsOn.le_natDegree

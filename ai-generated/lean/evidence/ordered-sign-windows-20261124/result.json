@@ -1,0 +1,180 @@
+{
+  "base": "4c1f3ad84479651751e25dbcab174d6f3ceed215",
+  "leanCommit": "611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9",
+  "mathlibCommit": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "PositiveRationalRule19": {
+      "sourceSHA256": "5df9cbdf56bf6733d34244693cc41972882f1c7bdfae9792b93d53edcca59056",
+      "objectSHA256": "c39a90103736565934d7e35eabce6f3d168e33fe7574a3cab0c9de560ef3b875",
+      "individualKernelReplay": true
+    },
+    "PositiveIntervalGrid19": {
+      "sourceSHA256": "b8444ec472b35b764c400b8dd1fff195012553573f1720b6f3a75cfcf2221e4d",
+      "objectSHA256": "c5ae41ff0afeb45dd21ab7a4abb7dcc20969d153a6e55395b0d0ef95a2d6ce94",
+      "individualKernelReplay": true
+    },
+    "FiniteOrderedSignWindows": {
+      "sourceSHA256": "f9565dbfe4905757618fd7cd1b8d9f00e3f9be14c72415f55f6b91d214729265",
+      "objectSHA256": "9bdc57c674addf5cde60a1dd227e32fb72af7571d445636b8f4e711156a3f344",
+      "individualKernelReplay": true
+    },
+    "TwoWeightOrderedSigns": {
+      "sourceSHA256": "ef4945c8343a199be1aa84de71795b1d305b67fcb5a3ff2ed1a92d3d394b1d79",
+      "objectSHA256": "d8ebc96a746344a20d80b5f7ca3281105b12348c9e51ff2881a8247fb44e16f8",
+      "individualKernelReplay": true
+    },
+    "OrderedAlternationDegree": {
+      "sourceSHA256": "0ffce26b811837d63dc051664ab27b120c5d0b80e529efcff8ceb4c64529efe8",
+      "objectSHA256": "581d49e5beb573fd50bfda43a89abe145f7023a02d250e82f8b43de081bc2cc4",
+      "individualKernelReplay": true
+    },
+    "OneWeightOrderedSigns": {
+      "sourceSHA256": "d13a897eab3bd0df5b7ade7d93700c6012bf55a0db99ba4bc887e7ffc051f0df",
+      "objectSHA256": "161f59a42e10b6508ae094f65dfaefc4980ac0dd9bc35cce855114499ff10ab0",
+      "individualKernelReplay": true
+    },
+    "ERKOrder16StrongCenteredMoments": {
+      "sourceSHA256": "be8311bed2c16208fcc454708f8c95efd72c2dbcc5438d0f72e572d8af840172",
+      "objectSHA256": "f3d23497c44b9b8c0eb3ade7a7399671dd3e67c230668a8e540978b908c1d611",
+      "individualKernelReplay": true
+    },
+    "ERKOrder16StrongCenteredAdapter": {
+      "sourceSHA256": "325f7dcb66690b2f9eafed10b62d12e4b37a9c3874317b909dab08520bdeb481",
+      "objectSHA256": "aa5070e74e94c35fb843052d8667e4974cf138932267d57286bca49b14767acd",
+      "individualKernelReplay": true
+    }
+  },
+  "audits": {
+    "AuditOneWeightOrderedSigns.lean": {
+      "sourceSHA256": "d87ccca7a8d895ce46a0908877772951c4b64b7fe4c0da4efac350c77bd42464",
+      "axioms": {
+        "RKCert.ReviewedNative.FiniteOrderedSigns.exists_grid_separator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.grid_variation_of_positive_moments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditOrderedAlternationDegree.lean": {
+      "sourceSHA256": "e3add95b299607702a72e1e19476555393f6ab1ddc11e6bf87f953c622f51165",
+      "axioms": {
+        "RKCert.ReviewedNative.FiniteOrderedSigns.natDegree_ge_of_alternating_samples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.variation_le_natDegree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.HasAlternationsOn.le_natDegree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditPositiveIntervalGrid19.lean": {
+      "sourceSHA256": "75eaebf0941bf12ef4019457ba850c210d98ea600f7a91d76158557d27a96f40",
+      "axioms": {
+        "RKCert.ReviewedNative.PositiveRule19.exact_monomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.point_strictMono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.weight_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.integral_affine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.integral_reflect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.interval_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.intervalPoint_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.intervalPoint_strictMono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.PositiveRule19.intervalWeight_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditReviewedNativeERK16StrongCentered.lean": {
+      "sourceSHA256": "252c5890be194fd7cf22c675355a45fda4bbed1b789e2bfdbd802aba2cf32b23",
+      "axioms": {
+        "RKCert.ReviewedNative.StrongCentered16.Moments.weightedPower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKResearch.Certified.ERK16.StrongThreeActualMask.centered_moments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKResearch.Certified.ERK16.width24_strong_centered_moments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditTwoWeightOrderedSigns.lean": {
+      "sourceSHA256": "e0d7ba1b39784b82f0cf2a5280f235b4625f5a1ae8b890279611d40ecfed54d1",
+      "axioms": {
+        "RKCert.ReviewedNative.FiniteOrderedSigns.exists_nonzero_grid_sample": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.integral_pos_of_grid_samples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.two_le_signVariations_of_ordered_sums": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.grid_variation_of_monotone_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "scalarEndpointClaim": false
+}

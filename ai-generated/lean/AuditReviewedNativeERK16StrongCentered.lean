@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.ERKOrder16StrongCenteredAdapter
+#print axioms RKCert.ReviewedNative.StrongCentered16.Moments.weightedPower
+#print axioms RKResearch.Certified.ERK16.StrongThreeActualMask.centered_moments
+#print axioms RKResearch.Certified.ERK16.width24_strong_centered_moments

@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.TwoWeightOrderedSigns
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.exists_nonzero_grid_sample
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.integral_pos_of_grid_samples
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.two_le_signVariations_of_ordered_sums
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.grid_variation_of_monotone_ratio

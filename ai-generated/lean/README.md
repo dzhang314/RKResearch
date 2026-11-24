@@ -218,3 +218,5 @@ The named targets are `RKCert.ExplicitOrderThirteen` and `RKCert.DirkOrder17Full
 - [One-off reductions](ERK-NINE-ONE-OFF.md), [amplitude and normal form](ERK-NINE-AMPLITUDE.md), and [literal midpoint rows](ERK-NINE-ONE-OFF-MIDPOINT.md): true inputs to the remaining physical tail argument. These do not yet rule out that final case or certify a new stage bound.
 
 Named Lean targets: `RKCert.ERKOrderNineCompactPrime`, `RKCert.ERKOrderNineOneOffStructure`, `RKCert.ERKOrderNineOneOffCleanClocks`, `RKCert.ERKOrderNineOneOffSixth`, and `RKCert.ERKOrderNineOneOffTerminalShape`. The default umbrella is unchanged.
+
+The [complete order-nine proof](ERK-ORDER-NINE-ORDERED.md) now closes the physical tail of the one-off case. It certifies 13 stages for ordered fields, but not unordered characteristic-zero fields.

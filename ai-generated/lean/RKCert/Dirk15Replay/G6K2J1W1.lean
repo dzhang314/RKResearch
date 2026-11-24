@@ -1,0 +1,185 @@
+module
+public import RKCert.Dirk15Replay.G6K2J1W1Part000
+public import RKCert.Dirk15Replay.G6K2J1W1Part001
+public import RKCert.Dirk15Replay.G6K2J1W1Part002
+public import RKCert.Dirk15Replay.G6K2J1W1Part003
+public import RKCert.Dirk15Replay.G6K2J1W1Part004
+public import RKCert.Dirk15Replay.G6K2J1W1Part005
+public import RKCert.Dirk15Replay.G6K2J1W1Part006
+public import RKCert.Dirk15Replay.G6K2J1W1Part007
+public import RKCert.Dirk15Replay.G6K2J1W1Part008
+public import RKCert.Dirk15Replay.G6K2J1W1Part009
+public import RKCert.Dirk15Replay.G6K2J1W1Part010
+public import RKCert.Dirk15Replay.G6K2J1W1Part011
+public import RKCert.Dirk15Replay.G6K2J1W1Part012
+
+@[expose] public section
+namespace RKCert.FixedPolynomial.FixedReplay.G6K2J1W1
+open Polynomial RKCert.Compound RKCert.LU
+set_option maxRecDepth 20000
+set_option maxHeartbeats 0
+set_option exponentiation.threshold 1000000
+
+def candidate : List Nat := [791, 27, 355, 270, 130, 527, 12, 594, 65, 636, 71, 822, 160, 696, 91, 45, 825, 773, 849, 93, 764, 506, 165, 169, 904, 675, 436, 807, 526, 516, 162, 527, 760, 994, 846, 525, 55, 677, 167, 414, 54, 245, 857, 673, 571, 83, 764, 775, 640, 633, 202, 402, 364, 357, 186, 254, 297, 134, 970, 189, 847, 276, 337, 696, 785, 862, 452, 369, 254, 257, 611, 82, 288, 717, 309, 885, 921, 713, 275, 954, 847, 921, 233, 698, 848, 720, 372, 649, 680, 296, 876, 289, 265, 800, 582, 918, 221, 748, 507, 683, 426, 330, 438, 743, 558, 312, 441, 733, 817, 752, 690, 501, 614, 200, 86, 531, 912, 873, 408, 918, 937, 980, 659, 996, 568, 358, 410, 1004, 435, 638, 616, 286, 637, 634, 1005, 918, 214, 179, 325, 901, 549, 210, 964, 780, 295, 808, 417, 255, 612, 803, 893]
+private def values : Fin 151 → Nat := fun i => (#[791, 978, 214, 559, 333, 528, 967, 562, 514, 956, 132, 136, 860, 625, 884, 447, 842, 446, 835, 268, 351, 647, 296, 778, 760, 903, 882, 64, 731, 152, 738, 225, 44, 645, 501, 587, 136, 223, 142, 962, 624, 116, 23, 859, 272, 125, 154, 292, 459, 400, 405, 459, 359, 496, 625, 52, 972, 991, 67, 358, 734, 172, 761, 657, 729, 489, 719, 29, 713, 931, 281, 123, 908, 615, 467, 294, 182, 547, 286, 689, 830, 253, 973, 603, 26, 837, 302, 366, 659, 525, 246, 509, 288, 791, 930, 891, 95, 1007, 793, 379, 768, 182, 77, 749, 449, 600, 604, 763, 719, 193, 85, 256, 156, 349, 97, 576, 244, 970, 572, 94, 704, 421, 38, 663, 307, 590, 716, 977, 901, 353, 428, 852, 405, 242, 829, 975, 544, 71, 578, 983, 201, 140, 999, 18, 563, 859, 995, 703, 17, 965, 210] : Array Nat)[i.val]!
+
+theorem exactReduction : (nodeGramNorm 6 2 1 1).map order15Reduce=residuePoly candidate := by
+  apply integer_reduction_of_residue_samples _ _ (d:=150)
+    (by decide) ((nodeGramNorm_degree (by decide) (by decide) 1 1).trans (by decide)) (by decide) values
+  · intro i
+    rw [eval_map]
+    fin_cases i
+    · exact At0.checked
+    · exact At1.checked
+    · exact At2.checked
+    · exact At3.checked
+    · exact At4.checked
+    · exact At5.checked
+    · exact At6.checked
+    · exact At7.checked
+    · exact At8.checked
+    · exact At9.checked
+    · exact At10.checked
+    · exact At11.checked
+    · exact At12.checked
+    · exact At13.checked
+    · exact At14.checked
+    · exact At15.checked
+    · exact At16.checked
+    · exact At17.checked
+    · exact At18.checked
+    · exact At19.checked
+    · exact At20.checked
+    · exact At21.checked
+    · exact At22.checked
+    · exact At23.checked
+    · exact At24.checked
+    · exact At25.checked
+    · exact At26.checked
+    · exact At27.checked
+    · exact At28.checked
+    · exact At29.checked
+    · exact At30.checked
+    · exact At31.checked
+    · exact At32.checked
+    · exact At33.checked
+    · exact At34.checked
+    · exact At35.checked
+    · exact At36.checked
+    · exact At37.checked
+    · exact At38.checked
+    · exact At39.checked
+    · exact At40.checked
+    · exact At41.checked
+    · exact At42.checked
+    · exact At43.checked
+    · exact At44.checked
+    · exact At45.checked
+    · exact At46.checked
+    · exact At47.checked
+    · exact At48.checked
+    · exact At49.checked
+    · exact At50.checked
+    · exact At51.checked
+    · exact At52.checked
+    · exact At53.checked
+    · exact At54.checked
+    · exact At55.checked
+    · exact At56.checked
+    · exact At57.checked
+    · exact At58.checked
+    · exact At59.checked
+    · exact At60.checked
+    · exact At61.checked
+    · exact At62.checked
+    · exact At63.checked
+    · exact At64.checked
+    · exact At65.checked
+    · exact At66.checked
+    · exact At67.checked
+    · exact At68.checked
+    · exact At69.checked
+    · exact At70.checked
+    · exact At71.checked
+    · exact At72.checked
+    · exact At73.checked
+    · exact At74.checked
+    · exact At75.checked
+    · exact At76.checked
+    · exact At77.checked
+    · exact At78.checked
+    · exact At79.checked
+    · exact At80.checked
+    · exact At81.checked
+    · exact At82.checked
+    · exact At83.checked
+    · exact At84.checked
+    · exact At85.checked
+    · exact At86.checked
+    · exact At87.checked
+    · exact At88.checked
+    · exact At89.checked
+    · exact At90.checked
+    · exact At91.checked
+    · exact At92.checked
+    · exact At93.checked
+    · exact At94.checked
+    · exact At95.checked
+    · exact At96.checked
+    · exact At97.checked
+    · exact At98.checked
+    · exact At99.checked
+    · exact At100.checked
+    · exact At101.checked
+    · exact At102.checked
+    · exact At103.checked
+    · exact At104.checked
+    · exact At105.checked
+    · exact At106.checked
+    · exact At107.checked
+    · exact At108.checked
+    · exact At109.checked
+    · exact At110.checked
+    · exact At111.checked
+    · exact At112.checked
+    · exact At113.checked
+    · exact At114.checked
+    · exact At115.checked
+    · exact At116.checked
+    · exact At117.checked
+    · exact At118.checked
+    · exact At119.checked
+    · exact At120.checked
+    · exact At121.checked
+    · exact At122.checked
+    · exact At123.checked
+    · exact At124.checked
+    · exact At125.checked
+    · exact At126.checked
+    · exact At127.checked
+    · exact At128.checked
+    · exact At129.checked
+    · exact At130.checked
+    · exact At131.checked
+    · exact At132.checked
+    · exact At133.checked
+    · exact At134.checked
+    · exact At135.checked
+    · exact At136.checked
+    · exact At137.checked
+    · exact At138.checked
+    · exact At139.checked
+    · exact At140.checked
+    · exact At141.checked
+    · exact At142.checked
+    · exact At143.checked
+    · exact At144.checked
+    · exact At145.checked
+    · exact At146.checked
+    · exact At147.checked
+    · exact At148.checked
+    · exact At149.checked
+    · exact At150.checked
+  · decide +kernel
+
+end RKCert.FixedPolynomial.FixedReplay.G6K2J1W1

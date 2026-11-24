@@ -42,3 +42,7 @@ public import RKCert.OrderNineSevenOff
 public import RKCert.ExplicitFiniteERK16to19
 public import RKCert.DirkEvenFifthFloor
 public import RKCert.OrderNineSixOffFiveOn
+public import RKCert.ExplicitOrderFourteen
+public import RKCert.OrderedIntervalMoments
+public import RKCert.DirkOrder18Bound
+public import RKCert.DirkOrder20Bound

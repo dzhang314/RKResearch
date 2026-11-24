@@ -186,3 +186,6 @@ Audit with `lake env lean AuditOrderNineRadau.lean`, `lake env lean AuditRadauSe
 - [Six off nodes at ERK order nine](SIX-OFF-FIVE-ON.md): six on nodes are necessary in the twelve-stage analysis. This reduction does not change the order-nine stage floor.
 
 Audit with `lake env lean FiniteERK16to19Audit.lean`, `lake env lean AuditDIRKEvenFifthFloor.lean`, and `lake env lean AuditSixOffFiveOn.lean`.
+
+- [ERK order 14](ORDER-FOURTEEN.md): 21 stages over characteristic-zero fields and commutative rings, without ordering.
+- [DIRK orders 18 and 20](DIRK-ORDER18-20.md): 25 stages at order 18 and a certified intermediate lower bound of 28 at order 20, over characteristic-zero fields and commutative rings.

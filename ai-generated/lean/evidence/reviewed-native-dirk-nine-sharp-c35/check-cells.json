@@ -1,0 +1,380 @@
+{
+  "gradeOK": {
+    "0": [
+      "LobattoDIRK109GradeCheck0",
+      "gradeOK_span0",
+      64
+    ],
+    "64": [
+      "LobattoDIRK109GradeCheck64",
+      "gradeOK_span64",
+      64
+    ],
+    "128": [
+      "LobattoDIRK109GradeCheck128",
+      "gradeOK_span128",
+      64
+    ],
+    "192": [
+      "LobattoDIRK109GradeCheck192",
+      "gradeOK_span192",
+      64
+    ],
+    "256": [
+      "LobattoDIRK109GradeCheck256",
+      "gradeOK_span256",
+      64
+    ],
+    "320": [
+      "LobattoDIRK109GradeCheck320",
+      "gradeOK_span320",
+      64
+    ],
+    "384": [
+      "LobattoDIRK109GradeCheck384",
+      "gradeOK_span384",
+      64
+    ],
+    "448": [
+      "LobattoDIRK109GradeCheck448",
+      "gradeOK_span448",
+      38
+    ]
+  },
+  "joinOK": {
+    "0": [
+      "LobattoDIRK109JoinCheck0",
+      "joinOK_span0",
+      4
+    ],
+    "4": [
+      "LobattoDIRK109JoinCheck4",
+      "joinOK_span4",
+      24
+    ],
+    "28": [
+      "LobattoDIRK109JoinCheck28",
+      "joinOK_span28",
+      24
+    ],
+    "52": [
+      "LobattoDIRK109JoinCheck52",
+      "joinOK_span52",
+      24
+    ],
+    "76": [
+      "LobattoDIRK109JoinCheck76",
+      "joinOK_span76",
+      24
+    ],
+    "100": [
+      "LobattoDIRK109JoinCheck100",
+      "joinOK_span100",
+      24
+    ],
+    "124": [
+      "LobattoDIRK109JoinCheck124",
+      "joinOK_span124",
+      24
+    ],
+    "148": [
+      "LobattoDIRK109JoinCheck148",
+      "joinOK_span148",
+      24
+    ],
+    "172": [
+      "LobattoDIRK109JoinCheck172",
+      "joinOK_span172",
+      24
+    ],
+    "196": [
+      "LobattoDIRK109JoinCheck196",
+      "joinOK_span196",
+      4
+    ]
+  },
+  "derivOK": {
+    "0": [
+      "LobattoDIRK109DerivCheck0",
+      "derivOK_span0",
+      8
+    ],
+    "8": [
+      "LobattoDIRK109DerivCheck8",
+      "derivOK_span8",
+      8
+    ],
+    "16": [
+      "LobattoDIRK109DerivCheck16",
+      "derivOK_span16",
+      8
+    ],
+    "24": [
+      "LobattoDIRK109DerivCheck24",
+      "derivOK_span24",
+      8
+    ],
+    "32": [
+      "LobattoDIRK109DerivCheck32",
+      "derivOK_span32",
+      8
+    ],
+    "40": [
+      "LobattoDIRK109DerivCheck40",
+      "derivOK_span40",
+      8
+    ],
+    "48": [
+      "LobattoDIRK109DerivCheck48",
+      "derivOK_span48",
+      8
+    ],
+    "56": [
+      "LobattoDIRK109DerivCheck56",
+      "derivOK_span56",
+      8
+    ],
+    "64": [
+      "LobattoDIRK109DerivCheck64",
+      "derivOK_span64",
+      8
+    ],
+    "72": [
+      "LobattoDIRK109DerivCheck72",
+      "derivOK_span72",
+      8
+    ],
+    "80": [
+      "LobattoDIRK109DerivCheck80",
+      "derivOK_span80",
+      8
+    ],
+    "88": [
+      "LobattoDIRK109DerivCheck88",
+      "derivOK_span88",
+      8
+    ],
+    "96": [
+      "LobattoDIRK109DerivCheck96",
+      "derivOK_span96",
+      8
+    ],
+    "104": [
+      "LobattoDIRK109DerivCheck104",
+      "derivOK_span104",
+      8
+    ],
+    "112": [
+      "LobattoDIRK109DerivCheck112",
+      "derivOK_span112",
+      8
+    ],
+    "120": [
+      "LobattoDIRK109DerivCheck120",
+      "derivOK_span120",
+      8
+    ],
+    "128": [
+      "LobattoDIRK109DerivCheck128",
+      "derivOK_span128",
+      8
+    ],
+    "136": [
+      "LobattoDIRK109DerivCheck136",
+      "derivOK_span136",
+      8
+    ],
+    "144": [
+      "LobattoDIRK109DerivCheck144",
+      "derivOK_span144",
+      8
+    ],
+    "152": [
+      "LobattoDIRK109DerivCheck152",
+      "derivOK_span152",
+      8
+    ],
+    "160": [
+      "LobattoDIRK109DerivCheck160",
+      "derivOK_span160",
+      8
+    ],
+    "168": [
+      "LobattoDIRK109DerivCheck168",
+      "derivOK_span168",
+      8
+    ],
+    "176": [
+      "LobattoDIRK109DerivCheck176",
+      "derivOK_span176",
+      8
+    ],
+    "184": [
+      "LobattoDIRK109DerivCheck184",
+      "derivOK_span184",
+      8
+    ],
+    "192": [
+      "LobattoDIRK109DerivCheck192",
+      "derivOK_span192",
+      8
+    ]
+  },
+  "payOK": {
+    "0": [
+      "LobattoDIRK109PayCheck0",
+      "payOK_span0",
+      16
+    ],
+    "16": [
+      "LobattoDIRK109PayCheck16",
+      "payOK_span16",
+      16
+    ],
+    "32": [
+      "LobattoDIRK109PayCheck32",
+      "payOK_span32",
+      16
+    ],
+    "48": [
+      "LobattoDIRK109PayCheck48",
+      "payOK_span48",
+      16
+    ],
+    "64": [
+      "LobattoDIRK109PayCheck64",
+      "payOK_span64",
+      16
+    ],
+    "80": [
+      "LobattoDIRK109PayCheck80",
+      "payOK_span80",
+      16
+    ],
+    "96": [
+      "LobattoDIRK109PayCheck96",
+      "payOK_span96",
+      16
+    ],
+    "112": [
+      "LobattoDIRK109PayCheck112",
+      "payOK_span112",
+      16
+    ],
+    "128": [
+      "LobattoDIRK109PayCheck128",
+      "payOK_span128",
+      16
+    ],
+    "144": [
+      "LobattoDIRK109PayCheck144",
+      "payOK_span144",
+      16
+    ],
+    "160": [
+      "LobattoDIRK109PayCheck160",
+      "payOK_span160",
+      16
+    ],
+    "176": [
+      "LobattoDIRK109PayCheck176",
+      "payOK_span176",
+      16
+    ],
+    "192": [
+      "LobattoDIRK109PayCheck192",
+      "payOK_span192",
+      16
+    ],
+    "208": [
+      "LobattoDIRK109PayCheck208",
+      "payOK_span208",
+      16
+    ],
+    "224": [
+      "LobattoDIRK109PayCheck224",
+      "payOK_span224",
+      16
+    ],
+    "240": [
+      "LobattoDIRK109PayCheck240",
+      "payOK_span240",
+      16
+    ],
+    "256": [
+      "LobattoDIRK109PayCheck256",
+      "payOK_span256",
+      16
+    ],
+    "272": [
+      "LobattoDIRK109PayCheck272",
+      "payOK_span272",
+      16
+    ],
+    "288": [
+      "LobattoDIRK109PayCheck288",
+      "payOK_span288",
+      16
+    ],
+    "304": [
+      "LobattoDIRK109PayCheck304",
+      "payOK_span304",
+      16
+    ],
+    "320": [
+      "LobattoDIRK109PayCheck320",
+      "payOK_span320",
+      16
+    ],
+    "336": [
+      "LobattoDIRK109PayCheck336",
+      "payOK_span336",
+      16
+    ],
+    "352": [
+      "LobattoDIRK109PayCheck352",
+      "payOK_span352",
+      16
+    ],
+    "368": [
+      "LobattoDIRK109PayCheck368",
+      "payOK_span368",
+      16
+    ],
+    "384": [
+      "LobattoDIRK109PayCheck384",
+      "payOK_span384",
+      16
+    ],
+    "400": [
+      "LobattoDIRK109PayCheck400",
+      "payOK_span400",
+      16
+    ],
+    "416": [
+      "LobattoDIRK109PayCheck416",
+      "payOK_span416",
+      16
+    ],
+    "432": [
+      "LobattoDIRK109PayCheck432",
+      "payOK_span432",
+      16
+    ],
+    "448": [
+      "LobattoDIRK109PayCheck448",
+      "payOK_span448",
+      16
+    ],
+    "464": [
+      "LobattoDIRK109PayCheck464",
+      "payOK_span464",
+      16
+    ],
+    "480": [
+      "LobattoDIRK109PayCheck480",
+      "payOK_span480",
+      6
+    ]
+  }
+}

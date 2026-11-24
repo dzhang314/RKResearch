@@ -1,0 +1,10 @@
+ai-generated/lean/AuditReviewedLobattoDIRK109.lean
+ai-generated/lean/RKCert/ReviewedNative/LobattoDIRK109Exact.lean
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/AuditReviewedLobattoDIRK109.txt
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/README.md
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/exact-checks.json
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/exact-delta-allowlist.txt
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/kernel-LobattoDIRK109Exact.txt
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/result.json
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/superset-lean-source-SHA256.txt
+ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/superset-release-allowlist.txt

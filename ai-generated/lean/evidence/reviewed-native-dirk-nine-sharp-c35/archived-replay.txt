@@ -1,0 +1,6 @@
+9 10 [1, 1, 2, 4, 9, 20, 48, 115, 286] all exactly zero; 0.2 s
+Order-ten bush difference: (('0', '0', '0', '0'), ('0', '0', '0', '0'))
+Order-ten tall-tree difference: (('451129/56736', '16945/44128', '-292735/1191456', '387535/29190672'), ('2210825/397152', '-325475/926688', '-1876865/8340192', '558815/29190672'))
+Exact field: x=(21/2)t, P=x^4 - 147*x^2 + 3087, y^2=7.
+Denominators: 87572016 120 digits 8 3
+Cache inventory: labels 486 derivatives 200 joins 790

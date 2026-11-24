@@ -1,0 +1,41 @@
+{
+  "sourceBuild": {
+    "name": "LobattoDIRK109Exact",
+    "phase": "source",
+    "elapsedSeconds": 2.725,
+    "peakObservedKiB": 1484588,
+    "freeTmpBeforeBytes": 3108761600,
+    "availMemBeforeKiB": 6746468,
+    "minObservedAvailableKiB": 6460580,
+    "returnCode": 0,
+    "stopReason": null,
+    "sourceSHA256": "c36bdc5c21e21683cbec761aee5f3ce47bba60f3367a21ddc07f29c8c9961d18",
+    "objectSHA256": "ed09489e67716d4993e00ddc27fe3c7eb3685cf1553bae4cd10b30bf14e5a83e",
+    "logSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "publicConsumer": {
+    "name": "AuditReviewedLobattoDIRK109",
+    "phase": "source",
+    "elapsedSeconds": 2.266,
+    "peakObservedKiB": 2611288,
+    "freeTmpBeforeBytes": 3108110336,
+    "availMemBeforeKiB": 6677820,
+    "minObservedAvailableKiB": 6477552,
+    "returnCode": 0,
+    "stopReason": null,
+    "sourceSHA256": "2ab32e5f32de893798ab7320a3749a49aa905c3d378d2ff123a3a914beec12a0",
+    "objectSHA256": null,
+    "logSHA256": "f17ad637575e26ee6cc97dcc5dbfd0a23bf4409bca25220eaf2d32fb7c1698b8"
+  },
+  "kernelReplay": {
+    "name": "LobattoDIRK109Exact",
+    "returnCode": 0,
+    "stopReason": null,
+    "peakObservedKiB": 2362784,
+    "minObservedAvailableKiB": 6486912,
+    "freeTmpBeforeBytes": 3108106240,
+    "elapsedSeconds": 5.182,
+    "objectSHA256": "ed09489e67716d4993e00ddc27fe3c7eb3685cf1553bae4cd10b30bf14e5a83e",
+    "logSHA256": "dde5e71d333206cd268d7199b18c2db437a870c7ed2fa0d128c750c3bf683c7f"
+  }
+}

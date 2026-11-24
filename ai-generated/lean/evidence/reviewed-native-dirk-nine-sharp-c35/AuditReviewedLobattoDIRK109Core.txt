@@ -1,0 +1,11 @@
+'RKResearch.Certified.LobattoDIRK109.act_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.LobattoDIRK109.joins_correct' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.LobattoDIRK109.deriv_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.LobattoDIRK109.moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.LobattoDIRK109.exists_realAlgebraic_parameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.LobattoDIRK109.order_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.dirk_order_nine_isLeast_of_roots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.dirk_order_nine_isLeast_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.dirk_order_nine_isLeast_realAlgebraic' depends on axioms: [propext, Classical.choice, Quot.sound]

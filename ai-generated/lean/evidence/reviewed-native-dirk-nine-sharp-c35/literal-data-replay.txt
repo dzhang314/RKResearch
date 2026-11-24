@@ -1,0 +1,2 @@
+All 100 stage entries and ten weights match the exact archived quartic/quadratic tableau.
+Both relations and both denominator factors match.

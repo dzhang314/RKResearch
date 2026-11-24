@@ -1,0 +1,30 @@
+{
+  "reviewedHumanPin": "c35f5b900856c33eae15435ccebaabd049b56628",
+  "publishedReviewedMainBase": "19885a85b0ed01465acf6302b25f7b4b1517fe3e",
+  "leanCommit": "611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9",
+  "mathlibCommit": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "coreZipSHA256": "451f86281e86008715c83991cf95a0558ff5cc5d29020b12bc7cce3e08b85e31",
+  "coreReleaseAllowlistSHA256": "f53de19034dfa2ba973cbcf1e904940cd423363a3e0104531df2a9ddad8a68af",
+  "preservedCoreMemberCount": 107,
+  "exactDeltaMemberCount": 10,
+  "supersetMemberCount": 117,
+  "publicTheorems": [
+    "RKResearch.Certified.LobattoDIRK109.not_order_ten_real",
+    "RKResearch.Certified.LobattoDIRK109.exists_exact_real",
+    "RKResearch.Certified.LobattoDIRK109.exists_exact_realAlgebraic"
+  ],
+  "exactObjectSHA256": "ed09489e67716d4993e00ddc27fe3c7eb3685cf1553bae4cd10b30bf14e5a83e",
+  "exactAuditLogSHA256": "f17ad637575e26ee6cc97dcc5dbfd0a23bf4409bca25220eaf2d32fb7c1698b8",
+  "exactAxiomAudits": 12,
+  "exactMemberSHA256": {
+    "ai-generated/lean/AuditReviewedLobattoDIRK109.lean": "2ab32e5f32de893798ab7320a3749a49aa905c3d378d2ff123a3a914beec12a0",
+    "ai-generated/lean/RKCert/ReviewedNative/LobattoDIRK109Exact.lean": "c36bdc5c21e21683cbec761aee5f3ce47bba60f3367a21ddc07f29c8c9961d18",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/AuditReviewedLobattoDIRK109.txt": "f17ad637575e26ee6cc97dcc5dbfd0a23bf4409bca25220eaf2d32fb7c1698b8",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/README.md": "cc762acd383ded0b6aecd09bd0cf2efb484fbfc5fd70de1d985bda33dbd57157",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/exact-checks.json": "2e534fa642afaacfddbcc7980e94c9b1a6f68e5650d674bbb912035edc44f56c",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/exact-delta-allowlist.txt": "bb2a8d01581cd23f408bb0e84b7e1edf584be3d140361e3233ddf6755f544030",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/kernel-LobattoDIRK109Exact.txt": "dde5e71d333206cd268d7199b18c2db437a870c7ed2fa0d128c750c3bf683c7f",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/superset-lean-source-SHA256.txt": "74f9437d56c0f2cd5538e5cdf3a4a509c715ff91ec29ebdab8d93f937880f796",
+    "ai-generated/lean/evidence/reviewed-native-dirk-nine-exact-c35/superset-release-allowlist.txt": "47d730605bf3ca9bb4164cd26e53d5b5472f69cfb87863c2b936d0010cbd5ab4"
+  }
+}

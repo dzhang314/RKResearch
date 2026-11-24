@@ -1,0 +1,103 @@
+{
+  "modules": [
+    "LobattoDIRK109Algebra",
+    "LobattoDIRK109Roster",
+    "LobattoDIRK109Deriv0",
+    "LobattoDIRK109Deriv1",
+    "LobattoDIRK109Deriv2",
+    "LobattoDIRK109Deriv3",
+    "LobattoDIRK109Deriv4",
+    "LobattoDIRK109Deriv5",
+    "LobattoDIRK109Deriv6",
+    "LobattoDIRK109Deriv7",
+    "LobattoDIRK109Deriv8",
+    "LobattoDIRK109Deriv9",
+    "LobattoDIRK109Data"
+  ],
+  "derivativeData": [
+    {
+      "module": "LobattoDIRK109Deriv0",
+      "bytes": 29153,
+      "begin": 0,
+      "end": 20
+    },
+    {
+      "module": "LobattoDIRK109Deriv1",
+      "bytes": 36696,
+      "begin": 20,
+      "end": 40
+    },
+    {
+      "module": "LobattoDIRK109Deriv2",
+      "bytes": 39991,
+      "begin": 40,
+      "end": 60
+    },
+    {
+      "module": "LobattoDIRK109Deriv3",
+      "bytes": 40342,
+      "begin": 60,
+      "end": 80
+    },
+    {
+      "module": "LobattoDIRK109Deriv4",
+      "bytes": 42532,
+      "begin": 80,
+      "end": 100
+    },
+    {
+      "module": "LobattoDIRK109Deriv5",
+      "bytes": 42920,
+      "begin": 100,
+      "end": 120
+    },
+    {
+      "module": "LobattoDIRK109Deriv6",
+      "bytes": 43415,
+      "begin": 120,
+      "end": 140
+    },
+    {
+      "module": "LobattoDIRK109Deriv7",
+      "bytes": 43018,
+      "begin": 140,
+      "end": 160
+    },
+    {
+      "module": "LobattoDIRK109Deriv8",
+      "bytes": 43510,
+      "begin": 160,
+      "end": 180
+    },
+    {
+      "module": "LobattoDIRK109Deriv9",
+      "bytes": 44849,
+      "begin": 180,
+      "end": 200
+    }
+  ],
+  "treeCounts": [
+    1,
+    1,
+    2,
+    4,
+    9,
+    20,
+    48,
+    115,
+    286
+  ],
+  "checkedJoins": 790,
+  "tallTreeIds": [
+    0,
+    1,
+    3,
+    7,
+    16,
+    36,
+    84,
+    199,
+    485
+  ],
+  "bytes": 437098
+}

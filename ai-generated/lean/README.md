@@ -157,3 +157,12 @@ It does not establish the stronger finite order-14 and order-15 endpoints.
 After `lake build`, run `lake env lean OrderTwelveAudit.lean`,
 `lake env lean ReverseObstructionAudit.lean`, `lake env lean AuditDIRKParity.lean`,
 and `lake env lean AuditLowERK.lean` to reproduce the additional axiom audits.
+
+## Additional structural certificates
+
+- [Order-eight ERK reductions](ERK-ORDER-EIGHT-REDUCTIONS.md): a ten-stage candidate over a characteristic-zero field has one or four distinct off abscissas.
+- [Even-order DIRK boundary](DIRK-EVEN-BOUNDARY.md): physical terminal cardinal and fixed grid, mutual annihilator ranks, and the conditional order-sixteen quartic test.
+
+These certificates support the remaining finite-order proofs; they do not change the stage-bound tables. After building, the corresponding replay entry points for the axiom audits are `AuditOrderEight.lean` and `AuditDIRKEven.lean`.
+
+The [fixed-Lobatto factor theorem](LOBATTO-FACTOR-GATES.md) rules out a vanishing first moment for the small factors relevant at DIRK orders 14 and 16 over any characteristic-zero field. It uses exact prime-field checks and does not require real coefficients. Audit: `lake env lean AuditLobattoFactors.lean`.

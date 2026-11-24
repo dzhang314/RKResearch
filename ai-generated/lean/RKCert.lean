@@ -27,3 +27,7 @@ public import RKCert.ExplicitOrderTwelve
 
 public import RKCert.DirkParityFloor
 public import RKCert.ERKLowFourOff
+public import RKCert.DirkReflected16
+public import RKCert.DirkEvenDual
+public import RKCert.ERKOrderEightLobatto
+public import RKCert.LobattoFactors

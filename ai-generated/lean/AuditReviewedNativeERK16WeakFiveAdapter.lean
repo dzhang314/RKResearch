@@ -1,0 +1,2 @@
+import RKCert.ReviewedNative.ERKOrder16WeakFiveAdapter
+#print axioms RKResearch.Certified.ERK16.width24_weak_five_moments_of_ordinary_head

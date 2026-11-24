@@ -211,3 +211,10 @@ The supporting [DIRK refinement](DIRK15-REFINEMENT.md), [weighted fifth-debut](D
 - [DIRK order 17](DIRK-ORDER-SEVENTEEN.md): at least 24 stages over every characteristic-zero field and commutative ring, strengthening the previous unrestricted 23-stage bound. [Early marked surplus](DIRK17-EARLY-SURPLUS.md) is one of the physical cases.
 
 The named targets are `RKCert.ExplicitOrderThirteen` and `RKCert.DirkOrder17FullCharZero`. They are separate from the default umbrella while aggregate integration is checked.
+
+## Order-nine ERK: the remaining one-off case
+
+- [Exact characteristic-zero H48 reduction](ERK-NINE-EXACT-H48.md) and [compact modular exclusion](ERK-NINE-COMPACT-PRIME.md): the five-off/six-on chart is impossible. An ordered-field 12-stage candidate would have exactly one off abscissa.
+- [One-off reductions](ERK-NINE-ONE-OFF.md), [amplitude and normal form](ERK-NINE-AMPLITUDE.md), and [literal midpoint rows](ERK-NINE-ONE-OFF-MIDPOINT.md): true inputs to the remaining physical tail argument. These do not yet rule out that final case or certify a new stage bound.
+
+Named Lean targets: `RKCert.ERKOrderNineCompactPrime`, `RKCert.ERKOrderNineOneOffStructure`, `RKCert.ERKOrderNineOneOffCleanClocks`, `RKCert.ERKOrderNineOneOffSixth`, and `RKCert.ERKOrderNineOneOffTerminalShape`. The default umbrella is unchanged.

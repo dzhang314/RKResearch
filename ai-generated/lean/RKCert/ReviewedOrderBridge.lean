@@ -85,7 +85,7 @@ theorem orderIdentity_toReviewed (A : Matrix (Fin s) (Fin s) R) (b : Fin s → R
 
 /-- Reviewed and previous tree order agree for any commutative semiring and stage count. -/
 theorem hasOrder_iff (A : Matrix (Fin s) (Fin s) R) (b : Fin s → R) (p : ℕ) :
-    RKResearch.HasOrder A b p ↔ RKCert.HasTreeOrderAtLeast A b p := by
+    RKResearch.HasOrder p A b ↔ RKCert.HasTreeOrderAtLeast A b p := by
   constructor
   · intro h t ht
     have h' : ((toReviewed t).order : ℕ) ≤ p := by

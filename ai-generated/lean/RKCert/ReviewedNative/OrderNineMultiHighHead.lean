@@ -14,7 +14,7 @@ omit [CharZero K] in
 /-- Product of the two head curves vanishes at every affordable probe
 whenever its value vanishes on the clean knots. -/
 theorem probe_head_product_zero {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ho : HasOrder A b p) {P : K[X]} (fit : ∀i,g A i≠0 → P.eval (nodes A i)=g A i)
+    (ho : HasOrder p A b) {P : K[X]} (fit : ∀i,g A i≠0 → P.eval (nodes A i)=g A i)
     (Q : K[X]) (on : ∀ x∈cleanKnots A, P.eval x*Q.eval x=0)
     (k : ℕ) (pay : k+Q.natDegree+3≤p) : probe A b k (evalNodes A (P*Q))=0 := by
   apply probe_zeroSpace ho (j:=2+Q.natDegree) (by omega)
@@ -73,7 +73,7 @@ theorem exists_nonzero_on_of_card {A : Matrix (Fin s) (Fin s) K}
 
 omit [CharZero K] in
 theorem anchor_probe_coeff {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
-    (ho : HasOrder A b p) (Q : K[X]) {n k : ℕ}
+    (ho : HasOrder p A b) (Q : K[X]) {n k : ℕ}
     (hd : Q.natDegree ≤ n) (hpay : k+n+2 ≤ p)
     (hz : probe A b k (evalNodes A (X*Q))=0) :
     (∑ j : Fin (n+1), Q.coeff j.val / ((k+j.val+2:ℕ):K))=0 := by
@@ -88,7 +88,7 @@ theorem anchor_probe_coeff {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
 
 omit [CharZero K] in
 theorem anchored_poly_zero_of_probes {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
-    (ho : HasOrder A b p) (n : ℕ) (pay : 2*n+2≤p)
+    (ho : HasOrder p A b) (n : ℕ) (pay : 2*n+2≤p)
     (Q : K[X]) (hd : Q.natDegree≤n)
     (hm : ∀ k : Fin (n+1), probe A b k.val (evalNodes A (X*Q))=0) : Q=0 := by
   let a : Fin (n+1) → K := fun j => Q.coeff j.val
@@ -116,7 +116,7 @@ theorem positive_head_degree {A : Matrix (Fin s) (Fin s) K}
   exact (mul_ne_zero (div_ne_zero cn (by norm_num)) (pow_ne_zero _ nu)) j
 
 theorem order9_high_off_head_form {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : 8≤(offKnots A).card)
     (hF : zeroSpace A 4=band A 2)
     (P : K[X]) (dp : P.natDegree≤2) (pn : P≠0)

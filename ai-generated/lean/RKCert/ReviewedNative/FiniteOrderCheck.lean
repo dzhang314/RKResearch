@@ -75,7 +75,7 @@ def checkOrder (A : Matrix ι ι R) (b : ι → R) (p : ℕ) : Bool :=
     decide ((t.factorial : R) * (b ⬝ᵥ Φ t A) = 1)
 
 theorem checkOrder_iff (A : Matrix ι ι R) (b : ι → R) (p : ℕ) :
-    checkOrder A b p = true ↔ HasOrder A b p := by
+    checkOrder A b p = true ↔ HasOrder p A b := by
   simp only [checkOrder, List.all_eq_true, List.mem_range, mem_treesOfOrderSucc,
     decide_eq_true_eq]
   constructor

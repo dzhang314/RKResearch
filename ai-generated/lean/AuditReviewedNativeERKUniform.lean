@@ -7,7 +7,7 @@ universe u
 
 section Field
 variable {K : Type u} [Field K] {s p q : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-variable (ha : ∀ i j, i ≤ j → A i j=0) (h : HasOrder A b p)
+variable (ha : ∀ i j, i ≤ j → A i j=0) (h : HasOrder p A b)
 
 example (hq : 2≤q) (pay : 2*q≤p) :
     2*q-1+finrank K (zeroSpace A q)+finrank K (back A b 0) ≤ s :=
@@ -29,28 +29,28 @@ variable {R : Type u} [CommRing R] [Nontrivial R] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
     (ha : ∀ i j, i ≤ j → A i j=0)
 
-example (h : HasOrder A b p) : max p ((3*p+1)/2-2) ≤ s := h.erk_uniform_stages ha
+example (h : HasOrder p A b) : max p ((3*p+1)/2-2) ≤ s := h.erk_uniform_stages ha
 
-example (h : HasOrder A b p) : erkUniformFloor p ≤ s := h.erk_uniform_floor_le_stages ha
+example (h : HasOrder p A b) : erkUniformFloor p ≤ s := h.erk_uniform_floor_le_stages ha
 
-example (h : HasOrder A b 5) : 6≤s := h.erk_uniform_stages ha
+example (h : HasOrder 5 A b) : 6≤s := h.erk_uniform_stages ha
 
-example (h : HasOrder A b 6) : 7≤s := h.erk_uniform_stages ha
+example (h : HasOrder 6 A b) : 7≤s := h.erk_uniform_stages ha
 
-example (h : HasOrder A b 20) : 28≤s := h.erk_uniform_stages ha
+example (h : HasOrder 20 A b) : 28≤s := h.erk_uniform_stages ha
 
 end Ring
 
 /-- The fifth-order test is not vacuous from denominator arithmetic: all
 integers 1 through 5 are units in this non-field. -/
 example {A : Matrix (Fin 5) (Fin 5) (ZMod 77)} {b : Fin 5 → ZMod 77}
-    (ha : ∀ i j, i ≤ j → A i j=0) : ¬ HasOrder A b 5 := by
+    (ha : ∀ i j, i ≤ j → A i j=0) : ¬ HasOrder 5 A b := by
   intro h
   let _ : Fact (1 < 77) := ⟨by decide⟩
   exact (by decide : ¬max 5 ((3*5+1)/2-2)≤5) (h.erk_uniform_stages ha)
 
 example {A : Matrix (Fin 26) (Fin 26) (ZMod 23)} {b : Fin 26 → ZMod 23}
-    (ha : ∀ i j, i ≤ j → A i j=0) : ¬ HasOrder A b 19 := by
+    (ha : ∀ i j, i ≤ j → A i j=0) : ¬ HasOrder 19 A b := by
   intro h
   let _ : Fact (1 < 23) := ⟨by decide⟩
   exact (by decide : ¬max 19 ((3*19+1)/2-2)≤26) (h.erk_uniform_stages ha)

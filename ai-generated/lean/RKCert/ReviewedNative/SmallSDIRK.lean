@@ -72,7 +72,7 @@ private theorem residual_dvd (x : K) (n : ℕ) (hn : n < 3) (t : FiniteRootedTre
       simp [A, b, smallSDIRKGamma, dotProduct, Fin.sum_univ_two]
       ring
 
-theorem order_three {x : K} (hx : x^2 - 1/3 = 0) : HasOrder (A x) b 3 :=
+theorem order_three {x : K} (hx : x^2 - 1/3 = 0) : HasOrder 3 (A x) b :=
   hasOrder_of_finite_residual_dvd _ _ _ hx (residual_dvd x)
 
 /-- The order-four chain is a concrete failure. -/
@@ -82,7 +82,7 @@ theorem fourth_chain_scaled {x : K} (hx : x^2 - 1/3 = 0) :
   simp [A, b, smallSDIRKGamma, dotProduct, Fin.sum_univ_two]
   linear_combination (-6*x-9)*hx
 
-theorem not_order_four {x : K} (hx : x^2 - 1/3 = 0) : ¬ HasOrder (A x) b 4 := by
+theorem not_order_four {x : K} (hx : x^2 - 1/3 = 0) : ¬ HasOrder 4 (A x) b := by
   intro h
   have ht := h (tallTree 4) (by rw [order_tallTree]; decide)
   rw [fourth_chain_scaled hx] at ht
@@ -167,7 +167,7 @@ private theorem residual_dvd (x : K) (n : ℕ) (hn : n < 4) (t : FiniteRootedTre
       simp [A, b, smallSDIRKGamma, outerWeight, dotProduct, Fin.sum_univ_three]
       ring
 
-theorem order_four {x : K} (hx : x^3 - x - 1/3 = 0) : HasOrder (A x) (b x) 4 :=
+theorem order_four {x : K} (hx : x^3 - x - 1/3 = 0) : HasOrder 4 (A x) (b x) :=
   hasOrder_of_finite_residual_dvd _ _ _ hx (residual_dvd x)
 
 /-- The order-five bush gives an exact closed expression at any root of the cubic. -/
@@ -178,7 +178,7 @@ theorem fifth_bush_scaled {x : K} (hx : x^3 - x - 1/3 = 0) :
   simp [A, b, smallSDIRKGamma, outerWeight, dotProduct, Fin.sum_univ_three]
   linear_combination (-15*x^3/16+5*x^2/16-45*x/8+15/8)*hx
 
-theorem not_order_five {x : K} (hx : x^3 - x - 1/3 = 0) : ¬ HasOrder (A x) (b x) 5 := by
+theorem not_order_five {x : K} (hx : x^3 - x - 1/3 = 0) : ¬ HasOrder 5 (A x) (b x) := by
   intro h
   have ht := h (bushyTree 5) (by rw [order_bushyTree]; decide)
   rw [fifth_bush_scaled hx] at ht

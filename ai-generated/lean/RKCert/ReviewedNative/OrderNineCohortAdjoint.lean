@@ -31,7 +31,7 @@ theorem row_flip_mat (A : Matrix (Fin s) (Fin s) K) (v w : Fin s→K) :
     row (transMat A v) w=row v (mat A w) := Reverse.row_mat_transpose A v w
 theorem row_flip_diag (c v w : Fin s→K) : row (diag c v) w=row v (diag c w) := Reverse.row_diag c v w
 
-theorem ones_clock (ho : HasOrder A b p) (pay : 2≤p) :
+theorem ones_clock (ho : HasOrder p A b) (pay : 2≤p) :
     row (diag (reflectedClock A) b) (1 : Fin s→K) = (2:K)⁻¹ := by
   have e : row (diag (reflectedClock A) b) (1 : Fin s→K)=reflectedProbe A b 0 1 1 := by
     simp only [row_apply,dotProduct,diag_apply,Pi.one_apply,pow_zero,pow_one,mul_one]
@@ -100,7 +100,7 @@ private theorem unreflected_primitive [CharZero K] (k : ℕ) :
   rw [←hd,primitive_derivative P h0]
 
 theorem orderAdjoint_annih [CharZero K] {k j : ℕ}
-    (ho : HasOrder A b p) (pay : j+k+2≤p) :
+    (ho : HasOrder p A b) (pay : j+k+2≤p) :
     orderAdjoint A b k ∈ annih (treeSpace A j) := by
   let P := (1-X:K[X])^k
   have dx : (1-X:K[X]).natDegree≤1 := natDegree_sub_le_of_le (show (1:K[X]).natDegree≤1 by simp) (show (X:K[X]).natDegree≤1 by simp)
@@ -116,7 +116,7 @@ theorem orderAdjoint_annih [CharZero K] {k j : ℕ}
   simpa only [orderAdjoint,e₁,e₂] using reverse_primitive_paid ho j P k dp pay
 
 theorem nonzero_orderAdjoint_one [CharZero K] (ha : ∀ i j,i≤j → A i j=0)
-    (ho : HasOrder A b p) (pay : 3≤p) (zero : firstSeed A b=0) : orderAdjoint A b 1≠0 := by
+    (ho : HasOrder p A b) (pay : 3≤p) (zero : firstSeed A b=0) : orderAdjoint A b 1≠0 := by
   rw [orderAdjoint_one_eq_backward_two zero (by norm_num)]
   apply smul_ne_zero (neg_ne_zero.mpr (inv_ne_zero (by norm_num)))
   intro bad
@@ -139,7 +139,7 @@ theorem transMat_single_incoming_row (A : Matrix (Fin s) (Fin s) K) (i : Fin s) 
   · simp
 
 theorem no_identical_rows_at_uniform_floor {T : Matrix (Fin 12) (Fin 12) K} {w : Fin 12→K}
-    (ha : ∀ i j,i≤j → T i j=0) (ho : HasOrder T w 9)
+    (ha : ∀ i j,i≤j → T i j=0) (ho : HasOrder 9 T w)
     {i j : Fin 12} (ij : i<j) : ¬ ∀k,T i k=T j k := by
   intro e
   obtain ⟨B,c,hB,hc⟩ := exists_merge_equal_rows ha ho ij e

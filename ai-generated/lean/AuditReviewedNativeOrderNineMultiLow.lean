@@ -21,5 +21,5 @@ open RKResearch.Certified.Graded.OneOff RKResearch.Certified.Graded.MultiOff
 
 example {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9) (few : (offKnots A).card≤4) :
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b) (few : (offKnots A).card≤4) :
     13≤s := explicit_order_nine_at_most_four_off_at_least_thirteen ha ho few

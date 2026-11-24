@@ -109,7 +109,7 @@ theorem primitive_defect [CharZero K] (A : Matrix ι ι K) (P:K[X]) {q:ℕ}
   rw [P.as_sum_range' (q+1) (by omega),map_sum]
   exact (zeroSpace A (q+1)).sum_mem (fun n hn=>mono n (by have :=Finset.mem_range.mp hn;omega) _)
 
-theorem probe_evalNodes (ho:HasOrder A b p) (P:K[X]) (k:ℕ) (hp:k+P.natDegree+1≤p) :
+theorem probe_evalNodes (ho:HasOrder p A b) (P:K[X]) (k:ℕ) (hp:k+P.natDegree+1≤p) :
     probe A b k (evalNodes A P)=(primitive (X^k*P)).eval 1 := by
   let F := (probe A b k).comp (evalNodes A)
   let J := (Polynomial.leval 1).comp (primitive.comp (LinearMap.mulLeft K (X^k:K[X])))
@@ -118,8 +118,9 @@ theorem probe_evalNodes (ho:HasOrder A b p) (P:K[X]) (k:ℕ) (hp:k+P.natDegree+1
     change probe A b k (evalNodes A (monomial n a))=(primitive (X^k*monomial n a)).eval 1
     rw [evalNodes_monomial,map_smul,smul_eq_mul,X_pow_mul_monomial,primitive_monomial,eval_monomial,
       one_pow,mul_one]
-    have h := probe_normTree ho (clockTree n) k (by rw [order_clockTree]; omega)
-    rw [order_clockTree,←Nat.add_assoc,Nat.add_comm k n] at h
+    have h : ((n+k+1:ℕ):K) * probe A b k (normTree A (clockTree n)) = 1 := by
+      simpa only [normTree_clockTree, probe, row_apply, dotProduct, Pi.pow_apply,
+        Nat.add_comm n k, pow_add, mul_assoc] using ho.hasQuadratureOrder (n+k) (by omega)
     have nz := (IsUnit.of_mul_eq_one _ h).ne_zero
     apply (eq_div_iff nz).mpr
     rw [mul_assoc,mul_comm (probe A b k (normTree A (clockTree n))),h,mul_one]

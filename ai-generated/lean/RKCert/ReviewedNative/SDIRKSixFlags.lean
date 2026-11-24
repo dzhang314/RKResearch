@@ -16,7 +16,7 @@ def adjResidual (A : Matrix (Fin s) (Fin s) K) (b : (Fin s → K)) : (Fin s → 
 
 /-- The raw adjoint consistency defect kills every affordable genuine stage tree. -/
 theorem adjResidual_tree {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ho : HasOrder A b p) (t : FiniteRootedTree) (hk : (t.order:ℕ)+1 ≤ p) :
+    (ho : HasOrder p A b) (t : FiniteRootedTree) (hk : (t.order:ℕ)+1 ≤ p) :
     adjResidual A b (Φ t A) = 0 := by
   let d := ((t.order:ℕ):K)
   let f := ((t.forestFactorial:ℕ):K)
@@ -35,14 +35,14 @@ theorem adjResidual_tree {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
   linear_combination a + d*c - (d+1)*w
 
 theorem adjResidual_space {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)}
-    (ho : HasOrder A b p) (a : ℕ) (hp : a+2≤p) :
+    (ho : HasOrder p A b) (a : ℕ) (hp : a+2≤p) :
     treeSpace A a ≤ LinearMap.ker (adjResidual A b) := by
   apply Submodule.span_le.mpr
   rintro _ ⟨t, ht, rfl⟩
   exact adjResidual_tree ho t (by omega)
 
 theorem order_six_grade_ranks {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hd : ∀ i, A i i ≠ 0) :
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hd : ∀ i, A i i ≠ 0) :
     (List.range 6).map (fun j => Module.finrank K (treeSpace A j)) = [1,2,4,5,6,6] := by
   let v := fun j => Module.finrank K (treeSpace A j)
   have up (j : ℕ) : v j ≤ 6 := by
@@ -65,7 +65,7 @@ theorem order_six_grade_ranks {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
     show v 3=5 by omega,show v 4=6 by omega,show v 5=6 by omega]
 
 theorem order_six_grade_four_top {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hd : ∀ i, A i i ≠ 0) :
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hd : ∀ i, A i i ≠ 0) :
     treeSpace A 4 = ⊤ := by
   apply Submodule.eq_top_of_finrank_eq
   rw [show Module.finrank K ((Fin 6 → K))=6 by simp]
@@ -74,7 +74,7 @@ theorem order_six_grade_four_top {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → 
   · exact parityCensus_le_finrank ho ha hd 4 (by decide)
 
 theorem order_six_D1 {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hd : ∀ i, A i i ≠ 0) :
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hd : ∀ i, A i i ≠ 0) :
     adjResidual A b = 0 := by
   apply LinearMap.ext
   intro x
@@ -83,7 +83,7 @@ theorem order_six_D1 {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
 
 /-- The priced Volterra image annihilates the actual weighted clock probes. -/
 theorem probe_commutator {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} {j k : ℕ}
-    (ho : HasOrder A b p) (hk : k+j+3 ≤ p) {x} (hx : x ∈ treeSpace A j) :
+    (ho : HasOrder p A b) (hk : k+j+3 ≤ p) {x} (hx : x ∈ treeSpace A j) :
     probe A b k (volterra A x) = 0 :=
   probe_zeroSpace ho (by omega) (volterra_treeSpace ho j (by omega) hx)
 

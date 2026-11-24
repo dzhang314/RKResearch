@@ -34,7 +34,7 @@ private theorem short_reverse_join {U Z : Submodule K ((Fin s→K))} {T : (Fin s
   have := Submodule.finrank_lt_finrank_of_lt hlt
   omega
 
-theorem localized_reverse_chart_of_ranks (ha:∀i j,i≤j → A i j=0) (ho:HasOrder A b p)
+theorem localized_reverse_chart_of_ranks (ha:∀i j,i≤j → A i j=0) (ho:HasOrder p A b)
     (hp:2≤p) (seedZero:firstSeed A b=0)
     (ranks:∀n≤4,finrank K (back A b n)=n)
     (nc2:¬(back A b 2).map (diag (reflectedClock A))≤back A b 2)
@@ -131,7 +131,7 @@ private theorem short_chart_coeff_three {y d g v : (Fin s→K)}
   obtain ⟨e,rfl⟩ := Submodule.mem_span_singleton.mp hz
   exact ⟨a,b,c,e,fun i => by simp [hx]; ring⟩
 
-theorem localized_reverse_rows_of_chart (ha:∀i j,i≤j → A i j=0) (ho:HasOrder A b p)
+theorem localized_reverse_rows_of_chart (ha:∀i j,i≤j → A i j=0) (ho:HasOrder p A b)
     (hp:2≤p) (seedZero:firstSeed A b=0) (H:LocalizedReverseChart A b) :
     ∃ a:K,a≠0∧ReverseRows (mat A.transpose) (reflectedClock A) b
       (normalizedResidual A b 1) (mat A.transpose (normalizedResidual A b 1)) a := by
@@ -230,7 +230,7 @@ theorem localized_reverse_rows_of_chart (ha:∀i j,i≤j → A i j=0) (ho:HasOrd
     rw [u]
     simpa only [p₀e,zero_mul,zero_add] using pp i
 
-theorem localized_reverse_rows_impossible (ha:∀i j,i≤j → A i j=0) (ho:HasOrder A b p)
+theorem localized_reverse_rows_impossible (ha:∀i j,i≤j → A i j=0) (ho:HasOrder p A b)
     (hp:10≤p) (H:∃ a:K,a≠0∧ReverseRows (mat A.transpose) (reflectedClock A) b
       (normalizedResidual A b 1) (mat A.transpose (normalizedResidual A b 1)) a) : False := by
   classical
@@ -263,7 +263,7 @@ theorem localized_reverse_rows_impossible (ha:∀i j,i≤j → A i j=0) (ho:HasO
 
 /-- No localized one-dimensional quadratic reverse line can sustain
 the three following paid native ranks and the two extra monomial rows. -/
-theorem localized_native_reverse_impossible (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b p)
+theorem localized_native_reverse_impossible (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder p A b)
     (pay : 10≤p) (seedZero : firstSeed A b=0)
     (ranks : ∀n≤4,finrank K (back A b n)=n)
     (nc2 : ¬(back A b 2).map (diag (reflectedClock A))≤back A b 2)

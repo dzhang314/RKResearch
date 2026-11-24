@@ -33,7 +33,7 @@ open RKResearch RKResearch.Certified.Graded RKResearch.Certified.Graded.Reverse 
 /-- No assumed rank or scalar mesh in this actual disjoint-head consumer. -/
 example {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1)→K}
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15) (cap : s+1≤22) :
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b) (cap : s+1≤22) :
     ∃ (a : ℕ) (G : K[X]) (r : ℕ) (U : Submodule K (Fin (s+1)→K)) (v : Fin (s+1)→K),
       Order15PaidStaircase A b a G r U v ∧ (∀ i, (∃ u∈U,u i≠0) → v i=0) ∧
         (∀ u∈U,∀ z∈U,u*z∈U) := by

@@ -51,7 +51,7 @@ theorem first_four_independent {a d : K} {r : Fin s} (an : a≠0) (dn : d≠0)
     (chart_selector_mem A a d l))
 
 theorem order9_first_five_independent {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j)
     (F : FirstFour A a d (by decide)) :
     IndependentBefore (treeSpace A 4) (5:Fin 12) := by

@@ -13,7 +13,7 @@ namespace RKResearch.Certified.Graded.AuditERK12Cubic
 hidden in the two remaining native width-seventeen branches. -/
 theorem actual_cap_has_rank_two_branches {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12) (cap : s+1≤17) :
+    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b) (cap : s+1≤17) :
     ∃ U w, ForwardStaircase A 2 U w ∧
       zeroSpace A 2≤U ∧ zeroSpace A 3≤U ∧
       (finrank K (zeroSpace A 4)=3 ∨ finrank K (zeroSpace A 4)=4) := by

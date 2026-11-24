@@ -36,7 +36,7 @@ every ordered field, with the frozen norm pair and the existing ordered
 quartic polynomial lemma. That scalar adapter privately imports legacy
 files, but does not consume an old method theorem. In Lean the theorem is
 `RKResearch.Certified.ERK17.no_physical_four_port`. The consumer checks the
-exact reviewed `HasOrder A b 17` on 26 stages while explicitly assuming the
+exact reviewed `HasOrder 17 A b` on 26 stages while explicitly assuming the
 geometric record as a premise.
 
 To finish native ERK17, derive this record from the actual zero-seed

@@ -187,7 +187,7 @@ private theorem residual_nonzero_of_interval {x : ℝ} (y : ℝ)
 
 private theorem not_order_eight {K : Type*} [Field K] [CharZero K] {x y : K}
     (hx : x ≠ 0) (h : RootPair x y) (hr : residualCoeff.val x y ≠ 0) :
-    ¬ HasOrder (A x y) (b x y) 8 := by
+    ¬ HasOrder 8 (A x y) (b x y) := by
   intro ho
   let d : K := (stageDen:K)*x
   let e : K := weightDen
@@ -214,7 +214,7 @@ private theorem not_order_eight {K : Type*} [Field K] [CharZero K] {x y : K}
   exact hr (add_left_cancel hz)
 
 theorem not_order_eight_real {x y : ℝ} (hI : x ∈ Set.Ioo (lo:ℝ) (hi:ℝ))
-    (h : RootPair x y) : ¬ HasOrder (A x y) (b x y) 8 := by
+    (h : RootPair x y) : ¬ HasOrder 8 (A x y) (b x y) := by
   have hx : 0 < x := (show 0 < (lo:ℝ) by norm_num [lo]).trans hI.1
   exact not_order_eight hx.ne' h (residual_nonzero_of_interval y hI)
 
@@ -236,7 +236,7 @@ private theorem residual_map {R S : Type*} [CommRing R] [CommRing S]
 theorem exists_exact_real :
     ∃ (U : Matrix (Fin 9) (Fin 9) ℝ) (w : Fin 9 → ℝ) (γ : ℝ),
       U.IsLowerTriangular ∧ (∀ i, U i i = γ) ∧ γ ≠ 0 ∧
-        HasOrder U w 7 ∧ ¬ HasOrder U w 8 := by
+        HasOrder 7 U w ∧ ¬ HasOrder 8 U w := by
   obtain ⟨x, v, w, hI, hx, hp, -, -, -, -, hs, hm⟩ := exists_real_parameters
   let y : ℝ := (shapeDen:ℝ)*v
   have hr : RootPair x y := realRootPair_of_parameters hp hs hm
@@ -248,7 +248,7 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 theorem exists_exact_realAlgebraic :
     ∃ (U : Matrix (Fin 9) (Fin 9) ℝₐ) (w : Fin 9 → ℝₐ) (γ : ℝₐ),
       U.IsLowerTriangular ∧ (∀ i, U i i = γ) ∧ γ ≠ 0 ∧
-        HasOrder U w 7 ∧ ¬ HasOrder U w 8 := by
+        HasOrder 7 U w ∧ ¬ HasOrder 8 U w := by
   obtain ⟨x, v, w, hI, hx, hp, hax, hav, -, -, -, -, hs, hm⟩ :=
     exists_algebraic_parameters
   let xx : ℝₐ := ⟨x, mem_algebraicClosure_iff.mpr hax⟩

@@ -67,7 +67,7 @@ theorem terminalLeak7_value (x : K) :
   norm_num [leakCoeffs,Fin.sum_univ_succ]
   ring
 
-private theorem mesh_probe (ho : HasOrder A b 12) {k : ℕ} (hk : k<6) :
+private theorem mesh_probe (ho : HasOrder 12 A b) {k : ℕ} (hk : k<6) :
     probe A b k (evalNodes A terminalMesh6)=(1:K)/42 := by
   have scalar (j : Fin 6) :
       (∑ i : Fin 7, (meshCoeffs i : K)/((j.val+i.val+1:ℕ):K))=(1:K)/42 := by
@@ -76,7 +76,7 @@ private theorem mesh_probe (ho : HasOrder A b 12) {k : ℕ} (hk : k<6) :
   simp only [terminalMesh6_coeff]
   exact scalar ⟨k,hk⟩
 
-private theorem leak_probe (ho : HasOrder A b 12) {k : ℕ} (hk : k<5) :
+private theorem leak_probe (ho : HasOrder 12 A b) {k : ℕ} (hk : k<5) :
     probe A b k (evalNodes A terminalLeak7)=0 := by
   have scalar (j : Fin 5) :
       (∑ i : Fin 7, (leakCoeffs i : K)/((j.val+i.val+1:ℕ):K))=0 := by
@@ -94,7 +94,7 @@ private theorem first_clock_zero (ha : ∀ i k, i ≤ k → A i k=0) :
 /-- The real terminal unit has this exact degree-six clock representative
 modulo the genuine sixth defect grade. -/
 theorem physical_terminal_mesh (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) :
+    (ho : HasOrder 12 A b) (S : Saturation A b) :
     coordinate (K:=K) (Fin.last s)-evalNodes A terminalMesh6∈zeroSpace A 6 := by
   classical
   let t := Fin.last s
@@ -147,7 +147,7 @@ theorem physical_terminal_mesh (ha : ∀ i k, i ≤ k → A i k=0)
 /-- Its vanishing-at-one clock shift is actually paid in the seventh cut,
 and the adjacent fourth and fifth ordinary row probes cancel on it. -/
 theorem physical_terminal_absorber (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) :
+    (ho : HasOrder 12 A b) (S : Saturation A b) :
     let M : K[X] := (X-1)*terminalMesh6
     M.natDegree≤7 ∧ M.coeff 7≠0 ∧ evalNodes A M∈escape7 A ∧
       probe A b 3 (evalNodes A M)=0 := by
@@ -185,7 +185,7 @@ theorem physical_terminal_absorber (ha : ∀ i k, i ≤ k → A i k=0)
 /-- Any genuine seventh defect has at most the one indicated degree-six
 polynomial leak across the physical terminal cut. -/
 theorem grade_seven_single_leak (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (T : TerminalBand A b)
+    (ho : HasOrder 12 A b) (T : TerminalBand A b)
     {v : Fin (s+1) → K} (hv : v∈zeroSpace A 7) :
     ∃ a : K, v-a • evalNodes A terminalLeak7∈escape7 A := by
   have mem := zeroSpace_le_treeSpace A 7 hv
@@ -225,7 +225,7 @@ theorem grade_seven_single_leak (ha : ∀ i k, i ≤ k → A i k=0)
 /-- The native T8→T9 chart admits no double leakage across its actual
 terminal-zero cut. The only absorber used is its paid terminal mesh. -/
 theorem grade_eight_no_double_leak (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) (T : TerminalBand A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b) (T : TerminalBand A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (hv : v∈zeroAt (zeroSpace A 8) (Fin.last s))
     (hc : diag (nodes A) v∈zeroAt (zeroSpace A 8) (Fin.last s)) :
@@ -279,7 +279,7 @@ theorem grade_eight_no_double_leak (ha : ∀ i k, i ≤ k → A i k=0)
 /-- Multiplication preserves the measured core whenever the grade sum
 is paid in its genuine eighth defect space. -/
 theorem grade_eight_multiplier_stable (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) (T : TerminalBand A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b) (T : TerminalBand A b)
     {r j k : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (inside : U≤zeroSpace A j) (budget : j+k≤8)
     (hv : v∈zeroSpace A k) : U.map (diag v)≤U := by
@@ -308,7 +308,7 @@ theorem grade_eight_multiplier_stable (ha : ∀ i k, i ≤ k → A i k=0)
 
 /-- All grade-three multipliers preserve the same actual grade-five core. -/
 theorem grade_three_multiplier_stable (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) (T : TerminalBand A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b) (T : TerminalBand A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (hv : v∈zeroSpace A 3) :
     U.map (diag v)≤U :=
@@ -317,7 +317,7 @@ theorem grade_three_multiplier_stable (ha : ∀ i k, i ≤ k → A i k=0)
 /-- Every outside grade-three vector has a nonzero multiplier of degree
 at most three on the actual single head. -/
 theorem grade_three_multiplier_profile (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) (T : TerminalBand A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b) (T : TerminalBand A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (hv : v∈zeroSpace A 3) (out : v∉U) :
     ∃ P : K[X], P≠0 ∧ P.natDegree≤3 ∧ v*w-weightedEval (nodes A) w P∈U := by

@@ -38,7 +38,7 @@ theorem firstChartBefore_four {a d : K} {r : Fin s} (size : 4≤s)
   exact ⟨l,rfl,f.1,f.2.1⟩
 
 theorem order9_fifth_feature {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
    
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j)
     (F : FirstFour A a d (by decide)) :

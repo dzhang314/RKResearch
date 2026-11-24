@@ -36,7 +36,7 @@ variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 
 /-- The measured reverse rank exactly fills a paid annihilator whenever
 the forward and reverse dimensions total the original stage count. -/
-theorem back_eq_annih_of_rank (ho : HasOrder A b 12) {j n : ℕ}
+theorem back_eq_annih_of_rank (ho : HasOrder 12 A b) {j n : ℕ}
     (pay : j+n+2≤12) (count : finrank K (treeSpace A j)+finrank K (back A b n)=s+1) :
     back A b n=annih (treeSpace A j) := by
   have d := finrank_annih (treeSpace A j)
@@ -48,7 +48,7 @@ variable [CharZero K]
 
 /-- All ranks, reverse saturation, and the live last coordinate are
 forced by reviewed order and the physical stage cap alone. -/
-theorem saturation_of_order (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12)
+theorem saturation_of_order (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b)
     (cap : s+1≤17) : Saturation A b := by
   have five := grade_five_surplus_of_reviewed_order ha ho (by decide)
   have grow := erk_paid_rank_interval ha ho (a:=5) (q:=6) (by decide) (by decide) (by decide)
@@ -94,7 +94,7 @@ theorem saturation_of_order (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A
 
 /-- The native intrinsic single head at the exact F₅→F₆ step, with the
 outgoing Hermite gain enforcing length at least two. -/
-theorem exists_order_twelve_head (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12)
+theorem exists_order_twelve_head (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) : ∃ r U w, 2≤r ∧ FlatClockHead A 5 1 r U w := by
   have sep := explicit_coeff_separated ha ho (q:=6) (by decide)
   obtain ⟨r,U,w,H⟩ := flat_clock_head ha (j:=5) (d:=1) sep (by decide) (by decide)
@@ -111,7 +111,7 @@ end CharZero
 
 /-- Native product payment makes the actual live terminal coordinate
 annihilate the entire grade-five defect space. -/
-theorem grade_five_zero_at_terminal (ho : HasOrder A b 12) (S : Saturation A b)
+theorem grade_five_zero_at_terminal (ho : HasOrder 12 A b) (S : Saturation A b)
     {v : Fin (s+1) → K} (hv : v∈zeroSpace A 5) : v (Fin.last s)=0 := by
   have z := probe_zeroSpace (k:=0) ho (by decide : 0+(5+6)+1≤12)
     (zeroSpace_mul_treeSpace ho (by decide : 6+1≤12) hv S.terminalColumn)
@@ -124,7 +124,7 @@ theorem grade_five_zero_at_terminal (ho : HasOrder A b 12) (S : Saturation A b)
 actual one-rank clock growth, not a separate moment at order thirteen,
 justifies the pass from grade five to grade six. -/
 theorem grade_six_zero_at_terminal [CharZero K] (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) {v : Fin (s+1) → K}
+    (ho : HasOrder 12 A b) (S : Saturation A b) {v : Fin (s+1) → K}
     (hv : v∈zeroSpace A 6) : v (Fin.last s)=0 := by
   have sep : PolySeparated A 5 := PolySeparated.of_coeff (explicit_coeff_separated ha ho (by decide))
   have esc : ¬ (zeroSpace A 5).map (diag (nodes A))≤zeroSpace A 5 := by

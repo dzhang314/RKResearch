@@ -40,7 +40,7 @@ tableau. Only the grade-four reverse capacity, not any feature relation,
 is taken as an additional premise. -/
 theorem constant_amplitude_of_single_off_of_capacity
     {n : ℕ} {A : Matrix (Fin (n+1)) (Fin (n+1)) K} {b : Fin (n+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p) (hp : 8 ≤ p)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b) (hp : 8 ≤ p)
     (off : (offKnots A).card = 1) (cap : finrank K (treeSpace A 4) ≤ 8) :
     ∃ (a d : K) (i j : Fin (n+1)), ConstantAmplitude A a d i j := by
   obtain ⟨r3,r4,_,_⟩ := forward_minimal_ranks ha ho hp cap
@@ -61,7 +61,7 @@ theorem constant_amplitude_of_single_off_of_capacity
   · exact False.elim (ne (amplitude_value amp off))
 
 theorem order9_constant_amplitude_of_capacity {A : Matrix (Fin 12) (Fin 12) K}
-    {b : Fin 12 → K} (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    {b : Fin 12 → K} (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (off : (offKnots A).card = 1) (cap : finrank K (treeSpace A 4) ≤ 8) :
     ∃ (a d : K) (i j : Fin 12), ConstantAmplitude A a d i j :=
   constant_amplitude_of_single_off_of_capacity ha ho (by decide) off cap
@@ -69,7 +69,7 @@ theorem order9_constant_amplitude_of_capacity {A : Matrix (Fin 12) (Fin 12) K}
 /-- Only the sum of actual output coefficients of the off rows cancels.
 No individual weight, and no weight of an on copy of the clock, is assumed zero. -/
 theorem ConstantAmplitude.off_weight_cancel {a d : K} {i j : Fin s}
-    (D : ConstantAmplitude A a d i j) (ho : HasOrder A b p) (paid : 3 ≤ p) :
+    (D : ConstantAmplitude A a d i j) (ho : HasOrder p A b) (paid : 3 ≤ p) :
     ∑ l ∈ Finset.univ.filter (fun l => g A l ≠ 0), b l = 0 := by
   classical
   have pay : probe A b 0 (g A) = 0 :=

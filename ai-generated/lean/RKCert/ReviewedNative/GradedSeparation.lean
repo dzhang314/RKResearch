@@ -37,7 +37,7 @@ theorem coeffEval_mem_treeSpace (A : Matrix ι ι R) (q : ℕ) (a : Fin (q+1)→
 
 /-- Tree space is literally the sum of the clock polynomial image and the
 homogeneous defect span. The forest-factorial unit is derived from order. -/
-theorem treeSpace_coeff_sup (ho:HasOrder A b p) {q:ℕ} (pay:q+1≤p) :
+theorem treeSpace_coeff_sup (ho:HasOrder p A b) {q:ℕ} (pay:q+1≤p) :
     treeSpace A q=(coeffEval A q).range⊔zeroSpace A q := by
   apply le_antisymm _ (sup_le ?_ (zeroSpace_le_treeSpace A q))
   · apply Submodule.span_le.mpr
@@ -74,21 +74,22 @@ section Field
 variable {ι K : Type*} [Fintype ι] [Field K]
 variable {A : Matrix ι ι K} {b : ι → K} {p : ℕ}
 
-theorem probe_coeffEval (ho:HasOrder A b p) {k q:ℕ} (pay:k+q+1≤p)
+theorem probe_coeffEval (ho:HasOrder p A b) {k q:ℕ} (pay:k+q+1≤p)
     (a:Fin (q+1)→K) :
     probe A b k (coeffEval A q a)=∑ j:Fin (q+1),a j/((k+j.val+1:ℕ):K) := by
   rw [coeffEval_apply,map_sum]
   apply Finset.sum_congr rfl
   intro j _
-  have h := probe_normTree ho (clockTree j.val) k (by rw [order_clockTree];have :=j.isLt;omega)
-  rw [order_clockTree,←Nat.add_assoc] at h
+  have h : ((k+j.val+1:ℕ):K) * probe A b k (normTree A (clockTree j.val)) = 1 := by
+    simpa only [normTree_clockTree, probe, row_apply, dotProduct, Pi.pow_apply, pow_add,
+      mul_assoc] using ho.hasQuadratureOrder (k+j.val) (by have := j.isLt; omega)
   rw [map_smul,smul_eq_mul]
   apply (eq_div_iff (IsUnit.of_mul_eq_one _ h).ne_zero).mpr
   calc
     _ = a j * (((k+j.val+1:ℕ):K)*probe A b k (normTree A (clockTree j.val))) := by ac_rfl
     _ = _ := by rw [h,mul_one]
 
-theorem moments_detect (ho:HasOrder A b p) {n d:ℕ} (hd:0<d)
+theorem moments_detect (ho:HasOrder p A b) {n d:ℕ} (hd:0<d)
     (hn:n≤p+1) (pay:∀i j:Fin n,i.val+j.val+d≤p)
     (a:Fin n→K) (test:∀i:Fin n,(∑j:Fin n,a j/((i.val+j.val+d:ℕ):K))=0) :
     ∀j,a j=0 := by
@@ -113,7 +114,7 @@ theorem moments_detect (ho:HasOrder A b p) {n d:ℕ} (hd:0<d)
   · intro i
     simpa only [Nat.cast_add,add_assoc] using test i
 
-theorem coeff_separated (ho:HasOrder A b p) {q:ℕ} (pay:2*q+1≤p)
+theorem coeff_separated (ho:HasOrder p A b) {q:ℕ} (pay:2*q+1≤p)
     (a:Fin (q+1)→K) (h:coeffEval A q a∈zeroSpace A q) : a=0 := by
   ext j
   apply moments_detect ho (d:=1) (by decide) (by omega) (fun i j=>by omega) a _ j
@@ -124,7 +125,7 @@ theorem coeff_separated (ho:HasOrder A b p) {q:ℕ} (pay:2*q+1≤p)
 /-- The explicit origin saves one row of Cauchy moments at an even
 midpoint; all tree and matrix inputs are the native reviewed ones. -/
 theorem explicit_coeff_separated {s:ℕ} {A:Matrix (Fin (s+1)) (Fin (s+1)) K}
-    {b:Fin (s+1)→K} (strict:∀i j,i≤j→A i j=0) (ho:HasOrder A b p)
+    {b:Fin (s+1)→K} (strict:∀i j,i≤j→A i j=0) (ho:HasOrder p A b)
     {q:ℕ} (pay:2*q≤p) (a:Fin (q+1)→K) (h:coeffEval A q a∈zeroSpace A q) :
     a=0 := by
   have z : coeffEval A q a 0=0 := origin_zeroSpace strict q h
@@ -139,7 +140,7 @@ theorem explicit_coeff_separated {s:ℕ} {A:Matrix (Fin (s+1)) (Fin (s+1)) K}
   ext j
   exact Fin.cases z rest j
 
-theorem treeSpace_rank_eq_of_separation (ho:HasOrder A b p) {q:ℕ} (pay:q+1≤p)
+theorem treeSpace_rank_eq_of_separation (ho:HasOrder p A b) {q:ℕ} (pay:q+1≤p)
     (sep:∀a,coeffEval A q a∈zeroSpace A q→a=0) :
     finrank K (treeSpace A q)=q+1+finrank K (zeroSpace A q) := by
   let V := (coeffEval A q).range
@@ -164,7 +165,7 @@ theorem treeSpace_rank_eq_of_separation (ho:HasOrder A b p) {q:ℕ} (pay:q+1≤p
   exact z
 
 theorem explicit_midpoint_rank_eq {s:ℕ} {A:Matrix (Fin (s+1)) (Fin (s+1)) K}
-    {b:Fin (s+1)→K} (strict:∀i j,i≤j→A i j=0) (ho:HasOrder A b p)
+    {b:Fin (s+1)→K} (strict:∀i j,i≤j→A i j=0) (ho:HasOrder p A b)
     {q:ℕ} (pay:q+1≤p) (mid:2*q≤p) :
     finrank K (treeSpace A q)=q+1+finrank K (zeroSpace A q) :=
   treeSpace_rank_eq_of_separation ho pay (explicit_coeff_separated strict ho mid)

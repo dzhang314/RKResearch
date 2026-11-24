@@ -33,7 +33,7 @@ structure ERKEvenHorizon (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K) (q : �
 auxiliary prefix argument only establishes that the last *original* weight
 is nonzero; no count or conclusion replaces the original tableau. -/
 theorem erk_even_horizon_of_stage_cap {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b p) (hq : 2≤q)
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder p A b) (hq : 2≤q)
     (pay : 2*q≤p) (cap : s≤3*q-2) : ERKEvenHorizon A b q := by
   have ff := zeroSpace_finrank ha ho (n:=q-1) (by omega)
   rw [show q-1+1=q by omega] at ff

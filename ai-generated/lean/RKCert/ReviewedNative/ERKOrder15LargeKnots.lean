@@ -68,7 +68,7 @@ private theorem weighted_at_six (S : Order15PaidStaircase A b a G r U w) (large 
 three-degree multiplier budget, and the original Jacobi mesh vanishes
 there (it need not be replaced by the zero polynomial). -/
 theorem Order15PaidStaircase.large_head_knot [CharZero K] (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15) (large : 3≤r)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b) (large : 3≤r)
     (dis : ∀ i, LiveCore.live U i → w i=0)
     (repr : ∀ i, w i≠0 → w i=P.eval (nodes A i))
     (pn : P≠0) (pd : P.natDegree≤3) (Q : K[X]) (qn : Q≠0) (qd : Q.natDegree≤3) :

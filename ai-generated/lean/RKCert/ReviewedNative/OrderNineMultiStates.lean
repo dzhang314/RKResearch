@@ -215,7 +215,7 @@ variable [CharZero K]
 /-- If at least four off states have cancelling aggregate weights, a
 hypothetical order-nine twelve-stage tableau has at most six on states. -/
 theorem order9_on_count_le_six {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12 → K)}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : 4 ≤ (offKnots A).card) (P : K[X])
     (hP : ∀ i, g A i≠0 → P.eval (nodes A i)=g A i)
     (hoff : ∀ x∈offKnots A, offMass A b x=0) :

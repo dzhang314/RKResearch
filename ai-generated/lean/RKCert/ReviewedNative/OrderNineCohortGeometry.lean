@@ -62,7 +62,7 @@ clocks is the actual first unreflected adjoint whenever those coordinates
 agree on the literal sixth tree space. Its transpose image cannot vanish:
 then only would deletion of an equal incoming row preserve order. -/
 theorem order9_contrast_of_pair {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    [CharZero K] (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    [CharZero K] (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (zero : firstSeed A b=0) (r6 : finrank K (treeSpace A 6)=11)
     {i j : Fin 12} (ij : i<j)
     (same : ∀ u∈treeSpace A 6,u i=u j) :
@@ -103,7 +103,7 @@ variable [CharZero K]
 
 theorem order9_five_on_off_stage_six_split
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) :
     finrank K (treeSpace A 6)=11 ∧
       treeSpace A 6 = onOffSpace A ⊔ Submodule.span K {Pi.single (Fin.last 11) 1} := by
@@ -149,7 +149,7 @@ theorem order9_five_on_off_stage_six_split
 
 theorem order9_five_on_off_reverse_contrast
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) :
     ∃ i j : Fin 12, i < j ∧ j < Fin.last 11 ∧ lowStateAt A i=lowStateAt A j ∧
       ∃ a : K, a≠0 ∧

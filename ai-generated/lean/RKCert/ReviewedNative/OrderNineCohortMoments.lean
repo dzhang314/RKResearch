@@ -12,7 +12,7 @@ variable {K : Type*} [Field K] {s p : ℕ}
 /-- Generic all-physical row tests. Each clock is tagged before
 aggregation, so a shared clock never merges clean and defective rows. -/
 theorem defect_polynomial_pair_zero {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ho : HasOrder A b p) {j q : ℕ} (pay : j+q+1≤p)
+    (ho : HasOrder p A b) {j q : ℕ} (pay : j+q+1≤p)
     {v : Fin s→K} (hv : v∈zeroSpace A j) (P : K[X]) (hp : P.natDegree≤q) :
     row b (diag (evalNodes A P) v)=0 := by
   rw [evalNodes_eq_coeffEval A P hp,coeffEval_apply]
@@ -53,7 +53,7 @@ theorem probe_eq_on_weights {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
 
 /-- Polynomial moment injectivity without the origin hypothesis. -/
 theorem zero_of_full_profile_probes {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
-    (ho : HasOrder A b p) (q : ℕ) (hp : 2*q+1 ≤ p)
+    (ho : HasOrder p A b) (q : ℕ) (hp : 2*q+1 ≤ p)
     (P : K[X]) (hd : P.natDegree ≤ q)
     (hm : ∀ i : Fin (q+1), probe A b i.val (evalNodes A P)=0) : P=0 := by
   let a : Fin (q+1) → K := fun j => P.coeff j.val
@@ -67,7 +67,7 @@ theorem zero_of_full_profile_probes {A : Matrix (Fin s) (Fin s) K} {b : (Fin s�
   · simpa using (Polynomial.coeff_eq_zero_of_natDegree_lt (by omega : P.natDegree < n))
 
 theorem order9_five_on_weights_nonzero {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
-    (ho : HasOrder A b 9) (hM : (cleanKnots A).card=5)
+    (ho : HasOrder 9 A b) (hM : (cleanKnots A).card=5)
     (hoff : ∀ x∈offKnots A, offMass A b x=0)
     {x : K} (hx : x∈cleanKnots A) : onWeight A b x≠0 := by
   intro hz
@@ -120,7 +120,7 @@ theorem row_onOff_eval_eq_onWeights {A : Matrix (Fin s) (Fin s) K} {b : (Fin s�
 /-- Only after actual E5 is state-valued can the four nonzero on-node
 moment equations turn every fifth-grade defect into an on-row zero. -/
 theorem state_defect_five_zero_on [CharZero K] {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
-    {b : (Fin (s+1)→K)} (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    {b : (Fin (s+1)→K)} (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hM : (cleanKnots A).card=5)
     (hoff : ∀ x∈offKnots A, offMass A b x=0)
     {v : (Fin (s+1)→K)} (hv : v∈zeroSpace A 5) (hstate : v∈onOffSpace A)
@@ -170,7 +170,7 @@ theorem state_defect_five_zero_on [CharZero K] {A : Matrix (Fin (s+1)) (Fin (s+1
 
 
 theorem treeSpace_four_profile {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ho : HasOrder A b 9) {v : Fin s→K} (hv : v∈treeSpace A 4) (hF : zeroSpace A 4=band A 2) :
+    (ho : HasOrder 9 A b) {v : Fin s→K} (hv : v∈treeSpace A 4) (hF : zeroSpace A 4=band A 2) :
     ∃ Q R : K[X], Q.natDegree≤4 ∧ R.natDegree≤2 ∧
       evalNodes A Q+diag (OneOff.g A) (evalNodes A R)=v := by
   rw [treeSpace_coeff_sup ho (by decide),Submodule.mem_sup] at hv

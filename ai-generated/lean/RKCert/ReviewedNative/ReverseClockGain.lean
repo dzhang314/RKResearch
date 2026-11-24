@@ -28,7 +28,7 @@ private theorem weighted_reflected_monomial (k : ℕ) (a : K) :
 
 /-- Exactly the reflected scalar polynomial moments, evaluated on the
 original clocks, with no claim of order for a reversed RK tableau. -/
-theorem reflected_polynomial_mass (ho : HasOrder A b p) (P : K[X]) (pay : P.natDegree+1 ≤ p) :
+theorem reflected_polynomial_mass (ho : HasOrder p A b) (P : K[X]) (pay : P.natDegree+1 ≤ p) :
     (∑ i, weightedEval (reflectedClock A) b P i) = (primitive P).eval 1 := by
   let J : K[X] →ₗ[K] K := (Polynomial.leval 1).comp primitive
   let L : K[X] →ₗ[K] K := (row (1 : Fin s → K)).comp (weightedEval (reflectedClock A) b)
@@ -74,7 +74,7 @@ private theorem primitive_shift_sum (P : K[X]) {r : ℕ} (d : P.natDegree ≤ r)
   exact h
 
 /-- Signed reflected moment budget forces unmatched nonzero clock blocks. -/
-theorem reverse_failed_clock_blocks (ho : HasOrder A b p)
+theorem reverse_failed_clock_blocks (ho : HasOrder p A b)
     (U : Submodule K (Fin s → K)) (mask : MaskInvariant (reflectedClock A) U)
     (mass : ∀ v∈U, ∑ i, v i = 0) {r : ℕ} (pay : 2*r ≤ p) :
     r ≤ (failedNodes (reflectedClock A) b U s).card := by
@@ -147,7 +147,7 @@ theorem reverse_primitive_next (n : ℕ) (P : K[X]) (d : P.natDegree ≤ n+1) :
 
 /-- Genuine outgoing Hermite gain for a clock-invariant reverse flag. -/
 theorem reverse_clock_invariant_gain (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b p) (n : ℕ) (pay : n+2 ≤ p)
+    (ho : HasOrder p A b) (n : ℕ) (pay : n+2 ≤ p)
     (inv : (primitiveBack A b n).map (diag (reflectedClock A)) ≤ primitiveBack A b n) :
     finrank K (primitiveBack A b n)+(n+2)/2 ≤ finrank K (primitiveBack A b (n+1)) := by
   let U := primitiveBack A b n

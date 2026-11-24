@@ -89,7 +89,7 @@ theorem zeroSpace_mul {m n : ℕ} {v w : ι→R}
   exact (zeroSpace A (m+n)).sub_mem (mul_normDiff _ _ _ eq ht hr)
     (mul_normDiff _ _ _ eq ht (er ▸ hr))
 
-theorem zeroSpace_mul_treeSpace (ho:HasOrder A b p) {m n:ℕ} (pay:n+1≤p)
+theorem zeroSpace_mul_treeSpace (ho:HasOrder p A b) {m n:ℕ} (pay:n+1≤p)
     {v w:ι→R} (hv:v∈zeroSpace A m) (hw:w∈treeSpace A n) :
     v*w∈zeroSpace A (m+n) := by
   rw [←LinearMap.mul_apply' (R:=R)]

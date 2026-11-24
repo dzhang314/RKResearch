@@ -59,7 +59,7 @@ variable {T : Matrix (Fin s) (Fin s) K} {w : Fin s → K}
 
 /-- The native backwards primitive residual lies in the annihilator at
 exactly the monomial moment budget. -/
-theorem reverse_primitive_paid (ho : HasOrder T w p) (j : ℕ) (P : K[X]) (q : ℕ)
+theorem reverse_primitive_paid (ho : HasOrder p T w) (j : ℕ) (P : K[X]) (q : ℕ)
     (dP : P.natDegree ≤ q) (pay : j+q+2 ≤ p) :
     mat T.transpose (weightedEval (reflectedClock T) w P) -
       weightedEval (reflectedClock T) w (primitive P) ∈ annih (treeSpace T j) := by
@@ -86,7 +86,7 @@ theorem reverse_primitive_paid (ho : HasOrder T w p) (j : ℕ) (P : K[X]) (q : �
 variable {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
 
 theorem order9_grade_five_clock_noninvariant (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (full : finrank K (treeSpace A 5)=10) :
+    (ho : HasOrder 9 A b) (full : finrank K (treeSpace A 5)=10) :
     ¬ (treeSpace A 5).map (diag (nodes A)) ≤ treeSpace A 5 := by
   intro inv
   let U := annih (treeSpace A 5)

@@ -23,7 +23,7 @@ private theorem clock_eval_X (A : Matrix (Fin (s+1)) (Fin (s+1)) K) (P : K[X]) :
     diag (nodes A) (evalNodes A P)=evalNodes A (X*P) := by ext i; simp
 
 private theorem paid_poly_line {j : ℕ} (S : Order15PaidStaircase A b a G r U w)
-    (ho : HasOrder A b 15) (lo : a+1≤j) (hi : j≤12) (P : K[X]) (pd : P.natDegree≤a+1)
+    (ho : HasOrder 15 A b) (lo : a+1≤j) (hi : j≤12) (P : K[X]) (pd : P.natDegree≤a+1)
     (hp : evalNodes A P∈order15HeadBand A a r j U w) :
     ∃ t : K, P=Polynomial.C t*G := by
   have gn : G≠0 := by
@@ -56,7 +56,7 @@ private theorem paid_poly_line {j : ℕ} (S : Order15PaidStaircase A b a G r U w
   exact ⟨t,sub_eq_zero.mp (S.band_separated ho lo hi Q qd qm)⟩
 
 private theorem grade_ten_mesh_shift (S : Order15PaidStaircase A b a G r U w)
-    (ho : HasOrder A b 15) {P Q : K[X]} {v : Fin (s+1)→K}
+    (ho : HasOrder 15 A b) {P Q : K[X]} {v : Fin (s+1)→K}
     (p : P.natDegree≤a) (q : Q.natDegree≤a)
     (hv : v-evalNodes A P∈order15HeadBand A a r 10 U w)
     (hd : diag (nodes A) v-evalNodes A Q∈order15HeadBand A a r 10 U w) :
@@ -82,7 +82,7 @@ private theorem grade_ten_mesh_shift (S : Order15PaidStaircase A b a G r U w)
 Only the available charged moments are asserted, not the eventual
 full Cauchy window. -/
 theorem Order15PaidStaircase.ten_poly_decompose (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15)
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b)
     {v : Fin (s+1)→K} (hv : v∈markedDefectSpace A b 10) :
     ∃ P : K[X], P.natDegree≤a ∧ P.coeff 0=0 ∧
       v-evalNodes A P∈order15HeadBand A a r 10 U w ∧
@@ -114,7 +114,7 @@ theorem Order15PaidStaircase.ten_poly_decompose (S : Order15PaidStaircase A b a 
 correction on the actual chart. Two shifts suffice unmarked, and
 three suffice on the marked branch. -/
 theorem Order15PaidStaircase.ten_leak_free_all (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15)
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b)
     {v : Fin (s+1)→K}
     (hv : ∀ i≤2+terminalDebit A b, (diag (nodes A)^i) v∈markedDefectSpace A b 10) :
     ∀ i≤2+terminalDebit A b, (diag (nodes A)^i) v∈order15HeadBand A a r 10 U w := by
@@ -168,7 +168,7 @@ theorem Order15PaidStaircase.ten_leak_free_all (S : Order15PaidStaircase A b a G
   rwa [every i hi,map_zero,sub_zero] at e
 
 theorem Order15PaidStaircase.ten_leak_free (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15)
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b)
     {v : Fin (s+1)→K}
     (hv : ∀ i≤2+terminalDebit A b, (diag (nodes A)^i) v∈markedDefectSpace A b 10) :
     v∈order15HeadBand A a r 10 U w := by

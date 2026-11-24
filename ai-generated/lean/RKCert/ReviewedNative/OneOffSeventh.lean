@@ -13,7 +13,7 @@ open scoped Classical Matrix
 variable {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
 
 omit [CharZero K] in
-theorem no_further_on_same_clock (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem no_further_on_same_clock (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (rk : finrank K (treeSpace A 5)=10) (mEq : LinearMap.range (normalProfileMap A)=treeSpace A 5)
     {l m r : Fin 12} (pre : IndependentBefore (treeSpace A 4) r) (lr : l < r) (mr : m < r)
     (lc : nodes A l=nodes A r) (mc : nodes A m=nodes A r)
@@ -25,7 +25,7 @@ theorem no_further_on_same_clock (ha : ∀ i j, i ≤ j → A i j = 0) (ho : Has
     field_simp [sub_ne_zero.mpr dh]
     ring
 
-theorem off_repeats_first (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem off_repeats_first (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j r : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (rk : finrank K (treeSpace A 5)=10) (mEq : LinearMap.range (normalProfileMap A)=treeSpace A 5)
     (pre : IndependentBefore (treeSpace A 4) r) (r1 : (1:Fin 12)<r) (off : g A r≠0) : False := by
@@ -50,7 +50,7 @@ structure TwoFibres (A : Matrix (Fin 12) (Fin 12) K) (a d z : K) : Prop where
   z1 : z≠1
 
 set_option maxHeartbeats 2100000 in
-theorem order9_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     TwoFibres A a d (nodes A (5:Fin 12)) := by
   let r : Fin 12 := 6
@@ -205,7 +205,7 @@ theorem order9_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A
 /-- The actual seventh physical row closes the second fibre, with its
 cubic/quartic terminal profile paid by native reviewed order. -/
 theorem order9_one_off_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (off : (offKnots A).card = 1) :
+    (ho : HasOrder 9 A b) (off : (offKnots A).card = 1) :
     ∃ (a d : K) (i j : Fin 12), GlobalNormal A a d i j ∧ FirstFour A a d (by decide) ∧
       TwoFibres A a d (nodes A (5:Fin 12)) := by
   obtain ⟨a,d,i,j,D,F⟩ := order9_first_four ha ho off

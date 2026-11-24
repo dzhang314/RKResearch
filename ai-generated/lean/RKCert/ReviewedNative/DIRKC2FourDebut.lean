@@ -17,7 +17,7 @@ variable {U : Submodule K (Fin s → K)}
 /-- A grade-four exterior head cannot pass the four physical debut
 cuts after a single-clock cubic core. The final scalar algebra is frozen;
 all its inputs are derived here from the reviewed tableau flags. -/
-theorem no_grade_four_exterior_head (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 8≤p)
+theorem no_grade_four_exterior_head (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 8≤p)
     (C : CoreMask A U) (inside : U≤zeroSpace A 3)
     (D : ClockDebuts A C.mask 4)
     (f4 : zeroSpace A 4=chain (diag (nodes A)) U w 1)
@@ -105,7 +105,7 @@ ordinary grade-six surplus once order eight is attained. The clock-invariant
 and clock-escaping F3 branches are both derived, not chart premises. -/
 theorem dirk_grade_six_surplus_C2 {K : Type*} [Field K] [CharZero K] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 8≤p)
+    (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 8≤p)
     (c₂ : monomialStageDefect A 1=0) :
     finrank K (zeroSpace A 3)+4≤finrank K (zeroSpace A 6) := by
   by_cases inv : (zeroSpace A 3).map (diag (nodes A)) ≤ zeroSpace A 3

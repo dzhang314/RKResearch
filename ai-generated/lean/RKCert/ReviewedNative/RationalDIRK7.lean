@@ -68,7 +68,7 @@ theorem lowerTriangular : A.IsLowerTriangular := by
 
 set_option maxHeartbeats 4000000 in
 /-- Independent positive certificate for *all* rooted trees through order seven. -/
-theorem order_seven : HasOrder A b 7 := by
+theorem order_seven : HasOrder 7 A b := by
   apply (checkOrder_iff A b 7).mp
   decide +kernel
 
@@ -94,7 +94,7 @@ theorem eighth_bush_weight : b ⬝ᵥ Φ (bushyTree 8) A = 167931/1344560 := by
   rw [Φ_bushyTree, row_sums]
   decide +kernel
 
-theorem not_order_eight : ¬ HasOrder A b 8 := by
+theorem not_order_eight : ¬ HasOrder 8 A b := by
   intro h
   have ht := h (bushyTree 8) (by rw [order_bushyTree]; decide)
   rw [factorial_bushyTree, eighth_bush_weight] at ht

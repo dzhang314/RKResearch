@@ -4,7 +4,7 @@ open RKResearch RKResearch.Certified.Graded Module Polynomial
 
 example {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
     {A : Matrix (Fin 26) (Fin 26) K} {b : Fin 26 → K}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 17)
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 17 A b)
     (small : finrank K (zeroSpace A 8)≤8) :
     finrank K (zeroSpace A 4)=4 ∧ ∃ r U w, FlatClockHead A 4 4 r U w :=
   ordered_grade_eight_quartic_only ha ho (by decide) small

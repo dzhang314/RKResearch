@@ -164,7 +164,7 @@ theorem Crouzeix34.algebraic_root :
 
 theorem exists_strictSDIRK_exact_three_realAlgebraic :
     ∃ (A : Matrix (Fin 2) (Fin 2) ℝₐ) (b : Fin 2 → ℝₐ) (γ : ℝₐ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 3 ∧ ¬ HasOrder A b 4 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 3 A b ∧ ¬ HasOrder 4 A b := by
   obtain ⟨x, -, hx⟩ := NorsettCrouzeix23.algebraic_root
   exact ⟨NorsettCrouzeix23.A x, NorsettCrouzeix23.b, smallSDIRKGamma x,
     NorsettCrouzeix23.lowerTriangular x, NorsettCrouzeix23.diagonal x,
@@ -173,7 +173,7 @@ theorem exists_strictSDIRK_exact_three_realAlgebraic :
 
 theorem exists_strictSDIRK_exact_four_realAlgebraic :
     ∃ (A : Matrix (Fin 3) (Fin 3) ℝₐ) (b : Fin 3 → ℝₐ) (γ : ℝₐ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 4 ∧ ¬ HasOrder A b 5 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 4 A b ∧ ¬ HasOrder 5 A b := by
   obtain ⟨x, -, hx⟩ := Crouzeix34.algebraic_root
   exact ⟨Crouzeix34.A x, Crouzeix34.b x, smallSDIRKGamma x,
     Crouzeix34.lowerTriangular x, Crouzeix34.diagonal x, Crouzeix34.diagonal_ne_zero hx,

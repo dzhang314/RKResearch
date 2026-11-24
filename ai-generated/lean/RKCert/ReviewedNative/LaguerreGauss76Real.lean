@@ -78,7 +78,7 @@ private theorem exact_exists_of_roots {K : Type*} [Field K] [CharZero K]
     {x y : K} (hx : x^2 = 2) (hy : y^2 = 15) :
     ∃ (A : Matrix (Fin 7) (Fin 7) K) (b : Fin 7 → K),
       A.IsLowerTriangular ∧ (∀ i, A i i = 1/2) ∧ (1/2:K) ≠ 0 ∧
-        HasOrder A b 6 ∧ ¬ HasOrder A b 7 := by
+        HasOrder 6 A b ∧ ¬ HasOrder 7 A b := by
   let f := specialize x y hx hy
   exact ⟨A.map f, f ∘ b, exact_map f⟩
 
@@ -87,7 +87,7 @@ six in the actual field of real algebraic numbers. -/
 theorem exact_realAlgebraic :
     ∃ (A : Matrix (Fin 7) (Fin 7) ℝₐ) (b : Fin 7 → ℝₐ),
       A.IsLowerTriangular ∧ (∀ i, A i i = 1/2) ∧ (1/2:ℝₐ) ≠ 0 ∧
-        HasOrder A b 6 ∧ ¬ HasOrder A b 7 := by
+        HasOrder 6 A b ∧ ¬ HasOrder 7 A b := by
   obtain ⟨x, -, hx⟩ := positive_algebraic_root 2 (by decide)
   obtain ⟨y, -, hy⟩ := positive_algebraic_root 15 (by decide)
   exact exact_exists_of_roots hx hy
@@ -95,7 +95,7 @@ theorem exact_realAlgebraic :
 theorem exact_real :
     ∃ (A : Matrix (Fin 7) (Fin 7) ℝ) (b : Fin 7 → ℝ),
       A.IsLowerTriangular ∧ (∀ i, A i i = 1/2) ∧ (1/2:ℝ) ≠ 0 ∧
-        HasOrder A b 6 ∧ ¬ HasOrder A b 7 := by
+        HasOrder 6 A b ∧ ¬ HasOrder 7 A b := by
   obtain ⟨x, -, hx⟩ := exists_positive_square_root (r := 2) (by norm_num)
   obtain ⟨y, -, hy⟩ := exists_positive_square_root (r := 15) (by norm_num)
   exact exact_exists_of_roots hx hy

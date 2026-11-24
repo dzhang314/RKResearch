@@ -21,7 +21,7 @@ variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1)→K}
 variable {G : K[X]} {w : Fin (s+1)→K} {U : Submodule K (Fin (s+1)→K)}
 
 omit [CharZero K] in
-private theorem adjacent_unit_of_charged (ho : HasOrder A b 15) (seed : firstSeed A b=0)
+private theorem adjacent_unit_of_charged (ho : HasOrder 15 A b) (seed : firstSeed A b=0)
     (P : K[X]) (pd : P.natDegree≤8) (k : ℕ) (hk : k≤5)
     (h : chargedProbe A b k (evalNodes A P)=0) :
     (formalPrimitive (X^k*P)).eval 1=(formalPrimitive (X^(k+1)*P)).eval 1 := by
@@ -33,7 +33,7 @@ private theorem adjacent_unit_of_charged (ho : HasOrder A b 15) (seed : firstSee
 /-- The square of the physical head and its next two shifts actually
 belong to the grade-ten head band. No further square credit is assumed. -/
 theorem Order15PaidStaircase.three_terminal_squares (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (seed : firstSeed A b=0) (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     (dis : ∀ i, LiveCore.live U i → w i=0) :
     ∀ k≤2, (diag (nodes A)^k) (w*w)∈order15HeadBand A a 2 10 U w := by

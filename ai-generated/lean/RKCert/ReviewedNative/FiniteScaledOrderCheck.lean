@@ -96,7 +96,7 @@ theorem hasOrder_of_scaled_moments (f : R →+* S) {d e : R} {p : ℕ}
     (hd : IsUnit (f d)) (he : IsUnit (f e))
     (h : ∀ t : FiniteRootedTree, (t.order:ℕ) ≤ p →
       (t.factorial : R) * (b ⬝ᵥ Φ t A) = e*d^((t.order:ℕ)-1)) :
-    HasOrder U w p := by
+    HasOrder p U w := by
   intro t ht
   have hn := congrArg f (h t ht)
   simp only [map_mul, map_pow, map_natCast, RingHom.map_dotProduct, map_Φ_coefficients,
@@ -109,7 +109,7 @@ theorem hasOrder_of_scaled_check [DecidableEq R] (f : R →+* S) {d e : R} {p : 
     (hact : ∀ v, act v = A *ᵥ v) (hout : ∀ v, out v = b ⬝ᵥ v)
     (hA : A.map f = f d • U) (hb : f ∘ b = f e • w)
     (hd : IsUnit (f d)) (he : IsUnit (f e))
-    (h : checkScaledOrder act out d e p = true) : HasOrder U w p :=
+    (h : checkScaledOrder act out d e p = true) : HasOrder p U w :=
   hasOrder_of_scaled_moments f hA hb hd he ((checkScaledOrder_spec hact hout d e p).mp h)
 
 end Transport

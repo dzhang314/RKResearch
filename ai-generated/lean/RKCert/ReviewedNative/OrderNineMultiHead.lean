@@ -155,7 +155,7 @@ theorem clean_four_vanish (hF : zeroSpace A 4=band A 2) {i : Fin s}
   simp [clean]
 
 theorem order9_two_curve_head [CharZero K] (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b 9) (cap : s≤12) (many : 3≤(offKnots A).card) :
+    (ho : HasOrder 9 A b) (cap : s≤12) (many : 3≤(offKnots A).card) :
     ∃ P : K[X], P.natDegree≤2 ∧ P≠0 ∧ zeroSpace A 3=band A 1 ∧ zeroSpace A 4=band A 2 ∧
       ∀ i, g A i≠0 → P.eval (nodes A i)=g A i := by
   obtain ⟨_,r3,r4,_⟩ := order9_forward_chart ha ho cap

@@ -10,7 +10,7 @@ open scoped Matrix Classical
 variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 
 theorem order9_nodal_radau {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1)→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hM : (cleanKnots A).card=5)
     (hoff : ∀ x∈offKnots A, offMass A b x=0) :
     nodalHull ((cleanKnots A).erase 0)=RKCert.Paired.radauQuartic := by
@@ -37,7 +37,7 @@ theorem radau_on_root {A : Matrix (Fin s) (Fin s) K}
   exact nodalHull_eval_of_mem (Finset.mem_erase.mpr ⟨hx,hOn⟩)
 
 theorem order9_five_on_head_not_dvd {s:ℕ} {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1)→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) (hM : (cleanKnots A).card=5)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) (hM : (cleanKnots A).card=5)
     (hOffWeights : ∀ x∈offKnots A, offMass A b x=0)
     (hF : zeroSpace A 4=band A 2) (P : K[X]) (hd : P.natDegree≤2)
     (off : ∀i, g A i≠0 → P.eval (nodes A i)=g A i) : ¬ P∣nodalHull (cleanKnots A) := by

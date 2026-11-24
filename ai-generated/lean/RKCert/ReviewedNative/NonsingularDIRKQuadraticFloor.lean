@@ -85,7 +85,7 @@ open Certified.Graded
 suffice for the quadratic stage floor at every achieved positive order. -/
 theorem HasOrder.nonsingular_quadratic_stage_floor_field {K : Type*} [Field K] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ho : HasOrder A b p) (ha : A.IsLowerTriangular) (hn : ∀ i, A i i ≠ 0) (hp : 0 < p) :
+    (ho : HasOrder p A b) (ha : A.IsLowerTriangular) (hn : ∀ i, A i i ≠ 0) (hp : 0 < p) :
     ((p+1)^2/4+1)/2 ≤ s := by
   rw [← nonsingularStageFloor_eq_quadratic p hp]
   exact nonsingular_stageFloor_field ho ha hn hp
@@ -94,7 +94,7 @@ theorem HasOrder.nonsingular_quadratic_stage_floor_field {K : Type*} [Field K] {
 again without a cap on order or a separate characteristic hypothesis. -/
 theorem HasOrder.nonsingular_quadratic_stage_floor {R : Type*} [CommRing R] [Nontrivial R] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (ho : HasOrder A b p) (ha : A.IsLowerTriangular) (hu : ∀ i, IsUnit (A i i)) (hp : 0 < p) :
+    (ho : HasOrder p A b) (ha : A.IsLowerTriangular) (hu : ∀ i, IsUnit (A i i)) (hp : 0 < p) :
     ((p+1)^2/4+1)/2 ≤ s := by
   rw [← nonsingularStageFloor_eq_quadratic p hp]
   exact ho.nonsingular_stageFloor ha hu hp

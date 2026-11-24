@@ -18,7 +18,7 @@ defect generates the length 1,2,3,4 clock chains in F3,F4,F5,F6.
 This uses C(2) and the non-invariant early branch; it does not equate
 C(2) with clock invariance, nor does it exclude this branch. -/
 theorem dirk_grade_six_C2_early_cubic_profile
-    (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 7≤p)
+    (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 7≤p)
     (c₂ : monomialStageDefect A 1=0)
     (bad : ¬ finrank K (zeroSpace A 3)+4≤finrank K (zeroSpace A 6))
     (esc : ¬ (zeroSpace A 3).map (diag (nodes A))≤zeroSpace A 3) :

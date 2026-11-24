@@ -56,7 +56,7 @@ variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 At least r such blocks are forced whenever order 2r pays the shifted
 Cauchy tests. The argument also works in every admissible positive
 characteristic; the paid-unit theorem separates denominators. -/
-theorem paid_failed_clock_blocks (ho : HasOrder A b p) (pay : j+1≤p)
+theorem paid_failed_clock_blocks (ho : HasOrder p A b) (pay : j+1≤p)
     {U : Submodule K (Fin s → K)} (hUF : U≤zeroSpace A j)
     (hmask : MaskInvariant (nodes A) U) {r : ℕ} (paid : 2*r≤p) :
     r≤(failedNodes (nodes A) 1 U s).card := by

@@ -27,7 +27,7 @@ private theorem forward_stable_of_reverse_stable (E : Submodule K (Fin 19→K))
 variable [CharZero K]
 
 private theorem order13_reverse_residual_paid (ha : ∀ i j,i≤j → A i j=0)
-    (ho : HasOrder A b 13) {n : ℕ} (lo : 1≤n) (hi : n≤4) :
+    (ho : HasOrder 13 A b) {n : ℕ} (lo : 1≤n) (hi : n≤4) :
     normalizedResidual A b n∈back A b n := by
   obtain ⟨hb,hp,_⟩ := order13_reverse_window ha ho lo hi
   rw [hb,←hp]
@@ -39,7 +39,7 @@ private theorem order13_reverse_residual_paid (ha : ∀ i j,i≤j → A i j=0)
 /-- At marked order thirteen, the actual first reverse line cannot be
 clock-stable. The two further genuine monomial residuals are paid, so
 the neutral physical two-node obstruction applies. -/
-theorem order13_marked_reverse_first_escapes (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 13)
+theorem order13_marked_reverse_first_escapes (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 13 A b)
     (first : firstSeed A b=0) :
     ¬(back A b 1).map (diag (reflectedClock A))≤back A b 1 := by
   have F := order13_paid_frame ha ho
@@ -65,7 +65,7 @@ theorem order13_marked_reverse_first_escapes (ha : ∀ i j,i≤j → A i j=0) (h
 /-- The actual marked forward space at grade ten must have one more
 clock direction. Since its rank is eighteen, the whole physical
 19-dimensional column space is paid at grade eleven. -/
-theorem order13_marked_grade_eleven (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 13)
+theorem order13_marked_grade_eleven (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 13 A b)
     (first : firstSeed A b=0) :
     markedTreeSpace A b 11=⊤ ∧
       markedTreeSpace A b 11=markedTreeSpace A b 10⊔(markedTreeSpace A b 10).map (diag (nodes A)) := by

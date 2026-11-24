@@ -2,7 +2,7 @@
 
 The reviewed field-theoretic consumer is
 `RKResearch.Certified.Graded.order15_first_escape_chart`. It assumes
-strict lower triangularity, `RKResearch.HasOrder A b 15`, and at most
+strict lower triangularity, `RKResearch.HasOrder 15 A b`, and at most
 22 stages over a characteristic-zero field. No physical rank, output
 sign, distinct node or synthetic tableau is assumed.
 

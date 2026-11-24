@@ -3,7 +3,7 @@ open RKResearch RKResearch.Certified.Graded Module RKCert.Endpoint Polynomial
 
 -- The answer is a hypothesis for later physical geometry, not rank nine by assertion.
 example {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 26) (Fin 26) K}
-    {b : Fin 26 → K} (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 17)
+    {b : Fin 26 → K} (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 17 A b)
     (cap : finrank K (zeroSpace A 8)≤8) :
     ∃ r U w, 2≤r ∧ finrank K (zeroSpace A 5)=5 ∧ FlatClockHead A 5 3 r U w :=
   grade_eight_thin_head ha ho (by decide) cap

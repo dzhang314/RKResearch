@@ -7,7 +7,7 @@ open RKResearch RKResearch.Certified.Graded RKResearch.Certified.Graded.Reverse
 
 example {K : Type*} [Field K] [CharZero K]
     {A : Matrix (Fin 19) (Fin 19) K} {b : Fin 19 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder A b 13)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder 13 A b)
     (seedZero : firstSeed A b = 0) :
     markedTreeSpace A b 11 = ⊤ ∧
     markedTreeSpace A b 11 = markedTreeSpace A b 10 ⊔

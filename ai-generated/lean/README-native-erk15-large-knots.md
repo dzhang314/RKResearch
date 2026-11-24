@@ -2,7 +2,7 @@
 
 The actual stage space, clock, matrix and order statement are from the
 reviewed RKResearch API. In particular the consumer takes
-`RKResearch.HasOrder A b 15` without any conversion. No branch changes the
+`RKResearch.HasOrder 15 A b` without any conversion. No branch changes the
 tableau or assumes distinct physical stage clocks.
 
 * `PhysicalHeadKnot`: The first stage not represented by the live core or

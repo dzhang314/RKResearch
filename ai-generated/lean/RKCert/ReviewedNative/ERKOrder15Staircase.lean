@@ -51,7 +51,7 @@ variable [CharZero K]
 
 /-- At a saturated paid grade j, an invariant physical forward space
 pays floor((15-j)/2) against the immediately preceding physical grade. -/
-theorem order15_marked_clock_debit (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_marked_clock_debit (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b) {j : ℕ} (pos : 1≤j) (hi : j≤13)
     (sat : finrank K (markedTreeSpace A b j)=j+8+terminalDebit A b)
     (stable : (markedTreeSpace A b j).map (diag (nodes A))≤markedTreeSpace A b j) :
@@ -64,13 +64,13 @@ theorem order15_marked_clock_debit (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasO
 
 /-- The first potential alias edge specifically costs four dimensions
 under invariance, not merely the two sufficient for later edges. -/
-theorem order15_grade7_clock_debit (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_grade7_clock_debit (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b)
     (stable : (markedTreeSpace A b 7).map (diag (nodes A))≤markedTreeSpace A b 7) :
     finrank K (markedTreeSpace A b 6)+4≤finrank K (markedTreeSpace A b 7) :=
   order15_marked_clock_debit ha ho F (j:=7) (by decide) (by decide) F.rankMid stable
 
-theorem order15_grade7_clock_escapes (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_grade7_clock_escapes (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b) :
     ¬(markedTreeSpace A b 7).map (diag (nodes A))≤markedTreeSpace A b 7 := by
   intro stable
@@ -79,7 +79,7 @@ theorem order15_grade7_clock_escapes (ha : ∀ i k,i ≤ k → A i k=0) (ho : Ha
   omega
 
 /-- One actual clock step at any already full marked edge up to grade 11. -/
-theorem order15_paid_clock_step (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_paid_clock_step (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b) {j : ℕ} (lo : 7≤j) (hi : j≤11)
     (rank : finrank K (markedTreeSpace A b j)=j+8+terminalDebit A b)
     (prev : finrank K (markedTreeSpace A b (j-1))=
@@ -110,7 +110,7 @@ theorem order15_paid_clock_step (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrde
 /-- Propagate from the actual marked alias/no-alias entrance along the
 existing one-head chain. The statement carries the preceding rank so
 the earliest two-dimensional jump is never mistaken for a unit step. -/
-theorem order15_paid_staircase_of_first (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_paid_staircase_of_first (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b) {a l : ℕ} {G : K[X]} {U : Submodule K (Fin (s+1)→K)}
     {w : Fin (s+1)→K} (C : Order15FirstEscapeChart A b a G)
     (len : 0<l) (stable : U.map (diag (nodes A))≤U)
@@ -157,7 +157,7 @@ structure Order15PaidStaircase (A : Matrix (Fin (s+1)) (Fin (s+1)) K) (b : Fin (
 
 /-- Complete actual initial-and-paid bands through grade twelve, with
 no assumed stage ranks or scalar mesh choices. -/
-theorem order15_physical_staircase (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_physical_staircase (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (cap : s+1≤22) :
     ∃ (a : ℕ) (G : K[X]) (r : ℕ) (U : Submodule K (Fin (s+1)→K)) (w : Fin (s+1)→K),
       Order15PaidStaircase A b a G r U w := by
@@ -171,7 +171,7 @@ theorem order15_physical_staircase (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasO
 
 /-- Both entrances force the same exact paid ranks at grades eight
 through twelve (in particular rank 20+d at grade twelve). -/
-theorem order15_marked_high_ranks (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_marked_high_ranks (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (cap : s+1≤22) {j : ℕ} (lo : 8≤j) (hi : j≤12) :
     finrank K (markedTreeSpace A b j)=j+8+terminalDebit A b := by
   obtain ⟨a,G,r,U,w,S⟩ := order15_physical_staircase ha ho cap

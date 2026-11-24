@@ -32,7 +32,7 @@ theorem chargedProbe_clock (k : ℕ) (u : Fin (s+1)→K) :
   · simp only [chargedProbe,z,ite_true,LinearMap.sub_apply,probe_clock]
   · simp only [chargedProbe,z,ite_false,probe_clock]
 
-theorem chargedProbe_paid (ha : ∀ i l,i ≤ l → A i l=0) (ho : HasOrder A b p)
+theorem chargedProbe_paid (ha : ∀ i l,i ≤ l → A i l=0) (ho : HasOrder p A b)
     (L : LastActive b (Fin.last s)) (k : ℕ) {u : Fin (s+1)→K}
     (h : u∈markedDefectSpace A b j) (pay : k+j+1+terminalDebit A b≤p) :
     chargedProbe A b k u=0 := by
@@ -48,7 +48,7 @@ theorem chargedProbe_paid (ha : ∀ i l,i ≤ l → A i l=0) (ho : HasOrder A b 
 
 /-- q charged moments and the vanished origin force all q+1 polynomial
 coefficients to vanish. The marked credit is a single constant Cauchy row. -/
-theorem charged_coeff_separated (ho : HasOrder A b p) (pay : 2*q+1≤p)
+theorem charged_coeff_separated (ho : HasOrder p A b) (pay : 2*q+1≤p)
     (a : Fin (q+1)→K) (h0 : a 0=0)
     (tests : ∀ i<q,chargedProbe A b i (coeffEval A q a)=0) : a=0 := by
   have form (i : ℕ) (hi : i≤q) :
@@ -77,7 +77,7 @@ theorem charged_coeff_separated (ho : HasOrder A b p) (pay : 2*q+1≤p)
   ext k
   exact Fin.cases h0 rest k
 
-theorem charged_polynomial_separated (ho : HasOrder A b p) (pay : 2*q+1≤p)
+theorem charged_polynomial_separated (ho : HasOrder p A b) (pay : 2*q+1≤p)
     (P : K[X]) (pd : P.natDegree≤q) (h0 : P.coeff 0=0)
     (tests : ∀ i<q,chargedProbe A b i (evalNodes A P)=0) : P=0 := by
   rw [evalNodes_eq_coeffEval A P pd] at tests

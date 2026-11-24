@@ -16,7 +16,7 @@ variable {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R} {γ : R}
 
 /-- Exact simultaneous characteristic-zero and common-diagonal survival
 condition. No freestanding characteristic assumption is required. -/
-theorem HasOrder.sdirk_order_six_stages_marked (ho : HasOrder A b 6)
+theorem HasOrder.sdirk_order_six_stages_marked (ho : HasOrder 6 A b)
     (ha : A.IsLowerTriangular) (hc : ∀ i, A i i = γ)
     (hm : ∀ n k : ℕ, 0 < n → (n:R) * γ^k ≠ 0) : 7 ≤ s :=
   RKCert.ReviewedNative.with_marked_charZero_field hm fun _ _ _ f hf =>
@@ -25,7 +25,7 @@ theorem HasOrder.sdirk_order_six_stages_marked (ho : HasOrder A b 6)
 
 /-- In a characteristic-zero ring, every unit diagonal survives, even if
 the ring has zero divisors. -/
-theorem HasOrder.sdirk_order_six_stages [CharZero R] (ho : HasOrder A b 6)
+theorem HasOrder.sdirk_order_six_stages [CharZero R] (ho : HasOrder 6 A b)
     (ha : A.IsLowerTriangular) (hc : ∀ i, A i i = γ) (hu : IsUnit γ) : 7 ≤ s :=
   RKCert.ReviewedNative.with_charZero_field fun _ _ _ f =>
     (ho.map_coefficients f).sdirk_order_six_stages_field (ha.map f)

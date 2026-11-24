@@ -26,7 +26,7 @@ open scoped Classical Matrix
 -- The final native consumer needs no assumed shape, rank, or weights.
 example {K : Type*} [Field K] [CharZero K]
     {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (off : (offKnots A).card = 1) :
     finrank K (treeSpace A 5) = 10 ∧ b (Fin.last 11) ≠ 0 ∧
       nodes A (Fin.last 11) = 1 ∧ h A (Fin.last 11) = 0 := by

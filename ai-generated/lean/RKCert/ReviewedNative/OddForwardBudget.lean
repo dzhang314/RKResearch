@@ -15,7 +15,7 @@ variable {K : Type*} [Field K] {s p q d : ℕ}
 variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 
 theorem coeff_separated_next (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) (pay : 2*q+1 ≤ p) (a : Fin (q+1) → K)
+    (ho : HasOrder p A b) (pay : 2*q+1 ≤ p) (a : Fin (q+1) → K)
     (hv : coeffEval A q a ∈ zeroSpace A (q+1)) : a = 0 := by
   have h0 : coeffEval A q a 0=0 := origin_zeroSpace ha (q+1) hv
   have a0 : a 0=0 := by rw [coeffEval_origin ha] at h0; exact h0
@@ -33,7 +33,7 @@ theorem coeff_separated_next (ha : ∀ i j, i ≤ j → A i j = 0)
 
 /-- At the next ordinary grade one keeps q+1 independent polynomial
 columns with the zero-origin condition. No extra moment is borrowed. -/
-theorem odd_next_tree_rank_lower (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p)
+theorem odd_next_tree_rank_lower (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b)
     (pay : 2*q+1 ≤ p) :
     q+1+finrank K (zeroSpace A (q+1)) ≤ finrank K (treeSpace A (q+1)) := by
   let V := (coeffEval A q).range
@@ -63,7 +63,7 @@ theorem odd_next_tree_rank_lower (ha : ∀ i j, i ≤ j → A i j = 0) (ho : Has
   rwa [e] at h
 
 /-- Exact cap on next-grade defects plus the first-seed rank at odd order. -/
-theorem odd_next_paid_room (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p)
+theorem odd_next_paid_room (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b)
     (q2 : 2 ≤ q) (pay : 2*q+1 ≤ p) :
     finrank K (zeroSpace A (q+1)) + finrank K (back A b 0) + 2*q ≤ s+2 := by
   have lo:=odd_next_tree_rank_lower ha ho pay
@@ -81,7 +81,7 @@ structure OddBalancedFrame (A : Matrix (Fin (s+1)) (Fin (s+1)) K)
 
 /-- At an order-specific forward surplus, the actual stage cap buys the
 whole odd frame, with measured ranks and an earned last-active line. -/
-theorem odd_short_frame (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p)
+theorem odd_short_frame (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b)
     (q2 : 2 ≤ q) (pay : 2*q+1 ≤ p) (upper : s+1 ≤ 3*q+d)
     (forward : q+d-1 ≤ finrank K (zeroSpace A q)) : OddBalancedFrame A b q d := by
   have sep := coeff_separated ho pay

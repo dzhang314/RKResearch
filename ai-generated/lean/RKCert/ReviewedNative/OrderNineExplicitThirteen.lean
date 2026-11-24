@@ -13,7 +13,7 @@ variable {K : Type*} [Field K]
 variable [LinearOrder K] [IsStrictOrderedRing K]
 theorem ActualSixOnFG.prefix_on_hull
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=5) (M : (cleanKnots A).card=6)
     {P : K[X]} (fit : ∀i,OneOff.g A i≠0 → P.eval (nodes A i)=OneOff.g A i)
     (fg : ActualSixOnFG A P) :
@@ -117,7 +117,7 @@ set_option maxHeartbeats 1200000 in
 including the linear and all three physical stage-placement cases. -/
 theorem ActualSixOnFG.terminal_product_zero
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=5) (M : (cleanKnots A).card=6)
     (hF : zeroSpace A 4=band A 2)
     {P : K[X]} (dP : P.natDegree≤2) (pn : P≠0)
@@ -184,7 +184,7 @@ theorem ActualSixOnFG.terminal_product_zero
 The separate scalar norm/gcd exclusion is not asserted here. -/
 theorem order9_actual_five_six_atlas_input
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=5) (M : (cleanKnots A).card=6) :
     ∃ h u v l : K,
       let W : Fin 4→K := ![h,2-l-h-u-v,u,v]
@@ -212,7 +212,7 @@ This theorem and all physical predecessors use the original tableau and
 `RKResearch.HasOrder`, not a duplicate tree or order representation. -/
 theorem order9_no_five_off_six_on
     {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (off : (offKnots A).card=5) (on : (cleanKnots A).card=6) : False := by
   obtain ⟨h,u,v,l,inj,roots,k,prod⟩ := order9_actual_five_six_atlas_input ha ho off on
   exact six_on_witness_impossible inj roots k prod
@@ -223,7 +223,7 @@ has at least thirteen stages. No restrictions on stage coincidences,
 weights, or clock ordering are required. -/
 theorem explicit_order_nine_at_least_thirteen {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 9) : 13≤s := by
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 9 A b) : 13≤s := by
   by_contra! small
   have size := (order9_forward_chart ha ho (by omega)).1
   subst s

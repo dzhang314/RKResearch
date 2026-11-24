@@ -14,7 +14,7 @@ variable {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 12) (Fin 12) K} {b 
 def IsNewOn (A : Matrix (Fin 12) (Fin 12) K) (d z : K) (r : Fin 12) : Prop :=
   g A r=0 ∧ nodes A r≠0 ∧ nodes A r≠d ∧ nodes A r≠2*d ∧ nodes A r≠z
 
-theorem next_on_after_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem next_on_after_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j r : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (D7 : TwoFibres A a d (nodes A (5:Fin 12)))
     (r6 : (6:Fin 12)<r) (rne : r≠Fin.last 11)
@@ -75,7 +75,7 @@ theorem next_on_after_two_fibres (ha : ∀ i j, i ≤ j → A i j = 0) (ho : Has
       (C4.node2.trans nc.symm) (C4.g2.trans gr.symm) ((div_left_inj₀ an).mp hh)
   exact ⟨gr,n0,nd,nt,nz⟩
 
-theorem order9_last_two_new_on (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_last_two_new_on (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (D7 : TwoFibres A a d (nodes A (5:Fin 12))) :
     IsNewOn A d (nodes A (5:Fin 12)) (7:Fin 12) ∧

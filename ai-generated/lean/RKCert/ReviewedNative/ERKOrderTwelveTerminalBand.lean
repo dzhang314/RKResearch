@@ -74,7 +74,7 @@ structure ReverseSevenNine (A : Matrix (Fin (s+1)) (Fin (s+1)) K) (b : Fin (s+1)
 
 variable [CharZero K]
 
-theorem terminal_band (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem terminal_band (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) : TerminalBand A b := by
   let t := Fin.last s
   let Z := zeroAt (zeroSpace A 7) t
@@ -123,7 +123,7 @@ theorem terminal_band (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
 
 /-- The same single head now extends to the actual seventh tree space,
 without spending a second polynomial direction. -/
-theorem exists_order_twelve_head_at_seven (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem exists_order_twelve_head_at_seven (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b) :
     ∃ r U w, 2≤r ∧ FlatClockHead A 5 1 r U w ∧
       escape7 A=chain (diag (nodes A)) U w (r+2) ∧
@@ -137,7 +137,7 @@ theorem exists_order_twelve_head_at_seven (ha : ∀ i k, i ≤ k → A i k=0) (h
 
 /-- The actual reverse flags at levels two and three would gain two
 dimensions if clock invariant, but their paid next ranks gain only one. -/
-theorem reverse_clock_escape (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem reverse_clock_escape (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) {n : ℕ} (lo : 2≤n) (hi : n<4) :
     ¬(back A b n).map (diag (reflectedClock A))≤back A b n := by
   intro inc
@@ -169,7 +169,7 @@ theorem tree_escape_of_reverse_escape {j n : ℕ}
 
 /-- Exact paid tree and actual backward flags through grade nine. This
 does not assert that the final one-dimensional reverse flag escapes. -/
-theorem reverse_seven_nine (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem reverse_seven_nine (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b) : ReverseSevenNine A b := by
   have e7 := tree_escape_of_reverse_escape T.back3
     (reverse_clock_escape ha ho S (n:=3) (by decide) (by decide))

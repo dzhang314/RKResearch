@@ -22,7 +22,7 @@ variable {K : Type*} [Field K]
 /-- A paid Hilbert kernel with one extra equation supplied by the sum of
 the actual coefficients instead of another moment. -/
 theorem paid_sum_cauchy {ι : Type*} [Fintype ι] {A : Matrix ι ι K} {b : ι → K} {p n : ℕ}
-    (ho : HasOrder A b p) (pay : 2*n+1≤p) (a : Fin (n+1) → K)
+    (ho : HasOrder p A b) (pay : 2*n+1≤p) (a : Fin (n+1) → K)
     (sum : (∑ j, a j)=0)
     (test : ∀ i : Fin n, (∑ j : Fin (n+1), a j / ((i.val+j.val+2:ℕ):K))=0) :
     a=0 := by
@@ -73,7 +73,7 @@ theorem paid_sum_cauchy {ι : Type*} [Fintype ι] {A : Matrix ι ι K} {b : ι �
 degree-(n+1) clocks from the genuine grade-j defects vanishing at t. -/
 theorem coeff_separated_two_endpoints {s p n j : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b p)
+    (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder p A b)
     (mom : 2*n+1≤p) (pay : n+j≤p) {t : Fin (s+1)} (one : nodes A t=1)
     (a : Fin (n+2) → K) (inF : coeffEval A (n+1) a∈zeroAt (zeroSpace A j) t) : a=0 := by
   obtain ⟨f,endZero⟩ := mem_zeroAt.mp inF

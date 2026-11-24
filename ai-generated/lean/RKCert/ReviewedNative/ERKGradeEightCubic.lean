@@ -17,7 +17,7 @@ variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 the intrinsic core. The proof evaluates a strictly positive cubic square
 at the same nonzero physical clock where causality forces it to vanish. -/
 theorem grade_eight_third_inside_core (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b p) (pay : 16≤p) {r : ℕ} {U : Submodule K (Fin (s+1)→K)}
+    (ho : HasOrder p A b) (pay : 16≤p) {r : ℕ} {U : Submodule K (Fin (s+1)→K)}
     {w : Fin (s+1)→K} (H : FlatClockHead A 5 3 r U w) : zeroSpace A 3 ≤ U := by
   intro v hv
   by_contra out
@@ -31,7 +31,7 @@ theorem grade_eight_third_inside_core (ha : ∀ i j, i≤j → A i j=0)
 flat quartic chart, or a rank-three core equal to F4 and already closed
 under pointwise multiplication. -/
 theorem grade_eight_remaining_two_cases (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b p) (pay : 16≤p) (cap : finrank K (zeroSpace A 8)≤8) :
+    (ho : HasOrder p A b) (pay : 16≤p) (cap : finrank K (zeroSpace A 8)≤8) :
     (finrank K (zeroSpace A 4)=4 ∧ ∃ r U w, FlatClockHead A 4 4 r U w) ∨
     ∃ r U w, FlatClockHead A 5 3 r U w ∧ 2≤r ∧ finrank K U=3 ∧
       finrank K (zeroSpace A 3)=2 ∧ zeroSpace A 4=U ∧ ∀ u∈U, ∀ v∈U, u*v∈U := by

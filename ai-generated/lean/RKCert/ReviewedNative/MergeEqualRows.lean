@@ -39,10 +39,10 @@ theorem phi_equal_incoming_rows {A : Matrix (Fin n) (Fin n) R} {i j : Fin n}
 /-- Contract a literal duplicate into an earlier row, preserving strict
 triangularity and every human-reviewed elementary weight including outputs. -/
 theorem exists_merge_equal_rows {A : Matrix (Fin (n+1)) (Fin (n+1)) R}
-    {b : Fin (n+1) → R} (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p)
+    {b : Fin (n+1) → R} (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b)
     {i j : Fin (n+1)} (hij : i < j) (he : ∀ k, A i k = A j k) :
     ∃ (B : Matrix (Fin n) (Fin n) R) (c : Fin n → R),
-      (∀ i j, i ≤ j → B i j = 0) ∧ HasOrder B c p := by
+      (∀ i j, i ≤ j → B i j = 0) ∧ HasOrder p B c := by
   obtain ⟨r,hr⟩ := Fin.exists_succAbove_eq (ne_of_lt hij)
   let B : Matrix (Fin n) (Fin n) R :=
     fun a => mergeCoefficient j r (A (j.succAbove a))

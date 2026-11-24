@@ -26,7 +26,7 @@ variable [CharZero K]
 head in the actual marked F4 whose value on every active physical row
 is a nonzero polynomial of degree at most four. -/
 theorem Order15PaidStaircase.paid_quartic_profile_of_absent (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (absent : firstSeed A b≠0 ∨ coordinate (K:=K) (Fin.last s)∉treeSpace A 8) :
     ∃ (v : Fin (s+1)→K) (P : K[X]), Order15PaidStaircase A b a G 2 U v ∧
       v∈markedDefectSpace A b 4 ∧ (∀ i, LiveCore.live U i → v i=0) ∧
@@ -70,7 +70,7 @@ variable [LinearOrder K] [IsStrictOrderedRing K]
 /-- The actual last coordinate enters the ordinary tree space at
 grade eight, and does not already belong to grade seven. -/
 theorem Order15PaidStaircase.terminal_eight_rank_two (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15) :
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b) :
     firstSeed A b=0 ∧ coordinate (K:=K) (Fin.last s)∈treeSpace A 8 ∧
       coordinate (K:=K) (Fin.last s)∉treeSpace A 7 := by
   have h : firstSeed A b=0 ∧ coordinate (K:=K) (Fin.last s)∈treeSpace A 8 := by
@@ -87,7 +87,7 @@ theorem Order15PaidStaircase.terminal_eight_rank_two (S : Order15PaidStaircase A
 /-- The native width-22 ordered order-fifteen chart is now an actual
 marked rank-two chart with the ordinary terminal entry E8 outside E7. -/
 theorem order15_ordered_terminal_chart (ha : ∀ i t,i≤t → A i t=0)
-    (ho : HasOrder A b 15) (cap : s+1≤22) :
+    (ho : HasOrder 15 A b) (cap : s+1≤22) :
     ∃ (a : ℕ) (G : K[X]) (U : Submodule K (Fin (s+1)→K)) (w : Fin (s+1)→K),
       Order15PaidStaircase A b a G 2 U w ∧ finrank K (zeroSpace A 4)=4 ∧
       firstSeed A b=0 ∧ coordinate (K:=K) (Fin.last s)∈treeSpace A 8 ∧

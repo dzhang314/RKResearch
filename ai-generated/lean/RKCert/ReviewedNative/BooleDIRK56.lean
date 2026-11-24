@@ -79,7 +79,7 @@ set_option maxRecDepth 5000 in
 private theorem checked : checkScaledOrder act weigh 168 90 6 = true := by
   decide +kernel
 
-theorem order_six : HasOrder A b 6 :=
+theorem order_six : HasOrder 6 A b :=
   hasOrder_of_scaled_check (Int.castRingHom ℚ) act_eq weigh_eq scale_A scale_b
     (by norm_num) (by norm_num) checked
 
@@ -94,7 +94,7 @@ section Specialization
 variable {K : Type*} [Field K] [CharZero K]
 
 /-- The rational seventh-order failure survives in every characteristic-zero field. -/
-theorem not_order_seven_map (f : ℚ →+* K) : ¬ HasOrder (A.map f) (f ∘ b) 7 := by
+theorem not_order_seven_map (f : ℚ →+* K) : ¬ HasOrder 7 (A.map f) (f ∘ b) := by
   intro h
   have ht := h (bushyTree 7) (by rw [order_bushyTree]; decide)
   have hh : (384:K) * (((bushyTree 7).factorial : K) *
@@ -106,7 +106,7 @@ theorem not_order_seven_map (f : ℚ →+* K) : ¬ HasOrder (A.map f) (f ∘ b) 
 
 theorem exists_exact_order_six :
     ∃ (U : Matrix (Fin 5) (Fin 5) K) (w : Fin 5 → K),
-      U.IsLowerTriangular ∧ HasOrder U w 6 ∧ ¬ HasOrder U w 7 := by
+      U.IsLowerTriangular ∧ HasOrder 6 U w ∧ ¬ HasOrder 7 U w := by
   let f := Rat.castHom K
   exact ⟨A.map f,f ∘ b,lowerTriangular.map f,order_six.map_coefficients f,not_order_seven_map f⟩
 
@@ -120,7 +120,7 @@ namespace RKResearch.Certified
 classical order-six tableau over any characteristic-zero field. -/
 theorem dirk_order_six_isLeast_charZero_field (K : Type*) [Field K] [CharZero K] :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K),
-      A.IsLowerTriangular ∧ HasOrder A b 6} 5 := by
+      A.IsLowerTriangular ∧ HasOrder 6 A b} 5 := by
   obtain ⟨A,b,ht,ho,_⟩ := BooleDIRK56.exists_exact_order_six (K := K)
   refine ⟨⟨A,b,ht,ho⟩,?_⟩
   rintro s ⟨U,w,hu,hw⟩

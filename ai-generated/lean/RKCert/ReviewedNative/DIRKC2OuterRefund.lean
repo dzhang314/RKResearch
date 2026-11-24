@@ -102,7 +102,7 @@ theorem primitive_residual_native {P : K[X]} {v : Fin s → K} {j : ℕ}
 /-- The first three nonzero exterior debuts cannot have zero head. A
 single origin-cleared nodal polynomial and three paid local primitive
 tests detect the alleged absence over a characteristic-zero field. -/
-theorem early_exterior_head (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 6≤p)
+theorem early_exterior_head (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 6≤p)
     {C : CoreMask A U} (inside : U≤zeroSpace A 3)
     {m : ℕ} (D : ExteriorStep C m) (small : m≤2)
     (flag5 : zeroSpace A 5≤chain (diag (nodes A)) U w 2)
@@ -147,7 +147,7 @@ omit [CharZero K] in
 /-- The third and fourth exterior diagonals have actually been refunded.
 The origin-cleared tableau input vanishes before the new clock; m old
 nonzero head values force a degree < m Volterra remainder to vanish. -/
-theorem exterior_refund (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem exterior_refund (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {C : CoreMask A U} {m : ℕ} (D : ExteriorStep C m) (pay : m+3≤p)
     (inside : U≤zeroSpace A (m+1))
     (flag : zeroSpace A (m+3)≤chain (diag (nodes A)) U w m)

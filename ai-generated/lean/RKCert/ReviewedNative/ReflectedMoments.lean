@@ -46,7 +46,7 @@ variable {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
 
 /-- The adjacent beta recurrence for the actual normalized stage column.
 Only two ordinary normalized probes are needed in the base case. -/
-theorem reflectedProbe_norm_shift (ho : HasOrder A b p) (t : FiniteRootedTree)
+theorem reflectedProbe_norm_shift (ho : HasOrder p A b) (t : FiniteRootedTree)
     (r k : ℕ) (hp : (t.order : ℕ)+r+k+1 ≤ p) :
     ((k+1 : ℕ) : R) * reflectedProbe A b (r+1) k (normTree A t) =
       ((((t.order : ℕ)+r : ℕ) : R)) * reflectedProbe A b r (k+1) (normTree A t) := by
@@ -68,7 +68,7 @@ theorem reflectedProbe_norm_shift (ho : HasOrder A b p) (t : FiniteRootedTree)
 
 /-- Unary integration and one ordinary clock power give the same paid
 probe on normalized columns (before the unary order factor is stripped). -/
-theorem reflectedProbe_unary_eq_clock (ho : HasOrder A b p) (t : FiniteRootedTree)
+theorem reflectedProbe_unary_eq_clock (ho : HasOrder p A b) (t : FiniteRootedTree)
     (r k : ℕ) (hp : (t.order : ℕ)+r+k+1 ≤ p) :
     reflectedProbe A b r k (normTree A (leaf ◂ t)) =
       reflectedProbe A b (r+1) k (normTree A t) := by
@@ -102,7 +102,7 @@ theorem reflectedStageRow_pair (A : Matrix ι ι R) (b : ι → R) (k : ℕ) (v 
     smul_eq_mul, Matrix.mulVec_transpose, Matrix.dotProduct_mulVec, reflectedProbe,
     pow_zero, mul_one, mat_apply]
 
-theorem reflectedStageRow_normTree (ho : HasOrder A b p) (t : FiniteRootedTree)
+theorem reflectedStageRow_normTree (ho : HasOrder p A b) (t : FiniteRootedTree)
     (k : ℕ) (hp : (t.order : ℕ)+k+1 ≤ p) :
     row (reflectedStageRow A b k) (normTree A t) = 0 := by
   have hshift := reflectedProbe_norm_shift ho t 0 k (by omega)
@@ -123,7 +123,7 @@ theorem reflectedStageRow_normTree (ho : HasOrder A b p) (t : FiniteRootedTree)
 
 /-- The unscaled reviewed stage profile obeys the exact same paid reverse identity.
 The forest multiplier is a proven unit, not merely nonzero. -/
-theorem reflectedStageRow_Φ (ho : HasOrder A b p) (t : FiniteRootedTree)
+theorem reflectedStageRow_Φ (ho : HasOrder p A b) (t : FiniteRootedTree)
     (k : ℕ) (hp : (t.order : ℕ)+k+1 ≤ p) :
     row (reflectedStageRow A b k) (Φ t A) = 0 := by
   have h := reflectedStageRow_normTree ho t k hp
@@ -134,7 +134,7 @@ theorem reflectedStageRow_Φ (ho : HasOrder A b p) (t : FiniteRootedTree)
 /-- Physical reverse vectors annihilate every rooted-tree column at the
 exact complementary vertex grade. No restrictions on individual weights
 or diagonal entries are needed for the pairing. -/
-theorem reflectedStageRow_treeSpace (ho : HasOrder A b p) (j k : ℕ) (hk : j+k+2≤p) :
+theorem reflectedStageRow_treeSpace (ho : HasOrder p A b) (j k : ℕ) (hk : j+k+2≤p) :
     treeSpace A j ≤ LinearMap.ker (row (reflectedStageRow A b k)) := by
   apply Submodule.span_le.mpr
   rintro _ ⟨t, ht, rfl⟩

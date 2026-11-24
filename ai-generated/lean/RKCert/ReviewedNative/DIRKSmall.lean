@@ -55,7 +55,7 @@ private theorem firstNode_zero_of_vanishing_defect {A : Matrix (Fin (s+1)) (Fin 
 
 /-- Order three already needs two stages, without a triangularity hypothesis. -/
 theorem HasOrder.order_three_stages_field {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 3) : 2 ≤ s := by
+    (h : HasOrder 3 A b) : 2 ≤ s := by
   by_contra hn
   have hs : s = 0 ∨ s = 1 := by omega
   rcases hs with rfl | rfl
@@ -72,8 +72,8 @@ theorem HasOrder.order_three_stages_field {A : Matrix (Fin s) (Fin s) K} {b : Fi
 
 /-- A lower triangular tableau with order four has at least three stages. -/
 theorem HasOrder.dirk_order_four_stages_field {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 4) (ha : A.IsLowerTriangular) : 3 ≤ s := by
-  have h3 : HasOrder A b 3 := fun t ht => h t (ht.trans (by decide))
+    (h : HasOrder 4 A b) (ha : A.IsLowerTriangular) : 3 ≤ s := by
+  have h3 : HasOrder 3 A b := fun t ht => h t (ht.trans (by decide))
   have hlo := h3.order_three_stages_field
   by_contra hsmall
   have hs : s = 2 := by omega
@@ -114,8 +114,8 @@ theorem HasOrder.dirk_order_four_stages_field {A : Matrix (Fin s) (Fin s) K} {b 
 /-- A lower triangular tableau with order five has at least four stages.
 All three knot/weight nonvanishing facts are derived from paid moments. -/
 theorem HasOrder.dirk_order_five_stages_field {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 5) (ha : A.IsLowerTriangular) : 4 ≤ s := by
-  have h4 : HasOrder A b 4 := fun t ht => h t (ht.trans (by decide))
+    (h : HasOrder 5 A b) (ha : A.IsLowerTriangular) : 4 ≤ s := by
+  have h4 : HasOrder 4 A b := fun t ht => h t (ht.trans (by decide))
   have hlo := h4.dirk_order_four_stages_field ha
   by_contra hsmall
   have hs : s = 3 := by omega
@@ -198,11 +198,11 @@ variable {R : Type*} [CommRing R] [Nontrivial R] {s : ℕ}
 variable {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
 
 /-- Order four needs three physical stages over every nontrivial commutative ring. -/
-theorem HasOrder.dirk_order_four_stages (h : HasOrder A b 4) (ha : A.IsLowerTriangular) : 3 ≤ s :=
+theorem HasOrder.dirk_order_four_stages (h : HasOrder 4 A b) (ha : A.IsLowerTriangular) : 3 ≤ s :=
   h.lower_triangular_of_all_fields ha (fun _ _ _ _ ht h' => h'.dirk_order_four_stages_field ht)
 
 /-- Order five needs four physical stages over every nontrivial commutative ring. -/
-theorem HasOrder.dirk_order_five_stages (h : HasOrder A b 5) (ha : A.IsLowerTriangular) : 4 ≤ s :=
+theorem HasOrder.dirk_order_five_stages (h : HasOrder 5 A b) (ha : A.IsLowerTriangular) : 4 ≤ s :=
   h.lower_triangular_of_all_fields ha (fun _ _ _ _ ht h' => h'.dirk_order_five_stages_field ht)
 
 end Ring

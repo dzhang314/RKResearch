@@ -19,7 +19,7 @@ variable {K : Type*} [Field K] {s : ℕ}
 /-- Paid reflected moments see an active weight outside a small set of
 clock values, without needing nonzero individual weights or distinct rows. -/
 theorem reflected_active_avoid {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    {p : ℕ} (ho : HasOrder A b p) (T : Finset K) (card : T.card<p/2) :
+    {p : ℕ} (ho : HasOrder p A b) (T : Finset K) (card : T.card<p/2) :
     ∃ i, b i≠0 ∧ reflectedClock A i∉T := by
   classical
   by_contra! all
@@ -95,7 +95,7 @@ theorem reduce_reverse_rows {N : (Fin s → K) →ₗ[K] (Fin s → K)} {y v d g
 /-- The one-dimensional actual reverse flag at level one escapes the
 physical reflected clock. No assumption on a ghost or unused weight enters. -/
 theorem back_one_noninvariant {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12) (S : Saturation A b) :
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b) (S : Saturation A b) :
     ¬ (back A b 1).map (diag (reflectedClock A))≤back A b 1 := by
   classical
   intro inv
@@ -128,7 +128,7 @@ theorem back_one_noninvariant {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s
 /-- Paid annihilator duality transfers the reverse line's escape to the
 original ninth tree grade, for the later forward head argument. -/
 theorem saturated_e9_escape {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12) (S : Saturation A b) :
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b) (S : Saturation A b) :
     ¬(treeSpace A 9).map (diag (nodes A))≤treeSpace A 9 :=
   tree_escape_of_reverse_escape (reverse_seven_nine ha ho S (terminal_band ha ho S)).back1
     (back_one_noninvariant ha ho S)
@@ -137,7 +137,7 @@ theorem saturated_e9_escape {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1
 image of grade nine. Thus the actual grade-ten tree space is the entire
 original stage space. -/
 theorem saturated_e10_top {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12) (S : Saturation A b) :
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b) (S : Saturation A b) :
     treeSpace A 10=⊤ := by
   have R := reverse_seven_nine ha ho S (terminal_band ha ho S)
   have out := saturated_e9_escape ha ho S
@@ -153,7 +153,7 @@ theorem saturated_e10_top {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) 
 /-- Appendix A conclusion using only the actual order and stage cap. This
 does not assert the separate final forward head contradiction. -/
 theorem actual_e10_top {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12) (cap : s≤17) :
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b) (cap : s≤17) :
     treeSpace A 10=⊤ := by
   cases s with
   | zero =>

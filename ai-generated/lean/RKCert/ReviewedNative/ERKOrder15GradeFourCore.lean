@@ -23,7 +23,7 @@ variable {G : K[X]} {w : Fin (s+1)→K} {U : Submodule K (Fin (s+1)→K)}
 /-- If F4 had dimension three, the original F3 and its clock image
 would exhaust F4 and identify the whole marked core. -/
 theorem Order15PaidStaircase.three_core_eq (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (r4 : finrank K (zeroSpace A 4)=3) :
     markedDefectSpace A b 4=U ∧ finrank K (zeroSpace A 3)=2 := by
   have early := S.early_two_head_payment
@@ -52,7 +52,7 @@ theorem Order15PaidStaircase.three_core_eq (S : Order15PaidStaircase A b a G 2 U
   omega
 
 omit [CharZero K] in
-private theorem terminal_disjoint (ho : HasOrder A b 15)
+private theorem terminal_disjoint (ho : HasOrder 15 A b)
     (L : LastActive b (Fin.last s)) (j : ℕ) (h : j+1≤15) :
     Disjoint (zeroSpace A j) (terminalMark A b) := by
   by_cases z : firstSeed A b=0
@@ -65,7 +65,7 @@ private theorem terminal_disjoint (ho : HasOrder A b 15)
 terminal mark is removed by disjointness and neither closure nor the
 small row quotient is assumed of a marked flag. -/
 theorem Order15PaidStaircase.no_three_dimensional_four (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (r4 : finrank K (zeroSpace A 4)=3) : False := by
   obtain ⟨e,d3⟩ := S.three_core_eq ha ho r4
   let F := zeroSpace A 4
@@ -87,7 +87,7 @@ theorem Order15PaidStaircase.no_three_dimensional_four (S : Order15PaidStaircase
 /-- Every hypothetical native rank-two order-fifteen chart has ordinary
 grade-four rank exactly four, over any characteristic-zero field. -/
 theorem Order15PaidStaircase.ordinary_four_rank (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15) :
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b) :
     finrank K (zeroSpace A 4)=4 := by
   have f5 := S.early 0 (by decide)
   change markedDefectSpace A b 5=chain (diag (nodes A)) U w 2 at f5

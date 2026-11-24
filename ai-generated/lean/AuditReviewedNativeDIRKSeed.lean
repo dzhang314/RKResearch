@@ -9,7 +9,7 @@ open scoped Matrix
 #print axioms RKResearch.Certified.Graded.reverse_dirk_seeds_force_clock
 
 example {K : Type*} [Field K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 6) (ha : A.IsLowerTriangular) (U : Submodule K (Fin s → K))
+    (h : HasOrder 6 A b) (ha : A.IsLowerTriangular) (U : Submodule K (Fin s → K))
     (hN : ∀ x ∈ U, mat A x ∈ U) (hY : ∀ x ∈ U, diag (nodes A) x ∈ U)
     (h₂ : monomialStageDefect A 1 ∈ U) (h₃ : monomialStageDefect A 2 ∈ U)
     (hquiet : ∀ x ∈ U, probe A b 0 x = 0) : False := by
@@ -23,7 +23,7 @@ example {K : Type*} [Field K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin 
   exact zero_ne_one hp
 
 example {K : Type*} [Field K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 6) (ha : A.IsLowerTriangular) (U : Submodule K (Fin s → K))
+    (h : HasOrder 6 A b) (ha : A.IsLowerTriangular) (U : Submodule K (Fin s → K))
     (hN : ∀ x ∈ U, mat A.transpose x ∈ U)
     (hY : ∀ x ∈ U, diag (reflectedClock A) x ∈ U)
     (h₂ : reflectedStageRow A b 1 ∈ U) (h₃ : reflectedStageRow A b 2 ∈ U)

@@ -85,7 +85,7 @@ theorem foldTree_congr (g : Op K) (t : FiniteRootedTree) (f f' : FiniteRootedTre
 def expectation (g : Op K) : K := foldTree g (fun t => (((t.factorial:ℕ):K))⁻¹) .leaf
 
 theorem expectation_eq {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} {p : ℕ}
-    (ho : HasOrder A b p) (g : Op K) (hg : height g+1≤p) :
+    (ho : HasOrder p A b) (g : Op K) (hg : height g+1≤p) :
     row b (eval A g 1) = expectation g := by
   change row b (eval A g (Φ .leaf A))=_
   rw [foldTree_eq]
@@ -107,21 +107,21 @@ def second (z v:K) (h:Op K) : Op K :=
     (.mul (N z) h)
 
 set_option maxHeartbeats 8000000 in
-theorem zero_word [CharZero K] {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} (ho : HasOrder A b 6)
+theorem zero_word [CharZero K] {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} (ho : HasOrder 6 A b)
     (z u v : K) : 720 * row b (eval A (first z (J2 z)) 1) = -zeroLaguerre z u v := by
   rw [expectation_eq ho _ (by simp [height,first,J2,N])]
   norm_num [expectation,foldTree,first,J2,N,zeroLaguerre,factorial,order,forestFactorial,PNat.mul_coe,PNat.add_coe,PNat.one_coe]
   ring
 
 set_option maxHeartbeats 8000000 in
-theorem first_word [CharZero K] {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} (ho : HasOrder A b 6)
+theorem first_word [CharZero K] {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} (ho : HasOrder 6 A b)
     (z u v : K) : 720 * row b (eval A (first z (H z u)) 1) = bridge1 z u v := by
   rw [expectation_eq ho _ (by simp [height,first,J2,N,H,Q,X])]
   norm_num [expectation,foldTree,first,J2,N,H,Q,X,D,bridge1,factorial,order,forestFactorial,PNat.mul_coe,PNat.add_coe,PNat.one_coe]
   ring
 
 set_option maxHeartbeats 8000000 in
-theorem second_word [CharZero K] {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} (ho : HasOrder A b 6)
+theorem second_word [CharZero K] {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} (ho : HasOrder 6 A b)
     (z u v : K) : 120 * row b (eval A (second z v (H z u)) 1) = bridge2 z u v := by
   rw [expectation_eq ho _ (by simp [height,second,J2,N,H,Q,X,Y])]
   norm_num [expectation,foldTree,second,J2,N,H,Q,X,Y,D,bridge2,factorial,order,forestFactorial,PNat.mul_coe,PNat.add_coe,PNat.one_coe]

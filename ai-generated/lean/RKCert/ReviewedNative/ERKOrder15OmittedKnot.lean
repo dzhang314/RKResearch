@@ -17,7 +17,7 @@ variable {G P : K[X]} {w : Fin (s+1)→K} {U : Submodule K (Fin (s+1)→K)}
 /-- In the rank-two chart, grade six pays precisely the window needed by
 the final omitted-knot primitive tests. -/
 theorem Order15TerminalDivisor.paid_knot (B : Order15TerminalDivisor A b a U w G P)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (Q : K[X]) (qn : Q≠0) (qd : Q.natDegree≤2) :
     ∃ k : Fin (s+1), ¬LiveCore.live U k ∧ w k=0 ∧ G.eval (nodes A k)=0 ∧
       (Q*P).eval (nodes A k)≠0 ∧
@@ -51,7 +51,7 @@ theorem Order15TerminalDivisor.paid_knot (B : Order15TerminalDivisor A b a U w G
 /-- A head vanishing at the origin would give the same two physical
 3+2 primitive windows for a cubic. The common cubic rule excludes it. -/
 theorem Order15TerminalDivisor.origin_nonzero (B : Order15TerminalDivisor A b a U w G P)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15) : P.eval 0≠0 := by
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b) : P.eval 0≠0 := by
   intro p0
   have z0 : P.coeff 0=0 := by rwa [coeff_zero_eq_eval_zero]
   obtain ⟨R,e⟩ := Polynomial.X_dvd_iff.mpr z0
@@ -83,7 +83,7 @@ theorem Order15TerminalDivisor.origin_nonzero (B : Order15TerminalDivisor A b a 
 /-- These are the actual clock, omitted-support condition, and two
 native primitive values needed by the frozen scalar exclusions. -/
 theorem Order15TerminalDivisor.omitted_knot (B : Order15TerminalDivisor A b a U w G P)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15) :
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b) :
     ∃ k : Fin (s+1), ¬LiveCore.live U k ∧ w k=0 ∧ nodes A k≠0 ∧ G.eval (nodes A k)=0 ∧
       P.eval (nodes A k)≠0 ∧ (formalPrimitive (X*P)).eval (nodes A k)=0 ∧
       (formalPrimitive (X*(X*P))).eval (nodes A k)=0 := by

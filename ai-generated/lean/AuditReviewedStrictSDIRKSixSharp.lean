@@ -7,12 +7,12 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 example :
     ∃ (A : Matrix (Fin 7) (Fin 7) ℝₐ) (b : Fin 7 → ℝₐ),
       A.IsLowerTriangular ∧ (∀ i, A i i = 1/2) ∧ (1/2:ℝₐ) ≠ 0 ∧
-        HasOrder A b 6 ∧ ¬ HasOrder A b 7 :=
+        HasOrder 6 A b ∧ ¬ HasOrder 7 A b :=
   LaguerreGauss76.exact_realAlgebraic
 
 example :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) ℝ) (b : Fin s → ℝ) (γ : ℝ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 6} 7 :=
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 6 A b} 7 :=
   strictSDIRK_order_six_isLeast_real
 
 #print axioms LaguerreGauss76.order_six

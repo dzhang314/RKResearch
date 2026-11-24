@@ -110,7 +110,7 @@ theorem global_normal_from_amplitude (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- The exact next consumed forward identity on the original reviewed
 order-nine tableau. The paid reverse room supplies all ranks. -/
 theorem order9_global_normal {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (stages : s ≤ 12) (off : (offKnots A).card = 1) :
     ∃ (a d : K) (i j : Fin s), GlobalNormal A a d i j := by
   obtain ⟨hs,h3,h4,_⟩ := order9_forward_chart ha ho stages

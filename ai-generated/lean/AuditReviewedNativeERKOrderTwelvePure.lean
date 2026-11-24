@@ -10,7 +10,7 @@ namespace RKResearch.Certified.Graded.AuditERK12Pure
 
 theorem physical_cap_forces_nonzero_leak {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12) (cap : s+1≤17) :
+    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b) (cap : s+1≤17) :
     s+1=17 ∧ ∃ U z α Q R, RankTwoFourProfile A U z α Q R ∧ α≠0 :=
   ⟨(saturation_of_order ha ho cap).size,actual_nonzero_leak_profile_at_cap ha ho cap⟩
 

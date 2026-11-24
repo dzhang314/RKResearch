@@ -76,7 +76,7 @@ theorem commutator_coord_four (ha : A.IsLowerTriangular) (hd : ∀i,A i i=γ) :
 
 /-- If a commutator eigenvector is invisible to all raw moment rows, it vanishes.
 Only arithmetic consequences of the purchased order-six conditions are used. -/
-theorem invisible_eigenvector_zero (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem invisible_eigenvector_zero (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (hn : ∀i,A i i≠0) (v : (Fin 6 → K)) (r : K) (he : volterra A v = r • v)
     (hp : ∀ k, probe A b k v=0) : v=0 := by
   ext i
@@ -87,7 +87,7 @@ theorem invisible_eigenvector_zero (ho : HasOrder A b 6) (ha : A.IsLowerTriangul
     LinearMap.proj_apply] using hi
 
 /-- Concrete terminal incidence with the original unscaled nodes. -/
-theorem order_six_terminal_chronology (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem order_six_terminal_chronology (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (hd : ∀i,A i i=γ) (hγ : γ≠0) :
     b 5≠0 ∧ b 4≠0 ∧ nodes A 5=1-γ ∧ nodes A 5≠nodes A 4 ∧
       b 5*A 5 4=(nodes A 5-nodes A 4)*b 4 := by

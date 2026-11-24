@@ -50,7 +50,7 @@ theorem newFibreTest_mem (A : Matrix (Fin 12) (Fin 12) K) (a d z : K) :
       (evalNodes_mem_treeSpace A _ ((jSource_poly_degree d z).trans (by decide))))
     ((treeSpace A 4).smul_mem _ gd)
 
-theorem order9_first_seven_independent (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_first_seven_independent (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (D7 : TwoFibres A a d (nodes A (5:Fin 12))) :
     IndependentBefore (treeSpace A 4) (7:Fin 12) := by
@@ -116,7 +116,7 @@ theorem physicalTail_off {a d z : K} {i j r : Fin 12} (D : GlobalNormal A a d i 
   simp only [physicalTail,Pi.sub_apply,Pi.smul_apply,smul_eq_mul,evalNodes_apply,
     D.base.origin.off_support r gr,amplitude_value D.base.amplitude gr,div_mul_cancel₀ _ den,sub_self]
 
-theorem order9_tail_initial_zero (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_tail_initial_zero (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (D7 : TwoFibres A a d (nodes A (5:Fin 12))) (l : Fin 12) (lt : l < (7:Fin 12)) :
     physicalTail A a d (nodes A (5:Fin 12)) l=0 := by

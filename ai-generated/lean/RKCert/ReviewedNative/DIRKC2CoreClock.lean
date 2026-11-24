@@ -36,7 +36,7 @@ theorem CoreMask.outside_zero (C : CoreMask A U) {i : Fin s} (outside : C.mask i
 
 /-- A rank-one multiplicatively closed C(2) F3, invariant under the
 true clock, is exactly one physical 0/1 mask at a single clock. -/
-theorem c2_core_mask (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 3≤p)
+theorem c2_core_mask (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 3≤p)
     (c₂ : monomialStageDefect A 1=0)
     (closed : ∀ u∈zeroSpace A 3, ∀ v∈zeroSpace A 3, u*v∈zeroSpace A 3)
     (stable : (zeroSpace A 3).map (diag (nodes A)) ≤ zeroSpace A 3) :
@@ -102,7 +102,7 @@ noncomputable def outsideSites (A : Matrix (Fin s) (Fin s) K) (e : Fin s → K) 
 
 /-- The shifted paid Cauchy test already counts four exterior clock
 sites. A failed block cannot be wholly covered by the single true mask. -/
-theorem outsideSites_card (ho : HasOrder A b p) (pay : 8≤p)
+theorem outsideSites_card (ho : HasOrder p A b) (pay : 8≤p)
     (C : CoreMask A U) (inside : U≤zeroSpace A 3)
     (stable : U.map (diag (nodes A))≤U) :
     4≤(outsideSites A C.mask).card := by

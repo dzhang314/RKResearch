@@ -57,9 +57,9 @@ theorem normTree_unary (A : Matrix ι ι R) (t : FiniteRootedTree) :
   intro j _
   ac_rfl
 
-theorem normTree_appendLeafBranches (A : Matrix ι ι R) (k : ℕ) (t : FiniteRootedTree) :
-    normTree A (appendLeafBranches k t) = fun i => (nodes A i)^k * normTree A t i := by
-  rw [normTree,forestFactorial_appendLeafBranches,Φ_appendLeafBranches]
+private theorem normTree_addBush (A : Matrix ι ι R) (k : ℕ) (t : FiniteRootedTree) :
+    normTree A (t.addBush k) = fun i => (nodes A i)^k * normTree A t i := by
+  rw [normTree,forestFactorial_addBush,Φ_addBush]
   ext i
   simp only [normTree,Pi.smul_apply,Pi.mul_apply,Pi.pow_apply,smul_eq_mul,nodes]
   ac_rfl
@@ -79,30 +79,30 @@ theorem normTree_clockTree (A : Matrix ι ι R) (k : ℕ) :
 /-- The denominator-cleared normalized probe identity at the exact grade
 budget; no divisions, ordering, or cancellation are assumed. -/
 theorem probe_normTree {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
-    (ho : HasOrder A b p) (t : FiniteRootedTree) (k : ℕ) (hk : k+(t.order:ℕ)≤p) :
+    (ho : HasOrder p A b) (t : FiniteRootedTree) (k : ℕ) (hk : k+(t.order:ℕ)≤p) :
     ((k+(t.order:ℕ):ℕ):R) * probe A b k (normTree A t) = 1 := by
-  have budget : ((appendLeafBranches k t).order : ℕ)≤p := by simpa [Nat.add_comm] using hk
-  have h := ho (appendLeafBranches k t) budget
-  have wt : (b ⬝ᵥ normTree A (appendLeafBranches k t)) = probe A b k (normTree A t) := by
-    rw [normTree_appendLeafBranches,row_apply]
+  have budget : ((t.addBush k).order : ℕ)≤p := by simpa only [order_addBush, Nat.add_comm] using hk
+  have h := ho (t.addBush k) budget
+  have wt : (b ⬝ᵥ normTree A (t.addBush k)) = probe A b k (normTree A t) := by
+    rw [normTree_addBush,row_apply]
     simp only [dotProduct]
     apply Finset.sum_congr rfl
     intro i _
     ac_rfl
-  have factor : (b ⬝ᵥ normTree A (appendLeafBranches k t)) =
-      (((appendLeafBranches k t).forestFactorial : ℕ):R) * (b ⬝ᵥ Φ (appendLeafBranches k t) A) := by
+  have factor : (b ⬝ᵥ normTree A (t.addBush k)) =
+      (((t.addBush k).forestFactorial : ℕ):R) * (b ⬝ᵥ Φ (t.addBush k) A) := by
     simp only [normTree,dotProduct,Pi.smul_apply,smul_eq_mul,Finset.mul_sum]
     apply Finset.sum_congr rfl
     intro i _
     ac_rfl
-  have h1 : (((appendLeafBranches k t).order : ℕ) : R) *
-      (b ⬝ᵥ normTree A (appendLeafBranches k t)) = 1 := by
+  have h1 : (((t.addBush k).order : ℕ) : R) *
+      (b ⬝ᵥ normTree A (t.addBush k)) = 1 := by
     rw [factor,← mul_assoc]
     simpa only [factorial,PNat.mul_coe,Nat.cast_mul] using h
-  rwa [wt,order_appendLeafBranches,Nat.add_comm (t.order:ℕ) k] at h1
+  rwa [wt,order_addBush,Nat.add_comm (t.order:ℕ) k] at h1
 
 theorem forestFactorial_isUnit {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
-    (ho : HasOrder A b p) (t : FiniteRootedTree) (ht : (t.order:ℕ)≤p) :
+    (ho : HasOrder p A b) (t : FiniteRootedTree) (ht : (t.order:ℕ)≤p) :
     IsUnit (((t.forestFactorial : ℕ) : R)) := by
   have hf : IsUnit ((t.factorial : ℕ) : R) := ho.factorial_isUnit t ht
   rw [factorial,PNat.mul_coe,Nat.cast_mul] at hf

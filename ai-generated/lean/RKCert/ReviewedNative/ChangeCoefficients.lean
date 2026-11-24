@@ -33,8 +33,8 @@ theorem map_Φ_coefficients (f : R →+* S) (A : Matrix ι ι R) (t : FiniteRoot
 
 /-- No inverse, characteristic condition or stage restriction is required. -/
 theorem HasOrder.map_coefficients {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
-    (h : HasOrder A b p) (f : R →+* S) :
-    HasOrder (A.map f) (f ∘ b) p := by
+    (h : HasOrder p A b) (f : R →+* S) :
+    HasOrder p (A.map f) (f ∘ b) := by
   intro t ht
   simpa only [map_mul, map_natCast, RingHom.map_dotProduct, map_Φ_coefficients, map_one]
     using congrArg f (h t ht)
@@ -63,9 +63,9 @@ unital map is chosen by the proof and is not a hypothesis on the input. -/
 theorem HasOrder.lower_triangular_of_all_fields
     {R : Type u} [CommRing R] [Nontrivial R] {s p : ℕ} {C : Prop}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : A.IsLowerTriangular)
+    (h : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hf : ∀ (K : Type u) [Field K] (T : Matrix (Fin s) (Fin s) K) (w : Fin s → K),
-      T.IsLowerTriangular → HasOrder T w p → C) : C := by
+      T.IsLowerTriangular → HasOrder p T w → C) : C := by
   obtain ⟨I, hI⟩ := Ideal.exists_maximal R
   let := hI
   let := Ideal.Quotient.field I
@@ -77,9 +77,9 @@ entries, not arbitrary nonzero entries, survive the proof's residue map. -/
 theorem HasOrder.unit_diagonal_of_all_fields
     {R : Type u} [CommRing R] [Nontrivial R] {s p : ℕ} {C : Prop}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : A.IsLowerTriangular) (hu : ∀ i, IsUnit (A i i))
+    (h : HasOrder p A b) (ha : A.IsLowerTriangular) (hu : ∀ i, IsUnit (A i i))
     (hf : ∀ (K : Type u) [Field K] (T : Matrix (Fin s) (Fin s) K) (w : Fin s → K),
-      T.IsLowerTriangular → (∀ i, T i i ≠ 0) → HasOrder T w p → C) : C := by
+      T.IsLowerTriangular → (∀ i, T i i ≠ 0) → HasOrder p T w → C) : C := by
   obtain ⟨I, hI⟩ := Ideal.exists_maximal R
   let := hI
   let := Ideal.Quotient.field I

@@ -54,7 +54,7 @@ theorem terminalLeak8_value_one : (terminalLeak8 : K[X]).eval 1=0 := by
   rw [terminalLeak8_value]
   ring
 
-private theorem square_leak_probe (ho : HasOrder A b 12) {k : ℕ} (hk : k<4) :
+private theorem square_leak_probe (ho : HasOrder 12 A b) {k : ℕ} (hk : k<4) :
     probe A b k (evalNodes A terminalLeak8)=0 := by
   have scalar (j : Fin 4) :
       (∑ i : Fin 7, (squareLeakCoeffs i : K)/((j.val+i.val+1:ℕ):K))=0 := by
@@ -66,7 +66,7 @@ private theorem square_leak_probe (ho : HasOrder A b 12) {k : ℕ} (hk : k<4) :
 /-- A terminal-zero eighth-grade vector has only one possible polynomial
 leak of degree at most six across the paid forward head. -/
 theorem grade_eight_single_leak (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b)
     {Z : Submodule K (Fin (s+1) → K)} (split : treeSpace A 8=clockBand6 A⊔Z)
     (terminal : Z≤zeroAt (zeroSpace A 8) (Fin.last s))
     {v : Fin (s+1) → K} (hv : v∈zeroAt (zeroSpace A 8) (Fin.last s)) :

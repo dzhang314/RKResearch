@@ -25,7 +25,7 @@ noncomputable def Jtest (A : Matrix (Fin 12) (Fin 12) K) (a : K) : Fin 12 → K 
 noncomputable def Vtest (A : Matrix (Fin 12) (Fin 12) K) (a : K) : Fin 12 → K :=
   mDef A 4+(2*a^2) • h A
 
-theorem Jtest_mem (ho : HasOrder A b 9) (a : K) : Jtest A a∈zeroSpace A 5 := by
+theorem Jtest_mem (ho : HasOrder 9 A b) (a : K) : Jtest A a∈zeroSpace A 5 := by
   unfold Jtest scaledH
   rw [map_smul,map_smul]
   exact (zeroSpace A 5).smul_mem _ (clockAg_mem ho)
@@ -39,7 +39,7 @@ def Sources (a d z x G H : K) : Prop :=
   (x=d ∧ G=0 ∧ H=hzero d d) ∨ (x=2*d ∧ G=0) ∨
   (x=z ∧ G=0 ∧ H=hzero d z)
 
-theorem order9_native_sources (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_native_sources (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     ∀ l : Fin 12, l.val<6 →
       Sources a d (nodes A (5:Fin 12)) (nodes A l) (g A l) (scaledH A a l) := by

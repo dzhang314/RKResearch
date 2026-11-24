@@ -1,7 +1,7 @@
 # Native ordered ERK9: only exactly five defective clocks remain
 
 For a strictly lower twelve-stage tableau over any ordered field, the original
-reviewed `RKResearch.HasOrder A b 9` forces exactly five distinct quadratic
+reviewed `RKResearch.HasOrder 9 A b` forces exactly five distinct quadratic
 defect clocks and either five or six distinct clean clocks. In particular,
 **13 ≤ s whenever the number of distinct defective clocks is not five**.
 

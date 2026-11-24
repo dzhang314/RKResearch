@@ -34,7 +34,7 @@ theorem zeroSpace_le_treeSpace (A : Matrix ι ι R) (j : ℕ) :
     ((treeSpace A j).smul_mem _ (Φ_mem_treeSpace A u (he ▸ ht)))
 
 theorem probe_zeroSpace {A : Matrix ι ι R} {b : ι → R} {p j k : ℕ}
-    (ho : HasOrder A b p) (pay : k+j+1≤p) :
+    (ho : HasOrder p A b) (pay : k+j+1≤p) :
     zeroSpace A j≤(probe A b k).ker := by
   apply Submodule.span_le.mpr
   rintro _ ⟨t,u,he,ht,rfl⟩
@@ -67,7 +67,7 @@ theorem mat_zeroSpace_of_unit (A : Matrix ι ι R) (j : ℕ)
   exact ((zeroSpace A (j+1)).smul_mem_iff_of_isUnit (castUnit t ht)).mp e
 
 theorem mat_zeroSpace {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
-    (ho : HasOrder A b p) (j : ℕ) (pay : j+1≤p) :
+    (ho : HasOrder p A b) (j : ℕ) (pay : j+1≤p) :
     zeroSpace A j≤(zeroSpace A (j+1)).comap (mat A) :=
   mat_zeroSpace_of_unit A j (fun t ht => ho.natCast_isUnit t.order.pos (ht.trans pay))
 

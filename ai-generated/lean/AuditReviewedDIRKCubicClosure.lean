@@ -16,7 +16,7 @@ open scoped Matrix
 
 example {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} (lower : A.IsLowerTriangular)
-    (order : HasOrder A b 8) (quadratic : monomialStageDefect A 1=0)
+    (order : HasOrder 8 A b) (quadratic : monomialStageDefect A 1=0)
     (escape : ¬ (zeroSpace A 3).map (diag (nodes A)) ≤ zeroSpace A 3) :
     Module.finrank K (zeroSpace A 3)+4 ≤ Module.finrank K (zeroSpace A 6) :=
   dirk_grade_six_surplus_of_C2_of_grade_three_escape lower order (by decide) quadratic escape

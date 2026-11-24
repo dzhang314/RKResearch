@@ -16,18 +16,18 @@ open RKResearch Module RKResearch.Certified.Graded RKResearch.Certified.Graded.R
 variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
 variable {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
-theorem ordered_stage_budget (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 16) :
+theorem ordered_stage_budget (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 16 A b) :
     24+finrank K (back A b 0) ≤ s := by
   have front := grade_eight_surplus_ordered_of_reviewed_order ha ho le_rfl
   have budget := erk_even_midpoint_budget ha ho (q:=8) (by decide) (by decide)
   change 15+finrank K (zeroSpace A 8)+finrank K (back A b 0) ≤ s at budget
   omega
 
-theorem ordered_stage_floor24 (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 16) :
+theorem ordered_stage_floor24 (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 16 A b) :
     24≤s := (Nat.le_add_right 24 _).trans (ordered_stage_budget ha ho)
 
 theorem ordered_stage_floor25_of_nonzero_first (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b 16) (hn : firstSeed A b≠0) : 25≤s := by
+    (ho : HasOrder 16 A b) (hn : firstSeed A b≠0) : 25≤s := by
   have h := ordered_stage_budget ha ho
   rw [first_dim_one hn] at h
   exact h
@@ -46,7 +46,7 @@ structure Width24PaidFrame (T : Matrix (Fin 24) (Fin 24) K) (w : Fin 24 → K) :
 set_option maxRecDepth 3500 in
 set_option maxHeartbeats 600000 in
 theorem width24_paid_frame {T : Matrix (Fin 24) (Fin 24) K} {w : Fin 24 → K}
-    (ha : ∀ i j, i≤j → T i j=0) (ho : HasOrder T w 16) : Width24PaidFrame T w := by
+    (ha : ∀ i j, i≤j → T i j=0) (ho : HasOrder 16 T w) : Width24PaidFrame T w := by
   have lower := grade_eight_surplus_ordered_of_reviewed_order ha ho le_rfl
   have cap := erk_even_midpoint_budget ha ho (q:=8) (by decide) (by decide)
   change 15+finrank K (zeroSpace T 8)+finrank K (back T w 0) ≤ 24 at cap

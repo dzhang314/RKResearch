@@ -40,7 +40,7 @@ theorem order13_marked_clock_le (A : Matrix (Fin 19) (Fin 19) K) (b : Fin 19→K
 
 variable [CharZero K]
 
-theorem order13_marked_debit (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A b 13)
+theorem order13_marked_debit (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder 13 A b)
     (F : Order13PaidFrame A b) {j : ℕ} (pos : 1≤j) (hi : j≤11)
     (sat : finrank K (markedTreeSpace A b j)=j+7+terminalDebit A b)
     (stable : (markedTreeSpace A b j).map (diag (nodes A))≤markedTreeSpace A b j) :
@@ -56,7 +56,7 @@ theorem order13_marked_debit (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A b 
   rwa [show 11-j+2=13-j by omega] at loss
 
 -- Keeping the preceding rank explicit is essential in the degree-six alias.
-theorem order13_paid_clock_step (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A b 13)
+theorem order13_paid_clock_step (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder 13 A b)
     (F : Order13PaidFrame A b) {j : ℕ} (lo : 6≤j) (hi : j≤9)
     (rank : finrank K (markedTreeSpace A b j)=j+7+terminalDebit A b)
     (prev : finrank K (markedTreeSpace A b (j-1))=
@@ -84,7 +84,7 @@ theorem order13_paid_clock_step (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A
   change finrank K V=_ at rank
   exact ⟨(Submodule.eq_of_le_of_finrank_le inc (by omega)).symm,by omega⟩
 
-theorem order13_staircase_of_mesh (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A b 13)
+theorem order13_staircase_of_mesh (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder 13 A b)
     (F : Order13PaidFrame A b) {a l : ℕ} {G : K[X]} {U : Submodule K (Fin 19→K)}
     {w : Fin 19→K} (M : Order13FirstMesh A b a G)
     (len : 0<l) (stable : U.map (diag (nodes A))≤U)
@@ -129,7 +129,7 @@ structure Order13PhysicalStaircase (A : Matrix (Fin 19) (Fin 19) K) (b : Fin 19�
     markedTreeSpace A b j=(coeffEval A a).range⊔chain (diag (nodes A)) U w (r+2+(j-(a+1))) ∧
     finrank K (markedTreeSpace A b j)=j+7+terminalDebit A b
 
-theorem order13_physical_staircase (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A b 13) :
+theorem order13_physical_staircase (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder 13 A b) :
     ∃ a G r U w, Order13PhysicalStaircase A b a G r U w := by
   have F := order13_paid_frame ha ho
   obtain ⟨a,G,M⟩ := order13_first_mesh_of_frame ha ho F
@@ -140,7 +140,7 @@ theorem order13_physical_staircase (ha : ∀i k,i≤k → A i k=0) (ho : HasOrde
   rw [show a+1+(j-(a+1))=j by omega] at out
   exact ⟨out.1,out.2.1⟩
 
-theorem order13_paid_high_ranks (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder A b 13)
+theorem order13_paid_high_ranks (ha : ∀i k,i≤k → A i k=0) (ho : HasOrder 13 A b)
     {j : ℕ} (lo : 7≤j) (hi : j≤10) :
     finrank K (markedTreeSpace A b j)=j+7+terminalDebit A b := by
   obtain ⟨a,G,r,U,w,C⟩ := order13_physical_staircase ha ho

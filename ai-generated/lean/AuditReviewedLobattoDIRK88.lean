@@ -4,24 +4,24 @@ open RKResearch RKResearch.Certified
 
 example :
     ∃ (U : Matrix (Fin 8) (Fin 8) ℝ) (w : Fin 8 → ℝ),
-      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder U w 8 ∧ ¬ HasOrder U w 9 :=
+      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder 8 U w ∧ ¬ HasOrder 9 U w :=
   LobattoDIRK88.exists_exact_real
 
 local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 
 example :
     ∃ (U : Matrix (Fin 8) (Fin 8) ℝₐ) (w : Fin 8 → ℝₐ),
-      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder U w 8 ∧ ¬ HasOrder U w 9 :=
+      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder 8 U w ∧ ¬ HasOrder 9 U w :=
   LobattoDIRK88.exists_exact_realAlgebraic
 
 example :
     IsLeast {n : ℕ | ∃ (A : Matrix (Fin n) (Fin n) ℝ) (b : Fin n → ℝ),
-      A.IsLowerTriangular ∧ HasOrder A b 8} 8 :=
+      A.IsLowerTriangular ∧ HasOrder 8 A b} 8 :=
   dirk_order_eight_isLeast_real
 
 example :
     IsLeast {n : ℕ | ∃ (A : Matrix (Fin n) (Fin n) ℝₐ) (b : Fin n → ℝₐ),
-      A.IsLowerTriangular ∧ HasOrder A b 8} 8 :=
+      A.IsLowerTriangular ∧ HasOrder 8 A b} 8 :=
   dirk_order_eight_isLeast_realAlgebraic
 
 #print axioms CanonicalStageMemo.cover

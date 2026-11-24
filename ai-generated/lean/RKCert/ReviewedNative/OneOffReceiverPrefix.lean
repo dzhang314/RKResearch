@@ -76,8 +76,8 @@ theorem grade_two_span (A : Matrix (Fin s) (Fin s) K) :
 rescaled physical incoming row, satisfies the reviewed order-two predicate. -/
 theorem ConstantAmplitude.receiver_order_two {a d : K} {i j : Fin s}
     (D : ConstantAmplitude A a d i j) (ha : ∀ i j, i ≤ j → A i j = 0) :
-    HasOrder ((nodes A j)⁻¹ • prefixMatrix A j.isLt.le)
-      (fun l : Fin j.val => (nodes A j)⁻¹ * A j (Fin.castLE j.isLt.le l)) 2 := by
+    HasOrder 2
+      ((nodes A j)⁻¹ • prefixMatrix A j.isLt.le) (fun l : Fin j.val => (nodes A j)⁻¹ * A j (Fin.castLE j.isLt.le l)) := by
   apply exact_receiver_prefix_order ha j 2 (D.node ▸ D.dn)
   intro v hv
   rw [grade_two_span] at hv

@@ -79,7 +79,7 @@ theorem diagonal (i : Fin 5) : A i i = gamma := by
 theorem diagonal_ne_zero : gamma ≠ 0 := by decide +kernel
 
 set_option maxHeartbeats 2000000 in
-theorem order_five : HasOrder A b 5 := by
+theorem order_five : HasOrder 5 A b := by
   apply (checkOrder_iff A b 5).mp
   decide +kernel
 
@@ -90,7 +90,7 @@ theorem sixth_bush_scaled :
   rw [factorial_bushyTree, Φ_bushyTree, row_sums]
   decide +kernel
 
-theorem not_order_six : ¬ HasOrder A b 6 := by
+theorem not_order_six : ¬ HasOrder 6 A b := by
   intro h
   have ht := h (bushyTree 6) (by rw [order_bushyTree]; decide)
   have he := sixth_bush_scaled
@@ -128,7 +128,7 @@ theorem specialize_gamma_ne_zero (x : K) (hx : x^2 = 6) :
 
 /-- This certificate does not require injectivity of the specialization:
 the next-order discrepancy is rational and stays nonzero in characteristic zero. -/
-theorem not_order_six_map (f : Q6 →+* K) : ¬ HasOrder (A.map f) (f ∘ b) 6 := by
+theorem not_order_six_map (f : Q6 →+* K) : ¬ HasOrder 6 (A.map f) (f ∘ b) := by
   intro h
   have ht := h (bushyTree 6) (by rw [order_bushyTree]; decide)
   have he : (100 : K) * (((bushyTree 6).factorial : K) *
@@ -142,7 +142,7 @@ theorem not_order_six_map (f : Q6 →+* K) : ¬ HasOrder (A.map f) (f ∘ b) 6 :
 theorem specialized_exact (x : K) (hx : x^2 = 6) :
     let f := specialize x hx
     (A.map f).IsLowerTriangular ∧ (∀ i, (A.map f) i i = f gamma) ∧ f gamma ≠ 0 ∧
-      HasOrder (A.map f) (f ∘ b) 5 ∧ ¬ HasOrder (A.map f) (f ∘ b) 6 := by
+      HasOrder 5 (A.map f) (f ∘ b) ∧ ¬ HasOrder 6 (A.map f) (f ∘ b) := by
   let f := specialize x hx
   exact ⟨lowerTriangular.map f, fun i => congrArg f (diagonal i),
     specialize_gamma_ne_zero x hx, order_five.map_coefficients f, not_order_six_map f⟩

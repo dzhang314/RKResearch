@@ -22,9 +22,9 @@ open scoped Matrix Classical
 -- Import-only consumer; neither the old tree nor its order bridge is on LEAN_PATH.
 example {K : Type*} [Field K] [CharZero K]
     {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (off : (offKnots A).card = 1) (cap : finrank K (treeSpace A 4) ≤ 8) :
-    ∃ j : Fin 12, HasOrder ((nodes A j)⁻¹ • prefixMatrix A j.isLt.le)
-      (fun l : Fin j.val => (nodes A j)⁻¹ * A j (Fin.castLE j.isLt.le l)) 2 := by
+    ∃ j : Fin 12, HasOrder 2
+      ((nodes A j)⁻¹ • prefixMatrix A j.isLt.le) (fun l : Fin j.val => (nodes A j)⁻¹ * A j (Fin.castLE j.isLt.le l)) := by
   obtain ⟨a,d,i,j,D⟩ := order9_constant_amplitude_of_capacity ha ho off cap
   exact ⟨j,D.receiver_order_two ha⟩

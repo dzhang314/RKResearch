@@ -13,7 +13,7 @@ open scoped Matrix
 
 -- The three physical reverse seeds paid by exact order six.
 example {R : Type*} [CommRing R] {s : ℕ}
-    {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R} (h : HasOrder A b 6) :
+    {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R} (h : HasOrder 6 A b) :
     treeSpace A 4 ≤ (row (reflectedStageRow A b 0)).ker ∧
     treeSpace A 3 ≤ (row (reflectedStageRow A b 1)).ker ∧
     treeSpace A 2 ≤ (row (reflectedStageRow A b 2)).ker :=
@@ -22,6 +22,6 @@ example {R : Type*} [CommRing R] {s : ℕ}
 
 -- Order fifteen pays the seventh reverse seed even on the full grade-seven space.
 example {R : Type*} [CommRing R] {s : ℕ}
-    {A : Matrix (Fin s) (Fin s) R} {b x : Fin s → R} (h : HasOrder A b 15)
+    {A : Matrix (Fin s) (Fin s) R} {b x : Fin s → R} (h : HasOrder 15 A b)
     (hx : x ∈ treeSpace A 7) : (reflectedStageRow A b 6) ⬝ᵥ x = 0 :=
   reflectedStageRow_treeSpace h 7 6 (by decide) hx

@@ -27,7 +27,7 @@ variable [CharZero K]
 
 /-- Actual paid data fed to the checked rational packet. The constant
 probe is refunded only in the truly marked branch. -/
-theorem order13_paid_mesh (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13)
+theorem order13_paid_mesh (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b)
     (F : Order13PaidFrame A b) (P : K[X]) (pd : P.natDegree≤7)
     (hp : evalNodes A P∈order13FirstEscape A b) : Order13Mesh A b P := by
   have m := F.escapePaid hp
@@ -89,7 +89,7 @@ structure Order13FirstMesh (A : Matrix (Fin 19) (Fin 19) K) (b : Fin 19→K)
   decomposition : markedTreeSpace A b (a+1)=(coeffEval A a).range⊔order13FirstEscape A b
   rank : finrank K (markedTreeSpace A b (a+1))=a+8+terminalDebit A b
 
-theorem order13_first_mesh_of_frame (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13)
+theorem order13_first_mesh_of_frame (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b)
     (F : Order13PaidFrame A b) : ∃ a G, Order13FirstMesh A b a G := by
   let W := order13FirstEscape A b
   have wR : finrank K W=7+terminalDebit A b := F.escapeRank

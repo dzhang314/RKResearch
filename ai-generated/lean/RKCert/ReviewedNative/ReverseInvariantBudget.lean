@@ -38,7 +38,7 @@ private theorem quadratic_as_ops (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K
 /-- An invariant reverse plane cannot refund any of the n quadratic
 causal gains, even if it intersects the initial adjoint flag. -/
 theorem reverse_invariant_rank_debit (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) (pay : j+n+2 ≤ p)
+    (ho : HasOrder p A b) (pay : j+n+2 ≤ p)
     (U : Submodule K (Fin s → K)) (uM : U ≤ annih (treeSpace A j))
     (uN : ∀ v ∈ U, mat A.transpose v ∈ U)
     (uC : ∀ v ∈ U, diag (reflectedClock A) v ∈ U) :
@@ -80,7 +80,7 @@ theorem reverse_invariant_rank_debit (ha : ∀ i j, i ≤ j → A i j = 0)
   exact (rank n le_rfl).trans (Submodule.finrank_mono (inM n le_rfl))
 
 theorem no_joint_invariant_of_paid_capacity (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) (pay : j+n+2 ≤ p)
+    (ho : HasOrder p A b) (pay : j+n+2 ≤ p)
     (capacity : s ≤ finrank K (treeSpace A j)+n)
     (U : Submodule K (Fin s → K)) (uM : U ≤ annih (treeSpace A j))
     (uN : ∀ v ∈ U, mat A.transpose v ∈ U)

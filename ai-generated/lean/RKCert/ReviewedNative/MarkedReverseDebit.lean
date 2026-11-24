@@ -36,7 +36,7 @@ theorem primitive_mark_paid (ha : ∀ i k,i ≤ k → A i k=0)
     rw [(Submodule.mem_bot K).mp hv,map_zero]
 
 theorem primitiveBack_le_marked_annih (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b p) (L : LastActive b (Fin.last s)) (pay : j+n+2≤p) :
+    (ho : HasOrder p A b) (L : LastActive b (Fin.last s)) (pay : j+n+2≤p) :
     primitiveBack A b n ≤ annih (markedTreeSpace A b j) := by
   intro w hw
   apply mem_annih.mpr
@@ -47,7 +47,7 @@ theorem primitiveBack_le_marked_annih (ha : ∀ i k,i ≤ k → A i k=0)
 /-- The exact reverse flag is earned whenever there is no spare rank:
 no invariant smaller flag is substituted for the true annihilator. -/
 theorem primitiveBack_eq_marked_annih_of_rank (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b p) (L : LastActive b (Fin.last s)) (pay : j+n+2≤p)
+    (ho : HasOrder p A b) (L : LastActive b (Fin.last s)) (pay : j+n+2≤p)
     (sat : s+1≤finrank K (markedTreeSpace A b j)+n+finrank K (back A b 0)) :
     primitiveBack A b n = annih (markedTreeSpace A b j) := by
   apply Submodule.eq_of_le_of_finrank_le (primitiveBack_le_marked_annih ha ho L pay)
@@ -75,7 +75,7 @@ theorem marked_annih_reflected_stable
 /-- Invariance pays at least floor((n+2)/2) of the immediately previous
 marked grade. All costs are counted in the original finite coordinate space. -/
 theorem marked_clock_invariant_debit [CharZero K] (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b p) (L : LastActive b (Fin.last s)) (pos : 1≤j) (pay : j+n+2≤p)
+    (ho : HasOrder p A b) (L : LastActive b (Fin.last s)) (pos : 1≤j) (pay : j+n+2≤p)
     (sat : s+1≤finrank K (markedTreeSpace A b j)+n+finrank K (back A b 0))
     (stable : (markedTreeSpace A b j).map (diag (nodes A))≤markedTreeSpace A b j) :
     finrank K (markedTreeSpace A b (j-1))+(n+2)/2≤finrank K (markedTreeSpace A b j) := by

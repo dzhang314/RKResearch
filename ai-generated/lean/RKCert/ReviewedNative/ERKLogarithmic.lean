@@ -24,7 +24,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 
 /-- At least one rank gain in the actual j,…,2j band is larger than one.
 The hypothesis 4j ≤ p pays polynomial separation through degree 2j. -/
-theorem erk_doubling_rank_surplus (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b p)
+theorem erk_doubling_rank_surplus (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder p A b)
     {j : ℕ} (j5 : 5≤j) (pay : 4*j≤p) :
     finrank K (zeroSpace A j)+j+1 ≤ finrank K (zeroSpace A (2*j)) := by
   by_contra! low
@@ -58,7 +58,7 @@ theorem erk_doubling_rank_surplus (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasO
 /-- The grade-five rank and every paid dyadic doubling of it earn one
 more stage than the preceding characteristic-zero floor. -/
 theorem erk_logarithmic_field_dyadic (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b p) (d : ℕ) (budget : 10*2^d≤p) :
+    (ho : HasOrder p A b) (d : ℕ) (budget : 10*2^d≤p) :
     (3*p+1)/2-1+d ≤ s := by
   let q := p/2
   have power (n : ℕ) : 0 < (2:ℕ)^n := pow_pos (by decide) _
@@ -93,7 +93,7 @@ possibly with zero divisors. Strictness and native order survive the
 characteristic-zero field specialization, on the same physical indices. -/
 theorem HasOrder.erk_logarithmic_stages {R : Type u} [CommRing R] [CharZero R] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0) (hp : 10≤p) :
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0) (hp : 10≤p) :
     (3*p+1)/2-1+Nat.log 2 (p/10) ≤ s := by
   have power := Nat.pow_log_le_self 2 (by omega : p/10≠0)
   exact h.strict_lower_triangular_of_charZero_fields ha (fun _ _ _ _ _ ht ho =>
@@ -103,7 +103,7 @@ theorem HasOrder.erk_logarithmic_stages {R : Type u} [CommRing R] [CharZero R] {
 order twenty, where it proves thirty original stages. -/
 theorem HasOrder.erk_order_twenty_charZero_stages {R : Type u} [CommRing R] [CharZero R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b 20) (ha : ∀ i j, i ≤ j → A i j=0) : 30≤s :=
+    (h : HasOrder 20 A b) (ha : ∀ i j, i ≤ j → A i j=0) : 30≤s :=
   h.erk_logarithmic_stages ha (by decide)
 
 end RKResearch

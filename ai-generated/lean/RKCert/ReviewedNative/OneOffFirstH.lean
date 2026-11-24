@@ -150,7 +150,7 @@ budget is an upper rank of eight at grade four; row and tree identities
 remain on the reviewed order condition. -/
 theorem forward_minimal_ranks {n : ℕ} {A : Matrix (Fin (n+1)) (Fin (n+1)) K}
     {b : Fin (n+1) → K} (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) (hp : 8 ≤ p) (cap : finrank K (treeSpace A 4) ≤ 8) :
+    (ho : HasOrder p A b) (hp : 8 ≤ p) (cap : finrank K (treeSpace A 4) ≤ 8) :
     finrank K (zeroSpace A 3) = 2 ∧ finrank K (zeroSpace A 4) = 3 ∧
     finrank K (treeSpace A 3) = 6 ∧ finrank K (treeSpace A 4) = 8 := by
   have h4 := explicit_midpoint_rank_eq ha ho (q:=4) (by omega) (by omega)
@@ -166,7 +166,7 @@ theorem forward_minimal_ranks {n : ℕ} {A : Matrix (Fin (n+1)) (Fin (n+1)) K}
 /-- The actual chronology from the order witnesses and the rank-two
 hypothesis. No separate coefficients, nodes, or putative states are supplied. -/
 theorem first_h_of_actual {n : ℕ} {A : Matrix (Fin (n+1)) (Fin (n+1)) K}
-    {b : Fin (n+1) → K} (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p)
+    {b : Fin (n+1) → K} (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b)
     (hN : (offKnots A).card = 1) (hp : 6 ≤ p)
     (rank : finrank K (zeroSpace A 3) = 2) :
     ∃ (a : K) (i : Fin (n+1)) (lam : K) (j : Fin (n+1)), Origin A a i ∧
@@ -185,7 +185,7 @@ theorem first_h_of_actual {n : ℕ} {A : Matrix (Fin (n+1)) (Fin (n+1)) K}
 /-- The order-nine specialization used before deciding the square and
 amplitude branches. Its only remaining input is a reverse-capacity bound. -/
 theorem order9_first_h_of_capacity {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9) (hN : (offKnots A).card = 1)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b) (hN : (offKnots A).card = 1)
     (cap : finrank K (treeSpace A 4) ≤ 8) :
     ∃ (a : K) (i : Fin 12) (lam : K) (j : Fin 12), Origin A a i ∧
       zeroSpace A 3 = Submodule.span K {g A, h A} ∧

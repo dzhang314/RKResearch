@@ -79,7 +79,7 @@ theorem Order15PaidStaircase.early_two_head_payment (S : Order15PaidStaircase A 
 /-- A four-dimensional ordinary grade four pays the entire core and
 actual rank-two head already at grade four. -/
 theorem Order15PaidStaircase.four_eq_core_head (S : Order15PaidStaircase A b a G 2 U w)
-    (ho : HasOrder A b 15) (rank4 : finrank K (zeroSpace A 4)=4) :
+    (ho : HasOrder 15 A b) (rank4 : finrank K (zeroSpace A 4)=4) :
     markedDefectSpace A b 4=chain (diag (nodes A)) U w 1 := by
   apply Submodule.eq_of_le_of_finrank_le S.early_two_head_payment.1
   have r := marked_defect_rank ho (j:=4) S.frame.lastActive (by decide)

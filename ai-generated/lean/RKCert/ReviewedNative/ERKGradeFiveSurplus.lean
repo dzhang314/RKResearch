@@ -25,7 +25,7 @@ theorem grade_five_surplus (ha : ∀ i j,i ≤ j → A i j=0) (sep : PolySeparat
 /-- In particular every native order ≥10 pays the early surplus on an
 arbitrary strictly lower tableau over a characteristic-zero field. -/
 theorem grade_five_surplus_of_reviewed_order {p : ℕ} (ha : ∀ i j,i ≤ j → A i j=0)
-    (ho : HasOrder A b p) (pay : 10≤p) :
+    (ho : HasOrder p A b) (pay : 10≤p) :
     5≤finrank K (zeroSpace A 5) := by
   cases s with
   | zero =>
@@ -37,7 +37,7 @@ theorem grade_five_surplus_of_reviewed_order {p : ℕ} (ha : ∀ i j,i ≤ j →
 
 /-- No defect-rank hypothesis remains in the ordinary forward entrance
 to the order-15 marked-mesh argument. This is not the final mesh. -/
-theorem order15_ordinary_forward_head (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_ordinary_forward_head (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (cap : s ≤ 22) :
     s=22 ∧ ∃ (r : ℕ) (U : Submodule K (Fin s → K)) (w : Fin s → K),
       2≤r ∧ finrank K U+r=5 ∧ U.map (diag (nodes A))≤U ∧ U≤zeroSpace A 5 ∧

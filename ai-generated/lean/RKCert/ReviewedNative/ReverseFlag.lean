@@ -90,13 +90,13 @@ theorem reflectedClock_treeSpace (A : Matrix (Fin s) (Fin s) K) (j : ℕ) :
   rw [e]
   exact (treeSpace A (j+1)).sub_mem (treeSpace_mono A (by omega) hv) (diag_treeSpace A j hv)
 
-theorem reflectedStageRow_annih (ho : HasOrder A b p) (j k : ℕ) (pay : j+k+2≤p) :
+theorem reflectedStageRow_annih (ho : HasOrder p A b) (j k : ℕ) (pay : j+k+2≤p) :
     reflectedStageRow A b k ∈ annih (treeSpace A j) := by
   apply mem_annih.mpr
   intro v hv
   exact reflectedStageRow_treeSpace ho j k pay hv
 
-theorem adjointFlag_annih (ho : HasOrder A b p) (C : ℕ → Submodule K (Fin s → K))
+theorem adjointFlag_annih (ho : HasOrder p A b) (C : ℕ → Submodule K (Fin s → K))
     (paid : ∀ j n, j+n+3≤p → C n ≤ annih (treeSpace A j))
     (j n : ℕ) (pay : j+n+2≤p) :
     adjointFlag A b C n ≤ annih (treeSpace A j) := by
@@ -113,21 +113,21 @@ theorem adjointFlag_annih (ho : HasOrder A b p) (C : ℕ → Submodule K (Fin s 
       ((Submodule.map_mono cut).trans (annih_map_diag (reflectedClock_treeSpace A j))))
       (paid j n (by omega))
 
-theorem paid_pairCredit (ho : HasOrder A b p) (j n : ℕ) (pay : j+n+3≤p) :
+theorem paid_pairCredit (ho : HasOrder p A b) (j n : ℕ) (pay : j+n+3≤p) :
     pairCredit A b n ≤ annih (treeSpace A j) :=
   (Submodule.span_singleton_le_iff_mem ..).mpr (reflectedStageRow_annih ho j 1 (by omega))
 
-theorem paid_monomialCredit (ho : HasOrder A b p) (j n : ℕ) (pay : j+n+3≤p) :
+theorem paid_monomialCredit (ho : HasOrder p A b) (j n : ℕ) (pay : j+n+3≤p) :
     monomialCredit A b n ≤ annih (treeSpace A j) := by
   apply Submodule.span_le.mpr
   rintro _ ⟨k,rfl⟩
   exact reflectedStageRow_annih ho j k.val (by have := k.isLt; omega)
 
-theorem back_annih (ho : HasOrder A b p) (j n : ℕ) (pay : j+n+2≤p) :
+theorem back_annih (ho : HasOrder p A b) (j n : ℕ) (pay : j+n+2≤p) :
     back A b n ≤ annih (treeSpace A j) :=
   adjointFlag_annih ho _ (paid_pairCredit ho) j n pay
 
-theorem primitiveBack_annih (ho : HasOrder A b p) (j n : ℕ) (pay : j+n+2≤p) :
+theorem primitiveBack_annih (ho : HasOrder p A b) (j n : ℕ) (pay : j+n+2≤p) :
     primitiveBack A b n ≤ annih (treeSpace A j) :=
   adjointFlag_annih ho _ (paid_monomialCredit ho) j n pay
 
@@ -152,7 +152,7 @@ theorem one_mem_treeSpace (A : Matrix (Fin s) (Fin s) K) (j : ℕ) :
   have h : ((FiniteRootedTree.leaf.order : ℕ))≤j+1 := by simp [FiniteRootedTree.order]
   simpa using Φ_mem_treeSpace A .leaf h
 
-theorem reflected_target_ne_zero (ho : HasOrder A b p) (hp : 2≤p) :
+theorem reflected_target_ne_zero (ho : HasOrder p A b) (hp : 2≤p) :
     row (diag (reflectedClock A) b) 1 ≠ 0 := by
   have z : row (diag (reflectedClock A) b) 1 =
       stageMass b (nodes A) 0 - stageMass b (nodes A) 1 := by
@@ -170,7 +170,7 @@ theorem reflected_target_ne_zero (ho : HasOrder A b p) (hp : 2≤p) :
   rw [e,mul_zero] at d
   exact zero_ne_one d
 
-private theorem flag_strict (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+private theorem flag_strict (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (C : ℕ → Submodule K (Fin s → K))
     (paid : ∀ j n, j+n+3≤p → C n ≤ annih (treeSpace A j))
     (creditSecond : ∀ n, quadraticSeed A b∈C n) (n : ℕ) (pay : n+3≤p) :
@@ -190,7 +190,7 @@ private theorem flag_strict (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b
   have h := adjointFlag_annih ho C paid 0 n (by omega) yes
   exact reflected_target_ne_zero ho (by omega) (mem_annih.mp h _ (one_mem_treeSpace A 0))
 
-private theorem flag_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+private theorem flag_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (C : ℕ → Submodule K (Fin s → K))
     (paid : ∀ j n, j+n+3≤p → C n ≤ annih (treeSpace A j))
     (creditSecond : ∀ n, quadraticSeed A b∈C n) (n d : ℕ) (pay : n+d+2≤p) :
@@ -203,23 +203,23 @@ private theorem flag_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A
     change finrank K (adjointFlag A b C n)+(d+1) ≤ finrank K (adjointFlag A b C (n+d+1))
     omega
 
-theorem back_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+theorem back_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (n d : ℕ) (pay : n+d+2≤p) :
     finrank K (back A b n)+d≤finrank K (back A b (n+d)) :=
   flag_interval ha ho _ (paid_pairCredit ho) (fun _=>Submodule.mem_span_singleton_self _) n d pay
 
-theorem primitiveBack_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+theorem primitiveBack_interval (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (n d : ℕ) (pay : n+d+2≤p) :
     finrank K (primitiveBack A b n)+d≤finrank K (primitiveBack A b (n+d)) :=
   flag_interval ha ho _ (paid_monomialCredit ho) (fun n=>monomial_mem_credit n 1 (by omega)) n d pay
 
-theorem back_finrank (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+theorem back_finrank (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (n : ℕ) (pay : n+2≤p) : finrank K (back A b 0)+n≤finrank K (back A b n) := by
   have h := back_interval ha ho 0 n (by omega)
   rw [Nat.zero_add] at h
   exact h
 
-theorem backward_count (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+theorem backward_count (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (j n : ℕ) (pay : j+n+2≤p) :
     finrank K (treeSpace A j)+finrank K (back A b 0)+n≤s := by
   have lo:=back_finrank ha ho n (by omega)

@@ -53,7 +53,7 @@ variable [CharZero K]
 
 /-- An order-12 tableau at the physical cap has one exact forward chart
 from the original fifth defect grade through the whole stage space. -/
-theorem forward_staircase (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem forward_staircase (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) : ∃ r U w, ForwardStaircase A r U w := by
   let D := diag (nodes A)
   have T := terminal_band ha ho S
@@ -106,7 +106,7 @@ end CharacteristicZero
 
 /-- Every physical grade-two multiplier preserves the invariant core,
 even before proving that the multiplier itself belongs to the core. -/
-theorem grade_two_multiplier_stable (ho : HasOrder A b 12) (S : Saturation A b)
+theorem grade_two_multiplier_stable (ho : HasOrder 12 A b) (S : Saturation A b)
     (T : TerminalBand A b) {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (hv : v∈zeroSpace A 2) :
     U.map (diag v)≤U := by
@@ -128,7 +128,7 @@ theorem grade_two_multiplier_stable (ho : HasOrder A b 12) (S : Saturation A b)
 
 /-- Any grade-two vector outside the core has a nonzero polynomial
 multiplier of degree at most two on the genuine head modulo the core. -/
-theorem grade_two_multiplier_profile (ho : HasOrder A b 12) (S : Saturation A b)
+theorem grade_two_multiplier_profile (ho : HasOrder 12 A b) (S : Saturation A b)
     (T : TerminalBand A b) {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (hv : v∈zeroSpace A 2) (out : v∉U) :
     ∃ P : K[X], P≠0 ∧ P.natDegree≤2 ∧ v*w-weightedEval (nodes A) w P∈U := by

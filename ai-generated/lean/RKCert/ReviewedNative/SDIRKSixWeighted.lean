@@ -22,7 +22,7 @@ variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)} {γ : K}
 
 /-- The weighted seed row is a scalar multiple of the terminal commutator row. -/
-theorem weighted_seed_proportional (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem weighted_seed_proportional (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀i, A i i=γ) (hγ : γ≠0) :
     ∃ μ : K, μ • (probe A b 0).comp (volterra A) = (probe A b 0).comp (diag (seed A)) := by
   let E := treeSpace A 3
@@ -58,7 +58,7 @@ theorem weighted_seed_proportional (ho : HasOrder A b 6) (ha : A.IsLowerTriangul
   exact ⟨μ,congrArg Subtype.val hμ⟩
 
 /-- The reflected normalized spacing controls the actual last two seed values. -/
-theorem order_six_weighted_terminal_seed (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem order_six_weighted_terminal_seed (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀i, A i i=γ) (hγ : γ≠0) :
     seed A 4 = (1+2*((nodes A 5-nodes A 4)/γ)-((nodes A 5-nodes A 4)/γ)^2)*seed A 5 := by
   obtain ⟨hb5,hb4,_,_,hlink⟩ := order_six_terminal_chronology ho ha he hγ

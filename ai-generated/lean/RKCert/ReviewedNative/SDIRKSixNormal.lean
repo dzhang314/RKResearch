@@ -53,7 +53,7 @@ structure Front (B : Matrix (Fin 6) (Fin 6) K) (z : K) : Prop where
       (leg z (1+B 1 0)-kap (B 1 0)*leg z 1)*tapMap B 1 (seed B) i
 
 theorem normal_front [CharZero K] {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)} {γ : K}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i,A i i=γ) (hγ : γ≠0) : Front (scaleTable γ⁻¹ A) γ⁻¹ := by
   let z := γ⁻¹
   let B := scaleTable z A

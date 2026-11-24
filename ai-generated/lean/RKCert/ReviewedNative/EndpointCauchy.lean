@@ -21,7 +21,7 @@ noncomputable section
 variable {ι K : Type*} [Fintype ι] [Field K]
 variable {A : Matrix ι ι K} {b : ι → K} {p q : ℕ}
 
-theorem paid_constant_cauchy (ho : HasOrder A b p) (pay : 2*q+1≤p)
+theorem paid_constant_cauchy (ho : HasOrder p A b) (pay : 2*q+1≤p)
     (a : Fin q→K) (c : K)
     (test : ∀ i : Fin (q+1), (∑ j : Fin q, a j/((i.val+j.val+2:ℕ):K))=c) :
     a=0 ∧ c=0 := by
@@ -80,7 +80,7 @@ variable {s : ℕ} {T : Matrix (Fin (s+1)) (Fin (s+1)) K} {w : Fin (s+1)→K}
 /-- A real stage with nonzero weight and clock 1 is not itself a paid
 column at the ordinary midpoint. Its single unit remains at that stage. -/
 theorem endpoint_coordinate_out (ha : ∀ i j,i≤j → T i j=0)
-    (ho : HasOrder T w p) (pay : 2*q+1≤p) (t : Fin (s+1))
+    (ho : HasOrder p T w) (pay : 2*q+1≤p) (t : Fin (s+1))
     (live : w t≠0) (atOne : nodes T t=1) :
     coordinate (K:=K) t ∉ treeSpace T q := by
   classical

@@ -17,7 +17,7 @@ variable {K : Type*} [Field K] [CharZero K] {s : ℕ}
 variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
 theorem order9_forward_chart (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (stages : s ≤ 12) :
+    (ho : HasOrder 9 A b) (stages : s ≤ 12) :
     s = 12 ∧ finrank K (zeroSpace A 3) = 2 ∧ finrank K (zeroSpace A 4) = 3 ∧
       finrank K (treeSpace A 3) = 6 ∧ finrank K (treeSpace A 4) = 8 := by
   have room := Reverse.orderNine_paid_room ha ho
@@ -31,7 +31,7 @@ theorem order9_forward_chart (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- All three physical amplitude branches are now decided directly from the
 reviewed order, strict lower shape, and the twelve-stage ceiling. -/
 theorem order9_constant_amplitude (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (stages : s ≤ 12) (off : (offKnots A).card = 1) :
+    (ho : HasOrder 9 A b) (stages : s ≤ 12) (off : (offKnots A).card = 1) :
     ∃ (a d : K) (i j : Fin s), ConstantAmplitude A a d i j := by
   have room := Reverse.orderNine_paid_room ha ho
   have cap : finrank K (treeSpace A 4) ≤ 8 := by omega
@@ -43,9 +43,9 @@ theorem order9_constant_amplitude (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- First clean receiver with its whole leading matrix and actual incoming
 row. This is the reviewed order predicate, not a condition on a state quotient. -/
 theorem order9_receiver_order_two (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (stages : s ≤ 12) (off : (offKnots A).card = 1) :
-    ∃ j : Fin s, HasOrder ((nodes A j)⁻¹ • prefixMatrix A j.isLt.le)
-      (fun l : Fin j.val => (nodes A j)⁻¹ * A j (Fin.castLE j.isLt.le l)) 2 := by
+    (ho : HasOrder 9 A b) (stages : s ≤ 12) (off : (offKnots A).card = 1) :
+    ∃ j : Fin s, HasOrder 2
+      ((nodes A j)⁻¹ • prefixMatrix A j.isLt.le) (fun l : Fin j.val => (nodes A j)⁻¹ * A j (Fin.castLE j.isLt.le l)) := by
   obtain ⟨_,_,_,j,D⟩ := order9_constant_amplitude ha ho stages off
   exact ⟨j,D.receiver_order_two ha⟩
 

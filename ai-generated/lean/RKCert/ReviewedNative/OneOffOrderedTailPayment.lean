@@ -50,7 +50,7 @@ theorem tailMoment_terminal (one : nodes A (Fin.last 11)=1) (k : ℕ) (pos : k�
 
 /-- Reflected moments pay a physical shifted-clock action at its exact
 grade budget. The live coordinate at clock one contributes zero. -/
-theorem tail_paid_step (ho : HasOrder A b 9) {v : Fin 12 → K} {q k : ℕ}
+theorem tail_paid_step (ho : HasOrder 9 A b) {v : Fin 12 → K} {q k : ℕ}
     (hv : v∈treeSpace A q) (one : nodes A (Fin.last 11)=1)
     (ord : q+k+2≤9) (pos : k≠0) {η κ τ : K}
     (act : mat A v=κ • (diag (nodes A) v-η • v)+τ • Reverse.coordinate (Fin.last 11)) :
@@ -62,7 +62,7 @@ theorem tail_paid_step (ho : HasOrder A b 9) {v : Fin 12 → K} {q k : ℕ}
     smul_zero,add_zero,smul_eq_mul,sub_eq_zero] at e
   simpa only [tailMoment,mul_assoc] using e.symm
 
-theorem tail_paid_recurrence (ho : HasOrder A b 9) {v : Fin 12 → K} {q k : ℕ}
+theorem tail_paid_recurrence (ho : HasOrder 9 A b) {v : Fin 12 → K} {q k : ℕ}
     (hv : v∈treeSpace A q) (one : nodes A (Fin.last 11)=1)
     (ord : q+k+2≤9) (pos : k≠0) {η κ τ : K}
     (act : mat A v=κ • (diag (nodes A) v-η • v)+τ • Reverse.coordinate (Fin.last 11)) :
@@ -72,7 +72,7 @@ theorem tail_paid_recurrence (ho : HasOrder A b 9) {v : Fin 12 → K} {q k : ℕ
   rw [tailMoment_clock] at e
   linear_combination e
 
-theorem tail_hankel_collision [CharZero K] (ho : HasOrder A b 9)
+theorem tail_hankel_collision [CharZero K] (ho : HasOrder 9 A b)
     (hf : f∈treeSpace A 4) (one : nodes A (Fin.last 11)=1) {η u κ lam τ τ' : K}
     (hu : u≠η)
     (fA : mat A f=κ • (diag (nodes A) f-η • f)+τ • Reverse.coordinate (Fin.last 11))
@@ -109,7 +109,7 @@ theorem tail_hankel_collision [CharZero K] (ho : HasOrder A b 9)
     linear_combination (1+3*lam)*f3-4*lam*(1-u)*f2+4*κ*g2
   exact RKCert.Paired.reflected_collision_scalar κ lam η u (μ 2) (μ 3) (μ 4) f2' f3' g1' g2' hu
 
-theorem one_off_reflected_beta (ho : HasOrder A b 9) {d t z : K}
+theorem one_off_reflected_beta (ho : HasOrder 9 A b) {d t z : K}
     (hf : f-evalNodes A (tailPolynomial d t z)∈zeroSpace A 4)
     (j : ℕ) (budget : j≤3) :
     tailMoment A b (j+1) f =
@@ -124,7 +124,7 @@ theorem one_off_reflected_beta (ho : HasOrder A b 9) {d t z : K}
 
 variable [LinearOrder K] [IsStrictOrderedRing K]
 
-theorem tail_cubic_impossible (ho : HasOrder A b 9) {d t z η κ τ : K}
+theorem tail_cubic_impossible (ho : HasOrder 9 A b) {d t z η κ τ : K}
     (hf : f-evalNodes A (tailPolynomial d t z)∈zeroSpace A 4)
     (one : nodes A (Fin.last 11)=1) (zt : z≠t)
     (ht : (lobattoCubic : K[X]).eval t=0) (hz : (lobattoCubic : K[X]).eval z=0)
@@ -151,7 +151,7 @@ theorem tail_cubic_impossible (ho : HasOrder A b 9) {d t z η κ τ : K}
     linear_combination e2
   exact rn (by linear_combination -3*s1+2*s2)
 
-theorem tail_quartic_impossible (ho : HasOrder A b 9) {d t z l η u κ lam τ τ' : K}
+theorem tail_quartic_impossible (ho : HasOrder 9 A b) {d t z l η u κ lam τ τ' : K}
     (hf : f-evalNodes A (tailPolynomial d t z)∈zeroSpace A 4)
     (one : nodes A (Fin.last 11)=1) (un : u≠η) (zt : z≠t)
     (ht : (lobattoPencil l).eval t=0) (hz : (lobattoPencil l).eval z=0)

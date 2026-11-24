@@ -1,7 +1,7 @@
 # Native explicit order thirteen: paid forward and reverse frame
 
 The native theorem `explicit_order_thirteen_at_least_nineteen` takes the
-original strictly lower matrix and `RKResearch.HasOrder A b 13` over any
+original strictly lower matrix and `RKResearch.HasOrder 13 A b` over any
 characteristic-zero field. It proves (19 \le s). At (s=19), the native
 physical ranks, clock head, and scalar mesh are forced.
 

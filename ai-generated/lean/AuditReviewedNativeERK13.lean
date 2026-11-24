@@ -15,11 +15,11 @@ open Module RKResearch RKResearch.Certified.Graded RKResearch.Certified.Graded.R
 #print axioms order13_marked_reverse_ranks
 
 example {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 19) (Fin 19) K}
-    {b : Fin 19 → K} (ha : ∀ i j,i≤j → A i j=0) (ho : RKResearch.HasOrder A b 13) :
+    {b : Fin 19 → K} (ha : ∀ i j,i≤j → A i j=0) (ho : RKResearch.HasOrder 13 A b) :
     finrank K (markedTreeSpace A b 10)=17+terminalDebit A b :=
   order13_paid_high_ranks ha ho (j:=10) (by decide) (by decide)
 
 example {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 19) (Fin 19) K}
-    {b : Fin 19 → K} (ha : ∀ i j,i≤j → A i j=0) (ho : RKResearch.HasOrder A b 13) :
+    {b : Fin 19 → K} (ha : ∀ i j,i≤j → A i j=0) (ho : RKResearch.HasOrder 13 A b) :
     back A b 1=annih (markedTreeSpace A b 10) :=
   (order13_reverse_window ha ho (by decide : 1≤1) (by decide)).1

@@ -23,7 +23,7 @@ variable {K : Type*} [Field K]
 /-- One physical zero row, not strict triangularity, suffices to distinguish
 a live node at one from the entire paid midpoint space. -/
 theorem endpoint_coordinate_out_of_zero_row {ι : Type*} [Fintype ι] {A : Matrix ι ι K}
-    {b : ι → K} {p q : ℕ} (ho : HasOrder A b p) (pay : 2*q+1 ≤ p) {o t : ι}
+    {b : ι → K} {p q : ℕ} (ho : HasOrder p A b) (pay : 2*q+1 ≤ p) {o t : ι}
     (hr : ∀ j, A o j = 0) (live : b t ≠ 0) (one : nodes A t = 1) :
     coordinate (K:=K) t ∉ treeSpace A q := by
   classical
@@ -56,7 +56,7 @@ variable {s p : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
 /-- The exact unmarked reverse room at any paid cutoff, from level one.
 This keeps the *actual* initial reverse rank rather than counting it twice. -/
-theorem dirk_reverse_rank_budget (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_reverse_rank_budget (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {q n : ℕ} (hn : 1 ≤ n) (pay : q+n+2 ≤ p) :
     finrank K (treeSpace A q) + (n-1) + finrank K (primitiveBack A b 1) ≤ s := by
   have grow := dirk_primitiveBack_rank_gain ha ho (r:=1) (by decide) hn (by omega)
@@ -67,7 +67,7 @@ theorem dirk_reverse_rank_budget (ha : A.IsLowerTriangular) (ho : HasOrder A b p
 
 /-- Once the physical origin and the first two backward seeds vanish,
 the last live coordinate cannot be spent on any of the counted dimensions. -/
-theorem dirk_terminal_rank_budget (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_terminal_rank_budget (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {q n : ℕ} {o : Fin s} (hn : 1 ≤ n) (pay : q+n+2 ≤ p) (mid : 2*q+1 ≤ p)
     (hr : ∀ j, A o j = 0) (h₁ : reflectedStageRow A b 0 = 0)
     (h₂ : reflectedStageRow A b 1 = 0) :
@@ -88,7 +88,7 @@ theorem dirk_terminal_rank_budget (ha : A.IsLowerTriangular) (ho : HasOrder A b 
 
 /-- Two-ended physical count, with the one boundary refund paid by C(2),
 one of the first two backward rows, or the last live coordinate itself. -/
-theorem dirk_two_ended_stage_count (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_two_ended_stage_count (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {q n : ℕ} (hq : 2 ≤ q) (hn : 1 ≤ n) (pay : q+n+2 ≤ p) (mid : 2*q+1 ≤ p) :
     2*q+n-1 ≤ s := by
   have fr := dirk_forward_zeroSpace_rank_floor ha ho hq (by omega)
@@ -117,7 +117,7 @@ namespace RKResearch
 /-- Native uniform DIRK floor over every field. -/
 theorem HasOrder.dirk_uniform_stages_field {K : Type*} [Field K] {p s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b p) (ha : A.IsLowerTriangular) (hp : 6 ≤ p) :
+    (h : HasOrder p A b) (ha : A.IsLowerTriangular) (hp : 6 ≤ p) :
     p+(p-1)/2-3 ≤ s := by
   have count := Certified.Graded.Reverse.dirk_two_ended_stage_count ha h
     (q:=(p-1)/2) (n:=p-(p-1)/2-2) (by omega) (by omega) (by omega) (by omega)
@@ -128,19 +128,19 @@ satisfying the human rooted-tree conditions needs at least
 p + ⌊(p−1)/2⌋ − 3 original stages at order p ≥ 6. -/
 theorem HasOrder.dirk_uniform_stages {R : Type*} [CommRing R] [Nontrivial R] {p s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : A.IsLowerTriangular) (hp : 6 ≤ p) :
+    (h : HasOrder p A b) (ha : A.IsLowerTriangular) (hp : 6 ≤ p) :
     p+(p-1)/2-3 ≤ s :=
   h.lower_triangular_of_all_fields ha
     (fun _ _ _ _ ht h' => h'.dirk_uniform_stages_field ht hp)
 
 theorem HasOrder.dirk_order_seven_stages {R : Type*} [CommRing R] [Nontrivial R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b 7) (ha : A.IsLowerTriangular) : 7 ≤ s :=
+    (h : HasOrder 7 A b) (ha : A.IsLowerTriangular) : 7 ≤ s :=
   h.dirk_uniform_stages ha (by decide)
 
 theorem HasOrder.dirk_order_eight_stages {R : Type*} [CommRing R] [Nontrivial R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b 8) (ha : A.IsLowerTriangular) : 8 ≤ s :=
+    (h : HasOrder 8 A b) (ha : A.IsLowerTriangular) : 8 ≤ s :=
   h.dirk_uniform_stages ha (by decide)
 
 /-- The uniform lower-bound ledger, including small orders before the
@@ -158,8 +158,8 @@ def dirkUniformFloor : ℕ → ℕ
 orders one through twenty, using only the native tableau predicate. -/
 theorem HasOrder.dirk_uniform_floor_le_stages {R : Type*} [CommRing R] [Nontrivial R]
     {p s : ℕ} {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : A.IsLowerTriangular) : dirkUniformFloor p ≤ s := by
-  have positive {k : ℕ} (hk : 1 ≤ k) (g : HasOrder A b k) : 1 ≤ s :=
+    (h : HasOrder p A b) (ha : A.IsLowerTriangular) : dirkUniformFloor p ≤ s := by
+  have positive {k : ℕ} (hk : 1 ≤ k) (g : HasOrder k A b) : 1 ≤ s :=
     g.lower_triangular_of_all_fields ha (fun _ _ _ _ _ g' => by
       obtain ⟨t,_⟩ := Certified.Graded.Reverse.exists_lastActive g' hk
       have := t.isLt

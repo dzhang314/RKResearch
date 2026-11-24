@@ -6,7 +6,7 @@ open Polynomial
 /-- The checked result uses the reviewed order predicate without conversion. -/
 theorem audit_native_order15_rank_two {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1)→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 15) (cap : s+1≤22) :
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 15 A b) (cap : s+1≤22) :
     ∃ (a : ℕ) (G : K[X]) (U : Submodule K (Fin (s+1)→K)) (w : Fin (s+1)→K),
       Order15PaidStaircase A b a G 2 U w :=
   order15_rank_two_staircase ha ho cap

@@ -15,7 +15,7 @@ variable {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
 /-- The actual twelve-stage one-off branch is excluded over an ordered
 field. Its entire tableau and all its order witnesses are native. -/
 theorem order9_one_off_impossible (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b 9) (off : (offKnots A).card=1) : False := by
+    (ho : HasOrder 9 A b) (off : (offKnots A).card=1) : False := by
   obtain ⟨a,d,i,j,D,F,D7⟩ := order9_one_off_two_fibres ha ho off
   let z := nodes A (5:Fin 12)
   let f := physicalTail A a d z
@@ -35,7 +35,7 @@ theorem order9_one_off_impossible (ha : ∀ i j, i ≤ j → A i j=0)
 twelve-stage shape. The multi-off census is a separate statement. -/
 theorem explicit_order_nine_one_off_at_least_thirteen {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 9 A b)
     (off : (offKnots A).card=1) : 13≤s := by
   by_contra! small
   have e := (order9_forward_chart ha ho (by omega)).1

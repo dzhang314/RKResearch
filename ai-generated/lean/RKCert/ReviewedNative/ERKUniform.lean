@@ -25,7 +25,7 @@ variable {K : Type*} [Field K] {s p : ℕ}
 /-- At a paid explicit midpoint the true tree-space rank is exactly the
 clock rank plus the actual defect rank, even at p = 2q. -/
 theorem erk_midpoint_tree_rank (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) {q : ℕ} (hq : 1 ≤ q) (pay : 2*q ≤ p) :
+    (ho : HasOrder p A b) {q : ℕ} (hq : 1 ≤ q) (pay : 2*q ≤ p) :
     finrank K (treeSpace A q) = q+1+finrank K (zeroSpace A q) := by
   cases s with
   | zero =>
@@ -37,7 +37,7 @@ theorem erk_midpoint_tree_rank (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- The measured even-midpoint budget retains the initial reverse rank and
 every actual forward surplus. It does not require a live terminal weight. -/
 theorem erk_even_midpoint_budget (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) {q : ℕ} (hq : 2 ≤ q) (pay : 2*q ≤ p) :
+    (ho : HasOrder p A b) {q : ℕ} (hq : 2 ≤ q) (pay : 2*q ≤ p) :
     2*q-1+finrank K (zeroSpace A q)+finrank K (back A b 0) ≤ s := by
   have front := erk_midpoint_tree_rank ha ho (by omega) pay
   have rear := backward_count ha ho q (q-2) (by omega)
@@ -47,7 +47,7 @@ theorem erk_even_midpoint_budget (ha : ∀ i j, i ≤ j → A i j = 0)
 pays the same extra dimension at an odd midpoint. Arbitrary actual forward
 surplus persists in the bound. -/
 theorem erk_odd_midpoint_budget (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) {q : ℕ} (hq : 1 ≤ q) (pay : 2*q+1 ≤ p) :
+    (ho : HasOrder p A b) {q : ℕ} (hq : 1 ≤ q) (pay : 2*q+1 ≤ p) :
     2*q+1+finrank K (zeroSpace A q) ≤ s := by
   have front := erk_midpoint_tree_rank ha ho hq (by omega)
   have rear := backward_endpoint_count ha ho q (q-1) pay (by omega)
@@ -56,7 +56,7 @@ theorem erk_odd_midpoint_budget (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- Even order 2q needs at least 3q−2 stages, keeping any initial reverse
 seed rank. -/
 theorem erk_even_midpoint_floor (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) {q : ℕ} (hq : 2 ≤ q) (pay : 2*q ≤ p) :
+    (ho : HasOrder p A b) {q : ℕ} (hq : 2 ≤ q) (pay : 2*q ≤ p) :
     3*q-2+finrank K (back A b 0) ≤ s := by
   have front := zeroSpace_finrank ha ho (n:=q-1) (by omega)
   rw [show q-1+1=q by omega] at front
@@ -74,9 +74,9 @@ when specializing the native order conditions through a maximal ideal. -/
 theorem HasOrder.strict_lower_triangular_of_all_fields
     {ι : Type v} [Fintype ι] [LE ι] {R : Type u} [CommRing R] [Nontrivial R]
     {A : Matrix ι ι R} {b : ι → R} {p : ℕ} {C : Prop}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0)
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0)
     (hf : ∀ (K : Type u) [Field K] (T : Matrix ι ι K) (w : ι → K),
-      (∀ i j, i ≤ j → T i j=0) → HasOrder T w p → C) : C := by
+      (∀ i j, i ≤ j → T i j=0) → HasOrder p T w → C) : C := by
   obtain ⟨I,hI⟩ := Ideal.exists_maximal R
   let _ := hI
   let _ := Ideal.Quotient.field I
@@ -90,7 +90,7 @@ denominators used in the proof are units; the field need not have
 characteristic zero. -/
 theorem HasOrder.erk_uniform_stages_field {K : Type*} [Field K] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0) :
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0) :
     max p ((3*p+1)/2-2) ≤ s := by
   have chain := Certified.explicit_order_le_stages ha h
   refine max_le chain ?_
@@ -112,7 +112,7 @@ theorem HasOrder.erk_uniform_stages_field {K : Type*} [Field K] {s p : ℕ}
 order-p tableau needs at least max(p, ⌈3p/2⌉−2) original stages. -/
 theorem HasOrder.erk_uniform_stages {R : Type u} [CommRing R] [Nontrivial R] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0) :
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0) :
     max p ((3*p+1)/2-2) ≤ s :=
   h.strict_lower_triangular_of_all_fields ha
     (fun _ _ _ _ ht ord => ord.erk_uniform_stages_field ht)
@@ -123,7 +123,7 @@ def erkUniformFloor (p : ℕ) : ℕ := max p ((3*p+1)/2-2)
 
 theorem HasOrder.erk_uniform_floor_le_stages {R : Type u} [CommRing R] [Nontrivial R] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0) :
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0) :
     erkUniformFloor p ≤ s :=
   h.erk_uniform_stages ha
 

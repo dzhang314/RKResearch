@@ -12,7 +12,7 @@ open scoped Matrix FiniteRootedTree
 variable {ι K : Type*} [Fintype ι] [Field K]
 variable {A : Matrix ι ι K} {b : ι → K} {p j : ℕ}
 
-theorem reflectedProbe_zeroSpace (ho : HasOrder A b p) (r k : ℕ)
+theorem reflectedProbe_zeroSpace (ho : HasOrder p A b) (r k : ℕ)
     {v : ι → K} (hv : v ∈ zeroSpace A j) (pay : r+k+j+1 ≤ p) :
     reflectedProbe A b r k v=0 := by
   induction k generalizing r with
@@ -22,7 +22,7 @@ theorem reflectedProbe_zeroSpace (ho : HasOrder A b p) (r k : ℕ)
   | succ k ih =>
     rw [reflectedProbe_succ_right,ih r (by omega),ih (r+1) (by omega),sub_self]
 
-theorem reflectedProbe_evalNodes (ho : HasOrder A b p) (P : K[X]) (r k : ℕ)
+theorem reflectedProbe_evalNodes (ho : HasOrder p A b) (P : K[X]) (r k : ℕ)
     (pay : r+k+P.natDegree+1 ≤ p) :
     reflectedProbe A b r k (evalNodes A P) =
       (primitive (X^r*((1-X)^k*P))).eval 1 := by
@@ -42,7 +42,7 @@ theorem reflectedProbe_evalNodes (ho : HasOrder A b p) (P : K[X]) (r k : ℕ)
   rw [eq,probe_evalNodes ho (H*P) r (by omega)]
 
 /-- The forward defect pairs to zero at the whole reflected degree budget. -/
-theorem reflectedProbe_primitive_of_defect (ho : HasOrder A b p) (r k : ℕ)
+theorem reflectedProbe_primitive_of_defect (ho : HasOrder p A b) (r k : ℕ)
     (pay : r+k+j+1 ≤ p) {P : K[X]} (dP : P.natDegree ≤ j) {f : ι → K}
     (hf : f-evalNodes A P ∈ zeroSpace A j) :
     reflectedProbe A b r k f = (primitive (X^r*((1-X)^k*P))).eval 1 := by
@@ -51,7 +51,7 @@ theorem reflectedProbe_primitive_of_defect (ho : HasOrder A b p) (r k : ℕ)
   exact h.trans (reflectedProbe_evalNodes ho P r k (by omega))
 
 /-- Exact reflected bush moments, with no sign assumptions on b or the nodes. -/
-theorem reflected_power_mass (ho : HasOrder A b p) (k : ℕ) (pay : k+1 ≤ p) :
+theorem reflected_power_mass (ho : HasOrder p A b) (k : ℕ) (pay : k+1 ≤ p) :
     ((k+1:ℕ):K) * reflectedProbe A b 0 k 1 = 1 := by
   induction k with
   | zero =>

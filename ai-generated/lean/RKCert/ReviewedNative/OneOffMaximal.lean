@@ -15,7 +15,7 @@ variable {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 12) (Fin 12) K} {b 
 noncomputable def clockAg (A : Matrix (Fin 12) (Fin 12) K) : Fin 12 → K :=
   mat A (diag (nodes A) (h A))
 
-theorem clockAg_mem (ho : HasOrder A b 9) :
+theorem clockAg_mem (ho : HasOrder 9 A b) :
     clockAg A∈zeroSpace A 5 :=
   mat_zeroSpace ho 4 (by decide) (diag_zeroSpace A 3 (h_in_grade_three A))
 
@@ -56,7 +56,7 @@ theorem clockAg_doubled (ha : ∀ i j, i ≤ j → A i j = 0) {a d : K} {i j r :
 /-- Actual rank ten, native polynomial plus defect coordinates, a nonzero
 anchored Radau value at the doubled clock, and distinction from the terminal. -/
 theorem order9_maximal_normal_profile (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j)
     (F : FirstFour A a d (by decide)) :
     finrank K (treeSpace A 5)=10 ∧ LinearMap.range (normalProfileMap A)=treeSpace A 5 ∧
@@ -156,7 +156,7 @@ theorem order9_maximal_normal_profile (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- The actual numbered doubled-clock pair earns the maximal physical
 grade-five profile, including the distinction from the live terminal. -/
 theorem order9_one_off_maximal_chart (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (off : (offKnots A).card = 1) :
+    (ho : HasOrder 9 A b) (off : (offKnots A).card = 1) :
     ∃ (a d : K) (i j : Fin 12), GlobalNormal A a d i j ∧
       FirstFour A a d (by decide) ∧
       (nodes A (4 : Fin 12) = 2*d ∧ g A (4 : Fin 12) = 0 ∧ h A (4 : Fin 12) ≠ a*d^2) ∧

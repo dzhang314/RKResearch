@@ -1,7 +1,7 @@
 # Ordered ERK order 16: exact native paid frame
 
 Assume a strictly lower triangular Runge–Kutta stage matrix over an ordered
-field and the reviewed `RKResearch.HasOrder A b 16`. Native grade eight
+field and the reviewed `RKResearch.HasOrder 16 A b`. Native grade eight
 costs nine forward dimensions. The existing even midpoint bound costs
 fifteen other dimensions and the rank of the initial reverse seed. Thus
 the unconditional lower bound is **24**; **25** follows when the actual

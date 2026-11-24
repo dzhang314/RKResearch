@@ -19,14 +19,14 @@ theorem silent_mem {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} {a q : ℕ
   simp only [silent, Submodule.mem_inf, Submodule.mem_iInf, LinearMap.mem_ker]
 
 theorem zero_le_silent {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} {a q : ℕ}
-    (ho : HasOrder A b p) (hp : a+q+1≤p) :
+    (ho : HasOrder p A b) (hp : a+q+1≤p) :
     zeroSpace A a ≤ silent A b a q := by
   intro x hx
   exact silent_mem.mpr ⟨zeroSpace_le_treeSpace A a hx,
     fun i => probe_zeroSpace ho (by omega) hx⟩
 
 theorem silent_rank {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} {a q : ℕ}
-    (ho : HasOrder A b p) (hq : q≤a) (hp : a+q+1≤p) :
+    (ho : HasOrder p A b) (hq : q≤a) (hp : a+q+1≤p) :
     q+1+Module.finrank K (silent A b a q) ≤ Module.finrank K (treeSpace A a) := by
   let F := silent A b a q
   let E := treeSpace A a
@@ -70,7 +70,7 @@ theorem at1 (ha : A.IsLowerTriangular) (he : ∀ i, A i i=γ) (x : (Fin 6 → K)
 theorem node_mat_one (A : Matrix (Fin s) (Fin s) K) : nodes A = mat A 1 := by
   rfl
 
-theorem first_tap_nonzero (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem first_tap_nonzero (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i, A i i=γ) (hγ : γ≠0) : A 1 0≠0 := by
   intro hv
   have hd (t : FiniteRootedTree) : Φ t A 0 = Φ t A 1 := by
@@ -115,12 +115,12 @@ theorem tap0 (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (x : (Fin 6 → K)
 theorem tap1 (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (x : (Fin 6 → K)) : tapMap A γ x 1=A 1 0*x 0 := by
   change mat A x 1-γ*x 1=_;rw [at1 ha he];ring
 
-theorem tapSeed_zero (ho : HasOrder A b 6) (γ : K) :
+theorem tapSeed_zero (ho : HasOrder 6 A b) (γ : K) :
     tapMap A γ (seed A) ∈ zeroSpace A 3 := by
   apply (zeroSpace A 3).sub_mem (mat_zeroSpace ho 2 (by decide) (seed_zero A))
   exact (zeroSpace A 3).smul_mem _ (zeroSpace_mono A (by decide : 2≤3) (seed_zero A))
 
-theorem silent_cubic_rank (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem silent_cubic_rank (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i,A i i=γ) (hγ : γ≠0) : Module.finrank K (silent A b 3 2)≤2 := by
   have hr := silent_rank (a:=3) (q:=2) ho (by decide) (by decide)
   have hh := order_six_grade_ranks ho ha (fun i => (he i) ▸ hγ)
@@ -129,7 +129,7 @@ theorem silent_cubic_rank (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
   omega
 
 /-- The first two chronological coordinates determine every silent cubic column. -/
-theorem cubic_front_unique (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem cubic_front_unique (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i,A i i=γ) (hγ : γ≠0) (x : (Fin 6 → K))
     (hx : x∈silent A b 3 2) (h0 : x 0=0) (h1 : x 1=0) : x=0 := by
   let S := silent A b 3 2
@@ -167,7 +167,7 @@ theorem seed1 (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) :
   change (2:K)*mat A (nodes A) 1-nodes A 1*nodes A 1=_
   rw [at1 ha he,h₀,h₁];ring
 
-theorem front_clock_seed (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem front_clock_seed (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i,A i i=γ) (hγ : γ≠0) :
     γ^2 • (diag (nodes A) (seed A) - γ • seed A) =
       seed A 1 • tapMap A γ (seed A) := by
@@ -201,7 +201,7 @@ theorem comm1 (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (x : (Fin 6 → K
   change nodes A 1*mat A x 1 - mat A (diag (nodes A) x) 1 - mat A (mat A x) 1=_
   simp only [at0 ha he,at1 ha he,diag_apply];ring
 
-theorem front_commutator (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem front_commutator (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i,A i i=γ) (hγ : γ≠0) :
     mat A (volterra A 1) = volterra A (mat A 1) := by
   apply sub_eq_zero.mp
@@ -224,14 +224,14 @@ theorem leg3c_at (A : Matrix (Fin s) (Fin s) K) (i : Fin s) :
   simp only [leg3c, coeffEval_apply, normTree_clockTree, Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
   simp [Fin.sum_univ_succ]; ring
 
-theorem leg3c_silent [CharZero K] (ho : HasOrder A b 6) :
+theorem leg3c_silent [CharZero K] (ho : HasOrder 6 A b) :
     leg3c A∈silent A b 3 2 := by
   apply silent_mem.mpr ⟨coeffEval_mem_treeSpace A 3 _,?_⟩
   intro k
   rw [probe_coeffEval ho (by omega)]
   fin_cases k <;> norm_num [Fin.sum_univ_succ]
 
-theorem cubic_reconstruction (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+theorem cubic_reconstruction (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (he : ∀ i,A i i=γ) (hγ : γ≠0) (x : (Fin 6 → K)) (hx : x∈silent A b 3 2) :
     x = (x 0/γ^2) • seed A +
       ((x 1 - (x 0/γ^2)*seed A 1)/(A 1 0*γ^2)) • tapMap A γ (seed A) := by

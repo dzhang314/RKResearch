@@ -92,7 +92,7 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 the real algebraic numbers. No claim of A-stability or optimality is required. -/
 theorem exists_strictSDIRK_exact_five_realAlgebraic :
     ∃ (A : Matrix (Fin 5) (Fin 5) ℝₐ) (b : Fin 5 → ℝₐ) (γ : ℝₐ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5 ∧ ¬ HasOrder A b 6 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b ∧ ¬ HasOrder 6 A b := by
   obtain ⟨x, -, hx⟩ := algebraic_root
   let f := specialize x hx
   exact ⟨A.map f, f ∘ b, f gamma, specialized_exact x hx⟩
@@ -100,7 +100,7 @@ theorem exists_strictSDIRK_exact_five_realAlgebraic :
 /-- The corresponding concrete bound over the real numbers. -/
 theorem exists_strictSDIRK_exact_five_real :
     ∃ (A : Matrix (Fin 5) (Fin 5) ℝ) (b : Fin 5 → ℝ) (γ : ℝ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5 ∧ ¬ HasOrder A b 6 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b ∧ ¬ HasOrder 6 A b := by
   obtain ⟨x, ⟨-, hx⟩, -⟩ := real_root
   let f := specialize x hx
   exact ⟨A.map f, f ∘ b, f gamma, specialized_exact x hx⟩

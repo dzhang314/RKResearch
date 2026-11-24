@@ -113,7 +113,7 @@ set_option maxHeartbeats 650000 in
 /-- Exact full-band separation forces the observed nonzero- or zero-leak
 relation to be an actual polynomial quotient with value zero at one. -/
 theorem RankTwoFourProfile.anchored_quotient
-    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12) (S : Saturation A b)
+    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b) (S : Saturation A b)
     {U : Submodule K (Fin (s+1) → K)} {z : Fin (s+1) → K} {α : K} {Q R : K[X]}
     (H : RankTwoFourProfile A U z α Q R) :
     ∃ D : K[X], D.natDegree≤Q.natDegree ∧ D.eval 1=0 ∧
@@ -160,7 +160,7 @@ theorem RankTwoFourProfile.anchored_quotient
   exact ⟨D,dd,one,sub_eq_zero.mp pz⟩
 
 private theorem terminal_mesh_flat_probes (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b) :
+    (ho : HasOrder 12 A b) (S : Saturation A b) :
     ∀ k≤4, probe A b k (evalNodes A terminalMesh6)=b (Fin.last s) := by
   intro k hk
   have h := probe_zeroSpace (k:=k) ho (by omega)
@@ -175,7 +175,7 @@ private theorem terminal_mesh_flat_probes (ha : ∀ i k, i≤k → A i k=0)
 /-- The degree-six leak has its first nonzero probe at four. Five zero
 probes would contradict native two-endpoint coefficient separation. -/
 theorem RankTwoFourProfile.leak_probe_edge (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b)
     {U : Submodule K (Fin (s+1) → K)} {z : Fin (s+1) → K} {α : K} {Q R : K[X]}
     (H : RankTwoFourProfile A U z α Q R) (nz : α≠0) :
     (∀ k<4, probe A b k (evalNodes A (α • terminalLeak8))=0) ∧
@@ -210,7 +210,7 @@ theorem RankTwoFourProfile.leak_probe_edge (ha : ∀ i k, i≤k → A i k=0)
 seventeen. The quotient and its rotated probe already contradict, without
 counting multiple roots or using any new scalar nonvanishing gate. -/
 theorem exclude_nonzero_rank_two_four (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b)
     {U : Submodule K (Fin (s+1) → K)} {z : Fin (s+1) → K} {α : K} {Q R : K[X]}
     (H : RankTwoFourProfile A U z α Q R) (nz : α≠0) : False := by
   classical
@@ -241,7 +241,7 @@ universe u
 at least eighteen stages over an arbitrary characteristic-zero field. -/
 theorem HasOrder.erk_order_twelve_stages_field {K : Type*} [Field K] [CharZero K]
     {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 12) (ha : ∀ i k, i≤k → A i k=0) : 18≤s := by
+    (h : HasOrder 12 A b) (ha : ∀ i k, i≤k → A i k=0) : 18≤s := by
   by_contra! cap
   cases s with
   | zero =>
@@ -257,7 +257,7 @@ theorem HasOrder.erk_order_twelve_stages_field {K : Type*} [Field K] [CharZero K
 commutative rings, including rings with zero divisors. -/
 theorem HasOrder.erk_order_twelve_stages {R : Type u} [CommRing R] [CharZero R]
     {s : ℕ} {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b 12) (ha : ∀ i k, i≤k → A i k=0) : 18≤s :=
+    (h : HasOrder 12 A b) (ha : ∀ i k, i≤k → A i k=0) : 18≤s :=
   h.strict_lower_triangular_of_charZero_fields ha
     (fun _ _ _ _ _ ht ho => ho.erk_order_twelve_stages_field ht)
 

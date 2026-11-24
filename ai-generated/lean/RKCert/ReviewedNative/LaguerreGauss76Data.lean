@@ -92,7 +92,7 @@ theorem seventh_bush_scaled :
   rw [factorial_bushyTree, Φ_bushyTree, row_sums]
   decide +kernel
 
-theorem not_order_seven : ¬ HasOrder A b 7 := by
+theorem not_order_seven : ¬ HasOrder 7 A b := by
   intro h
   have ht := h (bushyTree 7) (by rw [order_bushyTree]; decide)
   have he := seventh_bush_scaled
@@ -119,7 +119,7 @@ theorem map_gamma (f : Coeff →+* K) : f gamma = 1/2 := by
 
 /-- The next-order error remains nonzero in every characteristic-zero
 specialization, regardless of whether injectivity is supplied. -/
-theorem not_order_seven_map (f : Coeff →+* K) : ¬ HasOrder (A.map f) (f ∘ b) 7 := by
+theorem not_order_seven_map (f : Coeff →+* K) : ¬ HasOrder 7 (A.map f) (f ∘ b) := by
   intro h
   have ht := h (bushyTree 7) (by rw [order_bushyTree]; decide)
   have he : (400 : K) * (((bushyTree 7).factorial : K) *

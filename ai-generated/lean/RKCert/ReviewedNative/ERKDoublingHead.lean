@@ -23,7 +23,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 /-- The real doubling-band obstruction with the rank extraction factored
 out. No clock ordering, node distinctness, normalization, or condition
 on b occurs. -/
-theorem no_explicit_doubling_head (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b p)
+theorem no_explicit_doubling_head (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder p A b)
     {j r : ℕ} (j5 : 5≤j) (pay : j+j+1≤p) (sep : PolySeparated A (j+j)) (r2 : 2≤r)
     {U : Submodule K (Fin s → K)} {w : Fin s → K} (stable : U.map (diag (nodes A)) ≤ U)
     (core : U ≤ zeroSpace A j) (first : zeroSpace A j = chain (diag (nodes A)) U w r)

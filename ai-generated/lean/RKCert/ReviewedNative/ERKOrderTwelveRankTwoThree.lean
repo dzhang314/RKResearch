@@ -23,7 +23,7 @@ variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 /-- In the rank-(2,3) branch, the unit F3-to-F4 clock gain fills the
 three-dimensional invariant core. -/
 theorem fourth_grade_eq_core_of_rank_two_three
-    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12)
+    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A 2 U w) (four : finrank K (zeroSpace A 4)=3) :
@@ -56,7 +56,7 @@ theorem fourth_grade_eq_core_of_rank_two_three
 
 /-- The whole rank-(2,3) branch contradicts reviewed order without any
 new scalar arithmetic, because no more than five clocks can occur. -/
-theorem exclude_two_three (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12)
+theorem exclude_two_three (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A 2 U w) (four : finrank K (zeroSpace A 4)=3) : False := by
@@ -73,7 +73,7 @@ theorem exclude_two_three (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 1
 
 /-- The remaining physical cap has head length two and fourth rank four. -/
 theorem only_rank_two_four_at_cap (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (cap : s+1≤17) :
+    (ho : HasOrder 12 A b) (cap : s+1≤17) :
     ∃ U w, ForwardStaircase A 2 U w ∧ finrank K (zeroSpace A 4)=4 := by
   have S := saturation_of_order ha ho cap
   have T := terminal_band ha ho S

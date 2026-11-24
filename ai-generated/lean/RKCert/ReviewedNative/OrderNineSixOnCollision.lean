@@ -12,7 +12,7 @@ variable {K : Type*} [Field K]
 variable [LinearOrder K] [IsStrictOrderedRing K]
 theorem order9_actual_five_six_on_eighth_atlas
     {A : Fin 12→Fin 12→K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=5) (M : (cleanKnots A).card=6)
     (hF : zeroSpace A 4=band A 2)
     {P : K[X]} (dP : P.natDegree≤2)

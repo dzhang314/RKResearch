@@ -6,8 +6,8 @@ open Polynomial
 -- A native rank/geometry derivation is still needed for 'ports'.
 example {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
     {A : Matrix (Fin 26) (Fin 26) K} {b : Fin 26 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 17)
-    (ports : HasOrder A b 17 → ∃ w θ : Fin 26 → K, ∃ P : K[X], PhysicalFourPort A w θ P) :
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 17 A b)
+    (ports : HasOrder 17 A b → ∃ w θ : Fin 26 → K, ∃ P : K[X], PhysicalFourPort A w θ P) :
     False := by
   obtain ⟨w,θ,P,H⟩ := ports ho
   exact no_physical_four_port ha H

@@ -112,7 +112,7 @@ omit [CharZero K] in
 /-- Convert the genuine `X(X-1)` probe into the two shifted sums, with
 the exact tree-order budget visible in the statement. -/
 theorem beta_probe_coeff {s p : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ho : HasOrder A b p) (Q : K[X]) {n k : ℕ}
+    (ho : HasOrder p A b) (Q : K[X]) {n k : ℕ}
     (hd : Q.natDegree ≤ n) (hpay : k+n+3 ≤ p)
     (h : probe A b k (evalNodes A ((X^2-X)*Q))=0) :
     (∑ j : Fin (n+1), Q.coeff j.val / ((k+j.val+3:ℕ):K)) -
@@ -143,7 +143,7 @@ theorem probe_shift_diag (A : Matrix (Fin 12) (Fin 12) K) (b v : Fin 12 → K) (
 
 /-- The terminal unit's native profile. The endpoint normalizer is
 nonzero, and the coefficient of Ag vanishes at the doubled clock. -/
-theorem order9_terminal_normal_profile (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_terminal_normal_profile (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     ∃ w : NormalCoeffs K,
       normalProfileMap A w=Reverse.coordinate (Fin.last 11) ∧

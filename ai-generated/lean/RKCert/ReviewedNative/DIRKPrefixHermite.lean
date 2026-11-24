@@ -135,7 +135,7 @@ theorem dirk_inclusive_hermite_family (ha : A.IsLowerTriangular)
 /-- A clock-invariant subspace of genuine F_j costs j/2 *extra* dimensions
 in F_(j+1). The space need not be invariant under the tableau itself. -/
 theorem dirk_forward_invariant_outgoing (ha : A.IsLowerTriangular)
-    (ho : HasOrder A b p) (pay : j+1≤p) (U : Submodule K (Fin s → K))
+    (ho : HasOrder p A b) (pay : j+1≤p) (U : Submodule K (Fin s → K))
     (hUF : U≤zeroSpace A j) (inv : ∀ v∈U, diag (nodes A) v∈U) :
     finrank K U + j/2 ≤ finrank K (zeroSpace A (j+1)) := by
   have mono := hUF.trans (zeroSpace_mono A (Nat.le_succ _))
@@ -154,7 +154,7 @@ theorem dirk_forward_invariant_outgoing (ha : A.IsLowerTriangular)
 /-- If it is the *higher* space F_(j+1) that is clock-invariant, the
 same physical sample pays j/2 dimensions from F_j into F_(j+1). -/
 theorem dirk_forward_invariant_incoming (ha : A.IsLowerTriangular)
-    (ho : HasOrder A b p) (pay : j+2≤p)
+    (ho : HasOrder p A b) (pay : j+2≤p)
     (inv : ∀ v∈zeroSpace A (j+1), diag (nodes A) v∈zeroSpace A (j+1)) :
     finrank K (zeroSpace A j) + j/2 ≤ finrank K (zeroSpace A (j+1)) := by
   let U := zeroSpace A (j+1)

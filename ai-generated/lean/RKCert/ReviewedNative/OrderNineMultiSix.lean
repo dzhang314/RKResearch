@@ -63,7 +63,7 @@ theorem first_nonzero_on_forces_head_shape {A : Matrix (Fin s) (Fin s) K}
     exact hn (by rw [hC,hp0,map_zero])
 
 theorem order9_six_on_pencil {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1)→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hM : (cleanKnots A).card=6) (h1 : (1:K)∈cleanKnots A)
     (hoff : ∀ x∈offKnots A, offMass A b x=0) :
     ∃ l : K, nodalHull (RKCert.Paired.endpointErase (RKCert.Paired.endpointErase (cleanKnots A) 1) 0)=RKCert.Paired.lobattoPencil l := by
@@ -86,7 +86,7 @@ theorem order9_six_on_pencil {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s
   exact probe_zero_of_clean_roots hoff _ (fun _ => nodalHull_eval_of_mem) k.val
 
 theorem order9_six_six_terminal_head {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hM : (cleanKnots A).card=6) (hN : (offKnots A).card=6)
     (P : K[X]) (hP : P.natDegree≤2)
     (fit : ∀ i, g A i≠0 → P.eval (nodes A i)=g A i)
@@ -219,7 +219,7 @@ theorem six_on_pencil_divisor_impossible {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
 
 omit [CharZero K] in
 theorem order9_no_six_off_six_on {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=6) :
     (cleanKnots A).card≠6 := by
   intro M
@@ -237,7 +237,7 @@ omit [CharZero K] in
 defective knots. The clean count is five or six; the five-off/five-clean
 exclusion and the actual six-clean atlas interface remain separate. -/
 theorem order9_exactly_five_off {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) :
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) :
     (offKnots A).card=5 ∧ ((cleanKnots A).card=5 ∨ (cleanKnots A).card=6) := by
   obtain ⟨lo,hi,cl,cu,_,_⟩ := order9_middle_census ha ho
   have no7 := order9_no_seven_off ha ho
@@ -250,7 +250,7 @@ theorem order9_exactly_five_off {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K
 omit [CharZero K] in
 theorem explicit_order_nine_off_count_ne_five_at_least_thirteen {n : ℕ}
     {A : Matrix (Fin n) (Fin n) K} {b : Fin n→K}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) (off : (offKnots A).card≠5) : 13≤n := by
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) (off : (offKnots A).card≠5) : 13≤n := by
   by_contra! low
   have size := (order9_forward_chart ha ho (by omega)).1
   subst n

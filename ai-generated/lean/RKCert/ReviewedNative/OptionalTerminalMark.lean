@@ -68,7 +68,7 @@ theorem rank_sup_terminalMark (V : Submodule K (Fin (s+1)→K))
     rw [line,sup_bot_eq,show terminalDebit A b=0 by simp [terminalDebit,z]]
     exact (Nat.add_zero (finrank K V)).symm
 
-theorem last_coordinate_not_defect (ho : HasOrder A b p)
+theorem last_coordinate_not_defect (ho : HasOrder p A b)
     (L : LastActive b (Fin.last s)) (pay : j+1≤p) :
     coordinate (K:=K) (Fin.last s) ∉ zeroSpace A j := by
   intro hm
@@ -77,7 +77,7 @@ theorem last_coordinate_not_defect (ho : HasOrder A b p)
   rw [row_coordinate,pow_zero,mul_one] at k
   exact L.live k
 
-theorem marked_defect_rank (ho : HasOrder A b p) (L : LastActive b (Fin.last s))
+theorem marked_defect_rank (ho : HasOrder p A b) (L : LastActive b (Fin.last s))
     (pay : j+1≤p) :
     finrank K (markedDefectSpace A b j)=finrank K (zeroSpace A j)+terminalDebit A b :=
   rank_sup_terminalMark _ (fun _=>last_coordinate_not_defect ho L pay)
@@ -98,7 +98,7 @@ theorem mark_paid_by_backward (ha : ∀ i k,i ≤ k → A i k=0) (L : LastActive
     intro v hv
     rw [(Submodule.mem_bot K).mp hv,map_zero]
 
-theorem marked_tree_backward_room (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b p)
+theorem marked_tree_backward_room (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder p A b)
     (L : LastActive b (Fin.last s)) (j n : ℕ) (pay : j+n+2≤p) :
     finrank K (markedTreeSpace A b j)+n ≤ s+terminalDebit A b := by
   have inc : back A b n ≤ annih (markedTreeSpace A b j) := by
@@ -128,7 +128,7 @@ theorem probe_terminalMark_equal (ha : ∀ i k,i ≤ k → A i k=0)
   · rw [terminalMark,ite_eq_right z] at h
     rw [(Submodule.mem_bot K).mp h,map_zero,map_zero]
 
-theorem paid_probe_marked_defect (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b p)
+theorem paid_probe_marked_defect (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder p A b)
     (L : LastActive b (Fin.last s)) {v : Fin (s+1) → K}
     (hv : v∈markedDefectSpace A b j) (k : ℕ) (pay : k+j+1≤p) :
     probe A b k v=probe A b 0 v := by
@@ -153,7 +153,7 @@ theorem origin_marked_defect (ha : ∀ i k,i ≤ k → A i k=0) (size : 0<s)
 
 /-- The physical terminal can pay only a constant moment. The native
 constant Cauchy test preserves polynomial separation through q. -/
-theorem marked_coeff_separated (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b p)
+theorem marked_coeff_separated (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder p A b)
     (L : LastActive b (Fin.last s)) (size : 0<s)
     (pay : q+j+1≤p) (moment : 2*q+1≤p)
     (a : Fin (q+1)→K) (hv : coeffEval A q a∈markedDefectSpace A b j) : a=0 := by

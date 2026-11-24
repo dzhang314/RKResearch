@@ -23,7 +23,7 @@ theorem off_pos [CharZero K] (ha : ∀ i j, i≤j → A i j=0) (sep : PolySepara
     (fun _ hv=> by rw [(Submodule.mem_bot K).mp hv,map_zero]; exact Submodule.zero_mem _)
 
 theorem order9_low_census [CharZero K] (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b 9) (cap : s≤12) : (offKnots A).card=1 ∨ 5≤(offKnots A).card := by
+    (ho : HasOrder 9 A b) (cap : s≤12) : (offKnots A).card=1 ∨ 5≤(offKnots A).card := by
   obtain ⟨size,r3,r4,_⟩ := order9_forward_chart ha ho cap
   subst s
   have sep : PolySeparated A 4 := PolySeparated.of_coeff (coeff_separated ho (by decide))
@@ -33,14 +33,14 @@ theorem order9_low_census [CharZero K] (ha : ∀ i j, i≤j → A i j=0)
   omega
 
 theorem order9_at_least_five_off [LinearOrder K] [IsStrictOrderedRing K]
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9) (cap : s≤12) :
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b) (cap : s≤12) :
     5≤(offKnots A).card := by
   rcases order9_low_census ha ho cap with one|m
   · exact (Nat.not_le_of_lt (by omega : s<13) (explicit_order_nine_one_off_at_least_thirteen ha ho one)).elim
   · exact m
 
 theorem explicit_order_nine_at_most_four_off_at_least_thirteen [LinearOrder K] [IsStrictOrderedRing K]
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9) (few : (offKnots A).card≤4) : 13≤s := by
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b) (few : (offKnots A).card≤4) : 13≤s := by
   by_contra! hs
   have m := order9_at_least_five_off ha ho (by omega)
   omega

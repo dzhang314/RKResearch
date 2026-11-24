@@ -12,19 +12,19 @@ open scoped Matrix Classical
 variable {K : Type*} [Field K] {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
 
 theorem order9_grade_five_upper (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) : finrank K (treeSpace A 5) ≤ 10 := by
+    (ho : HasOrder 9 A b) : finrank K (treeSpace A 5) ≤ 10 := by
   have h := Reverse.backward_count ha ho 5 2 (by decide)
   omega
 
 theorem order9_grade_six_upper (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) : finrank K (treeSpace A 6) ≤ 11 := by
+    (ho : HasOrder 9 A b) : finrank K (treeSpace A 6) ≤ 11 := by
   have h := Reverse.backward_count ha ho 6 1 (by decide)
   omega
 
 /-- A maximally ranked grade-five space contains the live physical
 terminal coordinate, but it is not a grade-four column. -/
 theorem order9_rank_five_full_terminal (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (rank : finrank K (treeSpace A 5) = 10) :
+    (ho : HasOrder 9 A b) (rank : finrank K (treeSpace A 5) = 10) :
     b (Fin.last 11) ≠ 0 ∧ nodes A (Fin.last 11) = 1 ∧
       Reverse.coordinate (K:=K) (Fin.last 11) ∈ treeSpace A 5 ∧
       Reverse.coordinate (K:=K) (Fin.last 11) ∉ treeSpace A 4 := by
@@ -35,7 +35,7 @@ theorem order9_rank_five_full_terminal (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- At full grade-five rank, third-grade defects vanish at the actual
 last coordinate. This uses exactly the grade-three times grade-five budget. -/
 theorem rank_five_full_terminal_defect (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (rank : finrank K (treeSpace A 5) = 10)
+    (ho : HasOrder 9 A b) (rank : finrank K (treeSpace A 5) = 10)
     {u : Fin 12 → K} (hu : u ∈ zeroSpace A 3) : u (Fin.last 11) = 0 := by
   obtain ⟨hb,_,e,_⟩ := order9_rank_five_full_terminal ha ho rank
   let j : Fin 12 := Fin.last 11

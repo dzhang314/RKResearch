@@ -48,7 +48,7 @@ theorem profile_add_clock {a : K} {u v : Fin 12 → K}
     simp only [diag_apply,Pi.smul_apply,smul_eq_mul] at e
     linear_combination β'*e
 
-theorem order9_treeSpace_six_clock_sup (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_treeSpace_six_clock_sup (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (rk : finrank K (treeSpace A 5)=10) :
     treeSpace A 6=treeSpace A 5⊔(treeSpace A 5).map (diag (nodes A)) := by
   let V := treeSpace A 5
@@ -63,7 +63,7 @@ theorem order9_treeSpace_six_clock_sup (ha : ∀ i j, i ≤ j → A i j = 0) (ho
     exact diag_treeSpace A 5 hz)
   exact (Submodule.eq_of_le_of_finrank_le incl (by change finrank K V=10 at rk; omega)).symm
 
-theorem order9_native_profiles (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_native_profiles (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     (∀ v∈treeSpace A 5, TailProfile A a 5 v) ∧
       (∀ v∈treeSpace A 6, TailProfile A a 6 v) := by

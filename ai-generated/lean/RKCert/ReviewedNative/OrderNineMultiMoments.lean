@@ -28,7 +28,7 @@ theorem clean_off_count (A : Matrix (Fin s) (Fin s) K) :
 noncomputable def offMass (A : Matrix (Fin s) (Fin s) K) (b : Fin s→K) (x : K) : K :=
   ∑ i, if g A i≠0 ∧ nodes A i=x then b i else 0
 
-theorem offMass_zero_of_head (ho : HasOrder A b p) {P : K[X]}
+theorem offMass_zero_of_head (ho : HasOrder p A b) {P : K[X]}
     (fit : ∀i,g A i≠0 → P.eval (nodes A i)=g A i)
     (pay : (offKnots A).card+2≤p) (x : K) (hx : x∈offKnots A) : offMass A b x=0 := by
   let S := offKnots A
@@ -88,7 +88,7 @@ theorem probe_zero_of_clean_roots
 
 /-- A full square Cauchy system detects ordinary quadrature on the clean
 support: its distinct-clock count exceeds q when order 2q+1 is paid. -/
-theorem many_clean_of_cancel (ho : HasOrder A b p) (pay : 2*q+1≤p)
+theorem many_clean_of_cancel (ho : HasOrder p A b) (pay : 2*q+1≤p)
     (cancel : ∀x∈offKnots A,offMass A b x=0) : q < (cleanKnots A).card := by
   by_contra! few
   let S := cleanKnots A
@@ -112,7 +112,7 @@ theorem many_clean_of_cancel (ho : HasOrder A b p) (pay : 2*q+1≤p)
 /-- The support and quadrature conclusions for every ordered or unordered
 characteristic-zero candidate with between three and seven distinct off knots. -/
 theorem order9_multi_quadrature [CharZero K] (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b 9) (cap : s≤12)
+    (ho : HasOrder 9 A b) (cap : s≤12)
     (enough : 3≤(offKnots A).card) (few : (offKnots A).card≤7) :
     (∀x∈offKnots A,offMass A b x=0) ∧ 5≤(cleanKnots A).card := by
   obtain ⟨_,_,_,_,_,fit⟩ := order9_two_curve_head ha ho cap enough

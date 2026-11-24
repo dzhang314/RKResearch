@@ -20,7 +20,7 @@ variable {K : Type*} [Field K] [CharZero K] {s : ℕ}
 variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 
 omit [CharZero K] in
-private theorem weighted_grade (ho : HasOrder A b 12)
+private theorem weighted_grade (ho : HasOrder 12 A b)
     {v : Fin (s+1) → K} {m n : ℕ} (hv : v∈zeroSpace A m)
     (P : K[X]) (d : P.natDegree≤n) (pay : n+1≤12) :
     weightedEval (nodes A) v P∈zeroSpace A (m+n) := by
@@ -30,7 +30,7 @@ private theorem weighted_grade (ho : HasOrder A b 12)
 
 /-- The genuine second defect grade is inside the actual invariant core.
 The proof uses the full three probes at a single physical first failure. -/
-theorem grade_two_in_core (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem grade_two_in_core (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b) {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) : zeroSpace A 2≤U := by
   classical

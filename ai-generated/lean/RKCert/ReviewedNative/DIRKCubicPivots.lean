@@ -67,7 +67,7 @@ variable [CharZero K]
 omit [CharZero K] in
 /-- Check a paid Volterra output against the minimal number of distinct
 dirty clock evaluations that detects its next head polynomial. -/
-theorem paid_volterra_zero (ho : HasOrder A b p) {k : ℕ} (pay : 5+k≤p)
+theorem paid_volterra_zero (ho : HasOrder p A b) {k : ℕ} (pay : 5+k≤p)
     (band : ∀ l≤3, zeroSpace A (3+l)=chain (diag (nodes A)) ⊥ w (1+l))
     (k1 : k≤1) {f q : K[X]} (df : f.natDegree≤3+k) (dq : q.natDegree≤k)
     (D : Fin (3+k) → Fin s) (dist : Function.Injective (fun j=>nodes A (D j)))
@@ -91,7 +91,7 @@ theorem paid_volterra_zero (ho : HasOrder A b p) {k : ℕ} (pay : 5+k≤p)
 /-- A prefix-zero test with nonzero value at the next dirty row. Packing
 the origin-cleared scalar and the head into one interpolation allows one
 extra clean clock at grade four, without adding any hypothesized row. -/
-theorem dirty_pivot_test (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirty_pivot_test (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     (band : ∀ l≤3, zeroSpace A (3+l)=chain (diag (nodes A)) ⊥ w (1+l))
     (P : K[X]) (Pd : P.natDegree≤3) (P0 : P.eval 0≠0)
     (fit : ∀ i, w i≠0 → w i=P.eval (nodes A i))

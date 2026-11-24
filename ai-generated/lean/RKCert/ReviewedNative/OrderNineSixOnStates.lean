@@ -9,7 +9,7 @@ open RKResearch Module Polynomial OneOff Reverse RKCert.Endpoint
 open scoped Matrix Classical
 variable {K : Type*} [Field K] [CharZero K] {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
 
-theorem order9_five_six_stage_chart (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+theorem order9_five_six_stage_chart (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6)
     {P : K[X]} (fit : ∀ i,g A i≠0 → P.eval (nodes A i)=g A i) :
     gradeFiveStateSpace A=treeSpace A 5 ∧ treeSpace A 6=onOffSpace A ∧
@@ -52,7 +52,7 @@ theorem order9_five_six_stage_chart (ha : ∀i j,i≤j → A i j=0) (ho : HasOrd
   have eq6 := Submodule.eq_of_le_of_finrank_le h61 (by omega)
   exact ⟨eq5,eq6.symm,D1,hi,hc,he,hu⟩
 
-theorem order9_five_six_reverse_contrast (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+theorem order9_five_six_reverse_contrast (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6)
     {P : K[X]} (fit : ∀ i,g A i≠0 → P.eval (nodes A i)=g A i) :
     ∃ i j : Fin 12, i<j ∧ j<Fin.last 11 ∧ lowStateAt A i=lowStateAt A j ∧
@@ -85,7 +85,7 @@ theorem order9_five_six_reverse_contrast (ha : ∀i j,i≤j → A i j=0) (ho : H
 variable [LinearOrder K] [IsStrictOrderedRing K]
 
 omit [CharZero K] in
-theorem order9_five_six_remainder (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+theorem order9_five_six_remainder (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6)
     (hF : zeroSpace A 4=band A 2) (P : K[X]) (dP : P.natDegree≤2)
     (fit : ∀ i,g A i≠0 → P.eval (nodes A i)=g A i) :

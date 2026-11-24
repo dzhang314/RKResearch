@@ -11,7 +11,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 
 omit [CharZero K] in
 theorem beta_probe_coeff {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
-    (ho : HasOrder A b p) (Q : K[X]) {n k : ℕ}
+    (ho : HasOrder p A b) (Q : K[X]) {n k : ℕ}
     (hd : Q.natDegree ≤ n) (hpay : k+n+3 ≤ p)
     (h : probe A b k (evalNodes A ((X^2-X)*Q))=0) :
     (∑ j : Fin (n+1), Q.coeff j.val / ((k+j.val+3:ℕ):K)) -
@@ -31,7 +31,7 @@ theorem beta_probe_coeff {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
   simpa only [e,e'] using h
 
 theorem beta_cubic_from_actual_probes {A : Matrix (Fin s) (Fin s) K} {b : (Fin s→K)}
-    (ho : HasOrder A b p) (hp : 8 ≤ p) (Q : K[X]) (hd : Q.natDegree ≤ 3)
+    (ho : HasOrder p A b) (hp : 8 ≤ p) (Q : K[X]) (hd : Q.natDegree ≤ 3)
     (hz : ∀ k : Fin 3, probe A b k.val (evalNodes A ((X^2-X)*Q))=0) :
     Q = C (Q.coeff 3)*RKCert.Paired.lobattoCubic := by
   apply RKCert.Paired.lobatto_cubic_decoder Q hd
@@ -41,7 +41,7 @@ theorem beta_cubic_from_actual_probes {A : Matrix (Fin s) (Fin s) K} {b : (Fin s
 variable [LinearOrder K] [IsStrictOrderedRing K]
 omit [CharZero K] in
 theorem order9_no_eight_or_more_off {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) :
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) :
     (offKnots A).card<8 := by
   by_contra! N
   obtain ⟨_,h3,h4,_⟩ := order9_forward_chart ha ho (by decide)
@@ -82,7 +82,7 @@ omit [CharZero K] in
 six, or seven distinct defective clocks. Their separate clean supports
 have five or six clocks and satisfy a common quadratic fit. -/
 theorem order9_middle_census {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) :
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) :
     5≤(offKnots A).card ∧ (offKnots A).card≤7 ∧
     5≤(cleanKnots A).card ∧ (cleanKnots A).card≤6 ∧
     (offKnots A).card+(cleanKnots A).card≤12 ∧

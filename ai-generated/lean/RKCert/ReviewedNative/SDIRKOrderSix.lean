@@ -18,7 +18,7 @@ variable {K : Type*} [Field K] [CharZero K]
 
 /-- Six physical stages cannot attain all order-six rooted-tree conditions. -/
 theorem order_six_six_stages_impossible {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)} {γ:K}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (hγ : γ≠0) : False := by
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (hγ : γ≠0) : False := by
   let z:=γ⁻¹
   let B:=scaleTable z A
   let u:=B 1 0
@@ -63,7 +63,7 @@ theorem order_six_six_stages_impossible {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin
 
 /-- The strict SDIRK order-six lower bound over *any characteristic-zero field*. -/
 theorem seven_le_of_strict_order_six {s:ℕ} {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} {γ:K}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (hγ : γ≠0) : 7≤s := by
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (hγ : γ≠0) : 7≤s := by
   have h₆:=nonsingular_stageFloor_field ho ha (fun i=>he i ▸ hγ) (by decide)
   change 6≤s at h₆
   by_contra h
@@ -79,7 +79,7 @@ namespace RKResearch
 conditions has at least seven physical stages over any characteristic-zero field. -/
 theorem HasOrder.sdirk_order_six_stages_field {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} {γ : K}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular)
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
     (hc : ∀ i, A i i = γ) (hγ : γ ≠ 0) : 7 ≤ s :=
   Certified.Graded.SDIRKSix.seven_le_of_strict_order_six ho ha hc hγ
 

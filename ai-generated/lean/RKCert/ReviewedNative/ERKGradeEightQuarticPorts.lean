@@ -33,7 +33,7 @@ variable [CharZero K]
 set_option maxRecDepth 3500 in
 set_option maxHeartbeats 750000 in
 theorem grade_four_flat_quartic_ports
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p) (pay : 16≤p)
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b) (pay : 16≤p)
     {r : ℕ} {U : Submodule K (Fin (s+1)→K)} {w : Fin (s+1)→K}
     (H : FlatClockHead A 4 4 r U w) :
     ∃ (P : K[X]) (i j : Fin (s+1)), Quartic3Plus2 P (nodes A i) (nodes A j) := by

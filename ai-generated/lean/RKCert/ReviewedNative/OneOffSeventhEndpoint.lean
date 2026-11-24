@@ -44,7 +44,7 @@ structure EndpointChart (A : Matrix (Fin 12) (Fin 12) K) (a d z : K) : Prop wher
     endP d (nodes A r)+(terminalQ d z).eval (nodes A r)*scaledH A a r=0
   p1 : endP d 1=1
 
-theorem order9_actual_endpoint_chart (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_actual_endpoint_chart (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     EndpointChart A a d (nodes A (5:Fin 12)) := by
   let z := nodes A (5:Fin 12)

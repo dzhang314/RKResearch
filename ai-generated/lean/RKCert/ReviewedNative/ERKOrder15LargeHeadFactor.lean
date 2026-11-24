@@ -54,7 +54,7 @@ private theorem head_squares_paid (S : Order15PaidStaircase A b a G r U w)
 /-- The paid staircase forces a genuine polynomial multiplier for a
 hypothetical large physical head. The square shifts are not assumed. -/
 theorem Order15PaidStaircase.large_head_profile (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15) (large : 3≤r) :
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b) (large : 3≤r) :
     ∃ (v : Fin (s+1)→K) (P : K[X]), Order15PaidStaircase A b a G r U v ∧
       (∀ i, (∃ u∈U,u i≠0) → v i=0) ∧ P≠0 ∧ P.natDegree+2*r-2<order15HeadLength a r 10 ∧
       (∀ i,v i≠0 → v i=P.eval (nodes A i)) := by
@@ -92,7 +92,7 @@ theorem Order15PaidStaircase.large_head_profile (S : Order15PaidStaircase A b a 
 has degree at most three. No algebraic or numerical exclusion of that
 remaining factor is assumed by this declaration. -/
 theorem Order15PaidStaircase.large_head_factor (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15) (large : 3≤r) :
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b) (large : 3≤r) :
     ∃ (v : Fin (s+1)→K) (P Q : K[X]), Order15PaidStaircase A b a G r U v ∧
       (∀ i, (∃ u∈U,u i≠0) → v i=0) ∧ P≠0 ∧ P.natDegree≤3 ∧ G=P*Q ∧
       Q.natDegree=r+2 ∧ P.natDegree+r+1=a ∧ (∀ i,v i≠0 → v i=P.eval (nodes A i)) := by

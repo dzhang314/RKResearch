@@ -24,10 +24,10 @@ variable {T : Matrix (Fin m) (Fin m) K} {w : Fin m → K}
 /-- This is the shared remaining order-seventeen forward rank target. -/
 def GradeEightSurplus (K : Type*) [Field K] : Prop :=
   ∀ {m : ℕ} {T : Matrix (Fin m) (Fin m) K} {w : Fin m → K},
-    (∀ i j, i ≤ j → T i j=0) → HasOrder T w 17 → 9 ≤ finrank K (zeroSpace T 8)
+    (∀ i j, i ≤ j → T i j=0) → HasOrder 17 T w → 9 ≤ finrank K (zeroSpace T 8)
 
 theorem width_floor_of_grade_eight (ha : ∀ i j, i ≤ j → T i j=0)
-    (ho : HasOrder T w 17) (forward : 9 ≤ finrank K (zeroSpace T 8)) : 26 ≤ m := by
+    (ho : HasOrder 17 T w) (forward : 9 ≤ finrank K (zeroSpace T 8)) : 26 ≤ m := by
   have fg := treeSpace_rank_eq_of_separation ho (q:=8) (by decide) (coeff_separated ho (by decide))
   have cnt := backward_endpoint_count ha ho 8 7 (by decide) (by decide)
   omega
@@ -35,7 +35,7 @@ theorem width_floor_of_grade_eight (ha : ∀ i j, i ≤ j → T i j=0)
 variable [CharZero K]
 
 theorem grade_seven_eight_lower (ha : ∀ i j, i ≤ j → T i j=0)
-    (ho : HasOrder T w 17) :
+    (ho : HasOrder 17 T w) :
     7 ≤ finrank K (zeroSpace T 7) ∧ 8 ≤ finrank K (zeroSpace T 8) := by
   have five := grade_five_surplus_of_reviewed_order ha ho (by decide : 10≤17)
   have sep := coeff_separated ho (q:=8) (by decide)
@@ -48,7 +48,7 @@ theorem grade_seven_eight_lower (ha : ∀ i j, i ≤ j → T i j=0)
   omega
 
 theorem order17_width_floor25 (ha : ∀ i j, i ≤ j → T i j=0)
-    (ho : HasOrder T w 17) : 25 ≤ m := by
+    (ho : HasOrder 17 T w) : 25 ≤ m := by
   have fg := treeSpace_rank_eq_of_separation ho (q:=8) (by decide) (coeff_separated ho (by decide))
   have cnt := backward_endpoint_count ha ho 8 7 (by decide) (by decide)
   have g := (grade_seven_eight_lower ha ho).2
@@ -60,11 +60,11 @@ section Tight
 variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 26) (Fin 26) K} {b : Fin 26 → K}
 
-theorem width26_frame (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 17)
+theorem width26_frame (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 17 A b)
     (forward : 9 ≤ finrank K (zeroSpace A 8)) : OddBalancedFrame A b 8 2 :=
   odd_short_frame ha ho (by decide) (by decide) (by decide) forward
 
-theorem width26_rank_cap (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 17) :
+theorem width26_rank_cap (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 17 A b) :
     finrank K (zeroSpace A 8) ≤ 9 := by
   have fg := treeSpace_rank_eq_of_separation ho (q:=8) (by decide) (coeff_separated ho (by decide))
   have cnt := backward_endpoint_count ha ho 8 7 (by decide) (by decide)
@@ -73,7 +73,7 @@ theorem width26_rank_cap (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 
 /-- This extra fact needs the rank premise also for the shorter prefix,
 rather than a rank-nine premise on the single 26-stage input. -/
 theorem width26_last_live_of_uniform_surplus (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b 17) (surplus : GradeEightSurplus K) : LastActive b (Fin.last 25) := by
+    (ho : HasOrder 17 A b) (surplus : GradeEightSurplus K) : LastActive b (Fin.last 25) := by
   refine ⟨?_,fun i h => (not_lt_of_ge (Fin.le_last i) h).elim⟩
   intro vanish
   have hk : 25 ≤ 26 := by decide
@@ -85,7 +85,7 @@ theorem width26_last_live_of_uniform_surplus (ha : ∀ i j, i ≤ j → A i j=0)
   exact (by decide : ¬ 26≤25) (width_floor_of_grade_eight a h (surplus a h))
 
 /-- The computed zero/nonzero split on the actual width-26 method. -/
-theorem width26_seed_split (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 17)
+theorem width26_seed_split (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 17 A b)
     (forward : 9 ≤ finrank K (zeroSpace A 8)) :
     (firstSeed A b = 0 ∧ ∃ t : Fin 26, LastActive b t ∧ nodes A t = 1 ∧
       quadraticSeed A b t = 0 ∧ coordinate (K:=K) t ∉ treeSpace A 8 ∧
@@ -101,7 +101,7 @@ theorem width26_seed_split (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A 
 
 variable [CharZero K]
 
-theorem width26_defect_window (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 17) :
+theorem width26_defect_window (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 17 A b) :
     finrank K (zeroSpace A 8) = 8 ∨ finrank K (zeroSpace A 8) = 9 := by
   have lo := (grade_seven_eight_lower ha ho).2
   have hi := width26_rank_cap ha ho
@@ -111,7 +111,7 @@ omit [CharZero K] in
 /-- An actually earned terminal mark costs one reverse dimension at
 any earlier tree space from which the coordinate remains external. -/
 private theorem primitiveBack_marked_cap {m p j n : ℕ} {T : Matrix (Fin m) (Fin m) K}
-    {w : Fin m → K} (ha : ∀ i j, i ≤ j → T i j=0) (h : HasOrder T w p)
+    {w : Fin m → K} (ha : ∀ i j, i ≤ j → T i j=0) (h : HasOrder p T w)
     (pay : j+n+2≤p) {t : Fin m} (last : LastActive w t) (z : firstSeed T w=0)
     (out : coordinate (K:=K) t ∉ treeSpace T j) :
     finrank K (primitiveBack T w n) + 1 ≤ finrank K (annih (treeSpace T j)) := by
@@ -129,7 +129,7 @@ set_option maxHeartbeats 600000 in
 /-- Each reverse grade 2 through 7 must escape the actual reflected clock.
 At the final grade the forced four-direction gain is charged against the
 grade-seven space and, in the zero-seed branch, the real terminal mark. -/
-theorem width26_reverse_clock_escape (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 17)
+theorem width26_reverse_clock_escape (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 17 A b)
     (frame : OddBalancedFrame A b 8 2) {n : ℕ} (lo : 2 ≤ n) (hi : n ≤ 7) :
     ¬ (primitiveBack A b n).map (diag (reflectedClock A)) ≤ primitiveBack A b n := by
   intro inv

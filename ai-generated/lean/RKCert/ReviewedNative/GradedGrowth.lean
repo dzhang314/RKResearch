@@ -23,7 +23,7 @@ theorem forward_seed_mem (A:Matrix (Fin s) (Fin s) K) :
 
 /-- Each grade buys one new forward residual direction, with no
 characteristic-zero restriction on an actually attained order. -/
-theorem zeroSpace_finrank (strict:∀i j,i≤j→A i j=0) (ho:HasOrder A b p)
+theorem zeroSpace_finrank (strict:∀i j,i≤j→A i j=0) (ho:HasOrder p A b)
     {n:ℕ} (pay:n+2≤p) : n≤finrank K (zeroSpace A (n+1)) := by
   let c:=nodes A
   let seed:=(2:K) • mat A (diag c 1)-diag c (diag c 1)
@@ -44,12 +44,11 @@ theorem zeroSpace_finrank (strict:∀i j,i≤j→A i j=0) (ho:HasOrder A b p)
     fun _ hx=>probe_zeroSpace ho (by omega : 0+(n+1)+1≤p) (sub n pay hx)
   have out : diag c 1∉W n := by
     intro h
-    have m := probe_normTree ho (clockTree 1) 0 (by rw [order_clockTree];omega)
-    have z : normTree A (clockTree 1)=diag c 1 := by
-      rw [normTree_clockTree]
-      ext i
-      simp [c]
-    rw [z,zw _ h,mul_zero] at m
+    have z : diag c (1:Fin s→K)=nodes A := by ext i; simp [c]
+    have m : ((2:ℕ):K) * probe A b 0 (diag c 1) = 1 := by
+      simpa only [z, probe, row_apply, pow_zero, mul_one, pow_one] using
+        ho.hasQuadratureOrder 1 (by omega)
+    rw [zw _ h,mul_zero] at m
     exact zero_ne_one m
   exact (orbit_rank (Equiv.refl _) (mat A) (causal_mat strict) c 1 n out).trans
     (Submodule.finrank_mono (sub n pay))

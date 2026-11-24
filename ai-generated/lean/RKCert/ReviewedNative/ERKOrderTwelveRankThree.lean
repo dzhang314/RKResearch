@@ -80,7 +80,7 @@ variable [CharZero K]
 set_option maxHeartbeats 600000 in
 /-- This eliminates the rank-three/rank-four branch by direct intrinsic
 head comparison, imposing no disjointness condition at any physical row. -/
-theorem exclude_three_four (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem exclude_three_four (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A 3 U w) (four : finrank K (zeroSpace A 4)=4) : False := by
@@ -149,7 +149,7 @@ theorem exclude_three_four (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A 
 
 /-- The only two charts left at width 17 have length two. Their fourth
 ranks, three and four, are both measured on the original tableau. -/
-theorem remaining_rank_two_branches (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem remaining_rank_two_branches (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) :

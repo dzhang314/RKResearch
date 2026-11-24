@@ -4,7 +4,7 @@ open RKResearch RKResearch.Certified.Graded Polynomial Module RKCert.Endpoint
 
 example {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
     {A : Matrix (Fin 26) (Fin 26) K} {b : Fin 26 → K}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 17) {r : ℕ}
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 17 A b) {r : ℕ}
     {U : Submodule K (Fin 26 → K)} {w : Fin 26 → K}
     (H : FlatClockHead A 5 3 r U w) : zeroSpace A 3 ≤ U :=
   grade_eight_third_inside_core ha ho (by decide) H

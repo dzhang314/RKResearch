@@ -13,7 +13,7 @@ open RKResearch Module
 variable {K : Type*} [Field K] {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
 
 theorem orderNine_rank_five_full (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (rank5 : finrank K (treeSpace A 5) = 10) :
+    (ho : HasOrder 9 A b) (rank5 : finrank K (treeSpace A 5) = 10) :
     firstSeed A b = 0 ∧ nodes A (Fin.last 11) = 1 ∧
     coordinate (K:=K) (Fin.last 11) ∈ treeSpace A 5 ∧
     coordinate (K:=K) (Fin.last 11) ∉ treeSpace A 4 ∧

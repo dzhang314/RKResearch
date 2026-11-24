@@ -20,7 +20,7 @@ variable {G : K[X]} {w : Fin (s+1)→K} {U : Submodule K (Fin (s+1)→K)}
 rank-two early-terminal chart in characteristic zero. -/
 theorem Order15PaidStaircase.native_terminal_impossible [CharZero K]
     (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (seed : firstSeed A b=0) (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8) : False := by
   obtain ⟨v,P,B⟩ := S.actual_terminal_divisor ha ho seed term
   obtain ⟨i,_,_,un,gu,pu,f1,f2⟩ := B.omitted_knot ha ho
@@ -47,7 +47,7 @@ variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
 /-- A strictly lower-triangular RK method of native reviewed order
 fifteen needs at least twenty-three stages over every ordered field. -/
 theorem native_explicit_order_fifteen_at_least_twenty_three
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15) : 23≤s := by
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b) : 23≤s := by
   by_contra no
   cases s with
   | zero =>

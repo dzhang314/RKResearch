@@ -61,7 +61,7 @@ theorem exists_polynomial_of_coeff_range {q : ℕ} {v : Fin (s+1) → K}
 /-- Two actual endpoint zeros and a complete paid set of ordinary
 moments determine a bounded polynomial independently of a defect grade. -/
 theorem polynomial_zero_of_endpoint_probes (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b p) {n : ℕ} (pay : 2*n+1≤p)
+    (ho : HasOrder p A b) {n : ℕ} (pay : 2*n+1≤p)
     {t : Fin (s+1)} (one : nodes A t=1)
     {P : K[X]} (deg : P.natDegree≤n+1) (origin : evalNodes A P 0=0)
     (terminal : evalNodes A P t=0)
@@ -91,7 +91,7 @@ theorem polynomial_zero_of_endpoint_probes (ha : ∀ i k, i ≤ k → A i k=0)
 /-- The zero first physical stage saves the zeroth coefficient in
 the ordinary square Cauchy system. -/
 theorem polynomial_zero_of_origin_probes (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b p) {q : ℕ} (pay : 2*q≤p)
+    (ho : HasOrder p A b) {q : ℕ} (pay : 2*q≤p)
     {P : K[X]} (deg : P.natDegree≤q) (origin : evalNodes A P 0=0)
     (tests : ∀ k<q, probe A b k (evalNodes A P)=0) : P=0 := by
   let a : Fin (q+1) → K := fun i => P.coeff i.val
@@ -116,7 +116,7 @@ theorem polynomial_zero_of_origin_probes (ha : ∀ i k, i ≤ k → A i k=0)
 /-- Exact rank saturation separates all degree-q clock polynomials from
 an available head band. The clock range is measured on the true tableau. -/
 theorem polynomial_buffer_separated (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b p) {q h : ℕ} (paid : 2*q≤p)
+    (ho : HasOrder p A b) {q h : ℕ} (paid : 2*q≤p)
     {Z : Submodule K (Fin (s+1) → K)} (cap : finrank K Z≤h)
     (dim : finrank K ↥((coeffEval A q).range⊔Z)=q+1+h)
     {P : K[X]} (deg : P.natDegree≤q) (m : evalNodes A P∈Z) : P=0 := by
@@ -140,7 +140,7 @@ theorem polynomial_buffer_separated (ha : ∀ i k, i ≤ k → A i k=0)
 for a vector and its clock shift. The argument is uniform in the buffer
 size, actual stage count and coefficient field. -/
 theorem buffered_two_leaks (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b p) {d j : ℕ} (pos : 0<d)
+    (ho : HasOrder p A b) {d j : ℕ} (pos : 0<d)
     (ordinary : d+j≤p) (paid : 2*d+3≤p)
     {t : Fin (s+1)} (one : nodes A t=1)
     {Z W : Submodule K (Fin (s+1) → K)}

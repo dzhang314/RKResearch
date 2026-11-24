@@ -12,7 +12,7 @@ Import `RKCert.ReviewedNative.OrderNineOneOffExclusion`.
 
 * `RKResearch.Certified.Graded.OneOff.order9_one_off_impossible` excludes
   a strictly lower physical `Fin 12` matrix A with reviewed
-  `RKResearch.HasOrder A b 9` and `(offKnots A).card = 1`.
+  `RKResearch.HasOrder 9 A b` and `(offKnots A).card = 1`.
 * `RKResearch.Certified.Graded.OneOff.explicit_order_nine_one_off_at_least_thirteen`
   proves `13 ≤ s` for any stage count under the same one-off premise.
 * The field assumptions are `[Field K] [LinearOrder K] [IsStrictOrderedRing K]`;

@@ -2,7 +2,7 @@
 
 This adds a neutral native entry point for a terminal marked reverse
 chart in exact order proofs. It takes a strictly lower original matrix,
-`RKResearch.HasOrder A b p` over any characteristic-zero field with
+`RKResearch.HasOrder p A b` over any characteristic-zero field with
 `10 ≤ p`, the actual vanishing first reverse seed, and these hypotheses:
 
 * the dimensions of the native pair adjoint flags `back A b n` are

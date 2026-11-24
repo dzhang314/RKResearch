@@ -57,7 +57,7 @@ set_option maxHeartbeats 1400000 in
 physical tableau. The four roots are in literal chronological on order. -/
 theorem order9_actual_five_six_FG
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6)
     {P : K[X]} (hPd : P.natDegree≤2) (hPn : P≠0)
     (hF : zeroSpace A 4=band A 2)

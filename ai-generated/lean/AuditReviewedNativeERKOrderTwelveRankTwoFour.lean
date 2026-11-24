@@ -10,7 +10,7 @@ namespace RKResearch.Certified.Graded.AuditERK12RankTwoFour
 
 theorem actual_square_profile_or_quartic_factor {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12) (cap : s+1≤17) :
+    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b) (cap : s+1≤17) :
     ∃ U z α Q R, RankTwoFourProfile A U z α Q R ∧
       (α≠0 ∨ (terminalMesh6=R*Q ∧ R.natDegree=4 ∧ Q.natDegree=2 ∧
         ∀ i, z i≠0 → z i=R.eval (nodes A i))) := by

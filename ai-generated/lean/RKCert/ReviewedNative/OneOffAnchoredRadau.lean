@@ -47,7 +47,7 @@ theorem radau_quartic_decoder (Q : K[X]) (hd : Q.natDegree ≤ 4)
 
 omit [CharZero K] in
 theorem anchor_probe_coeff {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ho : HasOrder A b p) (Q : K[X]) {n k : ℕ}
+    (ho : HasOrder p A b) (Q : K[X]) {n k : ℕ}
     (hd : Q.natDegree ≤ n) (hpay : k+n+2 ≤ p)
     (hz : probe A b k (evalNodes A (X*Q))=0) :
     (∑ j : Fin (n+1), Q.coeff j.val / ((k+j.val+2:ℕ):K))=0 := by
@@ -73,7 +73,7 @@ theorem anchorRadau_coeff_five : (anchorRadau : K[X]).coeff 5=1 := by
 /-- Any degree-five polynomial part in a grade-five relation at p9
 belongs to this one-dimensional span, with its own top coefficient. -/
 theorem anchored_radau_span {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ho : HasOrder A b 9) (P : K[X]) (dp : P.natDegree≤5)
+    (ho : HasOrder 9 A b) (P : K[X]) (dp : P.natDegree≤5)
     (p0 : P.eval 0=0)
     (mom : ∀ j : Fin 4, probe A b j.val (evalNodes A P)=0) :
     P=C (P.coeff 5)*anchorRadau := by

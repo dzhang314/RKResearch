@@ -25,7 +25,7 @@ structure Order15TerminalDivisor (A : Matrix (Fin (s+1)) (Fin (s+1)) K)
   degree : P.natDegree+3=a
 
 private theorem physical_sites_after_eleven (S : Order15PaidStaircase A b a G 2 U w)
-    (ho : HasOrder A b 15) :
+    (ho : HasOrder 15 A b) :
     order15HeadLength a 2 11<(HeadFiber.physicalSites (nodes A) w).card := by
   have ab := S.base_degree
   have dim11 := (S.band_direct_rank ho (j:=11) (by omega) (by decide)).2
@@ -44,7 +44,7 @@ private theorem physical_sites_after_eleven (S : Order15PaidStaircase A b a G 2 
 the variable pencil and degree three in the fixed alias. -/
 theorem Order15PaidStaircase.actual_terminal_divisor [CharZero K]
     (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (seed : firstSeed A b=0) (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8) :
     ∃ (v : Fin (s+1)→K) (P : K[X]), Order15TerminalDivisor A b a U v G P := by
   obtain ⟨v,T,dis,_⟩ := S.clean_head ha ho

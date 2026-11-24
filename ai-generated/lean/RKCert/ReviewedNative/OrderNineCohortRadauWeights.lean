@@ -11,7 +11,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 
 theorem order9_on_quadrature_weight_norm
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1)→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9) (hM : (cleanKnots A).card=5)
+    (ho : HasOrder 9 A b) (hM : (cleanKnots A).card=5)
     (hoff : ∀ x∈offKnots A, offMass A b x=0) :
     ∃ t : K, t≠0 ∧ ∀ x∈cleanKnots A, x≠0 →
       onWeight A b x*RKCert.Paired.nodalSlope (cleanKnots A) x*RKCert.Paired.fixedRadauT3 x=t := by

@@ -35,10 +35,10 @@ private theorem sum_label_fibre {n : ℕ} (σ : Fin s→Fin n) (u : Fin n→K) (
 tableau, not only effective moment weights. Its stage count is exactly
 the number of distinct physical labels. -/
 theorem explicit_order_on_first_profiles {α : Type*} [DecidableEq α] (f : Fin s→α)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b p)
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder p A b)
     (pref : ∀ i j, f i=f j → ∀ t : FiniteRootedTree, (t.order:ℕ)≤p → Φ t A i=Φ t A j) :
     ∃ (B : Matrix (Fin (Finset.univ.image f).card) (Fin (Finset.univ.image f).card) K)
-      (w : Fin (Finset.univ.image f).card→K), (∀ i j,i ≤ j → B i j=0) ∧ HasOrder B w p := by
+      (w : Fin (Finset.univ.image f).card→K), (∀ i j,i ≤ j → B i j=0) ∧ HasOrder p B w := by
   classical
   let first (j : Fin s) := ∀ i, i < j → f i≠f j
   let S := Finset.univ.filter first
@@ -96,7 +96,7 @@ theorem explicit_order_on_first_profiles {α : Type*} [DecidableEq α] (f : Fin 
       change (∑ j, (∑ k : Fin s with σ k=j, A (e i) k)*Φ u A (e j)) = _
       rw [sum_label_fibre]
       exact Finset.sum_congr rfl (fun k _=>congrArg (A (e i) k * ·) (pref _ _ (label k) u huP))
-  have ord : HasOrder B w p := by
+  have ord : HasOrder p B w := by
     intro t ht
     have dot : w ⬝ᵥ Φ t B=b ⬝ᵥ Φ t A := by
       rw [φ t ht,dotProduct,dotProduct]
@@ -120,7 +120,7 @@ theorem clean_five_receiver_profile_floor {α : Type*} [DecidableEq α]
   let h : i.val≤s := i.isLt.le
   let B := a • prefixMatrix A h
   let w : Fin i.val→K := fun j => a*A i (Fin.castLE h j)
-  have e : HasOrder B w 5 := exact_receiver_prefix_order ha i 5 nz clean
+  have e : HasOrder 5 B w := exact_receiver_prefix_order ha i 5 nz clean
   have sB : ∀ j k,j ≤ k → B j k=0 := by
     intro j k jk
     change a*(prefixMatrix A h) j k=0

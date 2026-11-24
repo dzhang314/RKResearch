@@ -6,7 +6,7 @@ Import `RKCert.ReviewedNative.OrderNineExplicitThirteen`. The endpoint is
 ```lean
 {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K] {s : ℕ}
 {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-(ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder A b 9) : 13 ≤ s
+(ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder 9 A b) : 13 ≤ s
 ```
 
 No assumption about signs of coefficients, repeated abscissas, collisions

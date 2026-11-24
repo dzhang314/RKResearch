@@ -30,7 +30,7 @@ theorem order15_escape_origin (ha : ∀ i k,i ≤ k → A i k=0) (F : Order15Pai
 /-- Six adjacent unit moments on the actual first escape. They are the
 shared order-15 input (r=5) for the signed Jacobi band, not a replay. -/
 theorem order15_escape_adjacent_packet (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (F : Order15PaidFrame A b)
+    (ho : HasOrder 15 A b) (F : Order15PaidFrame A b)
     (P : K[X]) (pd : P.natDegree≤8) (hp : evalNodes A P∈order15FirstEscape A b) :
     ∃ Q : K[X], P=X*Q ∧ Q.natDegree≤7 ∧ RKCert.ReviewedNative.JacobiMoments.MomentDifferences Q 5 := by
   obtain ⟨Q,hQ⟩:=Polynomial.X_dvd_iff.mpr (order15_escape_origin ha F P hp)
@@ -52,7 +52,7 @@ theorem order15_escape_adjacent_packet (ha : ∀ i k,i ≤ k → A i k=0)
 
 /-- When no terminal is charged, each of the seven paid moments itself
 vanishes. In the marked branch only adjacent differences were used. -/
-theorem order15_unmarked_escape_moments (ho : HasOrder A b 15) (F : Order15PaidFrame A b)
+theorem order15_unmarked_escape_moments (ho : HasOrder 15 A b) (F : Order15PaidFrame A b)
     (first : firstSeed A b≠0) (P : K[X]) (pd : P.natDegree≤8)
     (hp : evalNodes A P∈order15FirstEscape A b) (k : Fin 7) :
     (primitive (X^k.val*P)).eval 1=0 := by

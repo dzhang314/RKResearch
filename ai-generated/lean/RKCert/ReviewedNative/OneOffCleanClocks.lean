@@ -132,7 +132,7 @@ theorem new_clean_clock_h {a d : K} {i j : Fin s}
 /-- Order nine has the chronological doubled clean clock, and another
 genuine clean row with nonzero Ag outside the three old clean knots. -/
 theorem order9_clean_clock_chain {b : Fin s → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (stages : s ≤ 12) (off : (offKnots A).card = 1) :
     ∃ (a d : K) (i j r t : Fin s), GlobalNormal A a d i j ∧
       (g A r = 0 ∧ nodes A r = 2*d ∧ h A r = a*d^2 ∧

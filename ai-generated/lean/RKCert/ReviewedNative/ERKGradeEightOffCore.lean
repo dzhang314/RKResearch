@@ -140,7 +140,7 @@ end
 three live clocks and two off-core values are too few to separate F5. -/
 theorem no_rank_three_clock_core_at_order_ten
     {T : Matrix (Fin (s+1)) (Fin (s+1)) K} {w : Fin (s+1)→K}
-    (ha : ∀ i j, i≤j → T i j=0) (ho : HasOrder T w p) (pay : 10≤p)
+    (ha : ∀ i j, i≤j → T i j=0) (ho : HasOrder p T w) (pay : 10≤p)
     (U : Submodule K (Fin (s+1)→K))
     (stable : U.map (diag (nodes T))≤U) (f4 : zeroSpace T 4=U)
     (dU : finrank K U=3) (d3 : finrank K (zeroSpace T 3)=2)
@@ -168,7 +168,7 @@ theorem no_rank_three_clock_core_at_order_ten
 the only remaining route to a small grade-eight space over an ordered field. -/
 theorem ordered_grade_eight_quartic_only [LinearOrder K] [IsStrictOrderedRing K]
     {T : Matrix (Fin (s+1)) (Fin (s+1)) K} {w : Fin (s+1)→K}
-    (ha : ∀ i j, i≤j → T i j=0) (ho : HasOrder T w p) (pay : 16≤p)
+    (ha : ∀ i j, i≤j → T i j=0) (ho : HasOrder p T w) (pay : 16≤p)
     (cap : finrank K (zeroSpace T 8)≤8) :
     finrank K (zeroSpace T 4)=4 ∧ ∃ r U v, FlatClockHead T 4 4 r U v := by
   rcases grade_eight_remaining_two_cases ha ho pay cap with quartic | ⟨r,U,v,H,_,dU,d3,e,closed⟩

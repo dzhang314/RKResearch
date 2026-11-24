@@ -50,7 +50,7 @@ set_option maxHeartbeats 1400000 in
 /-- The isolated physical C(2) cubic-head profile is impossible.
 The order hypothesis is used at most through the paid order-eight
 clean-clock detection; all row eliminations are finite triangular identities. -/
-theorem dirk_C2_no_cubic_head (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 8≤p)
+theorem dirk_C2_no_cubic_head (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 8≤p)
     (c₂ : monomialStageDefect A 1=0)
     (P : K[X]) (nz : P≠0) (deg : P.natDegree≤3)
     (many : 4<(physicalSites (nodes A) (monomialStageDefect A 2)).card)
@@ -336,7 +336,7 @@ namespace RKResearch.Certified.Graded
 The invariant-grade-three fourth-entry branch is separate. -/
 theorem dirk_grade_six_surplus_of_C2_of_grade_three_escape
     {K : Type*} [Field K] [CharZero K] {s p : ℕ} {A : Matrix (Fin s) (Fin s) K}
-    {b : Fin s → K} (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 8≤p)
+    {b : Fin s → K} (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 8≤p)
     (c₂ : monomialStageDefect A 1=0)
     (escape : ¬ (zeroSpace A 3).map (diag (nodes A))≤zeroSpace A 3) :
     Module.finrank K (zeroSpace A 3)+4≤Module.finrank K (zeroSpace A 6) := by

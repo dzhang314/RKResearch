@@ -5,14 +5,14 @@ open scoped Matrix
 
 example :
     ∃ (A : Matrix (Fin 9) (Fin 9) ℝ) (b : Fin 9 → ℝ) (γ : ℝ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 7 :=
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 7 A b :=
   strictSDIRK_order_seven_nine_stages_real
 
 local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 
 example :
     ∃ (A : Matrix (Fin 9) (Fin 9) ℝₐ) (b : Fin 9 → ℝₐ) (γ : ℝₐ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 7 :=
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 7 A b :=
   strictSDIRK_order_seven_nine_stages_realAlgebraic
 
 #print axioms RKCert.ReviewedNative.IntegerHornerCertificate.checkLocal_sound

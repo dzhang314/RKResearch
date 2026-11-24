@@ -71,7 +71,7 @@ omit [CharZero K] in
 /-- A genuine clock-polynomial product raises the grade of the head by the
 degree of its multiplier, as long as the tree normalization budget is paid. -/
 private theorem weightedGrade {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)}
-    (ho : HasOrder A b p) {j : ℕ} {w : (Fin s → K)} (hw : w∈zeroSpace A j)
+    (ho : HasOrder p A b) {j : ℕ} {w : (Fin s → K)} (hw : w∈zeroSpace A j)
     (R : K[X]) (hR : R.natDegree+1≤p) :
     weightedEval (nodes A) w R ∈ zeroSpace A (j+R.natDegree) := by
   have he : weightedEval (nodes A) w R = w*evalNodes A R := by ext i; simp [mul_comm]
@@ -82,7 +82,7 @@ private theorem weightedGrade {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)}
 not supplied as an additional hypothesis. For every test R in the budget,
 the same chronological failure knot annihilates the formal primitive RQP. -/
 theorem head_contrast_at_physical_row {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)}
-    (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b p) {j H n : ℕ}
+    (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder p A b) {j H n : ℕ}
     (hHp : H+1≤p) (hsep : PolySeparated A H)
     (U : Submodule K ((Fin s → K))) (hUF : U≤zeroSpace A j)
     (hC : ∀ v∈U,diag (nodes A) v∈U)
@@ -178,7 +178,7 @@ theorem primitive_monomial_moment {n : ℕ} (e : Fin n → K) (x : K) (k : ℕ) 
 the actual tableau: both noncoincident contrast knots and every required
 primitive test are extracted on physical rows before the scalar gate is used. -/
 theorem no_disjoint_polynomial_head_doubling {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)}
-    (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b p) {m n : ℕ} (hm : 4≤m)
+    (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder p A b) {m n : ℕ} (hm : 4≤m)
     (hHp : 2*(m+1)+1≤p) (hsep : PolySeparated A (2*(m+1)))
     (U : Submodule K ((Fin s → K))) (hUF : U≤zeroSpace A (m+1)) (hC : ∀ v∈U,diag (nodes A) v∈U)
     (w : (Fin s → K)) (hw : w∈zeroSpace A (m+1))

@@ -21,7 +21,7 @@ open scoped Classical
 variable {K : Type*} [Field K] [CharZero K] {s : ℕ}
 variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
-private theorem early_rank_window (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 15)
+private theorem early_rank_window (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (cap : s ≤ 22) :
     4 ≤ finrank K (zeroSpace A 5) ∧
     finrank K (zeroSpace A 5) < finrank K (zeroSpace A 6) ∧
@@ -38,7 +38,7 @@ private theorem early_rank_window (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasO
 /-- Entry and exit of the short midpoint each have a genuine physical
 clock escape. The outgoing Hermite bound rules out invariance at 5 and 6;
 the incoming bound rules it out at 7 without borrowing an eighth grade. -/
-theorem order15_clock_escapes (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_clock_escapes (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (cap : s ≤ 22) {j : ℕ} (lo : 5 ≤ j) (hi : j ≤ 7) :
     ¬ (zeroSpace A j).map (diag (nodes A)) ≤ zeroSpace A j := by
   obtain ⟨low,step₅,step₆,high⟩ := early_rank_window ha ho cap
@@ -62,7 +62,7 @@ theorem order15_clock_escapes (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder
 /-- The actual single-head data used at the entrance to the order-15 mesh
 argument. This is only the ordinary forward band; a marked endpoint is not
 silently counted a second time. -/
-theorem order15_head_of_grade_five (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_head_of_grade_five (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (cap : s ≤ 22) (five : 5 ≤ finrank K (zeroSpace A 5)) :
     s=22 ∧ ∃ (r : ℕ) (U : Submodule K (Fin s → K)) (w : Fin s → K),
       2≤r ∧ finrank K U+r=5 ∧ U.map (diag (nodes A))≤U ∧ U≤zeroSpace A 5 ∧

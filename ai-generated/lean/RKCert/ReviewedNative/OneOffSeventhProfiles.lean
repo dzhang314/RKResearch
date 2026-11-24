@@ -57,7 +57,7 @@ structure CleanFour (A : Matrix (Fin 12) (Fin 12) K) (a d z : K) : Prop where
   H5 : scaledH A a (5:Fin 12)=hzero d z
   diff : scaledH A a (4:Fin 12)≠scaledH A a (3:Fin 12)
 
-theorem order9_clean_four (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_clean_four (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     CleanFour A a d (nodes A (5:Fin 12)) := by
   let z := nodes A (5:Fin 12)
@@ -93,7 +93,7 @@ theorem hzero_ne (d z : K) (dn : d≠0) (zn : z≠0) (zt : z≠2*d) :
 /-- Every grade-five defect has a radial polynomial part. Two points
 on the repeated clock fix its factor, and three distinct nonzero Ag
 columns fix its remaining quadratic on every on row. -/
-theorem native_defect_profile (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem native_defect_profile (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d z : K} (an : a≠0) (dn : d≠0) (zn : z≠0) (zd : z≠d) (zt : z≠2*d)
     (C4 : CleanFour A a d z) (rt : radauVal (2*d)≠0)
     (mEq : LinearMap.range (normalProfileMap A)=treeSpace A 5)
@@ -150,7 +150,7 @@ theorem native_defect_profile (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrd
   intro r gr
   simpa only [kk,Qeq] using act r gr
 
-theorem native_jv_profiles (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem native_jv_profiles (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide)) :
     let z := nodes A (5:Fin 12)
     ∀ r, g A r=0 →

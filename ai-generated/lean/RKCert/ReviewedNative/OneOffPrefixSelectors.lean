@@ -135,7 +135,7 @@ theorem prefix_equal_physical_rows (ha : ∀ i j, i ≤ j → A i j = 0) {a d : 
 order-nine tableau, contrary to the paid forward chart. -/
 theorem order9_no_identical_rows {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
     {b : Fin (s+1) → K} (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (stages : s+1 ≤ 12) {i j : Fin (s+1)} (ij : i < j) :
+    (ho : HasOrder 9 A b) (stages : s+1 ≤ 12) {i j : Fin (s+1)} (ij : i < j) :
     ¬ ∀ k, A i k = A j k := by
   intro e
   obtain ⟨B,c,hB,hc⟩ := exists_merge_equal_rows ha ho ij e
@@ -143,7 +143,7 @@ theorem order9_no_identical_rows {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
   omega
 
 theorem no_repeat_in_first_chart_order9 {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (stages : s+1≤12)
     {a d : K} {i j : Fin (s+1)} (an : a≠0) (dn : d≠0)
     (q2 : mDef A 2=(2*a/3) • g A+twoLam a d • h A)

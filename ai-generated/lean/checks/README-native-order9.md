@@ -12,7 +12,7 @@ The named prerequisites are exact native leaves, not an order-conversion bridge.
 `OneOffConstantAmplitude` exports
 `RKResearch.Certified.Graded.OneOff.order9_constant_amplitude_of_capacity`.
 For any characteristic-zero field, a strictly lower 12-stage matrix with
-reviewed `HasOrder A b 9`, exactly one distinct nonzero-defect clock, and
+reviewed `HasOrder 9 A b`, exactly one distinct nonzero-defect clock, and
 `finrank K (treeSpace A 4) ≤ 8` has a `ConstantAmplitude A a d i j`
 certificate. The theorem proves the earliest physical off row, the real
 first integrated-quadratic innovation, the two possible initial event forms,

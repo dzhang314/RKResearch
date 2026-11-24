@@ -16,7 +16,7 @@ variable {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
 zero polynomial part. In rank nine spend one additional coefficient;
 in rank ten the actual terminal coordinate kills it instead. -/
 theorem exists_wide_kernel_with_zero_polynomial (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) :
+    (ho : HasOrder 9 A b) :
     ∃ w : WideCoeffs K, w≠0 ∧ wideProfileMap A w=0 ∧ ofFn 6 w.1.1=0 := by
   let L := (wideProfileMap A).codRestrict (treeSpace A 5) (wide_profile_mem ho)
   have rank := order9_grade_five_upper ha ho
@@ -55,7 +55,7 @@ theorem exists_wide_kernel_with_zero_polynomial (ha : ∀ i j, i ≤ j → A i j
 
 /-- Actual pointwise defect separation. A clean copy of the off node is
 not ruled out; the product vanishes even at coincident abscissas. -/
-theorem order9_defects_separate (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_defects_separate (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) :
     g A*h A=0 := by
   obtain ⟨w,nw,hw,P0⟩ := exists_wide_kernel_with_zero_polynomial ha ho

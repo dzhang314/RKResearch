@@ -11,7 +11,7 @@ predicate are native reviewed data throughout.
 
 `RKResearch.Certified.Graded.OneOff.order9_one_off_maximal_chart`
 in `RKCert.ReviewedNative.OneOffMaximal` assumes only a characteristic-zero
-field, a strict lower physical twelve-stage tableau, reviewed `HasOrder A b 9`
+field, a strict lower physical twelve-stage tableau, reviewed `HasOrder 9 A b`
 and one distinct clock with nonzero quadratic defect. It proves the global
 normal form and exact ordered first four physical feature rows; the fifth
 physical row is clean at the same doubled clock as the fourth but has

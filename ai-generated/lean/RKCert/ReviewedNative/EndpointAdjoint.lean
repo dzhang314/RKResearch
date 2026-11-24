@@ -19,7 +19,7 @@ structure LastActive (b : Fin s → K) (t : Fin s) : Prop where
 
 variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
-theorem exists_lastActive (ho : HasOrder A b p) (hp : 1 ≤ p) :
+theorem exists_lastActive (ho : HasOrder p A b) (hp : 1 ≤ p) :
     ∃t : Fin s,LastActive b t := by
   classical
   let U : Finset (Fin s) := Finset.univ.filter (fun i=>b i ≠ 0)
@@ -139,7 +139,7 @@ theorem first_dim_one (first : firstSeed A b ≠ 0) : finrank K (back A b 0)=1 :
 
 private theorem backward_endpoint_count_succ {m : ℕ} {T : Matrix (Fin (m+1)) (Fin (m+1)) K}
     {w : Fin (m+1) → K}
-    (ha : ∀i j,i ≤ j → T i j=0) (ho : HasOrder T w p)
+    (ha : ∀i j,i ≤ j → T i j=0) (ho : HasOrder p T w)
     (q n : ℕ) (oq : 2*q+1 ≤ p) (budget : q+n+2 ≤ p) :
     finrank K (treeSpace T q)+n+1 ≤ m+1 := by
   by_cases z : firstSeed T w=0
@@ -162,7 +162,7 @@ private theorem backward_endpoint_count_succ {m : ℕ} {T : Matrix (Fin (m+1)) (
 
 /-- The last-live coordinate or the nonzero linear seed, but never both,
 pays one physical dimension in the lower-bound count. -/
-theorem backward_endpoint_count (ha : ∀i j,i ≤ j → A i j=0) (ho : HasOrder A b p)
+theorem backward_endpoint_count (ha : ∀i j,i ≤ j → A i j=0) (ho : HasOrder p A b)
     (q n : ℕ) (oq : 2*q+1 ≤ p) (budget : q+n+2 ≤ p) :
     finrank K (treeSpace A q)+n+1 ≤ s := by
   cases s with
@@ -173,7 +173,7 @@ theorem backward_endpoint_count (ha : ∀i j,i ≤ j → A i j=0) (ho : HasOrder
     exact backward_endpoint_count_succ ha ho q n oq budget
 
 /-- Paid forward room for the actual order-nine explicit tableau. -/
-theorem orderNine_paid_room (ha : ∀i j,i ≤ j → A i j=0) (ho : HasOrder A b 9) :
+theorem orderNine_paid_room (ha : ∀i j,i ≤ j → A i j=0) (ho : HasOrder 9 A b) :
     finrank K (treeSpace A 4)+4 ≤ s :=
   backward_endpoint_count ha ho 4 3 (by decide) (by decide)
 

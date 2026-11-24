@@ -6,7 +6,7 @@ open RKResearch RKResearch.Certified.Graded RKResearch.Certified.Graded.ERK12 Mo
 section ActualOrderTwelve
 variable {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j=0) (h : HasOrder A b 12) (cap : s+1≤17)
+    (ha : ∀ i j, i ≤ j → A i j=0) (h : HasOrder 12 A b) (cap : s+1≤17)
 
 example : ∃ r U w, ForwardStaircase A r U w ∧ zeroSpace A 2≤U ∧ 2≤r ∧ r≤4 := by
   have S := saturation_of_order ha h cap

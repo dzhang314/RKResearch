@@ -3,7 +3,7 @@
 The theorem is
 `RKResearch.Certified.native_explicit_order_fifteen_at_least_twenty_three`.
 Over an ordered field, strict lower triangularity and reviewed
-`RKResearch.HasOrder A b 15` imply `23≤s`. This is a lower bound,
+`RKResearch.HasOrder 15 A b` imply `23≤s`. This is a lower bound,
 not a construction attaining it.
 
 * Signed Legendre reflection and formal integration by parts give the

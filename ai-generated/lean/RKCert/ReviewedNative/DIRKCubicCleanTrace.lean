@@ -33,7 +33,7 @@ private theorem primitive_eval_power (P : K[X]) (x : K) (k d : ℕ) (hd : P.natD
 /-- Three local primitive tests, at one nonzero clock, are full-rank
 on an origin-cleared input of length three.  This is the standard native
 Cauchy separation with the local clock's powers factored out. -/
-theorem detect_short_primitive_tests (ho : HasOrder A b p) (pay : 6≤p)
+theorem detect_short_primitive_tests (ho : HasOrder p A b) (pay : 6≤p)
     (Q : K[X]) (d : Q.natDegree≤2) (x : K) (nx : x≠0)
     (tests : ∀ k : Fin 3, (primitive (X^(1+k.val)*Q)).eval x=0) : Q=0 := by
   let a : Fin 3 → K := fun i => Q.coeff i.val*x^i.val
@@ -88,7 +88,7 @@ set_option maxHeartbeats 400000 in
 cannot have a nonzero scalar of the form XQ, deg Q <= 2. No fold, deleted
 stage or new order predicate is used. Its first physical coordinate is
 tested with the diagonal-retaining Volterra commutator. -/
-theorem no_short_clean_contrast (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 7≤p)
+theorem no_short_clean_contrast (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 7≤p)
     (band : ∀ k≤3, zeroSpace A (3+k)=chain (diag (nodes A)) ⊥ w (1+k))
     (Q : K[X]) (d : Q.natDegree≤2)
     (mem : y-evalNodes A (X*Q) ∈ zeroSpace A 3)
@@ -158,7 +158,7 @@ theorem no_short_clean_contrast (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
 /-- The physical degree-three head's amplitude has nonzero constant.
 The complementary contrast would otherwise have the forbidden short
 origin-cleared trace. -/
-theorem cubic_amplitude_nonzero_at_origin (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem cubic_amplitude_nonzero_at_origin (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     (pay : 7≤p)
     (band : ∀ k≤3, zeroSpace A (3+k)=chain (diag (nodes A)) ⊥ w (1+k))
     (P : K[X]) (nz : P≠0) (deg : P.natDegree≤3)
@@ -193,7 +193,7 @@ omit [CharZero K] in
 /-- The complementary clean contrast must be visible at a nonzero clock.
 Here the exact C(2) zero first row buys one Cauchy probe: grade 4 and
 degree 4 are both detected at order 8, not 9. -/
-theorem dirk_C2_has_clean_nonroot (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_C2_has_clean_nonroot (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     (pay : 8≤p) (c₂ : monomialStageDefect A 1=0)
     (P : K[X]) (nz : P≠0) (deg : P.natDegree≤3)
     (fit : ∀ i, monomialStageDefect A 2 i≠0 → monomialStageDefect A 2 i=P.eval (nodes A i)) :
@@ -296,7 +296,7 @@ theorem two_clean_clocks_impossible (P : K[X]) (nz : P≠0) (deg : P.natDegree�
 /-- The first physical clean nonzero clock of a native cubic profile is
 already a nonroot, its true diagonal vanishes, and both native primitive
 tests are zero there. Neither unique clocks nor sign assumptions are made. -/
-theorem dirk_C2_first_clean_clock (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_C2_first_clean_clock (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     (pay : 8≤p) (c₂ : monomialStageDefect A 1=0)
     (band : ∀ k≤3, zeroSpace A (3+k)=chain (diag (nodes A)) ⊥ (monomialStageDefect A 2) (1+k))
     (P : K[X]) (nz : P≠0) (deg : P.natDegree≤3)

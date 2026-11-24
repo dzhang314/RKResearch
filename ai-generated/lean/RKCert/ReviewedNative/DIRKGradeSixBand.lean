@@ -20,7 +20,7 @@ variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 already pays every probe in this reduction. This alone does not exclude
 the two possible starts of the remaining one-head chart. -/
 theorem dirk_unit_band_of_no_grade_six_surplus (ha : A.IsLowerTriangular)
-    (ho : HasOrder A b p) (pay : 7≤p)
+    (ho : HasOrder p A b) (pay : 7≤p)
     (bad : ¬finrank K (zeroSpace A 3)+4≤finrank K (zeroSpace A 6)) :
     (∀ j, 3≤j → j<6 → finrank K (zeroSpace A (j+1)) = finrank K (zeroSpace A j)+1) ∧
     (∀ j, 4≤j → j≤6 → ¬(zeroSpace A j).map (diag (nodes A)) ≤ zeroSpace A j) := by
@@ -50,7 +50,7 @@ theorem dirk_unit_band_of_no_grade_six_surplus (ha : A.IsLowerTriangular)
 /-- Clock invariance of any one of F4, F5, F6 is enough for the genuine
 extra dimension. No assumption about the F3 clock action is needed. -/
 theorem dirk_grade_six_surplus_of_invariant_grade (ha : A.IsLowerTriangular)
-    (ho : HasOrder A b p) (pay : 7≤p) {j : ℕ} (lo : 4≤j) (hi : j≤6)
+    (ho : HasOrder p A b) (pay : 7≤p) {j : ℕ} (lo : 4≤j) (hi : j≤6)
     (inv : (zeroSpace A j).map (diag (nodes A)) ≤ zeroSpace A j) :
     finrank K (zeroSpace A 3)+4≤finrank K (zeroSpace A 6) := by
   by_contra bad

@@ -74,7 +74,7 @@ variable [CharZero K]
 /-- A physically defined model for all three chronology branches, including
 the two clock moments and both outgoing relations at their true costs. -/
 theorem localized_reverse_rows {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1) → K)}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12) (hs : Saturation A b)
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b) (hs : Saturation A b)
     (hc : (back A b 1).map (diag (reflectedClock A))≤back A b 1) :
     ∃ a : K, a≠0 ∧ ReverseRows (mat A.transpose) (reflectedClock A) b
       (reverseResidual A b 1) (mat A.transpose (reverseResidual A b 1)) a := by

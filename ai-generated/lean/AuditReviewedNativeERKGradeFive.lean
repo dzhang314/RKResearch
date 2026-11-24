@@ -24,5 +24,5 @@ open RKResearch RKResearch.Certified.Graded Module
 /-- Public consumer with only one import, using no assumed defect rank. -/
 example {K : Type*} [Field K] [CharZero K] {n : ℕ}
     {A : Matrix (Fin n) (Fin n) K} {b : Fin n→K}
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15) (cap : n≤22) :
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b) (cap : n≤22) :
     n=22 := (order15_ordinary_forward_head ha ho cap).1

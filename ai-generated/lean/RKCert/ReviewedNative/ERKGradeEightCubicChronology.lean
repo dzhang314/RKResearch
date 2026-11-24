@@ -88,7 +88,7 @@ set_option maxHeartbeats 650000 in
 /-- The same actual nonzero clock is measured by the native primitive.
 No sign requirement on the clock or coefficient field is used here. -/
 theorem grade_eight_cubic_chronology (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b p) (pay : 16≤p) {r : ℕ} {U : Submodule K (Fin (s+1)→K)}
+    (ho : HasOrder p A b) (pay : 16≤p) {r : ℕ} {U : Submodule K (Fin (s+1)→K)}
     {w v : Fin (s+1)→K} (H : FlatClockHead A 5 3 r U w) (hv : v∈zeroSpace A 3)
     (stable : U.map (diag v) ≤ U)
     (P : K[X]) (pn : P≠0) (pd : P.natDegree≤3)

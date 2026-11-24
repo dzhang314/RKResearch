@@ -1,7 +1,7 @@
 # Native explicit order-15 forward midpoint
 
 **Scope.** Four new additive modules plus an independent consumer and axiom audit.
-The proof uses the reviewed `RKResearch.HasOrder A b 15` directly over a
+The proof uses the reviewed `RKResearch.HasOrder 15 A b` directly over a
 characteristic-zero field, on the original matrix. The pinned human sources
 are from `91f4ab1bac096ddf81781ca1b81ab5afbb3c55a5`. The existing explicit
 order-15 endpoint in the older representation is not imported.

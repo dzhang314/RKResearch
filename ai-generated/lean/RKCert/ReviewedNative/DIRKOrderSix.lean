@@ -74,7 +74,7 @@ theorem dirk_first_row_of_zero_quadratic {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
   · exact ha hj
 
 /-- Ordinary (unanchored) clock separation at possibly unequal grades. -/
-theorem coeff_defect_separated_paid (ho : HasOrder A b p) {q j : ℕ}
+theorem coeff_defect_separated_paid (ho : HasOrder p A b) {q j : ℕ}
     (hm : 2*q+1 ≤ p) (hd : q+j+1 ≤ p) (a : Fin (q+1) → K)
     (h : coeffEval A q a ∈ zeroSpace A j) : a = 0 := by
   ext l
@@ -85,7 +85,7 @@ theorem coeff_defect_separated_paid (ho : HasOrder A b p) {q j : ℕ}
 
 /-- A zero physical row supplies the constant coefficient. The other q
 coefficients are detected by exactly q shifted Cauchy moments. -/
-theorem coeff_defect_separated_zero_row (ho : HasOrder A b p) {i : Fin s}
+theorem coeff_defect_separated_zero_row (ho : HasOrder p A b) {i : Fin s}
     (hr : ∀ j, A i j = 0) {q j : ℕ} (hm : 2*q ≤ p) (hd : q+j ≤ p)
     (a : Fin (q+1) → K) (h : coeffEval A q a ∈ zeroSpace A j) : a = 0 := by
   have hz : coeffEval A q a i = 0 := zeroSpace_at_zero_row hr j h
@@ -119,13 +119,13 @@ theorem coeff_defect_stage_count {q j : ℕ}
 
 /-- At a paid even midpoint, one obtains 2m-1 stages solely from forward
 columns. At m=3 this gives the full published order-six lower endpoint. -/
-theorem dirk_even_forward_stage_count (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_even_forward_stage_count (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {m : ℕ} (hm : 2 ≤ m) (pay : 2*m ≤ p) : 2*m-1 ≤ s := by
   have rank := dirk_forward_zeroSpace_rank_floor ha ho (q:=m) hm (by omega)
   by_cases hq : monomialStageDefect A 1 = 0
   · cases s with
     | zero =>
-      have h3 : HasOrder A b 3 := fun t ht => ho t (ht.trans (by omega))
+      have h3 : HasOrder 3 A b := fun t ht => ho t (ht.trans (by omega))
       exact False.elim (by have := h3.order_three_stages_field; omega)
     | succ s =>
       have hr := dirk_first_row_of_zero_quadratic ha
@@ -146,14 +146,14 @@ namespace RKResearch
 /-- A lower triangular order-six tableau over any field needs five stages. -/
 theorem HasOrder.dirk_order_six_stages_field {K : Type*} [Field K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b 6) (ha : A.IsLowerTriangular) : 5 ≤ s :=
+    (h : HasOrder 6 A b) (ha : A.IsLowerTriangular) : 5 ≤ s :=
   Certified.Graded.dirk_even_forward_stage_count ha h (m:=3) (by decide) (by decide)
 
 /-- Five physical stages are necessary at order six over every nontrivial
 commutative ring, with no separate characteristic or invertibility condition. -/
 theorem HasOrder.dirk_order_six_stages {R : Type*} [CommRing R] [Nontrivial R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b 6) (ha : A.IsLowerTriangular) : 5 ≤ s :=
+    (h : HasOrder 6 A b) (ha : A.IsLowerTriangular) : 5 ≤ s :=
   h.lower_triangular_of_all_fields ha (fun _ _ _ _ ht h' => h'.dirk_order_six_stages_field ht)
 
 end RKResearch

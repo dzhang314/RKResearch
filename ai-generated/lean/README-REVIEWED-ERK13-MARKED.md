@@ -1,7 +1,7 @@
 # Native explicit order thirteen: marked grade-eleven saturation
 
 For an actual strictly lower 19-stage tableau with
-`RKResearch.HasOrder A b 13` over any characteristic-zero field and
+`RKResearch.HasOrder 13 A b` over any characteristic-zero field and
 `firstSeed A b = 0`, this additive leaf proves two statements:
 
 * `order13_marked_reverse_first_escapes`: the actual one-dimensional

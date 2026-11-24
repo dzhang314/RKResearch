@@ -1,9 +1,11 @@
 import RKCert.ReviewedNative.DIRKSmall
 
-#print axioms RKResearch.FiniteRootedTree.order_appendLeafBranches
-#print axioms RKResearch.FiniteRootedTree.forestFactorial_appendLeafBranches
+#print axioms RKResearch.FiniteRootedTree.order_addBush
+#print axioms RKResearch.FiniteRootedTree.forestFactorial_addBush
+#print axioms RKResearch.FiniteRootedTree.factorial_addBush
 #print axioms RKResearch.FiniteRootedTree.factorial_butcherProduct_cut
-#print axioms RKResearch.Φ_appendLeafBranches
+#print axioms RKResearch.Φ_addBush
+#print axioms RKResearch.Φ_branch_swap
 #print axioms RKResearch.HasOrder.factorial_isUnit
 #print axioms RKResearch.HasOrder.balanced_root_cut
 #print axioms RKResearch.HasOrder.rootStageResidual_pairing
@@ -26,10 +28,10 @@ open RKResearch
 
 example {R : Type*} [CommRing R] [Nontrivial R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (ho : HasOrder A b 5) (ha : A.IsLowerTriangular) : 4 ≤ s :=
+    (ho : HasOrder 5 A b) (ha : A.IsLowerTriangular) : 4 ≤ s :=
   ho.dirk_order_five_stages ha
 
 example {R : Type*} [CommSemiring R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (ho : HasOrder A b 8) : IsUnit (7 : R) := by
+    (ho : HasOrder 8 A b) : IsUnit (7 : R) := by
   simpa using ho.natCast_isUnit (n := 7) (by decide) (by decide)

@@ -10,7 +10,7 @@ open scoped Matrix
 #print axioms dirk_grade_six_surplus_of_invariant_grade
 
 example {K : Type*} [Field K] [CharZero K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K}
-    {b : Fin s → K} (order : RKResearch.HasOrder A b 15) (lower : A.IsLowerTriangular)
+    {b : Fin s → K} (order : RKResearch.HasOrder 15 A b) (lower : A.IsLowerTriangular)
     (lastClosed : (zeroSpace A 6).map (diag (nodes A)) ≤ zeroSpace A 6) :
     Module.finrank K (zeroSpace A 3) + 4 ≤ Module.finrank K (zeroSpace A 6) :=
   dirk_grade_six_surplus_of_invariant_grade lower order (by decide) (j:=6)

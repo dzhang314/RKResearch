@@ -1,5 +1,12 @@
 # Runge–Kutta certificates in Lean
 
+The reviewed-native certificates import `RKResearch` from the repository root.
+They use the reviewed `HasOrder p A b` and its quadrature consequence
+`HasOrder.hasQuadratureOrder`. The graded columns and root cuts use the
+reviewed `FiniteRootedTree.addBush` and its order, factorial, and weight
+lemmas. Historical check archives retain the interface of their recorded
+source revisions.
+
 **General Q-type equivalence.** Write `c=A1`, let `Φ(t)` be the stage-weight vector and let `γ(t)` be the tree factorial. Over a characteristic-zero field, define the stage residual `Q(t)=AΦ(t)−c^|t|/γ(t)`, with componentwise powers. The central theorem, [`hasTreeOrderAtLeast_iff_rootCutTests`](RKCert/RootCuts.lean), proves that full order through `p` is equivalent to both:
  
 - `(k+1) b·c^k = 1` for every `k+1≤p`, including the constant moment when `p≥1`;
@@ -44,7 +51,7 @@ lake build
 lake env lean Audit.lean
 ```
 
-The cache step only downloads Mathlib's compiled dependencies; it is optional if building them from source. `lean-toolchain` and `lake-manifest.json` pin the toolchain and dependency revisions. The project's only direct Lake dependency is Mathlib v4.36.0. The source contains no admitted proofs, user-supplied axioms, or native-evaluation proof shortcuts. `Audit.lean` prints the transitive axiom dependencies of the named certificates.
+The cache step only downloads Mathlib's compiled dependencies; it is optional if building them from source. `lean-toolchain` and `lake-manifest.json` pin the toolchain and dependency revisions. The direct Lake dependency is the reviewed root package `RKResearch`, which pins Mathlib for the selected Lean release. The source contains no admitted proofs, user-supplied axioms, or native-evaluation proof shortcuts. `Audit.lean` prints the transitive axiom dependencies of the named certificates.
 
 ## Lower-bound certificates over commutative rings
 

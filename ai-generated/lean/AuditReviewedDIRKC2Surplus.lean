@@ -21,7 +21,7 @@ open scoped Matrix
 
 example {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (order : HasOrder A b 8) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) :
+    (order : HasOrder 8 A b) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) :
     Module.finrank K (zeroSpace A 3)+4 ≤ Module.finrank K (zeroSpace A 6) :=
   dirk_grade_six_surplus_C2 ha order (by decide) c₂
 
@@ -30,14 +30,14 @@ local instance : CharZero (ℚ × ZMod 529) :=
   ⟨fun _ _ h => Nat.cast_injective (R:=ℚ) (congrArg Prod.fst h)⟩
 
 example {s : ℕ} {A : Matrix (Fin s) (Fin s) (ℚ × ZMod 529)} {b : Fin s → (ℚ × ZMod 529)}
-    (order : HasOrder A b 12) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) : 15≤s :=
+    (order : HasOrder 12 A b) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) : 15≤s :=
   order.dirk_C2_stage_floor ha (by decide) c₂
 end
 
 example {R : Type*} [CommRing R] [CharZero R] {s : ℕ} {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (order : HasOrder A b 13) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) : 17≤s :=
+    (order : HasOrder 13 A b) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) : 17≤s :=
   order.dirk_C2_stage_floor ha (by decide) c₂
 
 example {R : Type*} [CommRing R] [CharZero R] {s : ℕ} {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (order : HasOrder A b 15) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) : 20≤s :=
+    (order : HasOrder 15 A b) (ha : A.IsLowerTriangular) (c₂ : monomialStageDefect A 1=0) : 20≤s :=
   order.dirk_C2_stage_floor ha (by decide) c₂

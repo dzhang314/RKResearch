@@ -7,7 +7,7 @@ open RKResearch.Certified.Graded RKResearch.Certified.Graded.Reverse
 strict matrix and width assumptions. -/
 theorem audit_native_order15_early_terminal {K : Type*} [Field K] [LinearOrder K]
     [IsStrictOrderedRing K] {s : ℕ} {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
-    {b : Fin (s+1)→K} (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 15)
+    {b : Fin (s+1)→K} (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 15 A b)
     (cap : s+1≤22) :
     ∃ (a : ℕ) (G : K[X]) (U : Submodule K (Fin (s+1)→K)) (w : Fin (s+1)→K),
       Order15PaidStaircase A b a G 2 U w ∧ finrank K (zeroSpace A 4)=4 ∧

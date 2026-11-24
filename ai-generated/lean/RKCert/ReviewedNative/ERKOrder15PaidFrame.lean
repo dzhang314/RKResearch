@@ -32,7 +32,7 @@ variable [CharZero K]
 The short-prefix argument uses the real native order and actual forward
 surplus, not an assumption that the last-live stage is the physical last. -/
 theorem order15_short_last_active (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (cap : s+1≤22) : LastActive b (Fin.last s) := by
+    (ho : HasOrder 15 A b) (cap : s+1≤22) : LastActive b (Fin.last s) := by
   refine ⟨?_,fun i hi=>False.elim ((not_lt_of_ge (Fin.le_last i)) hi)⟩
   intro h
   have hz (i : Fin (s+1)) (ix : s ≤ i.val) : b i=0 := by
@@ -45,7 +45,7 @@ theorem order15_short_last_active (ha : ∀ i k,i ≤ k → A i k=0)
 /-- Native paid ranks at the two physical midpoint grades. The mark
 can only buy a genuine coordinate line and is never counted twice. -/
 theorem order15_paid_frame (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (cap : s+1≤22) : Order15PaidFrame A b := by
+    (ho : HasOrder 15 A b) (cap : s+1≤22) : Order15PaidFrame A b := by
   have last := order15_short_last_active ha ho cap
   have h5 := grade_five_surplus_of_reviewed_order ha ho (by decide)
   have sep := coeff_separated ho (q:=7) (by decide)
@@ -100,7 +100,7 @@ private theorem chain_add_terminal_core {V : Type*} [AddCommGroup V] [Module K V
 /-- The ordinary physical head is retained after paying a single terminal
 coordinate in its invariant core. No node ordering or positivity is used. -/
 theorem order15_paid_head (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (cap : s+1≤22) :
+    (ho : HasOrder 15 A b) (cap : s+1≤22) :
     ∃ (r : ℕ) (U : Submodule K (Fin (s+1)→K)) (w : Fin (s+1)→K),
       2≤r ∧ finrank K U+r=5+terminalDebit A b ∧ U.map (diag (nodes A))≤U ∧
       U≤markedDefectSpace A b 5 ∧

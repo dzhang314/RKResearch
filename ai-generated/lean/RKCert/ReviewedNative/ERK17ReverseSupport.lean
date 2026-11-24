@@ -79,7 +79,7 @@ set_option maxHeartbeats 600000 in
 /-- If the first seed does not vanish, the intermediate 3–8-clock band is
 impossible. In the wide branch all true annihilators are paid polynomials. -/
 theorem width26_linear_broad_or_local (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b 17) (S : OddBalancedFrame A b 8 2) (nz : firstSeed A b ≠ 0) :
+    (ho : HasOrder 17 A b) (S : OddBalancedFrame A b 8 2) (nz : firstSeed A b ≠ 0) :
     (weightedSites (reflectedClock A) (firstSeed A b)).card ≤ 2 ∨ WideLinear A b := by
   let y := reflectedClock A
   let d := firstSeed A b
@@ -133,7 +133,7 @@ set_option maxHeartbeats 650000 in
 /-- The same gap excludes intermediate 2–7 quadratic clock sites. The
 one-site exceptional branch is not assumed closed by this lemma. -/
 theorem width26_quadratic_wide_of_two_sites (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b 17) (S : OddBalancedFrame A b 8 2) (zero : firstSeed A b = 0)
+    (ho : HasOrder 17 A b) (S : OddBalancedFrame A b 8 2) (zero : firstSeed A b = 0)
     (atLeastTwo : 2 ≤ (weightedSites (reflectedClock A) (quadraticSeed A b)).card) :
     8 ≤ (weightedSites (reflectedClock A) (quadraticSeed A b)).card ∧
     ∃ t : Fin 26, LastActive b t ∧ nodes A t=1 ∧ quadraticSeed A b t=0 ∧

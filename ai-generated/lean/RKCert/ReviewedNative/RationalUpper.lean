@@ -36,7 +36,7 @@ theorem explicit : ∀ i j : Fin 4, i ≤ j → A i j = 0 := by
   simp only [A, Matrix.of_apply]
   decide +kernel
 
-theorem order_four : HasOrder A b 4 := by
+theorem order_four : HasOrder 4 A b := by
   apply (checkOrder_iff A b 4).mp
   decide +kernel
 
@@ -45,7 +45,7 @@ theorem fifth_bush_value :
   rw [factorial_bushyTree, Φ_bushyTree]
   decide +kernel
 
-theorem not_order_five : ¬ HasOrder A b 5 := by
+theorem not_order_five : ¬ HasOrder 5 A b := by
   intro h
   have ht := h (bushyTree 5) (by rw [order_bushyTree]; decide)
   rw [fifth_bush_value] at ht
@@ -71,7 +71,7 @@ theorem diagonal_ne_zero (i : Fin 1) : A i i ≠ 0 := by
   change (1/2 : ℚ) ≠ 0
   decide +kernel
 
-theorem order_two : HasOrder A b 2 := by
+theorem order_two : HasOrder 2 A b := by
   apply (checkOrder_iff A b 2).mp
   decide +kernel
 
@@ -80,7 +80,7 @@ theorem third_bush_value :
   rw [factorial_bushyTree, Φ_bushyTree]
   decide +kernel
 
-theorem not_order_three : ¬ HasOrder A b 3 := by
+theorem not_order_three : ¬ HasOrder 3 A b := by
   intro h
   have ht := h (bushyTree 3) (by rw [order_bushyTree]; decide)
   rw [third_bush_value] at ht
@@ -110,7 +110,7 @@ theorem not_common_diagonal : ¬ ∃ γ : ℚ, ∀ i, A i i = γ := by
   rintro ⟨γ, h⟩
   exact (by decide +kernel : A 0 0 ≠ A 1 1) ((h 0).trans (h 1).symm)
 
-theorem order_four : HasOrder A b 4 := by
+theorem order_four : HasOrder 4 A b := by
   apply (checkOrder_iff A b 4).mp
   decide +kernel
 
@@ -119,7 +119,7 @@ theorem fifth_bush_value :
   rw [factorial_bushyTree, Φ_bushyTree]
   decide +kernel
 
-theorem not_order_five : ¬ HasOrder A b 5 := by
+theorem not_order_five : ¬ HasOrder 5 A b := by
   intro h
   have ht := h (bushyTree 5) (by rw [order_bushyTree]; decide)
   rw [fifth_bush_value] at ht

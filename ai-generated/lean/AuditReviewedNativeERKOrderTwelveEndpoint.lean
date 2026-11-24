@@ -12,7 +12,7 @@ namespace RKResearch.Certified.Graded.AuditERK12Endpoint
 characteristic-zero coefficient rings; no field or domain instance is supplied. -/
 theorem physical_width_seventeen_impossible {R : Type*} [CommRing R] [CharZero R] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12) (cap : s≤17) : False :=
+    (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b) (cap : s≤17) : False :=
   (not_le_of_gt (by omega : s<18)) (ho.erk_order_twelve_stages ha)
 
 #print axioms polynomial_degree_cut_at_one

@@ -89,7 +89,7 @@ set_option maxHeartbeats 550000 in
 /-- Both ranks of E5 in the five-on/five-off branch are excluded. -/
 theorem order9_no_five_off_five_on
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) : False := by
   obtain ⟨P,hPd,hPn,_,hF,hP⟩ := order9_two_curve_head ha ho (by decide) (by omega)
   obtain ⟨d⟩ := order9_fixed_radau_late_data ha ho hN hM hPd hF hP
@@ -343,14 +343,14 @@ omit [CharZero K] in
 atlas, with no extra rank or multiplicity premises. -/
 theorem order9_five_six_remaining [LinearOrder K] [IsStrictOrderedRing K]
     {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 9) :
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 9 A b) :
     (offKnots A).card=5 ∧ (cleanKnots A).card=6 := by
   obtain ⟨off,on⟩ := order9_exactly_five_off ha ho
   exact ⟨off,on.resolve_left (order9_no_five_off_five_on ha ho off)⟩
 omit [CharZero K] in
 theorem explicit_order_nine_outside_five_six_at_least_thirteen [LinearOrder K] [IsStrictOrderedRing K]
     {m : ℕ} {A : Matrix (Fin m) (Fin m) K} {b : Fin m→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (outside : ¬ ((offKnots A).card=5 ∧ (cleanKnots A).card=6)) : 13≤m := by
   by_contra! cap
   have size := (order9_forward_chart ha ho (by omega)).1

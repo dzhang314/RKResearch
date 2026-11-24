@@ -35,7 +35,7 @@ theorem polynomial_scalar_hull (S : Finset K) (P : K[X]) (hd : P.natDegree≤S.c
     have hc : R=C (R.coeff 0) := eq_C_of_natDegree_eq_zero (by omega)
     exact ⟨R.coeff 0,by rw [he,hc,mul_comm,coeff_C_zero]⟩
 
-theorem tail_profile_reduction (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem tail_profile_reduction (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (D7 : TwoFibres A a d (nodes A (5:Fin 12))) {n : ℕ} (n3 : 3≤n) {v : Fin 12 → K}
     (profile : TailProfile A a n v) (start0 : ∀ r, r < (7:Fin 12) → v r=0) :

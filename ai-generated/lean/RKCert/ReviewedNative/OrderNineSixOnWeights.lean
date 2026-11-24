@@ -13,7 +13,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 normalization on all four ordinary on nodes. No positivity is assumed;
 the fixed cubic square is evaluated as a nonzero rational. -/
 theorem order9_six_on_weight_norm {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1)→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hM : (cleanKnots A).card=6) (one : (1:K)∈cleanKnots A)
     (off : ∀x∈offKnots A,offMass A b x=0) :
     ∃ t : K,t≠0 ∧ ∀x∈RKCert.Paired.endpointErase (cleanKnots A) 1,x≠0 →

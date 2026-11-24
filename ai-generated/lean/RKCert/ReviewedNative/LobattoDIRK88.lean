@@ -59,7 +59,7 @@ private theorem scale_A (s : K) : (stageDen:K) • A s = numA s := by
 private theorem scale_b (s : K) : (weightDen:K) • b s = VecVal s rawB := by
   rw [b, smul_smul, mul_inv_cancel₀ e_ne, one_smul]
 
-theorem order_eight {s : K} (hs : s^2 = 21) : HasOrder (A s) (b s) 8 := by
+theorem order_eight {s : K} (hs : s^2 = 21) : HasOrder 8 (A s) (b s) := by
   have hA : (numA s).map (RingHom.id K) = (RingHom.id K) (stageDen:K) • A s :=
     (scale_A s).symm
   have hb : (RingHom.id K) ∘ VecVal s rawB = (RingHom.id K) (weightDen:K) • b s :=
@@ -121,7 +121,7 @@ theorem ninth_bush_scaled {s : K} (hs : s^2 = 21) :
     _ = 3920 * (9 * (e * (d^8 * (b s ⬝ᵥ Φ (bushyTree 9) (A s))))) := by ac_rfl
     _ = _ := h
 
-theorem not_order_nine {s : K} (hs : s^2 = 21) : ¬ HasOrder (A s) (b s) 9 := by
+theorem not_order_nine {s : K} (hs : s^2 = 21) : ¬ HasOrder 9 (A s) (b s) := by
   intro ho
   have hb : (9:K) * (b s ⬝ᵥ Φ (bushyTree 9) (A s)) = 1 := by
     simpa only [factorial_bushyTree, show ((9:ℕ+):ℕ) = 9 from rfl, Nat.cast_ofNat] using
@@ -132,7 +132,7 @@ theorem not_order_nine {s : K} (hs : s^2 = 21) : ¬ HasOrder (A s) (b s) 9 := by
 
 theorem exists_exact_of_root {s : K} (hs : s^2 = 21) :
     ∃ (U : Matrix (Fin 8) (Fin 8) K) (w : Fin 8 → K),
-      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder U w 8 ∧ ¬ HasOrder U w 9 :=
+      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder 8 U w ∧ ¬ HasOrder 9 U w :=
   ⟨A s, b s, lowerTriangular s, first_row_zero s, order_eight hs, not_order_nine hs⟩
 
 end Field
@@ -141,13 +141,13 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 
 theorem exists_exact_realAlgebraic :
     ∃ (U : Matrix (Fin 8) (Fin 8) ℝₐ) (w : Fin 8 → ℝₐ),
-      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder U w 8 ∧ ¬ HasOrder U w 9 := by
+      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder 8 U w ∧ ¬ HasOrder 9 U w := by
   obtain ⟨s, -, hs⟩ := LaguerreGauss76.positive_algebraic_root 21 (by decide)
   exact exists_exact_of_root hs
 
 theorem exists_exact_real :
     ∃ (U : Matrix (Fin 8) (Fin 8) ℝ) (w : Fin 8 → ℝ),
-      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder U w 8 ∧ ¬ HasOrder U w 9 := by
+      U.IsLowerTriangular ∧ (∀ j, U 0 j = 0) ∧ HasOrder 8 U w ∧ ¬ HasOrder 9 U w := by
   obtain ⟨s, -, hs⟩ := LaguerreGauss76.positive_algebraic_root 21 (by decide)
   let f := algebraMap ℝₐ ℝ
   apply exists_exact_of_root (s := f s)
@@ -162,7 +162,7 @@ namespace RKResearch.Certified
 theorem dirk_order_eight_isLeast_of_root {K : Type*} [Field K] [CharZero K]
     {s : K} (hs : s^2 = 21) :
     IsLeast {n : ℕ | ∃ (A : Matrix (Fin n) (Fin n) K) (b : Fin n → K),
-      A.IsLowerTriangular ∧ HasOrder A b 8} 8 := by
+      A.IsLowerTriangular ∧ HasOrder 8 A b} 8 := by
   obtain ⟨A,b,htr, -, ho, -⟩ := LobattoDIRK88.exists_exact_of_root hs
   refine ⟨⟨A,b,htr,ho⟩,?_⟩
   rintro n ⟨U,w,ht,h⟩
@@ -170,7 +170,7 @@ theorem dirk_order_eight_isLeast_of_root {K : Type*} [Field K] [CharZero K]
 
 theorem dirk_order_eight_isLeast_real :
     IsLeast {n : ℕ | ∃ (A : Matrix (Fin n) (Fin n) ℝ) (b : Fin n → ℝ),
-      A.IsLowerTriangular ∧ HasOrder A b 8} 8 := by
+      A.IsLowerTriangular ∧ HasOrder 8 A b} 8 := by
   obtain ⟨A,b,htr, -, ho, -⟩ := LobattoDIRK88.exists_exact_real
   refine ⟨⟨A,b,htr,ho⟩,?_⟩
   rintro n ⟨U,w,ht,h⟩
@@ -180,7 +180,7 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 
 theorem dirk_order_eight_isLeast_realAlgebraic :
     IsLeast {n : ℕ | ∃ (A : Matrix (Fin n) (Fin n) ℝₐ) (b : Fin n → ℝₐ),
-      A.IsLowerTriangular ∧ HasOrder A b 8} 8 := by
+      A.IsLowerTriangular ∧ HasOrder 8 A b} 8 := by
   obtain ⟨A,b,htr, -, ho, -⟩ := LobattoDIRK88.exists_exact_realAlgebraic
   refine ⟨⟨A,b,htr,ho⟩,?_⟩
   rintro n ⟨U,w,ht,h⟩

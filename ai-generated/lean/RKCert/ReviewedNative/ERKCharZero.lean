@@ -23,7 +23,7 @@ variable {K : Type*} [Field K] {s p : ℕ}
 /-- Any increment beyond rank q at the paid midpoint q = ⌊p/2⌋ pays one
 additional stage. This numerical join itself holds over *all* fields. -/
 theorem erk_count_of_midpoint_rank (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b p) (hp : 4≤p) (extra : ℕ)
+    (ho : HasOrder p A b) (hp : 4≤p) (extra : ℕ)
     (rank : p/2+extra ≤ finrank K (zeroSpace A (p/2))) :
     (3*p+1)/2-1+extra ≤ s := by
   let q := p/2
@@ -53,7 +53,7 @@ theorem erk_rank_interval_of_coeff_sep (ha : ∀ i j, i ≤ j → A i j=0)
 /-- The actual strict first row supplies the origin needed at the even
 cutoff 2q. No moment at order 2q+1 is borrowed. -/
 theorem erk_paid_rank_interval (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b p) {a q : ℕ} (ha1 : 1≤a) (le : a≤q) (pay : 2*q≤p) :
+    (ho : HasOrder p A b) {a q : ℕ} (ha1 : 1≤a) (le : a≤q) (pay : 2*q≤p) :
     finrank K (zeroSpace A a)+(q-a) ≤ finrank K (zeroSpace A q) := by
   cases s with
   | zero =>
@@ -65,7 +65,7 @@ theorem erk_paid_rank_interval (ha : ∀ i j, i ≤ j → A i j=0)
 /-- Every paid midpoint at or beyond grade five retains the one genuine
 surplus, computed in the original tableau's defect flag. -/
 theorem erk_grade_five_rank_at_paid_midpoint (ha : ∀ i j, i ≤ j → A i j=0)
-    (ho : HasOrder A b p) {q : ℕ} (hq : 5≤q) (pay : 2*q≤p) :
+    (ho : HasOrder p A b) {q : ℕ} (hq : 5≤q) (pay : 2*q≤p) :
     q ≤ finrank K (zeroSpace A q) := by
   have five := grade_five_surplus_of_reviewed_order ha ho (by omega)
   have gain := erk_paid_rank_interval ha ho (a:=5) (by decide) hq pay
@@ -85,9 +85,9 @@ nonzero integer scalars. -/
 theorem HasOrder.strict_lower_triangular_of_charZero_fields
     {ι : Type v} [Fintype ι] [LE ι] {R : Type u} [CommRing R] [CharZero R]
     {A : Matrix ι ι R} {b : ι → R} {p : ℕ} {C : Prop}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0)
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0)
     (hf : ∀ (K : Type u) [Field K] [CharZero K] (T : Matrix ι ι K) (w : ι → K),
-      (∀ i j, i ≤ j → T i j=0) → HasOrder T w p → C) : C :=
+      (∀ i j, i ≤ j → T i j=0) → HasOrder p T w → C) : C :=
   RKCert.ReviewedNative.with_charZero_field (fun K _ _ f =>
     hf K (A.map f) (f ∘ b)
       (fun i j hij => by rw [Matrix.map_apply,ha i j hij,map_zero]) (h.map_coefficients f))
@@ -96,7 +96,7 @@ theorem HasOrder.strict_lower_triangular_of_charZero_fields
 characteristic-zero field. -/
 theorem HasOrder.erk_grade_five_charZero_stages_field {K : Type*} [Field K] [CharZero K]
     {s p : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0) (hp : 10≤p) :
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0) (hp : 10≤p) :
     (3*p+1)/2-1 ≤ s := by
   have r := erk_grade_five_rank_at_paid_midpoint ha h (q:=p/2) (by omega) (by omega)
   simpa only [Nat.add_zero] using erk_count_of_midpoint_rank ha h (by omega) 0 (by simpa using r)
@@ -105,7 +105,7 @@ theorem HasOrder.erk_grade_five_charZero_stages_field {K : Type*} [Field K] [Cha
 lower tableau over an arbitrary characteristic-zero commutative ring. -/
 theorem HasOrder.erk_grade_five_charZero_stages {R : Type u} [CommRing R] [CharZero R]
     {s p : ℕ} {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : HasOrder A b p) (ha : ∀ i j, i ≤ j → A i j=0) (hp : 10≤p) :
+    (h : HasOrder p A b) (ha : ∀ i j, i ≤ j → A i j=0) (hp : 10≤p) :
     (3*p+1)/2-1 ≤ s :=
   h.strict_lower_triangular_of_charZero_fields ha
     (fun _ _ _ _ _ ht ho => ho.erk_grade_five_charZero_stages_field ht hp)

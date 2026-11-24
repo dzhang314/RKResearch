@@ -89,7 +89,7 @@ theorem zeroSpace_three_of_C2 (A : Matrix ι ι R) (c₂ : monomialStageDefect A
 C(2) branch is exactly the cubic one. -/
 theorem dirk_grade_three_of_C2 {K : Type*} [Field K] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 3≤p)
+    (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 3≤p)
     (c₂ : monomialStageDefect A 1=0) :
     monomialStageDefect A 2≠0 ∧ finrank K (zeroSpace A 3)=1 := by
   have lo := (dirk_forward_rank_three ha ho pay).1

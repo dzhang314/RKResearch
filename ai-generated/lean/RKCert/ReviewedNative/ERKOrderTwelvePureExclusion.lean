@@ -23,7 +23,7 @@ variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 off-core and off-head row with nonzero polynomial value and zero
 primitive. Both the core mask and the row remain physical. -/
 theorem pure_profile_primitive_zero (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) {U : Submodule K (Fin (s+1) → K)}
+    (ho : HasOrder 12 A b) {U : Submodule K (Fin (s+1) → K)}
     {z : Fin (s+1) → K} {α : K} {Q R : K[X]}
     (H : RankTwoFourProfile A U z α Q R) (r0 : R≠0)
     (head : ∀ i, z i≠0 → z i=R.eval (nodes A i))
@@ -107,7 +107,7 @@ private theorem primitive_divisor_formula (P : K[X]) (d : P.natDegree≤4) (x : 
 /-- If the remaining physical profile has zero leakage, the two-factor
 mesh split contradicts the exact Appendix B scalar divisor certificate. -/
 theorem exclude_pure_rank_two_four (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b)
     {U : Submodule K (Fin (s+1) → K)} {z : Fin (s+1) → K}
     {α : K} {Q R : K[X]} (H : RankTwoFourProfile A U z α Q R) (pure : α=0) : False := by
   classical
@@ -163,7 +163,7 @@ theorem exclude_pure_rank_two_four (ha : ∀ i k, i≤k → A i k=0)
 /-- A width-seventeen strict order-twelve tableau can only have the
 genuine nonzero-leak physical profile. -/
 theorem actual_nonzero_leak_profile_at_cap (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (cap : s+1≤17) :
+    (ho : HasOrder 12 A b) (cap : s+1≤17) :
     ∃ U z α Q R, RankTwoFourProfile A U z α Q R ∧ α≠0 := by
   have S := saturation_of_order ha ho cap
   obtain ⟨U,z,α,Q,R,H,_⟩ := actual_rank_two_four_profile ha ho cap

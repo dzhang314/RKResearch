@@ -50,7 +50,7 @@ set_option maxHeartbeats 1400000 in
 space. In particular the repeated stage is not deleted or reweighted. -/
 theorem order9_actual_five_six_on_eighth_two_step
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=5) (M : (cleanKnots A).card=6)
     (hF : zeroSpace A 4=band A 2)
     {P : K[X]} (dP : P.natDegree≤2)
@@ -333,7 +333,7 @@ theorem order9_actual_five_six_on_eighth_two_step
 Hankel obstruction, at exactly the reflected moment budget of order nine. -/
 theorem order9_actual_five_six_on_eighth_hankel
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (N : (offKnots A).card=5) (M : (cleanKnots A).card=6)
     (hF : zeroSpace A 4=band A 2)
     {P : K[X]} (dP : P.natDegree≤2)

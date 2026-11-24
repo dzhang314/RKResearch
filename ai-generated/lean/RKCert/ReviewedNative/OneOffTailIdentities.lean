@@ -25,7 +25,7 @@ theorem tailHull_insert {x : K} {S : Finset K} (hn : x∉S) :
   simp only [nodalHull,Finset.prod_insert hn]
 
 set_option maxHeartbeats 1600000 in
-theorem order9_actual_tail_identities (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_actual_tail_identities (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) (F : FirstFour A a d (by decide))
     (D7 : TwoFibres A a d (nodes A (5:Fin 12))) :
     let z := nodes A (5:Fin 12)

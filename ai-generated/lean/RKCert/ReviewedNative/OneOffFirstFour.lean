@@ -32,7 +32,7 @@ structure FirstFour (A : Matrix (Fin s) (Fin s) K) (a d : K) (hs : 4≤s) : Prop
     h A (Fin.castLE hs l)=chartH a d l
 
 theorem first_four_at_order9 {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (stages : s+1≤12) (hs : 4≤s+1)
     (sep : PolySeparated A 4) (rk3 : finrank K (zeroSpace A 3)=2)
     (rk4 : finrank K (zeroSpace A 4)=3)
@@ -151,7 +151,7 @@ theorem first_four_at_order9 {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+
   · simpa [e,chartNode,chartDefect,chartH] using And.intro rc (And.intro rg rh)
 
 theorem order9_first_four {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (off : (offKnots A).card=1) :
     ∃ (a d : K) (i j : Fin 12), GlobalNormal A a d i j ∧ FirstFour A a d (by decide) := by
   obtain ⟨a,d,i,j,D⟩ := order9_global_normal ha ho (by decide) off

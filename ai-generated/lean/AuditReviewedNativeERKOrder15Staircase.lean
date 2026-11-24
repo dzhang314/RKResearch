@@ -24,7 +24,7 @@ open RKResearch RKResearch.Certified.Graded RKResearch.Certified.Graded.Reverse 
 shared arithmetic packet; no arithmetic theorem is applied here. -/
 example {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1)→K}
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15) (cap : s+1≤22) :
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b) (cap : s+1≤22) :
     finrank K (markedTreeSpace A b 12)=20+terminalDebit A b ∧
       ∃ (a : ℕ) (G D : K[X]), Order15FirstEscapeChart A b a G ∧ G=X*D ∧
         D.natDegree≤7 ∧ RKCert.ReviewedNative.JacobiMoments.MomentDifferences D 5 := by

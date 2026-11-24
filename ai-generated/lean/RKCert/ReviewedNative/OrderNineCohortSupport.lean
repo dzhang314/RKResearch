@@ -52,7 +52,7 @@ be nonzero at every on state as well; this uses the actual Radau divisor
 certificate rather than any assumption about cross-curve coincidences. -/
 theorem order9_five_on_off_head_nonzero_on
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5)
     {P : K[X]} (hPd : P.natDegree≤2)
     (hF : zeroSpace A 4=band A 2)
@@ -220,7 +220,7 @@ theorem earlier_states_surjective {A : Matrix (Fin s) (Fin s) K} {w : (Fin s→K
 eleven, and the prefix of ten stages represents all ten states. -/
 theorem order9_ten_distinct_prefix_full
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) :
     Function.Bijective (fun i : Fin 10 => lowStateAt A (Fin.castLE (by decide) i)) ∧
       (∃ i : Fin 12, i < (10:Fin 12) ∧ lowStateAt A i=lowStateAt A (10:Fin 12) ∧
@@ -284,7 +284,7 @@ theorem order9_ten_distinct_prefix_full
 
 theorem order9_ten_distinct_prefix
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) :
     Function.Bijective (fun i : Fin 10 => lowStateAt A (Fin.castLE (by decide) i)) ∧
       ∃ i : Fin 12, i < (10:Fin 12) ∧ lowStateAt A i=lowStateAt A (10:Fin 12) ∧

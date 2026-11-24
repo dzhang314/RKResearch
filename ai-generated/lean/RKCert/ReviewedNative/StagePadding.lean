@@ -112,7 +112,7 @@ theorem dotProduct_Φ_zeroPad (A : Matrix (Fin s) (Fin s) R) (b : Fin s → R)
 
 /-- No conversion or normalization of the reviewed order definition is used. -/
 theorem hasOrder_zeroPad_iff {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (h : s ≤ n) : HasOrder (zeroPadMatrix A n) (zeroPadVec b n) p ↔ HasOrder A b p := by
+    (h : s ≤ n) : HasOrder p (zeroPadMatrix A n) (zeroPadVec b n) ↔ HasOrder p A b := by
   unfold HasOrder
   simp only [dotProduct_Φ_zeroPad A b h]
 
@@ -134,9 +134,9 @@ theorem zeroPadMatrix_nonzero_diagonal_iff {A : Matrix (Fin s) (Fin s) R} (h : s
 /-- Exclusion at exactly `n` stages rules out all explicit widths at most `n`. -/
 theorem strict_stages_gt_of_exact_exclusion
     (exclude : ∀ (T : Matrix (Fin n) (Fin n) R) (w : Fin n → R),
-      (∀ i j, i ≤ j → T i j = 0) → HasOrder T w p → False)
+      (∀ i j, i ≤ j → T i j = 0) → HasOrder p T w → False)
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (hu : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p) : n < s := by
+    (hu : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b) : n < s := by
   by_contra! h
   exact exclude _ _ ((zeroPadMatrix_strict_iff h).mpr hu) ((hasOrder_zeroPad_iff h).mpr ho)
 
@@ -144,9 +144,9 @@ theorem strict_stages_gt_of_exact_exclusion
 which requires a nonsingular diagonal. -/
 theorem lower_stages_gt_of_exact_exclusion
     (exclude : ∀ (T : Matrix (Fin n) (Fin n) R) (w : Fin n → R),
-      T.IsLowerTriangular → HasOrder T w p → False)
+      T.IsLowerTriangular → HasOrder p T w → False)
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (hu : A.IsLowerTriangular) (ho : HasOrder A b p) : n < s := by
+    (hu : A.IsLowerTriangular) (ho : HasOrder p A b) : n < s := by
   by_contra! h
   exact exclude _ _ ((zeroPadMatrix_lower_iff h).mpr hu) ((hasOrder_zeroPad_iff h).mpr ho)
 

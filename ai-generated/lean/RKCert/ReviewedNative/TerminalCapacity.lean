@@ -20,7 +20,7 @@ variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 /-- Saturated unmarked room forces the first reflected seed to vanish and
 identifies the true annihilator, including the all-monomial flag. -/
 theorem reverse_capacity_paid (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) (pay : j+n+2 ≤ p)
+    (ho : HasOrder p A b) (pay : j+n+2 ≤ p)
     (capacity : s ≤ finrank K (treeSpace A j)+n) :
     firstSeed A b = 0 ∧ back A b n = annih (treeSpace A j) ∧
       primitiveBack A b n = annih (treeSpace A j) := by
@@ -52,7 +52,7 @@ theorem coordinate_mem_of_annih_zero (V : Submodule K (Fin s → K)) (t : Fin s)
 /-- An earned last-active node at one and the physical columns of its
 entire tail, with no shorter tableau substituted into the conclusion. -/
 theorem reverse_capacity_terminal (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) (pay : j+n+2 ≤ p)
+    (ho : HasOrder p A b) (pay : j+n+2 ≤ p)
     (capacity : s ≤ finrank K (treeSpace A j)+n)
     {t : Fin s} (term : LastActive b t) :
     firstSeed A b = 0 ∧ nodes A t = 1 ∧ back A b n = annih (treeSpace A j) ∧
@@ -68,9 +68,9 @@ theorem reverse_capacity_terminal (ha : ∀ i j, i ≤ j → A i j = 0)
 /-- Exact reviewed rooted-tree order on a prefix when the output row is
 already zero on every removed stage. -/
 theorem prefix_hasOrder_of_suffix_zero (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) {k : ℕ} (hk : k ≤ s)
+    (ho : HasOrder p A b) {k : ℕ} (hk : k ≤ s)
     (zero : ∀ i, k ≤ i.val → b i = 0) :
-    HasOrder (prefixMatrix A hk) (b ∘ Fin.castLE hk) p := by
+    HasOrder p (prefixMatrix A hk) (b ∘ Fin.castLE hk) := by
   intro t ht
   have weights : (b ∘ Fin.castLE hk) ⬝ᵥ Φ t (prefixMatrix A hk) = b ⬝ᵥ Φ t A := by
     rw [Φ_prefix ha hk,dotProduct,dotProduct]
@@ -86,7 +86,7 @@ variable {w : Fin (m+1) → K}
 /-- At equality in the ordinary odd floor the final *original*
 chronological coordinate is necessarily live. -/
 theorem last_weight_of_odd_floor (ha : ∀ i j, i ≤ j → T i j = 0)
-    (ho : HasOrder T w p) (q1 : 1 ≤ q) (pay : 2*q+1 ≤ p)
+    (ho : HasOrder p T w) (q1 : 1 ≤ q) (pay : 2*q+1 ≤ p)
     (floor : m+1 = 3*q) : w (Fin.last m) ≠ 0 := by
   intro z
   have zero (i : Fin (m+1)) (hi : m ≤ i.val) : w i = 0 := by
@@ -99,7 +99,7 @@ theorem last_weight_of_odd_floor (ha : ∀ i j, i ≤ j → T i j = 0)
 
 /-- A directly usable physical last-active certificate at the odd floor. -/
 theorem lastActive_of_odd_floor (ha : ∀ i j, i ≤ j → T i j = 0)
-    (ho : HasOrder T w p) (q1 : 1 ≤ q) (pay : 2*q+1 ≤ p)
+    (ho : HasOrder p T w) (q1 : 1 ≤ q) (pay : 2*q+1 ≤ p)
     (floor : m+1 = 3*q) : LastActive w (Fin.last m) := by
   refine ⟨last_weight_of_odd_floor ha ho q1 pay floor,?_⟩
   intro i hi

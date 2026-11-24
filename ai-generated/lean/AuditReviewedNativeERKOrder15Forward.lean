@@ -19,7 +19,7 @@ open RKResearch.Certified.Graded
 /-- Compile an independent consumer using only this public entrance. -/
 example {K : Type*} [Field K] [CharZero K] {n : ℕ}
     {A : Matrix (Fin n) (Fin n) K} {b : Fin n → K}
-    (hA : ∀ i k, i ≤ k → A i k=0) (ho : RKResearch.HasOrder A b 15)
+    (hA : ∀ i k, i ≤ k → A i k=0) (ho : RKResearch.HasOrder 15 A b)
     (hs : n ≤ 22) :
     ∃ x ∈ zeroSpace A 7, diag (nodes A) x ∉ zeroSpace A 7 := by
   by_contra! all

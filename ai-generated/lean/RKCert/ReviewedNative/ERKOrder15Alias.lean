@@ -29,7 +29,7 @@ private theorem coeff_eq_zero_of_polynomial_separated {j : ℕ}
   have h := congrArg (fun Q:K[X]=>Q.coeff i.val) eq
   simpa only [ofFn_coeff_eq_val_of_lt _ i.isLt,coeff_zero,Pi.zero_apply] using h
 
-theorem order15_escape_separated_six (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder A b 15)
+theorem order15_escape_separated_six (ha : ∀ i k,i ≤ k → A i k=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b) (a : Fin 7→K)
     (h : coeffEval A 6 a∈order15FirstEscape A b) : a=0 :=
   marked_coeff_separated ha ho F.lastActive (by have := F.size;omega) (by decide) (by decide) a
@@ -38,7 +38,7 @@ theorem order15_escape_separated_six (ha : ∀ i k,i ≤ k → A i k=0) (ho : Ha
 /-- A degree-seven alias already forces the first reverse seed to be zero.
 The unmarked next-grade Cauchy budget separates through degree seven. -/
 theorem order15_unmarked_escape_separated_seven (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (F : Order15PaidFrame A b) (z : firstSeed A b≠0)
+    (ho : HasOrder 15 A b) (F : Order15PaidFrame A b) (z : firstSeed A b≠0)
     (a : Fin 8→K) (h : coeffEval A 7 a∈order15FirstEscape A b) : a=0 := by
   have hx : coeffEval A 7 a∈zeroSpace A 8 := by
     simpa only [markedDefectSpace,terminalMark,ite_eq_right z,sup_bot_eq] using F.escapePaid h
@@ -58,7 +58,7 @@ structure Order15FirstEscapeChart (A : Matrix (Fin (s+1)) (Fin (s+1)) K)
 no degree-seven alias, the physical marked E8 is full instead. The
 polynomial in either chart is earned by actual stage evaluation. -/
 theorem order15_first_escape_chart_of_frame (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (F : Order15PaidFrame A b) :
+    (ho : HasOrder 15 A b) (F : Order15PaidFrame A b) :
     ∃ (a : ℕ) (G : K[X]), Order15FirstEscapeChart A b a G := by
   let W := order15FirstEscape A b
   have low6 := eval_eq_zero_of_coeff_separated (V:=W) (order15_escape_separated_six ha ho F)
@@ -134,7 +134,7 @@ theorem order15_first_escape_chart_of_frame (ha : ∀ i k,i ≤ k → A i k=0)
 /-- Exactly one alias line: once the degree-seven first escape exists,
 every other paid polynomial up to degree seven is its scalar multiple. -/
 theorem order15_first_escape_alias_line (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (F : Order15PaidFrame A b) {G : K[X]}
+    (ho : HasOrder 15 A b) (F : Order15PaidFrame A b) {G : K[X]}
     (gd : G.natDegree=7) (gm : evalNodes A G∈order15FirstEscape A b)
     (P : K[X]) (pd : P.natDegree≤7) (pm : evalNodes A P∈order15FirstEscape A b) :
     ∃ α : K, P=C α*G := by
@@ -164,7 +164,7 @@ theorem order15_first_escape_alias_line (ha : ∀ i k,i ≤ k → A i k=0)
 
 /-- The physical first paid chart no longer has any assumed rank input. -/
 theorem order15_first_escape_chart [CharZero K] (ha : ∀ i k,i ≤ k → A i k=0)
-    (ho : HasOrder A b 15) (cap : s+1≤22) :
+    (ho : HasOrder 15 A b) (cap : s+1≤22) :
     ∃ (a : ℕ) (G : K[X]), Order15PaidFrame A b ∧ Order15FirstEscapeChart A b a G := by
   have F := order15_paid_frame ha ho cap
   obtain ⟨a,G,C⟩ := order15_first_escape_chart_of_frame ha ho F

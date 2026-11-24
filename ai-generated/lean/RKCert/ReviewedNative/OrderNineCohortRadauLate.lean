@@ -12,7 +12,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 
 omit [CharZero K] in
 theorem clock_E4_to_five_profile {A : Matrix (Fin 12) (Fin 12) K}
-    {b : Fin 12→K} (ho : HasOrder A b 9)
+    {b : Fin 12→K} (ho : HasOrder 9 A b)
     (hF : zeroSpace A 4=band A 2) {v : (Fin 12→K)}
     (hv : v∈treeSpace A 4) : diag (nodes A) v∈gradeFiveStateSpace A := by
   obtain ⟨P,Q,hP,hQ,he⟩ := treeSpace_four_profile ho hv hF
@@ -73,7 +73,7 @@ structure FixedRadauLateData (A : Matrix (Fin 12) (Fin 12) K) (b : (Fin 12→K))
 set_option maxHeartbeats 1000000 in
 theorem order9_fixed_radau_late_data
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5)
     {P : K[X]} (hPd : P.natDegree≤2) (hF : zeroSpace A 4=band A 2)
     (hP : ∀ i, g A i≠0 → P.eval (nodes A i)=g A i) :

@@ -31,7 +31,7 @@ theorem reverseResidual_eq (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K) (k :
 /-- The greatest physical index with live reflected clock has a nonzero
 quadratic residual there, by strict transpose causality. -/
 theorem reverse_first_pivot {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} {p : ℕ}
-    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b p) (hp : 2≤p) :
+    (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder p A b) (hp : 2≤p) :
     ∃ i : Fin s, reflectedClock A i≠0 ∧ b i≠0 ∧
       (∀ j, i<j → reflectedClock A j*b j=0) ∧
       reverseResidual A b 1 i= -((2:K)⁻¹)*(reflectedClock A i)^2*b i ∧
@@ -101,7 +101,7 @@ theorem residual_mem_own_flag (S : Saturation A b) {n : ℕ} (pos : 1≤n) (pay 
 
 /-- If the first measured reverse line is clock-invariant, its normalized
 quadratic seed and the actual transpose of that seed give the full chart. -/
-theorem localized_reverse_chart (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder A b 12)
+theorem localized_reverse_chart (ha : ∀ i j, i ≤ j → A i j=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (hc : (back A b 1).map (diag (reflectedClock A))≤back A b 1) :
     LocalizedReverseChart A b := by
   let d := reverseResidual A b 1

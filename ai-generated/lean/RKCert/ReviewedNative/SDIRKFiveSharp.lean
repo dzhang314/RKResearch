@@ -16,9 +16,9 @@ namespace RKResearch.Certified
 
 private theorem strictSDIRK_order_five_isLeast_of_exact_witness {K : Type*} [Field K]
     (hw : ∃ (A : Matrix (Fin 5) (Fin 5) K) (b : Fin 5 → K) (γ : K),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5 ∧ ¬ HasOrder A b 6) :
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b ∧ ¬ HasOrder 6 A b) :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K) (γ : K),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5} 5 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b} 5 := by
   obtain ⟨A, b, γ, ht, hc, hn, ho, -⟩ := hw
   refine ⟨⟨A, b, γ, ht, hc, hn, ho⟩, ?_⟩
   rintro s ⟨T, w, d, hT, hd, -, h⟩
@@ -29,7 +29,7 @@ No square-root or number-field hypothesis enters the lower bound. -/
 theorem strictSDIRK_order_five_isLeast_of_sqrt_six {K : Type*} [Field K] [CharZero K]
     (x : K) (hx : x^2 = 6) :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K) (γ : K),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5} 5 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b} 5 := by
   let f := CooperSayfy55.specialize x hx
   exact strictSDIRK_order_five_isLeast_of_exact_witness
     ⟨CooperSayfy55.A.map f, f ∘ CooperSayfy55.b, f CooperSayfy55.gamma,
@@ -41,12 +41,12 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 the actual field of real algebraic numbers. -/
 theorem strictSDIRK_order_five_isLeast_realAlgebraic :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) ℝₐ) (b : Fin s → ℝₐ) (γ : ℝₐ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5} 5 :=
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b} 5 :=
   strictSDIRK_order_five_isLeast_of_exact_witness exists_strictSDIRK_exact_five_realAlgebraic
 
 theorem strictSDIRK_order_five_isLeast_real :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) ℝ) (b : Fin s → ℝ) (γ : ℝ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 5} 5 :=
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 5 A b} 5 :=
   strictSDIRK_order_five_isLeast_of_exact_witness exists_strictSDIRK_exact_five_real
 
 end RKResearch.Certified

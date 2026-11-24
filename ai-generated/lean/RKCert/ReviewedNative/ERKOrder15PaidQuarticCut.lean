@@ -29,7 +29,7 @@ private theorem marked_clock_step (j : ℕ) :
 terminal mark and grade-eight entry over ordered fields. Both omissions
 and all five scalar tests reuse the shared physical construction. -/
 theorem Order15PaidStaircase.terminal_of_paid_quartic (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (w4 : w∈markedDefectSpace A b 4)
     (dis : ∀ i, LiveCore.live U i → w i=0)
     (repr : ∀ i, w i≠0 → w i=P.eval (nodes A i))

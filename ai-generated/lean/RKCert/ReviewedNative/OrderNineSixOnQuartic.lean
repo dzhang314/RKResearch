@@ -79,7 +79,7 @@ hull has the exact indicated primitive remainder, in both of the
 chronological placements of the physical first nonzero clean row. -/
 theorem order9_actual_five_six_quartic_remainders
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6)
     (hF : zeroSpace A 4=band A 2)
     {P : K[X]} (dP : P.natDegree=2) (pn : P≠0)

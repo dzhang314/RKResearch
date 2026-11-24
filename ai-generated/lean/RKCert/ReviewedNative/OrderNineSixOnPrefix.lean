@@ -129,7 +129,7 @@ represent every nonterminal state exactly once. The later repeated
 occurrence is exactly index ten. -/
 theorem order9_five_six_ten_distinct_prefix
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6) :
     Function.Bijective (fun i : Fin 10 => lowNonterminalStateAt ha (Fin.castLE (by decide) i)) ∧
       (∃ i : Fin 12,i<(10:Fin 12) ∧ lowStateAt A i=lowStateAt A (10:Fin 12) ∧

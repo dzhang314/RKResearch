@@ -38,7 +38,7 @@ theorem Order15PaidStaircase.base_degree (C : Order15PaidStaircase A b a G r U w
   rcases C.first.chartType with e|⟨e,_⟩ <;> omega
 
 theorem Order15PaidStaircase.band_direct_rank (C : Order15PaidStaircase A b a G r U w)
-    (ho : HasOrder A b 15) {j : ℕ} (hj : a+1≤j) (hp : j≤12) :
+    (ho : HasOrder 15 A b) {j : ℕ} (hj : a+1≤j) (hp : j≤12) :
     ((coeffEval A a).range ⊓ order15HeadBand A a r j U w)=⊥ ∧
       finrank K (order15HeadBand A a r j U w)=finrank K U+order15HeadLength a r j := by
   let P := (coeffEval A a).range
@@ -62,7 +62,7 @@ theorem Order15PaidStaircase.band_direct_rank (C : Order15PaidStaircase A b a G 
   exact ⟨Submodule.finrank_eq_zero.mp zero,by omega⟩
 
 theorem Order15PaidStaircase.band_separated (C : Order15PaidStaircase A b a G r U w)
-    (ho : HasOrder A b 15) {j : ℕ} (hj : a+1≤j) (hp : j≤12)
+    (ho : HasOrder 15 A b) {j : ℕ} (hj : a+1≤j) (hp : j≤12)
     (P : K[X]) (pd : P.natDegree≤a) (ev : evalNodes A P∈order15HeadBand A a r j U w) :
     P=0 := by
   have e := (C.band_direct_rank ho hj hp).1
@@ -122,7 +122,7 @@ theorem Order15PaidStaircase.band_paid (C : Order15PaidStaircase A b a G r U w)
 /-- The degree-seven alias earns the actual last coordinate by grade
 eight, and not by grade seven. This is physical terminal entry,
 not the artificial inclusion of a charged mark. -/
-theorem order15_alias_terminal_eight (ha : ∀ i l,i ≤ l → A i l=0) (ho : HasOrder A b 15)
+theorem order15_alias_terminal_eight (ha : ∀ i l,i ≤ l → A i l=0) (ho : HasOrder 15 A b)
     (F : Order15PaidFrame A b) (C : Order15FirstEscapeChart A b 6 G) :
     coordinate (K:=K) (Fin.last s)∈treeSpace A 8 ∧ coordinate (K:=K) (Fin.last s)∉treeSpace A 7 := by
   have z := (C.chartType.resolve_left (by decide)).2
@@ -148,7 +148,7 @@ theorem order15_alias_terminal_eight (ha : ∀ i l,i ≤ l → A i l=0) (ho : Ha
 entered by grade eight, the ordinary grade-eight defect flag is exactly
 the ordinary first clock escape. -/
 theorem order15_absent_terminal_grade_eight_rigid (ha : ∀ i l,i ≤ l → A i l=0)
-    (ho : HasOrder A b 15) (S : Order15PaidStaircase A b a G r U w)
+    (ho : HasOrder 15 A b) (S : Order15PaidStaircase A b a G r U w)
     (absent : firstSeed A b≠0 ∨ coordinate (K:=K) (Fin.last s)∉treeSpace A 8) :
     zeroSpace A 8=zeroSpace A 7⊔(zeroSpace A 7).map (diag (nodes A)) := by
   let W := zeroSpace A 7⊔(zeroSpace A 7).map (diag (nodes A))

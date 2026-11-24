@@ -14,7 +14,7 @@ variable {A : Matrix (Fin 19) (Fin 19) K} {b : Fin 19→K}
 /-- Neither flag may be replaced by a smaller projected space. Both
 ordinary and all-monomial reverse rows fill the literal annihilator at
 each paid grade 7 through 10, and every rank keeps the terminal debit. -/
-theorem order13_reverse_window (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13)
+theorem order13_reverse_window (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b)
     {n : ℕ} (lo : 1≤n) (hi : n≤4) :
     back A b n=annih (markedTreeSpace A b (11-n)) ∧
     primitiveBack A b n=annih (markedTreeSpace A b (11-n)) ∧
@@ -52,7 +52,7 @@ theorem order13_reverse_window (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A 
     rw [exactBack,ra,Nat.add_assoc,Nat.add_comm (finrank K (back A b 0)),t]
   exact ⟨exactBack,exactPrim,nr⟩
 
-theorem order13_marked_reverse_ranks (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13)
+theorem order13_marked_reverse_ranks (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b)
     (first : firstSeed A b=0) (n : ℕ) (hi : n≤4) : finrank K (back A b n)=n := by
   by_cases e : n=0
   · subst n

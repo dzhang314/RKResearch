@@ -28,7 +28,7 @@ private theorem probe_terminal :
 
 /-- Actual presence of the terminal column in E8 removes the last
 coordinate of every ordinary defect through grade six. -/
-theorem terminal_eight_zeros_defects (ho : HasOrder A b 15) (L : LastActive b (Fin.last s))
+theorem terminal_eight_zeros_defects (ho : HasOrder 15 A b) (L : LastActive b (Fin.last s))
     (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     {j : ℕ} (pay : j+9≤15) {x : Fin (s+1)→K} (hx : x∈zeroSpace A j) : x (Fin.last s)=0 := by
   have h := probe_zeroSpace (k:=0) ho (by omega)
@@ -37,7 +37,7 @@ theorem terminal_eight_zeros_defects (ho : HasOrder A b 15) (L : LastActive b (F
   rw [mul_terminal,map_smul,probe_terminal,smul_eq_mul] at h
   exact (mul_eq_zero.mp h).resolve_right L.live
 
-theorem marked_five_parts (ho : HasOrder A b 15) (L : LastActive b (Fin.last s))
+theorem marked_five_parts (ho : HasOrder 15 A b) (L : LastActive b (Fin.last s))
     (seed : firstSeed A b=0) (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     {x : Fin (s+1)→K} (hx : x∈markedDefectSpace A b 5) :
     ∃ y∈zeroSpace A 5,x=y+x (Fin.last s) • coordinate (Fin.last s) := by
@@ -50,7 +50,7 @@ theorem marked_five_parts (ho : HasOrder A b 15) (L : LastActive b (Fin.last s))
     simpa [coordinate,ye] using last
   exact ⟨y,hy,cs ▸ e.symm⟩
 
-theorem marked_five_terminal_probe (ho : HasOrder A b 15) (L : LastActive b (Fin.last s))
+theorem marked_five_terminal_probe (ho : HasOrder 15 A b) (L : LastActive b (Fin.last s))
     (seed : firstSeed A b=0) (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     {x : Fin (s+1)→K} (hx : x∈markedDefectSpace A b 5) :
     probe A b 0 x=b (Fin.last s)*x (Fin.last s) := by
@@ -61,7 +61,7 @@ theorem marked_five_terminal_probe (ho : HasOrder A b 15) (L : LastActive b (Fin
 /-- The clean rank-two head and its first power lie in the ordinary F5,
 not only in the marked band. -/
 theorem Order15PaidStaircase.terminal_head_first_powers (S : Order15PaidStaircase A b a G 2 U w)
-    (ho : HasOrder A b 15) (seed : firstSeed A b=0)
+    (ho : HasOrder 15 A b) (seed : firstSeed A b=0)
     (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     (dis : ∀ i, LiveCore.live U i → w i=0) :
     w (Fin.last s)=0 ∧ ∀ k≤1,(diag (nodes A)^k) w∈zeroSpace A 5 := by
@@ -106,7 +106,7 @@ theorem square_shifts_of_ordinary_head
 
 /-- The native grade-ten head band has a genuine terminal mass. -/
 theorem Order15PaidStaircase.ten_head_band_terminal_probe (S : Order15PaidStaircase A b a G 2 U w)
-    (ho : HasOrder A b 15) (seed : firstSeed A b=0)
+    (ho : HasOrder 15 A b) (seed : firstSeed A b=0)
     (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     (w0 : w (Fin.last s)=0) (w5 : w∈zeroSpace A 5)
     {v : Fin (s+1)→K} (hv : v∈order15HeadBand A a 2 10 U w) :
@@ -129,7 +129,7 @@ theorem Order15PaidStaircase.ten_head_band_terminal_probe (S : Order15PaidStairc
 /-- The ordinary square's ghost has the extra actual terminal value
 equation in addition to its charged probe differences. -/
 theorem Order15PaidStaircase.terminal_ghost_decompose (S : Order15PaidStaircase A b a G 2 U w)
-    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder A b 15)
+    (ha : ∀ i t,i≤t → A i t=0) (ho : HasOrder 15 A b)
     (seed : firstSeed A b=0) (term : coordinate (K:=K) (Fin.last s)∈treeSpace A 8)
     (w0 : w (Fin.last s)=0) (w5 : w∈zeroSpace A 5)
     {v : Fin (s+1)→K} (hv : v∈zeroSpace A 10) (vl : v (Fin.last s)=0) :

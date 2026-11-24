@@ -93,7 +93,7 @@ theorem first_two_on_rows {A : Matrix (Fin s) (Fin s) K} (hm : 3 ≤ (cleanKnots
 
 theorem order9_five_off_five_on_rank_nine_impossible
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5)
     (hr : finrank K (treeSpace A 5)=9) : False := by
   obtain ⟨P,hPd,hPn,_,hF,hP⟩ := order9_two_curve_head ha ho (by decide) (by omega)
@@ -167,7 +167,7 @@ theorem order9_five_off_five_on_rank_nine_impossible
 
 theorem order9_five_on_off_rank_ten
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) :
     finrank K (treeSpace A 5)=10 := by
   have hHi := order9_grade_five_upper ha ho
@@ -180,7 +180,7 @@ theorem order9_five_on_off_rank_ten
 
 theorem order9_five_on_off_stage_five_split
     {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)} (ha : ∀i j,i≤j → A i j=0)
-    (ho : HasOrder A b 9)
+    (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=5) :
     finrank K (gradeFiveStateSpace A)=9 ∧
       Pi.single (Fin.last 11) 1 ∉ onOffSpace A ∧

@@ -42,7 +42,7 @@ existing stage budget over characteristic-zero fields. -/
 theorem HasOrder.dirk_C2_stage_floor_field
     {K : Type*} [Field K] [CharZero K] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
+    (ho : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hp : 12≤p) (c₂ : monomialStageDefect A 1=0) :
     p+(p-1)/2-2 ≤ s :=
   Reverse.dirk_uniform_of_grade_six ha ho hp
@@ -55,7 +55,7 @@ torsion-free additive group hypothesis is needed on the original ring. -/
 theorem HasOrder.dirk_C2_stage_floor
     {R : Type u} [CommRing R] [CharZero R] {s p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
-    (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
+    (ho : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hp : 12≤p) (c₂ : monomialStageDefect A 1=0) :
     p+(p-1)/2-2 ≤ s :=
   RKCert.ReviewedNative.with_charZero_field (fun K _ _ φ =>

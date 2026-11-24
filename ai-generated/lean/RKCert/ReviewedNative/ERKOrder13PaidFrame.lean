@@ -21,7 +21,7 @@ abbrev order13FirstEscape (A : Matrix (Fin (s+1)) (Fin (s+1)) K) (b : Fin (s+1)�
   (zeroSpace A 6 ⊔ (zeroSpace A 6).map (diag (nodes A))) ⊔ terminalMark A b
 
 theorem explicit_order_thirteen_at_least_nineteen {A : Matrix (Fin s) (Fin s) K}
-    {b : Fin s→K} (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13) : 19≤s := by
+    {b : Fin s→K} (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b) : 19≤s := by
   have sep := coeff_separated ho (q:=6) (by decide)
   have h5 := grade_five_surplus_of_reviewed_order ha ho (by decide)
   have jump := Submodule.finrank_lt_finrank_of_lt
@@ -44,7 +44,7 @@ structure Order13PaidFrame (A : Matrix (Fin 19) (Fin 19) K) (b : Fin 19→K) : P
   escapePaid : order13FirstEscape A b≤markedDefectSpace A b 7
   upper : ∀ j≤11, finrank K (markedTreeSpace A b j)≤j+7+terminalDebit A b
 
-theorem order13_last_active (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13) :
+theorem order13_last_active (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b) :
     LastActive b (Fin.last 18) := by
   refine ⟨?_,fun i hi=>((not_lt_of_ge (Fin.le_last i)) hi).elim⟩
   intro bad
@@ -55,7 +55,7 @@ theorem order13_last_active (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 1
   exact (by decide : ¬ (19 ≤ 18)) (explicit_order_thirteen_at_least_nineteen
     (prefix_strict_lower ha len) (prefix_hasOrder_of_suffix_zero ha ho len hz))
 
-theorem order13_saturated_defects (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13) :
+theorem order13_saturated_defects (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b) :
     finrank K (zeroSpace A 5)=5 ∧ finrank K (zeroSpace A 6)=6 := by
   have sep := coeff_separated ho (q:=6) (by decide)
   have h5 := grade_five_surplus_of_reviewed_order ha ho (by decide)
@@ -66,7 +66,7 @@ theorem order13_saturated_defects (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder
   have cost := backward_endpoint_count ha ho 6 5 (by decide) (by decide)
   omega
 
-theorem order13_paid_frame (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13) :
+theorem order13_paid_frame (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b) :
     Order13PaidFrame A b := by
   have last := order13_last_active ha ho
   obtain ⟨r5,r6⟩ := order13_saturated_defects ha ho
@@ -115,7 +115,7 @@ private theorem chain_with_mark {V : Type*} [AddCommGroup V] [Module K V]
 
 /-- The radii are measured in the intrinsic head modulo the invariant
 core. The optional physical terminal is in the core, never in the head. -/
-theorem order13_paid_head (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 13) :
+theorem order13_paid_head (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 13 A b) :
     ∃ (r : ℕ) (U : Submodule K (Fin 19→K)) (w : Fin 19→K),
       2≤r ∧ r≤5 ∧ finrank K U+r=5+terminalDebit A b ∧
       U.map (diag (nodes A))≤U ∧ U≤markedDefectSpace A b 5 ∧

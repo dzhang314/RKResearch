@@ -52,7 +52,7 @@ theorem marked_defect_mul {j k : ℕ} {x y : Fin (s+1)→K}
 the invariant core. Repeated numerical nodes and live core fibres are
 not counted again. -/
 theorem Order15PaidStaircase.ten_has_escape_sites (S : Order15PaidStaircase A b a G r U w)
-    (ho : HasOrder A b 15) :
+    (ho : HasOrder 15 A b) :
     order15HeadLength a r 10 < (HeadFiber.escapeSites (nodes A) w U).card := by
   have aa := S.base_degree
   have rank11 := (S.band_direct_rank ho (j:=11) (by omega) (by decide)).2
@@ -73,7 +73,7 @@ theorem Order15PaidStaircase.ten_has_escape_sites (S : Order15PaidStaircase A b 
 /-- Actual grade-five physical defects preserve the entire invariant
 head core under coordinatewise multiplication. -/
 theorem Order15PaidStaircase.core_times_five (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15)
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b)
     {v u : Fin (s+1)→K} (hv : v∈markedDefectSpace A b 5) (hu : u∈U) : u*v∈U := by
   let c := nodes A
   let D := diag c
@@ -104,7 +104,7 @@ theorem Order15PaidStaircase.core_times_five (S : Order15PaidStaircase A b a G r
 /-- The original chart admits the same head supported away from every
 actual live coordinate of its multiplicatively closed core. -/
 theorem Order15PaidStaircase.clean_head (S : Order15PaidStaircase A b a G r U w)
-    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder A b 15) :
+    (ha : ∀ i j,i ≤ j → A i j=0) (ho : HasOrder 15 A b) :
     ∃ v : Fin (s+1)→K, Order15PaidStaircase A b a G r U v ∧
       (∀ i, (∃ u∈U, u i≠0) → v i=0) ∧ (∀ u∈U,∀ z∈U,u*z∈U) := by
   have closed (u : Fin (s+1)→K) (hu : u∈U) (z : Fin (s+1)→K) (hz : z∈U) : u*z∈U :=

@@ -4,7 +4,7 @@ open RKResearch RKResearch.Certified RKResearch.Certified.Graded
 
 theorem audit_native_erk15_stage_bound {K : Type*} [Field K] [LinearOrder K]
     [IsStrictOrderedRing K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 15) : 23≤s :=
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 15 A b) : 23≤s :=
   native_explicit_order_fifteen_at_least_twenty_three ha ho
 
 #print axioms terminal_eight_zeros_defects

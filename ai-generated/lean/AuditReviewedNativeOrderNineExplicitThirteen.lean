@@ -28,6 +28,6 @@ open RKResearch.Certified.Graded.OneOff RKResearch.Certified.Graded.MultiOff
 -- An independent consumer with just the reviewed order and strict explicitness.
 example {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder A b 9) :
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder 9 A b) :
     13 ≤ s :=
   explicit_order_nine_at_least_thirteen ha ho

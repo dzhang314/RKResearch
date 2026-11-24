@@ -17,7 +17,7 @@ variable {K : Type*} [Field K] {s q p : ℕ}
 variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
 /-- The ordinary odd floor, without an order-specific defect surplus. -/
-theorem odd_midpoint_floor (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b p)
+theorem odd_midpoint_floor (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder p A b)
     (q1 : 1 ≤ q) (pay : 2*q+1 ≤ p) : 3*q ≤ s := by
   have small := zeroSpace_finrank ha ho (n:=q-1) (by omega)
   rw [show q-1+1=q by omega] at small
@@ -39,7 +39,7 @@ variable {m : ℕ} {T : Matrix (Fin (m+1)) (Fin (m+1)) K} {w : Fin (m+1) → K}
 /-- Exact paid reverse ranks when the genuine ordinary midpoint leaves
 precisely q dimensions. No assumption on signs, repeated clocks, or the
 physical last stage is used. -/
-theorem odd_horizon_of_rank (ha : ∀ i j, i ≤ j → T i j = 0) (ho : HasOrder T w p)
+theorem odd_horizon_of_rank (ha : ∀ i j, i ≤ j → T i j = 0) (ho : HasOrder p T w)
     (q1 : 1 ≤ q) (pay : 2*q+1 ≤ p)
     (tight : finrank K (treeSpace T q)+q=m+1) : OddHorizon T w q := by
   let H := q-1

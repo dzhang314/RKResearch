@@ -36,7 +36,7 @@ variable [CharZero K]
 /-- When F3 is clock-invariant the core of the grade-four head is F3
 itself. It is closed under pointwise multiplication and the single head
 escapes on at least four genuinely different clock blocks modulo F3. -/
-theorem dirk_grade_six_head_at_four (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 7≤p)
+theorem dirk_grade_six_head_at_four (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 7≤p)
     (bad : ¬finrank K (zeroSpace A 3)+4≤finrank K (zeroSpace A 6))
     (inv : (zeroSpace A 3).map (diag (nodes A)) ≤ zeroSpace A 3) :
     ∃ w : Fin s → K,
@@ -67,7 +67,7 @@ theorem dirk_grade_six_head_at_four (ha : A.IsLowerTriangular) (ho : HasOrder A 
 It can be chosen off all live core coordinates and is polynomial on its
 own support. Its degree plus the initial clock-chain length is at most
 four, and there are more than r+3 actually distinct head clocks. -/
-theorem dirk_grade_six_head_at_three (ha : A.IsLowerTriangular) (ho : HasOrder A b p) (pay : 7≤p)
+theorem dirk_grade_six_head_at_three (ha : A.IsLowerTriangular) (ho : HasOrder p A b) (pay : 7≤p)
     (bad : ¬finrank K (zeroSpace A 3)+4≤finrank K (zeroSpace A 6))
     (esc3 : ¬(zeroSpace A 3).map (diag (nodes A)) ≤ zeroSpace A 3) :
     ∃ (r : ℕ) (U : Submodule K (Fin s → K)) (w : Fin s → K) (P : K[X]),

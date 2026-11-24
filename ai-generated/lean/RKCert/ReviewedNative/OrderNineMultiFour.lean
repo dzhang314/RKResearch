@@ -39,7 +39,7 @@ theorem cubic_beta_moments_top_zero (a : Fin 4 → K)
 /-- There is no fifth on node at one if zero is already an on node and
 five on nodes carry the exact degree-eight quadrature. -/
 theorem one_not_on_of_five {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : (Fin (s+1)→K)}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hM : (cleanKnots A).card=5)
     (hoff : ∀ x∈offKnots A, offMass A b x=0) :
     (1:K)∉cleanKnots A := by
@@ -109,7 +109,7 @@ clock-stable. The two missing reflected clock blocks cost two dimensions
 of the adjacent annihilator. At full rank the checked terminal refinement
 already pays its extra independent coordinate. -/
 theorem grade_five_not_stable {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9) :
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b) :
     ¬ (treeSpace A 5).map (diag (nodes A)) ≤ treeSpace A 5 := by
   by_cases full : finrank K (treeSpace A 5)=10
   · exact order9_grade_five_clock_noninvariant ha ho full
@@ -153,7 +153,7 @@ theorem grade_five_not_stable {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
 /-- The actual four-off branch of the twelve-stage order-nine chart is
 impossible, including all repeated-state configurations. -/
 theorem order9_no_four_off_nodes {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 9) :
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 9 A b) :
     (offKnots A).card≠4 := by
   intro hN
   obtain ⟨_,h3,h4,_⟩ := order9_forward_chart ha ho (by decide)

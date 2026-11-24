@@ -25,7 +25,7 @@ theorem hasOrder_of_finite_residual_dvd
     (A : Matrix ι ι R) (b : ι → R) (p : ℕ) {r : R} (hr : r = 0)
     (h : ∀ n < p, ∀ t ∈ treesOfOrderSucc n,
       r ∣ (t.factorial : R) * (b ⬝ᵥ Φ t A) - 1) :
-    HasOrder A b p := by
+    HasOrder p A b := by
   classical
   apply (checkOrder_iff A b p).mp
   simp only [checkOrder, List.all_eq_true, List.mem_range, decide_eq_true_eq]

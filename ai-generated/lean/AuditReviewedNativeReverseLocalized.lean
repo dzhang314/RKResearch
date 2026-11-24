@@ -12,7 +12,7 @@ open RKResearch RKResearch.Certified.Graded RKResearch.Certified.Graded.Reverse 
 
 example {K : Type*} [Field K] [CharZero K] {s p : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder A b p)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : RKResearch.HasOrder p A b)
     (pay : 10 ≤ p) (seedZero : firstSeed A b = 0)
     (ranks : ∀ n ≤ 4, finrank K (back A b n) = n)
     (nc2 : ¬ (back A b 2).map (diag (reflectedClock A)) ≤ back A b 2)

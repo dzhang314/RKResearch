@@ -16,7 +16,7 @@ omit [CharZero K] in
 /-- Turn a signed affine relation at a single clock into the native
 annihilator contradiction. Taking both prior indices equal also gives
 the two-row special case. -/
-theorem order9_no_interpolated_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_no_interpolated_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (rk : finrank K (treeSpace A 5)=10) (mEq : LinearMap.range (normalProfileMap A)=treeSpace A 5)
     {l m r : Fin 12} (pre : IndependentBefore (treeSpace A 4) r) (lr : l < r) (mr : m < r)
     (lc : nodes A l=nodes A r) (mc : nodes A m=nodes A r) (α : K)
@@ -46,7 +46,7 @@ theorem order9_no_interpolated_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho
     ring
 
 omit [CharZero K] in
-theorem order9_no_repeated_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_no_repeated_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (rk : finrank K (treeSpace A 5)=10) (mEq : LinearMap.range (normalProfileMap A)=treeSpace A 5)
     {l r : Fin 12} (pre : IndependentBefore (treeSpace A 4) r) (lr : l < r)
     (lc : nodes A l=nodes A r) (gc : g A l=g A r) (hc : h A l=h A r) :
@@ -67,7 +67,7 @@ theorem cleanClockTest_mem (A : Matrix (Fin 12) (Fin 12) K) (a d : K) :
   · exact (treeSpace A 4).sub_mem (cp 3 (by decide)) ((treeSpace A 4).smul_mem _ (cp 2 (by decide)))
   · simpa only [pow_one] using (treeSpace A 4).smul_mem (2*d^2) (cp 1 (by decide))
 
-theorem order9_cleanClockTest_initial_zero (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_cleanClockTest_initial_zero (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j)
     (F : FirstFour A a d (by decide)) {r : Fin 12} (lr : r.val<5) :
     cleanClockTest A a d r=0 := by
@@ -88,7 +88,7 @@ theorem order9_cleanClockTest_initial_zero (ha : ∀ i j, i ≤ j → A i j = 0)
     have f := order9_fifth_feature ha ho D F
     simp [cleanClockTest_apply,f.1,f.2.1]
 
-theorem order9_sixth_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem order9_sixth_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j)
     (F : FirstFour A a d (by decide)) :
     let z := nodes A (5:Fin 12)
@@ -172,7 +172,7 @@ theorem order9_sixth_feature (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrde
 /-- The sixth-row data are paid on the reviewed one-off order-nine
 tableau without assuming any physical earlier row or rank. -/
 theorem order9_one_off_sixth_chart (ha : ∀ i j, i ≤ j → A i j = 0)
-    (ho : HasOrder A b 9) (off : (offKnots A).card=1) :
+    (ho : HasOrder 9 A b) (off : (offKnots A).card=1) :
     ∃ (a d : K) (i j : Fin 12), GlobalNormal A a d i j ∧ FirstFour A a d (by decide) ∧
       (let z := nodes A (5:Fin 12)
        g A (5:Fin 12)=0 ∧ z≠0 ∧ z≠d ∧ z≠2*d ∧

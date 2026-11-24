@@ -44,7 +44,7 @@ theorem coeff_defect_tree_rank {q j : ℕ} (le : q ≤ j)
   simpa only [Module.finrank_prod,Module.finrank_fin_fun] using
     (LinearMap.finrank_le_finrank_of_injective hin)
 
-theorem dirk_exists_zero_row_of_C2 (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_exists_zero_row_of_C2 (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     (hp : 1 ≤ p) (hc : monomialStageDefect A 1 = 0) : ∃ o, ∀ j, A o j=0 := by
   cases s with
   | zero =>
@@ -57,7 +57,7 @@ theorem dirk_exists_zero_row_of_C2 (ha : A.IsLowerTriangular) (ho : HasOrder A b
 /-- Every genuine extra forward dimension beyond ordinary unit growth from
 grade three contributes one physical stage at *even* order. At the unpaid
 top coefficient either C(2) gives a real zero row, or F₃ pays for the loss. -/
-theorem dirk_even_marked_count (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_even_marked_count (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {m extra : ℕ} (hm : 3 ≤ m) (pay : 2*m ≤ p)
     (marked : finrank K (zeroSpace A 3)+(m-3)+extra ≤ finrank K (zeroSpace A m)) :
     3*m-4+extra ≤ s := by
@@ -75,7 +75,7 @@ theorem dirk_even_marked_count (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
 
 /-- At odd order either a zero row earns the terminal dimension, or the
 extra quadratic seed is already counted in the actual grade-three rank. -/
-theorem dirk_odd_marked_count (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_odd_marked_count (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {m extra : ℕ} (hm : 3 ≤ m) (pay : 2*m+1 ≤ p)
     (marked : finrank K (zeroSpace A 3)+(m-3)+extra ≤ finrank K (zeroSpace A m)) :
     3*m-2+extra ≤ s := by
@@ -91,7 +91,7 @@ theorem dirk_odd_marked_count (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
 
 /-- Forward rank can be carried to any later paid grade without borrowing
 an unproved no-plateau statement. -/
-theorem dirk_later_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_later_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {m : ℕ} (hm : 6 ≤ m) (pay : m ≤ p)
     (six : finrank K (zeroSpace A 3)+4 ≤ finrank K (zeroSpace A 6)) :
     finrank K (zeroSpace A 3)+(m-3)+1 ≤ finrank K (zeroSpace A m) := by
@@ -101,7 +101,7 @@ theorem dirk_later_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
 
 /-- A single grade-six surplus increases the uniform floor by one at every
 p ≥ 12, including the 15-stage and 17-stage endpoints at p=12 and 13. -/
-theorem dirk_uniform_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_uniform_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     (hp : 12 ≤ p) (six : finrank K (zeroSpace A 3)+4 ≤ finrank K (zeroSpace A 6)) :
     p+(p-1)/2-2 ≤ s := by
   let m := p/2
@@ -117,7 +117,7 @@ theorem dirk_uniform_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b 
 
 /-- At even orders ≥14 a nonzero quadratic defect can be used together
 with the *unanchored* endpoint refund one grade earlier. -/
-theorem dirk_even_nonC2_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_even_nonC2_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {m : ℕ} (hm : 7 ≤ m) (pay : 2*m ≤ p) (nc : monomialStageDefect A 1 ≠ 0)
     (six : finrank K (zeroSpace A 3)+4 ≤ finrank K (zeroSpace A 6)) : 3*m-2 ≤ s := by
   have gain := dirk_later_of_grade_six ha ho (m:=m-1) (by omega) (by omega) six
@@ -128,15 +128,15 @@ theorem dirk_even_nonC2_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A
     (by omega) (by omega) (by omega)
   omega
 
-theorem dirk_order_twelve_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b 12)
+theorem dirk_order_twelve_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder 12 A b)
     (six : finrank K (zeroSpace A 3)+4 ≤ finrank K (zeroSpace A 6)) : 15 ≤ s :=
   dirk_uniform_of_grade_six ha ho (by decide) six
 
-theorem dirk_order_thirteen_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b 13)
+theorem dirk_order_thirteen_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder 13 A b)
     (six : finrank K (zeroSpace A 3)+4 ≤ finrank K (zeroSpace A 6)) : 17 ≤ s :=
   dirk_uniform_of_grade_six ha ho (by decide) six
 
-theorem dirk_order_fifteen_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder A b 15)
+theorem dirk_order_fifteen_of_grade_six (ha : A.IsLowerTriangular) (ho : HasOrder 15 A b)
     (six : finrank K (zeroSpace A 3)+4 ≤ finrank K (zeroSpace A 6)) : 20 ≤ s :=
   dirk_uniform_of_grade_six ha ho (by decide) six
 
@@ -151,9 +151,9 @@ characteristic-zero commutative rings. The forward surplus is explicitly
 required on each field tableau, not assumed to be inherited under reduction. -/
 theorem HasOrder.dirk_charZero_count_of_field_grade_six
     {R : Type u} [CommRing R] [CharZero R] {s p : ℕ} {A : Matrix (Fin s) (Fin s) R}
-    {b : Fin s → R} (h : HasOrder A b p) (ha : A.IsLowerTriangular) (hp : 12 ≤ p)
+    {b : Fin s → R} (h : HasOrder p A b) (ha : A.IsLowerTriangular) (hp : 12 ≤ p)
     (six : ∀ (K : Type u) [Field K] [CharZero K] (T : Matrix (Fin s) (Fin s) K) (w : Fin s → K),
-      T.IsLowerTriangular → HasOrder T w p →
+      T.IsLowerTriangular → HasOrder p T w →
         finrank K (zeroSpace T 3)+4 ≤ finrank K (zeroSpace T 6)) :
     p+(p-1)/2-2 ≤ s :=
   h.lower_triangular_of_charZero_fields ha

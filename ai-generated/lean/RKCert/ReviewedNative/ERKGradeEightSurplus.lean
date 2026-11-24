@@ -17,7 +17,7 @@ variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
 variable {n p : ℕ} {A : Matrix (Fin n) (Fin n) K} {b : Fin n → K}
 
 theorem grade_eight_surplus_ordered_of_reviewed_order
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p) (pay : 16≤p) :
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b) (pay : 16≤p) :
     9≤finrank K (zeroSpace A 8) := by
   by_contra! bad
   have cap : finrank K (zeroSpace A 8)≤8 := by omega
@@ -39,11 +39,11 @@ variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
 
 /-- The exact native stage floor used by the width-26 split. -/
 theorem ordered_erk17_stage_floor26 {n : ℕ} {A : Matrix (Fin n) (Fin n) K} {b : Fin n → K}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 17) : 26≤n :=
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 17 A b) : 26≤n :=
   width_floor_of_grade_eight ha ho (grade_eight_surplus_ordered_of_reviewed_order ha ho (by decide))
 
 theorem ordered_width26_full_frame {A : Matrix (Fin 26) (Fin 26) K} {b : Fin 26 → K}
-    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b 17) :
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 17 A b) :
     OddBalancedFrame A b 8 2 ∧ LastActive b (Fin.last 25) :=
   ⟨width26_frame ha ho (grade_eight_surplus_ordered_of_reviewed_order ha ho (by decide)),
     width26_last_live_of_uniform_surplus ha ho

@@ -3,18 +3,18 @@ import RKCert.ReviewedNative.BooleDIRK56
 open RKResearch RKResearch.Certified
 
 example :
-    HasOrder BooleDIRK56.A BooleDIRK56.b 6 ∧
+    HasOrder 6 BooleDIRK56.A BooleDIRK56.b ∧
       ¬ ∃ γ : ℚ, ∀ i, BooleDIRK56.A i i = γ :=
   ⟨BooleDIRK56.order_six,BooleDIRK56.diagonal_not_constant⟩
 
 example (K : Type*) [Field K] [CharZero K] :
     ∃ (A : Matrix (Fin 5) (Fin 5) K) (b : Fin 5 → K),
-      A.IsLowerTriangular ∧ HasOrder A b 6 ∧ ¬ HasOrder A b 7 :=
+      A.IsLowerTriangular ∧ HasOrder 6 A b ∧ ¬ HasOrder 7 A b :=
   BooleDIRK56.exists_exact_order_six
 
 example (K : Type*) [Field K] [CharZero K] :
     IsLeast {s : ℕ | ∃ (A : Matrix (Fin s) (Fin s) K) (b : Fin s → K),
-      A.IsLowerTriangular ∧ HasOrder A b 6} 5 :=
+      A.IsLowerTriangular ∧ HasOrder 6 A b} 5 :=
   dirk_order_six_isLeast_charZero_field K
 
 #print axioms checkScaledOrder_spec

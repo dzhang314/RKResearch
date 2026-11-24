@@ -22,7 +22,7 @@ variable {K : Type*} [Field K] {s p : ℕ}
 excludes a nonzero common moment with no origin assumption. The top
 denominator is exactly 2n. -/
 theorem paid_unanchored_constant_cauchy {ι : Type*} [Fintype ι]
-    {A : Matrix ι ι K} {b : ι → K} (ho : HasOrder A b p) {n : ℕ} (pay : 2*n ≤ p)
+    {A : Matrix ι ι K} {b : ι → K} (ho : HasOrder p A b) {n : ℕ} (pay : 2*n ≤ p)
     (a : Fin n → K) (B : K)
     (test : ∀ i : Fin (n+1), (∑ j : Fin n, a j/((i.val+j.val+1:ℕ):K))=B) :
     B=0 := by
@@ -58,7 +58,7 @@ theorem paid_unanchored_constant_cauchy {ι : Type*} [Fintype ι]
 /-- One additional ordinary moment excludes the terminal coordinate from
 the forward midpoint, without requiring *any* row of the tableau to vanish. -/
 theorem endpoint_coordinate_out_unanchored {ι : Type*} [Fintype ι]
-    {A : Matrix ι ι K} {b : ι → K} (ho : HasOrder A b p) {q : ℕ}
+    {A : Matrix ι ι K} {b : ι → K} (ho : HasOrder p A b) {q : ℕ}
     (pay : 2*q+2 ≤ p) {t : ι} (live : b t ≠ 0) (one : nodes A t = 1) :
     coordinate (K:=K) t ∉ treeSpace A q := by
   classical
@@ -80,7 +80,7 @@ variable {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K}
 
 /-- Generic last-coordinate refund. The outside test is only requested
 at the true last active index and only after its node has been forced to 1. -/
-theorem dirk_reverse_room_of_endpoint (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_reverse_room_of_endpoint (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {q n : ℕ} (hn : 1 ≤ n) (pay : q+n+2 ≤ p)
     (out : ∀ t : Fin s, LastActive b t → nodes A t=1 → coordinate (K:=K) t ∉ treeSpace A q) :
     finrank K (treeSpace A q)+n ≤ s := by
@@ -101,13 +101,13 @@ theorem dirk_reverse_room_of_endpoint (ha : A.IsLowerTriangular) (ho : HasOrder 
   · have raw := dirk_reverse_rank_budget ha ho hn pay
     omega
 
-theorem dirk_reverse_room_anchored (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_reverse_room_anchored (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {q n : ℕ} (hn : 1 ≤ n) (pay : q+n+2 ≤ p) (mid : 2*q+1 ≤ p)
     {o : Fin s} (hr : ∀ j, A o j=0) : finrank K (treeSpace A q)+n ≤ s :=
   dirk_reverse_room_of_endpoint ha ho hn pay
     (fun _ L node => endpoint_coordinate_out_of_zero_row ho mid hr L.live node)
 
-theorem dirk_reverse_room_unanchored (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_reverse_room_unanchored (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {q n : ℕ} (hn : 1 ≤ n) (pay : q+n+2 ≤ p) (mid : 2*q+2 ≤ p) :
     finrank K (treeSpace A q)+n ≤ s :=
   dirk_reverse_room_of_endpoint ha ho hn pay

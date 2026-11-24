@@ -784,7 +784,7 @@ private theorem pay64 : Paid t64 := by
   · unfold PackedPaid
     decide +kernel
 
-theorem order_six : HasOrder A b 6 := by
+theorem order_six : HasOrder 6 A b := by
   apply (checkOrder_iff A b 6).mp
   simp only [checkOrder, List.all_eq_true, List.mem_range, decide_eq_true_eq]
   intro n hn t ht
@@ -890,7 +890,7 @@ variable {K : Type*} [Field K] [CharZero K]
 
 theorem exact_map (f : Coeff →+* K) :
     (A.map f).IsLowerTriangular ∧ (∀ i, (A.map f) i i = (1/2:K)) ∧ (1/2:K) ≠ 0 ∧
-      HasOrder (A.map f) (f ∘ b) 6 ∧ ¬ HasOrder (A.map f) (f ∘ b) 7 := by
+      HasOrder 6 (A.map f) (f ∘ b) ∧ ¬ HasOrder 7 (A.map f) (f ∘ b) := by
   refine ⟨lowerTriangular.map f, fun i => ?_, by norm_num,
     order_six.map_coefficients f, not_order_seven_map f⟩
   exact (congrArg f (diagonal i)).trans (map_gamma f)

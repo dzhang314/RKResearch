@@ -7,7 +7,7 @@ open RKResearch.Certified.Graded.ERK12 Module
 section AtTheActualCap
 variable {K : Type*} [Field K] [CharZero K] {s : ℕ}
     {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
-    (ha : ∀ i j, i≤j → A i j=0) (h : HasOrder A b 12) (cap : s+1≤17)
+    (ha : ∀ i j, i≤j → A i j=0) (h : HasOrder 12 A b) (cap : s+1≤17)
 
 example : s+1=17 ∧ b (Fin.last s)≠0 ∧ nodes A (Fin.last s)=1 ∧
     finrank K (zeroSpace A 5)=5 ∧ finrank K (zeroSpace A 6)=6 := by

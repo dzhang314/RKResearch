@@ -18,7 +18,7 @@ open scoped Classical
 variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 
-theorem grade_eight_thin_head (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p) (pay : 16≤p)
+theorem grade_eight_thin_head (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b) (pay : 16≤p)
     (cap : finrank K (zeroSpace A 8) ≤ 8) :
     ∃ r U w, 2≤r ∧ finrank K (zeroSpace A 5)=5 ∧ FlatClockHead A 5 3 r U w := by
   have sep := explicit_coeff_separated ha ho (q:=8) pay
@@ -38,7 +38,7 @@ theorem grade_eight_thin_head (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A
 
 /-- The grade-four exceptional branch is also a genuine flat chart,
 or else the fourth defect space has its smallest possible rank three. -/
-theorem grade_eight_grade_four_split (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder A b p)
+theorem grade_eight_grade_four_split (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder p A b)
     (pay : 16≤p) (cap : finrank K (zeroSpace A 8) ≤ 8) :
     finrank K (zeroSpace A 4)=3 ∨
       (finrank K (zeroSpace A 4)=4 ∧ ∃ r U w, FlatClockHead A 4 4 r U w) := by
@@ -84,7 +84,7 @@ theorem grade_eight_grade_three_profile {r : ℕ} {U : Submodule K (Fin (s+1)→
 /-- If the third grade already lies in the core and the fourth has rank
 three, the core is precisely the fourth-grade space. -/
 theorem grade_eight_core_eq_grade_four (ha : ∀ i j, i≤j → A i j=0)
-    (ho : HasOrder A b p) (pay : 16≤p) {r : ℕ} {U : Submodule K (Fin (s+1)→K)}
+    (ho : HasOrder p A b) (pay : 16≤p) {r : ℕ} {U : Submodule K (Fin (s+1)→K)}
     {w : Fin (s+1)→K} (H : FlatClockHead A 5 3 r U w)
     (r2 : 2≤r) (f5 : finrank K (zeroSpace A 5)=5)
     (f4 : finrank K (zeroSpace A 4)=3) (inside : zeroSpace A 3 ≤ U) :

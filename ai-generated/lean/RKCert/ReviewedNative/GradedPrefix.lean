@@ -120,8 +120,8 @@ order conditions on its rescaled leading tableau. -/
 theorem exact_receiver_prefix_order {A:Matrix (Fin s) (Fin s) K}
     (strict:∀i j,i≤j→A i j=0) (i:Fin s) (q:ℕ)
     (nz:nodes A i≠0) (clean:∀v∈zeroSpace A q,v i=0) :
-    HasOrder ((nodes A i)⁻¹ • prefixMatrix A i.isLt.le)
-      (fun j:Fin i.val=>(nodes A i)⁻¹*A i (Fin.castLE i.isLt.le j)) q := by
+    HasOrder q
+      ((nodes A i)⁻¹ • prefixMatrix A i.isLt.le) (fun j:Fin i.val=>(nodes A i)⁻¹*A i (Fin.castLE i.isLt.le j)) := by
   intro t ht
   let r := (nodes A i)⁻¹
   let B := prefixMatrix A i.isLt.le

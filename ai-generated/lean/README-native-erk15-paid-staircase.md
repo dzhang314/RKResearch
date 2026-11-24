@@ -1,7 +1,7 @@
 # Native order-fifteen marked staircase through grade twelve
 
 The ordinary reviewed assumptions (strict lower triangularity,
-`RKResearch.HasOrder A b 15`, at most 22 stages and a characteristic-
+`RKResearch.HasOrder 15 A b`, at most 22 stages and a characteristic-
 zero field) now give a physical marked one-head chart from either
 first-escape entrance through grade twelve.
 

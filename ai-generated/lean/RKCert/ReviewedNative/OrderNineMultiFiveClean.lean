@@ -13,7 +13,7 @@ variable {K : Type*} [Field K] [CharZero K] {s p : ℕ}
 paid adjoint forces the last live coordinate to have clock one and to be
 a clean state. The five-clean quadrature forbids that endpoint. -/
 theorem order9_no_five_clean_six_or_seven {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) (m : (cleanKnots A).card=5)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) (m : (cleanKnots A).card=5)
     (n : (offKnots A).card=6 ∨ (offKnots A).card=7) : False := by
   obtain ⟨P,dP,_,_,hF,fit⟩ := order9_two_curve_head ha ho (by decide) (by rcases n with h|h <;> omega)
   have cancel := offMass_zero_of_head ho fit (by rcases n with h|h <;> omega)
@@ -41,7 +41,7 @@ theorem order9_no_five_clean_six_or_seven {A : Matrix (Fin 12) (Fin 12) K} {b : 
     exact mem_cleanKnots.mpr ⟨_,on_of_state_single v last.live cancel,one⟩
 
 theorem order9_no_seven_off {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12→K}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9) : (offKnots A).card≠7 := by
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b) : (offKnots A).card≠7 := by
   intro seven
   have mlo := (order9_multi_quadrature ha ho (by decide) (by omega) (by omega)).2
   have cnt := clean_off_count A

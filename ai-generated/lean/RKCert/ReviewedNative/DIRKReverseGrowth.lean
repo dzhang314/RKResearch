@@ -21,7 +21,7 @@ variable {K : Type*} [Field K] {s p : ℕ}
 
 /-- No plateau from level one onwards; a paid level suffices, even if the
 next level is not paid against the chosen forward midpoint. -/
-theorem dirk_primitiveBack_lt_succ (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_primitiveBack_lt_succ (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {n : ℕ} (hn : 1 ≤ n) (pay : n+2 ≤ p) :
     primitiveBack A b n < primitiveBack A b (n+1) := by
   apply RKCert.ReviewedNative.RankFlags.strict_of_two_seed_forcing
@@ -40,7 +40,7 @@ theorem dirk_primitiveBack_lt_succ (ha : A.IsLowerTriangular) (ho : HasOrder A b
 
 /-- The reverse rank at a starting level at least one is carried through
 each later paid step, retaining any surplus already earned. -/
-theorem dirk_primitiveBack_rank_gain (ha : A.IsLowerTriangular) (ho : HasOrder A b p)
+theorem dirk_primitiveBack_rank_gain (ha : A.IsLowerTriangular) (ho : HasOrder p A b)
     {r n : ℕ} (hr : 1 ≤ r) (hrn : r ≤ n) (pay : n+1 ≤ p) :
     (n-r)+finrank K (primitiveBack A b r) ≤ finrank K (primitiveBack A b n) :=
   RKCert.ReviewedNative.RankFlags.finrank_gain_of_steps (primitiveBack A b) hrn

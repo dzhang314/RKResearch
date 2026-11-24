@@ -10,7 +10,7 @@ open scoped Matrix
 #print axioms dirk_grade_six_head_at_three
 
 example {K : Type*} [Field K] [CharZero K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K}
-    {b : Fin s → K} (ho : HasOrder A b 15) (ha : A.IsLowerTriangular)
+    {b : Fin s → K} (ho : HasOrder 15 A b) (ha : A.IsLowerTriangular)
     (bad : ¬ Module.finrank K (zeroSpace A 3)+4 ≤ Module.finrank K (zeroSpace A 6))
     (inv : (zeroSpace A 3).map (diag (nodes A)) ≤ zeroSpace A 3) :
     ∃ w : Fin s → K, 4 ≤ (HeadFiber.escapeSites (nodes A) w (zeroSpace A 3)).card := by

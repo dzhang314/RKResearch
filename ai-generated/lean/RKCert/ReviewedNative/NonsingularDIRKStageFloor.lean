@@ -31,7 +31,7 @@ def volterra (A : Matrix ι ι R) : (ι → R) →ₗ[R] (ι → R) :=
 
 /-- The scaled commutator is a sum of differences of *equal-order* native trees.
 Its scalar factors are all units supplied by the achieved order itself. -/
-theorem volterra_treeSpace (ho : HasOrder A b p) (j : ℕ) (paid : j+2 ≤ p) :
+theorem volterra_treeSpace (ho : HasOrder p A b) (j : ℕ) (paid : j+2 ≤ p) :
     treeSpace A j ≤ (zeroSpace A (j+2)).comap (volterra A) := by
   apply Submodule.span_le.mpr
   rintro _ ⟨t, ht, rfl⟩
@@ -103,7 +103,7 @@ theorem volterra_injective (ha : A.IsLowerTriangular) (hn : ∀ i, A i i ≠ 0) 
     simpa [hn i] using z
 
 /-- Paid clock columns and the commutator image are independent inside the native grade. -/
-theorem nonsingular_rank_step (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
+theorem nonsingular_rank_step (ho : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hn : ∀ i, A i i ≠ 0) (j q : ℕ) (grade : q ≤ j+2) (paid : q+j+3 ≤ p) :
     q+1+finrank K (treeSpace A j) ≤ finrank K (treeSpace A (j+2)) := by
   let F := treeSpace A j
@@ -134,7 +134,7 @@ theorem nonsingular_rank_step (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
   simpa only [Module.finrank_prod, Module.finrank_fin_fun] using
     LinearMap.finrank_le_finrank_of_injective hg
 
-private theorem nonsingular_rank_base (ho : HasOrder A b p) {a q : ℕ}
+private theorem nonsingular_rank_base (ho : HasOrder p A b) {a q : ℕ}
     (grade : q ≤ a) (paid : q+a+1 ≤ p) : q+1 ≤ finrank K (treeSpace A a) := by
   have eq := treeSpace_rank_eq_of_separation ho (q := q) (by omega) (coeff_separated ho (by omega))
   have mono := Submodule.finrank_mono (treeSpace_mono A grade)
@@ -146,7 +146,7 @@ def parityCensus (p : ℕ) : ℕ → ℕ
   | 1 => min 1 (p-2) + 1
   | a+2 => min (a+2) (p-1-(a+2)) + 1 + parityCensus p a
 
-theorem parityCensus_le_finrank (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
+theorem parityCensus_le_finrank (ho : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hn : ∀ i, A i i ≠ 0) :
     ∀ a, a+1 ≤ p → parityCensus p a ≤ finrank K (treeSpace A a)
   | 0, hp => nonsingular_rank_base ho (q := 0) (by decide) hp
@@ -162,7 +162,7 @@ theorem parityCensus_le_finrank (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
 def nonsingularStageFloor (p : ℕ) : ℕ :=
   max (parityCensus p (p-1)) (parityCensus p (p-2))
 
-theorem nonsingular_stageFloor_field (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
+theorem nonsingular_stageFloor_field (ho : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hn : ∀ i, A i i ≠ 0) (hp : 0 < p) : nonsingularStageFloor p ≤ s := by
   have count (a : ℕ) (paid : a+1 ≤ p) : parityCensus p a ≤ s := by
     have z := (parityCensus_le_finrank ho ha hn a paid).trans (Submodule.finrank_le _)
@@ -180,20 +180,20 @@ variable {R : Type*} [CommRing R] [Nontrivial R] {s p : ℕ}
 variable {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
 
 /-- Every individual unit survives passage to the chosen residue field. -/
-theorem HasOrder.nonsingular_stageFloor (ho : HasOrder A b p) (ha : A.IsLowerTriangular)
+theorem HasOrder.nonsingular_stageFloor (ho : HasOrder p A b) (ha : A.IsLowerTriangular)
     (hu : ∀ i, IsUnit (A i i)) (hp : 0 < p) : nonsingularStageFloor p ≤ s :=
   ho.unit_diagonal_of_all_fields ha hu (fun _ _ _ _ ht hn h => nonsingular_stageFloor_field h ht hn hp)
 
 /-- Fifth order already needs five stages when *all* diagonal entries are units.
 They need not coincide; there are no conditions on the weights. -/
-theorem HasOrder.nonsingular_order_five_stages (ho : HasOrder A b 5) (ha : A.IsLowerTriangular)
+theorem HasOrder.nonsingular_order_five_stages (ho : HasOrder 5 A b) (ha : A.IsLowerTriangular)
     (hu : ∀ i, IsUnit (A i i)) : 5 ≤ s := by
   exact ho.nonsingular_stageFloor ha hu (by decide)
 
 /-- Even a shared nonunit (possibly zero or nilpotent) is covered at order five:
 its image in a residue field is either zero (explicit) or a unit (nonsingular).
 This deliberately does *not* replace arbitrary nonconstant nonzero ring entries by units. -/
-theorem HasOrder.common_diagonal_order_five_stages (ho : HasOrder A b 5)
+theorem HasOrder.common_diagonal_order_five_stages (ho : HasOrder 5 A b)
     (ha : A.IsLowerTriangular) {γ : R} (hc : ∀ i, A i i = γ) : 5 ≤ s := by
   obtain ⟨I, hI⟩ := Ideal.exists_maximal R
   let := hI

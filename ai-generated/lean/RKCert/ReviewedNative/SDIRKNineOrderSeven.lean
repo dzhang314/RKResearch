@@ -54,7 +54,7 @@ theorem diagonal {x y : K} (hx : x ≠ 0) (i : Fin 9) : A x y i i = 4 / x := by
   field_simp [hx, hd]
 
 theorem order_seven {x y : K} (hx : x ≠ 0) (h : RootPair x y) :
-    HasOrder (A x y) (b x y) 7 := by
+    HasOrder 7 (A x y) (b x y) := by
   have hd : (stageDen : K) * x ≠ 0 := mul_ne_zero stageDen_ne hx
   have he : (weightDen:K) ≠ 0 := weightDen_ne
   have hA : (numA x y).map (RingHom.id K) = (RingHom.id K) ((stageDen:K)*x) • A x y := by
@@ -68,7 +68,7 @@ theorem order_seven {x y : K} (hx : x ≠ 0) (h : RootPair x y) :
 
 theorem exists_of_rootPair {x y : K} (hx : x ≠ 0) (h : RootPair x y) :
     ∃ (A : Matrix (Fin 9) (Fin 9) K) (b : Fin 9 → K) (γ : K),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 7 :=
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 7 A b :=
   ⟨A x y, b x y, 4/x, lowerTriangular x y, diagonal hx, div_ne_zero (by norm_num) hx,
     order_seven hx h⟩
 
@@ -78,7 +78,7 @@ namespace RKResearch.Certified
 
 theorem strictSDIRK_order_seven_nine_stages_real :
     ∃ (A : Matrix (Fin 9) (Fin 9) ℝ) (b : Fin 9 → ℝ) (γ : ℝ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 7 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 7 A b := by
   obtain ⟨x, y, hx, hy⟩ := SDIRKNineReplay.exists_real_rootPair
   exact SDIRKNineReplay.exists_of_rootPair hx hy
 
@@ -86,7 +86,7 @@ local notation "ℝₐ" => (algebraicClosure ℚ ℝ : Type)
 
 theorem strictSDIRK_order_seven_nine_stages_realAlgebraic :
     ∃ (A : Matrix (Fin 9) (Fin 9) ℝₐ) (b : Fin 9 → ℝₐ) (γ : ℝₐ),
-      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder A b 7 := by
+      A.IsLowerTriangular ∧ (∀ i, A i i = γ) ∧ γ ≠ 0 ∧ HasOrder 7 A b := by
   obtain ⟨x, y, hx, hy⟩ := SDIRKNineReplay.exists_realAlgebraic_rootPair
   exact SDIRKNineReplay.exists_of_rootPair hx hy
 

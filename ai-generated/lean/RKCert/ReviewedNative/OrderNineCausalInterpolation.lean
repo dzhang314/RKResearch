@@ -19,7 +19,7 @@ def IndependentBefore (U : Submodule K (Fin s → K)) (j : Fin s) : Prop :=
 jointly invariant line in the paid grade-five annihilator. -/
 theorem order9_no_causal_clock_contrast
     {A : Matrix (Fin 12) (Fin 12) K} {b w : Fin 12 → K} {j : Fin 12}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (rank : finrank K (treeSpace A 5)=10)
     (pre : IndependentBefore (treeSpace A 4) j)
     (wa : w∈annih (treeSpace A 5)) (wn : w≠0)
@@ -53,7 +53,7 @@ theorem order9_no_causal_clock_contrast
 next physical grade-five evaluation row. -/
 theorem order9_forbid_same_clock_interpolation
     {A : Matrix (Fin 12) (Fin 12) K} {b w : Fin 12 → K} {j : Fin 12}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (rank : finrank K (treeSpace A 5)=10)
     (pre : IndependentBefore (treeSpace A 4) j)
     (prev : ∀ i, j ≤ i → w i=0)

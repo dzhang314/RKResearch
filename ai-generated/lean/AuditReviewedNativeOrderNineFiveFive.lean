@@ -15,6 +15,6 @@ open RKResearch.Certified.Graded.OneOff RKResearch.Certified.Graded.MultiOff
 #print axioms explicit_order_nine_outside_five_six_at_least_thirteen
 example {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K] {s : ℕ}
     {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (outside : ¬ ((offKnots A).card=5 ∧ (cleanKnots A).card=6)) : 13≤s :=
   explicit_order_nine_outside_five_six_at_least_thirteen ha ho outside

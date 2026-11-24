@@ -30,7 +30,7 @@ theorem probePacket_apply (A : Matrix (Fin s) (Fin s) K) (b : (Fin s → K)) (n 
 
 /-- If its tests against the first n bushes vanish, the scalar packet is zero.
 The exact paid budget is `2n−1 ≤ p` for nonempty packets. -/
-theorem probePacket_detect {p n : ℕ} (ho : HasOrder A b p) (hn : 2*n≤p+1)
+theorem probePacket_detect {p n : ℕ} (ho : HasOrder p A b) (hn : 2*n≤p+1)
     (a : Fin n → K) (hz : ∀ i : Fin n, probePacket A b n a (normTree A (clockTree i.val))=0) :
     a=0 := by
   ext j
@@ -63,7 +63,7 @@ private theorem bush_mem (A : Matrix (Fin s) (Fin s) K) (j : ℕ) :
     normTree A (clockTree j) ∈ treeSpace A j :=
   (treeSpace A j).smul_mem _ (Φ_mem_treeSpace _ _ (by rw [order_clockTree]))
 
-theorem fourRows_injective (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0) :
+theorem fourRows_injective (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0) :
     Function.Injective (fourRows A b) := by
   apply (injective_iff_map_eq_zero _).mpr
   intro z hz
@@ -90,7 +90,7 @@ noncomputable def sixRows (A : Matrix (Fin s) (Fin s) K) (b : (Fin s → K)) :
 theorem sixRows_apply (A : Matrix (Fin s) (Fin s) K) (b : (Fin s → K)) (z : (Fin 2→K)×((Fin 3→K)×K))
     (v : (Fin s → K)) : sixRows A b z v = probePacket A b 2 z.1 v + fourRows A b z.2 (volterra A v) := rfl
 
-theorem sixRows_injective (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0) :
+theorem sixRows_injective (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0) :
     Function.Injective (sixRows A b) := by
   apply (injective_iff_map_eq_zero _).mpr
   intro z hz
@@ -119,7 +119,7 @@ theorem sixRows_injective (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hn :
 /-- Exactly six stages plus achieved order six make these six canonical
 rows a basis of the entire dual, with no cancellation of individual weights. -/
 theorem sixRows_surjective {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0) :
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0) :
     Function.Surjective (sixRows A b) := by
   apply (LinearMap.injective_iff_surjective_of_finrank_eq_finrank _).mp (sixRows_injective ho ha hn)
   simp [Subspace.dual_finrank_eq]
@@ -127,7 +127,7 @@ theorem sixRows_surjective {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
 /-- Direct, coordinate-free use of the census: every linear functional is
 one of the displayed combinations with six scalar coefficients. -/
 theorem canonical_rows_span {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)}
-    (ho : HasOrder A b 6) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0)
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (hn : ∀i,A i i≠0)
     (φ : Module.Dual K ((Fin 6 → K))) :
     ∃ (a : Fin 2 → K) (c : Fin 3 → K) (d : K), ∀ v : (Fin 6 → K),
       φ v = (∑ j : Fin 2, a j * probe A b j.val v) +

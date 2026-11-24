@@ -46,7 +46,7 @@ theorem first_zero_eq_transpose (zero : firstSeed A b=0) :
   rw [Nat.zero_add,Nat.cast_one,one_smul,h0,h1] at zero
   exact sub_eq_zero.mp zero
 
-theorem greatest_reflected_pivot (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b p)
+theorem greatest_reflected_pivot (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder p A b)
     (pay : 2≤p) :
     ∃ i : Fin s, reflectedClock A i≠0 ∧ b i≠0 ∧
       (∀ j, i<j → reflectedClock A j*b j=0) ∧
@@ -86,7 +86,7 @@ omit [CharZero K] in
 /-- Any prescribed finite set of reflected clocks smaller than the
 available full moment test misses a live physical row. The proof does
 not assume positive stage weights or that the clocks lie in an interval. -/
-theorem reflected_live_avoid (ho : HasOrder A b p) (T : Finset K) (pay : 2*T.card+1≤p) :
+theorem reflected_live_avoid (ho : HasOrder p A b) (T : Finset K) (pay : 2*T.card+1≤p) :
     ∃ i,b i≠0 ∧ reflectedClock A i∉T := by
   by_contra! no
   let S := T.image (fun z=>1-z)

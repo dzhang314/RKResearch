@@ -21,7 +21,7 @@ variable {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {b : Fin (s+1) → K}
 
 omit [CharZero K] in
 /-- Weighting a defect column by the actual degree-n clock costs n. -/
-theorem weighted_clock_mem_grade (ho : HasOrder A b 12)
+theorem weighted_clock_mem_grade (ho : HasOrder 12 A b)
     {v : Fin (s+1) → K} {m n : ℕ} (hv : v∈zeroSpace A m) (pay : n+1≤12)
     (R : K[X]) (deg : R.natDegree≤n) :
     weightedEval (nodes A) v R∈zeroSpace A (m+n) := by
@@ -59,7 +59,7 @@ private theorem residual_grade (v : Fin (s+1) → K) (P R : K[X]) {n : ℕ}
 /-- Only the cubic part of the tested polynomial can leak, and the
 same scalar is used for all tests and both detected physical clocks. -/
 theorem cubic_residual_single_leak (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (T : TerminalBand A b) {v : Fin (s+1) → K} {P : K[X]}
+    (ho : HasOrder 12 A b) (T : TerminalBand A b) {v : Fin (s+1) → K} {P : K[X]}
     (dP : P.natDegree≤3)
     (cheap : ∀ R : K[X], R.natDegree≤2 → weightedEval (nodes A) v R∈zeroSpace A 5)
     (high : weightedEval (nodes A) v (X^3)∈zeroSpace A 6) :
@@ -107,7 +107,7 @@ private theorem mesh_eligible {x : K} (nx : x≠0)
 contrast gives its scalar test. The row is physically terminal or its
 clock is a zero of the actual mesh. -/
 theorem cubic_chronological_tests (ha : ∀ i k, i ≤ k → A i k=0)
-    (ho : HasOrder A b 12) (S : Saturation A b)
+    (ho : HasOrder 12 A b) (S : Saturation A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (stable : U.map (diag v)≤U)
     {P Q : K[X]} (p0 : P≠0) (q0 : Q≠0) (dP : P.natDegree≤3) (dQ : Q.natDegree≤2)
@@ -200,7 +200,7 @@ theorem cubic_chronological_tests (ha : ∀ i k, i ≤ k → A i k=0)
 /-- A paid cubic multiplier profile is impossible once its two actual
 chronological rows supply the previously certified scalar tests. This
 uses paid weighted columns, not a grade assignment for the multiplier. -/
-theorem exclude_paid_cubic_profile (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem exclude_paid_cubic_profile (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w v : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) (stable : U.map (diag v)≤U)
@@ -283,7 +283,7 @@ theorem exclude_paid_cubic_profile (ha : ∀ i k, i ≤ k → A i k=0) (ho : Has
 
 /-- Admission of the actual cubic defect grade has no hypothesis on the
 head length or the dimension of grade four beyond the measured staircase. -/
-theorem grade_three_in_core (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder A b 12)
+theorem grade_three_in_core (ha : ∀ i k, i ≤ k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {r : ℕ} {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A r U w) : zeroSpace A 3≤U := by

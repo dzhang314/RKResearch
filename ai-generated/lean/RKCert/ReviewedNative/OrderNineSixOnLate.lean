@@ -139,7 +139,7 @@ set_option maxHeartbeats 1200000 in
 In the three-row relation, the full-stage annihilator is made small
 by adjoining the terminal singleton, not by computing a quotient rank. -/
 theorem order9_five_six_late_rows {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (hN : (offKnots A).card=5) (hM : (cleanKnots A).card=6) :
     Nonempty (SixOnLateRows A b) := by
   let _ : DecidableEq K := fun _ _ => Classical.propDecidable _

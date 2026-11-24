@@ -38,7 +38,7 @@ theorem phi_tallTree_eq_zero {A : Matrix (Fin s) (Fin s) R}
 theorem explicit_order_le_stages [Nontrivial R] {p : ℕ}
     {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R}
     (ha : ∀ i j : Fin s, i ≤ j → A i j = 0)
-    (ho : HasOrder A b p) : p ≤ s := by
+    (ho : HasOrder p A b) : p ≤ s := by
   by_contra h
   have hsp : s + 1 ≤ p := by omega
   let n : ℕ+ := ⟨s + 1, Nat.succ_pos s⟩

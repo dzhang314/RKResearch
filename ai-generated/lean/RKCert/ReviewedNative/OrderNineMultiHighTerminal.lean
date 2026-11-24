@@ -34,7 +34,7 @@ theorem single_profile_on_unique {A : Matrix (Fin (s+1)) (Fin (s+1)) K} {Q R : K
 
 omit [CharZero K] in
 theorem on_hull_times_head_probes {A : Matrix (Fin s) (Fin s) K} {b : Fin s→K}
-    (ho : HasOrder A b p) {P : K[X]} (fit : ∀i,g A i≠0 → P.eval (nodes A i)=g A i)
+    (ho : HasOrder p A b) {P : K[X]} (fit : ∀i,g A i≠0 → P.eval (nodes A i)=g A i)
     (k : ℕ) (pay : k+(cleanKnots A).card+3≤p) :
     probe A b k (evalNodes A (P*nodalHull (cleanKnots A)))=0 :=
   probe_head_product_zero ho fit _ (fun _ hx=>by rw [nodalHull_eval_of_mem hx,mul_zero])
@@ -93,7 +93,7 @@ theorem profile_terminal_on_of_large_off {A : Matrix (Fin (s+1)) (Fin (s+1)) K}
 
 omit [CharZero K] in
 theorem order9_high_off_terminal {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (M : (cleanKnots A).card=4) (N : (offKnots A).card=8)
     (P : K[X]) (dp : P.natDegree≤2)
     (fit : ∀ i,g A i≠0 → P.eval (nodes A i)=g A i)
@@ -118,7 +118,7 @@ theorem order9_high_off_terminal {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12�
   exact ⟨hi,hc,fun j hj hj' => single_profile_on_unique hz hi hc j hj hj'⟩
 
 theorem order9_high_off_two_root_tests {A : Matrix (Fin 12) (Fin 12) K} {b : (Fin 12→K)}
-    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder A b 9)
+    (ha : ∀i j,i≤j → A i j=0) (ho : HasOrder 9 A b)
     (M : (cleanKnots A).card=4) (hF : zeroSpace A 4=band A 2)
     (P : K[X]) (dP : P.natDegree≤2) (p0 : P≠0)
     (fit : ∀ i,g A i≠0 → P.eval (nodes A i)=g A i)

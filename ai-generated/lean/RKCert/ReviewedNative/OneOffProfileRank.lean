@@ -24,14 +24,14 @@ theorem normal_profile_value (w : NormalCoeffs K) (r : Fin 12) :
   rw [normalProfileMap_apply]
   rfl
 
-theorem normal_profile_mem (ho : HasOrder A b 9) (w : NormalCoeffs K) :
+theorem normal_profile_mem (ho : HasOrder 9 A b) (w : NormalCoeffs K) :
     normalProfileMap A w∈treeSpace A 5 := by
   rw [←wide_at_normal]
   exact wide_profile_mem ho (w,0)
 
 /-- The polynomial of any represented grade-five defect, not just a
 kernel relation, is forced by exactly the same four moment equations. -/
-theorem normal_profile_defect_poly (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem normal_profile_defect_poly (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (w : NormalCoeffs K) (hw : normalProfileMap A w∈zeroSpace A 5) :
     ofFn 6 w.1=C (w.1 5)*anchorRadau := by
   let P := ofFn 6 w.1
@@ -51,7 +51,7 @@ theorem normal_profile_defect_poly (ha : ∀ i j, i ≤ j → A i j = 0) (ho : H
   have coeff : P.coeff 5=w.1 5 := ofFn_coeff_eq_val_of_lt _ (by decide)
   simpa only [coeff] using anchored_radau_span ho P pd p0 pm
 
-theorem normal_coeff_forced_zero (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem normal_coeff_forced_zero (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j)
     (w : NormalCoeffs K) (hw : normalProfileMap A w=0) (cf : w.1 5=0) :
     w=0 := by
@@ -103,7 +103,7 @@ def normalTop : NormalCoeffs K→ₗ[K] K where
   map_add' _ _ := rfl
   map_smul' _ _ := rfl
 
-theorem normal_profile_rank_nine (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+theorem normal_profile_rank_nine (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     {a d : K} {i j : Fin 12} (D : GlobalNormal A a d i j) :
     9≤finrank K (LinearMap.range (normalProfileMap A)) := by
   let N := normalProfileMap A
@@ -118,7 +118,7 @@ theorem normal_profile_rank_nine (ha : ∀ i j, i ≤ j → A i j = 0) (ho : Has
   change 9≤finrank K (LinearMap.range N)
   omega
 
-theorem normal_profile_range_le (ho : HasOrder A b 9) :
+theorem normal_profile_range_le (ho : HasOrder 9 A b) :
     LinearMap.range (normalProfileMap A)≤treeSpace A 5 := by
   rintro v ⟨w,rfl⟩
   exact normal_profile_mem ho w

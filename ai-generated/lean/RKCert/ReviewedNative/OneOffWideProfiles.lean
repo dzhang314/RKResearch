@@ -48,7 +48,7 @@ theorem wideProfileMap_apply (A : Matrix (Fin s) (Fin s) K) (w : WideCoeffs K) :
   change normalProfileMap A w.1+w.2 • (g A*h A)=_
   rw [normalProfileMap_apply,wideDefect,add_assoc]
 
-theorem wide_defect_mem {b : Fin s → K} (ho : HasOrder A b 9) (w : WideCoeffs K) :
+theorem wide_defect_mem {b : Fin s → K} (ho : HasOrder 9 A b) (w : WideCoeffs K) :
     wideDefect A w∈zeroSpace A 5 := by
   have gg := mDef_mem A 1
   have hh := h_in_grade_three A
@@ -62,7 +62,7 @@ theorem wide_defect_mem {b : Fin s → K} (ho : HasOrder A b 9) (w : WideCoeffs 
       ((zeroSpace A 5).smul_mem _ (zeroSpace_mono A (by decide) gg)) wq)
     ((zeroSpace A 5).smul_mem _ (zeroSpace_mul gg hh))
 
-theorem wide_profile_mem {b : Fin s → K} (ho : HasOrder A b 9) (w : WideCoeffs K) :
+theorem wide_profile_mem {b : Fin s → K} (ho : HasOrder 9 A b) (w : WideCoeffs K) :
     wideProfileMap A w∈treeSpace A 5 := by
   rw [wideProfileMap_apply]
   exact (treeSpace A 5).add_mem
@@ -94,7 +94,7 @@ theorem nonzero_kernel_of_rank_lt {V W : Type*} [AddCommGroup V] [AddCommGroup W
 
 /-- The polynomial part of any relation is anchored Radau. -/
 theorem wide_kernel_poly {A : Matrix (Fin 12) (Fin 12) K} {b : Fin 12 → K}
-    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder A b 9)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 9 A b)
     (w : WideCoeffs K) (ker : wideProfileMap A w=0) :
     ofFn 6 w.1.1=C (wideTop w)*anchorRadau := by
   let P := ofFn 6 w.1.1

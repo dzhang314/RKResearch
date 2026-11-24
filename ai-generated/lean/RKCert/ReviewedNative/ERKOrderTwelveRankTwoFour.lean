@@ -71,7 +71,7 @@ variable [CharZero K]
 
 set_option maxHeartbeats 650000 in
 /-- Construct the actual disjoint profile from the measured native chart. -/
-theorem rank_two_four_profile (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder A b 12)
+theorem rank_two_four_profile (ha : ∀ i k, i≤k → A i k=0) (ho : HasOrder 12 A b)
     (S : Saturation A b) (T : TerminalBand A b)
     {U : Submodule K (Fin (s+1) → K)} {w : Fin (s+1) → K}
     (H : ForwardStaircase A 2 U w) (d4 : finrank K (zeroSpace A 4)=4) :
@@ -194,7 +194,7 @@ theorem RankTwoFourProfile.pure_factor
 single possible terminal-zero leakage scalar, with an exact factor pair
 in its pure alternative. -/
 theorem actual_rank_two_four_profile (ha : ∀ i k, i≤k → A i k=0)
-    (ho : HasOrder A b 12) (cap : s+1≤17) :
+    (ho : HasOrder 12 A b) (cap : s+1≤17) :
     ∃ U z α Q R, RankTwoFourProfile A U z α Q R ∧
       (α≠0 ∨ (α=0 ∧ terminalMesh6=R*Q ∧ R.natDegree=4 ∧ Q.natDegree=2)) := by
   have S := saturation_of_order ha ho cap

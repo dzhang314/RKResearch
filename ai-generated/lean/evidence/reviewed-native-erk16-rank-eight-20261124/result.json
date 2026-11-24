@@ -1,0 +1,63 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "reviewed": "c35f5b900856c33eae15435ccebaabd049b56628",
+  "modules": [
+    {
+      "module": "RKCert.ReviewedNative.OrderedSeparatorEnds",
+      "source_sha256": "a60dcdaac23fb418f994955b2c379293fa8b9e35d45c4d7c3c318108c1cf668c",
+      "replay_sha256": "e8ea17b7f3ff24a2aaf0f22d754abe1e3ed72001d58fa756a9fe8bf92afd4256",
+      "object_sha256": "f4ccf78781f8eb43b0a0bdab51b3afdd0e47ac65d7971d0cd3abbcdb71adc9b6"
+    },
+    {
+      "module": "RKCert.ReviewedNative.ERKOrder16StrongCenteredDecreasing",
+      "source_sha256": "ad0518aec2e854d1e35dffc30d31f607dfec4722dffd0d8a50521b6076d5056b",
+      "replay_sha256": "eebe3b27aad6cd8df616b8fdf1c95571ff4a30bc8614bcde433654eac3fe79d9",
+      "object_sha256": "8118e0398523194a6faff70f3d3d5eb3ca4ee5a9c8c6b87adcc3c781cc642661"
+    },
+    {
+      "module": "RKCert.ReviewedNative.ERKOrder16StrongCenteredScalar",
+      "source_sha256": "13a20a1f73502196c6b28b5482d5bb0628b41c9cb95a11a2ba803b088b284307",
+      "replay_sha256": "744ddf423a51b973af1ee447e632c11b5ba0d75e91356f3bb1f41d80bd82e079",
+      "object_sha256": "d379490bf6bb093f0b082fb0b081f74923a38acc359a82e2834a78dc843432ad"
+    },
+    {
+      "module": "RKCert.ReviewedNative.ERKOrder16StrongCenteredEndpoint",
+      "source_sha256": "9fefd11e935e7749696224911289d4cdd2e5f22403fcb9fcb45d36f427343904",
+      "replay_sha256": "6bb974afbaf915ac35ac2efac32472692cb27c355ebdf7ac0ec02b6a232c50e7",
+      "object_sha256": "3f2621156bfbabd625d08a7efa8fee08d3a1fc7f934086ec78a8a483a8558013"
+    },
+    {
+      "module": "RKCert.ReviewedNative.ReverseContrastSiteBudget",
+      "source_sha256": "a432a13da99b8080846d4e026eefe18f4d4de9bd42b2c7250215c2f0778fb245",
+      "replay_sha256": "995478e22c30876959460f7a06c5d79ab73c025f0e63adcf30c71cbb4fa25591",
+      "object_sha256": "ecb53107ac5715c84570aa79a13d03074002861d525f9147951ddd5f8a1a874b"
+    },
+    {
+      "module": "RKCert.ReviewedNative.ERKOrder16WeakContrastCases",
+      "source_sha256": "fbbc70b127975affce492fbbe6acb130f7337091cc7e486fdc2a9727b3817584",
+      "replay_sha256": "00b25a4990348d14551cf2f5e58f1e2758d617215348075ec8d9b982851e2503",
+      "object_sha256": "6b7b9681a7c5ffefc8c37f4df3723b9a4bd00467fc64b113014af59d7f9381ee"
+    }
+  ],
+  "audits": [
+    {
+      "file": "AuditReviewedNativeERK16StrongCenteredScalar.lean",
+      "named_checks": 2,
+      "source_sha256": "b69a0a9d300e2e98ad1350af78398f185cee7129b2c8907ffc5567676097f31d",
+      "audit_sha256": "79c9aa2f007a4b2d9f1e14b1594ac821ffdac8204835bfac469de2d8552e1eb7"
+    },
+    {
+      "file": "AuditReviewedNativeERK16StrongCenteredEndpoint.lean",
+      "named_checks": 1,
+      "source_sha256": "c8320a337789f09e09f570e306f6cf397b42116d16f8a7a6ef208818e67b6597",
+      "audit_sha256": "5ccf81af64201002f6ec217ceea2b7dfe9f677f2e75cc4a25b78a366a4835365"
+    },
+    {
+      "file": "AuditReviewedNativeERK16WeakContrastCases.lean",
+      "named_checks": 3,
+      "source_sha256": "2fbda805638aed4290f9ed431cfa6b551647448c2cea782f5bcf4989f7222c95",
+      "audit_sha256": "136aaef2d9c952bc3662dc97e2b2cca6503683de3e2bbf1756fc5ea4ad5d9946"
+    }
+  ]
+}

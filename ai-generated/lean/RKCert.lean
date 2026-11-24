@@ -14,3 +14,9 @@ public import RKCert.DirkFloorRegression
 public import RKCert.SDIRKOrderSixRing
 
 public import RKCert.ERKGradeFive
+
+public import RKCert.ERKLogarithmic
+public import RKCert.NativeInterface
+
+public import RKCert.OrderTwelveGhost
+public import RKCert.OrderTwelveDivisors

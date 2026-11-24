@@ -1,0 +1,29 @@
+# Proof dependencies and historical derivations
+
+These source notes support the [current lower-bound table](../README.md).
+They retain their original assumptions and proof roles. A historical proof
+may establish a weaker floor, or an individual branch of a stronger proof.
+Some older replay files are referenced by their filenames and have not yet
+been restored; inclusion of a note does not claim its dependencies are closed.
+
+- [dirk_characteristic_zero_nearly_balanced_two_endpoint_moments_and_grade_ten_dyadic_20261123.md](dirk_characteristic_zero_nearly_balanced_two_endpoint_moments_and_grade_ten_dyadic_20261123.md)
+- [dirk_grade_eight_commutator_pivot_refund.md](dirk_grade_eight_commutator_pivot_refund.md)
+- [dirk_grade_five_single_head_refunded_fifth_debut_through_seven_20261123.md](dirk_grade_five_single_head_refunded_fifth_debut_through_seven_20261123.md)
+- [dirk_multigrade_confluent_cut_rank_and_weighted_reflection_20261123.md](dirk_multigrade_confluent_cut_rank_and_weighted_reflection_20261123.md)
+- [dirk_order15_minimal_two_hidden_quartics_terminal_deleted_resultant_and_pencil_replay_20261123.md](dirk_order15_minimal_two_hidden_quartics_terminal_deleted_resultant_and_pencil_replay_20261123.md)
+- [dirk_order16_twenty_two_requires_c2_and_minimal_fourth_mark_20261123.md](dirk_order16_twenty_two_requires_c2_and_minimal_fourth_mark_20261123.md)
+- [dirk_order19_terminal_zero_kernel_barrier_20261123.md](dirk_order19_terminal_zero_kernel_barrier_20261123.md)
+- [dirk_parity_anchored_remainder_dyad_order16_order17_20261123.md](dirk_parity_anchored_remainder_dyad_order16_order17_20261123.md)
+- [dirk_reverse_quotient_independent_audit.md](dirk_reverse_quotient_independent_audit.md)
+- [dirk_two_surpluses_even_horizon_20261123.md](dirk_two_surpluses_even_horizon_20261123.md)
+- [dirk_universal_grade_seven_surplus_and_grade_six_terminal_head_20261123.md](dirk_universal_grade_seven_surplus_and_grade_six_terminal_head_20261123.md)
+- [erk_stepanov_weighted_five_and_freed_three_anchor_multiplier_20261123.md](erk_stepanov_weighted_five_and_freed_three_anchor_multiplier_20261123.md)
+- [order_twelve_stage_residual_proof_source.md](order_twelve_stage_residual_proof_source.md)
+- [pass0045_q6_even.md](pass0045_q6_even.md)
+- [pass0045_q6_odd.md](pass0045_q6_odd.md)
+- [pass0345_rk9.md](pass0345_rk9.md)
+- [pass2245_finite_analytic.md](pass2245_finite_analytic.md)
+- [pass2345_q7analytic.md](pass2345_q7analytic.md)
+- [rk_first_overlap_primal_dual_gluing_20261123.md](rk_first_overlap_primal_dual_gluing_20261123.md)
+- [sdirk_five_genuine_signed_nonlinear_receivers_and_one_cyclic_tied_probe_20261123.md](sdirk_five_genuine_signed_nonlinear_receivers_and_one_cyclic_tied_probe_20261123.md)
+- [worker_log_standalone.md](worker_log_standalone.md)

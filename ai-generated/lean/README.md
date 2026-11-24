@@ -127,3 +127,18 @@ Lean 4.36.0 (commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9), Lake 5.0.0-src+61
 
 `Audit.lean` prints exact theorem types and axioms; it also elaborates exclusions at one stage below each promised order and a ring-with-zero-divisors test. Only standard Lean axioms are used. No admitted proof, custom axiom or native decision procedure is used.
 
+
+## Logarithmic explicit stage bound
+
+[`RKCert/ERKLogarithmic.lean`](RKCert/ERKLogarithmic.lean) proves
+`s ≥ ceil(3p/2) − 1 + floor(log₂(floor(p/10)))` for order `p ≥ 10` over
+characteristic-zero commutative rings. The additional ranks come from ruling
+out an entire doubling interval of unit growth. The proof at order 20 gives
+30, not the stronger ordered-field lower bound of 32.
+
+[Appendix B](APPENDIX_B.md) contains the two exact scalar exclusions needed
+for the separate 18-stage order-12 result. Those exclusions are checked;
+the complete rank argument that supplies their hypotheses is not yet checked.
+
+Run `lake env lean AuditERKField.lean` and `lake env lean AppendixBAudit.lean`
+after building to reproduce the additional axiom audits.

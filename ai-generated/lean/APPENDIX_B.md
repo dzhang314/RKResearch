@@ -1,0 +1,9 @@
+# Order 12, Appendix B: characteristic-zero endpoint gates
+
+The portable source files are `OrderTwelveArithmetic`, `OrderTwelveGhost`, `OrderTwelvePure`, `OrderTwelveFactors`, and `OrderTwelveDivisors` in the RKCert directory. These results are scalar obstructions conditional on the stated nodes, moment equations or divisor. They do not by themselves prove the physical 18-stage ERK bound.
+
+* `RKCert.OrderTwelve.ghost_five_tests_zero`: at any distinct two roots of (x−1)D₅(x), the five actual linear moment equations force all four cubic coefficients and the leakage scalar to vanish. The cofactor identities reduce the test to a nonzero rational Bézout identity in the 30-dimensional ordered distinct root algebra (variables u and a, relations F(u) and (F(a)−F(u))/(a−u)). No roots are enumerated in the target field.
+* `RKCert.OrderTwelve.pure_divisor_moment_ne_zero`: for any cubic or quartic polynomial P dividing the specific degree-five shifted-Legendre derivative, the formal integral of xP(x) from zero to w is nonzero when w=1 or w is a root of D₅ not of P. Covers the forty endpoint/factor selections on a splitting field and applies to every characteristic-zero field directly. At w=1 a complementary quadratic need not split: the checked proof uses its symmetric coefficients.
+* D₅ here is the shifted Legendre derivative divided by 42. Its leading coefficient is 132. All nonzero integer constants pay only the stated characteristic-zero hypothesis.
+
+Reproduction on Lean and Mathlib v4.36.0: `lake build RKCert.OrderTwelveDivisors RKCert.OrderTwelveGhost`, then `lake env lean AppendixBAudit.lean`. The combined build completed 3,333 jobs; seven representative roots use only the usual propext, Classical.choice and Quot.sound axioms. The Python generators recover exact rational coefficients and are not used by Lean. Unexpected or altered coefficients are caught by the kernel-checked polynomial identities, not trusted from Python.

@@ -32,3 +32,5 @@ Every real statement in the last column transfers by real-closed-field theory: f
 - [Proofs using the reals](real-proofs/README.md)
 - [Conditional and construction-family exclusions](conditional/README.md)
 - [Lean certificates](../lean/README.md)
+
+- [Supporting proof dependencies and historical derivations](proof-dependencies/README.md)

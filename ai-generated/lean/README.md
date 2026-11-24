@@ -142,3 +142,7 @@ the complete rank argument that supplies their hypotheses is not yet checked.
 
 Run `lake env lean AuditERKField.lean` and `lake env lean AppendixBAudit.lean`
 after building to reproduce the additional axiom audits.
+
+The [DIRK grade-six proof](DIRK-GRADE6.md) also verifies the current
+characteristic-zero lower bounds of 15 stages at order 12 and 17 at order 13.
+It does not establish the stronger finite order-14 and order-15 endpoints.

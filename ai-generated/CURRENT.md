@@ -29,10 +29,10 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 ## Lean certificate coverage
 
-Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, 46 of the 60 strongest characteristic-zero field entries, and 40 of the 60 strongest ordered-field and real entries. The counts include the grade-five and logarithmic ERK proofs. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.
+Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, 48 of the 60 strongest characteristic-zero field entries, and 42 of the 60 strongest ordered-field and real entries. The counts include the grade-five and logarithmic ERK proofs and the DIRK grade-six proof. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.
 
 - ERK: the generic characteristic-zero inequality gives 14 at order 10, 16 at order 11, and 19, 20, 22 at orders 13, 14, 15. It proves 17 at order 12; the stronger characteristic-zero bound of 18 is known mathematically but is not yet a completed Lean proof. The [logarithmic refinement](lean/RKCert/ERKLogarithmic.lean) proves 30 at order 20 in characteristic zero; it does not certify the stronger ordered-field floor of 32.
-- DIRK: the ring theorem reaches the strongest characteristic-zero and ordered endpoint at every order through 11. Higher finite exclusions are still being formalized.
+- DIRK: the ring theorem reaches the strongest characteristic-zero and ordered endpoint at every order through 11. The [grade-six proof](lean/RKCert/DirkGradeSix.lean) also reaches the current strongest floors of 15 and 17 at orders 12 and 13 over characteristic-zero rings. Higher finite exclusions are still being formalized.
 - Strict SDIRK: the complete current lower column is checked in all four settings, including the separate seven-stage bound at order six in characteristic zero. Over arbitrary rings the current order-six floor is six.
 
 ## Latest archived results

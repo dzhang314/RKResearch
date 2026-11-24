@@ -20,3 +20,5 @@ public import RKCert.NativeInterface
 
 public import RKCert.OrderTwelveGhost
 public import RKCert.OrderTwelveDivisors
+
+public import RKCert.DirkGradeSix

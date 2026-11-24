@@ -204,3 +204,10 @@ Audit with `lake env lean FiniteERK16to19Audit.lean`, `lake env lean AuditDIRKEv
 The supporting [DIRK refinement](DIRK15-REFINEMENT.md), [weighted fifth-debut](DIRK-WEIGHTED-FIVE.md), and [fixed Radau](DIRK15-RADAU.md) arguments are independent chapter entries.
 
 [Lean and Mathlib release compatibility](RELEASE-COMPATIBILITY.md) lists the verified versions and the exact tested proof snapshot.
+
+## Ordered ERK order 13 and characteristic-zero DIRK order 17
+
+- [ERK order 13](ERK-ORDER-THIRTEEN.md): at least 20 stages over ordered fields. The proof does not claim the result in unordered characteristic zero.
+- [DIRK order 17](DIRK-ORDER-SEVENTEEN.md): at least 24 stages over every characteristic-zero field and commutative ring, strengthening the previous unrestricted 23-stage bound. [Early marked surplus](DIRK17-EARLY-SURPLUS.md) is one of the physical cases.
+
+The named targets are `RKCert.ExplicitOrderThirteen` and `RKCert.DirkOrder17FullCharZero`. They are separate from the default umbrella while aggregate integration is checked.

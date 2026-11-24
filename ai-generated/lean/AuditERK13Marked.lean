@@ -1,0 +1,9 @@
+import RKCert.ERKOrder13RemainingMarked
+#print axioms RKCert.Paired.FiniteMidpoint.order13_marked_no_leak
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_early_clean_ghost_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_late_clean_ghost_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_late_clean_pure_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_rank_three_two_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_pure_literal_factor
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_rank_two_early_factors
+#print axioms RKCert.Paired.FiniteMidpoint.order13_fin19_remaining_marked

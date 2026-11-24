@@ -1,0 +1,15 @@
+import RKCert.ExplicitOrderThirteen
+
+#print axioms RKCert.explicit_order13_not_fin19
+#print axioms RKCert.explicit_order13_ge20_orderedField
+#print axioms RKCert.ExplicitPadding.preserve_order
+#print axioms RKCert.Paired.FiniteMidpoint.order13_fin19_forces_low_fourth_defect
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_rank_three_low_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_rank_four_outside_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_rank_four_inside_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_rank_five_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_joint_unaliased_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_filled_pair
+#print axioms RKCert.Paired.FiniteMidpoint.marked13_alias_primitive_ne_zero
+#print axioms RKCert.Paired.FiniteMidpoint.Pencil13.no_common_tape
+#print axioms RKCert.DenseCommonRoot.no_common_read

@@ -1,0 +1,8 @@
+import RKCert.ERKOrder13FullOdd
+#print axioms RKCert.Paired.FiniteMidpoint.full_odd_order13_impossible
+#print axioms RKCert.Paired.FiniteMidpoint.order13_fin19_zero_first_adjoint
+#print axioms RKCert.Paired.FiniteMidpoint.order13_fin19_prefix_and_full_eleven
+#print axioms RKCert.Paired.FiniteMidpoint.order13_full_rank_two_four_impossible
+#print axioms RKCert.Paired.OwnerCompression.residual_merge_annih
+#print axioms RKCert.Paired.tied_adjoint_profile_impossible
+#print axioms RKCert.Paired.repair_partial_top

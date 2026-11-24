@@ -1,0 +1,10 @@
+✔ [2137/2150] Built RKCert.OrderTwelveMeshPolynomials (3.4s)
+✔ [2139/2150] Built RKCert.OrderTwelveLeakage (3.4s)
+✔ [2143/2150] Built RKCert.OrderTwelveRankTwoClosure (6.5s)
+✔ [2144/2150] Built RKCert.OrderTwelveMultiplierProfile (6.6s)
+✔ [2145/2150] Built RKCert.OrderTwelveChronologicalContrast (8.4s)
+✔ [2146/2150] Built RKCert.OrderTwelveOffMask (11s)
+✔ [2147/2150] Built RKCert.OrderTwelveContrastGates (9.4s)
+✔ [2148/2150] Built RKCert.ExplicitOrderTwelve (3.5s)
+✔ [2149/2150] Built RKCert (1.6s)
+Build completed successfully (2150 jobs).

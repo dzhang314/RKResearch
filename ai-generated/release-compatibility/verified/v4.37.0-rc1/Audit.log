@@ -1,0 +1,126 @@
+'RKCert.hasTreeOrderAtLeast_iff_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Tree.density_chain' depends on axioms: [propext]
+'RKCert.chain_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.stageWeight_chain_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.weight_chain_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order_le_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Tree.mem_through' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.checkTreeOrder_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ClassicalRK4.explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ClassicalRK4.order_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ClassicalRK4.not_order_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ChainOnly.chains_pass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ChainOnly.fork_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ChainOnly.not_order_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.RationalDIRK7.lowerTriangular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.RationalDIRK7.row_sums' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.RationalDIRK7.variable_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.RationalDIRK7.order_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.RationalDIRK7.bush_eight_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.RationalDIRK7.not_order_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Tree.density_attach_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.rootCut_stage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.treeError_sub_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.rootCutPair_eq_zero_of_treeOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.hasTreeOrderAtLeast_iff_rootCutTests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.mixedResidualWeight_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.mixedResidualWeight_eq_zero_of_treeOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.hasTreeOrderAtLeast_iff_residualProductTests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.MonomialOnly.explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.MonomialOnly.moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.MonomialOnly.monomial_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.MonomialOnly.quadratic_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.MonomialOnly.doubleBranch_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.MonomialOnly.not_order_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.isUnit_nat_of_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.factorial_isUnit_of_treeOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.factorial_isUnit_iff_treeDensities' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.treeDensity_isUnit_of_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.balancedRootCut_of_treeOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.hasTreeOrderAtLeast_iff_balancedRootCuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.scaledRootCut_stage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.scaledRootCutPair_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.scaled_normalizedCut_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.hasTreeOrderAtLeast_iff_scaledRootCutTests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.commutator_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.probe_commutator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.stage_rank_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.nonsingular_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.nonsingular_quadratic_le20' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.ring_quadratic_le20' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.strict_sdirk_ring_le20' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.floor_table' does not depend on any axioms
+'RKCert.DIRKFinite.positive_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.DIRKFinite.order_three_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.DIRKFinite.order_four_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.DIRKFinite.order_five_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.mem_of_invariant_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.zeroSpace_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.back_lt_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.terminal_single_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.backward_endpoint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.uniform_erk_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.uniform_erk_ring_through_twenty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.zmod77_no_five_stage_order_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.zmod23_no_26_stage_order_nineteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirk_floor_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirkRingFloor_le_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirkRingFloor_through20' does not depend on any axioms
+'RKCert.DIRKFloorRegression.order_seven_rational_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.DIRKFloorRegression.order_twenty_mod529' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.P6.cubic_front_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.canonical_rows_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.order_six_terminal_chronology' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.P6.order_six_weighted_terminal_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.P6.Op.second_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.P6.nonzero_chart_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.order_six_six_stages_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.seven_le_of_strict_order_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.seven_le_of_strict_order_six_marked_ring' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.Paired.SDIRK.seven_le_of_strict_order_six_unit_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.strict_char_zero_marked_ring_le20' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.strict_char_zero_unit_ring_le20' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.SDIRK.strict_char_zero_table' depends on axioms: [propext]
+RKCert.Paired.exists_causal_coord_family.{u_1} {K : Type u_1} [Field K] {s : ℕ} (H : Submodule K (Vec K s)) :
+  ∃ n e w,
+    (∀ (i : Fin s) (j : Fin n), i < e j → w i j = 0) ∧
+      (∀ v ∈ H, ∀ (i : Fin s), ∑ j, w i j * v (e j) = v i) ∧ ∀ (i : Fin n), IsCoordPivot H (e i)
+RKCert.Paired.exact_receiver_prefix_order.{u_1} {K : Type u_1} [Field K] {s : ℕ} {A : Fin s → Fin s → K}
+  (ha : StrictLower A) (q : ℕ) (i : Fin s) (hu : nodes A i ≠ 0) (hi : ∀ v ∈ zeroSpace A q, v i = 0) :
+  HasTreeOrderAtLeast (scaleTableau (nodes A i)⁻¹ (prefixTableau A ⋯)) (fun j => (nodes A i)⁻¹ * A i (Fin.castLE ⋯ j)) q
+RKCert.Paired.invariant_forces_two_forward.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {j : ℕ} (ha : StrictLower A) (hj : 3 ≤ j) (hsep : Separated A j)
+  (hC : ∀ v ∈ zeroSpace A j, (diag (nodes A)) v ∈ zeroSpace A j) :
+  Module.finrank K ↥(zeroSpace A j) + 2 ≤ Module.finrank K ↥(zeroSpace A (j + 1))
+RKCert.Paired.no_minimal_five_independent.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  (ha : StrictLower A) (hsep : Separated A 5) (hR : Module.finrank K ↥(zeroSpace A 5) ≤ 4)
+  (hrows : ∀ (i j : Fin s), i < j → ∃ t, t.order ≤ 6 ∧ stageWeight A t i ≠ stageWeight A t j)
+  (hind : signal A (qdef A) 1 ∉ K ∙ qdef A) : False
+RKCert.Paired.CaseII.compressed_caseII_impossible.{u_1} {K : Type u_1} [Field K] [CharZero K] {n : ℕ}
+  {A : Fin n → Fin n → K} (ha : StrictLower A) (hn : 5 ≤ n) (h1 : nodes A (Fin.castLE hn 1) = 1)
+  (hs : ∀ (i : Fin n), qdef A i = 0 ∨ nodes A i = 1 ∧ qdef A i = -(1 / 2))
+  (h3 : zeroSpace A 3 = K ∙ qdef A ⊔ chainSpan A ((mat A) (qdef A)) 0)
+  (h4 : zeroSpace A 4 = K ∙ qdef A ⊔ chainSpan A ((mat A) (qdef A)) 1)
+  (h5 : zeroSpace A 5 = K ∙ qdef A ⊔ chainSpan A ((mat A) (qdef A)) 2)
+  (hrows : ∀ (i j : Fin n), i < j → ∃ t, t.order ≤ 6 ∧ stageWeight A t i ≠ stageWeight A t j) : False
+RKCert.Paired.grade_five_surplus.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  (ha : StrictLower A) (hsep : Separated A 5) : 5 ≤ Module.finrank K ↥(zeroSpace A 5)
+RKCert.erk_stage_surplus_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s p : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b p) (hp : 10 ≤ p) : (3 * p + 1) / 2 - 1 ≤ s
+RKCert.explicit_order10_ge14_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 10) : 14 ≤ s
+RKCert.explicit_order11_ge16_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 11) : 16 ≤ s
+RKCert.explicit_order12_ge17_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 12) : 17 ≤ s
+'RKCert.Paired.invariant_forces_two_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.no_minimal_five_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.CaseII.compressed_caseII_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.grade_five_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.erk_stage_surplus_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order10_ge14_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order11_ge16_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order12_ge17_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.uniform_erk_ring' depends on axioms: [propext, Classical.choice, Quot.sound]

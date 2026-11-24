@@ -1,0 +1,4 @@
+Published source + exact patch reproduces candidate: PASS
+Already-patched candidate accepted byte-for-byte: PASS
+One-byte source change rejected before output creation: PASS
+Out-of-matrix version string rejected before any access/download/build: PASS

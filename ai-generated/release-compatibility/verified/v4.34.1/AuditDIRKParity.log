@@ -1,0 +1,8 @@
+'RKCert.Paired.Terminal.flag_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.floor_later' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.even_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.odd_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.dirk_order17_charZero_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirk_even_native_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirk_odd_native_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirk_order17_charZero_ring' depends on axioms: [propext, Classical.choice, Quot.sound]

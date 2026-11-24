@@ -1,0 +1,24 @@
+import RKCert.ReviewedNative.RationalUpperBaseChange
+
+open RKResearch RKResearch.Certified
+
+#check RationalDIRK7.row_sums
+#check RationalDIRK7.order_seven
+#check RationalDIRK7.eighth_bush_weight
+#check RationalDIRK7.not_order_eight
+#check hasOrder_map_coefficients_iff
+#check exists_explicit_exact_four
+#check exists_strictSDIRK_exact_two
+#check exists_DIRK_variable_diagonal_exact_four
+#check exists_DIRK_variable_diagonal_exact_seven
+
+#print axioms RationalDIRK7.lowerTriangular
+#print axioms RationalDIRK7.row_sums
+#print axioms RationalDIRK7.variable_diagonal
+#print axioms RationalDIRK7.order_seven
+#print axioms RationalDIRK7.not_order_eight
+#print axioms hasOrder_map_coefficients_iff
+#print axioms exists_explicit_exact_four
+#print axioms exists_strictSDIRK_exact_two
+#print axioms exists_DIRK_variable_diagonal_exact_four
+#print axioms exists_DIRK_variable_diagonal_exact_seven

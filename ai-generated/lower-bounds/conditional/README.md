@@ -2,6 +2,9 @@
 
 These proofs concern explicitly stated subclasses, extremal candidates, or fixed construction families. They do not raise the unrestricted stage table. Some results are designed to transfer across several orders.
 
+- [Order 16: a sign-window proof for the centered strong-three chart](erk_order16_strong_three_sign_windows_20261124.md)
+- [Order 19: opposed sign windows exclude the zero-first-seed width-29 chart](erk_order19_zero_first_seed_opposed_windows_20261124.md)
+
 - [Four sharp canonical dense-order returns: same raw pure minor on every split coefficient branch, and the first causal extension obstruction](dirk_canonical_dense_stems_full_raw_rank_and_three_mode_replay_20261124.md)
 - [Every order-sixteen, 22-stage real DIRK has a genuine ordinary pure in the weight kernel by grade five](dirk_order16_every_twenty_two_stage_method_has_a_hidden_fifth_grade_pure_20261124.md)
 - [Exact replay: a Lobatto factor times one unknown affine factor cannot have the first two primitive moments zero at an omitted node](dirk_order16_hidden_five_lobatto_factor_with_one_free_root_replay_20261124.md)

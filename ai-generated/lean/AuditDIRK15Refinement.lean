@@ -1,0 +1,25 @@
+import RKCert.Dirk15SupportRefinement
+#print axioms RKCert.Paired.PivotProjection.contracted_causal
+#print axioms RKCert.Paired.PivotProjection.contracted_commutator_error
+#print axioms RKCert.Paired.order15_local_cubic_chart
+#print axioms RKCert.Paired.order15_local_projects_to_weighted_cut
+#print axioms RKCert.Paired.LocalProjection.WeightedFour.impossible
+#print axioms RKCert.Paired.order15_cubic_budget_nonlocal
+#print axioms RKCert.Paired.order15_minimal_reverse_nonlocal
+#print axioms RKCert.Paired.order15_nonC2_reverse_nonlocal
+#print axioms RKCert.Paired.order15_nonC2_reverse_orbit
+#print axioms RKCert.Paired.order15_nonC2_tau_clean_radau
+#print axioms RKCert.Paired.Signature.balanced_three_two_impossible
+#print axioms RKCert.Paired.ReverseTrace.three_two_contrast_zero
+#print axioms RKCert.Paired.order15_nonC2_cubic_channels
+#print axioms RKCert.Paired.order15_minimal_true_ghost_sandwich
+#print axioms RKCert.Paired.order15_actual_signatures
+#print axioms RKCert.Paired.order15_forward_quartic_cut
+#print axioms RKCert.Paired.order15_reverse_quartic_cut
+#print axioms RKCert.Paired.two_ended_gram_of_mixed
+#print axioms RKCert.Paired.defect_rank_cap_of_maximal
+#print axioms RKCert.Paired.order15_ordinary_core_rank
+#print axioms RKCert.FixedPolynomial.exists_specialization
+#print axioms RKCert.FixedPolynomial.no_common_eval_of_good_prime
+#print axioms RKCert.FixedPolynomial.parameterNorm_degree_le
+#print axioms RKCert.FixedPolynomial.parameterNorm_zero_of_common_root

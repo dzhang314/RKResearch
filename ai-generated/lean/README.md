@@ -194,3 +194,11 @@ Audit with `lake env lean FiniteERK16to19Audit.lean`, `lake env lean AuditDIRKEv
 - [DIRK order 14](DIRK-ORDER-FOURTEEN.md): 19 stages over characteristic-zero fields and commutative rings. The [refunded fifth-debut argument](REFUNDED-FIFTH-DEBUT.md) closes the final one-head chart.
 - [DIRK order 19](ORDER-19-CHARACTERISTIC-ZERO.md): 27 stages over characteristic-zero fields and commutative rings. See [the common short-head ending](NINE-SHORT-HEADS.md) for the reusable last step.
 - [DIRK order 20](DIRK-ORDER-TWENTY.md): at least 29 stages over characteristic-zero fields and commutative rings. This supersedes the intermediate 28-stage Lean proof.
+
+## Remaining low-order ERK and order-15 DIRK cases
+
+- [Order-nine ERK physical reduction](ERK-ORDER-NINE-PHYSICAL-CHART.md): the ordered-field census and the physical stage inputs for the remaining two-curve scalar test.
+- [Order-15 DIRK without C(2)](DIRK15-NONC2-ENDPOINT.md): the 20-stage candidate is impossible.
+- [Order-15 DIRK with C(2) and early marked rank surplus](ORDER15-EARLY-MARKED-SURPLUS.md): the 20-stage candidate is also impossible. The minimal marked chart remains open in Lean, so neither certificate changes the coverage table.
+
+The supporting [DIRK refinement](DIRK15-REFINEMENT.md), [weighted fifth-debut](DIRK-WEIGHTED-FIVE.md), and [fixed Radau](DIRK15-RADAU.md) arguments are independent chapter entries.

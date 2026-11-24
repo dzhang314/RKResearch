@@ -1,0 +1,24 @@
+import RKCert.Dirk15RadauSupport
+#print axioms RKCert.FixedPolynomial.Specialization.distinct_roots_of_good_prime
+#print axioms RKCert.FixedPolynomial.Radau77569.root_table
+#print axioms RKCert.FixedPolynomial.Radau77569.left_three_gram
+#print axioms RKCert.FixedPolynomial.Radau77569.right_omitted_moment
+#print axioms RKCert.FixedPolynomial.Radau77569.right_omitted_moment_rec
+#print axioms RKCert.FixedPolynomial.Radau77569.mask_covers
+#print axioms RKCert.FixedPolynomial.Radau77569.scaled_grid_good
+#print axioms RKCert.FixedPolynomial.Radau77569.exists_grid_lift
+#print axioms RKCert.FixedPolynomial.Radau77569.normalized_no_common_root
+#print axioms RKCert.FixedPolynomial.Radau77569.exists_eight_ports
+#print axioms RKCert.FixedPolynomial.Radau77569.left_three_primitive_gram_ne
+#print axioms RKCert.FixedPolynomial.Radau77569.right_omitted_primitive_ne
+#print axioms RKCert.Paired.radau_cardinal_integral_ne
+#print axioms RKCert.Paired.ReverseTrace.missing_radau_port
+#print axioms RKCert.Paired.order15_nonC2_quartics_of_three_missing
+#print axioms RKCert.Paired.order15_nonC2_dirty_count
+#print axioms RKCert.Paired.order15_nonC2_ghost_count
+#print axioms RKCert.Paired.order15_nonC2_clean_port_count
+#print axioms RKCert.Paired.order15_nonC2_quartic_channels
+#print axioms RKCert.Paired.order15_nonC2_early_ranks
+#print axioms RKCert.Compound.invariant_exterior_line
+#print axioms RKCert.Compound.gramBlock_det_zero_of_line
+#print axioms RKCert.Compound.polynomial_factor_exterior_line

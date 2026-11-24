@@ -50,3 +50,7 @@ public import RKCert.DirkOrder16Bound
 public import RKCert.DirkOrder14Bound
 public import RKCert.DirkOrderNineteen
 public import RKCert.DirkOrder20TwentyNine
+public import RKCert.ERKOrderNineCensus
+public import RKCert.ERKOrderNineFiveSixAtlas
+public import RKCert.Dirk15NonC2Finish
+public import RKCert.Dirk15EarlySurplus

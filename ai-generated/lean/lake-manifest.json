@@ -3,6 +3,16 @@
   "packagesDir": ".lake/packages",
   "packages": [
     {
+      "type": "path",
+      "scope": "",
+      "name": "RKResearch",
+      "manifestFile": "lake-manifest.json",
+      "inherited": false,
+      "dir": "../..",
+      "copy": false,
+      "configFile": "lakefile.lean"
+    },
+    {
       "url": "https://github.com/leanprover-community/mathlib4.git",
       "type": "git",
       "subDir": null,
@@ -11,7 +21,7 @@
       "name": "mathlib",
       "manifestFile": "lake-manifest.json",
       "inputRev": "v4.36.0",
-      "inherited": false,
+      "inherited": true,
       "configFile": "lakefile.lean"
     },
     {

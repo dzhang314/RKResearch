@@ -29,10 +29,10 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 ## Lean certificate coverage
 
-Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, 48 of the 60 strongest characteristic-zero field entries, and 42 of the 60 strongest ordered-field and real entries. The counts include the grade-five and logarithmic ERK proofs and the DIRK grade-six proof. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.
+Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, 50 of the 60 strongest characteristic-zero field entries, and 43 of the 60 strongest ordered-field and real entries. The counts include the full order-12 ERK exclusion and the characteristic-zero DIRK order-17 floor. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.
 
-- ERK: the generic characteristic-zero inequality gives 14 at order 10, 16 at order 11, and 19, 20, 22 at orders 13, 14, 15. It proves 17 at order 12; the stronger characteristic-zero bound of 18 is known mathematically but is not yet a completed Lean proof. The [logarithmic refinement](lean/RKCert/ERKLogarithmic.lean) proves 30 at order 20 in characteristic zero; it does not certify the stronger ordered-field floor of 32.
-- DIRK: the ring theorem reaches the strongest characteristic-zero and ordered endpoint at every order through 11. The [grade-six proof](lean/RKCert/DirkGradeSix.lean) also reaches the current strongest floors of 15 and 17 at orders 12 and 13 over characteristic-zero rings. Higher finite exclusions are still being formalized.
+- ERK: the generic characteristic-zero inequality gives 14 at order 10, 16 at order 11, and 19, 20, 22 at orders 13, 14, 15. The [order-12 exclusion](lean/ORDER_TWELVE.md) proves the strongest characteristic-zero bound of 18. The [logarithmic refinement](lean/RKCert/ERKLogarithmic.lean) proves 30 at order 20 in characteristic zero; it does not certify the stronger ordered-field floor of 32.
+- DIRK: the ring theorem reaches the strongest characteristic-zero and ordered endpoint at every order through 11. The [grade-six proof](lean/RKCert/DirkGradeSix.lean) also reaches the current strongest floors of 15 and 17 at orders 12 and 13 over characteristic-zero rings. The [parity theorem](lean/DIRK-PARITY.md) reaches 23 at order 17 in characteristic zero; the ordered-field floor of 24 is not yet Lean-certified. Other higher finite exclusions are still being formalized.
 - Strict SDIRK: the complete current lower column is checked in all four settings, including the separate seven-stage bound at order six in characteristic zero. Over arbitrary rings the current order-six floor is six.
 
 ## Latest archived results
@@ -42,3 +42,5 @@ Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, 48 of
 - [Alternative order-16 DIRK construction in 27 stages](upper-bounds/real-algebraic/dirk_one_self_tapped_hermite_relay_p16_and_sharp_canonical_dense_stems_20261124.md). This confirms the same upper endpoint by a different exact construction.
 - [Characteristic-zero ERK proof in Lean](lean/RKCert/ERKGradeFive.lean) and [characteristic-zero strict SDIRK order six](lean/RKCert/SDIRKOrderSix.lean).
 - [Recent conditional and architecture-specific results](lower-bounds/conditional/README.md), kept separate from unrestricted numerical endpoints.
+
+- [Simplified reverse proof for order 12](lean/REVERSE_OBSTRUCTION.md) and [finite-exception characteristic transfer](lower-bounds/CHARACTERISTIC-TRANSFER.md).

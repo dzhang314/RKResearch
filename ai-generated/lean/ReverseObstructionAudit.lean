@@ -1,0 +1,22 @@
+import RKCert.OrderTwelveReverseObstruction
+#print axioms RKCert.Paired.ReverseHull.cubic_tree
+#print axioms RKCert.Paired.ReverseHull.reverse_primitive_annih
+#print axioms RKCert.Paired.ReverseHull.two_failed_of_three_moments
+#print axioms RKCert.Paired.ReverseHull.back_mask_rank_jump
+#print axioms RKCert.Paired.ReverseHull.backward_invariant_rank_jump
+#print axioms RKCert.Paired.ReverseHull.not_invariant_of_reverse_rank_two
+#print axioms RKCert.Paired.OrderTwelve.reverse_seven_nine
+#print axioms RKCert.Paired.OrderTwelve.actual_reverse_seven_nine
+#print axioms RKCert.Paired.OrderTwelve.reverse_first_pivot
+#print axioms RKCert.Paired.OrderTwelve.localized_reverse_chart
+#print axioms RKCert.Paired.OrderTwelve.reflected_active_avoid
+#print axioms RKCert.Paired.OrderTwelve.localized_reverse_rows
+#print axioms RKCert.ReverseTwoNode.head_first
+#print axioms RKCert.ReverseTwoNode.head_second
+#print axioms RKCert.ReverseTwoNode.two_node_step
+#print axioms RKCert.ReverseTwoNode.two_node_confinement
+#print axioms RKCert.Paired.OrderTwelve.reduce_reverse_rows
+#print axioms RKCert.Paired.OrderTwelve.back_one_noninvariant
+#print axioms RKCert.Paired.OrderTwelve.saturated_e9_escape
+#print axioms RKCert.Paired.OrderTwelve.saturated_e10_top
+#print axioms RKCert.Paired.OrderTwelve.actual_e10_top

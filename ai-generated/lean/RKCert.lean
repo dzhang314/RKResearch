@@ -22,3 +22,8 @@ public import RKCert.OrderTwelveGhost
 public import RKCert.OrderTwelveDivisors
 
 public import RKCert.DirkGradeSix
+
+public import RKCert.ExplicitOrderTwelve
+
+public import RKCert.DirkParityFloor
+public import RKCert.ERKLowFourOff

@@ -137,8 +137,8 @@ out an entire doubling interval of unit growth. The proof at order 20 gives
 30, not the stronger ordered-field lower bound of 32.
 
 [Appendix B](APPENDIX_B.md) contains the two exact scalar exclusions needed
-for the separate 18-stage order-12 result. Those exclusions are checked;
-the complete rank argument that supplies their hypotheses is not yet checked.
+for the 18-stage order-12 result. The full rank argument that supplies their
+hypotheses is now checked and combined with those exclusions.
 
 Run `lake env lean AuditERKField.lean` and `lake env lean AppendixBAudit.lean`
 after building to reproduce the additional axiom audits.
@@ -146,3 +146,14 @@ after building to reproduce the additional axiom audits.
 The [DIRK grade-six proof](DIRK-GRADE6.md) also verifies the current
 characteristic-zero lower bounds of 15 stages at order 12 and 17 at order 13.
 It does not establish the stronger finite order-14 and order-15 endpoints.
+
+
+## Order 12 and higher DIRK
+
+- [Order-12 ERK proof](ORDER_TWELVE.md): at least 18 stages over all characteristic-zero fields and commutative rings. The [reverse argument](REVERSE_OBSTRUCTION.md) eliminates the earlier case split.
+- [DIRK parity proof](DIRK-PARITY.md): general bounds at even and odd orders, reaching 23 at order 17 in characteristic zero.
+- [Low-order ERK chart reductions](ERK-LOW8-9.md): necessary conditions for the order-eight and order-nine candidates, not full exclusions.
+
+After `lake build`, run `lake env lean OrderTwelveAudit.lean`,
+`lake env lean ReverseObstructionAudit.lean`, `lake env lean AuditDIRKParity.lean`,
+and `lake env lean AuditLowERK.lean` to reproduce the additional axiom audits.

@@ -1,0 +1,21 @@
+RKCert.explicit_order14_ge21_field.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {b : Vec K s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 14) : 21 ≤ s
+RKCert.explicit_order14_ge21_charZero.{u_2} {R : Type u_2} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 14) : 21 ≤ s
+RKCert.explicit_order14_ge21_orderedField.{u_2} {F : Type u_2} [Field F] [LinearOrder F] [IsStrictOrderedRing F] {s : ℕ}
+  {A : Fin s → Fin s → F} {b : Vec F s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 14) : 21 ≤ s
+'RKCert.explicit_order14_ge21_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order14_ge21_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.explicit_order14_ge21_orderedField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.saturated_short' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.even_seven_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.even_seven_leak_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.even_seven_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.physical_seven_knot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.fixed14_divisor_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.seven_terminal_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.cubic_from_seven_masks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OrderedGram.cauchyForm_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OrderedGram.pow_square_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OrderedGram.interval_square_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OrderedGram.ordered_anchored_separation' depends on axioms: [propext, Classical.choice, Quot.sound]

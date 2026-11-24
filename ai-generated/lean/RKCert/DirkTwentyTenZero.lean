@@ -66,7 +66,7 @@ theorem twenty_all_ten_zero (ha:LowerArray A) (ho:HasTreeOrderAtLeast A b 20) (s
       _≤Z:=sup_le le_sup_right (inv.trans wu)
   have products(a:Vec K (s+1))(ha':a∈F 5)(v:Vec K (s+1))(hv:v∈F 5):a*v∈Z:=by
     rw [ident]
-    exact ⟨zeroSpace_mul ha' hv,by
+    exact ⟨zeroSpace_mul (A:=A) (m:=5) (n:=5) ha' hv,by
       change a (Fin.last s)*v (Fin.last s)=0
       rw [z9 _ (zeroSpace_mono A (by decide:5≤9) ha'),zero_mul]⟩
   obtain ⟨_,_,U,w,r,short,ui,_,band⟩:=nine_rank_dispatch ha ho (by decide) h.three.ge h.five.2

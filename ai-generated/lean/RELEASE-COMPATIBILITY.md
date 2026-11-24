@@ -1,5 +1,7 @@
 # Checked Lean and Mathlib releases
 
-The [full compatibility report](../release-compatibility-eb274e3/README.md) covers the 280-module proof tree at `eb274e3` with the portability patch applied. It passed clean builds on x86-64 Linux with these matching Lean and Mathlib releases: v4.34.1, v4.35.0, v4.36.0, and the current v4.37.0-rc1. Each run built every proof module, issued 428 axiom queries, and ran 30 named kernel replays.
+The [latest four-pair release report](../release-compatibility-b083e10/README.md) verifies the 469-module proof tree at `b083e10` with its cumulative portability patch. On x86-64 Linux, the same source passed matched Lean and Mathlib versions v4.34.1, v4.35.0, v4.36.0, and the current v4.37.0-rc1. Each clean run compiled all 469 proof modules and the umbrella, compiled all 43 audit scripts (875 queries), and ran 43 named kernel replays.
 
-The 36 checked proof edits are applied to the sources in this commit. The default Lean and Mathlib pins remain v4.36.0. This report does not certify the later proof modules added after `eb274e3`; its fingerprints and reproduction commands refer to that exact earlier tree. Historical release candidates and mismatched Lean/Mathlib pairs are outside the matrix.
+The proof edits are applied to the matching files in this commit. The default pins remain Lean and Mathlib v4.36.0. The report and reproduction commands cover only the exact tested source, not proof files added after `b083e10`. Historical release candidates and mismatched Lean/Mathlib pairs are not tested.
+
+Earlier snapshots: [280 modules](../release-compatibility-eb274e3/README.md), [192 modules](../release-compatibility-1e545bba/README.md), [152 modules](../release-compatibility/README.md).

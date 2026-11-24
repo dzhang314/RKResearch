@@ -25,7 +25,7 @@ theorem order15_nonC2_has_core :
   obtain ⟨n,_,hn⟩ := exists_plateau C F
   refine ⟨core C F n,?_,invariant_of_plateau hn,fun _ q t => invariant_le_core q t n⟩
   intro v hv
-  simpa only [pow_zero,one_apply_eq_self] using (mem_core.mp hv) 0 (Nat.zero_le n)
+  simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using (mem_core.mp hv) 0 (Nat.zero_le n)
 
 omit [CharZero K] in
 theorem nonC2Ghosts_mulClosed : Clock.MulClosed (nonC2Ghosts A b) := by

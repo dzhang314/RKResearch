@@ -27,7 +27,7 @@ theorem order15_nonC2_square_tail (ha : LowerArray A) (ho : HasTreeOrderAtLeast 
   have basis := ((chain_le_iff (T:=C') (U:=nonC2Ghosts A b) (w:=w) 2).mp le_rfl).2
   have hw : w∈zeroSpace A 5 := paid0.ge (by
     change w∈chain C' (nonC2Ghosts A b) w 2
-    simpa only [pow_zero,one_apply_eq_self] using basis 0 (by decide))
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using basis 0 (by decide))
   have cw : C' w∈zeroSpace A 5 := paid0.ge (by
     change C' w∈chain C' (nonC2Ghosts A b) w 2
     simpa only [pow_one] using basis 1 (by decide))
@@ -38,15 +38,15 @@ theorem order15_nonC2_square_tail (ha : LowerArray A) (ho : HasTreeOrderAtLeast 
   have xpure (i : Fin 3) : x i∈zeroSpace A 10 := by
     fin_cases i
     · change (C'^0) (w*w)∈zeroSpace A 10
-      simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mul hw hw
+      simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mul (A:=A) (m:=5) (n:=5) hw hw
     · change (C'^1) (w*w)∈zeroSpace A 10
       rw [pow_one,show C' (w*w)=C' w*w by
         ext j; simp only [C',diag_apply,Pi.mul_apply]; ring]
-      exact zeroSpace_mul cw hw
+      exact zeroSpace_mul (A:=A) (m:=5) (n:=5) cw hw
     · change (C'^2) (w*w)∈zeroSpace A 10
       rw [show (C'^2) (w*w)=C' w*C' w by
         ext j; simp only [C',Clock.pow_diag_apply,Pi.mul_apply,diag_apply]; ring]
-      exact zeroSpace_mul cw cw
+      exact zeroSpace_mul (A:=A) (m:=5) (n:=5) cw cw
   have parts (i : Fin 3) :=
     h.actual_parts ha ho hq (j:=10) (by decide) (by decide) (zeroSpace_le_treeSpace A 10 (xpure i))
   choose P dP v ov dec using parts
@@ -83,7 +83,7 @@ theorem order15_nonC2_square_tail (ha : LowerArray A) (ho : HasTreeOrderAtLeast 
   have step (i : Fin 2) : ∃ a : K,X*J i.castSucc-J i.succ=C a*G := by
     have xv : x i.succ=C' (x i.castSucc) := by
       change (C'^(i.val+1)) (w*w)=_
-      rw [pow_succ',mul_apply_eq_comp]
+      rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
       rfl
     have e : evaluateColumn A (P i.succ)+v i.succ =
         evaluateColumn A (X*P i.castSucc)+C' (v i.castSucc) := by

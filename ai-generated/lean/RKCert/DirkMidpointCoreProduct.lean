@@ -19,8 +19,9 @@ theorem local_product_to_core (h:MidpointHead A m U w r) (hm:m=7 ∨ m=8)
   have low:7≤m:=by rcases hm with rfl|rfl <;>decide
   have up:m≤8:=by rcases hm with rfl|rfl <;>decide
   let c:=nodes A
+  have product : v*t∈zeroSpace A 10 := zeroSpace_mul (A:=A) (m:=5) (n:=5) (v:=v) (w:=t) hv ht
   obtain ⟨H,x,hx,tail,rep⟩:=h.pure_decompose hm ha ho he (q:=10) (by omega) (by omega)
-    (zeroSpace_mul hv ht) (fun i clean=>by rw [Pi.mul_apply,clean v hv,zero_mul])
+    product (fun i clean=>by rw [Pi.mul_apply,clean v hv,zero_mul])
   have kill(i:Fin (s+1)) : (c i-a)*(v*t) i=0 :=by
     by_cases eqn:c i=a
     · rw [eqn,sub_self,zero_mul]

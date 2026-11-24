@@ -52,9 +52,9 @@ theorem grade_five_ten_surplus (ha:LowerArray A) (ho:HasTreeOrderAtLeast A b p) 
       rw [show 5+(a+1)-1=5+a by omega,show 5+(a+1)=5+a+1 by omega] at gain
       omega
   obtain ⟨r,U,w,hr,hU,hUF,_,base,_,_,_,normalized,_⟩:=Clock.ordinary_normal_head A 5 (flat 0 (by decide)) (non 0 (by decide))
-  have last:F 10=chain C U w (r+5):=Clock.ordinary_staircase hU hr base flat (fun k h=>non k h.le) 5 le_rfl
-  have count:=extra_head_sites (by omega) hU last (non 5 le_rfl)
-  have keep(u:Vec K s)(hu:u∈U)(x:Vec K s)(hx:x∈F 5):u*x∈U:=Clock.core_mul hU hUF normalized count last.le hu hx
+  have last:F 10=chain C U w (r+5):=Clock.ordinary_staircase (A:=A) (j:=5) (h:=5) (r:=r) hU hr base flat (fun k h=>non k h.le) 5 le_rfl
+  have count:=extra_head_sites (n:=r+5) (by omega) hU last (non 5 le_rfl)
+  have keep(u:Vec K s)(hu:u∈U)(x:Vec K s)(hx:x∈F 5):u*x∈U:=Clock.core_mul (A:=A) (j:=5) (k:=5) (n:=r+5) hU hUF normalized count last.le hu hx
   have alg:Clock.MulClosed U:=fun u hu v hv=>keep u hu v (hUF hv)
   have w0:w∈F 5 := by
     have hh:=((chain_le_iff (T:=C) (U:=U) (w:=w) r).mp base.ge).2 0 hr
@@ -62,7 +62,7 @@ theorem grade_five_ten_surplus (ha:LowerArray A) (ho:HasTreeOrderAtLeast A b p) 
   obtain ⟨v,_,disjoint,same⟩:=Clock.disjoint_head hU alg (fun u hu=>keep u hu w w0)
   have first:F 5=chain C U v r:=base.trans (same r).symm
   have ending:F 10=chain C U v (r+5):=last.trans (same (r+5)).symm
-  have sites:=extra_head_sites (by omega) hU ending (non 5 le_rfl)
+  have sites:=extra_head_sites (n:=r+5) (by omega) hU ending (non 5 le_rfl)
   have paid:=((chain_le_iff (T:=C) (U:=U) (w:=v) r).mp first.ge).2
   have v0:v∈F 5:=by simpa using paid 0 hr
   have power (k:ℕ) (hk:k≤(r-1)+(r-1)):(C^k) (v*v)∈chain C U v (r+5):=by
@@ -75,8 +75,8 @@ theorem grade_five_ten_surplus (ha:LowerArray A) (ho:HasTreeOrderAtLeast A b p) 
       ext t
       simp only [C,Clock.pow_diag_apply,Pi.mul_apply]
       rw [←kl,pow_add];ring
-    rw [eqn,←ending];exact zeroSpace_mul (paid _ hi) (paid _ hl)
-  obtain ⟨P,dP,val⟩:=Clock.multiplier_degree (a:=v) (c:=nodes A) disjoint sites power
+    rw [eqn,←ending];exact zeroSpace_mul (A:=A) (m:=5) (n:=5) (paid _ hi) (paid _ hl)
+  obtain ⟨P,dP,val⟩:=Clock.multiplier_degree (a:=v) (c:=nodes A) (n:=r+5) (d:=(r-1)+(r-1)) disjoint sites power
   have nz:P≠0:=by
     rintro rfl
     have z:v=0:=by ext i;by_contra nn;exact nn ((val i nn).trans eval_zero)

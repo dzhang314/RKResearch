@@ -112,7 +112,7 @@ theorem ActualSixOnFG.prefix_on_hull
     exact (monic_nodalHull S).coeff_natDegree
   have t1 : t=1 := by
     have a := congrArg (fun P : K[X]=>P.coeff 4) e
-    simpa [Q,lobattoPencil,coeff_C_mul,hC] using a.symm
+    simpa [Q,lobattoPencil,coeff_monomial,coeff_C_mul,hC] using a.symm
   have f : Q=nodalHull S := by simpa [t1] using e
   change nodalHull T=X*Q
   rw [nodalHull_erase_factor T zero,map_zero,sub_zero,f]

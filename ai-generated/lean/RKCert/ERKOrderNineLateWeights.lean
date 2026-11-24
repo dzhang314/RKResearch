@@ -98,7 +98,7 @@ theorem radauCubic_degree_le : (radauCubic : K[X]).natDegree≤3 := by
 theorem radauCubic_ne_zero : (radauCubic : K[X])≠0 := by
   intro h
   have he := congrArg (fun P : K[X] => P.coeff 3) h
-  norm_num [radauCubic] at he
+  norm_num [radauCubic,coeff_monomial] at he
 
 /-- Orthogonality of the cubic against the first three monomials,
 verified directly with the pinned algebraic primitive. -/

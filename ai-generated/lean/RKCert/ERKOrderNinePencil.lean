@@ -53,7 +53,7 @@ theorem beta_quartic_decoder (Q : K[X]) (hd : Q.natDegree ≤ 4)
     linear_combination -420*hm0 + 2100*hm1 - 2100*hm2 - (5/3)*h4
   ext n
   by_cases hn : n≤4
-  · interval_cases n <;> simp [lobattoPencil,h0,h1,h2,h4]
+  · interval_cases n <;> simp [lobattoPencil,coeff_monomial,h0,h1,h2,h4]
   · have hn0 : 0≠n := by omega
     have hn1 : 1≠n := by omega
     have hn2 : 2≠n := by omega
@@ -145,7 +145,7 @@ theorem lobattoPencil_complement_primitive_ne_zero {l h d a : K} {P : K[X]}
   have c2 := hc 2 (by decide)
   have c3 := hc 3 (by decide)
   have c4 := hc 4 (by decide)
-  norm_num [lobattoPencil,h34,h44] at c2 c3 c4
+  norm_num [lobattoPencil,coeff_monomial,h34,h44] at c2 c3 c4
   rw [primitive_eval_X_quadratic P dP] at hz
   have hfact : h^2*(6*P.coeff 0+4*P.coeff 1*h+3*P.coeff 2*h^2)=0 := by
     linear_combination 12*hz

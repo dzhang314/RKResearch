@@ -1,0 +1,984 @@
+{
+  "scope": "Observed differences among standard axiom diagnostics, not a causal or general soundness conclusion.",
+  "declarations": {
+    "RKCert.Paired.fixedRadauCompatInt_mod353": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_0": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_1": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_10": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_11": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_12": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_13": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_14": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_15": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_16": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_17": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_18": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_19": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_2": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_20": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_21": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_22": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_23": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_24": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_25": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_26": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_27": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_28": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_29": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_3": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_30": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_31": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_32": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_33": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_34": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_35": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_36": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_37": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_38": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_39": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_4": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_40": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_41": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_5": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_6": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_7": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_8": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.checked_9": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Sextic.table_checked": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Tree.density_attach_cut": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.Tree.mem_through": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RKCert.factorial_isUnit_iff_treeDensities": {
+      "v4.34.1": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.35.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.36.0": [
+        "Quot.sound",
+        "propext"
+      ],
+      "v4.37.0-rc1": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

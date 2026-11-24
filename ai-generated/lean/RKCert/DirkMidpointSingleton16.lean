@@ -31,7 +31,7 @@ theorem no_single_head16 (h:MidpointHead A 8 U w 1)
     rw [zg,mul_zero,natDegree_zero] at dd
     omega
   obtain ⟨H,x,hx,tail,rep⟩:=h.pure_decompose (Or.inr rfl) ha ho he (q:=10) (by decide) (by decide)
-    (zeroSpace_mul w5 w5) (fun i cl=>by rw [Pi.mul_apply,cl w w5,zero_mul])
+    (zeroSpace_mul (A:=A) (m:=5) (n:=5) w5 w5) (fun i cl=>by rw [Pi.mul_apply,cl w w5,zero_mul])
   have w0:w∈O 1 := by rw [show O 1=zeroSpace A 5 from (h.band 5 le_rfl (by decide)).symm];exact w5
   have pw:weightedEval c w (lobatto 8)∈O 9:=by
     apply chain_length_le (by have:=lobatto_degree (K:=K) (m:=8) (by decide);omega:1+(lobatto (K:=K) 8).natDegree≤9)
@@ -61,7 +61,7 @@ theorem no_single_head16 (h:MidpointHead A 8 U w 1)
   have sq:w*w∈O 6:=by rw [rep,zH,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add];exact hx
   have band (k:ℕ) (hk:k≤0):(diag c^k) (w*w)∈chain (diag c) U w 6 := by
     obtain rfl : k=0:=by omega
-    simpa only [pow_zero,one_apply_eq_self] using sq
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using sq
   obtain ⟨P,dp,val⟩:=Clock.multiplier_degree (a:=w) (c:=c) cut (by dsimp [c];omega:6<(Clock.headSites c w).card) band
   have deg:P.natDegree≤5:=by
     rcases dp with z|z

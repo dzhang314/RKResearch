@@ -1,0 +1,9 @@
+'RKCert.Paired.Terminal.grade_five_ten_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.grade_six_escapes_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Endpoint.normalized_four_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.EndpointPhysical.physical_four_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.EndpointPhysical.quintic_four_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrdinaryTrace.two_pivots_for_clean_quintic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.OrdinaryTrace.primitive_sequence_at_zero_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,8 @@
+'RKCert.FixedFactor.off_interpolation_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.pairBase_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.off_poly_of_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.pairBase_le_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.five_on_state_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.one_slot_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.order9_no_six_off_five_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedFactor.order9_six_off_forces_six_on' depends on axioms: [propext, Classical.choice, Quot.sound]

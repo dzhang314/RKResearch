@@ -1,0 +1,348 @@
+{
+  "coverageNote": "Isolated floor diagnostics only, with exact earlier same-release import basis; never a clean compatibility row.",
+  "leanAndMathlibTag": "v4.34.1",
+  "earlierSameTagImportBasisManifestSHA256": "5764aead631377f3d70deef5afc65d766eef32fbccb00dc0a439d7412688288f",
+  "firstPublishedSourceSHA256": "bdf39b8dc65cdd73b2b68ab0b8bc45f9781fa85ea92b5804466390532545e4d3",
+  "finalCommonSourceSHA256": "f31683d3c15004a0eaf7692cfe214a0ef600bcd95d65d98f864f171824fb3267",
+  "attempts": [
+    {
+      "sourceManifestPrefix": "bdf39b8dc65cdd73",
+      "requested": 189,
+      "completed": 89,
+      "failed": {
+        "RKCert.ChronologicalPivotProjection": {
+          "exit": 1,
+          "firstDiagnostics": []
+        },
+        "RKCert.DirkOneFiberCut": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkOneFiberCut.lean:38:9: error: Tactic `rcases` failed: `x✝ : ?m.125` is not an inductive datatype"
+          ]
+        },
+        "RKCert.DirkPaidReverseBand": {
+          "exit": 0,
+          "firstDiagnostics": [
+            "RKCert/DirkPaidReverseBand.lean:126:30: warning: This simp argument is unused:"
+          ]
+        },
+        "RKCert.ERKOrderNineLateWeights": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/ERKOrderNineLateWeights.lean:98:54: error: unsolved goals"
+          ]
+        },
+        "RKCert.ERKOrderNinePencil": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/ERKOrderNinePencil.lean:56:2: error: unsolved goals",
+            "RKCert/ERKOrderNinePencil.lean:154:2: error: ring failed, ring expressions not equal"
+          ]
+        },
+        "RKCert.LobattoTailRecurrence": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/LobattoTailRecurrence.lean:66:4: error: Invalid alternative name `ind`: Expected `h`",
+            "RKCert/LobattoTailRecurrence.lean:65:4: error: Alternative `h` has not been provided"
+          ]
+        },
+        "RKCert.DirkFiveTenSurplus": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkFiveTenSurplus.lean:25:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (2000000) has been reached"
+          ]
+        }
+      },
+      "blocked": [
+        "RKCert.Dirk15CleanCount",
+        "RKCert.Dirk15DirtyCount",
+        "RKCert.Dirk15EarlyBand",
+        "RKCert.Dirk15EarlyMultiplier",
+        "RKCert.Dirk15EarlyProjectedPivot",
+        "RKCert.Dirk15EarlyPure",
+        "RKCert.Dirk15EarlyScalars",
+        "RKCert.Dirk15EarlySurplus",
+        "RKCert.Dirk15LocalReverse",
+        "RKCert.Dirk15NonC2Cardinal",
+        "RKCert.Dirk15NonC2Early",
+        "RKCert.Dirk15NonC2Finish",
+        "RKCert.Dirk15NonC2FullFlag",
+        "RKCert.Dirk15NonC2GhostExact",
+        "RKCert.Dirk15NonC2Head",
+        "RKCert.Dirk15NonC2HeadPolynomial",
+        "RKCert.Dirk15NonC2Orbit",
+        "RKCert.Dirk15NonC2RadauCut",
+        "RKCert.Dirk15NonC2ReverseOrbit",
+        "RKCert.Dirk15NonC2Square",
+        "RKCert.Dirk15NonC2SquareAlgebra",
+        "RKCert.Dirk15OrdinaryCore",
+        "RKCert.Dirk15RadauSupport",
+        "RKCert.Dirk15ReverseNonlocal",
+        "RKCert.Dirk15SupportRefinement",
+        "RKCert.Dirk15WeightedLocalCut",
+        "RKCert.Dirk19PaidKernel",
+        "RKCert.Dirk19Rank",
+        "RKCert.Dirk19Terminal",
+        "RKCert.Dirk19TerminalSlice",
+        "RKCert.DirkActualTreeHead",
+        "RKCert.DirkClockRetraction",
+        "RKCert.DirkClockRetractionOps",
+        "RKCert.DirkCubicSignedBudget",
+        "RKCert.DirkJointClockRetraction",
+        "RKCert.DirkMidpointCardinal",
+        "RKCert.DirkMidpointCoreProduct",
+        "RKCert.DirkMidpointFactor",
+        "RKCert.DirkMidpointGridIdeal",
+        "RKCert.DirkMidpointProducts",
+        "RKCert.DirkMidpointSingleton16",
+        "RKCert.DirkMidpointTwoHead",
+        "RKCert.DirkOrder14Bound",
+        "RKCert.DirkOrder16Bound",
+        "RKCert.DirkOrder20TwentyNine",
+        "RKCert.DirkOrderNineteen",
+        "RKCert.DirkPaidCubic",
+        "RKCert.DirkPaidPorts",
+        "RKCert.DirkTailGridShift",
+        "RKCert.DirkTenDoubleBand",
+        "RKCert.DirkTenShortMask",
+        "RKCert.DirkTreeClockTail",
+        "RKCert.DirkTreeHeadUnique",
+        "RKCert.DirkTwentyCleanBudget",
+        "RKCert.DirkTwentyGrid",
+        "RKCert.DirkTwentyHiddenSix",
+        "RKCert.DirkTwentyJoint",
+        "RKCert.DirkTwentyOmitted",
+        "RKCert.DirkTwentyOrigin",
+        "RKCert.DirkTwentyRanks",
+        "RKCert.DirkTwentyTenZero",
+        "RKCert.DirkTwentyTerminal",
+        "RKCert.DirkWeightedFiveOriginal",
+        "RKCert.ERKLowEarlyKernels",
+        "RKCert.ERKLowEarlyPrimitive",
+        "RKCert.ERKLowMomentCollision",
+        "RKCert.ERKLowPseudoRemainder",
+        "RKCert.ERKOrderNineCensus",
+        "RKCert.ERKOrderNineFiveOnFiveOff",
+        "RKCert.ERKOrderNineFiveSixAdjoints",
+        "RKCert.ERKOrderNineFiveSixAtlas",
+        "RKCert.ERKOrderNineFiveSixCollisionPoly",
+        "RKCert.ERKOrderNineFiveSixFG",
+        "RKCert.ERKOrderNineFiveSixFirstPlacement",
+        "RKCert.ERKOrderNineFiveSixK8",
+        "RKCert.ERKOrderNineFiveSixK8Actual",
+        "RKCert.ERKOrderNineFiveSixOffPlacement",
+        "RKCert.ERKOrderNineFiveSixOnPlacement",
+        "RKCert.ERKOrderNineFiveSixPrefix",
+        "RKCert.ERKOrderNineFiveSixQuartic",
+        "RKCert.ERKOrderNineFiveSixStates",
+        "RKCert.ERKOrderNineFiveSixWeights",
+        "RKCert.ERKOrderNineHighOff",
+        "RKCert.ERKOrderNineHighOffHead",
+        "RKCert.ERKOrderNineHighOffTerminal",
+        "RKCert.ERKOrderNineLateAggregation",
+        "RKCert.ERKOrderNineLatePrefixRanks",
+        "RKCert.ERKOrderNineSixOff",
+        "RKCert.ERKOrderNineSixSix",
+        "RKCert.LobattoPaidTails",
+        "RKCert.RadauGridComplete",
+        "RKCert.RadauMissingRoot",
+        "RKCert.RadauRightDivisor"
+      ]
+    },
+    {
+      "sourceManifestPrefix": "ed016bdefad7988f",
+      "requested": 189,
+      "completed": 135,
+      "failed": {
+        "RKCert.Dirk15DirtyCount": {
+          "exit": 0,
+          "firstDiagnostics": [
+            "RKCert/Dirk15DirtyCount.lean:64:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.Dirk15DirtyCount.0.RKCert.Paired.no_fiber_mass`:"
+          ]
+        },
+        "RKCert.ERKLowEarlyPrimitive": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/ERKLowEarlyPrimitive.lean:102:37: error: unsolved goals"
+          ]
+        },
+        "RKCert.RadauGridComplete": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/RadauGridComplete.lean:80:11: error(lean.unknownIdentifier): Unknown identifier `div_left_inj₀`"
+          ]
+        },
+        "RKCert.DirkMidpointCoreProduct": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkMidpointCoreProduct.lean:11:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached",
+            "RKCert/DirkMidpointCoreProduct.lean:55:8: error: (kernel) unknown constant 'RKCert.Paired.Terminal.MidpointHead.local_product_to_core'"
+          ]
+        },
+        "RKCert.DirkFiveTenSurplus": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkFiveTenSurplus.lean:25:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (2000000) has been reached"
+          ]
+        },
+        "RKCert.ERKOrderNineFiveSixK8Actual": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/ERKOrderNineFiveSixK8Actual.lean:24:2: error: unsolved goals",
+            "RKCert/ERKOrderNineFiveSixK8Actual.lean:44:4: error: Type mismatch: After simplification, term",
+            "RKCert/ERKOrderNineFiveSixK8Actual.lean:46:47: error: unsolved goals"
+          ]
+        }
+      },
+      "blocked": [
+        "RKCert.Dirk15CleanCount",
+        "RKCert.Dirk15EarlyMultiplier",
+        "RKCert.Dirk15EarlyProjectedPivot",
+        "RKCert.Dirk15EarlyPure",
+        "RKCert.Dirk15EarlyScalars",
+        "RKCert.Dirk15EarlySurplus",
+        "RKCert.Dirk15NonC2Cardinal",
+        "RKCert.Dirk15NonC2Early",
+        "RKCert.Dirk15NonC2Finish",
+        "RKCert.Dirk15NonC2FullFlag",
+        "RKCert.Dirk15NonC2GhostExact",
+        "RKCert.Dirk15NonC2Head",
+        "RKCert.Dirk15NonC2HeadPolynomial",
+        "RKCert.Dirk15NonC2Orbit",
+        "RKCert.Dirk15NonC2Square",
+        "RKCert.Dirk15RadauSupport",
+        "RKCert.Dirk19PaidKernel",
+        "RKCert.Dirk19Rank",
+        "RKCert.Dirk19Terminal",
+        "RKCert.Dirk19TerminalSlice",
+        "RKCert.DirkMidpointCardinal",
+        "RKCert.DirkMidpointFactor",
+        "RKCert.DirkMidpointSingleton16",
+        "RKCert.DirkMidpointTwoHead",
+        "RKCert.DirkOrder14Bound",
+        "RKCert.DirkOrder16Bound",
+        "RKCert.DirkOrder20TwentyNine",
+        "RKCert.DirkOrderNineteen",
+        "RKCert.DirkTenDoubleBand",
+        "RKCert.DirkTenShortMask",
+        "RKCert.DirkTwentyCleanBudget",
+        "RKCert.DirkTwentyGrid",
+        "RKCert.DirkTwentyHiddenSix",
+        "RKCert.DirkTwentyJoint",
+        "RKCert.DirkTwentyOmitted",
+        "RKCert.DirkTwentyOrigin",
+        "RKCert.DirkTwentyRanks",
+        "RKCert.DirkTwentyTenZero",
+        "RKCert.DirkTwentyTerminal",
+        "RKCert.ERKLowEarlyKernels",
+        "RKCert.ERKLowPseudoRemainder",
+        "RKCert.ERKOrderNineFiveSixAtlas",
+        "RKCert.ERKOrderNineFiveSixCollisionPoly",
+        "RKCert.ERKOrderNineFiveSixFirstPlacement",
+        "RKCert.ERKOrderNineFiveSixOffPlacement",
+        "RKCert.ERKOrderNineFiveSixOnPlacement",
+        "RKCert.ERKOrderNineFiveSixQuartic",
+        "RKCert.RadauRightDivisor"
+      ]
+    },
+    {
+      "sourceManifestPrefix": "4fa11726b1b2b962",
+      "requested": 189,
+      "completed": 152,
+      "failed": {
+        "RKCert.Dirk15DirtyCount": {
+          "exit": 0,
+          "firstDiagnostics": [
+            "RKCert/Dirk15DirtyCount.lean:118:0: warning: automatically included section variable(s) unused in theorem `RKCert.Paired.cubic_nodal_mass_zero_of_small_sites`:"
+          ]
+        },
+        "RKCert.DirkTenShortMask": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkTenShortMask.lean:12:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached",
+            "RKCert/DirkTenShortMask.lean:37:8: error: (kernel) unknown constant '_private.RKCert.DirkTenShortMask.0.RKCert.Paired.Terminal.square_in_band'"
+          ]
+        },
+        "RKCert.DirkMidpointSingleton16": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkMidpointSingleton16.lean:10:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached"
+          ]
+        },
+        "RKCert.DirkMidpointTwoHead": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/DirkMidpointTwoHead.lean:11:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (2400000) has been reached"
+          ]
+        },
+        "RKCert.ERKOrderNineFiveSixAtlas": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/ERKOrderNineFiveSixAtlas.lean:115:4: error: Type mismatch: After simplification, term"
+          ]
+        }
+      },
+      "blocked": [
+        "RKCert.Dirk15CleanCount",
+        "RKCert.Dirk15EarlyMultiplier",
+        "RKCert.Dirk15EarlyProjectedPivot",
+        "RKCert.Dirk15EarlyPure",
+        "RKCert.Dirk15EarlyScalars",
+        "RKCert.Dirk15EarlySurplus",
+        "RKCert.Dirk15NonC2Cardinal",
+        "RKCert.Dirk15NonC2Early",
+        "RKCert.Dirk15NonC2Finish",
+        "RKCert.Dirk15NonC2FullFlag",
+        "RKCert.Dirk15NonC2GhostExact",
+        "RKCert.Dirk15NonC2Head",
+        "RKCert.Dirk15NonC2HeadPolynomial",
+        "RKCert.Dirk15NonC2Orbit",
+        "RKCert.Dirk15NonC2Square",
+        "RKCert.Dirk15RadauSupport",
+        "RKCert.Dirk19PaidKernel",
+        "RKCert.Dirk19Rank",
+        "RKCert.Dirk19Terminal",
+        "RKCert.Dirk19TerminalSlice",
+        "RKCert.DirkOrder14Bound",
+        "RKCert.DirkOrder16Bound",
+        "RKCert.DirkOrder20TwentyNine",
+        "RKCert.DirkOrderNineteen",
+        "RKCert.DirkTwentyCleanBudget",
+        "RKCert.DirkTwentyGrid",
+        "RKCert.DirkTwentyHiddenSix",
+        "RKCert.DirkTwentyJoint",
+        "RKCert.DirkTwentyOmitted",
+        "RKCert.DirkTwentyOrigin",
+        "RKCert.DirkTwentyTenZero",
+        "RKCert.DirkTwentyTerminal"
+      ]
+    },
+    {
+      "sourceManifestPrefix": "03bfada4d00e81c7",
+      "requested": 189,
+      "completed": 188,
+      "failed": {
+        "RKCert.ERKOrderNineFiveSixAtlas": {
+          "exit": 1,
+          "firstDiagnostics": [
+            "RKCert/ERKOrderNineFiveSixAtlas.lean:115:4: error: Type mismatch: After simplification, term"
+          ]
+        }
+      },
+      "blocked": []
+    },
+    {
+      "sourceManifestPrefix": "f31683d3c15004a0",
+      "requested": 189,
+      "completed": 189,
+      "failed": {},
+      "blocked": []
+    }
+  ],
+  "separateCollisionDiagnostic": {
+    "leanAndMathlibTag": "v4.36.0",
+    "compilerTextBefore": "CollisionJoin.lean:1:0: error: import RKCert.RadauMissingRoot failed, environment already contains 'RKCert.Paired.ReverseTrace.pair_polynomial' from RKCert.Dirk14QuarticPhysical\n",
+    "compilerTextAfter": "RKCert.Paired.ReverseTrace.pair_polynomial.{u_1} {K : Type u_1} [Field K] [CharZero K] {s p n : ℕ}\n  {A : Fin s → Fin s → K} {b w : RKCert.Paired.Vec K s} {Q : Polynomial K} (h : RKCert.Paired.ReverseTrace A b p n w Q)\n  (ho : RKCert.HasTreeOrderAtLeast A b p) (P : Polynomial K) (hp : n + P.natDegree + 1 ≤ p) :\n  (RKCert.Paired.row ((RKCert.Endpoint.weightedEval (RKCert.Paired.mirror A) w) P)) 1 =\n    Polynomial.eval 1 (RKCert.Endpoint.formalPrimitive (P * Q))\nRKCert.Paired.ReverseTrace.pair_polynomial_radau.{u_1} {K : Type u_1} [Field K] [CharZero K] {s p n : ℕ}\n  {A : Fin s → Fin s → K} {b θ : RKCert.Paired.Vec K s} {P : Polynomial K} (h : RKCert.Paired.ReverseTrace A b p n θ P)\n  (ho : RKCert.HasTreeOrderAtLeast A b p) (Q : Polynomial K) (hp : n + Q.natDegree + 1 ≤ p) :\n  (RKCert.Paired.row θ) ((RKCert.Endpoint.weightedEval (RKCert.Paired.mirror A) 1) Q) =\n    RKCert.Paired.unitIntegral (Q * P)\n",
+    "scope": "Two-module import and signature checks for the standalone one-file Radau correction, separately from portability changes."
+  }
+}

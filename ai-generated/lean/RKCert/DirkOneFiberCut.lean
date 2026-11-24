@@ -35,7 +35,7 @@ theorem core_cut_of_codimension (inc:V≤U) (vi:V.map (diag c)≤V) (ui:U.map (d
     intro u hu
     have h:weightedEval c u 1=u:=by ext i;simp
     rwa [h]
-  obtain ⟨v,hv,vout⟩:=IsConcreteLE.not_le_iff_exists.mp (fun a:U≤V=>same (le_antisymm inc a))
+  obtain ⟨v,hv,vout⟩:=Set.not_subset.mp (show ¬(U : Set (Vec K s)) ⊆ V from fun a : U≤V => same (le_antisymm inc a))
   have witness:∃a∈sites c,fiber c a v∉V:=by
     by_contra! neg
     apply vout

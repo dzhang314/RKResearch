@@ -1,0 +1,13 @@
+'RKCert.Paired.PivotProjection.exists_clock_retraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.PivotProjection.ClockRetraction.contractedOp_commutator_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.Paired.LocalProjection.WeightedFive.early_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.LocalProjection.WeightedFive.refund_fifth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.LocalProjection.WeightedFive.paired_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.LocalProjection.WeightedFive.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.projected_weighted_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.no_invariant_grade5_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_ghosts_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_no_hyperplane' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_head' depends on axioms: [propext, Classical.choice, Quot.sound]

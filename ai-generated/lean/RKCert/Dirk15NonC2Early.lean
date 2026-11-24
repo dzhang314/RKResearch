@@ -104,7 +104,7 @@ theorem order15_nonC2_early_ranks_of_channels (ha : LowerArray A) (ho : HasTreeO
   have hU : MaximalClockCore A 7 U := by
     refine ⟨?_,invariant_of_plateau hn,fun _ q t => invariant_le_core q t n⟩
     intro v hv
-    simpa only [pow_zero,one_apply_eq_self] using (mem_core.mp hv) 0 (Nat.zero_le n)
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using (mem_core.mp hv) 0 (Nat.zero_le n)
   have U4 : F 4≤U := h4.trans (hU.2.2 _ (order15_nonC2_ghosts_le ha ho hq) nonC2Ghosts_invariant)
   have H := order15_nonC2_rank_chart ha ho hq
   obtain ⟨_,cap,big⟩ := order15_ordinary_core_rank ha ho (e:=1) H.f3 H.f6 H.f7 U hU

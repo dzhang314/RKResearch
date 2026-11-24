@@ -66,7 +66,7 @@ theorem orbit_last (H : Order15NonC2Chart A b) (n : ℕ) {v : Vec K 20}
     (by
       have p := ((chain_le_iff (T:=diag (nodes A)) (U:=nonC2Ghosts A b)
         (w:=h.head) 4).mp le_rfl).2 0 (by decide)
-      simpa only [pow_zero,one_apply_eq_self] using p)
+      simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using p)
   have le : h.orbit n≤LinearMap.ker (LinearMap.proj (Fin.last 19)) := by
     apply (chain_le_iff _).mpr
     refine ⟨fun z hz => lastU z hz,fun k _ => ?_⟩

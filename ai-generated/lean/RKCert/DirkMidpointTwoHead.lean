@@ -31,11 +31,11 @@ theorem no_two_head (h:MidpointHead A m U w 2) (hm:m=7 ∨ m=8)
       ∃H:K[X],∃v∈O,LobattoPaidTail m (2*m-11) H ∧ x=evalNodes A H+v :=by
     have g:=h.pure_decompose hm ha ho he (q:=10) (by omega) (by omega) hx cl
     simpa only [show 2*m-10-1=2*m-11 by omega] using g
-  obtain ⟨H₀,x₀,h₀,z₀,e₀⟩:=dec (w*w) (zeroSpace_mul w5 w5)
+  obtain ⟨H₀,x₀,h₀,z₀,e₀⟩:=dec (w*w) (zeroSpace_mul (A:=A) (m:=5) (n:=5) w5 w5)
     (fun i cl=>by rw [Pi.mul_apply,cl w w5,zero_mul])
-  obtain ⟨H₁,x₁,h₁,z₁,e₁⟩:=dec (T (w*w)) (by rw [id1];exact zeroSpace_mul c5 w5)
+  obtain ⟨H₁,x₁,h₁,z₁,e₁⟩:=dec (T (w*w)) (by rw [id1];exact zeroSpace_mul (A:=A) (m:=5) (n:=5) c5 w5)
     (fun i cl=>by rw [id1,Pi.mul_apply,cl w w5,mul_zero])
-  obtain ⟨H₂,x₂,h₂,z₂,e₂⟩:=dec (T (T (w*w))) (by rw [id2];exact zeroSpace_mul c5 c5)
+  obtain ⟨H₂,x₂,h₂,z₂,e₂⟩:=dec (T (T (w*w))) (by rw [id2];exact zeroSpace_mul (A:=A) (m:=5) (n:=5) c5 c5)
     (fun i cl=>by rw [id2,Pi.mul_apply,cl _ c5,zero_mul])
   have link0:=h.link_products hm ha ho he z₀.degree z₁.degree h₀ h₁ e₀ e₁
   have link1:=h.link_products hm ha ho he z₁.degree z₂.degree h₁ h₂ e₁ e₂
@@ -47,11 +47,11 @@ theorem no_two_head (h:MidpointHead A m U w 2) (hm:m=7 ∨ m=8)
   have hs:=h.physical_head_site_bound (hm.imp_right Or.inl) ha ho he (q:=2*m-3) (by omega) (by omega)
   have band(k:ℕ) (hk:k≤2):(T^k) (w*w)∈O:=by
     interval_cases k
-    · rw [pow_zero,one_apply_eq_self,e₀,vanish.1,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
+    · rw [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,e₀,vanish.1,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
       exact h₀
     · rw [pow_one,e₁,vanish.2.1,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
       exact h₁
-    · rw [pow_succ',pow_one,mul_apply_eq_comp,e₂,vanish.2.2,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
+    · rw [pow_succ',pow_one,Module.End.mul_eq_comp,LinearMap.comp_apply,e₂,vanish.2.2,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
       exact h₂
   obtain ⟨P,dp,val⟩:=Clock.multiplier_degree (c:=nodes A) cut (by omega:2+(10-5)<(Clock.headSites (nodes A) w).card) band
   have degrees:P.natDegree≤4:=by

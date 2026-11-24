@@ -1,0 +1,59 @@
+RKCert.Paired.FiniteMidpoint.saturated.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ}
+  {A : Fin (s + 1) → Fin (s + 1) → K} {b : Vec K (s + 1)} {q ε : ℕ} (ha : StrictLower A)
+  (ho : HasTreeOrderAtLeast A b (2 * q + ε)) (hq : 8 ≤ q) (he : ε ≤ 1) (hsize : s + 1 ≤ 3 * q + 2 * ε - 1) :
+  Saturated A b q ε
+RKCert.Paired.FiniteMidpoint.midpoint_noninvariant.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ}
+  {A : Fin (s + 1) → Fin (s + 1) → K} {b : Vec K (s + 1)} {q ε : ℕ} (ha : StrictLower A)
+  (ho : HasTreeOrderAtLeast A b (2 * q + ε)) (S : Saturated A b q ε) (hq : 8 ≤ q) {j : ℕ} (hj : 5 ≤ j) (uq : j ≤ q) :
+  ¬Submodule.map (diag (nodes A)) (zeroSpace A j) ≤ zeroSpace A j
+RKCert.Paired.FiniteMidpoint.head_chart.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ}
+  {A : Fin (s + 1) → Fin (s + 1) → K} {b : Vec K (s + 1)} {q ε : ℕ} (ha : StrictLower A)
+  (ho : HasTreeOrderAtLeast A b (2 * q + ε)) (S : Saturated A b q ε) (hq : 8 ≤ q) : ∃ r U w, HeadChart A q r U w
+RKCert.Paired.FiniteMidpoint.margin.{u_1} {K : Type u_1} [Field K] {s : ℕ} {A : Fin (s + 1) → Fin (s + 1) → K}
+  {b : Vec K (s + 1)} [CharZero K] {q ε : ℕ} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b (2 * q + ε))
+  (hq : 8 ≤ q) (he : ε ≤ 1) (S : Saturated A b q ε) : Margin A b q ε (ε - Module.finrank K ↥(back A b 0))
+RKCert.Paired.FiniteMidpoint.even_terminal_column.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Fin (s + 1) → Fin (s + 1) → K} {b : Vec K (s + 1)} [CharZero K] {q : ℕ} (ha : StrictLower A)
+  (ho : HasTreeOrderAtLeast A b (2 * q)) (hq : 8 ≤ q) (S : Saturated A b q 0) :
+  nodes A (Fin.last s) = 1 ∧ terminal s ∈ treeSpace A q
+RKCert.Paired.FiniteMidpoint.even_last_zero.{u_1} {K : Type u_1} [Field K] {s : ℕ} {A : Fin (s + 1) → Fin (s + 1) → K}
+  {b : Vec K (s + 1)} [CharZero K] {q : ℕ} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b (2 * q)) (hq : 8 ≤ q)
+  (S : Saturated A b q 0) (v : Vec K (s + 1)) : v ∈ zeroSpace A q → v (Fin.last s) = 0
+RKCert.Paired.ReverseHull.reverse_primitive_annih_six.{u_1} {s : ℕ} {K : Type u_1} [Field K] {A : Fin s → Fin s → K}
+  {b : Vec K s} [CharZero K] {p : ℕ} (ho : HasTreeOrderAtLeast A b p) (j : ℕ) (hp : j + 7 ≤ p) (P : Polynomial K)
+  (hP : P.natDegree ≤ 5) :
+  (transMat A) ((Endpoint.weightedEval (mirror A) b) P) -
+      (Endpoint.weightedEval (mirror A) b) (Endpoint.formalPrimitive P) ∈
+    annih (treeSpace A j)
+RKCert.Paired.ReverseHull.three_failed_of_five_moments.{u_1} {s : ℕ} {K : Type u_1} [Field K] [CharZero K]
+  (c v : Vec K s) (U : Submodule K (Vec K s)) (hm : Endpoint.MaskInvariant c U) (mass : ∀ u ∈ U, ∑ i, u i = 0)
+  (e : ∀ (k : ℕ), 1 ≤ k → k ≤ 5 → ∑ i, c i ^ k * v i = 1 / ↑(k + 1)) : 3 ≤ (Endpoint.failedNodes c v U s).card
+RKCert.Paired.FiniteMidpoint.finite_reverse_gain.{u_1} {K : Type u_1} [Field K] [CharZero K] {s p : ℕ}
+  {A : Fin (s + 1) → Fin (s + 1) → K} {b : Vec K (s + 1)} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b p)
+  (d j r : ℕ) (hr : 2 ≤ r) (hr3 : r ≤ 3) (hp : 6 ≤ p) (hpay : j + 2 * r + 1 ≤ p)
+  (htail : d ≠ 0 → nodes A (Fin.last s) = 1)
+  (hC : Submodule.map (diag (nodes A)) (treePlus A d (j + 1)) ≤ treePlus A d (j + 1)) :
+  Module.finrank K ↥(treePlus A d j) + r ≤ Module.finrank K ↥(treePlus A d (j + 1))
+RKCert.Paired.FiniteMidpoint.band_staircase.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ}
+  {A : Fin (s + 1) → Fin (s + 1) → K} {b : Vec K (s + 1)} {q ε d : ℕ} (ha : StrictLower A)
+  (ho : HasTreeOrderAtLeast A b (2 * q + ε)) (hq : 8 ≤ q) (M : Margin A b q ε d) {a l : ℕ}
+  {U : Submodule K (Vec K (s + 1))} {w : Vec K (s + 1)} (hlo : q ≤ a + 1) (hL : 0 < l)
+  (hU : Submodule.map (diag (nodes A)) U ≤ U)
+  (E : treePlus A d (a + 1) = polyBand A a ⊔ OneEscape.chain (diag (nodes A)) U w l)
+  (rNow : Module.finrank K ↥(treePlus A d (a + 1)) = q + (a + 1) + 1 + d)
+  (rPrev : Module.finrank K ↥(treePlus A d (a + 1 - 1)) = if a + 1 = q then 2 * q - 1 + d else q + (a + 1) + d)
+  (k : ℕ) :
+  a + 1 + k ≤ 2 * q + ε - 3 →
+    treePlus A d (a + 1 + k) = polyBand A a ⊔ OneEscape.chain (diag (nodes A)) U w (l + k) ∧
+      Module.finrank K ↥(treePlus A d (a + 1 + k)) = q + (a + 1 + k) + 1 + d ∧
+        Module.finrank K ↥(treePlus A d (a + 1 + k - 1)) = if a + 1 + k = q then 2 * q - 1 + d else q + (a + 1 + k) + d
+'RKCert.Paired.FiniteMidpoint.saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.midpoint_noninvariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.head_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.even_terminal_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.even_last_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.ReverseHull.reverse_primitive_annih_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.ReverseHull.three_failed_of_five_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.finite_reverse_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.band_staircase' depends on axioms: [propext, Classical.choice, Quot.sound]

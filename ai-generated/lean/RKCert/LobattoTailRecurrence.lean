@@ -63,7 +63,7 @@ theorem closed_lobatto_small_factor_detect
     (nz : Q≠0) (dQ : Q.natDegree≤q+1) (f : (X-1)*lobatto m ∣ Q*H) : H=0 := by
   have all (n : ℕ) (hn : n<m) : tailMoment n H=0 := by
     induction n using Nat.strong_induction_on with
-    | ind n ih =>
+    | _ n ih =>
       by_cases hp : n≤q
       · exact paid n hp
       let k := n-Q.natDegree

@@ -78,7 +78,9 @@ private theorem no_fiber_mass {n : ℕ} (c w : Vec K s)
       intro e
       have zz := atSite a ha
       rw [e] at zz
-      simp [f] at zz
+      have q : (1:K)=0 := by simpa [f] using zz.symm
+      have nq : ((1:ℕ):K)=((0:ℕ):K) := by simpa only [Nat.cast_one,Nat.cast_zero] using q
+      exact (by decide : (1:ℕ)≠0) (Nat.cast_injective nq)
     have deg : P.natDegree < S.card := (natDegree_lt_iff_degree_lt hP).mpr
       (Lagrange.degree_interpolate_lt (s:=S) f (Set.injOn_id _))
     calc

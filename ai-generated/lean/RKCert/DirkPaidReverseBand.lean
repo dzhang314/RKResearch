@@ -123,7 +123,7 @@ theorem local_words (D:PaidReverseBand A b p H) (ha:LowerArray A) (ho:HasTreeOrd
     have dim:=Submodule.finrank_mono inc; omega
   obtain ⟨w,hw,hnot⟩:=ex
   have base:dirkBack A b 2=chain (diag (mirror A)) (dirkBack A b 1) w 1 := by
-    simp only [chain,pow_zero,one_apply_eq_self]
+    simp only [chain,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
     have hle:dirkBack A b 1≤dirkBack A b 2 := twoOrbit_le_succ ..
     exact (Submodule.eq_of_le_of_finrank_le (sup_le hle ((Submodule.span_singleton_le_iff_mem ..).mpr hw))
       (by rw [Submodule.finrank_sup_span_singleton hnot,r1,r2])).symm

@@ -1,0 +1,1 @@
+All four exact published inputs prepared; root-format patch reproduces checked candidate; one-byte drift and an unsupported release label rejected before output creation.

@@ -1,0 +1,3 @@
+'RKCert.FiveDebut.shiftedPrimitive_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FiveDebut.four_knot_skeleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FiveDebut.five_scalar_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]

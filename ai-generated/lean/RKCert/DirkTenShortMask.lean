@@ -29,7 +29,7 @@ private theorem square_in_band (h:TenDoubleBand A V U g w r n) :
   have z:(T^k) (g*g)=(T^a) g*(T^d) g:=by
     ext i;simp only [T,Clock.pow_diag_apply,Pi.mul_apply];rw [←e,pow_add];ring
   rw [←endp,z]
-  exact zeroSpace_mul (paid _ ha) (paid _ hd)
+  exact zeroSpace_mul (A:=A) (m:=4) (n:=4) (paid _ ha) (paid _ hd)
 
 omit [CharZero K] in
 /-- An actual double band with the one unpaid dimension concentrated only at

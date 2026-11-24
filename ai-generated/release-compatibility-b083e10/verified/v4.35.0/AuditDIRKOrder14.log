@@ -1,0 +1,6 @@
+'RKCert.Paired.dirk_order14_charZero_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirk_order14_charZero_ring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.order14_boundary_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FiveDebut.no_grade5_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FiveDebut.original_refunded_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FiveDebut.five_scalar_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]

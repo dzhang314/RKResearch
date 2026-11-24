@@ -1,0 +1,20 @@
+'RKCert.Paired.Terminal.midpoint_head_of_quartic_hidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.midpoint_head_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.tree_eq_poly_sup_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.clock_poly_of_grid_evaluated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.closed_grid_paid_on_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.midpoint_scalar_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.even_tree_clock_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.even_tree_clock_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.MidpointHead.tree_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.poly_chain_le_head_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.MidpointHead.exact_tree_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.MidpointHead.physical_relation_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.Paired.Terminal.MidpointHead.physical_head_site_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.Paired.Terminal.MidpointHead.tree_polynomial_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.fixed_forward_tree_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.no_shifted_lobatto_factor_mask' depends on axioms: [propext, Classical.choice, Quot.sound]

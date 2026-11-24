@@ -67,10 +67,10 @@ theorem order15_local_cubic_chart (ha : LowerArray A) (ho : HasTreeOrderAtLeast 
     have he := Submodule.finrank_mono hle
     rw [H 3 (by decide) (by decide),H 4 (by decide) (by decide)] at he
     omega
-  obtain ⟨w,hw,hw₀⟩ := IsConcreteLE.not_le_iff_exists.mp not_le
+  obtain ⟨w,hw,hw₀⟩ := Set.not_subset.mp (show ¬(M 4 : Set (Vec K 20)) ⊆ M 3 from not_le)
   have h4 : M 4=chain C' U w 1 := by
     change M 4=U⊔Submodule.span K ({(C'^0) w}:Set (Vec K 20))
-    rw [pow_zero,one_apply_eq_self,←hU]
+    rw [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,←hU]
     symm
     apply Submodule.eq_of_le_of_finrank_eq
       (sup_le h34 ((Submodule.span_singleton_le_iff_mem _ _).mpr hw))

@@ -32,7 +32,7 @@ theorem exists_clock_retraction (c : Vec K s) (U : Submodule K (Vec K s))
   have go (n : ℕ) : ∀ U : Submodule K (Vec K s), finrank K U=n →
       U.map (diag c)≤U → Nonempty (ClockRetraction c U) := by
     induction n using Nat.strong_induction_on with
-    | ind n ih =>
+    | _ n ih =>
       intro U dim inv
       by_cases e : U=⊥
       · subst U
@@ -130,7 +130,9 @@ theorem map_chain (w : Vec K s) (n : ℕ) :
       P.projection ((diag c^r) w)=(diag c^r) (P.projection w) := by
     induction r with
     | zero => simp
-    | succ r ih => rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,P.clock,ih]
+    | succ r ih =>
+      simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+      rw [P.clock,ih]
   have killU : U.map P.projection=⊥ := by
     apply bot_unique
     rintro _ ⟨x,hx,rfl⟩

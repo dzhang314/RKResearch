@@ -71,19 +71,19 @@ theorem finish (R:Budget A) (ha:LowerArray A) (ho:HasTreeOrderAtLeast A b 15) : 
     rw [show 5+(k+1)=6+k by omega,show 2+(k+1)=3+k by omega] at now
     exact now
   have B':=cut R h' ho
-  have v5:v∈zeroSpace A 5:=by simpa only [pow_zero,one_apply_eq_self] using cheap 0 (by decide)
+  have v5:v∈zeroSpace A 5:=by simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using cheap 0 (by decide)
   have cv5:C v∈zeroSpace A 5:=by simpa only [pow_one] using cheap 1 (by decide)
   have invV:=diagonal_product_invariant R B' h' ho (by decide:5+4≤10) eq4.ge v5
   have infK : Infinite K := Infinite.of_injective (fun n:ℕ=>(n:K)) Nat.cast_injective
   obtain ⟨π,rcomm⟩:=@exists_joint_retraction K _ 20 infK (nodes A) v U h.inv invV
   have squares (k:ℕ) (hk:k≤2):v*(C^k) v∈zeroSpace A 10:=by
     rcases (show k=0∨k=1∨k=2 by omega) with rfl|rfl|rfl
-    · simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mul v5 v5
-    · simpa only [pow_one] using zeroSpace_mul v5 cv5
+    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mul (A:=A) (m:=5) (n:=5) v5 v5
+    · simpa only [pow_one] using zeroSpace_mul (A:=A) (m:=5) (n:=5) v5 cv5
     · have eq:v*(C^2) v=C v*C v:=by
         ext i;simp only [Pi.mul_apply,C,diag_apply,Clock.pow_diag_apply];ring
       rw [eq]
-      exact zeroSpace_mul cv5 cv5
+      exact zeroSpace_mul (A:=A) (m:=5) (n:=5) cv5 cv5
   have bad:=projected_multiplier R B' h' ha ho rcomm
     (zeroSpace_mono A (by decide:5≤6) v5) cv5 (n:=2) (by decide) (by decide) squares
   exact esc (paid (pow_mem h.inv bad 2))

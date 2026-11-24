@@ -1,0 +1,29 @@
+'RKCert.FixedPolynomial.Specialization.distinct_roots_of_good_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.root_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.left_three_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.right_omitted_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.right_omitted_moment_rec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.mask_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.scaled_grid_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.exists_grid_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.normalized_no_common_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.exists_eight_ports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.left_three_primitive_gram_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.FixedPolynomial.Radau77569.right_omitted_primitive_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.Paired.radau_cardinal_integral_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.ReverseTrace.missing_radau_port' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_quartics_of_three_missing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_dirty_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_ghost_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_clean_port_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_quartic_channels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order15_nonC2_early_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Compound.invariant_exterior_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Compound.gramBlock_det_zero_of_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Compound.polynomial_factor_exterior_line' depends on axioms: [propext, Classical.choice, Quot.sound]

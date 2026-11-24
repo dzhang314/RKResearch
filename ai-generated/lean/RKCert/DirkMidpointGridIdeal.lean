@@ -23,7 +23,7 @@ theorem orbit_mul_polynomial (inv:U.map (diag (nodes A))≤U) {n:ℕ} (pos:0<n)
     induction i with
     | zero=>simpa using hv
     | succ i ih=>
-      rw [show n+(i+1)=(n+i)+1 by omega,←chain_sup_map inv (by omega),pow_succ',mul_apply_eq_comp]
+      rw [show n+(i+1)=(n+i)+1 by omega,←chain_sup_map inv (by omega),pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
       exact (le_sup_right : (chain (diag (nodes A)) U w (n+i)).map (diag (nodes A))≤ _) ⟨_,ih,rfl⟩
   have poly := congrArg (weightedEval (nodes A) v) Q.as_sum_range
   rw [map_sum] at poly

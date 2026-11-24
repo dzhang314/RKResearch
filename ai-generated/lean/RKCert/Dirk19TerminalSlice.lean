@@ -111,7 +111,7 @@ theorem raised_nine_slice (ha:LowerArray A) (ho:HasTreeOrderAtLeast A b 19) :
     change finrank K (raisedNine A)+5≤finrank K (zeroSpace A 11) at g
     have f:=R.f9;omega
   · intro a ha' v hv
-    rw [eqn];refine ⟨zeroSpace_mul ha' hv,?_⟩
+    rw [eqn];refine ⟨zeroSpace_mul (A:=A) (m:=5) (n:=5) ha' hv,?_⟩
     change a (Fin.last 25)*v (Fin.last 25)=0
     rw [T.f9_zero a (zeroSpace_mono A (by decide:5≤9) ha'),zero_mul]
 end RKCert.Paired.Nineteen

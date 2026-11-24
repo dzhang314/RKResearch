@@ -137,7 +137,9 @@ theorem projected_chain (hi : d i≠0) (loc : ∀ j, c j≠c i → d j=0)
   have hp (r : ℕ) : remove d i ((diag c^r) w)=(diag c^r) (remove d i w) := by
     induction r with
     | zero => simp
-    | succ r ih => rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,remove_clock loc,ih]
+    | succ r ih =>
+      simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+      rw [remove_clock loc,ih]
   induction n with
   | zero => simp [chain,Submodule.map_span,Set.image_singleton,remove_kills hi]
   | succ n ih =>

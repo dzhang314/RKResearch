@@ -20,7 +20,7 @@ theorem order15_cubic_budget_orbit (ha : LowerArray A) (ho : HasTreeOrderAtLeast
   let τ := reverseCubic A b
   have base : M 3=chain T ⊥ τ 1 := by
     change M 3=⊥⊔Submodule.span K ({(T^0) τ}:Set (Vec K 20))
-    rw [pow_zero,one_apply_eq_self,bot_sup_eq]
+    rw [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,bot_sup_eq]
     exact order15_reverseCubic_span h
   have step (k : ℕ) (hl : 3≤k) (hu : k+1≤7) : M (k+1)=M k ⊔ (M k).map T := by
     have hle : M k⊔(M k).map T≤M (k+1) :=

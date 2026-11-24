@@ -125,7 +125,7 @@ theorem diagonal_product_invariant (R:Budget A) (B:Cut A U w r) (h:Heads A U w r
   intro a _
   have uf:=Clock.fiber_mem h.inv a uu
   have tor:v*Clock.fiber (nodes A) a u∈zeroSpace A 10:=
-    zeroSpace_mono A paid (zeroSpace_mul hv (uv uf))
+    zeroSpace_mono A paid (zeroSpace_mul (A:=A) (m:=j) (n:=k) hv (uv uf))
   exact localized_ten R B h ho (a:=a) tor (fun i hi=>by simp [Clock.fiber,hi])
 
 theorem grade_four_in_core (R:Budget A) (B:Cut A U w r) (h:Heads A U w r)
@@ -140,7 +140,7 @@ theorem grade_four_in_core (R:Budget A) (B:Cut A U w r) (h:Heads A U w r)
   have n2:2≤r-1:=by have:=h.len;omega
   have eq:r+3≤(r-1)+4:=by have:=h.len;omega
   exact projected_multiplier R B h ha ho hh (zeroSpace_mono A (by decide:4≤6) hv)
-    (diag_zeroSpace A 4 hv) n2 eq (fun k kk=>zeroSpace_mul hv (cheap k kk))
+    (diag_zeroSpace A 4 hv) n2 eq (fun k kk=>zeroSpace_mul (A:=A) (m:=4) (n:=6) hv (cheap k kk))
 
 end
 end RKCert.Paired.EarlyFifteen

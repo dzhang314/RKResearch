@@ -77,7 +77,9 @@ theorem exists_eight_ports [IsAlgClosed K] :
   let l : K := ((-51480:ℤ):K)
   have ln : l≠0 := by norm_num [l]
   have idiv : Function.Injective (fun x : K => x/l) := fun x y e => by
-    exact (div_left_inj₀ ln).mp e
+    have h := congrArg (fun z : K => z*l) e
+    change (x/l)*l=(y/l)*l at h
+    simpa only [div_mul_cancel₀ _ ln] using h
   have d : P.natDegree=8 := by
     change (gridNormalized.map _).natDegree=8
     rw [normalized_monic.natDegree_map,normalized_degree]

@@ -1,0 +1,504 @@
+--- a/RKCert/ChronologicalPivotProjection.lean
++++ b/RKCert/ChronologicalPivotProjection.lean
+@@ -137,7 +137,9 @@
+   have hp (r : ℕ) : remove d i ((diag c^r) w)=(diag c^r) (remove d i w) := by
+     induction r with
+     | zero => simp
+-    | succ r ih => rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,remove_clock loc,ih]
++    | succ r ih =>
++      simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
++      rw [remove_clock loc,ih]
+   induction n with
+   | zero => simp [chain,Submodule.map_span,Set.image_singleton,remove_kills hi]
+   | succ n ih =>
+--- a/RKCert/Dirk15DirtyCount.lean
++++ b/RKCert/Dirk15DirtyCount.lean
+@@ -78,7 +78,9 @@
+       intro e
+       have zz := atSite a ha
+       rw [e] at zz
+-      simp [f] at zz
++      have q : (1:K)=0 := by simpa [f] using zz.symm
++      have nq : ((1:ℕ):K)=((0:ℕ):K) := by simpa only [Nat.cast_one,Nat.cast_zero] using q
++      exact (by decide : (1:ℕ)≠0) (Nat.cast_injective nq)
+     have deg : P.natDegree < S.card := (natDegree_lt_iff_degree_lt hP).mpr
+       (Lagrange.degree_interpolate_lt (s:=S) f (Set.injOn_id _))
+     calc
+--- a/RKCert/Dirk15EarlyMultiplier.lean
++++ b/RKCert/Dirk15EarlyMultiplier.lean
+@@ -125,7 +125,7 @@
+   intro a _
+   have uf:=Clock.fiber_mem h.inv a uu
+   have tor:v*Clock.fiber (nodes A) a u∈zeroSpace A 10:=
+-    zeroSpace_mono A paid (zeroSpace_mul hv (uv uf))
++    zeroSpace_mono A paid (zeroSpace_mul (A:=A) (m:=j) (n:=k) hv (uv uf))
+   exact localized_ten R B h ho (a:=a) tor (fun i hi=>by simp [Clock.fiber,hi])
+ 
+ theorem grade_four_in_core (R:Budget A) (B:Cut A U w r) (h:Heads A U w r)
+@@ -140,7 +140,7 @@
+   have n2:2≤r-1:=by have:=h.len;omega
+   have eq:r+3≤(r-1)+4:=by have:=h.len;omega
+   exact projected_multiplier R B h ha ho hh (zeroSpace_mono A (by decide:4≤6) hv)
+-    (diag_zeroSpace A 4 hv) n2 eq (fun k kk=>zeroSpace_mul hv (cheap k kk))
++    (diag_zeroSpace A 4 hv) n2 eq (fun k kk=>zeroSpace_mul (A:=A) (m:=4) (n:=6) hv (cheap k kk))
+ 
+ end
+ end RKCert.Paired.EarlyFifteen
+--- a/RKCert/Dirk15EarlySurplus.lean
++++ b/RKCert/Dirk15EarlySurplus.lean
+@@ -71,19 +71,19 @@
+     rw [show 5+(k+1)=6+k by omega,show 2+(k+1)=3+k by omega] at now
+     exact now
+   have B':=cut R h' ho
+-  have v5:v∈zeroSpace A 5:=by simpa only [pow_zero,one_apply_eq_self] using cheap 0 (by decide)
++  have v5:v∈zeroSpace A 5:=by simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using cheap 0 (by decide)
+   have cv5:C v∈zeroSpace A 5:=by simpa only [pow_one] using cheap 1 (by decide)
+   have invV:=diagonal_product_invariant R B' h' ho (by decide:5+4≤10) eq4.ge v5
+   have infK : Infinite K := Infinite.of_injective (fun n:ℕ=>(n:K)) Nat.cast_injective
+   obtain ⟨π,rcomm⟩:=@exists_joint_retraction K _ 20 infK (nodes A) v U h.inv invV
+   have squares (k:ℕ) (hk:k≤2):v*(C^k) v∈zeroSpace A 10:=by
+     rcases (show k=0∨k=1∨k=2 by omega) with rfl|rfl|rfl
+-    · simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mul v5 v5
+-    · simpa only [pow_one] using zeroSpace_mul v5 cv5
++    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mul (A:=A) (m:=5) (n:=5) v5 v5
++    · simpa only [pow_one] using zeroSpace_mul (A:=A) (m:=5) (n:=5) v5 cv5
+     · have eq:v*(C^2) v=C v*C v:=by
+         ext i;simp only [Pi.mul_apply,C,diag_apply,Clock.pow_diag_apply];ring
+       rw [eq]
+-      exact zeroSpace_mul cv5 cv5
++      exact zeroSpace_mul (A:=A) (m:=5) (n:=5) cv5 cv5
+   have bad:=projected_multiplier R B' h' ha ho rcomm
+     (zeroSpace_mono A (by decide:5≤6) v5) cv5 (n:=2) (by decide) (by decide) squares
+   exact esc (paid (pow_mem h.inv bad 2))
+--- a/RKCert/Dirk15LocalReverse.lean
++++ b/RKCert/Dirk15LocalReverse.lean
+@@ -67,10 +67,10 @@
+     have he := Submodule.finrank_mono hle
+     rw [H 3 (by decide) (by decide),H 4 (by decide) (by decide)] at he
+     omega
+-  obtain ⟨w,hw,hw₀⟩ := IsConcreteLE.not_le_iff_exists.mp not_le
++  obtain ⟨w,hw,hw₀⟩ := Set.not_subset.mp (show ¬(M 4 : Set (Vec K 20)) ⊆ M 3 from not_le)
+   have h4 : M 4=chain C' U w 1 := by
+     change M 4=U⊔Submodule.span K ({(C'^0) w}:Set (Vec K 20))
+-    rw [pow_zero,one_apply_eq_self,←hU]
++    rw [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,←hU]
+     symm
+     apply Submodule.eq_of_le_of_finrank_eq
+       (sup_le h34 ((Submodule.span_singleton_le_iff_mem _ _).mpr hw))
+--- a/RKCert/Dirk15NonC2Early.lean
++++ b/RKCert/Dirk15NonC2Early.lean
+@@ -104,7 +104,7 @@
+   have hU : MaximalClockCore A 7 U := by
+     refine ⟨?_,invariant_of_plateau hn,fun _ q t => invariant_le_core q t n⟩
+     intro v hv
+-    simpa only [pow_zero,one_apply_eq_self] using (mem_core.mp hv) 0 (Nat.zero_le n)
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using (mem_core.mp hv) 0 (Nat.zero_le n)
+   have U4 : F 4≤U := h4.trans (hU.2.2 _ (order15_nonC2_ghosts_le ha ho hq) nonC2Ghosts_invariant)
+   have H := order15_nonC2_rank_chart ha ho hq
+   obtain ⟨_,cap,big⟩ := order15_ordinary_core_rank ha ho (e:=1) H.f3 H.f6 H.f7 U hU
+--- a/RKCert/Dirk15NonC2GhostExact.lean
++++ b/RKCert/Dirk15NonC2GhostExact.lean
+@@ -25,7 +25,7 @@
+   obtain ⟨n,_,hn⟩ := exists_plateau C F
+   refine ⟨core C F n,?_,invariant_of_plateau hn,fun _ q t => invariant_le_core q t n⟩
+   intro v hv
+-  simpa only [pow_zero,one_apply_eq_self] using (mem_core.mp hv) 0 (Nat.zero_le n)
++  simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using (mem_core.mp hv) 0 (Nat.zero_le n)
+ 
+ omit [CharZero K] in
+ theorem nonC2Ghosts_mulClosed : Clock.MulClosed (nonC2Ghosts A b) := by
+--- a/RKCert/Dirk15NonC2HeadPolynomial.lean
++++ b/RKCert/Dirk15NonC2HeadPolynomial.lean
+@@ -62,7 +62,7 @@
+     apply h.orbit_last H 4
+     have pp := ((chain_le_iff (T:=diag c) (U:=nonC2Ghosts A b) (w:=w) 4).mp le_rfl).2 0 (by decide)
+     change w∈chain (diag c) (nonC2Ghosts A b) w 4
+-    simpa only [pow_zero,one_apply_eq_self] using pp
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pp
+   have product : G=P*(-Q) := by
+     apply Polynomial.eq_of_degrees_lt_of_eval_finset_eq S
+     · apply degree_le_natDegree.trans_lt
+--- a/RKCert/Dirk15NonC2Orbit.lean
++++ b/RKCert/Dirk15NonC2Orbit.lean
+@@ -66,7 +66,7 @@
+     (by
+       have p := ((chain_le_iff (T:=diag (nodes A)) (U:=nonC2Ghosts A b)
+         (w:=h.head) 4).mp le_rfl).2 0 (by decide)
+-      simpa only [pow_zero,one_apply_eq_self] using p)
++      simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using p)
+   have le : h.orbit n≤LinearMap.ker (LinearMap.proj (Fin.last 19)) := by
+     apply (chain_le_iff _).mpr
+     refine ⟨fun z hz => lastU z hz,fun k _ => ?_⟩
+--- a/RKCert/Dirk15NonC2ReverseOrbit.lean
++++ b/RKCert/Dirk15NonC2ReverseOrbit.lean
+@@ -20,7 +20,7 @@
+   let τ := reverseCubic A b
+   have base : M 3=chain T ⊥ τ 1 := by
+     change M 3=⊥⊔Submodule.span K ({(T^0) τ}:Set (Vec K 20))
+-    rw [pow_zero,one_apply_eq_self,bot_sup_eq]
++    rw [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,bot_sup_eq]
+     exact order15_reverseCubic_span h
+   have step (k : ℕ) (hl : 3≤k) (hu : k+1≤7) : M (k+1)=M k ⊔ (M k).map T := by
+     have hle : M k⊔(M k).map T≤M (k+1) :=
+--- a/RKCert/Dirk15NonC2Square.lean
++++ b/RKCert/Dirk15NonC2Square.lean
+@@ -27,7 +27,7 @@
+   have basis := ((chain_le_iff (T:=C') (U:=nonC2Ghosts A b) (w:=w) 2).mp le_rfl).2
+   have hw : w∈zeroSpace A 5 := paid0.ge (by
+     change w∈chain C' (nonC2Ghosts A b) w 2
+-    simpa only [pow_zero,one_apply_eq_self] using basis 0 (by decide))
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using basis 0 (by decide))
+   have cw : C' w∈zeroSpace A 5 := paid0.ge (by
+     change C' w∈chain C' (nonC2Ghosts A b) w 2
+     simpa only [pow_one] using basis 1 (by decide))
+@@ -38,15 +38,15 @@
+   have xpure (i : Fin 3) : x i∈zeroSpace A 10 := by
+     fin_cases i
+     · change (C'^0) (w*w)∈zeroSpace A 10
+-      simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mul hw hw
++      simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mul (A:=A) (m:=5) (n:=5) hw hw
+     · change (C'^1) (w*w)∈zeroSpace A 10
+       rw [pow_one,show C' (w*w)=C' w*w by
+         ext j; simp only [C',diag_apply,Pi.mul_apply]; ring]
+-      exact zeroSpace_mul cw hw
++      exact zeroSpace_mul (A:=A) (m:=5) (n:=5) cw hw
+     · change (C'^2) (w*w)∈zeroSpace A 10
+       rw [show (C'^2) (w*w)=C' w*C' w by
+         ext j; simp only [C',Clock.pow_diag_apply,Pi.mul_apply,diag_apply]; ring]
+-      exact zeroSpace_mul cw cw
++      exact zeroSpace_mul (A:=A) (m:=5) (n:=5) cw cw
+   have parts (i : Fin 3) :=
+     h.actual_parts ha ho hq (j:=10) (by decide) (by decide) (zeroSpace_le_treeSpace A 10 (xpure i))
+   choose P dP v ov dec using parts
+@@ -83,7 +83,7 @@
+   have step (i : Fin 2) : ∃ a : K,X*J i.castSucc-J i.succ=C a*G := by
+     have xv : x i.succ=C' (x i.castSucc) := by
+       change (C'^(i.val+1)) (w*w)=_
+-      rw [pow_succ',mul_apply_eq_comp]
++      rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+       rfl
+     have e : evaluateColumn A (P i.succ)+v i.succ =
+         evaluateColumn A (X*P i.castSucc)+C' (v i.castSucc) := by
+--- a/RKCert/Dirk19TerminalSlice.lean
++++ b/RKCert/Dirk19TerminalSlice.lean
+@@ -111,7 +111,7 @@
+     change finrank K (raisedNine A)+5≤finrank K (zeroSpace A 11) at g
+     have f:=R.f9;omega
+   · intro a ha' v hv
+-    rw [eqn];refine ⟨zeroSpace_mul ha' hv,?_⟩
++    rw [eqn];refine ⟨zeroSpace_mul (A:=A) (m:=5) (n:=5) ha' hv,?_⟩
+     change a (Fin.last 25)*v (Fin.last 25)=0
+     rw [T.f9_zero a (zeroSpace_mono A (by decide:5≤9) ha'),zero_mul]
+ end RKCert.Paired.Nineteen
+--- a/RKCert/DirkClockRetraction.lean
++++ b/RKCert/DirkClockRetraction.lean
+@@ -32,7 +32,7 @@
+   have go (n : ℕ) : ∀ U : Submodule K (Vec K s), finrank K U=n →
+       U.map (diag c)≤U → Nonempty (ClockRetraction c U) := by
+     induction n using Nat.strong_induction_on with
+-    | ind n ih =>
++    | _ n ih =>
+       intro U dim inv
+       by_cases e : U=⊥
+       · subst U
+@@ -130,7 +130,9 @@
+       P.projection ((diag c^r) w)=(diag c^r) (P.projection w) := by
+     induction r with
+     | zero => simp
+-    | succ r ih => rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,P.clock,ih]
++    | succ r ih =>
++      simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
++      rw [P.clock,ih]
+   have killU : U.map P.projection=⊥ := by
+     apply bot_unique
+     rintro _ ⟨x,hx,rfl⟩
+--- a/RKCert/DirkFiveTenSurplus.lean
++++ b/RKCert/DirkFiveTenSurplus.lean
+@@ -52,9 +52,9 @@
+       rw [show 5+(a+1)-1=5+a by omega,show 5+(a+1)=5+a+1 by omega] at gain
+       omega
+   obtain ⟨r,U,w,hr,hU,hUF,_,base,_,_,_,normalized,_⟩:=Clock.ordinary_normal_head A 5 (flat 0 (by decide)) (non 0 (by decide))
+-  have last:F 10=chain C U w (r+5):=Clock.ordinary_staircase hU hr base flat (fun k h=>non k h.le) 5 le_rfl
+-  have count:=extra_head_sites (by omega) hU last (non 5 le_rfl)
+-  have keep(u:Vec K s)(hu:u∈U)(x:Vec K s)(hx:x∈F 5):u*x∈U:=Clock.core_mul hU hUF normalized count last.le hu hx
++  have last:F 10=chain C U w (r+5):=Clock.ordinary_staircase (A:=A) (j:=5) (h:=5) (r:=r) hU hr base flat (fun k h=>non k h.le) 5 le_rfl
++  have count:=extra_head_sites (n:=r+5) (by omega) hU last (non 5 le_rfl)
++  have keep(u:Vec K s)(hu:u∈U)(x:Vec K s)(hx:x∈F 5):u*x∈U:=Clock.core_mul (A:=A) (j:=5) (k:=5) (n:=r+5) hU hUF normalized count last.le hu hx
+   have alg:Clock.MulClosed U:=fun u hu v hv=>keep u hu v (hUF hv)
+   have w0:w∈F 5 := by
+     have hh:=((chain_le_iff (T:=C) (U:=U) (w:=w) r).mp base.ge).2 0 hr
+@@ -62,7 +62,7 @@
+   obtain ⟨v,_,disjoint,same⟩:=Clock.disjoint_head hU alg (fun u hu=>keep u hu w w0)
+   have first:F 5=chain C U v r:=base.trans (same r).symm
+   have ending:F 10=chain C U v (r+5):=last.trans (same (r+5)).symm
+-  have sites:=extra_head_sites (by omega) hU ending (non 5 le_rfl)
++  have sites:=extra_head_sites (n:=r+5) (by omega) hU ending (non 5 le_rfl)
+   have paid:=((chain_le_iff (T:=C) (U:=U) (w:=v) r).mp first.ge).2
+   have v0:v∈F 5:=by simpa using paid 0 hr
+   have power (k:ℕ) (hk:k≤(r-1)+(r-1)):(C^k) (v*v)∈chain C U v (r+5):=by
+@@ -75,8 +75,8 @@
+       ext t
+       simp only [C,Clock.pow_diag_apply,Pi.mul_apply]
+       rw [←kl,pow_add];ring
+-    rw [eqn,←ending];exact zeroSpace_mul (paid _ hi) (paid _ hl)
+-  obtain ⟨P,dP,val⟩:=Clock.multiplier_degree (a:=v) (c:=nodes A) disjoint sites power
++    rw [eqn,←ending];exact zeroSpace_mul (A:=A) (m:=5) (n:=5) (paid _ hi) (paid _ hl)
++  obtain ⟨P,dP,val⟩:=Clock.multiplier_degree (a:=v) (c:=nodes A) (n:=r+5) (d:=(r-1)+(r-1)) disjoint sites power
+   have nz:P≠0:=by
+     rintro rfl
+     have z:v=0:=by ext i;by_contra nn;exact nn ((val i nn).trans eval_zero)
+--- a/RKCert/DirkJointClockRetraction.lean
++++ b/RKCert/DirkJointClockRetraction.lean
+@@ -78,7 +78,9 @@
+     P.projection ((diag c^k) x)=(diag c^k) (P.projection x):=by
+   induction k with
+   | zero => simp
+-  | succ k ih => rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,P.clock,ih]
++  | succ k ih =>
++    simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
++    rw [P.clock,ih]
+ 
+ theorem head_sites (w:Vec K s)
+     (normal:∀a,Clock.fiber c a w∈U→Clock.fiber c a w=0) :
+--- a/RKCert/DirkMidpointCoreProduct.lean
++++ b/RKCert/DirkMidpointCoreProduct.lean
+@@ -19,8 +19,9 @@
+   have low:7≤m:=by rcases hm with rfl|rfl <;>decide
+   have up:m≤8:=by rcases hm with rfl|rfl <;>decide
+   let c:=nodes A
++  have product : v*t∈zeroSpace A 10 := zeroSpace_mul (A:=A) (m:=5) (n:=5) (v:=v) (w:=t) hv ht
+   obtain ⟨H,x,hx,tail,rep⟩:=h.pure_decompose hm ha ho he (q:=10) (by omega) (by omega)
+-    (zeroSpace_mul hv ht) (fun i clean=>by rw [Pi.mul_apply,clean v hv,zero_mul])
++    product (fun i clean=>by rw [Pi.mul_apply,clean v hv,zero_mul])
+   have kill(i:Fin (s+1)) : (c i-a)*(v*t) i=0 :=by
+     by_cases eqn:c i=a
+     · rw [eqn,sub_self,zero_mul]
+--- a/RKCert/DirkMidpointGridIdeal.lean
++++ b/RKCert/DirkMidpointGridIdeal.lean
+@@ -23,7 +23,7 @@
+     induction i with
+     | zero=>simpa using hv
+     | succ i ih=>
+-      rw [show n+(i+1)=(n+i)+1 by omega,←chain_sup_map inv (by omega),pow_succ',mul_apply_eq_comp]
++      rw [show n+(i+1)=(n+i)+1 by omega,←chain_sup_map inv (by omega),pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+       exact (le_sup_right : (chain (diag (nodes A)) U w (n+i)).map (diag (nodes A))≤ _) ⟨_,ih,rfl⟩
+   have poly := congrArg (weightedEval (nodes A) v) Q.as_sum_range
+   rw [map_sum] at poly
+--- a/RKCert/DirkMidpointSingleton16.lean
++++ b/RKCert/DirkMidpointSingleton16.lean
+@@ -31,7 +31,7 @@
+     rw [zg,mul_zero,natDegree_zero] at dd
+     omega
+   obtain ⟨H,x,hx,tail,rep⟩:=h.pure_decompose (Or.inr rfl) ha ho he (q:=10) (by decide) (by decide)
+-    (zeroSpace_mul w5 w5) (fun i cl=>by rw [Pi.mul_apply,cl w w5,zero_mul])
++    (zeroSpace_mul (A:=A) (m:=5) (n:=5) w5 w5) (fun i cl=>by rw [Pi.mul_apply,cl w w5,zero_mul])
+   have w0:w∈O 1 := by rw [show O 1=zeroSpace A 5 from (h.band 5 le_rfl (by decide)).symm];exact w5
+   have pw:weightedEval c w (lobatto 8)∈O 9:=by
+     apply chain_length_le (by have:=lobatto_degree (K:=K) (m:=8) (by decide);omega:1+(lobatto (K:=K) 8).natDegree≤9)
+@@ -61,7 +61,7 @@
+   have sq:w*w∈O 6:=by rw [rep,zH,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add];exact hx
+   have band (k:ℕ) (hk:k≤0):(diag c^k) (w*w)∈chain (diag c) U w 6 := by
+     obtain rfl : k=0:=by omega
+-    simpa only [pow_zero,one_apply_eq_self] using sq
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using sq
+   obtain ⟨P,dp,val⟩:=Clock.multiplier_degree (a:=w) (c:=c) cut (by dsimp [c];omega:6<(Clock.headSites c w).card) band
+   have deg:P.natDegree≤5:=by
+     rcases dp with z|z
+--- a/RKCert/DirkMidpointTwoHead.lean
++++ b/RKCert/DirkMidpointTwoHead.lean
+@@ -31,11 +31,11 @@
+       ∃H:K[X],∃v∈O,LobattoPaidTail m (2*m-11) H ∧ x=evalNodes A H+v :=by
+     have g:=h.pure_decompose hm ha ho he (q:=10) (by omega) (by omega) hx cl
+     simpa only [show 2*m-10-1=2*m-11 by omega] using g
+-  obtain ⟨H₀,x₀,h₀,z₀,e₀⟩:=dec (w*w) (zeroSpace_mul w5 w5)
++  obtain ⟨H₀,x₀,h₀,z₀,e₀⟩:=dec (w*w) (zeroSpace_mul (A:=A) (m:=5) (n:=5) w5 w5)
+     (fun i cl=>by rw [Pi.mul_apply,cl w w5,zero_mul])
+-  obtain ⟨H₁,x₁,h₁,z₁,e₁⟩:=dec (T (w*w)) (by rw [id1];exact zeroSpace_mul c5 w5)
++  obtain ⟨H₁,x₁,h₁,z₁,e₁⟩:=dec (T (w*w)) (by rw [id1];exact zeroSpace_mul (A:=A) (m:=5) (n:=5) c5 w5)
+     (fun i cl=>by rw [id1,Pi.mul_apply,cl w w5,mul_zero])
+-  obtain ⟨H₂,x₂,h₂,z₂,e₂⟩:=dec (T (T (w*w))) (by rw [id2];exact zeroSpace_mul c5 c5)
++  obtain ⟨H₂,x₂,h₂,z₂,e₂⟩:=dec (T (T (w*w))) (by rw [id2];exact zeroSpace_mul (A:=A) (m:=5) (n:=5) c5 c5)
+     (fun i cl=>by rw [id2,Pi.mul_apply,cl _ c5,zero_mul])
+   have link0:=h.link_products hm ha ho he z₀.degree z₁.degree h₀ h₁ e₀ e₁
+   have link1:=h.link_products hm ha ho he z₁.degree z₂.degree h₁ h₂ e₁ e₂
+@@ -47,11 +47,11 @@
+   have hs:=h.physical_head_site_bound (hm.imp_right Or.inl) ha ho he (q:=2*m-3) (by omega) (by omega)
+   have band(k:ℕ) (hk:k≤2):(T^k) (w*w)∈O:=by
+     interval_cases k
+-    · rw [pow_zero,one_apply_eq_self,e₀,vanish.1,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
++    · rw [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,e₀,vanish.1,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
+       exact h₀
+     · rw [pow_one,e₁,vanish.2.1,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
+       exact h₁
+-    · rw [pow_succ',pow_one,mul_apply_eq_comp,e₂,vanish.2.2,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
++    · rw [pow_succ',pow_one,Module.End.mul_eq_comp,LinearMap.comp_apply,e₂,vanish.2.2,show evalNodes A (0:K[X])=0 from by ext i;simp,zero_add]
+       exact h₂
+   obtain ⟨P,dp,val⟩:=Clock.multiplier_degree (c:=nodes A) cut (by omega:2+(10-5)<(Clock.headSites (nodes A) w).card) band
+   have degrees:P.natDegree≤4:=by
+--- a/RKCert/DirkOneFiberCut.lean
++++ b/RKCert/DirkOneFiberCut.lean
+@@ -35,7 +35,7 @@
+     intro u hu
+     have h:weightedEval c u 1=u:=by ext i;simp
+     rwa [h]
+-  obtain ⟨v,hv,vout⟩:=IsConcreteLE.not_le_iff_exists.mp (fun a:U≤V=>same (le_antisymm inc a))
++  obtain ⟨v,hv,vout⟩:=Set.not_subset.mp (show ¬(U : Set (Vec K s)) ⊆ V from fun a : U≤V => same (le_antisymm inc a))
+   have witness:∃a∈sites c,fiber c a v∉V:=by
+     by_contra! neg
+     apply vout
+--- a/RKCert/DirkPaidReverseBand.lean
++++ b/RKCert/DirkPaidReverseBand.lean
+@@ -123,7 +123,7 @@
+     have dim:=Submodule.finrank_mono inc; omega
+   obtain ⟨w,hw,hnot⟩:=ex
+   have base:dirkBack A b 2=chain (diag (mirror A)) (dirkBack A b 1) w 1 := by
+-    simp only [chain,pow_zero,one_apply_eq_self]
++    simp only [chain,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
+     have hle:dirkBack A b 1≤dirkBack A b 2 := twoOrbit_le_succ ..
+     exact (Submodule.eq_of_le_of_finrank_le (sup_le hle ((Submodule.span_singleton_le_iff_mem ..).mpr hw))
+       (by rw [Submodule.finrank_sup_span_singleton hnot,r1,r2])).symm
+--- a/RKCert/DirkTenShortMask.lean
++++ b/RKCert/DirkTenShortMask.lean
+@@ -29,7 +29,7 @@
+   have z:(T^k) (g*g)=(T^a) g*(T^d) g:=by
+     ext i;simp only [T,Clock.pow_diag_apply,Pi.mul_apply];rw [←e,pow_add];ring
+   rw [←endp,z]
+-  exact zeroSpace_mul (paid _ ha) (paid _ hd)
++  exact zeroSpace_mul (A:=A) (m:=4) (n:=4) (paid _ ha) (paid _ hd)
+ 
+ omit [CharZero K] in
+ /-- An actual double band with the one unpaid dimension concentrated only at
+--- a/RKCert/DirkTwentyTenZero.lean
++++ b/RKCert/DirkTwentyTenZero.lean
+@@ -66,7 +66,7 @@
+       _≤Z:=sup_le le_sup_right (inv.trans wu)
+   have products(a:Vec K (s+1))(ha':a∈F 5)(v:Vec K (s+1))(hv:v∈F 5):a*v∈Z:=by
+     rw [ident]
+-    exact ⟨zeroSpace_mul ha' hv,by
++    exact ⟨zeroSpace_mul (A:=A) (m:=5) (n:=5) ha' hv,by
+       change a (Fin.last s)*v (Fin.last s)=0
+       rw [z9 _ (zeroSpace_mono A (by decide:5≤9) ha'),zero_mul]⟩
+   obtain ⟨_,_,U,w,r,short,ui,_,band⟩:=nine_rank_dispatch ha ho (by decide) h.three.ge h.five.2
+--- a/RKCert/ERKLowEarlyPrimitive.lean
++++ b/RKCert/ERKLowEarlyPrimitive.lean
+@@ -99,7 +99,7 @@
+   rw [eq] at div
+   obtain ⟨U,he⟩ := (tp.pow_right (n:=2)).dvd_of_dvd_mul_left div
+   have t0 : T.coeff 0=P.coeff 0/2 := by simp [T]
+-  have t2 : T.coeff 2=P.coeff 2/4 := by simp [T]
++  have t2 : T.coeff 2=P.coeff 2/4 := by simp [T,coeff_monomial]
+   have tn : T≠0 := by intro e; rw [e,coeff_zero] at t2; exact (div_ne_zero n2 (by norm_num)) t2.symm
+   have tu : U≠0 := fun e => tn (by simp [he,e])
+   have dr : T.natDegree≤2 := by
+--- a/RKCert/ERKOrderNineFiveSixAtlas.lean
++++ b/RKCert/ERKOrderNineFiveSixAtlas.lean
+@@ -112,7 +112,7 @@
+     exact (monic_nodalHull S).coeff_natDegree
+   have t1 : t=1 := by
+     have a := congrArg (fun P : K[X]=>P.coeff 4) e
+-    simpa [Q,lobattoPencil,coeff_C_mul,hC] using a.symm
++    simpa [Q,lobattoPencil,coeff_monomial,coeff_C_mul,hC] using a.symm
+   have f : Q=nodalHull S := by simpa [t1] using e
+   change nodalHull T=X*Q
+   rw [nodalHull_erase_factor T zero,map_zero,sub_zero,f]
+--- a/RKCert/ERKOrderNineFiveSixK8Actual.lean
++++ b/RKCert/ERKOrderNineFiveSixK8Actual.lean
+@@ -21,7 +21,7 @@
+     have e3 : 3≠k := by omega
+     have e4 : 4≠k := by omega
+     simp [lobattoPencil,coeff_monomial,coeff_C,Ne.symm e0,e1,e2,e3,e4]
+-  · simp [lobattoPencil]
++  · simp [lobattoPencil,coeff_monomial]
+ 
+ omit [CharZero K] in
+ /-- The four genuine distinct pencil roots sum to 2−l, as a
+@@ -41,12 +41,12 @@
+     exact (monic_nodalHull S).coeff_natDegree
+   have aa : a=1 := by
+     have h := congrArg (fun Q : K[X]=>Q.coeff 4) eq
+-    simpa [lobattoPencil,coeff_C_mul,r4] using h.symm
++    simpa [lobattoPencil,coeff_monomial,coeff_C_mul,r4] using h.symm
+   have eh : lobattoPencil l=nodalHull S := by simpa [aa] using eq
+   have h1 : (lobattoPencil l).nextCoeff=l-2 := by
+     unfold nextCoeff
+     rw [lobattoPencil_natDegree]
+-    norm_num [lobattoPencil]
++    norm_num [lobattoPencil,coeff_monomial]
+   have h2 : (nodalHull S).nextCoeff=-(∑ x∈S,x) := by
+     simpa only [nodalHull,id_eq] using (prod_X_sub_C_nextCoeff (s:=S) id)
+   have h3 : (∑ x∈S,x)=(∑ i,W i) := by
+--- a/RKCert/ERKOrderNineLateWeights.lean
++++ b/RKCert/ERKOrderNineLateWeights.lean
+@@ -98,7 +98,7 @@
+ theorem radauCubic_ne_zero : (radauCubic : K[X])≠0 := by
+   intro h
+   have he := congrArg (fun P : K[X] => P.coeff 3) h
+-  norm_num [radauCubic] at he
++  norm_num [radauCubic,coeff_monomial] at he
+ 
+ /-- Orthogonality of the cubic against the first three monomials,
+ verified directly with the pinned algebraic primitive. -/
+--- a/RKCert/ERKOrderNinePencil.lean
++++ b/RKCert/ERKOrderNinePencil.lean
+@@ -53,7 +53,7 @@
+     linear_combination -420*hm0 + 2100*hm1 - 2100*hm2 - (5/3)*h4
+   ext n
+   by_cases hn : n≤4
+-  · interval_cases n <;> simp [lobattoPencil,h0,h1,h2,h4]
++  · interval_cases n <;> simp [lobattoPencil,coeff_monomial,h0,h1,h2,h4]
+   · have hn0 : 0≠n := by omega
+     have hn1 : 1≠n := by omega
+     have hn2 : 2≠n := by omega
+@@ -145,7 +145,7 @@
+   have c2 := hc 2 (by decide)
+   have c3 := hc 3 (by decide)
+   have c4 := hc 4 (by decide)
+-  norm_num [lobattoPencil,h34,h44] at c2 c3 c4
++  norm_num [lobattoPencil,coeff_monomial,h34,h44] at c2 c3 c4
+   rw [primitive_eval_X_quadratic P dP] at hz
+   have hfact : h^2*(6*P.coeff 0+4*P.coeff 1*h+3*P.coeff 2*h^2)=0 := by
+     linear_combination 12*hz
+--- a/RKCert/LobattoTailRecurrence.lean
++++ b/RKCert/LobattoTailRecurrence.lean
+@@ -63,7 +63,7 @@
+     (nz : Q≠0) (dQ : Q.natDegree≤q+1) (f : (X-1)*lobatto m ∣ Q*H) : H=0 := by
+   have all (n : ℕ) (hn : n<m) : tailMoment n H=0 := by
+     induction n using Nat.strong_induction_on with
+-    | ind n ih =>
++    | _ n ih =>
+       by_cases hp : n≤q
+       · exact paid n hp
+       let k := n-Q.natDegree
+--- a/RKCert/RadauGridComplete.lean
++++ b/RKCert/RadauGridComplete.lean
+@@ -77,7 +77,9 @@
+   let l : K := ((-51480:ℤ):K)
+   have ln : l≠0 := by norm_num [l]
+   have idiv : Function.Injective (fun x : K => x/l) := fun x y e => by
+-    exact (div_left_inj₀ ln).mp e
++    have h := congrArg (fun z : K => z*l) e
++    change (x/l)*l=(y/l)*l at h
++    simpa only [div_mul_cancel₀ _ ln] using h
+   have d : P.natDegree=8 := by
+     change (gridNormalized.map _).natDegree=8
+     rw [normalized_monic.natDegree_map,normalized_degree]
+--- a/RKCert/RadauMissingRoot.lean
++++ b/RKCert/RadauMissingRoot.lean
+@@ -103,7 +103,7 @@
+ variable {s p n : ℕ} {A : Fin s→Fin s→K} {b θ : Vec K s} {P : K[X]}
+ 
+ namespace ReverseTrace
+-theorem pair_polynomial (h : ReverseTrace A b p n θ P) (ho : HasTreeOrderAtLeast A b p)
++theorem pair_polynomial_radau (h : ReverseTrace A b p n θ P) (ho : HasTreeOrderAtLeast A b p)
+     (Q : K[X]) (hp : n+Q.natDegree+1≤p) :
+     row θ (weightedEval (mirror A) (1:Vec K s) Q)=unitIntegral (Q*P) := by
+   let L := (row θ).comp (weightedEval (mirror A) (1:Vec K s))
+@@ -149,7 +149,7 @@
+       rw [hD,eval_mul,eval_sub,eval_X,eval_C] at e
+       have hHi := (mul_eq_zero.mp e).resolve_left (sub_ne_zero.mpr hne)
+       simp [hHi]
+-  rw [h.pair_polynomial ho H (by omega),mul_comm H P,hProd] at hz
++  rw [h.pair_polynomial_radau ho H (by omega),mul_comm H P,hProd] at hz
+   exact (mul_eq_zero.mp hz).resolve_right (radau_cardinal_integral_ne hD dH hH)
+ 
+ end ReverseTrace

@@ -21,7 +21,7 @@ theorem lobattoPencil_natDegree (l : K) : (lobattoPencil l).natDegree=4 := by
     have e3 : 3≠k := by omega
     have e4 : 4≠k := by omega
     simp [lobattoPencil,coeff_monomial,coeff_C,Ne.symm e0,e1,e2,e3,e4]
-  · simp [lobattoPencil]
+  · simp [lobattoPencil,coeff_monomial]
 
 omit [CharZero K] in
 /-- The four genuine distinct pencil roots sum to 2−l, as a
@@ -41,12 +41,12 @@ theorem lobattoPencil_four_root_sum (l : K) (W : Fin 4 → K)
     exact (monic_nodalHull S).coeff_natDegree
   have aa : a=1 := by
     have h := congrArg (fun Q : K[X]=>Q.coeff 4) eq
-    simpa [lobattoPencil,coeff_C_mul,r4] using h.symm
+    simpa [lobattoPencil,coeff_monomial,coeff_C_mul,r4] using h.symm
   have eh : lobattoPencil l=nodalHull S := by simpa [aa] using eq
   have h1 : (lobattoPencil l).nextCoeff=l-2 := by
     unfold nextCoeff
     rw [lobattoPencil_natDegree]
-    norm_num [lobattoPencil]
+    norm_num [lobattoPencil,coeff_monomial]
   have h2 : (nodalHull S).nextCoeff=-(∑ x∈S,x) := by
     simpa only [nodalHull,id_eq] using (prod_X_sub_C_nextCoeff (s:=S) id)
   have h3 : (∑ x∈S,x)=(∑ i,W i) := by

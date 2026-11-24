@@ -78,7 +78,9 @@ theorem clock_pow (k:ℕ) (x:Vec K s):
     P.projection ((diag c^k) x)=(diag c^k) (P.projection x):=by
   induction k with
   | zero => simp
-  | succ k ih => rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,P.clock,ih]
+  | succ k ih =>
+    simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+    rw [P.clock,ih]
 
 theorem head_sites (w:Vec K s)
     (normal:∀a,Clock.fiber c a w∈U→Clock.fiber c a w=0) :

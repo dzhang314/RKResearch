@@ -62,7 +62,7 @@ theorem order15_nonC2_head_polynomial (ha : LowerArray A) (ho : HasTreeOrderAtLe
     apply h.orbit_last H 4
     have pp := ((chain_le_iff (T:=diag c) (U:=nonC2Ghosts A b) (w:=w) 4).mp le_rfl).2 0 (by decide)
     change w∈chain (diag c) (nonC2Ghosts A b) w 4
-    simpa only [pow_zero,one_apply_eq_self] using pp
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pp
   have product : G=P*(-Q) := by
     apply Polynomial.eq_of_degrees_lt_of_eval_finset_eq S
     · apply degree_le_natDegree.trans_lt

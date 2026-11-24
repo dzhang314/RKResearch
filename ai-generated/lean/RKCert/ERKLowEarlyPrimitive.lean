@@ -99,7 +99,7 @@ theorem quadratic_head_not_dvd_own_weighted_primitive {P : K[X]}
   rw [eq] at div
   obtain ⟨U,he⟩ := (tp.pow_right (n:=2)).dvd_of_dvd_mul_left div
   have t0 : T.coeff 0=P.coeff 0/2 := by simp [T]
-  have t2 : T.coeff 2=P.coeff 2/4 := by simp [T]
+  have t2 : T.coeff 2=P.coeff 2/4 := by simp [T,coeff_monomial]
   have tn : T≠0 := by intro e; rw [e,coeff_zero] at t2; exact (div_ne_zero n2 (by norm_num)) t2.symm
   have tu : U≠0 := fun e => tn (by simp [he,e])
   have dr : T.natDegree≤2 := by

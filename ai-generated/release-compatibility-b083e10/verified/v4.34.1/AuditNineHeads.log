@@ -1,0 +1,7 @@
+'RKCert.Paired.OrdinaryTrace.two_pivots_of_paid_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.nine_two_head_refund' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.no_disjoint_nine_two_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.core_mul_of_restricted_products' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.no_nine_two_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.nine_core_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.no_nine_short_head' depends on axioms: [propext, Classical.choice, Quot.sound]

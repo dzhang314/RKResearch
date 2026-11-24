@@ -172,3 +172,9 @@ The [fixed-Lobatto factor theorem](LOBATTO-FACTOR-GATES.md) rules out a vanishin
 - [Nonlocal reverse DIRK](DIRK-NONLOCAL-PORTS.md): physical pivot equations and joint coordinatewise vanishing at order 16 in the nonlocal case.
 
 These modules also supply structural prerequisites, not new numerical lower bounds.
+
+- [Order-nine ERK Radau reductions](ERK-ORDER-NINE-RADAU.md): the five-on/five-off rank-nine case is impossible; the rank-ten scalar test is independent of the remaining physical extraction.
+- [Fixed-Radau root certificates](RADAU-ROOT-CERTIFICATES.md): modular specialization for prescribed distinct roots and exclusion of seven off abscissas.
+- [Local DIRK reverse obstruction](DIRK-LOCAL-REVERSE.md): removes the local-branch hypothesis from the even-order marked-port theorem without claiming a new numerical lower bound.
+
+Audit with `lake env lean AuditOrderNineRadau.lean`, `lake env lean AuditRadauSevenOff.lean`, and `lake env lean AuditDIRKWeightedLocal.lean`.

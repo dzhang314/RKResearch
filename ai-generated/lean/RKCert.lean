@@ -34,3 +34,8 @@ public import RKCert.LobattoFactors
 public import RKCert.ERKFiniteStaircase
 public import RKCert.Dirk15Support
 public import RKCert.DirkJointHidden
+public import RKCert.DirkEvenJointSupport
+public import RKCert.ERKOrderNineFiveRankNine
+public import RKCert.ERKOrderNineFixedRadauCharZero
+public import RKCert.ERKLowAdjoint
+public import RKCert.OrderNineSevenOff

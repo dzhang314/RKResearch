@@ -10,3 +10,5 @@ public import RKCert.SDIRKStageFloor
 public import RKCert.DIRKSmall
 public import RKCert.UniformERKTable
 public import RKCert.DirkFloorRegression
+
+public import RKCert.SDIRKOrderSixRing

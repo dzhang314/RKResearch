@@ -92,3 +92,43 @@ example : (11 : ZMod 121) ≠ 0 ∧ (11:ZMod 121)*11=0 := by decide
 #print axioms RKCert.dirkRingFloor_through20
 #print axioms RKCert.DIRKFloorRegression.order_seven_rational_minimum
 #print axioms RKCert.DIRKFloorRegression.order_twenty_mod529
+
+open RKCert RKCert.Paired RKCert.Paired.SDIRK
+
+#print axioms P6.cubic_front_unique
+#print axioms canonical_rows_span
+#print axioms order_six_terminal_chronology
+#print axioms P6.order_six_weighted_terminal_seed
+#print axioms P6.Op.second_word
+#print axioms P6.nonzero_chart_excluded
+#print axioms order_six_six_stages_impossible
+#print axioms seven_le_of_strict_order_six
+#print axioms seven_le_of_strict_order_six_marked_ring
+#print axioms seven_le_of_strict_order_six_unit_ring
+#print axioms strict_char_zero_marked_ring_le20
+#print axioms strict_char_zero_unit_ring_le20
+#print axioms strict_char_zero_table
+
+-- Exact six-stage finite contradiction, not an arithmetic implication disconnected from a tableau.
+example (A : Fin 6 → Fin 6 → ℚ) (b : Fin 6 → ℚ) (d:ℚ) (h : HasTreeOrderAtLeast A b 6)
+    (ht : lower A) (hd : ∀i,A i i=d) (hn:d≠0) : False :=
+  order_six_six_stages_impossible h ht hd hn
+
+-- No integrality-domain or invertible weight assumption is available in this audit.
+example {R : Type*} [CommRing R] [CharZero R] (A : Fin 6 → Fin 6 → R) (b : Fin 6 → R)
+    (d : R) (h : HasTreeOrderAtLeast A b 6) (ht : ∀i j,i.val < j.val → A i j=0)
+    (hd : ∀i,A i i=d) (hn : IsUnit d) : False :=
+  (by decide : ¬7≤6) (seven_le_of_strict_order_six_unit_ring h ht hd hn)
+
+-- A characteristic-zero domain needs no unit on the diagonal.
+example {R : Type*} [CommRing R] [IsDomain R] [CharZero R] {s : ℕ}
+    (A : Fin s → Fin s → R) (b : Fin s → R) (d : R) (h : HasTreeOrderAtLeast A b 6)
+    (ht : ∀i j,i.val < j.val → A i j=0) (hd : ∀i,A i i=d) (hn:d≠0) : 7≤s :=
+  seven_le_of_strict_order_six_marked_ring h ht hd (fun _n k h => mul_ne_zero
+    (Nat.cast_ne_zero.mpr h.ne') (pow_ne_zero k hn))
+
+-- Do not accidentally apply the char-zero seven bound to an arbitrary field.
+example {K : Type*} [Field K] {s:ℕ} (A : Fin s → Fin s → K) (b : Fin s → K)
+    (h : HasTreeOrderAtLeast A b 6) (ht : lower A) (hd : ∀i, A i i≠0) : 6≤s :=
+  nonsingular_quadratic_le20 h ht hd (by decide) (by decide)
+

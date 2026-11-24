@@ -54,8 +54,8 @@ to a lower-triangular tableau with all diagonal entries units, even when the
 entries differ. Over a field, nonzero diagonal entries suffice. The proof
 counts independent stage vectors using the triangular matrix
 `CA - AC - A²`; it does not assume signs, distinct nodes, or nonzero output
-weights. It gives 55 at order 20. At order six it gives 6; the separate
-characteristic-zero exclusion of six-stage strict SDIRK is not yet formalized.
+weights. It gives 55 at order 20. At order six this ring theorem gives 6. The separate characteristic-zero
+exclusion below raises the floor to 7.
 
 [`RKCert/DIRKSmall.lean`](RKCert/DIRKSmall.lean) proves the lower bounds 2, 3,
 and 4 at orders 3, 4, and 5 for ordinary DIRK over every nontrivial commutative
@@ -78,3 +78,21 @@ tables are checked in Lean. The stronger characteristic-zero and ordered-field
 endpoints are a separate part of the formalization.
 
 See [the Mathlib reuse audit](MATHLIB-REUSE.md) for standard-library interfaces and the RK-specific definitions we retain.
+
+
+### The strict SDIRK order-six exclusion
+
+[`RKCert/SDIRKOrderSix.lean`](RKCert/SDIRKOrderSix.lean) proves that a
+strict SDIRK method of order six has at least seven stages over every
+characteristic-zero field. In a hypothetical six-stage tableau, the rank
+bounds force the forward and reverse spaces to have their smallest possible
+dimensions. That yields constraints on the first and last stages. The proof
+then splits according to whether the third stage depends on the second. In
+each case, Lean checks explicit polynomial Bézout identities that contradict
+the resulting equations. No external computer algebra is trusted by the proof.
+
+[`RKCert/SDIRKOrderSixRing.lean`](RKCert/SDIRKOrderSixRing.lean) combines
+this exclusion with the uniform commutator bound to certify all twenty
+characteristic-zero strict SDIRK floors. It also proves the same result over
+characteristic-zero commutative rings with a unit common diagonal. The bound
+of seven is not asserted over arbitrary positive-characteristic rings.

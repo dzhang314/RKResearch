@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.MinimalPaidEndpointClock
+
+#print axioms RKResearch.Certified.Graded.Reverse.minimal_paid_endpoint_clock_bounds
+#print axioms RKResearch.Certified.Graded.Reverse.MinimalPaidEndpointClockBounds.false_of_exterior_or_excess

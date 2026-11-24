@@ -39,3 +39,6 @@ public import RKCert.ERKOrderNineFiveRankNine
 public import RKCert.ERKOrderNineFixedRadauCharZero
 public import RKCert.ERKLowAdjoint
 public import RKCert.OrderNineSevenOff
+public import RKCert.ExplicitFiniteERK16to19
+public import RKCert.DirkEvenFifthFloor
+public import RKCert.OrderNineSixOffFiveOn

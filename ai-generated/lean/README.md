@@ -178,3 +178,11 @@ These modules also supply structural prerequisites, not new numerical lower boun
 - [Local DIRK reverse obstruction](DIRK-LOCAL-REVERSE.md): removes the local-branch hypothesis from the even-order marked-port theorem without claiming a new numerical lower bound.
 
 Audit with `lake env lean AuditOrderNineRadau.lean`, `lake env lean AuditRadauSevenOff.lean`, and `lake env lean AuditDIRKWeightedLocal.lean`.
+
+## Four additional ERK endpoints and a general DIRK bound
+
+- [ERK orders 16–19](FINITE-ERK16-19.md): characteristic-zero stage floors 24, 26, 27, and 29, each over fields and commutative rings.
+- [Even DIRK orders 22 and above](DIRK-EVEN-FROM-22.md): at order 2m with m ≥ 11, the characteristic-zero stage floor improves from 3m−3 to 3m−2.
+- [Six off nodes at ERK order nine](SIX-OFF-FIVE-ON.md): six on nodes are necessary in the twelve-stage analysis. This reduction does not change the order-nine stage floor.
+
+Audit with `lake env lean FiniteERK16to19Audit.lean`, `lake env lean AuditDIRKEvenFifthFloor.lean`, and `lake env lean AuditSixOffFiveOn.lean`.

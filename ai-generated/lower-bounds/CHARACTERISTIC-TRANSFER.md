@@ -65,3 +65,13 @@ nonunit to be nonzero in a general ring, or requiring ordered-field
 positivity, is not just this polynomial equation; no such broader transfer
 is claimed. A list of actual exceptional primes would require additional
 effective certificates or separate prime-by-prime results.
+
+## Which primes can actually be exceptional?
+
+Fix the method class, order, and stage count. Let \(S\) be the quotient of the integer polynomial ring in the tableau entries by the cleared order equations and the equations defining the class. For strict SDIRK, include a variable for the inverse of the shared diagonal and impose that their product is one. A tableau over a field is the same as a unital homomorphism from \(S\) to that field.
+
+If there is no characteristic-zero field solution, then \(S\otimes_{\mathbb Z}\mathbb Q=0\): otherwise a maximal ideal of this nonzero algebra would give a characteristic-zero field solution. Thus the kernel of \(\mathbb Z\to S\) has a positive generator \(M\). The primes admitting a tableau over *some* field of that characteristic are exactly the prime divisors of \(M\).
+
+Indeed, if a prime does not divide \(M\), Bézout's identity makes it a unit in \(S\), so reduction modulo that prime is zero. If a prime divisor of \(M\) were a unit, cancelling it from \(M\cdot 1=0\) would contradict the minimality of \(M\). Its reduction is therefore a nonzero finitely generated algebra over the prime field. A maximal ideal gives a finite extension of that field by Zariski's lemma, and hence an actual solution there. The bushy-tree equations ensure that \(p!\) is invertible for order \(p\), so all such primes are greater than \(p\).
+
+Any computed nonzero integer elimination certificate is a multiple of \(M\); its prime factors give a superset, not necessarily the exact exceptional set. A solution of a reduced scalar test alone does not give a tableau.

@@ -1,0 +1,7 @@
+# Unconditional improved even DIRK lower bound
+
+For m ≥ 11, every lower-triangular Runge–Kutta tableau of classical order at least 2m over a characteristic-zero field or commutative characteristic-zero ring has at least 3m−2 physical stages. No compatible ordering, realness, positivity, splitting of unknown polynomials, nonzero diagonal, or nonzero output weights are assumed. In particular order 22 costs at least 31 stages.
+
+The proof uses the [local reverse obstruction](DIRK-LOCAL-REVERSE.md). The current leaf proves directly from the original array that the maximal clock-invariant subspace inside the forward midpoint flag has dimension at most three. A jointly invisible F5 would equal a dimension-three invariant space and its incoming Hermite gain gives a contradiction. The existing degree-five two-pivot criterion applies for m≥11, excluding the equality case of the older 3m−3 parity bound. A separate byproduct, used for the smaller individual orders, classifies F4 and F5 under the quantitative joint F4 interface. None of the small numerical endpoints p14,16,18,20 is asserted solely from this new universal inequality.
+
+The checked statements are `RKCert.Paired.dirk_even_three_m_minus_two` and `RKCert.dirk_even_three_m_minus_two_ring` in [`RKCert/DirkEvenFifthFloor.lean`](RKCert/DirkEvenFifthFloor.lean). Replay `AuditDIRKEvenFifthFloor.lean` under Lean and Mathlib v4.36.0 after building the project.

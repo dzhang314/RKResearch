@@ -45,3 +45,34 @@ lake env lean Audit.lean
 ```
 
 The cache step only downloads Mathlib's compiled dependencies; it is optional if building them from source. `lean-toolchain` and `lake-manifest.json` pin the toolchain and dependency revisions. The project's only direct Lake dependency is Mathlib v4.36.0. The source contains no admitted proofs, user-supplied axioms, or native-evaluation proof shortcuts. `Audit.lean` prints the transitive axiom dependencies of the named certificates.
+
+## Lower-bound certificates over commutative rings
+
+[`RKCert/SDIRKStageFloor.lean`](RKCert/SDIRKStageFloor.lean) proves every current
+ring-level strict SDIRK lower bound through order 20. The same bound applies
+to a lower-triangular tableau with all diagonal entries units, even when the
+entries differ. Over a field, nonzero diagonal entries suffice. The proof
+counts independent stage vectors using the triangular matrix
+`CA - AC - A²`; it does not assume signs, distinct nodes, or nonzero output
+weights. It gives 55 at order 20. At order six it gives 6; the separate
+characteristic-zero exclusion of six-stage strict SDIRK is not yet formalized.
+
+[`RKCert/DIRKSmall.lean`](RKCert/DIRKSmall.lean) proves the lower bounds 2, 3,
+and 4 at orders 3, 4, and 5 for ordinary DIRK over every nontrivial commutative
+ring. These theorems permit zero diagonals. The code uses the complete tree
+conditions, not just the linear-test-equation conditions.
+
+`lake build` checks both modules. `lake env lean Audit.lean` prints the axiom
+dependencies and checks the order-20 field and order-10 zero-divisor ring
+regressions.
+
+[`RKCert/UniformERK.lean`](RKCert/UniformERK.lean) proves the uniform explicit
+floor `max(p, ceil(3p/2) - 2)`. The proof treats odd orders without assuming that
+the last stage has nonzero output weight.
+[`RKCert/UniformDIRK.lean`](RKCert/UniformDIRK.lean) proves the uniform
+unrestricted DIRK floor `p + floor((p-1)/2) - 3` for `p ≥ 6`. It combines
+forward rank growth, the reverse triangular obstruction and a separate
+terminal-stage argument. Both theorems apply to any nonzero commutative ring,
+and both start from the full rooted-tree conditions. Their exact through-20
+tables are checked in Lean. The stronger characteristic-zero and ordered-field
+endpoints are a separate part of the formalization.

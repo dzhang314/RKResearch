@@ -65,11 +65,8 @@ theorem dirk_last_node (ha : ∀ i j : Fin s, i.val<j.val → A i j=0)
   exact (mul_eq_zero.mp ((mul_eq_zero.mp hz).resolve_right hb)).elim id id
 
 /-- Rows supported strictly before an index. -/
-def prior (i : Fin s) : Submodule K (Vec K s) where
-  carrier := {x | ∀ j, i ≤ j → x j = 0}
-  zero_mem' := by simp
-  add_mem' := by intro x y hx hy j hj; change x j+y j=0; rw [hx j hj,hy j hj,add_zero]
-  smul_mem' := by intro a x hx j hj; change a*x j=0; rw [hx j hj,mul_zero]
+def prior (i : Fin s) : Submodule K (Vec K s) :=
+  Submodule.pi (Set.Ici i) (fun _ => ⊥)
 
 theorem prior_transp (ha : ∀ i j : Fin s, i.val<j.val → A i j=0) (i : Fin s) :
     prior (K:=K) i ≤ (prior i).comap (transMat A) := by
@@ -90,6 +87,8 @@ theorem dirkBack_prior (ha : ∀ i j : Fin s, i.val<j.val → A i j=0)
     dirkBack A b r ≤ prior i := by
   have hy : diag (mirror A) b ∈ prior i := by
     intro j hj
+    change i ≤ j at hj
+    change (diag (mirror A) b) j = 0
     rcases lt_or_eq_of_le hj with hl|rfl
     · simp [hlast j hl]
     · simp [hc]

@@ -44,6 +44,40 @@ theorem causalDiag_transpose {A : Fin s → Fin s → K}
     · rw [h j (Fin.rev_lt_rev.mpr hj), mul_zero]
   · simp
 
+section Stable
+
+variable {F M : Type*} [Field F] [AddCommGroup M] [Module F M] [FiniteDimensional F M]
+
+/-- Injectivity only on P is sufficient, even if the ambient map is singular.
+The RK element z and its comparison direction both live in P. -/
+private theorem dirk_stable_preimage (L : M →ₗ[F] M) (P U : Submodule F M)
+    (hP : P ≤ P.comap L) (hU : U ≤ U.comap L)
+    (hinj : ∀ x ∈ P, L x=0 → x=0) (z : M) (hz : z∈P) (hw : L z∈U) : z∈U := by
+  let V := P ⊓ U
+  have hj : Set.InjOn L P := fun x hx y hy he =>
+    sub_eq_zero.mp (hinj (x-y) (P.sub_mem hx hy) (by rw [map_sub,he,sub_self]))
+  have hV (x) (hx : x∈V) : L x ∈ V := ⟨hP hx.1,hU hx.2⟩
+  obtain ⟨x,hx,he⟩ := (LinearMap.injOn_iff_surjOn hV).mp
+    (hj.mono (show (V:Set M) ⊆ P from inf_le_left)) (show L z∈V from ⟨hP hz,hw⟩)
+  exact hj hx.1 hz he ▸ hx.2
+
+end Stable
+
+
+/-- A triangular map whose diagonal is a nonzero power of y has no kernel
+on columns supported on nonzero y. This is the only coordinate induction. -/
+private theorem dirk_supported_kernel (ord : Fin s ≃ Fin s) (T : Vec K s →ₗ[K] Vec K s)
+    (y : Vec K s) (hT : CausalDiag ord T (fun i => y i^3))
+    (x : Vec K s) (hs : ∀ i, y i=0 → x i=0) (hx : T x=0) : x=0 := by
+  funext i
+  induction hm : (ord i).val using Nat.strong_induction_on generalizing i with
+  | ind n ih =>
+    have hh := hT i x (fun j hj => ih (ord j).val (by omega) j rfl)
+    have hz : y i^3*x i=0 := hh.symm.trans (congrFun hx i)
+    by_cases hy : y i=0
+    · exact hs i hy
+    · exact (mul_eq_zero.mp hz).resolve_left (pow_ne_zero _ hy)
+
 /-- If two consecutive primitive defects vanish in an invariant quotient, the
 nonzero-node column vanishes there as well, over every field. -/
 theorem mem_of_invariant_two_seeds (ord : Fin s ≃ Fin s) (N : Vec K s →ₗ[K] Vec K s)
@@ -52,62 +86,27 @@ theorem mem_of_invariant_two_seeds (ord : Fin s ≃ Fin s) (N : Vec K s →ₗ[K
     (h₂ : (2:K) • N (diag y v) - diag y (diag y v) ∈ U)
     (h₃ : (3:K) • N (diag y (diag y v)) - diag y (diag y (diag y v)) ∈ U) :
     diag y v ∈ U := by
-  let D := diag y
+  let D := Paired.diag y
   let z := D v
   let B := (3:K) • N - D
   let C := (2:K) • N - D
-  let T := (2:K) • (B.comp D) - (3:K) • (D.comp C)
-  have hT (x) (hx : x ∈ U) : T x ∈ U :=
-    U.sub_mem (U.smul_mem _ (U.sub_mem (U.smul_mem _ (hN _ (hD _ hx))) (hD _ (hD _ hx))))
-      (U.smul_mem _ (hD _ (U.sub_mem (U.smul_mem _ (hN _ hx)) (hD _ hx))))
-  have hz : T z ∈ U := U.sub_mem (U.smul_mem _ h₃) (U.smul_mem _ (hD _ h₂))
-  have htri : CausalDiag ord T (fun i => y i ^ 2) := by
+  let L := D.comp ((2:K) • (B.comp D) - (3:K) • (D.comp C))
+  let P : Submodule K (Vec K s) := Submodule.pi {i | y i=0} (fun _ => ⊥)
+  have hS (x : Vec K s) : D x ∈ P := by
+    intro i (hi : y i=0); change y i*x i=0; rw [hi,zero_mul]
+  have hU (x) (hx : x∈U) : L x ∈ U := hD _
+    (U.sub_mem (U.smul_mem _ (U.sub_mem (U.smul_mem _ (hN _ (hD _ hx))) (hD _ (hD _ hx))))
+      (U.smul_mem _ (hD _ (U.sub_mem (U.smul_mem _ (hN _ hx)) (hD _ hx)))))
+  have htri : CausalDiag ord L (fun i => y i^3) := by
     intro i x h
     have hh := hc i x h
-    have hD' := hc i (D x) (fun j hj => by change y j * x j = 0; rw [h j hj, mul_zero])
-    change N (D x) i = a i * (y i * x i) at hD'
-    change 2 * (3 * N (D x) i - y i * (y i * x i)) -
-      3 * (y i * (2 * N x i - y i * x i)) = y i ^ 2 * x i
-    rw [hh, hD']; ring
-  have go (m : ℕ) : ∃ u ∈ U, (∀ i, (ord i).val < m → u i = z i) ∧
-      (∀ i, y i = 0 → u i = 0) := by
-    induction m with
-    | zero => exact ⟨0, U.zero_mem, fun _ h => False.elim (Nat.not_lt_zero _ h), by simp⟩
-    | succ m ih =>
-      obtain ⟨u, hu, hprev, hzero⟩ := ih
-      by_cases hm : m < s
-      · let i := ord.symm ⟨m,hm⟩
-        have hii : (ord i).val = m := by simp [i]
-        let e := z-u
-        let r := D (T e)
-        have hr : r ∈ U := hD _ (by change T (z-u) ∈ U; rw [map_sub]; exact U.sub_mem hz (hT u hu))
-        have he (j : Fin s) (hj : (ord j).val < m) : e j = 0 := by
-          change z j-u j=0; rw [hprev j hj, sub_self]
-        have hrr (j : Fin s) (hj : (ord j).val ≤ m) : r j=y j^3 * e j := by
-          change y j * (T e j) = _
-          rw [htri j e (fun k hk => he k (lt_of_lt_of_le hk hj))]; ring
-        let q := (y i^3)⁻¹
-        refine ⟨u + q • r, U.add_mem hu (U.smul_mem _ hr), ?_, ?_⟩
-        · intro j hj
-          by_cases hp : (ord j).val < m
-          · change u j + q * r j = z j
-            rw [hrr j hp.le, he j hp, mul_zero, mul_zero, add_zero, hprev j hp]
-          · have hji : j=i := ord.injective (Fin.ext (by omega))
-            subst j
-            change u i + (y i^3)⁻¹ * r i = z i
-            rw [hrr i hii.le]
-            by_cases hy : y i = 0
-            · simp [hy, z, D, hzero i hy]
-            · rw [← mul_assoc, inv_mul_cancel₀ (pow_ne_zero _ hy), one_mul]
-              change u i + (z i-u i)=z i; abel
-        · intro j hy
-          change u j + q * (y j * T e j) = 0
-          rw [hzero j hy, hy]; ring
-      · exact ⟨u, hu, fun j _ => hprev j (lt_of_lt_of_le (ord j).isLt (Nat.le_of_not_gt hm)), hzero⟩
-  obtain ⟨u,hu,hh,_⟩ := go s
-  have hu' : u=z := funext fun i => hh i (ord i).isLt
-  change z ∈ U
-  rwa [← hu']
+    have hD' := hc i (D x) (fun j hj => by change y j*x j=0; rw [h j hj,mul_zero])
+    change N (D x) i=a i*(y i*x i) at hD'
+    change y i * (2*(3*N (D x) i-y i*(y i*x i)) - 3*(y i*(2*N x i-y i*x i)))=y i^3*x i
+    rw [hD',hh]; ring
+  apply dirk_stable_preimage L P U (fun _ _ => hS _) (fun _ => hU _)
+    (fun x hx => dirk_supported_kernel ord L y htri x hx) z (hS _)
+  exact hD _ (U.sub_mem (U.smul_mem _ h₃) (U.smul_mem _ (hD _ h₂)))
 
 /-- Level 0 contains the linear and quadratic seeds. At each later grade
 the cubic seed and both alphabet actions are allowed. -/

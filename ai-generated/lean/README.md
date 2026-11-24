@@ -76,3 +76,5 @@ terminal-stage argument. Both theorems apply to any nonzero commutative ring,
 and both start from the full rooted-tree conditions. Their exact through-20
 tables are checked in Lean. The stronger characteristic-zero and ordered-field
 endpoints are a separate part of the formalization.
+
+See [the Mathlib reuse audit](MATHLIB-REUSE.md) for standard-library interfaces and the RK-specific definitions we retain.

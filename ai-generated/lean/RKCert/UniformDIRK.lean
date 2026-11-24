@@ -64,8 +64,8 @@ theorem dirk_terminal_refund (ha : ∀ i j : Fin s, i.val<j.val → A i j=0)
     have hstage : Pi.single i (1:K) ∈ treeSpace A m := by
       rw [eqn, mem_annih]
       intro v hv
-      have hh := dirkBack_prior ha i hlast hci h₁ h₂ r hv i le_rfl
-      simp [row,Pi.single_apply,hh]
+      have hh : v i = 0 := dirkBack_prior ha i hlast hci h₁ h₂ r hv i (show i ≤ i from le_rfl)
+      simp [row,hh]
     obtain ⟨a,ha₀⟩ := exists_poly_zeroSpace ho (by omega) hstage
     have hnode : nodes A i=1 := by
       change 1 - nodes A i=0 at hci

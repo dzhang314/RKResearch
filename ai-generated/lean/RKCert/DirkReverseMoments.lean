@@ -1,6 +1,7 @@
 module
 
 public import RKCert.QuotientGrowth
+public import Mathlib.Data.Matrix.Mul
 public import RKCert.ForwardDefects
 
 @[expose] public section
@@ -22,11 +23,9 @@ def rowMap : Vec K s →ₗ[K] Module.Dual K (Vec K s) where
 
 theorem row_transp (A : Fin s → Fin s → K) (u v : Vec K s) :
     row (mat (fun i j => A j i) u) v = row u (mat A v) := by
-  simp only [row_apply, mat_apply, Finset.sum_mul, Finset.mul_sum]
-  rw [Finset.sum_comm]
-  apply Finset.sum_congr rfl; intro i _
-  apply Finset.sum_congr rfl; intro j _
-  ac_rfl
+  let M := Matrix.of A
+  change dotProduct (M.transpose.mulVec u) v = dotProduct u (M.mulVec v)
+  rw [Matrix.mulVec_transpose, Matrix.dotProduct_mulVec]
 
 theorem row_diag (c u v : Vec K s) :
     row (diag c u) v = row u (diag c v) := by

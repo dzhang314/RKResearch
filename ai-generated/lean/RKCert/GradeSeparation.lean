@@ -20,11 +20,11 @@ variable {K : Type*} [Field K] {s p : ℕ} {A : Fin s → Fin s → K} {b : Vec 
 /-- Polynomial evaluation in the nodes, from coefficients up to degree `q`. -/
 noncomputable def polyEval (A : Fin s → Fin s → K) (q : ℕ) :
     (Fin (q+1) → K) →ₗ[K] Vec K s :=
-  ∑ j : Fin (q+1), (LinearMap.proj j).smulRight (normTree A (Tree.bush j.val))
+  Fintype.linearCombination K (fun j : Fin (q+1) => normTree A (Tree.bush j.val))
 
 theorem polyEval_apply (A : Fin s → Fin s → K) (q : ℕ) (a : Fin (q+1) → K) :
     polyEval A q a = ∑ j : Fin (q+1), a j • normTree A (Tree.bush j.val) := by
-  simp [polyEval, LinearMap.sum_apply, LinearMap.smulRight_apply]
+  rfl
 
 theorem polyEval_mem_treeSpace (A : Fin s → Fin s → K) (q : ℕ) (a : Fin (q+1) → K) :
     polyEval A q a ∈ treeSpace A q := by
@@ -149,10 +149,7 @@ theorem treeSpace_rank (ho : HasTreeOrderAtLeast A b p) {q : ℕ} (hp : 2*q+1≤
 /-- A coordinate coefficient recovers the actual normalized bush. -/
 theorem polyEval_single (A : Fin s → Fin s → K) (q : ℕ) (j : Fin (q+1)) :
     polyEval A q (Pi.single j 1) = normTree A (Tree.bush j.val) := by
-  rw [polyEval_apply, Finset.sum_eq_single j]
-  · simp
-  · intro i _ hi; simp [hi]
-  · simp
+  simp [polyEval]
 
 /-- Every column in the genuine tree span has a polynomial-plus-defect
 decomposition. Uniqueness is a separate assertion requiring sufficient moments. -/

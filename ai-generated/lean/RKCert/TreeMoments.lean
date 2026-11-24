@@ -2,6 +2,7 @@ module
 
 public import RKCert.ScaledRootCuts
 public import Mathlib.LinearAlgebra.Dual.Lemmas
+public import Mathlib.LinearAlgebra.Matrix.Dual
 public import Mathlib.Tactic.Ring
 
 @[expose] public section
@@ -21,31 +22,16 @@ variable {R : Type*} [CommSemiring R] {s : ℕ}
 abbrev Vec (R : Type*) (s : ℕ) := Fin s → R
 
 /-- Applying a tableau as a linear operator on columns. -/
-def mat (A : Fin s → Fin s → R) : Vec R s →ₗ[R] Vec R s where
-  toFun v i := ∑ j, A i j * v j
-  map_add' u v := by ext i; simp [mul_add, Finset.sum_add_distrib]
-  map_smul' r v := by
-    ext i
-    simp only [Pi.smul_apply, RingHom.id_apply, smul_eq_mul, Finset.mul_sum]
-    apply Finset.sum_congr rfl
-    intro j _
-    ac_rfl
+def mat (A : Fin s → Fin s → R) : Vec R s →ₗ[R] Vec R s :=
+  Matrix.mulVecLin A
 
 /-- Multiplication by a fixed stage column, coordinate by coordinate. -/
-def diag (c : Vec R s) : Vec R s →ₗ[R] Vec R s where
-  toFun v i := c i * v i
-  map_add' u v := by ext i; exact mul_add _ _ _
-  map_smul' r v := by ext i; change c i * (r * v i) = r * (c i * v i); ac_rfl
+def diag (c : Vec R s) : Vec R s →ₗ[R] Vec R s :=
+  LinearMap.mulLeft R c
 
 /-- A row as a linear functional, without any nonzero-weight hypothesis. -/
-def row (w : Vec R s) : Vec R s →ₗ[R] R where
-  toFun v := ∑ i, w i * v i
-  map_add' u v := by simp [mul_add, Finset.sum_add_distrib]
-  map_smul' r v := by
-    simp only [Pi.smul_apply, RingHom.id_apply, smul_eq_mul, Finset.mul_sum]
-    apply Finset.sum_congr rfl
-    intro j _
-    ac_rfl
+def row (w : Vec R s) : Vec R s →ₗ[R] R :=
+  dotProductEquiv R (Fin s) w
 
 @[simp] theorem mat_apply (A : Fin s → Fin s → R) (v : Vec R s) (i : Fin s) :
     mat A v i = ∑ j, A i j * v j := rfl

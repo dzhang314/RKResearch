@@ -1,0 +1,132 @@
+RKCert/ReviewedNative/SDIRKNineReplayC7.lean:167:2: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayC7.lean:167:12: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayC8.lean:279:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC8.lean:285:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC8.lean:419:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC8.lean:553:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC8.lean:559:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC8.lean:565:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:23:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:29:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:35:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:41:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:47:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:53:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:59:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:65:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:71:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayC9.lean:77:2: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:193:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:193:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:205:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:205:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:217:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:217:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:229:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:229:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:241:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias1.lean:241:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:23:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:23:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:35:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:35:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:47:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:47:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:59:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:59:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:71:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:71:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:83:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:83:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:95:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:95:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:107:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:107:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:119:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:119:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:131:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:131:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:143:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:143:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:155:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:155:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:167:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:167:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:179:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:179:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:191:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:191:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:203:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:203:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:215:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:215:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:227:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:227:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:239:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:239:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:251:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:251:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:263:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:263:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:275:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias2.lean:275:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:23:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:23:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:35:4: warning: Unused tactic linter: there are no goals left for `all_goals ac_rfl`.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:35:14: warning: this tactic is never executed
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:47:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:59:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:71:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:83:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:95:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:107:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:119:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:131:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:143:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:155:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:167:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:179:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:191:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:203:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:215:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:227:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:239:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:251:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias3.lean:263:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:23:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:35:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:47:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:59:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:71:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:83:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:95:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:107:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:119:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:131:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:143:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:155:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:167:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:179:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:191:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:203:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:215:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:227:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:239:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:251:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:263:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:275:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:287:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:299:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:311:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:323:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:335:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:347:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:359:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:371:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:383:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:395:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:407:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:419:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:431:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineReplayAlias4.lean:443:4: warning: Unused tactic linter: `all_goals` can be removed.
+RKCert/ReviewedNative/SDIRKNineOrderSeven.lean:44:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.SDIRKNineReplay.lowerTriangular`:

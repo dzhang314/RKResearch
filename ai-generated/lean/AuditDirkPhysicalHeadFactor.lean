@@ -1,0 +1,7 @@
+import RKCert.DirkPhysicalHeadFactor
+open RKCert.Paired RKCert.Paired.Terminal
+#print axioms OrdinaryTrace.exists_weighted_active_outside_roots
+#print axioms OrdinaryTrace.primitive_zero_at_first_clean
+#print axioms lobatto_zero_of_clean_nonlast
+#print axioms no_clean_head_lobatto_factor
+#print axioms no_lobatto_factor_mask_on_dirty

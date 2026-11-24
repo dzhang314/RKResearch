@@ -166,3 +166,9 @@ and `lake env lean AuditLowERK.lean` to reproduce the additional axiom audits.
 These certificates support the remaining finite-order proofs; they do not change the stage-bound tables. After building, the corresponding replay entry points for the axiom audits are `AuditOrderEight.lean` and `AuditDIRKEven.lean`.
 
 The [fixed-Lobatto factor theorem](LOBATTO-FACTOR-GATES.md) rules out a vanishing first moment for the small factors relevant at DIRK orders 14 and 16 over any characteristic-zero field. It uses exact prime-field checks and does not require real coefficients. Audit: `lake env lean AuditLobattoFactors.lean`.
+
+- [Finite ERK midpoint](ERK-FINITE-MIDPOINT.md): common characteristic-zero rank and head structure for orders 16–19.
+- [DIRK order 15](DIRK15-SUPPORT.md): an exhaustive three-way reduction of a hypothetical 20-stage characteristic-zero tableau and exact moment tests.
+- [Nonlocal reverse DIRK](DIRK-NONLOCAL-PORTS.md): physical pivot equations and joint coordinatewise vanishing at order 16 in the nonlocal case.
+
+These modules also supply structural prerequisites, not new numerical lower bounds.

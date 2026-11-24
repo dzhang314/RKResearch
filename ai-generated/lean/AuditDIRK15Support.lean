@@ -1,0 +1,21 @@
+import RKCert.Dirk15Support
+#print axioms RKCert.Paired.marked_strict
+#print axioms RKCert.Paired.marked_mul_tree
+#print axioms RKCert.Paired.order_on_lower_prefix
+#print axioms RKCert.Paired.weighted_reverse_primitive
+#print axioms RKCert.Paired.ReverseHermite.terminal_escape_out
+#print axioms RKCert.Paired.ReverseHermite.terminal_escape_in
+#print axioms RKCert.Paired.order15_nonC2_rank_chart
+#print axioms RKCert.Paired.nonC2_radau_port
+#print axioms RKCert.Paired.order15_minimal_marked_chart
+#print axioms RKCert.Paired.order15_minimal_deleted_band
+#print axioms RKCert.Paired.order15_twenty_native_cases
+#print axioms RKCert.Paired.order15_minimal_cubic_sites
+#print axioms RKCert.Paired.order15_grade_four_profile
+#print axioms RKCert.Paired.OrdinaryTrace.two_primitive_first_pivot
+#print axioms RKCert.Paired.ReverseTrace.two_primitive_last_pivot
+#print axioms RKCert.Paired.Signature.counted_factors_zero
+#print axioms RKCert.Paired.Signature.close_mixed_signatures
+#print axioms RKCert.Paired.Signature.affine_factor_from_mixed
+#print axioms RKCert.Paired.Signature.affine_gram_zero
+#print axioms RKCert.Paired.Signature.affine_monomial_impossible

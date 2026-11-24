@@ -31,3 +31,6 @@ public import RKCert.DirkReflected16
 public import RKCert.DirkEvenDual
 public import RKCert.ERKOrderEightLobatto
 public import RKCert.LobattoFactors
+public import RKCert.ERKFiniteStaircase
+public import RKCert.Dirk15Support
+public import RKCert.DirkJointHidden

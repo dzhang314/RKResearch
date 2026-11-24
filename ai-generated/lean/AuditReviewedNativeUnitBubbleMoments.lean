@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.ERKOrder16StrongCenteredShape
+import RKCert.ReviewedNative.ERKOrder16StrongCenteredResidual
+
+#print axioms RKCert.ReviewedNative.UnitBubbleMoments.quotient_interior_simple
+#print axioms RKCert.ReviewedNative.UnitBubbleMoments.signed_reflection
+#print axioms RKCert.ReviewedNative.StrongCentered16.Moments.shape
+#print axioms RKCert.ReviewedNative.StrongCentered16.scaled_moment_of_residual
+#print axioms RKCert.ReviewedNative.StrongCentered16.middle_scaled_moment

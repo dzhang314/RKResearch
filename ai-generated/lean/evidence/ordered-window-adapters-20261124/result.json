@@ -1,0 +1,162 @@
+{
+  "base": "6822d598ecf10dad2e443dca93a7a4b5c62fe270",
+  "reviewedHumanPin": "c35f5b900856c33eae15435ccebaabd049b56628",
+  "leanCommit": "611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9",
+  "mathlibCommit": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "OrderedAlternationDegree": {
+      "sourceSHA256": "a5fc0621e4e39280045283e271c342bc99348d4eaca48d3db50586e93eed184b",
+      "objectSHA256": "4581b6ef9537fe22fd70b600ab2594afba204fed974df45b508146e3a2f82a24",
+      "individualKernelReplay": true
+    },
+    "ERKOrder16StrongCenteredResidual": {
+      "sourceSHA256": "fa3f2212d2eb568253476cbda4cdfcb5af8419d36a838c4baf6ff7a2ce9a898b",
+      "objectSHA256": "768e0b4fa74bd253091d600f7da8173836ddd6f66d1ad12a6feeced0866e78c9",
+      "individualKernelReplay": true
+    },
+    "UnitBubbleMoments": {
+      "sourceSHA256": "0f1eba7636b8bf7b9bd2de2eaba26698b7d9688d9a5992ccfac35993a6e46e95",
+      "objectSHA256": "331119b457ce9e42d2ef0f457a58b362cd6b8a432305f39380a11524872396bc",
+      "individualKernelReplay": true
+    },
+    "ERKOrder16StrongCenteredShape": {
+      "sourceSHA256": "5a3b8bd3ae969f28296d81e5df2112c1129d4ff934721026f77c25adf3e9f053",
+      "objectSHA256": "1619b7f5392019de75efef86222dc46a86888cf553f1051858ea95b3d38ba393",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroHidden": {
+      "sourceSHA256": "76ef2771726f7f6f87f451ffa80ff54240d5cd5347bf951fdd9fcd09631d5f8c",
+      "objectSHA256": "bc14afa0ccd01b4a0bf0f6cd29c9b998f9390d0aba208682d07c4e57f0c26d64",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroHead": {
+      "sourceSHA256": "ce4e58434aacc1ce3345bc7bb8cc4a83a9a555ec718c18c7a3a9dc64356db2c2",
+      "objectSHA256": "1765a8474395db28de424804040fc220c55c0801c74238d2a71a0f26c7c2280f",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroReversePorts": {
+      "sourceSHA256": "acac6a8b44120c635e64768235e533a4fcd9ede33acc6b626874f8aeca4b030f",
+      "objectSHA256": "0647fa6a98ea4b83e8c04a64732756516537a7ebb6955b8e5221640e1e54c67a",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroForwardPorts": {
+      "sourceSHA256": "b650aa8a328e576e15f872622ad5b643ddd554726badc5e38034ef8913aadb52",
+      "objectSHA256": "6931abe8a88a8f26e81a0bfa5edb9df93bda2ca0d601177b3c8b28dc50c3a62b",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroOriginSplit": {
+      "sourceSHA256": "b0bae495de0ee1521d2accd5a99e8fd0d8cf59382c834d758aa2df1ece2ca113",
+      "objectSHA256": "e5a3e31de9daba7081c6a9ef6aa58921d1e7be63a3867bd5d07e360664e8c466",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroScalarInput": {
+      "sourceSHA256": "414987a1dd8e11277458f2426c289a0c92a9d0e0285ce8e4bb85b5dec1546024",
+      "objectSHA256": "84ccb69e7b83a1fa493db69acf6becf5b5d2d0a9c6de3eefbf925c81bc2916f1",
+      "individualKernelReplay": true
+    },
+    "ERK19ZeroOpposedAdapter": {
+      "sourceSHA256": "14e5238192fb063f55168cb13e4bc96565839aee7394c2af1dd1a6048fa895a4",
+      "objectSHA256": "ed64f832c4c06164c297d43984be32da5999f2e26904aa28f34e93573b57c5f5",
+      "individualKernelReplay": true
+    },
+    "ERK19OpposedAssembly": {
+      "sourceSHA256": "b1caa9b369c326b969f18cbb4eb1d2eafa88e4f0159d37862a1331d97dbc5d88",
+      "objectSHA256": "a0feee40e1c4b915c8d991ff4738c708c9b6b01df01580a34b703b88a897b445",
+      "individualKernelReplay": true
+    }
+  },
+  "audits": {
+    "AuditOrderedSignJoin": {
+      "sourceSHA256": "e1cda3226f1c56fdd77551f5119b973222be2616f158fc3ef8ef5eaace60ea9c",
+      "axioms": {
+        "RKCert.ReviewedNative.FiniteOrderedSigns.exists_alternating_subsequence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.AlternatingSamples.exists_join": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.HasAlternationsOn.add_open": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.FiniteOrderedSigns.HasAlternationsOn.le_natDegree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditReviewedNativeUnitBubbleMoments": {
+      "sourceSHA256": "acb10756383af648bc288cdd3b0dd62395180452594933fb569351382da076bf",
+      "axioms": {
+        "RKCert.ReviewedNative.UnitBubbleMoments.quotient_interior_simple": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.UnitBubbleMoments.signed_reflection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.StrongCentered16.Moments.shape": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.StrongCentered16.scaled_moment_of_residual": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKCert.ReviewedNative.StrongCentered16.middle_scaled_moment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditReviewedNativeERK19ZeroOpposedAdapter": {
+      "sourceSHA256": "8ba616860176470dc09fe4115e2e7222eec5db3e7d58b3b9d68ced367a0b9ebf",
+      "axioms": {
+        "RKResearch.Certified.ERK19.width29_opposed_physical_rows": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKResearch.Certified.ERK19.width29_zero_geometry_to_opposed_windows": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKResearch.Certified.ERK19.width29_zero_opposed_windows": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "AuditReviewedNativeERK19OpposedAssembly": {
+      "sourceSHA256": "376bbe193f01a3ddf5974b0940a4a982d488f8900ef33e6d417ecfef6e06508a",
+      "axioms": {
+        "RKResearch.Certified.ERK19.width29_zero_first_seed_impossible_of_scalar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RKResearch.Certified.ERK19.ordered_erk19_stage_floor30_of_zero_scalar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "unconditionalERK19StageBound": false,
+  "unconditionalERK16StageBound": false
+}

@@ -53,7 +53,7 @@ theorem seven_next_polynomial {P:K[X]} (S:Saturated A b 7 0) (M:Margin A b 7 0 0
     apply natDegree_le_iff_coeff_eq_zero.mpr
     intro i hi
     change (P-τ•G).coeff i=0
-    rw [coeff_sub,AddMonoidAlgebra.coeff_smul_apply,smul_eq_mul]
+    rw [coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul]
     by_cases he:i=8
     · subst i;unfold τ;rw [div_mul_cancel₀ _ GL,sub_self]
     · have P0 := coeff_eq_zero_of_natDegree_lt (p:=P) (n:=i) (by omega)

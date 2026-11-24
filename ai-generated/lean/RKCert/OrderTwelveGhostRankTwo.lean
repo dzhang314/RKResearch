@@ -26,7 +26,7 @@ theorem exclude_nonzero_ghost_two (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b
   have hw5 : w∈zeroSpace A 5 := by
     rw [hh.f5]
     have hx := (chain_le_iff (T:=diag c) (U:=U) (w:=w) 2).mp le_rfl
-    simpa only [pow_zero,one_apply_eq_self] using hx.2 0 (by decide)
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hx.2 0 (by decide)
   have hwi:=f5_vanish_at_last_active ha ho hs hi hl hw5
   have hc:=active_last_normal ha hs hi hl
   have hdelta:(Pi.single i (1:K):Vec K (s+1))-evalNodes A mesh6∈chain (diag c) U w 3 := by

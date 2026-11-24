@@ -120,10 +120,10 @@ theorem ghost8_shift_scalar (a b:K)
   change (ghost8:K[X]).coeff 0=0 at j0
   change (ghost8:K[X]).coeff 1=5 at j1
   change (ghost8:K[X]).coeff 2= -75 at j2
-  simp only [coeff_add,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_mul,coeff_zero,
-    mesh7_coeff1,j0,j1,smul_eq_mul] at h1
-  simp only [coeff_add,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_mul,coeff_zero,
-    mesh7_coeff2,j1,j2,smul_eq_mul] at h2
+  simp only [coeff_add,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_mul,coeff_zero,
+    mesh7_coeff1,j0,j1] at h1
+  simp only [coeff_add,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_mul,coeff_zero,
+    mesh7_coeff2,j1,j2] at h2
   have hA : a=0 := by linear_combination (-33/10:K)*h1-(11/50:K)*h2
   have hB : b=0 := by linear_combination (-1/5:K)*h1+(7/22:K)*hA
   exact ⟨hA,hB⟩

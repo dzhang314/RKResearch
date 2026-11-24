@@ -82,7 +82,7 @@ theorem mat_pow_zero_at_early {A : Fin s → Fin s → K} (ha : StrictLower A) (
   induction n generalizing i with
   | zero => omega
   | succ n ih =>
-    rw [pow_succ',mul_apply_eq_comp]
+    rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
     exact causal_mat ha i _ (fun j hj => ih j (by change j.val < i.val at hj; omega))
 
 theorem mat_isNilpotent {A : Fin s → Fin s → K} (ha : StrictLower A) :
@@ -99,7 +99,7 @@ theorem stageWeight_chain_eq_pow (A : Fin s → Fin s → K) (n : ℕ) :
   | zero => rfl
   | succ n ih =>
     ext i
-    rw [stageWeight_chain_succ,pow_succ',mul_apply_eq_comp,← ih,mat_apply]
+    rw [stageWeight_chain_succ,pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,← ih,mat_apply]
 
 /-- An A-invariant actual stage space containing the leaf already has
 dimension at least the attained order, by restricted nilpotence. -/
@@ -112,7 +112,7 @@ theorem dim_of_invariant_stage_space {A : Fin s → Fin s → K} {b : Vec K s}
     induction n with
     | zero => rfl
     | succ n ih =>
-      rw [pow_succ',pow_succ',mul_apply_eq_comp,mul_apply_eq_comp]
+      rw [pow_succ',pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,Module.End.mul_eq_comp,LinearMap.comp_apply]
       change mat A (((f^n) u : U) : Vec K s) = mat A (((mat A : Module.End K (Vec K s))^n) u)
       rw [ih]
   have hf : IsNilpotent f := by

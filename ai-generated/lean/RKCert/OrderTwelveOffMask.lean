@@ -115,7 +115,9 @@ theorem off_mask_bootstrap (ha:StrictLower A) (hU:MulClosed U)
       exact (div_ne_zero (pow_ne_zero _ hq.2) (by norm_num)) hF
     let fq : L := ⟨f q,fl q hq.1⟩
     let fj : L := ⟨f j',fl j' hhj.1⟩
-    obtain ⟨a,ea⟩ := (finrank_eq_one_iff_of_ne_zero' (K:=K) fq fqn).mp ldim fj
+    have hspan : Submodule.span K ({fq} : Set L)=⊤ := by
+      simpa using (FiniteDimensional.basisSingleton Unit ldim fq fqn).span_eq
+    obtain ⟨a,ea⟩ := (Submodule.span_singleton_eq_top_iff K fq).mp hspan fj
     have jf (k:ℕ) (hk:0<k) (hk3:k≤3) : mat A (M k) j'=a*(h^(k+1)/(k+1:ℕ)) := by
       have H := congrArg (fun x:L=>x.val ⟨M k,hm k⟩) ea
       change a * f q ⟨M k,hm k⟩=mat A (M k) j' at H

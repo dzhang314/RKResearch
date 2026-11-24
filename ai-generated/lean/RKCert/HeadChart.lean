@@ -21,14 +21,15 @@ theorem chain_sup_map (hU : U.map T≤U) {n : ℕ} (hn : 0<n) :
         exact hR.1 (hU ⟨_,hu,rfl⟩)
       · intro k hk
         change T ((T^k) w) ∈ chain T U w (n+1)
-        rw [←mul_apply_eq_comp,←pow_succ']
+        change (T * T^k) w ∈ _
+        rw [←pow_succ']
         exact hR.2 _ (by omega)
   · apply (chain_le_iff _).mpr
     refine ⟨le_trans hL.1 le_sup_left,fun k hk => ?_⟩
     by_cases he : k<n
     · exact (le_sup_left : chain T U w n ≤ _) (hL.2 _ he)
     · have ek : k=(n-1)+1 := by omega
-      rw [ek,pow_succ',mul_apply_eq_comp]
+      rw [ek,pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
       apply (le_sup_right : (chain T U w n).map T ≤ _)
       exact ⟨_,hL.2 _ (by omega),rfl⟩
 end RKCert.OneEscape

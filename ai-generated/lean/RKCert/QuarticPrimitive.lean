@@ -47,7 +47,7 @@ theorem primitive_mul_X_root_free {g h : Polynomial K} (hg : g≠0) (hh : h.natD
     ext n
     by_cases hn : n=2
     · simp [hn]
-    · simp only [Polynomial.coeff_monomial,Finsupp.single_apply,ite_eq_right (Ne.symm hn)]
+    · rw [Polynomial.coeff_monomial_of_ne _ hn]
       by_cases hn' : n<2
       · exact Polynomial.coeff_eq_zero_of_lt_natTrailingDegree (by rw [htr]; exact hn')
       · exact Polynomial.coeff_eq_zero_of_natDegree_lt (by omega)
@@ -70,7 +70,7 @@ theorem primitive_mul_X_root_free {g h : Polynomial K} (hg : g≠0) (hh : h.natD
     ext n
     by_cases hn : n=m
     · simp [hn]
-    · simp only [Polynomial.coeff_monomial,Finsupp.single_apply,ite_eq_right (Ne.symm hn)]
+    · rw [Polynomial.coeff_monomial_of_ne _ hn]
       by_contra hz
       exact hn (huniq n hz)
   have hne : h.coeff 2 ≠ 0 := by rw [← htr]; exact Polynomial.coeff_natTrailingDegree_ne_zero.mpr hhn

@@ -1,0 +1,954 @@
+--- a/RKCert/DiagonalHead.lean
++++ b/RKCert/DiagonalHead.lean
+@@ -10,8 +10,8 @@
+ variable {T : V →ₗ[K] V} {U S : Submodule K V} {w u : V}
+ theorem pow_mem (hU : U.map T ≤ U) {v : V} (hv : v∈U) (k : ℕ) : (T^k) v∈U := by
+   induction k with
+-  | zero => simpa only [pow_zero,one_apply_eq_self] using hv
+-  | succ k ih => rw [pow_succ',mul_apply_eq_comp]; exact hU ⟨_,ih,rfl⟩
++  | zero => simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hv
++  | succ k ih => rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]; exact hU ⟨_,ih,rfl⟩
+ 
+ theorem chain_le_iff (n : ℕ) : chain T U w n ≤ S ↔ U≤S ∧ ∀ k<n,(T^k) w∈S := by
+   induction n with
+@@ -48,8 +48,8 @@
+ variable {c : Vec K s} {A : Fin s → Fin s → K}
+ theorem pow_diag_apply (c v : Vec K s) (k : ℕ) (i : Fin s) : (diag c ^ k) v i = c i^k*v i := by
+   induction k with
+-  | zero => simp only [pow_zero,one_apply_eq_self,one_mul]
+-  | succ k ih => rw [pow_succ',mul_apply_eq_comp,diag_apply,ih,pow_succ]; ring
++  | zero => simp only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,one_mul]
++  | succ k ih => rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,diag_apply,ih,pow_succ]; ring
+ 
+ /-- Each true clock-stable part decomposes over actual numerical abscissae,
+ even when physically different stages have the same abscissa. -/
+@@ -70,9 +70,9 @@
+   | monomial n a =>
+     have hp (k : ℕ) : (diag c^k) v ∈ U := by
+       induction k with
+-      | zero => simpa only [pow_zero,one_apply_eq_self] using h
++      | zero => simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using h
+       | succ k ih =>
+-        rw [pow_succ',mul_apply_eq_comp]
++        rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+         exact hU ⟨_,ih,rfl⟩
+     have hs := U.smul_mem a (hp n)
+     convert hs using 1
+--- a/RKCert/Dirk15CubicOrbit.lean
++++ b/RKCert/Dirk15CubicOrbit.lean
+@@ -78,7 +78,7 @@
+       rw [he] at dd
+       simp at dd
+     change M 3=⊥⊔Submodule.span K ({(T^0) τ}:Set (Vec K 20))
+-    rw [bot_sup_eq,pow_zero,one_apply_eq_self]
++    rw [bot_sup_eq,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
+     have eqRank : finrank K (M 3)=1 := h.rankTerminalZero 3 (by decide) (by decide)
+     symm
+     apply Submodule.eq_of_le_of_finrank_eq ((Submodule.span_singleton_le_iff_mem ..).mpr ht)
+--- a/RKCert/DirkLocalProjection.lean
++++ b/RKCert/DirkLocalProjection.lean
+@@ -42,7 +42,8 @@
+   induction k with
+   | zero => simp
+   | succ k ih =>
+-    rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,kill_clock y d h loc,ih]
++    simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
++    rw [kill_clock y d h loc,ih]
+ 
+ theorem kill_chain (y d:Vec K s) (h:Fin s) (loc:∀i,d i≠0 → y i=y h) (dh:d h≠0)
+     (w:Vec K s) (k:ℕ) : (chain (diag y) (K ∙ d) w k).map (kill d h) =
+--- a/RKCert/DirkLocalWords.lean
++++ b/RKCert/DirkLocalWords.lean
+@@ -23,7 +23,7 @@
+     have dim:=Submodule.finrank_mono inc; omega
+   obtain ⟨w,hw,hnot⟩:=ex
+   have base:dirkBack A b 2=chain (diag (mirror A)) (dirkBack A b 1) w 1 := by
+-    simp only [chain,pow_zero,one_apply_eq_self]
++    simp only [chain,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
+     have hle:dirkBack A b 1≤dirkBack A b 2 := twoOrbit_le_succ ..
+     exact (Submodule.eq_of_le_of_finrank_le (sup_le hle ((Submodule.span_singleton_le_iff_mem ..).mpr hw))
+       (by rw [Submodule.finrank_sup_span_singleton hnot,r1,r2])).symm
+--- a/RKCert/DirkShortTrace.lean
++++ b/RKCert/DirkShortTrace.lean
+@@ -61,7 +61,7 @@
+   induction k with
+   | zero => simpa using h
+   | succ k ih =>
+-    rw [pow_succ',mul_apply_eq_comp,pow_succ',mul_assoc,Nat.add_succ]
++    rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,pow_succ',mul_assoc,Nat.add_succ]
+     exact ih.clock
+ 
+ /-- A short origin-cleared input, supported on genuine clean rows, cannot
+--- a/RKCert/ERKFiniteLeakage.lean
++++ b/RKCert/ERKFiniteLeakage.lean
+@@ -99,7 +99,7 @@
+     apply natDegree_le_iff_coeff_eq_zero.mpr
+     intro i hi
+     change (P-τ•G).coeff i=0
+-    rw [coeff_sub,AddMonoidAlgebra.coeff_smul_apply,smul_eq_mul]
++    rw [coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul]
+     by_cases h:i=a+1
+     · subst i
+       unfold τ
+--- a/RKCert/ERKFiniteShifts.lean
++++ b/RKCert/ERKFiniteShifts.lean
+@@ -15,7 +15,7 @@
+   have q1 : (-56) * bᵢ0 + 72 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • even6) - (bᵢ0 • even6)):K[X]).coeff (0+1)=((tᵢ0 • even7):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even6_coeff 0 (by decide), even6_coeff 1 (by decide)] at raw
+     try simp only [even7_coeff 0 (by decide), even7_coeff 1 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -23,7 +23,7 @@
+   have q2 : 56 * aᵢ0 + 1568 * bᵢ0 + (-2592) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • even6) - (bᵢ0 • even6)):K[X]).coeff (1+1)=((tᵢ0 • even7):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even6_coeff 1 (by decide), even6_coeff 2 (by decide)] at raw
+     try simp only [even7_coeff 1 (by decide), even7_coeff 2 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -31,7 +31,7 @@
+   have q3 : (-1568) * aᵢ0 + (-14112) * bᵢ0 + 30240 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • even6) - (bᵢ0 • even6)):K[X]).coeff (2+1)=((tᵢ0 • even7):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even6_coeff 2 (by decide), even6_coeff 3 (by decide)] at raw
+     try simp only [even7_coeff 2 (by decide), even7_coeff 3 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -46,7 +46,7 @@
+   have q1 : 8 * bᵢ0 + (-9) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • odd7) - (bᵢ0 • odd7)):K[X]).coeff (0+1)=((tᵢ0 • odd8):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [odd7_coeff 0 (by decide), odd7_coeff 1 (by decide)] at raw
+     try simp only [odd8_coeff 0 (by decide), odd8_coeff 1 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -54,7 +54,7 @@
+   have q2 : (-8) * aᵢ0 + (-252) * bᵢ0 + 360 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • odd7) - (bᵢ0 • odd7)):K[X]).coeff (1+1)=((tᵢ0 • odd8):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [odd7_coeff 1 (by decide), odd7_coeff 2 (by decide)] at raw
+     try simp only [odd8_coeff 1 (by decide), odd8_coeff 2 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -62,7 +62,7 @@
+   have q3 : 252 * aᵢ0 + 2520 * bᵢ0 + (-4620) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • odd7) - (bᵢ0 • odd7)):K[X]).coeff (2+1)=((tᵢ0 • odd8):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [odd7_coeff 2 (by decide), odd7_coeff 3 (by decide)] at raw
+     try simp only [odd8_coeff 2 (by decide), odd8_coeff 3 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -78,7 +78,7 @@
+   have q1 : (-56) * bᵢ0 + 72 * bᵢ1 + 72 * tᵢ0 + (-90) * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • dx6 + aᵢ1 • dx7) - (bᵢ0 • dx6 + bᵢ1 • dx7)):K[X]).coeff (0+1)=((tᵢ0 • dx7 + tᵢ1 • dx8):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 0 (by decide), dx6_coeff 1 (by decide)] at raw
+     try simp only [dx7_coeff 0 (by decide), dx7_coeff 1 (by decide)] at raw
+     try simp only [dx8_coeff 0 (by decide), dx8_coeff 1 (by decide)] at raw
+@@ -87,7 +87,7 @@
+   have q2 : 56 * aᵢ0 + (-72) * aᵢ1 + 1512 * bᵢ0 + (-2520) * bᵢ1 + (-2520) * tᵢ0 + 3960 * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • dx6 + aᵢ1 • dx7) - (bᵢ0 • dx6 + bᵢ1 • dx7)):K[X]).coeff (1+1)=((tᵢ0 • dx7 + tᵢ1 • dx8):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 1 (by decide), dx6_coeff 2 (by decide)] at raw
+     try simp only [dx7_coeff 1 (by decide), dx7_coeff 2 (by decide)] at raw
+     try simp only [dx8_coeff 1 (by decide), dx8_coeff 2 (by decide)] at raw
+@@ -96,7 +96,7 @@
+   have q3 : (-1512) * aᵢ0 + 2520 * aᵢ1 + (-12600) * bᵢ0 + 27720 * bᵢ1 + 27720 * tᵢ0 + (-55440) * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • dx6 + aᵢ1 • dx7) - (bᵢ0 • dx6 + bᵢ1 • dx7)):K[X]).coeff (2+1)=((tᵢ0 • dx7 + tᵢ1 • dx8):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 2 (by decide), dx6_coeff 3 (by decide)] at raw
+     try simp only [dx7_coeff 2 (by decide), dx7_coeff 3 (by decide)] at raw
+     try simp only [dx8_coeff 2 (by decide), dx8_coeff 3 (by decide)] at raw
+@@ -105,7 +105,7 @@
+   have q4 : 12600 * aᵢ0 + (-27720) * aᵢ1 + 46200 * bᵢ0 + (-138600) * bᵢ1 + (-138600) * tᵢ0 + 360360 * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 4) h0
+     change ((X * (aᵢ0 • dx6 + aᵢ1 • dx7) - (bᵢ0 • dx6 + bᵢ1 • dx7)):K[X]).coeff (3+1)=((tᵢ0 • dx7 + tᵢ1 • dx8):K[X]).coeff 4 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 3 (by decide), dx6_coeff 4 (by decide)] at raw
+     try simp only [dx7_coeff 3 (by decide), dx7_coeff 4 (by decide)] at raw
+     try simp only [dx8_coeff 3 (by decide), dx8_coeff 4 (by decide)] at raw
+@@ -114,7 +114,7 @@
+   have q12 : (-56) * cᵢ0 + 72 * cᵢ1 + 72 * uᵢ0 + (-90) * uᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h1
+     change ((X * (bᵢ0 • dx6 + bᵢ1 • dx7) - (cᵢ0 • dx6 + cᵢ1 • dx7)):K[X]).coeff (0+1)=((uᵢ0 • dx7 + uᵢ1 • dx8):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 0 (by decide), dx6_coeff 1 (by decide)] at raw
+     try simp only [dx7_coeff 0 (by decide), dx7_coeff 1 (by decide)] at raw
+     try simp only [dx8_coeff 0 (by decide), dx8_coeff 1 (by decide)] at raw
+@@ -123,7 +123,7 @@
+   have q13 : 56 * bᵢ0 + (-72) * bᵢ1 + 1512 * cᵢ0 + (-2520) * cᵢ1 + (-2520) * uᵢ0 + 3960 * uᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h1
+     change ((X * (bᵢ0 • dx6 + bᵢ1 • dx7) - (cᵢ0 • dx6 + cᵢ1 • dx7)):K[X]).coeff (1+1)=((uᵢ0 • dx7 + uᵢ1 • dx8):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 1 (by decide), dx6_coeff 2 (by decide)] at raw
+     try simp only [dx7_coeff 1 (by decide), dx7_coeff 2 (by decide)] at raw
+     try simp only [dx8_coeff 1 (by decide), dx8_coeff 2 (by decide)] at raw
+@@ -132,7 +132,7 @@
+   have q14 : (-1512) * bᵢ0 + 2520 * bᵢ1 + (-12600) * cᵢ0 + 27720 * cᵢ1 + 27720 * uᵢ0 + (-55440) * uᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h1
+     change ((X * (bᵢ0 • dx6 + bᵢ1 • dx7) - (cᵢ0 • dx6 + cᵢ1 • dx7)):K[X]).coeff (2+1)=((uᵢ0 • dx7 + uᵢ1 • dx8):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 2 (by decide), dx6_coeff 3 (by decide)] at raw
+     try simp only [dx7_coeff 2 (by decide), dx7_coeff 3 (by decide)] at raw
+     try simp only [dx8_coeff 2 (by decide), dx8_coeff 3 (by decide)] at raw
+@@ -141,7 +141,7 @@
+   have q15 : 12600 * bᵢ0 + (-27720) * bᵢ1 + 46200 * cᵢ0 + (-138600) * cᵢ1 + (-138600) * uᵢ0 + 360360 * uᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 4) h1
+     change ((X * (bᵢ0 • dx6 + bᵢ1 • dx7) - (cᵢ0 • dx6 + cᵢ1 • dx7)):K[X]).coeff (3+1)=((uᵢ0 • dx7 + uᵢ1 • dx8):K[X]).coeff 4 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx6_coeff 3 (by decide), dx6_coeff 4 (by decide)] at raw
+     try simp only [dx7_coeff 3 (by decide), dx7_coeff 4 (by decide)] at raw
+     try simp only [dx8_coeff 3 (by decide), dx8_coeff 4 (by decide)] at raw
+@@ -158,7 +158,7 @@
+   have q1 : (-90) * bᵢ0 + (-90) * tᵢ0 + 110 * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • dx8) - (bᵢ0 • dx8)):K[X]).coeff (0+1)=((tᵢ0 • dx8 + tᵢ1 • dx9):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx8_coeff 0 (by decide), dx8_coeff 1 (by decide)] at raw
+     try simp only [dx9_coeff 0 (by decide), dx9_coeff 1 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -166,7 +166,7 @@
+   have q2 : 90 * aᵢ0 + 3960 * bᵢ0 + 3960 * tᵢ0 + (-5940) * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • dx8) - (bᵢ0 • dx8)):K[X]).coeff (1+1)=((tᵢ0 • dx8 + tᵢ1 • dx9):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx8_coeff 1 (by decide), dx8_coeff 2 (by decide)] at raw
+     try simp only [dx9_coeff 1 (by decide), dx9_coeff 2 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -174,7 +174,7 @@
+   have q3 : (-3960) * aᵢ0 + (-55440) * bᵢ0 + (-55440) * tᵢ0 + 102960 * tᵢ1 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • dx8) - (bᵢ0 • dx8)):K[X]).coeff (2+1)=((tᵢ0 • dx8 + tᵢ1 • dx9):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx8_coeff 2 (by decide), dx8_coeff 3 (by decide)] at raw
+     try simp only [dx9_coeff 2 (by decide), dx9_coeff 3 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -190,7 +190,7 @@
+   have q1 : 42 * bᵢ0 + (-56) * bᵢ1 + 72 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • dx5 + aᵢ1 • dx6) - (bᵢ0 • dx5 + bᵢ1 • dx6)):K[X]).coeff (0+1)=((tᵢ0 • dx7):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 0 (by decide), dx5_coeff 1 (by decide)] at raw
+     try simp only [dx6_coeff 0 (by decide), dx6_coeff 1 (by decide)] at raw
+     try simp only [dx7_coeff 0 (by decide), dx7_coeff 1 (by decide)] at raw
+@@ -199,7 +199,7 @@
+   have q2 : (-42) * aᵢ0 + 56 * aᵢ1 + (-840) * bᵢ0 + 1512 * bᵢ1 + (-2520) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • dx5 + aᵢ1 • dx6) - (bᵢ0 • dx5 + bᵢ1 • dx6)):K[X]).coeff (1+1)=((tᵢ0 • dx7):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 1 (by decide), dx5_coeff 2 (by decide)] at raw
+     try simp only [dx6_coeff 1 (by decide), dx6_coeff 2 (by decide)] at raw
+     try simp only [dx7_coeff 1 (by decide), dx7_coeff 2 (by decide)] at raw
+@@ -208,7 +208,7 @@
+   have q3 : 840 * aᵢ0 + (-1512) * aᵢ1 + 5040 * bᵢ0 + (-12600) * bᵢ1 + 27720 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • dx5 + aᵢ1 • dx6) - (bᵢ0 • dx5 + bᵢ1 • dx6)):K[X]).coeff (2+1)=((tᵢ0 • dx7):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 2 (by decide), dx5_coeff 3 (by decide)] at raw
+     try simp only [dx6_coeff 2 (by decide), dx6_coeff 3 (by decide)] at raw
+     try simp only [dx7_coeff 2 (by decide), dx7_coeff 3 (by decide)] at raw
+@@ -217,7 +217,7 @@
+   have q4 : (-5040) * aᵢ0 + 12600 * aᵢ1 + (-12600) * bᵢ0 + 46200 * bᵢ1 + (-138600) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 4) h0
+     change ((X * (aᵢ0 • dx5 + aᵢ1 • dx6) - (bᵢ0 • dx5 + bᵢ1 • dx6)):K[X]).coeff (3+1)=((tᵢ0 • dx7):K[X]).coeff 4 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 3 (by decide), dx5_coeff 4 (by decide)] at raw
+     try simp only [dx6_coeff 3 (by decide), dx6_coeff 4 (by decide)] at raw
+     try simp only [dx7_coeff 3 (by decide), dx7_coeff 4 (by decide)] at raw
+@@ -226,7 +226,7 @@
+   have q12 : 42 * cᵢ0 + (-56) * cᵢ1 + 72 * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h1
+     change ((X * (bᵢ0 • dx5 + bᵢ1 • dx6) - (cᵢ0 • dx5 + cᵢ1 • dx6)):K[X]).coeff (0+1)=((uᵢ0 • dx7):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 0 (by decide), dx5_coeff 1 (by decide)] at raw
+     try simp only [dx6_coeff 0 (by decide), dx6_coeff 1 (by decide)] at raw
+     try simp only [dx7_coeff 0 (by decide), dx7_coeff 1 (by decide)] at raw
+@@ -235,7 +235,7 @@
+   have q13 : (-42) * bᵢ0 + 56 * bᵢ1 + (-840) * cᵢ0 + 1512 * cᵢ1 + (-2520) * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h1
+     change ((X * (bᵢ0 • dx5 + bᵢ1 • dx6) - (cᵢ0 • dx5 + cᵢ1 • dx6)):K[X]).coeff (1+1)=((uᵢ0 • dx7):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 1 (by decide), dx5_coeff 2 (by decide)] at raw
+     try simp only [dx6_coeff 1 (by decide), dx6_coeff 2 (by decide)] at raw
+     try simp only [dx7_coeff 1 (by decide), dx7_coeff 2 (by decide)] at raw
+@@ -244,7 +244,7 @@
+   have q14 : 840 * bᵢ0 + (-1512) * bᵢ1 + 5040 * cᵢ0 + (-12600) * cᵢ1 + 27720 * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h1
+     change ((X * (bᵢ0 • dx5 + bᵢ1 • dx6) - (cᵢ0 • dx5 + cᵢ1 • dx6)):K[X]).coeff (2+1)=((uᵢ0 • dx7):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 2 (by decide), dx5_coeff 3 (by decide)] at raw
+     try simp only [dx6_coeff 2 (by decide), dx6_coeff 3 (by decide)] at raw
+     try simp only [dx7_coeff 2 (by decide), dx7_coeff 3 (by decide)] at raw
+@@ -253,7 +253,7 @@
+   have q15 : (-5040) * bᵢ0 + 12600 * bᵢ1 + (-12600) * cᵢ0 + 46200 * cᵢ1 + (-138600) * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 4) h1
+     change ((X * (bᵢ0 • dx5 + bᵢ1 • dx6) - (cᵢ0 • dx5 + cᵢ1 • dx6)):K[X]).coeff (3+1)=((uᵢ0 • dx7):K[X]).coeff 4 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx5_coeff 3 (by decide), dx5_coeff 4 (by decide)] at raw
+     try simp only [dx6_coeff 3 (by decide), dx6_coeff 4 (by decide)] at raw
+     try simp only [dx7_coeff 3 (by decide), dx7_coeff 4 (by decide)] at raw
+@@ -270,7 +270,7 @@
+   have q1 : 72 * bᵢ0 + (-90) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • dx7) - (bᵢ0 • dx7)):K[X]).coeff (0+1)=((tᵢ0 • dx8):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx7_coeff 0 (by decide), dx7_coeff 1 (by decide)] at raw
+     try simp only [dx8_coeff 0 (by decide), dx8_coeff 1 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -278,7 +278,7 @@
+   have q2 : (-72) * aᵢ0 + (-2520) * bᵢ0 + 3960 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • dx7) - (bᵢ0 • dx7)):K[X]).coeff (1+1)=((tᵢ0 • dx8):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx7_coeff 1 (by decide), dx7_coeff 2 (by decide)] at raw
+     try simp only [dx8_coeff 1 (by decide), dx8_coeff 2 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+@@ -286,7 +286,7 @@
+   have q3 : 2520 * aᵢ0 + 27720 * bᵢ0 + (-55440) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • dx7) - (bᵢ0 • dx7)):K[X]).coeff (2+1)=((tᵢ0 • dx8):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [dx7_coeff 2 (by decide), dx7_coeff 3 (by decide)] at raw
+     try simp only [dx8_coeff 2 (by decide), dx8_coeff 3 (by decide)] at raw
+     have rz := sub_eq_zero.mpr raw
+--- a/RKCert/ERKLowBase.lean
++++ b/RKCert/ERKLowBase.lean
+@@ -82,7 +82,7 @@
+   induction n generalizing i with
+   | zero => omega
+   | succ n ih =>
+-    rw [pow_succ',mul_apply_eq_comp]
++    rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+     exact causal_mat ha i _ (fun j hj => ih j (by change j.val < i.val at hj; omega))
+ 
+ theorem mat_isNilpotent {A : Fin s → Fin s → K} (ha : StrictLower A) :
+@@ -99,7 +99,7 @@
+   | zero => rfl
+   | succ n ih =>
+     ext i
+-    rw [stageWeight_chain_succ,pow_succ',mul_apply_eq_comp,← ih,mat_apply]
++    rw [stageWeight_chain_succ,pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,← ih,mat_apply]
+ 
+ /-- An A-invariant actual stage space containing the leaf already has
+ dimension at least the attained order, by restricted nilpotence. -/
+@@ -112,7 +112,7 @@
+     induction n with
+     | zero => rfl
+     | succ n ih =>
+-      rw [pow_succ',pow_succ',mul_apply_eq_comp,mul_apply_eq_comp]
++      rw [pow_succ',pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,Module.End.mul_eq_comp,LinearMap.comp_apply]
+       change mat A (((f^n) u : U) : Vec K s) = mat A (((mat A : Module.End K (Vec K s))^n) u)
+       rw [ih]
+   have hf : IsNilpotent f := by
+--- a/RKCert/ERKLowCurves.lean
++++ b/RKCert/ERKLowCurves.lean
+@@ -112,7 +112,7 @@
+     (chainSpan_le_zeroSpace (qdef_mem A) 1) (by simp [h3,hR1])
+   have he4 : chainSpan A d 2=zeroSpace A 4 := Submodule.eq_of_le_of_finrank_le
+     (chainSpan_le_zeroSpace (qdef_mem A) 2) (by simp [h4,hR2])
+-  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul (qdef_mem A) (qdef_mem A)
++  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul (A:=A) (m:=2) (n:=2) (v:=d) (w:=d) (qdef_mem A) (qdef_mem A)
+   rw [← he4,chainSpan_iff_polynomial] at hsq
+   obtain ⟨P,hP,hEq⟩ := hsq
+   have he (i) (hi : d i≠0) : P.eval (nodes A i)=d i := by
+--- a/RKCert/ERKLowEndpointCore.lean
++++ b/RKCert/ERKLowEndpointCore.lean
+@@ -155,7 +155,7 @@
+   have hQ2 : Q.coeff 2 = Q.coeff 3*(-3/2) := by linear_combination -420*h0 + 2100*h1 - 2100*h2
+   ext n
+   by_cases h : n≤3
+-  · interval_cases n <;> simp [coeff_C_mul,lobattoCubic,hQ0,hQ1,hQ2]
++  · interval_cases n <;> simp [coeff_C_mul,lobattoCubic,coeff_monomial,hQ0,hQ1,hQ2]
+   · rw [coeff_eq_zero_of_natDegree_lt (by omega : Q.natDegree < n),coeff_C_mul]
+     simp only [lobattoCubic,coeff_add,coeff_monomial]
+     have h0' : 0≠n := by omega
+@@ -185,7 +185,7 @@
+   have h2 := hcoef 1
+   have h1 := hcoef 0
+   have hz : P.coeff 3=0 := coeff_eq_zero_of_natDegree_lt (by omega)
+-  norm_num [lobattoCubic,hz] at h3 h2 h1
++  norm_num [lobattoCubic,coeff_monomial,hz] at h3 h2 h1
+   rw [primitive_eval_X_quadratic P hP] at hprim
+   have hq : u^2 * (91*u^2 - 105*u + 27)=0 := by
+     linear_combination 84*hprim + 91*u^4*h3 + 70*u^3*h2 + 42*u^2*h1
+--- a/RKCert/ERKLowLobatto.lean
++++ b/RKCert/ERKLowLobatto.lean
+@@ -181,7 +181,7 @@
+     have hi2 : 2≠i := by omega
+     have hi3 : 3≠i := by omega
+     simp [lobattoCubic,coeff_monomial,coeff_C,Ne.symm hi0,hi1,hi2,hi3]
+-  · simp [lobattoCubic]
++  · simp [lobattoCubic,coeff_monomial]
+ 
+ /-- A quadratic divisor of the fixed cubic leaves one exact linear
+ factor, with no ordering on roots needed. -/
+--- a/RKCert/ERKOrderNineRadau.lean
++++ b/RKCert/ERKOrderNineRadau.lean
+@@ -34,7 +34,7 @@
+     linear_combination -1120*h0 + 8400*h1 - 16800*h2 + 9800*h3
+   ext n
+   by_cases h : n≤4
+-  · interval_cases n <;> simp [coeff_C_mul,radauQuartic,c0,c1,c2,c3]
++  · interval_cases n <;> simp [coeff_C_mul,radauQuartic,coeff_monomial,c0,c1,c2,c3]
+   · rw [coeff_eq_zero_of_natDegree_lt (by omega : Q.natDegree < n),coeff_C_mul]
+     simp only [radauQuartic,coeff_add,coeff_monomial]
+     have h0' : 0≠n := by omega
+--- a/RKCert/ERKOrderedQ7Knots.lean
++++ b/RKCert/ERKOrderedQ7Knots.lean
+@@ -24,7 +24,7 @@
+   have p := Fplus_power (marked_power H (by decide) (k:=r-1) (by omega)) 1
+   change (diag (nodes A)^1) ((diag (nodes A)^(r-1)) w)∈defectPlus A 0 6 at p
+   rw [←ek,pow_succ']
+-  simpa only [pow_one,mul_apply_eq_comp] using p
++  simpa only [pow_one,Module.End.mul_eq_comp,LinearMap.comp_apply] using p
+ 
+ theorem physical_seven_knot (ha:StrictLower A) (S:Saturated A b 7 0)
+     (M:Margin A b 7 0 0) (C:EvenSevenChart A r U w G) (Pr:SevenProfile A r U w P)
+--- a/RKCert/ERKOrderedQ7Leakage.lean
++++ b/RKCert/ERKOrderedQ7Leakage.lean
+@@ -53,7 +53,7 @@
+     apply natDegree_le_iff_coeff_eq_zero.mpr
+     intro i hi
+     change (P-τ•G).coeff i=0
+-    rw [coeff_sub,AddMonoidAlgebra.coeff_smul_apply,smul_eq_mul]
++    rw [coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul]
+     by_cases he:i=8
+     · subst i;unfold τ;rw [div_mul_cancel₀ _ GL,sub_self]
+     · have P0 := coeff_eq_zero_of_natDegree_lt (p:=P) (n:=i) (by omega)
+--- a/RKCert/ERKOrderedQ7Shifts.lean
++++ b/RKCert/ERKOrderedQ7Shifts.lean
+@@ -16,7 +16,7 @@
+   have q1 : (-30) * bᵢ0 + 42 * bᵢ1 + (-56) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h0
+     change ((X * (aᵢ0 • even4 + aᵢ1 • even5) - (bᵢ0 • even4 + bᵢ1 • even5)):K[X]).coeff (0+1)=((tᵢ0 • even6):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 0 (by decide), even4_coeff 1 (by decide)] at raw
+     try simp only [even5_coeff 0 (by decide), even5_coeff 1 (by decide)] at raw
+     try simp only [even6_coeff 0 (by decide), even6_coeff 1 (by decide)] at raw
+@@ -25,7 +25,7 @@
+   have q2 : 30 * aᵢ0 + (-42) * aᵢ1 + 450 * bᵢ0 + (-882) * bᵢ1 + 1568 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h0
+     change ((X * (aᵢ0 • even4 + aᵢ1 • even5) - (bᵢ0 • even4 + bᵢ1 • even5)):K[X]).coeff (1+1)=((tᵢ0 • even6):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 1 (by decide), even4_coeff 2 (by decide)] at raw
+     try simp only [even5_coeff 1 (by decide), even5_coeff 2 (by decide)] at raw
+     try simp only [even6_coeff 1 (by decide), even6_coeff 2 (by decide)] at raw
+@@ -34,7 +34,7 @@
+   have q3 : (-450) * aᵢ0 + 882 * aᵢ1 + (-2100) * bᵢ0 + 5880 * bᵢ1 + (-14112) * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h0
+     change ((X * (aᵢ0 • even4 + aᵢ1 • even5) - (bᵢ0 • even4 + bᵢ1 • even5)):K[X]).coeff (2+1)=((tᵢ0 • even6):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 2 (by decide), even4_coeff 3 (by decide)] at raw
+     try simp only [even5_coeff 2 (by decide), even5_coeff 3 (by decide)] at raw
+     try simp only [even6_coeff 2 (by decide), even6_coeff 3 (by decide)] at raw
+@@ -43,7 +43,7 @@
+   have q4 : 2100 * aᵢ0 + (-5880) * aᵢ1 + 4200 * bᵢ0 + (-17640) * bᵢ1 + 58800 * tᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 4) h0
+     change ((X * (aᵢ0 • even4 + aᵢ1 • even5) - (bᵢ0 • even4 + bᵢ1 • even5)):K[X]).coeff (3+1)=((tᵢ0 • even6):K[X]).coeff 4 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 3 (by decide), even4_coeff 4 (by decide)] at raw
+     try simp only [even5_coeff 3 (by decide), even5_coeff 4 (by decide)] at raw
+     try simp only [even6_coeff 3 (by decide), even6_coeff 4 (by decide)] at raw
+@@ -52,7 +52,7 @@
+   have q12 : (-30) * cᵢ0 + 42 * cᵢ1 + (-56) * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 1) h1
+     change ((X * (bᵢ0 • even4 + bᵢ1 • even5) - (cᵢ0 • even4 + cᵢ1 • even5)):K[X]).coeff (0+1)=((uᵢ0 • even6):K[X]).coeff 1 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 0 (by decide), even4_coeff 1 (by decide)] at raw
+     try simp only [even5_coeff 0 (by decide), even5_coeff 1 (by decide)] at raw
+     try simp only [even6_coeff 0 (by decide), even6_coeff 1 (by decide)] at raw
+@@ -61,7 +61,7 @@
+   have q13 : 30 * bᵢ0 + (-42) * bᵢ1 + 450 * cᵢ0 + (-882) * cᵢ1 + 1568 * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 2) h1
+     change ((X * (bᵢ0 • even4 + bᵢ1 • even5) - (cᵢ0 • even4 + cᵢ1 • even5)):K[X]).coeff (1+1)=((uᵢ0 • even6):K[X]).coeff 2 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 1 (by decide), even4_coeff 2 (by decide)] at raw
+     try simp only [even5_coeff 1 (by decide), even5_coeff 2 (by decide)] at raw
+     try simp only [even6_coeff 1 (by decide), even6_coeff 2 (by decide)] at raw
+@@ -70,7 +70,7 @@
+   have q14 : (-450) * bᵢ0 + 882 * bᵢ1 + (-2100) * cᵢ0 + 5880 * cᵢ1 + (-14112) * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 3) h1
+     change ((X * (bᵢ0 • even4 + bᵢ1 • even5) - (cᵢ0 • even4 + cᵢ1 • even5)):K[X]).coeff (2+1)=((uᵢ0 • even6):K[X]).coeff 3 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 2 (by decide), even4_coeff 3 (by decide)] at raw
+     try simp only [even5_coeff 2 (by decide), even5_coeff 3 (by decide)] at raw
+     try simp only [even6_coeff 2 (by decide), even6_coeff 3 (by decide)] at raw
+@@ -79,7 +79,7 @@
+   have q15 : 2100 * bᵢ0 + (-5880) * bᵢ1 + 4200 * cᵢ0 + (-17640) * cᵢ1 + 58800 * uᵢ0 = 0 := by
+     have raw := congrArg (fun P:K[X]=>P.coeff 4) h1
+     change ((X * (bᵢ0 • even4 + bᵢ1 • even5) - (cᵢ0 • even4 + cᵢ1 • even5)):K[X]).coeff (3+1)=((uᵢ0 • even6):K[X]).coeff 4 at raw
+-    simp only [coeff_sub, coeff_X_mul, coeff_add, AddMonoidAlgebra.coeff_smul_apply, smul_eq_mul] at raw
++    simp only [coeff_sub, coeff_X_mul, coeff_add, Polynomial.smul_eq_C_mul, Polynomial.coeff_C_mul] at raw
+     try simp only [even4_coeff 3 (by decide), even4_coeff 4 (by decide)] at raw
+     try simp only [even5_coeff 3 (by decide), even5_coeff 4 (by decide)] at raw
+     try simp only [even6_coeff 3 (by decide), even6_coeff 4 (by decide)] at raw
+--- a/RKCert/ExplicitOrderTwelve.lean
++++ b/RKCert/ExplicitOrderTwelve.lean
+@@ -34,7 +34,7 @@
+     rw [←h.head.f7tail,escape7_exact ha ho hs hi no]
+     have hw := head_paid h.head k hk
+     have he := f5_vanish_at_last_active ha ho hs hi no hw
+-    exact ⟨zeroSpace_mul hv hw,by change v (Fin.last s)*((diag (nodes A)^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
++    exact ⟨zeroSpace_mul (A:=A) (m:=2) (n:=5) hv hw,by change v (Fin.last s)*((diag (nodes A)^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
+   have v5 : v∈chain (diag (nodes A)) U w r := h.head.f5 ▸ zeroSpace_mono A (by decide : 2≤5) hv
+   obtain ⟨P,hP,dP,fit⟩:=multiplier_profile h.head.inv core h.head.normalized n (by have := h.head.pos;omega)
+     band v5 hvo
+@@ -62,7 +62,7 @@
+   have f8 (k:ℕ) (hk:k<r) : f k∈endZero A 8 (Fin.last s) := by
+     have hw := head_paid h.head k hk
+     have he := f5_vanish_at_last_active ha ho hs hi no hw
+-    exact ⟨zeroSpace_mul hv hw,by change v (Fin.last s)*((C^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
++    exact ⟨zeroSpace_mul (A:=A) (m:=3) (n:=5) hv hw,by change v (Fin.last s)*((C^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
+   have le (k:ℕ) (hk:k<r) : f k∈chain C U w (r+3) := by
+     by_cases hnext:k+1<r
+     · have hh : C (f k)∈endZero A 8 (Fin.last s) := by rw [ff];exact f8 (k+1) hnext
+@@ -96,7 +96,7 @@
+   have h4 : zeroSpace A 4=chain C U w 2 := four_grade_exact hs h.head hr
+   have pp := (chain_le_iff (T:=C) (U:=U) (w:=w) 2).mp le_rfl
+   have le4 : U≤zeroSpace A 4 := by rw [h4];exact pp.1
+-  have hw4 : w∈zeroSpace A 4 := by rw [h4];simpa only [pow_zero,one_apply_eq_self] using pp.2 0 (by decide)
++  have hw4 : w∈zeroSpace A 4 := by rw [h4];simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pp.2 0 (by decide)
+   have sit : 6<(headSites c w).card := by
+     have H : 8≤(headSites c w).card := h.sites
+     omega
+@@ -106,26 +106,26 @@
+   obtain ⟨z,_,hdis,hz⟩:=disjoint_full_chart hs h hU (fun u hu=>mul u w hu hw4)
+   have hZ4 : zeroSpace A 4=chain C U z 2 := four_grade_exact hs hz.head hr
+   have pz := (chain_le_iff (T:=C) (U:=U) (w:=z) 2).mp le_rfl
+-  have z4 : z∈zeroSpace A 4 := by rw [hZ4];simpa only [pow_zero,one_apply_eq_self] using pz.2 0 (by decide)
++  have z4 : z∈zeroSpace A 4 := by rw [hZ4];simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pz.2 0 (by decide)
+   have cz4 : C z∈zeroSpace A 4 := by rw [hZ4];simpa only [pow_one] using pz.2 1 (by decide)
+   have zi := f5_vanish_at_last_active ha ho hs hi no (zeroSpace_mono A (by decide:4≤5) z4)
+   have czi : C z (Fin.last s)=0 := by simp [C,zi]
+-  have z0 : z*z∈endZero A 8 (Fin.last s) := ⟨zeroSpace_mul z4 z4,by change z _*z _=0;rw [zi,zero_mul]⟩
++  have z0 : z*z∈endZero A 8 (Fin.last s) := ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) z4 z4,by change z _*z _=0;rw [zi,zero_mul]⟩
+   have z1 : C (z*z)∈endZero A 8 (Fin.last s) := by
+     have eq:C (z*z)=(C z)*z := by ext j;simp [C,mul_assoc]
+     rw [eq]
+-    exact ⟨zeroSpace_mul cz4 z4,by change C z _*z _=0;rw [zi,mul_zero]⟩
++    exact ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) cz4 z4,by change C z _*z _=0;rw [zi,mul_zero]⟩
+   have z2 : C (C (z*z))∈endZero A 8 (Fin.last s) := by
+     have eq:C (C (z*z))=(C z)*(C z) := by ext j;simp [C];ring
+     rw [eq]
+-    exact ⟨zeroSpace_mul cz4 cz4,by change C z _*C z _=0;rw [czi,zero_mul]⟩
++    exact ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) cz4 cz4,by change C z _*C z _=0;rw [czi,zero_mul]⟩
+   have hB0 := no_double_leak_both ha ho hs hi no hz.head hz.e8 hz.e9 hz.e9r z0 z1
+   have hB1 := no_double_leak_both ha ho hs hi no hz.head hz.e8 hz.e9 hz.e9r z1 z2
+   have bb (k:ℕ) (hk:k≤2) : (C^k) (z*z)∈chain C U z 6 := by
+     interval_cases k
+-    · simpa only [pow_zero,one_apply_eq_self] using hB0.1
++    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hB0.1
+     · simpa only [pow_one] using hB0.2
+-    · simpa only [pow_two,mul_apply_eq_comp] using hB1.2
++    · simpa only [pow_two,Module.End.mul_eq_comp,LinearMap.comp_apply] using hB1.2
+   have sitz : 6<(headSites c z).card := by
+     have HH : 8≤(headSites c z).card := hz.sites
+     omega
+--- a/RKCert/GradeFiveCaseOne.lean
++++ b/RKCert/GradeFiveCaseOne.lean
+@@ -60,7 +60,7 @@
+     have hc0 : nodes A 0=0 := by
+       unfold nodes; exact Finset.sum_eq_zero fun j _ => ha _ _ (Nat.zero_le _)
+     have hd0 : d 0=0 := origin_zeroSpace A ha 2 (qdef_mem A)
+-    have hquad : d*d∈zeroSpace A 4 := zeroSpace_mul (qdef_mem A) (qdef_mem A)
++    have hquad : d*d∈zeroSpace A 4 := zeroSpace_mul (A:=A) (m:=2) (n:=2) (v:=d) (w:=d) (qdef_mem A) (qdef_mem A)
+     rw [h4,chainSpan_iff_polynomial] at hquad
+     obtain ⟨g,hg,hEq⟩ := hquad
+     have hgd (i : Fin (s+1)) (hi : d i≠0) : g.eval (nodes A i)=d i := by
+--- a/RKCert/GradeFiveDependent.lean
++++ b/RKCert/GradeFiveDependent.lean
+@@ -203,7 +203,7 @@
+   obtain ⟨j,hjw,hjc,hij⟩ := hh
+   have hdi : d i=0 := by by_contra h; exact hic (heig i h)
+   have hdj : d j=0 := by by_contra h; exact hjc (heig j h)
+-  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul hdm hdm
++  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul (A:=A) (m:=2) (n:=2) (v:=d) (w:=d) hdm hdm
+   rw [h4,mixedSpan,chainSpan_succ,chainSpan_zero] at hsq
+   obtain ⟨D,hD,W,hW,hEq⟩ := Submodule.mem_sup.mp hsq
+   obtain ⟨x,hx⟩ := Submodule.mem_span_singleton.mp hD
+--- a/RKCert/HeadChart.lean
++++ b/RKCert/HeadChart.lean
+@@ -21,14 +21,15 @@
+         exact hR.1 (hU ⟨_,hu,rfl⟩)
+       · intro k hk
+         change T ((T^k) w) ∈ chain T U w (n+1)
+-        rw [←mul_apply_eq_comp,←pow_succ']
++        change (T * T^k) w ∈ _
++        rw [←pow_succ']
+         exact hR.2 _ (by omega)
+   · apply (chain_le_iff _).mpr
+     refine ⟨le_trans hL.1 le_sup_left,fun k hk => ?_⟩
+     by_cases he : k<n
+     · exact (le_sup_left : chain T U w n ≤ _) (hL.2 _ he)
+     · have ek : k=(n-1)+1 := by omega
+-      rw [ek,pow_succ',mul_apply_eq_comp]
++      rw [ek,pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+       apply (le_sup_right : (chain T U w n).map T ≤ _)
+       exact ⟨_,hL.2 _ (by omega),rfl⟩
+ end RKCert.OneEscape
+--- a/RKCert/OneEscape.lean
++++ b/RKCert/OneEscape.lean
+@@ -14,7 +14,7 @@
+ theorem mem_core {T : V →ₗ[K] V} {F : Submodule K V} {n : ℕ} {x : V} :
+     x ∈ core T F n ↔ ∀ k ≤ n, (T^k) x ∈ F := by
+   induction n with
+-  | zero => simp only [core_zero,Nat.le_zero,forall_eq,pow_zero,one_apply_eq_self]
++  | zero => simp only [core_zero,Nat.le_zero,forall_eq,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
+   | succ n ih =>
+     change (x ∈ core T F n ∧ (T^(n+1)) x ∈ F) ↔ _
+     rw [ih]
+@@ -32,7 +32,7 @@
+   apply mem_core.mpr
+   intro k hk
+   have hz := mem_core.mp (h ▸ hx : x ∈ core T F (n+1)) (k+1) (by omega)
+-  simpa only [pow_succ,mul_apply_eq_comp] using hz
++  simpa only [pow_succ,Module.End.mul_eq_comp,LinearMap.comp_apply] using hz
+ theorem invariant_le_core {T : V →ₗ[K] V} {F U : Submodule K V}
+     (hin : U ≤ F) (hT : U.map T ≤ U) (n : ℕ) : U ≤ core T F n := by
+   intro x hx
+@@ -40,9 +40,9 @@
+   intro k hk
+   apply hin
+   induction k with
+-  | zero => simpa only [pow_zero,one_apply_eq_self] using hx
++  | zero => simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hx
+   | succ k ih =>
+-    rw [pow_succ',mul_apply_eq_comp]
++    rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+     exact hT ⟨_,ih (by omega),rfl⟩
+ section Rank
+ variable [FiniteDimensional K V]
+@@ -58,7 +58,7 @@
+     rintro _ ⟨x,rfl⟩
+     have hx := mem_core.mp x.property n le_rfl
+     have hz : (T^(n+1)) x.val ∈ W := by
+-      rw [pow_succ',mul_apply_eq_comp]
++      rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+       exact (le_sup_right : F.map T ≤ W) ⟨_,hx,rfl⟩
+     exact ⟨⟨_,hz⟩,rfl⟩
+   have ha : LinearMap.ker a = (core T F (n+1)).comap U.subtype := by
+@@ -140,7 +140,7 @@
+     apply prev (r-1) (by omega)
+     rw [hri]
+     exact le_antisymm h (hri ▸ descend T F (r-1))
+-  obtain ⟨w,hw,hw'⟩ := IsConcreteLE.not_le_iff_exists.mp lack
++  obtain ⟨w,hw,hw'⟩ := Set.not_subset.mp (show ¬(core T F (r-1) : Set V) ⊆ core T F r from lack)
+   have paid (j : ℕ) (hj : j<r) : (T^j) w ∈ F :=
+     mem_core.mp hw j (by omega)
+   have unpaid : (T^r) w ∉ F := by
+@@ -166,12 +166,12 @@
+         apply mem_core.mpr
+         intro k hk
+         have hp := paid (k+j) (by omega)
+-        simpa only [pow_add,mul_apply_eq_comp] using hp
++        simpa only [pow_add,Module.End.mul_eq_comp,LinearMap.comp_apply] using hp
+       have hnot : (T^j) w ∉ core T F (r-j) := by
+         intro h
+         have he := mem_core.mp h (r-j) le_rfl
+         apply unpaid
+-        rw [← show r-j+j=r by omega,pow_add,mul_apply_eq_comp]
++        rw [← show r-j+j=r by omega,pow_add,Module.End.mul_eq_comp,LinearMap.comp_apply]
+         exact he
+       change chain T U w j ⊔ Submodule.span K {(T^j) w} = _
+       rw [ih (by omega)]
+@@ -184,7 +184,7 @@
+         exact h.le
+   refine ⟨r,U,w,hpos,invariant_of_plateau hr,?_,?_,?_,paid,unpaid,?_⟩
+   · intro x hx
+-    simpa only [pow_zero,one_apply_eq_self] using mem_core.mp hx 0 (Nat.zero_le r)
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using mem_core.mp hx 0 (Nat.zero_le r)
+   · intro S hs hin
+     exact invariant_le_core hin hs r
+   · simpa only [Nat.sub_self,core_zero] using (hc r le_rfl).symm
+--- a/RKCert/OrderTwelveChronologicalContrast.lean
++++ b/RKCert/OrderTwelveChronologicalContrast.lean
+@@ -99,7 +99,7 @@
+     apply natDegree_le_iff_coeff_eq_zero.mpr
+     intro n hn
+     change (R-a • X^3).coeff n=0
+-    rw [coeff_sub,AddMonoidAlgebra.coeff_smul_apply,Polynomial.coeff_X_pow]
++    rw [coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,Polynomial.coeff_X_pow]
+     by_cases e : n=3
+     · subst n;simp [a]
+     · have zz : R.coeff n=0 := coeff_eq_zero_of_natDegree_lt (by omega)
+--- a/RKCert/OrderTwelveContrastGates.lean
++++ b/RKCert/OrderTwelveContrastGates.lean
+@@ -124,7 +124,7 @@
+   have ev5 : RKCert.OrderTwelve.cubicMoment x 3 a-u*RKCert.OrderTwelve.cubicMoment x 2 a+
+       (-α)*RKCert.OrderTwelve.leakSeven x=0 := by
+     have cf : (X*Q).coeff 3=1 := by
+-      rw [ec2,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_pow,coeff_X_pow]
++      rw [ec2,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_pow,coeff_X_pow]
+       norm_num
+     rw [cf,mul_one,ghost7_val,ec2,sub_mul,smul_mul_assoc,map_sub,map_smul,eval_sub,eval_smul,value,value,smul_eq_mul] at e5
+     linear_combination e5
+--- a/RKCert/OrderTwelveCoreRanks.lean
++++ b/RKCert/OrderTwelveCoreRanks.lean
+@@ -60,10 +60,12 @@
+     have l : (C^(r-1-k)) w∈core C F k := by
+       apply mem_core.mpr
+       intro j hj
+-      rw [← mul_apply_eq_comp,←pow_add]
++      change (C^j * C^(r-1-k)) w ∈ F
++      rw [←pow_add]
+       exact paid _ (by omega)
+     have hx := mem_core.mp (e ▸ l) (k+1) le_rfl
+-    rw [← mul_apply_eq_comp,←pow_add,show k+1+(r-1-k)=r by omega] at hx
++    change (C^(k+1) * C^(r-1-k)) w ∈ F at hx
++    rw [←pow_add,show k+1+(r-1-k)=r by omega] at hx
+     exact out hx
+   have rd (k:ℕ) (hk:k≤r) : finrank K (core C F k)+k=5 := by
+     induction k with
+@@ -79,7 +81,8 @@
+     refine ⟨invariant_le_core hh.low hh.inv d,fun k hk => ?_⟩
+     apply mem_core.mpr
+     intro j hj
+-    rw [← mul_apply_eq_comp,←pow_add]
++    change (C^j * C^k) w ∈ F
++    rw [←pow_add]
+     exact paid _ (by omega)
+   have lower := head_succ_rank_cap (A:=A) (U:=U) (w:=w) d (r-d)
+   change finrank K (chain C U w (r-d+d))≤finrank K (chain C U w (r-d))+d at lower
+@@ -96,7 +99,7 @@
+     apply mem_core.mpr
+     intro k hk
+     interval_cases k
+-    · simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mono A (by decide : 4≤5) hv
++    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mono A (by decide : 4≤5) hv
+     · rw [pow_one];exact diag_zeroSpace A 4 hv
+   rw [rank_core_exact hs hh 1 (by omega)] at hh1
+   apply Submodule.eq_of_le_of_finrank_le hh1
+@@ -112,9 +115,9 @@
+     apply mem_core.mpr
+     intro k hk
+     interval_cases k
+-    · simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mono A (by decide : 3≤5) hv
++    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mono A (by decide : 3≤5) hv
+     · simpa only [pow_one] using zeroSpace_mono A (by decide : 4≤5) (diag_zeroSpace A 3 hv)
+-    · rw [pow_two,mul_apply_eq_comp];exact diag_zeroSpace A 4 (diag_zeroSpace A 3 hv)
++    · rw [pow_two,Module.End.mul_eq_comp,LinearMap.comp_apply];exact diag_zeroSpace A 4 (diag_zeroSpace A 3 hv)
+   rw [rank_core_exact hs hh 2 (by decide)] at hl
+   exact hl
+ 
+--- a/RKCert/OrderTwelveGhostRankTwo.lean
++++ b/RKCert/OrderTwelveGhostRankTwo.lean
+@@ -26,7 +26,7 @@
+   have hw5 : w∈zeroSpace A 5 := by
+     rw [hh.f5]
+     have hx := (chain_le_iff (T:=diag c) (U:=U) (w:=w) 2).mp le_rfl
+-    simpa only [pow_zero,one_apply_eq_self] using hx.2 0 (by decide)
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hx.2 0 (by decide)
+   have hwi:=f5_vanish_at_last_active ha ho hs hi hl hw5
+   have hc:=active_last_normal ha hs hi hl
+   have hdelta:(Pi.single i (1:K):Vec K (s+1))-evalNodes A mesh6∈chain (diag c) U w 3 := by
+--- a/RKCert/OrderTwelveLeakage.lean
++++ b/RKCert/OrderTwelveLeakage.lean
+@@ -169,7 +169,7 @@
+     change (ghost8:K[X]).coeff 6= -210 at g6
+     have g7 : (ghost8:K[X]).coeff 7=0 := coeff_eq_zero_of_natDegree_lt (by have := ghost8_natDegree (K:=K);omega)
+     have c7 : P.coeff 7=0 := by
+-      simp only [P,coeff_add,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_mul,g6,g7,mesh7_coeff7,smul_eq_mul]
++      simp only [P,coeff_add,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_mul,g6,g7,mesh7_coeff7]
+       ring
+     apply natDegree_le_iff_coeff_eq_zero.mpr
+     intro n hn
+--- a/RKCert/OrderTwelveMeshPolynomials.lean
++++ b/RKCert/OrderTwelveMeshPolynomials.lean
+@@ -120,10 +120,10 @@
+   change (ghost8:K[X]).coeff 0=0 at j0
+   change (ghost8:K[X]).coeff 1=5 at j1
+   change (ghost8:K[X]).coeff 2= -75 at j2
+-  simp only [coeff_add,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_mul,coeff_zero,
+-    mesh7_coeff1,j0,j1,smul_eq_mul] at h1
+-  simp only [coeff_add,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_mul,coeff_zero,
+-    mesh7_coeff2,j1,j2,smul_eq_mul] at h2
++  simp only [coeff_add,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_mul,coeff_zero,
++    mesh7_coeff1,j0,j1] at h1
++  simp only [coeff_add,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_mul,coeff_zero,
++    mesh7_coeff2,j1,j2] at h2
+   have hA : a=0 := by linear_combination (-33/10:K)*h1-(11/50:K)*h2
+   have hB : b=0 := by linear_combination (-1/5:K)*h1+(7/22:K)*hA
+   exact ⟨hA,hB⟩
+--- a/RKCert/OrderTwelveMultiplierProfile.lean
++++ b/RKCert/OrderTwelveMultiplierProfile.lean
+@@ -49,7 +49,7 @@
+     rwa [e]
+   obtain ⟨P,hp,mem⟩:=fit 0 hr
+   have mem' : v*w-weightedEval c w P∈U := by
+-    simpa only [pow_zero,one_apply_eq_self] using mem
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using mem
+   have hp0:P≠0 := by
+     intro z
+     have hw : v*w∈U := by simpa only [z,map_zero,sub_zero] using mem'
+@@ -138,7 +138,7 @@
+   have hf := fiber_mem hh.inv a hu
+   have hz := f5_vanish_at_last_active ha ho hs hi hl (hh.low hf)
+   have h : fiber (nodes A) a u*v∈endZero A 7 i :=
+-    ⟨zeroSpace_mul (hh.low hf) hv,by change _*v i=0;rw [hz,zero_mul]⟩
++    ⟨zeroSpace_mul (A:=A) (m:=5) (n:=2) (hh.low hf) hv,by change _*v i=0;rw [hz,zero_mul]⟩
+   rw [←escape7_exact ha ho hs hi hl,hh.f7tail] at h
+   apply localized_mem (z:=a) hh.inv hh.normalized hcount h
+   intro j hn
+--- a/RKCert/OrderTwelveOffMask.lean
++++ b/RKCert/OrderTwelveOffMask.lean
+@@ -115,7 +115,9 @@
+       exact (div_ne_zero (pow_ne_zero _ hq.2) (by norm_num)) hF
+     let fq : L := ⟨f q,fl q hq.1⟩
+     let fj : L := ⟨f j',fl j' hhj.1⟩
+-    obtain ⟨a,ea⟩ := (finrank_eq_one_iff_of_ne_zero' (K:=K) fq fqn).mp ldim fj
++    have hspan : Submodule.span K ({fq} : Set L)=⊤ := by
++      simpa using (FiniteDimensional.basisSingleton Unit ldim fq fqn).span_eq
++    obtain ⟨a,ea⟩ := (Submodule.span_singleton_eq_top_iff K fq).mp hspan fj
+     have jf (k:ℕ) (hk:0<k) (hk3:k≤3) : mat A (M k) j'=a*(h^(k+1)/(k+1:ℕ)) := by
+       have H := congrArg (fun x:L=>x.val ⟨M k,hm k⟩) ea
+       change a * f q ⟨M k,hm k⟩=mat A (M k) j' at H
+--- a/RKCert/OrderTwelveRankTwoClosure.lean
++++ b/RKCert/OrderTwelveRankTwoClosure.lean
+@@ -79,7 +79,7 @@
+   have le4 : U≤zeroSpace A 4 := by rw [h4];exact pp.1
+   have hw4 : w∈zeroSpace A 4 := by
+     rw [h4]
+-    simpa only [pow_zero,one_apply_eq_self] using pp.2 0 (by decide)
++    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pp.2 0 (by decide)
+   have sit : 2+3<(headSites (nodes A) w).card := by have := h.sites;omega
+   have mul (u v : Vec K (s+1)) (hu:u∈U) (hv:v∈zeroSpace A 4) : u*v∈U :=
+     core_grade8_multiplier ha ho hs hi hl h.head h.e8 h.e9 h.e9r sit le4 (by decide) hu hv
+@@ -89,7 +89,7 @@
+     have hZ := (zeroSpace A 4).sub_mem hw4 (le4 hz)
+     simpa only [sub_sub_cancel] using hZ
+   have zi := f5_vanish_at_last_active ha ho hs hi hl (zeroSpace_mono A (by decide:4≤5) z4)
+-  have sq : z*z∈endZero A 8 i := ⟨zeroSpace_mul z4 z4,by change z i*z i=0;rw [zi,zero_mul]⟩
++  have sq : z*z∈endZero A 8 i := ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) z4 z4,by change z i*z i=0;rw [zi,zero_mul]⟩
+   have h7t : chain (diag (nodes A)) U z 4≤endZero A 7 i := by
+     rw [←hzC.head.f7tail]
+     exact escape7_le_end ha ho hs hi hl
+--- a/RKCert/OrderTwelveReverseLocalized.lean
++++ b/RKCert/OrderTwelveReverseLocalized.lean
+@@ -142,7 +142,9 @@
+       ⟨(reverse_seven_nine ha ho hs).noninvariantBack2,(reverse_seven_nine ha ho hs).noninvariantBack3⟩)
+     have step (k : ℕ) (hk : k=2 ∨ k=3) : B (k+1)=B k ⊔ (B k).map Y := by
+       apply join_next (back_le_succ A b k) (back_map_clock A b k)
+-      · rcases hk with rfl|rfl <;> assumption
++      · rcases hk with rfl|rfl
++        · exact bn
++        · exact bn2
+       · have a := hs.backRank k (by omega)
+         have e := hs.backRank (k+1) (by omega)
+         change finrank K (back A b (k+1))≤finrank K (back A b k)+1
+--- a/RKCert/QuarticPrimitive.lean
++++ b/RKCert/QuarticPrimitive.lean
+@@ -47,7 +47,7 @@
+     ext n
+     by_cases hn : n=2
+     · simp [hn]
+-    · simp only [Polynomial.coeff_monomial,Finsupp.single_apply,ite_eq_right (Ne.symm hn)]
++    · rw [Polynomial.coeff_monomial_of_ne _ hn]
+       by_cases hn' : n<2
+       · exact Polynomial.coeff_eq_zero_of_lt_natTrailingDegree (by rw [htr]; exact hn')
+       · exact Polynomial.coeff_eq_zero_of_natDegree_lt (by omega)
+@@ -70,7 +70,7 @@
+     ext n
+     by_cases hn : n=m
+     · simp [hn]
+-    · simp only [Polynomial.coeff_monomial,Finsupp.single_apply,ite_eq_right (Ne.symm hn)]
++    · rw [Polynomial.coeff_monomial_of_ne _ hn]
+       by_contra hz
+       exact hn (huniq n hz)
+   have hne : h.coeff 2 ≠ 0 := by rw [← htr]; exact Polynomial.coeff_natTrailingDegree_ne_zero.mpr hhn
+--- a/RKCert/QuotientGrowth.lean
++++ b/RKCert/QuotientGrowth.lean
+@@ -71,7 +71,7 @@
+     (x : Vec K s) (hs : ∀ i, y i=0 → x i=0) (hx : T x=0) : x=0 := by
+   funext i
+   induction hm : (ord i).val using Nat.strong_induction_on generalizing i with
+-  | ind n ih =>
++  | _ n ih =>
+     have hh := hT i x (fun j hj => ih (ord j).val (by omega) j rfl)
+     have hz : y i^3*x i=0 := hh.symm.trans (congrFun hx i)
+     by_cases hy : y i=0
+--- a/RKCert/RadauPhysicalNondivisibility.lean
++++ b/RKCert/RadauPhysicalNondivisibility.lean
+@@ -17,7 +17,7 @@
+     have h3 : 3≠i := by omega
+     have h4 : 4≠i := by omega
+     simp [radauQuartic,coeff_monomial,coeff_C,Ne.symm h0,h1,h2,h3,h4]
+-  · simp [radauQuartic]
++  · simp [radauQuartic,coeff_monomial]
+ 
+ theorem scaled_X_radau : (X*(radauQuartic:K[X])).scaleRoots (126:K) =
+     C (1:K)*((X*radauIntegral).map (Int.castRingHom K)) := by
+--- a/RKCert/SDIRKCommutator.lean
++++ b/RKCert/SDIRKCommutator.lean
+@@ -47,7 +47,7 @@
+   have hi : ∀ n : ℕ, ∀ j : Fin s, j.val = n → x j = 0 := by
+     intro n
+     induction n using Nat.strong_induction_on with
+-    | ind n ih =>
++    | _ n ih =>
+       intro j hj
+       have he := congrFun hx j
+       rw [commutator_lead ha j _ (fun k hk => ih k.val (by change k.val < j.val at hk; omega) k rfl)] at he
+--- a/RKCert/SDIRKWeightedTerminalSix.lean
++++ b/RKCert/SDIRKWeightedTerminalSix.lean
+@@ -51,7 +51,9 @@
+   change Module.finrank K E + Module.finrank K H = Module.finrank K (Fin 6→K) at hd
+   rw [Module.finrank_fin_fun] at hd
+   have hdim : Module.finrank K H=1 := by omega
+-  obtain ⟨μ,hμ⟩ := (finrank_eq_one_iff_of_ne_zero' (K:=K) w hw).mp hdim (⟨S,hS⟩ : H)
++  have hspan : Submodule.span K ({w} : Set H)=⊤ := by
++    simpa using (FiniteDimensional.basisSingleton Unit hdim w hw).span_eq
++  obtain ⟨μ,hμ⟩ := (Submodule.span_singleton_eq_top_iff K w).mp hspan (⟨S,hS⟩ : H)
+   exact ⟨μ,congrArg Subtype.val hμ⟩
+ 
+ /-- The reflected normalized spacing controls the actual last two seed values. -/
+--- a/RKCert/StagePrimitives.lean
++++ b/RKCert/StagePrimitives.lean
+@@ -194,7 +194,7 @@
+   rw [finsetSum_coeff,Finset.sum_eq_single n]
+   · simp
+   · intro i _ hi
+-    simp [Polynomial.coeff_monomial,Ne.symm hi]
++    exact Polynomial.coeff_monomial_of_ne _ (by omega)
+   · intro h
+     simp [Polynomial.notMem_support_iff.mp h]
+ 

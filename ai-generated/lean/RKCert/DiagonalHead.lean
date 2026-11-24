@@ -10,8 +10,8 @@ variable {K V : Type*} [Field K] [AddCommGroup V] [Module K V]
 variable {T : V →ₗ[K] V} {U S : Submodule K V} {w u : V}
 theorem pow_mem (hU : U.map T ≤ U) {v : V} (hv : v∈U) (k : ℕ) : (T^k) v∈U := by
   induction k with
-  | zero => simpa only [pow_zero,one_apply_eq_self] using hv
-  | succ k ih => rw [pow_succ',mul_apply_eq_comp]; exact hU ⟨_,ih,rfl⟩
+  | zero => simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hv
+  | succ k ih => rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]; exact hU ⟨_,ih,rfl⟩
 
 theorem chain_le_iff (n : ℕ) : chain T U w n ≤ S ↔ U≤S ∧ ∀ k<n,(T^k) w∈S := by
   induction n with
@@ -48,8 +48,8 @@ variable {K : Type*} [Field K] {s : ℕ}
 variable {c : Vec K s} {A : Fin s → Fin s → K}
 theorem pow_diag_apply (c v : Vec K s) (k : ℕ) (i : Fin s) : (diag c ^ k) v i = c i^k*v i := by
   induction k with
-  | zero => simp only [pow_zero,one_apply_eq_self,one_mul]
-  | succ k ih => rw [pow_succ',mul_apply_eq_comp,diag_apply,ih,pow_succ]; ring
+  | zero => simp only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply,one_mul]
+  | succ k ih => rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,diag_apply,ih,pow_succ]; ring
 
 /-- Each true clock-stable part decomposes over actual numerical abscissae,
 even when physically different stages have the same abscissa. -/
@@ -70,9 +70,9 @@ theorem poly_preserves {U : Submodule K (Vec K s)} (hU : U.map (diag c) ≤ U)
   | monomial n a =>
     have hp (k : ℕ) : (diag c^k) v ∈ U := by
       induction k with
-      | zero => simpa only [pow_zero,one_apply_eq_self] using h
+      | zero => simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using h
       | succ k ih =>
-        rw [pow_succ',mul_apply_eq_comp]
+        rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
         exact hU ⟨_,ih,rfl⟩
     have hs := U.smul_mem a (hp n)
     convert hs using 1

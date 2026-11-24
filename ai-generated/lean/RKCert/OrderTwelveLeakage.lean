@@ -169,7 +169,7 @@ theorem no_double_leak_both (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b 12)
     change (ghost8:K[X]).coeff 6= -210 at g6
     have g7 : (ghost8:K[X]).coeff 7=0 := coeff_eq_zero_of_natDegree_lt (by have := ghost8_natDegree (K:=K);omega)
     have c7 : P.coeff 7=0 := by
-      simp only [P,coeff_add,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_mul,g6,g7,mesh7_coeff7,smul_eq_mul]
+      simp only [P,coeff_add,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_mul,g6,g7,mesh7_coeff7]
       ring
     apply natDegree_le_iff_coeff_eq_zero.mpr
     intro n hn

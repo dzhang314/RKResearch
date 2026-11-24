@@ -1,0 +1,1 @@
+All four inputs: exact public blobs plus patch reproduce the candidate. Repository-root patch passes git apply --check and reproduces identical candidate. Already-patched source accepted. One-byte drift and an out-of-matrix label rejected before output, network or build.

@@ -78,7 +78,7 @@ theorem order15_minimal_cubic_orbit (ha : LowerArray A) (ho : HasTreeOrderAtLeas
       rw [he] at dd
       simp at dd
     change M 3=⊥⊔Submodule.span K ({(T^0) τ}:Set (Vec K 20))
-    rw [bot_sup_eq,pow_zero,one_apply_eq_self]
+    rw [bot_sup_eq,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
     have eqRank : finrank K (M 3)=1 := h.rankTerminalZero 3 (by decide) (by decide)
     symm
     apply Submodule.eq_of_le_of_finrank_eq ((Submodule.span_singleton_le_iff_mem ..).mpr ht)

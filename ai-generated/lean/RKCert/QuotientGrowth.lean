@@ -71,7 +71,7 @@ private theorem dirk_supported_kernel (ord : Fin s ≃ Fin s) (T : Vec K s →�
     (x : Vec K s) (hs : ∀ i, y i=0 → x i=0) (hx : T x=0) : x=0 := by
   funext i
   induction hm : (ord i).val using Nat.strong_induction_on generalizing i with
-  | ind n ih =>
+  | _ n ih =>
     have hh := hT i x (fun j hj => ih (ord j).val (by omega) j rfl)
     have hz : y i^3*x i=0 := hh.symm.trans (congrFun hx i)
     by_cases hy : y i=0

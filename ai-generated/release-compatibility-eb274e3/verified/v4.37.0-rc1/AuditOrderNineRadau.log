@@ -1,0 +1,32 @@
+'RKCert.Paired.order9_nodal_radau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.radau_ratio_three_fourths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.radau_ratio_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.gradeFive_nine_state_directions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_five_on_weights_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.state_defect_five_zero_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.on_pair_ratio_of_primitive_tests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_five_off_five_on_rank_nine_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_five_on_off_rank_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_five_on_off_stage_five_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.fixedRadauCompatInt_mod353' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.fixedRadauCompat_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.fixedRadau_late_scalar_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.orderAdjoint_annih' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.orderAdjoint_of_D1' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.Paired.order9_five_on_off_stage_five_split.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 12 → Fin 12 → K}
+  {b : RKCert.Paired.Vec K 12} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 9)
+  (hN : (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card = 5) (hM : (RKCert.Paired.onNodes A).card = 5) :
+  Module.finrank K ↥(RKCert.Paired.gradeFiveStateSpace A) = 9 ∧
+    Pi.single (Fin.last 11) 1 ∉ RKCert.Paired.onOffSpace A ∧
+      RKCert.Paired.treeSpace A 5 = RKCert.Paired.gradeFiveStateSpace A ⊔ K ∙ Pi.single (Fin.last 11) 1
+RKCert.Paired.fixedRadau_late_scalar_gate.{u_1} {K : Type u_1} [Field K] [CharZero K] (w : Fin 4 → K) (B : K)
+  (hR : ∀ (i : Fin 4), Polynomial.eval (w i) RKCert.Paired.radauQuartic = 0) (hW : Function.Injective w)
+  (hF :
+    (RKCert.Paired.fixedRadauF (w 2) (w 3) fun x =>
+        RKCert.Paired.fixedRadauP0 (w 0) x + B * RKCert.Paired.fixedRadauP1 (w 0) x) =
+      0)
+  (hG :
+    (RKCert.Paired.fixedRadauG (w 1) (w 2) (w 3) fun x =>
+        RKCert.Paired.fixedRadauP0 (w 0) x + B * RKCert.Paired.fixedRadauP1 (w 0) x) =
+      0) :
+  False

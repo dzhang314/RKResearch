@@ -202,3 +202,5 @@ Audit with `lake env lean FiniteERK16to19Audit.lean`, `lake env lean AuditDIRKEv
 - [Order-15 DIRK with C(2) and early marked rank surplus](ORDER15-EARLY-MARKED-SURPLUS.md): the 20-stage candidate is also impossible. The minimal marked chart remains open in Lean, so neither certificate changes the coverage table.
 
 The supporting [DIRK refinement](DIRK15-REFINEMENT.md), [weighted fifth-debut](DIRK-WEIGHTED-FIVE.md), and [fixed Radau](DIRK15-RADAU.md) arguments are independent chapter entries.
+
+[Lean and Mathlib release compatibility](RELEASE-COMPATIBILITY.md) lists the verified versions and the exact tested proof snapshot.

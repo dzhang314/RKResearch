@@ -181,7 +181,7 @@ theorem lobattoCubic_degree : (lobattoCubic : K[X]).natDegree=3 := by
     have hi2 : 2≠i := by omega
     have hi3 : 3≠i := by omega
     simp [lobattoCubic,coeff_monomial,coeff_C,Ne.symm hi0,hi1,hi2,hi3]
-  · simp [lobattoCubic]
+  · simp [lobattoCubic,coeff_monomial]
 
 /-- A quadratic divisor of the fixed cubic leaves one exact linear
 factor, with no ordering on roots needed. -/

@@ -49,7 +49,7 @@ theorem multiplier_profile {c v:Vec K (s+1)}
     rwa [e]
   obtain ⟨P,hp,mem⟩:=fit 0 hr
   have mem' : v*w-weightedEval c w P∈U := by
-    simpa only [pow_zero,one_apply_eq_self] using mem
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using mem
   have hp0:P≠0 := by
     intro z
     have hw : v*w∈U := by simpa only [z,map_zero,sub_zero] using mem'
@@ -138,7 +138,7 @@ theorem core_grade7_multiplier (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b 12
   have hf := fiber_mem hh.inv a hu
   have hz := f5_vanish_at_last_active ha ho hs hi hl (hh.low hf)
   have h : fiber (nodes A) a u*v∈endZero A 7 i :=
-    ⟨zeroSpace_mul (hh.low hf) hv,by change _*v i=0;rw [hz,zero_mul]⟩
+    ⟨zeroSpace_mul (A:=A) (m:=5) (n:=2) (hh.low hf) hv,by change _*v i=0;rw [hz,zero_mul]⟩
   rw [←escape7_exact ha ho hs hi hl,hh.f7tail] at h
   apply localized_mem (z:=a) hh.inv hh.normalized hcount h
   intro j hn

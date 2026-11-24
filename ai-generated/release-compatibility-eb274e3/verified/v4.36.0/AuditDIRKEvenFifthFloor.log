@@ -1,0 +1,8 @@
+'RKCert.OneEscape.largest_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.OneEscape.terminal_quotient_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.even_core_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.joint_sub_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.fifth_not_hidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.Terminal.quartic_rank_dispatch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.dirk_even_three_m_minus_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.dirk_even_three_m_minus_two_ring' depends on axioms: [propext, Classical.choice, Quot.sound]

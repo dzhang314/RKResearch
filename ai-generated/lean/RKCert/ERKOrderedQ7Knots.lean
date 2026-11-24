@@ -24,7 +24,7 @@ theorem weighted_seven_budget (H:MarkedHead A 7 0 r U w) (R:K[X]) (hr:R.natDegre
   have p := Fplus_power (marked_power H (by decide) (k:=r-1) (by omega)) 1
   change (diag (nodes A)^1) ((diag (nodes A)^(r-1)) w)∈defectPlus A 0 6 at p
   rw [←ek,pow_succ']
-  simpa only [pow_one,mul_apply_eq_comp] using p
+  simpa only [pow_one,Module.End.mul_eq_comp,LinearMap.comp_apply] using p
 
 theorem physical_seven_knot (ha:StrictLower A) (S:Saturated A b 7 0)
     (M:Margin A b 7 0 0) (C:EvenSevenChart A r U w G) (Pr:SevenProfile A r U w P)

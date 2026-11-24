@@ -47,7 +47,7 @@ theorem commutator_injective {A : Fin s → Fin s → K} (ha : lower A) (hn : �
   have hi : ∀ n : ℕ, ∀ j : Fin s, j.val = n → x j = 0 := by
     intro n
     induction n using Nat.strong_induction_on with
-    | ind n ih =>
+    | _ n ih =>
       intro j hj
       have he := congrFun hx j
       rw [commutator_lead ha j _ (fun k hk => ih k.val (by change k.val < j.val at hk; omega) k rfl)] at he

@@ -1,0 +1,85 @@
+'RKCert.Paired.prefix_order_of_suffix_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.last_weight_of_uniform_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.finrank_add_annih_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.explicit_treeSpace_finrank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.mat_pow_zero_at_early' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.mat_isNilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.dim_of_invariant_stage_space' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.annih_invariant_rank_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_ten_stage_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_twelve_stage_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_rank_five_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.hermite_backward_rank_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.exists_merge_equal_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.no_identical_rows_at_uniform_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.chainSpan_rank_on_supportedNodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.no_two_off_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.two_curve_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.on_row_quartic_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.offWeight_eq_zero_from_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.zero_of_anchored_profile_probes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.five_on_of_aggregate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.three_off_forces_two_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.no_three_off_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.reverse_hermite_gain_to' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.clock_not_of_anchored_adjacent_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_treeSpace_four_not_clock_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_treeSpace_five_not_clock_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_off_count_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_off_count_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.onOffSpace_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.gradeFiveState_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_on_count_le_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.cubic_beta_moments_top_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.one_not_on_of_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_no_four_off_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order8_five_on_of_middle_offs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.order9_reduced_off_count_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.Paired.order8_ten_stage_chart.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 10 → Fin 10 → K}
+  {b : RKCert.Paired.Vec K 10} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 8) :
+  b (Fin.last 9) ≠ 0 ∧
+    RKCert.Paired.backSeed1 A b = 0 ∧
+      RKCert.nodes A (Fin.last 9) = 1 ∧
+        Pi.single (Fin.last 9) 1 ∈ RKCert.Paired.treeSpace A 4 ∧
+          Pi.single (Fin.last 9) 1 ∉ RKCert.Paired.treeSpace A 3 ∧
+            Module.finrank K ↥(RKCert.Paired.zeroSpace A 3) = 2 ∧
+              Module.finrank K ↥(RKCert.Paired.zeroSpace A 4) = 3 ∧
+                Module.finrank K ↥(RKCert.Paired.treeSpace A 3) = 6 ∧
+                  Module.finrank K ↥(RKCert.Paired.treeSpace A 4) = 8 ∧
+                    Module.finrank K ↥(RKCert.Paired.treeSpace A 5) ≤ 9 ∧
+                      RKCert.Paired.back A b 2 = RKCert.Paired.annih (RKCert.Paired.treeSpace A 4)
+RKCert.Paired.order8_treeSpace_four_not_clock_invariant.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Fin 10 → Fin 10 → K} {b : RKCert.Paired.Vec K 10} (ha : RKCert.StrictLower A)
+  (ho : RKCert.HasTreeOrderAtLeast A b 8) :
+  ¬Submodule.map (RKCert.Paired.diag (RKCert.nodes A)) (RKCert.Paired.treeSpace A 4) ≤ RKCert.Paired.treeSpace A 4
+RKCert.Paired.order8_off_count_chart.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 10 → Fin 10 → K}
+  {b : RKCert.Paired.Vec K 10} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 8) :
+  have n := (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card;
+  n = 1 ∨ n = 4 ∨ n = 5 ∨ 7 ≤ n
+RKCert.Paired.order8_five_on_of_middle_offs.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 10 → Fin 10 → K}
+  {b : RKCert.Paired.Vec K 10} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 8)
+  (hN :
+    (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card = 4 ∨
+      (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card = 5) :
+  (RKCert.Paired.onNodes A).card = 5
+RKCert.Paired.order9_twelve_stage_chart.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 12 → Fin 12 → K}
+  {b : RKCert.Paired.Vec K 12} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 9) :
+  b (Fin.last 11) ≠ 0 ∧
+    Module.finrank K ↥(RKCert.Paired.zeroSpace A 3) = 2 ∧
+      Module.finrank K ↥(RKCert.Paired.zeroSpace A 4) = 3 ∧
+        Module.finrank K ↥(RKCert.Paired.treeSpace A 3) = 6 ∧
+          Module.finrank K ↥(RKCert.Paired.treeSpace A 4) = 8 ∧
+            9 ≤ Module.finrank K ↥(RKCert.Paired.treeSpace A 5) ∧
+              Module.finrank K ↥(RKCert.Paired.treeSpace A 5) ≤ 10 ∧
+                Module.finrank K ↥(RKCert.Paired.treeSpace A 6) ≤ 11
+RKCert.Paired.order9_treeSpace_five_not_clock_invariant.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Fin 12 → Fin 12 → K} {b : RKCert.Paired.Vec K 12} (ha : RKCert.StrictLower A)
+  (ho : RKCert.HasTreeOrderAtLeast A b 9) :
+  ¬Submodule.map (RKCert.Paired.diag (RKCert.nodes A)) (RKCert.Paired.treeSpace A 5) ≤ RKCert.Paired.treeSpace A 5
+RKCert.Paired.order9_no_four_off_nodes.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 12 → Fin 12 → K}
+  {b : RKCert.Paired.Vec K 12} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 9) :
+  (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card ≠ 4
+RKCert.Paired.order9_reduced_off_count_chart.{u_1} {K : Type u_1} [Field K] [CharZero K] {A : Fin 12 → Fin 12 → K}
+  {b : RKCert.Paired.Vec K 12} (ha : RKCert.StrictLower A) (ho : RKCert.HasTreeOrderAtLeast A b 9) :
+  have n := (RKCert.Paired.supportedNodes A (RKCert.Paired.qdef A)).card;
+  n = 1 ∨ 5 ≤ n

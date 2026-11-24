@@ -124,7 +124,7 @@ theorem cubic_contrast_exclusion (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b 
   have ev5 : RKCert.OrderTwelve.cubicMoment x 3 a-u*RKCert.OrderTwelve.cubicMoment x 2 a+
       (-α)*RKCert.OrderTwelve.leakSeven x=0 := by
     have cf : (X*Q).coeff 3=1 := by
-      rw [ec2,coeff_sub,AddMonoidAlgebra.coeff_smul_apply,coeff_X_pow,coeff_X_pow]
+      rw [ec2,coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,coeff_X_pow,coeff_X_pow]
       norm_num
     rw [cf,mul_one,ghost7_val,ec2,sub_mul,smul_mul_assoc,map_sub,map_smul,eval_sub,eval_smul,value,value,smul_eq_mul] at e5
     linear_combination e5

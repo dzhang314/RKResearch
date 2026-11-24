@@ -60,7 +60,7 @@ theorem no_minimal_five_independent {A : Fin s → Fin s → K} (ha : StrictLowe
     have hc0 : nodes A 0=0 := by
       unfold nodes; exact Finset.sum_eq_zero fun j _ => ha _ _ (Nat.zero_le _)
     have hd0 : d 0=0 := origin_zeroSpace A ha 2 (qdef_mem A)
-    have hquad : d*d∈zeroSpace A 4 := zeroSpace_mul (qdef_mem A) (qdef_mem A)
+    have hquad : d*d∈zeroSpace A 4 := zeroSpace_mul (A:=A) (m:=2) (n:=2) (v:=d) (w:=d) (qdef_mem A) (qdef_mem A)
     rw [h4,chainSpan_iff_polynomial] at hquad
     obtain ⟨g,hg,hEq⟩ := hquad
     have hgd (i : Fin (s+1)) (hi : d i≠0) : g.eval (nodes A i)=d i := by

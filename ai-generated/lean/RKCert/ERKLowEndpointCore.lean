@@ -155,7 +155,7 @@ theorem lobatto_cubic_decoder (Q : K[X]) (hd : Q.natDegree ≤ 3)
   have hQ2 : Q.coeff 2 = Q.coeff 3*(-3/2) := by linear_combination -420*h0 + 2100*h1 - 2100*h2
   ext n
   by_cases h : n≤3
-  · interval_cases n <;> simp [coeff_C_mul,lobattoCubic,hQ0,hQ1,hQ2]
+  · interval_cases n <;> simp [coeff_C_mul,lobattoCubic,coeff_monomial,hQ0,hQ1,hQ2]
   · rw [coeff_eq_zero_of_natDegree_lt (by omega : Q.natDegree < n),coeff_C_mul]
     simp only [lobattoCubic,coeff_add,coeff_monomial]
     have h0' : 0≠n := by omega
@@ -185,7 +185,7 @@ theorem lobatto_first_on_scalar_gate {P : K[X]} (hP : P.natDegree≤2)
   have h2 := hcoef 1
   have h1 := hcoef 0
   have hz : P.coeff 3=0 := coeff_eq_zero_of_natDegree_lt (by omega)
-  norm_num [lobattoCubic,hz] at h3 h2 h1
+  norm_num [lobattoCubic,coeff_monomial,hz] at h3 h2 h1
   rw [primitive_eval_X_quadratic P hP] at hprim
   have hq : u^2 * (91*u^2 - 105*u + 27)=0 := by
     linear_combination 84*hprim + 91*u^4*h3 + 70*u^3*h2 + 42*u^2*h1

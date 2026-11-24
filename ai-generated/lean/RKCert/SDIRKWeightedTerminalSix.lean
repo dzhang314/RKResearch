@@ -51,7 +51,9 @@ theorem weighted_seed_proportional (ho : HasTreeOrderAtLeast A b 6) (ha : lower 
   change Module.finrank K E + Module.finrank K H = Module.finrank K (Fin 6→K) at hd
   rw [Module.finrank_fin_fun] at hd
   have hdim : Module.finrank K H=1 := by omega
-  obtain ⟨μ,hμ⟩ := (finrank_eq_one_iff_of_ne_zero' (K:=K) w hw).mp hdim (⟨S,hS⟩ : H)
+  have hspan : Submodule.span K ({w} : Set H)=⊤ := by
+    simpa using (FiniteDimensional.basisSingleton Unit hdim w hw).span_eq
+  obtain ⟨μ,hμ⟩ := (Submodule.span_singleton_eq_top_iff K w).mp hspan (⟨S,hS⟩ : H)
   exact ⟨μ,congrArg Subtype.val hμ⟩
 
 /-- The reflected normalized spacing controls the actual last two seed values. -/

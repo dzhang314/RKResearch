@@ -112,7 +112,7 @@ theorem two_curve_head {A : Fin s → Fin s → K}
     (chainSpan_le_zeroSpace (qdef_mem A) 1) (by simp [h3,hR1])
   have he4 : chainSpan A d 2=zeroSpace A 4 := Submodule.eq_of_le_of_finrank_le
     (chainSpan_le_zeroSpace (qdef_mem A) 2) (by simp [h4,hR2])
-  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul (qdef_mem A) (qdef_mem A)
+  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul (A:=A) (m:=2) (n:=2) (v:=d) (w:=d) (qdef_mem A) (qdef_mem A)
   rw [← he4,chainSpan_iff_polynomial] at hsq
   obtain ⟨P,hP,hEq⟩ := hsq
   have he (i) (hi : d i≠0) : P.eval (nodes A i)=d i := by

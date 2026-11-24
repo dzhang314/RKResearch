@@ -14,7 +14,7 @@ theorem descend (T : V →ₗ[K] V) (F : Submodule K V) (j : ℕ) :
 theorem mem_core {T : V →ₗ[K] V} {F : Submodule K V} {n : ℕ} {x : V} :
     x ∈ core T F n ↔ ∀ k ≤ n, (T^k) x ∈ F := by
   induction n with
-  | zero => simp only [core_zero,Nat.le_zero,forall_eq,pow_zero,one_apply_eq_self]
+  | zero => simp only [core_zero,Nat.le_zero,forall_eq,pow_zero,Module.End.one_eq_id,LinearMap.id_apply]
   | succ n ih =>
     change (x ∈ core T F n ∧ (T^(n+1)) x ∈ F) ↔ _
     rw [ih]
@@ -32,7 +32,7 @@ theorem invariant_of_plateau {T : V →ₗ[K] V} {F : Submodule K V} {n : ℕ}
   apply mem_core.mpr
   intro k hk
   have hz := mem_core.mp (h ▸ hx : x ∈ core T F (n+1)) (k+1) (by omega)
-  simpa only [pow_succ,mul_apply_eq_comp] using hz
+  simpa only [pow_succ,Module.End.mul_eq_comp,LinearMap.comp_apply] using hz
 theorem invariant_le_core {T : V →ₗ[K] V} {F U : Submodule K V}
     (hin : U ≤ F) (hT : U.map T ≤ U) (n : ℕ) : U ≤ core T F n := by
   intro x hx
@@ -40,9 +40,9 @@ theorem invariant_le_core {T : V →ₗ[K] V} {F U : Submodule K V}
   intro k hk
   apply hin
   induction k with
-  | zero => simpa only [pow_zero,one_apply_eq_self] using hx
+  | zero => simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hx
   | succ k ih =>
-    rw [pow_succ',mul_apply_eq_comp]
+    rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
     exact hT ⟨_,ih (by omega),rfl⟩
 section Rank
 variable [FiniteDimensional K V]
@@ -58,7 +58,7 @@ theorem core_rank_step (T : V →ₗ[K] V) (F : Submodule K V) (n : ℕ) :
     rintro _ ⟨x,rfl⟩
     have hx := mem_core.mp x.property n le_rfl
     have hz : (T^(n+1)) x.val ∈ W := by
-      rw [pow_succ',mul_apply_eq_comp]
+      rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
       exact (le_sup_right : F.map T ≤ W) ⟨_,hx,rfl⟩
     exact ⟨⟨_,hz⟩,rfl⟩
   have ha : LinearMap.ker a = (core T F (n+1)).comap U.subtype := by
@@ -140,7 +140,7 @@ theorem single_head {T : V →ₗ[K] V} {F : Submodule K V}
     apply prev (r-1) (by omega)
     rw [hri]
     exact le_antisymm h (hri ▸ descend T F (r-1))
-  obtain ⟨w,hw,hw'⟩ := IsConcreteLE.not_le_iff_exists.mp lack
+  obtain ⟨w,hw,hw'⟩ := Set.not_subset.mp (show ¬(core T F (r-1) : Set V) ⊆ core T F r from lack)
   have paid (j : ℕ) (hj : j<r) : (T^j) w ∈ F :=
     mem_core.mp hw j (by omega)
   have unpaid : (T^r) w ∉ F := by
@@ -166,12 +166,12 @@ theorem single_head {T : V →ₗ[K] V} {F : Submodule K V}
         apply mem_core.mpr
         intro k hk
         have hp := paid (k+j) (by omega)
-        simpa only [pow_add,mul_apply_eq_comp] using hp
+        simpa only [pow_add,Module.End.mul_eq_comp,LinearMap.comp_apply] using hp
       have hnot : (T^j) w ∉ core T F (r-j) := by
         intro h
         have he := mem_core.mp h (r-j) le_rfl
         apply unpaid
-        rw [← show r-j+j=r by omega,pow_add,mul_apply_eq_comp]
+        rw [← show r-j+j=r by omega,pow_add,Module.End.mul_eq_comp,LinearMap.comp_apply]
         exact he
       change chain T U w j ⊔ Submodule.span K {(T^j) w} = _
       rw [ih (by omega)]
@@ -184,7 +184,7 @@ theorem single_head {T : V →ₗ[K] V} {F : Submodule K V}
         exact h.le
   refine ⟨r,U,w,hpos,invariant_of_plateau hr,?_,?_,?_,paid,unpaid,?_⟩
   · intro x hx
-    simpa only [pow_zero,one_apply_eq_self] using mem_core.mp hx 0 (Nat.zero_le r)
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using mem_core.mp hx 0 (Nat.zero_le r)
   · intro S hs hin
     exact invariant_le_core hin hs r
   · simpa only [Nat.sub_self,core_zero] using (hc r le_rfl).symm

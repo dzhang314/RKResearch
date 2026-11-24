@@ -99,7 +99,7 @@ theorem chart_next_polynomial {P:K[X]} (S:Saturated A b q ε) (M:Margin A b q ε
     apply natDegree_le_iff_coeff_eq_zero.mpr
     intro i hi
     change (P-τ•G).coeff i=0
-    rw [coeff_sub,AddMonoidAlgebra.coeff_smul_apply,smul_eq_mul]
+    rw [coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul]
     by_cases h:i=a+1
     · subst i
       unfold τ

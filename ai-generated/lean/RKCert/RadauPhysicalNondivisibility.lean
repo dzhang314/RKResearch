@@ -17,7 +17,7 @@ theorem degree_native_radau : (radauQuartic : K[X]).natDegree=4 := by
     have h3 : 3≠i := by omega
     have h4 : 4≠i := by omega
     simp [radauQuartic,coeff_monomial,coeff_C,Ne.symm h0,h1,h2,h3,h4]
-  · simp [radauQuartic]
+  · simp [radauQuartic,coeff_monomial]
 
 theorem scaled_X_radau : (X*(radauQuartic:K[X])).scaleRoots (126:K) =
     C (1:K)*((X*radauIntegral).map (Int.castRingHom K)) := by

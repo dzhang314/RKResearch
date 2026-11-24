@@ -34,7 +34,7 @@ theorem radau_quartic_decoder (Q : K[X]) (hd : Q.natDegree ≤ 4)
     linear_combination -1120*h0 + 8400*h1 - 16800*h2 + 9800*h3
   ext n
   by_cases h : n≤4
-  · interval_cases n <;> simp [coeff_C_mul,radauQuartic,c0,c1,c2,c3]
+  · interval_cases n <;> simp [coeff_C_mul,radauQuartic,coeff_monomial,c0,c1,c2,c3]
   · rw [coeff_eq_zero_of_natDegree_lt (by omega : Q.natDegree < n),coeff_C_mul]
     simp only [radauQuartic,coeff_add,coeff_monomial]
     have h0' : 0≠n := by omega

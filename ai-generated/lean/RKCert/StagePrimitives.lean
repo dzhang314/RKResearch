@@ -194,7 +194,7 @@ theorem primitive_coeff_succ (P : Polynomial K) (n : ℕ) :
   rw [finsetSum_coeff,Finset.sum_eq_single n]
   · simp
   · intro i _ hi
-    simp [Polynomial.coeff_monomial,Ne.symm hi]
+    exact Polynomial.coeff_monomial_of_ne _ (by omega)
   · intro h
     simp [Polynomial.notMem_support_iff.mp h]
 

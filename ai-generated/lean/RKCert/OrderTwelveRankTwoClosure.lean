@@ -79,7 +79,7 @@ theorem exclude_two_four (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b 12)
   have le4 : U≤zeroSpace A 4 := by rw [h4];exact pp.1
   have hw4 : w∈zeroSpace A 4 := by
     rw [h4]
-    simpa only [pow_zero,one_apply_eq_self] using pp.2 0 (by decide)
+    simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pp.2 0 (by decide)
   have sit : 2+3<(headSites (nodes A) w).card := by have := h.sites;omega
   have mul (u v : Vec K (s+1)) (hu:u∈U) (hv:v∈zeroSpace A 4) : u*v∈U :=
     core_grade8_multiplier ha ho hs hi hl h.head h.e8 h.e9 h.e9r sit le4 (by decide) hu hv
@@ -89,7 +89,7 @@ theorem exclude_two_four (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b 12)
     have hZ := (zeroSpace A 4).sub_mem hw4 (le4 hz)
     simpa only [sub_sub_cancel] using hZ
   have zi := f5_vanish_at_last_active ha ho hs hi hl (zeroSpace_mono A (by decide:4≤5) z4)
-  have sq : z*z∈endZero A 8 i := ⟨zeroSpace_mul z4 z4,by change z i*z i=0;rw [zi,zero_mul]⟩
+  have sq : z*z∈endZero A 8 i := ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) z4 z4,by change z i*z i=0;rw [zi,zero_mul]⟩
   have h7t : chain (diag (nodes A)) U z 4≤endZero A 7 i := by
     rw [←hzC.head.f7tail]
     exact escape7_le_end ha ho hs hi hl

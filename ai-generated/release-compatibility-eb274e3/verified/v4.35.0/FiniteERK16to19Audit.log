@@ -1,0 +1,34 @@
+RKCert.explicit_order16_ge24_field.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {b : Vec K s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 16) : 24 ≤ s
+'RKCert.explicit_order16_ge24_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order16_ge24_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 16) : 24 ≤ s
+'RKCert.explicit_order16_ge24_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order17_ge26_field.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {b : Vec K s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 17) : 26 ≤ s
+'RKCert.explicit_order17_ge26_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order17_ge26_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 17) : 26 ≤ s
+'RKCert.explicit_order17_ge26_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order18_ge27_field.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {b : Vec K s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 18) : 27 ≤ s
+'RKCert.explicit_order18_ge27_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order18_ge27_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 18) : 27 ≤ s
+'RKCert.explicit_order18_ge27_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order19_ge29_field.{u_1} {K : Type u_1} [Field K] [CharZero K] {s : ℕ} {A : Fin s → Fin s → K}
+  {b : Vec K s} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 19) : 29 ≤ s
+'RKCert.explicit_order19_ge29_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKCert.explicit_order19_ge29_charZero.{u_1} {R : Type u_1} [CommRing R] [CharZero R] {s : ℕ} {A : Fin s → Fin s → R}
+  {b : Fin s → R} (ha : StrictLower A) (ho : HasTreeOrderAtLeast A b 19) : 29 ≤ s
+'RKCert.explicit_order19_ge29_charZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.explicit_finite_floor_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.actual_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.chart_sites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.leak_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.physical_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.physical_knot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.actual_two_knots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.q9_no_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.free_pencil_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.Paired.FiniteMidpoint.prefix8_no_profile' depends on axioms: [propext, Classical.choice, Quot.sound]

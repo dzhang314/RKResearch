@@ -34,7 +34,7 @@ private theorem grade_two_in_core (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b
     rw [←h.head.f7tail,escape7_exact ha ho hs hi no]
     have hw := head_paid h.head k hk
     have he := f5_vanish_at_last_active ha ho hs hi no hw
-    exact ⟨zeroSpace_mul hv hw,by change v (Fin.last s)*((diag (nodes A)^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
+    exact ⟨zeroSpace_mul (A:=A) (m:=2) (n:=5) hv hw,by change v (Fin.last s)*((diag (nodes A)^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
   have v5 : v∈chain (diag (nodes A)) U w r := h.head.f5 ▸ zeroSpace_mono A (by decide : 2≤5) hv
   obtain ⟨P,hP,dP,fit⟩:=multiplier_profile h.head.inv core h.head.normalized n (by have := h.head.pos;omega)
     band v5 hvo
@@ -62,7 +62,7 @@ private theorem grade_three_in_core (ha:StrictLower A) (ho:HasTreeOrderAtLeast A
   have f8 (k:ℕ) (hk:k<r) : f k∈endZero A 8 (Fin.last s) := by
     have hw := head_paid h.head k hk
     have he := f5_vanish_at_last_active ha ho hs hi no hw
-    exact ⟨zeroSpace_mul hv hw,by change v (Fin.last s)*((C^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
+    exact ⟨zeroSpace_mul (A:=A) (m:=3) (n:=5) hv hw,by change v (Fin.last s)*((C^k) w (Fin.last s))=0;rw [he,mul_zero]⟩
   have le (k:ℕ) (hk:k<r) : f k∈chain C U w (r+3) := by
     by_cases hnext:k+1<r
     · have hh : C (f k)∈endZero A 8 (Fin.last s) := by rw [ff];exact f8 (k+1) hnext
@@ -96,7 +96,7 @@ private theorem exclude_three_four (ha:StrictLower A) (ho:HasTreeOrderAtLeast A 
   have h4 : zeroSpace A 4=chain C U w 2 := four_grade_exact hs h.head hr
   have pp := (chain_le_iff (T:=C) (U:=U) (w:=w) 2).mp le_rfl
   have le4 : U≤zeroSpace A 4 := by rw [h4];exact pp.1
-  have hw4 : w∈zeroSpace A 4 := by rw [h4];simpa only [pow_zero,one_apply_eq_self] using pp.2 0 (by decide)
+  have hw4 : w∈zeroSpace A 4 := by rw [h4];simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pp.2 0 (by decide)
   have sit : 6<(headSites c w).card := by
     have H : 8≤(headSites c w).card := h.sites
     omega
@@ -106,26 +106,26 @@ private theorem exclude_three_four (ha:StrictLower A) (ho:HasTreeOrderAtLeast A 
   obtain ⟨z,_,hdis,hz⟩:=disjoint_full_chart hs h hU (fun u hu=>mul u w hu hw4)
   have hZ4 : zeroSpace A 4=chain C U z 2 := four_grade_exact hs hz.head hr
   have pz := (chain_le_iff (T:=C) (U:=U) (w:=z) 2).mp le_rfl
-  have z4 : z∈zeroSpace A 4 := by rw [hZ4];simpa only [pow_zero,one_apply_eq_self] using pz.2 0 (by decide)
+  have z4 : z∈zeroSpace A 4 := by rw [hZ4];simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using pz.2 0 (by decide)
   have cz4 : C z∈zeroSpace A 4 := by rw [hZ4];simpa only [pow_one] using pz.2 1 (by decide)
   have zi := f5_vanish_at_last_active ha ho hs hi no (zeroSpace_mono A (by decide:4≤5) z4)
   have czi : C z (Fin.last s)=0 := by simp [C,zi]
-  have z0 : z*z∈endZero A 8 (Fin.last s) := ⟨zeroSpace_mul z4 z4,by change z _*z _=0;rw [zi,zero_mul]⟩
+  have z0 : z*z∈endZero A 8 (Fin.last s) := ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) z4 z4,by change z _*z _=0;rw [zi,zero_mul]⟩
   have z1 : C (z*z)∈endZero A 8 (Fin.last s) := by
     have eq:C (z*z)=(C z)*z := by ext j;simp [C,mul_assoc]
     rw [eq]
-    exact ⟨zeroSpace_mul cz4 z4,by change C z _*z _=0;rw [zi,mul_zero]⟩
+    exact ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) cz4 z4,by change C z _*z _=0;rw [zi,mul_zero]⟩
   have z2 : C (C (z*z))∈endZero A 8 (Fin.last s) := by
     have eq:C (C (z*z))=(C z)*(C z) := by ext j;simp [C];ring
     rw [eq]
-    exact ⟨zeroSpace_mul cz4 cz4,by change C z _*C z _=0;rw [czi,zero_mul]⟩
+    exact ⟨zeroSpace_mul (A:=A) (m:=4) (n:=4) cz4 cz4,by change C z _*C z _=0;rw [czi,zero_mul]⟩
   have hB0 := no_double_leak_both ha ho hs hi no hz.head hz.e8 hz.e9 hz.e9r z0 z1
   have hB1 := no_double_leak_both ha ho hs hi no hz.head hz.e8 hz.e9 hz.e9r z1 z2
   have bb (k:ℕ) (hk:k≤2) : (C^k) (z*z)∈chain C U z 6 := by
     interval_cases k
-    · simpa only [pow_zero,one_apply_eq_self] using hB0.1
+    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using hB0.1
     · simpa only [pow_one] using hB0.2
-    · simpa only [pow_two,mul_apply_eq_comp] using hB1.2
+    · simpa only [pow_two,Module.End.mul_eq_comp,LinearMap.comp_apply] using hB1.2
   have sitz : 6<(headSites c z).card := by
     have HH : 8≤(headSites c z).card := hz.sites
     omega

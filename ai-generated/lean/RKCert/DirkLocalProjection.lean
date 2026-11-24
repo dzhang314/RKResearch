@@ -42,7 +42,8 @@ theorem kill_power (y d:Vec K s) (h:Fin s) (loc:∀i,d i≠0 → y i=y h) (v:Vec
   induction k with
   | zero => simp
   | succ k ih =>
-    rw [pow_succ',mul_apply_eq_comp,mul_apply_eq_comp,kill_clock y d h loc,ih]
+    simp only [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply]
+    rw [kill_clock y d h loc,ih]
 
 theorem kill_chain (y d:Vec K s) (h:Fin s) (loc:∀i,d i≠0 → y i=y h) (dh:d h≠0)
     (w:Vec K s) (k:ℕ) : (chain (diag y) (K ∙ d) w k).map (kill d h) =

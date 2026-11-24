@@ -99,7 +99,7 @@ theorem cubic_single_leak (ha:StrictLower A) (ho:HasTreeOrderAtLeast A b 12)
     apply natDegree_le_iff_coeff_eq_zero.mpr
     intro n hn
     change (R-a • X^3).coeff n=0
-    rw [coeff_sub,AddMonoidAlgebra.coeff_smul_apply,Polynomial.coeff_X_pow]
+    rw [coeff_sub,Polynomial.smul_eq_C_mul,Polynomial.coeff_C_mul,Polynomial.coeff_X_pow]
     by_cases e : n=3
     · subst n;simp [a]
     · have zz : R.coeff n=0 := coeff_eq_zero_of_natDegree_lt (by omega)

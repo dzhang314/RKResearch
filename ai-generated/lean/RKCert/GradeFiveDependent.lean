@@ -203,7 +203,7 @@ theorem normalized_minimal_five_dependent {A : Fin (s+5) → Fin (s+5) → K} (h
   obtain ⟨j,hjw,hjc,hij⟩ := hh
   have hdi : d i=0 := by by_contra h; exact hic (heig i h)
   have hdj : d j=0 := by by_contra h; exact hjc (heig j h)
-  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul hdm hdm
+  have hsq : d*d∈zeroSpace A 4 := zeroSpace_mul (A:=A) (m:=2) (n:=2) (v:=d) (w:=d) hdm hdm
   rw [h4,mixedSpan,chainSpan_succ,chainSpan_zero] at hsq
   obtain ⟨D,hD,W,hW,hEq⟩ := Submodule.mem_sup.mp hsq
   obtain ⟨x,hx⟩ := Submodule.mem_span_singleton.mp hD

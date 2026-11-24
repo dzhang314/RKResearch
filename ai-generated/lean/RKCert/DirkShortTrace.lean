@@ -61,7 +61,7 @@ theorem clock_pow (h : OrdinaryTrace A n v P) (k : ℕ) :
   induction k with
   | zero => simpa using h
   | succ k ih =>
-    rw [pow_succ',mul_apply_eq_comp,pow_succ',mul_assoc,Nat.add_succ]
+    rw [pow_succ',Module.End.mul_eq_comp,LinearMap.comp_apply,pow_succ',mul_assoc,Nat.add_succ]
     exact ih.clock
 
 /-- A short origin-cleared input, supported on genuine clean rows, cannot

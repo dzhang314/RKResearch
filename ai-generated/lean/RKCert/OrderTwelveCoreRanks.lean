@@ -60,10 +60,12 @@ theorem rank_core_exact (hs:Saturation A b) (hh:HeadData A r U w)
     have l : (C^(r-1-k)) w∈core C F k := by
       apply mem_core.mpr
       intro j hj
-      rw [← mul_apply_eq_comp,←pow_add]
+      change (C^j * C^(r-1-k)) w ∈ F
+      rw [←pow_add]
       exact paid _ (by omega)
     have hx := mem_core.mp (e ▸ l) (k+1) le_rfl
-    rw [← mul_apply_eq_comp,←pow_add,show k+1+(r-1-k)=r by omega] at hx
+    change (C^(k+1) * C^(r-1-k)) w ∈ F at hx
+    rw [←pow_add,show k+1+(r-1-k)=r by omega] at hx
     exact out hx
   have rd (k:ℕ) (hk:k≤r) : finrank K (core C F k)+k=5 := by
     induction k with
@@ -79,7 +81,8 @@ theorem rank_core_exact (hs:Saturation A b) (hh:HeadData A r U w)
     refine ⟨invariant_le_core hh.low hh.inv d,fun k hk => ?_⟩
     apply mem_core.mpr
     intro j hj
-    rw [← mul_apply_eq_comp,←pow_add]
+    change (C^j * C^k) w ∈ F
+    rw [←pow_add]
     exact paid _ (by omega)
   have lower := head_succ_rank_cap (A:=A) (U:=U) (w:=w) d (r-d)
   change finrank K (chain C U w (r-d+d))≤finrank K (chain C U w (r-d))+d at lower
@@ -96,7 +99,7 @@ theorem four_grade_exact (hs:Saturation A b) (hh:HeadData A r U w)
     apply mem_core.mpr
     intro k hk
     interval_cases k
-    · simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mono A (by decide : 4≤5) hv
+    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mono A (by decide : 4≤5) hv
     · rw [pow_one];exact diag_zeroSpace A 4 hv
   rw [rank_core_exact hs hh 1 (by omega)] at hh1
   apply Submodule.eq_of_le_of_finrank_le hh1
@@ -112,9 +115,9 @@ theorem f3_into_core_two (hs:Saturation A b) (hh:HeadData A 2 U w) :
     apply mem_core.mpr
     intro k hk
     interval_cases k
-    · simpa only [pow_zero,one_apply_eq_self] using zeroSpace_mono A (by decide : 3≤5) hv
+    · simpa only [pow_zero,Module.End.one_eq_id,LinearMap.id_apply] using zeroSpace_mono A (by decide : 3≤5) hv
     · simpa only [pow_one] using zeroSpace_mono A (by decide : 4≤5) (diag_zeroSpace A 3 hv)
-    · rw [pow_two,mul_apply_eq_comp];exact diag_zeroSpace A 4 (diag_zeroSpace A 3 hv)
+    · rw [pow_two,Module.End.mul_eq_comp,LinearMap.comp_apply];exact diag_zeroSpace A 4 (diag_zeroSpace A 3 hv)
   rw [rank_core_exact hs hh 2 (by decide)] at hl
   exact hl
 

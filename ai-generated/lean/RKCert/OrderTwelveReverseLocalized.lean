@@ -142,7 +142,9 @@ theorem localized_reverse_chart {A : Fin (s+1) → Fin (s+1) → K} {b : Vec K (
       ⟨(reverse_seven_nine ha ho hs).noninvariantBack2,(reverse_seven_nine ha ho hs).noninvariantBack3⟩)
     have step (k : ℕ) (hk : k=2 ∨ k=3) : B (k+1)=B k ⊔ (B k).map Y := by
       apply join_next (back_le_succ A b k) (back_map_clock A b k)
-      · rcases hk with rfl|rfl <;> assumption
+      · rcases hk with rfl|rfl
+        · exact bn
+        · exact bn2
       · have a := hs.backRank k (by omega)
         have e := hs.backRank (k+1) (by omega)
         change finrank K (back A b (k+1))≤finrank K (back A b k)+1

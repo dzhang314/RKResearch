@@ -1,0 +1,200 @@
+{
+  "checkedBase": "19885a85b0ed01465acf6302b25f7b4b1517fe3e",
+  "reviewedHumanPin": "c35f5b900856c33eae15435ccebaabd049b56628",
+  "leanCommit": "611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9",
+  "mathlibCommit": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "theorem": "RKResearch.Certified.ERK19.width29_nonzero_first_seed_impossible",
+  "modules": {
+    "RKCert.ReviewedNative.LocalLinearBand": {
+      "sourceSHA256": "3222cdd7181d78f0d555bc0e20986b95cb56e00cb91076f4443b7056052da8e0",
+      "objectSHA256": "f11e7c49fc9ba761c51e0166577711bcfd6e177be37f2782a2fc544da128bef8",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19FiniteSeedExclusion": {
+      "sourceSHA256": "61fd572d7f9063f5efab79d6c8e653be5824c8ece0070f9a34748e4b83c357a5",
+      "objectSHA256": "1e2893b0d8d2a131c1fb2b600e38b003dde68d54df623b14de651fee62aced17",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19TraceAlgebra": {
+      "sourceSHA256": "916c58cab6a6eb7beda7639c7648b77a0bffb4d070bfdb11529bb9e1be8f28b2",
+      "objectSHA256": "99126d94d44a56d41612a1b7727de87c4ebbff99af53837eb3489a8aa21a55f9",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19BroadCore": {
+      "sourceSHA256": "e44f23c31b0154aeafcf40e980aae9fe48bc6af7c8637e185114b02a58eada02",
+      "objectSHA256": "c60507ac2d27a0405cb37806f4775ac72cfcc1c871f338305eb89765e50ad386",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19BroadHead": {
+      "sourceSHA256": "68bdbb792578a0f0896414128d68b102337463e338ae26b7787c82818f13ba8a",
+      "objectSHA256": "bc7c14dd761e36c66bb371a4f3a439577211bff01abe08333a48597b67b7dc85",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19BroadPorts": {
+      "sourceSHA256": "d2b9a98d05922134d69cacf2bc0dbdfd65c9ff407b4c2086a39341b5b0b2016f",
+      "objectSHA256": "79c29962e86f2494ebc726d6e895a1460a368d16d65272d130a10f74c6c3586f",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFirstFrame": {
+      "sourceSHA256": "1d304414bc5aed1cad260c780e33733cdef587f428e8cb07eb91e9af838e444d",
+      "objectSHA256": "f0ca96496378fdb16c3f4ec5df619d8b195ab770216a16848684a68449cd9579",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearTraces": {
+      "sourceSHA256": "51390323115f642a98e26f7396f692fce6bfa15c62f66995d79a7ec6709072ec",
+      "objectSHA256": "7eeebdb65621977e42bcb3d82aa944ae04bbc975f4e01af1a6ab73f70cad0ecc",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ReverseJointMatch": {
+      "sourceSHA256": "47d99c4d3ed0b40ec682fc4d5331e60d4bcfa5943bc3b52a532e66fffec8063a",
+      "objectSHA256": "1785f9978d971d4dd14a49278dbcf414ccbfc9b043a945c8f31aa66acea61984",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearContrast": {
+      "sourceSHA256": "23e6c81533555a2209c724b1799eef6d291cb48af03a1c9567cd5625ddcfb789",
+      "objectSHA256": "0b70e50f58bc22c29de6b9fee52b55610763f1862ec89076458a9dc6d54fca51",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearReversePorts": {
+      "sourceSHA256": "d2c8bae245056313633fe25948ab0db478389476f5b60186697f6d77a627a1d9",
+      "objectSHA256": "57e3e622b3a06cd082175494cd7751ec80e53e97aeba81480cce3695b6ef9ad2",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearInvisible": {
+      "sourceSHA256": "6bec5e0c9e9a9e0eb22e59bab1034375eacdf53d0a16c76f411ae199d93802c5",
+      "objectSHA256": "1f37221b4b997c17fbf30fa4ef8f712bb45d0dab83fb810e97bd1b3aeb51538b",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearHiddenKernel": {
+      "sourceSHA256": "ec8c2ca827cfc8ed41f04cc4541abe57ebb73b02f5f51cfc3edaacd005f1a815",
+      "objectSHA256": "986e560452c2e314a804afb7c209d8a3fd5a1ae613d050ec29a79f4af919750d",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalHiddenRank": {
+      "sourceSHA256": "e848080e58f6aac99f8d008c0454aac23bcb06f551fa61d5c64a340b13346148",
+      "objectSHA256": "18ad5195cab9a016de6c0826356cd1ef91bfbd80fe0783bbd99e975aa73b022f",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearDegreeDrop": {
+      "sourceSHA256": "ecd82d28bb587d9c28edb52788534092c80afed69ecb1512e89c825d00161f0f",
+      "objectSHA256": "2070f7d4ff2cb47ba9a974b9014426e7dc702c1e50e47b8b7610104af6e350e4",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFour": {
+      "sourceSHA256": "f2b9f5f07673a82e1373aad5c64966cb9a34b4ae4fe02f670368e67b2ef4a712",
+      "objectSHA256": "6cbe23e40f128329e122b22f3e18cb414e442e3ed07837b24d7a2c3ee6e59028",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearSupportTools": {
+      "sourceSHA256": "0e768e0d0a6371fcd595e8d9e09379750a43598bd67b90304c04fcea881a9e9c",
+      "objectSHA256": "f09a37f7a3478a8aab5cda6d69acb1318c52a93b137ef51ed8fea44d7227b60b",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.PhysicalSupportCensus": {
+      "sourceSHA256": "f77141201193bb419978cc8c43f2176452fb4ea4073f1f31b369b9e41b61e5c6",
+      "objectSHA256": "4508344b883544049667e0d83622b074d9afce748484af001b5ecb87847c7908",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearCompensatedContrast": {
+      "sourceSHA256": "211239b8b5199f3553ce6a03faa566ca921e6e3ff8d2988278e1a0e069865699",
+      "objectSHA256": "490435544ffb3a12b7a98bed0e027c19524e3467b12ee8d03fe0cb1047284af8",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearJointBands": {
+      "sourceSHA256": "c660e624d0e7a9f04491917062dd3ece3fc7685a06412a02f7278a45757e625b",
+      "objectSHA256": "b8a1976cf23b061544068b4d0b05ed76581f9fb25c35045623ac4826a22d9bae",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFiveGeometry": {
+      "sourceSHA256": "4aad16037cbdaaaa12206dc07dcd1479767d39fb6830e30107107cd8fff17a0a",
+      "objectSHA256": "977affaa74cfdc7bb4e66c049724d32ce1ee2603e2fb33039ab5e84ae2640feb",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.LocalLinearMinimalCharge": {
+      "sourceSHA256": "f5cce42f5fb4233e8ee14cbf9e20052d5578138a92609c72d7cddd27b7c847f9",
+      "objectSHA256": "c83e84d81c675da8172cbda62fa05b7b4ad4040d3c638c08f30bdd7874fd1230",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFiveThinCharge": {
+      "sourceSHA256": "a534c95c3a284f039369e995142faa4dcf99567e647d0ff564f75a5adfe2a3eb",
+      "objectSHA256": "682b88cbf78f316492bb9765fa760b4d3b554173fe40595f0238061982cdbb4e",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFivePorts": {
+      "sourceSHA256": "dd5041a4c6d766419883c945316cd85e3c532a5c69daba785aa7f82b7d47a308",
+      "objectSHA256": "6ece12eae00fba4bda3e0b3035a2cf4b815ffb309c03d8d3b2df3e2825c7abcb",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFiveSaturation": {
+      "sourceSHA256": "e62cd21882603e88fb4feacdb3ee35ac541866239d8f0d9b502852a33eb88426",
+      "objectSHA256": "37218083adfe7b8316f7c79640df60ed28521f424bd2b6b9a0dfefeaee527dd8",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalFiveProducer": {
+      "sourceSHA256": "36e75e66f123c5604fd20e33cacfb8391ee0283ecff8424246420c8c40cc896a",
+      "objectSHA256": "ed49c2de64c6b2f4832302a7285da375f5e2ce43e95b48a76a905e8ff4353fce",
+      "individuallyKernelReplayed": true
+    },
+    "RKCert.ReviewedNative.ERK19LocalNonzeroClose": {
+      "sourceSHA256": "7d3bc66364a9908e5aad397ba2f684ccc7edf596e4cf06f5ec931469a40bb31a",
+      "objectSHA256": "41a608162fc808b0fbc82e69c8f032c1287183118b13ac9408ba6437a38e7d49",
+      "individuallyKernelReplayed": true
+    }
+  },
+  "auditSourceSHA256": "0a9084b3a4a9f4d7ecdb9648f81531f21398de6f7f6b0d72a09e6a377d474867",
+  "auditedAxioms": {
+    "RKResearch.Certified.Graded.PhysicalCensus.finrank_supported_triple": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.PhysicalCensus.cover_of_supported_rank_equality": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.Reverse.LocalLinear.local_linear_compensated_contrast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.Reverse.LocalLinear.reflected_clockMass_zero_of_paid_band": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.Reverse.LocalLinear.JointBandCensus.cancelled_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.Reverse.LocalLinear.JointBandCensus.physical_cover": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.ERK19.width29_local_hidden_rank_four_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.ERK19.width29_local_five_cover_premises": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.LocalFivePorts.quintic_eq_zero_of_four_paid_tests": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.ERK19.width29_nonzero_first_seed_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "typedClients": 2,
+  "provesZeroFirstSeedBranchInLean": false,
+  "provesUniformStageBoundInLean": false
+}

@@ -3,6 +3,7 @@
 These proofs concern explicitly stated subclasses, extremal candidates, or fixed construction families. They do not raise the unrestricted stage table. Some results are designed to transfer across several orders.
 
 - [Order 16: a sign-window proof for the centered strong-three chart](erk_order16_strong_three_sign_windows_20261124.md)
+- [Order 16: exact counterexample to the reduced weak-five moment tests](erk_order16_weak_five_reduced_tests_counterexample_20261124.md)
 - [Order 19: opposed sign windows exclude the zero-first-seed width-29 chart](erk_order19_zero_first_seed_opposed_windows_20261124.md)
 
 - [Four sharp canonical dense-order returns: same raw pure minor on every split coefficient branch, and the first causal extension obstruction](dirk_canonical_dense_stems_full_raw_rank_and_three_mode_replay_20261124.md)

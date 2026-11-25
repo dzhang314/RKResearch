@@ -1,0 +1,7 @@
+'RKResearch.Certified.TallFiniteResponse.response_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.physical_fraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.Fraction.prefix_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.reduced_denominator_splits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.paid_fraction_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]

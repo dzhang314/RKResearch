@@ -22,8 +22,7 @@ not existence or minimum-stage claims.
 abscissae \(A\mathbf 1\). The same support bound follows, without a
 triangularity or diagonal assumption. It does not alter the separate
 unrestricted stage minima. The proof below is mathematical, with exact
-arithmetic reproduction; no Lean certificate for this new bound is
-claimed.
+arithmetic reproduction. The [separate Lean certificate](../../lean/evidence/dyadic-rational-support-four-shift/README.md) checks the same support lower bound.
 
 ## 1. Four rational equations from the actual support
 

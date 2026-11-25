@@ -1,0 +1,58 @@
+integralNodal_dyadicCredit_dvd : ∀ (T : Finset ℚ) (k : ℕ),
+  2 ^ dyadicCredit (dyadicDenCount T) (dyadicEvenCount T) k ∣ (integralRationalNodalHull T).coeff k
+integralNodal_coeff_two : ∀ (T : Finset ℚ) (k : ℕ),
+  ↑((integralRationalNodalHull T).coeff k) = ↑(dyadicParity (dyadicDenCount T) (dyadicEvenCount T) k)
+dyadicFourRows8_of_uniformInt : ∀ (a : ℕ → ℤ) {m : ℕ},
+  m ≤ 16 → (∀ (k : ℕ), m < k → a k = 0) → (∀ (j : Fin 4), UniformIntRowZero a m ↑j) → DyadicFourRows8 a
+dyadicParityGate_exact : ∀ (t u : Fin 17), DyadicParityGate ↑t ↑u ↔ (↑t, ↑u) ∈ dyadicSurvivingPairs
+dyadicBalanced_coeffs_ne_zero : ∀ (T : Finset ℚ),
+  T.card ≤ 16 →
+    dyadicDenCount T = 16 →
+      dyadicEvenCount T = 8 →
+        ¬(↑((integralRationalNodalHull T).coeff 12) = 0 ∧ ↑((integralRationalNodalHull T).coeff 14) = 0)
+fun {ι K} [Fintype ι] [Field K] [CharZero K] {p} {b c} =>
+  HasQuadratureOrder.no_dyadic_four_shift_support_of_rat : ∀ {ι K : Type} [inst : Fintype ι] [inst_1 : Field K]
+  [CharZero K] {p : ℕ} {b c : ι → K},
+  HasQuadratureOrder p b c →
+    (activeQuadratureSites b c).card ≤ 16 →
+      (activeQuadratureSites b c).card + 4 ≤ p → (∀ x ∈ activeQuadratureSites b c, ∃ r, x = ↑r) → False
+fun {ι K} [Fintype ι] [Field K] [CharZero K] {p} {b} {A} =>
+  HasOrder.min17_sub3_le_activeQuadratureSites_of_rat : ∀ {ι K : Type} [inst : Fintype ι] [inst_1 : Field K]
+  [CharZero K] {p : ℕ} {b : ι → K} {A : Matrix ι ι K},
+  HasOrder p A b →
+    (∀ x ∈ activeQuadratureSites b (A *ᵥ 1), ∃ r, x = ↑r) → min 17 (p - 3) ≤ (activeQuadratureSites b (A *ᵥ 1)).card
+fun {ι K} [Fintype ι] [Field K] [CharZero K] {p} {b} {A} =>
+  HasOrder.sub3_le_activeQuadratureSites_of_rat_of_le20 : ∀ {ι K : Type} [inst : Fintype ι] [inst_1 : Field K]
+  [CharZero K] {p : ℕ} {b : ι → K} {A : Matrix ι ι K},
+  HasOrder p A b →
+    p ≤ 20 → (∀ x ∈ activeQuadratureSites b (A *ᵥ 1), ∃ r, x = ↑r) → p - 3 ≤ (activeQuadratureSites b (A *ᵥ 1)).card
+fun {ι K} [Fintype ι] [Field K] [CharZero K] {b} {A} =>
+  HasOrder.seventeen_le_activeQuadratureSites_of_rat_order20 : ∀ {ι K : Type} [inst : Fintype ι] [inst_1 : Field K]
+  [CharZero K] {b : ι → K} {A : Matrix ι ι K},
+  HasOrder 20 A b → (∀ x ∈ activeQuadratureSites b (A *ᵥ 1), ∃ r, x = ↑r) → 17 ≤ (activeQuadratureSites b (A *ᵥ 1)).card
+'RKResearch.Certified.DyadicFourShift.integralNodal_dyadicCredit_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DyadicFourShift.integralNodal_coeff_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DyadicFourShift.dyadicCounts_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DyadicFourShift.dyadicFourRows8_of_uniformInt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DyadicFourShift.dyadicParityGate_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DyadicFourShift.dyadicOneTerm_excludes_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DyadicFourShift.dyadicBalanced_coeffs_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasQuadratureOrder.no_dyadic_four_shift_support_of_rat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.min17_sub3_le_activeQuadratureSites_of_rat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.seventeen_le_activeQuadratureSites_of_rat_order20' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

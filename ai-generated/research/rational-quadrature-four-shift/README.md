@@ -6,8 +6,7 @@
   Weights are arbitrary in a characteristic-zero field; repeated
   nodes are grouped and only nonzero aggregate sites count.
   The proof applies to the reviewed RK bushy moments without
-  assuming triangularity. It is not an additional unrestricted stage
-  bound or a Lean-certified result.
+  assuming triangularity. The [Lean certificate](../../lean/evidence/dyadic-rational-support-four-shift/README.md) checks the same support floor. It is not an additional unrestricted stage bound.
 - [Standalone 19-site quadrature of exact order 20](standalone-19.md):
   all weights are positive and all sites are interior and rational.
   This is an exact quadrature witness, not an RK stage upper bound.
@@ -48,3 +47,5 @@ rule with `python3 verify-standalone-19.py`
 library and exact arithmetic, with no Lean invocation or search.
 
 An [exact uniform seed](../uniform-same-gap-seed/uniform-seed.md) and the [fixed-functional ladder](../same-gap-seed-ladder/seed-ladder.md) give signed rational rules on 18 sites at order 20 when sites may lie outside the interval. In that setting the support bracket is 17–18. The 19-site positive rule above still applies if weights must be positive and sites must lie in the interval.
+
+The [explicit 18-site order-20 certificate](../uniform-order20-slp/order20-slp.md) specifies the rational sites and weights by fixed formulas, without expanding the fractions. It realizes the signed, unrestricted-site upper endpoint and leaves a 17-site rule open. It is not a stage bound or a Lean upper certificate.

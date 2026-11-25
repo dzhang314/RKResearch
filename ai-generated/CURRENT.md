@@ -57,7 +57,13 @@ The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3
 
 ## Latest archived results
 
+- [Lean certificate for the four-shift rational support lower bound](lean/evidence/dyadic-rational-support-four-shift/README.md): at least 17 contributing rational sites at order 20, with arbitrary weights in any characteristic-zero field.
+
+- [Lean certificate for the finite tall-response degree bound](lean/evidence/tall-derivative-gcd-quotient/README.md): over characteristic-zero fields, the paid order is at most the numerator degree plus the degree of the denominator divided by its derivative gcd. The certificate does not formalize the geometric root count or change a stage entry.
+
 - [Lean certificate for the conditional order-20 four-clock count of 28](lean/evidence/order20-four-clock-counted28/README.md): the directed cut must have trivial kernel intersection on the counted side. No unrestricted stage entry changes.
+
+- [Explicit exact order-20 rule on 18 rational sites](research/uniform-order20-slp/order20-slp.md): fixed rational formulas and checked arithmetic, with the fractions unexpanded. Signed weights are allowed and the rule includes the exterior site −3/32. A 17-site rule remains open; no stage or Lean upper bound changes.
 
 - [Rational quadrature on \(p-2\) contributing sites for every \(p\ge12\)](research/uniform-same-gap-seed/uniform-seed.md): signed weights and unrestricted rational nodes. Order 20 now needs 17 or 18 sites in this setting. A [separate exact order-14 seed](research/uniform-interval-same-gap-seed/interval-seed.md) uses 12 sites in the interval, without a positivity or interval-preserving iteration claim.
 

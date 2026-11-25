@@ -1,0 +1,7 @@
+target	exit	elapsed_seconds	kernel_peak_kib	guard_stop
+F1	0	2.176	1333508	none
+F1audit	0	1.160	1294200	none
+W1	0	2.422	1311496	none
+W1audit	0	1.059	1270884	none
+W2	0	1.565	1295776	none
+W2audit	0	1.061	1266936	none

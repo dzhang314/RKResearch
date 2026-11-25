@@ -1,0 +1,22 @@
+AuditTallPoleMultiplierWindow.lean:24:26: warning: This simp argument is unused:
+  Polynomial.coeff_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'RKResearch.Certified.TallFiniteResponse.PoleMultiplier.of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.PoleMultiplier.backward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.PoleMultiplier.not_zero_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.PoleMultiplier.order_le_num_add_of_coeff_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.Fraction.order_le_num_add_of_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

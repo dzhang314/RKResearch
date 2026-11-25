@@ -1,0 +1,3 @@
+import RKCert.ReviewedNative.PairingRestrictionRank
+
+#print axioms RKCert.ReviewedNative.PairingRestrictionRank.finrank_pairing_le_restrict_add_twice_codim

@@ -1,0 +1,3 @@
+import RKCert.ReviewedNative.HyperplaneReverseTerminal
+
+#print axioms RKResearch.Certified.Graded.HyperplaneTerminal.three_rows_impossible

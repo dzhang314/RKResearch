@@ -1,0 +1,30 @@
+treeHeight_rootedSum : ∀ (t u : FiniteRootedTree), treeHeight (t # u) = max (treeHeight t) (treeHeight u)
+@ShallowCommonDiagonal : {ι : Type u_1} → {R : Type u_2} → [CommRing R] → Matrix ι ι R → (ι → ℕ) → ℕ → R → Prop
+@heightOrderSpace_matches_shallow : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommRing R]
+  {A : Matrix ι ι R} {depth : ι → ℕ} {D h : ℕ} {γ : R},
+  ShallowCommonDiagonal A depth D γ →
+    h ≤ D → ∀ (t : FiniteRootedTree), ∃ v ∈ heightOrderSpace A h ↑t.order, ∀ (i : ι), depth i ≤ h → v i = Φ t A i
+@series_zero_through_order_iff_height : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommRing R]
+  {A : Matrix ι ι R} {w : ι → R} {depth : ι → ℕ} {D : ℕ} {γ : R},
+  ShallowCommonDiagonal A depth D γ →
+    (∀ (i : ι), w i ≠ 0 → depth i ≤ D) →
+      ∀ (p : ℕ),
+        (∀ (t : FiniteRootedTree), ↑t.order ≤ p → w ⬝ᵥ Φ t A = 0) ↔
+          ∀ (t : FiniteRootedTree), treeHeight t ≤ D → ↑t.order ≤ p → w ⬝ᵥ Φ t A = 0
+@series_equal_through_order_iff_height : ∀ {ι : Type u_1} {κ : Type u_2} {R : Type u_3} [inst : Fintype ι]
+  [inst_1 : Fintype κ] [inst_2 : CommRing R] {A : Matrix ι ι R} {B : Matrix κ κ R} {b : ι → R} {d : κ → R} {δA : ι → ℕ}
+  {δB : κ → ℕ} {D : ℕ} {γ : R},
+  ShallowCommonDiagonal A δA D γ →
+    ShallowCommonDiagonal B δB D γ →
+      (∀ (i : ι), b i ≠ 0 → δA i ≤ D) →
+        (∀ (j : κ), d j ≠ 0 → δB j ≤ D) →
+          ∀ (p : ℕ),
+            (∀ (t : FiniteRootedTree), ↑t.order ≤ p → b ⬝ᵥ Φ t A = d ⬝ᵥ Φ t B) ↔
+              ∀ (t : FiniteRootedTree), treeHeight t ≤ D → ↑t.order ≤ p → b ⬝ᵥ Φ t A = d ⬝ᵥ Φ t B
+'RKResearch.FiniteSeries.heightOrderSpace_matches_shallow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiniteSeries.series_zero_through_order_iff_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.FiniteSeries.series_equal_through_order_iff_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

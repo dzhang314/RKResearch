@@ -1,0 +1,4 @@
+declaration	actual_axioms
+RKResearch.FiniteSeries.heightOrderSpace_matches_shallow	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.series_zero_through_order_iff_height	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.series_equal_through_order_iff_height	Classical.choice,Quot.sound,propext

@@ -1,0 +1,16 @@
+'RKResearch.Certified.Graded.FourOffNewton.marked_clean_value_census' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.marked_paid_clean_cubic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.marked_actual_clean_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.clean_primitive_placement_of_marked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.paired_placements_of_order8_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RK8CleanPlacementAdapterAudit.exact_k_six_seven' depends on axioms: [propext, Classical.choice, Quot.sound]

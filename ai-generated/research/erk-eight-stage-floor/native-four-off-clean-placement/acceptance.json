@@ -1,0 +1,61 @@
+{
+  "audit": {
+    "actual_lean_exit": 0,
+    "audit_calls": 1,
+    "body_construction_calls": 0,
+    "reason": "original exact audit with six stock-only reports; no output",
+    "status": "AUDIT_PASS",
+    "wrapper_exit": 0
+  },
+  "audit_stdout_sha256": "04e4fd26959697e5a628d20677e5d7902cef09be6c14ad4d83b87020d316d39f",
+  "body": {
+    "accepted_objects": {
+      "RKCert/ReviewedNative/ERK8FourOffCleanPlacementAdapter.ir": "4ee0bef79440a2794d57510378e4f51659c2a407111f1d499ec504d1f227d45b",
+      "RKCert/ReviewedNative/ERK8FourOffCleanPlacementAdapter.ir.sig": "cdfe5e78c8d97438b6d41e2f493a376ab9a84edfe1b76cbaad78892f458deb6f",
+      "RKCert/ReviewedNative/ERK8FourOffCleanPlacementAdapter.olean": "e6ecb0d52329104c317cd1f7e8b46691f42b38935eaeb74a5dd0d05bcb491d13",
+      "RKCert/ReviewedNative/ERK8FourOffCleanPlacementAdapter.olean.private": "c93c12207e6e5835e2e4e81869dab7c7557a45f7520a70f0d48a7b97cbf9f874",
+      "RKCert/ReviewedNative/ERK8FourOffCleanPlacementAdapter.olean.server": "25faf995c9dacd103750af07f49aa5177894f4d1bfa11e5ebad4a6d22303c88c"
+    },
+    "audit_calls": 0,
+    "compiler_calls": 1,
+    "compiler_exit": 0,
+    "reason": "single exact adapter body, no axioms checked",
+    "status": "BODY_PASS",
+    "wrapper_exit": 0
+  },
+  "checks": {
+    "RK8CleanPlacementAdapterAudit.exact_k_six_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.FourOffNewton.clean_primitive_placement_of_marked": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.FourOffNewton.marked_actual_clean_geometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.FourOffNewton.marked_clean_value_census": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.FourOffNewton.marked_paid_clean_cubic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RKResearch.Certified.Graded.FourOffNewton.paired_placements_of_order8_four_off": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "project_providers_before_body": 44
+}

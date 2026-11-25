@@ -1,0 +1,27 @@
+@Partition.scalar_output : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (b : Fin s → K) (t : FiniteRootedTree), P.aggregateWeight b ⬝ᵥ Φ t P.aggregateMatrix = b ⬝ᵥ Φ t A
+@CanonicalVisibility.path_readout : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  (A : Matrix ι ι K) (b : ι → K) {i : ι},
+  CanonicalVisibility.Visible A b i →
+    ∃ C a, a ≠ 0 ∧ ∀ (v : ι → K), (Certified.Graded.row b) ((CanonicalVisibility.Context.eval A C) v) = a * v i
+@CanonicalVisibility.invisibleIdeal_greatest : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  (A : Matrix ι ι K) (b : ι → K),
+  IsGreatest {J | (∀ v ∈ J, (Certified.Graded.mat A) v ∈ J) ∧ ∀ v ∈ J, (Certified.Graded.row b) v = 0}
+    (CanonicalVisibility.invisibleIdeal A b)
+@Partition.reduced_scalar_output : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (b : Fin s → K) (t : FiniteRootedTree), P.reducedWeight b ⬝ᵥ Φ t (P.reducedMatrix b) = b ⬝ᵥ Φ t A
+@Partition.reduced_hasOrder_iff : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (b : Fin s → K) (p : ℕ), HasOrder p (P.reducedMatrix b) (P.reducedWeight b) ↔ HasOrder p A b
+@reduced_permutation_of_same_series : ∀ {K : Type u_1} [inst : Field K] {s n s' n' : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  {B : Matrix (Fin s') (Fin s') K} (P : Partition A n) (Q : Partition B n') (b : Fin s → K) (d : Fin s' → K),
+  (∀ (t : FiniteRootedTree), b ⬝ᵥ Φ t A = d ⬝ᵥ Φ t B) →
+    ∃ e,
+      (∀ (j k : Q.ReducedIndex d), Q.reducedMatrix d j k = P.reducedMatrix b (e j) (e k)) ∧
+        ∀ (j : Q.ReducedIndex d), Q.reducedWeight d j = P.reducedWeight b (e j)
+'RKResearch.CanonicalProfile.Partition.scalar_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.invisibleIdeal_greatest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.reduced_scalar_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.reduced_hasOrder_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalUniqueness.reduced_permutation_of_same_series' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

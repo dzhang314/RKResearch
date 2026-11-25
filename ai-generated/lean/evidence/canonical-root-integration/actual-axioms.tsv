@@ -1,0 +1,6 @@
+declaration	actual_axioms
+RKResearch.CanonicalProfile.Partition.scalar_output	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.invisibleIdeal_greatest	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.reduced_scalar_output	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.reduced_hasOrder_iff	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalUniqueness.reduced_permutation_of_same_series	Classical.choice,Quot.sound,propext

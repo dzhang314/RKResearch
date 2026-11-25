@@ -1,0 +1,5 @@
+declaration	actual_axioms
+RKResearch.CanonicalUniqueness.permutation_of_same_series	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalUniqueness.TreeWord.eval_tree	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalUniqueness.same_treeWord	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalUniqueness.pair_readout	Classical.choice,Quot.sound,propext

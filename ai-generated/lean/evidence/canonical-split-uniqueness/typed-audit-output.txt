@@ -1,0 +1,29 @@
+@permutation_of_same_series : ∀ {ι : Type u_1} {κ : Type u_2} {K : Type u_3} [inst : Fintype ι] [inst_1 : Fintype κ]
+  [inst_2 : Field K] (A : Matrix ι ι K) (B : Matrix κ κ K) (b : ι → K) (d : κ → K),
+  (∀ (t : FiniteRootedTree), b ⬝ᵥ Φ t A = d ⬝ᵥ Φ t B) →
+    treeSpan A = ⊤ →
+      treeSpan B = ⊤ →
+        invisible A b = ⊥ → invisible B d = ⊥ → ∃ e, (∀ (j k : κ), B j k = A (e j) (e k)) ∧ ∀ (j : κ), d j = b (e j)
+@TreeWord.eval_tree : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K)
+  (C : TreeWord) (t : FiniteRootedTree), (Context.eval A (TreeWord.context A C)) (Φ t A) = Φ (C.insert t) A
+@same_treeWord : ∀ {ι : Type u_1} {κ : Type u_2} {K : Type u_3} [inst : Fintype ι] [inst_1 : Fintype κ]
+  [inst_2 : Field K] (A : Matrix ι ι K) (B : Matrix κ κ K) (b : ι → K) (d : κ → K),
+  (∀ (t : FiniteRootedTree), b ⬝ᵥ Φ t A = d ⬝ᵥ Φ t B) →
+    ∀ (C : TreeWord) (t : FiniteRootedTree),
+      (row b) ((Context.eval A (TreeWord.context A C)) (Φ t A)) =
+        (row d) ((Context.eval B (TreeWord.context B C)) (Φ t B))
+@pair_readout : ∀ {ι : Type u_1} {κ : Type u_2} {K : Type u_3} [inst : Fintype ι] [inst_1 : Fintype κ]
+  [inst_2 : Field K] (A : Matrix ι ι K) (B : Matrix κ κ K) (b : ι → K) (d : κ → K),
+  (∀ (t : FiniteRootedTree), b ⬝ᵥ Φ t A = d ⬝ᵥ Φ t B) →
+    ∀ {x : ι → K} {y : κ → K}, (x, y) ∈ pairedSpan A B → (row b) x = (row d) y
+TreeWord.insert : TreeWord → FiniteRootedTree → FiniteRootedTree
+@TreeWord.context : {ι : Type u_1} → {K : Type u_2} → [Fintype ι] → [Field K] → Matrix ι ι K → TreeWord → Context ι K
+@treeSpan : {ι : Type u_1} → {K : Type u_2} → [Fintype ι] → [inst : Field K] → Matrix ι ι K → Submodule K (ι → K)
+@pairedSpan : {ι : Type u_1} →
+  {κ : Type u_2} →
+    {K : Type u_3} →
+      [Fintype ι] → [Fintype κ] → [inst : Field K] → Matrix ι ι K → Matrix κ κ K → Submodule K ((ι → K) × (κ → K))
+'RKResearch.CanonicalUniqueness.permutation_of_same_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalUniqueness.TreeWord.eval_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalUniqueness.same_treeWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalUniqueness.pair_readout' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,121 @@
+{
+  "lean_version": "4.36.0",
+  "results": {
+    "ClockFamilyRank": {
+      "body_actual_exit": 0,
+      "body_artifact_sha256": {
+        "ir": "37bf4c1faefc3a463b4e8a2ef6f77a64949a9922fa0438cab5d1f79cf55682b0",
+        "ir_signature": "c35beff85f5a2340b3d05ece2198c55a9aaa74a7e3878da9e4fdbfc9a53020bc",
+        "primary_olean": "0176e0e51add0c6117e236a96440fd9ee494699639088c7a2c8b6cc77fd1f829",
+        "private_olean": "8144371d56d995bbf9e4224ea1628cfcdd3aa340e58f219718d1cf013d57d1e1",
+        "server_olean": "911090797689735a49f819863b77a87db3e3b109cbc727a72eb3834e3a9be731"
+      },
+      "body_diagnostic_warnings": [],
+      "body_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body_measured_row_sha256": "4af652ffd045d15f974377b8c8e028f4e7287e4ca91c4b897a189ad374f340bf",
+      "body_source": "ai-generated/lean/RKCert/ReviewedNative/ClockFamilyRank.lean",
+      "body_source_sha256": "f3e8d433b059518bbf8c3cbe609ef3a1062d89572b870261a7bb508a7652aafd",
+      "direct_project_imports": [
+        "RKCert.ReviewedNative.ClockLocalFiberRank",
+        "RKCert.ReviewedNative.PaidClockLocalRank"
+      ],
+      "direct_stock_imports": [
+        "Mathlib.Data.Finset.Lattice.Fold"
+      ],
+      "external_module_count": 3556,
+      "inherited_project_artifact_count": 125,
+      "measured_project_predecessors": 25,
+      "module": "RKCert.ReviewedNative.ClockFamilyRank",
+      "typed_audit": {
+        "actual_audit_gate_exit": 0,
+        "actual_lean_exit": 0,
+        "axioms": {
+          "RKResearch.Certified.Graded.Reverse.clockFamilyFiber_eq_columns_sup": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.clockFamilyGain_antitone": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.clockFamilyRank_insert": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.clockFamilyRank_le_of_staircase": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "log_sha256": "1a3131e8ebb27f9399f7832a252ae2aaf38359e3c8253824597fb61fe6569d67",
+        "object_output": false,
+        "sole_project_import": "RKCert.ReviewedNative.ClockFamilyRank",
+        "source": "ai-generated/lean/AuditReviewedNativeClockFamilyRank.lean",
+        "source_sha256": "9e5e840bafde7edaf7cf9c8075b163118e049181f87d7dd676bddfe40d12b386",
+        "typed_examples": 4
+      }
+    },
+    "ClockStableFiberSupport": {
+      "body_actual_exit": 0,
+      "body_artifact_sha256": {
+        "ir": "daa9b54634359cb8ceeeb3920c67f353ad584dbc2c141c72d8c0bf72bbc7111e",
+        "ir_signature": "034fc147fd31760a26396166f9f8091de166ba741b582ab53d715c62d05f50c8",
+        "primary_olean": "2b670497524884379c819b0416e31b2de518c4e1f7c3ee4c3b02c8fb778529b0",
+        "private_olean": "2a929f5ea9dcd7093070eb750b38cea23a60982f965ed2e8784451f4d9f8bcce",
+        "server_olean": "6651ec6e868c0ec794c752cb3e2efde03b94d2982f2d97983f3a02bef3bf76b7"
+      },
+      "body_diagnostic_warnings": [],
+      "body_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body_measured_row_sha256": "bbb6968c0a904be07ea4628221d747c5e394dbb9be781bf92dcf73090c876338",
+      "body_source": "ai-generated/lean/RKCert/ReviewedNative/ClockStableFiberSupport.lean",
+      "body_source_sha256": "24dcfb09ecff38d0f30fca5a33d3b2207f98e8d71ef16a48a5d78cc959b8f33e",
+      "direct_project_imports": [
+        "RKCert.ReviewedNative.ClockLocalFiberRank"
+      ],
+      "direct_stock_imports": [],
+      "external_module_count": 3553,
+      "inherited_project_artifact_count": 80,
+      "measured_project_predecessors": 16,
+      "module": "RKCert.ReviewedNative.ClockStableFiberSupport",
+      "typed_audit": {
+        "actual_audit_gate_exit": 0,
+        "actual_lean_exit": 0,
+        "axioms": {
+          "RKResearch.Certified.Graded.Reverse.clockFiberSupport_card_le_finrank_of_stable": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.clockFiberSupport_card_le_two_of_stable": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.mem_clockFiberSupport": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.sum_finrank_clockFiberColumns_eq_of_stable": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "log_sha256": "e60797892585671b8877cef204ab790a8da24deaf3ecffbecce0e449e5a962f4",
+        "object_output": false,
+        "sole_project_import": "RKCert.ReviewedNative.ClockStableFiberSupport",
+        "source": "ai-generated/lean/AuditReviewedNativeClockStableFiberSupport.lean",
+        "source_sha256": "b302ce088a5633548225e859b71053d41e221c4bc7c27258dbafcf9ea16f29c5",
+        "typed_examples": 4
+      }
+    }
+  },
+  "schema": "reviewed-native-clock-family-and-stable-support-evidence-v1",
+  "scope": "two independent generic Lean bodies and standalone audits; no enumeration, joint refinement or numerical order specialization",
+  "verified_base_commit": "d5b76782cbe8399e13b3447761ca31aaf721c535"
+}

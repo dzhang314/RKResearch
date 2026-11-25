@@ -1,0 +1,3 @@
+declaration	axioms
+RKResearch.FiniteSeries.RankUnroll.readout_eq_on_band	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.RankUnroll.readout_zero_of_height	Classical.choice,Quot.sound,propext

@@ -1,0 +1,15 @@
+'RKResearch.Certified.Graded.ResidueMomentRank.min_add_residueRank_le_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ResidueMomentRank.paidMoments_active' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ResidueMomentRank.residueRank_pos_of_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ResidueMomentRank.active_card_of_paid_rank_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ResidueMomentRank.active_card_of_paid_nonzero_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

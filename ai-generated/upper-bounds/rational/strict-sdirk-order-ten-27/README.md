@@ -3,8 +3,9 @@
 The [literal rational tableau](tableau.json) has 27 stages and common
 nonzero diagonal `1/9`. It satisfies every classical rooted-tree order
 condition through order ten and fails the eleventh tall-tree condition.
-This is an **exact arithmetic certificate**. The Lean certificate for
-this witness is pending.
+Both the exact arithmetic checker below and the [Lean certificate](native-lean/README.md)
+verify this witness. Lean checked the same matrix and weight vector,
+including the exact eleventh tall-tree obstruction.
 
 Only a rational upper witness is claimed. This does not establish a
 rational stage minimum, change the real-algebraic 17-stage upper bound

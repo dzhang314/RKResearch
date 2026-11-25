@@ -1,0 +1,6 @@
+'RKResearch.Certified.RationalStrictSDIRKTwentySevenStageTenUpper.eleventh_tall_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKTwentySevenStageTenUpper.not_order_eleven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

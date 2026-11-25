@@ -1,0 +1,7 @@
+{
+  "order": 10,
+  "render_namespace": "P10AugmentedRender",
+  "scaffold_namespace": "P10AugmentedScaffold",
+  "same_data_namespace": "RationalStrictSDIRKTwentySevenStageTenUpper",
+  "positive_theorem": "checked_order_ten"
+}

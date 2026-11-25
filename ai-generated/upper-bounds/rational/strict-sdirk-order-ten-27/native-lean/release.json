@@ -1,0 +1,43 @@
+{
+  "capsule_bytes": 4024597,
+  "capsule_provider_count": 1358,
+  "capsule_sha256": "aad5ff1c87d2de4b18aae3e8f57d7fb2c38db1c1e50503ec6a267c58fe0d5881",
+  "capsule_uncompressed_tar_bytes": 12625920,
+  "capsule_uncompressed_tar_sha256": "d150a28c657d719a1491c1a621b4fd564ea5dd67e68189d583dbceb4573d3d27",
+  "cleartext_support_provider_count": 28,
+  "existing_providers_sha256": "1e6881ca4d0233b2800174317199e05e2fa4938868fafea720c8cdf633cceb6f",
+  "final_kernel_status": "PASS_DATA_TALL_POSITIVE_AND_UPPER",
+  "lean_toolchain": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "normalized_evidence_sha256": {
+    "Data.audit-output.txt": "3070c115da50077033184290738bfcd89ac36fb5934309921b0cf68e19aba473",
+    "Positive.audit-output.txt": "1939e542a4720814a03d9937aa485fb560534bc8664e25ce3e9cc2d46cf796ff",
+    "Tall.audit-output.txt": "5583f32a65df0167f377365ea238a10613f52a000bccd62d37387be14f6dee05",
+    "Upper.audit-output.txt": "7d5e99f12ee32598c722479bd2bdd75a6ef7e4f9d645b41a65a56d04bca80043",
+    "batch-hashes.tsv": "368a6a6e19b0b62223aaa66d006e7f1ca86d7cb88cd8d16df99a4e924a52fd30",
+    "checked-source-bindings.tsv": "0700346f8d5367794bc6d180b5afe03481f98185eb25d46af2bccd286f8fef37"
+  },
+  "preparation_base": "d6ff029efff83b7004333e268b0f0229ce35591c",
+  "previous_comparison_base": "5b19fef48547c45a0a8527dc3e8a4e4e020674a4",
+  "provider_count": 1386,
+  "public_cold_source_replay_status": "NOT_REPLAYED_COLD",
+  "repairs": [
+    {
+      "module": "RKCert.ReviewedNative.P10AugmentedScaffold.Shape",
+      "predecessor": "f70926dccf8007f43ec572206dcf64a919942f526c52c012a68cf68348e5fa89",
+      "selected": "7eb8f53bd15685a08c18eeb234a2bd9c2d6b21c784040fa2a9120af62ae0e0fb"
+    },
+    {
+      "module": "RKCert.ReviewedNative.P10AugmentedRender.Payload.Dispatch",
+      "predecessor": "420cd588cd9a9a49e2aa04422edf17e4acc20c5d88ff7dff72d538513908df18",
+      "selected": "2908a159e8eedf749ed42168e0bc80784527f5197285e43d7801869404d67c77"
+    }
+  ],
+  "schema": "rkcert-p10-native-release-v1",
+  "selected_providers_sha256": "79fd176416c06789383022687ad2c9a86af13b55f9f83707cc1d9124233b2621",
+  "source_layout": "single-copy source-only capsule and cleartext support",
+  "status": "LEAN_KERNEL_VERIFIED_WITH_PINNED_DEPENDENCIES",
+  "stock_audit_source_count": 3,
+  "supplemental_positive_audit_source_count": 1,
+  "uncompressed_rendered_lean_bytes": 11511365
+}

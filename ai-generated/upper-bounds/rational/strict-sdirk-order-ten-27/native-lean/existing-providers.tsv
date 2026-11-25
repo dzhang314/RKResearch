@@ -1,0 +1,26 @@
+kind	module	repo_path_or_revision	sha256
+existing-base	RKResearch.FiniteRootedTree	RKResearch/FiniteRootedTree.lean	b83c146d56c2c4e712def29aea213b078ca55056eb0ba99c0bbfb75e54f52869
+existing-base	RKResearch.OrderConditions	RKResearch/OrderConditions.lean	c979b6d7d376a78029591091e331a7bfe3484e26cda483f2c0a38367124a01a2
+existing-base	RKCert.ReviewedNative.FiniteOrderCheck	ai-generated/lean/RKCert/ReviewedNative/FiniteOrderCheck.lean	89c80d23ea114232886509565680e5c3eae2600b1e495844e2f696db19406f35
+existing-base	RKCert.ReviewedNative.ChangeCoefficients	ai-generated/lean/RKCert/ReviewedNative/ChangeCoefficients.lean	ceca7d000f2f8a3b8b07971efe811fe07b664d5abff89e51844e85f537ae7f16
+existing-base	RKCert.ReviewedNative.FiniteScaledOrderCheck	ai-generated/lean/RKCert/ReviewedNative/FiniteScaledOrderCheck.lean	eb08a56cb8a4df7e5c03c1f1757ab3254d440c06fb19f1ecadb678be725a4cae
+existing-base	RKCert.ReviewedNative.RationalStrictSDIRKSparseRows	ai-generated/lean/RKCert/ReviewedNative/RationalStrictSDIRKSparseRows.lean	a2a6e21ffac52948d895c09da8cac8e115bac484f6f128dc0f72dd5743226178
+existing-base	RKCert.ReviewedNative.RationalStrictSDIRKQ5CompressedCore	ai-generated/lean/RKCert/ReviewedNative/RationalStrictSDIRKQ5CompressedCore.lean	aea859426e4c32356eec86112b912ece5015ded2747dff39f639c504d1ca1ec8
+existing-base	RKCert.ReviewedNative.NativeIntegerSpanClearing	ai-generated/lean/RKCert/ReviewedNative/NativeIntegerSpanClearing.lean	bc2eebd18152c1d6bdd7af1cc3a69a0075686b95ba79fa3051437f9cf2eedd84
+existing-base	RKCert.ReviewedNative.RootedTreeAugmentedSpan	ai-generated/lean/RKCert/ReviewedNative/RootedTreeAugmentedSpan.lean	8ed8f15032879a55795d529e679f32ca2d4c78c30c3ade49db0ae62f83c098ae
+existing-base	RKCert.ReviewedNative.NativeIntegerAugmentedChecker	ai-generated/lean/RKCert/ReviewedNative/NativeIntegerAugmentedChecker.lean	7b21f2ad060bfdfddcd94e438008b6e56ebd3922383f7ca9da061f8f88df7c56
+existing-base	RKCert.ReviewedNative.NativeIntegerAugmentedTopPay	ai-generated/lean/RKCert/ReviewedNative/NativeIntegerAugmentedTopPay.lean	81e3409ea036761c1140e5b3711efee0456e0e6003c59c155b6d09d441d6add5
+toolchain/package	Init.Data.List.FinRange	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Algebra.BigOperators.Group.Finset.Piecewise	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Algebra.Field.Rat	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Algebra.Module.Pi	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Data.Fin.VecNotation	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Data.Int.Cast.Lemmas	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Data.Matrix.Mul	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Data.Nat.Factorial.Basic	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Data.PNat.Basic	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.LinearAlgebra.Matrix.Block	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.LinearAlgebra.Span.Basic	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.RingTheory.Ideal.Quotient.Basic	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Tactic.FinCases	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding
+toolchain/package	Mathlib.Tactic.Ring	leanprover/lean4:v4.36.0 / mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842	revision-level binding

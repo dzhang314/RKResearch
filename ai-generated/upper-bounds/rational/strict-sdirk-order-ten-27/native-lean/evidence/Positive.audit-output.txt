@@ -1,0 +1,2 @@
+'RKResearch.Certified.P10AugmentedRender.literalReceipts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.P10AugmentedRender.checked_order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]

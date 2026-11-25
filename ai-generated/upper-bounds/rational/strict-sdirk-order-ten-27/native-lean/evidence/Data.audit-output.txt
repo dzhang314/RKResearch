@@ -1,0 +1,7 @@
+'RKResearch.Certified.RationalStrictSDIRKTwentySevenStageTenUpper.actInt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKTwentySevenStageTenUpper.outInt_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKTwentySevenStageTenUpper.shared_scale' does not depend on any axioms

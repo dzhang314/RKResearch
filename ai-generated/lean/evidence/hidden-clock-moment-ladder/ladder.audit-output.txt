@@ -1,0 +1,88 @@
+@mass_zero_of_tilted_tests : ∀ {K : Type u_1} [inst : Field K] {H E : Finset K} (mass : K → K) {count : ℕ},
+  (∀ x ∈ H, x ∉ E) → H.card ≤ count → TiltedTests H E mass count → ∀ a ∈ H, mass a = 0
+@zero_on_stops_iff_tilted_tests : ∀ {K : Type u_1} [inst : Field K] {T S H : Finset K} {D : ℕ} (mass defect : K → K),
+  S ⊆ T →
+    T.card ≤ D + 1 →
+      (∀ (Q : K[X]), Q.natDegree ≤ D → (moment H mass) Q = (moment T defect) Q) →
+        ((∀ a ∈ S, defect a = 0) ↔ TiltedTests H (T \ S) mass (paidCount T S D))
+@moment_eq_of_same_paid_values : ∀ {K : Type u_1} [inst : Field K] {H T : Finset K} {D : ℕ} (mass defect : K → K),
+  (∀ (Q : K[X]), Q.natDegree ≤ D → (moment H mass) Q = (moment T defect) Q) →
+    ∀ (P Q : K[X]),
+      P.natDegree ≤ D → Q.natDegree ≤ D → (∀ x ∈ T, eval x P = eval x Q) → (moment H mass) P = (moment H mass) Q
+@HasOrder.hiddenClock_momentLaw : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T H : Finset K} (F : K[X]),
+      (∀ x ∉ T, outputMass A b x = 0) →
+        HiddenClockCover A b T F H →
+          ∀ (Q : K[X]),
+            Q.natDegree + F.natDegree + 2 ≤ p →
+              (moment H fun x => groupedColumn A b x F) Q = (moment T (suffixDefect A b F)) Q
+@HasOrder.hiddenClock_ladder_iff : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T S H : Finset K} {d : ℕ},
+      T.Nonempty →
+        S ⊆ T →
+          ∀ (F : K[X]),
+            F.natDegree ≤ d →
+              d + T.card + 1 ≤ p →
+                (∀ x ∉ T, outputMass A b x = 0) →
+                  HiddenClockCover A b T F H →
+                    ((∀ a ∈ S, groupedColumn A b a F = outputMass A b a * (integral a 1) F) ↔
+                      TiltedTests H (T \ S) (fun x => groupedColumn A b x F) (p - d - T.card - 1 + S.card))
+@HasOrder.hiddenClock_zero_of_low_support : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T S H : Finset K} {d : ℕ},
+      T.Nonempty →
+        S ⊆ T →
+          ∀ (F : K[X]),
+            F.natDegree ≤ d →
+              d + T.card + 1 ≤ p →
+                (∀ x ∉ T, outputMass A b x = 0) →
+                  HiddenClockCover A b T F H →
+                    (∀ a ∈ S, groupedColumn A b a F = outputMass A b a * (integral a 1) F) →
+                      H.card ≤ p - d - T.card - 1 + S.card → ∀ x ∉ T, groupedColumn A b x F = 0
+@HasOrder.erk_reflected_local_zero_of_hidden_ladder : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι]
+  [inst_1 : Field K] [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ} [inst_3 : LinearOrder ι],
+  HasOrder p A b →
+    (∀ (i j : ι), i ≤ j → A i j = 0) →
+      ∀ {T S : Finset K} {a : K} {d : ℕ},
+        a ∈ T →
+          S ⊆ T →
+            ∀ (F : K[X]),
+              F.natDegree ≤ d →
+                d + T.card + 1 ≤ p →
+                  (∀ x ∉ T, outputMass A b x = 0) →
+                    outputMass A b a ≠ 0 →
+                      (∀ t ∈ S,
+                          groupedColumn A b t (F.comp (1 - X)) = outputMass A b t * (integral t 1) (F.comp (1 - X))) →
+                        (effectiveHiddenClocks A b T (F.comp (1 - X))).card ≤ p - d - T.card - 1 + S.card →
+                          strictColumn A b a (F.comp (1 - X)) = 0 → (integral 0 (1 - a)) F = 0
+@HasOrder.dirk_reflected_local_zero_of_hidden_ladder : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι]
+  [inst_1 : Field K] [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ} [inst_3 : LinearOrder ι],
+  HasOrder p A b →
+    A.IsLowerTriangular →
+      ∀ {T S : Finset K} {a : K} {d : ℕ},
+        a ∈ T →
+          S ⊆ T →
+            ∀ (F : K[X]),
+              F.natDegree ≤ d →
+                d + T.card + 1 ≤ p →
+                  (∀ x ∉ T, outputMass A b x = 0) →
+                    outputMass A b a ≠ 0 →
+                      (∀ t ∈ S,
+                          groupedColumn A b t (F.comp (1 - X)) = outputMass A b t * (integral t 1) (F.comp (1 - X))) →
+                        (effectiveHiddenClocks A b T (F.comp (1 - X))).card ≤ p - d - T.card - 1 + S.card →
+                          eval (1 - a) F = 0 → strictColumn A b a (F.comp (1 - X)) = 0 → (integral 0 (1 - a)) F = 0
+'RKCert.ReviewedNative.FiniteClockMoments.mass_zero_of_tilted_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.hiddenClock_ladder_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.erk_reflected_local_zero_of_hidden_ladder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.dirk_reflected_local_zero_of_hidden_ladder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

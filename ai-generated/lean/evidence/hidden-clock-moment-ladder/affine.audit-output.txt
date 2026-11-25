@@ -1,0 +1,84 @@
+@paid_rowFunctional_test : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] [inst_2 : CharZero K]
+  {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ (Q F : K[X]),
+      Q.natDegree + F.natDegree + 2 ≤ p →
+        ((rowFunctional A b F) fun i => eval (clock A i) Q) =
+          ∑ i, b i * (eval (clock A i) Q * (integral (clock A i) 1) F)
+@HasOrder.clockColumn_hiddenLeakage_affine : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T : Finset K} {t : K},
+      t ∈ T →
+        ∀ (Q F : K[X]),
+          (∀ x ∉ T, outputMass A b x = 0) →
+            (∀ x ∈ T, x ≠ t → eval x Q = 0) →
+              Q.natDegree + F.natDegree + 2 ≤ p →
+                eval t Q * outputMass A b t * (integral t 1) F =
+                  eval t Q * groupedColumn A b t F + hiddenLeakage A b T Q F
+@HasOrder.visibleClock_reflected_hiddenLeakage_affine : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι]
+  [inst_1 : Field K] [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T : Finset K} {t : K},
+      t ∈ T →
+        ∀ (F : K[X]),
+          (∀ x ∉ T, outputMass A b x = 0) →
+            F.natDegree + T.card + 1 ≤ p →
+              eval t (visibleSelector T t) * outputMass A b t * (integral 0 (1 - t)) F =
+                eval t (visibleSelector T t) * groupedColumn A b t (F.comp (1 - X)) +
+                  hiddenLeakage A b T (visibleSelector T t) (F.comp (1 - X))
+@HasOrder.visibleClock_reflected_hiddenLeakage_eq : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι]
+  [inst_1 : Field K] [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T : Finset K} {t : K},
+      t ∈ T →
+        ∀ (F : K[X]),
+          (∀ x ∉ T, outputMass A b x = 0) →
+            F.natDegree + T.card + 1 ≤ p →
+              outputMass A b t * (integral 0 (1 - t)) F =
+                groupedColumn A b t (F.comp (1 - X)) +
+                  hiddenLeakage A b T (visibleSelector T t) (F.comp (1 - X)) / eval t (visibleSelector T t)
+@hiddenLeakage_eq_zero_of_tested_rows : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  (A : Matrix ι ι K) (b : ι → K) (T : Finset K) (Q F : K[X]),
+  (∀ (j : ι), b j * eval (clock A j) F ≠ 0 → A.mulVec (hiddenMask A T Q) j = 0) → hiddenLeakage A b T Q F = 0
+@HasOrder.visibleClock_reflected_zero_iff : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ},
+  HasOrder p A b →
+    ∀ {T : Finset K} {t : K},
+      t ∈ T →
+        ∀ (F : K[X]),
+          (∀ x ∉ T, outputMass A b x = 0) →
+            F.natDegree + T.card + 1 ≤ p →
+              outputMass A b t ≠ 0 →
+                ((integral 0 (1 - t)) F = 0 ↔
+                  eval t (visibleSelector T t) * groupedColumn A b t (F.comp (1 - X)) +
+                      hiddenLeakage A b T (visibleSelector T t) (F.comp (1 - X)) =
+                    0)
+@HasOrder.erk_visibleClock_reflected_local_zero : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ} [inst_3 : LinearOrder ι],
+  HasOrder p A b →
+    (∀ (i j : ι), i ≤ j → A i j = 0) →
+      ∀ {T : Finset K} {t : K},
+        t ∈ T →
+          ∀ (F : K[X]),
+            (∀ x ∉ T, outputMass A b x = 0) →
+              F.natDegree + T.card + 1 ≤ p →
+                outputMass A b t ≠ 0 →
+                  strictColumn A b t (F.comp (1 - X)) = 0 →
+                    hiddenLeakage A b T (visibleSelector T t) (F.comp (1 - X)) = 0 → (integral 0 (1 - t)) F = 0
+@HasOrder.dirk_visibleClock_reflected_local_zero : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : CharZero K] {A : Matrix ι ι K} {b : ι → K} {p : ℕ} [inst_3 : LinearOrder ι],
+  HasOrder p A b →
+    A.IsLowerTriangular →
+      ∀ {T : Finset K} {t : K},
+        t ∈ T →
+          ∀ (F : K[X]),
+            (∀ x ∉ T, outputMass A b x = 0) →
+              F.natDegree + T.card + 1 ≤ p →
+                outputMass A b t ≠ 0 →
+                  eval (1 - t) F = 0 →
+                    strictColumn A b t (F.comp (1 - X)) = 0 →
+                      hiddenLeakage A b T (visibleSelector T t) (F.comp (1 - X)) = 0 → (integral 0 (1 - t)) F = 0
+'RKResearch.HasOrder.clockColumn_hiddenLeakage_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.erk_visibleClock_reflected_local_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.dirk_visibleClock_reflected_local_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

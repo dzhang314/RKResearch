@@ -7,26 +7,27 @@ public import Mathlib.Algebra.Algebra.Bilinear
 /-! # Joining the roots of reviewed trees gives the graded product rules -/
 namespace RKResearch.FiniteRootedTree
 
-/-- Join roots without identifying or changing any branches. -/
-def mergeRoots : FiniteRootedTree → FiniteRootedTree → FiniteRootedTree
-  | .leaf,u => u
-  | .butcherProduct t b,u => .butcherProduct (mergeRoots t u) b
+open scoped FiniteRootedTree
+
+/-- Join the roots in the order expected by the graded product API. -/
+abbrev mergeRoots (t u : FiniteRootedTree) : FiniteRootedTree := u # t
 
 theorem order_mergeRoots (t u : FiniteRootedTree) :
     ((mergeRoots t u).order:ℕ)+1=(t.order:ℕ)+(u.order:ℕ) := by
-  induction t with
-  | leaf => simp [mergeRoots,Nat.add_comm]
-  | butcherProduct t b ih _ =>
-    simp only [mergeRoots,order,PNat.add_coe]
+  have ht := t.order.pos
+  have hu := u.order.pos
+  have positive : (1 : ℕ+) < u.order + t.order := by
+    change 1 < ((u.order + t.order : ℕ+) : ℕ)
+    rw [PNat.add_coe]
     omega
+  change ((u # t).order:ℕ)+1=(t.order:ℕ)+(u.order:ℕ)
+  rw [order_rootedSum, PNat.sub_coe, if_pos positive, PNat.add_coe, PNat.one_coe]
+  omega
 
 @[simp] theorem forestFactorial_mergeRoots (t u : FiniteRootedTree) :
     (mergeRoots t u).forestFactorial=t.forestFactorial*u.forestFactorial := by
-  induction t with
-  | leaf => simp [mergeRoots]
-  | butcherProduct t b ih _ =>
-    simp only [mergeRoots,forestFactorial,ih]
-    ac_rfl
+  change (u # t).forestFactorial=t.forestFactorial*u.forestFactorial
+  rw [forestFactorial_rootedSum, mul_comm]
 
 end RKResearch.FiniteRootedTree
 
@@ -39,11 +40,8 @@ variable {ι R : Type*} [Fintype ι] [CommSemiring R]
 
 @[simp] theorem Φ_mergeRoots (A : Matrix ι ι R) (t u : FiniteRootedTree) :
     Φ (mergeRoots t u) A = Φ t A * Φ u A := by
-  induction t with
-  | leaf => simp [mergeRoots]
-  | butcherProduct t b ih _ =>
-    simp only [mergeRoots,Φ,ih]
-    ac_rfl
+  change Φ (u # t) A = Φ t A * Φ u A
+  rw [Φ_rootedSum, mul_comm]
 
 theorem normTree_mergeRoots (A : Matrix ι ι R) (t u : FiniteRootedTree) :
     normTree A (mergeRoots t u) = normTree A t * normTree A u := by

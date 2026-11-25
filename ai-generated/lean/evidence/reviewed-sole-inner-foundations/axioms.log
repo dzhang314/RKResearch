@@ -1,0 +1,18 @@
+'RKCert.ReviewedNative.WeakFiveSoleInnerUniform.cornerRow_verified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.WeakFiveSoleInnerUniform.literal_corner_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.WeakFiveSoleInnerUniform.cell_corner_witnesses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.WeakFiveSoleInnerUniform.literal_cages_of_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.WeakFiveSoleInnerUniform.strictly_decreasing_nodes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.WeakFiveSoleInnerUniform.decreasing_nodes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

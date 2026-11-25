@@ -149,7 +149,7 @@ private theorem transport_paid {R S : Type*} [CommRing R] [CommRing S]
     (h : (t.factorial:R) * (v ⬝ᵥ Φ t T) = (e:R)*(d:R)^((t.order:ℕ)-1)) :
     (t.factorial:S) * (w ⬝ᵥ Φ t U) = 1 := by
   have ht := congrArg f h
-  simp only [map_mul, map_pow, map_natCast, RingHom.map_dotProduct, map_Φ_coefficients,
+  simp only [map_mul, map_pow, map_natCast, RingHom.map_dotProduct, map_Φ,
     hA, hB, Φ_smul, smul_dotProduct, dotProduct_smul, smul_eq_mul] at ht
   exact cancel_paid he (hd.pow _) ht
 
@@ -892,7 +892,7 @@ theorem exact_map (f : Coeff →+* K) :
     (A.map f).IsLowerTriangular ∧ (∀ i, (A.map f) i i = (1/2:K)) ∧ (1/2:K) ≠ 0 ∧
       HasOrder 6 (A.map f) (f ∘ b) ∧ ¬ HasOrder 7 (A.map f) (f ∘ b) := by
   refine ⟨lowerTriangular.map f, fun i => ?_, by norm_num,
-    order_six.map_coefficients f, not_order_seven_map f⟩
+    order_six.map f, not_order_seven_map f⟩
   exact (congrArg f (diagonal i)).trans (map_gamma f)
 
 end Specialization

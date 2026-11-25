@@ -90,7 +90,7 @@ theorem HasOrder.strict_lower_triangular_of_charZero_fields
       (∀ i j, i ≤ j → T i j=0) → HasOrder p T w → C) : C :=
   RKCert.ReviewedNative.with_charZero_field (fun K _ _ f =>
     hf K (A.map f) (f ∘ b)
-      (fun i j hij => by rw [Matrix.map_apply,ha i j hij,map_zero]) (h.map_coefficients f))
+      (fun i j hij => by rw [Matrix.map_apply,ha i j hij,map_zero]) (h.map f))
 
 /-- The grade-five enhancement at all orders p ≥ 10 over every
 characteristic-zero field. -/

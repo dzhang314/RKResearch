@@ -20,7 +20,7 @@ theorem HasOrder.sdirk_order_six_stages_marked (ho : HasOrder 6 A b)
     (ha : A.IsLowerTriangular) (hc : ∀ i, A i i = γ)
     (hm : ∀ n k : ℕ, 0 < n → (n:R) * γ^k ≠ 0) : 7 ≤ s :=
   RKCert.ReviewedNative.with_marked_charZero_field hm fun _ _ _ f hf =>
-    (ho.map_coefficients f).sdirk_order_six_stages_field (ha.map f)
+    (ho.map f).sdirk_order_six_stages_field (ha.map f)
       (fun i => congrArg f (hc i)) hf
 
 /-- In a characteristic-zero ring, every unit diagonal survives, even if
@@ -28,7 +28,7 @@ the ring has zero divisors. -/
 theorem HasOrder.sdirk_order_six_stages [CharZero R] (ho : HasOrder 6 A b)
     (ha : A.IsLowerTriangular) (hc : ∀ i, A i i = γ) (hu : IsUnit γ) : 7 ≤ s :=
   RKCert.ReviewedNative.with_charZero_field fun _ _ _ f =>
-    (ho.map_coefficients f).sdirk_order_six_stages_field (ha.map f)
+    (ho.map f).sdirk_order_six_stages_field (ha.map f)
       (fun i => congrArg f (hc i)) (hu.map f).ne_zero
 
 end RKResearch

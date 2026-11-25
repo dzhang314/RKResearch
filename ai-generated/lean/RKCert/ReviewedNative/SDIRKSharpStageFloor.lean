@@ -33,14 +33,14 @@ theorem HasOrder.strict_sdirk_stage_floor_marked (ho : HasOrder p A b)
     (ha : A.IsLowerTriangular) (hc : ∀ i, A i i = γ)
     (hm : ∀ n k : ℕ, 0 < n → (n:R)*γ^k ≠ 0) (hp : 0 < p) : strictSDIRKStageFloor p ≤ s :=
   RKCert.ReviewedNative.with_marked_charZero_field hm fun _ _ _ f hf =>
-    (ho.map_coefficients f).strict_sdirk_stage_floor_field (ha.map f)
+    (ho.map f).strict_sdirk_stage_floor_field (ha.map f)
       (fun i => congrArg f (hc i)) hf hp
 
 theorem HasOrder.strict_sdirk_stage_floor [CharZero R] (ho : HasOrder p A b)
     (ha : A.IsLowerTriangular) (hc : ∀ i, A i i = γ) (hu : IsUnit γ) (hp : 0 < p) :
     strictSDIRKStageFloor p ≤ s :=
   RKCert.ReviewedNative.with_charZero_field fun _ _ _ f =>
-    (ho.map_coefficients f).strict_sdirk_stage_floor_field (ha.map f)
+    (ho.map f).strict_sdirk_stage_floor_field (ha.map f)
       (fun i => congrArg f (hc i)) (hu.map f).ne_zero hp
 
 end RKResearch

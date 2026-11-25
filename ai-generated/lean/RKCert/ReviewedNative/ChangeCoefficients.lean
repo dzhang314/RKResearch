@@ -16,24 +16,6 @@ namespace RKResearch
 
 open scoped Matrix
 
-section Change
-
-variable {ι R S : Type*} [Fintype ι] [CommSemiring R] [CommSemiring S]
-
-/-- Matrix and pointwise multiplication in the reviewed tree weight commute
-with a unital coefficient map. -/
-theorem map_Φ_coefficients (f : R →+* S) (A : Matrix ι ι R) (t : FiniteRootedTree) :
-    f ∘ Φ t A = Φ t (A.map f) :=
-  RKResearch.map_Φ f t A
-
-/-- No inverse, characteristic condition or stage restriction is required. -/
-theorem HasOrder.map_coefficients {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
-    (h : HasOrder p A b) (f : R →+* S) :
-    HasOrder p (A.map f) (f ∘ b) :=
-  RKResearch.HasOrder.map h f
-
-end Change
-
 universe u
 
 /-- In a lower triangular matrix the first coordinate where a column can be
@@ -63,7 +45,7 @@ theorem HasOrder.lower_triangular_of_all_fields
   let := hI
   let := Ideal.Quotient.field I
   let f := Ideal.Quotient.mk I
-  exact hf (R ⧸ I) (A.map f) (f ∘ b) (ha.map f) (h.map_coefficients f)
+  exact hf (R ⧸ I) (A.map f) (f ∘ b) (ha.map f) (h.map f)
 
 /-- Version preserving genuinely nonsingular diagonal entries. Unit
 entries, not arbitrary nonzero entries, survive the proof's residue map. -/
@@ -78,6 +60,6 @@ theorem HasOrder.unit_diagonal_of_all_fields
   let := Ideal.Quotient.field I
   let f := Ideal.Quotient.mk I
   exact hf (R ⧸ I) (A.map f) (f ∘ b) (ha.map f)
-    (fun i => ((hu i).map f).ne_zero) (h.map_coefficients f)
+    (fun i => ((hu i).map f).ne_zero) (h.map f)
 
 end RKResearch

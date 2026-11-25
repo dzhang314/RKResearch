@@ -83,7 +83,7 @@ theorem HasOrder.strict_lower_triangular_of_all_fields
   let f := Ideal.Quotient.mk I
   exact hf (R ⧸ I) (A.map f) (f ∘ b)
     (fun i j hij => by rw [Matrix.map_apply, ha i j hij, map_zero])
-    (h.map_coefficients f)
+    (h.map f)
 
 /-- General field-level explicit lower bound. Paid order ensures the
 denominators used in the proof are units; the field need not have

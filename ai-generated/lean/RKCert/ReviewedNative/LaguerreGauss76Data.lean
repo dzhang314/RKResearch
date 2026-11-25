@@ -124,7 +124,7 @@ theorem not_order_seven_map (f : Coeff →+* K) : ¬ HasOrder 7 (A.map f) (f ∘
   have ht := h (bushyTree 7) (by rw [order_bushyTree]; decide)
   have he : (400 : K) * (((bushyTree 7).factorial : K) *
       ((f ∘ b) ⬝ᵥ Φ (bushyTree 7) (A.map f))) = 399 := by
-    simpa only [map_mul, map_natCast, map_ofNat, RingHom.map_dotProduct, map_Φ_coefficients]
+    simpa only [map_mul, map_natCast, map_ofNat, RingHom.map_dotProduct, map_Φ]
       using congrArg f seventh_bush_scaled
   rw [ht, mul_one] at he
   norm_num at he

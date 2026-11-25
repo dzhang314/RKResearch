@@ -133,7 +133,7 @@ theorem not_order_six_map (f : Q6 →+* K) : ¬ HasOrder 6 (A.map f) (f ∘ b) :
   have ht := h (bushyTree 6) (by rw [order_bushyTree]; decide)
   have he : (100 : K) * (((bushyTree 6).factorial : K) *
       ((f ∘ b) ⬝ᵥ Φ (bushyTree 6) (A.map f))) = 101 := by
-    simpa only [map_mul, map_natCast, map_ofNat, RingHom.map_dotProduct, map_Φ_coefficients]
+    simpa only [map_mul, map_natCast, map_ofNat, RingHom.map_dotProduct, map_Φ]
       using congrArg f sixth_bush_scaled
   rw [ht, mul_one] at he
   norm_num at he
@@ -145,7 +145,7 @@ theorem specialized_exact (x : K) (hx : x^2 = 6) :
       HasOrder 5 (A.map f) (f ∘ b) ∧ ¬ HasOrder 6 (A.map f) (f ∘ b) := by
   let f := specialize x hx
   exact ⟨lowerTriangular.map f, fun i => congrArg f (diagonal i),
-    specialize_gamma_ne_zero x hx, order_five.map_coefficients f, not_order_six_map f⟩
+    specialize_gamma_ne_zero x hx, order_five.map f, not_order_six_map f⟩
 
 end Specialize
 

@@ -59,7 +59,7 @@ theorem HasOrder.dirk_C2_stage_floor
     (hp : 12≤p) (c₂ : monomialStageDefect A 1=0) :
     p+(p-1)/2-2 ≤ s :=
   RKCert.ReviewedNative.with_charZero_field (fun K _ _ φ =>
-    (ho.map_coefficients φ).dirk_C2_stage_floor_field (ha.map φ) hp (by
+    (ho.map φ).dirk_C2_stage_floor_field (ha.map φ) hp (by
       rw [monomialStageDefect_map,c₂]
       ext i; simp))
 

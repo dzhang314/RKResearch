@@ -91,24 +91,24 @@ theorem seventh_bush_scaled :
 
 section Specialization
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 
 /-- The rational seventh-order failure survives in every characteristic-zero field. -/
 theorem not_order_seven_map (f : ℚ →+* K) : ¬ HasOrder 7 (A.map f) (f ∘ b) := by
   intro h
-  have ht := h (bushyTree 7) (by rw [order_bushyTree]; decide)
-  have hh : (384:K) * (((bushyTree 7).factorial : K) *
-      ((f ∘ b) ⬝ᵥ Φ (bushyTree 7) (A.map f))) = 385 := by
-    simpa only [map_mul,map_ofNat,map_natCast,RingHom.map_dotProduct,map_Φ_coefficients]
-      using congrArg f seventh_bush_scaled
-  rw [ht,mul_one] at hh
-  norm_num at hh
+  have h₇ := (hasOrder_map_iff f.injective).mp h
+  have hb := h₇ (bushyTree 7) (by rw [order_bushyTree]; decide)
+  have hs := seventh_bush_scaled
+  rw [hb, mul_one] at hs
+  norm_num at hs
+
+variable [CharZero K]
 
 theorem exists_exact_order_six :
     ∃ (U : Matrix (Fin 5) (Fin 5) K) (w : Fin 5 → K),
       U.IsLowerTriangular ∧ HasOrder 6 U w ∧ ¬ HasOrder 7 U w := by
   let f := Rat.castHom K
-  exact ⟨A.map f,f ∘ b,lowerTriangular.map f,order_six.map_coefficients f,not_order_seven_map f⟩
+  exact ⟨A.map f,f ∘ b,lowerTriangular.map f,order_six.map f,not_order_seven_map f⟩
 
 end Specialization
 

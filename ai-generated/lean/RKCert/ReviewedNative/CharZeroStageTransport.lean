@@ -19,6 +19,6 @@ theorem HasOrder.lower_triangular_of_charZero_fields
       (T : Matrix (Fin s) (Fin s) K) (w : Fin s → K),
       T.IsLowerTriangular → HasOrder p T w → Q) : Q :=
   RKCert.ReviewedNative.with_charZero_field fun K _ _ f =>
-    hfield K (A.map f) (f ∘ b) (ha.map f) (h.map_coefficients f)
+    hfield K (A.map f) (f ∘ b) (ha.map f) (h.map f)
 
 end RKResearch

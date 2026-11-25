@@ -199,7 +199,7 @@ theorem HasOrder.common_diagonal_order_five_stages (ho : HasOrder 5 A b)
   let := hI
   let := Ideal.Quotient.field I
   let f := Ideal.Quotient.mk I
-  have hf := ho.map_coefficients f
+  have hf := ho.map f
   have ht := ha.map f
   by_cases hz : f γ = 0
   · apply Certified.explicit_order_le_stages (b := f ∘ b) _ hf

@@ -13,8 +13,8 @@ import RKCert.ReviewedNative.DIRKSmall
 #print axioms RKResearch.HasOrder.natCast_isUnit
 #print axioms RKResearch.HasOrder.monomialStageDefect_moment
 #print axioms RKResearch.HasOrder.bushy_moment_div
-#print axioms RKResearch.map_Φ_coefficients
-#print axioms RKResearch.HasOrder.map_coefficients
+#print axioms RKResearch.map_Φ
+#print axioms RKResearch.HasOrder.map
 #print axioms RKResearch.lowerTriangular_mulVec_pivot
 #print axioms RKResearch.HasOrder.lower_triangular_of_all_fields
 #print axioms RKResearch.HasOrder.unit_diagonal_of_all_fields

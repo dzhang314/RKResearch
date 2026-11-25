@@ -1,0 +1,7 @@
+SDIRK118SubfieldBasic
+SDIRK118SubfieldAssembly
+SDIRK118SubfieldDonor
+SDIRK118AlgebraicField
+SDIRK118FieldDegreeTwelve
+SDIRK118AlgebraicWitness
+CommonDiagonalStageFloor

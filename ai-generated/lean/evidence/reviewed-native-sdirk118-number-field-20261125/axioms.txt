@@ -1,0 +1,37 @@
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.exists_strict_sdirk11_hasOrder8_over_algebraic_field' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.Subfield.literal_lift_seedCoefficientField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.Subfield.literal_coefficients_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.Subfield.literal_coefficients_isAlgebraic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.Subfield.exact_seed_isAlgebraic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.exists_strict_sdirk11_hasOrder8_over_field_degree_le_twelve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.Subfield.seedCoefficientField_finite_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.Subfield.literal_lift_finite_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@RKResearch.HasOrder.common_diagonal_stage_floor : ∀ {R : Type u_1} [inst : CommRing R] {s p : ℕ}
+  {A : Matrix (Fin s) (Fin s) R} {b : Fin s → R} {γ : R} [Nontrivial R],
+  RKResearch.HasOrder p A b →
+    A.IsLowerTriangular →
+      (∀ (i : Fin s), A i i = γ) → min (RKResearch.erkUniformFloor p) (((p + 1) ^ 2 / 4 + 1) / 2) ≤ s
+'RKResearch.HasOrder.common_diagonal_erk_floor_of_not_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.common_diagonal_quadratic_floor_of_not_isNilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.common_diagonal_stage_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.common_diagonal_order_six_stages_charZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

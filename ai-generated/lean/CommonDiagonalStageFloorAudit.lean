@@ -1,0 +1,7 @@
+import RKCert.ReviewedNative.CommonDiagonalStageFloor
+
+#check @RKResearch.HasOrder.common_diagonal_stage_floor
+#print axioms RKResearch.HasOrder.common_diagonal_erk_floor_of_not_isUnit
+#print axioms RKResearch.HasOrder.common_diagonal_quadratic_floor_of_not_isNilpotent
+#print axioms RKResearch.HasOrder.common_diagonal_stage_floor
+#print axioms RKResearch.HasOrder.common_diagonal_order_six_stages_charZero

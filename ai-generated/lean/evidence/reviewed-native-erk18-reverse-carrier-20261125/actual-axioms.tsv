@@ -1,0 +1,5 @@
+declaration	actual_axioms
+RKResearch.Certified.Graded.Reverse.primitiveBack_clock_invariant_incoming	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.primitiveBack_rank_four_of_one_clock	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.primitiveBack_clock_step_of_unit_rank	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.rank_nine_reverse_carrier_of_measured_room	propext,Classical.choice,Quot.sound

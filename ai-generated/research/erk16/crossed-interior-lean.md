@@ -1,0 +1,7 @@
+# The crossed interior sector in Lean
+
+The theorem [`WeakFiveCrossedPositiveTail.no_actual_crossed_positive_tail_real`](../../lean/RKCert/ReviewedNative/ERKOrder16WeakFiveCrossedPositiveTailReal.lean) excludes the crossed, strictly interior two-change sector of the order-16 weak-five quartic. It takes the existing `WeakFive16.Moments`, degree four, and `CrossedSignPhase`. The phase orders the four nonorigin marks as `c 4 < c 3 < c 2 < c 1`, with signs positive, negative, negative, positive after monic normalization and no three sign alternations on the open unit interval.
+
+Here is the numerical contradiction in the proof. The two sign changes identify two roots. Removing their factors turns the four-mark signed formula into a positive six-node formula exact through degree eleven. Rank-two tests put the second and fifth nodes far enough apart that the centered quadratic pair moment is negative. The same moment is positive by the two paid endpoint integrals and strict positivity on the remaining tail. Reflection exchanges the two orientations of the residual.
+
+The real theorem supplies the root-existence step by the intermediate value theorem. The companion theorems state precisely the assumptions for an ordered embedding into the reals, or for an ordered extension with a supplied root source. This is a checked sector exclusion, not a complete weak-five exclusion or a new unconditional bound on stage count.

@@ -1,0 +1,36 @@
+{
+  "audit": {
+    "actual_lean_exit": 0,
+    "audit_calls": 1,
+    "body_calls": 0,
+    "reason": "exact typed E4 theorem and one stock-only named report",
+    "status": "AUDIT_PASS",
+    "wrapper_exit": 0
+  },
+  "audit_stdout_sha256": "44615aa667a43eea41615a68d693439b727602b0231c2db227ecdbb8c790affb",
+  "body": {
+    "accepted_objects": {
+      "RKCert/ReviewedNative/ERK8FourOffTerminalProfile.ir": "37b6c65e49cc9ce730a528614e0fb4891ce1403c31191ea91d2dcfdfbc4298aa",
+      "RKCert/ReviewedNative/ERK8FourOffTerminalProfile.ir.sig": "5b57e6f3f6822a6b9308beb4eb4ff02ba71dcac3664dee0266b1af1f829c0cb6",
+      "RKCert/ReviewedNative/ERK8FourOffTerminalProfile.olean": "4d44a8ede6eb88d0a4100e3bd59cea7e7a5117f0f91e8929df9df11cbc372ecd",
+      "RKCert/ReviewedNative/ERK8FourOffTerminalProfile.olean.private": "9aa32aadba17b7663a3201e8c4bef5646a711aa96941a94df786c41d5a248b4d",
+      "RKCert/ReviewedNative/ERK8FourOffTerminalProfile.olean.server": "c25c70399c1ed65e8b8697564d52060e59ed628d84cc61070750374e15cfdec9"
+    },
+    "audit_calls": 0,
+    "compiler_calls": 1,
+    "compiler_exit": 0,
+    "reason": "single exact independent E4 body only",
+    "status": "BODY_PASS",
+    "wrapper_exit": 0
+  },
+  "checks": {
+    "RKResearch.Certified.Graded.FourOffNewton.terminal_profile_of_unitNine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "project_providers_before_body": 35
+}

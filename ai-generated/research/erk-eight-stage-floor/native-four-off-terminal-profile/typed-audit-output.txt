@@ -1,0 +1,3 @@
+'RKResearch.Certified.Graded.FourOffNewton.terminal_profile_of_unitNine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

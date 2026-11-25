@@ -1,0 +1,5 @@
+'RKResearch.Certified.Graded.Reverse.le_clockLocal_of_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.Reverse.clockLocal_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.Reverse.clockLocal_annih_clockStep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

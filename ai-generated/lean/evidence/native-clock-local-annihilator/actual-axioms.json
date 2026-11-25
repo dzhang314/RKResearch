@@ -1,0 +1,17 @@
+{
+  "RKResearch.Certified.Graded.Reverse.clockLocal_annih_clockStep": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "RKResearch.Certified.Graded.Reverse.clockLocal_eq_iff": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "RKResearch.Certified.Graded.Reverse.le_clockLocal_of_stable": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

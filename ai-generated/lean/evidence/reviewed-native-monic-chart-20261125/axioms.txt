@@ -1,0 +1,22 @@
+'RKCert.ReviewedNative.exists_linear_leftInverse_of_monic_scalar_comp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.isSMulRegular_of_polynomial_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.smul_range_reflected_of_linear_leftInverse' does not depend on any axioms
+'RKCert.ReviewedNative.isSMulRegular_cokernel_of_monic_scalar_comp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.dvd_of_smul_dvd_of_monic_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ReviewedNative.map_guard_mul_eq_zero_of_monic_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.eval₂_guard_mul_eq_zero_of_monic_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.isNilpotent_iff_forall_field_images_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.common_diagonal_stage_floor_at_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.common_diagonal_stage_floor_away_nat' depends on axioms: [propext, Classical.choice, Quot.sound]

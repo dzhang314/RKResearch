@@ -1,0 +1,13 @@
+import RKCert.ReviewedNative.MonicChartSpecialization
+import RKCert.ReviewedNative.CommonDiagonalGoodScalar
+
+#print axioms RKCert.ReviewedNative.exists_linear_leftInverse_of_monic_scalar_comp
+#print axioms RKCert.ReviewedNative.isSMulRegular_of_polynomial_coordinates
+#print axioms RKCert.ReviewedNative.smul_range_reflected_of_linear_leftInverse
+#print axioms RKCert.ReviewedNative.isSMulRegular_cokernel_of_monic_scalar_comp
+#print axioms RKCert.ReviewedNative.dvd_of_smul_dvd_of_monic_projection
+#print axioms RKCert.ReviewedNative.map_guard_mul_eq_zero_of_monic_projection
+#print axioms RKCert.ReviewedNative.eval₂_guard_mul_eq_zero_of_monic_chart
+#print axioms RKCert.ReviewedNative.isNilpotent_iff_forall_field_images_eq_zero
+#print axioms RKResearch.HasOrder.common_diagonal_stage_floor_at_scalar
+#print axioms RKResearch.HasOrder.common_diagonal_stage_floor_away_nat

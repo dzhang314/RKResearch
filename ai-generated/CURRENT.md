@@ -41,6 +41,8 @@ The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3
 
 ## Latest archived results
 
+- [Lean certificate for 11-stage strict SDIRK at order eight](lean/evidence/reviewed-native-sdirk118-witness-20261125/README.md): the positive common diagonal and all order conditions are proved over the reals. A separate [coefficient-field argument](upper-bounds/real-algebraic/sdirk11_order8_literal_coefficient_field_20261125.md) gives a degree bound of 12 for the same tableau.
+
 - [Lean certificate for exact ten-stage DIRK at order nine](lean/evidence/reviewed-native-dirk-nine-sharp-c35/README.md): ten stages are necessary and sufficient over the reals and real algebraic numbers. The [exact tableau](lean/evidence/reviewed-native-dirk-nine-exact-c35/README.md) also fails the order-ten tall-tree condition.
 - [Order-19 ERK construction in 46 stages](upper-bounds/real-algebraic/erk_moving_helper_two_sided_causal_reciprocity_order19_46_20261123.md), with independent proof audit and exact replays.
 - [Order-16 strict SDIRK construction in 38 stages](upper-bounds/real-algebraic/sdirk_order16_38_six_causal_entries_and_second_quadrature_reverse_20261123.md), with both literal stage merges and a complete exact replay.

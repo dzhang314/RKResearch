@@ -1,0 +1,15 @@
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.exists_real_strict_sdirk11_hasOrder8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.LiteralReverseProducer.literal_reverse_leaves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.ScalarQuadraticSigns.quadratic_box_signs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.OldGuardTables.oldGuards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK118.AffineBoxReceipt.affine_box_signs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

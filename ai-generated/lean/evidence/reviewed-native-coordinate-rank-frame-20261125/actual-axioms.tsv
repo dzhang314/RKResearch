@@ -1,0 +1,9 @@
+declaration	axioms
+RKResearch.Certified.Graded.RankCoordinates.exists_coordinateFrame	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.CoordinateFrame.restrictEquiv_apply	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.row_extendRows	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.extendRows_on	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.extendRows_off	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.CoordinateFrame.row_rowOver	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.CoordinateFrame.row_extendFunctional	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.RankCoordinates.CoordinateFrame.extendFunctional_off	Classical.choice,Quot.sound,propext

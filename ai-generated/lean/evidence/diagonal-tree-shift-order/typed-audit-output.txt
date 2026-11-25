@@ -1,0 +1,22 @@
+@AgreesThrough : {V : Type u_1} → ℕ → (FiniteRootedTree → V) → (FiniteRootedTree → V) → Prop
+@FirstDifferenceAt : {V : Type u_1} → ℕ → (FiniteRootedTree → V) → (FiniteRootedTree → V) → Prop
+expand_eq_atom_add_lower : ∀ (R : Type u_1) [inst : CommSemiring R] (a : R) (t : FiniteRootedTree),
+  ∃ e ∈ below R (FiniteSeries.treeGrade t), expand R a t = atom R t + e
+same_correction : ∀ (R : Type u_1) [inst : CommSemiring R] {V : Type u_2} [inst_1 : AddCommMonoid V]
+  [inst_2 : Module R V] (a : R) (f g : FiniteRootedTree → V) (t : FiniteRootedTree),
+  (∀ (u : FiniteRootedTree), ↑u.order < ↑t.order → f u = g u) →
+    ∃ c, transform R a f t = f t + c ∧ transform R a g t = g t + c
+transform_at_eq_iff : ∀ (R : Type u_1) [inst : CommSemiring R] {V : Type u_2} [inst_1 : AddCancelCommMonoid V]
+  [inst_2 : Module R V] (a : R) (f g : FiniteRootedTree → V) (t : FiniteRootedTree),
+  (∀ (u : FiniteRootedTree), ↑u.order < ↑t.order → f u = g u) → (transform R a f t = transform R a g t ↔ f t = g t)
+agreesThrough_transform_iff : ∀ (S : Type u_1) [inst : CommRing S] {V : Type u_2} [inst_1 : AddCancelCommMonoid V]
+  [inst_2 : Module S V] (a : S) (n : ℕ) (f g : FiniteRootedTree → V),
+  AgreesThrough n (transform S a f) (transform S a g) ↔ AgreesThrough n f g
+firstDifference_transform_iff : ∀ (S : Type u_1) [inst : CommRing S] {V : Type u_2} [inst_1 : AddCancelCommMonoid V]
+  [inst_2 : Module S V] (a : S) (n : ℕ) (f g : FiniteRootedTree → V),
+  FirstDifferenceAt n (transform S a f) (transform S a g) ↔ FirstDifferenceAt n f g
+'RKResearch.DiagonalTreeShift.expand_eq_atom_add_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.same_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.transform_at_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.agreesThrough_transform_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.firstDifference_transform_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

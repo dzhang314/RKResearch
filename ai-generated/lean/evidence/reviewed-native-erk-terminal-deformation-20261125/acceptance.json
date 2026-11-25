@@ -1,0 +1,164 @@
+{
+  "body": {
+    "accepted_objects": {
+      "RKCert/ReviewedNative/ERKTerminalDeformation.ir": "cb5515290c45123594c16ab09b57fca79afbfb7480f026c4ba1b23336ebbddae",
+      "RKCert/ReviewedNative/ERKTerminalDeformation.ir.sig": "06c1a27235f49f34d597e2c9ad7413615b0be9f8aec88d41d35dc80c375bf520",
+      "RKCert/ReviewedNative/ERKTerminalDeformation.olean": "b683cec04bd88a9b8b9daf08b901f454e6718b1af4b6f7c30dbb9c90d025300a",
+      "RKCert/ReviewedNative/ERKTerminalDeformation.olean.private": "09efcbf487e56736350c6ae9561481c0a669b369f1b8c9de9cbed3568ed35da2",
+      "RKCert/ReviewedNative/ERKTerminalDeformation.olean.server": "546b8fa01c76a2b229a35f00ff4ea4a5985e2be85317104c9226841cdf907596"
+    },
+    "audit_calls": 0,
+    "compiler_calls": 1,
+    "compiler_exit": 0,
+    "project_provider_fragments": 35,
+    "project_provider_modules": 7,
+    "raw_receipt_sha256": "f819a3d68ef65389f5891fc87174899cae6b69b1683a80f477487fafe2e0cef2",
+    "raw_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reason": "single unchanged body only; no axioms checked",
+    "requested_object_output": true,
+    "session": 22267,
+    "source": "ai-generated/lean/RKCert/ReviewedNative/ERKTerminalDeformation.lean",
+    "source_sha256": "6b7dc6f865f72f3d2eb04d1359186a85b955d1ce01acc4d5e4936b781ee0baed",
+    "status": "BODY_PASS",
+    "stock_modules": 3046,
+    "wrapper_exit": 0
+  },
+  "execution_scope": "one serial body and one separately serial no-output typed audit in coherent private project roots; no cold build",
+  "lean": "4.36.0",
+  "lean_executable_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "measurement_source_base": "b1cab93f6b2678990949871909ac7e795bb981c9",
+  "original_body_stop": {
+    "actual_lean_exit": 1,
+    "diagnostic_lines": [
+      111,
+      235,
+      319,
+      337
+    ],
+    "did_not_supply_objects": true,
+    "raw_receipt_sha256": "ad83f920311f568b1adbc095ac54a103e7ee00310606135d43950469f10960c0",
+    "raw_stdout_sha256": "619ad5f467d29b7a99033fd001c3ddfeba944e9638f844faf929aee6e0f87943",
+    "session": 27796,
+    "source_sha256": "9858b8409147e4b34f12387537dcec31353085504fe904d90ffac5da872b7b33"
+  },
+  "project_provider_artifact_sha256": {
+    "RKCert/ReviewedNative/BushyMoments.ir": "25f864a71ab486fb3a4743cab4bcc127739d600cdc0139467b9bf00d04cc3516",
+    "RKCert/ReviewedNative/BushyMoments.ir.sig": "9574aa52102c7fad5f49482d0c490ebb9ae5a63cb951a9dbde2ccb67f0729afb",
+    "RKCert/ReviewedNative/BushyMoments.olean": "e1dd80c1723f2f3c8f21fef9165cc29424ed95e6467df82c577caa98a7a11004",
+    "RKCert/ReviewedNative/BushyMoments.olean.private": "e0794b4d441231f2364e075996c8768ef8ab89558eff4bf87285a97b59d1bc3c",
+    "RKCert/ReviewedNative/BushyMoments.olean.server": "da0eaa33aca6509811bb186bedb869caf64e3c72bef5f8ebb541b50e28987aff",
+    "RKCert/ReviewedNative/GradedColumns.ir": "8ed26dc6bfea52d806515309f01a2ff2df7d7f9bffb0e9ae2d18e46bb65294d3",
+    "RKCert/ReviewedNative/GradedColumns.ir.sig": "381d5620e663e1f9e21e3d75925c850f2f59f0bb1c6c2667f0fbad0f4b51619f",
+    "RKCert/ReviewedNative/GradedColumns.olean": "b9f1150c73c60bff625f5704ffb5cf271a761426d49c78a8114a91fe9c2c3bec",
+    "RKCert/ReviewedNative/GradedColumns.olean.private": "8cc11921f3c2cd06cd2d30447d3f351ea41dcd5431a93f02d1ff195c4f5b55c7",
+    "RKCert/ReviewedNative/GradedColumns.olean.server": "9326f913d90a8a985fdf4727c6cea271b6c950e2a76eda31435424366c35648d",
+    "RKCert/ReviewedNative/GradedDefects.ir": "089b5fead7953137ec7fd7e45e41de303a53789a2699ff3aa0c3421e08942749",
+    "RKCert/ReviewedNative/GradedDefects.ir.sig": "c7cd314f1f0ad3c93995c0b9b7733b82ede094d18cd2fd2b9cb559252b232be5",
+    "RKCert/ReviewedNative/GradedDefects.olean": "5fecf48298fbfd27ad57ae1a73e1af2ede3f558a967ba4399d3776cbad9ffcd9",
+    "RKCert/ReviewedNative/GradedDefects.olean.private": "79cfefa76f486c55fe4008e4ecba59b4c3f2a5637f764f74434acfa1e4edb88e",
+    "RKCert/ReviewedNative/GradedDefects.olean.server": "98c8ca6a6049b0735b9bcacd2efbfe447b51232368b8ef78df38ce6aa4afbdfa",
+    "RKCert/ReviewedNative/GradedProducts.ir": "3107bf431643e2c00bc304e5ffe5aa4659b2a98f43552d6915313eee8c0f01d7",
+    "RKCert/ReviewedNative/GradedProducts.ir.sig": "1eea50ef8ca45be180b6078dfbcd03a6dda41f56c8d4b0d4358114bcf9c09077",
+    "RKCert/ReviewedNative/GradedProducts.olean": "c11fd79295bc44839124967cd0ed8e562b8d2c3295dcfb337a452325819a7b1c",
+    "RKCert/ReviewedNative/GradedProducts.olean.private": "99b03c2661c2ed8f09861826f177276ab5f15840343e7e411e72b125b11869df",
+    "RKCert/ReviewedNative/GradedProducts.olean.server": "d88401d6dd18a5023cc2fae15a19d86b9c39dca9e59368ee47b0f8cb9c1db2c6",
+    "RKCert/ReviewedNative/RootMomentCuts.ir": "c4243081dc7177665c701bf6c63eff118e028981e17b1d71429ca6ad77a55824",
+    "RKCert/ReviewedNative/RootMomentCuts.ir.sig": "db9388abc113cf12f2e5853598fa46992d85ce8aa13c428f95f6fa514314db03",
+    "RKCert/ReviewedNative/RootMomentCuts.olean": "90d9ef5a49f32936ff33648ee2c1cb4ebba16b646bd346f595c810f2d09df119",
+    "RKCert/ReviewedNative/RootMomentCuts.olean.private": "2ce8f1756aeeb52d9aeeb267b29a411ddf719466a7e64e9a508f7eb0441eb942",
+    "RKCert/ReviewedNative/RootMomentCuts.olean.server": "63106996eae33bd95fb99aee5ff1ecd32f9298089f4c67302f5e0444d153a7fd",
+    "RKResearch/FiniteRootedTree.ir": "9875a67ef9840fdc70b3905ca8289b51a8cfb33b8e237b390b970b397e188b1b",
+    "RKResearch/FiniteRootedTree.ir.sig": "295f2fc3eb4d30f4c0c1fcce2b1cd6ad5f9c206aafa77b27df70e42597482a2e",
+    "RKResearch/FiniteRootedTree.olean": "82112d27743159ecf7b50916894527bbb5b12403f151bf99dd51d3b96af8b764",
+    "RKResearch/FiniteRootedTree.olean.private": "880f20601be745396a3d0d701be2fb0289de6f442b443ceb28fcbb586f281856",
+    "RKResearch/FiniteRootedTree.olean.server": "5e91199c29421c88c995d43728f241965c7ca9ba0e2851fd2109f76e4201170f",
+    "RKResearch/OrderConditions.ir": "081ef7434f4a230a328a0af189965635736c9aacb70860c1bb1b95f14f5939a0",
+    "RKResearch/OrderConditions.ir.sig": "ee3eff6780fac9aa45de3ac5297bdb0b80d1436bb94c2f05569cb0474573712f",
+    "RKResearch/OrderConditions.olean": "5c801eba9929197ec299ccda522cdc59e7a6ba55d3411707cf6d47044478d8f9",
+    "RKResearch/OrderConditions.olean.private": "eaa98aac987993f0fe943410160c4106610b482757cb5dacb1c9e616afdc3776",
+    "RKResearch/OrderConditions.olean.server": "9d3414184799012341f6cf0f9f5e05e5a2bfdbf21442d2b1ce4133de48ef74f7"
+  },
+  "project_providers": [
+    {
+      "git_blob": "59c3781a17e5a8019ce2c7c02e948dae7607019e",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.BushyMoments",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/BushyMoments.lean",
+      "sha256": "911a42e91d83cfdfa0e5ffba3665298b8cb93abc872c5fa0065003f754c6ff2e"
+    },
+    {
+      "git_blob": "70e5b87f9799f5d91f4d842848a4f54e4f9c13fd",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.GradedColumns",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedColumns.lean",
+      "sha256": "e2a1cfa9280ea49c3e3347dee50ea9e3f6b8d4c4c8b8e75dee105ade60c0f198"
+    },
+    {
+      "git_blob": "607ae20d5f9ec887c6448c2f01566308cc238722",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.GradedDefects",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedDefects.lean",
+      "sha256": "f3e7b4eafdb469306d61a28b4a6ba4521501dc719344f727a9ebbcc2a3156b7f"
+    },
+    {
+      "git_blob": "6a14c859470d1121c1c9cf3e95ecb9c469297958",
+      "measurement_session": 22506,
+      "module": "RKCert.ReviewedNative.GradedProducts",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedProducts.lean",
+      "sha256": "4e26938ad03acae885d8e53456edf760535b4312b9094324f85987127d120b62"
+    },
+    {
+      "git_blob": "98fbba239c73651b589f67a4a07d47e35641698a",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.RootMomentCuts",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/RootMomentCuts.lean",
+      "sha256": "bad53684ecc9e1d74abc5653c9448e2fd481d287906942ef0e3ca96f69873184"
+    },
+    {
+      "git_blob": "42af3c80ae5cd994f358fe0cb798c7e86665f2d2",
+      "measurement_session": 17400,
+      "module": "RKResearch.FiniteRootedTree",
+      "path": "RKResearch/FiniteRootedTree.lean",
+      "sha256": "b83c146d56c2c4e712def29aea213b078ca55056eb0ba99c0bbfb75e54f52869"
+    },
+    {
+      "git_blob": "a30cdb61e03c3c437f70dee0d88d8d1245c552b1",
+      "measurement_session": 39763,
+      "module": "RKResearch.OrderConditions",
+      "path": "RKResearch/OrderConditions.lean",
+      "sha256": "c979b6d7d376a78029591091e331a7bfe3484e26cda483f2c0a38367124a01a2"
+    }
+  ],
+  "publication_base": "5642ebb61b116ae83ac1d59a6e48d820fd68b2ba",
+  "typed_audit": {
+    "actual_lean_exit": 0,
+    "audit_calls": 1,
+    "body_calls": 0,
+    "named_axiom_checks": {
+      "RKResearch.Certified.Graded.TerminalDeformation.terminal_clockMass": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.Graded.TerminalDeformation.terminal_hasOrder": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "new_project_fragments": 0,
+    "project_fragments_loaded": 40,
+    "project_modules_loaded": 8,
+    "raw_receipt_sha256": "dc2d4827a260804d34b83c47093f4b562249c0ecd9ba64cbe54efa32ceff40cd",
+    "raw_stdout_sha256": "244d6a4f2411699317466b3d37e45da3ced8e144e49f3372308c661c4fbac76e",
+    "reason": "two literal typed endpoints and two stock-only named reports",
+    "requested_object_output": false,
+    "session": 38909,
+    "source": "ai-generated/lean/AuditReviewedNativeERKTerminalDeformation.lean",
+    "source_sha256": "d6caf766d9167e6e0c57fe830398ad09b55905790079fa14d1903786b7ac91f2",
+    "status": "AUDIT_PASS",
+    "stock_modules": 3046,
+    "wrapper_exit": 0
+  }
+}

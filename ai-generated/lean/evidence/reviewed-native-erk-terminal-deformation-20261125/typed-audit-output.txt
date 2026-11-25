@@ -1,0 +1,6 @@
+'RKResearch.Certified.Graded.TerminalDeformation.terminal_hasOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.TerminalDeformation.terminal_clockMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

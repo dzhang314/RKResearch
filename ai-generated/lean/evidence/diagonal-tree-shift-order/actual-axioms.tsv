@@ -1,0 +1,6 @@
+declaration	actual_axioms
+RKResearch.DiagonalTreeShift.expand_eq_atom_add_lower	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.same_correction	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.transform_at_eq_iff	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.agreesThrough_transform_iff	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.firstDifference_transform_iff	Classical.choice,Quot.sound,propext

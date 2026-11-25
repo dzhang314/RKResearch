@@ -1,0 +1,15 @@
+import RKCert.ReviewedNative.SDIRKSix163
+import RKCert.ReviewedNative.SDIRKSixFourConstantEndpoint
+
+#print axioms RKResearch.Certified.SDIRKSix163.lowerTriangular
+#print axioms RKResearch.Certified.SDIRKSix163.diagonal
+#print axioms RKResearch.Certified.SDIRKSix163.diagonal_ne_zero
+#print axioms RKResearch.Certified.SDIRKSix163.order_six
+#print axioms RKResearch.Certified.SDIRKSix163.not_order_seven
+#print axioms RKResearch.Certified.SDIRKSix163.exists_exact
+#print axioms RKCert.ReviewedNative.SDIRKSixReceipts.hTwelve_guard_mul_eq_zero
+#print axioms RKResearch.Certified.Graded.SDIRKSix.order_six_six_stages_impossible_away_four
+#print axioms RKResearch.HasOrder.sdirk_order_six_stages_field_away_four
+#print axioms RKResearch.HasOrder.common_diagonal_order_six_stages_universal
+#print axioms RKResearch.HasOrder.common_diagonal_order_six_stages_away_four_or_nonunit
+#print axioms RKResearch.HasOrder.common_diagonal_order_six_stages_away_four

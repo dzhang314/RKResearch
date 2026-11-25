@@ -1,0 +1,22 @@
+'RKResearch.Certified.SDIRKSix163.lowerTriangular' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSix163.diagonal' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSix163.diagonal_ne_zero' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSix163.order_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSix163.not_order_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSix163.exists_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ReviewedNative.SDIRKSixReceipts.hTwelve_guard_mul_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSix.order_six_six_stages_impossible_away_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.sdirk_order_six_stages_field_away_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.common_diagonal_order_six_stages_universal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.common_diagonal_order_six_stages_away_four_or_nonunit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.common_diagonal_order_six_stages_away_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

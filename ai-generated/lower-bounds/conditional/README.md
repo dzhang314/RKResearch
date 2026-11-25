@@ -2,6 +2,8 @@
 
 These proofs concern explicitly stated subclasses, extremal candidates, or fixed construction families. They do not raise the unrestricted stage table. Some results are designed to transfer across several orders.
 
+- [How invariant defects count toward tall-pole cancellation](../../research/tall-invariant-loss-ledger/README.md): an exact characteristic-zero quotient ledger and all-order rational DIRK examples showing why the same loss cannot be counted twice. This is a tall-only constraint, not a new stage minimum.
+
 - [Distinct retained poles and finite tall-tree order](../../research/tall-distinct-pole-recurrence/README.md): a characteristic-zero recurrence with exact repeated-pole sharpness, complementary to the ordered pole budget. This is a tall-only constraint, not a new stage minimum.
 
 - [Finite tall-tree order and retained poles](../../research/tall-ordered-pole-budget/README.md): ordered partial-real-pole and arbitrary characteristic-zero single-pole bounds, with exact scalar sharpness checks. These are tall-only and do not change the stage table.

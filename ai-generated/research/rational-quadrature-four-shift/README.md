@@ -26,6 +26,10 @@
   parametrization with two or three paid shifts, and generic
   fixed-prefix genus one or 13. This is not a rational support
   nonexistence or stage-bound result.
+- [Two-shift elliptic completion criterion](../two-shift-elliptic-transfer/elliptic-transfer.md):
+  an exact rational point test, a same-gap lower seed and a rank-free
+  finite candidate, with the limits of both published 19-site rules.
+  No new support endpoint or stage bound.
 - [Earlier odd-prime projection and exact finite pencil certificates](../rational-quadrature-prime-cut/prime-cut.md):
   retained in full. The four-shift formula agrees with the archived
   endpoint at orders 8–10 and improves it at orders 11–20. The archived

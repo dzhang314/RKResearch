@@ -1,0 +1,5 @@
+paid literal rooted-tree conditions: 1755 (orders 3 through 8)
+verified 30 exact next tall failures; all 30 tall ledgers tight
+verified 24 actual quotient ledgers: zero, retained, and fully lost pole cases
+verified 18 live affine fan clock detectors; 12 paid isotropic fan cases
+verified all 24 double-charge violations and 6 full-primary-block deletion charges

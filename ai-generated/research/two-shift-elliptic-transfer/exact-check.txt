@@ -1,0 +1,7 @@
+Smooth normalized model (a,b)=(1,2): rank-free finite triple ('-3', '-1/2', '2/3')
+Good elliptic probe: [3]T=0; none of [6]D,[9]D,[12]D vanishes.
+Symmetric probe a=b=2: the second infinity difference is 2-torsion.
+One-node degeneration: monic quadratic normalization; finite triple ('-27/5', '5/4', '-4')
+Cyclic a=b=−1 degeneration: both residual roots given by the Möbius cycle.
+Gap-one countercheck: positive rational four-site order exactly five.
+PASS: exact identities only; no rational support scan and no Lean.

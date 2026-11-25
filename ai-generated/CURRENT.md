@@ -39,6 +39,8 @@ A separate [radii/33 prescribed-support realization](research/rational-support-r
 
 The [ordered-root geometry](research/rational-root-chart-geometry/ordered-root-geometry.md) gives a structural obstruction, not a support exclusion: with two or three paid nodal shifts the positive-dimensional smooth root charts have no dominant rational parametrization. A generic fixed prefix leaving one free root beyond Hankel completion gives a genus-one or genus-13 curve, respectively. This does not decide rational attainability at 17 or 18 sites, and changes no stage bound or Lean coverage claim.
 
+The [two-shift elliptic criterion](research/two-shift-elliptic-transfer/elliptic-transfer.md) tests fixed-prefix completions exactly. A same-gap lower rule of exact order supplies rational infinity points and a conditional rank-free candidate. Neither of the known 19-site order-20 rules supplies the needed order-19 seed; rational attainability and the stage tables are unchanged.
+
 ## Lean certificate coverage
 
 Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, all 60 strongest characteristic-zero field entries, and 56 of the 60 strongest ordered-field and real entries. The characteristic-zero count includes the ERK exclusions at orders 12, 14 and 16–19, and the characteristic-zero DIRK exclusions at orders 14 and 16–20. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.

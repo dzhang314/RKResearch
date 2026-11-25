@@ -1,0 +1,3 @@
+module
+import RKCert.ReviewedNative.OrderedOriginSignedSquares
+#print axioms RKCert.ReviewedNative.OriginSignedSquares.ThreeClockMoments.signed_cut

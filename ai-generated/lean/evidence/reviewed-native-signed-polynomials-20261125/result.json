@@ -1,0 +1,34 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "RKCert.ReviewedNative.OrderedOriginSignedSquares": {
+      "source_sha256": "93383c5bbdce06163a7d76165cc25c84d2c93a1fb42c7c6b07023685a42b84a1",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "9cb617813fbe5049fd17c09ecd50f99d2daf2049525ca8440fff0042fdb3748f",
+      "replay_log_sha256": "81511c37833279217fd0bfdd797d64a3ceb5440241db97a6623c6a9d33d7c444"
+    },
+    "RKCert.ReviewedNative.CubicEndAlgebra": {
+      "source_sha256": "293eebe4e9d9e86a4ecb7dd10a725368e7ab96bf0b29830a1f7563e08e629ece",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "ff8633c9725882c26d88ac4cdec71b6bc005c51970494bc517608415d4fc59d8",
+      "replay_log_sha256": "039b3141ae802d3becad1937bbc99ee515010f69c1b31aaf125c99b0c4b06e0a"
+    },
+    "RKCert.ReviewedNative.CubicAnchoredCutoff": {
+      "source_sha256": "c2886d31e35bcc8dae109c546e9cdf71e3961721e6c817ca713dc859f81dfcff",
+      "compile_log_sha256": "dd5b989022d6c4f5510059c428cac787988c2344b4bfd848b389bc2828c49b23",
+      "object_sha256": "d9fd881131def16db62aca415973434e404f1f357de76be58aa8ae46b6785382",
+      "replay_log_sha256": "202f710a7cd5b54fe8498017bd537facb1adc06004b81a71041fead27577812e"
+    },
+    "AuditReviewedNativeOrderedOriginSignedSquares": {
+      "source_sha256": "818045268a990bc4767f4ef01858ebd235e1981853ada3993d7d0f1e4f709f02",
+      "compile_log_sha256": "970ed096cca341329b05a41a47160b166f10c39f448f14053cb5ac3cfd889994",
+      "audit": "'RKCert.ReviewedNative.OriginSignedSquares.ThreeClockMoments.signed_cut' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    },
+    "AuditReviewedNativeCubicAnchoredCutoff": {
+      "source_sha256": "910b710a61dfe00765e9cf0bae5d64718f8475d01eb383d6d94d4f1395ce9303",
+      "compile_log_sha256": "12a220af6d8f1f39700e1222eedc751a522f09d686753719ee3ebb296439da50",
+      "audit": "'RKCert.ReviewedNative.CubicEnd.end_bounds_of_reflected_coefficients' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.CubicEnd.quadratic_positive_of_anchor_cap' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.CubicEnd.end_bounds_of_monic_cubic_moments' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.CubicEnd.positive_of_monic_cubic_end_moments' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    }
+  }
+}

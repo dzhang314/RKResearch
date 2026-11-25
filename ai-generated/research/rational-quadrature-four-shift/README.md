@@ -16,6 +16,11 @@
   weights. The exact \(u/128\) rule above gives 19 contributing sites in
   209 physical rows at exact RK order 20, with no stage-bound
   improvement. The proof and checker do not claim a Lean certificate.
+- [Exact order-20 realization of the radii/33 support](../rational-support-radii33-splice/realization.md):
+  101 physical rows for ERK, 117 for strict SDIRK with diagonal
+  \(1/66\), on a different 19-site rule from \(u/128\). The proof and
+  exact replay preserve the rule's aggregate weights; these are
+  prescribed-support counts, not improvements to the stage tables.
 - [Earlier odd-prime projection and exact finite pencil certificates](../rational-quadrature-prime-cut/prime-cut.md):
   retained in full. The four-shift formula agrees with the archived
   endpoint at orders 8–10 and improves it at orders 11–20. The archived

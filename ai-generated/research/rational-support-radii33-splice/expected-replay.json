@@ -1,0 +1,32 @@
+[
+  {
+    "trees": 85,
+    "gamma": "1/66",
+    "stages": 117,
+    "forwardStages": 54,
+    "reverseStages": 44,
+    "clusters": 63,
+    "representatives": 19,
+    "nonzeroWeights": 63,
+    "distinctContributingSites": 19,
+    "forwardLocalChecks": 329,
+    "reverseLocalChecks": 239,
+    "reverseIdentities": 836,
+    "next": "-46431074773795189/273343678068076808693733872640"
+  },
+  {
+    "trees": 85,
+    "gamma": "0/1",
+    "stages": 101,
+    "forwardStages": 46,
+    "reverseStages": 37,
+    "clusters": 55,
+    "representatives": 18,
+    "nonzeroWeights": 55,
+    "distinctContributingSites": 19,
+    "forwardLocalChecks": 285,
+    "reverseLocalChecks": 204,
+    "reverseIdentities": 703,
+    "next": "-46431074773795189/273343678068076808693733872640"
+  }
+]

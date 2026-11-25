@@ -1,0 +1,13 @@
+strict ERK, exact p=3: two marked column maps; identical physical clocks and weights.
+  constant-profile stop source changes 0 -> 25/63; true-root source change -11/126.
+  next pure bush passes, but the independent unary-bush condition fails.
+strict ERK, exact p=4: two marked column maps; identical physical clocks and weights.
+  constant-profile stop source changes 0 -> 25/63; true-root source change -11/126.
+  paid visible selector, omitted leakage -1/12 -> 1/63; true weighted local value 1/3.
+positive common-diagonal SDIRK, exact p=3: two marked column maps; identical physical clocks and weights.
+  constant-profile stop source changes 0 -> 25/63; true-root source change -11/126.
+  next pure bush passes, but the independent unary-bush condition fails.
+positive common-diagonal SDIRK, exact p=4: two marked column maps; identical physical clocks and weights.
+  constant-profile stop source changes 0 -> 25/63; true-root source change -11/126.
+  paid visible selector, omitted leakage -1/12 -> 1/63; true weighted local value 1/3.
+PASS: literal rooted trees and exact rational column/leakage identities.

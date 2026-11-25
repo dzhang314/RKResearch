@@ -1,0 +1,5 @@
+role	status	wall_s	peak_rss_kib	before_available_kib	minimum_available_kib	lean_warnings	guard
+core	PASS	5.197	1465092	8371992	8218704	10	not tripped
+tall	PASS	4.585	1349268	8612092	8338088	6	not tripped
+batch01	PASS	1.334	1272744	8605872	8417496	0	not tripped
+batch15	PASS	2.418	1401336	8617740	8271536	0	not tripped

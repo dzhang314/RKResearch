@@ -1,0 +1,12 @@
+'RKResearch.Certified.RationalStrictSDIRKFifteenStageEightUpper.order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKFifteenStageEightUpper.ninth_tall_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKFifteenStageEightUpper.not_order_nine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.exists_fifteen_stage_rational_strictSDIRK_exact_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

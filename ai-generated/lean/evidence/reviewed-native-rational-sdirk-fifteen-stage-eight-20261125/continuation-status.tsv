@@ -1,0 +1,47 @@
+index	module	state	lean_raw_exit	wall_s	peak_rss_kib	before_available_kib	minimum_available_kib	warning_count	physical_guard	started_utc
+1	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightCore	REUSED-PILOT-PASS								
+2	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightTall	REUSED-PILOT-PASS								
+3	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch01	REUSED-PILOT-PASS								
+17	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch15	REUSED-PILOT-PASS								
+4	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch02	PASS	0	2.409	1271132	8618440	8405040	0	not tripped	2026-11-25T13:52:56.478838+00:00
+5	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch03	PASS	0	1.447	1315280	8614860	8353576	0	not tripped	2026-11-25T13:52:58.928854+00:00
+6	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch04	PASS	0	1.927	1343924	8596604	8074524	0	not tripped	2026-11-25T13:53:00.426999+00:00
+7	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch05	PASS	0	1.686	1331588	8319688	8081788	0	not tripped	2026-11-25T13:53:02.394138+00:00
+8	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch06	PASS	0	1.445	1332036	8513552	8059388	0	not tripped	2026-11-25T13:53:04.126681+00:00
+9	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch07	PASS	0	2.417	1376880	8337088	8185236	0	not tripped	2026-11-25T13:53:05.611905+00:00
+10	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch08	PASS	0	1.928	1362508	8552240	8249728	0	not tripped	2026-11-25T13:53:08.102611+00:00
+11	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch09	PASS	0	2.411	1374776	8532836	8217784	0	not tripped	2026-11-25T13:53:10.075997+00:00
+12	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch10	PASS	0	2.292	1372244	8470036	8213644	0	not tripped	2026-11-25T13:53:12.559174+00:00
+13	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch11	PASS	0	2.197	1346148	8506836	8234412	0	not tripped	2026-11-25T13:53:14.903046+00:00
+14	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch12	PASS	0	2.677	1380640	8501264	8192224	0	not tripped	2026-11-25T13:53:17.154598+00:00
+15	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch13	PASS	0	2.181	1407228	8519324	8177716	0	not tripped	2026-11-25T13:53:19.874836+00:00
+16	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch14	PASS	0	2.294	1389100	8462320	8152932	0	not tripped	2026-11-25T13:53:22.129982+00:00
+18	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch16	PASS	0	2.292	1407716	8465308	8153092	0	not tripped	2026-11-25T13:53:24.466469+00:00
+19	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch17	PASS	0	2.656	1405520	8449824	8158068	0	not tripped	2026-11-25T13:53:26.804121+00:00
+20	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch18	PASS	0	2.788	1390624	8504600	8179844	0	not tripped	2026-11-25T13:53:29.498363+00:00
+21	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch19	PASS	0	2.176	1378952	8502784	8210628	0	not tripped	2026-11-25T13:53:32.331278+00:00
+22	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch20	PASS	0	2.291	1386792	8496876	8200580	0	not tripped	2026-11-25T13:53:34.568750+00:00
+23	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch21	PASS	0	2.770	1423364	8522184	8188064	0	not tripped	2026-11-25T13:53:36.904236+00:00
+24	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch22	PASS	0	2.417	1409684	8548776	8210612	0	not tripped	2026-11-25T13:53:39.715582+00:00
+25	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch23	PASS	0	2.529	1437956	8552572	8182808	0	not tripped	2026-11-25T13:53:42.175058+00:00
+26	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch24	PASS	0	2.421	1437976	8552776	8184244	0	not tripped	2026-11-25T13:53:44.744724+00:00
+27	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch25	PASS	0	2.650	1424064	8531292	8168772	0	not tripped	2026-11-25T13:53:47.228236+00:00
+28	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch26	PASS	0	2.540	1442372	8525044	8135784	0	not tripped	2026-11-25T13:53:49.918828+00:00
+29	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch27	PASS	0	2.417	1405184	8520784	8185876	0	not tripped	2026-11-25T13:53:52.499150+00:00
+30	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch28	PASS	0	2.296	1409580	8518016	8208232	0	not tripped	2026-11-25T13:53:54.967791+00:00
+31	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch29	PASS	0	2.410	1390488	8552196	8230988	0	not tripped	2026-11-25T13:53:57.313462+00:00
+32	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch30	PASS	0	2.289	1409584	8545240	8201412	0	not tripped	2026-11-25T13:53:59.765678+00:00
+33	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch31	PASS	0	2.529	1433660	8532916	8127520	0	not tripped	2026-11-25T13:54:02.097752+00:00
+34	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch32	PASS	0	2.530	1447388	8494464	8125572	0	not tripped	2026-11-25T13:54:04.665748+00:00
+35	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch33	PASS	0	2.663	1442424	8533348	8162252	0	not tripped	2026-11-25T13:54:07.237232+00:00
+36	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch34	PASS	0	3.146	1475184	8578048	8107976	0	not tripped	2026-11-25T13:54:09.954253+00:00
+37	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch35	PASS	0	3.258	1475360	8524312	8133876	0	not tripped	2026-11-25T13:54:13.154760+00:00
+38	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch36	PASS	0	3.629	1478168	8544540	8078604	0	not tripped	2026-11-25T13:54:16.502867+00:00
+39	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch37	PASS	0	3.012	1460268	8568264	8164760	0	not tripped	2026-11-25T13:54:20.182469+00:00
+40	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch38	PASS	0	2.772	1452712	8560188	8181428	0	not tripped	2026-11-25T13:54:23.238342+00:00
+41	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch39	PASS	0	3.255	1487436	8559380	8130904	0	not tripped	2026-11-25T13:54:26.055087+00:00
+42	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch40	PASS	0	3.617	1507024	8542268	8098384	0	not tripped	2026-11-25T13:54:29.352798+00:00
+43	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch41	PASS	0	3.620	1501496	8547068	8138252	0	not tripped	2026-11-25T13:54:33.072593+00:00
+44	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightBatches.Batch42	PASS	0	2.047	1471280	8567268	8160428	0	not tripped	2026-11-25T13:54:36.736819+00:00
+45	RKCert.ReviewedNative.RationalStrictSDIRKFifteenStageEightUpper	PASS	0	1.446	1291556	8561852	8348988	0	not tripped	2026-11-25T13:54:38.826652+00:00
+46	AuditReviewedRationalStrictSDIRKFifteenStageEightUpper	PASS	0	0.972	1251608	8570292	8402940	0	not tripped	2026-11-25T13:54:40.323892+00:00

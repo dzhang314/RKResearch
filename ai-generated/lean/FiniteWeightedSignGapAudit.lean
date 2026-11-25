@@ -1,0 +1,3 @@
+import RKCert.ReviewedNative.FiniteWeightedSignGap
+#check @RKCert.ReviewedNative.FiniteOrderedSigns.separator_eval_ne_of_paid_nodal
+#print axioms RKCert.ReviewedNative.FiniteOrderedSigns.separator_eval_ne_of_paid_nodal

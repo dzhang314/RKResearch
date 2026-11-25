@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.ERKOrder16WeakFourRemaining
+#check @RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.weak_four_inactive_unshared_remaining
+#print axioms RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.weak_four_inactive_unshared_remaining
+#print axioms RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.weak_four_repeated_active_origin_impossible

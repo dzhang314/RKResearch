@@ -1,0 +1,2 @@
+Previous full-series-identical order-8 pair: 157 physical stages each, 83 and 83 reachable classes; both reduce exactly to the same 75-stage minimal ERK (including same chronological representative).
+Previous full-series-identical order-20 pair: 865 physical stages each, 443 and 443 reachable classes; both reduce exactly to the same 423-stage minimal ERK (including same chronological representative).

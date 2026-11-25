@@ -1,0 +1,8 @@
+module
+
+import RKCert.ReviewedNative.RationalSmallSDIRKMinima
+
+#print axioms RKResearch.HasOrder.rat_common_diagonal_order_three_stages
+#print axioms RKResearch.HasOrder.rat_common_diagonal_order_four_stages
+#print axioms RKResearch.Certified.rational_strictSDIRK_three_minima
+#print axioms RKResearch.Certified.rational_strictSDIRK_four_minima

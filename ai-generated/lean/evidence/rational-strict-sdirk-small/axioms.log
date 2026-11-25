@@ -1,0 +1,32 @@
+'RKResearch.Certified.fractionRoot_reduces_of_leadingCoeff_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.common_diagonal_tall_binomial_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.rat_common_diagonal_order_three_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.rat_common_diagonal_order_four_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.rational_strictSDIRK_three_minima_of_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.rational_strictSDIRK_four_minima_of_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRK3.order_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRK3.not_order_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRK4.order_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRK4.not_order_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.exists_rational_strictSDIRK_exact_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.exists_rational_strictSDIRK_exact_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.exists_strictSDIRK_exact_three_via_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.exists_strictSDIRK_exact_four_via_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.rat_common_diagonal_order_three_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HasOrder.rat_common_diagonal_order_four_stages' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.rational_strictSDIRK_three_minima' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.rational_strictSDIRK_four_minima' depends on axioms: [propext, Classical.choice, Quot.sound]

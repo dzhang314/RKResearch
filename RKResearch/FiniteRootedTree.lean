@@ -15,13 +15,37 @@ namespace FiniteRootedTree
 
 scoped infix:70 " ◂ " => butcherProduct
 
+@[expose, simp] def rootedSum (t : FiniteRootedTree) :
+    FiniteRootedTree → FiniteRootedTree
+  | leaf => t
+  | base ◂ branch => rootedSum t base ◂ branch
+
+scoped infixl:65 " # " => rootedSum
+
 @[expose, simp] def order : FiniteRootedTree → ℕ+
   | leaf => 1
   | base ◂ branch => base.order + branch.order
 
+@[simp↓] theorem order_rootedSum (t u : FiniteRootedTree) :
+    (t # u).order = t.order + u.order - 1 := by
+  have h : (t # u).order + 1 = t.order + u.order := by
+    induction u with
+    | leaf => rfl
+    | butcherProduct base branch ih _ =>
+      simp only [rootedSum, order, ← add_assoc]
+      rw [← ih, add_right_comm]
+  rw [← h, PNat.add_sub]
+
 @[expose, simp] def forestFactorial : FiniteRootedTree → ℕ+
   | leaf => 1
   | base ◂ branch => base.forestFactorial * (branch.order * branch.forestFactorial)
+
+@[simp↓] theorem forestFactorial_rootedSum (t u : FiniteRootedTree) :
+    (t # u).forestFactorial = t.forestFactorial * u.forestFactorial := by
+  induction u with
+  | leaf => simp
+  | butcherProduct base branch ih _ =>
+    simp only [rootedSum, forestFactorial, ih, mul_assoc]
 
 @[expose, simp] def factorial (t : FiniteRootedTree) : ℕ+ :=
   t.order * t.forestFactorial

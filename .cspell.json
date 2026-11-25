@@ -3,6 +3,7 @@
         "congr",
         "dsimp",
         "Fintype",
+        "infixl",
         "Mathlib",
         "Semiring",
         "succ"

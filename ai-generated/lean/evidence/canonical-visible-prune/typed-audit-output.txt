@@ -1,0 +1,24 @@
+@path_readout : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K) (b : ι → K)
+  {i : ι}, Visible A b i → ∃ C a, a ≠ 0 ∧ ∀ (v : ι → K), (row b) ((Context.eval A C) v) = a * v i
+@mem_invisibleIdeal_iff : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K)
+  (b : ι → K) {v : ι → K}, v ∈ invisibleIdeal A b ↔ ∀ (i : ι), Visible A b i → v i = 0
+@invisibleIdeal_greatest : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K)
+  (b : ι → K), IsGreatest {J | (∀ v ∈ J, (mat A) v ∈ J) ∧ ∀ v ∈ J, (row b) v = 0} (invisibleIdeal A b)
+@Φ_pruned : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K) (b : ι → K)
+  (t : FiniteRootedTree), Φ t (prunedMatrix A b) = pruneRestrict A b (Φ t A)
+@pruned_scalar_output : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K)
+  (b : ι → K) (t : FiniteRootedTree), prunedWeight A b ⬝ᵥ Φ t (prunedMatrix A b) = b ⬝ᵥ Φ t A
+@pruned_hasOrder_iff : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K)
+  (b : ι → K) (p : ℕ), HasOrder p (prunedMatrix A b) (prunedWeight A b) ↔ HasOrder p A b
+@visible_pruned : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K) (b : ι → K)
+  (i : VisibleIndex A b), Visible (prunedMatrix A b) (prunedWeight A b) i
+@invisible_pruned_eq_bot : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K] (A : Matrix ι ι K)
+  (b : ι → K), invisible (prunedMatrix A b) (prunedWeight A b) = ⊥
+'RKResearch.CanonicalVisibility.path_readout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.mem_invisibleIdeal_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.invisibleIdeal_greatest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.Φ_pruned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.pruned_scalar_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.pruned_hasOrder_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.visible_pruned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalVisibility.invisible_pruned_eq_bot' depends on axioms: [propext, Classical.choice, Quot.sound]

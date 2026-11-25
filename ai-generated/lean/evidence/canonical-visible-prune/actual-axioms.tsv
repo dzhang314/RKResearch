@@ -1,0 +1,9 @@
+declaration	actual_axioms
+RKResearch.CanonicalVisibility.path_readout	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.mem_invisibleIdeal_iff	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.invisibleIdeal_greatest	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.Φ_pruned	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.pruned_scalar_output	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.pruned_hasOrder_iff	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.visible_pruned	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalVisibility.invisible_pruned_eq_bot	Classical.choice,Quot.sound,propext

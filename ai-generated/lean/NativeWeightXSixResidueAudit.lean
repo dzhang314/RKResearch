@@ -1,0 +1,3 @@
+import RKCert.ReviewedNative.NativeWeightXSixResidue
+#check @RKResearch.Certified.Graded.NativeWeightXSix.first_primitive_nonzero_of_six_moments
+#print axioms RKResearch.Certified.Graded.NativeWeightXSix.first_primitive_nonzero_of_six_moments

@@ -1,0 +1,3 @@
+import RKCert.ReviewedNative.NativeReciprocalCoefficientCut
+#check @RKResearch.Certified.Graded.NativeReciprocal.chosen_root_cut_of_reduced_coefficients
+#print axioms RKResearch.Certified.Graded.NativeReciprocal.chosen_root_cut_of_reduced_coefficients

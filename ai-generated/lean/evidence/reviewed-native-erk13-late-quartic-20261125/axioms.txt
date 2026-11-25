@@ -1,0 +1,82 @@
+@RKResearch.Certified.Graded.NativeReciprocal.chosen_root_cut_of_reduced_coefficients : ∀ {E : Type u_1} {κ : Type u_2}
+  [inst : Field E] [CharZero E] [inst_2 : Field κ] (H : Polynomial E),
+  H.coeff 0 ≠ 0 →
+    ∀ (F : Polynomial ℤ),
+      F.Monic →
+        ∀ {a : E},
+          a ≠ 0 →
+            Polynomial.map (algebraMap ℤ E) F = RKResearch.Certified.Graded.NativeReciprocal.scaledReciprocal H a →
+              (Polynomial.map (algebraMap ℤ E) F).Splits →
+                ∀ (q : ↥(integralClosure ℤ E) →+* κ) {ρ : κ},
+                  ρ ≠ 0 →
+                    ∀ (G : Polynomial κ),
+                      Polynomial.map q (Polynomial.map (algebraMap ℤ ↥(integralClosure ℤ E)) F) =
+                          G * (Polynomial.X - Polynomial.C ρ) →
+                        ∀ (d ν : ℕ) (L : ℤ) (rate : Fin (d + 1) → ℤ),
+                          (∀ (i : Fin (d + 1)), rate i * ↑(↑i + ν + 1) = L) →
+                            (∀ (S : Polynomial κ),
+                                S.Monic →
+                                  S.natDegree = d → S ∣ G → ∑ i, ↑(rate i) * S.coeff (d - ↑i) * ρ ^ (d - ↑i) ≠ 0) →
+                              ∃ v,
+                                H.IsRoot v ∧
+                                  ∀ (Q N : Polynomial E),
+                                    Q.natDegree = d →
+                                      Q * N = H →
+                                        N.IsRoot v →
+                                          Polynomial.eval v
+                                              (RKResearch.Certified.Graded.primitive (Polynomial.X ^ ν * Q)) ≠
+                                            0
+'RKResearch.Certified.Graded.NativeReciprocal.chosen_root_cut_of_reduced_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@RKResearch.Certified.Graded.NativeWeightXSix.first_primitive_nonzero_of_six_moments : ∀ {K : Type u_1} [inst : Field K]
+  [CharZero K] (P N : Polynomial K) (u : K),
+  P.natDegree = 4 →
+    N.natDegree = 2 →
+      N.IsRoot u →
+        (∀ (i : Fin 6),
+            Polynomial.eval 1 (RKResearch.Certified.Graded.primitive (Polynomial.X ^ ↑i * (Polynomial.X * (P * N)))) =
+              0) →
+          Polynomial.eval u (RKResearch.Certified.Graded.primitive (Polynomial.X * P)) ≠ 0
+'RKResearch.Certified.Graded.NativeWeightXSix.first_primitive_nonzero_of_six_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@RKResearch.Certified.Graded.ERK13LateQuartic.late_nonorigin_quartic_impossible : ∀ {K : Type u_1} [inst : Field K]
+  [CharZero K] {A : Matrix (Fin 19) (Fin 19) K} {b : Fin 19 → K} {U : Submodule K (Fin 19 → K)} {w : Fin 19 → K}
+  {G P Q : Polynomial K},
+  (∀ (i j : Fin 19), i ≤ j → A i j = 0) →
+    RKResearch.HasOrder 13 A b →
+      RKResearch.Certified.Graded.Reverse.firstSeed A b = 0 →
+        RKResearch.Certified.Graded.Reverse.coordinate (Fin.last 18) ∉ RKResearch.Certified.Graded.treeSpace A 7 →
+          RKResearch.Certified.Graded.Reverse.LastActive b (Fin.last 18) →
+            U ≤ RKResearch.Certified.Graded.Reverse.markedDefectSpace A b 6 →
+              Submodule.map (RKResearch.Certified.Graded.diag (RKResearch.Certified.Graded.nodes A)) U ≤ U →
+                (∀ x ∈ U, ∀ y ∈ U, x * y ∈ U) →
+                  (∀ (i : Fin 19), RKResearch.Certified.Graded.LiveCore.live U i → w i = 0) →
+                    (∀ (i : Fin 19), w i ≠ 0 → w i = Polynomial.eval (RKResearch.Certified.Graded.nodes A i) P) →
+                      (RKResearch.Certified.Graded.diag (RKResearch.Certified.Graded.nodes A)) w ∈
+                          RKResearch.Certified.Graded.Reverse.markedDefectSpace A b 6 →
+                        (RKResearch.Certified.Graded.evalNodes A) G ∈
+                            RKResearch.Certified.Graded.Reverse.markedDefectSpace A b 7 →
+                          RKResearch.Certified.Graded.Reverse.markedDefectSpace A b 7 ≤
+                              RKCert.OneEscape.chain
+                                (RKResearch.Certified.Graded.diag (RKResearch.Certified.Graded.nodes A)) U w 4 →
+                            G.natDegree = 7 → P.natDegree = 4 → G = P * Q → Polynomial.eval 0 P ≠ 0 → False
+@RKResearch.Certified.Graded.ERK13NativeFirst.firstEscape_of_paid_rank : ∀ {K : Type u_1} [inst : Field K]
+  {A : Matrix (Fin 19) (Fin 19) K} {b : Fin 19 → K},
+  (∀ (i j : Fin 19), i ≤ j → A i j = 0) →
+    RKResearch.HasOrder 13 A b →
+      RKResearch.Certified.Graded.ERK13NativeFirst.PaidRankInput A b →
+        ∃ a G, RKResearch.Certified.Graded.ERK13NativeFirst.FirstEscape A b a G
+'RKResearch.Certified.Graded.ERK13LateQuartic.late_nonorigin_quartic_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13LateQuartic.first_X_mask_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13NativeFirst.firstEscape_of_paid_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13NativeFirst.pure_quartic_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

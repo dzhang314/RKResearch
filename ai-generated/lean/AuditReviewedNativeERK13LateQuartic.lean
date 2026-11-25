@@ -1,0 +1,9 @@
+import RKCert.ReviewedNative.ERK13LateQuarticNative
+import RKCert.ReviewedNative.ERK13NativeFirstEscape
+
+#check @RKResearch.Certified.Graded.ERK13LateQuartic.late_nonorigin_quartic_impossible
+#check @RKResearch.Certified.Graded.ERK13NativeFirst.firstEscape_of_paid_rank
+#print axioms RKResearch.Certified.Graded.ERK13LateQuartic.late_nonorigin_quartic_impossible
+#print axioms RKResearch.Certified.Graded.ERK13LateQuartic.first_X_mask_physical
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.firstEscape_of_paid_rank
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.pure_quartic_factor

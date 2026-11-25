@@ -1,0 +1,15 @@
+Endpoint pair (0,1): 10^6-scaled enclosing integers for a,b = (7726, 7727) (13726, 13727)
+Endpoint pair at tau=1/2: signs -,+,-,+ at 0,1/4,3/4,1; 10^6 buckets [(-7727, -7726), (44511, 44512), (-38512, -38511), (13726, 13727)]
+Seed cofactor signs along labels: m3:- p3:+ m:+ 1b:+ 2a:- 2c:+ 3a:- 3b:+ 3c:- 4a:+ 4b:+ 4c:-
+Interior pair m,2a: 10^6 buckets a,b and R_u,R_v (-740507, -740506) (-563372, -563371) (-59874, -59873) (-45552, -45551)
+Interior pair F(1)-F(0) bucket: (537675, 537676)
+Interior pair rank-free coordinates buckets: [(852361, 852362), (139230, 139231), (502326, 502327)]
+Interior pair negative-pole real-window gate: True
+Interior pair (A,B,C,D_y,disc), [6],[9],[12]D mod q: ((1362335227, 1711179595, 1126389356, 713933014, 549977792), {6: (946424131, 54523631), 9: (1903937649, 8745916), 12: (717568827, 409716398)})
+First negative-pole window and zero-defect parameter buckets: (253367, 253368) (791042, 791043) (451262, 451263)
+Explicit exact order 15: 13 contributing interval sites; first defect mod q = 621252393
+Next adjacent pair 5b,5c: delta, F(1)-F(0) buckets (-91639, -91638) (784747, 784748)
+Second prescribed rank-free coordinates buckets: [(581645, 581646), (77201, 77202), (449347, 449348)]
+Explicit exact order 16: 14 contributing interval sites; first defect mod q = 1366411467
+Second adjacent pair nontorsion model/group residues: ((380786571, 1790987899, 112660806, 1255924382, 622278595), {6: (478473987, 157411076), 9: (2079957929, 1784639018), 12: (1652792708, 1690763434)})
+PASS: two prescribed interval moves, exact signs and modular certificates; no higher-order scan.

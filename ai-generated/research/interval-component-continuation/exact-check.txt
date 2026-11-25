@@ -1,0 +1,13 @@
+Pinned exact interval order 16 / 14 active sites. Tests: at most four sign-selected fresh pairs.
+All numeric buckets are outward bounds scaled by 10^6.
+Target 17: pair 6b,6c; delta=(-414961, -414960), R=(-29404, -29403),(-18320, -18319), width=(513229, 513230), window=(421637, 421638)..(934867, 934868), tau0=(880825, 880826).
+  Smooth marked arithmetic model and [6],[9],[12] residues: ((1268337490, 1968595562, 1792686153, 2024659594, 1556162486), {6: (1050602961, 1342464618), 9: (1346564137, 1411896356), 12: (1192252317, 2116443560)})
+  Prescribed rank-free triple: [(933841, 933842), (39389, 39390), (415023, 415024)]
+  PASS exact order 17, 15 contributing sites in [0,1], first defect mod 2147483647 = 1450210654.
+Target 18: pair 7c,7a; delta=(19120, 19121), R=(-428, -427),(-15296, -15295), width=(750659, 750660), window=(17409, 17410)..(768068, 768069), tau0=(3185527, 3185528).
+  Smooth marked arithmetic model and [6],[9],[12] residues: ((789553683, 979469290, 1440461463, 1200479581, 1651972038), {6: (1842559831, 1582262416), 9: (211429839, 111004398), 12: (687159347, 1507306965)})
+  Prescribed rank-free triple: [(400959, 400960), (443727, 443728), (964226, 964227)]
+  PASS exact order 18, 16 contributing sites in [0,1], first defect mod 2147483647 = 844394583.
+Target 19: pair 8b,8c; delta=(2725479, 2725480), R=(-73666, -73665),(-87381, -87380), width=(-1831693, -1831692), window=(256637, 256638)..(-1575056, -1575055), tau0=(-239943, -239942).
+STOP before accepting order 19: real interval window not certified positive
+Last verified exact interval order 18; no alternate pair or group point searched.

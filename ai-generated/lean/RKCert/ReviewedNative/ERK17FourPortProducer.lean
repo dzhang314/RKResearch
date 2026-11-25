@@ -4,6 +4,7 @@ public import RKCert.ReviewedNative.ERK17ContrastCount
 public import RKCert.ReviewedNative.ERK17HiddenRank
 public import RKCert.ReviewedNative.FiveHiddenHead
 public import RKCert.ReviewedNative.ERK17PhysicalPorts
+public import RKCert.ReviewedNative.ERK17OriginChronologicalPorts
 
 @[expose] public section
 
@@ -13,6 +14,7 @@ open RKResearch Polynomial Module RKCert.Endpoint RKCert.Endpoint.WeightedClock
 open RKResearch.Certified.Graded RKResearch.Certified.Graded.Reverse
 open RKResearch.Certified.Graded.Reverse.Thin
 open RKResearch.Certified.Graded.Reverse.Hidden
+open RKCert.ReviewedNative.OriginSignedSquares
 open scoped Classical
 
 noncomputable section
@@ -61,10 +63,11 @@ variable {A : Matrix (Fin 26) (Fin 26) K} {b : Fin 26→K}
 
 set_option maxRecDepth 3500 in
 set_option maxHeartbeats 1400000 in
-theorem width26_physical_four_port_from_cover (gate : RadauFirstGate K)
+theorem width26_actual_four_port_from_cover (gate : RadauFirstGate K)
     (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 17 A b)
     (S : OddBalancedFrame A b 8 2) (Z : Width26QuadraticCover A b) :
-    ∃ W θ : Fin 26→K, ∃ P : K[X], PhysicalFourPort (s:=25) A W θ P := by
+    ∃ W θ : Fin 26→K, ∃ P : K[X], PhysicalFourPort (s:=25) A W θ P ∧
+      (active W).card=4 ∧ ActualReflectedAffinePacket A b W (reflectedProfile P) := by
   classical
   let : DecidableEq K := Classical.decEq K
   let t:=Fin.last 25
@@ -243,7 +246,7 @@ theorem width26_physical_four_port_from_cover (gate : RadauFirstGate K)
     obtain ⟨u,hu,P,_,e⟩ := HeadFiber.exists_poly hv
     rw [e,Pi.add_apply,F.invisible u hu i (vis i wi),weightedEval_apply,
       (act i wi).2.2.2.2,mul_zero,add_zero]
-  refine ⟨W,θ,R,⟨rd,count,on,fun i w n=>off i w n,origin,?_,?_⟩⟩
+  refine ⟨W,θ,R,⟨rd,count,on,fun i w n=>off i w n,origin,?_,?_⟩,?_,?_⟩
   · intro H hh
     rw [formalPrimitive_eq_native]
     exact quad H hh
@@ -268,6 +271,36 @@ theorem width26_physical_four_port_from_cover (gate : RadauFirstGate K)
       rw [weightedEval_apply]
     rw [input,e,map_sub,map_sub,Pi.sub_apply,Pi.sub_apply,f1,f2,sub_zero,sub_zero]
     exact sub_eq_zero.mp fd
+  · have eq : active W=activeRows W := by
+      ext i
+      exact (mem_active W i).trans (mem_activeRows i).symm
+    rw [eq]
+    exact w4
+  · change ActualReflectedAffinePacket A b W (flip R)
+    rw [show flip R=Q from flip_involution Q]
+    have covered : SupportsComplement A b 8 t :=
+      supportsComplement_of_cover (h:=6) (fun v hv =>
+        Z.poly_cover (mem_zeroAt.mp hv).1 (mem_zeroAt.mp hv).2)
+    exact ActualReflectedAffinePacket.of_contrast ho y0
+      (fun i=>ha i t (Fin.le_last i)) covered Q E (by omega) (by omega)
+      (fun i wi=>⟨(act i wi).1,(act i wi).2.2.1,(act i wi).2.1⟩)
+
+/-- Keep the previously checked physical four-port interface unchanged. -/
+theorem width26_physical_four_port_from_cover (gate : RadauFirstGate K)
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 17 A b)
+    (S : OddBalancedFrame A b 8 2) (Z : Width26QuadraticCover A b) :
+    ∃ W θ : Fin 26→K, ∃ P : K[X], PhysicalFourPort (s:=25) A W θ P := by
+  obtain ⟨W,θ,P,H,_,_⟩ := width26_actual_four_port_from_cover gate ha ho S Z
+  exact ⟨W,θ,P,H⟩
+
+/-- Retain the live-row count and the reflected affine trace on the actual
+witness. The earlier signed contrast-count scalar gate stays explicit. -/
+theorem ordered_width26_actual_four_port (gate : RadauFirstGate K)
+    (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 17 A b) (zero : firstSeed A b=0) :
+    ∃ W θ : Fin 26→K, ∃ P : K[X], PhysicalFourPort (s:=25) A W θ P ∧
+      (active W).card=4 ∧ ActualReflectedAffinePacket A b W (reflectedProfile P) :=
+  width26_actual_four_port_from_cover gate ha ho (ordered_width26_full_frame ha ho).1
+    (ordered_width26_quadratic_cover ha ho zero)
 
 theorem ordered_width26_physical_four_port (gate : RadauFirstGate K)
     (ha : ∀ i j,i≤j → A i j=0) (ho : HasOrder 17 A b) (zero : firstSeed A b=0) :

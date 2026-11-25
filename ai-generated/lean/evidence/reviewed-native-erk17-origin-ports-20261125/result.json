@@ -1,0 +1,29 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "RKCert.ReviewedNative.OrderedOriginMirroredChronology": {
+      "source_sha256": "729bc14d2567267f648bb68a39d732775db37e03a0bccebd02897ecd5ffdc342",
+      "compile_log_sha256": "56adf9e48521a0d458fae89b8f80c6b2d3fea68112db00ebca3863b13b631e89",
+      "object_sha256": "6d665794a225857b17771dd4dcd957b331ac8cfbab5972691179c0b6eca256d7",
+      "replay_log_sha256": "6df015dc64f9a5ae57b604c37c2776ff4cc750e916a47a8d7e3146d8ad2ca542"
+    },
+    "RKCert.ReviewedNative.ERK17OriginChronologicalPorts": {
+      "source_sha256": "f03abbf5a23e91c32135bd0e353ab1bc605cbf00b3325028289cf6665a603a3b",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "07b6aad01cf6d32548e0cf8d9931b34875f32e8d6c9b815a2a7830790ca2df16",
+      "replay_log_sha256": "ad19ad5727372e4c299a20d2aa8c6f43d9d0882cfded6f01a71c90b4c3f99931"
+    },
+    "RKCert.ReviewedNative.ERK17FourPortProducer": {
+      "source_sha256": "3e18d2ac97ef8e5ab66f5f746693f3df98b8889ffce00228ab6b82764a4b1450",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "7e77ac762c1fcc696f0a8b22c96ce35dceae485d6d018f5506a87de283d5e171",
+      "replay_log_sha256": "cd5e832eef6ababfb71a58e8d1044daa78b0e308ec9c07f19944d508e9b30a55"
+    },
+    "AuditReviewedNativeERK17ActualOrigin": {
+      "source_sha256": "b3ab907e9f957d0436c6b4caf2b7036868f5f67a171b00fac4cb6c927277ea6b",
+      "compile_log_sha256": "d32f6ec9894a89c520acd0f41b2ed2deedbe5b57a3156d89a28e05376553061e",
+      "audit": "'RKCert.ReviewedNative.OriginSignedSquares.ThreeClockMoments.signed_cut' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.OriginSignedSquares.ThreeClockMoments.mesh_mirrored' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.OriginSignedSquares.TwoSidedThreeClockMoments.impossible_of_positive_and_not_smallest' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK17.ActualReflectedAffinePacket.of_contrast' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK17.PhysicalFourPort.actual_two_sided_origin' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK17.width26_actual_four_port_from_cover' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK17.ordered_width26_actual_four_port' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKResearch.Certified.ERK17.ordered_width26_physical_four_port' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    }
+  }
+}

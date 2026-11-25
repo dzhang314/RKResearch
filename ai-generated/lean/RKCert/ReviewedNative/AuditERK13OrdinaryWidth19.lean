@@ -1,0 +1,16 @@
+import RKCert.ReviewedNative.ERK13OrdinaryWidth19
+
+#print axioms RKResearch.Certified.Graded.HeadFiber.joint_primitive_ports
+#print axioms RKResearch.Certified.Graded.NativeCubicTwoPort.eq_zero_of_primitive_ports
+#print axioms RKResearch.Certified.Graded.NativeQuadraticClassSelector.no_grade_nine_selector_of_mesh_nonzero
+#print axioms RKResearch.Certified.Graded.PhysicalCensus.labelOrbit_eq_of_coordinate_separation
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_cubic_profile_impossible_of_xpaid
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_adjacent_shift_pure
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_grade_three_le_core
+#print axioms RKResearch.Certified.Graded.ERK13OrdinarySquare.square_geometry_of_clock_stability
+#print axioms RKResearch.Certified.Graded.ERK13OrdinarySquare.ordinary_clock_top_impossible
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_radius_two_four_impossible
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_rank_radius_reduction
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_radius_three_impossible
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_width19_impossible
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.twenty_le_of_order_thirteen_of_firstSeed_ne_zero

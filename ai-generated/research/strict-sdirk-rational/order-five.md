@@ -1,10 +1,11 @@
 # Rational strict SDIRK at order five
 
-The minimum number of stages is between five and eight over the rationals.
+The strongest verified bounds over the rationals are now five to six stages.
+The [six-stage construction](order-five-six-stage-splice.md) improves on the
+eight-stage tableau preserved below.
 The lower bound follows from the [common-rational-diagonal tall-tree
-obstruction](../strict-sdirk-rational-common-diagonal/PROOF.md). The upper
-bound is attained by the exact rational construction below. This does not
-rule out a five-, six-, or seven-stage rational tableau.
+obstruction](../strict-sdirk-rational-common-diagonal/PROOF.md). Whether a
+five-stage rational tableau exists remains open.
 
 ## An eight-stage tableau
 

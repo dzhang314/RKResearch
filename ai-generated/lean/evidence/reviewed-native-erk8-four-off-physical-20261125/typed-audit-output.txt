@@ -1,0 +1,10 @@
+'RKResearch.Certified.Graded.FourOffPhysical.rankData_of_order8_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffPhysical.repeatAtEight_of_rankData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffPhysical.row6_clean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.FourOffPhysical.physical_placement_of_order8_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

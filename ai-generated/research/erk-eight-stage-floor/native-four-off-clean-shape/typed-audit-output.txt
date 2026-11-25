@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.coefficients_of_clean_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.shared_clean_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.clean_shape_from_actual_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.NativeSymplecticPairing
+import RKCert.ReviewedNative.FiveNodalDiagonal
+#print axioms RKResearch.Certified.Graded.symplecticPair_apply
+#print axioms RKResearch.Certified.Graded.symplecticPair_zero_on_paid_tree_spaces
+#print axioms RKCert.ReviewedNative.FiveNodalDiagonal.row_affine
+#print axioms RKCert.ReviewedNative.FiveNodalDiagonal.exists_diagonal_quadratic

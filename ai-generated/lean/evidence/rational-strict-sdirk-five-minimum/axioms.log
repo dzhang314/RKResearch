@@ -1,0 +1,13 @@
+'RKResearch.Certified.RationalStrictSDIRKFiveStageFiveUpper.order_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKFiveStageFiveUpper.sixth_tall_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKFiveStageFiveUpper.not_order_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.exists_five_stage_rational_strictSDIRK_exact_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.rational_strictSDIRK_five_minima' depends on axioms: [propext, Classical.choice, Quot.sound]

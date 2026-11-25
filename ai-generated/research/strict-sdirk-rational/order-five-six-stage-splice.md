@@ -1,8 +1,8 @@
 # A six-stage rational strict SDIRK method of exact order five
 
-The rational stage minimum at order five, and the minimum for exact
-order five, lie between five and six. This improves the previously
-published eight-stage upper bound. The construction reuses its two-row
+This was the first improvement from eight to six rational stages.
+The [later five-stage construction](order-five-five-stage-repeated-clock.md)
+now attains the rational minimum. The construction reuses its two-row
 zero-output core and its four-site quadrature; each site now needs only
 one suffix stage. Both reverse repairs use the same two predecessor
 clocks. There is no search over tableau coefficients.

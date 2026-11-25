@@ -1,0 +1,12 @@
+'RKCert.ReviewedNative.WeakFourFirstOnly.Replay.weakFourScalarExclusion_of_accepted_tables' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK16.weakFourScalarExclusion_of_first_stop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK16.width24_impossible_of_weak_five_scalar_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK16.ordered_erk16_stage_floor25_of_weak_five_scalar_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

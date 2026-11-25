@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.ERKOrder16WeakFiveQuarticRemaining
+
+#check @RKResearch.Certified.ERK16.width24_weak_five_quartic_remaining
+#print axioms RKResearch.Certified.ERK16.width24_weak_five_quartic_remaining
+#print axioms RKCert.ReviewedNative.WeakFive16.Moments.exterior_count_le_one
+#print axioms RKCert.ReviewedNative.WeakFive16.Moments.natDegree_eq_four_of_full_packet

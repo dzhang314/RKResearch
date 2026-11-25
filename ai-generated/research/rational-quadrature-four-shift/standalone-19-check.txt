@@ -1,0 +1,5 @@
+19 distinct interior rational nodes, all weights positive.
+Common weight denominator: 425643294094315542650108828261897814911098830084716100131250000
+All integer residuals vanish for degrees 0–19.
+Degree-20 moment defect: -35673661962961255473941956091/302182019494570093201085819637437237821440
+PASS: exact standalone quadrature order 20, not an RK tableau.

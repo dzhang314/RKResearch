@@ -27,6 +27,12 @@
 
 The lower bounds apply to all ordered fields. A construction over the real algebraic numbers need not be defined over every ordered subfield. For conclusions over arbitrary rings or unordered characteristic-zero fields, see the [lower-bound table](lower-bounds/README.md).
 
+## Rational contributing quadrature support
+
+Separate from the stage tables, the [four-shift proof](research/rational-quadrature-four-shift/proof.md) gives at least \(\min(17,p-3)\) distinct contributing rational sites for quadrature order \(p\ge4\): 16 at order 19 and 17 at order 20. Weights may be arbitrary in a characteristic-zero field. Repeat sites are grouped first, and only nonzero aggregate weights count. The result transfers to Runge–Kutta by the reviewed bushy moments. It has an exact arithmetic check, not a new Lean certificate.
+
+A [standalone 19-site rational rule](research/rational-quadrature-four-shift/standalone-19.md) attains quadrature order 20 with positive weights. This is not a Runge–Kutta stage upper bound. The [support index](research/rational-quadrature-four-shift/README.md) retains the stronger earlier low-order bounds.
+
 ## Lean certificate coverage
 
 Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, all 60 strongest characteristic-zero field entries, and 56 of the 60 strongest ordered-field and real entries. The characteristic-zero count includes the ERK exclusions at orders 12, 14 and 16–19, and the characteristic-zero DIRK exclusions at orders 14 and 16–20. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.

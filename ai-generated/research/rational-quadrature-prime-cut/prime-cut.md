@@ -1,5 +1,12 @@
 # A prime cut for the support of rational quadrature
 
+**Archive status.** The [four-shift bound](../rational-quadrature-four-shift/proof.md)
+now gives the stronger support endpoints at orders 11–20, including
+17 rather than 14 at order 20. The established stronger order-six and
+order-seven consequences of the odd-prime approach still apply.
+The reusable projection, original table, and exact finite certificates
+below are retained as results of this proof.
+
 Let `p` denote quadrature order: all monomials of degrees `0,…,p−1`
 have exact uniform probability moments on `[0,1]`. Let `n` count the
 distinct abscissae carrying **nonzero aggregate weight**. Repetitions

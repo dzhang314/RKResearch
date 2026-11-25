@@ -1,0 +1,12 @@
+t bracket = (773087032049, 773087032050)/10^12; quartic signs +,- checked exactly
+quadrature exact through degree 5; degree-6 nodal witness in (-77,-76)/10^6
+four quadrature weights lie in open 10^-3 boxes ((202, 203), (383, 385), (346, 347), (67, 69))
+positive common-diagonal SDIRK: 21 stages; 4 physical clocks; 37 exact lifted trees; order 7 fails via bush
+  actual grouped prefix numerator = 0; physical lifted masses on {s,t}, stop mass > 0; degree-3 law exact
+  diagonal part positive; strict part negative; S < 0 < S + J
+strict ERK: 21 stages; 4 physical clocks; 37 exact lifted trees; order 7 fails via bush
+  actual grouped reflected suffix numerator = 0; physical lifted masses on {s,t}, stop mass > 0; degree-3 law exact
+  diagonal part zero; strict part zero; S < 0 < S + J
+positive common-diagonal SDIRK reflected: 21 stages; 4 physical clocks; 37 exact lifted trees; order 7 fails via bush
+  actual grouped reflected suffix numerator = 0; physical lifted masses on {s,t}, stop mass > 0; degree-3 law exact
+  diagonal part positive; strict part negative; S < 0 < S + J

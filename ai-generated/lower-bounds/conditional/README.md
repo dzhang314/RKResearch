@@ -2,6 +2,8 @@
 
 These proofs concern explicitly stated subclasses, extremal candidates, or fixed construction families. They do not raise the unrestricted stage table. Some results are designed to transfer across several orders.
 
+- [Full tall width does not force high tree-order-four defect rank](../../research/canonical-defect-rank-boundary/README.md): exact rational strict SDIRK counterfamily at every order, with two physical defect directions. This is a limit on a rank argument, not a stage bound.
+
 - [Order 16: a sign-window proof for the centered strong-three chart](erk_order16_strong_three_sign_windows_20261124.md)
 - [Order 16: exact counterexample to the reduced weak-five moment tests](erk_order16_weak_five_reduced_tests_counterexample_20261124.md)
 - [Order 19: opposed sign windows exclude the zero-first-seed width-29 chart](erk_order19_zero_first_seed_opposed_windows_20261124.md)

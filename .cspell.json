@@ -2,10 +2,15 @@
     "words": [
         "congr",
         "dsimp",
+        "Finset",
         "Fintype",
+        "funext",
         "infixl",
+        "Injective",
         "Mathlib",
+        "rcases",
         "Semiring",
+        "simpa",
         "succ"
     ]
 }

@@ -19,6 +19,12 @@ variable {ι R : Type _} [Fintype ι] [CommSemiring R]
 theorem Φ_branch_swap (t u v : FiniteRootedTree) (A : Matrix ι ι R) :
     Φ ((t ◂ u) ◂ v) A = Φ ((t ◂ v) ◂ u) A := by apply mul_right_comm
 
+theorem Φ_rootedSum (t u : FiniteRootedTree) (A : Matrix ι ι R) :
+    Φ (t # u) A = Φ t A * Φ u A := by
+  induction u with
+  | leaf => simp
+  | butcherProduct base branch ih _ => simp only [rootedSum, Φ, ih, mul_assoc]
+
 theorem Φ_addBush (t : FiniteRootedTree) (k : ℕ) (A : Matrix ι ι R) :
     Φ (t.addBush k) A = Φ t A * (A *ᵥ 1) ^ k := by
   induction k with
@@ -46,5 +52,40 @@ theorem HasOrder.hasQuadratureOrder {p : ℕ} {A : Matrix ι ι R} {b : ι → R
   specialize h (bushyTree k.succPNat)
   simp only [order_bushyTree, factorial_bushyTree, Φ_bushyTree] at h
   assumption
+
+theorem HasQuadratureOrder.isUnit {p n : ℕ} {b c : ι → R}
+    (h : HasQuadratureOrder p b c) (hn : 0 < n) (hp : n ≤ p) :
+    IsUnit (n : R) := by
+  obtain ⟨k, rfl⟩ := Nat.exists_eq_succ_of_ne_zero (Nat.ne_of_gt hn)
+  apply IsUnit.of_mul_eq_one _ (h k hp)
+
+section Homomorphisms
+
+variable {S : Type _} [CommSemiring S]
+
+theorem map_Φ (f : R →+* S) (t : FiniteRootedTree) (A : Matrix ι ι R) :
+    f ∘ Φ t A = Φ t (A.map f) := by
+  have map_mulVec (v : ι → R) : f ∘ (A *ᵥ v) = A.map f *ᵥ (f ∘ v) :=
+    funext (f.map_mulVec A v)
+  induction t <;> simp only [Φ, map_comp_one, map_comp_mul, *]
+
+variable {p : ℕ} {A : Matrix ι ι R} {b : ι → R}
+
+theorem HasOrder.map (h : HasOrder p A b) (f : R →+* S) :
+    HasOrder p (A.map f) (f ∘ b) := by
+  intro t ht
+  simpa only [RingHom.map_mul, map_natCast, RingHom.map_dotProduct,
+    map_Φ, RingHom.map_one] using congrArg f (h t ht)
+
+theorem hasOrder_map_iff {f : R →+* S} (hf : Function.Injective f) :
+    HasOrder p (A.map f) (f ∘ b) ↔ HasOrder p A b := by
+  constructor
+  · intro h t ht
+    apply hf
+    simpa only [RingHom.map_mul, map_natCast, RingHom.map_dotProduct,
+      map_Φ, RingHom.map_one] using h t ht
+  · exact (·.map f)
+
+end Homomorphisms
 
 end RKResearch

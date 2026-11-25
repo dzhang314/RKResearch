@@ -1,0 +1,7 @@
+# The penultimate stage of a hypothetical 19-stage method of order 13
+
+For a strictly lower triangular 19-stage tableau with the reviewed `HasOrder 13 A b` over a characteristic-zero field, [the penultimate stage](../../lean/RKCert/ReviewedNative/ERK13NativePenultimate.lean) has nonzero output weight, a node different from one, and a nonzero coefficient feeding the last stage. Indeed, the last stage is the only stage with nonzero output weight in any suffix whose stages with nonzero output weight all have node one.
+
+The [18-stage order-six prefix with output weights supplied by the original last row](late-width19-lean.md) has a nonzero first reflected residual, even though the original hypothetical order-13 method has zero first reflected residual. The [reflection certificate](../../lean/RKCert/ReviewedNative/ERK13NativeEndpointReverse.lean) also gives the nonzero value of each positive-index original reflected residual at the penultimate stage.
+
+Two shared lemmas do the work: [delete a zero-weight stage whose column in the matrix is zero](../../lean/RKCert/ReviewedNative/NativeSilentStage.lean) without changing any rooted-tree order condition, and [identify a defect from constant weighted moments](../../lean/RKCert/ReviewedNative/NativeConstantProbeDefect.lean) when the vector vanishes at the origin. The four new modules passed independent kernel replay on Lean 4.36.0. These are constraints on a hypothetical tableau, not a full Lean proof of its nonexistence.

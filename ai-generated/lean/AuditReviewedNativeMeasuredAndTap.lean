@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.ReverseMeasuredIndicators
+import RKCert.ReviewedNative.AllowedTapSpan
+#print axioms RKResearch.Certified.Graded.Reverse.MeasuredReverseCapacity.mem_treeSpace_iff_of_first_transverse
+#print axioms RKResearch.Certified.Graded.Reverse.row_sum_stage_coordinates
+#print axioms RKResearch.Certified.AllowedTapSpan.mem_span_iff_exists_assembly
+#print axioms RKResearch.Certified.AllowedTapSpan.exists_hasOrder_of_tap_span

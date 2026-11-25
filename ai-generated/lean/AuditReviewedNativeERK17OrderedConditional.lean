@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.ERK17OrderedConditional
+#print axioms RKResearch.Certified.ERK17.ordered_width26_first_seed_zero_or_wide
+#print axioms RKResearch.Certified.ERK17.ordered_width26_impossible_of_scalar_gates
+#print axioms RKResearch.Certified.ERK17.ordered_erk17_stage_floor27_of_scalar_gates

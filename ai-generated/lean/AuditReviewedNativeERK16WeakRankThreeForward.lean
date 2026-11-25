@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.ERKOrder16WeakRankThreeForward
+#print axioms RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.rank_three_forward_mask
+#print axioms RKResearch.Certified.ERK16.Width24RankThreeWeakMask.forward_prefix
+#print axioms RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.reflected_origin_live_of_carrier_three

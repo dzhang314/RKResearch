@@ -1,0 +1,3 @@
+declaration	actual_axioms
+RKResearch.Certified.Topological.exists_rank_exact_strict_suffix	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Topological.exists_last_live_rank_iff	propext,Classical.choice,Quot.sound

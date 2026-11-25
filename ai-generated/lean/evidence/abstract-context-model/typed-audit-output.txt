@@ -1,0 +1,28 @@
+Model : (K : Type u_1) → (V : Type u_2) → [inst : Field K] → [inst_1 : CommRing V] → [Algebra K V] → Type (max u_1 u_2)
+@Model.column_unary : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K] [inst_1 : CommRing V] [inst_2 : Algebra K V]
+  (M : Model K V) (t : FiniteRootedTree), M.column (FiniteRootedTree.leaf ◂ t) = M.act (M.column t)
+@Model.column_rootedSum : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K] [inst_1 : CommRing V] [inst_2 : Algebra K V]
+  (M : Model K V) (t u : FiniteRootedTree), M.column (t # u) = M.column t * M.column u
+@Model.context_insert : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K] [inst_1 : CommRing V] [inst_2 : Algebra K V]
+  (M : Model K V) (C : TreeWord) (t : FiniteRootedTree), (M.context C) (M.column t) = M.column (C.insert t)
+@Model.block : {K : Type u_1} →
+  {V : Type u_2} →
+    [inst : Field K] →
+      [inst_1 : CommRing V] →
+        [inst_2 : Algebra K V] →
+          Model K V → {ι : Type u_3} → {κ : Type u_4} → (ι → TreeWord) → (κ → FiniteRootedTree) → Matrix ι κ K
+@Model.HasOrder : {K : Type u_1} →
+  {V : Type u_2} → [inst : Field K] → [inst_1 : CommRing V] → [inst_2 : Algebra K V] → Model K V → ℕ → Prop
+@Model.HasOrder.paid_cell : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K] [inst_1 : CommRing V]
+  [inst_2 : Algebra K V] {M : Model K V} {p : ℕ},
+  M.HasOrder p →
+    ∀ (C : TreeWord) (t : FiniteRootedTree),
+      ↑(C.insert t).order ≤ p → M.output (C.insert t) = (↑↑(C.insert t).factorial)⁻¹
+@Model.block_rank_le : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K] [inst_1 : CommRing V] [inst_2 : Algebra K V]
+  (M : Model K V) [Module.Finite K V] {ι : Type u_3} {κ : Type u_4} [Fintype ι] [inst_5 : Fintype κ]
+  (contexts : ι → TreeWord) (trees : κ → FiniteRootedTree), (M.block contexts trees).rank ≤ Module.finrank K V
+'RKResearch.ContextCompletion.Model.column_unary' depends on axioms: [propext, Quot.sound]
+'RKResearch.ContextCompletion.Model.column_rootedSum' depends on axioms: [propext, Quot.sound]
+'RKResearch.ContextCompletion.Model.context_insert' depends on axioms: [propext, Quot.sound]
+'RKResearch.ContextCompletion.Model.HasOrder.paid_cell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.Model.block_rank_le' depends on axioms: [propext, Classical.choice, Quot.sound]

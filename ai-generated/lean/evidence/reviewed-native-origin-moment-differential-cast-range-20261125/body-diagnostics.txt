@@ -1,0 +1,12 @@
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferentialCastRange.lean:200:76: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferentialCastRange.lean:200:76: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferentialCastRange.lean:308:50: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferentialCastRange.lean:308:50: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

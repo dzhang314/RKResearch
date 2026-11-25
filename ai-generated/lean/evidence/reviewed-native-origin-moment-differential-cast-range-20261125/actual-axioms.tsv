@@ -1,0 +1,7 @@
+declaration	axioms
+RKResearch.Certified.Graded.OriginMomentDifferential.NatCastsThrough	Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.eq_zero_of_lower_degree_of_casts	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.exists_differential_scalar_of_casts	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.derivative_eval_ne_zero_of_regular_eq_of_casts	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.derivative_eval_ne_zero_of_casts	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.eval_ne_zero_of_derivative_zero_of_casts	Classical.choice,Quot.sound,propext

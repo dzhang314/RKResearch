@@ -1,0 +1,6 @@
+declaration	actual_axioms
+RKResearch.ContextCompletion.Model.column_unary	Quot.sound,propext
+RKResearch.ContextCompletion.Model.column_rootedSum	Quot.sound,propext
+RKResearch.ContextCompletion.Model.context_insert	Quot.sound,propext
+RKResearch.ContextCompletion.Model.HasOrder.paid_cell	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.Model.block_rank_le	Classical.choice,Quot.sound,propext

@@ -1,0 +1,16 @@
+'RKResearch.Certified.Graded.OriginMomentDifferential.NatCastsThrough' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.eq_zero_of_lower_degree_of_casts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.exists_differential_scalar_of_casts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.derivative_eval_ne_zero_of_regular_eq_of_casts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.derivative_eval_ne_zero_of_casts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.eval_ne_zero_of_derivative_zero_of_casts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

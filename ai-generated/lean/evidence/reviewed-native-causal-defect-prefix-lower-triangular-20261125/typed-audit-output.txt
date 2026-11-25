@@ -1,0 +1,18 @@
+'RKResearch.Certified.Graded.DefectPrefix.mat_eq_off_sum_add_diag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.DefectPrefix.paidThrough_iff_off_residue_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.DefectPrefix.paid_prefix_pivots_of_off_mass_or_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.DefectPrefix.off_clock_add_diag_eq_quad_of_clean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.DefectPrefix.off_mass_or_clock_of_first_clean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.DefectPrefix.paid_prefix_pivots_of_first_clean_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

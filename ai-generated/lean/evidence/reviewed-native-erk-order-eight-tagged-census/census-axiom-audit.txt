@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.MultiOff.order8_native_even_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.MultiOff.order8_native_tagged_census' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.MultiOff.order8_native_one_or_four_with_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

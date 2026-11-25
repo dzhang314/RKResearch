@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.LobattoEight.lobatto_first_on_scalar_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERKTaggedHorizon.anchored_poly_zero_of_probes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERKTaggedHorizon.beta_cubic_from_actual_probes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

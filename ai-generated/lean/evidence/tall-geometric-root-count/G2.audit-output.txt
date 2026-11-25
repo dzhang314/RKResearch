@@ -1,0 +1,6 @@
+'RKResearch.Certified.TallFiniteResponse.derivativeGcdQuotientDegree_eq_ncard_rootSet_algebraicClosure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.Fraction.order_le_num_add_algebraicClosureRootSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

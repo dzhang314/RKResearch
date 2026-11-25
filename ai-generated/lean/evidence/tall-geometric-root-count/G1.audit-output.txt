@@ -1,0 +1,9 @@
+'RKResearch.Certified.TallFiniteResponse.derivativeGcdQuotientDegree_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.derivativeGcdQuotientDegree_eq_card_toFinset_of_splits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TallFiniteResponse.derivativeGcdQuotientDegree_eq_ncard_rootSet_of_splits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

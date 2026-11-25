@@ -1,0 +1,6 @@
+Pinned exact interval order 19, 17 sites, h19 mod q=1698450493; next pair 9b,9a.
+Next pair exact nontorsion model and multiples mod q: ((835872422, 1084543844, 684040292, 1804514729, 669646148), {6: (1965568708, 2039465679), 9: (2013158972, 102328381), 12: (192791745, 784009916)})
+Rank-free triple enclosures (10^6 scaled): [(-1329384, -1329383), (449865, 449866), (678830, 678831)]
+One targeted [-42]D, binary chain doubles/adds=(5, 2); E mod q: (650984642, 1014100747)
+Actual physical tau and branch triple enclosures: (592044, 592045) [(704484, 704485), (581636, 581637), (431841, 431842)]
+PASS exact interval order 20 / 18 contributing sites; first defect mod q = 240109312

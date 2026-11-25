@@ -36,11 +36,12 @@ structure Width24RankThreeWeakMask (A : Matrix (Fin 24) (Fin 24) K)
   paid : ∀ (R : K[X]), R.natDegree ≤ 2 → ∀ i ∈ weakFiveRows A b Q P,
     mat A (weightedEval (nodes A) θ R) i = (primitive (R*q)).eval (nodes A i)
 
-theorem Width24OrdinaryWeakHead.rank_three_forward_mask
+theorem Width24OrdinaryWeakHead.rank_three_forward_mask_with_source
     (L : Width24OrdinaryWeakHead A b U w Q P)
     (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 16 A b)
     (rankThree : finrank K (width24WeakFiveCarrier A b) = 3) :
-    ∃ (q : K[X]) (θ : Fin 24 → K), Width24RankThreeWeakMask A b q Q P θ := by
+    ∃ (q : K[X]) (θ : Fin 24 → K), Width24RankThreeWeakMask A b q Q P θ ∧
+      ∃ z ∈ zeroSpace A 4, θ = evalNodes A q-z := by
   classical
   let c := nodes A
   let y := reflectedClock A
@@ -88,7 +89,7 @@ theorem Width24OrdinaryWeakHead.rank_three_forward_mask
   let θ := evalNodes A q-z
   have z4 : z ∈ zeroSpace A 4 := (zeroSpace A 4).add_mem w4 (H4 hg)
   have z0 : z 0 = 0 := origin_zeroSpace ha 4 z4
-  refine ⟨q,θ,⟨qd,refl,?_,?_,?_,?_,?_⟩⟩
+  refine ⟨q,θ,⟨qd,refl,?_,?_,?_,?_,?_⟩,z,z4,rfl⟩
   · change q.eval (c 0)-z 0 = q.eval 0
     rw [c0,z0,sub_zero]
   · intro i ni io it
@@ -151,6 +152,15 @@ theorem Width24OrdinaryWeakHead.rank_three_forward_mask
     have fact := f7 _ (primitive_defect A (R*q) (natDegree_mul_le_of_le rd qd)) i hi
     change mat A (evalNodes A (R*q)) i-(primitive (R*q)).eval (c i)=0 at fact
     rw [feed,map_sub,Pi.sub_apply,zm,sub_zero,sub_eq_zero.mp fact]
+
+/-- Forget the optional representation of the forward mask. -/
+theorem Width24OrdinaryWeakHead.rank_three_forward_mask
+    (L : Width24OrdinaryWeakHead A b U w Q P)
+    (ha : ∀ i j, i ≤ j → A i j = 0) (ho : HasOrder 16 A b)
+    (rankThree : finrank K (width24WeakFiveCarrier A b) = 3) :
+    ∃ (q : K[X]) (θ : Fin 24 → K), Width24RankThreeWeakMask A b q Q P θ := by
+  obtain ⟨q,θ,W,_⟩ := L.rank_three_forward_mask_with_source ha ho rankThree
+  exact ⟨q,θ,W⟩
 
 /-- Physical prefix, allowing the one possible off-contrast origin
 term. The true terminal is never a predecessor. -/

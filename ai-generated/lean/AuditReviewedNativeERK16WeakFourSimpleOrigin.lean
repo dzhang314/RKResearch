@@ -1,0 +1,7 @@
+module
+import RKCert.ReviewedNative.ERKOrder16WeakFourSimpleOrigin
+
+#print axioms RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.rank_three_forward_mask_with_source
+#print axioms RKResearch.Certified.ERK16.Width24RankThreeWeakMask.unweighted_mass
+#print axioms RKResearch.Certified.ERK16.Width24RankThreeWeakMask.diagonal_on_actual_five
+#print axioms RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.weak_four_simple_active_origin_impossible

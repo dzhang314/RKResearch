@@ -1,0 +1,29 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "RKCert.ReviewedNative.ERKOrder16WeakRankThreeForward": {
+      "source_sha256": "cebc87b22bf1bfd1f1b7e4a87548f0f8ad51883d614fcbd591ce1d677f3a8fb9",
+      "compile_log_sha256": "c7150ca6c4f32e6f0b6ca7bfad4877f270114d5e8755647200c8c8a79469dd96",
+      "object_sha256": "e034c3d2af931b9cbb5378b92bbaec9cd1578b3051c80c6a37b52b977ac34bb4",
+      "replay_log_sha256": "81c955815f82529bf4af3f546b0a47c0677c74247fe51d44d8f6d243138d57aa"
+    },
+    "RKCert.ReviewedNative.ERKOrder16WeakFourPhysicalSymplectic": {
+      "source_sha256": "2ec664ee737955b5842b443254972ccaea9d54d585ec81b9cdc9fe39fc213c5d",
+      "compile_log_sha256": "040ef8d3828aafbd0e11074b64bb68f8e02b2f9b2a015ad3d0e55c9d59c7c504",
+      "object_sha256": "6c9bbc654dc23f4f759b056559211de55d1363d8be5725dfb3d26dc2f7f99359",
+      "replay_log_sha256": "af4a5504eceddc48f4fb64ca23c92ec150fd19f92361599588bb1c070f9ca316"
+    },
+    "RKCert.ReviewedNative.ERKOrder16WeakFourSimpleOrigin": {
+      "source_sha256": "1fcb901d0f8cb9e224530f0eec8b0e8a19113b9aa3a5791177bb01a9acf384f3",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "2184786b9a078c95b498660bbb08217a25c32e4870396912921f9c585b2f14e3",
+      "replay_log_sha256": "75e6bb4d463dd1cfa0d1af2aceb78ceef6e0cc8e20dab21da21e9b4854ab57cd"
+    },
+    "AuditReviewedNativeERK16WeakFourSimpleOrigin": {
+      "source_sha256": "dbfe8106db33ab97d96b34115b3a8b3b303da491958135711f00cbf97cfe2b32",
+      "compile_log_sha256": "eb88756a4ccf37f0d97d913b1234c6271ee53515466458483970ba9c865d6174",
+      "audit": "'RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.rank_three_forward_mask_with_source' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK16.Width24RankThreeWeakMask.unweighted_mass' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK16.Width24RankThreeWeakMask.diagonal_on_actual_five' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.ERK16.Width24OrdinaryWeakHead.weak_four_simple_active_origin_impossible' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    }
+  }
+}

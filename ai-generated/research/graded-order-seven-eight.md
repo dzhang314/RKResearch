@@ -1,0 +1,9 @@
+# Graded residual tests for orders seven and eight
+
+[The order-seven theorem](../lean/RKCert/ReviewedNative/DefectTestsSeven.lean) and [the order-eight theorem](../lean/RKCert/ReviewedNative/DefectTestsEight.lean) give sufficient conditions for the reviewed `HasOrder` predicate. They apply to any Runge–Kutta matrix over a commutative ring when the chosen normalization scale is regular, and impose no triangularity, common diagonal, or support assumption.
+
+The construction organizes the stage residuals by the order of the tree that produces them. The quadratic space is spanned by a single residual. The cubic space can be the span of the four structural generators: the quadratic residual, its clock multiple, its matrix image, and the cubic primitive. A smaller proved cover can be substituted without changing the statement. The quartic and quintic spaces are obtained by taking the appropriate matrix and clock images, adjoining a new primitive, and including the first products of lower-degree residuals.
+
+For both orders the last two spaces can instead be defined by vanishing of one or two scalar probes. The adjoint relation and the quadrature moments account for the last primitive and for advancing past the penultimate space. What remains is to check the products that reach these two spaces. For order seven the new products have degrees $2+3$, $2+4$, and $3+3$. For order eight they have degrees $2+4$, $3+3$, $2+5$, and $3+4$. All products with a degree-zero or degree-one residual vanish.
+
+The shared [prefix extension](../lean/RKCert/ReviewedNative/DefectPrefix.lean) spells out exactly what must be checked when a new residual space is appended, and directly invokes the [general filtration theorem](../lean/RKCert/ReviewedNative/DefectFiltrationOrder.lean). These are certificates for order, not new RK constructions or nonexistence bounds.

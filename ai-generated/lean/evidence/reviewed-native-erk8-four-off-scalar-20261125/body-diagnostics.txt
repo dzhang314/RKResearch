@@ -1,0 +1,114 @@
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:374:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.shape_scale`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:379:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.eval_scale`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:384:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.gate_scale`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:404:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.moment_test`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:410:11: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:410:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:412:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.weight_cancel`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:416:58: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:416:62: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:416:62: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:418:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.weight_rec`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:422:58: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:422:62: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:422:62: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:424:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.barycentric1`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:428:35: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:428:35: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:430:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.barycentricX`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:434:35: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:434:35: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:477:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.trace_test`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:481:11: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:481:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:626:32: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:626:36: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:629:85: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:629:89: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:626:36: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ai-generated/lean/RKCert/ReviewedNative/ERK8FourOffScalar.lean:629:89: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`

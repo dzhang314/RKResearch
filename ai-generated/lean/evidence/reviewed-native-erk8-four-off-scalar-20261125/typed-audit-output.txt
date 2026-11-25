@@ -1,0 +1,6 @@
+'RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.firstCleanAt4_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.firstCleanAt5_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3 @@
+declaration	actual_axioms
+RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.firstCleanAt4_contradiction	Classical.choice, Quot.sound, propext
+RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.firstCleanAt5_contradiction	Classical.choice, Quot.sound, propext

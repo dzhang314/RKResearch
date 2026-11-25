@@ -21,6 +21,11 @@
   \(1/66\), on a different 19-site rule from \(u/128\). The proof and
   exact replay preserve the rule's aggregate weights; these are
   prescribed-support counts, not improvements to the stage tables.
+- [Geometry of the ordered rational-root charts](../rational-root-chart-geometry/ordered-root-geometry.md):
+  smooth weighted moment intersections, no dominant rational
+  parametrization with two or three paid shifts, and generic
+  fixed-prefix genus one or 13. This is not a rational support
+  nonexistence or stage-bound result.
 - [Earlier odd-prime projection and exact finite pencil certificates](../rational-quadrature-prime-cut/prime-cut.md):
   retained in full. The four-shift formula agrees with the archived
   endpoint at orders 8–10 and improves it at orders 11–20. The archived

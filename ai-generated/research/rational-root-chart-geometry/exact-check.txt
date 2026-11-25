@@ -1,0 +1,3 @@
+t=2: all endpoint exponents 0..15 through p=20 have 4 simple pencil branch parameters in the exact discriminant.
+t=3: all endpoint exponents 0..13 through p=20 have 6 simple pencil branch parameters in the exact discriminant.
+PASS: weighted specializations only; no search for rational quadrature nodes.

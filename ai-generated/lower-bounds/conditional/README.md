@@ -2,6 +2,8 @@
 
 These proofs concern explicitly stated subclasses, extremal candidates, or fixed construction families. They do not raise the unrestricted stage table. Some results are designed to transfer across several orders.
 
+- [Distinct retained poles and finite tall-tree order](../../research/tall-distinct-pole-recurrence/README.md): a characteristic-zero recurrence with exact repeated-pole sharpness, complementary to the ordered pole budget. This is a tall-only constraint, not a new stage minimum.
+
 - [Finite tall-tree order and retained poles](../../research/tall-ordered-pole-budget/README.md): ordered partial-real-pole and arbitrary characteristic-zero single-pole bounds, with exact scalar sharpness checks. These are tall-only and do not change the stage table.
 
 - [Full tall width does not force high tree-order-four defect rank](../../research/canonical-defect-rank-boundary/README.md): exact rational strict SDIRK counterfamily at every order, with two physical defect directions. This is a limit on a rank argument, not a stage bound.

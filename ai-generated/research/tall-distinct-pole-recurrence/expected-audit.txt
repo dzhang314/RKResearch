@@ -1,0 +1,2 @@
+81 base-field gcd profiles, 891 exact truncated residual/recurrence/one-short checks
+63 explicit rational repeated-pole sharp families, 84 exact cancellation ledgers

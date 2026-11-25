@@ -1,0 +1,51 @@
+{
+  "base": "c884434e09daec6349dd46c14cbcdc65eded24ee",
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "checks": {
+    "RKCert.ReviewedNative.UnitBetaSquareMass": {
+      "source_sha256": "2eae0e7e86ec6b8c8f5a1530ea82df6601f788b1f3ad6cf3b61f8d3a569598fe",
+      "object_sha256": "f4606990d88bbc6c98df69c03776d81899038c88cb9b037dd7e76dd011e12c3e",
+      "compile_log_sha256": "49ef683686b3a555bbfaf66f4d273d088d9388a4225c1fe421404ef99a417d37",
+      "kernel_replay_log_sha256": "f0f349f2720e5ecfe2c3d5d27a118d00a81746fe3f050d8c85d3d8deab8bbead"
+    },
+    "RKCert.ReviewedNative.UnitAffineSquareMass": {
+      "source_sha256": "aad96f6e0195844b903b78ea43258d40739d233f3749e5a3175b280996ef0680",
+      "object_sha256": "a560c6ccfb080ad485dcebe57c0ed3ffccac1aa85526742f55548068283a94f6",
+      "compile_log_sha256": "17c5b1c2715a531df5e43888197e8e0ea01b37842d28fdcb5c1364603203eafc",
+      "kernel_replay_log_sha256": "dd249494eed512831be10d7249fe8fb7e80932e6330bc0173cb49746821c495b"
+    },
+    "RKCert.ReviewedNative.FormalSignedQuadrature": {
+      "source_sha256": "c7171b350788b5c64cc0d7e41af79139d2442a3ca5e67faf205b716daefc313c",
+      "object_sha256": "0315e8c6b50b052daa0b2c88d73dff104cfd25fdc30dfae35544f3eed8e384a5",
+      "compile_log_sha256": "d7ff33a85cbb4af99e0be132c74f07c3100bb45cc38cd11c64d7cc720637ced0",
+      "kernel_replay_log_sha256": "1c0b0beff3cd16243118248a7792bbcff28731a373f9d731f2a866bf2496cd2b"
+    },
+    "RKCert.ReviewedNative.EffectiveDonorClocks": {
+      "source_sha256": "688cf432e717cc3df7ee22f74c562b440223151a22994a033a77bf07a2c05655",
+      "object_sha256": "e7e02540282cdaa2fdc7037f8a624b40315faf39f1212b49f43dde372c056b3d",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "b0d6216ca96f3aa44496efa1c309ee1b38f1947a4b2f393eb79d593e980353e4"
+    },
+    "RKCert.ReviewedNative.ReviewedQuadratureUnboundedCensus": {
+      "source_sha256": "f4f5d330130c6fbb9ed67328f535bfec9f80daa87d477cfa990b86846ab70b0e",
+      "object_sha256": "cd05f910e54d3a1873ba95a7bb02577d254c4e3ca9a21d3682d46290dd36ee59",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "9d783f9c9f69d67de1f5ef99b76df8b380f680ab4605b8b8428ad6c7808678f4"
+    },
+    "RKCert.ReviewedNative.ExteriorSignSwitch": {
+      "source_sha256": "036ac020e7ff53fa6bf5d1b4a524c51affc3e6f0eb83d02e147afc6ff20112ba",
+      "object_sha256": "cc4da1f125a9a6058c0c69d65388cb01d4c3e31451963b63b353ebed63aac450",
+      "compile_log_sha256": "9583d5924731de982d0042753ff60bc96b315912d02ee1c311dbbc5d509b4a69",
+      "kernel_replay_log_sha256": "5fb6b62eb59785915f135709fc8d071e672e56a635d7e689090f1a0457a417ad"
+    },
+    "UnitBetaAffineCensusAudit": {
+      "source_sha256": "eb48a2a3a7f8bdcad00e26ba897f0ac60b3bfe244cec99661d4595144cc0980e",
+      "audit": "@beta_square_pos : \u2200 {K : Type u_2} [inst : Field K] [inst_1 : LinearOrder K] [IsStrictOrderedRing K] (a b : \u2115)\n  {P : K[X]}, P \u2260 0 \u2192 0 < eval 1 (formalPrimitive (X ^ a * (1 - X) ^ b * P ^ 2))\n@mass_beta_finset_prod_sq_pos : \u2200 {K : Type u_2} [inst : Field K] [inst_1 : LinearOrder K]\n  [inst_2 : IsStrictOrderedRing K] {\u03b9 : Type u_3} (S : Finset \u03b9) (L : \u03b9 \u2192 K[X]) {P : K[X]},\n  P \u2260 0 \u2192 \u2200 (a b : \u2115), (\u2200 i \u2208 S, EndpointAffine (L i)) \u2192 0 < mass ((betaWeight a b * \u220f i \u2208 S, L i) * P ^ 2)\n@UnitLaw.exterior_and_negative_budget : \u2200 {K : Type u_2} [inst : Field K] [inst_1 : LinearOrder K]\n  [inst_2 : IsStrictOrderedRing K] {T : Finset K} {mu : K \u2192 K} {b : \u2115},\n  UnitLaw T mu b \u2192 b + 1 + (exteriorSites T).card + 2 * (negativeInteriorSites T mu).card \u2264 2 * T.card\n@unit_law : \u2200 {K : Type u_2} {\u03b9 : Type u_3} [inst : Field K] [inst_1 : Fintype \u03b9] [inst_2 : CharZero K] {p : \u2115}\n  {A : Matrix \u03b9 \u03b9 K} {w : \u03b9 \u2192 K},\n  HasOrder p A w \u2192 0 < p \u2192 UnitLaw (activeAggregates (nodes A) w) (clockMass (nodes A) w) (p - 1)\n'RKCert.ReviewedNative.UnitBetaSquareMass.beta_square_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKCert.ReviewedNative.UnitAffineSquareMass.mass_beta_list_prod_sq_pos' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.FormalSignedQuadrature.UnitLaw.exterior_and_negative_budget' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKResearch.Certified.Graded.SignedQuadrature.order_plus_exterior_and_negative_interior_le_twice_stages' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    },
+    "ExteriorSignSwitchAudit": {
+      "source_sha256": "a9e90831d444ff3194d52baa2f8d53e97a3fca312cde93e0016af14e9fbf6092",
+      "audit": "@switchRoots_card : \u2200 {K : Type u_2} [inst : Field K] [inst_1 : LinearOrder K] [IsStrictOrderedRing K] (mu : K \u2192 K)\n  (prev : Bool) (xs : List K), xs.Nodup \u2192 (switchRoots mu prev xs).card = switchCost mu prev xs\n@switchMask_degree : \u2200 {K : Type u_2} [inst : Field K] [inst_1 : LinearOrder K] [IsStrictOrderedRing K] (T : Finset K)\n  (mu : K \u2192 K), (switchMask T mu).natDegree = exteriorSignSwitchCost T mu\n@UnitLaw.exterior_sign_switch_budget : \u2200 {K : Type u_2} [inst : Field K] [inst_1 : LinearOrder K]\n  [inst_2 : IsStrictOrderedRing K] {T : Finset K} {mu : K \u2192 K} {b : \u2115},\n  UnitLaw T mu b \u2192 b + 1 \u2264 2 * {x \u2208 T \\ exteriorSites T | 0 < mu x}.card + exteriorSignSwitchCost T mu\n'RKCert.ReviewedNative.FormalSignedQuadrature.ExteriorSwitch.switchMask_exterior_nonpos' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.FormalSignedQuadrature.UnitLaw.exterior_sign_switch_budget' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    }
+  }
+}

@@ -53,6 +53,7 @@ The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3
 
 - [Lean certificate for rational 15-stage strict SDIRK of exact order eight](lean/evidence/reviewed-native-rational-sdirk-fifteen-stage-eight-20261125/README.md): common nonzero diagonal `1/8`, with the exact ninth tall-tree failure. This is a rational upper witness, not a minimum or a change to the real-algebraic 11-stage upper bound.
 - [Lean certificate for rational 23-stage strict SDIRK of exact order nine](lean/evidence/reviewed-native-rational-sdirk-twenty-three-stage-nine-20261125/README.md): common nonzero diagonal 1/9, with the exact tenth tall-tree failure. This is a rational upper witness, not a stage minimum.
+- [Exact arithmetic certificate for rational 27-stage strict SDIRK of exact order ten](upper-bounds/rational/strict-sdirk-order-ten-27/README.md): common nonzero diagonal 1/9, with the exact eleventh tall-tree failure. The Lean certificate is pending; the real-algebraic upper bound and Lean coverage are unchanged.
 
 
 - [Lean certificate for exact ten-stage DIRK at order nine](lean/evidence/reviewed-native-dirk-nine-sharp-c35/README.md): ten stages are necessary and sufficient over the reals and real algebraic numbers. The [exact tableau](lean/evidence/reviewed-native-dirk-nine-exact-c35/README.md) also fails the order-ten tall-tree condition.

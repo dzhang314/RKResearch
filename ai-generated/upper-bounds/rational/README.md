@@ -4,6 +4,7 @@ Examples at current stage counts: ERK orders 1–4; DIRK orders 1, 2, 4, 5, 6 an
 
 - [Exact rational strict SDIRK order eight in 15 stages](../../lean/evidence/reviewed-native-rational-sdirk-fifteen-stage-eight-20261125/README.md): the literal common-diagonal `1/8` tableau and exact order are Lean-checked. This is a rational upper witness, not a stage minimum.
 - [Exact rational strict SDIRK order nine in 23 stages](../../lean/evidence/reviewed-native-rational-sdirk-twenty-three-stage-nine-20261125/README.md): the common-diagonal 1/9 tableau and exact order are Lean-checked. This is a rational upper witness, not a minimum.
+- [Exact rational strict SDIRK order ten in 27 stages](strict-sdirk-order-ten-27/README.md): all rooted-tree conditions and the eleventh tall-tree failure are verified by exact arithmetic. The Lean certificate is pending; this is an upper witness, not a minimum.
 
 - [lean_filtered_residual_certificate_order20_exact_fixture_20261123.md](lean_filtered_residual_certificate_order20_exact_fixture_20261123.md)
 

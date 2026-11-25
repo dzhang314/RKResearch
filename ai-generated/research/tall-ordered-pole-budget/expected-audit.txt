@@ -1,0 +1,3 @@
+80 rational inverse-transform families: exact pole counts, tail lengths, reduction, and tight score
+78 independent exact Sturm iterations: monotonic root counts, zero-drop, sign charges
+81 finite one-pole degree pairs: coefficient reversal, exact orthogonality, and positive simple roots

@@ -1,0 +1,174 @@
+{
+  "body": {
+    "accepted_objects": {
+      "RKCert/ReviewedNative/PaidPositiveDefectObstruction.ir": "ac6df1166ca5ee633803c8a5d9f8ce185568b189d0c2ec94cdfd75b0b8148906",
+      "RKCert/ReviewedNative/PaidPositiveDefectObstruction.ir.sig": "ce176e0fe7f4e1b0ed274ba7e6992d1ca9226083e8a0e969a20d741fb08a2e8e",
+      "RKCert/ReviewedNative/PaidPositiveDefectObstruction.olean": "2c02ab2dcc5413bc2bd8df6a4995cb766f03b21f497e38cbf4ec9a714d436602",
+      "RKCert/ReviewedNative/PaidPositiveDefectObstruction.olean.private": "c3425268c3f3d5240872d6f618d7c4fc8bb53704878f6e6b80e11bd5c283c136",
+      "RKCert/ReviewedNative/PaidPositiveDefectObstruction.olean.server": "e6be7c1d9266bcdc684a0a8bc56842a90b7e576b9fa593c93f1e8b7c74f26105"
+    },
+    "audit_calls": 0,
+    "compiler_calls": 1,
+    "compiler_exit": 0,
+    "nonfatal_compiler_warnings": 1,
+    "project_provider_fragments": 35,
+    "project_provider_modules": 7,
+    "raw_receipt_sha256": "bba88342b590edb526e11b47f3363b59a0d9af512720debe0b97c05a3586027a",
+    "raw_stdout_sha256": "069fd480a2223baaa61499b71b7eba93f033cbca2cdf77ca49dae43f1dbe96ae",
+    "reason": "single unchanged body only; no axioms checked",
+    "requested_object_output": true,
+    "session": 62624,
+    "source": "ai-generated/lean/RKCert/ReviewedNative/PaidPositiveDefectObstruction.lean",
+    "source_sha256": "9387a54cb28cf5d374875dfadcc3c2968cc5772a2853eedf283c619b5f92a6e8",
+    "status": "BODY_PASS",
+    "stock_modules": 3046,
+    "wrapper_exit": 0
+  },
+  "execution_scope": "one measured body and one separately serial no-output typed audit; no cold build",
+  "lean": "4.36.0",
+  "lean_executable_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "measurement_source_base": "127c66265145f035979f902bf01aa0a36dfa3ec2",
+  "pinned_dependency_files": {
+    "ai-generated/lean/lake-manifest.json": {
+      "git_blob": "4344b11fef7e96a095cebfebcb324d11b0c8420d",
+      "sha256": "207e593bad22fa516ec10372ae95145ce011ab3ac61f7256dc0b8a1c4b55d820"
+    },
+    "ai-generated/lean/lean-toolchain": {
+      "git_blob": "00f848359b1cdaf7c12cd6b7acc5b4364752e154",
+      "sha256": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a"
+    },
+    "lake-manifest.json": {
+      "git_blob": "63d44857a19bacff36338912c8482d4e7454ebfb",
+      "sha256": "71658e0b20ce36f4211f427f43dccee32d05a6583fbb5db3714ba46e25e5be43"
+    },
+    "lean-toolchain": {
+      "git_blob": "00f848359b1cdaf7c12cd6b7acc5b4364752e154",
+      "sha256": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a"
+    }
+  },
+  "project_provider_artifact_sha256": {
+    "RKCert/ReviewedNative/BushyMoments.ir": "25f864a71ab486fb3a4743cab4bcc127739d600cdc0139467b9bf00d04cc3516",
+    "RKCert/ReviewedNative/BushyMoments.ir.sig": "9574aa52102c7fad5f49482d0c490ebb9ae5a63cb951a9dbde2ccb67f0729afb",
+    "RKCert/ReviewedNative/BushyMoments.olean": "e1dd80c1723f2f3c8f21fef9165cc29424ed95e6467df82c577caa98a7a11004",
+    "RKCert/ReviewedNative/BushyMoments.olean.private": "e0794b4d441231f2364e075996c8768ef8ab89558eff4bf87285a97b59d1bc3c",
+    "RKCert/ReviewedNative/BushyMoments.olean.server": "da0eaa33aca6509811bb186bedb869caf64e3c72bef5f8ebb541b50e28987aff",
+    "RKCert/ReviewedNative/GradedColumns.ir": "8ed26dc6bfea52d806515309f01a2ff2df7d7f9bffb0e9ae2d18e46bb65294d3",
+    "RKCert/ReviewedNative/GradedColumns.ir.sig": "381d5620e663e1f9e21e3d75925c850f2f59f0bb1c6c2667f0fbad0f4b51619f",
+    "RKCert/ReviewedNative/GradedColumns.olean": "b9f1150c73c60bff625f5704ffb5cf271a761426d49c78a8114a91fe9c2c3bec",
+    "RKCert/ReviewedNative/GradedColumns.olean.private": "8cc11921f3c2cd06cd2d30447d3f351ea41dcd5431a93f02d1ff195c4f5b55c7",
+    "RKCert/ReviewedNative/GradedColumns.olean.server": "9326f913d90a8a985fdf4727c6cea271b6c950e2a76eda31435424366c35648d",
+    "RKCert/ReviewedNative/GradedDefects.ir": "089b5fead7953137ec7fd7e45e41de303a53789a2699ff3aa0c3421e08942749",
+    "RKCert/ReviewedNative/GradedDefects.ir.sig": "c7cd314f1f0ad3c93995c0b9b7733b82ede094d18cd2fd2b9cb559252b232be5",
+    "RKCert/ReviewedNative/GradedDefects.olean": "5fecf48298fbfd27ad57ae1a73e1af2ede3f558a967ba4399d3776cbad9ffcd9",
+    "RKCert/ReviewedNative/GradedDefects.olean.private": "79cfefa76f486c55fe4008e4ecba59b4c3f2a5637f764f74434acfa1e4edb88e",
+    "RKCert/ReviewedNative/GradedDefects.olean.server": "98c8ca6a6049b0735b9bcacd2efbfe447b51232368b8ef78df38ce6aa4afbdfa",
+    "RKCert/ReviewedNative/GradedProducts.ir": "3107bf431643e2c00bc304e5ffe5aa4659b2a98f43552d6915313eee8c0f01d7",
+    "RKCert/ReviewedNative/GradedProducts.ir.sig": "1eea50ef8ca45be180b6078dfbcd03a6dda41f56c8d4b0d4358114bcf9c09077",
+    "RKCert/ReviewedNative/GradedProducts.olean": "c11fd79295bc44839124967cd0ed8e562b8d2c3295dcfb337a452325819a7b1c",
+    "RKCert/ReviewedNative/GradedProducts.olean.private": "99b03c2661c2ed8f09861826f177276ab5f15840343e7e411e72b125b11869df",
+    "RKCert/ReviewedNative/GradedProducts.olean.server": "d88401d6dd18a5023cc2fae15a19d86b9c39dca9e59368ee47b0f8cb9c1db2c6",
+    "RKCert/ReviewedNative/RootMomentCuts.ir": "c4243081dc7177665c701bf6c63eff118e028981e17b1d71429ca6ad77a55824",
+    "RKCert/ReviewedNative/RootMomentCuts.ir.sig": "db9388abc113cf12f2e5853598fa46992d85ce8aa13c428f95f6fa514314db03",
+    "RKCert/ReviewedNative/RootMomentCuts.olean": "90d9ef5a49f32936ff33648ee2c1cb4ebba16b646bd346f595c810f2d09df119",
+    "RKCert/ReviewedNative/RootMomentCuts.olean.private": "2ce8f1756aeeb52d9aeeb267b29a411ddf719466a7e64e9a508f7eb0441eb942",
+    "RKCert/ReviewedNative/RootMomentCuts.olean.server": "63106996eae33bd95fb99aee5ff1ecd32f9298089f4c67302f5e0444d153a7fd",
+    "RKResearch/FiniteRootedTree.ir": "9875a67ef9840fdc70b3905ca8289b51a8cfb33b8e237b390b970b397e188b1b",
+    "RKResearch/FiniteRootedTree.ir.sig": "295f2fc3eb4d30f4c0c1fcce2b1cd6ad5f9c206aafa77b27df70e42597482a2e",
+    "RKResearch/FiniteRootedTree.olean": "82112d27743159ecf7b50916894527bbb5b12403f151bf99dd51d3b96af8b764",
+    "RKResearch/FiniteRootedTree.olean.private": "880f20601be745396a3d0d701be2fb0289de6f442b443ceb28fcbb586f281856",
+    "RKResearch/FiniteRootedTree.olean.server": "5e91199c29421c88c995d43728f241965c7ca9ba0e2851fd2109f76e4201170f",
+    "RKResearch/OrderConditions.ir": "081ef7434f4a230a328a0af189965635736c9aacb70860c1bb1b95f14f5939a0",
+    "RKResearch/OrderConditions.ir.sig": "ee3eff6780fac9aa45de3ac5297bdb0b80d1436bb94c2f05569cb0474573712f",
+    "RKResearch/OrderConditions.olean": "5c801eba9929197ec299ccda522cdc59e7a6ba55d3411707cf6d47044478d8f9",
+    "RKResearch/OrderConditions.olean.private": "eaa98aac987993f0fe943410160c4106610b482757cb5dacb1c9e616afdc3776",
+    "RKResearch/OrderConditions.olean.server": "9d3414184799012341f6cf0f9f5e05e5a2bfdbf21442d2b1ce4133de48ef74f7"
+  },
+  "project_providers": [
+    {
+      "git_blob": "59c3781a17e5a8019ce2c7c02e948dae7607019e",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.BushyMoments",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/BushyMoments.lean",
+      "sha256": "911a42e91d83cfdfa0e5ffba3665298b8cb93abc872c5fa0065003f754c6ff2e"
+    },
+    {
+      "git_blob": "70e5b87f9799f5d91f4d842848a4f54e4f9c13fd",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.GradedColumns",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedColumns.lean",
+      "sha256": "e2a1cfa9280ea49c3e3347dee50ea9e3f6b8d4c4c8b8e75dee105ade60c0f198"
+    },
+    {
+      "git_blob": "607ae20d5f9ec887c6448c2f01566308cc238722",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.GradedDefects",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedDefects.lean",
+      "sha256": "f3e7b4eafdb469306d61a28b4a6ba4521501dc719344f727a9ebbcc2a3156b7f"
+    },
+    {
+      "git_blob": "6a14c859470d1121c1c9cf3e95ecb9c469297958",
+      "measurement_session": 22506,
+      "module": "RKCert.ReviewedNative.GradedProducts",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedProducts.lean",
+      "sha256": "4e26938ad03acae885d8e53456edf760535b4312b9094324f85987127d120b62"
+    },
+    {
+      "git_blob": "98fbba239c73651b589f67a4a07d47e35641698a",
+      "measurement_session": 39763,
+      "module": "RKCert.ReviewedNative.RootMomentCuts",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/RootMomentCuts.lean",
+      "sha256": "bad53684ecc9e1d74abc5653c9448e2fd481d287906942ef0e3ca96f69873184"
+    },
+    {
+      "git_blob": "42af3c80ae5cd994f358fe0cb798c7e86665f2d2",
+      "measurement_session": 17400,
+      "module": "RKResearch.FiniteRootedTree",
+      "path": "RKResearch/FiniteRootedTree.lean",
+      "sha256": "b83c146d56c2c4e712def29aea213b078ca55056eb0ba99c0bbfb75e54f52869"
+    },
+    {
+      "git_blob": "a30cdb61e03c3c437f70dee0d88d8d1245c552b1",
+      "measurement_session": 39763,
+      "module": "RKResearch.OrderConditions",
+      "path": "RKResearch/OrderConditions.lean",
+      "sha256": "c979b6d7d376a78029591091e331a7bfe3484e26cda483f2c0a38367124a01a2"
+    }
+  ],
+  "publication_base": "d5b76782cbe8399e13b3447761ca31aaf721c535",
+  "typed_audit": {
+    "actual_lean_exit": 0,
+    "audit_calls": 1,
+    "body_calls": 0,
+    "named_axiom_checks": {
+      "RKResearch.Certified.Graded.paid_defect_weighted_zero_of_nonneg": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.Graded.paid_donor_links_and_outgoing_zero": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.Graded.paid_outgoing_weighted_zero_of_nonneg": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "new_project_fragments": 0,
+    "project_fragments_loaded": 40,
+    "project_modules_loaded": 8,
+    "raw_receipt_sha256": "e30e5ef3e2778f44275c6129450b0c9ba3b457271d61bdcccaa95ba6506c2446",
+    "raw_stdout_sha256": "541d1b4fdf9df441a9697a08ea5ce441ef507a28d39a24c063609e75d9e1be5d",
+    "reason": "three literal typed endpoints and three stock-only named reports",
+    "requested_object_output": false,
+    "session": 26737,
+    "source": "ai-generated/lean/AuditReviewedNativePaidPositiveDefectObstruction.lean",
+    "source_sha256": "215acbb10ab1cd5f4e355d1d375a24869e1742c5fdb0b543c7354c234fd758a8",
+    "status": "AUDIT_PASS",
+    "stock_modules": 3046,
+    "wrapper_exit": 0
+  }
+}

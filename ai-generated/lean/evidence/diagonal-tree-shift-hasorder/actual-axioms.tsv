@@ -1,0 +1,3 @@
+declaration	actual_axioms
+RKResearch.DiagonalTreeShift.hasOrder_add_diagonal_iff	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.firstDifference_add_diagonal_iff	Classical.choice,Quot.sound,propext

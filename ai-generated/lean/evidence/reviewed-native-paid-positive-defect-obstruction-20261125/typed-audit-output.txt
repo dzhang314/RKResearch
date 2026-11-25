@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.paid_defect_weighted_zero_of_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.paid_donor_links_and_outgoing_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.paid_outgoing_weighted_zero_of_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3 @@
+declaration	actual_axioms
+RKResearch.Certified.Topological.reindex_strict_iff_respectsEdges	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Topological.reindexed_lastActive_iff	propext,Quot.sound

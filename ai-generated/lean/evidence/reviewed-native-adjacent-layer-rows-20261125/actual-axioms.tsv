@@ -1,0 +1,8 @@
+declaration	axioms
+RKResearch.FiniteSeries.AdjacentLayerRows.adjacentMask_on	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.AdjacentLayerRows.adjacentMask_off	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.AdjacentLayerRows.mulVec_adjacentMask_eq_on_parent	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.AdjacentLayerRows.mulVec_adjacentMask_eq_of_paid	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.AdjacentLayerRows.mulVec_adjacentMask_eq_zero_first	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.AdjacentLayerRows.dotProduct_eq_on_layer	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.AdjacentLayerRows.phi_graft_eq_of_parent	Classical.choice,Quot.sound,propext

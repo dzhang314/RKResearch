@@ -1,0 +1,12 @@
+exactFlowOutput : (K : Type u_1) → [Field K] → FiniteRootedTree → K
+@hasOrder_add_diagonal_iff : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : DecidableEq ι] [CharZero K] (p : ℕ) (B : Matrix ι ι K) (b : ι → K) (γ : K),
+  HasOrder p (B + γ • 1) b ↔ AgreesThrough p (fun t => b ⬝ᵥ Φ t B) (transform K (-γ) (exactFlowOutput K))
+@firstDifference_add_diagonal_iff : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : Field K]
+  [inst_2 : DecidableEq ι] (n : ℕ) (B : Matrix ι ι K) (b : ι → K) (γ : K),
+  FirstDifferenceAt n (fun t => b ⬝ᵥ Φ t (B + γ • 1)) (exactFlowOutput K) ↔
+    FirstDifferenceAt n (fun t => b ⬝ᵥ Φ t B) (transform K (-γ) (exactFlowOutput K))
+'RKResearch.DiagonalTreeShift.hasOrder_add_diagonal_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.firstDifference_add_diagonal_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

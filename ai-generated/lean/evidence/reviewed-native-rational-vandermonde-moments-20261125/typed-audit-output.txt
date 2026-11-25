@@ -1,0 +1,5 @@
+'RKResearch.Certified.RationalMoments.momentSolve_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalMoments.primitiveWeights_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalMoments.terminalCopyWeights_spec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

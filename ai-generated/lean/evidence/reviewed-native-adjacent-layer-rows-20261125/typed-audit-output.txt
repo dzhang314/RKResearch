@@ -1,0 +1,17 @@
+'RKResearch.FiniteSeries.AdjacentLayerRows.adjacentMask_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiniteSeries.AdjacentLayerRows.adjacentMask_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiniteSeries.AdjacentLayerRows.mulVec_adjacentMask_eq_on_parent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.FiniteSeries.AdjacentLayerRows.mulVec_adjacentMask_eq_of_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.FiniteSeries.AdjacentLayerRows.mulVec_adjacentMask_eq_zero_first' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.FiniteSeries.AdjacentLayerRows.dotProduct_eq_on_layer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.FiniteSeries.AdjacentLayerRows.phi_graft_eq_of_parent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

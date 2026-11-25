@@ -1,0 +1,23 @@
+critical pencil q=11: [3, 1, 0, 0, 2, 1, 1, 2, 0, 0, 1]; max=3
+critical pencil q=13: [0, 2, 0, 1, 1, 0, 2, 2, 0, 1, 1, 0, 2]; max=2
+critical pencil q=17: [0, 2, 0, 0, 0, 1, 3, 2, 1, 1, 2, 3, 1, 0, 0, 0, 2]; max=3
+critical pencil q=19: [3, 3, 0, 2, 2, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 2, 2, 0, 3]; max=3
+extra slice q=17, t=7, r=7: 1 polynomials, max=1
+extra slice q=17, t=7, r=8: 17 polynomials, max=3
+extra slice q=17, t=7, r=9: 4913 polynomials, max=7
+p prior strict pencils extra
+6 4 4 4 4
+7 4 5 5 5
+8 4 5 5 5
+9 5 6 6 6
+10 5 7 7 7
+11 6 7 7 7
+12 6 7 8 8
+13 7 8 9 9
+14 7 9 10 10
+15 8 10 11 11
+16 8 11 11 11
+17 9 11 12 12
+18 9 12 13 13
+19 10 13 13 13
+20 10 13 13 14

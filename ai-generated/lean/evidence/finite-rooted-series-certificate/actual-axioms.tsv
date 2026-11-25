@@ -1,0 +1,5 @@
+declaration	actual_axioms
+RKResearch.FiniteSeries.markSpan_eq_treeSpace	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.series_zero_below	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.least_distinguishing_order	Classical.choice,Quot.sound,propext
+RKResearch.FiniteSeries.full_series_zero_iff_checked_marks	Classical.choice,Quot.sound,propext

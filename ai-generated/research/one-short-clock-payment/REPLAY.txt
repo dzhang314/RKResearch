@@ -1,0 +1,4 @@
+signed4: exact order 2, closure ['1/2']; scaled physical ['0']; leakage ['0']; corrected ['0']
+heun3: exact order 3, closure ['0', '2/3']; scaled physical ['-1/36', '-1/4']; leakage ['0', '2/9']; corrected ['-1/36', '-1/36']
+joint5: exact order 3, closure ['0', '2/3']; scaled physical ['7/36', '7/36']; leakage ['-2/9', '-2/9']; corrected ['-1/36', '-1/36']
+radau4: exact order 3, closure ['0', '2/3']; scaled physical ['-1/36', '-1/36']; leakage ['0', '0']; corrected ['-1/36', '-1/36']

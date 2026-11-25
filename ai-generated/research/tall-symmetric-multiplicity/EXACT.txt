@@ -1,0 +1,4 @@
+Exhaustive normalized finite-field pairs checked, including noncoprime pairs: 18819 ; positive contact: 3743
+Rational simultaneous-multiplicity sharp Padé powers: 75 ; strictly stronger than both unilateral bounds: 50
+Literal order-two strict SDIRK branch, k=2,...,10: both raw degrees k, symmetric credits (1,1), actual p=2
+F7 exact Frobenius credits verified, including added numerator and denominator labels; F7 actual p2 core e(P)=2,e(Q)=0

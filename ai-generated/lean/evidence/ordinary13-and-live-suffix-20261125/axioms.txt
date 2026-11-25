@@ -1,0 +1,54 @@
+'RKResearch.Certified.Graded.HyperplaneTerminal.folded_residual_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HyperplaneTerminal.folded_hyperplane_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HyperplaneTerminal.seven_paid_not_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HyperplaneTerminal.physical_class_grade_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HyperplaneTerminal.physical_label_grade_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.NativeConsecutiveWeightX.consecutive_coprime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13OrdinarySquare.charts_of_paid_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13OrdinarySquare.clock_stable_of_top_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13OrdinarySquare.zero_projection_of_divides' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13OrdinarySquare.factor_on_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13OrdinaryFirstPort.CleanHead.first_physical_mask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK13OrdinaryFirstPort.CleanHead.impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.primitiveBack_map_constant_suffix_eq_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.suffixLiveContrasts_inter_treeSpace_codim_le_reverse_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.finrank_suffixLiveContrasts_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.suffix_contrast_pairing_rank_le_twice_reverse_slack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.odd_paid_live_suffix_contrast_reverse_width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.even_paid_live_suffix_contrast_width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

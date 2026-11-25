@@ -25,7 +25,8 @@ import Lean.Elab.Tactic.Omega
 
 The six literal native weight-X moments recognize the monic sextic.
 Eisenstein at 7 and a single nonleading coefficient modulo 5 give
-the selected-root cut. No tableau geometry or scalar replay is imported. -/
+the selected-root cuts for factor degrees three and four.
+No tableau geometry or scalar replay is imported. -/
 
 namespace RKResearch.Certified.Graded.NativeWeightXSix
 
@@ -303,6 +304,36 @@ private theorem residue_test {k : Type*} [Field k] [CharP k 5]
   rw [eq]
   exact fun h => (by decide : ¬(5 : ℕ) ∣ 4) ((CharP.cast_eq_zero_iff k 5 4).mp h)
 
+private def rates3 : Fin 4 → ℤ := ![30,20,15,12]
+
+private theorem rates3_clear (i : Fin 4) :
+    rates3 i * ((i.val + 1 + 1 : ℕ) : ℤ) = 60 := by
+  fin_cases i <;> decide
+
+private theorem residue3_value :
+    (∑ i : Fin 4, (rates3 i : ZMod 5) *
+      ((3 : ℕ).choose (3-i.val) : ZMod 5) * (-2 : ZMod 5)^(3-i.val)) = 2 := by
+  norm_num [rates3, Fin.sum_univ_succ] <;> decide
+
+private theorem residue3_test {k : Type*} [Field k] [CharP k 5]
+    (z : ZMod 5 →+* k) (S : k[X]) (sm : S.Monic) (sd : S.natDegree = 3)
+    (dv : S ∣ ((X : k[X]) + C 1)^5) :
+    (∑ i : Fin 4, (rates3 i : k) * S.coeff (3-i.val) * (-2 : k)^(3-i.val)) ≠ 0 := by
+  have prime : Prime ((X : k[X]) + C 1) := by
+    simpa only [map_neg, sub_neg_eq_add] using (prime_X_sub_C (-1 : k))
+  obtain ⟨i,_,assoc⟩ := (dvd_prime_pow prime 5).mp dv
+  have shape := eq_of_monic_of_associated sm ((monic_X_add_C (1 : k)).pow i) assoc
+  have id : i = 3 := by rw [← sd, shape, natDegree_pow_X_add_C]
+  rw [id] at shape
+  rw [shape]
+  simp only [coeff_X_add_C_pow, one_pow, one_mul]
+  have eq : (∑ j : Fin 4, (rates3 j : k) *
+      ((3 : ℕ).choose (3-j.val) : k) * (-2 : k)^(3-j.val)) = 2 := by
+    simpa only [map_sum, map_mul, map_pow, map_intCast, map_natCast, map_neg, map_ofNat] using
+      congrArg z residue3_value
+  rw [eq]
+  exact fun h => (by decide : ¬(5 : ℕ) ∣ 2) ((CharP.cast_eq_zero_iff k 5 2).mp h)
+
 private theorem five_not_unit (E : Type*) [Field E] [CharZero E] :
     ¬IsUnit (5 : integralClosure ℤ E) := by
   intro h
@@ -331,10 +362,15 @@ private theorem five_not_unit (E : Type*) [Field E] [CharZero E] :
 private def joint : ℚ[X] := H * F.map (algebraMap ℤ ℚ)
 private abbrev E₆ := joint.SplittingField
 
-private theorem chosen_cut :
+private theorem chosen_cut_of_residue (d : ℕ) (rate : Fin (d+1) → ℤ)
+    (paid : ∀ i : Fin (d+1), rate i * ((i.val + 1 + 1 : ℕ) : ℤ) = 60)
+    (check : ∀ {k : Type} [Field k] [CharP k 5],
+      (ZMod 5 →+* k) → ∀ S : k[X], S.Monic → S.natDegree = d →
+      S ∣ ((X : k[X]) + C 1)^5 →
+      (∑ i : Fin (d+1), (rate i : k) * S.coeff (d-i.val) * (-2 : k)^(d-i.val)) ≠ 0) :
     let HK := H.map (algebraMap ℚ E₆)
     HK.Splits ∧ ∃ v : E₆, HK.IsRoot v ∧
-      ∀ P N : E₆[X], P.natDegree = 4 → P * N = HK → N.IsRoot v →
+      ∀ P N : E₆[X], P.natDegree = d → P * N = HK → N.IsRoot v →
         (primitive (X * P)).eval v ≠ 0 := by
   let HK := H.map (algebraMap ℚ E₆)
   let FE := F.map (algebraMap ℤ E₆)
@@ -370,20 +406,28 @@ private theorem chosen_cut :
     (by decide : ¬(5 : ℕ) ∣ 2) ((CharP.cast_eq_zero_iff k 5 2).mp h)
   obtain ⟨v,hv,test⟩ := chosen_root_cut_of_reduced_coefficients HK hConstNe F fMonic
     (by norm_num : (7 : E₆) ≠ 0) fMap fs q (neg_ne_zero.mpr two)
-    (((X : k[X]) + C 1)^5) red 4 1 60 rates rates_clear (residue_test z)
+    (((X : k[X]) + C 1)^5) red d 1 60 rate paid (check z)
   refine ⟨hs,v,hv,?_⟩
   intro P N pd pn nr
   simpa only [pow_one] using test P N pd pn nr
+
+private theorem chosen_cut (d : ℕ) (supported : d = 3 ∨ d = 4) :
+    let HK := H.map (algebraMap ℚ E₆)
+    HK.Splits ∧ ∃ v : E₆, HK.IsRoot v ∧
+      ∀ P N : E₆[X], P.natDegree = d → P * N = HK → N.IsRoot v →
+        (primitive (X * P)).eval v ≠ 0 := by
+  rcases supported with rfl | rfl
+  · exact chosen_cut_of_residue 3 rates3 rates3_clear residue3_test
+  · exact chosen_cut_of_residue 4 rates rates_clear residue_test
 
 private def weightMoment {K : Type*} [Field K] (i : ℕ) : K[X] →ₗ[K] K :=
   (Polynomial.leval (1 : K)).comp (primitive.comp
     ((LinearMap.mulLeft K ((X : K[X])^i)).comp (LinearMap.mulLeft K X)))
 
-/-- Six native weight-X moments exclude a first primitive zero for the
-quartic profile at a root of its quadratic complement. -/
-theorem first_primitive_nonzero_of_six_moments
+private theorem first_primitive_nonzero_of_six_moments_aux
     {K : Type*} [Field K] [CharZero K] (P N : K[X]) (u : K)
-    (pd : P.natDegree = 4) (nd : N.natDegree = 2) (root : N.IsRoot u)
+    (d : ℕ) (supported : d = 3 ∨ d = 4)
+    (pd : P.natDegree = d) (nd : N.natDegree = 6-d) (root : N.IsRoot u)
     (test : ∀ i : Fin 6, (primitive (X^i.val * (X * (P * N)))).eval 1 = 0) :
     (primitive (X * P)).eval u ≠ 0 := by
   intro zero
@@ -399,12 +443,13 @@ theorem first_primitive_nonzero_of_six_moments
   have nM : N'.Monic := by
     change (C (N.leadingCoeff⁻¹) * N).leadingCoeff = 1
     rw [leadingCoeff_mul, leadingCoeff_C, inv_mul_cancel₀ nl]
-  have pd' : P'.natDegree = 4 := by
+  have pd' : P'.natDegree = d := by
     dsimp only [P']; rw [natDegree_C_mul (inv_ne_zero pl), pd]
-  have nd' : N'.natDegree = 2 := by
+  have nd' : N'.natDegree = 6-d := by
     dsimp only [N']; rw [natDegree_C_mul (inv_ne_zero nl), nd]
   have dProd : (P' * N').natDegree = 6 := by
     rw [natDegree_mul pM.ne_zero nM.ne_zero, pd', nd']
+    omega
   have mProd : (P' * N').Monic := pM.mul nM
   have scale : P' * N' = (P.leadingCoeff⁻¹ * N.leadingCoeff⁻¹) • (P * N) := by
     dsimp only [P', N']
@@ -440,10 +485,29 @@ theorem first_primitive_nonzero_of_six_moments
       dsimp only [P']; rw [smul_eq_C_mul]; ring
     change (Polynomial.leval u) (primitive (X * P')) = 0
     rw [eq, map_smul, map_smul, show (Polynomial.leval u) (primitive (X * P)) = 0 from zero, smul_zero]
-  obtain ⟨hs,v,hv,cut⟩ := chosen_cut
+  obtain ⟨hs,v,hv,cut⟩ := chosen_cut d supported
   obtain ⟨P₁,N₁,_,_,dp,_,pr,nr,zr⟩ :=
     transport_first_primitive_zero H hMonic hIrreducible pM nM product nroot pzero hs hv
   exact cut P₁ N₁ (dp.trans pd') pr nr zr
+
+/-- Six native weight-X moments exclude a first primitive zero for the
+quartic profile at a root of its quadratic complement. -/
+theorem first_primitive_nonzero_of_six_moments
+    {K : Type*} [Field K] [CharZero K] (P N : K[X]) (u : K)
+    (pd : P.natDegree = 4) (nd : N.natDegree = 2) (root : N.IsRoot u)
+    (test : ∀ i : Fin 6, (primitive (X^i.val * (X * (P * N)))).eval 1 = 0) :
+    (primitive (X * P)).eval u ≠ 0 :=
+  first_primitive_nonzero_of_six_moments_aux P N u 4 (Or.inr rfl) pd nd root test
+
+/-- The same six native moments exclude the cubic/cubic first port.
+At the selected residue root, the term with denominator five is now
+the constant coefficient of the cubic reciprocal factor. -/
+theorem first_cubic_primitive_nonzero_of_six_moments
+    {K : Type*} [Field K] [CharZero K] (P N : K[X]) (u : K)
+    (pd : P.natDegree = 3) (nd : N.natDegree = 3) (root : N.IsRoot u)
+    (test : ∀ i : Fin 6, (primitive (X^i.val * (X * (P * N)))).eval 1 = 0) :
+    (primitive (X * P)).eval u ≠ 0 :=
+  first_primitive_nonzero_of_six_moments_aux P N u 3 (Or.inl rfl) pd nd root test
 
 end
 end RKResearch.Certified.Graded.NativeWeightXSix

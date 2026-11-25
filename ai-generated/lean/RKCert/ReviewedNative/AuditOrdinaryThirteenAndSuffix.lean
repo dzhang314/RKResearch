@@ -1,0 +1,23 @@
+import RKCert.ReviewedNative.HyperplanePhysicalLabels
+import RKCert.ReviewedNative.ERK13OrdinarySquareTransport
+import RKCert.ReviewedNative.ERK13OrdinaryFirstPortCubic
+import RKCert.ReviewedNative.LiveSuffixContrastEvenPaid
+
+#print axioms RKResearch.Certified.Graded.HyperplaneTerminal.folded_residual_mem
+#print axioms RKResearch.Certified.Graded.HyperplaneTerminal.folded_hyperplane_impossible
+#print axioms RKResearch.Certified.Graded.HyperplaneTerminal.seven_paid_not_one
+#print axioms RKResearch.Certified.Graded.HyperplaneTerminal.physical_class_grade_impossible
+#print axioms RKResearch.Certified.Graded.HyperplaneTerminal.physical_label_grade_impossible
+#print axioms RKResearch.Certified.Graded.NativeConsecutiveWeightX.consecutive_coprime
+#print axioms RKResearch.Certified.Graded.ERK13OrdinarySquare.charts_of_paid_square
+#print axioms RKResearch.Certified.Graded.ERK13OrdinarySquare.clock_stable_of_top_ne
+#print axioms RKResearch.Certified.Graded.ERK13OrdinarySquare.zero_projection_of_divides
+#print axioms RKResearch.Certified.Graded.ERK13OrdinarySquare.factor_on_seven
+#print axioms RKResearch.Certified.Graded.ERK13OrdinaryFirstPort.CleanHead.first_physical_mask
+#print axioms RKResearch.Certified.Graded.ERK13OrdinaryFirstPort.CleanHead.impossible
+#print axioms RKResearch.Certified.Graded.Reverse.primitiveBack_map_constant_suffix_eq_line
+#print axioms RKResearch.Certified.Graded.Reverse.suffixLiveContrasts_inter_treeSpace_codim_le_reverse_slack
+#print axioms RKResearch.Certified.Graded.Reverse.finrank_suffixLiveContrasts_add_one
+#print axioms RKResearch.Certified.Graded.Reverse.suffix_contrast_pairing_rank_le_twice_reverse_slack
+#print axioms RKResearch.Certified.Graded.Reverse.odd_paid_live_suffix_contrast_reverse_width
+#print axioms RKResearch.Certified.Graded.Reverse.even_paid_live_suffix_contrast_width

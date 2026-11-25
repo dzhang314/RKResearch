@@ -1,0 +1,98 @@
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:17:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.d_ne_double`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:24:18: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:24:22: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:24:22: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:37:44: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:37:44: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:42:18: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:42:22: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:42:22: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:44:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.doubledScaled_ne`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:55:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.wSlope_eval`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:58:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.wSlope_degree`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:123:20: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:123:24: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:123:24: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:185:49: error: unsolved goals
+K : Type u_1
+inst✝¹ : Field K
+inst✝ : CharZero K
+d ρ z x : K
+dn : d ≠ 0
+lD : eval (2 * d) lobattoCubic = 0
+zn : z ≠ 0
+zd : z ≠ d
+zD : z ≠ 2 * d
+xn : x ≠ 0
+xD : x ≠ 2 * d
+fd : 14 * d * eval d lobattoCubic + hzero d d * (ρ * (d - 2 * d)) = 0
+fz : 14 * z * eval z lobattoCubic + hzero d z * (ρ * (z - 2 * d)) = 0
+fx : 14 * x * eval x lobattoCubic + hzero d x * (ρ * (x - 2 * d)) = 0
+L : K[X]
+eL : lobattoCubic = (X - C (2 * d)) * L
+base : eval 0 lobattoCubic ≠ 0
+Ln : eval 0 L ≠ 0
+Lne : L ≠ 0
+n : ℕ
+hn : 3 < n
+a0 : 0 ≠ n
+a1 : 1 ≠ n
+a2 : 2 ≠ n
+a3 : 3 ≠ n
+⊢ (C (-1 / 14)).coeff n = 0
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:192:49: warning: This simp argument is unused:
+  coeff_monomial_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lobattoCubic, LobattoEight.lobattoCubic, a0, a1, a2, a3]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ai-generated/lean/RKCert/ERK8OneOffEndgame.lean:192:70: warning: This simp argument is unused:
+  a0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lobattoCubic, LobattoEight.lobattoCubic, coeff_monomial_apply, a1, a2, a3]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

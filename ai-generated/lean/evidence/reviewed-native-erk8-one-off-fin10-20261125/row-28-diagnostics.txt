@@ -1,0 +1,89 @@
+ai-generated/lean/RKCert/ERK8OneOffMomentInterfaces.lean:25:2: error: Type mismatch: After simplification, term
+  e
+ has type
+  (evalNodes A) P ∈ (LinearMap.proj 0).ker
+but is expected to have type
+  eval 0 P = 0
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  eval₂ ↦ 29
+ai-generated/lean/RKCert/ERK8OneOffMomentInterfaces.lean:72:14: error: don't know how to synthesize implicit argument `p`
+  @natDegree_mul K inst✝¹.toDivisionRing.toSemiring (IsDomain.to_noZeroDivisors K) (X * (X - C ?m.289)) Q
+    (mul_ne_zero X_ne_zero (X_sub_C_ne_zero ?m.289)) q0
+context:
+K : Type u_1
+inst✝¹ : Field K
+inst✝ : CharZero K
+A : Matrix (Fin 10) (Fin 10) K
+b : Fin 10 → K
+ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0
+ho : HasOrder 8 A b
+P : K[X]
+deg : P.natDegree ≤ 4
+hp : (evalNodes A) P ∈ zeroSpace A 5
+atOne : eval 1 P = 0
+B : K[X]
+e : P = X * B
+B1 : eval 1 B = 0
+Q : K[X]
+q : B = (X - C 1) * Q
+q0 : ¬Q = 0
+eq : P = (X ^ 2 - X) * Q
+du : (X * (X - C 1)).natDegree = 2
+pq : P = X * (X - C 1) * Q
+⊢ K[X]
+ai-generated/lean/RKCert/ERK8OneOffMomentInterfaces.lean:72:29: error: don't know how to synthesize implicit argument `b`
+  @mul_ne_zero K[X] AddMonoidAlgebra.instMul instMulZeroClassOfSemiring.toZero
+    AddMonoidAlgebra.instNoZeroDivisorsOfUniqueSums X (X - C ?m.289) X_ne_zero (X_sub_C_ne_zero ?m.289)
+context:
+K : Type u_1
+inst✝¹ : Field K
+inst✝ : CharZero K
+A : Matrix (Fin 10) (Fin 10) K
+b : Fin 10 → K
+ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0
+ho : HasOrder 8 A b
+P : K[X]
+deg : P.natDegree ≤ 4
+hp : (evalNodes A) P ∈ zeroSpace A 5
+atOne : eval 1 P = 0
+B : K[X]
+e : P = X * B
+B1 : eval 1 B = 0
+Q : K[X]
+q : B = (X - C 1) * Q
+q0 : ¬Q = 0
+eq : P = (X ^ 2 - X) * Q
+du : (X * (X - C 1)).natDegree = 2
+pq : P = X * (X - C 1) * Q
+⊢ K[X]
+ai-generated/lean/RKCert/ERK8OneOffMomentInterfaces.lean:72:68: error: don't know how to synthesize placeholder for argument `r`
+context:
+K : Type u_1
+inst✝¹ : Field K
+inst✝ : CharZero K
+A : Matrix (Fin 10) (Fin 10) K
+b : Fin 10 → K
+ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0
+ho : HasOrder 8 A b
+P : K[X]
+deg : P.natDegree ≤ 4
+hp : (evalNodes A) P ∈ zeroSpace A 5
+atOne : eval 1 P = 0
+B : K[X]
+e : P = X * B
+B1 : eval 1 B = 0
+Q : K[X]
+q : B = (X - C 1) * Q
+q0 : ¬Q = 0
+eq : P = (X ^ 2 - X) * Q
+du : (X * (X - C 1)).natDegree = 2
+pq : P = X * (X - C 1) * Q
+⊢ K
+ai-generated/lean/RKCert/ERK8OneOffMomentInterfaces.lean:72:9: error: failed to infer `have` declaration type
+ai-generated/lean/RKCert/ERK8OneOffMomentInterfaces.lean:82:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.shiftProbe`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

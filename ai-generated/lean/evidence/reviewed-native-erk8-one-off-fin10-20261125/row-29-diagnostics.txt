@@ -1,0 +1,61 @@
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:82:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.lastClock`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:96:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.poly_three_roots_zero`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:210:24: error: Application type mismatch: The argument
+  val
+has type
+  h A l * eval (nodes A l) Q + w.2 * (g A * h A) l = 0
+but is expected to have type
+  w.2 * (g A * h A) l = 0
+in the application
+  mul_eq_zero.mp val
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:209:21: warning: This simp argument is unused:
+  q0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [defectPart, Pi.add_apply, Pi.smul_apply, smul_eq_mul, evalNodes_apply, diag_apply, p0, b0,
+    eval_zero, mul_zero, zero_mul, zero_add, Pi.zero_apply] at val
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:209:34: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [defectPart, Pi.add_apply, Pi.smul_apply, smul_eq_mul, evalNodes_apply, diag_apply, p0, b0, q0,
+    eval_zero, zero_mul, zero_add, Pi.zero_apply] at val
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:219:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.Graded.OneOff.Eight.shortProfile_apply`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:278:4: error: Type mismatch: After simplification, term
+  Submodule.sub_mem (zeroSpace A 5) mem (defectPart_mem ho w.2.1 Qdeg)
+ has type
+  (evalNodes A) ((ofFn 5) w.1) + defectPart A w.2.1 ((ofFn 3) w.2.2) - defectPart A w.2.1 Q ∈ zeroSpace A 5
+but is expected to have type
+  (evalNodes A) P ∈ zeroSpace A 5
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  eval₂ ↦ 8
+ai-generated/lean/RKCert/ERK8OneOffProfiles.lean:306:42: warning: `Polynomial.coeff_smul` has been deprecated: Use `AddMonoidAlgebra.coeff_smul_apply` instead
+
+Note: The updated constant has a different type:
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] {A : Type u_8} [inst_1 : SMulZeroClass A R] (a : A)
+    (x : AddMonoidAlgebra R M) (m : M), (a • x).coeff m = a • x.coeff m
+instead of
+  ∀ {R : Type u} {S : Type v} [inst : Semiring R] [inst_1 : SMulZeroClass S R] (r : S) (p : R[X]) (n : ℕ),
+    (r • p).coeff n = r • p.coeff n
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coeff_smul` to `AddMonoidAlgebra.coeff_smul_apply x`).

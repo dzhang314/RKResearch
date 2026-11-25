@@ -1,0 +1,31 @@
+'RKResearch.Certified.Graded.OneOff.Eight.earnedNormal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.terminalDefectZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.gradeFiveCap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.firstFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.fifthFeature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.zero_F5_low_top_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.zero_F5_poly_le_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.low_relation_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.defectsSeparate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.shortProfileFull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.noCausalClockContrast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.sixthRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.physicalPrefix_of_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.causalJV' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.terminalPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.terminalProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.cleanW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.seventhAlternative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.curveClockTrap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.finish' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OneOff.Eight.erk8_one_off_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

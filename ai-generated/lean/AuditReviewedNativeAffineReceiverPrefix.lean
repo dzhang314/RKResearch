@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.AffineReceiverPrefixMinimal
+
+#print axioms RKResearch.Certified.Graded.ClockAffineProbe.prefix_hasOrder
+#print axioms RKResearch.Certified.Graded.ClockAffineProbe.kills_minimal_defects_iff
+#print axioms RKResearch.Certified.Graded.ClockAffineProbe.prefix_hasOrder_of_seed_zeros
+#print axioms RKResearch.Certified.Graded.ClockAffineProbe.prefix_floor_of_seed_zeros

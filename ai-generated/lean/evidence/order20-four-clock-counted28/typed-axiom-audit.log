@@ -1,0 +1,34 @@
+'RKResearch.Certified.Graded.HankelCenteredAtom.centeredAtoms' depends on axioms: [propext]
+'RKResearch.Certified.Graded.HankelCenteredAtom.centered_HasOrder_powers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelQuarticLegendre.centered_mode_silent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelQuarticLegendre.centered_mode_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelQuarticLegendre.scaled_evalExpr_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelQuarticLegendre.paidLegendre28_of_centeredPower20' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelPaidAffineBasis.eval_affineClockMask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelPaidAffineBasis.rank_hankel_eq_nodal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelPaidAffineBasis.rank_affine_hankel_eq_nodal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelOrderTwentyCounted28.centeredReadout28_of_hasOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelOrderTwentyCounted28.actual_eight_width_credit_ge_28_of_hasOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.HankelOrderTwentyCounted28.chronological_cuts_ge_28' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

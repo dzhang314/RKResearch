@@ -37,9 +37,11 @@ The [donor realization theorem](research/quadrature-donor-realization/realizatio
 
 A separate [radii/33 prescribed-support realization](research/rational-support-radii33-splice/realization.md) keeps another 19-site rational rule's positive aggregate weights and has exact order 20 in 101 physical rows for ERK and 117 for strict SDIRK with common diagonal \(1/66\). This is not the \(u/128\) rule. The counts do not change the global stage tables; the proof and deterministic replay add no Lean coverage claim.
 
-The [ordered-root geometry](research/rational-root-chart-geometry/ordered-root-geometry.md) gives a structural obstruction, not a support exclusion: with two or three paid nodal shifts the positive-dimensional smooth root charts have no dominant rational parametrization. A generic fixed prefix leaving one free root beyond Hankel completion gives a genus-one or genus-13 curve, respectively. This does not decide rational attainability at 17 or 18 sites, and changes no stage bound or Lean coverage claim.
+The [ordered-root geometry](research/rational-root-chart-geometry/ordered-root-geometry.md) gives a structural obstruction, not a support exclusion: with two or three paid nodal shifts the positive-dimensional smooth root charts have no dominant rational parametrization. A generic fixed prefix leaving one free root beyond Hankel completion gives a genus-one or genus-13 curve, respectively. The geometry alone does not decide attainability. It does not change a stage bound or Lean coverage.
 
-The [two-shift elliptic criterion](research/two-shift-elliptic-transfer/elliptic-transfer.md) tests fixed-prefix completions exactly. A same-gap lower rule of exact order supplies rational infinity points and a conditional rank-free candidate. Neither of the known 19-site order-20 rules supplies the needed order-19 seed; rational attainability and the stage tables are unchanged.
+The [two-shift elliptic criterion](research/two-shift-elliptic-transfer/elliptic-transfer.md) tests fixed-prefix completions exactly. A same-gap lower rule of exact order supplies rational infinity points and a conditional rank-free candidate. Neither of the known 19-site order-20 rules supplies the needed order-19 seed.
+
+The [fixed-functional same-gap ladder](research/same-gap-seed-ladder/seed-ladder.md) shows that a genuine rational two-shift seed with a nontorsion completion pair can raise exact order and support repeatedly without changing the moments. The [uniform seed below](research/uniform-same-gap-seed/uniform-seed.md) meets that hypothesis.
 
 ## Lean certificate coverage
 
@@ -54,6 +56,10 @@ Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, all 6
 The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3m-2\) stages for order \(2m\) with \(m\ge 11\), over any characteristic-zero field or commutative characteristic-zero ring. In particular order 22 needs at least 31 stages. This result does not change the table through order 20.
 
 ## Latest archived results
+
+- [Lean certificate for the conditional order-20 four-clock count of 28](lean/evidence/order20-four-clock-counted28/README.md): the directed cut must have trivial kernel intersection on the counted side. No unrestricted stage entry changes.
+
+- [Rational quadrature on \(p-2\) contributing sites for every \(p\ge12\)](research/uniform-same-gap-seed/uniform-seed.md): signed weights and unrestricted rational nodes. Order 20 now needs 17 or 18 sites in this setting. A [separate exact order-14 seed](research/uniform-interval-same-gap-seed/interval-seed.md) uses 12 sites in the interval, without a positivity or interval-preserving iteration claim.
 
 - [Lean certificate for the order-16 ERK lower bound of 25 stages](lean/evidence/erk16-ordered-stage-floor25/README.md): holds over any ordered field for the reviewed order conditions, without a hypothesis about quadrature nodes or weights.
 

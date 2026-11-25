@@ -1,0 +1,24 @@
+@check_iff : ∀ {s : ℕ} (act : ZVec s → ZVec s) (out : ZVec s → ℤ) (d e : ℤ) (p : ℕ) (C : Candidate s),
+  check act out d e p C = true ↔
+    checkScales d e = true ∧
+      checkLeaf C = true ∧ checkActions act p C = true ∧ checkProducts d p C = true ∧ checkPayments out e p C = true
+@checkProducts_sound : ∀ {s p bound : ℕ} (A : Matrix (Fin s) (Fin s) ℤ) (act : ZVec s → ZVec s),
+  (∀ (v : ZVec s), act v = A *ᵥ v) →
+    ∀ (d : ℤ) (C : Candidate s),
+      p ≤ bound →
+        checkActions act bound C = true →
+          checkProducts d p C = true → Certified.RootedTreeAugmentedSpan.BasisCloses (ratMatrix A) (↑d) p (generators C)
+@hasOrder_of_check : ∀ {s : ℕ} (A : Matrix (Fin s) (Fin s) ℤ) (b : ZVec s) (act : ZVec s → ZVec s) (out : ZVec s → ℤ),
+  (∀ (v : ZVec s), act v = A *ᵥ v) →
+    (∀ (v : ZVec s), out v = b ⬝ᵥ v) →
+      ∀ (d e : ℤ) (p : ℕ) (C : Candidate s) {U : Matrix (Fin s) (Fin s) ℚ} {w : Fin s → ℚ},
+        ratMatrix A = ↑d • U → ratVec b = ↑e • w → check act out d e p C = true → HasOrder p U w
+'RKResearch.Certified.NativeIntegerAugmentedChecker.joinedZ_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.NativeIntegerAugmentedChecker.hasOrder_of_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.NativeIntegerAugmentedChecker.hasOrder_of_dense_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

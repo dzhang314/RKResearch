@@ -30,6 +30,9 @@
   an exact rational point test, a same-gap lower seed and a rank-free
   finite candidate, with the limits of both published 19-site rules.
   No new support endpoint or stage bound.
+- [Fixed-functional same-gap ladder](../same-gap-seed-ladder/seed-ladder.md):
+  exact iteration from a genuine two-shift rational seed with a smooth
+  nontorsion pair. No starting uniform seed or new support bound.
 - [Earlier odd-prime projection and exact finite pencil certificates](../rational-quadrature-prime-cut/prime-cut.md):
   retained in full. The four-shift formula agrees with the archived
   endpoint at orders 8–10 and improves it at orders 11–20. The archived
@@ -43,3 +46,5 @@ Replay the finite residue evidence with `python3 verify-four-shift.py`
 rule with `python3 verify-standalone-19.py`
 ([expected output](standalone-19-check.txt)). Both use Python's standard
 library and exact arithmetic, with no Lean invocation or search.
+
+An [exact uniform seed](../uniform-same-gap-seed/uniform-seed.md) and the [fixed-functional ladder](../same-gap-seed-ladder/seed-ladder.md) give signed rational rules on 18 sites at order 20 when sites may lie outside the interval. In that setting the support bracket is 17–18. The 19-site positive rule above still applies if weights must be positive and sites must lie in the interval.

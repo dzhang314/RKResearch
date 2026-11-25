@@ -72,3 +72,8 @@ This uses only the Python standard library, with integer and exact
 rational arithmetic. Any failed check exits nonzero. The checker pins
 the coefficient file by SHA-256, evaluates every ordered presentation,
 and prints the exact next tall-tree weight. It is not a Lean replay.
+
+For an independent verification through order ten without enumerating
+trees, see the [graded-span arithmetic checker](augmented-span/README.md).
+It checks 404 lower basis-pair memberships and 328 direct top payments.
+The next tall-tree check above is separate.

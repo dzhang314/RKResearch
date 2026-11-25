@@ -1,0 +1,7 @@
+Fixed synthetic moments: exact orders 4, 5, 6 on widths 2, 3, 4 by two rank-free moves.
+Both chosen rank-free pairs are smooth with the exact [6], [9], [12] nontorsion test.
+Rank-assisted [3]D probe: exact order-five seed and nontorsion fresh pair.
+Spectator probe: rank-assisted first move lifts the next rank-free move by one order.
+Exactness obstruction: one changed unpaid moment makes the same rank-free rule overpay.
+Rational singular-ray check: alpha=1, beta=8, unique nonzero delta=1/27.
+PASS: exact identities and synthetic tests only; no uniform seed or stage claim.

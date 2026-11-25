@@ -1,0 +1,9 @@
+@checkClearing : {s r : ℕ} → (Fin r → ZFeature s) → ZFeature s → Clearing r → Bool
+@checkClearing_sound : ∀ {s r : ℕ} {rows : Fin r → ZFeature s} {x : ZFeature s} {p : Clearing r},
+  checkClearing rows x p = true → ratFeature x ∈ Submodule.span ℚ (Set.range fun i => ratFeature (rows i))
+'RKResearch.Certified.NativeIntegerSpanClearing.sparseSum_mem_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.NativeIntegerSpanClearing.checkClearing_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

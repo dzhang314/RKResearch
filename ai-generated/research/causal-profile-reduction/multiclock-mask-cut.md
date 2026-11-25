@@ -110,3 +110,16 @@ More generally let \(e\) discarded sites be exterior (including endpoints) and \
 ## 5. If the permitted sites can be selected, full one-charge is generic
 
 For a positive \(p-d\), let \(N=\lfloor (p-d+1)/2\rfloor\). For each paid width \(w\le N\), the determinant of \(G_w(\prod_i(X-\xi_i))\) is a polynomial in the site parameters, nonzero because its value at \(\xi_1=\cdots=\xi_d=0\) is the paid shifted Cauchy determinant for \(X^d\). Multiplying their product by \(\prod_i\xi_i\prod_{i<j}(\xi_i-\xi_j)\) gives a nonzero polynomial of degree at most \(d+N(N+1)/2\) in each parameter. Thus any infinite paid field has a nonempty open set of distinct nonzero choices with full one-charge rank throughout. In a finite paid field, the same statement holds from any permitted set with more than \(d+N(N+1)/2\) elements, or after a large enough finite extension. The finite assertion is just the repeated fact that a nonzero univariate polynomial has at most its degree many roots, applied one coordinate at a time while preserving a nonzero coefficient of the remaining polynomial. This selects valid scalar masks, not realizable tableaux. Prescribed smaller sets still require the exact remainder check or the robust floor.
+
+## 6. A separate Lean-checked four-clock certificate at order 20
+
+Consider a lower triangular tableau over a field with reviewed `HasOrder 20 A b`. Cut after the first \(k\) of \(s\) stages, and fix a set \(U\) of four clock values. The two counted-side conclusions are separate:
+
+- If every discarded prefix clock lies in \(U\), and the counted suffix column space intersects the Volterra kernel trivially, then \(s-k\ge28\).
+- If every discarded suffix clock with nonzero individual output weight lies in \(U\), and the counted prefix covector space intersects the dual Volterra kernel trivially, then \(k\ge28\).
+
+This is a fixed-mask certificate, not an unconditional ERK20 or DIRK20 stage bound. The value 24 in the table is still what the general spacing formula (4) gives for \(p=20,d=4,z=0\).
+
+The once-paid quartic leaves \(m=16\). The grade-14 parity chain spends the eight Hankel widths \(1,3,5,7,8,6,4,2\) exactly once. The ranks sum to 36 minus the sum of their nullities. The individual nullity cap is two. By the actual Hankel restart rule, a total nullity above eight would have one of seven profiles; the explicit paid Legendre polynomial identities rule out all seven for the same quartic. This gives total rank at least 28. Centering by \(y=2c-1\) uses that the order conditions make \(2\) a unit. They also give the exact centered moments through degree 19, and the affine basis change transfers the ranks back to the actual cut readouts. Neither the weights nor the clocks need to satisfy sign conditions.
+
+The [Lean endpoint](../../lean/RKCert/ReviewedNative/OrderTwentyFourClockCounted28FromOrder.lean) is `HankelOrderTwentyCounted28.chronological_cuts_ge_28`. The [scalar rank proof](../../lean/RKCert/ReviewedNative/HankelQuarticLegendreJoin.lean) and [source audit](../../lean/AuditOrderTwentyFourClockCounted28FromOrder.lean) are separate files. The audit checks the two literal cut statements and three transport clients; all twelve axiom probes use only stock Lean axioms.

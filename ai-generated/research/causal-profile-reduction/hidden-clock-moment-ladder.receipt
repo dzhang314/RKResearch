@@ -1,0 +1,4 @@
+Exact Q(sqrt(15)): 18 strict ERK/SDIRK variations, 37 paid trees each
+Actual nonzero same-row diagonal child difference exercised in 3 variations
+Gauss clocks and weights fixed; next bush fails in every variant
+Exact hidden support, zero-charge subset, and tilted alternation verified

@@ -1,0 +1,28 @@
+@feature_attach : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommSemiring R] (A : Matrix ι ι R)
+  (d : R) (t u : RKResearch.FiniteRootedTree),
+  feature A d (t.butcherProduct u) = attachValue A d (degree u) (feature A d t) (feature A d u)
+@all_features_of_basis_closure : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommRing R]
+  (A : Matrix ι ι R) (d : R) (p : ℕ) (B : ℕ → Set (Feature ι R)),
+  (1, 1) ∈ Submodule.span R (B 1) →
+    BasisCloses A d p B →
+      ∀ (t : RKResearch.FiniteRootedTree), degree t ≤ p → feature A d t ∈ Submodule.span R (B (degree t))
+@hasOrder_of_basis_closure : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommRing R] {K : Type u_3}
+  [inst_2 : CommSemiring K] (A : Matrix ι ι R) (b : ι → R) (U : Matrix ι ι K) (w : ι → K) (f : R →+* K) (d e : R)
+  (p : ℕ) (B : ℕ → Set (Feature ι R)),
+  A.map ⇑f = f d • U →
+    ⇑f ∘ b = f e • w →
+      IsUnit (f d) →
+        IsUnit (f e) →
+          (1, 1) ∈ Submodule.span R (B 1) →
+            BasisCloses A d p B →
+              (∀ (n : ℕ), 0 < n → n ≤ p → ∀ x ∈ B n, (residual b e n) x = 0) → RKResearch.HasOrder p U w
+'RKResearch.Certified.RootedTreeAugmentedSpan.feature_attach' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RootedTreeAugmentedSpan.all_features_of_basis_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RootedTreeAugmentedSpan.hasOrder_of_basis_closure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RootedTreeAugmentedSpan.span_mem_of_cleared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

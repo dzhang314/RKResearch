@@ -1,0 +1,27 @@
+@checkDirectTop_iff : ∀ {s : ℕ} (act : ZVec s → ZVec s) (out : ZVec s → ℤ) (d e : ℤ) (p : ℕ) (C : Candidate s),
+  checkDirectTop act out d e p C = true ↔
+    decide (1 < p) = true ∧
+      checkScales d e = true ∧
+        checkLeaf C = true ∧
+          checkActions act p C = true ∧
+            checkProducts d (p - 1) C = true ∧
+              checkPayments out e (p - 1) C = true ∧ checkTopPayments out d e p C = true
+@basisCloses_with_direct_top : ∀ {s : ℕ} (A : Matrix (Fin s) (Fin s) ℚ) (b : Fin s → ℚ) (d e : ℚ) (p : ℕ)
+  (B : ℕ → Set (QFeature s)),
+  Certified.RootedTreeAugmentedSpan.BasisCloses A d (p - 1) B →
+    (∀ (k l : ℕ),
+        0 < k →
+          0 < l →
+            k + l = p →
+              ∀ x ∈ B k,
+                ∀ y ∈ B l,
+                  (Certified.RootedTreeAugmentedSpan.residual b e p)
+                      (((Certified.RootedTreeAugmentedSpan.attachBilin A d l) x) y) =
+                    0) →
+      Certified.RootedTreeAugmentedSpan.BasisCloses A d p (topKernelFamily b e p B)
+'RKResearch.Certified.NativeIntegerAugmentedTopPay.checkTopPayments_sound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.NativeIntegerAugmentedTopPay.hasOrder_of_direct_top_check' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

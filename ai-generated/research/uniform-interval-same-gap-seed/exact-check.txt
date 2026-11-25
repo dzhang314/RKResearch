@@ -1,0 +1,8 @@
+Confluent centered degree 8: both shifts paid, h=-256/31185; endpoint multiplicities (3,3).
+Move 1: degree 9, 6 distinct values, endpoints (3, 2), all in [-1,1].
+Move 2: degree 10, 8 distinct values, endpoints (3, 1), all in [-1,1].
+Move 3: degree 11, 10 distinct values, endpoints (2, 1), all in [-1,1].
+Move 4: degree 12, 12 distinct values, endpoints (1, 1), all in [-1,1].
+Uniform exact order 14: 12 contributing sites in [0,1], 10 interior, 3 negative weights.
+Good mod 31: (A,B,C,D_y,disc)=(12,16,14,18,5); [6],[9],[12]D = [(26, 27), (27, 27), (0, 13)]
+PASS: exact interval-contained uniform seed; no order-20 computation or stage assertion.

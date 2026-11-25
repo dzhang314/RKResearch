@@ -1,0 +1,15 @@
+'RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.anchor_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.primitive_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.normalize' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PaidTerminalAnchor.strict_last_anchor_of_treeSpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

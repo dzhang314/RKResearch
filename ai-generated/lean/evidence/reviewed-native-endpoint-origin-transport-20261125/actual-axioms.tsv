@@ -1,0 +1,10 @@
+declaration	actual_axioms
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_firstSeed_at_last	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_adjointFlag_vanishes	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_back_vanishes	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_primitiveBack_vanishes	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_coordinate_mem_of_adjointFlag_eq_annih	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_coordinate_mem_of_back_eq_annih	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_iff_coordinate_mem_of_primitiveBack_eq_annih	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_of_coordinate_mem_of_adjointFlag_le_annih	propext,Classical.choice,Quot.sound
+RKResearch.Certified.Graded.Reverse.LastActive.reflected_zero_of_coordinate_mem_treeSpace	propext,Classical.choice,Quot.sound

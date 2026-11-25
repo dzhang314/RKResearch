@@ -1,0 +1,6 @@
+declaration	axioms
+RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.moment	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.anchor_nonzero	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.primitive_mem	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.PaidTerminalAnchor.Profile.normalize	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.PaidTerminalAnchor.strict_last_anchor_of_treeSpace	Classical.choice,Quot.sound,propext

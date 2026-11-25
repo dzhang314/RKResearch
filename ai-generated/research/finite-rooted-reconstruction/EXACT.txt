@@ -1,0 +1,6 @@
+r=2: exact Gauss quotient at order 4, recovered nodal polynomial and A from paid moments. Two distinct rank-one perturbations both exact order 3, with fixed b,c. All 8 rooted trees through order 4 checked; marked single-link witness outputs 1/8, 15/56, 23/56. ρ=σ=r−1, δ=1.
+r=3: exact Gauss quotient at order 6, recovered nodal polynomial and A from paid moments. Two distinct rank-one perturbations both exact order 5, with fixed b,c. All 37 rooted trees through order 6 checked; marked single-link witness outputs 1/18, 25/126, 43/126. ρ=σ=r−1, δ=1.
+strict ERK, s=4: exact peeling through order 4 recovers both matrices. Sharp variants share all stage trees through order 3 and differ at order 4.
+given nonzero common diagonal, s=4: exact peeling through order 4 recovers both matrices. Sharp variants share all stage trees through order 3 and differ at order 4.
+free nonzero diagonal, s=4: exact peeling through order 5 recovers both matrices. Sharp variants share all stage trees through order 4 and differ at order 5.
+Actual paid limits: two four-stage ERKs of exact order 3 and two two-stage nonsingular DIRKs of exact order 2 have fixed b,c, but are not determined until tree order 4 and 3 respectively.

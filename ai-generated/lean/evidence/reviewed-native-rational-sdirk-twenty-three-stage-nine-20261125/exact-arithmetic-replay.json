@@ -1,0 +1,62 @@
+{
+  "kind": "exact mathematical rational replay, NOT Lean kernel/axiom verification",
+  "stages": 23,
+  "common_diagonal": "1/9",
+  "has_order": 9,
+  "not_order": 10,
+  "ordered_native_conditions": 2056,
+  "unordered_classes_for_accounting_only": 486,
+  "order_ordered_count_unordered_count": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      2
+    ],
+    [
+      4,
+      5,
+      4
+    ],
+    [
+      5,
+      14,
+      9
+    ],
+    [
+      6,
+      42,
+      20
+    ],
+    [
+      7,
+      132,
+      48
+    ],
+    [
+      8,
+      429,
+      115
+    ],
+    [
+      9,
+      1430,
+      286
+    ]
+  ],
+  "a_integer_entries": 529,
+  "nonzero_sparse_a_entries": 183,
+  "weights": 23,
+  "tenth_tall_weight": "672263002006281827534440264169/2489086143060781104997013158963200000",
+  "required_tenth_tall_weight": "1/3628800",
+  "checked_input_paths_mode": "source literals only"
+}

@@ -11,6 +11,11 @@
 - [Standalone 19-site quadrature of exact order 20](standalone-19.md):
   all weights are positive and all sites are interior and rational.
   This is an exact quadrature witness, not an RK stage upper bound.
+- [Runge–Kutta donor realization](../quadrature-donor-realization/realization.md):
+  every paid scalar rule lifts with the same contributing sites and
+  weights. The exact \(u/128\) rule above gives 19 contributing sites in
+  209 physical rows at exact RK order 20, with no stage-bound
+  improvement. The proof and checker do not claim a Lean certificate.
 - [Earlier odd-prime projection and exact finite pencil certificates](../rational-quadrature-prime-cut/prime-cut.md):
   retained in full. The four-shift formula agrees with the archived
   endpoint at orders 8–10 and improves it at orders 11–20. The archived

@@ -1,0 +1,10 @@
+exact_tree_order	kernel_confirmed_end_state	cumulative_actual_native_roots
+1	REUSED-PASS	1
+2	PASS	2
+3	PASS	4
+4	PASS	9
+5	PASS	23
+6	PASS	65
+7	PASS	197
+8	PASS	626
+9	PASS	2056

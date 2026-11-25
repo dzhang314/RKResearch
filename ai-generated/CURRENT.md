@@ -33,6 +33,8 @@ Separate from the stage tables, the [four-shift proof](research/rational-quadrat
 
 A [standalone 19-site rational rule](research/rational-quadrature-four-shift/standalone-19.md) attains quadrature order 20 with positive weights. This is not a Runge–Kutta stage upper bound. The [support index](research/rational-quadrature-four-shift/README.md) retains the stronger earlier low-order bounds.
 
+The [donor realization theorem](research/quadrature-donor-realization/realization.md) goes in the other direction: every scalar rule of order at least \(p\) lifts to ERK, DIRK, or strict SDIRK with a prescribed common diagonal, preserving its contributing sites and weights. The same \(u/128\) rule gives tableaux of exact order 20 with 19 contributing sites and 209 physical rows, including 190 zero-output helpers. This equates the minimal contributing support with the scalar minimum, not the minimum stage count. No stage bound or Lean coverage count changes.
+
 ## Lean certificate coverage
 
 Lean and Mathlib v4.36.0 check all 60 current arbitrary-ring lower bounds, all 60 strongest characteristic-zero field entries, and 56 of the 60 strongest ordered-field and real entries. The characteristic-zero count includes the ERK exclusions at orders 12, 14 and 16–19, and the characteristic-zero DIRK exclusions at orders 14 and 16–20. An entry is counted only if the checked theorem reaches the current established numerical endpoint, not merely a weaker lower bound.
@@ -50,6 +52,8 @@ The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3
 - [Lean certificate for 11-stage strict SDIRK at order eight](lean/evidence/reviewed-native-sdirk118-witness-20261125/README.md): the positive common diagonal and all order conditions are proved over the reals. A [second Lean certificate](lean/evidence/reviewed-native-sdirk118-number-field-20261125/README.md) lifts the same tableau to a coefficient field of degree at most 12 over the rationals.
 
 - [Lean certificate for rational 15-stage strict SDIRK of exact order eight](lean/evidence/reviewed-native-rational-sdirk-fifteen-stage-eight-20261125/README.md): common nonzero diagonal `1/8`, with the exact ninth tall-tree failure. This is a rational upper witness, not a minimum or a change to the real-algebraic 11-stage upper bound.
+- [Lean certificate for rational 23-stage strict SDIRK of exact order nine](lean/evidence/reviewed-native-rational-sdirk-twenty-three-stage-nine-20261125/README.md): common nonzero diagonal 1/9, with the exact tenth tall-tree failure. This is a rational upper witness, not a stage minimum.
+
 
 - [Lean certificate for exact ten-stage DIRK at order nine](lean/evidence/reviewed-native-dirk-nine-sharp-c35/README.md): ten stages are necessary and sufficient over the reals and real algebraic numbers. The [exact tableau](lean/evidence/reviewed-native-dirk-nine-exact-c35/README.md) also fails the order-ten tall-tree condition.
 - [Order-19 ERK construction in 46 stages](upper-bounds/real-algebraic/erk_moving_helper_two_sided_causal_reciprocity_order19_46_20261123.md), with independent proof audit and exact replays.

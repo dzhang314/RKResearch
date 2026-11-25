@@ -1,0 +1,9 @@
+Small ERK p=1: 1 literal paid tree types; next bush fails.
+Small varying-diagonal DIRK p=2: 2 literal paid tree types; next bush fails.
+Small strict SDIRK p=4: 8 literal paid tree types; next bush fails.
+Exact p=2 with scalar order 4: 2 paid tree types; one extra helper, unary bush fails.
+Exact p=3 with scalar order 4: 4 paid tree types; one extra helper, unary bush fails.
+Order-20 ERK: 190 zero-output helpers, 19 live sites, 2641 exact row equations; next bush defect reproduced.
+Order-20 varying-diagonal DIRK: 190 zero-output helpers, 19 live sites, 2641 exact row equations; next bush defect reproduced.
+Order-20 strict SDIRK, gamma=1/2: 190 zero-output helpers, 19 live sites, 2641 exact row equations; next bush defect reproduced.
+PASS: exact donor checks; no held data, search, or Lean.

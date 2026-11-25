@@ -1,0 +1,3 @@
+index	module	kind	source_sha256	terminal	driver_exit	lean_raw_exit	wall_s	peak_rss_kib	minimum_mem_available_kib	before_mem_available_kib	physical_guard
+1	RKCert.ReviewedNative.RationalStrictSDIRKTwentyThreeStageNineUpper	build-five-siblings	41fbe4cbb159de534557d1c332480916eb19325e28d9482532e78d77d809fc35	PASS	0	0	1.932	1286752	6534116	6788060	not tripped
+2	AuditReviewedRationalStrictSDIRKTwentyThreeStageNineUpper	audit-no-output	34e29c0a99d90b3db3cc0718267d55dd1d440e0fad7c6c0fe7a695b994fa3874	PASS	0	0	0.963	1262788	6543220	6750108	not tripped

@@ -1,0 +1,12 @@
+'RKResearch.Certified.RationalStrictSDIRKTwentyThreeStageNineUpper.order_nine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKTwentyThreeStageNineUpper.tenth_tall_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalStrictSDIRKTwentyThreeStageNineUpper.not_order_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.exists_twenty_three_stage_rational_strictSDIRK_exact_nine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

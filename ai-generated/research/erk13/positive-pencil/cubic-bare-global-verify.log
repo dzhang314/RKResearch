@@ -1,0 +1,6 @@
+Original-q C-projection U degree 283 all 292 Bareiss nodes verified; 54291 index bits certified by 4310 different prime residues.
+Component 5 bits, unique prime-field root; common degree 2 minimal numerator degree 5 nonzero pivots True False
+Component 96 bits, unique prime-field root; common degree 1 minimal numerator degree 6 nonzero pivots False True
+Component 151 bits, unique prime-field root; common degree 1 minimal numerator degree 6 nonzero pivots True False
+Component 2183 bits, unique prime-field root; common degree 1 minimal numerator degree 6 nonzero pivots True True
+All candidate primes covered. Sole full mesh p=23; genuine two-amplitude full mesh impossible. Bare cubic coprimality exceptions form 4 pairwise coprime components.

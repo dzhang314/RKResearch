@@ -1,0 +1,10 @@
+'RKResearch.Certified.exists_integer_dvd_of_monic_aeval_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.one_add_factorial_power_sum_ne_zero_of_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.commonDiagonalTallPolynomial_no_rat_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.common_diagonal_stage_floor_of_ratCast' depends on axioms: [propext, Classical.choice, Quot.sound]

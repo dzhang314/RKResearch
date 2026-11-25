@@ -1,0 +1,3 @@
+module
+import RKCert.ReviewedNative.OrderedOriginPositiveClock
+#print axioms RKCert.ReviewedNative.OriginSignedSquares.positiveFirstClock_of_finite_sign

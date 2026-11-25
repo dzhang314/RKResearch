@@ -1,0 +1,11 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "module": "RKCert.ReviewedNative.OrderedOriginPositiveClock",
+  "source_sha256": "30685f07ecb680bd371f7690b229ecf3e4444fa1fab2efbd08f5c27b9dde2da2",
+  "object_sha256": "d9a794d08eba8d49fff27ced7c6739f6792ef85743b810f480e2421473f34202",
+  "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "replay_log_sha256": "60f057f3aec2a2db8e5c38577528e7717e54a9d5711eb58ac6e8671a9b6e24ee",
+  "audit_source_sha256": "640906c125787562cdfc9d7671fa53443cc253fd5f84ad16b64c67b7ee97a4bf",
+  "audit": "'RKCert.ReviewedNative.OriginSignedSquares.positiveFirstClock_of_finite_sign' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+}

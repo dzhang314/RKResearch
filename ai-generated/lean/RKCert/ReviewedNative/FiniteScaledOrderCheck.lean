@@ -58,6 +58,12 @@ theorem checkScaledOrder_spec [DecidableEq R] {A : Matrix ι ι R} {b : ι → R
   · intro h n hn t ht
     exact h t (by omega)
 
+end Replay
+
+section Homogeneity
+
+variable {ι R : Type*} [Fintype ι] [CommSemiring R]
+
 /-- Each primitive attachment introduces exactly one matrix scaling factor. -/
 theorem Φ_matrix_smul (A : Matrix ι ι R) (z : R) (t : FiniteRootedTree) :
     Φ t (z • A) = z^((t.order:ℕ)-1) • Φ t A := by
@@ -75,18 +81,31 @@ theorem Φ_matrix_smul (A : Matrix ι ι R) (z : R) (t : FiniteRootedTree) :
     simp only [Pi.mul_apply, Pi.smul_apply, smul_eq_mul]
     ac_rfl
 
-end Replay
-
-private theorem cancel_scaled {R : Type*} [CommMonoid R] {a d e v : R}
-    (hd : IsUnit d) (he : IsUnit e) (h : a * (d * (e * v)) = e*d) : a*v=1 := by
-  apply (he.mul hd).mul_left_cancel
-  rw [mul_one]
-  exact (by ac_rfl : e*d*(a*v) = a*(d*(e*v))).trans h
+end Homogeneity
 
 section Transport
 
-variable {ι R S : Type*} [Fintype ι] [CommRing R] [CommRing S]
+variable {ι R S : Type*} [Fintype ι] [CommSemiring R] [CommSemiring S]
 variable {A : Matrix ι ι R} {b : ι → R} {U : Matrix ι ι S} {w : ι → S}
+
+/-- Transport exact numerator equations when the two mapped scales
+are left-regular. The coefficient map need not be injective, and no
+separate inverse or nonzero hypotheses are required. -/
+theorem hasOrder_of_scaled_moments_of_leftRegular (f : R →+* S) {d e : R} {p : ℕ}
+    (hA : A.map f = f d • U) (hb : f ∘ b = f e • w)
+    (hd : IsLeftRegular (f d)) (he : IsLeftRegular (f e))
+    (h : ∀ t : FiniteRootedTree, (t.order:ℕ) ≤ p →
+      (t.factorial : R) * (b ⬝ᵥ Φ t A) = e*d^((t.order:ℕ)-1)) :
+    HasOrder p U w := by
+  intro t ht
+  have hn := congrArg f (h t ht)
+  simp only [map_mul, map_pow, map_natCast, RingHom.map_dotProduct, RKResearch.map_Φ,
+    hA, hb, Φ_matrix_smul, smul_dotProduct, dotProduct_smul, smul_eq_mul] at hn
+  have regular := he.mul (IsLeftRegular.pow ((t.order:ℕ)-1) hd)
+  refine (regular.mul_left_eq_self_iff).mp ?_
+  calc
+    _ = (t.factorial : S) * (f d ^ ((t.order:ℕ)-1) * (f e * (w ⬝ᵥ Φ t U))) := by ac_rfl
+    _ = _ := hn
 
 /-- Transport exact numerator equations to ordinary reviewed order. It is
 enough that the two normalization factors map to units; the coefficient map
@@ -96,12 +115,15 @@ theorem hasOrder_of_scaled_moments (f : R →+* S) {d e : R} {p : ℕ}
     (hd : IsUnit (f d)) (he : IsUnit (f e))
     (h : ∀ t : FiniteRootedTree, (t.order:ℕ) ≤ p →
       (t.factorial : R) * (b ⬝ᵥ Φ t A) = e*d^((t.order:ℕ)-1)) :
-    HasOrder p U w := by
-  intro t ht
-  have hn := congrArg f (h t ht)
-  simp only [map_mul, map_pow, map_natCast, RingHom.map_dotProduct, map_Φ_coefficients,
-    hA, hb, Φ_matrix_smul, smul_dotProduct, dotProduct_smul, smul_eq_mul] at hn
-  exact cancel_scaled (hd.pow _) he hn
+    HasOrder p U w :=
+  hasOrder_of_scaled_moments_of_leftRegular f hA hb hd.isRegular.left he.isRegular.left h
+
+end Transport
+
+section CheckedTransport
+
+variable {ι R S : Type*} [Fintype ι] [CommRing R] [CommRing S]
+variable {A : Matrix ι ι R} {b : ι → R} {U : Matrix ι ι S} {w : ι → S}
 
 /-- The checked sparse evaluator plus scalar units certifies a native order witness. -/
 theorem hasOrder_of_scaled_check [DecidableEq R] (f : R →+* S) {d e : R} {p : ℕ}
@@ -112,6 +134,6 @@ theorem hasOrder_of_scaled_check [DecidableEq R] (f : R →+* S) {d e : R} {p : 
     (h : checkScaledOrder act out d e p = true) : HasOrder p U w :=
   hasOrder_of_scaled_moments f hA hb hd he ((checkScaledOrder_spec hact hout d e p).mp h)
 
-end Transport
+end CheckedTransport
 
 end RKResearch.Certified

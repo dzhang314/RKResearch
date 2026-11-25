@@ -24,13 +24,8 @@ In particular a strict failure transfers with the positive order assertion. -/
 theorem hasOrder_map_coefficients_iff {ι R S : Type*} [Fintype ι]
     [CommSemiring R] [CommSemiring S] (f : R →+* S) (hf : Function.Injective f)
     (A : Matrix ι ι R) (b : ι → R) (p : ℕ) :
-    HasOrder p (A.map f) (f ∘ b) ↔ HasOrder p A b := by
-  constructor
-  · intro h t ht
-    apply hf
-    simpa only [map_mul, map_natCast, RingHom.map_dotProduct, map_Φ_coefficients, map_one]
-      using h t ht
-  · exact fun h => h.map_coefficients f
+    HasOrder p (A.map f) (f ∘ b) ↔ HasOrder p A b :=
+  RKResearch.hasOrder_map_iff (p := p) (A := A) (b := b) (f := f) hf
 
 namespace Certified
 

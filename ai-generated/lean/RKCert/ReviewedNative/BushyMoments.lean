@@ -31,10 +31,8 @@ theorem bushy_moment (h : HasOrder p A b) (k : ℕ) (hk : k+1 ≤ p) :
 
 /-- No separate characteristic hypothesis is required for paid integers. -/
 theorem natCast_isUnit (h : HasOrder p A b) {n : ℕ} (hn : 0 < n) (hp : n ≤ p) :
-    IsUnit (n : R) := by
-  cases n with
-  | zero => exact False.elim (Nat.lt_irrefl _ hn)
-  | succ n => exact IsUnit.of_mul_eq_one _ (h.bushy_moment n hp)
+    IsUnit (n : R) :=
+  RKResearch.HasQuadratureOrder.isUnit (n := n) h.hasQuadratureOrder hn hp
 
 end HasOrder
 

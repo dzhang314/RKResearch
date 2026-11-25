@@ -80,11 +80,17 @@ theorem probe_coeffEval (ho:HasOrder p A b) {k q:ℕ} (pay:k+q+1≤p)
   rw [coeffEval_apply,map_sum]
   apply Finset.sum_congr rfl
   intro j _
+  have paid : k+j.val+1≤p := by
+    have hj := j.isLt
+    omega
   have h : ((k+j.val+1:ℕ):K) * probe A b k (normTree A (clockTree j.val)) = 1 := by
     simpa only [normTree_clockTree, probe, row_apply, dotProduct, Pi.pow_apply, pow_add,
-      mul_assoc] using ho.hasQuadratureOrder (k+j.val) (by have := j.isLt; omega)
+      mul_assoc] using ho.hasQuadratureOrder (k+j.val) (Nat.lt_of_succ_le paid)
+  have unit : IsUnit ((k+j.val+1:ℕ):K) :=
+    RKResearch.HasQuadratureOrder.isUnit (n := k+j.val+1)
+      ho.hasQuadratureOrder (Nat.succ_pos (k+j.val)) paid
   rw [map_smul,smul_eq_mul]
-  apply (eq_div_iff (IsUnit.of_mul_eq_one _ h).ne_zero).mpr
+  apply (eq_div_iff unit.ne_zero).mpr
   calc
     _ = a j * (((k+j.val+1:ℕ):K)*probe A b k (normTree A (clockTree j.val))) := by ac_rfl
     _ = _ := by rw [h,mul_one]

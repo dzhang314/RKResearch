@@ -23,21 +23,14 @@ variable {ι R S : Type*} [Fintype ι] [CommSemiring R] [CommSemiring S]
 /-- Matrix and pointwise multiplication in the reviewed tree weight commute
 with a unital coefficient map. -/
 theorem map_Φ_coefficients (f : R →+* S) (A : Matrix ι ι R) (t : FiniteRootedTree) :
-    f ∘ Φ t A = Φ t (A.map f) := by
-  induction t with
-  | leaf => funext i; simp [Φ]
-  | butcherProduct t u ht hu =>
-    funext i
-    simp only [Φ, Function.comp_apply, Pi.mul_apply, map_mul, f.map_mulVec, hu]
-    exact congrArg (fun x : ι → S => x i * ((A.map f) *ᵥ Φ u (A.map f)) i) ht
+    f ∘ Φ t A = Φ t (A.map f) :=
+  RKResearch.map_Φ f t A
 
 /-- No inverse, characteristic condition or stage restriction is required. -/
 theorem HasOrder.map_coefficients {A : Matrix ι ι R} {b : ι → R} {p : ℕ}
     (h : HasOrder p A b) (f : R →+* S) :
-    HasOrder p (A.map f) (f ∘ b) := by
-  intro t ht
-  simpa only [map_mul, map_natCast, RingHom.map_dotProduct, map_Φ_coefficients, map_one]
-    using congrArg f (h t ht)
+    HasOrder p (A.map f) (f ∘ b) :=
+  RKResearch.HasOrder.map h f
 
 end Change
 

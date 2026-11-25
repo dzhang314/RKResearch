@@ -1,0 +1,41 @@
+{
+  "base": "b942f1334d06d7fe62d438419b395a5d2cf4002d",
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "checks": {
+    "AuditReviewedCoreReuse": {
+      "source_sha256": "55369bdee99f78157087bf30def2a7fd5c70e249b6d3aa76cbbafdf455bac731",
+      "audit": "'RKResearch.HasOrder.natCast_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKResearch.Certified.Graded.probe_coeffEval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKResearch.map_\u03a6_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKResearch.HasOrder.map_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKResearch.hasOrder_map_coefficients_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+    },
+    "RKCert.ReviewedNative.BushyMoments": {
+      "source_sha256": "911a42e91d83cfdfa0e5ffba3665298b8cb93abc872c5fa0065003f754c6ff2e",
+      "object_sha256": "e1dd80c1723f2f3c8f21fef9165cc29424ed95e6467df82c577caa98a7a11004",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "ddc65393a6883b5dbb8bd6966eb94b250a0001886bc7fa96533b89c88c7adbc5"
+    },
+    "RKCert.ReviewedNative.ChangeCoefficients": {
+      "source_sha256": "074392a42eaabe6e5321229b0f3b05c2d55c7512cc160b22ebe3dffec375ff18",
+      "object_sha256": "45a3acd8cafe6b032e3d920225a41eb93af7b90ade1c835338d57a6a95e2f235",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "47c659fea52189c05b67a851e08ad816f042cd647031f07443a337c8ccb021d8"
+    },
+    "RKCert.ReviewedNative.GradedSeparation": {
+      "source_sha256": "eaf7d8fdd58dfba4240100137d7a0d89a2dc096a8aad9dc1f73c6cd3638afda2",
+      "object_sha256": "786d2d872e634da82886819ba667ec28529babbb0676dc1cd05e670d665885ee",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "3b3bd72e99412639c227382bf7a4a35072400383b8b6b89d09d835ef7ced4fbe"
+    },
+    "RKCert.ReviewedNative.RationalUpperBaseChange": {
+      "source_sha256": "5a32d8a9c214fdafe629a2f5b53752aaba5c131e8da8e3a51cd337e864819425",
+      "object_sha256": "f59dab505b44be2b46bf487d94f552f0f1d950f90f0a9c787c964797ed618e29",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "17a7cb99f2e9a5c76c9fb6d23ee69b302dba17cb0a65f4aaf8b0268e7e09a5ea"
+    },
+    "RKCert.ReviewedNative.ERK17OrderedStageFloor27Native": {
+      "source_sha256": "66459a8463650eb622117b0c225894a9e74dec21d72412972ba8c32f5fe90420",
+      "object_sha256": "1e85e75e09ec755440328b4ceae3ff5600a9a6ead86b54e48310042ffe1c43d0",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kernel_replay_log_sha256": "93c7315a0f2d859c64e9c60e5b2ebdbc38663a999fb276f4ce351a3261e708e7"
+    }
+  }
+}

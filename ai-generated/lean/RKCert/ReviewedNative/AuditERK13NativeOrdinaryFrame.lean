@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.ERK13NativePaidFrame
+import RKCert.ReviewedNative.ERK13NativeOrdinaryStaircase
+
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.stage_floor19
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.last_original_active
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.paid_head_of_order
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_first_escape_of_order
+#print axioms RKResearch.Certified.Graded.ERK13NativeFirst.ordinary_staircase_of_order

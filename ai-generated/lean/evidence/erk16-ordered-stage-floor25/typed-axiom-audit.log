@@ -1,0 +1,14 @@
+@RKResearch.Certified.ERK16.ordered_erk16_width24_impossible : ∀ {K : Type u_1} [inst : Field K]
+  [inst_1 : LinearOrder K] [IsStrictOrderedRing K] {A : Matrix (Fin 24) (Fin 24) K} {b : Fin 24 → K},
+  (∀ (i j : Fin 24), i ≤ j → A i j = 0) → RKResearch.HasOrder 16 A b → False
+@RKResearch.Certified.ERK16.ordered_erk16_stage_floor25 : ∀ {K : Type u_1} [inst : Field K] [inst_1 : LinearOrder K]
+  [IsStrictOrderedRing K] {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K},
+  (∀ (i j : Fin s), i ≤ j → A i j = 0) → RKResearch.HasOrder 16 A b → 25 ≤ s
+'RKCert.ReviewedNative.PolynomialCertificate.WeakFiveCells.no_actual_sole_inner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.ThreeInteriorPencil.no_actual_threeInterior_of_literal_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK16.ordered_erk16_width24_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK16.ordered_erk16_stage_floor25' depends on axioms: [propext, Classical.choice, Quot.sound]

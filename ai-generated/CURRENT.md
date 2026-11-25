@@ -53,6 +53,8 @@ The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3
 
 ## Latest archived results
 
+- [Lean certificate for the order-16 ERK lower bound of 25 stages](lean/evidence/erk16-ordered-stage-floor25/README.md): holds over any ordered field for the reviewed order conditions, without a hypothesis about quadrature nodes or weights.
+
 - [Lean certificate for 11-stage strict SDIRK at order eight](lean/evidence/reviewed-native-sdirk118-witness-20261125/README.md): the positive common diagonal and all order conditions are proved over the reals. A [second Lean certificate](lean/evidence/reviewed-native-sdirk118-number-field-20261125/README.md) lifts the same tableau to a coefficient field of degree at most 12 over the rationals.
 
 - [Lean certificate for rational 15-stage strict SDIRK of exact order eight](lean/evidence/reviewed-native-rational-sdirk-fifteen-stage-eight-20261125/README.md): common nonzero diagonal `1/8`, with the exact ninth tall-tree failure. This is a rational upper witness, not a minimum or a change to the real-algebraic 11-stage upper bound.

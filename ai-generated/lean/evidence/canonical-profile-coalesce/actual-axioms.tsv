@@ -1,0 +1,9 @@
+declaration	actual_axioms
+RKResearch.CanonicalProfile.canonicalPartition	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.mem_reachable_iff	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.indicator_mem	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.sum_into_class_eq	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.aggregateMatrix_value	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.Φ_pullback	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.scalar_output	Classical.choice,Quot.sound,propext
+RKResearch.CanonicalProfile.Partition.hasOrder_iff	Classical.choice,Quot.sound,propext

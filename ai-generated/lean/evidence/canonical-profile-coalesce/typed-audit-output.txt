@@ -1,0 +1,25 @@
+@canonicalPartition : {K : Type u_1} →
+  [inst : Field K] → {s : ℕ} → (A : Matrix (Fin s) (Fin s) K) → Partition A (profileValues A).card
+@Partition.mem_reachable_iff : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (v : Fin s → K), v ∈ reachable A ↔ ∀ (i j : Fin s), P.label i = P.label j → v i = v j
+@Partition.indicator_mem : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (a : Fin n), PhysicalCensus.labelSlice P.label 1 a ∈ reachable A
+@Partition.sum_into_class_eq : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) {i j : Fin s},
+  P.label i = P.label j → ∀ (a : Fin n), ∑ l with P.label l = a, A i l = ∑ l with P.label l = a, A j l
+@Partition.aggregateMatrix_value : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (i : Fin s) (a : Fin n), P.aggregateMatrix (P.label i) a = ∑ l with P.label l = a, A i l
+@Partition.Φ_pullback : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K} (P : Partition A n)
+  (t : FiniteRootedTree) (i : Fin s), Φ t P.aggregateMatrix (P.label i) = Φ t A i
+@Partition.scalar_output : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K}
+  (P : Partition A n) (b : Fin s → K) (t : FiniteRootedTree), P.aggregateWeight b ⬝ᵥ Φ t P.aggregateMatrix = b ⬝ᵥ Φ t A
+@Partition.hasOrder_iff : ∀ {K : Type u_1} [inst : Field K] {s n : ℕ} {A : Matrix (Fin s) (Fin s) K} (P : Partition A n)
+  (b : Fin s → K) (p : ℕ), HasOrder p P.aggregateMatrix (P.aggregateWeight b) ↔ HasOrder p A b
+'RKResearch.CanonicalProfile.canonicalPartition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.mem_reachable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.indicator_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.sum_into_class_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.aggregateMatrix_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.Φ_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.scalar_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.CanonicalProfile.Partition.hasOrder_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

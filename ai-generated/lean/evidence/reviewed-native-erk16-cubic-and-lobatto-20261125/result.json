@@ -1,0 +1,51 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "RKCert.ReviewedNative.SquareFactorOrderedSigns": {
+      "source_sha256": "0ad86d0dc20ecc2f6321bb5ad1def03ebac07e2a06a21d9ad43b269ff5868cf3",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_sha256": "ddb6b91d3aa517066e565a1e9354462d3abb3533582b157b8786b2cfec2f9c0a",
+      "replay_log_sha256": "0f4bbf96134d18cb8a4e9c16f0bdac471f65da4b906e70e9a3a6a2cc2469ba98"
+    },
+    "RKCert.ReviewedNative.ERKOrder16WeakFiveCubicWindows": {
+      "source_sha256": "0539dbd4cce4637cd3f49865c960fdac1c73d4516135b77cb1e2664f503674ef",
+      "compile_log_sha256": "7cc653e10deef24eb6f0a1c30a73afc1d990dd783a67710321b27810bbc3912d",
+      "object_sha256": "c06cae800895fef58fe4bd6fec7cda37475d8ba9c58082e7b12553df541133c1",
+      "replay_log_sha256": "960dcf8fd48a35d1e6f8ffdba72d708fc003ae1f31d765477c9ce1d9ee672a4b"
+    },
+    "RKCert.ReviewedNative.ERKOrder16WeakFiveCubicCutoff": {
+      "source_sha256": "3466129564f38e74e08c1a689159ea171c18ee0ef8bb26d608cbcb24b2a41fe2",
+      "compile_log_sha256": "2be9ffa32c886da95a45211f0d296554cfe9b046a960efa605d09d16e1c3f07f",
+      "object_sha256": "55dcfcda7d2384eb72f7cbf67a6b0d8dd69e1fdef0e16de5f7f8d36fc184e1f3",
+      "replay_log_sha256": "de3111b53d8c06494532ac41886c55bfe24a03a4010136fbefe704e79d730423"
+    },
+    "RKCert.ReviewedNative.UnitBubbleLobattoShape": {
+      "source_sha256": "963f9713f6d5a0976b3987932b5f457ba3fc8ae5205b427a3ddeed9e7c6f4ea7",
+      "compile_log_sha256": "24e3009109f2d5eec0a36afa2bda0630fbe6c6ca363ae7950d36502085e82308",
+      "object_sha256": "d5483c0261bb5ebecdfde7001f22d52814bf0d3f3560676d02393702d82e014a",
+      "replay_log_sha256": "7b8805d87c614d4c83d2abe3711c577da996191952d06812025498ff30181123"
+    },
+    "RKCert.ReviewedNative.ERKOrder16WeakFourLobattoScalar": {
+      "source_sha256": "16da6d8435af4c89ed507db18df90c5d79001340f564f2fa57655bf333079fa2",
+      "compile_log_sha256": "6f68f0ffa9241709b588f1e01dfbd2311f78ac44fd1881486133ccac96e3ee02",
+      "object_sha256": "941117280951decb60911b0f8f4a13f458302929201f620f57de9d2f8137b3f9",
+      "replay_log_sha256": "9a4fce220605ab12746cfcbf442a72eacb7aa86d93c4685ee4e93c90a8b968c5"
+    },
+    "AuditReviewedNativeERK16WeakFiveCubicWindows": {
+      "source_sha256": "70547fc1c85d5989516d4e8bfaab5d4f8edbd82b6aad6d1e356982c466f9ebaf",
+      "compile_log_sha256": "d86f6e81a7ac0418c10be332381535474d9e8f80a2f24ab5cdb458d39702552a",
+      "audit": "'RKCert.ReviewedNative.FiniteOrderedSigns.HasAlternationsOn.of_mul_sq' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.WeakFive16.CubicWindow.reflected' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKCert.ReviewedNative.WeakFive16.CubicWindow.paid_lengths' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKCert.ReviewedNative.WeakFive16.Moments.oriented_cubic_window' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    },
+    "AuditReviewedNativeERK16WeakFiveCubicCutoff": {
+      "source_sha256": "662e8c3842f373816a57c02844fc57f1fc5a3b760c707874f5bc8d7e26180dd7",
+      "compile_log_sha256": "75ae2fac3c27cf41a175007d1d1de71cb24fc7141c18a463359c05ee5f847894",
+      "audit": "'RKCert.ReviewedNative.WeakFive16.CubicWindow.product_in_jacobi_pencil' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.WeakFive16.OrientedCubicWindow.product_positive_above_cut' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.WeakFive16.Moments.natDegree_ne_three' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    "AuditReviewedNativeERK16FiveNodeLobatto": {
+      "source_sha256": "0f665a68c9d8d96dd27fcffee950334514e0828808c89021899854a28d904a57",
+      "compile_log_sha256": "631101a1a574060a1d6b2f0c7692c36aad7864c18f93ed1bfc545804d55868ca",
+      "audit": "'RKCert.ReviewedNative.UnitBubbleLobatto.normalizedMode_of_bubble' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.WeakFourLobatto.mass_of_erased_nodal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'RKCert.ReviewedNative.WeakFourLobatto.primitive_on_node_quotient' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.WeakFourLobatto.five_paid_diagonal_impossible' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    }
+  }
+}

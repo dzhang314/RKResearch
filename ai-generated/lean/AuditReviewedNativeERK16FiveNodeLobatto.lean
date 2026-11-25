@@ -1,0 +1,7 @@
+module
+import RKCert.ReviewedNative.ERKOrder16WeakFourLobattoScalar
+
+#print axioms RKCert.ReviewedNative.UnitBubbleLobatto.normalizedMode_of_bubble
+#print axioms RKCert.ReviewedNative.WeakFourLobatto.mass_of_erased_nodal
+#print axioms RKCert.ReviewedNative.WeakFourLobatto.primitive_on_node_quotient
+#print axioms RKCert.ReviewedNative.WeakFourLobatto.five_paid_diagonal_impossible

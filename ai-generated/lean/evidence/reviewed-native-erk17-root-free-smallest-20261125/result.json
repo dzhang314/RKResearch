@@ -1,0 +1,29 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "modules": {
+    "RKCert.ReviewedNative.OrderedRightPoleInterpolation": {
+      "source_sha256": "de7e7c257de206280aabf80e885263191a6d0dfb523aec1d8da40ffd43ff9864",
+      "compile_log_sha256": "bdf74bf0c7f7fc9fbcdb9e5bd0ab1abb313fd3cd69741a4c1b0554821a019bae",
+      "object_sha256": "cb6b874073522635083b60035aa585540583bc06d56bf85b8b04d9b6b12ba978",
+      "replay_log_sha256": "55ebe16b853a8eaefc2dc4b25f6342673ce013e79146383b028d5a2f0a23a047"
+    },
+    "RKCert.ReviewedNative.OrderedSampleCutProducts": {
+      "source_sha256": "c748ef9585b59c599245b6f7708e09c2cb831c53abe4aa8c9bab98e7bde2c1a6",
+      "compile_log_sha256": "1b549257b3c2a8bb0251ab73d8ab4257bedb7b099b39482aa8aedce9744b783b",
+      "object_sha256": "47b881aeea14bb771e13027823ce26b06af155b8d411215d6b0e21a687749a3c",
+      "replay_log_sha256": "85268c193c3a1bc50819d98aa7e33120b7ea3bc74ca8d5e76826cbcdeaba0a1d"
+    },
+    "RKCert.ReviewedNative.OrderedOriginSmallestClock": {
+      "source_sha256": "0726c9d09fff6e06e3252ea56b7cd0af333516e5e8123fe47bb84d3c890fdf4f",
+      "compile_log_sha256": "07cb89119e1e0b53e7685778bfba64eeb86b9af4e8e4e44e0949faff29ec8766",
+      "object_sha256": "4e8b72e2aad1694de51766a955ca9b6d745d27c759d30dea64408366b61a86d2",
+      "replay_log_sha256": "f1254c27451fa187c566273000799de9ed07d48f371264bf80ff8d1814bf2785"
+    },
+    "AuditReviewedNativeOriginSmallestClock": {
+      "source_sha256": "091d9485e4d774b21288edf2048d3a56961698156d50dae76ac535eb98c7f68b",
+      "compile_log_sha256": "7cc9e18c602ad5b36dc5a892f170f80e62c380e38dcb37bc218178962dc701aa",
+      "audit": "'RKCert.ReviewedNative.OriginSignedSquares.noSmallestClock_of_pole_sign_cuts' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'RKCert.ReviewedNative.OriginSignedSquares.TwoSidedThreeClockMoments.impossible_of_positive_and_not_smallest' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "body_actual_exit": 0,
+  "body_artifact_sha256": {
+    "ir": "480d7d61fbc4ee1da8aa806612c32f95daf8ae64695669a4f0d27b61907ad268",
+    "ir_signature": "56fa596eb33fc85af20e1fbca45d326b842523a556223655721da7b2772cdd68",
+    "primary_olean": "c48ac77e3194dffa62a91c88ac514ba0688d6507daa287520244ff47d84ee61f",
+    "private_olean": "a05efa42f8d54a50aef1e37d6ac90e221d1eb2b011a2d2e83a6849bfae02386e",
+    "server_olean": "7468ed2b711420ae4d59c9c436efef54192784a4b7ab55c61c8ecfe0836d1a84"
+  },
+  "body_diagnostic_warnings": [
+    "96:12: `if_pos` has been deprecated: Use `ite_eq_left` instead",
+    "97:12: `if_neg` has been deprecated: Use `ite_eq_right` instead",
+    "121:23: `if_pos` has been deprecated: Use `ite_eq_left` instead"
+  ],
+  "body_log_sha256": "82270ea9a519c052ad1a9802a768df94ef10d97320fdca04588587260a55f55d",
+  "body_measured_row_sha256": "82ff458f1c2ae2a444af4efb942511faf6c1ff4ae277161048e6c601256355d8",
+  "body_source": "ai-generated/lean/RKCert/ReviewedNative/ShortenedWeightedDefectCharge.lean",
+  "body_source_sha256": "02346cb120fbec38882781218450e64d1a0856246b15b1c703d3060694c2a2e9",
+  "direct_project_imports_sha256": {
+    "RKCert.ReviewedNative.ClockLocalFiberRank": "54f61e0bd111f7411d980e5efac1afce5378208de6b89a4f205d20742a214673",
+    "RKCert.ReviewedNative.GradedProducts": "4e26938ad03acae885d8e53456edf760535b4312b9094324f85987127d120b62",
+    "RKCert.ReviewedNative.PaidClockLocalRank": "5608ae86d80f5d48bcb098be0b33a6392e49c3d4cf2f98cb7954b5e0f17bebac"
+  },
+  "external_module_count": 3556,
+  "inherited_project_artifact_count": 130,
+  "lean_version": "4.36.0",
+  "measured_project_predecessors": 26,
+  "module": "RKCert.ReviewedNative.ShortenedWeightedDefectCharge",
+  "schema": "reviewed-native-shortened-weighted-defect-charge-evidence-v1",
+  "scope": "one independently paid shortening on the original stage-clock fibres; no family, refinement, or numerical order specialization",
+  "typed_audit": {
+    "actual_audit_gate_exit": 0,
+    "actual_lean_exit": 0,
+    "axioms": {
+      "RKResearch.Certified.Graded.Reverse.paid_shortenedWeightedDefect_clock_charge_of_staircase": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.Graded.Reverse.paid_weightedDefect_rank_le_punctured_add_of_staircase": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "log_sha256": "c8b6d63e3af486c0c1558e7b9f6d5c283945b643ad71b3eb43c37cfef8d8ee8d",
+    "object_output": false,
+    "sole_project_import": "RKCert.ReviewedNative.ShortenedWeightedDefectCharge",
+    "source": "ai-generated/lean/AuditReviewedNativeShortenedWeightedDefectCharge.lean",
+    "source_sha256": "7dcb6c5ab3807605473a5ce669d31ed0a6b66b299926de119be52ceff9f7ae78",
+    "typed_examples": 2
+  },
+  "verified_base_commit": "5642ebb61b116ae83ac1d59a6e48d820fd68b2ba"
+}

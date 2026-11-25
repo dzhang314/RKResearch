@@ -1,0 +1,4 @@
+'RKResearch.Certified.Topological.exists_rank_exact_prefix_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Topological.isLeast_last_live_index' depends on axioms: [propext, Classical.choice, Quot.sound]

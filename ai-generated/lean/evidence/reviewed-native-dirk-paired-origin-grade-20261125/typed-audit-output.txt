@@ -1,0 +1,18 @@
+'RKResearch.Certified.Graded.PairedOrigin.originResidual_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.nextResidual_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.pairedResidual_mem_centered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.defectPolynomial_mem_centered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.mat_mem_centered_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.paid_pairedResidue_of_centered_annihilation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

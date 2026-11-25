@@ -1,0 +1,10 @@
+declaration	actual_axioms
+RKResearch.DiagonalTreeShift.join_assoc	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.expand_rootedSum	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.operator_comp	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.transform_first_edge	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.transform_comp	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.transform_neg_left	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.transform_neg_right	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.stageLift_expand	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.transform_tableau_output	Classical.choice,Quot.sound,propext

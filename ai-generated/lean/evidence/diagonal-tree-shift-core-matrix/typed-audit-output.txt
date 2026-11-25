@@ -1,0 +1,30 @@
+join_assoc : ∀ (R : Type u_1) [inst : CommSemiring R] (x y z : TreeCombination R),
+  ((join R) (((join R) x) y)) z = ((join R) x) (((join R) y) z)
+expand_rootedSum : ∀ (R : Type u_1) [inst : CommSemiring R] (a : R) (t u : FiniteRootedTree),
+  expand R a (t # u) = ((join R) (expand R a t)) (expand R a u)
+operator_comp : ∀ (R : Type u_1) [inst : CommSemiring R] (a b : R), operator R a ∘ₗ operator R b = operator R (a + b)
+transform_first_edge : ∀ (R : Type u_1) [inst : CommSemiring R] {V : Type u_2} [inst_1 : AddCommMonoid V]
+  [inst_2 : Module R V] (a : R) (f : FiniteRootedTree → V),
+  transform R a f (FiniteRootedTree.leaf ◂ FiniteRootedTree.leaf) =
+    f (FiniteRootedTree.leaf ◂ FiniteRootedTree.leaf) + a • f FiniteRootedTree.leaf
+transform_comp : ∀ (R : Type u_1) [inst : CommSemiring R] {V : Type u_2} [inst_1 : AddCommMonoid V]
+  [inst_2 : Module R V] (a b : R) (f : FiniteRootedTree → V), transform R a (transform R b f) = transform R (a + b) f
+transform_neg_left : ∀ (S : Type u_1) [inst : CommRing S] {V : Type u_2} [inst_1 : AddCommMonoid V]
+  [inst_2 : Module S V] (a : S) (f : FiniteRootedTree → V), transform S (-a) (transform S a f) = f
+transform_neg_right : ∀ (S : Type u_1) [inst : CommRing S] {V : Type u_2} [inst_1 : AddCommMonoid V]
+  [inst_2 : Module S V] (a : S) (f : FiniteRootedTree → V), transform S a (transform S (-a) f) = f
+@stageLift_expand : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommSemiring R]
+  [inst_2 : DecidableEq ι] (A : Matrix ι ι R) (a : R) (t : FiniteRootedTree),
+  (stageLift A) (expand R a t) = Φ t (A + a • 1)
+@transform_tableau_output : ∀ {ι : Type u_1} {R : Type u_2} [inst : Fintype ι] [inst_1 : CommSemiring R]
+  [inst_2 : DecidableEq ι] (A : Matrix ι ι R) (b : ι → R) (a : R) (t : FiniteRootedTree),
+  transform R a (fun u => b ⬝ᵥ Φ u A) t = b ⬝ᵥ Φ t (A + a • 1)
+'RKResearch.DiagonalTreeShift.join_assoc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.expand_rootedSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.operator_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.transform_first_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.transform_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.transform_neg_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.transform_neg_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.stageLift_expand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.DiagonalTreeShift.transform_tableau_output' depends on axioms: [propext, Classical.choice, Quot.sound]

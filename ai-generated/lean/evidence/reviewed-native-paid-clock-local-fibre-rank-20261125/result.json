@@ -1,0 +1,99 @@
+{
+  "lean_version": "4.36.0",
+  "results": {
+    "B": {
+      "body_actual_exit": 0,
+      "body_artifact_sha256": {
+        "ir": "87f9ea6c564f99cedd20ca109d5df49f868396ef76042090b1edebf389d01fc8",
+        "ir_signature": "dcc8d461e6c4ba3325664caff933204ad34b031143b10bf384fcba8fab66f50b",
+        "primary_olean": "1b37024b24b691f129799354d73275ac208f60f62ec614b238b400368d1298c2",
+        "private_olean": "0d025b4b6119bd6b60ef3f5ceadbd5df6a1786a669607708016b6baeb9a6f92d",
+        "server_olean": "21de937d63cd6b0e007fb515bf6e79d45386594f868711b2c5859f8924c66f2a"
+      },
+      "body_diagnostic_warnings": [],
+      "body_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body_source": "ai-generated/lean/RKCert/ReviewedNative/PaidClockLocalRank.lean",
+      "body_source_sha256": "5608ae86d80f5d48bcb098be0b33a6392e49c3d4cf2f98cb7954b5e0f17bebac",
+      "direct_project_imports": [
+        "RKCert.ReviewedNative.ClockLocalAnnihilator",
+        "RKCert.ReviewedNative.PaidClockCapacityStaircase"
+      ],
+      "external_module_count": 3556,
+      "inherited_project_artifact_count": 115,
+      "measured_project_predecessors": 23,
+      "module": "RKCert.ReviewedNative.PaidClockLocalRank",
+      "typed_audit": {
+        "actual_audit_gate_exit": 0,
+        "actual_lean_exit": 0,
+        "axioms": {
+          "RKResearch.Certified.Graded.Reverse.paid_clock_local_rank_of_heights": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.paid_clock_local_rank_of_staircase": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "log_sha256": "95248f007e673675966c050fcc5e136a168d4863ecf0b4b21897f44027cabb9e",
+        "object_output": false,
+        "source": "ai-generated/lean/AuditReviewedNativePaidClockLocalRank.lean",
+        "source_sha256": "dc3e6c20059cdd6f6f270f5a53f5e56c6dfcff49c3baf0dbc687b7d7d177b757",
+        "typed_examples": 3
+      }
+    },
+    "C": {
+      "body_actual_exit": 0,
+      "body_artifact_sha256": {
+        "ir": "88973bbe8d55ece553a0aa52226c6732016e4f410a191f099e7f29872aeff134",
+        "ir_signature": "3ce5c1a6637a0fc587da4a7c36d86c4c1d5720a1b84bff1c347880a8d146b82b",
+        "primary_olean": "92a43fdd679ea69536c97fc34de196deeb3bcbed3c25e7acdb09ad2f9cb6d120",
+        "private_olean": "2b7ff6f5e255af9b62ef09bb7b0dcbf72ff115bbcca0799ffcafbfbc25886b0b",
+        "server_olean": "1aaa0d0261aee5a2cf9a50a1b05274c35ef9696fa7e80bb9bd8939ea97ef9080"
+      },
+      "body_diagnostic_warnings": [
+        "Unused section variable [Field K] in private helper clockLabel_eq_iff; unchanged accepted source."
+      ],
+      "body_log_sha256": "e3f9c27148a23f50eb8191aceca526a5f0f0c4c962ce08a6da59ab7bf26f8167",
+      "body_source": "ai-generated/lean/RKCert/ReviewedNative/ClockLocalFiberRank.lean",
+      "body_source_sha256": "54f61e0bd111f7411d980e5efac1afce5378208de6b89a4f205d20742a214673",
+      "direct_project_imports": [
+        "RKCert.ReviewedNative.ClockLocalAnnihilator"
+      ],
+      "external_module_count": 3553,
+      "inherited_project_artifact_count": 75,
+      "measured_project_predecessors": 15,
+      "module": "RKCert.ReviewedNative.ClockLocalFiberRank",
+      "typed_audit": {
+        "actual_audit_gate_exit": 0,
+        "actual_lean_exit": 0,
+        "axioms": {
+          "RKResearch.Certified.Graded.Reverse.clockLocalAnnihEquiv": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.finrank_clockLocal_annih": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "RKResearch.Certified.Graded.Reverse.finrank_clockLocal_annih_add_sum_eq": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "log_sha256": "e8ea6edf1397a147c95eac4383ccff1eb76835a8d6e615905c53b0447721a931",
+        "object_output": false,
+        "source": "ai-generated/lean/AuditReviewedNativeClockLocalFiberRank.lean",
+        "source_sha256": "d7917617caa927b4222c83f049609b1444d77e350e69958efec4553b9cd32b9f",
+        "typed_examples": 4
+      }
+    }
+  },
+  "schema": "reviewed-native-clock-local-rank-evidence-v1",
+  "scope": "generic independent proof modules and standalone audits; no order specialization"
+}

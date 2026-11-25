@@ -1,0 +1,20 @@
+ s  threshold p  signed candidates  rational roots
+ 2            3                  8               0
+ 3            4                 16               0
+ 4            5                 32               0
+ 5            6                 60               0
+ 6            7                120               0
+ 7            8                192               0
+ 8            9                320               0
+ 9           10                540               0
+10           11               1080               0
+11           12               1584               0
+12           13               3168               0
+13           14               5184               0
+14           15               8064               0
+15           16              10752               0
+16           17              21504               0
+17           18              29376               0
+18           19              58752               0
+19           20              82080               0
+PASS: widths 2..19, 222832 signed candidates, no rational roots.

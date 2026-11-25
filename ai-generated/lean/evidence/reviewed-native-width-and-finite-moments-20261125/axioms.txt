@@ -1,0 +1,31 @@
+'RKResearch.Certified.Graded.unit_X_power_monomial_tests_eval_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.CompensatedRestrictionRank.finrank_debit_of_in_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.clock_one_coordinate_paid_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.clock_one_compensated_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.live_clock_one_suffix_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.full_whole_clock_one_suffix_width_debit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.isSMulRegular_quotient_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ReviewedNative.OrderedTwoPointMoments.two_point_moment_elimination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.FiniteGaussianLocalizer.card_negative_le_of_exact_mesh' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.FiniteStoppedBracket.strict_bracket_of_pole_grid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.FiniteStoppedBracket.split_cuts_stop_orientation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,18 @@
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.of_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.eq_zero_of_lower_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.exists_differential_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.derivative_eval_ne_zero_of_regular_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.derivative_eval_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OriginMomentDifferential.Window.eval_ne_zero_of_derivative_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

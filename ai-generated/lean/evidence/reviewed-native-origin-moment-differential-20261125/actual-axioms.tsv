@@ -1,0 +1,7 @@
+declaration	axioms
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.of_power	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.eq_zero_of_lower_degree	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.exists_differential_scalar	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.derivative_eval_ne_zero_of_regular_eq	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.derivative_eval_ne_zero	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.OriginMomentDifferential.Window.eval_ne_zero_of_derivative_zero	Classical.choice,Quot.sound,propext

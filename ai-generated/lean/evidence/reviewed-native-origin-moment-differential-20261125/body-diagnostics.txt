@@ -1,0 +1,18 @@
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferential.lean:218:76: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferential.lean:218:76: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferential.lean:223:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.OriginMomentDifferential.0.RKResearch.Certified.Graded.OriginMomentDifferential.adjoint_degree`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferential.lean:289:86: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ai-generated/lean/RKCert/ReviewedNative/OriginMomentDifferential.lean:289:86: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

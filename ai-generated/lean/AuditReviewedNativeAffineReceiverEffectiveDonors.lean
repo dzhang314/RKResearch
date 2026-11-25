@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.AffineReceiverEffectiveDonors
+
+#print axioms RKResearch.Certified.Graded.EffectiveDonors.cover_card_of_hasOrder
+#print axioms RKResearch.Certified.Graded.EffectiveDonors.card_of_hasOrder
+#print axioms RKResearch.Certified.Graded.ClockAffineProbe.effective_donor_count

@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.LegendreModeEightShifted
+#print axioms RKCert.ReviewedNative.LegendreEnergy.criticalScale_strict_drop
+#print axioms RKCert.ReviewedNative.LegendreModeEight.eq_polynomial
+#print axioms RKCert.ReviewedNative.LegendreModeEight.not_three_critical_common_factor
+#print axioms RKCert.ReviewedNative.LegendreModeEight.not_shifted_three_critical_common_factor

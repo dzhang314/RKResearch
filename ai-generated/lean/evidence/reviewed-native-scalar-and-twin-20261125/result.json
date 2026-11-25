@@ -1,0 +1,75 @@
+{
+  "lean": "4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "reviewed": "c35f5b900856c33eae15435ccebaabd049b56628",
+  "modules": [
+    {
+      "module": "RKCert.ReviewedNative.EffectiveDonorClocks",
+      "source_sha256": "688cf432e717cc3df7ee22f74c562b440223151a22994a033a77bf07a2c05655",
+      "replay_sha256": "b0d6216ca96f3aa44496efa1c309ee1b38f1947a4b2f393eb79d593e980353e4",
+      "object_sha256": "e7e02540282cdaa2fdc7037f8a624b40315faf39f1212b49f43dde372c056b3d"
+    },
+    {
+      "module": "RKCert.ReviewedNative.AffineReceiverEffectiveDonors",
+      "source_sha256": "ec36357f215fd9153d440650da841d20b4166a0c0581184d2fd68b765b46b969",
+      "replay_sha256": "c89ce39e59c0a4b8a421b069caa12023d87b9e445decca62c3b90808cadf8c51",
+      "object_sha256": "ea8c7f016b6927f8b333bc4a0028bec259c497f986efe07f3910badffec21816"
+    },
+    {
+      "module": "RKCert.ReviewedNative.PolynomialDoubleAnchorMean",
+      "source_sha256": "619e8d6637f68feb78dacc7bd5dd56a0810535bd1f0b79f158b58a8a29a64c53",
+      "replay_sha256": "e656a46b480fec160565746ef23c5310467d0a9c6c26d94c0ccd290272ffa1c9",
+      "object_sha256": "4abf3ab2a2e5dc7b787f9f316f12e174e13bd89db2f72dac2eec0bdd0c8d6e63"
+    },
+    {
+      "module": "RKCert.ReviewedNative.DiagonalTwin",
+      "source_sha256": "2e6db60b4f5be5df592198fe831e7cbdcc8ed6937d94580ebbe0393a4cf85b4a",
+      "replay_sha256": "289c5c252b3dacb7308b89e602a0fb2146deb522b57aed345c8bf908ee1307bc",
+      "object_sha256": "4d32bc27673d7ce454aefdd9a9f5d2b1401155e144c53925ff364f0f635ac55a"
+    },
+    {
+      "module": "RKCert.ReviewedNative.LegendreEnergyRatio",
+      "source_sha256": "9408d09125153ca674f9c4d377354f26c989f6ef98f0663cc0639a9940b7b24e",
+      "replay_sha256": "bae2a23a4b8cc677778ce6acd3556f012a041a13aec7feef343984aa1259e6ff",
+      "object_sha256": "09dcd4ee7e1bfc99dc61bd1e63f4590da3ae702c7a6aca538d70d54ada9de5ce"
+    },
+    {
+      "module": "RKCert.ReviewedNative.LegendreModeEight",
+      "source_sha256": "bcf5ecf612985f6718024430093518d8faa9622c7e44089b86972d395f6c9c92",
+      "replay_sha256": "81661bf47ab5fc6cc76ae2a3c0f656a5e395821b21ef9c23491bac82bbcd48f6",
+      "object_sha256": "63ed2533966adc20b447253e298c319e7a39cc4bb7293568dc15d9dbc0a3a748"
+    },
+    {
+      "module": "RKCert.ReviewedNative.LegendreModeEightShifted",
+      "source_sha256": "575bfb6bfee875d06545f7adf07a6d3834ef17166aad45b403e7b336237babff",
+      "replay_sha256": "655f8cfb58356f76d133774fc7e066029121638be43fa5081a6665f0809210f7",
+      "object_sha256": "cd5ec215251a6d0e4fd27df1f9d4407e695a1e19bc6c30d7ba5eae3c1cf3b083"
+    }
+  ],
+  "audits": [
+    {
+      "file": "AuditReviewedNativeAffineReceiverEffectiveDonors.lean",
+      "named_checks": 3,
+      "source_sha256": "3e25c654e6022fd025aa563ab19f74c63a6b81d33aca78bd63a154166024c1d6",
+      "audit_sha256": "810a1c39feb90b6a018ab4f15417e25d352df33f609bb196070d48d25cce9a02"
+    },
+    {
+      "file": "AuditReviewedNativePolynomialDoubleAnchorMean.lean",
+      "named_checks": 3,
+      "source_sha256": "55834bc5bc45edd7bc67d898ed5683414e8ff03e1aa573ba655253e7654d99c7",
+      "audit_sha256": "47fd9df45341e6a5ef74425e659efa4c2379ece18fe8258509f28b87cb1d2f2b"
+    },
+    {
+      "file": "AuditReviewedNativeDiagonalTwin.lean",
+      "named_checks": 3,
+      "source_sha256": "72c929716b7754827f8aa53cf1d35d010d623ed06ebefbb5d7d9c995f9e1621a",
+      "audit_sha256": "e2b40b4719fbf43921f3a775923db4cdfb6d42a8c09fb0fabeb54b7634b073de"
+    },
+    {
+      "file": "AuditReviewedNativeLegendreModeEight.lean",
+      "named_checks": 4,
+      "source_sha256": "dde69992dcd31de37579d3fd2de8f53d9281afa7cc1e7efac55e71eb96ba49c6",
+      "audit_sha256": "b473ea3d844c3943056fb826df287217f657cc00ed138280a5c4b5217dee8f9f"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+PASS unchanged prior 27/15 chart entries and exact lower/high reverse tests 41 with unfolded literal aliases 42→0 and 48→16
+PASS eight weighted receivers with normalized taps [7, 7, 7, 7, 7, 7, 7, 7] and a paid 6-by-8 inverse; four symmetric deletion determinants
+PASS left pin on seven pure clocks with pivot -27200/3
+PASS two actual four-tree next grafts, integer raw blend +1: ['4793/259683840', '-41/3525120'] [-1487988403200, -2361305157120]
+PASS cleared graft/bush identity without inverse 19 and independent actual two-defect blend: ['-1789914517373/628227145728000', '-5044197405053/628227145728000'] [-1336212963783938716729344000, 474150155143213440073728000]
+PASS next numerators modulo 19: 18 15 3 3 [16, 16]
+PASS p=18: original 27+61, final=57, all factorial-paid denominators and 5016 fold identities
+PASS signed normalized transpose and all 18 scalar moments
+PASS 96 dual column transitions, 607 scalar low-source zeros
+PASS 394 forward attachments through size 10, 1080 low and 525 high chart entries
+literal common denominator: 5989441408276957683731078400000000000000 divides 18!^5

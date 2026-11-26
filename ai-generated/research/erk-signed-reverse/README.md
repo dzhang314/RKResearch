@@ -11,13 +11,13 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 15 | 40 | [40](tableau-15-weighted.json) |
 | 16 | 45 | [45](tableau-16-weighted.json) |
 | 17 | 52 | [52](order-17-factorial-52/tableau-17-factorial-52.json) |
-| 18 | 60 | [60](tableau-18-weighted.json) |
+| 18 | 57 | [57](order-18-factorial-57/tableau-18-factorial-57.json) |
 | 19 | 65 | [65](order-19-factorial-65/tableau-19-factorial-65.json) |
 | 20 | 71 | [71](order-20-factorial-71/tableau-20-factorial-71.json) |
 
 The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The [shorter scalar grids](SHORT-SYMMETRIC-GRIDS.md) use one or two next-order defects to show exact order, without needing an inverse of the next order. Order eleven uses the [eight-row reverse chart through size five](SHARP-PAID-ERK-GRADE-FIVE.md).
 
-- `python construct.py 13` rebuilds the literal JSON for order 13, using exact rational arithmetic and the pinned order-nine seed. The original tableaux at the other orders use the same command with a different number. The current tableaux at orders 12, 17, 19, and 20 have separate constructors below.
+- `python construct.py 13` rebuilds the literal JSON for order 13, using exact rational arithmetic and the pinned order-nine seed. The original tableaux at the other orders use the same command with a different number. The current tableaux at orders 12, 17, 18, 19, and 20 have separate constructors below.
 - `python verify.py 11 --all` through `python verify.py 14 --all` replay every rooted condition at the specified order, using exact integer arithmetic.
 - `python verify.py 15` through `python verify.py 20` perform sampled replays. The complete proof of order at these orders is symbolic. All ten verifier runs also verify exactness at the next order.
 
@@ -43,4 +43,4 @@ At order twelve, [combining the nine-row forward chart with the eight-row revers
 
 The [compact order-15 certificate](order-15-certificate/README.md) checks the 40-stage tableau using a small linear family of suffix tests and local rooted attachments through size eight.
 
-At order 18, the [59-stage variant](order-18-localized-59/README.md) removes the split when 59, 739, 2137, and 8179 are units as well as 18!. The factorial-unit table above retains 60; its [finite exact check](order-18-certificate/README.md) does not invert 19.
+At order 18, [combining the order-20 forward chart with the order-15 reverse chart](order-18-factorial-57/README.md) gives 57 stages. Seven pure sites and eight weighted receiver sites pay separate interpolation tests. No inverse of 19 or other extra prime is needed. The [59-stage localized](order-18-localized-59/README.md) and [60-stage factorial-unit](order-18-certificate/README.md) tableaux remain available.

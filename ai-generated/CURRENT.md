@@ -43,6 +43,14 @@ The lower bounds are covered by the uniform Lean theorem. The three upper tablea
 
 Neither result changes the unrestricted tables or adds a Lean certificate.
 
+## Sharp bounds for polynomial stage readouts
+
+- [Exact dense derivative readout](research/sdirk-nonhomogeneous-kernels/DENSE-POLYNOMIAL-DONOR-MINIMUM.md): recovering all rooted stage-derivative polynomials through order q from one linear readout requires floor((q+1)²/4) stages if all the diagonal entries are nonzero. A common-diagonal Laguerre construction achieves equality over a suitable real algebraic field. The lower bound also covers varying nonzero diagonals, and finite sets of readouts obey a rank-dependent version.
+- [Sharp bound with a prescribed error band](research/sdirk-nonhomogeneous-kernels/PAID-DONOR-BAND-MINIMUM.md): prescribing only the Laguerre band through a larger cap, not the actual rows or error coefficients, also has an exact minimum. This shows why changing the depth alone does not shorten a preparation block with the same error band.
+- [Use in a terminal construction](research/sdirk-nonhomogeneous-kernels/LOW-CUT-RANK-LANE-AND-PAID-PATH-PROFILE.md): a triangular shear gives 46 stages of ordinary order at least 14 and scalar and clock orders at least 21. Full ordinary order 20 remains excluded in that retained preparation at sufficiently small positive diagonal.
+
+These are exact statements about specified readouts or preparations, not ordinary fixed-output stage minima or new Lean coverage.
+
 ## Rational contributing quadrature support
 
 Separate from the stage tables, the [four-shift proof](research/rational-quadrature-four-shift/proof.md) gives at least \(\min(17,p-3)\) distinct contributing rational sites for quadrature order \(p\ge4\): 16 at order 19 and 17 at order 20. Weights may be arbitrary in a characteristic-zero field. Repeat sites are grouped first, and only nonzero aggregate weights count. The result transfers to Runge–Kutta by the reviewed bushy moments. It has an exact arithmetic check, not a new Lean certificate.

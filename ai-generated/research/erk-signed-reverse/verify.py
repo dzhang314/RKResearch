@@ -28,7 +28,7 @@ def paid_remainder(n):
 data = json.loads(Path(__file__).with_name(f"tableau-{p}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
-s = (27,30,34,40,47,53,59,66,72,80)[p-11]
+s = (27,30,34,39,45,52,58,66,72,80)[p-11]
 assert len(A) == len(b) == s
 assert all(len(row) >= i and not any(row[i:]) for i, row in enumerate(A))
 assert len({row[:i] + (0,) * (s - i) for i, row in enumerate(A)}) == s

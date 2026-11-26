@@ -7,10 +7,10 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 11 | 29 | [27](tableau-11.json) |
 | 12 | 32 | [30](tableau-12.json) |
 | 13 | 35 | [34](tableau-13.json) |
-| 14 | 41 | [40](tableau-14.json) |
-| 15 | 47 | [47](tableau-15.json) |
-| 16 | 54 | [53](tableau-16.json) |
-| 17 | 60 | [59](tableau-17.json) |
+| 14 | 40 | [39](tableau-14.json) |
+| 15 | 45 | [45](tableau-15.json) |
+| 16 | 53 | [52](tableau-16.json) |
+| 17 | 59 | [58](tableau-17.json) |
 | 18 | 67 | [66](tableau-18.json) |
 | 19 | 73 | [72](tableau-19.json) |
 | 20 | 81 | [80](tableau-20.json) |
@@ -22,3 +22,5 @@ The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each d
 - `python verify.py 15` through `python verify.py 20` perform sampled replays. The complete proof at these orders is symbolic. All ten verifier runs also check the tree of the next order whose defect is −1.
 
 This is not a new Lean certificate.
+
+The [shorter order-seven chart](SHORT-GRADE-SEVEN.md) uses an exact contrast of three old stage derivatives, reducing its preparation from sixteen rows to fifteen. It is used on both sides at order fifteen, saving two stages there, and on one side at orders fourteen, sixteen, and seventeen.

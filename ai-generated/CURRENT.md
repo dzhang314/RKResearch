@@ -48,7 +48,7 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 - [Order ten](research/erk-ten-moment-splice/README.md): exact order in 21 physical stages whenever 10! is a unit, improving the previous universal 26-stage upper.
 
-- [Orders eleven through twenty](research/erk-signed-reverse/README.md): exact explicit upper bounds **27, 30, 34, 40, 47, 53, 59, 66, 72, and 80 stages**, respectively, with coefficients in any nonzero commutative ring in which the corresponding factorial is a unit. Signed copies of a reverse donor cancel its error without dividing by a quadrature weight. At orders eleven and twelve, the pure midpoint and endpoint rows are identical to earlier stages.
+- [Orders eleven through twenty](research/erk-signed-reverse/README.md): exact explicit upper bounds **27, 30, 34, 39, 45, 52, 58, 66, 72, and 80 stages**, respectively, with coefficients in any nonzero commutative ring in which the corresponding factorial is a unit. Signed copies of a reverse donor cancel its error without dividing by a quadrature weight. The [15-row order-seven chart](research/erk-signed-reverse/SHORT-GRADE-SEVEN.md) replaces a new stage by an exact contrast of existing derivatives; order fifteen uses it on both sides.
 
 The stated factorial unit is necessary for existence at any stage count. Literal arithmetic replays check all 3,047, 7,813, 20,299, and 53,272 rooted conditions at orders eleven through fourteen. At orders fifteen to twenty the general symbolic argument proves every rooted condition, and the literal tableaux have sample replays and exact next-order checks. None of these constructions is a new Lean certificate.
 

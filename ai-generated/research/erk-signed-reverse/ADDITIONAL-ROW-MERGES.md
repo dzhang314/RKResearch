@@ -10,6 +10,8 @@ In both tableaux the pure row at physical clock one equals the earlier copy of t
 
 ## Order fourteen
 
+The count here uses the earlier sixteen-row reverse chart. Replacing it with [the fifteen-row chart](SHORT-GRADE-SEVEN.md) improves the count further, to 39.
+
 Use grade six forward and grade seven in reverse, rather than the other way around. Both use the same total of 27 old rows. The existing order-fourteen grid contains all reverse grade-seven sites. Now the forward chart \(\Pi_6\) pins the zeroth moment on arbitrary data, so the pure row at clock one equals the earlier literal output row. The count is \(11+16+14-1=40\).
 
 ## Order twenty

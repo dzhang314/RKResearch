@@ -1,0 +1,9 @@
+PASS five pure clocks, asymmetric 5+5 live tiers, three compensated left equations, and all 55 chronological reverse rows
+PASS paid 5→1 promotion and 10→8 augmented recovery including all five pair losses; unchanged charts and two literal endpoint aliases 85 old projected reverse reads
+PASS two actual raw next grafts and unit blend ['-179319239772371/735134400', '60424725514970393/189464184000'] ['426611857176446597867667456000', '326291306440789562499434808000']
+PASS actual two cleared size-18 defects and integer unit blend ['3832634919835806431/12350257920000', '10575038335276956031/12350257920000'] ['-27896137847745847884819014400000', '10110196167059467558021662720000']
+PASS p=17: original 22+55, final=51, all factorial-paid denominators and 3927 fold identities
+PASS signed normalized transpose and all 17 scalar moments
+PASS 96 dual column transitions, 409 scalar low-source zeros
+PASS 394 forward attachments through size 10, 697 low, 600 intermediate, and 399 high chart entries
+literal common denominator: 177799875435900972564710400000000000000 divides 17!^5

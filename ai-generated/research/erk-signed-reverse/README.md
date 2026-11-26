@@ -10,7 +10,7 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 14 | 33 | [33](tableau-14-weighted.json) |
 | 15 | 39 | [39](order-15-factorial-39/tableau-15-factorial-39.json) |
 | 16 | 45 | [45](tableau-16-weighted.json) |
-| 17 | 52 | [52](order-17-factorial-52/tableau-17-factorial-52.json) |
+| 17 | 51 | [51](order-17-factorial-51/tableau-17-factorial-51.json) |
 | 18 | 57 | [57](order-18-factorial-57/tableau-18-factorial-57.json) |
 | 19 | 65 | [65](order-19-factorial-65/tableau-19-factorial-65.json) |
 | 20 | 71 | [71](order-20-factorial-71/tableau-20-factorial-71.json) |
@@ -35,7 +35,7 @@ At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use ex
 
 [Weighted regular probes at orders 18–20](WEIGHTED-ORDERS-18-20.md) gave 62-, 68-, and 75-stage tableaux by solving for missing reverse directions from existing scalar sites. The earlier tableaux can still be rebuilt and checked with the explicit historical option.
 
-[Direct weighted site recovery](WEIGHTED-SITE-RANK.md) uses maximal-minor certificates for the weighted evaluations. This version gave 53, 60, 66, and 72 stages at orders 17–20. At order 20, [recovering only the forward pairings](order-20-factorial-71/README.md) frees a scalar site for reverse recovery and improves the bound to 71 with no extra inversions. At order 19, [the same pairing reduction and a shorter reverse chart](order-19-factorial-65/README.md) improve the bound to 65. At order 17, [pairing the order-18 forward chart with the order-15 reverse chart](order-17-factorial-52/README.md) improves the bound to 52. The earlier 53-, 66-, and 72-stage tableaux remain unchanged.
+[Direct weighted site recovery](WEIGHTED-SITE-RANK.md) uses maximal-minor certificates for the weighted evaluations. This version gave 53, 60, 66, and 72 stages at orders 17–20. At order 20, [recovering only the forward pairings](order-20-factorial-71/README.md) frees a scalar site for reverse recovery and improves the bound to 71 with no extra inversions. At order 19, [the same pairing reduction and a shorter reverse chart](order-19-factorial-65/README.md) improve the bound to 65. At order 17, [pairing the order-18 forward chart with the order-15 reverse chart](order-17-factorial-52/README.md) improves the bound to 52. At order 17, [two-tier weighted recovery](order-17-factorial-51/README.md) shortens that same reverse chart by another stage. The earlier 52-, 53-, 66-, and 72-stage tableaux remain unchanged.
 
 [Weighted probes at orders 11–16](WEIGHTED-ORDERS-11-16.md) use a common three-size family of short reverse charts. The earlier constructions at these orders remain available through the historical option.
 

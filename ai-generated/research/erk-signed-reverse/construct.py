@@ -159,7 +159,7 @@ def eight_row_grade_five():
     return a, [eval_at(v) for v in x], [basis(0,8),basis(7,8),basis(6,8),midpoint,basis(4,8)]
 
 
-def long(g, reverse, seed):
+def long(g, reverse, seed, projected=False):
     a = [list(map(F,row)) for row in seed['A']]
     b = list(map(F,seed['b']))
     mo = [pad([w*sum(row)**k for w,row in zip(b,a)],17) for k in range(4)]
@@ -171,13 +171,19 @@ def long(g, reverse, seed):
     qc = lambda j: F(1,4)**j-F(3,4)**j
     op7 = (op6[0][:-1]+[qc]+mid[0],op6[1][:-1]+[quarter]+mid[1])
     x_of = lambda z: (1+z)/2
-    if g==8:
+    if g==8 and not projected:
         ne = prepend(op7,list(map(F,['1/12','1/4','1/3','1/2'])),a)
         return a, op6[0][:4]+ne[0],op6[1][:4]+ne[1]
-    z = list(map(F, ['-1/3','1/3','1/2','-2'] if reverse else ['-1/3','1/3','3/5','-5/3']))
+    if projected:
+        z = list(map(F, ['-1/3','1/3','-1/5','5'] if reverse else ['-5','-1/3','1/5','1/3']))
+    else:
+        z = list(map(F, ['-1/3','1/3','1/2','-2'] if reverse else ['-1/3','1/3','3/5','-5/3']))
     xx = list(map(x_of,z))
     ne = prepend(op7,xx,a)
     op8 = (op6[0][:4]+ne[0],op6[1][:4]+ne[1])
+    if projected and not reverse:
+        assert g==8
+        return a,*op8
     def weighted_read(nodes, action):
         ans = []
         for z in nodes:
@@ -188,6 +194,24 @@ def long(g, reverse, seed):
         return ans
     ell4 = weighted_read(z,lambda poly: sum(c*omega_average(j) for j,c in enumerate(poly)))
     ell4p = lambda j: dot(ell4, [x**j for x in xx])
+    if projected:
+        assert reverse and g==9
+        q = lambda v: (1-v*v)*(153*v**6-155*v**4+35*v*v-1-48*v*(17*v**4-10*v*v+1))
+        anchor = F(2,3)
+        d0 = q(F(1,3))
+        assert unit(d0)
+        anchor_lo = pad(a[19],22)
+        anchor_hi = read(*op8,primitive_at(anchor))[0]
+        operators = op6[0][:3]+[ell4p]
+        rows = op6[1][:3]+[[Z]*18+ell4]
+        for u in map(F,('-1/3','-1/5','-1/2','1/2')):
+            x=x_of(u)
+            d=q(u)/d0
+            new=read(*op8,primitive_at(x))[0]
+            a.append([v-d*(h-l) for v,h,l in zip(new,anchor_hi,anchor_lo)])
+            operators.append(lambda j,x=x,d=d: x**j-d*anchor**j)
+            rows.append([v-d*w for v,w in zip(basis(len(a)-1,len(a)),basis(19,len(a)))])
+        return a,operators,rows
     z2 = list(map(F,['-1/3','1/3','1/2','-2/3','2/3'] if reverse else ['-8/3','-1/3','1/3','-2','2']))
     xx2 = list(map(x_of,z2))
     ne2 = prepend(op8,xx2,a)
@@ -219,7 +243,7 @@ targets = {
     15:(7,7,18,0,18,(1,2,17),45),
     16:(8,7,18,0,18,(1,17),53),
     17:(9,7,18,0,18,(1,),59),
-    18:(9,8,12,-6,18,(-5,-4,-3,-1,13,17),67),
+    18:(8,9,12,-6,18,(-5,-4,-3,-1,13,17),64),
     19:(9,9,12,-6,18,(-5,-4,-3,-2,17),73),
     20:(10,9,12,-6,18,(-5,-4,-3,17),81),
 }
@@ -229,8 +253,8 @@ def construct(p,seed):
     global PAID
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]
-    f,fo,fr = short(m) if m<8 else long(m,False,seed)
-    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9,seed))
+    f,fo,fr = short(m) if m<8 else long(m,False,seed,projected=p==18)
+    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9,seed,projected=p==18))
     k = len(rev)
     ys = [F(j,N) for j in range(lo,hi+1) if j not in omit]
     if 11<=p<=20:
@@ -245,7 +269,8 @@ def construct(p,seed):
         elif p==17:
             ys=[F(j,18) for j in range(19) if j not in (1,17)]
         elif p==18:
-            ys=sorted({F(1,2)} | {F(6+s*j,12) for s in (-1,1) for j in (1,2,3,4,5,6,8,12)})
+            ys=sorted({F(1,2)} | { (1+sg*F(v))/2 for sg in (-1,1)
+                          for v in ('1/5','1/3','1/2','2/3','1','3/2','2','5')})
         else:
             ys=sorted({F(1,2)} | {F(6+s*j,12) for s in (-1,1) for j in (1,2,3,4,5,6,7,8,12)})
         count=len(f)+len(rev)+len(ys)-1

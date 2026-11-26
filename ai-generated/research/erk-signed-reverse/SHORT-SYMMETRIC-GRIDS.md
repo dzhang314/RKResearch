@@ -25,6 +25,8 @@ Each list of omissions is removed before dividing. A symmetric list uses both si
 | 19 | 27, 27 | \((6+j)/12\), \(j=0,\pm1,\pm2,\pm3,\pm4,\pm5,\pm6,\pm7,\pm8,\pm12\) | 71 |
 | 20 | 34, 27 | Same as order 19 | 79 |
 
+The table gives the short-grid method with unprojected charts at order eighteen. The current [63-stage order-eighteen method](PROJECTED-ORDER-18.md) uses a different paid grid and one projected reverse chart.
+
 The constructor checks that the grids contain all true reverse clocks, that their differences are units, and that all actual coefficients are in the required ring. The origin merges at every order. The pure endpoint also merges at orders 11–14 and 16–19 because their forward charts prescribe the old zeroth moment on arbitrary data. At orders 11 and 12 the pure midpoint is identical to the ninth forward row. Orders 15 and 20 do not use an extra pure endpoint or midpoint merge.
 
 ## Why the order is exact

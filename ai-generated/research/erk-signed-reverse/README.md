@@ -11,7 +11,7 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 15 | 44 | [44](tableau-15.json) |
 | 16 | 51 | [50](tableau-16.json) |
 | 17 | 58 | [57](tableau-17.json) |
-| 18 | 65 | [64](tableau-18.json) |
+| 18 | 64 | [63](tableau-18.json) |
 | 19 | 72 | [71](tableau-19.json) |
 | 20 | 79 | [79](tableau-20.json) |
 
@@ -24,3 +24,5 @@ The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each d
 This is not a new Lean certificate.
 
 The [shorter order-seven chart](SHORT-GRADE-SEVEN.md) uses an exact contrast of three old stage derivatives, reducing its preparation from sixteen rows to fifteen. It is used on both sides at order fifteen, saving two stages there, and on one side at orders fourteen, sixteen, and seventeen.
+
+The [projected order-eighteen construction](PROJECTED-ORDER-18.md) saves another stage by omitting an irrelevant reverse polynomial. The projection verifier checks every rooted chart condition through size nine on the two actual prefixes.

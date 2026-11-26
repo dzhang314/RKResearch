@@ -25,6 +25,7 @@ All calculations can be done in the actual prefix ending at \(t\), since the adj
 ## Further results
 
 - [Common-diagonal resonance and prefix rank](COMMON-DIAGONAL-RESONANCE.md): a nonendpoint direction still forces the extra row even when the longest shifted moment is zero. The [prefix theorem](COMMON-DIAGONAL-PREFIX-RANK.md) and [formation argument](FORMATION-AND-CARDINAL-RANK.md) give the consequences for actual invariant subspaces.
+- [The odd SDIRK endpoint is different](ODD-SDIRK-ENDPOINT-SHARP.md): an exact real-algebraic construction at every odd order attains the endpoint exception. On the shorter prefix all positive weighted outputs are available but no weights give ordinary order of the same size.
 - [Late unary directions](DELAYED-CLOCK-UNARY-RANK.md): failure of early output factorization can force several independent new columns, not just one.
 - [The penultimate late test](PENULTIMATE-PAID-TAP.md) does not require localization at a single clock. In a hypothetical \(3d+1\)-stage method of order \(2d+1\), it forces [maximal clock delay](MAXIMAL-ODD-CLOCK-DELAY.md) and yields [reverse clock charts](REVERSE-CLOCK-CHARTS.md). In the full-closure branch, [a further support bound](MAXIMAL-DETECTOR-PHYSICAL-SUPPORT.md) leaves a specific singleton-clock case. These restrictions do not exclude every equality case.
 

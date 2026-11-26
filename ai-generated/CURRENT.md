@@ -14,7 +14,7 @@
 | 8 | 11 | 8 | 10–11 |
 | 9 | 13 | 10 | 13–14 |
 | 10 | 14–15 | 11–12 | 15–17 |
-| 11 | 16–18 | 13–14 | 18–20 |
+| 11 | 17–18 | 13–14 | 18–20 |
 | 12 | 18–21 | 15–16 | 21–23 |
 | 13 | 20–23 | 17–18 | 25–26 |
 | 14 | 21–26 | 19–21 | 28–30 |
@@ -31,7 +31,9 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) raises the arbitrary-ring ERK floors at orders 10 through 17 by at least one stage. At order 12 the [full paid proof](lower-bounds/paid-beta/05-PAID-ORDER-TWELVE.md) raises the floor to 18, matching characteristic zero. At order 14, a [separate paid argument](lower-bounds/paid-beta/04-PAID-ORDER-FOURTEEN.md) raises the floor further to 21, matching characteristic zero. A [finite paid-field argument](lower-bounds/paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md) gives 27 and 29 stages at orders 18 and 19, two more than the earlier arbitrary-ring bounds. [Its doubling extension](lower-bounds/paid-beta/02-PAID-DOUBLING-SURPLUS.md) raises order 20 from 28 to 30. These are mathematical proofs over all nonzero commutative unital rings using the denominator-cleared order equations; the ordered-field and characteristic-zero columns do not change.
 
-The [terminal detector argument](lower-bounds/paid-beta/06-ODD-EXPLICIT-STAGE-BOUND.md) gives the uniform lower bound \(3d+2\) for every odd explicit order \(2d+1\) with \(d\ge6\). It raises the arbitrary-ring floors at orders 13, 15, and 17 to 20, 23, and 26, respectively. The characteristic-zero floors at orders 13 and 15 also rise to 20 and 23. The ordered-field table above is unchanged, and the proof is not yet formalized in Lean.
+The [terminal detector argument](lower-bounds/paid-beta/06-ODD-EXPLICIT-STAGE-BOUND.md) gives the uniform lower bound \(3d+2\) for every odd explicit order \(2d+1\) with \(d\ge6\). It raises the arbitrary-ring floors at orders 13, 15, and 17 to 20, 23, and 26, respectively. The characteristic-zero floors at orders 13 and 15 also rise to 20 and 23. The odd-order argument does not change the ordered-field bounds at 13, 15 or 17.
+
+The [weighted extension](lower-bounds/paid-beta/07-WEIGHTED-DETECTOR-STAGE-BOUND.md) and its [order-eleven refinement](lower-bounds/paid-beta/08-ORDER-ELEVEN-THRESHOLD.md) prove a uniform \(\lceil3p/2ceil\) lower bound for ordinary explicit methods at every order \(p\ge11\), with coefficients in any nonzero commutative unital ring. Order 11 now needs at least 17 stages in every coefficient domain; the arbitrary-ring order-16 floor rises to 24. Some orders have stronger separate bounds. These results are not yet formalized in Lean.
 
 ## Improved DIRK lower bounds over arbitrary rings
 

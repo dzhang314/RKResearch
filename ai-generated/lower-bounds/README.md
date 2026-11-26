@@ -14,12 +14,12 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 8 | 10 / 8 / 10 | 10 / 8 / 10 | 11 / 8 / 10 |
 | 9 | 12 / 10 / 13 | 12 / 10 / 13 | 13 / 10 / 13 |
 | 10 | 14 / 11 / 15 | 14 / 11 / 15 | 14 / 11 / 15 |
-| 11 | 16 / 13 / 18 | 16 / 13 / 18 | 16 / 13 / 18 |
+| 11 | 17 / 13 / 18 | 17 / 13 / 18 | 17 / 13 / 18 |
 | 12 | 18 / 15 / 21 | 18 / 15 / 21 | 18 / 15 / 21 |
 | 13 | 20 / 17 / 25 | 20 / 17 / 25 | 20 / 17 / 25 |
 | 14 | 21 / 19 / 28 | 21 / 19 / 28 | 21 / 19 / 28 |
 | 15 | 23 / 20 / 32 | 23 / 21 / 32 | 23 / 21 / 32 |
-| 16 | 23 / 21 / 36 | 24 / 22 / 36 | 25 / 22 / 36 |
+| 16 | 24 / 21 / 36 | 24 / 22 / 36 | 25 / 22 / 36 |
 | 17 | 26 / 23 / 41 | 26 / 24 / 41 | 27 / 24 / 41 |
 | 18 | 27 / 25 / 45 | 27 / 25 / 45 | 29 / 25 / 45 |
 | 19 | 29 / 27 / 50 | 29 / 27 / 50 | 30 / 27 / 50 |
@@ -27,6 +27,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 
 Every real statement in the last column transfers by real-closed-field theory: for a fixed order and stage count the question is a finite rational-polynomial feasibility problem. The proof itself can still use properties of the reals. Neither real nor ordered feasibility implies an unordered characteristic-zero lower bound. The ring column uses uniform proofs and is not a claim that the stronger characteristic-zero bounds have counterexamples in positive characteristic.
 
+- [Weighted explicit stage bound](paid-beta/07-WEIGHTED-DETECTOR-STAGE-BOUND.md) and [order-eleven refinement](paid-beta/08-ORDER-ELEVEN-THRESHOLD.md): effective order \(r\ge11\) requires at least \(\lceil3r/2ceil\) stages through the last contributing coefficient. For ordinary explicit methods this raises order 11 to 17 in all columns and the arbitrary-ring order-16 floor to 24. These are mathematical proofs, not Lean certificates.
 - [Odd explicit orders from 13 onward](paid-beta/06-ODD-EXPLICIT-STAGE-BOUND.md): order \(2d+1\) requires at least \(3d+2\) stages for \(d\ge6\) over all nonzero commutative unital rings. This raises the arbitrary-ring bounds at 13, 15, and 17, and the characteristic-zero bounds at 13 and 15. The new proof is not yet formalized in Lean.
 - [All-ring ERK lower bound: fifth-degree surplus](paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) and [doubling surplus](paid-beta/02-PAID-DOUBLING-SURPLUS.md): the stronger entries at orders 10–20 are proved algebraically and have not yet been formalized in Lean.
 - [Finite paid-field ERK argument at orders 18 and 19](paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md): the arbitrary-ring floors equal the characteristic-zero values 27 and 29.

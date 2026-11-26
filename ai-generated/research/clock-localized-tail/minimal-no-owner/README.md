@@ -23,3 +23,8 @@ The proofs are algebraic, with sign and classical Laguerre hypotheses where indi
 
 - [An extra late stage or feeder](LATE.md) gives exact causal conditions for repairing the final word length. It also describes top-only geometries, which still need the lower word conditions.
 - [An extra early stage](EARLY.md) gives an actual source space with two common zeros. When \(m\) is odd, one mark suffices; when \(m\) is even, the two-mark conclusion requires the stated rank condition.
+
+## Lower-order contacts after a one-stage early change
+
+- [Producing the double-factor inputs](ACTUAL-DOUBLE.md) supplies the missing even-\(m\) input by an actual unary extension, for the stated choice of the early Laguerre block and sampler.
+- [An obstruction on a leading set of abscissae](LOWER-CUT.md) rules out generic minimum-width lower-word data at the stated balanced odd orders. It does not exclude exceptional prefixes. In the even-order argument, both parities use the additional complementary contacts.

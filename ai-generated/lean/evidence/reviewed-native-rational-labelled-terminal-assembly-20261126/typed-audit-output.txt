@@ -1,0 +1,3 @@
+'RKResearch.Certified.RationalLabelledTerminalAssembly.labelled_hasOrder_clocks_and_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

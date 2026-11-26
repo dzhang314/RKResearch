@@ -1,0 +1,69 @@
+{
+  "body": {
+    "actual_lean_exit": 0,
+    "actual_wrapper_exit": 0,
+    "body_diagnostic_count": 0,
+    "measured_native_predecessors": [
+      {
+        "checked_phase": "92347",
+        "module": "RKCert.ReviewedNative.AdjacentLayerRows",
+        "primary_olean_sha256": "dcf2a07017be8f38b6306ea9baf4ce8f717c41c9b0ab2101640eaedafcfb896d",
+        "repo_source": "ai-generated/lean/RKCert/ReviewedNative/AdjacentLayerRows.lean",
+        "source_sha256": "ca40dd9852e085766f4142ea76ed31afb28db80d2e40e1dd6e3f23d277612f32"
+      },
+      {
+        "checked_phase": "39763",
+        "module": "RKResearch.OrderConditions",
+        "primary_olean_sha256": "5c801eba9929197ec299ccda522cdc59e7a6ba55d3411707cf6d47044478d8f9",
+        "repo_source": "RKResearch/OrderConditions.lean",
+        "source_sha256": "c979b6d7d376a78029591091e331a7bfe3484e26cda483f2c0a38367124a01a2"
+      },
+      {
+        "checked_phase": "17400",
+        "module": "RKResearch.FiniteRootedTree",
+        "primary_olean_sha256": "82112d27743159ecf7b50916894527bbb5b12403f151bf99dd51d3b96af8b764",
+        "repo_source": "RKResearch/FiniteRootedTree.lean",
+        "source_sha256": "b83c146d56c2c4e712def29aea213b078ca55056eb0ba99c0bbfb75e54f52869"
+      }
+    ],
+    "measured_row_sha256": "1869c4c8dd4d7cc0ec88f1c4c7296321810b353cc6e26eadb1ce8a0a14b50259",
+    "object_hashes": {
+      "ir": "90c81f427f8420bdcf40f6615874e05785b9bf05489a7e1ae7eee88b3643a3ed",
+      "ir_signature": "129e0ae6352d7af02ae20755a546fef687fec059de5108df451e9988ae54e280",
+      "primary_olean": "b132b2cc68f992d92d8daca11c2d338297f2d5fd0dd7277c8e94415b64cf3ccb",
+      "private_olean": "57e4de7ee7b40427bcf6f0a366e08655dacecc8e933939e1a9256ed3dce98ca8",
+      "server_olean": "d2c0621fb4d2bc7fc7020c1326b73c9c5e1c3741235fe46390e81069b81564f9"
+    },
+    "raw_body_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "repo_source": "ai-generated/lean/RKCert/ReviewedNative/LayerMonomialPropagation.lean",
+    "sole_project_import": "RKCert.ReviewedNative.AdjacentLayerRows",
+    "source_sha256": "7e1cf2ff82b37b43c262684142a0abcd386a077941f625fa7e48c086dc67b8d5",
+    "stock_file_pins_including_ir": 16146,
+    "stock_header_module_count": 2691,
+    "stock_manifest_sha256": "3e243869f54454bc5ed26fda34916fcb640a02dcf647c23ab49d670883b8a798"
+  },
+  "lean_binary_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "lean_version": "4.36.0",
+  "module": "RKCert.ReviewedNative.LayerMonomialPropagation",
+  "schema": "reviewed-native-layer-monomial-propagation-evidence-v1",
+  "scope": "conditional commutative-semiring forest-factor-scaled native tree propagation from the actual layer row premise; no realization, order or stage-count certificate",
+  "typed_no_output_audit": {
+    "actual_audit_gate_exit": 0,
+    "actual_lean_exit": 0,
+    "actual_transcript_sha256": "576709c24596318e1d2f6b49623c5f2e2c7d22f24158eff5ed571c5f5e8496ba",
+    "axioms": {
+      "RKResearch.Certified.LayerMonomialPropagation.layerSlice_forestFactorial_smul_phi": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "axioms_json_sha256": "7a923fdef82b9b7f6fdc908110b38f1606eabdf559b921f0f99f5e1e37c3cb5e",
+    "object_output": false,
+    "repo_source": "ai-generated/lean/AuditReviewedNativeLayerMonomialPropagation.lean",
+    "sole_project_import": "RKCert.ReviewedNative.LayerMonomialPropagation",
+    "source_sha256": "f758b5026a7faac8c3d28c0e6c3e22ce183e9a655b2a1e4ccedd807e270c33f4",
+    "typed_examples": 1
+  },
+  "verified_base_commit": "2856425368ecb372c3ce18faba84ee7a9413a14c"
+}

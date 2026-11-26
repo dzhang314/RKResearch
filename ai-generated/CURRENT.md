@@ -50,9 +50,9 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 - [Orders eleven and twelve](research/erk-eleven-twelve-moment-splice/README.md): exact order eleven in 28 stages and exact order twelve in [32 stages](research/erk-eleven-twelve-moment-splice/ORDER-12-IN-32-STAGES.md), whenever the corresponding factorial is a unit. At order twelve, the difference of two existing quarter-clock derivative rows replaces one preparation stage in the previous 33-stage method. The real-algebraic upper of 21 is unchanged.
 
-- [Order thirteen](research/erk-thirteen-moment-splice/ORDER-13-IN-41-STAGES.md): an explicit method of exact order thirteen in 41 stages, down from 42, with coefficients in any nonzero commutative ring in which 13! is a unit. A linear combination of four existing stage derivatives replaces one preparation stage.
+- [Orders thirteen through twenty](research/erk-signed-reverse/README.md): exact explicit upper bounds **34, 41, 47, 53, 59, 66, 72, and 81 stages**, respectively, with coefficients in any nonzero commutative ring in which the corresponding factorial is a unit. Signed copies of a reverse donor cancel its error without dividing by a quadrature weight. This supersedes the previously verified [41-stage order-thirteen upper](research/erk-thirteen-moment-splice/ORDER-13-IN-41-STAGES.md).
 
-The stated factorial unit is necessary for existence at any stage count. The order-nine through order-thirteen tableaux have literal arithmetic replays. The order-twelve and order-thirteen replays check all 7,813 and 20,299 rooted conditions respectively, as well as a pair of next-order defects whose linear combinations include 1. None of these constructions is claimed as a new Lean certificate.
+The stated factorial unit is necessary for existence at any stage count. Literal arithmetic replays check all 7,813, 20,299, and 53,272 rooted conditions at orders twelve, thirteen, and fourteen. At orders fifteen to twenty the general symbolic argument proves every rooted condition, and the literal tableaux have sample replays and exact next-order checks. None of these constructions is a new Lean certificate.
 
 ## Raising order while keeping the old stages
 

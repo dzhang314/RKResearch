@@ -21,8 +21,8 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 15 | 22 / 20 / 32 | 22 / 21 / 32 | 23 / 21 / 32 |
 | 16 | 23 / 21 / 36 | 24 / 22 / 36 | 25 / 22 / 36 |
 | 17 | 25 / 23 / 41 | 26 / 24 / 41 | 27 / 24 / 41 |
-| 18 | 27 / 24 / 45 | 27 / 25 / 45 | 29 / 25 / 45 |
-| 19 | 29 / 26 / 50 | 29 / 27 / 50 | 30 / 27 / 50 |
+| 18 | 27 / 25 / 45 | 27 / 25 / 45 | 29 / 25 / 45 |
+| 19 | 29 / 27 / 50 | 29 / 27 / 50 | 30 / 27 / 50 |
 | 20 | 30 / 28 / 55 | 30 / 29 / 55 | 32 / 29 / 55 |
 
 Every real statement in the last column transfers by real-closed-field theory: for a fixed order and stage count the question is a finite rational-polynomial feasibility problem. The proof itself can still use properties of the reals. Neither real nor ordered feasibility implies an unordered characteristic-zero lower bound. The ring column uses uniform proofs and is not a claim that the stronger characteristic-zero bounds have counterexamples in positive characteristic.
@@ -33,6 +33,7 @@ Every real statement in the last column transfers by real-closed-field theory: f
 - [Paid order-12 ERK proof](paid-beta/05-PAID-ORDER-TWELVE.md): ranks, physical stage order and the exact exceptional-prime calculation give the characteristic-zero floor of 18 over every nonzero commutative unital ring.
 - [Paid DIRK grade-six argument](paid-beta/DIRK-PAID-GRADE-SIX.md): raises the arbitrary-ring lower bound by one for every order from 12 onward, matching the characteristic-zero entries at 12 and 13.
 - [Paid DIRK order-fourteen proof](paid-beta/DIRK-PAID-ORDER-FOURTEEN.md): 19 stages over every nonzero commutative unital ring. The proof uses physical stage order and the two previously checked ERK norms.
+- [Paid DIRK proof at orders 18 and 19](paid-beta/DIRK-PAID-ORDERS-EIGHTEEN-NINETEEN.md): 25 and 27 stages over every nonzero commutative unital ring, matching the characteristic-zero floors.
 - [Paid DIRK order-twenty proof](paid-beta/DIRK-PAID-ORDER-TWENTY.md): 28 stages over every nonzero commutative unital ring. The proof combines the flat-band theorem with chronological separation on the first two off-support receivers.
 - [Characteristic-zero arguments](characteristic-zero/README.md)
 - [Ordered-field arguments and transfer](ordered-fields/README.md)

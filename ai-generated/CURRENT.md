@@ -48,11 +48,11 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 - [Order ten](research/erk-ten-moment-splice/README.md): exact order in 21 physical stages whenever 10! is a unit, improving the previous universal 26-stage upper.
 
-- [Orders eleven and twelve](research/erk-eleven-twelve-moment-splice/README.md): the same family gives exact order eleven in 28 and exact order twelve in 33 physical stages over the corresponding factorial-unit rings (previous uniform-path uppers 31 and 37).
+- [Orders eleven and twelve](research/erk-eleven-twelve-moment-splice/README.md): exact order eleven in 28 stages and exact order twelve in [32 stages](research/erk-eleven-twelve-moment-splice/ORDER-12-IN-32-STAGES.md), whenever the corresponding factorial is a unit. At order twelve, the difference of two existing quarter-clock derivative rows replaces one preparation stage in the previous 33-stage method. The real-algebraic upper of 21 is unchanged.
 
 - [Order thirteen](research/erk-thirteen-moment-splice/README.md): a 42-stage explicit tableau of exact order thirteen over every nonzero commutative ring in which 13! is a unit. A linear combination of two order-fourteen defects is a unit.
 
-The stated factorial unit is necessary for existence at any stage count. The order-nine through order-twelve tableaux have literal arithmetic replays; order thirteen has an independently checked symbolic construction. None of these constructions is claimed as a new Lean certificate. The real-algebraic numerical table above is unchanged.
+The stated factorial unit is necessary for existence at any stage count. The order-nine through order-twelve tableaux have literal arithmetic replays; the 32-stage order-twelve replay checks all 7,813 rooted conditions and a pair of order-thirteen defects that generate the unit ideal without assuming thirteen is invertible. Order thirteen has an independently checked symbolic construction. None of these constructions is claimed as a new Lean certificate.
 
 ## Raising order while keeping the old stages
 

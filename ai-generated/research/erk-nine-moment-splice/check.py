@@ -61,16 +61,16 @@ Pico=trans([cramer(mt,z) for z in zip(*vec)])
 assert all(dot([F(1,j+1) for j in range(5)],z)==pad(b,9)[i] for i,z in enumerate(zip(*Pico)))
 assert [sum(r,ZERO) for r in A][-2:]==[ONE,a]
 
-clocklist=[F(1),F(1,4),F(1,4),F(-1,2),F(1,3),F(2,3),F(3,2),F(1,2),F(3,4),F(1,4),F(1)]
-w=[ONE,ONE,ONE,F(-1,23625),F(-729,1000),F(-729,1000),
-   F(-1,23625),F(6,7),F(17408,23625),F(17408,23625)-2,F(481,7560)-1]
+
+xs=list(map(F,(1,'-1/2','1/3','2/3','1/4','1/2','3/4','3/2','1/4','3/4',1)))
+w=[ONE,F(-1,23625),F(-729,1000),F(-729,1000),ONE,F(6,7),ONE,F(-1,23625),
+   F(17408,23625)-1,F(17408,23625)-1,F(481,7560)-1]
 w0=F(481,7560)
-xs=clocklist
 ys=[1-x for x in xs]
 N=len(xs)
 assert all(x>0 or x<0 for x in xs)
 assert all(dot(w,[x**k for x in xs])+(w0 if k==0 else 0)==F(1,k+1) for k in range(9))
-S=(1,3,4,5,6,7)
+S=tuple(range(1,8))
 bar={i:ONE/prod(xs[i]-xs[j] for j in S if i!=j) for i in S}
 u=[ZERO]*N
 u[1]=-ys[1]**2/2
@@ -85,13 +85,13 @@ for i in (2,3):
     L[i][0]=ys[i]-L[i][1]
 donors=(0,1,2,3)
 M=[[ONE]*4,[ys[j] for j in donors],[ys[j]**2 for j in donors],[u[j] for j in donors]]
-# Among the four available late unit sites, these three pay the required projection.
-pivots=(4,5,6)  # x=1/3, 2/3, 3/2: change the omitted site below if needed.
+# Four late distinct clocks solve even the full x(1-x)P_3 tests.
+pivots=(4,5,6,7)
 def ff(k,x):
-    return x*(1-x)*(x**k-F(6,(k+2)*(k+3)))
-MF=[[w[i]*ff(k,xs[i]) for i in pivots] for k in range(1,4)]
-need_e=[-sum(w[i]*ff(k,xs[i])*(dot(L[i],[y*y for y in ys])-ys[i]**3/3) for i in range(4)) for k in range(1,4)]
-need_u=[-sum(w[i]*ff(k,xs[i])*dot(L[i],u) for i in range(4)) for k in range(1,4)]
+    return x*(1-x)*x**k
+MF=[[w[i]*ff(k,xs[i]) for i in pivots] for k in range(4)]
+need_e=[-sum(w[i]*ff(k,xs[i])*(dot(L[i],[y*y for y in ys])-ys[i]**3/3) for i in range(4)) for k in range(4)]
+need_u=[-sum(w[i]*ff(k,xs[i])*dot(L[i],u) for i in range(4)) for k in range(4)]
 ce=cramer(MF,need_e)
 cu=cramer(MF,need_u)
 for i in range(4,N-1):
@@ -99,7 +99,7 @@ for i in range(4,N-1):
     row=cramer(M,[ys[i],v[i],ys[i]**3/3+g3,l_u])
     for j,z in zip(donors,row):L[i][j]=z
 assert all(dot(r,[ONE]*N)==ys[i] and dot(r,ys)==v[i] for i,r in enumerate(L))
-for k in range(1,4):
+for k in range(4):
     assert sum(w[i]*ff(k,xs[i])*(dot(L[i],[y*y for y in ys])-ys[i]**3/3) for i in range(N))==0
     assert sum(w[i]*ff(k,xs[i])*dot(L[i],u) for i in range(N))==0
 
@@ -208,12 +208,14 @@ print("common denominator", denom, "exponents at (2,3,5,7)", exponents)
 print("forward projection determinant", det(mt), "receiver local determinant", det(M),
       "high-moment determinant", det(MF))
 print(len(A1),'physical rows, exact ninth order after every nonzero base change')
-witness = ((), (), (), ((), (), (), (), ()))
-assert sz(witness) == 10 and tf(witness) == 60 and defect(witness) == F(1,288)
+witness = ((), (), (), ((), ((), (), ())))
+assert sz(witness)==10 and tf(witness)==240 and defect(witness)==F(8,567) and unit(defect(witness))
+assert len(A1)==16
+print("selected unit defect", witness, tf(witness), defect(witness),dot(B,phi(witness)))
 expected = {'A': [[str(z) for z in row[:i]] for i,row in enumerate(A1)],
             'b': [str(z) for z in B],
             'coefficient_common_denominator': str(denom),
-            'defect_tree': witness, 'defect': '1/288'}
+            'defect_tree': witness, 'defect': str(defect(witness))}
 path = Path(__file__).with_name('tableau.json')
 if '--write-tableau' in sys.argv:
     path.write_text(json.dumps(expected, indent=2) + "\n")

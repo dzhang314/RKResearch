@@ -40,9 +40,9 @@ The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLU
 
 - [Order eight](research/erk-eight-ring-witness/README.md): exact order eight is possible exactly when 40320 is a unit. The uniform thirteen-stage upper comes from splitting the final row of Shanks’s twelve-stage method to remove 41. This is an upper bound, not a minimum.
 
-- [Order nine](research/erk-nine-moment-splice/README.md): exact order in 18 physical stages whenever 9! is a unit, improving the previous universal 21-stage upper.
+- [Order nine](research/erk-nine-moment-splice/README.md): exact order in 16 physical stages whenever 9! is a unit, improving the previous universal 21-stage upper.
 
-- [Order ten](research/erk-ten-moment-splice/README.md): exact order in 23 physical stages whenever 10! is a unit, improving the previous universal 26-stage upper.
+- [Order ten](research/erk-ten-moment-splice/README.md): exact order in 21 physical stages whenever 10! is a unit, improving the previous universal 26-stage upper.
 
 For these constructions the stated factorial unit is necessary for existence at any stage count. The tableaux have exact arithmetic checks, not Lean certificates. The real-algebraic numerical table above is unchanged.
 

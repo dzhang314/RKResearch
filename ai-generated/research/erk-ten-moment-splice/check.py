@@ -68,15 +68,16 @@ Pico=trans([cramer(mt,z) for z in zip(*vec)])
 assert all(dot([F(1,j+1) for j in range(6)],z)==pad(b,13)[i] for i,z in enumerate(zip(*Pico)))
 assert [sum(r,ZERO) for r in A][-3:]==[ONE,a,aa]
 
-xs=[F(1),F(1,4),F(1,4),F(-1,2),F(1,3),F(2,3),F(3,2),F(1,2),F(3,4),F(3,4),F(1,4),F(1)]
-w=[ONE,ONE,ONE,F(-1,23625),F(-729,1000),F(-729,1000),
-   F(-1,23625),F(6,7),ONE,F(17408,23625)-1,F(17408,23625)-2,F(481,7560)-1]
+
+xs=list(map(F,(1,'-1/2','1/3','2/3','1/4','1/2','3/4','3/2','1/4','3/4',1)))
+w=[ONE,F(-1,23625),F(-729,1000),F(-729,1000),ONE,F(6,7),ONE,F(-1,23625),
+   F(17408,23625)-1,F(17408,23625)-1,F(481,7560)-1]
 w0=F(481,7560)
 ys=[1-x for x in xs]
 N=len(xs)
 assert all(x>0 or x<0 for x in xs)
 assert all(dot(w,[x**k for x in xs])+(w0 if k==0 else 0)==F(1,k+1) for k in range(10))
-S=(1,3,4,5,6,7,8)
+S=tuple(range(1,8))
 bar={i:ONE/prod(xs[i]-xs[j] for j in S if i!=j) for i in S}
 u=[ZERO]*N
 u[1]=-ys[1]**2/2
@@ -122,7 +123,7 @@ B=[w0]+[ZERO]*9+[wf[0],ZERO,ZERO]+wf[1:]
 A1=[pad(r,13+N-1) for r in A]
 for i in range(1,N):
     A1.append(K[i]+T[i][1:])
-assert len(B)==len(A1)==24
+assert len(B)==len(A1)==23
 assert all(all(z==0 for z in r[i:]) for i,r in enumerate(A1))
 assert all(paid(x) for x in (*B,*(z for r in A1 for z in r)))
 
@@ -214,8 +215,10 @@ print("common denominator", denom, "exponents at (2,3,5,7)", exponents)
 print("forward projection determinant", det(mt), "receiver local determinant", det(M),
       "high-moment determinant", det(MF))
 print(len(A1),'physical rows, exact tenth order after every nonzero base change')
-witness = [t for t in tree(11) if defect(t) and unit(defect(t))][0]
-print("selected unit defect", witness, tf(witness), defect(witness))
+witness = ((), (), (), (((), (), (), (), ()),))
+assert sz(witness)==11 and tf(witness)==462 and defect(witness)==F(1,11340) and unit(defect(witness))
+assert len(A1)==21
+print("selected unit defect", witness, tf(witness), defect(witness),dot(B,phi(witness)))
 expected = {'A': [[str(z) for z in row[:i]] for i,row in enumerate(A1)],
             'b': [str(z) for z in B],
             'coefficient_common_denominator': str(denom),

@@ -1,0 +1,8 @@
+# Weighted-stage placement for triangular Runge–Kutta tableaux
+
+These arguments use the actual nonzero output weights and actual rooted vectors. They distinguish restrictions on where stages can occur from lower bounds on the total number of stages. No unrestricted stage-table entry or Lean certificate is changed.
+
+- [Cut nullity](TELESCOPING-CUT-NULLITY.md), [masked ranks](MASKED-DENSITY-GROWTH.md), and [cross-group overlap](MEASURED-GROUP-AND-WORD-OVERLAP.md) give the rank bound on a leading block left by a literal tail.
+- [Weighted-stage placement](TRAILING-WEIGHT-CLOCK-PLACEMENT.md) applies that bound to the last occurrence of each distinct weighted abscissa. The endpoint allowance constrains the whole output row on the tail; it does not require the path to start at an endpoint-weighted stage.
+- [Minimal scalar quadrature](MINIMAL-QUADRATURE-OUTPUT-CLOCKS.md), [completed-fibre Hermite rank](COMPLETED-FIBRE-HERMITE-RANK.md), and [shifted predecessors](PHYSICAL-DONOR-AND-ROW-COUPLING.md) combine genuine scalar tests on the same prefix. In particular, for order 14 with exactly seven nonzero weights and a nonsingular leading matrix through the second nonzero weight, that weight occurs at stage 15 or later.
+- [Two-sided dimensions](TWO-SIDED-SURPLUS-AND-PHYSICAL-OVERLAP.md) and [rooted diagonal multiplication](ROOTED-DIAGONAL-DONORS-AND-TAIL-SEPARATION.md) account for actual pure directions that a clock-polynomial count misses. The [shifted refund and example](SHIFTED-REFUNDS-AND-AFFINE-FIBRE-SHARP-BOUNDARY.md) identifies a family where every linear word misses the first genuine rooted difference.

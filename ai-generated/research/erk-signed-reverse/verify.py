@@ -12,13 +12,13 @@ parser=ArgumentParser(description=__doc__)
 parser.add_argument("p", type=int, choices=range(11,21))
 parser.add_argument("--all", action="store_true", help="exhaustive replay (through order 14)")
 parser.add_argument('--rational-grid', action='store_true', help='use the 70-stage rational grid at order 19')
-parser.add_argument('--previous', action='store_true', help='check the earlier unweighted construction for orders 18–20')
+parser.add_argument('--previous', action='store_true', help='check the earlier construction for orders 11–16 or 18–20')
 args=parser.parse_args()
 p=args.p
 assert not args.all or p<=14
 assert not args.rational_grid or p==19
-assert not args.previous or (18<=p<=20 and not args.rational_grid)
-suffix = '-rational' if args.rational_grid else ('-weighted' if 18<=p<=20 and not args.previous else '')
+assert not args.previous or (p!=17 and not args.rational_grid)
+suffix = '-rational' if args.rational_grid else ('-weighted' if p!=17 and not args.previous else '')
 
 def paid_remainder(n):
     n = abs(n)
@@ -33,11 +33,11 @@ def paid_remainder(n):
 data = json.loads(Path(__file__).with_name(f"tableau-{p}{suffix}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
-s = (25,28,33,37,44,50,53,60,66,72)[p-11]
+s = (23,26,30,33,40,45,53,60,66,72)[p-11]
 if args.rational_grid:
     s = 70
 elif args.previous:
-    s = {18:63,19:71,20:78}[p]
+    s = {11:25,12:28,13:33,14:37,15:44,16:50,18:63,19:71,20:78}[p]
 assert len(A) == len(b) == s
 assert all(len(row) >= i and not any(row[i:]) for i, row in enumerate(A))
 assert len({row[:i] + (0,) * (s - i) for i, row in enumerate(A)}) == s
@@ -138,21 +138,25 @@ else:
     print(f"{len(raw_witnesses)} next-order defects generate the unit ideal")
 
 
-if 17 <= p <= 20 and not args.rational_grid and not args.previous:
+if not args.rational_grid and not args.previous:
     def tree_from_word(word):
         t = ()
         for letter in reversed(word):
             t = (t,) if letter == 'A' else t + ((),)
         return t
 
-    # The four components of the formal-zero child C A C^2 V.
-    terms = [('CACCACCACC',136080), ('CACCACCAAC',-272160),
-             ('CACCACCCCC',204120), ('CACCCCCCCC',-34020)]
-    if p == 18:
-        terms = [('CCC'+word[4:],coeff) for word,coeff in terms]
-    leaves = {17:6,18:8,19:8,20:9}[p]
+    if p<=16:
+        prefix, scalar = ('CCCA',1) if p==11 else ('CACCA',-72) if p<=14 else ('CACCCA',1)
+        terms = [(prefix+'CC',scalar),(prefix+'AC',-2*scalar)]
+    else:
+        # The four components of the formal-zero child C A C^2 V.
+        terms = [('CACCACCACC',136080), ('CACCACCAAC',-272160),
+                 ('CACCACCCCC',204120), ('CACCCCCCCC',-34020)]
+        if p==18:
+            terms = [('CCC'+word[4:],coeff) for word,coeff in terms]
+    leaves = {11:4,12:4,13:5,14:6,15:6,16:7,17:6,18:8,19:8,20:9}[p]
     grafts = [((tree_from_word(word),) + ((),)*leaves, coeff) for word, coeff in terms]
     assert all(size(t) == p+1 for t, _ in grafts)
     assert sum(Fraction(a, factorial(t)) for t, a in grafts) == 0
     assert sum(Fraction(a, factorial(t))*defect_numerator(t) for t, a in grafts) == D**(p+1)
-    print(f"Four-tree order-{p+1} combination: exact raw defect 1.")
+    print(f"Order-{p+1} graft combination: exact raw defect 1.")

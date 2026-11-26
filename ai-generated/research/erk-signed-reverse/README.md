@@ -4,12 +4,12 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 
 | Order | Rows allocated by the proof | Rows after literal equality reduction |
 |---:|---:|---:|
-| 11 | 27 | [25](tableau-11.json) |
-| 12 | 30 | [28](tableau-12.json) |
-| 13 | 34 | [33](tableau-13.json) |
-| 14 | 38 | [37](tableau-14.json) |
-| 15 | 44 | [44](tableau-15.json) |
-| 16 | 51 | [50](tableau-16.json) |
+| 11 | 23 | [23](tableau-11-weighted.json) |
+| 12 | 26 | [26](tableau-12-weighted.json) |
+| 13 | 30 | [30](tableau-13-weighted.json) |
+| 14 | 33 | [33](tableau-14-weighted.json) |
+| 15 | 40 | [40](tableau-15-weighted.json) |
+| 16 | 45 | [45](tableau-16-weighted.json) |
 | 17 | 53 | [53](tableau-17.json) |
 | 18 | 60 | [60](tableau-18-weighted.json) |
 | 19 | 66 | [66](tableau-19-weighted.json) |
@@ -36,3 +36,5 @@ At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use ex
 [Weighted regular probes at orders 18–20](WEIGHTED-ORDERS-18-20.md) gave 62-, 68-, and 75-stage tableaux by solving for missing reverse directions from existing scalar sites. The earlier tableaux can still be rebuilt and checked with the explicit historical option.
 
 [Direct weighted site recovery](WEIGHTED-SITE-RANK.md) uses maximal-minor certificates for the weighted evaluations. The current counts for orders 17–20 are 53, 60, 66, and 72.
+
+[Weighted probes at orders 11–16](WEIGHTED-ORDERS-11-16.md) use a common three-size family of short reverse charts. The earlier constructions at these orders remain available through the historical option.

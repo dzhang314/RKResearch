@@ -265,7 +265,7 @@ targets = {
 
 def construct(p,seed,rational_grid=False,previous=False,verify_reads=False):
     assert not rational_grid or p==19
-    if 17 <= p <= 20 and not rational_grid and not previous:
+    if 11 <= p <= 20 and not rational_grid and not previous:
         import sys
         from weighted_regular import build
         return build(sys.modules[__name__],seed,p,verify_reads=verify_reads)
@@ -352,11 +352,11 @@ if __name__=='__main__':
     parser.add_argument('p',type=int,choices=tuple(targets))
     parser.add_argument('--seed',type=Path,default=HERE.parent/'erk-eleven-twelve-moment-splice'/'paid9-seed.json')
     parser.add_argument('--rational-grid',action='store_true',help='use the 70-stage rational grid at order 19')
-    parser.add_argument('--previous',action='store_true',help='rebuild the earlier unweighted construction for orders 18–20')
-    parser.add_argument('--verify-reads',action='store_true',help='verify all required weighted chart reads and first-excess pins (orders 17–20)')
+    parser.add_argument('--previous',action='store_true',help='rebuild the earlier unweighted construction for orders 11–16 and 18–20')
+    parser.add_argument('--verify-reads',action='store_true',help='verify all required weighted chart reads and first-excess pins (orders 11–20)')
     args=parser.parse_args()
-    assert not args.verify_reads or (17<=args.p<=20 and not args.previous and not args.rational_grid)
-    assert not args.previous or (18<=args.p<=20 and not args.rational_grid)
+    assert not args.verify_reads or (11<=args.p<=20 and not args.previous and not args.rational_grid)
+    assert not args.previous or (args.p != 17 and not args.rational_grid)
     seed_bytes=args.seed.read_bytes()
     assert sha256(seed_bytes).hexdigest()==SEED_SHA256
     print(construct(args.p,json.loads(seed_bytes),rational_grid=args.rational_grid,previous=args.previous,verify_reads=args.verify_reads),end='')

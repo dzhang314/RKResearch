@@ -93,40 +93,46 @@ def build(rk, seed, order, verify_reads=False):
         poly[0] = -vv(poly,-o)
         return poly
 
-    fgrade = 8 if order==18 else 9
-    fo_prefix, fo, fr = rk.long(fgrade,False,seed,regular_grade8=order==18)
-    if order==18:
-        fwd_pin = mean
+    if order<17:
+        from weighted_middle import prepare
+        (fo_prefix,fo,fr,fgrade,fwd_pin,high_fwd_row,hf,
+         reverse,ro,rr,top,boundary,old_pins,hr,grid,split,early,late,injection) = prepare(
+             rk,order,vv,mul,add,scale,cardinal)
     else:
-        _, _, grade10_reads = rk.long(10,False,seed)
-        old_ell5 = grade10_reads[2]
-        fwd_pin = lambda poly: rk.dot(old_ell5[22:], [vv(poly,2*sum(row)-1) for row in fo_prefix[22:]])
+        fgrade = 8 if order==18 else 9
+        fo_prefix, fo, fr = rk.long(fgrade,False,seed,regular_grade8=order==18)
+        if order==18:
+            fwd_pin = mean
+        else:
+            _, _, grade10_reads = rk.long(10,False,seed)
+            old_ell5 = grade10_reads[2]
+            fwd_pin = lambda poly: rk.dot(old_ell5[22:], [vv(poly,2*sum(row)-1) for row in fo_prefix[22:]])
 
-    if order==17:
-        reverse, ro, rr = rk.short(6)
-        grid = [F(i,9) for i in (-9,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,9)]
-        split = []
-        early = [F(i,9) for i in (-6,-5,-4,-2,2,4,5)]
-        late = [F(i,9) for i in (-7,-3,-1,0,1,3,6,7)]
-    elif order in (18,19):
-        reverse, ro, rr = rk.long(8,True,seed,projected=order==18,regular_grade8=True)
-        core = tuple(map(F, ('1/5','1/3','1/2','2/3','1','3/2','2','5'))) if order==18 else tuple(F(i,6) for i in (1,2,3,4,5,6,7,8,12))
-        grid = sorted([z] + [sign*i for i in core for sign in (-1,1)])
-        split = [F(-1,3)] if order==18 else []
-        old = {2*sum(r)-1 for r in reverse}
-        preserve = [F(1,6)] if order==19 else []
-        early = [a for a in grid if a not in old and a not in preserve]
-        late = sorted((old-{-o,o}-({F(-1,5),F(5)} if order==18 else set()))|set(preserve))
-    else:
-        reverse, ro, rr = rk.long(9,True,seed,symmetric_last=True)
-        grid = sorted([z] + [F(sign*i,6) for i in (1,2,3,4,5,6,7,8,12)
-                             for sign in (-1,1)])
-        split = [z]
-        old = {2*sum(row)-1 for row in reverse}
-        early = [a for a in grid if a not in old and a!=F(1,6)]
-        late = sorted((old-{-o,o})|{F(1,6)})
+        if order==17:
+            reverse, ro, rr = rk.short(6)
+            grid = [F(i,9) for i in (-9,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,9)]
+            split = []
+            early = [F(i,9) for i in (-6,-5,-4,-2,2,4,5)]
+            late = [F(i,9) for i in (-7,-3,-1,0,1,3,6,7)]
+        elif order in (18,19):
+            reverse, ro, rr = rk.long(8,True,seed,projected=order==18,regular_grade8=True)
+            core = tuple(map(F, ('1/5','1/3','1/2','2/3','1','3/2','2','5'))) if order==18 else tuple(F(i,6) for i in (1,2,3,4,5,6,7,8,12))
+            grid = sorted([z] + [sign*i for i in core for sign in (-1,1)])
+            split = [F(-1,3)] if order==18 else []
+            old = {2*sum(r)-1 for r in reverse}
+            preserve = [F(1,6)] if order==19 else []
+            early = [a for a in grid if a not in old and a not in preserve]
+            late = sorted((old-{-o,o}-({F(-1,5),F(5)} if order==18 else set()))|set(preserve))
+        else:
+            reverse, ro, rr = rk.long(9,True,seed,symmetric_last=True)
+            grid = sorted([z] + [F(sign*i,6) for i in (1,2,3,4,5,6,7,8,12)
+                                 for sign in (-1,1)])
+            split = [z]
+            old = {2*sum(row)-1 for row in reverse}
+            early = [a for a in grid if a not in old and a!=F(1,6)]
+            late = sorted((old-{-o,o})|{F(1,6)})
 
-    assert len(late)==fgrade-1
+    assert len(late)==(fgrade if order in (15,16) else fgrade-1)
     base_n = len(reverse)
     pure = [a for a in grid if a not in early]
     weight = {a:mean(cardinal(grid,a)) for a in grid}
@@ -138,10 +144,23 @@ def build(rk, seed, order, verify_reads=False):
 
     h = [o,z,-o]
     live = base_n+len(split)+len(early)
-    top = {17:6,18:8,19:8,20:9}[order]
-    injection = {17:128,18:-256,19:512,20:-1024}[order]
+    if order>=17:
+        top = {17:6,18:8,19:8,20:9}[order]
+        injection = {17:128,18:-256,19:512,20:-1024}[order]
     adjust = lambda poly: poly
-    if order==17:
+    middle_rules = None
+    if order<17:
+        axes = [[z]*j+boundary for j in range(top-len(boundary)+2)]
+        rows = [[pin(q) for q in axes] for pin in old_pins]
+        rows += [[vv(q,a) for q in axes] for a in split]
+        rows += [[weight[a]*vv(q,a) for q in axes] for a in early]
+        inverse = paid_left_inverse(rows)
+        for i,row in enumerate(inverse):
+            for j in range(len(axes)):
+                assert sum(x*r[j] for x,r in zip(row,rows))==F(i==j)
+        middle_rules = list(zip(axes,(dict(zip(split+early,row[len(old_pins):])) for row in inverse)))
+        split_nodes = split
+    elif order==17:
         split_nodes = split
         axes = [[z]*j+h for j in range(5)]
         entries = [[weight[a]*vv(q,a) for q in axes] for a in early]
@@ -187,13 +206,14 @@ def build(rk, seed, order, verify_reads=False):
         rows = paid_left_inverse(entries)
         rules = list(zip(axes, (dict(zip(early,row)) for row in rows)))
 
-    for i, (q,p) in enumerate(rules):
-        assert all(rk.paid_integer(c.denominator) for c in p.values())
-        for j,(q2,_) in enumerate(rules):
-            assert sum(weight[a]*p[a]*vv(q2,a) for a in early)==F(i==j)
-    if order in (18,19):
-        assert all(mean(q)==0 for q,p in rules)
-    poly_pins = {v:mul(h,scale(cardinal(split_nodes,v),o/vv(h,v))) for v in split_nodes}
+    if order>=17:
+        for i, (q,p) in enumerate(rules):
+            assert all(rk.paid_integer(c.denominator) for c in p.values())
+            for j,(q2,_) in enumerate(rules):
+                assert sum(weight[a]*p[a]*vv(q2,a) for a in early)==F(i==j)
+        if order in (18,19):
+            assert all(mean(q)==0 for q,p in rules)
+        poly_pins = {v:mul(h,scale(cardinal(split_nodes,v),o/vv(h,v))) for v in split_nodes}
 
     if verify_reads:
         def center_power(n):
@@ -204,28 +224,45 @@ def build(rk, seed, order, verify_reads=False):
         ):
             assert rk.unit(rk.read(ops, reads, rk.eval_at(z))[1])
             _verify_chart(chart, grade, ops, reads, rk)
-        f_high_ops = [rk.eval_at(z),rk.eval_at(o),lambda j:fwd_pin(center_power(j))]
-        f_high_rows = fr[:2]+([fr[2]] if order==18 else [old_ell5])
-        _verify_chart(fo_prefix, fgrade+1, f_high_ops, f_high_rows, rk, only_top=True)
-        if order==17:
-            _, high_ops, high_rows = rk.short(7)
-            r_high_ops = high_ops[:2]+[high_ops[-1]]
-            r_high_rows = high_rows[:2]+[high_rows[-1][:base_n]]
-        elif order==18:
-            r_high_ops = ro[:3]+[lambda j:sum(w*((1+a)/2)**j for a,w in ell.items())]
-            r_high_rows = rr[:3]+[[z]*18+[ell[a] for a in old4]]
-        elif order==19:
-            r_high_ops = ro[:3]
-            r_high_rows = rr[:3]
+        if order<17:
+            _verify_chart(fo_prefix,fgrade+1,[f for f,_ in hf]+[lambda j:fwd_pin(center_power(j))],
+                          [r for _,r in hf]+[high_fwd_row],rk,only_top=True)
+            _verify_chart(reverse,top+1,[f for f,_ in hr],[r for _,r in hr],rk,only_top=True)
         else:
-            r_high_ops = ro[:2]
-            r_high_rows = rr[:2]
-        _verify_chart(reverse, top+1, r_high_ops, r_high_rows, rk, only_top=True)
+            f_high_ops = [rk.eval_at(z),rk.eval_at(o),lambda j:fwd_pin(center_power(j))]
+            f_high_rows = fr[:2]+([fr[2]] if order==18 else [old_ell5])
+            _verify_chart(fo_prefix, fgrade+1, f_high_ops, f_high_rows, rk, only_top=True)
+            if order==17:
+                _, high_ops, high_rows = rk.short(7)
+                r_high_ops = high_ops[:2]+[high_ops[-1]]
+                r_high_rows = high_rows[:2]+[high_rows[-1][:base_n]]
+            elif order==18:
+                r_high_ops = ro[:3]+[lambda j:sum(w*((1+a)/2)**j for a,w in ell.items())]
+                r_high_rows = rr[:3]+[[z]*18+[ell[a] for a in old4]]
+            elif order==19:
+                r_high_ops = ro[:3]
+                r_high_rows = rr[:3]
+            else:
+                r_high_ops = ro[:2]
+                r_high_rows = rr[:2]
+            _verify_chart(reverse, top+1, r_high_ops, r_high_rows, rk, only_top=True)
 
     old_eval = {a:rk.read(ro,rr,rk.eval_at((1+a)/2))[0] for a in split+early}
 
     def discrepancy(j):
         """Column j of D, with its known scalar mass removed at unsplit probes."""
+        if middle_rules is not None:
+            ans = [z]
+            for q, coeff in middle_rules:
+                if j>=base_n+len(split):
+                    value = coeff[early[j-base_n-len(split)]]
+                elif j>=base_n:
+                    value = coeff[split[j-base_n]]
+                else:
+                    value = -sum((weight[a] if a in early else o)*coeff[a]
+                                 *rk.pad(old_eval[a],base_n)[j] for a in split+early)
+                ans = add(ans,scale(q,value))
+            return ans
         if j>=base_n+len(split):
             a = early[j-base_n-len(split)]
             values = [z]
@@ -261,7 +298,8 @@ def build(rk, seed, order, verify_reads=False):
     beta += [weight[a] for a in pure]
     weighted_columns = {}
     for a in late:
-        e = mul(h,scale(cardinal(late,a),o/vv(h,a)))
+        forward_factor = [o,-o] if order in (15,16) else h
+        e = mul(forward_factor,scale(cardinal(late,a),o/vv(forward_factor,a)))
         assert len(e)+top<=order-1
         gamma = fwd_pin([(-1)**i*x for i,x in enumerate(e)])
         base = rk.pad(probe(a),live)
@@ -296,10 +334,14 @@ def build(rk, seed, order, verify_reads=False):
         corr = lambda n: rk.primitive_at(x[i])(n)-rk.dot(t,[v**n for v in x[:i]])
         fwd.append(rk.read(fo,fr,corr)[0]+t)
     out,b,mergers = rk.merge(fwd,[z]*len(fo_prefix)+beta[::-1])
-    assert len(out)=={17:53,18:60,19:66,20:72}[order]
+    assert len(out)=={11:23,12:26,13:30,14:33,15:40,16:45,17:53,18:60,19:66,20:72}[order]
     pure_start = live+base_n+len(split)
     raw_stage = lambda a: len(fo_prefix)+len(l)-pure_start-pure.index(a)
-    assert (raw_stage(o),1) in mergers and (raw_stage(-o),17) in mergers
+    assert (raw_stage(o),1) in mergers
+    if order not in (15,16):
+        assert (raw_stage(-o),8 if order<=14 else 17) in mergers
+    if order==11:
+        assert (raw_stage(z),9) in mergers
     c = [sum(v for _,v in row) for row in out]
     assert all(rk.dot(b,[v**j for v in c])==F(1,j+1) for j in range(order))
     common = lcm(*(v.denominator for row in out for _,v in row),*(v.denominator for v in b))

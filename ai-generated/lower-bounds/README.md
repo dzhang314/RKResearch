@@ -16,17 +16,18 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 10 | 14 / 11 / 15 | 14 / 11 / 15 | 14 / 11 / 15 |
 | 11 | 16 / 13 / 18 | 16 / 13 / 18 | 16 / 13 / 18 |
 | 12 | 18 / 15 / 21 | 18 / 15 / 21 | 18 / 15 / 21 |
-| 13 | 19 / 17 / 25 | 19 / 17 / 25 | 20 / 17 / 25 |
+| 13 | 20 / 17 / 25 | 20 / 17 / 25 | 20 / 17 / 25 |
 | 14 | 21 / 19 / 28 | 21 / 19 / 28 | 21 / 19 / 28 |
-| 15 | 22 / 20 / 32 | 22 / 21 / 32 | 23 / 21 / 32 |
+| 15 | 23 / 20 / 32 | 23 / 21 / 32 | 23 / 21 / 32 |
 | 16 | 23 / 21 / 36 | 24 / 22 / 36 | 25 / 22 / 36 |
-| 17 | 25 / 23 / 41 | 26 / 24 / 41 | 27 / 24 / 41 |
+| 17 | 26 / 23 / 41 | 26 / 24 / 41 | 27 / 24 / 41 |
 | 18 | 27 / 25 / 45 | 27 / 25 / 45 | 29 / 25 / 45 |
 | 19 | 29 / 27 / 50 | 29 / 27 / 50 | 30 / 27 / 50 |
 | 20 | 30 / 28 / 55 | 30 / 29 / 55 | 32 / 29 / 55 |
 
 Every real statement in the last column transfers by real-closed-field theory: for a fixed order and stage count the question is a finite rational-polynomial feasibility problem. The proof itself can still use properties of the reals. Neither real nor ordered feasibility implies an unordered characteristic-zero lower bound. The ring column uses uniform proofs and is not a claim that the stronger characteristic-zero bounds have counterexamples in positive characteristic.
 
+- [Odd explicit orders from 13 onward](paid-beta/06-ODD-EXPLICIT-STAGE-BOUND.md): order \(2d+1\) requires at least \(3d+2\) stages for \(d\ge6\) over all nonzero commutative unital rings. This raises the arbitrary-ring bounds at 13, 15, and 17, and the characteristic-zero bounds at 13 and 15. The new proof is not yet formalized in Lean.
 - [All-ring ERK lower bound: fifth-degree surplus](paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) and [doubling surplus](paid-beta/02-PAID-DOUBLING-SURPLUS.md): the stronger entries at orders 10–20 are proved algebraically and have not yet been formalized in Lean.
 - [Finite paid-field ERK argument at orders 18 and 19](paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md): the arbitrary-ring floors equal the characteristic-zero values 27 and 29.
 - [Paid order-14 ERK argument](paid-beta/04-PAID-ORDER-FOURTEEN.md): the arbitrary-ring floor matches the characteristic-zero value of 21. The proof uses two chronological root tests and an exact integer norm certificate.

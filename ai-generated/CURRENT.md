@@ -34,7 +34,9 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 - [Order seven](research/erk-seven-ring-witness/README.md): order seven is possible exactly when 5040 is a unit. The uniform stage count is between nine and ten; the ten-stage tableau reuses a Shanks endpoint to remove an extra denominator. The nine-stage universal question is open in this project.
 
-The lower bounds are covered by the uniform Lean theorem. The three upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
+- [Order eight](research/erk-eight-ring-witness/README.md): exact order eight is possible exactly when 40320 is a unit. The uniform thirteen-stage upper comes from splitting the final row of Shanks’s twelve-stage method to remove 41. This is an upper bound, not a minimum.
+
+The lower bounds are covered by the uniform Lean theorem. The four upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
 
 ## Bounds for particular stage architectures
 

@@ -1,0 +1,1 @@
+{"p": 20, "stages": 70, "sha256": "172b4074ca84dc5546907eacc434780a980662b1bfaa51c99e6b43ecab2e5e44", "projected_reverse_reads": 486, "forward_span_sizes": [1, 1, 2, 3, 5, 6, 9, 14, 19, 25, 27], "dual_span_sizes": [1, 2, 4, 6, 9, 11, 15, 22, 27, 35], "owner_checks": 7910, "intermediate_sources": 52, "top_sources": 25}

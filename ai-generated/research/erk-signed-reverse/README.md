@@ -13,7 +13,7 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 17 | 51 | [51](order-17-factorial-51/tableau-17-factorial-51.json) |
 | 18 | 57 | [57](order-18-factorial-57/tableau-18-factorial-57.json) |
 | 19 | 64 | [64](order-19-factorial-64/tableau-19-factorial-64.json) |
-| 20 | 71 | [71](order-20-factorial-71/tableau-20-factorial-71.json) |
+| 20 | 70 | [70](order-20-factorial-70/tableau-20-factorial-70.json) |
 
 The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The [shorter scalar grids](SHORT-SYMMETRIC-GRIDS.md) use one or two next-order defects to show exact order, without needing an inverse of the next order. Order eleven uses the [eight-row reverse chart through size five](SHARP-PAID-ERK-GRADE-FIVE.md).
 
@@ -42,6 +42,8 @@ At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use ex
 At order twelve, [combining the nine-row forward chart with the eight-row reverse chart](order-12-factorial-25/README.md) gives 25 stages and verifies exact order without inverting 13. The former 26-stage tableau is unchanged.
 
 At order 15, [two tiers of weighted receivers](order-15-factorial-39/README.md) recover the missing donor direction in 39 stages instead of 40. The checker verifies the additional intermediate source pairing as well as the final one. The [40-stage tableau and its compact certificate](order-15-certificate/README.md) remain available.
+
+At order 20, [two-mode recovery on twenty asymmetric scalar nodes](order-20-factorial-70/README.md) drops two reverse donors while adding just one scalar row. The former 71-stage tableau remains unchanged.
 
 At order 19, [an asymmetric scalar grid and two-tier weighted recovery](order-19-factorial-64/README.md) reduce the factorial-unit count from 65 to 64. The asymmetric grid ensures that no unpaid prime removes two live measurements.
 

@@ -13,7 +13,7 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 17 | 58 | [57](tableau-17.json) |
 | 18 | 64 | [63](tableau-18.json) |
 | 19 | 72 | [71](tableau-19.json) |
-| 20 | 79 | [79](tableau-20.json) |
+| 20 | 79 | [78](tableau-20.json) |
 
 The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The [shorter scalar grids](SHORT-SYMMETRIC-GRIDS.md) use one or two next-order defects to show exact order, without needing an inverse of the next order. Order eleven uses the [eight-row reverse chart through size five](SHARP-PAID-ERK-GRADE-FIVE.md).
 
@@ -26,3 +26,5 @@ This is not a new Lean certificate.
 The [shorter order-seven chart](SHORT-GRADE-SEVEN.md) uses an exact contrast of three old stage derivatives, reducing its preparation from sixteen rows to fifteen. It is used on both sides at order fifteen, saving two stages there, and on one side at orders fourteen, sixteen, and seventeen.
 
 The [projected order-eighteen construction](PROJECTED-ORDER-18.md) saves another stage by omitting an irrelevant reverse polynomial. The projection verifier checks every rooted chart condition through size nine on the two actual prefixes.
+
+At order twenty, [putting the larger chart on the reverse side](REFLECTED-ORDER-20.md) restores a literal endpoint merger and reduces the tableau to 78 stages. The separate chart verifier checks both complete decoders.

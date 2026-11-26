@@ -159,7 +159,7 @@ def eight_row_grade_five():
     return a, [eval_at(v) for v in x], [basis(0,8),basis(7,8),basis(6,8),midpoint,basis(4,8)]
 
 
-def long(g, reverse, seed, projected=False):
+def long(g, reverse, seed, projected=False, reflected_twenty=False):
     a = [list(map(F,row)) for row in seed['A']]
     b = list(map(F,seed['b']))
     mo = [pad([w*sum(row)**k for w,row in zip(b,a)],17) for k in range(4)]
@@ -178,6 +178,8 @@ def long(g, reverse, seed, projected=False):
         z = list(map(F, ['-1/3','1/3','-1/5','5'] if reverse else ['-5','-1/3','1/5','1/3']))
     else:
         z = list(map(F, ['-1/3','1/3','1/2','-2'] if reverse else ['-1/3','1/3','3/5','-5/3']))
+    if reflected_twenty and not reverse:
+        z = list(map(F, ('-5','-1/3','1/5','1/3')))
     xx = list(map(x_of,z))
     ne = prepend(op7,xx,a)
     op8 = (op6[0][:4]+ne[0],op6[1][:4]+ne[1])
@@ -213,12 +215,14 @@ def long(g, reverse, seed, projected=False):
             rows.append([v-d*w for v,w in zip(basis(len(a)-1,len(a)),basis(19,len(a)))])
         return a,operators,rows
     z2 = list(map(F,['-1/3','1/3','1/2','-2/3','2/3'] if reverse else ['-8/3','-1/3','1/3','-2','2']))
+    if reflected_twenty:
+        z2 = list(map(F, ('-8/11','4/7','-2','1/2','0') if reverse else ('0','-1/3','1/3','-1/2','1/2')))
     xx2 = list(map(x_of,z2))
     ne2 = prepend(op8,xx2,a)
     op9 = (op6[0][:3]+[ell4p]+ne2[0],op6[1][:3]+[[Z]*18+ell4]+ne2[1])
     if g==9:
         return a,*op9
-    assert g==10 and not reverse
+    assert g==10
     def derivative_of_omega(poly):
         # Differentiate (1-u^2)^2 times the centered polynomial.
         ext = [Z]*(len(poly)+4)
@@ -231,6 +235,8 @@ def long(g, reverse, seed, projected=False):
     assert all(unit(v) for v in ell5)
     ell5p = lambda j: dot(ell5,[x**j for x in xx2])
     new = [x_of(v) for v in z2[1:] + [Z,F(-2,3),F(2,3)]]
+    if reflected_twenty:
+        new = list(map(x_of, map(F, ('0','-2','2','-1/2','1/2','-4/7','4/7'))))
     ne3 = prepend(op9,new,a)
     return a,e[0]+[ell5p]+ne3[0],e[1]+[[Z]*22+ell5]+ne3[1]
 
@@ -245,7 +251,7 @@ targets = {
     17:(9,7,18,0,18,(1,),59),
     18:(8,9,12,-6,18,(-5,-4,-3,-1,13,17),64),
     19:(9,9,12,-6,18,(-5,-4,-3,-2,17),73),
-    20:(10,9,12,-6,18,(-5,-4,-3,17),81),
+    20:(9,10,12,-6,18,(-5,-4,-3,17),79),
 }
 
 
@@ -253,8 +259,8 @@ def construct(p,seed):
     global PAID
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]
-    f,fo,fr = short(m) if m<8 else long(m,False,seed,projected=p==18)
-    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9,seed,projected=p==18))
+    f,fo,fr = short(m) if m<8 else long(m,False,seed,projected=p==18,reflected_twenty=p==20)
+    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9 or p==20,seed,projected=p==18,reflected_twenty=p==20))
     k = len(rev)
     ys = [F(j,N) for j in range(lo,hi+1) if j not in omit]
     if 11<=p<=20:
@@ -271,6 +277,9 @@ def construct(p,seed):
         elif p==18:
             ys=sorted({F(1,2)} | { (1+sg*F(v))/2 for sg in (-1,1)
                           for v in ('1/5','1/3','1/2','2/3','1','3/2','2','5')})
+        elif p==20:
+            ys=sorted({F(1,2)} | {(1+sg*F(v))/2 for sg in (-1,1)
+                      for v in ('1/3','1/2','1','2','8/11','4/7','4/5','4/3','8/3')})
         else:
             ys=sorted({F(1,2)} | {F(6+s*j,12) for s in (-1,1) for j in (1,2,3,4,5,6,7,8,12)})
         count=len(f)+len(rev)+len(ys)-1
@@ -296,6 +305,12 @@ def construct(p,seed):
         li = lambda degree: primitive_at(x[i])(degree)-dot(ti,[xi**degree for xi in x])
         a.append(read(fo,fr,li)[0]+ti[:i])
     rows,b,mergers=merge(a,[Z]*len(f)+beta[::-1])
+    if p==20:
+        assert (len(f),k,len(ys),len(rows)) == (27,34,19,78)
+        # Receiver order is reversed; the old endpoint is forward row 17.
+        origin = len(f) + len(ys) - ys.index(O)
+        endpoint = len(f) + len(ys) - ys.index(Z)
+        assert (origin,1) in mergers and (endpoint,17) in mergers
     assert len(rows)<=count, (p,len(rows),count)
     for wi,row in zip(b,rows):
         assert paid_integer(wi.denominator)

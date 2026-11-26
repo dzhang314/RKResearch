@@ -17,7 +17,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 11 | 16 / 13 / 18 | 16 / 13 / 18 | 16 / 13 / 18 |
 | 12 | 17 / 14 / 21 | 18 / 15 / 21 | 18 / 15 / 21 |
 | 13 | 19 / 16 / 25 | 19 / 17 / 25 | 20 / 17 / 25 |
-| 14 | 20 / 17 / 28 | 21 / 19 / 28 | 21 / 19 / 28 |
+| 14 | 21 / 17 / 28 | 21 / 19 / 28 | 21 / 19 / 28 |
 | 15 | 22 / 19 / 32 | 22 / 21 / 32 | 23 / 21 / 32 |
 | 16 | 23 / 20 / 36 | 24 / 22 / 36 | 25 / 22 / 36 |
 | 17 | 25 / 22 / 41 | 26 / 24 / 41 | 27 / 24 / 41 |
@@ -29,6 +29,7 @@ Every real statement in the last column transfers by real-closed-field theory: f
 
 - [All-ring ERK lower bound: fifth-degree surplus](paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) and [doubling surplus](paid-beta/02-PAID-DOUBLING-SURPLUS.md): the stronger entries at orders 10–20 are proved algebraically and have not yet been formalized in Lean.
 - [Finite paid-field ERK argument at orders 18 and 19](paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md): the arbitrary-ring floors equal the characteristic-zero values 27 and 29.
+- [Paid order-14 ERK argument](paid-beta/04-PAID-ORDER-FOURTEEN.md): the arbitrary-ring floor matches the characteristic-zero value of 21. The proof uses two chronological root tests and an exact integer norm certificate.
 - [Characteristic-zero arguments](characteristic-zero/README.md)
 - [Ordered-field arguments and transfer](ordered-fields/README.md)
 - [Proofs using the reals](real-proofs/README.md)

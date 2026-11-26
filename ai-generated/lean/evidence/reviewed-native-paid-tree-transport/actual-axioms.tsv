@@ -1,0 +1,8 @@
+declaration	axioms
+RKResearch.ContextCompletion.PaidTree.raw	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidTree.value	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidTree.LocalCut	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidTree.raw_natDegree_le	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidTree.value_natDegree_le	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidTree.idealColumn_natDegree_le	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidTree.terminal_unitMoment_eq_of_localCuts	Classical.choice,Quot.sound,propext

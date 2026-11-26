@@ -1,0 +1,7 @@
+field	value
+body_nonfatal_warnings	2
+body_warning_locations	79:4,94:2
+body_warning_category	linter.style.haveILetI
+body_warning_message	Goal is a proposition; let preferred over letI
+body_warning_admission	The declared body gate required actual exit 0, five nonempty outputs, and post-guard agreement; it did not impose a warning-zero condition. Only these exact two style diagnostics are admitted from the matching measured log.
+body_log_sha256	f1be642fc69844eef089f576b7172754cb3fbae6a8c53dfe12af46fdc9832b30

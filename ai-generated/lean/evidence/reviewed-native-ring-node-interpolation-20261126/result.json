@@ -1,0 +1,86 @@
+{
+  "body": {
+    "actual_lean_exit": 0,
+    "actual_wrapper_exit": 0,
+    "body_diagnostic_count": 0,
+    "measured_direct_stock_imports": {
+      "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": {
+        ".olean.private": "252e431926a4e06371a96b85b0121814fb15b354d6c3456bc971064cbbecdb92",
+        ".olean.server": "13ccc72c03b7acb4e3e3bdc6fbb3b09df3e1df025e508c39f05f7df979988978",
+        "primary": "9970193e6a7db4dd1879ced29f8ede94867a08c18f7f6336bb62c4fe1cde7ad3",
+        "source": "3b78bb6d658a46655dcc28fa1f2a96127418250ad5cab4d3cbe51351e82243b5"
+      },
+      "Mathlib.LinearAlgebra.Vandermonde": {
+        ".olean.private": "7a8a863a294022545a6b1bc29d9f4099df7a77cfb4e3622f4a8f129b2c97c59f",
+        ".olean.server": "7c3ee487183d2ffca026e4bebf4fb659056c315cc93dad2d42a7f5131e05bdf8",
+        "primary": "795d2bc9bbbd01c25835886ba8a65395667ff7a3981995009775d05b68713e29",
+        "source": "878e93e160c5ecf291475474354881809688767e1a88c1d601b634c69078b30d"
+      }
+    },
+    "measured_row_sha256": "fd133348991b8b45dfaf328dd5c687ac49794aabd8208594d1ac31a2e5c58bd0",
+    "object_hashes": {
+      "ir": "a2bde7368200981f85daf411c8af2cf594d9f197bcd84cf0acf4588fd49c662a",
+      "ir_signature": "7c563c66f9777870f339e587081a0a18ff312782507755dcf5f64ab2208516f2",
+      "primary_olean": "76f2bd53591470c0f656e788cc47a42cf31b4b9b06e2547ee377c27223373a94",
+      "private_olean": "8a0b81b0170913e66f08e921624cf104ca67bec00b65481ccbef995c978e7a9d",
+      "server_olean": "b7be96468e7a09f711cef6daf7ed00c09d11733e757d57b8e85dc474e3217147"
+    },
+    "project_imports": [],
+    "raw_body_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "repo_source": "ai-generated/lean/RKCert/ReviewedNative/RingNodeInterpolation.lean",
+    "separately_current_stock_ir_pins": 6994,
+    "source_sha256": "7736f868398d5b384f9b5b7d32f77f74af3278673f7173a8ac4c155417b7e625",
+    "stock_header_manifest_sha256": "6e1aa589e28b7bc3c3c6d37562d32d08578ec97f6133534adc922cc0b88b9417",
+    "stock_header_module_count": 3497,
+    "stock_ir_manifest_sha256": "301130b64d82e506d4fa1c6a59766e3e1cf42a41369e21f7891f24a99c9c1700"
+  },
+  "lean_binary_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "lean_version": "4.36.0",
+  "module": "RKCert.ReviewedNative.RingNodeInterpolation",
+  "schema": "reviewed-native-ring-node-interpolation-evidence-v1",
+  "scope": "factorial-unit ring interpolation and cleared primitive/readout only; no tableau, native order or stage-count certificate",
+  "typed_no_output_audit": {
+    "actual_audit_gate_exit": 0,
+    "actual_lean_exit": 0,
+    "actual_transcript_sha256": "5680c8269fa394dd0e62bd2339f1c41aadc6b7b7ff1ec0a9ad7e9ac007e4f68f",
+    "axioms": {
+      "RKResearch.Certified.RingNodeInterpolation.isUnit_det_integerVandermonde": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.RingNodeInterpolation.mul_primitiveReadMap_monomial": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.RingNodeInterpolation.mul_quadratureWeights_monomial": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.RingNodeInterpolation.reconstruct_samples": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.RingNodeInterpolation.resample_monomial": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.RingNodeInterpolation.samples_reconstruct": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "axioms_json_sha256": "374e18c4ed68b945c224e22d5c59f8a1d6574a29ba8b9a57e7dd06abae416a64",
+    "object_output": false,
+    "repo_source": "ai-generated/lean/AuditReviewedNativeRingNodeInterpolation.lean",
+    "sole_project_import": "RKCert.ReviewedNative.RingNodeInterpolation",
+    "source_sha256": "8b868a1b7a4689939674b7b3b8e5e5e56c78b7c12d04dc26a8b83a8229fe465d",
+    "typed_examples": 6
+  },
+  "verified_base_commit": "85e28e8e3262b2033acf78a827f58a8ea52622af"
+}

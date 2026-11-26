@@ -1,0 +1,11 @@
+'RKResearch.ContextCompletion.PaidTree.raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidTree.value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidTree.LocalCut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidTree.raw_natDegree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidTree.value_natDegree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidTree.idealColumn_natDegree_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ContextCompletion.PaidTree.terminal_unitMoment_eq_of_localCuts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

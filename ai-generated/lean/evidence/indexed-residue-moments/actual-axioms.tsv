@@ -1,0 +1,6 @@
+declaration	actual_axioms
+RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.map	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.map_factorial_normalizer	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.IndexedResidueMoments.factorial_cast_isUnit_iff	propext
+RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.in_maximal_residue	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.exists_maximal_residue	Classical.choice,Quot.sound,propext

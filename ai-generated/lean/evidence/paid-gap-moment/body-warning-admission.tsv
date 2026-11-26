@@ -1,0 +1,12 @@
+field	value
+body_nonfatal_warnings	6
+body_warning_category	linter.unusedSectionVars
+body_warning_variable	DecidableEq ι
+body_warning_admission	The declared body gate required actual exit 0, five nonempty outputs, and post-guard agreement; it did not impose a warning-zero condition. Only the exact six private-declaration diagnostics from the matching measured log are admitted.
+body_warning_1	38:8 clockPower_zero
+body_warning_2	40:8 diag_clockPower
+body_warning_3	61:8 mat_mul_apply
+body_warning_4	80:8 monomialError_mem
+body_warning_5	222:8 probe_zero_clock_apply
+body_warning_6	280:8 ascFactorial_paid_unit
+body_log_sha256	7faa28740e905ffedc785affe0206ce7a3c1db2dc9847e63b78813e82ca4fea4

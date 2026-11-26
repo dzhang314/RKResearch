@@ -1,0 +1,10 @@
+@clockComm : {ι : Type u_1} → {K : Type u_2} → [Fintype ι] → [DecidableEq ι] → [Field K] → Matrix ι ι K → Matrix ι ι K
+@gapMoment : {ι : Type u_1} →
+  {K : Type u_2} → [Fintype ι] → [DecidableEq ι] → [Field K] → Matrix ι ι K → (ι → K) → ℕ → ℕ → K
+@paid_gapMoment : ∀ {ι : Type u_1} {K : Type u_2} [inst : Fintype ι] [inst_1 : DecidableEq ι] [inst_2 : Field K]
+  {A : Matrix ι ι K} {b : ι → K} {p h q : ℕ},
+  HasOrder p A b →
+    0 < h → 2 * h + q + 1 ≤ p → ↑(2 * h - 1).factorial * ↑(2 * h + q) * ↑(2 * h + q + 1) * gapMoment A b h q = 1
+'RKResearch.Certified.Graded.PaidGapMoment.clockComm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.PaidGapMoment.gapMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.PaidGapMoment.paid_gapMoment' depends on axioms: [propext, Classical.choice, Quot.sound]

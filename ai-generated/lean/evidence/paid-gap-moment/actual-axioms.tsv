@@ -1,0 +1,4 @@
+declaration	actual_axioms
+RKResearch.Certified.Graded.PaidGapMoment.clockComm	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.PaidGapMoment.gapMoment	Classical.choice,Quot.sound,propext
+RKResearch.Certified.Graded.PaidGapMoment.paid_gapMoment	Classical.choice,Quot.sound,propext

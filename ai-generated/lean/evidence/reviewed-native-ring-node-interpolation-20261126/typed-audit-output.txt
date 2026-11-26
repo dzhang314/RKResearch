@@ -1,0 +1,18 @@
+'RKResearch.Certified.RingNodeInterpolation.isUnit_det_integerVandermonde' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RingNodeInterpolation.reconstruct_samples' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RingNodeInterpolation.samples_reconstruct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RingNodeInterpolation.resample_monomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RingNodeInterpolation.mul_primitiveReadMap_monomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RingNodeInterpolation.mul_quadratureWeights_monomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

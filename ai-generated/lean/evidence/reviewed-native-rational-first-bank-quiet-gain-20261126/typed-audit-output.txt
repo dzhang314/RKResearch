@@ -1,0 +1,6 @@
+'RKResearch.Certified.RationalFirstBankQuietGain.twoNode_residual_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalFirstBankQuietGain.contrast_quiet_gain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

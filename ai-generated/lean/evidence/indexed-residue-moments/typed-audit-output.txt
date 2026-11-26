@@ -1,0 +1,35 @@
+@ClearedMoments.map : ∀ {ι : Type u_2} [inst : Fintype ι] {R : Type u_1} {S : Type u_3} [inst_1 : CommSemiring R]
+  [inst_2 : CommSemiring S] (f : R →+* S) {x w : ι → R} {κ : R} {d qMax : ℕ},
+  ClearedMoments x w κ d qMax → ClearedMoments (⇑f ∘ x) (⇑f ∘ w) (f κ) d qMax
+@ClearedMoments.map_factorial_normalizer : ∀ {ι : Type u_2} [inst : Fintype ι] {R : Type u_1} {S : Type u_3}
+  [inst_1 : CommSemiring R] [inst_2 : CommSemiring S] (f : R →+* S) {x w : ι → R} {k d qMax : ℕ},
+  ClearedMoments x w (↑k.factorial) d qMax → ClearedMoments (⇑f ∘ x) (⇑f ∘ w) (↑k.factorial) d qMax
+@factorial_cast_isUnit_iff : ∀ {R : Type u_1} [inst : CommSemiring R] (p : ℕ),
+  IsUnit ↑p.factorial ↔ ∀ (n : ℕ), 0 < n → n ≤ p → IsUnit ↑n
+@ClearedMoments.in_maximal_residue : ∀ {ι : Type u_2} [inst : Fintype ι] {R : Type u_1} [inst_1 : CommRing R]
+  (I : Ideal R) [I.IsMaximal] {x w : ι → R} {κ : R} {d qMax p : ℕ},
+  ClearedMoments x w κ d qMax →
+    IsUnit ↑p.factorial →
+      ClearedMoments (⇑(Ideal.Quotient.mk I) ∘ x) (⇑(Ideal.Quotient.mk I) ∘ w) ((Ideal.Quotient.mk I) κ) d qMax ∧
+        (∀ n ≤ p, IsUnit ↑n.factorial) ∧ ∀ (n : ℕ), 0 < n → n ≤ p → ↑n ≠ 0
+@ClearedMoments.exists_maximal_residue : ∀ {ι : Type u_2} [inst : Fintype ι] {R : Type u_1} [inst_1 : CommRing R]
+  [Nontrivial R] {x w : ι → R} {κ : R} {d qMax p : ℕ},
+  ClearedMoments x w κ d qMax →
+    IsUnit ↑p.factorial →
+      ∃ I,
+        I.IsMaximal ∧
+          ClearedMoments (⇑(Ideal.Quotient.mk I) ∘ x) (⇑(Ideal.Quotient.mk I) ∘ w) ((Ideal.Quotient.mk I) κ) d qMax ∧
+            (∀ n ≤ p, IsUnit ↑n.factorial) ∧ ∀ (n : ℕ), 0 < n → n ≤ p → ↑n ≠ 0
+'RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.map_factorial_normalizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.IndexedResidueMoments.factorial_cast_isUnit_iff' depends on axioms: [propext]
+'RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.in_maximal_residue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.IndexedResidueMoments.ClearedMoments.exists_maximal_residue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

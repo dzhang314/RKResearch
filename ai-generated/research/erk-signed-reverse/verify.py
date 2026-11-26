@@ -1,4 +1,4 @@
-"""Verify signed-reverse tableaux using exact integers; exhaustive at orders 13 and 14 only."""
+"""Verify signed-reverse tableaux using exact integers; exhaustive through order 14."""
 
 from argparse import ArgumentParser
 import json
@@ -9,8 +9,8 @@ from pathlib import Path
 
 
 parser=ArgumentParser(description=__doc__)
-parser.add_argument("p", type=int, choices=range(13,21))
-parser.add_argument("--all", action="store_true", help="exhaustive replay (orders 13 and 14 only)")
+parser.add_argument("p", type=int, choices=range(11,21))
+parser.add_argument("--all", action="store_true", help="exhaustive replay (through order 14)")
 args=parser.parse_args()
 p=args.p
 assert not args.all or p<=14
@@ -28,7 +28,7 @@ def paid_remainder(n):
 data = json.loads(Path(__file__).with_name(f"tableau-{p}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
-s = (34,41,47,53,59,66,72,81)[p-13]
+s = (27,30,34,40,47,53,59,66,72,80)[p-11]
 assert len(A) == len(b) == s
 assert all(len(row) >= i and not any(row[i:]) for i, row in enumerate(A))
 assert len({row[:i] + (0,) * (s - i) for i, row in enumerate(A)}) == s

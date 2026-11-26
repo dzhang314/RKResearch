@@ -132,6 +132,8 @@ def short(g):
     om = (e[0]+[moment(0),moment(1)],e[1]+mo)
     mid = prepend(om,[F(1,2)],a)
     om5 = (om[0]+mid[0],om[1]+mid[1])
+    if g==5:
+        return a, *om5
     ne = prepend(om5,[F(2,3),F(5,6)],a)
     op6 = (om[0][:3]+mid[0]+ne[0],om[1][:3]+mid[1]+ne[1])
     if g==6:
@@ -194,14 +196,16 @@ def long(g, reverse, seed):
 
 
 targets = {
+    11:(5,5,12,0,12,(1,),29),
+    12:(5,6,12,0,12,(),32),
     13:(6,6,18,0,18,(1,2,4,5,17),35),
-    14:(7,6,18,0,18,(1,2,4,17),41),
+    14:(6,7,18,0,18,(1,2,4,17),41),
     15:(7,7,18,0,18,(1,2,17),47),
     16:(8,7,18,0,18,(1,17),54),
     17:(9,7,18,0,18,(1,),60),
     18:(9,8,12,-6,18,(-5,-4,-3,-1,13,17),67),
     19:(9,9,12,-6,18,(-5,-4,-3,-2,17),73),
-    20:(10,9,12,-6,18,(-5,-4,-3,17),81),
+    20:(9,10,12,-6,18,(-5,-4,-3,17),81),
 }
 
 
@@ -210,9 +214,11 @@ def construct(p,seed):
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]
     f,fo,fr = short(m) if m<8 else long(m,False,seed)
-    rev,ro,rr = short(r) if r<8 else long(r,True,seed)
+    rev,ro,rr = short(r) if r<8 else long(r,r==9,seed)
     k = len(rev)
     ys = [F(j,N) for j in range(lo,hi+1) if j not in omit]
+    if p==20:
+        ys = sorted([F(j,12) for j in (-10,-8,-6,-4,-3,0,2,3,4,6,7,8,9,10,11,12,14,16,18,24)]+[F(4,5)])
     assert len(ys)==p+1 and m+r+1==p and p<=2*m+2
     assert set(map(sum,rev))|{Z,O} <= set(ys)
     site_x = [1-y for y in ys]

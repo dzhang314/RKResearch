@@ -4,19 +4,21 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 
 | Order | Rows allocated by the proof | Rows after literal equality reduction |
 |---:|---:|---:|
+| 11 | 29 | [27](tableau-11.json) |
+| 12 | 32 | [30](tableau-12.json) |
 | 13 | 35 | [34](tableau-13.json) |
-| 14 | 41 | [41](tableau-14.json) |
+| 14 | 41 | [40](tableau-14.json) |
 | 15 | 47 | [47](tableau-15.json) |
 | 16 | 54 | [53](tableau-16.json) |
 | 17 | 60 | [59](tableau-17.json) |
 | 18 | 67 | [66](tableau-18.json) |
 | 19 | 73 | [72](tableau-19.json) |
-| 20 | 81 | [81](tableau-20.json) |
+| 20 | 81 | [80](tableau-20.json) |
 
-The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The resulting proof covers all rooted order conditions at all eight orders. A prescribed vanishing moment gives a next-order bush defect of −1; no inverse of the next order is used.
+The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The proof covers all rooted order conditions at all ten orders. A prescribed vanishing moment gives a next-order bush defect of −1; no inverse of the next order is used. [Additional literal row identities](ADDITIONAL-ROW-MERGES.md) explain the variants at orders 11, 12, 14, and 20.
 
 - `python construct.py 13` rebuilds the literal JSON for order 13, using exact rational arithmetic and the pinned order-nine seed. The other orders use the same command with a different number.
-- `python verify.py 13 --all` and `python verify.py 14 --all` replay all 20,299 and 53,272 rooted conditions respectively, using exact integer arithmetic.
-- `python verify.py 15` through `python verify.py 20` perform sampled replays. The complete proof at these orders is symbolic. All eight verifier runs also check the tree of the next order whose defect is −1.
+- `python verify.py 11 --all` through `python verify.py 14 --all` replay every rooted condition at the specified order, using exact integer arithmetic.
+- `python verify.py 15` through `python verify.py 20` perform sampled replays. The complete proof at these orders is symbolic. All ten verifier runs also check the tree of the next order whose defect is −1.
 
 This is not a new Lean certificate.

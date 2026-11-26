@@ -1,5 +1,7 @@
 # A signed reverse construction of exact paid ERK methods, orders 13–20
 
+The table below gives the allocated rows of the original construction. See the [current index](README.md) for smaller literal tableaux, and [the additional row identities](ADDITIONAL-ROW-MERGES.md) for orders 11, 12, 14, and 20.
+
 Write \(\mathbb U_p\coloneqq\mathbb Z[1/p!]\). There are explicit Runge–Kutta tableaux of exact order \(p\) with the following allocated physical rows over \(\mathbb U_p\) and after every nonzero commutative base change. In particular all denominators divide powers of \(p!\).
 
 | Order \(p\) | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |

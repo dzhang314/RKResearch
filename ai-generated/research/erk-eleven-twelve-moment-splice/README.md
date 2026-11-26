@@ -5,7 +5,7 @@ commutative ring with the indicated factorial invertible.
 They do not improve the smaller upper bounds over real algebraic
 numbers and do not assert stage minima.
 
-**Current order-twelve witness: 32 stages.** The [construction and proof](ORDER-12-IN-32-STAGES.md) reuse the difference between two existing quarter-clock rows. The [32-stage tableau](tableau-12-32.json) has coefficients in $\mathbb Z[1/12!]$. Run `python check-32.py` to check all 7,813 rooted conditions and the two order-thirteen defects whose unit ideal proves exact order after any nonzero coefficient change from that ring. The 33-stage witness below is retained as an archive.
+The current [27- and 30-stage tableaux](../erk-signed-reverse/README.md) use a different reverse construction. The [32-stage construction](ORDER-12-IN-32-STAGES.md) in this archive reuses the difference between two existing quarter-clock rows. Run `python check-32.py` to check the archived [tableau](tableau-12-32.json), all 7,813 rooted conditions, and the two order-thirteen defects whose unit ideal proves exact order after any nonzero coefficient change. The 33-stage method below is the preceding construction.
 
 | Order | Physical stages | Prior uniform-path upper | Paid rooted equations | Common denominator | Unit next cleared defect |
 |---:|---:|---:|---:|:---|:---|

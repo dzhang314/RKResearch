@@ -33,8 +33,9 @@ The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLU
 
 The [terminal detector argument](lower-bounds/paid-beta/06-ODD-EXPLICIT-STAGE-BOUND.md) gives the uniform lower bound \(3d+2\) for every odd explicit order \(2d+1\) with \(d\ge6\). It raises the arbitrary-ring floors at orders 13, 15, and 17 to 20, 23, and 26, respectively. The characteristic-zero floors at orders 13 and 15 also rise to 20 and 23. The odd-order argument does not change the ordered-field bounds at 13, 15 or 17.
 
-The [weighted extension](lower-bounds/paid-beta/07-WEIGHTED-DETECTOR-STAGE-BOUND.md) and its [order-eleven refinement](lower-bounds/paid-beta/08-ORDER-ELEVEN-THRESHOLD.md) prove a uniform \(\lceil3p/2
-ceil\) lower bound for ordinary explicit methods at every order \(p\ge11\), with coefficients in any nonzero commutative unital ring. Order 11 now needs at least 17 stages in every coefficient domain; the arbitrary-ring order-16 floor rises to 24. Some orders have stronger separate bounds. These results are not yet formalized in Lean.
+The [weighted extension](lower-bounds/paid-beta/07-WEIGHTED-DETECTOR-STAGE-BOUND.md) and its [order-eleven refinement](lower-bounds/paid-beta/08-ORDER-ELEVEN-THRESHOLD.md) prove a uniform \(\lceil3p/2\rceil\) lower bound for ordinary explicit methods at every order \(p\ge11\), with coefficients in any nonzero commutative unital ring. Order 11 now needs at least 17 stages in every coefficient domain; the arbitrary-ring order-16 floor rises to 24. Some orders have stronger separate bounds. These results are not yet formalized in Lean.
+
+The [separated-rank refinement](lower-bounds/paid-beta/separated-pure/README.md) gives 27, 28, 30, and 31 stages at orders 17–20 over every characteristic-zero field. The bounds of 30 and 31 at orders 19 and 20 also hold over every nonzero commutative ring. The stronger ordered-field bounds, where applicable, are unchanged.
 
 ## Improved DIRK lower bounds over arbitrary rings
 

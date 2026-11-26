@@ -40,6 +40,8 @@ The lower bounds are covered by the uniform Lean theorem. The four upper tableau
 
 ## Bounds for particular stage architectures
 
+- [Uniform explicit leapfrog paths](research/erk-uniform-leapfrog/UNIFORM-LEAPFROG-WIDTH.md): through order p, exactly 1 + floor(p²/4) physical stages are necessary and sufficient over any nonzero commutative ring in which p! is a unit. The lower bound allows signed weights on intermediate evaluations and sharing of identical stages. The construction gives 21 stages at order nine over ℤ[1/210]. This is a minimum within the stated architecture and an upper bound for unrestricted ERK over those rings, not an unrestricted lower bound or a Lean certificate.
+
 - [First zero diagonal with a one-dimensional commutator kernel](lower-bounds/first-zero-corank-one-floor.md): at order 20, at least 51 stages, compared with 46 from the one-zero mask alone. The hypothesis is automatic for a zero first diagonal followed by nonzero diagonals, which need not be equal. The proof works over any field that admits the stated order and transfers to rings when the rank is witnessed in a residue field.
 - [Fixed seven-stage ERK6 prefix](research/erk-six-ring-minimum/SEQUENTIAL-SUFFIX.md): retaining its seven literal rows requires at least 10, 11, and 13 physical stages at orders 7, 8, and 9. A parallel suffix cannot raise the order at any width. These bounds concern the fixed prefix, not all explicit tableaux.
 

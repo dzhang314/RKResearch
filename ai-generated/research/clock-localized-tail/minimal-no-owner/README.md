@@ -28,3 +28,9 @@ The proofs are algebraic, with sign and classical Laguerre hypotheses where indi
 
 - [Producing the double-factor inputs](ACTUAL-DOUBLE.md) supplies the missing even-\(m\) input by an actual unary extension, for the stated choice of the early Laguerre block and sampler.
 - [An obstruction on a leading set of abscissae](LOWER-CUT.md) rules out generic minimum-width lower-word data at the stated balanced odd orders. It does not exclude exceptional prefixes. In the even-order argument, both parities use the additional complementary contacts.
+
+## Exceptional prefixes
+
+- [Odd reverse length](ODD-REALIZATION.md): Two real-algebraic choices for the next abscissa realize the selected primitive and clock contacts, with a true scalar rule and literal strict taps.
+- [Even reverse length](EVEN-NO-GO.md): After the stated negative prefix the next abscissa is strictly interior, with at most \(r/2-1\) candidates at minimum late width.
+- [Common strict taps](COMMON-TAPS.md): At the target-15 geometry the construction satisfies every rooted condition through order 11 on 33 stages. At target-19 geometry it satisfies every one through order 14 on 51 stages. The proved statements include additional higher contacts on the exceptional row, not full target order or a better unrestricted stage bound.

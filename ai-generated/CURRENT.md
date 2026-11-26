@@ -36,6 +36,13 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 The lower bounds are covered by the uniform Lean theorem. The three upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
 
+## Bounds for particular stage architectures
+
+- [First zero diagonal with a one-dimensional commutator kernel](lower-bounds/first-zero-corank-one-floor.md): at order 20, at least 51 stages, compared with 46 from the one-zero mask alone. The hypothesis is automatic for a zero first diagonal followed by nonzero diagonals, which need not be equal. The proof works over any field that admits the stated order and transfers to rings when the rank is witnessed in a residue field.
+- [Fixed seven-stage ERK6 prefix](research/erk-six-ring-minimum/SEQUENTIAL-SUFFIX.md): retaining its seven literal rows requires at least 10, 11, and 13 physical stages at orders 7, 8, and 9. A parallel suffix cannot raise the order at any width. These bounds concern the fixed prefix, not all explicit tableaux.
+
+Neither result changes the unrestricted tables or adds a Lean certificate.
+
 ## Rational contributing quadrature support
 
 Separate from the stage tables, the [four-shift proof](research/rational-quadrature-four-shift/proof.md) gives at least \(\min(17,p-3)\) distinct contributing rational sites for quadrature order \(p\ge4\): 16 at order 19 and 17 at order 20. Weights may be arbitrary in a characteristic-zero field. Repeat sites are grouped first, and only nonzero aggregate weights count. The result transfers to Runge–Kutta by the reviewed bushy moments. It has an exact arithmetic check, not a new Lean certificate.

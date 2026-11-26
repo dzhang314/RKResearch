@@ -80,6 +80,13 @@ At orders 11 through 20, an independently audited [extension using existing outp
 
 These structural results have independent source audits. They do not change the unrestricted numerical tables or add Lean certificates.
 
+## Further tests for row and clock reuse
+
+- [Prime-local limits on rational quadrature grids](research/paid-quadrature-prime-test/PRIME-LOCAL-SITE-BOUND.md): a prime absent from the node denominators gives a scalar site-count obstruction. The exact enumeration also excludes small centered symmetric grids for orders 15 and 16.
+- [Weighted first-consumption tests](research/weighted-first-consumption/ANTICHAIN-AND-EXACT-GRAM.md): at the first order where two altered branches can meet, the actual weighted Gram matrix determines whether the specified chronological restoration preserves order. [The support inequality](research/weighted-first-consumption/TERMINAL-SUPPORT-INEQUALITY.md) applies to stage-minimal tableaux under its stated visibility hypotheses.
+- [Physical whole-fibre transfer](research/dirk-whole-fibre-transfer/PAID-FIBRE-TRANSFER.md): actual indicator membership and late contributing clocks can force extra stages in all three diagonal classes. These are conditional class bounds, not assertions about all minimal tableaux.
+- [Endpoint corrections for strict SDIRK](research/sdirk-endpoint-echo/TWO-ORDER-ENDPOINT-ECHO.md): with the specified partial rooted-order profile, a few stages can supply the remaining corrections without changing the common diagonal or scalar moments. This does not raise an arbitrary seed or improve the unrestricted table.
+
 ## Bounds for particular stage architectures
 
 - [Uniform explicit leapfrog paths](research/erk-uniform-leapfrog/UNIFORM-LEAPFROG-WIDTH.md): through order p, exactly 1 + floor(p²/4) physical stages are necessary and sufficient over any nonzero commutative ring in which p! is a unit. The lower bound allows signed weights on intermediate evaluations and sharing of identical stages. The construction gives 21 stages at order nine over ℤ[1/210]. This is a minimum within the stated architecture and an upper bound for unrestricted ERK over those rings, not an unrestricted lower bound or a Lean certificate.

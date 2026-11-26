@@ -1,0 +1,9 @@
+'RKResearch.Certified.RationalDonorChain.phi_chain_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalDonorChain.chain_mulVec_parent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalDonorChain.chainFin_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalDonorChain.chainFin_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalDonorChain.chainFin_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.RationalDonorChain.pureBankMatrix_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalDonorChain.pureBankMatrix_last' depends on axioms: [propext, Classical.choice, Quot.sound]

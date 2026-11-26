@@ -42,6 +42,10 @@ The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLU
 
 The lower bounds are covered by the uniform Lean theorem. The four upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
 
+## Raising order while keeping the old stages
+
+The [Newton-tail construction](research/newton-tail-order-raising/NEWTON-TAIL.md) raises order p−1 to at least p without changing the old stage equations, provided the output weights can be reassigned. It uses at most 2p new stages over nonzero commutative rings with p! invertible. Over the real algebraic numbers the [sharp worst-case costs](research/newton-tail-order-raising/SHARP-EXTENSION-COST.md) are floor(p/2) new ERK stages and ceil(p/2) for DIRK and SDIRK, with preservation of the SDIRK diagonal. For comparison, [fixing the old output weights](research/newton-tail-order-raising/FIXED-OUTPUT-LOWER.md) can force exponentially many new stages along a sequence of orders; some order-18 bases need at least 77 appended stages to reach order 19. These are extension costs, not absolute stage minima or Lean certificates.
+
 ## Bounds for particular stage architectures
 
 - [Uniform explicit leapfrog paths](research/erk-uniform-leapfrog/UNIFORM-LEAPFROG-WIDTH.md): through order p, exactly 1 + floor(p²/4) physical stages are necessary and sufficient over any nonzero commutative ring in which p! is a unit. The lower bound allows signed weights on intermediate evaluations and sharing of identical stages. The construction gives 21 stages at order nine over ℤ[1/210]. This is a minimum within the stated architecture and an upper bound for unrestricted ERK over those rings, not an unrestricted lower bound or a Lean certificate.

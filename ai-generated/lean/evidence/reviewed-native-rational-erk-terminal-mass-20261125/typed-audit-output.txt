@@ -1,0 +1,10 @@
+ai-generated/lean/AuditReviewedNativeRationalERKTerminalMass.lean:55:24: warning: This simp argument is unused:
+  mat_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [v, nodes, hi]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'RKResearch.Certified.RationalTerminalMass.realize_quadratic_outgoing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

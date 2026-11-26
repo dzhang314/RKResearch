@@ -1,0 +1,205 @@
+{
+  "body": {
+    "accepted_objects": {
+      "RKCert/ReviewedNative/RationalERKTerminalMass.ir": "ecd78c20b17da5db75398bdf71a1ecc8a7eb56b24a7cf26592ddb37042a4eabc",
+      "RKCert/ReviewedNative/RationalERKTerminalMass.ir.sig": "66e09e75a6832d91263883fdc29f769ce268caa05ffad2b2cf2ea718d939eb57",
+      "RKCert/ReviewedNative/RationalERKTerminalMass.olean": "c1091a109e778af37ae8b661c9b4067a21b17fda6e3fcff03a25509303386059",
+      "RKCert/ReviewedNative/RationalERKTerminalMass.olean.private": "ffc39dccf00bb0ff2959581b48a047310b267ff21affdc1e186db063c3ab86b2",
+      "RKCert/ReviewedNative/RationalERKTerminalMass.olean.server": "07ab73183f7c9b3bb30f1452838aa631c612d5703f8ae2eae01a5142fcd002df"
+    },
+    "audit_calls": 0,
+    "compiler_calls": 1,
+    "compiler_exit": 0,
+    "nonfatal_compiler_warnings": 3,
+    "project_provider_fragments": 45,
+    "project_provider_modules": 9,
+    "raw_receipt_sha256": "0bee2cd4cd94411be14340ef4a1da5cfd17c0e111639d6c1ae45125d448f4a48",
+    "raw_stdout_sha256": "6878362fdfdd8f7b0ba37205192d9e4201b950dd81803f7861545004ff220861",
+    "reason": "single unchanged body only; no axioms checked",
+    "requested_object_output": true,
+    "session": 61530,
+    "source": "ai-generated/lean/RKCert/ReviewedNative/RationalERKTerminalMass.lean",
+    "source_sha256": "af443bc5af47930d39439d5f8b7e2dc5b0fb47dc4f4a793f1fd81c9987f7571e",
+    "status": "BODY_PASS",
+    "stock_modules": 3497,
+    "wrapper_exit": 0
+  },
+  "lean": "4.36.0",
+  "lean_executable_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "measurement_source_base": "d5b76782cbe8399e13b3447761ca31aaf721c535",
+  "original_body_stop": {
+    "compiler_exit": 1,
+    "first_diagnostic_line": 136,
+    "new_objects_accepted": 0,
+    "one_hunk_patch_sha256": "439a0eb85a31c437dea6dfae680a8a6d3710f567352f644aeb9dd4a2b21ce4cb",
+    "raw_receipt_sha256": "5932f430df6beb95af8b62c3fec1af33f15b22b6982260871667e1ee1b44d7a4",
+    "raw_stdout_sha256": "086de0d41f280649a5f7792ca9e7d9ab64bf2ac359e4660985ff27e0b5ac5d63",
+    "repair_kind": "one proof-local row/dot-product representation rewrite",
+    "session": 30254,
+    "source_sha256": "e88d4f23c25c145098abfed8a58778217fe621efc72ccc68f9dc89c168d82dd3",
+    "wrapper_exit": 1
+  },
+  "pinned_dependency_files": {
+    "ai-generated/lean/lake-manifest.json": {
+      "git_blob": "4344b11fef7e96a095cebfebcb324d11b0c8420d",
+      "sha256": "207e593bad22fa516ec10372ae95145ce011ab3ac61f7256dc0b8a1c4b55d820"
+    },
+    "ai-generated/lean/lean-toolchain": {
+      "git_blob": "00f848359b1cdaf7c12cd6b7acc5b4364752e154",
+      "sha256": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a"
+    },
+    "lake-manifest.json": {
+      "git_blob": "63d44857a19bacff36338912c8482d4e7454ebfb",
+      "sha256": "71658e0b20ce36f4211f427f43dccee32d05a6583fbb5db3714ba46e25e5be43"
+    },
+    "lean-toolchain": {
+      "git_blob": "00f848359b1cdaf7c12cd6b7acc5b4364752e154",
+      "sha256": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a"
+    }
+  },
+  "project_provider_artifact_sha256": {
+    "RKCert/ReviewedNative/BushyMoments.ir": "25f864a71ab486fb3a4743cab4bcc127739d600cdc0139467b9bf00d04cc3516",
+    "RKCert/ReviewedNative/BushyMoments.ir.sig": "9574aa52102c7fad5f49482d0c490ebb9ae5a63cb951a9dbde2ccb67f0729afb",
+    "RKCert/ReviewedNative/BushyMoments.olean": "e1dd80c1723f2f3c8f21fef9165cc29424ed95e6467df82c577caa98a7a11004",
+    "RKCert/ReviewedNative/BushyMoments.olean.private": "e0794b4d441231f2364e075996c8768ef8ab89558eff4bf87285a97b59d1bc3c",
+    "RKCert/ReviewedNative/BushyMoments.olean.server": "da0eaa33aca6509811bb186bedb869caf64e3c72bef5f8ebb541b50e28987aff",
+    "RKCert/ReviewedNative/ERKTerminalDeformation.ir": "cb5515290c45123594c16ab09b57fca79afbfb7480f026c4ba1b23336ebbddae",
+    "RKCert/ReviewedNative/ERKTerminalDeformation.ir.sig": "06c1a27235f49f34d597e2c9ad7413615b0be9f8aec88d41d35dc80c375bf520",
+    "RKCert/ReviewedNative/ERKTerminalDeformation.olean": "b683cec04bd88a9b8b9daf08b901f454e6718b1af4b6f7c30dbb9c90d025300a",
+    "RKCert/ReviewedNative/ERKTerminalDeformation.olean.private": "09efcbf487e56736350c6ae9561481c0a669b369f1b8c9de9cbed3568ed35da2",
+    "RKCert/ReviewedNative/ERKTerminalDeformation.olean.server": "546b8fa01c76a2b229a35f00ff4ea4a5985e2be85317104c9226841cdf907596",
+    "RKCert/ReviewedNative/GradedColumns.ir": "8ed26dc6bfea52d806515309f01a2ff2df7d7f9bffb0e9ae2d18e46bb65294d3",
+    "RKCert/ReviewedNative/GradedColumns.ir.sig": "381d5620e663e1f9e21e3d75925c850f2f59f0bb1c6c2667f0fbad0f4b51619f",
+    "RKCert/ReviewedNative/GradedColumns.olean": "b9f1150c73c60bff625f5704ffb5cf271a761426d49c78a8114a91fe9c2c3bec",
+    "RKCert/ReviewedNative/GradedColumns.olean.private": "8cc11921f3c2cd06cd2d30447d3f351ea41dcd5431a93f02d1ff195c4f5b55c7",
+    "RKCert/ReviewedNative/GradedColumns.olean.server": "9326f913d90a8a985fdf4727c6cea271b6c950e2a76eda31435424366c35648d",
+    "RKCert/ReviewedNative/GradedDefects.ir": "089b5fead7953137ec7fd7e45e41de303a53789a2699ff3aa0c3421e08942749",
+    "RKCert/ReviewedNative/GradedDefects.ir.sig": "c7cd314f1f0ad3c93995c0b9b7733b82ede094d18cd2fd2b9cb559252b232be5",
+    "RKCert/ReviewedNative/GradedDefects.olean": "5fecf48298fbfd27ad57ae1a73e1af2ede3f558a967ba4399d3776cbad9ffcd9",
+    "RKCert/ReviewedNative/GradedDefects.olean.private": "79cfefa76f486c55fe4008e4ecba59b4c3f2a5637f764f74434acfa1e4edb88e",
+    "RKCert/ReviewedNative/GradedDefects.olean.server": "98c8ca6a6049b0735b9bcacd2efbfe447b51232368b8ef78df38ce6aa4afbdfa",
+    "RKCert/ReviewedNative/GradedProducts.ir": "3107bf431643e2c00bc304e5ffe5aa4659b2a98f43552d6915313eee8c0f01d7",
+    "RKCert/ReviewedNative/GradedProducts.ir.sig": "1eea50ef8ca45be180b6078dfbcd03a6dda41f56c8d4b0d4358114bcf9c09077",
+    "RKCert/ReviewedNative/GradedProducts.olean": "c11fd79295bc44839124967cd0ed8e562b8d2c3295dcfb337a452325819a7b1c",
+    "RKCert/ReviewedNative/GradedProducts.olean.private": "99b03c2661c2ed8f09861826f177276ab5f15840343e7e411e72b125b11869df",
+    "RKCert/ReviewedNative/GradedProducts.olean.server": "d88401d6dd18a5023cc2fae15a19d86b9c39dca9e59368ee47b0f8cb9c1db2c6",
+    "RKCert/ReviewedNative/RationalVandermondeMoments.ir": "1597f93d42d9fe2043fe878b9bf457c0a81f3221eb3de36053921ee49d6c948c",
+    "RKCert/ReviewedNative/RationalVandermondeMoments.ir.sig": "76c6862bf369828979e1b2e7a726e82f7d92c7d670fc26f1896d5d597926fe36",
+    "RKCert/ReviewedNative/RationalVandermondeMoments.olean": "830d1fa63bff2634cfc3f68c047ad87d0056bef22eec89cfb31608a2a9726fea",
+    "RKCert/ReviewedNative/RationalVandermondeMoments.olean.private": "55a130559e6728953de646cb7a0798d7100247e58b19f42ca46118ef736bcff0",
+    "RKCert/ReviewedNative/RationalVandermondeMoments.olean.server": "cfa5580d6c2be2a214880b3416f6bbf475f4a754e2ad106e5769758529a9f93f",
+    "RKCert/ReviewedNative/RootMomentCuts.ir": "c4243081dc7177665c701bf6c63eff118e028981e17b1d71429ca6ad77a55824",
+    "RKCert/ReviewedNative/RootMomentCuts.ir.sig": "db9388abc113cf12f2e5853598fa46992d85ce8aa13c428f95f6fa514314db03",
+    "RKCert/ReviewedNative/RootMomentCuts.olean": "90d9ef5a49f32936ff33648ee2c1cb4ebba16b646bd346f595c810f2d09df119",
+    "RKCert/ReviewedNative/RootMomentCuts.olean.private": "2ce8f1756aeeb52d9aeeb267b29a411ddf719466a7e64e9a508f7eb0441eb942",
+    "RKCert/ReviewedNative/RootMomentCuts.olean.server": "63106996eae33bd95fb99aee5ff1ecd32f9298089f4c67302f5e0444d153a7fd",
+    "RKResearch/FiniteRootedTree.ir": "9875a67ef9840fdc70b3905ca8289b51a8cfb33b8e237b390b970b397e188b1b",
+    "RKResearch/FiniteRootedTree.ir.sig": "295f2fc3eb4d30f4c0c1fcce2b1cd6ad5f9c206aafa77b27df70e42597482a2e",
+    "RKResearch/FiniteRootedTree.olean": "82112d27743159ecf7b50916894527bbb5b12403f151bf99dd51d3b96af8b764",
+    "RKResearch/FiniteRootedTree.olean.private": "880f20601be745396a3d0d701be2fb0289de6f442b443ceb28fcbb586f281856",
+    "RKResearch/FiniteRootedTree.olean.server": "5e91199c29421c88c995d43728f241965c7ca9ba0e2851fd2109f76e4201170f",
+    "RKResearch/OrderConditions.ir": "081ef7434f4a230a328a0af189965635736c9aacb70860c1bb1b95f14f5939a0",
+    "RKResearch/OrderConditions.ir.sig": "ee3eff6780fac9aa45de3ac5297bdb0b80d1436bb94c2f05569cb0474573712f",
+    "RKResearch/OrderConditions.olean": "5c801eba9929197ec299ccda522cdc59e7a6ba55d3411707cf6d47044478d8f9",
+    "RKResearch/OrderConditions.olean.private": "eaa98aac987993f0fe943410160c4106610b482757cb5dacb1c9e616afdc3776",
+    "RKResearch/OrderConditions.olean.server": "9d3414184799012341f6cf0f9f5e05e5a2bfdbf21442d2b1ce4133de48ef74f7"
+  },
+  "project_providers": [
+    {
+      "git_blob": "59c3781a17e5a8019ce2c7c02e948dae7607019e",
+      "measured_session": 39763,
+      "module": "RKCert.ReviewedNative.BushyMoments",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/BushyMoments.lean",
+      "sha256": "911a42e91d83cfdfa0e5ffba3665298b8cb93abc872c5fa0065003f754c6ff2e"
+    },
+    {
+      "git_blob": "6f821f4b53e2f3d4f7bebbc32c7d7e473b8b0099",
+      "measured_session": 22267,
+      "module": "RKCert.ReviewedNative.ERKTerminalDeformation",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/ERKTerminalDeformation.lean",
+      "sha256": "6b7dc6f865f72f3d2eb04d1359186a85b955d1ce01acc4d5e4936b781ee0baed"
+    },
+    {
+      "git_blob": "70e5b87f9799f5d91f4d842848a4f54e4f9c13fd",
+      "measured_session": 39763,
+      "module": "RKCert.ReviewedNative.GradedColumns",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedColumns.lean",
+      "sha256": "e2a1cfa9280ea49c3e3347dee50ea9e3f6b8d4c4c8b8e75dee105ade60c0f198"
+    },
+    {
+      "git_blob": "607ae20d5f9ec887c6448c2f01566308cc238722",
+      "measured_session": 39763,
+      "module": "RKCert.ReviewedNative.GradedDefects",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedDefects.lean",
+      "sha256": "f3e7b4eafdb469306d61a28b4a6ba4521501dc719344f727a9ebbcc2a3156b7f"
+    },
+    {
+      "git_blob": "6a14c859470d1121c1c9cf3e95ecb9c469297958",
+      "measured_session": 22506,
+      "module": "RKCert.ReviewedNative.GradedProducts",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/GradedProducts.lean",
+      "sha256": "4e26938ad03acae885d8e53456edf760535b4312b9094324f85987127d120b62"
+    },
+    {
+      "git_blob": "bf4506798fc801c042ca93884786c543180fea1e",
+      "measured_session": 30674,
+      "module": "RKCert.ReviewedNative.RationalVandermondeMoments",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/RationalVandermondeMoments.lean",
+      "sha256": "1b88d49b3b0d14f8569d80271ade60e2cbf70cca7bc3d84505f8e1a587f6a9e2"
+    },
+    {
+      "git_blob": "98fbba239c73651b589f67a4a07d47e35641698a",
+      "measured_session": 39763,
+      "module": "RKCert.ReviewedNative.RootMomentCuts",
+      "path": "ai-generated/lean/RKCert/ReviewedNative/RootMomentCuts.lean",
+      "sha256": "bad53684ecc9e1d74abc5653c9448e2fd481d287906942ef0e3ca96f69873184"
+    },
+    {
+      "git_blob": "42af3c80ae5cd994f358fe0cb798c7e86665f2d2",
+      "measured_session": 17400,
+      "module": "RKResearch.FiniteRootedTree",
+      "path": "RKResearch/FiniteRootedTree.lean",
+      "sha256": "b83c146d56c2c4e712def29aea213b078ca55056eb0ba99c0bbfb75e54f52869"
+    },
+    {
+      "git_blob": "a30cdb61e03c3c437f70dee0d88d8d1245c552b1",
+      "measured_session": 39763,
+      "module": "RKResearch.OrderConditions",
+      "path": "RKResearch/OrderConditions.lean",
+      "sha256": "c979b6d7d376a78029591091e331a7bfe3484e26cda483f2c0a38367124a01a2"
+    }
+  ],
+  "publication_base": "f6052221c849f1593d4da00fd565a82b9e6c591c",
+  "scope": "separate serial body and no-output typed audit; no cold build",
+  "typed_audit": {
+    "actual_lean_exit": 0,
+    "audit_calls": 1,
+    "body_calls": 0,
+    "exact_report_sha256": "66ad9512e09b48d35aeb7949e4b104b130eceb64ce03ac2a7058d940f852fabd",
+    "locally_typed_clients": 1,
+    "named_axiom_reports": {
+      "RKResearch.Certified.RationalTerminalMass.realize_quadratic_outgoing_mass": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "new_project_fragments": 0,
+    "nonfatal_compiler_warnings": 1,
+    "portable_stdout_sha256": "50b9182e8d19ce0b8476082b86017446fddaf2537eb1ff0e5ea58fa0a15b1616",
+    "portable_transcript_path_replacements": 1,
+    "project_fragments_loaded": 50,
+    "project_modules_loaded": 10,
+    "raw_receipt_sha256": "4b88c1b4ef30260aa07c2018c809aaba29a557d92f2c7337848902a98e3fd2a8",
+    "raw_stdout_sha256": "1b7aacd9a0d5086502e39c82911715f6a05213bf469d7aab9eac63e268e37271",
+    "reason": "literal existential reviewed HasOrder and coalesced output; one stock-only named report",
+    "requested_object_output": false,
+    "source": "ai-generated/lean/AuditReviewedNativeRationalERKTerminalMass.lean",
+    "source_sha256": "ca6131ceb7d2e2de0d230a0156e7a7c4a7b3cf0eb153699ae155f0f287ff67e9",
+    "status": "AUDIT_PASS",
+    "stock_modules": 3497,
+    "wrapper_exit": 0
+  },
+  "verified_rational_source_descendant": "b31f9188a998b760d736b2c81abdfe39cfeb9178"
+}

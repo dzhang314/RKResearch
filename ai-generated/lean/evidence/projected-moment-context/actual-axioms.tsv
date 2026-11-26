@@ -1,0 +1,6 @@
+declaration	actual_axioms
+RKResearch.ContextCompletion.PaidUnits.of_tableau	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.unitMoment_monomial	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.unitMoment_byParts	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.MomentProjection.hasOrder	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.Model.HasOrder.paid_cell	Classical.choice,Quot.sound,propext

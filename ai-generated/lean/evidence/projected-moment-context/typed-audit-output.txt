@@ -1,0 +1,26 @@
+PaidUnits : (K : Type u_1) → [Field K] → ℕ → Prop
+@PaidUnits.of_tableau : ∀ {K : Type u_1} [inst : Field K] {ι : Type u_2} [inst_1 : Fintype ι] {p : ℕ} {A : Matrix ι ι K}
+  {b : ι → K}, HasOrder p A b → PaidUnits K p
+@unitMoment_monomial : ∀ {K : Type u_1} [inst : Field K] (j : ℕ) (a : K), unitMoment ((monomial j) a) = a / ↑(j + 1)
+@unitMoment_byParts : ∀ {K : Type u_1} [inst : Field K] {p : ℕ},
+  PaidUnits K p →
+    ∀ (f g : K[X]),
+      f.natDegree + g.natDegree + 1 < p →
+        unitMoment (f * primitive g) = unitMoment ((C (unitMoment f) - primitive f) * g)
+MomentProjection : (K : Type u_1) →
+  (V : Type u_2) → [inst : Field K] → [inst_1 : CommRing V] → [Algebra K V] → ℕ → Type (max u_1 u_2)
+@MomentProjection.model : {K : Type u_1} →
+  [inst : Field K] →
+    {V : Type u_2} → [inst_1 : CommRing V] → [inst_2 : Algebra K V] → {p : ℕ} → MomentProjection K V p → Model K V
+@MomentProjection.hasOrder : ∀ {K : Type u_1} [inst : Field K] {V : Type u_2} [inst_1 : CommRing V]
+  [inst_2 : Algebra K V] {p : ℕ} (P : MomentProjection K V p), PaidUnits K p → P.model.HasOrder p
+@Model.HasOrder.paid_cell : ∀ {K : Type u_1} {V : Type u_2} [inst : Field K] [inst_1 : CommRing V]
+  [inst_2 : Algebra K V] {M : Model K V} {p : ℕ},
+  M.HasOrder p →
+    ∀ (C : TreeWord) (t : FiniteRootedTree),
+      ↑(C.insert t).order ≤ p → M.output (C.insert t) = (↑↑(C.insert t).factorial)⁻¹
+'RKResearch.ContextCompletion.PaidUnits.of_tableau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.unitMoment_monomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.unitMoment_byParts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.MomentProjection.hasOrder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.Model.HasOrder.paid_cell' depends on axioms: [propext, Classical.choice, Quot.sound]

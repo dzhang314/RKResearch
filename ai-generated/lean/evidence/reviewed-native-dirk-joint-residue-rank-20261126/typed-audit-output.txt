@@ -1,0 +1,15 @@
+'RKResearch.Certified.Graded.PairedOrigin.Joint.paidMoments_of_actual_probes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.Joint.exists_nonorigin_residue_ne_of_recovery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.Joint.incoming_rank_and_active_card_of_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.Joint.jointProbePaid_of_centered_annihilation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.PairedOrigin.Joint.incoming_rank_and_active_card_of_centered_annihilation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

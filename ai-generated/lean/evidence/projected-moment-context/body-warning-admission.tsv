@@ -1,0 +1,7 @@
+field	value
+body_nonfatal_warnings	1
+body_warning_location	28:6
+body_warning_category	linter.unusedVariables
+body_warning_message	Variable name `j` is not explicitly referenced.
+body_warning_admission	Exact body exit 0, five nonempty fragments and original post-guard; the predeclared body gate has no warning-zero condition. Preserve the exact diagnostic and source.
+body_warning_scope	Only the pinned existing body warning is admitted; not an audit warning allowance.

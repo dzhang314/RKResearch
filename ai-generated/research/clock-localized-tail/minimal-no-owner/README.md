@@ -7,3 +7,8 @@ These proofs concern the no-owner construction with a closed, zero-output-weight
 - [Marked source interpolation](MARKED-SOURCE.md): The exact rank of polynomial profiles realized by actual early-null rooted combinations after adjoining leaves at the root.
 
 The proofs are algebraic, with sign and classical Laguerre hypotheses where indicated. No Lean verification is asserted.
+
+## Mixed abscissae
+
+- [Continuations through length three](MIXED-THREE.md): For balanced target orders \(12,16,20\), the respective late widths \(12,20,30\) admit real-algebraic stages satisfying every rooted condition through orders \(9,11,13\), and the stated length-three tests at the respective target budgets.
+- [Continuations through length four](MIXED-FOUR.md): The same widths \(20,30\) for targets \(16,20\) also admit real-algebraic tableaux meeting all fourth-length tests and every rooted condition through orders \(12,14\). Full target order is not claimed.

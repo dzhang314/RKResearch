@@ -29,7 +29,7 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 ## Improved ERK lower bounds over arbitrary rings
 
-The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) raises the arbitrary-ring ERK floors at orders 10 through 17 by at least one stage. At order 14, a [separate paid argument](lower-bounds/paid-beta/04-PAID-ORDER-FOURTEEN.md) raises the floor further to 21, matching characteristic zero. A [finite paid-field argument](lower-bounds/paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md) gives 27 and 29 stages at orders 18 and 19, two more than the earlier arbitrary-ring bounds. [Its doubling extension](lower-bounds/paid-beta/02-PAID-DOUBLING-SURPLUS.md) raises order 20 from 28 to 30. These are mathematical proofs over all nonzero commutative unital rings using the denominator-cleared order equations; the ordered-field and characteristic-zero columns do not change.
+The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) raises the arbitrary-ring ERK floors at orders 10 through 17 by at least one stage. At order 12 the [full paid proof](lower-bounds/paid-beta/05-PAID-ORDER-TWELVE.md) raises the floor to 18, matching characteristic zero. At order 14, a [separate paid argument](lower-bounds/paid-beta/04-PAID-ORDER-FOURTEEN.md) raises the floor further to 21, matching characteristic zero. A [finite paid-field argument](lower-bounds/paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md) gives 27 and 29 stages at orders 18 and 19, two more than the earlier arbitrary-ring bounds. [Its doubling extension](lower-bounds/paid-beta/02-PAID-DOUBLING-SURPLUS.md) raises order 20 from 28 to 30. These are mathematical proofs over all nonzero commutative unital rings using the denominator-cleared order equations; the ordered-field and characteristic-zero columns do not change.
 
 ## Exact explicit minima over nonzero commutative rings
 
@@ -43,6 +43,8 @@ The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLU
 - [Order nine](research/erk-nine-moment-splice/README.md): exact order in 16 physical stages whenever 9! is a unit, improving the previous universal 21-stage upper.
 
 - [Order ten](research/erk-ten-moment-splice/README.md): exact order in 21 physical stages whenever 10! is a unit, improving the previous universal 26-stage upper.
+
+- [Orders eleven and twelve](research/erk-eleven-twelve-moment-splice/README.md): the same family gives exact order eleven in 28 and exact order twelve in 33 physical stages over the corresponding factorial-unit rings (previous uniform-path uppers 31 and 37).
 
 For these constructions the stated factorial unit is necessary for existence at any stage count. The tableaux have exact arithmetic checks, not Lean certificates. The real-algebraic numerical table above is unchanged.
 

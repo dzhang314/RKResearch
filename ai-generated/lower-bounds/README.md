@@ -15,7 +15,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 9 | 12 / 10 / 13 | 12 / 10 / 13 | 13 / 10 / 13 |
 | 10 | 14 / 11 / 15 | 14 / 11 / 15 | 14 / 11 / 15 |
 | 11 | 16 / 13 / 18 | 16 / 13 / 18 | 16 / 13 / 18 |
-| 12 | 17 / 14 / 21 | 18 / 15 / 21 | 18 / 15 / 21 |
+| 12 | 18 / 14 / 21 | 18 / 15 / 21 | 18 / 15 / 21 |
 | 13 | 19 / 16 / 25 | 19 / 17 / 25 | 20 / 17 / 25 |
 | 14 | 21 / 17 / 28 | 21 / 19 / 28 | 21 / 19 / 28 |
 | 15 | 22 / 19 / 32 | 22 / 21 / 32 | 23 / 21 / 32 |
@@ -30,6 +30,7 @@ Every real statement in the last column transfers by real-closed-field theory: f
 - [All-ring ERK lower bound: fifth-degree surplus](paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) and [doubling surplus](paid-beta/02-PAID-DOUBLING-SURPLUS.md): the stronger entries at orders 10–20 are proved algebraically and have not yet been formalized in Lean.
 - [Finite paid-field ERK argument at orders 18 and 19](paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md): the arbitrary-ring floors equal the characteristic-zero values 27 and 29.
 - [Paid order-14 ERK argument](paid-beta/04-PAID-ORDER-FOURTEEN.md): the arbitrary-ring floor matches the characteristic-zero value of 21. The proof uses two chronological root tests and an exact integer norm certificate.
+- [Paid order-12 ERK proof](paid-beta/05-PAID-ORDER-TWELVE.md): ranks, physical stage order and the exact exceptional-prime calculation give the characteristic-zero floor of 18 over every nonzero commutative unital ring.
 - [Characteristic-zero arguments](characteristic-zero/README.md)
 - [Ordered-field arguments and transfer](ordered-fields/README.md)
 - [Proofs using the reals](real-proofs/README.md)

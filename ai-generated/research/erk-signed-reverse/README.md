@@ -10,7 +10,7 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | 14 | 38 | [37](tableau-14.json) |
 | 15 | 44 | [44](tableau-15.json) |
 | 16 | 51 | [50](tableau-16.json) |
-| 17 | 58 | [57](tableau-17.json) |
+| 17 | 56 | [56](tableau-17.json) |
 | 18 | 64 | [63](tableau-18.json) |
 | 19 | 72 | [71](tableau-19.json) |
 | 20 | 79 | [78](tableau-20.json) |
@@ -30,3 +30,5 @@ The [projected order-eighteen construction](PROJECTED-ORDER-18.md) saves another
 At order twenty, [putting the larger chart on the reverse side](REFLECTED-ORDER-20.md) restores a literal endpoint merger and reduces the tableau to 78 stages. The separate chart verifier checks both complete decoders.
 
 The [prescribed-node variant](PRESCRIBED-NODE-GRIDS.md) uses 70 stages at order nineteen over the rationals. Its extra site gaps need not be units in the factorial localization; it does not replace the 71-stage entry above.
+
+At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use existing scalar sites for a collective measurement of the reverse defect. The weights need not be units individually. The construction reduces the tableau to 56 stages.

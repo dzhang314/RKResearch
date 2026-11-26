@@ -31,7 +31,7 @@ def paid_remainder(n):
 data = json.loads(Path(__file__).with_name(f"tableau-{p}{suffix}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
-s = (25,28,33,37,44,50,57,63,71,78)[p-11]
+s = (25,28,33,37,44,50,56,63,71,78)[p-11]
 if args.rational_grid:
     s = 70
 assert len(A) == len(b) == s
@@ -132,3 +132,20 @@ if args.rational_grid:
 else:
     assert running == 1
     print(f"{len(raw_witnesses)} next-order defects generate the unit ideal")
+
+
+if p == 17:
+    def tree_from_word(word):
+        t = ()
+        for letter in reversed(word):
+            t = (t,) if letter == 'A' else t + ((),)
+        return t
+
+    # The four components of the formal-zero child C A C^2 V.
+    terms = [('CACCACCACC',136080), ('CACCACCAAC',-272160),
+             ('CACCACCCCC',204120), ('CACCCCCCCC',-34020)]
+    grafts = [((tree_from_word(word),) + ((),)*6, coeff) for word, coeff in terms]
+    assert all(size(t) == 18 for t, _ in grafts)
+    assert sum(Fraction(a, factorial(t)) for t, a in grafts) == 0
+    assert sum(Fraction(a, factorial(t))*defect_numerator(t) for t, a in grafts) == D**18
+    print("Four-tree order-18 combination: exact raw defect 1.")

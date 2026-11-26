@@ -260,6 +260,10 @@ targets = {
 
 def construct(p,seed,rational_grid=False):
     assert not rational_grid or p==19
+    if p==17:
+        import sys
+        from weighted_taps_17 import build
+        return build(sys.modules[__name__],seed)
     global PAID
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]

@@ -27,6 +27,13 @@
 
 The lower bounds apply to all ordered fields. A construction over the real algebraic numbers need not be defined over every ordered subfield. For conclusions over arbitrary rings or unordered characteristic-zero fields, see the [lower-bound table](lower-bounds/README.md).
 
+## Exact explicit minima over nonzero commutative rings
+
+- [Order five](research/erk-five-ring-witness/README.md): six stages are necessary and sufficient if 120 is a unit. Otherwise no stage count attains order five.
+- [Order six](research/erk-six-ring-minimum/README.md): seven stages are necessary and sufficient if 720 is a unit. A single rational tableau specializes to every such ring, including positive characteristic. This supersedes the eight-stage construction as a minimum, not as a denominator-removal technique.
+
+The lower bounds are covered by the uniform Lean theorem. The two upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
+
 ## Rational contributing quadrature support
 
 Separate from the stage tables, the [four-shift proof](research/rational-quadrature-four-shift/proof.md) gives at least \(\min(17,p-3)\) distinct contributing rational sites for quadrature order \(p\ge4\): 16 at order 19 and 17 at order 20. Weights may be arbitrary in a characteristic-zero field. Repeat sites are grouped first, and only nonzero aggregate weights count. The result transfers to Runge–Kutta by the reviewed bushy moments. It has an exact arithmetic check, not a new Lean certificate.

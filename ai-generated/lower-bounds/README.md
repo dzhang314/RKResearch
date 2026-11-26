@@ -21,13 +21,14 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 15 | 22 / 19 / 32 | 22 / 21 / 32 | 23 / 21 / 32 |
 | 16 | 23 / 20 / 36 | 24 / 22 / 36 | 25 / 22 / 36 |
 | 17 | 25 / 22 / 41 | 26 / 24 / 41 | 27 / 24 / 41 |
-| 18 | 26 / 23 / 45 | 27 / 25 / 45 | 29 / 25 / 45 |
-| 19 | 28 / 25 / 50 | 29 / 27 / 50 | 30 / 27 / 50 |
+| 18 | 27 / 23 / 45 | 27 / 25 / 45 | 29 / 25 / 45 |
+| 19 | 29 / 25 / 50 | 29 / 27 / 50 | 30 / 27 / 50 |
 | 20 | 30 / 26 / 55 | 30 / 29 / 55 | 32 / 29 / 55 |
 
 Every real statement in the last column transfers by real-closed-field theory: for a fixed order and stage count the question is a finite rational-polynomial feasibility problem. The proof itself can still use properties of the reals. Neither real nor ordered feasibility implies an unordered characteristic-zero lower bound. The ring column uses uniform proofs and is not a claim that the stronger characteristic-zero bounds have counterexamples in positive characteristic.
 
 - [All-ring ERK lower bound: fifth-degree surplus](paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) and [doubling surplus](paid-beta/02-PAID-DOUBLING-SURPLUS.md): the stronger entries at orders 10–20 are proved algebraically and have not yet been formalized in Lean.
+- [Finite paid-field ERK argument at orders 18 and 19](paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md): the arbitrary-ring floors equal the characteristic-zero values 27 and 29.
 - [Characteristic-zero arguments](characteristic-zero/README.md)
 - [Ordered-field arguments and transfer](ordered-fields/README.md)
 - [Proofs using the reals](real-proofs/README.md)

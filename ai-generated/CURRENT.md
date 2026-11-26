@@ -29,7 +29,7 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 ## Improved ERK lower bounds over arbitrary rings
 
-The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) raises every arbitrary-ring ERK floor from orders 10 through 19 by one stage. [Its doubling extension](lower-bounds/paid-beta/02-PAID-DOUBLING-SURPLUS.md) raises order 20 from 28 to 30. These are mathematical proofs over all nonzero commutative unital rings using the denominator-cleared order equations; the ordered-field and characteristic-zero columns do not change.
+The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) raises each arbitrary-ring ERK floor from orders 10 through 17 by one stage. A [finite paid-field argument](lower-bounds/paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md) gives 27 and 29 stages at orders 18 and 19, two more than the earlier arbitrary-ring bounds. [Its doubling extension](lower-bounds/paid-beta/02-PAID-DOUBLING-SURPLUS.md) raises order 20 from 28 to 30. These are mathematical proofs over all nonzero commutative unital rings using the denominator-cleared order equations; the ordered-field and characteristic-zero columns do not change.
 
 ## Exact explicit minima over nonzero commutative rings
 

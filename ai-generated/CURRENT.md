@@ -48,7 +48,7 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 - [Order ten](research/erk-ten-moment-splice/README.md): exact order in 21 physical stages whenever 10! is a unit, improving the previous universal 26-stage upper.
 
-- [Orders eleven through twenty](research/erk-signed-reverse/README.md): exact explicit upper bounds **25, 28, 33, 37, 44, 50, 56, 62, 68, and 75 stages**, respectively, with coefficients in any nonzero commutative ring in which the corresponding factorial is a unit. Signed copies cancel the reverse donor error without dividing by a quadrature weight. Order eleven uses a [sharp eight-row reverse chart](research/erk-signed-reverse/SHARP-PAID-ERK-GRADE-FIVE.md); [orders seventeen through twenty](research/erk-signed-reverse/WEIGHTED-ORDERS-18-20.md) use weighted probes at existing scalar sites to recover missing reverse directions. The recovery inverts paid moment combinations rather than individual quadrature weights.
+- [Orders eleven through twenty](research/erk-signed-reverse/README.md): exact explicit upper bounds **25, 28, 33, 37, 44, 50, 53, 60, 66, and 72 stages**, respectively, with coefficients in any nonzero commutative ring in which the corresponding factorial is a unit. Signed copies cancel the reverse donor error without dividing by a quadrature weight. Order eleven uses a [sharp eight-row reverse chart](research/erk-signed-reverse/SHARP-PAID-ERK-GRADE-FIVE.md); [orders seventeen through twenty](research/erk-signed-reverse/WEIGHTED-SITE-RANK.md) use weighted probes at existing scalar sites to recover missing reverse directions. A Bézout certificate for maximal minors replaces divisions by individual quadrature weights.
 
 The stated factorial unit is necessary for existence at any stage count. Literal arithmetic replays check all 3,047, 7,813, 20,299, and 53,272 rooted conditions at orders eleven through fourteen. At orders fifteen to twenty the general symbolic argument proves every rooted condition, and the literal tableaux have sample replays and exact next-order checks. None of these constructions is a new Lean certificate.
 
@@ -162,3 +162,5 @@ The [even-order DIRK certificate](lean/DIRK-EVEN-FROM-22.md) proves at least \(3
 - [Recent conditional and architecture-specific results](lower-bounds/conditional/README.md), kept separate from unrestricted numerical endpoints.
 
 - [Simplified reverse proof for order 12](lean/REVERSE_OBSTRUCTION.md) and [finite-exception characteristic transfer](lower-bounds/CHARACTERISTIC-TRANSFER.md).
+
+The [dense explicit width bound](research/erk-dense-width/README.md) needs at least \(2m-1\) stages for an exact derivative decoder through tree size \(m\ge6\), without a residual-support assumption. The minimum at size six is 11; this is distinct from ordinary scalar order six.

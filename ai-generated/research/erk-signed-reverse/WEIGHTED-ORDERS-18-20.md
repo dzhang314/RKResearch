@@ -242,7 +242,7 @@ Finally for each size-\((p+1)\) tree \(t\), the child-factorial product \(t!/(p+
 
 ## Reproduction
 
-The literal tableaux are available for [order 18](tableau-18-weighted.json), [order 19](tableau-19-weighted.json), and [order 20](tableau-20-weighted.json). For each order, substitute its number in the commands:
+The literal tableaux are available for [order 18](https://github.com/dzhang314/RKResearch/blob/dc254f225e20eb82430417b23b8108c620a9be90/ai-generated/research/erk-signed-reverse/tableau-18-weighted.json), [order 19](https://github.com/dzhang314/RKResearch/blob/dc254f225e20eb82430417b23b8108c620a9be90/ai-generated/research/erk-signed-reverse/tableau-19-weighted.json), and [order 20](https://github.com/dzhang314/RKResearch/blob/dc254f225e20eb82430417b23b8108c620a9be90/ai-generated/research/erk-signed-reverse/tableau-20-weighted.json). To replay these earlier tableaux, use [the reconstruction and verifier from that revision](https://github.com/dzhang314/RKResearch/blob/dc254f225e20eb82430417b23b8108c620a9be90/ai-generated/research/erk-signed-reverse/README.md), with the desired order in place of p:
 
 ~~~sh
 python construct.py p --verify-reads

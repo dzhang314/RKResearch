@@ -33,7 +33,7 @@ def paid_remainder(n):
 data = json.loads(Path(__file__).with_name(f"tableau-{p}{suffix}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
-s = (25,28,33,37,44,50,56,62,68,75)[p-11]
+s = (25,28,33,37,44,50,53,60,66,72)[p-11]
 if args.rational_grid:
     s = 70
 elif args.previous:

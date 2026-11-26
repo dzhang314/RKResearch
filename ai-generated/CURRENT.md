@@ -33,7 +33,7 @@ The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLU
 
 ## Improved DIRK lower bounds over arbitrary rings
 
-The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises the uniform arbitrary-ring floor by one for every order p≥12, to p + floor((p−1)/2) − 2. At orders 12 and 13 it gives 15 and 17, matching the characteristic-zero lower bounds. No diagonal sign, positivity or nonzero-diagonal restriction is imposed. At order 14, [a sharper proof](lower-bounds/paid-beta/DIRK-PAID-ORDER-FOURTEEN.md) raises the arbitrary-ring floor from 18 to 19. It uses stage chronology and the two paid ERK norms, bypassing the fixed reverse determinant. The stronger paid floors have not yet been checked in Lean.
+The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises the uniform arbitrary-ring floor by one for every order p≥12, to p + floor((p−1)/2) − 2. At orders 12 and 13 it gives 15 and 17, matching the characteristic-zero lower bounds. No diagonal sign, positivity or nonzero-diagonal restriction is imposed. At order 14, [a sharper proof](lower-bounds/paid-beta/DIRK-PAID-ORDER-FOURTEEN.md) raises the arbitrary-ring floor from 18 to 19. It uses stage chronology and the two paid ERK norms, bypassing the fixed reverse determinant. At order 20, [a flat-band and chronology argument](lower-bounds/paid-beta/DIRK-PAID-ORDER-TWENTY.md) raises the arbitrary-ring floor from 27 to 28. The characteristic-zero and ordered-field floor remains 29. The stronger paid floors have not yet been checked in Lean.
 
 ## Exact explicit minima over nonzero commutative rings
 

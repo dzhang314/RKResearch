@@ -1,5 +1,7 @@
 # An exact 42-stage paid ERK method of order thirteen
 
+**Current witness: 41 stages.** The new [41-stage method](ORDER-13-IN-41-STAGES.md) uses the same suffix and one fewer preparation stage. Its [literal tableau](tableau-13-41.json) and [integer-arithmetic verifier](check-41.py) check all 20,299 rooted order conditions and a unit combination of order-fourteen defects. Run `python reconstruct-41.py` to reconstruct the literal tableau from the order-nine seed. The 42-stage construction below is retained as an archive and specifies the common suffix.
+
 The construction uses coefficients in \(\mathbb U_{13}\coloneqq\mathbb Z[1/13!]\). Its order conditions through order thirteen hold over every nonzero \(\mathbb U_{13}\)-algebra. At order fourteen a linear combination of two order defects is a unit, so order thirteen is exact over every such algebra. No machine search or replay is used in this construction.
 
 ## The forward rows

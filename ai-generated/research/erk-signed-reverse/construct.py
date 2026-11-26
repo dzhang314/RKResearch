@@ -146,6 +146,19 @@ def short(g):
     return a, e[0]+ne[0]+[contrast], e[1]+ne[1]+[[Z]*8+list(contrast_weights)]
 
 
+def eight_row_grade_five():
+    a = [[], [F(1,4)], [Z,F(1,2)], [O,F(-2),F(2)]]
+    a += [[F(v,6) for v in (1,0,4,1)],
+          [F(v,162) for v in (11,48,-4,-5,4)],
+          [F(v,162) for v in (19,0,-20,3,-2,54)],
+          [F(v,3072) for v in (350,0,-328,26,-9,729,0)]]
+    mix=list(map(F,(0,0,'-64/81','-4/81',0,1,0,0)))
+    midpoint=[F(81,64)*(e7-F(4,81)*e5-r)
+              for e7,e5,r in zip(basis(6,8),basis(4,8),mix)]
+    x=list(map(F,(0,'1/4','1/3','1/2',1)))
+    return a, [eval_at(v) for v in x], [basis(0,8),basis(7,8),basis(6,8),midpoint,basis(4,8)]
+
+
 def long(g, reverse, seed):
     a = [list(map(F,row)) for row in seed['A']]
     b = list(map(F,seed['b']))
@@ -199,7 +212,7 @@ def long(g, reverse, seed):
 
 
 targets = {
-    11:(5,5,12,0,12,(1,),29),
+    11:(5,5,12,0,12,(1,),28),
     12:(5,6,12,0,12,(),32),
     13:(6,6,18,0,18,(1,2,4,5,17),35),
     14:(6,7,18,0,18,(1,2,4,17),40),
@@ -217,11 +230,11 @@ def construct(p,seed):
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]
     f,fo,fr = short(m) if m<8 else long(m,False,seed)
-    rev,ro,rr = short(r) if r<8 else long(r,r==9,seed)
+    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9,seed))
     k = len(rev)
     ys = [F(j,N) for j in range(lo,hi+1) if j not in omit]
-    if 12<=p<=20:
-        if p==12:
+    if 11<=p<=20:
+        if p<=12:
             ys=[F(j,12) for j in range(13) if j not in (1,11)]
         elif p==13:
             ys=[F(j,12) for j in range(13)]
@@ -240,7 +253,7 @@ def construct(p,seed):
     assert set(map(sum,rev))|{Z,O} <= set(ys)
     site_x = [1-y for y in ys]
     def quadrature(poly):
-        return sum(c/(j+1) for j,c in enumerate(poly) if (12<=p<=20 or j<p))
+        return sum(c/(j+1) for j,c in enumerate(poly))
     lam=[]
     for x in site_x:
         others = [v for v in site_x if v!=x]
@@ -263,7 +276,7 @@ def construct(p,seed):
         assert paid_integer(wi.denominator)
         assert all(paid_integer(v.denominator) for _,v in row)
     c=[sum(v for _,v in row) for row in rows]
-    for degree in range(p+1 if p==11 else p):
+    for degree in range(p):
         assert dot(b,[x**degree for x in c])==(F(1,degree+1) if degree<p else 0)
     common=lcm(*(v.denominator for row in rows for _,v in row),*(v.denominator for v in b))
     result={'A':[[str(dict(row).get(j,Z)) for j in range(i)] for i,row in enumerate(rows)],

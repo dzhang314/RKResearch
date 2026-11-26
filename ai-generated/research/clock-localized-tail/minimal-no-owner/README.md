@@ -12,3 +12,7 @@ The proofs are algebraic, with sign and classical Laguerre hypotheses where indi
 
 - [Continuations through length three](MIXED-THREE.md): For balanced target orders \(12,16,20\), the respective late widths \(12,20,30\) admit real-algebraic stages satisfying every rooted condition through orders \(9,11,13\), and the stated length-three tests at the respective target budgets.
 - [Continuations through length four](MIXED-FOUR.md): The same widths \(20,30\) for targets \(16,20\) also admit real-algebraic tableaux meeting all fourth-length tests and every rooted condition through orders \(12,14\). Full target order is not claimed.
+
+## One root mark and the final condition
+
+[One root mark and the final projected primitive](ONE-MARK.md) replaces the weaker saturation threshold in the marked-source proof with a single root mark. It identifies exact graded tests equivalent to rooted order for this construction and excludes the minimum late width for balanced odd targets at least nine. For balanced even targets, the stated real and extremal early-root assumptions force a negative first late abscissa at minimum width; in particular the nonnegative examples above at target sizes 12, 16, and 20 cannot reach their targets. Their proved shorter orders are unchanged.

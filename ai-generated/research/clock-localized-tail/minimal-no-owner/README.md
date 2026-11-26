@@ -16,3 +16,5 @@ The proofs are algebraic, with sign and classical Laguerre hypotheses where indi
 ## One root mark and the final condition
 
 [One root mark and the final projected primitive](ONE-MARK.md) replaces the weaker saturation threshold in the marked-source proof with a single root mark. It identifies exact graded tests equivalent to rooted order for this construction and excludes the minimum late width for balanced odd targets at least nine. For balanced even targets, the stated real and extremal early-root assumptions force a negative first late abscissa at minimum width; in particular the nonnegative examples above at target sizes 12, 16, and 20 cannot reach their targets. Their proved shorter orders are unchanged.
+
+- [First late abscissa and negative diagonals](FIRST-CLOCK-SIGN.md): Two genuine sources force a negative first late abscissa. The [prime-degree](NEGATIVE-ANCHOR.md) and [prime-interval](PRIME-INTERVAL.md) screens then rule out the balanced canonical minimum-width construction at orders 12, 16, 18, and 20 for any real negative diagonal. The hypotheses on the early block and distinct late abscissae remain essential.

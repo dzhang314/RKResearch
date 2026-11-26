@@ -40,3 +40,5 @@ At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use ex
 [Weighted probes at orders 11–16](WEIGHTED-ORDERS-11-16.md) use a common three-size family of short reverse charts. The earlier constructions at these orders remain available through the historical option.
 
 The [compact order-15 certificate](order-15-certificate/README.md) checks the 40-stage tableau using a small linear family of suffix tests and local rooted attachments through size eight.
+
+At order 18, the [59-stage variant](order-18-localized-59/README.md) removes the split when 59, 739, 2137, and 8179 are units as well as 18!. The factorial-unit table above retains 60; its [finite exact check](order-18-certificate/README.md) does not invert 19.

@@ -12,3 +12,10 @@ In these notes \(E_j\) is the span of actual Butcher weight vectors for trees of
  C\coloneqq\operatorname{diag}(\mathbf c),\qquad M\coloneqq CA-AC-A^2.
 \]
 It sends \(E_j\) into \(F_{j+2}\) and is invertible for nonsingular triangular \(A\). The scalar equations give quotient rank at least \(\min(j+1,p-j)\) by the formal polynomial pairing. Summing in each parity yields the quadratic lower bounds. At equality in both parities each inequality is equality, hence \(F_{j+2}=ME_j\) in the available grades. The diagonal matrix of the quadratic residual divided by two also sends \(E_j\) into \(F_{j+2}\), by rooted sums with a zero-model combination of the chain and bush of order three. If that diagonal matrix is invertible, its image has the same dimension as \(ME_j\), giving the two-coordinate description inductively from the bush polynomials.
+
+## Low orders, chronology, and the sign of the stage residual
+
+- [Exact minima at orders three and four](COMPLETE-NONSINGULAR-ORDER-THREE-AND-FOUR-EQUALITY.md) classifies every real nonsingular triangular tableau attaining its stage floor. The common-diagonal subclasses have two and three members, respectively. The classification includes the silent first weight and repeated-clock cases; no literature-priority claim is made.
+- [First rows and restricted residual layers](FIRST-THREE-ROWS-AND-PHYSICAL-LEVEL-OBSTRUCTIONS.md) gives mandatory first-row identities. The residual-layer bound requires distinct abscissae and the single-feeding-level hypothesis.
+- [Sign restrictions](REAL-QUADRATIC-RESIDUAL-SIGN-PRICE.md) and the [ordered-field refinement](SIGNED-EXCEPTIONAL-AND-ORDERED-FIELD-ADDENDUM.md) give a conditional bound at order \(4h-1\): when the quadratic stage residuals at every nonzero-weight stage are strictly of one sign, at least \(2h^2+h\) stages carry weight, without assuming triangularity. The signed excess and the marginal inertias at equality do not determine all four joint sign counts.
+- [The literal donor at a zero residual](ZERO-RESIDUAL-DONORS-AND-TWO-COORDINATE-FLAGS.md) proves the separate field-valued equality constraint and accounts for its dimension only once.

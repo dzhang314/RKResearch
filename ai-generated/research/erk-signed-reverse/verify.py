@@ -11,9 +11,12 @@ from pathlib import Path
 parser=ArgumentParser(description=__doc__)
 parser.add_argument("p", type=int, choices=range(11,21))
 parser.add_argument("--all", action="store_true", help="exhaustive replay (through order 14)")
+parser.add_argument('--rational-grid', action='store_true', help='use the 70-stage rational grid at order 19')
 args=parser.parse_args()
 p=args.p
 assert not args.all or p<=14
+assert not args.rational_grid or p==19
+suffix = '-rational' if args.rational_grid else ''
 
 def paid_remainder(n):
     n = abs(n)
@@ -25,15 +28,17 @@ def paid_remainder(n):
     return n
 
 
-data = json.loads(Path(__file__).with_name(f"tableau-{p}.json").read_text())
+data = json.loads(Path(__file__).with_name(f"tableau-{p}{suffix}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
 s = (25,28,33,37,44,50,57,63,71,78)[p-11]
+if args.rational_grid:
+    s = 70
 assert len(A) == len(b) == s
 assert all(len(row) >= i and not any(row[i:]) for i, row in enumerate(A))
 assert len({row[:i] + (0,) * (s - i) for i, row in enumerate(A)}) == s
 D = lcm(*(v.denominator for row in A for v in row), *(v.denominator for v in b))
-assert paid_remainder(D) == 1
+assert args.rational_grid or paid_remainder(D) == 1
 
 # Scaling A by D scales the weight vector of a size-n tree by D**(n-1).
 scaled_A = [
@@ -112,14 +117,18 @@ def tuple_tree(t):
     return tuple(tuple_tree(branch) for branch in t)
 
 
-raw_witnesses = json.loads(Path(__file__).with_name(f"witness-{p}.json").read_text())
+raw_witnesses = json.loads(Path(__file__).with_name(f"witness-{p}{suffix}.json").read_text())
 running = 0
 for raw_tree, raw_value in raw_witnesses:
     t = tuple_tree(raw_tree)
     assert size(t) == p+1
     val = Fraction(defect_numerator(t), D**(p+1))
     assert val == Fraction(raw_value)
-    assert paid_remainder(val.denominator) == 1
+    assert args.rational_grid or paid_remainder(val.denominator) == 1
     running = gcd(running, paid_remainder(val.numerator))
-assert running == 1
-print(f"{len(raw_witnesses)} next-order defects generate the unit ideal")
+if args.rational_grid:
+    assert running != 0
+    print(f"{len(raw_witnesses)} next-order witnesses over Q")
+else:
+    assert running == 1
+    print(f"{len(raw_witnesses)} next-order defects generate the unit ideal")

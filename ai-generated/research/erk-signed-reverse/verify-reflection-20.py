@@ -31,9 +31,11 @@ def tree_factorial(t):
     return size(t) * prod(map(tree_factorial, t))
 
 
-def verify_chart(grade, reverse, seed):
-    a, operations, readers = rk.long(grade, reverse, seed, reflected_twenty=True)
-    assert len(a) == (34 if reverse else 27)
+def verify_chart(grade, reverse, seed, rational_grid=False):
+    a, operations, readers = rk.long(grade, reverse, seed,
+                                      reflected_twenty=not (reverse and rational_grid),
+                                      symmetric_last=reverse and rational_grid)
+    assert len(a) == (34 if reverse and not rational_grid else 27)
     assert all(len(row) <= i for i, row in enumerate(a))
     assert all(rk.paid_integer(x.denominator) for row in a + readers for x in row)
     # The read matrix is invertible over Z[1/20!], not just over Q.
@@ -58,10 +60,16 @@ def verify_chart(grade, reverse, seed):
 
 
 if __name__ == '__main__':
-    rk.PAID = factorial(20)
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--rational-grid', action='store_true')
+    args = parser.parse_args()
+    p, grade = (19, 9) if args.rational_grid else (20, 10)
+    rk.PAID = factorial(p)
     raw = (rk.HERE.parent / 'erk-eleven-twelve-moment-splice' / 'paid9-seed.json').read_bytes()
     assert sha256(raw).hexdigest() == rk.SEED_SHA256
     seed = json.loads(raw)
-    verify_chart(9, False, seed)
-    verify_chart(10, True, seed)
-    assert rk.construct(20, seed) == (rk.HERE / 'tableau-20.json').read_text()
+    verify_chart(9, False, seed, rational_grid=args.rational_grid)
+    verify_chart(grade, True, seed, rational_grid=args.rational_grid)
+    tableau = 'tableau-19-rational.json' if args.rational_grid else 'tableau-20.json'
+    assert rk.construct(p, seed, rational_grid=args.rational_grid) == (rk.HERE / tableau).read_text()

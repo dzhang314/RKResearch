@@ -28,3 +28,5 @@ The [shorter order-seven chart](SHORT-GRADE-SEVEN.md) uses an exact contrast of 
 The [projected order-eighteen construction](PROJECTED-ORDER-18.md) saves another stage by omitting an irrelevant reverse polynomial. The projection verifier checks every rooted chart condition through size nine on the two actual prefixes.
 
 At order twenty, [putting the larger chart on the reverse side](REFLECTED-ORDER-20.md) restores a literal endpoint merger and reduces the tableau to 78 stages. The separate chart verifier checks both complete decoders.
+
+The [prescribed-node variant](PRESCRIBED-NODE-GRIDS.md) uses 70 stages at order nineteen over the rationals. Its extra site gaps need not be units in the factorial localization; it does not replace the 71-stage entry above.

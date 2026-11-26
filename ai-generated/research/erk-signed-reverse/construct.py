@@ -159,7 +159,7 @@ def eight_row_grade_five():
     return a, [eval_at(v) for v in x], [basis(0,8),basis(7,8),basis(6,8),midpoint,basis(4,8)]
 
 
-def long(g, reverse, seed, projected=False, reflected_twenty=False):
+def long(g, reverse, seed, projected=False, reflected_twenty=False, symmetric_last=False):
     a = [list(map(F,row)) for row in seed['A']]
     b = list(map(F,seed['b']))
     mo = [pad([w*sum(row)**k for w,row in zip(b,a)],17) for k in range(4)]
@@ -217,6 +217,9 @@ def long(g, reverse, seed, projected=False, reflected_twenty=False):
     z2 = list(map(F,['-1/3','1/3','1/2','-2/3','2/3'] if reverse else ['-8/3','-1/3','1/3','-2','2']))
     if reflected_twenty:
         z2 = list(map(F, ('-8/11','4/7','-2','1/2','0') if reverse else ('0','-1/3','1/3','-1/2','1/2')))
+    if symmetric_last:
+        assert reverse and g==9
+        z2 = list(map(F, ('0','-1/3','1/3','-1/2','1/2')))
     xx2 = list(map(x_of,z2))
     ne2 = prepend(op8,xx2,a)
     op9 = (op6[0][:3]+[ell4p]+ne2[0],op6[1][:3]+[[Z]*18+ell4]+ne2[1])
@@ -255,12 +258,13 @@ targets = {
 }
 
 
-def construct(p,seed):
+def construct(p,seed,rational_grid=False):
+    assert not rational_grid or p==19
     global PAID
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]
-    f,fo,fr = short(m) if m<8 else long(m,False,seed,projected=p==18,reflected_twenty=p==20)
-    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9 or p==20,seed,projected=p==18,reflected_twenty=p==20))
+    f,fo,fr = short(m) if m<8 else long(m,False,seed,projected=p==18,reflected_twenty=p==20 or rational_grid)
+    rev,ro,rr = eight_row_grade_five() if p==11 else (short(r) if r<8 else long(r,r==9 or p==20,seed,projected=p==18,reflected_twenty=p==20,symmetric_last=rational_grid))
     k = len(rev)
     ys = [F(j,N) for j in range(lo,hi+1) if j not in omit]
     if 11<=p<=20:
@@ -282,6 +286,12 @@ def construct(p,seed):
                       for v in ('1/3','1/2','1','2','8/11','4/7','4/5','4/3','8/3')})
         else:
             ys=sorted({F(1,2)} | {F(6+s*j,12) for s in (-1,1) for j in (1,2,3,4,5,6,7,8,12)})
+        if rational_grid:
+            core = (F(1,3),F(1,2),O,F(2),F(2,3),F(5,6),F(3,2))
+            centered = [Z] + [sign*u for u in core for sign in (-1,1)]
+            centered += [F(1,5),F(1,7),F(-4932943,2026806)]
+            ys = sorted((1+u)/2 for u in centered)
+            assert len(set(ys))==18
         count=len(f)+len(rev)+len(ys)-1
     assert m+r+1==p and p<=2*m+2
     assert set(map(sum,rev))|{Z,O} <= set(ys)
@@ -292,7 +302,7 @@ def construct(p,seed):
     for x in site_x:
         others = [v for v in site_x if v!=x]
         den=prod(x-v for v in others)
-        assert unit(den)
+        assert den and (rational_grid or unit(den))
         lam.append(quadrature(nodal(others))/den)
     L = rev + [row.copy() for row in rev] + [read(ro,rr,primitive_at(y))[0] for y in ys]
     beta = [O]*k+[-O]*k+lam
@@ -305,16 +315,18 @@ def construct(p,seed):
         li = lambda degree: primitive_at(x[i])(degree)-dot(ti,[xi**degree for xi in x])
         a.append(read(fo,fr,li)[0]+ti[:i])
     rows,b,mergers=merge(a,[Z]*len(f)+beta[::-1])
-    if p==20:
-        assert (len(f),k,len(ys),len(rows)) == (27,34,19,78)
+    if p==20 or rational_grid:
+        expected = (27,27,18,70) if rational_grid else (27,34,19,78)
+        assert (len(f),k,len(ys),len(rows)) == expected
         # Receiver order is reversed; the old endpoint is forward row 17.
         origin = len(f) + len(ys) - ys.index(O)
         endpoint = len(f) + len(ys) - ys.index(Z)
         assert (origin,1) in mergers and (endpoint,17) in mergers
     assert len(rows)<=count, (p,len(rows),count)
-    for wi,row in zip(b,rows):
-        assert paid_integer(wi.denominator)
-        assert all(paid_integer(v.denominator) for _,v in row)
+    if not rational_grid:
+        for wi,row in zip(b,rows):
+            assert paid_integer(wi.denominator)
+            assert all(paid_integer(v.denominator) for _,v in row)
     c=[sum(v for _,v in row) for row in rows]
     for degree in range(p):
         assert dot(b,[x**degree for x in c])==(F(1,degree+1) if degree<p else 0)
@@ -330,7 +342,8 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('p',type=int,choices=tuple(targets))
     parser.add_argument('--seed',type=Path,default=HERE.parent/'erk-eleven-twelve-moment-splice'/'paid9-seed.json')
+    parser.add_argument('--rational-grid',action='store_true',help='use the 70-stage rational grid at order 19')
     args=parser.parse_args()
     seed_bytes=args.seed.read_bytes()
     assert sha256(seed_bytes).hexdigest()==SEED_SHA256
-    print(construct(args.p,json.loads(seed_bytes)),end='')
+    print(construct(args.p,json.loads(seed_bytes),rational_grid=args.rational_grid),end='')

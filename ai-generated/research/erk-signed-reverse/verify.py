@@ -4,7 +4,7 @@ from argparse import ArgumentParser
 import json
 from fractions import Fraction
 from functools import cache
-from math import lcm, prod
+from math import gcd, lcm, prod
 from pathlib import Path
 
 
@@ -28,7 +28,7 @@ def paid_remainder(n):
 data = json.loads(Path(__file__).with_name(f"tableau-{p}.json").read_text())
 A = [tuple(map(Fraction, row)) for row in data["A"]]
 b = tuple(map(Fraction, data["b"]))
-s = (27,30,34,39,45,52,58,66,72,80)[p-11]
+s = (27,28,33,37,44,50,57,64,71,79)[p-11]
 assert len(A) == len(b) == s
 assert all(len(row) >= i and not any(row[i:]) for i, row in enumerate(A))
 assert len({row[:i] + (0,) * (s - i) for i, row in enumerate(A)}) == s
@@ -108,5 +108,22 @@ else:
             tested.add((((),)*(k-1),)+((),)*(n-k-1))
     assert all(defect_numerator(t)==0 for t in tested)
     print(f"order {p}, {s} stages: {len(tested)} sampled rooted conditions")
-assert defect_numerator(((),)*p)==-D**(p+1)
-print("Order-(p+1) bush defect = -1 in the corresponding factorial-unit ring")
+def tuple_tree(t):
+    return tuple(tuple_tree(branch) for branch in t)
+
+
+if p == 11:
+    assert defect_numerator(((),) * p) == -D**(p+1)
+    print("Order-12 bush defect = -1")
+else:
+    raw_witnesses = json.loads(Path(__file__).with_name(f"witness-{p}.json").read_text())
+    running = 0
+    for raw_tree, raw_value in raw_witnesses:
+        t = tuple_tree(raw_tree)
+        assert size(t) == p+1
+        val = Fraction(defect_numerator(t), D**(p+1))
+        assert val == Fraction(raw_value)
+        assert paid_remainder(val.denominator) == 1
+        running = gcd(running, paid_remainder(val.numerator))
+    assert running == 1
+    print(f"{len(raw_witnesses)} next-order defects generate the unit ideal")

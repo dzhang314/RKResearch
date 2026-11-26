@@ -208,7 +208,7 @@ targets = {
     17:(9,7,18,0,18,(1,),59),
     18:(9,8,12,-6,18,(-5,-4,-3,-1,13,17),67),
     19:(9,9,12,-6,18,(-5,-4,-3,-2,17),73),
-    20:(9,10,12,-6,18,(-5,-4,-3,17),81),
+    20:(10,9,12,-6,18,(-5,-4,-3,17),81),
 }
 
 
@@ -220,13 +220,27 @@ def construct(p,seed):
     rev,ro,rr = short(r) if r<8 else long(r,r==9,seed)
     k = len(rev)
     ys = [F(j,N) for j in range(lo,hi+1) if j not in omit]
-    if p==20:
-        ys = sorted([F(j,12) for j in (-10,-8,-6,-4,-3,0,2,3,4,6,7,8,9,10,11,12,14,16,18,24)]+[F(4,5)])
-    assert len(ys)==p+1 and m+r+1==p and p<=2*m+2
+    if 12<=p<=20:
+        if p==12:
+            ys=[F(j,12) for j in range(13) if j not in (1,11)]
+        elif p==13:
+            ys=[F(j,12) for j in range(13)]
+        elif p==14:
+            ys=[F(j,18) for j in range(19) if j not in (1,2,4,14,16,17)]
+        elif p in (15,16):
+            ys=[F(j,18) for j in range(19) if j not in (1,2,16,17)]
+        elif p==17:
+            ys=[F(j,18) for j in range(19) if j not in (1,17)]
+        elif p==18:
+            ys=sorted({F(1,2)} | {F(6+s*j,12) for s in (-1,1) for j in (1,2,3,4,5,6,8,12)})
+        else:
+            ys=sorted({F(1,2)} | {F(6+s*j,12) for s in (-1,1) for j in (1,2,3,4,5,6,7,8,12)})
+        count=len(f)+len(rev)+len(ys)-1
+    assert m+r+1==p and p<=2*m+2
     assert set(map(sum,rev))|{Z,O} <= set(ys)
     site_x = [1-y for y in ys]
     def quadrature(poly):
-        return sum(c/(j+1) for j,c in enumerate(poly) if j<p)
+        return sum(c/(j+1) for j,c in enumerate(poly) if (12<=p<=20 or j<p))
     lam=[]
     for x in site_x:
         others = [v for v in site_x if v!=x]
@@ -249,12 +263,12 @@ def construct(p,seed):
         assert paid_integer(wi.denominator)
         assert all(paid_integer(v.denominator) for _,v in row)
     c=[sum(v for _,v in row) for row in rows]
-    for degree in range(p+1):
+    for degree in range(p+1 if p==11 else p):
         assert dot(b,[x**degree for x in c])==(F(1,degree+1) if degree<p else 0)
     common=lcm(*(v.denominator for row in rows for _,v in row),*(v.denominator for v in b))
     result={'A':[[str(dict(row).get(j,Z)) for j in range(i)] for i,row in enumerate(rows)],
             'b':list(map(str,b)), 'coefficient_common_denominator': str(common)}
-    print(f"p={p}: {len(f)} forward + {k} donors + {p} pure = {count} allocated; {len(rows)} distinct after {len(mergers)} merges.",
+    print(f"p={p}: {len(f)} forward + {k} donors + {len(ys)-1} pure = {count} allocated; {len(rows)} distinct after {len(mergers)} merges.",
           file=__import__('sys').stderr)
     return json.dumps(result,indent=2)+'\n'
 

@@ -5,21 +5,21 @@ For each order below, the construction gives an explicit Runge–Kutta method wi
 | Order | Rows allocated by the proof | Rows after literal equality reduction |
 |---:|---:|---:|
 | 11 | 29 | [27](tableau-11.json) |
-| 12 | 32 | [30](tableau-12.json) |
-| 13 | 35 | [34](tableau-13.json) |
-| 14 | 40 | [39](tableau-14.json) |
-| 15 | 45 | [45](tableau-15.json) |
-| 16 | 53 | [52](tableau-16.json) |
-| 17 | 59 | [58](tableau-17.json) |
-| 18 | 67 | [66](tableau-18.json) |
-| 19 | 73 | [72](tableau-19.json) |
-| 20 | 81 | [80](tableau-20.json) |
+| 12 | 30 | [28](tableau-12.json) |
+| 13 | 34 | [33](tableau-13.json) |
+| 14 | 38 | [37](tableau-14.json) |
+| 15 | 44 | [44](tableau-15.json) |
+| 16 | 51 | [50](tableau-16.json) |
+| 17 | 58 | [57](tableau-17.json) |
+| 18 | 65 | [64](tableau-18.json) |
+| 19 | 72 | [71](tableau-19.json) |
+| 20 | 79 | [79](tableau-20.json) |
 
-The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The proof covers all rooted order conditions at all ten orders. A prescribed vanishing moment gives a next-order bush defect of −1; no inverse of the next order is used. [Additional literal row identities](ADDITIONAL-ROW-MERGES.md) explain the variants at orders 11, 12, 14, and 20.
+The [proof](CONSTRUCTION.md) uses a short reverse chart and two copies of each donor, with weights +1 and −1. The two copies have identical reverse reads, so their contributions cancel in the adjoint order calculation. Only the copy of weight +1 supplies donor columns. The other copy has a pure primitive row in the forward tableau and merges with an existing row at its clock. The [shorter symmetric grids](SHORT-SYMMETRIC-GRIDS.md) remove up to two scalar sites and use two next-order defects to show exact order, without needing an inverse of the next order. The order-eleven construction still uses a single bush defect of −1.
 
 - `python construct.py 13` rebuilds the literal JSON for order 13, using exact rational arithmetic and the pinned order-nine seed. The other orders use the same command with a different number.
 - `python verify.py 11 --all` through `python verify.py 14 --all` replay every rooted condition at the specified order, using exact integer arithmetic.
-- `python verify.py 15` through `python verify.py 20` perform sampled replays. The complete proof at these orders is symbolic. All ten verifier runs also check the tree of the next order whose defect is −1.
+- `python verify.py 15` through `python verify.py 20` perform sampled replays. The complete proof of order at these orders is symbolic. All ten verifier runs also verify exactness at the next order.
 
 This is not a new Lean certificate.
 

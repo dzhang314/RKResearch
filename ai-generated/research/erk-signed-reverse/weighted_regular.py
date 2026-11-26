@@ -86,7 +86,7 @@ def build(rk, seed, order, verify_reads=False):
         reverse, ro, rr = rk.long(8,True,seed,projected=order==18,regular_grade8=True)
         core = tuple(map(F, ('1/5','1/3','1/2','2/3','1','3/2','2','5'))) if order==18 else tuple(F(i,6) for i in (1,2,3,4,5,6,7,8,12))
         grid = sorted([z] + [sign*i for i in core for sign in (-1,1)])
-        split = [F(-1,3),F(1,3)] + ([F(-1,5)] if order==18 else [F(1,2),z])
+        split = [F(-1,3),F(1,3)] + ([F(-1,5)] if order==18 else [])
         old = {2*sum(r)-1 for r in reverse}
         preserve = [F(1,6)] if order==19 else []
         early = [a for a in grid if a not in old and a not in preserve]
@@ -104,7 +104,7 @@ def build(rk, seed, order, verify_reads=False):
     base_n = len(reverse)
     pure = [a for a in grid if a not in early]
     weight = {a:mean(cardinal(grid,a)) for a in grid}
-    assert all(sum(weight[a]*a**j for a in grid)==rk.average(j) for j in range(order))
+    assert all(sum(weight[a]*a**j for a in grid)==rk.average(j) for j in range(order+(order==19)))
     assert {2*sum(r)-1 for r in reverse}.issubset(pure)
 
     def probe(v):
@@ -122,28 +122,42 @@ def build(rk, seed, order, verify_reads=False):
         axis = mean(mul(p,q))
         assert axis==F(2560,3**11*11) and rk.unit(axis)
         rules = [(q,scale(p,o/axis))]
-    elif order in (18,19):
-        missing = F(5) if order==18 else F(-2)
+    elif order==18:
+        missing = F(5)
         split_nodes = [*split,missing]
         old4 = [*split[:3],missing]
         ell = {a:mean(mul(mul(h,h),cardinal(old4,a)))/vv(h,a)**2 for a in old4}
         assert rk.unit(ell[missing])
         f = scale(mul(h,rk.nodal(old4)),-o)
-        if order==19:
-            rest = mul([z,o],f)
-            assert mean(rest)==F(-60,945) and rk.unit(mean(rest))
-            q = mul([z,F(4,15),o],f)
-            r = rk.nodal([F(-1,2),F(2),F(1,6)])
-            projection = mul(r,[F(2509*22275)-F(20*405405*4,9),-F(20*405405)])
-            rules = [(q,projection)]
-        else:
-            rest = f
-            assert rk.unit(mean(rest))
-            q1 = mul([-F(12),o],f)
-            q2 = mul([-o,z,o],f)
-            r = rk.nodal(list(map(F, ('0','-1/2','1/2','-2','2'))))
-            tests = [r,[z,z]+r,[z,z,z,z]+r]
-            rules = two_mode_reads((q1,q2), tests)
+        rest = f
+        assert rk.unit(mean(rest))
+        q1 = mul([-F(12),o],f)
+        q2 = mul([-o,z,o],f)
+        r = rk.nodal(list(map(F, ('0','-1/2','1/2','-2','2'))))
+        tests = [r,[z,z]+r,[z,z,z,z]+r]
+        rules = two_mode_reads((q1,q2), tests)
+
+    elif order==19:
+        missing = None
+        split_nodes = split
+        rest = scale(mul(h,rk.nodal(split_nodes)),-o)
+        assert mean(rest)==F(-8,135)
+        a = F(1,6)
+        mask = rk.nodal([z,F(-1,2),F(1,2),F(-2),F(2),a])
+        odd = ([z]+rest, [z,z,z]+rest)
+        e1 = mul([-F(5,7),z,o],rest)
+        e2 = mul([-F(3,7),z,z,z,o],rest)
+        even = (e1,e2)
+        t = [[z]*j+mask for j in (0,2,4)]
+        odd_rules = two_mode_reads(odd,[mul(x,[a,o]) for x in t])
+        corrected_t = []
+        for x in t:
+            y = x
+            for q,read in odd_rules:
+                y = add(y,scale(read,-mean(mul(x,q))))
+            corrected_t.append(y)
+        even_rules = two_mode_reads(even,corrected_t)
+        rules = odd_rules+even_rules
     else:
         rest = missing = None
         split_nodes = split
@@ -156,7 +170,7 @@ def build(rk, seed, order, verify_reads=False):
         rules += two_mode_reads(even, [[z]*j+mask for j in (1,3,5)])
 
     for i, (q,p) in enumerate(rules):
-        assert len(q)+len(p)-2<=order-1
+        assert len(q)+len(p)-2<=order-1+(order==19)
         assert mean(mul(q,p))==o
         assert all(not vv(mul(q,p),a) for a in pure)
         assert all(mean(mul(q2,p))==F(i==j) for j,(q2,_) in enumerate(rules))
@@ -180,9 +194,12 @@ def build(rk, seed, order, verify_reads=False):
             _, high_ops, high_rows = rk.short(7)
             r_high_ops = high_ops[:2]+[high_ops[-1]]
             r_high_rows = high_rows[:2]+[high_rows[-1][:base_n]]
-        elif order in (18,19):
+        elif order==18:
             r_high_ops = ro[:3]+[lambda j:sum(w*((1+a)/2)**j for a,w in ell.items())]
             r_high_rows = rr[:3]+[[z]*18+[ell[a] for a in old4]]
+        elif order==19:
+            r_high_ops = ro[:3]
+            r_high_rows = rr[:3]
         else:
             r_high_ops = ro[:2]
             r_high_rows = rr[:2]
@@ -266,7 +283,7 @@ def build(rk, seed, order, verify_reads=False):
         corr = lambda n: rk.primitive_at(x[i])(n)-rk.dot(t,[v**n for v in x[:i]])
         fwd.append(rk.read(fo,fr,corr)[0]+t)
     out,b,mergers = rk.merge(fwd,[z]*len(fo_prefix)+beta[::-1])
-    assert len(out)=={17:56,18:62,19:70,20:75}[order]
+    assert len(out)=={17:56,18:62,19:68,20:75}[order]
     pure_start = live+base_n+len(split)
     raw_stage = lambda a: len(fo_prefix)+len(l)-pure_start-pure.index(a)
     assert (raw_stage(o),1) in mergers and (raw_stage(-o),17) in mergers

@@ -1,14 +1,14 @@
-# Explicit methods of exact orders 18, 19 and 20 in 62, 70 and 75 stages
+# Explicit methods of exact orders 18, 19 and 20 in 62, 68 and 75 stages
 
 The weighted regular-probe construction in [the order-17 proof](WEIGHTED-REGULAR-PROBES.md) gives the following additional bounds over \(\mathbb U_p\coloneqq\mathbb Z[1/p!]\), valid after every base change to a nonzero commutative \(\mathbb U_p\)-algebra.
 
 | Order | Forward rows | Reverse base rows | Scalar sites | Extra split live probes | Literal merges | Stages |
 |---:|---:|---:|---:|---:|---:|---:|
 | 18 | 22 | 22 | 17 | 3 | 2 | **62** |
-| 19 | 27 | 22 | 19 | 4 | 2 | **70** |
+| 19 | 27 | 22 | 19 | 2 | 2 | **68** |
 | 20 | 27 | 27 | 19 | 4 | 2 | **75** |
 
-The previous paid upper bounds were 63, 71 and 78. Order 18 uses weighted recovery of **two** missing directions; order 19 uses one, and order 20 uses four, separated into two pairs by parity. No individual power of a scalar quadrature mass is inverted. The constructions have a homogeneous next-order raw defect equal to one.
+The previous paid upper bounds were 63, 71 and 78. Order 18 recovers two missing directions. Orders 19 and 20 each recover four, in two pairs separated by parity. No individual power of a scalar quadrature mass is inverted. The constructions have a homogeneous next-order raw defect equal to one.
 
 ## 1. Common rows and order proof requirements
 
@@ -106,45 +106,90 @@ Let \(B_0,B_1\) be its square submatrices on rows \((0,1)\), \((1,2)\), with det
 \]
 Apply the adjugate of \(B_0\) and of \(B_1\) to the respective pairs of scaled measurements and add them with coefficients \(-7438507/7260,2669\). This gives \((h_1,h_2)\). Set \(k_1=-(h_1+h_2)/(s\kappa)\), \(k_2=(h_2-k_1)/s\). This defines \(\mathcal D\) on arbitrary data by the same formulas; it is paid and has the required unsplit mass factors. In particular it does not invert 353 or 19.
 
-## 3. Order 19: one weighted direction
+## 3. Order 19: four weighted directions from two split probes
 
 Here \(m=9,r=9\). The forward 27 rows are exactly the double-promoted forward bank of the order-17 source, with the two additional banks at \((-1/3,1/3,3/5,-5/3)\) and \((-8/3,-1/3,1/3,-2,2)\). The reverse grade-eight chart has the same first 18 rows and takes the next four pure \(\Pi_7\) rows at \((-1/3,1/3,1/2,-2)\). This is the first 22 rows of the order-20 reflected construction in [the earlier reflected order-20 proof](REFLECTED-ORDER-20.md). Use
 \[
  Q_4(v)\coloneqq(v^2-1/9)(v-1/2)(v+2),\quad F(v)\coloneqq(v^2-1)Q_4(v),\quad
  J_0\coloneqq16/945,\quad \kappa\coloneqq-15/4.
 \]
-The grade-eight pivots \(J_0(1\pm\kappa)\) are now paid because 19 is inverted. The old exact readings at size nine are again the two endpoints, mean, and \(\ell_4\). In that last read the old site \(-2\) has unit coefficient: its weighted-cardinal numerator is \(-J_0/2\) and its denominator is \(\omega(-2)Q_4'(-2)\).
+The grade-eight pivots \(J_0(1\pm\kappa)\) are now paid because 19 is inverted.
 
 Use the symmetric 19-site centered grid
 \[
  \{0,\pm1,\pm2,\pm3,\pm4,\pm5,\pm6,\pm7,\pm8,\pm12\}/6.
 \]
-The only possibly unpaid prime difference in index units is 23; a sum of radii 23 would require the missing 11 and is impossible. The rule has precision at least 18. Split four live probes at \((-1/3,1/3,1/2,0)\). The reverse donor sites are exactly the old nine centered scalar sites of Section 2. Reserve \(1/6\) as a pure site and make every other donor-free site live unsplit. The eight late sites are the seven original donor interior sites and \(1/6\). Use
-\[
- \gamma_a\coloneqq\ell_5(E_a(-u)),\qquad \eta\coloneqq512,
-\]
-where the promoted \(\ell_5\) is the forward one, exact through size ten. The true forward read gives a null functional on the ordinary size-ten source.
+The only possibly unpaid prime difference in index units is 23; a sum of radii 23 would require the missing 11 and is impossible.
+The degree-18 cardinal rule also has degree-19 precision by symmetry. Reserve \(1/6\) as pure, and make all other donor-free sites unsplit live probes. The eight late sites are the seven old interior donor sites and \(1/6\). Use \(\gamma_a=\ell_5(E_a(-u))\) and \(\eta=512\). Split only two probes, at \(-1/3,1/3\). At the first missing reverse word length we use the true old mean and endpoints, but need no additional reverse high read.
 
-Derive the reverse reading at \(-2\) from \(\ell_4(\sigma_W)=0\). Let \(f\) be \(H\) times the degree-at-most-four interpolant of \(\sigma_W/H\) at \(-1/3,1/3,1/2,-2,0\), and put
+Write
 \[
- \sigma_0\coloneqq f-\frac{\mu f}{\mu(vF)}vF,\qquad
- q(v)\coloneqq v(v+4/15)F(v),\qquad R(v)\coloneqq(v+1/2)(v-2)(v-1/6).
+ H(v)\coloneqq1-v^2,\qquad \mu f\coloneqq\tfrac12\int_{-1}^1 f(v)\,dv,
+ \qquad F_2(v)\coloneqq(v^2-1)(v^2-1/9).
 \]
-The mean pivot is \(\mu(vF)=-60/945\), paid. The remaining line is \(\sigma_W-\sigma_0=kq\), by the five vanishing values after division by \(H\) and the remaining mean condition. In fact \(\mu q=J_0+ (4/15)\kappa J_0=0\). The product \(qR\) vanishes outside the live unsplit set. With \(\mathcal H\) defined as in Section 2,
+The reverse base chart \(\Pi_R=\Pi_8\) is exact through tree size eight and pins the old ordinary order-nine mean and both actual endpoint reads. For any reverse word of length at most eight, its missing scalar polynomial \(\sigma=g_W-\Pi_R d_W\) consequently has degree at most eight, vanishes at both endpoints, and has zero mean. The live probes read \(\sigma(a)\) as their exact model word value minus \((\Pi_Rd_W)(a)\), as in the regular-probe proof. In particular every such discrepancy is zero for words of length at most seven.
+
+Let \(f\) be \(H\) times the degree-at-most-one interpolant of \(\sigma/H\) on the two split sites and put
 \[
- qR=\mathcal H(v)(v+4/15)(v-1/6),\qquad
- \mu(qR)=109/22275,\qquad
- \mu(qR(v+4/9))=13674/405405.
+ \sigma_0\coloneqq f-\frac{\mu f}{\mu F_2}F_2,
+ \qquad \mu F_2=-8/135.
 \]
-The identities follow from odd parity of \(\mathcal H\) and the moments \(A_0,A_1\) above; adding \(4/9\) in the last expression cancels the \(A_0\) term. Define
+This agrees with the split observations and has zero mean. The difference \(\delta\coloneqq\sigma-\sigma_0\) is divisible by \(F_2\) and has zero mean. Set \(t=v^2\). With \(O(t)\) of degree at most one and \(E(t)\) of degree at most two, write
 \[
- P(v)\coloneqq R(v)\bigl(2509\cdot22275-20\cdot405405(v+4/9)\bigr).
+ \delta(v)=F_2(v)(E(t)+vO(t)).
 \]
-Then \(\mu(Pq)=2509\cdot109-20\cdot13674=1\). The actual reconstruction of \(k\) is therefore
+The first three even moments of \(F_2\) are \(-8/135,-8/189,-8/315\), by expansion in powers of \(t\). The mean condition is therefore exactly the condition that
 \[
- k\coloneqq\sum_{a\text{ unsplit}}\lambda_a P(a)(\sigma_W(a)-\sigma_0(a)).
+ E(t)=e_1(t-5/7)+e_2(t^2-3/7).
 \]
-All factors are paid, and no mass is inverted. These expressions define \(\mathcal D\coloneqq\sigma_0+kq\).
+The odd part is arbitrary, \(O(t)=o_0+o_1t\). The paid recovery below reconstructs all four coefficients without needing the additional exact high \(\ell_4\) constraint on \(\delta\).
+
+## Recovering the odd and even coefficients from ordinary masses
+
+Let
+\[
+ a\coloneqq1/6,\quad R(v)\coloneqq v(v^2-1/4)(v^2-4)(v-a),\quad
+ \mathcal H(v)\coloneqq v(v^2-1)(v^2-1/9)(v^2-1/4)(v^2-4).
+\]
+Then \(F_2R=\mathcal H(v)(v-a)\) vanishes at every site not used as an unsplit live probe. Form
+\[
+ M_i\coloneqq\sum_{b\text{ unsplit}}\lambda_b b^i R(b)(\sigma(b)-\sigma_0(b)),
+ \qquad i=0,\ldots,5.
+\]
+The weighted values equal the exact centered integrals, because the polynomials have degree at most nineteen. Put \(A_j\coloneqq\mu(v^{2j+1}\mathcal H(v))\). The two equations at neighboring indices are
+\[
+ M_{2j}=\mu\bigl(v^{2j+1}\mathcal H(E-aO)\bigr),
+ \qquad
+ M_{2j+1}=\mu\bigl(v^{2j+1}\mathcal H(tO-aE)\bigr),
+ \qquad j=0,1,2.
+\]
+They follow by parity of \(\mathcal H\). Thus
+\[
+ M_{2j+1}+aM_{2j}
+ =o_0(A_{j+1}-a^2A_j)+o_1(A_{j+2}-a^2A_{j+1}).
+\]
+This is exactly the adjacent moment matrix of Section 4, with its paid adjugate solution. The calculation and its denominators already work over \(\mathbb U_{19}\): the largest prime in the displayed moment denominators is 19, and all other denominators in that adjugate solution divide powers of 19!. Recover \(o_0,o_1\) by that solution.
+
+Now define \(N_j\coloneqq M_{2j}+a(o_0 A_j+o_1 A_{j+1})\). Then
+\[
+ N_j=e_1(A_{j+1}-(5/7)A_j)+e_2(A_{j+2}-(3/7)A_j).
+\]
+Scale by \(7\cdot405405/2\). The preceding moment values \((405405/2)(A_0,\ldots,A_4)=(9919,6837,4971,63889/17,947205/323)\) give the rows
+\[
+ (-1736,5040),\qquad (612,98536/17),\qquad (24688/17,1813536/323).
+\]
+Let \(D_0,D_1\) be the determinants of the adjacent square submatrices. Direct products give
+\[
+ 17D_0=-223494656=-39424\cdot5669,\qquad
+ 5491D_1=-27352450048=-4824917\cdot5669+4425.
+\]
+The integer certificate \(779\cdot5669-998\cdot4425=1\) therefore yields
+\[
+ \left(\frac{4815266387\cdot17}{39424}\right)D_0-(998\cdot5491)D_1=1.
+\]
+Here \(39424=2^9\cdot7\cdot11\), so this is a paid combination. Apply those coefficients to the two adjugate reconstructions of \((e_1,e_2)\) from the neighboring pairs of scaled \(N_j\)'s. This completes the linear decoder \(\mathcal D=\sigma_0+F_2(E+vO)\) on arbitrary stage data. Its only uses of raw unsplit inputs are in the \(M_i\)'s, with the displayed explicit factors \(\lambda_b\). The strict paid transpose therefore still uses no inverse of a scalar mass.
+
+The resulting physical count is \(27+22+19+2-2=68\), two fewer than the [earlier four-split construction](https://github.com/dzhang314/RKResearch/blob/f947cbcb1da23ff37c8780ae2499a1fa4d384a25/ai-generated/research/erk-signed-reverse/WEIGHTED-ORDERS-18-20.md#3-order-19-one-weighted-direction).
 
 ## 4. Order 20: four weighted directions in two pairs
 

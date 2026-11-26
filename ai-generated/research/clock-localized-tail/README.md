@@ -22,6 +22,12 @@ Let \(t\) be the actual last nonzero position of \(\beta\) and \(\ell\) the firs
 \]
 All calculations can be done in the actual prefix ending at \(t\), since the adjoint words never read beyond it. The bare chain only gives \(t-\ell\ge L\). We exclude equality as follows.
 
+## Further results
+
+- [Common-diagonal resonance and prefix rank](COMMON-DIAGONAL-RESONANCE.md): a nonendpoint direction still forces the extra row even when the longest shifted moment is zero. The [prefix theorem](COMMON-DIAGONAL-PREFIX-RANK.md) and [formation argument](FORMATION-AND-CARDINAL-RANK.md) give the consequences for actual invariant subspaces.
+- [Late unary directions](DELAYED-CLOCK-UNARY-RANK.md): failure of early output factorization can force several independent new columns, not just one.
+- [The penultimate late test](PENULTIMATE-PAID-TAP.md) does not require localization at a single clock. In a hypothetical \(3d+1\)-stage method of order \(2d+1\), it forces [maximal clock delay](MAXIMAL-ODD-CLOCK-DELAY.md) and yields [reverse clock charts](REVERSE-CLOCK-CHARTS.md). In the full-closure branch, [a further support bound](MAXIMAL-DETECTOR-PHYSICAL-SUPPORT.md) leaves a specific singleton-clock case. These restrictions do not exclude every equality case.
+
 ## The saturated suffix and its two diagonalizable quotients
 
 If \(t=\ell+L\), the nonzero \(L\)-th tap forces all \(L\) adjacent physical edges in the suffix to be nonzero. The vectors \(\boldsymbol{\eta}_i=A^i\boldsymbol{\eta}\), \(0\le i\le L\), then form a basis of that suffix, with first physical positions \(\ell+i\). In this basis \(A\) is the nilpotent shift, and \(C\) preserves the successive suffix flags, with actual clock diagonal entries \(x_i\). In particular \(x_0=0\). The restriction of \(C\) to any invariant subspace, and its action on the corresponding quotient, remain split diagonalizable.

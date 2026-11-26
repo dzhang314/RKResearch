@@ -1,0 +1,9 @@
+PASS actual six pure clocks, asymmetric 4+4 live tiers, both degree-eight left equations, and 47 chronological reverse rows
+PASS paid 4→1 promotion and 8→6 augmented recovery, unchanged charts, literal alias 27→0; 37 projected reverse reads and 41 old forward pin checks
+PASS two actual raw next grafts and unit blend ['931/40030848000', '-64411/1601233920000'] ['21571823370240000', '12472011002880000']
+PASS actual two cleared size-16 defects and integer unit blend ['-9505446555931/435891456000', '-9505477211899/435891456000'] ['-1782603464985484517376000', '1782597715938533894400000']
+PASS p=15: original 15+47, final=39, all factorial-paid denominators and 2418 fold identities
+PASS signed normalized transpose and all 15 scalar moments
+PASS 66 dual column transitions, 244 scalar low-source zeros
+PASS 231 forward attachments through size 9, 405 low, 319 intermediate, and 210 high chart entries
+literal common denominator: 14264352208141030195200000 divides 15!^3

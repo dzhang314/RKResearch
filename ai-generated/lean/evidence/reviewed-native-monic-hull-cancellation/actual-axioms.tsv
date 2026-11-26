@@ -1,0 +1,4 @@
+declaration	axioms
+RKResearch.ContextCompletion.MonicHull.modByMonic_eq_self_of_natDegree_lt	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.MonicHull.sub_modByMonic_eq_smul_of_natDegree_le	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.MonicHull.linearMoment_modByMonic_eq_of_natDegree_le	Classical.choice,Quot.sound,propext

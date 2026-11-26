@@ -1,0 +1,6 @@
+declaration	axioms
+RKResearch.ContextCompletion.PaidShift.shift_apply	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidShift.adjoint_apply	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidShift.unitMoment_shift_byParts	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidShift.unitMoment_iterate_shift_byParts	Classical.choice,Quot.sound,propext
+RKResearch.ContextCompletion.PaidShift.unitMoment_pureUnary_cancel	Classical.choice,Quot.sound,propext

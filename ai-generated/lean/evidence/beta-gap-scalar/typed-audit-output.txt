@@ -1,0 +1,15 @@
+@betaCoefficients_zero : ∀ {K : Type u_1} [inst : Field K] {d r : ℕ},
+  0 < d →
+    (∀ (n : ℕ), 0 < n → n ≤ d + 2 * r + 1 → ↑n ≠ 0) →
+      ∀ (a : Fin (r + 2) → K), ∑ j, a j = 0 → (∀ (i : Fin (r + 1)), ∑ j, a j / ↑(d + ↑i + ↑j) = 0) → a = 0
+@card_succ_le_of_cleared_beta_moments : ∀ {K : Type u_1} [inst : Field K] {ι : Type u_2} [inst_1 : Fintype ι]
+  (x w : ι → K) (κ : K) {d r : ℕ},
+  0 < d →
+    (∀ (n : ℕ), 0 < n → n ≤ d + 2 * r + 1 → ↑n ≠ 0) →
+      (∀ q ≤ 2 * r, κ * ↑(d + q) * ↑(d + q + 1) * ∑ s, w s * x s ^ q = 1) → r + 1 ≤ Fintype.card ι
+'RKResearch.Certified.Graded.BetaGapScalar.betaCoefficients_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.BetaGapScalar.card_succ_le_of_cleared_beta_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

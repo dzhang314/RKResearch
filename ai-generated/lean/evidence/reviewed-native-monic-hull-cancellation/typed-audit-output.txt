@@ -1,0 +1,9 @@
+'RKResearch.ContextCompletion.MonicHull.modByMonic_eq_self_of_natDegree_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ContextCompletion.MonicHull.sub_modByMonic_eq_smul_of_natDegree_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ContextCompletion.MonicHull.linearMoment_modByMonic_eq_of_natDegree_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

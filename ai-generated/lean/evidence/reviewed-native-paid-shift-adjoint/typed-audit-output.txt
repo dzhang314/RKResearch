@@ -1,0 +1,11 @@
+'RKResearch.ContextCompletion.PaidShift.shift_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidShift.adjoint_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ContextCompletion.PaidShift.unitMoment_shift_byParts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ContextCompletion.PaidShift.unitMoment_iterate_shift_byParts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ContextCompletion.PaidShift.unitMoment_pureUnary_cancel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

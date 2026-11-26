@@ -1,0 +1,113 @@
+{
+  "body": {
+    "actual_lean_exit": 0,
+    "actual_wrapper_exit": 0,
+    "body_warning_sites": [
+      {
+        "argument": "Pi.single_apply",
+        "col": 10,
+        "kind": "unused simp argument",
+        "line": 36
+      },
+      {
+        "argument": "Ne.symm ne",
+        "col": 31,
+        "kind": "unused simp argument",
+        "line": 36
+      },
+      {
+        "argument": "Pi.single_apply",
+        "col": 10,
+        "kind": "unused simp argument",
+        "line": 44
+      },
+      {
+        "argument": "Ne.symm ne",
+        "col": 31,
+        "kind": "unused simp argument",
+        "line": 44
+      },
+      {
+        "argument": "Pi.single_apply",
+        "col": 10,
+        "kind": "unused simp argument",
+        "line": 53
+      },
+      {
+        "argument": "Ne.symm ne\u2081",
+        "col": 32,
+        "kind": "unused simp argument",
+        "line": 53
+      },
+      {
+        "argument": "Ne.symm ne\u2082",
+        "col": 50,
+        "kind": "unused simp argument",
+        "line": 53
+      }
+    ],
+    "measured_native_predecessors": [
+      {
+        "checked_phase": "39763",
+        "module": "RKResearch.OrderConditions",
+        "primary_olean_sha256": "5c801eba9929197ec299ccda522cdc59e7a6ba55d3411707cf6d47044478d8f9",
+        "repo_source": "RKResearch/OrderConditions.lean",
+        "source_sha256": "c979b6d7d376a78029591091e331a7bfe3484e26cda483f2c0a38367124a01a2"
+      },
+      {
+        "checked_phase": "17400",
+        "module": "RKResearch.FiniteRootedTree",
+        "primary_olean_sha256": "82112d27743159ecf7b50916894527bbb5b12403f151bf99dd51d3b96af8b764",
+        "repo_source": "RKResearch/FiniteRootedTree.lean",
+        "source_sha256": "b83c146d56c2c4e712def29aea213b078ca55056eb0ba99c0bbfb75e54f52869"
+      }
+    ],
+    "measured_row_sha256": "e58d99e9af688750bf4d9d974d4b16ecd04eb8ba05980910ea3ef463d2725888",
+    "object_hashes": {
+      "ir": "f7f5a9efb2573921c192d37f045fa2a9ea1e3e078db9e828a7bbe5e9462d114c",
+      "ir_signature": "244a8c48eb45ec8e7205076b68f941c207c5ab50f3279388c5080c2a6a232a34",
+      "primary_olean": "1267bd4332edb053b62ed67bc44766e2f90e3e0b388f2818a6d76d6e840ab4ef",
+      "private_olean": "698a04cd704111fa97b8d75a21904a7899ae367639894f9182763b3aeb233e8f",
+      "server_olean": "8f587ee20ed7466fdc1912ce428aedb9b3d02343d59ac34ee7ea5c1bd9844515"
+    },
+    "raw_body_log_sha256": "4e25fe1246f2a3712ead997fcec4c14601d7afdb7b0f8d3ea3b8e05d0aff65fa",
+    "repo_source": "ai-generated/lean/RKCert/ReviewedNative/PathExactnessCorrection.lean",
+    "sole_project_import": "RKResearch.OrderConditions",
+    "source_sha256": "f3f9c272d4ba6ad760a3ce2b3e285812ad76e99c60a354e7d2da9d924e72893a",
+    "stock_header_module_count": 2691
+  },
+  "lean_binary_sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00",
+  "lean_version": "4.36.0",
+  "module": "RKCert.ReviewedNative.PathExactnessCorrection",
+  "schema": "reviewed-native-path-exactness-correction-evidence-v1",
+  "scope": "paid-zero/next-tall-one path and conditional same-tableau output-weight amendment; no all-order existence, interpolation, or stage-count assertion",
+  "typed_no_output_audit": {
+    "actual_audit_gate_exit": 0,
+    "actual_lean_exit": 0,
+    "actual_transcript_sha256": "d978e26c328b3b52ae4272bd96cc0620a8d4c2dd03ebb17e7a5c55487132ac7f",
+    "axioms": {
+      "RKResearch.Certified.PathExactness.exact_order_of_next_tall_correction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.PathExactness.pathCorrection_next_tall": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "RKResearch.Certified.PathExactness.pathCorrection_paid": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "axioms_json_sha256": "cc6f415f407ce3c631cb1a05d509edaf8b0adb4954fd44b0b70b0e6791866db6",
+    "object_output": false,
+    "repo_source": "ai-generated/lean/AuditReviewedNativePathExactness.lean",
+    "sole_project_import": "RKCert.ReviewedNative.PathExactnessCorrection",
+    "source_sha256": "0bce1401ac624857c061e5186ca6c11f5ebe8fcb9f4a7197a070143693d466cd",
+    "typed_examples": 3
+  },
+  "verified_base_commit": "3fac4d3540e44aad549a20841c879fd46b1a7463"
+}

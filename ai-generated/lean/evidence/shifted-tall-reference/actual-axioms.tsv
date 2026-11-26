@@ -1,0 +1,6 @@
+declaration	actual_axioms
+RKResearch.DiagonalTreeShift.transform_tallTree_eq_binomial	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.shiftedExactTall_recurrence	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.shiftedExactTall_succ_ne_zero_of_eq_zero	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.shiftedExactTall_nonzero_pair	Classical.choice,Quot.sound,propext
+RKResearch.DiagonalTreeShift.paid_shifted_tall_nonzero_pair	Classical.choice,Quot.sound,propext

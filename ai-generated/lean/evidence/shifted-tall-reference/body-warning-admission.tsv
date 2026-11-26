@@ -1,0 +1,9 @@
+field	value
+body_nonfatal_warnings	2
+body_warning_location	102:50
+body_warning_category_1	linter.unusedTactic
+body_warning_message_1	Unused tactic linter: `<;>` can be replaced with `;`.
+body_warning_category_2	linter.unnecessarySeqFocus
+body_warning_message_2	Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+body_warning_admission	Exact body exit 0, five nonempty output fragments and original post-guard; the predeclared body gate has no warning-zero condition. Preserve both diagnostics and the exact source.
+body_warning_scope	Only the two pinned existing body lints, not an audit warning allowance.

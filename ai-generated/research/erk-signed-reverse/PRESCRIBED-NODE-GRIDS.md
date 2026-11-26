@@ -45,7 +45,7 @@ python construct.py 19 --rational-grid
 python verify.py 19 --rational-grid
 python verify-reflection-20.py --rational-grid
 ~~~
-The unqualified order-nineteen options still give the 71-stage tableau over the factorial localization.
+The historical option gives the 71-stage tableau over the factorial localization. The newer [weighted regular construction](WEIGHTED-ORDERS-18-20.md) also reaches 70 stages and retains that stronger coefficient guarantee.
 
 ## Two shorter real-algebraic grids
 

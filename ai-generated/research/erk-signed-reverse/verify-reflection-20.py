@@ -72,4 +72,4 @@ if __name__ == '__main__':
     verify_chart(9, False, seed, rational_grid=args.rational_grid)
     verify_chart(grade, True, seed, rational_grid=args.rational_grid)
     tableau = 'tableau-19-rational.json' if args.rational_grid else 'tableau-20.json'
-    assert rk.construct(p, seed, rational_grid=args.rational_grid) == (rk.HERE / tableau).read_text()
+    assert rk.construct(p, seed, rational_grid=args.rational_grid, previous=not args.rational_grid) == (rk.HERE / tableau).read_text()

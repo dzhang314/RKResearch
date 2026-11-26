@@ -159,7 +159,7 @@ def eight_row_grade_five():
     return a, [eval_at(v) for v in x], [basis(0,8),basis(7,8),basis(6,8),midpoint,basis(4,8)]
 
 
-def long(g, reverse, seed, projected=False, reflected_twenty=False, symmetric_last=False):
+def long(g, reverse, seed, projected=False, reflected_twenty=False, symmetric_last=False, regular_grade8=False):
     a = [list(map(F,row)) for row in seed['A']]
     b = list(map(F,seed['b']))
     mo = [pad([w*sum(row)**k for w,row in zip(b,a)],17) for k in range(4)]
@@ -171,7 +171,7 @@ def long(g, reverse, seed, projected=False, reflected_twenty=False, symmetric_la
     qc = lambda j: F(1,4)**j-F(3,4)**j
     op7 = (op6[0][:-1]+[qc]+mid[0],op6[1][:-1]+[quarter]+mid[1])
     x_of = lambda z: (1+z)/2
-    if g==8 and not projected:
+    if g==8 and not projected and not regular_grade8:
         ne = prepend(op7,list(map(F,['1/12','1/4','1/3','1/2'])),a)
         return a, op6[0][:4]+ne[0],op6[1][:4]+ne[1]
     if projected:
@@ -180,9 +180,14 @@ def long(g, reverse, seed, projected=False, reflected_twenty=False, symmetric_la
         z = list(map(F, ['-1/3','1/3','1/2','-2'] if reverse else ['-1/3','1/3','3/5','-5/3']))
     if reflected_twenty and not reverse:
         z = list(map(F, ('-5','-1/3','1/5','1/3')))
+    if regular_grade8:
+        z = list(map(F, ('-1/3','1/3','-1/5','5') if reverse and projected else ('-1/3','1/3','1/5','-5') if not reverse else ('-1/3','1/3','1/2','-2')))
     xx = list(map(x_of,z))
     ne = prepend(op7,xx,a)
     op8 = (op6[0][:4]+ne[0],op6[1][:4]+ne[1])
+    if regular_grade8:
+        assert g==8
+        return a,*op8
     if projected and not reverse:
         assert g==8
         return a,*op8
@@ -258,12 +263,12 @@ targets = {
 }
 
 
-def construct(p,seed,rational_grid=False):
+def construct(p,seed,rational_grid=False,previous=False,verify_reads=False):
     assert not rational_grid or p==19
-    if p==17:
+    if 17 <= p <= 20 and not rational_grid and not previous:
         import sys
-        from weighted_taps_17 import build
-        return build(sys.modules[__name__],seed)
+        from weighted_regular import build
+        return build(sys.modules[__name__],seed,p,verify_reads=verify_reads)
     global PAID
     PAID=factorial(p)
     m,r,N,lo,hi,omit,count=targets[p]
@@ -347,7 +352,11 @@ if __name__=='__main__':
     parser.add_argument('p',type=int,choices=tuple(targets))
     parser.add_argument('--seed',type=Path,default=HERE.parent/'erk-eleven-twelve-moment-splice'/'paid9-seed.json')
     parser.add_argument('--rational-grid',action='store_true',help='use the 70-stage rational grid at order 19')
+    parser.add_argument('--previous',action='store_true',help='rebuild the earlier unweighted construction for orders 18–20')
+    parser.add_argument('--verify-reads',action='store_true',help='verify all required weighted chart reads and first-excess pins (orders 17–20)')
     args=parser.parse_args()
+    assert not args.verify_reads or (17<=args.p<=20 and not args.previous and not args.rational_grid)
+    assert not args.previous or (18<=args.p<=20 and not args.rational_grid)
     seed_bytes=args.seed.read_bytes()
     assert sha256(seed_bytes).hexdigest()==SEED_SHA256
-    print(construct(args.p,json.loads(seed_bytes),rational_grid=args.rational_grid),end='')
+    print(construct(args.p,json.loads(seed_bytes),rational_grid=args.rational_grid,previous=args.previous,verify_reads=args.verify_reads),end='')

@@ -38,3 +38,5 @@ At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use ex
 [Direct weighted site recovery](WEIGHTED-SITE-RANK.md) uses maximal-minor certificates for the weighted evaluations. The current counts for orders 17–20 are 53, 60, 66, and 72.
 
 [Weighted probes at orders 11–16](WEIGHTED-ORDERS-11-16.md) use a common three-size family of short reverse charts. The earlier constructions at these orders remain available through the historical option.
+
+The [compact order-15 certificate](order-15-certificate/README.md) checks the 40-stage tableau using a small linear family of suffix tests and local rooted attachments through size eight.

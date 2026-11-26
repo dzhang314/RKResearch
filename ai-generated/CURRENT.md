@@ -32,7 +32,9 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 - [Order five](research/erk-five-ring-witness/README.md): six stages are necessary and sufficient if 120 is a unit. Otherwise no stage count attains order five.
 - [Order six](research/erk-six-ring-minimum/README.md): seven stages are necessary and sufficient if 720 is a unit. A single rational tableau specializes to every such ring, including positive characteristic. This supersedes the eight-stage construction as a minimum, not as a denominator-removal technique.
 
-The lower bounds are covered by the uniform Lean theorem. The two upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
+- [Order seven](research/erk-seven-ring-witness/README.md): order seven is possible exactly when 5040 is a unit. The uniform stage count is between nine and ten; the ten-stage tableau reuses a Shanks endpoint to remove an extra denominator. The nine-stage universal question is open in this project.
+
+The lower bounds are covered by the uniform Lean theorem. The three upper tableaux have exact arithmetic checks; this does not add Lean coverage for their constructions. The real-algebraic numerical table above is unchanged.
 
 ## Rational contributing quadrature support
 

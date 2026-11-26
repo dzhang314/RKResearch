@@ -33,7 +33,7 @@ The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLU
 
 ## Improved DIRK lower bounds over arbitrary rings
 
-The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises the uniform arbitrary-ring floor by one for every order p≥12, to p + floor((p−1)/2) − 2. At orders 12 and 13 it gives 15 and 17, matching the characteristic-zero lower bounds. No diagonal sign, positivity or nonzero-diagonal restriction is imposed. The stronger paid floors have not yet been checked in Lean.
+The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises the uniform arbitrary-ring floor by one for every order p≥12, to p + floor((p−1)/2) − 2. At orders 12 and 13 it gives 15 and 17, matching the characteristic-zero lower bounds. No diagonal sign, positivity or nonzero-diagonal restriction is imposed. At order 14, [a sharper proof](lower-bounds/paid-beta/DIRK-PAID-ORDER-FOURTEEN.md) raises the arbitrary-ring floor from 18 to 19. It uses stage chronology and the two paid ERK norms, bypassing the fixed reverse determinant. The stronger paid floors have not yet been checked in Lean.
 
 ## Exact explicit minima over nonzero commutative rings
 
@@ -50,15 +50,19 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 - [Orders eleven and twelve](research/erk-eleven-twelve-moment-splice/README.md): the same family gives exact order eleven in 28 and exact order twelve in 33 physical stages over the corresponding factorial-unit rings (previous uniform-path uppers 31 and 37).
 
-For these constructions the stated factorial unit is necessary for existence at any stage count. The tableaux have exact arithmetic checks, not Lean certificates. The real-algebraic numerical table above is unchanged.
+- [Order thirteen](research/erk-thirteen-moment-splice/README.md): a 42-stage explicit tableau of exact order thirteen over every nonzero commutative ring in which 13! is a unit. A linear combination of two order-fourteen defects is a unit.
+
+The stated factorial unit is necessary for existence at any stage count. The order-nine through order-twelve tableaux have literal arithmetic replays; order thirteen has an independently checked symbolic construction. None of these constructions is claimed as a new Lean certificate. The real-algebraic numerical table above is unchanged.
 
 ## Raising order while keeping the old stages
 
 The [Newton-tail construction](research/newton-tail-order-raising/NEWTON-TAIL.md) raises order p−1 to at least p without changing the old stage equations, provided the output weights can be reassigned. It uses at most 2p new stages over nonzero commutative rings with p! invertible. Over the real algebraic numbers the [sharp worst-case costs](research/newton-tail-order-raising/SHARP-EXTENSION-COST.md) are floor(p/2) new ERK stages and ceil(p/2) for DIRK and SDIRK, with preservation of the SDIRK diagonal. For comparison, [fixing the old output weights](research/newton-tail-order-raising/FIXED-OUTPUT-LOWER.md) can force exponentially many new stages along a sequence of orders; some order-18 bases need at least 77 appended stages to reach order 19. These are extension costs, not absolute stage minima or Lean certificates.
 
-## Rational strict SDIRK upper bounds at orders 8–10
+## Rational strict SDIRK upper bounds at orders 8–20
 
-The [two-order Newton construction](research/rational-sdirk-two-order/TWO-ORDER-NEWTON-TAIL.md) gives exact rational strict SDIRK in 13, 19, and 21 physical stages at orders 8, 9, and 10, respectively. These improve the earlier rational witnesses of 15, 23, and 27 stages. All rooted equations and next-bush failures were checked with exact rational arithmetic on the [literal tableaux](research/rational-sdirk-two-order/README.md). The real-algebraic tables and Lean coverage do not change.
+The [two-order Newton construction](research/rational-sdirk-two-order/TWO-ORDER-NEWTON-TAIL.md) gives exact rational strict SDIRK in 13, 19, and 21 physical stages at orders 8, 9, and 10, respectively. These improve the earlier rational witnesses of 15, 23, and 27 stages. All rooted equations and next-bush failures were checked with exact rational arithmetic on the [literal tableaux](research/rational-sdirk-two-order/README.md).
+
+At orders 11 through 20, an independently audited [extension using existing output stages](research/rational-sdirk-two-order/higher-orders/FAMILIES-AND-COUNTS.md) gives exact rational strict SDIRK in 28, 29, 37, 39, 48, 50, 60, 63, 74, and 77 stages, respectively. [The frontier argument](research/rational-sdirk-two-order/higher-orders/HEAD-PREPARATION-AND-FRONTIER.md) and [the rational quadrature choices](research/rational-sdirk-two-order/higher-orders/RATIONAL-GATES.md) prove these as symbolic recipes; no expanded higher-order tableau replay or Lean verification is claimed. These rational results do not change the real-algebraic table or Lean coverage.
 
 ## Bounds for particular stage architectures
 

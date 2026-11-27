@@ -48,7 +48,7 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 - [Order seven](research/erk-seven-factorial/README.md): nine stages are necessary and sufficient if 5040 is a unit. The new universal nine-stage tableau is checked against the reviewed Lean order predicate. The earlier [ten-stage tableau](research/erk-seven-ring-witness/README.md) remains a separate construction.
 
-- [Order eight](research/erk-eight-ring-witness/README.md): exact order eight is possible exactly when 40320 is a unit. The uniform thirteen-stage upper comes from splitting the final row of Shanks’s twelve-stage method to remove 41. This is an upper bound, not a minimum.
+- [Order eight](research/erk-eight-factorial/README.md): a new Lean-checked twelve-stage method has exact order eight over every nonzero commutative ring with 40320 a unit, improving the [previous universal thirteen-stage witness](research/erk-eight-ring-witness/README.md). This is an upper bound, not a minimum. Order eight is impossible if 40320 is not a unit.
 
 - [Order nine](research/erk-nine-moment-splice/README.md): exact order in 16 physical stages whenever 9! is a unit, improving the previous universal 21-stage upper.
 

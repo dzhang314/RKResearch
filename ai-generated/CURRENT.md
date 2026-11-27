@@ -58,6 +58,15 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 The stated factorial unit is necessary for existence at any stage count. Literal arithmetic replays check all 3,047, 7,813, 20,299, and 53,272 rooted conditions at orders eleven through fourteen. At orders fifteen to twenty the general symbolic argument proves every rooted condition, and the literal tableaux have sample replays and exact next-order checks. None of these constructions is a new Lean certificate.
 
+## Exact order-six strict SDIRK minima by coefficient domain
+
+The [complete field classification](research/strict-sdirk-endpoints/MINIMA.md) gives six stages in characteristics 11, 17, 163, 263, 457 and 126963077, and in characteristic 3533 precisely when 2077 is a square. Characteristics 2, 3 and 5 are impossible; all other fields, including characteristic zero, require seven. Over nonzero commutative rings a seven-stage tableau of exact order six exists whenever 720 is a unit, and otherwise order six is impossible at any stage count. The same note gives six-stage minima on specified squarefree annihilator loci and a nilpotence obstruction over general rings. Lean/Mathlib 4.36.0 checks these claims without ordered-field assumptions.
+
+## Necessary conditions at two open stage boundaries
+
+- [Eleven stages at DIRK order ten](research/causal-profile-reduction/dirk-order10-crossed-cubic-pivots.md): any such tableau over a field must have zero diagonal at its first and last stages and at two distinct interior stages. Over a nonzero commutative ring at least four diagonal entries must be nonunits. Lean/Mathlib 4.36.0 checks these restrictions from the literal rooted equations. This does not settle the 11–12 stage interval.
+- [Eleven stages at rational ERK order eight](research/erk-eight-factorial/FOUR-TAP-ELEVEN-OBSTRUCTION.md): the head-silent four-tap architecture with the specified terminal gate is impossible, including repeated-clock cases. The scalar elimination is checked in Lean/Mathlib 4.36.0; the reduction to it is mathematical. Unrestricted eleven-stage rational existence remains open.
+
 ## Raising order while keeping the old stages
 
 The [Newton-tail construction](research/newton-tail-order-raising/NEWTON-TAIL.md) raises order p−1 to at least p without changing the old stage equations, provided the output weights can be reassigned. It uses at most 2p new stages over nonzero commutative rings with p! invertible. Over the real algebraic numbers the [sharp worst-case costs](research/newton-tail-order-raising/SHARP-EXTENSION-COST.md) are floor(p/2) new ERK stages and ceil(p/2) for DIRK and SDIRK, with preservation of the SDIRK diagonal. For comparison, [fixing the old output weights](research/newton-tail-order-raising/FIXED-OUTPUT-LOWER.md) can force exponentially many new stages along a sequence of orders; some order-18 bases need at least 77 appended stages to reach order 19. These are extension costs, not absolute stage minima or Lean certificates.

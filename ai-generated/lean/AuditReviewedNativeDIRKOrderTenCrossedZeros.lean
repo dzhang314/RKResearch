@@ -1,0 +1,14 @@
+import RKCert.ReviewedNative.DIRKOrderTenCrossedZeros
+import RKCert.ReviewedNative.DIRKCrossedCubicChronology
+
+open RKResearch.Certified.Graded
+
+#check CrossedOrderTen.crossed_zero_sites
+#check CrossedOrderTen.four_zeros
+#check CrossedOrderTen.four_nonunit_diagonals
+#check CrossedCubicChronology.adjacent_tap_and_clock
+
+#print axioms CrossedOrderTen.crossed_zero_sites
+#print axioms CrossedOrderTen.four_zeros
+#print axioms CrossedOrderTen.four_nonunit_diagonals
+#print axioms CrossedCubicChronology.adjacent_tap_and_clock

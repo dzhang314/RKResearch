@@ -10,7 +10,9 @@ open RKCert.ReviewedNative.SDIRKSixReceipts
 
 /-- Exactly the prime characteristics in which an order-six, six-stage
 strict SDIRK exists over *some* field; 3533 needs a quadratic extension. -/
-def sixStageSupport : ℕ := 11 * 17 * 163 * 263 * 457 * 3533 * 126963077
+@[expose] def sixStageSupport : ℕ := 11 * 17 * 163 * 263 * 457 * 3533 * 126963077
+
+theorem sixStageSupport_eq : sixStageSupport = 11 * 17 * 163 * 263 * 457 * 3533 * 126963077 := rfl
 
 private theorem old_dvd :
     fourExceptionProduct ∣ (30 * 7 * 241 * 255919 * sixStageSupport)^60 := by decide +kernel

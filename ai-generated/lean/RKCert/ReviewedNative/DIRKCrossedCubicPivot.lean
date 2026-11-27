@@ -15,8 +15,9 @@ is a cubic nodal mask containing the physical endpoint clock 1.
 -/
 namespace RKResearch.Certified.Graded.CrossedCubicPivot
 open Lean.Grind
+universe u
 
-variable {K : Type} [CommRing K]
+variable {K : Type u} [CommRing K]
 
 /-- The signed moments of the reverse cubic profile as a density in the
 original clock variable. -/
@@ -214,7 +215,8 @@ end RKResearch.Certified.Graded.CrossedCubicPivot
 
 namespace RKResearch.Certified.Graded.CrossedCubicPivot
 open Lean.Grind
-variable {K : Type} [Field K]
+universe u
+variable {K : Type u} [Field K]
 
 private theorem cancel {x y : K} (hx : x ≠ 0) (h : x*y=0) : y=0 :=
   (Field.of_mul_eq_zero h).resolve_left hx

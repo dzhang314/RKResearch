@@ -79,3 +79,12 @@ The [Lean proof](../../lean/RKCert/ReviewedNative/ERK8FactorialTwelve.lean) chec
     lake build RKCert.ReviewedNative.ERK8FactorialTwelve
 
 The proof was kernel checked with Lean/Mathlib 4.36.0; only the standard axioms propext, Classical.choice and Quot.sound were reported.
+
+
+## Eleven-stage rational restriction
+
+The [four-tap obstruction](FOUR-TAP-ELEVEN-OBSTRUCTION.md) excludes the
+specified head-silent eleven-stage architecture over the rationals. The
+[symmetric chart calculation](SYMMETRIC-ELEVEN-OBSTRUCTION.md) isolates
+the irrational clock condition in that subcase. Neither result excludes
+unrestricted eleven-stage rational ERK tableaux.

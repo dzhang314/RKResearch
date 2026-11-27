@@ -12,7 +12,10 @@ four distinct physical clocks precede $j$. In 1-based numbering,
 $3\le i\le7$ and $5\le j\le9$. If this pair is consecutive, its
 direct tap $a_{ji}$ is nonzero and $c_i=c_j$.
 This excludes the entire exactly-three-zero-diagonal face, not every
-eleven-stage candidate.
+eleven-stage candidate. Over a nontrivial commutative ring the corresponding
+necessary condition is four **nonunit** diagonal entries: pass to any
+residue field; units survive, while at least four diagonal images vanish.
+This does not assert four entries already equal zero in the ring.
 
 ## Paid ranks and endpoint rows
 
@@ -162,12 +165,50 @@ is zero by the two zero diagonals and the absence of an intermediate
 stage. The identity $\lambda Rv=0$ therefore gives
 $(c_j-c_i)a_{ji}\lambda_j v_i=0$, proving $c_i=c_j$.
 
-**Verification scope.**
-[DIRKCrossedCubicPivot.lean](../../lean/RKCert/ReviewedNative/DIRKCrossedCubicPivot.lean)
-formalizes the denominator-cleared scalar obstruction.
-[DIRKCrossedCubicChronology.lean](../../lean/RKCert/ReviewedNative/DIRKCrossedCubicChronology.lean)
-connects it to the literal causal matrix action and proves strict
-separation of the two pivots from the paid read identities.
-These are not yet a single new top-level Lean theorem from
-HasOrder: the preceding proof states exactly how the existing
-native rank and order lemmas supply the two profiles and paid reads.
+## Cross-order scalar version
+
+The key crossed moment obstruction is not cubic-specific. Over a field
+with the denominators paid through order \(3d+1\), let \(P,Q
+e0\) have
+degrees at most \(d\), with \(P(0)=Q(1)=0\). Not all of
+\[
+ I\!\left(Q(x)x^kJ(x^\ell P)(x)\right),\qquad k+\ell\le d-1,
+\]
+can vanish. Let \(S\subseteq\{1,\dots,d\}\) be the set of nonzero
+coefficient indices of \(P\), with \(r=|S|\). For each
+\(t=r-1,\dots,d-1\), use the \(r\) tests with \(k+\ell=t\),
+\(0\le\ell\le r-1\). The corresponding Cauchy matrix
+\((1/(\ell+e+1))_{0\le\ell<r,\ e\in S}\)
+is invertible, so each \(e\in S\) forces all moments
+\(M_{r+e},\dots,M_{d+e}\) to vanish. Neighboring elements of \(S\) differ
+by at most \(d-r+1\); the intervals therefore form a contiguous band of
+length at least \(d\), beginning at \(s=r+\min S\le d+1\).
+The size-\(d\) shifted Beta matrix against the coefficients of
+\(Q/(1-x)\) has largest denominator at most \(s+2d\le3d+1\).
+Its invertibility gives \(Q=0\), the contradiction. This would apply
+at orders 13, 16, and 19 to separately earned pairs of quartic,
+quintic and sextic kernel profiles, respectively. No higher-order rank
+hypotheses are asserted or taken for granted here.
+
+## Verification scope
+
+* [DIRKOrderTenSaturation.lean](../../lean/RKCert/ReviewedNative/DIRKOrderTenSaturation.lean)
+  proves the exact native equality-case ranks, C(2), D(1), D(2), the
+  original zero row and the original active last clock with zero column.
+* [DIRKOrderTenKernelSeeds.lean](../../lean/RKCert/ReviewedNative/DIRKOrderTenKernelSeeds.lean)
+  constructs both true cubic kernel seeds without dividing by output weights.
+* [DIRKOrderTenCrossedZeros.lean](../../lean/RKCert/ReviewedNative/DIRKOrderTenCrossedZeros.lean)
+  proves the literal mixed read identities and the top-level
+  \`CrossedOrderTen.crossed_zero_sites\`, \`CrossedOrderTen.four_zeros\`
+  and \`CrossedOrderTen.four_nonunit_diagonals\` from the reviewed
+  \`HasOrder 10\` definition and lower triangularity. These native
+  files were checked with Lean/Mathlib 4.36.0.
+* [DIRKCrossedCubicPivot.lean](../../lean/RKCert/ReviewedNative/DIRKCrossedCubicPivot.lean)
+  and [DIRKCrossedCubicChronology.lean](../../lean/RKCert/ReviewedNative/DIRKCrossedCubicChronology.lean)
+  check the scalar contradiction and the actual physical cuts (including
+  the adjacent live tap and same clock), from the displayed read
+  identities. These dependency-free parts were checked with Lean
+  4.34.1, 4.35.0, 4.36.0 and 4.37.0-rc1.
+* The sharpened two index ranges and the general scalar degree variant
+  above are documented mathematical deductions, not extra endpoints of
+  the new native theorem.

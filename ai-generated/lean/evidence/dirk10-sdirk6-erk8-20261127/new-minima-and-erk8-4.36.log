@@ -1,0 +1,15 @@
+Checking RKCert/Research/SDIRKSixExceptionalSupport
+Checking RKCert/Research/SDIRKSevenStageOrderSixRing
+Checking RKCert/Research/SDIRKSixFieldClassification
+Checking RKCert/Research/SDIRKSixSquarefreeRings
+'RKResearch.HasOrder.sixFactorial_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenStageOrderSixRing.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.strictSDIRKOrderSix_minimum_field_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.strictSDIRKOrderSix_minimum_squarefree_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.strictSDIRKOrderSix_minimum_off_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ERK8ElevenFourTapRational
+'RKResearch.Certified.ERK8ElevenFourTapRational.no_eleven_four_tap_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

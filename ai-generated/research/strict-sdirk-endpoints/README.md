@@ -1,5 +1,7 @@
 # Six-stage strict SDIRK in three further prime characteristics
 
+See also the [complete field classification and ring upper bounds](MINIMA.md).
+
 The minimum stage count for classical order six over **each** of
 `F_263`, `F_457` and `F_126963077` is exactly **six**.
 The lower bound is the existing nonzero-commutative-ring theorem

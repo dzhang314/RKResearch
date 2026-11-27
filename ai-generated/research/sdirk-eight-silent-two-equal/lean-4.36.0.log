@@ -1,0 +1,6 @@
+ℹ [1538/1539] Built RKCert.ReviewedNative.SDIRK8EqualInvisibleReceipts (943ms)
+info: RKCert/ReviewedNative/SDIRK8EqualInvisibleReceipts.lean:40:0: 'RKCert.ReviewedNative.SDIRK8EqualInvisibleReceipts.equalTagMoment' depends on axioms: [propext]
+info: RKCert/ReviewedNative/SDIRK8EqualInvisibleReceipts.lean:41:0: 'RKCert.ReviewedNative.SDIRK8EqualInvisibleReceipts.signedTwoSiteReconstruction' depends on axioms: [propext,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8EqualInvisibleReceipts.lean:42:0: 'RKCert.ReviewedNative.SDIRK8EqualInvisibleReceipts.signedTwoSiteHankel' depends on axioms: [propext]
+Build completed successfully (1539 jobs).

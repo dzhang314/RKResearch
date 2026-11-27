@@ -54,3 +54,5 @@ These are fixed monic good-reduction checks at \(1009,t=285\). The scalar diagon
 ## Replay
 
 Run `python3 check_unequal.py` with `sympy==1.14.0` and `python-flint==0.9.0`. It imports the previous half-quadratic, half-star-quadratic and silent-three-closure folders. Once the libraries are installed the run is offline. The Lean file verifies the donor-feed, affine tail, and silent physical clock scalar identities. The exact polynomial and support/chronology computations are the source-level proof.
+
+The [equal-residual follow-up](../sdirk-eight-silent-two-equal/README.md) closes the case of vanishing reverse degree-two restriction and several further cases. Its remaining hypotheses are listed there.

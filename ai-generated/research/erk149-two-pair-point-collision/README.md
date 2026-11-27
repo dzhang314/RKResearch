@@ -83,3 +83,5 @@ The Python replay uses SymPy exact rational functions. From ai-generated/lean th
     lake env lean AuditERK149TwoPairAnchored.lean
 
 The typed transcript identifies all four native statements and their standard axioms.
+
+The [chronology census](../erk149-point-collision-exhaustive/README.md) extends the point-collision obstruction to all reverse chronologies under the same all-live assumptions. The [raw-transpose extension](../erk149-two-pair-zero-shares/README.md) allows zero individual shares as long as every high-site aggregate is nonzero. A zero aggregate is not covered.

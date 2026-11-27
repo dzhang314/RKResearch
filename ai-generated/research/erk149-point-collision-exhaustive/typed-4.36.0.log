@@ -1,0 +1,39 @@
+@one_site_impossible : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a t m : K),
+  t ≠ 0 → m * a = t ^ 2 / 2 → m * a ^ 2 = t ^ 3 / 3 → m * a ^ 3 = t ^ 4 / 4 → False
+@three_first_sites_resonance : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (c a b t k v m : K),
+  a ≠ 0 →
+    c ≠ 0 →
+      a ≠ c →
+        t ≠ 0 →
+          (a - c) * a * v = (t - 2 * c) * t ^ 3 / 12 →
+            v * k * c = t ^ 4 / 24 →
+              (a - b) * m * k * c = t ^ 3 * (3 * t - 4 * b) / 24 →
+                (a - c) * a * (a - b) * m = t ^ 4 / 4 - (b + c) * t ^ 3 / 3 + b * c * t ^ 2 / 2 → t = b
+@second_site_minor : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (c a b z : K),
+  a ≠ 0 →
+    b ≠ 0 →
+      c ≠ 0 →
+        a ≠ b →
+          a ≠ c →
+            b ≠ c →
+              card z c a b * card b a b c - card z a b c * card b c a b =
+                -b ^ 3 * z ^ 2 * (z - b) ^ 2 / (24 * a * c * (a - b) * (a - c) * (b - c))
+@anchor_anchor_other : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a b t : K),
+  a ≠ 0 → b ≠ 0 → 6 * a * b - 4 * (a + b) * t + 3 * t ^ 2 = 0 → 3 * a * b + a * t - 2 * b * t = 0 → b = 2 * a ∧ t = b
+@anchor_other_anchor : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a b t : K),
+  a ≠ 0 → b ≠ 0 → 6 * a * b - 4 * (a + b) * t + 3 * t ^ 2 = 0 → -3 * a * b + 2 * a * t - b * t = 0 → a = 2 * b ∧ t = a
+'RKResearch.Certified.ERK149AnchoredChronologyCensus.one_site_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149AnchoredChronologyCensus.three_first_sites_resonance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149AnchoredChronologyCensus.second_site_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149AnchoredChronologyCensus.anchor_anchor_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149AnchoredChronologyCensus.anchor_other_anchor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

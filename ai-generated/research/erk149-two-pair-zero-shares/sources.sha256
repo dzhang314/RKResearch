@@ -1,0 +1,6 @@
+e79f07e85f4d6abc09fec8b97c2a22d1fb45dd2e1e800c19db962912e094ae88  research/erk149-two-pair-zero-shares/README.md
+59a4afeedadfbb655ff702acca9a9b83ea8a39efac2e8d3c1d8e551339911e86  research/erk149-two-pair-zero-shares/replay.py
+0fce20cd90f7ef2e0b0b9a11d1b40835ab7a84e505816418b2c49c818ee2ff7a  research/erk149-two-pair-zero-shares/replay.log
+4f138aa0641d4cb64c5c1037ad16671d049745dc769e04b9ae213fc37bd9d684  research/erk149-two-pair-zero-shares/typed-4.36.0.log
+0738ef3477b0980662bfc418dad50daf8808b03eac83f6398fa5fb3ecf293259  lean/AuditERK149TwoPairRawTranspose.lean
+dd7ff2f4407b45ec4af241f7dc122a7492182134d3525da9cf04d73a050ffed9  lean/RKCert/ReviewedNative/ERK149TwoPairRawTranspose.lean

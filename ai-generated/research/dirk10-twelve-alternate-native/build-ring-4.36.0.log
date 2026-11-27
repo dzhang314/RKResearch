@@ -1,0 +1,9 @@
+building DIRK10RationalTwelveAlternate
+'RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+building DIRK10RationalPortfolioArithmetic
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.denomCover' does not depend on any axioms
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.coverBezout' does not depend on any axioms
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.nextBezout' does not depend on any axioms
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.primeReceipts' does not depend on any axioms

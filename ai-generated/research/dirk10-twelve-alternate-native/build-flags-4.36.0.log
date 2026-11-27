@@ -1,0 +1,13 @@
+building DIRK10RationalTwelveAlternateFlagReplayData
+building DIRK10RationalTwelveAlternateFlagReplayMoments
+building DIRK10RationalTwelveAlternateFlagReplayActionsA
+building DIRK10RationalTwelveAlternateFlagReplayActionsC
+building DIRK10RationalTwelveAlternateFlagReplaySilence
+building DIRK10RationalTwelveAlternateFlagReplayProducts
+building DIRK10RationalTwelveAlternateFlagReplay
+'RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.order_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

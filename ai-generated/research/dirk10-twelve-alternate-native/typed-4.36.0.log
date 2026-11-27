@@ -1,0 +1,48 @@
+@RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.exists_exact_of_unit : ∀ {R : Type u_1}
+  [inst : CommRing R] [Nontrivial R],
+  IsUnit ↑RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.denominator →
+    ∃ T w, T.IsLowerTriangular ∧ RKResearch.HasOrder 10 T w ∧ ¬RKResearch.HasOrder 11 T w
+@RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.next_star_defect : ∀ {R : Type u_1} [inst : CommRing R]
+  (d : R),
+  ↑RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.denominator * d = 1 →
+    520224768 *
+        (↑↑RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.nextTree.factorial *
+            RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.weights d ⬝ᵥ
+              RKResearch.Φ RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.nextTree
+                (RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.A d) -
+          1) =
+      19891
+@RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.next_mixed_defect : ∀ {R : Type u_1} [inst : CommRing R]
+  (d : R),
+  ↑RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.denominator * d = 1 →
+    247726080 *
+        (↑↑RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.mixedTree.factorial *
+            RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.weights d ⬝ᵥ
+              RKResearch.Φ RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.mixedTree
+                (RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.A d) -
+          1) =
+      -3253
+@exists_exact_local : ∀ {R : Type u_1} [inst : CommRing R] [IsLocalRing R],
+  IsUnit ↑(Nat.factorial 10) → ∃ A b, A.IsLowerTriangular ∧ RKResearch.HasOrder 10 A b ∧ ¬RKResearch.HasOrder 11 A b
+@paid_finite_characteristic : ∀ {R : Type u_1} [inst : CommRing R] (n : ℕ) [CharP R n],
+  n ≠ 0 → IsUnit ↑(Nat.factorial 10) → Paid R
+@exists_exact_finite_characteristic : ∀ {R : Type u_1} [inst : CommRing R] [Nontrivial R] (n : ℕ) [CharP R n],
+  n ≠ 0 →
+    IsUnit ↑(Nat.factorial 10) → ∃ A b, A.IsLowerTriangular ∧ RKResearch.HasOrder 10 A b ∧ ¬RKResearch.HasOrder 11 A b
+exists_exact_field : ∀ (K : Type u_1) [inst : Field K] (n : ℕ) [CharP K n],
+  n = 0 ∨ 11 ≤ n → ∃ A b, A.IsLowerTriangular ∧ RKResearch.HasOrder 10 A b ∧ ¬RKResearch.HasOrder 11 A b
+'RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalPortfolio.exists_exact_local' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalPortfolio.exists_exact_finite_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalPortfolio.exists_exact_field' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

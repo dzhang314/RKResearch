@@ -1,0 +1,5 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.denomCover' does not depend on any axioms
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.coverBezout' does not depend on any axioms
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.nextBezout' does not depend on any axioms
+'RKResearch.Certified.DIRK10RationalPortfolio.Arithmetic.primeReceipts' does not depend on any axioms

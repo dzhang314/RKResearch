@@ -1,0 +1,15 @@
+import RKCert.ReviewedNative.DIRK10RationalPortfolioFinite
+
+open RKResearch.Certified.DIRK10RationalPortfolio
+#check @RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.exists_exact_of_unit
+#check @RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.next_star_defect
+#check @RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.next_mixed_defect
+#check @exists_exact_local
+#check @paid_finite_characteristic
+#check @exists_exact_finite_characteristic
+#check @exists_exact_field
+#print axioms RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.transport
+#print axioms RKResearch.Certified.DIRK10RationalTwelveAlternateFlagReplay.exists_exact_of_unit
+#print axioms RKResearch.Certified.DIRK10RationalPortfolio.exists_exact_local
+#print axioms RKResearch.Certified.DIRK10RationalPortfolio.exists_exact_finite_characteristic
+#print axioms RKResearch.Certified.DIRK10RationalPortfolio.exists_exact_field

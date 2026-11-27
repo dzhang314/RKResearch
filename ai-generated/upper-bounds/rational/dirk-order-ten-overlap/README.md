@@ -4,7 +4,7 @@ A lower triangular tableau with rational coefficients attains exact rooted
 order ten in **14 physical stages**. Thus the rational DIRK10 stage interval
 is now **12–14**, using the
 [separate rational lower bound](../../../research/causal-profile-reduction/dirk-order10-rational-lower-twelve.md).
-The real minimum remains 11. The smaller tableau is genuinely implicit and
+The real minimum remains 11. The subsequent [13-stage construction](../../../research/dirk10-thirteen-rational-two-ports/README.md) improves the rational interval to 12–13 by a different overlap. The smaller tableau is genuinely implicit and
 does not reuse an ERK tableau. The construction also gives a separate
 15-stage fallback on uniformly spaced clocks.
 

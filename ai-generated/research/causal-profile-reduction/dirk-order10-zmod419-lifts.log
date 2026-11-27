@@ -1,0 +1,15 @@
+F419: 1205/1205 unordered rooted conditions through order 10
+ordered attach-word counts: [1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862]
+11-vertex star: degree-ten moment 224; expected 381 (cleared 369 ≠ 1)
+actual 1205-by-72 Jacobian rank 70 variable count 72 free [('a', (9, 2)), ('b', 10)]
+all rooted equations lift exactly to modulus 419 ^ 2
+all rooted equations lift exactly to modulus 419 ^ 3
+all rooted equations lift exactly to modulus 419 ^ 4
+all rooted equations lift exactly to modulus 419 ^ 5
+all rooted equations lift exactly to modulus 419 ^ 6
+all rooted equations lift exactly to modulus 419 ^ 7
+all rooted equations lift exactly to modulus 419 ^ 8
+all rooted equations lift exactly to modulus 419 ^ 9
+all rooted equations lift exactly to modulus 419 ^ 10
+all rooted equations lift exactly to modulus 419 ^ 11
+verified exact finite lifts, not a claim of a Z_419 or real lift

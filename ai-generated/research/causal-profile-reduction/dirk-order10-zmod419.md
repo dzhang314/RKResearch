@@ -23,3 +23,7 @@ This is a finite-field endpoint, and no characteristic-zero lift follows from th
 bound, not by optimization or by reduction of the real method.
 
 The same minimum is 11 over any nonzero commutative unital ring of characteristic 419: map the tableau along the canonical embedding of the prime field. The order identities and triangularity map along it, and the nonzero star defect remains nonzero. The [uniform ring lower bound](../../lean/RKCert/UniformDIRK.lean) also applies to these rings.
+
+### Higher finite powers
+
+The [exact lift script](check-dirk10-zmod419-lifts.py) and its [replay](dirk-order10-zmod419-lifts.log) extend the eleven-stage result to `Z/(419^k)` for each integer `1 ≤ k ≤ 11`. The script solves a linear correction at each power and directly rechecks all 1,205 original rooted conditions with exact integers. The first failed eleventh-order condition remains nonzero modulo 419, hence its cleared defect is a unit at each listed modulus. Thus the same exact minimum of 11 also holds over every nonzero commutative unital ring of those characteristics by base change. This is a finite list of exact verifications, not an infinite 419-adic lift or a native Lean proof of the higher-power witnesses.

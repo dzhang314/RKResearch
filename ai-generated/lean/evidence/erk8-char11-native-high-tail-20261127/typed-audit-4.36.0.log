@@ -1,0 +1,116 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) {f u v : Fin 10}
+  (T : RKResearch.Certified.Graded.ERK8CharEleven.HighPhysicalTail A f u v) :
+  3 *
+          (RKResearch.Certified.Graded.ERK8CharEleven.highSenderMoment A u 2 -
+            RKResearch.Certified.Graded.ERK8CharEleven.highSenderMoment A v 2) *
+        RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 2 -
+      2 *
+          (RKResearch.Certified.Graded.ERK8CharEleven.highSenderMoment A u 1 -
+            RKResearch.Certified.Graded.ERK8CharEleven.highSenderMoment A v 1) *
+        RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 3 =
+    0
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) {f u v : Fin 10}
+  (T : RKResearch.Certified.Graded.ERK8CharEleven.HighPhysicalTail A f u v)
+  (nonzero : RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 2 ≠ 0)
+  (ratio :
+    2 * RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 3 =
+      RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 2) :
+  RKResearch.Certified.Graded.nodes A u * RKResearch.Certified.Graded.nodes A v = 8
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) :
+  ∃ gamma,
+    gamma ≠ 0 ∧
+      ∃ W,
+        RKCert.Endpoint.nodalHull (RKResearch.Certified.Graded.OneOff.offKnots A) =
+          Polynomial.C gamma * (Polynomial.C 4 + Polynomial.C 3 * Polynomial.X) +
+            RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic * W
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) {f u v : Fin 10}
+  (T : RKResearch.Certified.Graded.ERK8CharEleven.HighPhysicalTail A f u v)
+  (early :
+    ∃ beta,
+      beta ≠ 0 ∧
+        ∃ V,
+          RKResearch.Certified.Graded.ERK8CharEleven.highPrefixHull A f u v =
+            Polynomial.C beta * (Polynomial.C 6 + Polynomial.C 2 * Polynomial.X) +
+              RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic * V) :
+  ∃ delta,
+    delta ≠ 0 ∧
+      ∃ Z,
+        RKResearch.Certified.Graded.ERK8CharEleven.highTailHull A f u v =
+          Polynomial.C delta * (1 + Polynomial.C 7 * Polynomial.X) +
+            RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic * Z
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) {f u v : Fin 10}
+  (T : RKResearch.Certified.Graded.ERK8CharEleven.HighPhysicalTail A f u v) {theta : K}
+  (H : RKResearch.Certified.Graded.ERK8CharEleven.ExceptionalHead A theta) {delta : K} (dn : delta ≠ 0)
+  {Z : Polynomial K}
+  (hF :
+    RKResearch.Certified.Graded.ERK8CharEleven.highTailHull A f u v =
+      Polynomial.C delta * (1 + Polynomial.C 7 * Polynomial.X) +
+        RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic * Z) :
+  RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 2 ≠ 0 ∧
+    2 * RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 3 =
+      RKResearch.Certified.Graded.ERK8CharEleven.highTailMoment A f u v 2
+'RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) {f u v : Fin 10}
+  (T : RKResearch.Certified.Graded.ERK8CharEleven.HighPhysicalTail A f u v) {theta : K}
+  (H : RKResearch.Certified.Graded.ERK8CharEleven.ExceptionalHead A theta)
+  (uv_product : RKResearch.Certified.Graded.nodes A u * RKResearch.Certified.Graded.nodes A v = 8) {delta : K}
+  {Z : Polynomial K}
+  (hF :
+    RKResearch.Certified.Graded.ERK8CharEleven.highTailHull A f u v =
+      Polynomial.C delta * (1 + Polynomial.C 7 * Polynomial.X) +
+        RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic * Z) :
+  RKResearch.Certified.Graded.nodes A f = 2
+'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) {f u v : Fin 10}
+  (T : RKResearch.Certified.Graded.ERK8CharEleven.HighPhysicalTail A f u v)
+  (early :
+    ∃ beta,
+      beta ≠ 0 ∧
+        ∃ V,
+          RKResearch.Certified.Graded.ERK8CharEleven.highPrefixHull A f u v =
+            Polynomial.C beta * (Polynomial.C 6 + Polynomial.C 2 * Polynomial.X) +
+              RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic * V)
+  (twoEarly :
+    2 ∈
+      RKResearch.Certified.Graded.OneOff.offKnots A \
+        RKResearch.Certified.Graded.ERK8CharEleven.highTailClocks A f u v) :
+  False
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

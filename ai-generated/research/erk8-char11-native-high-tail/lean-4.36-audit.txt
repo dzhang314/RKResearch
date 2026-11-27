@@ -1,0 +1,31 @@
+
+=== RKCert/ReviewedNative/ERK8CharElevenTailSupport ===
+
+=== RKCert/ReviewedNative/ERK8CharElevenReflectedTail ===
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighHull ===
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenTailMoments ===
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighEndgame ===
+'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

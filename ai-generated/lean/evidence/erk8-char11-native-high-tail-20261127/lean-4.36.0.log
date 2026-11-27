@@ -1,0 +1,80 @@
+⚠ [3865/3894] Replayed RKCert.ReviewedNative.GradedProducts
+warning: RKCert/ReviewedNative/GradedProducts.lean:21:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+ℹ [3875/3894] Replayed RKCert.ReviewedNative.ERK8PaidCensus
+info: RKCert/ReviewedNative/ERK8PaidCensus.lean:430:0: 'RKResearch.Certified.Graded.ERK8PaidField.order8_paid_tagged_census' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3877/3894] Replayed RKCert.ReviewedNative.ERK8CharElevenScalar
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:130:0: 'RKResearch.Certified.Graded.ERK8CharEleven.omitted_root_eq_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:131:0: 'RKResearch.Certified.Graded.ERK8CharEleven.impossible_first_clean_five_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:132:0: 'RKResearch.Certified.Graded.ERK8CharEleven.impossible_four_late' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:133:0: 'RKResearch.Certified.Graded.ERK8CharEleven.fifth_off_eq_two' depends on axioms: [propext, Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:134:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_tail_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:135:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_eq_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3879/3894] Replayed RKCert.ReviewedNative.ERK8CharElevenCensus
+info: RKCert/ReviewedNative/ERK8CharElevenCensus.lean:82:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_count_one_four_five_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3881/3894] Replayed RKCert.ReviewedNative.ERK8CharElevenOmittedHead
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:636:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:637:0: 'RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:639:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:640:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:641:0: 'RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3883/3894] Replayed RKCert.ReviewedNative.ERK8CharElevenHighWeights
+info: RKCert/ReviewedNative/ERK8CharElevenHighWeights.lean:184:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighWeights.lean:186:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3885/3894] Built RKCert.ReviewedNative.ERK8CharElevenTailSupport (1.4s)
+ℹ [3887/3894] Built RKCert.ReviewedNative.ERK8CharElevenHighHull (1.9s)
+info: RKCert/ReviewedNative/ERK8CharElevenHighHull.lean:215:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3889/3894] Built RKCert.ReviewedNative.ERK8CharElevenReflectedTail (2.0s)
+info: RKCert/ReviewedNative/ERK8CharElevenReflectedTail.lean:204:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenReflectedTail.lean:205:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3891/3894] Built RKCert.ReviewedNative.ERK8CharElevenTailMoments (2.3s)
+info: RKCert/ReviewedNative/ERK8CharElevenTailMoments.lean:218:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenTailMoments.lean:219:0: 'RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3893/3894] Built RKCert.ReviewedNative.ERK8CharElevenHighEndgame (1.8s)
+info: RKCert/ReviewedNative/ERK8CharElevenHighEndgame.lean:109:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighEndgame.lean:110:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3894 jobs).

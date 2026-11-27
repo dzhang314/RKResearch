@@ -71,3 +71,7 @@ The mathematical tail branches are still separate: the four-off
 terminal contradiction and the five- and seven-off reflected
 chronology and scalar contradictions have not been connected to these
 interfaces in Lean. The original mathematical minimum is unchanged.
+
+The [follow-up native tail proof](../erk8-char11-native-high-tail/README.md)
+now closes the seven-off tail **conditional on** its three exact early-chart
+receipts. It does not close the full native lower bound.

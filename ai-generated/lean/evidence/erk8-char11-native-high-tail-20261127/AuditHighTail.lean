@@ -1,0 +1,15 @@
+import RKCert.ReviewedNative.ERK8CharElevenHighEndgame
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder
+#check RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder
+#check RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart

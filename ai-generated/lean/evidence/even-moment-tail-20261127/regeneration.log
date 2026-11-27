@@ -1,0 +1,5 @@
+order 8: 13 rows, head clocks [1/2, -1, 1090/1081] cleared defect 1245689/77486080
+order 10: 22 rows, head clocks [-3, -5, -7, -9, 8915889/8549164] cleared defect 2228595363661/196972738560
+order 12: 28 rows, head clocks [-3, -5, -7, -9, 8915889/8549164] solved pivot 39025264175381/8914381454644 cleared defect -62542708855942246172046541/420213022011211479285760
+All finite action identities and the already frozen physical tableau checked exactly.
+Preparatory and terminal literals and the formal data module reproduced byte-for-byte.

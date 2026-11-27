@@ -1,0 +1,3 @@
+'RKResearch.Certified.EvenTerminal12.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenTerminal12.copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Seed10Even.donor_pure' depends on axioms: [propext, Classical.choice, Quot.sound]

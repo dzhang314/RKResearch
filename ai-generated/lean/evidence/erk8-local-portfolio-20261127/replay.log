@@ -1,0 +1,9 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.ERK8LocalPortfolio.local_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK8LocalPortfolio.positive_characteristic_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+11 stages, den = 531 bits: 200 paid conditions and unit ideal of ninth-order residual numerators
+11 stages, den = 3837 bits: 200 paid conditions and unit ideal of ninth-order residual numerators
+11 stages, den = 588 bits: 200 paid conditions and unit ideal of ninth-order residual numerators
+hand-audited three-chart denominator gcd = 6970199040 = 2^10·3^4·5·7^5

@@ -1,0 +1,13 @@
+ProofEven12.lean:49:28: warning: This simp argument is unused:
+  observations
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mulVec, observed, Matrix.col_apply, momentMatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'RKResearch.Certified.EvenTerminal12.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenTerminal12.copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m11.457s
+user	0m10.916s
+sys	0m0.519s

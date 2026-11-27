@@ -1,5 +1,7 @@
 # An eleven-stage explicit order-eight method over the rationals
 
+A [later Lean-checked rational portfolio](../erk-eight-local-rings/README.md) also covers all admissible local rings and all admissible positive-characteristic commutative rings. The finite prime portfolio below remains a separate exact check.
+
 The literal [eleven-stage tableau](tableau.json) satisfies all 200 rooted-tree conditions through order eight and fails order nine. Combined with the [eleven-stage lower bound over ordered fields](../erk-eight-stage-floor/README.md), this closes the rational stage minimum at eight: **11 stages are necessary and sufficient**. The same conclusion holds over any ordered field by extending the rational coefficients. No claim of a historical first is made.
 
 The [native Lean certificate](../../lean/RKCert/ReviewedNative/ERK8RationalEleven.lean) proves the literal result for the repository's reviewed predicates. It also proves exact order eight over any nontrivial commutative ring in which the specific common denominator \(D\) is a unit. That is stronger than requiring \(8!\) to be a unit; this literal tableau is **not** a witness over the universal factorial localization \(\mathbb Z[1/210]\).

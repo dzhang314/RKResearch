@@ -1,0 +1,22 @@
+RKCert/ReviewedNative/GeneralMomentTail.lean:45:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoOrderMomentTail.general_rows_from_matrices`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/GeneralMomentTail.lean:141:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoOrderMomentTail.frontierRow_pay`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/GeneralMomentTail.lean:166:40: warning: Variable name `hqt` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hqt
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'RKResearch.Certified.TwoOrderMomentTail.general_tail_hasOrder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TwoOrderMomentTail.oneSpare_pay' depends on axioms: [propext, Classical.choice, Quot.sound]

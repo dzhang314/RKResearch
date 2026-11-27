@@ -1,0 +1,15 @@
+import RKCert.Research.ERK10BalancedHalfGate
+#check RKResearch.ERK10BalancedHalfGate.J4AtThird
+#print axioms RKResearch.ERK10BalancedHalfGate.J4AtThird
+#check RKResearch.ERK10BalancedHalfGate.J4AtHalf
+#print axioms RKResearch.ERK10BalancedHalfGate.J4AtHalf
+#check RKResearch.ERK10BalancedHalfGate.J4AtTwoThirds
+#print axioms RKResearch.ERK10BalancedHalfGate.J4AtTwoThirds
+#check RKResearch.ERK10BalancedHalfGate.boundaryContact
+#print axioms RKResearch.ERK10BalancedHalfGate.boundaryContact
+#check RKResearch.ERK10BalancedHalfGate.reflectedContactBezout
+#print axioms RKResearch.ERK10BalancedHalfGate.reflectedContactBezout
+#check RKResearch.ERK10BalancedHalfGate.reflectedContact
+#print axioms RKResearch.ERK10BalancedHalfGate.reflectedContact
+#check RKResearch.ERK10BalancedHalfGate.twoPrimitiveConflict
+#print axioms RKResearch.ERK10BalancedHalfGate.twoPrimitiveConflict

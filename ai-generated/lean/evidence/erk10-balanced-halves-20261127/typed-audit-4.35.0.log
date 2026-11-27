@@ -1,0 +1,36 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'RKResearch.ERK10BalancedHalfGate.J4AtThird' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BalancedHalfGate.J4AtHalf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BalancedHalfGate.J4AtTwoThirds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BalancedHalfGate.boundaryContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BalancedHalfGate.reflectedContactBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BalancedHalfGate.reflectedContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BalancedHalfGate.twoPrimitiveConflict' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.J4AtThird {K : Type} [Lean.Grind.Field K] (u : K) (h : 3 * u = 1) :
+  81 * RKResearch.ERK10BalancedHalfGate.J4 u = -24
+'RKResearch.ERK10BalancedHalfGate.J4AtThird' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.J4AtHalf {K : Type} [Lean.Grind.Field K] (u : K) (h : 2 * u = 1) :
+  16 * RKResearch.ERK10BalancedHalfGate.J4 u = -19
+'RKResearch.ERK10BalancedHalfGate.J4AtHalf' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.J4AtTwoThirds {K : Type} [Lean.Grind.Field K] (u : K) (h : 3 * u = 2) :
+  81 * RKResearch.ERK10BalancedHalfGate.J4 u = -87
+'RKResearch.ERK10BalancedHalfGate.J4AtTwoThirds' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.boundaryContact {K : Type} [Lean.Grind.Field K] (u v : K)
+  (hj : RKResearch.ERK10BalancedHalfGate.J4 u = 0) (h : 3 * v ^ 2 + (4 - 6 * u) * v + 3 * u ^ 2 - 6 * u + 2 = 0)
+  (hv : v = -u ∨ 3 * v ^ 2 + 3 * u ^ 2 = 2) (nv : v + 1 ≠ 0) (n2 : 2 ≠ 0) (n19 : 19 ≠ 0) (n24 : 24 ≠ 0) (n87 : 87 ≠ 0) :
+  False
+'RKResearch.ERK10BalancedHalfGate.boundaryContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.reflectedContactBezout {K : Type} [Lean.Grind.Field K] (u : K) :
+  (-3452001 * u ^ 2 + 1949220 * u + 272857) * RKResearch.ERK10BalancedHalfGate.J4 u +
+      (150087 * u ^ 3 + 16863 * u ^ 2 - 87143 * u - 9387) * RKResearch.ERK10BalancedHalfGate.small u =
+    19408
+'RKResearch.ERK10BalancedHalfGate.reflectedContactBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.reflectedContact {K : Type} [Lean.Grind.Field K] (u v t : K)
+  (hJ : RKResearch.ERK10BalancedHalfGate.J4 u = 0) (hv : 3 * v ^ 2 + 3 * u ^ 2 = 2)
+  (forward : 7 * u ^ 2 - 4 * u + 1 + (2 - 10 * u) * t = 0)
+  (rear : 3 * v ^ 2 + (2 + 4 * u) * v + 1 + 2 * u - (4 * v + 2 + 6 * u) * t = 0) (n2 : 2 ≠ 0) (n4 : 4 ≠ 0)
+  (n19408 : 19408 ≠ 0) : False
+'RKResearch.ERK10BalancedHalfGate.reflectedContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10BalancedHalfGate.twoPrimitiveConflict {K : Type} [Lean.Grind.Field K] (u w : K) (n3 : 3 ≠ 0)
+  (nu : u ≠ 0) (h : 2 * w = u) (hr : 2 * u = w) : False
+'RKResearch.ERK10BalancedHalfGate.twoPrimitiveConflict' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,11 @@
+import RKCert.ReviewedNative.DIRKOrderTenInvisibleFixedOriginField
+
+open RKResearch.Certified.Graded.InvisibleFixedOriginField
+
+#check distinct_nonzero_heads_zero_weights
+#check repeated_head_splits_clean_pair
+#check normalize_zero_origin_pair
+
+#print axioms distinct_nonzero_heads_zero_weights
+#print axioms repeated_head_splits_clean_pair
+#print axioms normalize_zero_origin_pair

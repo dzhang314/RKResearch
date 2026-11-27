@@ -1,0 +1,18 @@
+RKResearch.Certified.Graded.InvisibleFixedOriginField.distinct_nonzero_heads_zero_weights {K : Type}
+  [Lean.Grind.Field K] (h₁ h₂ b₁ b₂ : K) (nh₁ : h₁ ≠ 0) (nh₂ : h₂ ≠ 0) (nh : h₁ - h₂ ≠ 0) (hm₁ : b₁ * h₁ + b₂ * h₂ = 0)
+  (hm₂ : b₁ * h₁ ^ 2 + b₂ * h₂ ^ 2 = 0) : b₁ = 0 ∧ b₂ = 0
+RKResearch.Certified.Graded.InvisibleFixedOriginField.repeated_head_splits_clean_pair {K : Type} [Lean.Grind.Field K]
+  (h r b₁ b₂ b₃ m : K) (nh : h ≠ 0) (nm : m ≠ 0) (hm₀ : b₁ + b₂ + b₃ = m) (hm₁ : (b₁ + b₂) * h + b₃ * r = 0)
+  (hm₂ : (b₁ + b₂) * h ^ 2 + b₃ * r ^ 2 = 0) : r = 0 ∧ b₁ + b₂ = 0 ∧ b₃ = m
+RKResearch.Certified.Graded.InvisibleFixedOriginField.normalize_zero_origin_pair {K : Type} [Lean.Grind.Field K]
+  (κ b G₀ G₁ a : K) (hκ : κ ≠ 0) (h₁ : G₁ = κ * b) : (G₀ * 0 + G₁ * a) / κ = b * a
+'RKResearch.Certified.Graded.InvisibleFixedOriginField.distinct_nonzero_heads_zero_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleFixedOriginField.repeated_head_splits_clean_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleFixedOriginField.normalize_zero_origin_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+4.36.0 zero-slack OK

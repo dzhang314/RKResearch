@@ -1,0 +1,82 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib revision: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourEarlyNewton ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.early_paid_newton_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourEarlyMeasures ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.earlyBary_hull_receipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.early_four_hull_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourEarlyFiveScalars ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.first_center_five_fourth_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.first_center_five_two_measurement_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourEarlyFiveExclusion ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.four_off_contradiction_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourEarlyFour ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.early_three_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourEarlySentinel ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.four_off_early_chart_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourReverse ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.late_reflected_repeat_equations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourCenteredTail ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.centered_tail_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourCenteredExclusion ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FourOff.no_actual_centered_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffNodalTransfer ===
+'RKResearch.Certified.Graded.FourOffNewton.nodalMeasure_transfer_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.actual_terminal_hull_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPhysicalNewton ===
+'RKResearch.Certified.Graded.FourOffNewton.paid_newton_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.paid_newton_clean_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourNoncenterScalar ===
+'RKResearch.Certified.Graded.FourOffNewton.noncenter_char11_receipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourExclusion ===
+'RKResearch.Certified.Graded.ERK8CharEleven.no_four_off_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_only_one_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,6 @@
+'RKResearch.ERK10SingleGhostGate.stageThreeRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostGate.rankTwoRowFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostGate.twoClockLocalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostGate.threeAmplitudeLocalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostGate.opposingPairSplits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostGate.anchoredBetaPivots' does not depend on any axioms

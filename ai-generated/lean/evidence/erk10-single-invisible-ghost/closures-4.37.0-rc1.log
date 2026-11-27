@@ -1,0 +1,15 @@
+'RKResearch.ERK10SingleGhostClosureGate.vietaIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.contactBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.firstJetIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.secondContactFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.affineLast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.affineFirst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.affineDetZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.sixCleanExpansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SingleGhostClosureGate.sixCleanMoment' does not depend on any axioms
+'RKResearch.ERK10SingleGhostClosureGate.Mod37.primeTrial' does not depend on any axioms
+'RKResearch.ERK10SingleGhostClosureGate.Mod37.roots' depends on axioms: [propext, Classical.choice]
+'RKResearch.ERK10SingleGhostClosureGate.Mod37.distinct' depends on axioms: [propext, Classical.choice]
+'RKResearch.ERK10SingleGhostClosureGate.Mod37.noFirstJet' depends on axioms: [propext, Classical.choice]
+'RKResearch.ERK10SingleGhostClosureGate.Mod37.noFixedDetZero' depends on axioms: [propext, Classical.choice]
+'RKResearch.ERK10SingleGhostClosureGate.Mod37.noMovableDetZero' depends on axioms: [propext, Classical.choice]

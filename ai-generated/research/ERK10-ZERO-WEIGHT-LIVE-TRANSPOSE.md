@@ -285,3 +285,5 @@ The proof reuses the native outgoing Hermite result and the
 earlier scalar clock contradictions; the live projection and
 rooted degree audit above are mathematical. Cases with no
 visible dirty clock or with a single visible one remain.
+
+The [single invisible-stage follow-up](ERK10-SINGLE-INVISIBLE-GHOST.md) studies the case with exactly one zero output weight and no visible quadratic defects. Its [two-clock closure atlas](ERK10-SINGLE-GHOST-TWO-CLOCK-CLOSURES.md) leaves a six-tap case, not a full exclusion.

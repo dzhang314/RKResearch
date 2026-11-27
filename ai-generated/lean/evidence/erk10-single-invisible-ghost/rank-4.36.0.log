@@ -1,0 +1,4 @@
+ℹ [3380/3381] Replayed RKCert.Research.ERK10SingleGhostRank
+info: RKCert/Research/ERK10SingleGhostRank.lean:74:0: 'RKResearch.ERK10SingleGhost.twoClockLane' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3381 jobs).
+s).

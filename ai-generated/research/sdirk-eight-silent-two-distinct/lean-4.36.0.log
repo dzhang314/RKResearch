@@ -1,0 +1,6 @@
+ℹ [3000/3001] Built RKCert.ReviewedNative.SDIRK8InvisibleNodalTransport (1.1s)
+info: RKCert/ReviewedNative/SDIRK8InvisibleNodalTransport.lean:40:0: 'RKCert.ReviewedNative.SDIRK8InvisibleNodalTransport.scalarTransport' depends on axioms: [propext, Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8InvisibleNodalTransport.lean:41:0: 'RKCert.ReviewedNative.SDIRK8InvisibleNodalTransport.nodalTransport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3001 jobs).

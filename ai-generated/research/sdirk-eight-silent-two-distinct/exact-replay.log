@@ -1,0 +1,35 @@
+start resultant True None 3 3
+raw resultant degree True None 33
+guarded projection True None 29 [(29, 1)]
+finite factor excluded True None 0 29 at 1009 285 tail components 2
+start resultant True True 3 4
+raw resultant degree True True 70
+guarded projection True True 34 [(4, 1), (4, 1), (8, 1), (8, 1), (10, 1)]
+finite factor excluded True True 0 4 at 1009 285 tail components 1
+finite factor excluded True True 1 4 at 1009 285 tail components 1
+finite factor excluded True True 2 8 at 1009 285 tail components 0
+finite factor excluded True True 3 8 at 1039 315 tail components 3
+finite factor excluded True True 4 10 at 1009 285 tail components 3
+start resultant True False 3 7
+raw resultant degree True False 100
+guarded projection True False 73 [(8, 1), (10, 1), (55, 1)]
+finite factor excluded True False 0 8 at 1009 285 tail components 0
+finite factor excluded True False 1 10 at 1009 285 tail components 3
+finite factor excluded True False 2 55 at 1009 285 tail components 5
+start resultant False None 3 3
+raw resultant degree False None 33
+guarded projection False None 29 [(29, 1)]
+finite factor excluded False None 0 29 at 1009 285 tail components 2
+start resultant False True 3 4
+raw resultant degree False True 70
+guarded projection False True 40 [(8, 1), (9, 1), (10, 1), (13, 1)]
+finite factor excluded False True 0 8 at 1009 285 tail components 0
+finite factor excluded False True 1 9 at 1009 285 tail components 4
+finite factor excluded False True 2 10 at 1009 285 tail components 4
+finite factor excluded False True 3 13 at 1039 315 tail components 2
+start resultant False False 3 7
+raw resultant degree False False 100
+guarded projection False False 68 [(8, 1), (10, 1), (50, 1)]
+finite factor excluded False False 0 8 at 1009 285 tail components 0
+finite factor excluded False False 1 10 at 1009 285 tail components 3
+finite factor excluded False False 2 50 at 1009 285 tail components 4

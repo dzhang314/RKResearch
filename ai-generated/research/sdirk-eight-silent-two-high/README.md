@@ -74,3 +74,5 @@ With eight distinct active clocks and non-midpoint, \(T\) is affine and \(S\prop
 ## Replay
 
 Run `python3 check_high.py` with `sympy==1.14.0` and `python-flint==0.9.0`. The offline replay uses only the indicated earlier sibling files. The finite non-midpoint tail unit is a multiplication determinant in fixed monic quartic/cubic bases, so good reduction does not assume a hypothetical tableau itself reduces. The [Lean receipt](../../lean/RKCert/ReviewedNative/SDIRK8InvisibleHighReceipts.lean) verifies signed double cancellation, equal defect at a doubled cancelling reverse clock, and actual point-discrepancy moment transfer over the stated coefficient structures. It compiled in Lean/Mathlib 4.36.0 with standard axioms. The flag arguments and exact finite arithmetic are the source-level proof, not a single end-to-end Lean theorem.
+
+The [eight-distinct follow-up](../sdirk-eight-silent-two-distinct/README.md) now excludes the remaining eight-clock case. Together these results exclude exactly two individually invisible quadratic-defect stages at the same physical clock; the other visibility patterns remain outside this conclusion.

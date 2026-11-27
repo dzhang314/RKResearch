@@ -1,5 +1,7 @@
 # An eleven-stage explicit order-eight method over the rationals
 
+**Later result.** A [single exact eleven-stage tableau](../erk-eight-dispersed/README.md) over the factorial localization now supersedes the universal upper bound discussed here. It uses seven active sites and a dispersed defect space.
+
 A [later Lean-checked rational portfolio](../erk-eight-local-rings/README.md) also covers all admissible local rings and all admissible positive-characteristic commutative rings. The finite prime portfolio below remains a separate exact check.
 
 The literal [eleven-stage tableau](tableau.json) satisfies all 200 rooted-tree conditions through order eight and fails order nine. Combined with the [eleven-stage lower bound over ordered fields](../erk-eight-stage-floor/README.md), this closes the rational stage minimum at eight: **11 stages are necessary and sufficient**. The same conclusion holds over any ordered field by extending the rational coefficients. No claim of a historical first is made.

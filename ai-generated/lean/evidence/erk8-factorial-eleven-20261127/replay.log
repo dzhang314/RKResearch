@@ -1,0 +1,15 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.ERK8FactorialEleven.order_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK8FactorialEleven.exact_order_eight_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+JSON coefficients match the literal native numerator table
+Literal independent integer replay: 200 exact rooted identities, 11 strict stages
+bush residual -263/27440
+tall residual 551/210
+ninth bush/tall numerator gcd 1
+all ninth numerator gcd 1
+V4 rank 2 physical support [2, 3, 4]
+V5 rank 4 physical support [2, 3, 4, 6, 7, 8, 9, 11]
+V6 rank 6 physical support [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+nonzero output clocks: 7

@@ -1,5 +1,7 @@
 # Arithmetic filters for one factorial-localized eleven-stage method
 
+**Later result.** A [single exact eleven-stage tableau](../erk-eight-dispersed/README.md) over the factorial localization now supersedes the universal upper bound discussed here. It uses seven active sites and a dispersed defect space.
+
 A separate unresolved problem is whether one **eleven-stage** exact order-eight tableau has every entry in \(U=\mathbb Z[1/210]\). The [three-chart local portfolio](../erk-eight-local-rings/README.md) does not give such a tableau. The four-support rank-three chart already gives rational methods and its unresolved problem is divisibility, not real feasibility. The following constraints address its endpoint six-site scalar rule, without claiming that every conceivable eleven-stage method has this scalar shape.
 
 ## The two scalar equations and the 7-adic classification

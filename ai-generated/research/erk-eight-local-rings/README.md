@@ -1,5 +1,7 @@
 # Eleven explicit stages at order eight over local rings and in positive characteristic
 
+**Later result.** A [single exact eleven-stage tableau](../erk-eight-dispersed/README.md) over the factorial localization now supersedes the universal upper bound discussed here. It uses seven active sites and a dispersed defect space.
+
 Two new rational tableaux and the [first rational certificate](../erk-eight-rank3-four/README.md) form a three-chart denominator portfolio. Let \(D_0,D_1,D_2\) be their positive common denominators. They have 531, 3837 and 588 bits, and
 \[
  \gcd(D_0,D_1,D_2)=6970199040=2^{10}3^4 5\,7^5 \;\mid\; (8!)^5 .
@@ -21,7 +23,7 @@ The Lean theorem **denominator_bezout** checks an explicit integer combination o
 
 In positive characteristic \(n\), \(8!\) being a unit forces \(\gcd(8!,n)=1\). At each prime divisor \(p\mid n\), select a denominator that is nonzero modulo \(p\); it remains a unit modulo the full \(p\)-power dividing \(n\). Take the corresponding tableaux coordinatewise and transfer through the Chinese remainder ring isomorphism to \(\mathbb Z/n\mathbb Z\). The slots are shared, so the stage count stays 11. Finally specialize from \(\mathbb Z/n\mathbb Z\) to the given coefficient ring. No Hensel lifting of an approximate tableau is needed.
 
-## Universal factorial localization remains open
+## Scope of this earlier local portfolio
 
 This finite portfolio is not a single tableau over \(U=\mathbb Z[1/210]\). None of the three denominators is a unit there, and the local/CRT argument does not globalize a choice on this connected characteristic-zero base.
 

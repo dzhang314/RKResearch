@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.SDIRK8SharedRootResidues
+import RKCert.ReviewedNative.SDIRK8ClockTwinReceipts
+import RKCert.ReviewedNative.SDIRK8BezoutDefectReceipt
+#print axioms RKCert.ReviewedNative.SDIRK8SharedRootResidues.commonRootDvd
+#print axioms RKCert.ReviewedNative.SDIRK8SharedRootResidues.divisibleQuadraticResidue
+#print axioms RKCert.ReviewedNative.SDIRK8ClockTwinReceipts.twoReceiverAgreement
+#print axioms RKCert.ReviewedNative.SDIRK8ClockTwinReceipts.cubicHilbert
+#print axioms RKCert.ReviewedNative.SDIRK8BezoutDefectReceipt.sharedScalar

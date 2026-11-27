@@ -1,0 +1,56 @@
+arithmetic guarded degrees 1 232 [2, 2, 2, 4, 4, 4, 4, 6, 6, 8, 22, 44]
+arithmetic Hankel unit 2 1009 724
+arithmetic Hankel unit 2 1009 285
+split exact t embedding 2
+arithmetic Hankel unit 2 1009 285
+arithmetic scalar fibers 1 2 [('Hankel unit', 1)]
+arithmetic Hankel unit 2 1009 285
+arithmetic scalar fibers 1 2 [('Hankel unit', 2)]
+arithmetic Hankel unit 4 1009 285
+split exact t embedding 4
+arithmetic scalar fibers 1 4 [('invalid clock/early rank', 2)]
+arithmetic Hankel unit 4 1009 285
+arithmetic scalar fibers 1 4 [('Hankel unit', 2)]
+arithmetic Hankel unit 4 1009 285
+arithmetic Hankel unit 4 1009 285
+arithmetic Hankel unit 6 1009 285
+arithmetic Hankel unit 6 1009 285
+arithmetic Hankel unit 8 1009 285
+split exact t embedding 22
+arithmetic Hankel unit 22 1009 285
+arithmetic Hankel unit 22 1031 279
+arithmetic scalar fibers 1 22 [('Hankel unit', 1), ('Hankel unit', 1)]
+arithmetic Hankel unit 22 1009 285
+arithmetic scalar fibers 1 22 [('Hankel unit', 2)]
+exact largest split Hankel unit 1 44 997 True True 0
+exact largest split Hankel unit 1 44 997 True False 0
+exact largest split Hankel unit 1 44 997 False False 0
+excluded arithmetic–arithmetic sign 1
+arithmetic guarded degrees -1 232 [2, 2, 2, 4, 4, 4, 4, 6, 6, 8, 22, 44]
+split exact t embedding 2
+arithmetic Hankel unit 2 1009 285
+arithmetic scalar fibers -1 2 [('Hankel unit', 1)]
+arithmetic Hankel unit 2 1009 285
+arithmetic scalar fibers -1 2 [('Hankel unit', 2)]
+arithmetic Hankel unit 2 1009 285
+arithmetic Hankel unit 2 1009 285
+split exact t embedding 4
+arithmetic scalar fibers -1 4 [('invalid clock/early rank', 2)]
+arithmetic Hankel unit 4 1009 285
+arithmetic scalar fibers -1 4 [('Hankel unit', 2)]
+arithmetic Hankel unit 4 1009 285
+arithmetic Hankel unit 4 1009 285
+arithmetic Hankel unit 4 1009 285
+arithmetic Hankel unit 6 1009 285
+arithmetic Hankel unit 6 1009 285
+arithmetic Hankel unit 8 1009 285
+split exact t embedding 22
+arithmetic Hankel unit 22 1009 285
+arithmetic Hankel unit 22 1009 285
+arithmetic scalar fibers -1 22 [('Hankel unit', 1), ('Hankel unit', 1)]
+arithmetic Hankel unit 22 1009 285
+arithmetic scalar fibers -1 22 [('Hankel unit', 2)]
+exact largest split Hankel unit -1 44 997 True True 0
+exact largest split Hankel unit -1 44 997 True False 0
+exact largest split Hankel unit -1 44 997 False False 0
+excluded arithmetic–arithmetic sign -1

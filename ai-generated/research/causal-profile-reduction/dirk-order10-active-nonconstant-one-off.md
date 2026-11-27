@@ -1,5 +1,7 @@
 # One exceptional clock is impossible in the active nonconstant DIRK10/11 branch
 
+> **Proof status (2026-11-27):** This note contains an invalid use of a degree-five donor polynomial. A row satisfying `C(5)` integrates input degrees at most four. The claimed consequences of the degree-five step, including its finite tests as applied to actual tableaux, are suspended. See the [scope correction](dirk-order10-one-clock-grade-erratum.md).
+
 Assume a genuine eleven-stage lower triangular tableau of order ten over a characteristic-zero field. Let `c=A1`, `C=diag(c)`, `β=bᵀ`, and `g=Ac²−c³/3`. Suppose every nonzero `g` is at one physical clock `ξ`, some `b_i g_i` is nonzero, and the nonzero values of `g` are not all equal. **Then there cannot be exactly one numerical physical clock outside the six fixed Lobatto clocks.** Together with the prior all-Lobatto exclusion, this leaves at least two off-Lobatto labels in this active nonconstant branch. The independent all-ghost branch is not addressed. No ordering or positivity of tableau weights is assumed, and the unrestricted DIRK10 interval is still 11–12.
 
 ## 1. Paid bands and the exact physical prefix

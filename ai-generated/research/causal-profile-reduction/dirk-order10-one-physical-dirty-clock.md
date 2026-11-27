@@ -1,5 +1,7 @@
 # The single physical dirty clock in DIRK10 at eleven stages
 
+> **Proof status (2026-11-27):** This note contains an invalid use of a degree-five donor polynomial. A row satisfying `C(5)` integrates input degrees at most four. The claimed consequences of the degree-five step, including its finite tests as applied to actual tableaux, are suspended. See the [scope correction](dirk-order10-one-clock-grade-erratum.md).
+
 **Scope.** This note is about a lower triangular tableau of actual reviewed order ten with eleven physical stages over a characteristic-zero field. Let `c=A1`, `C=diag(c)`, `β=bᵀ`, and `g=Ac²-c³/3`. Assume there is exactly one numerical clock `ξ` among the rows with `g_i≠0`, counting zero-weight as well as nonzero-weight rows, with no hypothesis on signs or repeated clocks. No improvement of the unrestricted 11–12 stage interval is claimed. The paper deductions below use already reviewed native ranks; the new Lean files verify their indicated field-algebra and finite scalar components, not a complete `HasOrder` adapter.
 
 ## 1. One localized core and the exact two-ended band

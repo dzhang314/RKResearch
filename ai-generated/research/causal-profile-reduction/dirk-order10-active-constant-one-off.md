@@ -1,6 +1,6 @@
 # One exceptional clock is also impossible with a constant active cubic mask
 
-> **Proof status (2026-11-27):** This note contains an invalid use of a degree-five donor polynomial. A row satisfying `C(5)` integrates input degrees at most four. The claimed consequences of the degree-five step, including its finite tests as applied to actual tableaux, are suspended. See the [scope correction](dirk-order10-one-clock-grade-erratum.md).
+> **Proof status (2026-11-27):** This note contains an invalid use of a degree-five donor polynomial. A row satisfying `C(5)` integrates input degrees at most four. The claimed consequences of the degree-five step, including its finite tests as applied to actual tableaux, are suspended. See the [scope correction](dirk-order10-one-clock-grade-erratum.md) and the [replacement argument](dirk-order10-paid-one-off-repair.md).
 
 Work with a genuine eleven-stage order-ten DIRK tableau over a characteristic-zero field. Suppose the physical dirty rows (`g_i≠0` for `g=Ac²−c³/3`) all have one clock ξ, every nonzero g equals `γ=ξ³/6`, at least one dirty weight is active, and there is exactly one numerical physical off-Lobatto label q. **This case is impossible.** Combined with the separate nonconstant branch and the earlier all-Lobatto exclusion, an active one-physical-dirty-clock tableau, if one exists, needs at least two off-Lobatto labels. The all-ghost branches and the unrestricted 11–12 interval are not changed.
 

@@ -1,0 +1,17 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+RKResearch.Certified.Graded.ConstantOneOffScalar.fixed_triples_no_pair_cut :
+  (fixed.all fun a =>
+      fixed.all fun b => fixed.all fun u => if distinct3 a b u = true then paired a b u != 0 else true) =
+    true
+RKResearch.Certified.Graded.ConstantOneOffScalar.fixed_pairs_no_zero_third_head :
+  (fixed.all fun a => fixed.all (thirdZeroGuard a)) = true
+RKResearch.Certified.Graded.PaidOneOffRepairScalar.fixed_radau_guards :
+  (fixed.all fun a => interior.all (noFixedRadau a)) = true
+RKResearch.Certified.Graded.PaidOneOffRepairScalar.all_corrected_constant_cuts :
+  (interior.all fun τ => interior.all (constCase τ)) = true
+RKResearch.Certified.Graded.PaidOneOffRepairScalar.all_corrected_nonconstant_cuts :
+  (interior.all fun u => interior.all fun w => interior.all fun r => interior.all (nonconstCase u w r)) = true
+'RKResearch.Certified.Graded.PaidOneOffRepairScalar.fixed_radau_guards' does not depend on any axioms
+'RKResearch.Certified.Graded.PaidOneOffRepairScalar.all_corrected_constant_cuts' does not depend on any axioms
+'RKResearch.Certified.Graded.PaidOneOffRepairScalar.all_corrected_nonconstant_cuts' depends on axioms: [propext,
+ Classical.choice]

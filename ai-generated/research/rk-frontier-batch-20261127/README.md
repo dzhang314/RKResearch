@@ -128,7 +128,7 @@ are still open and the ordinary 17–18 bound is unchanged.
   all ordinary mass is on zero-defect rows in the remaining
   zero-containing chart; off-zero mass cancels at each fixed pair.
 - [DIRK10 single dirty node](../causal-profile-reduction/dirk-order10-one-physical-dirty-clock.md):
-  narrowly surviving chronology and two exact one-off-Lobatto exclusions.
+  narrowed chronology. The [degree-budget correction](../causal-profile-reduction/dirk-order10-one-clock-grade-erratum.md) links the replacement one-off proof and states the remaining exception.
 - [Real-algebraic SDIRK13 and SDIRK15 grouped families](../real-sdirk-grouped-terminal-refund/README.md):
   count obstructions for the fixed full-column, one-merge stems,
   distinct from either unrestricted stage endpoint.

@@ -1,0 +1,15 @@
+import RKCert.ReviewedNative.DIRKOrderTenPaidOneOffRepairScalar
+
+open RKResearch.Certified.Graded.PaidOneOffRepairScalar
+open RKResearch.Certified.Graded.ConstantOneOffScalar
+
+#check fixed_triples_no_pair_cut
+#check fixed_pairs_no_zero_third_head
+
+#check fixed_radau_guards
+#check all_corrected_constant_cuts
+#check all_corrected_nonconstant_cuts
+
+#print axioms fixed_radau_guards
+#print axioms all_corrected_constant_cuts
+#print axioms all_corrected_nonconstant_cuts

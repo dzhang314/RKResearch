@@ -20,3 +20,13 @@ off-Lobatto clocks should not be used. The all-fixed nonconstant
 branch with zero terminal affine coefficient remains open by this
 analysis. A revised one-off argument must use only paid degrees or
 explicitly account for the degree-six defect.
+
+The [replacement proof](dirk-order10-paid-one-off-repair.md) uses degree-four
+forward tests in the constant branch and reconstructs the exceptional
+clock from an actual reflected suffix in the nonconstant branch.
+It excludes exactly one off-Lobatto clock in both branches. Zero
+off-Lobatto clocks are excluded for a constant cubic defect or a
+nonzero terminal affine coefficient; the all-fixed nonconstant case
+with zero terminal affine coefficient remains open by this analysis.
+The finite scalar checks are Lean-checked separately from the
+mathematical reduction from actual tableaux.

@@ -1,0 +1,18 @@
+six terminal moments in seven affine taps; exact matrix and augmented ranks: 5 5
+particular taps: ['0', '-56/45', '-1/9', '-5/72', '0', '16/9', '-8/5']
+kernel basis: [[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)]]
+common affine coefficient denominator 740880
+G,H coefficients on U, yU, and U/y: [Fraction(-281, 243), Fraction(256, 243), Fraction(70, 81)] [Fraction(55, 54), Fraction(-1, 3), Fraction(-7, 9)]
+paid four-donor and three-input determinants: -3/22400000000 -2187/1404928000000
+first high physical row equals ninth opening row after padding: ['193/1920', '0', '81/640', '351/640', '-7/192', '-4/15', '-7/1920', '1/32', '0']
+conditions 1 1 bad 0 []
+conditions 2 1 bad 0 []
+conditions 3 2 bad 0 []
+conditions 4 4 bad 0 []
+conditions 5 9 bad 0 []
+conditions 6 20 bad 0 []
+conditions 7 48 bad 0 []
+conditions 8 115 bad 0 []
+conditions 9 286 bad 0 []
+conditions 10 719 bad 0 []
+common denominator 800150400 next defects [(((), (), (), (), (), (), (), (), (), ()), Fraction(179, 279936)), (((), (), (), (), ((), (), (), (), ())), Fraction(-6751, 408240))] gcd 1

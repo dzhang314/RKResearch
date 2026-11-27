@@ -1,0 +1,5 @@
+Literal physical rows 17 common denominator 800150400
+Eleventh defect 179/279936 tree ((), (), (), (), (), (), (), (), (), ())
+Eleventh defect -6751/408240 tree ((), (), (), (), ((), (), (), (), ()))
+Selected single unit defect -1/77760 , factorial 99 , raw output 7069/699840
+All paid conditions [1, 1, 2, 4, 9, 20, 48, 115, 286, 719] total 1205 ; order-eleven numerator gcd 1

@@ -1,0 +1,32 @@
+eight on seven clocks: guarded diagonal factor degrees True [(4, 1), (4, 1), (12, 1)]
+active8 singleton tail exact projection True 4 True 0
+active8 singleton tail exact projection True 4 False 3
+silent eighth reverse tail projection True 4 3
+silent8 both known r copies early fifth projection True 4 3
+both literal fronts active, all reverse and eighth placements excluded True 4
+active8 singleton tail exact projection True 4 True 0
+active8 singleton tail exact projection True 4 False 3
+silent eighth reverse tail projection True 4 3
+silent8 both known r copies early fifth projection True 4 3
+both literal fronts active, all reverse and eighth placements excluded True 4
+active8 singleton tail exact projection True 12 True 0
+active8 singleton tail exact projection True 12 False 3
+silent eighth reverse tail projection True 12 3
+both literal fronts active, all reverse and eighth placements excluded True 12
+neither literal front active and k=0 excluded True
+eight on seven clocks: guarded diagonal factor degrees False [(4, 1), (4, 1), (12, 1)]
+active8 singleton tail exact projection False 4 True 0
+active8 singleton tail exact projection False 4 False 3
+silent eighth reverse tail projection False 4 3
+silent8 both known r copies early fifth projection False 4 3
+both literal fronts active, all reverse and eighth placements excluded False 4
+active8 singleton tail exact projection False 4 True 0
+active8 singleton tail exact projection False 4 False 3
+silent eighth reverse tail projection False 4 3
+silent8 both known r copies early fifth projection False 4 3
+both literal fronts active, all reverse and eighth placements excluded False 4
+active8 singleton tail exact projection False 12 True 0
+active8 singleton tail exact projection False 12 False 3
+silent eighth reverse tail projection False 12 3
+both literal fronts active, all reverse and eighth placements excluded False 12
+neither literal front active and k=0 excluded False

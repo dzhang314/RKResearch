@@ -1,0 +1,5 @@
+ℹ [1606/1607] Built RKCert.ReviewedNative.SDIRK8GaussDoubleFrontElimination (808ms)
+info: RKCert/ReviewedNative/SDIRK8GaussDoubleFrontElimination.lean:33:0: 'RKCert.ReviewedNative.SDIRK8GaussDoubleFrontElimination.rowFiveAffineElimination' depends on axioms: [propext]
+info: RKCert/ReviewedNative/SDIRK8GaussDoubleFrontElimination.lean:34:0: 'RKCert.ReviewedNative.SDIRK8GaussDoubleFrontElimination.rowSixMaskedTap' depends on axioms: [propext]
+info: RKCert/ReviewedNative/SDIRK8GaussDoubleFrontElimination.lean:35:0: 'RKCert.ReviewedNative.SDIRK8GaussDoubleFrontElimination.reverseRootElimination' depends on axioms: [propext]
+Build completed successfully (1607 jobs).

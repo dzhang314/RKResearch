@@ -46,3 +46,5 @@ If one front is active, it is at \(r=a\) or \(b\). Row four must then be the oth
 ## Replay
 
 Run `python3 check_seven_small.py` with `sympy==1.14.0` and `python-flint==0.9.0` against the earlier sibling packets. The copied detected-six scalar gates use the fixed split Gauss reduction at \(1129\); the new ordinary-triple checks use \(1103,t=161\) and every guarded monic reduced component. No modular-only removal is used; the leading degrees and needed divisions are checked. The [Lean receipt](../../lean/RKCert/ReviewedNative/SDIRK8DetectedMultiplicityReceipts.lean) verifies the signed second-mass elimination and exact ring-valued arithmetic reverse factorization, compiled on Lean/Mathlib 4.36.0 with standard axioms. The physical census and exact arithmetic remain source-level proofs.
+
+The [six-clock anchored follow-up](../sdirk-eight-silent-one-seven-six-anchored/README.md) excludes several detected six-clock placements with independent cubic defect reads, including both literal front stages active.

@@ -96,3 +96,18 @@ branches have now been excluded. This gives a mathematical lower bound of
 [core Lean replays](../../lean/evidence/weighted-order-nine-shift-two-20261127/)
 verify separate gates. These are not end-to-end weighted order certificates.
 The ordinary order-eleven lower bound has not changed.
+
+## Algebraic coefficient verification and a strict SDIRK7 obstruction
+
+The [coordinate-trace Gram verifier](../coordinate-rooted-tree-gram/README.md)
+proves the reviewed tree-order tests using integer coordinates in an
+integral multiplication basis. It verifies exact Gauss order four over a
+real quadratic algebra and detects a failure over the imaginary quadratic
+algebra even when the two field-valued residual squares cancel. This is a
+Lean-checked verifier extension, not a stage-bound change.
+
+The [six-tail scalar obstruction](../strict-sdirk7-six-tail/README.md)
+excludes two specific rational compression routes at order seven and
+separates the mathematical reductions from the Lean arithmetic. It does
+not exclude arbitrary nine-stage rational tableaux or eight-stage tableaux
+over ordered fields.

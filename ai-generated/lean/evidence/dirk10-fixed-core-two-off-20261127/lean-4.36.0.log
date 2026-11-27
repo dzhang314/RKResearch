@@ -1,0 +1,5 @@
+✔ [2/9] Built RKCert.ReviewedNative.DIRKOrderTenConstantOneOffScalar (531ms)
+✔ [4/9] Built RKCert.ReviewedNative.DIRKOrderTenPaidOneOffRepairScalar (1.7s)
+✔ [6/9] Built RKCert.ReviewedNative.DIRKOrderTenUniformOneOffPolynomialScalar (26s)
+✔ [8/9] Built RKCert.ReviewedNative.DIRKOrderTenFixedCoreTwoOffScalar (142s)
+Build completed successfully (9 jobs).

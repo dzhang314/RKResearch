@@ -1,0 +1,11 @@
+import RKCert.ReviewedNative.DIRKOrderTenFixedCoreTwoOffScalar
+
+open RKResearch.Certified.Graded.FixedCoreTwoOffScalar
+
+#check all_late_events_off
+#check all_one_late_forward_obstructions
+#check all_early_fixed_core_cases
+
+#print axioms all_late_events_off
+#print axioms all_one_late_forward_obstructions
+#print axioms all_early_fixed_core_cases

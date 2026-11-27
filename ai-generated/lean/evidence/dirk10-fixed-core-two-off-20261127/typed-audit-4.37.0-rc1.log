@@ -1,0 +1,15 @@
+RKResearch.Certified.Graded.FixedCoreTwoOffScalar.all_late_events_off :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun u =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun w =>
+        RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun r =>
+          RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (lateEventGuard u w r)) =
+    true
+RKResearch.Certified.Graded.FixedCoreTwoOffScalar.all_one_late_forward_obstructions :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun ξ =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (oneLateForward ξ)) =
+    true
+RKResearch.Certified.Graded.FixedCoreTwoOffScalar.all_early_fixed_core_cases : earlyOrders.all checkEarlyOrder = true
+'RKResearch.Certified.Graded.FixedCoreTwoOffScalar.all_late_events_off' does not depend on any axioms
+'RKResearch.Certified.Graded.FixedCoreTwoOffScalar.all_one_late_forward_obstructions' does not depend on any axioms
+'RKResearch.Certified.Graded.FixedCoreTwoOffScalar.all_early_fixed_core_cases' depends on axioms: [propext,
+ Classical.choice]

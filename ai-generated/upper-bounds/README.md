@@ -23,7 +23,7 @@
 | 19 | 46 | 38 | 54 |
 | 20 | 51 | 42 | 59 |
 
-We seek constructive witnesses over the **real algebraic numbers**, and over **the rationals** wherever a rational witness is verified. A real algebraic label does not assert that rational coefficients are impossible.
+We seek constructive witnesses over the **real algebraic numbers**, and over **the rationals** wherever a rational witness is verified. A real algebraic label does not assert that rational coefficients are impossible. The [literal 14-stage strict SDIRK9 construction](real-algebraic/sdirk14-order9-movable-double-merge/README.md) includes its defining equations, certified real root, actual tableau, and all-rooted-condition replay.
 
 - [Rational constructions and fixtures](rational/README.md)
 - [Real algebraic constructions](real-algebraic/README.md)

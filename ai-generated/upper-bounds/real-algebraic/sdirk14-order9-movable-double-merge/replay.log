@@ -1,0 +1,12 @@
+root interval: |center step| <= 2^-313, Lipschitz <= 2^-37, radius 2^-160
+clock separation >1/64; scalar weights all >1/100; next bush hull defect is (6.716019336764728e-06, 6.716019336764728e-06)
+rooted tree size 1 count 1 all deviations bounded by 2^-143
+rooted tree size 2 count 1 all deviations bounded by 2^-132
+rooted tree size 3 count 2 all deviations bounded by 2^-131
+rooted tree size 4 count 4 all deviations bounded by 2^-131
+rooted tree size 5 count 9 all deviations bounded by 2^-130
+rooted tree size 6 count 20 all deviations bounded by 2^-130
+rooted tree size 7 count 48 all deviations bounded by 2^-130
+rooted tree size 8 count 115 all deviations bounded by 2^-130
+rooted tree size 9 count 286 all deviations bounded by 2^-130
+checked 486 total independent actual rooted conditions; max error radius 2^-130

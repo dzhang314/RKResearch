@@ -1,0 +1,56 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+@singleTap : ∀ {K : Type u_1} [inst : Field K] {e₀ e₁ r₀ r₁ : K},
+  e₀ ≠ 0 → r₀ * e₁ - r₁ * e₀ = 0 → r₀ / e₀ * e₀ = r₀ ∧ r₀ / e₀ * e₁ = r₁
+@doubleTap : ∀ {K : Type u_1} [inst : Field K] {a b c d r s : K},
+  a * d - b * c ≠ 0 →
+    have x := (d * r - b * s) / (a * d - b * c);
+    have y := (a * s - c * r) / (a * d - b * c);
+    a * x + b * y = r ∧ c * x + d * y = s
+@raw_to_mean : ∀ {K : Type u_1} [inst : Field K] {wi wj a t : K}, wi ≠ 0 → wi * (wj / wi * a * t) = a * (wj * t)
+@orderNine_of_split_payments : ∀ {K : Type u_1} [inst : Field K] [CharZero K]
+  (A : Matrix (Fin 6 ⊕ Fin 10) (Fin 6 ⊕ Fin 10) K) (w ξ : Fin 10 → K),
+  RKResearch.HasQuadratureOrder 9 w ξ →
+    (∀ (t : RKResearch.FiniteRootedTree),
+        RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 4 →
+          RKResearch.Certified.PaidDefectBridge.primitiveSeed A ξ t = 0) →
+      (∀ (t : RKResearch.FiniteRootedTree) (W : List RKResearch.Certified.PaidDefectBridge.Letter),
+          4 < RKResearch.Certified.PaidDefectBridge.treeSize t →
+            W.length + RKResearch.Certified.PaidDefectBridge.treeSize t < 9 →
+              W.length ≤ 2 →
+                (RKResearch.Certified.Graded.row w)
+                    ((RKResearch.Certified.PaidDefectBridge.wordMap
+                        (RKResearch.Certified.PaidDefectBridge.suffixBlock A) ξ W)
+                      (RKResearch.Certified.PaidDefectBridge.primitiveSeed A ξ t)) =
+                  0) →
+        (∀ (t : RKResearch.FiniteRootedTree) (W : List RKResearch.Certified.PaidDefectBridge.Letter),
+            RKResearch.Certified.PaidDefectBridge.treeSize t = 5 →
+              W.length = 3 →
+                (RKResearch.Certified.Graded.row w)
+                    ((RKResearch.Certified.PaidDefectBridge.wordMap
+                        (RKResearch.Certified.PaidDefectBridge.suffixBlock A) ξ W)
+                      (RKResearch.Certified.PaidDefectBridge.primitiveSeed A ξ t)) =
+                  0) →
+          RKResearch.HasOrder 9 A (Sum.elim 0 w)
+@contractChronologicalPorts : ∀ {K : Type u_1} [inst : Field K] (A : Matrix (Fin 16) (Fin 16) K) (b : Fin 16 → K)
+  (γ : K),
+  A.IsLowerTriangular →
+    (∀ (k : Fin 16), A k k = γ) →
+      γ ≠ 0 →
+        RKResearch.HasOrder 9 A b →
+          RKResearch.Certified.DiagonalTwin.DiagonalTwins 7 4 γ A →
+            RKResearch.Certified.DiagonalTwin.DiagonalTwins 6 5 γ
+                (RKResearch.Certified.DiagonalTwin.contractMatrix 7 4 A) →
+              have A₁ := RKResearch.Certified.DiagonalTwin.contractMatrix 7 4 A;
+              have b₁ := RKResearch.Certified.Graded.mergeCoefficient 7 4 b;
+              have A₂ := RKResearch.Certified.DiagonalTwin.contractMatrix 6 5 A₁;
+              have b₂ := RKResearch.Certified.Graded.mergeCoefficient 6 5 b₁;
+              A₂.IsLowerTriangular ∧ (∀ (k : Fin 14), A₂ k k = γ) ∧ γ ≠ 0 ∧ RKResearch.HasOrder 9 A₂ b₂
+'RKResearch.Certified.PaidDefectBridge.SDIRK149.singleTap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK149.doubleTap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK149.raw_to_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK149.orderNine_of_split_payments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK149.contractChronologicalPorts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

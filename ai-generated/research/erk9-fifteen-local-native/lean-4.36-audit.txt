@@ -1,0 +1,63 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib revision: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+Classes by grade: [1, 1, 2, 4, 8, 16, 35, 78, 182]
+Profiles: 327 Actions: 145 Joins: 616
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCore ===
+
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckAction0 ===
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckGrade0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckJoin0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckPay0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckGrade4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckJoin4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckAction4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckPay4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckJoin8 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckAction8 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckPay8 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckJoin12 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckAction12 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckPay12 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckJoin16 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckAction16 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckPay20 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecondCheckPay16 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenSecond ===
+'RKResearch.Certified.ERK9RationalFifteenSecond.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK9FifteenLocalRing ===
+RKCert/ReviewedNative/ERK9FifteenLocalRing.lean:41:8: warning: Overlapping instance parameters in `exists_exact_local`:
+
+⚠️ `[IsLocalRing R]` and `[Nontrivial R]` each imply `[Nontrivial R]`.
+💡️ Of these, `[Nontrivial R]` may be removed.
+
+Note: This linter can be disabled with `set_option linter.overlappingInstances false`
+'RKResearch.Certified.ERK9FifteenLocalRing.exists_exact_local' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK9FifteenLocalRing ===
+'RKResearch.Certified.ERK9FifteenLocalRing.exists_exact_local' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

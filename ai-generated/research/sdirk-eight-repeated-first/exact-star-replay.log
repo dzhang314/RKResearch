@@ -1,0 +1,16 @@
+M factor degree 1 constant term -1 an additional corner is forced to the exhausted vertical clock
+M factor degree 1 constant term -4 invalid m, reverse gap or residual
+M factor degree 1 constant term -3 invalid m, reverse gap or residual
+M factor degree 1 constant term -5 an additional corner is forced to the exhausted vertical clock
+M factor degree 8 constant term 5425 nonvertical corner collision
+M factor degree 2 constant term 371 singular left subtraction (separate proof)
+M factor degree 1 constant term -1 an additional corner is forced to the exhausted vertical clock
+M factor degree 6 constant term 1365 nonvertical corner collision
+M factor degree 2 constant term 371 singular left subtraction (separate proof)
+M factor degree 6 constant term 13965 invalid m, reverse gap or residual
+M factor degree 8 constant term 69825 no actual reverse-fourth clock
+M factor degree 1 constant term -2 singular left subtraction (separate proof)
+M factor degree 4 constant term 245 zero terminal residual
+M factor degree 8 constant term 72765 an additional corner is forced to the exhausted vertical clock
+M factor degree 2 constant term 21 invalid m, reverse gap or residual
+{'an additional corner is forced to the exhausted vertical clock': 4, 'invalid m, reverse gap or residual': 4, 'nonvertical corner collision': 2, 'singular left subtraction (separate proof)': 3, 'no actual reverse-fourth clock': 1, 'zero terminal residual': 1}

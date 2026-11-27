@@ -1,0 +1,5 @@
+import RKCert.Research.SDIRKTenStageOrderSevenPaid
+#print axioms RKResearch.Certified.SDIRKTenStageOrderSevenPaid.exists_exact
+#print axioms RKResearch.Certified.SDIRKTenStageOrderSevenPaid.exists_exact_rational
+#print axioms RKResearch.HasOrder.sevenFactorial_isUnit
+#print axioms RKResearch.exists_strictSDIRK_exact_order_seven_iff_factorial_unit

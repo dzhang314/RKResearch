@@ -1,0 +1,14 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKTenStageOrderSevenPaid.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKTenStageOrderSevenPaid.exists_exact_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.HasOrder.sevenFactorial_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.exists_strictSDIRK_exact_order_seven_iff_factorial_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Reproduced the exact ten-stage factorial-only tableau.
+85/85 rooted order conditions; eighth-order failures 631/576 and -5/96.
+Only paid denominators, and Bezout exactness under every allowed coefficient map.

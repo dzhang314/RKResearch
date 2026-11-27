@@ -1,5 +1,7 @@
 # Ten strict SDIRK stages of exact order seven
 
+A [later single-tableau result](../strict-sdirk7-paid/README.md) extends this upper bound to every nonzero ring where 7! is a unit. The complementary local constructions below remain separate witnesses.
+
 Two new rational tableaux need **ten** physical stages, improving the
 previously verified rational upper bound of eleven. Both have one common
 nonzero diagonal. Together they give the same upper bound over **every

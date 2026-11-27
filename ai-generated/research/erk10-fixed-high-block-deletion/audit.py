@@ -4,6 +4,8 @@ from argparse import ArgumentParser
 from hashlib import sha256
 from fractions import Fraction as F
 from math import prod, factorial
+import json
+import re
 from pathlib import Path
 import sys
 
@@ -18,6 +20,7 @@ PINS={
 def main():
     p=ArgumentParser()
     p.add_argument('--research-root',type=Path,default=HERE.parent)
+    p.add_argument('--lean-dir',type=Path,default=HERE.parents[1]/'lean/RKCert/ReviewedNative')
     a=p.parse_args()
     root=a.research_root
     for rel,h in PINS.items():assert sha256((root/rel).read_bytes()).hexdigest()==h
@@ -49,5 +52,13 @@ def main():
     print('Unchanged old clock hull zeros; only duplicated high clocks are 1/3 and 2/3.')
     print('Reference last contribution (all affine parameters):',gap)
     print('With integer-polynomial scaling:',6**7*gap)
+    lean=(a.lean_dir/'ERK10TerminalBlockHalfPort.lean').read_text()
+    den=800150400
+    for name, matrix in [('uRows',U),('vRows',V)]:
+        data=re.search(r'def '+name+r' : Array \(Array ℤ\) := #(\[.*?\]\])',lean,re.S)
+        assert data is not None
+        rows=json.loads(data.group(1).replace('#',''))
+        assert rows==[[den*v for v in row]for row in matrix]
+    print('Both literal Lean affine directions match the integer-scaled family.')
 
 if __name__=='__main__':main()

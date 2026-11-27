@@ -75,13 +75,25 @@ polynomials, the units used to recover the surviving weights,
 and the polynomial evaluation on the clock pattern are checked
 over arbitrary paid rings, not over a field.
 
-The final scaled read for all members of the specific affine
-reference family is verified by the independent exact arithmetic
-receipt above; its derivation from the family coefficients is
-not a Lean premise discharge in this packet.
+`RKCert.ReviewedNative.ERK10TerminalBlockHalfPort.affine_terminal`
+instantiates the last read for the actual half-port reference
+matrix and both integer-scaled affine directions, for arbitrary
+parameter values. Its companion `family_explicit` and
+`family_clock` check strictness and the literal clocks.
+`no_half_port_family_fixed_block` therefore excludes the
+compensation for every such reference of order ten. The
+central member's order is already kernel-certified in
+`ERK10UniversalSeventeen`; `no_half_port_literal_fixed_block`
+discharges that reference-order hypothesis. For other family
+members, the reference order is supplied by the separate
+[familial tensor-grid replay](../erk10-seventeen-half-port-family/README.md),
+not by this Lean packet. The arithmetic replay also verifies
+that the native coefficient arrays are the two published
+affine directions.
 
     cd ../../lean
     lake build +RKCert.ReviewedNative.ERK10TerminalBlockPolynomial:olean \
-      +RKCert.ReviewedNative.ERK10TerminalBlockClockAdapter:olean
+      +RKCert.ReviewedNative.ERK10TerminalBlockClockAdapter:olean \
+      +RKCert.ReviewedNative.ERK10TerminalBlockHalfPort:olean
 
 Checked on Lean 4.36.0, with standard axioms only.

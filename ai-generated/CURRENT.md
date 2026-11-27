@@ -51,6 +51,8 @@ At order eleven, an [exact 14-stage real-algebraic DIRK tableau](research/dirk11
 
 The [two normalized 13-stage DIRK11 chronologies](research/causal-profile-reduction/dirk-order11-thirteen-dirty-chronology.md) give a late-ghost midpoint and degree-eight Jacobi constraint in the two-label case, and a virtual seven-site quadrature with eight possible schedules in the nine-label case. The two scalar elimination gates check in Lean/Mathlib 4.36.0. These are necessary conditions within the normalized chart; the 13–14 real interval is unchanged.
 
+The [coupled cubic-decoder obstruction](research/dirk10-cubic-decoder-ten-mesh-obstruction/README.md) exhausts 360 chronology classes of a specific six-opening, three-merge, rank-one DIRK10 construction. Its only regular rational candidate parameter forces a literal unpaid matrix entry. This does not change the 12–13 width range over the factorial localization.
+
 ## Exact explicit minima over nonzero commutative rings
 
 - [Order five](research/erk-five-ring-witness/README.md): six stages are necessary and sufficient if 120 is a unit. Otherwise no stage count attains order five.
@@ -89,7 +91,7 @@ The [all-nonzero-weight completeness proof](research/ERK10-ALL-LIVE-COMPLETENESS
 
 The known 15-stage order-ten ERK upper bound now has an [end-to-end Lean certificate](research/erk10-stepanov-native-upper/README.md) for Stepanov's literal tableau over the reals and real algebraic numbers. It also gives 15-stage upper bounds in the stated finite coefficient fields and nilpotent thickenings, not equality with the lower bound.
 
-A [mixed rooted-moment obstruction](research/erk10-fixed-high-block-deletion/README.md) rules out deleting the 17-stage factorial-paid ERK10 family's final row while retaining the clocks and surviving high-high block, even if all other allowable entries and output weights are changed. The generic order invariant is checked in Lean/Mathlib 4.36.0; the application to the specific family uses exact arithmetic. This does not rule out a different 16-stage method.
+A [mixed rooted-moment obstruction](research/erk10-fixed-high-block-deletion/README.md) rules out deleting the 17-stage factorial-paid ERK10 family's final row while retaining the clocks and surviving high-high block, even if all other allowable entries and output weights are changed. Lean/Mathlib 4.36.0 checks the complete exclusion for the central literal reference and the scalar contradiction for both affine directions. The general affine family's order uses the separate exact arithmetic replay. This does not rule out a different 16-stage method.
 
 ## Structure at the strict SDIRK lower endpoints
 

@@ -1,0 +1,11 @@
+
+=== RKCert/ReviewedNative/ERK10TerminalBlockHalfPort ===
+'RKResearch.Certified.ERK10TerminalBlockHalfPort.affine_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TerminalBlockHalfPort.no_half_port_family_fixed_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TerminalBlockHalfPort.no_half_port_literal_fixed_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -209,3 +209,5 @@ The independent finite replay enumerates every such numerator and denominator up
 ## Verification and remaining work
 
 The Lean scalar module checks the full coefficient combination, guarded split parameters, three integer Bézout identities, rational projective reduction, and the fixed front checks. These are standard-kernel checks on the pinned Lean/Mathlib build. The independent Python verifier also checks the early-unit eliminants and the finite residue arithmetic at the nonintegral and integral places. The actual flagged-tableau reductions and the local-ring proof above are mathematical, not advertised as a full native \(\mathtt{HasOrder}\) theorem. An eleven-stage rational construction, an obstruction for all four remaining mod-11 branches, and all multi-dirty rational cases remain open.
+
+The [fourth-power coset follow-up](dirk-order10-rational-local-and-coset-cuts.md) narrows the remaining rational possibilities to one coset up to inversion. Its necessary clock equations split locally at every place, but no rational tableau or global obstruction follows.

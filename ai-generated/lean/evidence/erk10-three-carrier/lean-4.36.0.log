@@ -1,0 +1,7 @@
+'RKResearch.ERK10BarycentricCarrierGate.varianceIdentity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BarycentricCarrierGate.uniqueRepeatedAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK10BarycentricCarrierGate.onePoleSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BarycentricCarrierGate.twoPointProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10BarycentricCarrierGate.twoPointCubicCharge' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,2 +1,2 @@
 Candidate: 22 stages, 3047 tree conditions; order-twelve unit defect 1/165
-Modulo 13 dual receipt: 56 rooted conditions, 99 variables; contradiction 1
+Modulo 13 dual receipt: 141 rooted conditions, 84 matrix directions, 21 output coordinates; contradiction 1

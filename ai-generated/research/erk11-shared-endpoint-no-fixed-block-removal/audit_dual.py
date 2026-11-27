@@ -88,26 +88,31 @@ def audit(full):
         A[i][j]=0
     assert tuple(sum(row)%p for row in A)==c
     names=[(i,k)for i in range(h,n)for k in range(1,h)if k!=j]
-    early=[k for k in range(h)if k!=j]
-    assert (len(names),len(early))==(84,15)
-    assert r["numVars"]==len(names)+len(early) and len(early)==r["outputVars"]
+    keep=[k for k in range(n)if k!=j]
+    assert len(names)==84 and len(keep)==21
+    expanded=len(keep)+sum(n-i for i,k in names)
+    assert r["numVars"]==expanded==315
     terms=[(a,freeze(t))for a,t in r["terms"]]
-    assert len(terms)==56 and len(set(t for _,t in terms))==56
+    assert len(terms)==141 and len(set(t for _,t in terms))==141
     assert all(0<a<p and grade(t)<=11 for a,t in terms)
-    vals=[(a,t,phi_spine(A,c,t,p))for a,t in terms]
-    S=sum(a*dot(w,vec)for a,t,vec in vals)%p
     T=sum(a*pow(tfact(t),-1,p)for a,t in terms)%p
-    assert (T-S)%p==1
-    for k in early:
-        assert sum(a*vec[k]for a,t,vec in vals)%p==0
+    assert T==1
+    def vectorsum():
+        tot=[0]*len(keep)
+        for a,t in terms:
+            v=phi_spine(A,c,t,p)
+            for j,k in enumerate(keep):
+                tot[j]=(tot[j]+a*v[k])%p
+        return tot
+    assert not any(vectorsum())
     for i,k in names:
         A[i][k]+=1
         A[i][0]-=1
-        plus=sum(a*dot(w,phi_spine(A,c,t,p))for a,t,vec in vals)%p
-        assert plus==S
+        assert not any(vectorsum())
         A[i][k]-=1
         A[i][0]+=1
-    print("Modulo",p,"dual receipt:",len(terms),"rooted conditions,",len(names)+len(early),"variables; contradiction",1)
+    print("Modulo",p,"dual receipt:",len(terms),"rooted conditions,",len(names),
+          "matrix directions,",len(keep),"output coordinates; contradiction",T)
 
 if __name__=="__main__":
     p=ArgumentParser()

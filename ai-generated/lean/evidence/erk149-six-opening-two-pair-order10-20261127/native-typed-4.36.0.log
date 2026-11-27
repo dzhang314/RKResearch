@@ -1,0 +1,16 @@
+@complete_first_minor : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a b c : K),
+  b ≠ 0 → a ≠ b → G a b a * T a b c - G a b c * T a b a = a ^ 3 * c ^ 2 * (a - c) ^ 2 / (24 * b * (a - b))
+@singleton_first_minor : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (c s r q : K),
+  r * c ^ 2 / 2 + q * c = s ^ 2 / 2 →
+    r * c ^ 3 / 3 + q * c ^ 2 = s ^ 3 / 3 → q * c ^ 3 - s ^ 4 / 4 + r * c ^ 4 / 4 = -s ^ 2 * (s - c) ^ 2 / 4
+@second_pair_word : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a b k : K),
+  (k * a ^ 2 - b ^ 3 / 3) / 2 + k * (-a ^ 2 / 2) = -b ^ 3 / 6
+'RKResearch.Certified.ERK149TwoPairChronology.complete_first_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149TwoPairChronology.singleton_first_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149TwoPairChronology.second_pair_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

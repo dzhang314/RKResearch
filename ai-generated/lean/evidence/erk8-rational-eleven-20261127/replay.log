@@ -1,0 +1,10 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.ERK8RationalEleven.order_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK8RationalEleven.exists_exact_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+All 200 rooted conditions through order 8 are exact; ninth-order bush defect: -271627373/102186724640
+Common positive denominator: 5157897482995777956559730029679481723530221024543632706936276093827190415098940818085089108144578504393336854581856972694110444641062763253938216226437498798080
+All 200 rooted conditions through order 8 are exact; ninth-order bush defect: -271627373/102186724640
+Common positive denominator: 5157897482995777956559730029679481723530221024543632706936276093827190415098940818085089108144578504393336854581856972694110444641062763253938216226437498798080
+All 24 exceptional-prime tableaus independently checked: 4,800 order identities plus exactness.

@@ -1,5 +1,7 @@
 # Eleven stages cannot have a full four-dimensional pure head at order eight over the rationals
 
+A [later eleven-stage rational construction](../erk-eight-rank3-four/README.md) succeeds outside the restricted architecture studied here.
+
 For a strictly lower triangular tableau \(A\), write \(\boldsymbol{c}=A\boldsymbol{1}\). For a rooted tree \(t\) of size \(n\), let \(t!\) denote the tree factorial and \(\boldsymbol{\Phi}_t(A)\) the reviewed stage vector. Define
 \[
  V_5=\operatorname{span}_{\mathbb Q}\{\boldsymbol{\Phi}_t(A)-(n/t!)\boldsymbol{c}^{n-1}:1\le n=|t|\le5\}.

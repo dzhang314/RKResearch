@@ -1,5 +1,7 @@
 # The head-silent four-tap architecture cannot reach eleven stages over the rationals
 
+A [later eleven-stage rational construction](../erk-eight-rank3-four/README.md) succeeds outside the restricted architecture studied here.
+
 This extends the earlier [symmetric calculation](SYMMETRIC-ELEVEN-OBSTRUCTION.md). It covers nonsymmetric and repeated active clocks and imposes **no** stage-order assumptions on the head. It is not an unrestricted rational eleven-stage ERK exclusion.
 
 ## Hypotheses

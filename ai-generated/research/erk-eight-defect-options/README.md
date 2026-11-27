@@ -1,5 +1,7 @@
 # Physical support of the five-node defect space at ERK order eight
 
+A [later eleven-stage rational construction](../erk-eight-rank3-four/README.md) succeeds outside the restricted architecture studied here.
+
 Let \(A\) be a strictly lower triangular tableau, \(\boldsymbol{b}\) the output-weight column, \(\boldsymbol{c}=A\boldsymbol{1}\), and \(C=\operatorname{diag}(\boldsymbol{c})\). For \(m\ge1\) let \(V_m\) be the span of the stage defects
 \[
  \boldsymbol{\Phi}_t(A)-\frac{|t|}{t!}\boldsymbol{c}^{|t|-1},

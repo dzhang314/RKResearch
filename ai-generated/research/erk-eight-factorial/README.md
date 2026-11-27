@@ -1,5 +1,7 @@
 # Twelve explicit stages suffice for exact order eight over every factorial-admissible ring
 
+A [later eleven-stage rational construction](../erk-eight-rank3-four/README.md) succeeds outside the restricted architecture studied here.
+
 Let \(R\) be a nonzero commutative unital ring. The order-eight equations force \(8!\) to be a unit by the tall tree. Conversely, if \(8!\) is a unit, the twelve-stage tableau below has exact order eight over \(R\). It improves the [general-ring thirteen-stage upper](../erk-eight-ring-witness/README.md) by one and supersedes the scope-specific [positive-characteristic and field cover](../erk-eight-finite-characteristic/README.md) at twelve stages. It is not a new lower bound and does not improve the real-algebraic upper of eleven.
 
 ## Tableau and exactness

@@ -1,0 +1,5 @@
+'RKResearch.ERK10ForcedTwoPairGate.meanPairMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10ForcedTwoPairGate.weightedVariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10ForcedTwoPairGate.clearedPairVariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10ForcedTwoPairGate.pairedCrossover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10ForcedTwoPairGate.squaredBoundaryDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]

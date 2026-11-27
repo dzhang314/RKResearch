@@ -166,3 +166,5 @@ Run the following from this directory:
 The native module and typed audit were checked using stock Lean 4.36.0
 with the repository's usual Mathlib dependencies. No axioms are added
 for the elliptic step.
+
+The [clock atlas follow-up](../strict-sdirk7-two-ghost-mass/README.md) uses the one-zero criterion to reduce the rational clock equations and excludes the centered Christoffel site without any symmetry assumption. Its new exact characteristic-19 control realizes the same mass at the earliest feasible active position.

@@ -1,0 +1,27 @@
+import RKCert.Research.SDIRKSevenChristoffelCentered
+import RKCert.Research.SDIRKSevenChristoffelSecondF19
+
+open RKResearch.Certified.SDIRKSevenChristoffelCentered
+open RKResearch.Certified
+
+#check reflection_opener
+#check arithmetic_opener
+#check elliptic_of_centered
+#check fourth_linear_factor
+#check second_helper_linear
+#check second_helper_minor
+#check no_primitive_square
+#check SDIRKSevenChristoffelSecondF19.second_active_mass
+#check SDIRKSevenChristoffelSecondF19.order_seven
+#check SDIRKSevenChristoffelSecondF19.not_order_eight
+
+#print axioms reflection_opener
+#print axioms arithmetic_opener
+#print axioms elliptic_of_centered
+#print axioms fourth_linear_factor
+#print axioms second_helper_linear
+#print axioms second_helper_minor
+#print axioms no_primitive_square
+#print axioms SDIRKSevenChristoffelSecondF19.second_active_mass
+#print axioms SDIRKSevenChristoffelSecondF19.order_seven
+#print axioms SDIRKSevenChristoffelSecondF19.not_order_eight

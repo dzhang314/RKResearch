@@ -1,0 +1,57 @@
+RKResearch.Certified.SDIRKSevenChristoffelCentered.reflection_opener.{u_1} {R : Type u_1} [CommRing R] (u a b c d : R) :
+  (4 - u - 1) * cub a b c d u - (u - 1) * cub a b c d (4 - u) + (4 - u - u) * suffixM u * cub a b c d 1 =
+    (4 - u - u) * (suffixM u + 1) * (a + b + 2 * c + 6 * d)
+RKResearch.Certified.SDIRKSevenChristoffelCentered.arithmetic_opener.{u_1} {R : Type u_1} [CommRing R] (u a b c d : R) :
+  suffixT u * cub a b c d (2 * u - 1) - 2 * suffixJ u * cub a b c d u - suffixM u * suffixJ u * cub a b c d 1 =
+    -2 * (u - 1) ^ 2 * (a₀ u * a + a₁ u * b + a₂ u * c + a₃ u * d)
+RKResearch.Certified.SDIRKSevenChristoffelCentered.elliptic_of_centered {u m : ℚ} (h₂ : u ≠ 2) (h₃ : u ≠ 3)
+  (h : A₀ u * m ^ 2 + B₀ u * m + C₀ u = 0) :
+  have w := (2 * A₀ u * m + B₀ u) / (u - 2);
+  have X := 80 / (u - 3);
+  have Y := X ^ 2 * w / 80;
+  Y ^ 2 = X ^ 3 + 105 * X ^ 2 + 4800 * X + 128000
+RKResearch.Certified.SDIRKSevenChristoffelCentered.fourth_linear_factor.{u_1} {R : Type u_1} [CommRing R]
+  {g q G E L R₃ κ σ : R} (hκ : g - q * L = κ * R₃) (hσ : G + E * q = σ * R₃) : G * L + E * g = R₃ * (σ * L + κ * E)
+RKResearch.Certified.SDIRKSevenChristoffelCentered.second_helper_linear {x t : ℚ} (h : suffixM x ≠ 0) :
+  x ^ 3 / 3 - (2 + t / 2) * x ^ 2 + (3 + 2 * t) * x - 1 - t = 0 ↔ t = secondTap x
+RKResearch.Certified.SDIRKSevenChristoffelCentered.second_helper_minor {x : ℚ} (h : suffixM x ≠ 0) :
+  suffixM x * (x - 1 - secondTap x) = x ^ 2 * (x - 3) / 3
+RKResearch.Certified.SDIRKSevenChristoffelCentered.no_primitive_square {a b d s : ℤ} (prim : ¬(↑a = 0 ∧ ↑d = 0))
+  (curve : b ^ 2 = a ^ 3 + 105 * a ^ 2 * d ^ 2 + 4800 * a * d ^ 4 + 128000 * d ^ 6)
+  (sqr : s ^ 2 = 5 * receiptNum a b d) : False
+RKResearch.Certified.SDIRKSevenChristoffelSecondF19.second_active_mass :
+  SDIRKSevenChristoffelSecondF19.y 2 = 5 ∧
+    SDIRKSevenChristoffelSecondF19.y 3 = 16 ∧
+      6 * SDIRKSevenChristoffelSecondF19.A 1 0 = 9 ∧
+        SDIRKSevenChristoffelSecondF19.b 3 *
+            SDIRKSevenChristoffelScalar.kernelFour (13 * SDIRKSevenChristoffelSecondF19.y 3 - 1)
+              (13 * SDIRKSevenChristoffelSecondF19.y 3 - 1) =
+          4
+RKResearch.Certified.SDIRKSevenChristoffelSecondF19.order_seven :
+  RKResearch.HasOrder 7 SDIRKSevenChristoffelSecondF19.A SDIRKSevenChristoffelSecondF19.b
+RKResearch.Certified.SDIRKSevenChristoffelSecondF19.not_order_eight :
+  ¬RKResearch.HasOrder 8 SDIRKSevenChristoffelSecondF19.A SDIRKSevenChristoffelSecondF19.b
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.reflection_opener' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.arithmetic_opener' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.elliptic_of_centered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.fourth_linear_factor' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.second_helper_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.second_helper_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelCentered.no_primitive_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelSecondF19.second_active_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelSecondF19.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelSecondF19.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

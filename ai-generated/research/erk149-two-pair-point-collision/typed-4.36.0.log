@@ -1,0 +1,19 @@
+@first_cubics : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a b : K),
+  RKResearch.Certified.ERK149TwoPairChronology.G a b a = a ^ 3 * (a - 2 * b) / 12 ∧
+    RKResearch.Certified.ERK149TwoPairChronology.G a b b = b ^ 3 * (b - 2 * a) / 12
+@paired_moments : ∀ {K : Type u_1} [inst : Field K] (a b u v : K), a ≠ b → u + v = 0 → a * u + b * v = 0 → u = 0
+@first_tap_resonance : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (b : K),
+  b ≠ 0 → 2 * b * (3 * b - 2 * (2 * b)) / (6 * (b - 2 * b)) = b / 3
+@first_pair_anchor_residual : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a x y : K),
+  a ≠ 0 →
+    -a ^ 2 * x / 2 - a ^ 4 / 3 = 0 →
+      -(4 * a / 3) * a ^ 2 / 2 + a * x + 2 * a * y = 0 →
+        -(4 * a / 3) * a ^ 3 / 3 + a ^ 2 * x + (2 * a) ^ 2 * y + a / 3 * (-2 * a ^ 3 / 3) = 4 * a ^ 4 / 3
+'RKResearch.Certified.ERK149TwoPairAnchored.first_cubics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149TwoPairAnchored.paired_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149TwoPairAnchored.first_tap_resonance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149TwoPairAnchored.first_pair_anchor_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

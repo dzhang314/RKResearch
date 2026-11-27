@@ -1,0 +1,6 @@
+0ecfa695b38f7219a16063e5ab2a1ced6f4d2bb71f2234f926a7baa1de9b1105  research/erk149-two-pair-point-collision/README.md
+aad113bad8e471cd8cbeaf1739b26df70ebcc9b9750d7255dac31603ffe1bcf4  research/erk149-two-pair-point-collision/replay.py
+96af74ebf57458dadd69a2a89c4857d4f6309935bc21ee1cccfa5f51bba191e5  research/erk149-two-pair-point-collision/replay.log
+6408a51d94a6f379973dcb9f66ed4eb75f7b97e3e73d85eca2eafce0b70ac899  research/erk149-two-pair-point-collision/typed-4.36.0.log
+c456e95454f76a9ff94438ca134b7f4ed92828274f68737dce4cd7746970747a  lean/AuditERK149TwoPairAnchored.lean
+486aa8caa34ff1a315c936ec89028572b7dc3da50ae40b8940f3ec467b1d8eaa  lean/RKCert/ReviewedNative/ERK149TwoPairAnchored.lean

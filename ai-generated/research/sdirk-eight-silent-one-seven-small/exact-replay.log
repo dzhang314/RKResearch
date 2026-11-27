@@ -1,0 +1,51 @@
+Gauss terminal detected-six: exact scalar gate orientations 192
+terminal-defect detected-six: exact scalar gate orientations 128
+literal front non-Gauss at all Gauss diagonals
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth True 0 9
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth True 0 10
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth True 1 9
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth True 1 10
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth False 0 9
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth False 0 10
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth False 1 9
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+detected ordinary triple nonzero or zero k, silent eighth; nonzero k active eighth False 1 10
+five-site fixed tail diagonal factors True 1 [(9, 1)]
+detected ordinary triple zero k active eighth True True 1 9
+detected ordinary triple zero k active eighth False True 1 9
+five-site fixed tail diagonal factors True -1 [(9, 1)]
+detected ordinary triple zero k active eighth True True -1 9
+detected ordinary triple zero k active eighth False True -1 9
+five-site fixed tail diagonal factors False 1 [(1, 1), (8, 1)]
+detected ordinary triple zero k active eighth True False 1 1
+detected ordinary triple zero k active eighth False False 1 1
+detected ordinary triple zero k active eighth True False 1 8
+detected ordinary triple zero k active eighth False False 1 8
+five-site fixed tail diagonal factors False -1 [(1, 1), (8, 1)]
+detected ordinary triple zero k active eighth True False -1 1
+detected ordinary triple zero k active eighth False False -1 1
+detected ordinary triple zero k active eighth True False -1 8
+detected ordinary triple zero k active eighth False False -1 8

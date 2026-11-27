@@ -38,3 +38,5 @@ It uses only the physical predecessor clock set and the equal diagonal, not an e
 ## Replay
 
 Run `python3 check_detected.py` with `sympy==1.14.0` and `python-flint==0.9.0` against the earlier sibling chart files. The reduction at \(1129\) splits all four simple Gauss roots and both front orientations; the two exact gap polynomials are kept in fixed monic bases and their scalar divisors checked. The units lift over characteristic zero in these finite bases rather than assuming the proposed tableau itself can be reduced. The [Lean receipt](../../lean/RKCert/ReviewedNative/SDIRK8SilentSixReverseSupport.lean) verifies the guarded affine root support and silent terminal gap identities, compiled on Lean/Mathlib 4.36.0. The physical Gram and finite chart analysis are source-level.
+
+With seven active stages, the [small-multiplicity follow-up](../sdirk-eight-silent-one-seven-small/README.md) excludes up to five distinct active clocks in the same detected branch.

@@ -1,0 +1,6 @@
+ℹ [1606/1607] Built RKCert.ReviewedNative.SDIRK8DetectedMultiplicityReceipts (1.5s)
+info: RKCert/ReviewedNative/SDIRK8DetectedMultiplicityReceipts.lean:26:0: 'RKCert.ReviewedNative.SDIRK8DetectedMultiplicityReceipts.twoSecondMasses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8DetectedMultiplicityReceipts.lean:27:0: 'RKCert.ReviewedNative.SDIRK8DetectedMultiplicityReceipts.thirdReverseFactor' depends on axioms: [propext, Quot.sound]
+Build completed successfully (1607 jobs).

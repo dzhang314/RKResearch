@@ -1,0 +1,11 @@
+1e7d8d70b0c3a87dfcfba74fd0db82a0a156b1ad021b60b291f6e6626f339086  research/dirk10-four-port-ten-mesh-obstruction/README.md
+7c5e0ddd9cf00c9f2063c50e4ee7915d43af0b9fdbeb278db7b1a5f84be1d209  research/dirk10-four-port-ten-mesh-obstruction/check.py
+80d0a35927ccb3f7859a55131c2ec87c2ed52a76ee4f70297112fe4a198264ce  research/dirk10-four-port-ten-mesh-obstruction/poly_utils.py
+9a07d943dd40ca72ca6701c7c387742ee5ce0a5a34a5816a98afed2d62437e46  research/dirk10-four-port-ten-mesh-obstruction/nine_affine_scout.py
+a8e9f24bca64a9c5bf564a6895147616767aa5ede05914fadc1983f9e8774dac  research/dirk10-four-port-ten-mesh-obstruction/arithmetic-4.34.1.log
+1c052e4f78cd681bf402e0770c2e707c20331ccca15ae43cd490d293f66d79af  research/dirk10-four-port-ten-mesh-obstruction/arithmetic-4.35.0.log
+4681be555f44330ed4e6490b78865427b16e4445977ac2d95066594e1ac0b059  research/dirk10-four-port-ten-mesh-obstruction/arithmetic-4.36.0.log
+527907143f3f26beb8b134ae098aa8943eed3eb6e41d9aebbe2953268f3bb3c2  research/dirk10-four-port-ten-mesh-obstruction/arithmetic-4.37.0-rc1.log
+58b15e8057c753159ce549ef68eb0c205cacc1c0a22c991241d02928fd52ec0f  research/dirk10-four-port-ten-mesh-obstruction/checked.log
+14c5e5878d9948223d2e070b6cba43a3f8fe48f96f3c3d58916015393029ba5c  research/dirk10-four-port-ten-mesh-obstruction/finite-scout.log
+40453d99dc29803e991fd7412503f2f023f20c21ade8e2014b11d14e9e33610f  lean/RKCert/ReviewedNative/DIRK10FourPortTenMeshArithmetic.lean

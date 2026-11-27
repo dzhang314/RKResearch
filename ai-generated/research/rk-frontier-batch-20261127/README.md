@@ -83,3 +83,11 @@ field. It does not need an ordering. Its [scalar Lean certificate and
 replay logs](../../lean/evidence/weighted-order-nine-high-off-20261127/)
 are separate from the mathematical rooted-order argument. Remaining branches
 still prevent an unrestricted ERK order-eleven stage improvement.
+
+The six-off cases with [five clean clocks](../WEIGHTED-ORDER-NINE-SIX-OFF-FIVE-CLEAN.md)
+or [six clean clocks](../WEIGHTED-ORDER-NINE-SIX-OFF-SIX-CLEAN.md) are also
+excluded for the same shift-two problem in characteristic zero. The
+[core Lean replays](../../lean/evidence/weighted-order-nine-six-off-20261127/)
+check the new arithmetic and terminal-state gates, not the entire
+weighted rooted-order reduction. The one-off and five-off/six-clean
+branches remain open.

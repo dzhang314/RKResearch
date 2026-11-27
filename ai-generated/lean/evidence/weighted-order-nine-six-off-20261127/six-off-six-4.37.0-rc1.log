@@ -1,0 +1,7 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.SixOffSixGate.rootChronology' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.SixOffSixGate.calibratedRootImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m11.804s
+user	0m9.570s
+sys	0m1.004s

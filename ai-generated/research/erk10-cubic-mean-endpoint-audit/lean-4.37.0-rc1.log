@@ -1,0 +1,3 @@
+'RKResearch.ERK10CubicMeanEndpointGate.normRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10CubicMeanEndpointGate.normOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10CubicMeanEndpointGate.integralGrid' depends on axioms: [propext, Classical.choice]

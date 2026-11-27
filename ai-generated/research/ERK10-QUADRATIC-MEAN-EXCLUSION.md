@@ -339,3 +339,5 @@ This does not touch other coefficient domains indirectly:
 the theorem is characteristic-zero and conditional on
 the stated stage chart. In particular the cubic mean
 and unrestricted 14–15 interval are still open.
+
+The [cubic endpoint follow-up](ERK10-CUBIC-MEAN-ENDPOINT-EXIT.md) shows that the remaining cubic mean cannot vanish at either physical endpoint.

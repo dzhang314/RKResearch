@@ -1,0 +1,4 @@
+degrees 5 5 termcount 35
+Necessary pressure bidegrees: [(5, 5), (5, 5), (8, 11)]
+Top projected gcd: (2D−1)^8 (102D²−102D+11)^8 (5271D²−4864D+193)^3, up to units.
+Singular moment pivot tests and nonsquare quadratics verified.

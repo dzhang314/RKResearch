@@ -1,0 +1,11 @@
+import RKCert.Research.ERK11FourCarrierTapGate
+#check RKResearch.ERK11FourCarrierTapGate.uniqueFivePath
+#print axioms RKResearch.ERK11FourCarrierTapGate.uniqueFivePath
+#check RKResearch.ERK11FourCarrierTapGate.plateauNonzero
+#print axioms RKResearch.ERK11FourCarrierTapGate.plateauNonzero
+#check RKResearch.ERK11FourCarrierTapGate.fifthCarrier
+#print axioms RKResearch.ERK11FourCarrierTapGate.fifthCarrier
+#check RKResearch.ERK11FourCarrierTapGate.sixthCarrier
+#print axioms RKResearch.ERK11FourCarrierTapGate.sixthCarrier
+#check RKResearch.ERK11FourCarrierTapGate.sixthClean
+#print axioms RKResearch.ERK11FourCarrierTapGate.sixthClean

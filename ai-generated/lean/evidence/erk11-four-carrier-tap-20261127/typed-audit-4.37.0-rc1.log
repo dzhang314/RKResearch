@@ -1,0 +1,25 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.ERK11FourCarrierTapGate.uniqueFivePath' depends on axioms: [propext]
+'RKResearch.ERK11FourCarrierTapGate.plateauNonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11FourCarrierTapGate.fifthCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11FourCarrierTapGate.sixthCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11FourCarrierTapGate.sixthClean' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11FourCarrierTapGate.uniqueFivePath {K : Type} [Lean.Grind.Field K] (a : Nat → Nat → K) :
+  RKResearch.ERK11FourCarrierTapGate.chain a 5 5 = a 5 4 * (a 4 3 * (a 3 2 * (a 2 1 * a 1 0)))
+'RKResearch.ERK11FourCarrierTapGate.uniqueFivePath' depends on axioms: [propext]
+RKResearch.ERK11FourCarrierTapGate.plateauNonzero {K : Type} [Lean.Grind.Field K] (r4 r6 alpha T c5 : K) (nT : T ≠ 0)
+  (diff : r6 - r4 ≠ 0) (first : T + c5 * r4 = 0) (next : alpha = T + c5 * r6) : alpha ≠ 0
+'RKResearch.ERK11FourCarrierTapGate.plateauNonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11FourCarrierTapGate.fifthCarrier {K : Type} [Lean.Grind.Field K] (N T : K) (nN : N ≠ 0) (n3 : 3 ≠ 0)
+  (gap : 3 * N - 2 * T ≠ 0) (g : N * T + 3 * N - 2 * T * T = 0) (h : 5 * N * T - 3 * N - 4 * T * T + 3 * T = 0) :
+  2 * N = 1 ∧ T = 1
+'RKResearch.ERK11FourCarrierTapGate.fifthCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11FourCarrierTapGate.sixthCarrier {K : Type} [Lean.Grind.Field K] (N a x u v f4 f5 : K) (nN : N ≠ 0)
+  (na : a ≠ 0) (n2 : 2 ≠ 0) (n3 : 3 ≠ 0) (diff : f5 - f4 ≠ 0) (cube : (N - 2 * N * N) * a = 0)
+  (one : a + N * x + 2 * N * (u + v) = 0) (two : 3 * (a + N * N * x + 4 * N * N * (u + v)) = (3 - 2 * N) * a)
+  (fval : 2 * f4 = -1) (fread : x + 8 * u * f4 + 8 * v * f5 = -(4 * a)) : 2 * N = 1 ∧ v = 0
+'RKResearch.ERK11FourCarrierTapGate.sixthCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11FourCarrierTapGate.sixthClean {K : Type} [Lean.Grind.Field K] (z f a edge : K) (n2 : 2 ≠ 0)
+  (ne : edge * a ≠ 0) (cube : (z - 1) * (f - z * z * (1 - z)) = 0)
+  (transport : 2 * (edge * a) = (1 - z) * (2 * f - z * z)) : z ≠ 0 ∧ z ≠ 1 ∧ 2 * z ≠ 1 ∧ f = z * z * (1 - z)
+'RKResearch.ERK11FourCarrierTapGate.sixthClean' depends on axioms: [propext, Classical.choice, Quot.sound]

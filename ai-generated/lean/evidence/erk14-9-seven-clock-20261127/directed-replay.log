@@ -1,0 +1,16 @@
+three cleared orthogonality polynomials identically zero
+exact endpoint sign: -1 ['-1.176870993886e-38', '-1.176870993885e-38']
+exact endpoint sign: 1 ['3.12366272653e-38', '3.123662726531e-38']
+simple compatibility root; derivative ['0.004300533720416675', '0.004300533720416676']
+seven positive scalar masses [['0.01813649520881535', '0.01813649520881535'], ['0.02025224458082896', '0.02025224458082896'], ['0.2607282937603438', '0.2607282937603438'], ['0.2215716471528513', '0.2215716471528513'], ['0.1246111670226035', '0.1246111670226035'], ['0.1305226914963572', '0.1305226914963572'], ['0.2241774607781999', '0.2241774607781999']]
+size 1 checked 1 interval absolute bound 7.721496468407045e-24
+size 2 checked 1 interval absolute bound 1.3241878213048068e-19
+size 3 checked 2 interval absolute bound 3.7298941290266155e-19
+size 4 checked 4 interval absolute bound 7.183992139636411e-19
+size 5 checked 9 interval absolute bound 1.160717865317306e-18
+size 6 checked 20 interval absolute bound 1.693790999329804e-18
+size 7 checked 48 interval absolute bound 2.3124593002054473e-18
+size 8 checked 115 interval absolute bound 3.0123166136089517e-18
+size 9 checked 286 interval absolute bound 1.2151389480776408e-16
+strict failed tenth tall condition ['-3.77635355398963', '-3.77635355398963']
+Stage 14 is last and at clock 1; 3 literal merges into stages 1,8,9.

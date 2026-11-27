@@ -1,0 +1,76 @@
+lowExact : ∀ (t : RKResearch.FiniteRootedTree),
+  RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 5 → ∀ (j : Fin 7), residual t j = 0
+sourceSix : ∀ (t : RKResearch.FiniteRootedTree),
+  RKResearch.Certified.PaidDefectBridge.treeSize t = 6 →
+    ∀ (j : Fin 7), residual t j = 2 * residual t 1 * shape₀ j + residual t 5 * shape₁ j
+sourceSevenAtOne : ∀ (t : RKResearch.FiniteRootedTree),
+  RKResearch.Certified.PaidDefectBridge.treeSize t = 7 → ∑ j, residual t j = 0
+@orderNine_of_sevenPayments : ∀ {K : Type u_1} [inst : Field K] [CharZero K]
+  (A : Matrix (Fin 9 ⊕ Fin 8) (Fin 9 ⊕ Fin 8) K) (w x : Fin 8 → K),
+  RKResearch.HasQuadratureOrder 9 w x →
+    (∀ (t : RKResearch.FiniteRootedTree),
+        RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 5 →
+          RKResearch.Certified.PaidDefectBridge.primitiveSeed A x t = 0) →
+      (∀ (t : RKResearch.FiniteRootedTree),
+          5 < RKResearch.Certified.PaidDefectBridge.treeSize t →
+            RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 8 → Paid A w x t []) →
+        (∀ (t : RKResearch.FiniteRootedTree),
+            5 < RKResearch.Certified.PaidDefectBridge.treeSize t →
+              RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 7 →
+                Paid A w x t [RKResearch.Certified.PaidDefectBridge.Letter.transport]) →
+          (∀ (t : RKResearch.FiniteRootedTree),
+              5 < RKResearch.Certified.PaidDefectBridge.treeSize t →
+                RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 7 →
+                  Paid A w x t [RKResearch.Certified.PaidDefectBridge.Letter.clock]) →
+            (∀ (t : RKResearch.FiniteRootedTree),
+                RKResearch.Certified.PaidDefectBridge.treeSize t = 6 →
+                  Paid A w x t
+                    [RKResearch.Certified.PaidDefectBridge.Letter.transport,
+                      RKResearch.Certified.PaidDefectBridge.Letter.transport]) →
+              (∀ (t : RKResearch.FiniteRootedTree),
+                  RKResearch.Certified.PaidDefectBridge.treeSize t = 6 →
+                    Paid A w x t
+                      [RKResearch.Certified.PaidDefectBridge.Letter.transport,
+                        RKResearch.Certified.PaidDefectBridge.Letter.clock]) →
+                (∀ (t : RKResearch.FiniteRootedTree),
+                    RKResearch.Certified.PaidDefectBridge.treeSize t = 6 →
+                      Paid A w x t
+                        [RKResearch.Certified.PaidDefectBridge.Letter.clock,
+                          RKResearch.Certified.PaidDefectBridge.Letter.transport]) →
+                  (∀ (t : RKResearch.FiniteRootedTree),
+                      RKResearch.Certified.PaidDefectBridge.treeSize t = 6 →
+                        Paid A w x t
+                          [RKResearch.Certified.PaidDefectBridge.Letter.clock,
+                            RKResearch.Certified.PaidDefectBridge.Letter.clock]) →
+                    RKResearch.HasOrder 9 A (Sum.elim 0 w)
+@contractOriginAndPorts : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (A : Matrix (Fin 17) (Fin 17) K)
+  (b : Fin 17 → K),
+  A.IsLowerTriangular →
+    (∀ (i : Fin 17), A i i = 0) →
+      RKResearch.HasOrder 9 A b →
+        RKResearch.Certified.DiagonalTwin.DiagonalTwins 9 0 0 A →
+          RKResearch.Certified.DiagonalTwin.DiagonalTwins 9 7 0
+              (RKResearch.Certified.DiagonalTwin.contractMatrix 9 0 A) →
+            RKResearch.Certified.DiagonalTwin.DiagonalTwins 9 8 0
+                (RKResearch.Certified.DiagonalTwin.contractMatrix 9 7
+                  (RKResearch.Certified.DiagonalTwin.contractMatrix 9 0 A)) →
+              have B :=
+                RKResearch.Certified.DiagonalTwin.contractMatrix 9 8
+                  (RKResearch.Certified.DiagonalTwin.contractMatrix 9 7
+                    (RKResearch.Certified.DiagonalTwin.contractMatrix 9 0 A));
+              have v :=
+                RKResearch.Certified.Graded.mergeCoefficient 9 8
+                  (RKResearch.Certified.Graded.mergeCoefficient 9 7
+                    (RKResearch.Certified.Graded.mergeCoefficient 9 0 b));
+              B.IsLowerTriangular ∧ (∀ (i : Fin 14), B i i = 0) ∧ RKResearch.HasOrder 9 B v
+'RKResearch.Certified.ERK149SevenClockPrefix.lowExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149SevenClockPrefix.sourceSix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149SevenClockPrefix.sourceSevenAtOne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149SevenClockPayments.orderNine_of_sevenPayments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149SevenClockPayments.contractOriginAndPorts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

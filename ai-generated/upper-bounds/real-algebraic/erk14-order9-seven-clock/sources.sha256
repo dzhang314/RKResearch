@@ -1,0 +1,16 @@
+86384ef35e2f8085983b96069e412412145f6b85b0260528054b1120552d1182  README.md
+c7bd4fc6c634ff08fc0c82c537d9f6cff779b2b49d174bae02367ce7de91a6a3  EXACT-PROOF.md
+68c7e19bb7668d162d5aa7fd01fd20f0023f3ce94f3869faed3b5edf76c4bc6f  REPLAY.md
+6e09ae50ca32232e346035f50d7a8657fc8bb40e864e4f789f9ddc8003282aa0  cert.py
+6e76ab1cbdbd58dcdf8bf44237bdbae5e5d1b2e82f09ba79945d75534c067b79  fixed.py
+49e854cdda01628174223f46ba8bc9da03e1b8706b774380f7a4db9820a4f370  prefix.json
+7266369db5403a4accfa9ee6d079a346cd1fb22b17657e2cbec2c52c23f66a5c  fixture.json
+b0d22c79812e6f3ae01fb65cda2648874142e18f0b3b3b87b86d213a6d17da47  check_core_boxes.py
+afe40f6749184cb43c058cdb3124eb565f9fd23dd043f78358adf48c7d140511  ../../../lean/RKCert/Research/ERK149SevenClockBracket.lean
+afc00be401d8beb5fe819c354d1260a334a3bc7ee83bb2b2a531d69fd8cc1e26  ../../../lean/RKCert/ReviewedNative/ERK149SevenClockPrefix.lean
+736f6953148b6076aa81bfd89ac4e82fca0614e7319878e081037e23253d9bee  ../../../lean/RKCert/ReviewedNative/ERK149SevenClockPayments.lean
+649c603a09cd1cd68573a58f5ca404e47aac08e790075276a0c370ab8c0eb8fa  ../../../lean/AuditERK149SevenClock.lean
+51853e958a1baec2f0c05142abc0cf9a5f34e2d7e0b9c471975c4cbbba813ebe  ../../../lean/evidence/erk14-9-seven-clock-20261127/directed-replay.log
+5ff3d12816ec25d0eb9f1fd624a5eb915d6172c50efab07fe9e0fcd8a8b63639  ../../../lean/evidence/erk14-9-seven-clock-20261127/core-versions.log
+e11a658418e4b8b28c69b28b2b782a9f6c2a643ba60272c64b0fd9dc6193217f  ../../../lean/evidence/erk14-9-seven-clock-20261127/core-fixture-match.log
+ce5939efb2a2b896b6ca9b0101f72c6322b5f2d85e8308a65ab3930cfbb77986  ../../../lean/evidence/erk14-9-seven-clock-20261127/native-typed-4.36.0.log

@@ -75,3 +75,8 @@ To install the replay dependencies in an isolated Python environment,
 run `python3 -m venv .venv` and
 `.venv/bin/python -m pip install -r requirements.txt` from this directory.
 Then use `.venv/bin/python` for each replay command above.
+
+The [quadratic follow-up](../sdirk-eight-half-quadratic/README.md)
+reduces the entire coprime quadratic chart to finitely many clock
+profiles, including exceptional corner fibers. It does not eliminate
+the finite survivors or settle the common-factor charts.

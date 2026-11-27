@@ -1,0 +1,19 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.threeTapRead.{u_1} {R : Type u_1} [CommRing R]
+  (a b s u v w fa fb fs m0 m1 m2 : R) (h0 : u + v + w = m0) (h1 : a * u + b * v + s * w = m1)
+  (h2 : a ^ 2 * u + b ^ 2 * v + s ^ 2 * w = m2) :
+  (a - b) * (a - s) * (b - s) * (u * fa + v * fb + w * fs) =
+    (b - s) * (m2 - (b + s) * m1 + b * s * m0) * fa + (s - a) * (m2 - (a + s) * m1 + a * s * m0) * fb +
+      (a - b) * (m2 - (a + b) * m1 + a * b * m0) * fs
+'RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.threeTapRead' depends on axioms: [propext, Quot.sound]
+RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.affineReadElim.{u_1} {R : Type u_1} [CommRing R] (A B C D h : R)
+  (hA : A + B * h = 0) (hC : C + D * h = 0) : A * D - B * C = 0
+'RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.affineReadElim' depends on axioms: [propext]
+RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.sixPeggedHankel.{u_1} {R : Type u_1} [CommRing R] (x w : Fin 6 → R)
+  (a b wa wb : R) :
+  have P := fun y => ∏ i, (y - x i);
+  have m := fun j => ∑ i, w i * P (x i) * x i ^ j + wa * P a * a ^ j + wb * P b * b ^ j;
+  RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.hankel3 (m 0) (m 1) (m 2) (m 3) (m 4) = 0
+'RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.sixPeggedHankel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

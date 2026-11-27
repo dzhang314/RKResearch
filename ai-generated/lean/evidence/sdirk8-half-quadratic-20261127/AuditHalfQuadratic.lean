@@ -1,0 +1,7 @@
+import RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts
+#check RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.threeTapRead
+#print axioms RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.threeTapRead
+#check RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.affineReadElim
+#print axioms RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.affineReadElim
+#check RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.sixPeggedHankel
+#print axioms RKCert.ReviewedNative.SDIRK8HalfQuadraticReceipts.sixPeggedHankel

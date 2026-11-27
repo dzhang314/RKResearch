@@ -1,0 +1,14 @@
+prefix clocks: [0, 1/7, 1/24, 1/12, 1499/3106, 3/4, 1/4]
+F5 is rank three with all port values proportional to the Jacobi vector
+F5 dim 3 F5+F6 dim 6
+first5 det= -475/40870656
+top map ranks: 5 5
+top corrections= [1/24, 568/1387, 15/76, 252711/245480, 2628/6137]
+injected defect annihilated by all 31 true reflected words through length four
+diagonal [0, 1/14, 29/1224, 1/72, 11154059/102094220, 1345373/16131632, 557/8670, 0, 0, 0, 15/76, 1/24, 1/6, 1/6, 0]
+denominator 1930172898526196879426691749555224368000
+three literal complete-row equalities paid: 4=8, 6=9, 7=10 (one-based)
+merged diagonal [0, 1/14, 29/1224, 1/72, 11154059/102094220, 1345373/16131632, 557/8670, 15/76, 1/24, 1/6, 1/6, 0]
+merged denominator 101588047290852467338246934187117072000
+fails= 0 first= []
+counts= [1, 1, 2, 4, 9, 20, 48, 115, 286, 719] bush11= 1/27371520

@@ -4,7 +4,7 @@
 and let \(\boldsymbol b\) be its output weights, both with entries in \(\mathbb Q\).
 If the tableau satisfies actual rooted-tree order ten, then \(s\ge12\).
 The real eleven-stage construction is unaffected. This note does not
-construct a twelve-stage rational method.
+construct a twelve-stage rational method. A [subsequent explicit rational tableau](../dirk10-twelve-rational-three-ports/README.md) attains the bound.
 
 Write \(\boldsymbol c=A\boldsymbol 1\) for the abscissa vector and \(\boldsymbol g=A\boldsymbol c^{\odot2}-\boldsymbol c^{\odot3}/3\) for the cubic stage defect. Set
 \[

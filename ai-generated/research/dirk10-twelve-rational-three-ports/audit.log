@@ -1,0 +1,4 @@
+literal 12-stage lower triangular tableau, 12 distinct rows and unequal nonzero diagonals
+all 1205 integer rooted equations: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+eleventh-bush raw defect: 1/27371520 ; normalized defect: 1/2488320
+stage and weight denominator: 101588047290852467338246934187117072000 ; 2488320 divides D^2

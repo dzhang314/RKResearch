@@ -1,0 +1,6 @@
+ℹ [1606/1607] Built RKCert.ReviewedNative.SDIRK8InvisibleVirtualRead (883ms)
+info: RKCert/ReviewedNative/SDIRK8InvisibleVirtualRead.lean:25:0: 'RKCert.ReviewedNative.SDIRK8InvisibleVirtualRead.virtualAffine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8InvisibleVirtualRead.lean:26:0: 'RKCert.ReviewedNative.SDIRK8InvisibleVirtualRead.doubleMask' depends on axioms: [propext, Quot.sound]
+Build completed successfully (1607 jobs).

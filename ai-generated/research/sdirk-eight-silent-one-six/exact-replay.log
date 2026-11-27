@@ -1,0 +1,52 @@
+True 3 3 0 [True, True, True]
+virtual seventh with silent eighth True
+False 3 3 0 [True, True, True]
+virtual seventh with silent eighth False
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven True True True
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven True True False
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven True False True
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven True False False
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven False True True
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven False True False
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven False False True
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+late silent at literal front, placements six and seven False False False
+True 3 3 0 [True, True, True]
+late silent at literal front, placement eight True True
+True 3 3 0 [True, True, True]
+late silent at literal front, placement eight True False
+False 3 3 0 [True, True, True]
+late silent at literal front, placement eight False True
+False 3 3 0 [True, True, True]
+late silent at literal front, placement eight False False
+five-site fixed tail diagonal factors True 1 [(9, 1)]
+both early silent placements with terminal double excluded True True 1 9
+both early silent placements with terminal double excluded False True 1 9
+five-site fixed tail diagonal factors True -1 [(9, 1)]
+both early silent placements with terminal double excluded True True -1 9
+both early silent placements with terminal double excluded False True -1 9
+five-site fixed tail diagonal factors False 1 [(1, 1), (8, 1)]
+both early silent placements with terminal double excluded True False 1 1
+both early silent placements with terminal double excluded False False 1 1
+both early silent placements with terminal double excluded True False 1 8
+both early silent placements with terminal double excluded False False 1 8
+five-site fixed tail diagonal factors False -1 [(1, 1), (8, 1)]
+both early silent placements with terminal double excluded True False -1 1
+both early silent placements with terminal double excluded False False -1 1
+both early silent placements with terminal double excluded True False -1 8
+both early silent placements with terminal double excluded False False -1 8

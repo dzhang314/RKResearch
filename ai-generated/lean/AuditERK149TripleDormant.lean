@@ -1,0 +1,9 @@
+import RKCert.ReviewedNative.ERK149TripleDormant
+
+open RKResearch.Certified.ERK149TripleDormant
+#check @early_defect_plane
+#check @post_triple_anchor_first_resonance
+#check @internal_anchor_first_resonance
+#print axioms early_defect_plane
+#print axioms post_triple_anchor_first_resonance
+#print axioms internal_anchor_first_resonance

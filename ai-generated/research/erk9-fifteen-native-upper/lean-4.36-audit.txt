@@ -1,0 +1,55 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib revision: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+Classes by grade: [1, 1, 2, 4, 8, 16, 35, 78, 182]
+Profiles: 327 Actions: 145 Joins: 616
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenData ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCore ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckAction0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckJoin0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckGrade0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckPay0 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckGrade4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckJoin4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckAction4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckPay4 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckJoin8 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckAction8 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckPay8 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckJoin12 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckAction12 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckPay12 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckJoin16 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckAction16 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckPay16 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenCheckPay20 ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteenChecks ===
+
+=== RKCert/ReviewedNative/ERK9RationalFifteen ===
+'RKResearch.Certified.ERK9RationalFifteen.order_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK9RationalFifteen.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK9RationalFifteen.exists_exact_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

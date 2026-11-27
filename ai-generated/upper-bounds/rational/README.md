@@ -21,4 +21,4 @@ Examples at current stage counts: ERK orders 1–4; DIRK orders 1, 2, 4, 5, 6 an
 
 - [Lean certificate: eleven-stage rational strict SDIRK of exact order seven](../../lean/evidence/rational-strict-sdirk-eleven-seven/README.md). This is a verified rational construction, not a minimal-stage result or a change to the nine-stage real-algebraic upper endpoint.
 
-- [Exact rational 15-stage ERK order nine](../../research/erk9-fifteen-rational-moment-splice/README.md): the literal tableau improves the rational upper from 16 to 15. All 486 rooted order conditions and two tenth-order failures are checked by exact integer replay. Native certification is in progress.
+- [Exact rational 15-stage ERK order nine](../../research/erk9-fifteen-rational-moment-splice/README.md): the literal tableau improves the rational upper from 16 to 15. All 486 rooted order conditions and two tenth-order failures are checked by exact integer replay and by the [end-to-end Lean theorem](../../research/erk9-fifteen-native-upper/README.md).

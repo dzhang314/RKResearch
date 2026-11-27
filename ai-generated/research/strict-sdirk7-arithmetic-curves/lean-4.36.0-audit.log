@@ -1,0 +1,30 @@
+RKResearch.Certified.SDIRKSevenDirtyVisibleZero.cut_eq_zero.{u_1} {K : Type u_1} [Field K] {u c : K} (h₂ : 2 ≠ 0)
+  (hM : RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.M u ≠ 0)
+  (read :
+    RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.M u *
+          RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.Ghat u c +
+        RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.Ehat u c * 0 =
+      0) :
+  cut u c = 0
+RKResearch.Certified.SDIRKSevenDirtyVisibleZero.conic_slopes_equal.{u_1} {K : Type u_1} [Field K] {A B C x y z : K}
+  (hA : A ≠ 0) (hB : B ≠ 0) (hC : C ≠ 0) (h₀ : A + B + C = 0) (h₁ : A * (y + z) + B * (x + z) + C * (x + y) = 0)
+  (h₂ : A * y * z + B * x * z + C * x * y = 0) : x = z ∧ y = z
+RKResearch.Certified.SDIRKSevenDirtyVisibleZero.hilbert_four_injective {a b c d : ℚ}
+  (e₀ : a + b / 2 + c / 3 + d / 4 = 0) (e₁ : a / 2 + b / 3 + c / 4 + d / 5 = 0) (e₂ : a / 3 + b / 4 + c / 5 + d / 6 = 0)
+  (e₃ : a / 4 + b / 5 + c / 6 + d / 7 = 0) : a = 0 ∧ b = 0 ∧ c = 0 ∧ d = 0
+RKResearch.Certified.SDIRKSevenDirtyVisibleZero.rate_identity (u : ℚ) :
+  RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.M u * rateVNumer u + 2 * rateVNumer u -
+      RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.T u =
+    2 * (u - 3) * (u - 1) ^ 2 * leadingFactor u
+RKResearch.Certified.SDIRKSevenDirtyVisibleZero.leading_ne (u : ℚ) : leadingFactor u ≠ 0
+'RKResearch.Certified.SDIRKSevenDirtyVisibleZero.cut_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyVisibleZero.conic_slopes_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyVisibleZero.hilbert_four_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyVisibleZero.rate_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyVisibleZero.leading_ne' depends on axioms: [propext, Classical.choice, Quot.sound]

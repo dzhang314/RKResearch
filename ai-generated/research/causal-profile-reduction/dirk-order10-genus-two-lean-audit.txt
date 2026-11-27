@@ -1,0 +1,92 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks :
+  List.map (fun d => (echelon d.fst).length) localData = [2, 5, 3, 4, 3]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions :
+  List.map (fun k => 22 - (echelon (RKResearch.Certified.DIRKTenGenusTwoReceipts.constraints✝ k)).length)
+      (List.range 6) =
+    [17, 15, 10, 7, 4, 4]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports :
+  List.filter
+        (fun x =>
+          RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.u121✝ x == 0)
+        (List.range 121) =
+      [9, 78] ∧
+    RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 9 = 110 ∧
+      RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 78 = 117
+RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt :
+  logReceipt11 = (9, 0) ∧ 2 * 40 * 4 % 11 = 1 ∧ 2 * 81 * 60 * 8 % 11 = 1
+RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks : possibleXs = [1, 1] ∧ possibleYs = [4, 7]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks' depends on axioms: [propext]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions' depends on axioms: [propext]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks' does not depend on any axioms
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks :
+  List.map (fun d => (echelon d.fst).length) localData = [2, 5, 3, 4, 3]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions :
+  List.map (fun k => 22 - (echelon (RKResearch.Certified.DIRKTenGenusTwoReceipts.constraints✝ k)).length)
+      (List.range 6) =
+    [17, 15, 10, 7, 4, 4]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports :
+  List.filter
+        (fun x =>
+          RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.u121✝ x == 0)
+        (List.range 121) =
+      [9, 78] ∧
+    RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 9 = 110 ∧
+      RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 78 = 117
+RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt :
+  logReceipt11 = (9, 0) ∧ 2 * 40 * 4 % 11 = 1 ∧ 2 * 81 * 60 * 8 % 11 = 1
+RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks : possibleXs = [1, 1] ∧ possibleYs = [4, 7]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks' depends on axioms: [propext]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions' depends on axioms: [propext]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks' does not depend on any axioms
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks :
+  List.map (fun d => (echelon d.fst).length) localData = [2, 5, 3, 4, 3]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions :
+  List.map (fun k => 22 - (echelon (RKResearch.Certified.DIRKTenGenusTwoReceipts.constraints✝ k)).length)
+      (List.range 6) =
+    [17, 15, 10, 7, 4, 4]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports :
+  List.filter
+        (fun x =>
+          RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.u121✝ x == 0)
+        (List.range 121) =
+      [9, 78] ∧
+    RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 9 = 110 ∧
+      RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 78 = 117
+RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt :
+  logReceipt11 = (9, 0) ∧ 2 * 40 * 4 % 11 = 1 ∧ 2 * 81 * 60 * 8 % 11 = 1
+RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks : possibleXs = [1, 1] ∧ possibleYs = [4, 7]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks' depends on axioms: [propext]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions' depends on axioms: [propext]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks' does not depend on any axioms
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks :
+  List.map (fun d => (echelon d.fst).length) localData = [2, 5, 3, 4, 3]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions :
+  List.map (fun k => 22 - (echelon (RKResearch.Certified.DIRKTenGenusTwoReceipts.constraints✝ k)).length)
+      (List.range 6) =
+    [17, 15, 10, 7, 4, 4]
+RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports :
+  List.filter
+        (fun x =>
+          RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.u121✝ x == 0)
+        (List.range 121) =
+      [9, 78] ∧
+    RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 9 = 110 ∧
+      RKResearch.Certified.DIRKTenGenusTwoReceipts.g121✝ RKResearch.Certified.DIRKTenGenusTwoReceipts.v121✝ 78 = 117
+RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt :
+  logReceipt11 = (9, 0) ∧ 2 * 40 * 4 % 11 = 1 ∧ 2 * 81 * 60 * 8 % 11 = 1
+RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks : possibleXs = [1, 1] ∧ possibleYs = [4, 7]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.local_ranks' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.descent_allowed_dimensions' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.translated_two_supports' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.logarithm_leading_receipt' does not depend on any axioms
+'RKResearch.Certified.DIRKTenGenusTwoReceipts.target_disks' does not depend on any axioms

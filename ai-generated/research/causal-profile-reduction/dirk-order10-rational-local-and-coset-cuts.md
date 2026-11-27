@@ -1,5 +1,7 @@
 # The rational one-clock DIRK10 chart has one fourth-power coset
 
+The rational single-dirty-abscissa branch is now closed by the [genus-two argument](dirk-order10-rational-single-clock-genus-two.md). The local and coset cuts below give its starting conditions.
+
 For a rational eleven-stage DIRK method of order ten whose cubic defect is on a **single numerical clock**, the previous [rational cuts](dirk-order10-rational-clock-gates.md) force the invisible one-row, nonshared affine chart. In that chart we now prove that, up to inverting the ratio of the first two nonzero exterior clocks,
 \[
  \boxed{\ a/b =3x^4,\qquad 5t-3=27z^4\quad(x,z\in\mathbb Q^\times),\

@@ -13,6 +13,7 @@ from gauss_triple import check as triple
 from seven_distinct import run
 from midpoint import midpoint
 from shared_proxy import transfer
+from silent_eighth import twofront as two_front_silent, half as half_silent
 
 def two_front_tail():
  for f,i,t in product((True,False),(0,1),(True,False)):
@@ -26,7 +27,9 @@ if __name__=='__main__':
  triple()
  gauss_tail()
  two_front_tail()
+ two_front_silent()
  run()
  for f in (True,False):
   midpoint(f)
+  half_silent(f)
   transfer(f)

@@ -2,6 +2,10 @@ Both literal reverse triple incidences fail at all ordered Gauss pairs.
 Equal tag four-active: exact monic Gauss-site test 96
 Equal tag Gauss gates: literal row four, earliest active, invisible eighth, midpoint tail
 Two canceled non-Gauss front groups: all eight literal third-tail choices excluded
+nonhalf silent tail True 0 -136/7 + 92*sqrt(2)/7
+nonhalf silent tail True 1 -136/7 - 92*sqrt(2)/7
+nonhalf silent tail False 0 -32*sqrt(2)/7 - 30/7
+nonhalf silent tail False 1 -sqrt(2)
 seven distinct diagonal degrees True [(4, 1)]
 seven distinct penultimate degree True 3
 seven distinct profile excluded True True 1009 285
@@ -11,6 +15,10 @@ seven distinct penultimate degree False 3
 seven distinct profile excluded False True 1009 285
 seven distinct profile excluded False False 1009 285
 midpoint exact quadratic field: all four five-peg Hankels are nonzero True
+half silent tail reconstructed gate gcd degree True 1 0
+half silent tail reconstructed gate gcd degree True -1 0
 eight on seven clocks: guarded diagonal factor degrees True [(4, 1), (4, 1), (12, 1)]
 midpoint exact quadratic field: all four five-peg Hankels are nonzero False
+half silent tail reconstructed gate gcd degree False 1 0
+half silent tail reconstructed gate gcd degree False -1 0
 eight on seven clocks: guarded diagonal factor degrees False [(4, 1), (4, 1), (12, 1)]

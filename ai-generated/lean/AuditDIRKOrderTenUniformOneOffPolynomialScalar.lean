@@ -1,0 +1,9 @@
+import RKCert.ReviewedNative.DIRKOrderTenUniformOneOffPolynomialScalar
+
+open RKResearch.Certified.Graded.UniformOneOffPolynomialScalar
+
+#check all_zero_shared_root_guards
+#check all_fixed_pair_gates
+
+#print axioms all_zero_shared_root_guards
+#print axioms all_fixed_pair_gates

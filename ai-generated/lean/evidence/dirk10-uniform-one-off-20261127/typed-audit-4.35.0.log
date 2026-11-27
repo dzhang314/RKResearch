@@ -1,0 +1,9 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+RKResearch.Certified.Graded.UniformOneOffPolynomialScalar.all_zero_shared_root_guards :
+  RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all tauZeroCase = true
+RKResearch.Certified.Graded.UniformOneOffPolynomialScalar.all_fixed_pair_gates :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun t =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (eachCase t)) =
+    true
+'RKResearch.Certified.Graded.UniformOneOffPolynomialScalar.all_zero_shared_root_guards' depends on axioms: [propext]
+'RKResearch.Certified.Graded.UniformOneOffPolynomialScalar.all_fixed_pair_gates' depends on axioms: [propext]

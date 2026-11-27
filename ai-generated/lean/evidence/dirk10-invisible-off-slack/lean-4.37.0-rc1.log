@@ -1,0 +1,27 @@
+RKResearch.Certified.Graded.InvisibleOffSlackField.three_reads_live {K : Type} [Lean.Grind.Field K] (a b c x y z : K)
+  (hab : a - b ≠ 0) (hac : a - c ≠ 0) (hbc : b - c ≠ 0) (h0 : x + y + z = 0) (h1 : a * x + b * y + c * z = 0)
+  (hn : ¬(x = 0 ∧ y = 0 ∧ z = 0)) : x ≠ 0 ∧ y ≠ 0 ∧ z ≠ 0
+RKResearch.Certified.Graded.InvisibleOffSlackField.invisible_ghosts_and_pair_live {K : Type} [Lean.Grind.Field K]
+  (ξ ζ χ g₀ g₁ h₁ hζ hχ d₀ d₁ dζ dχ : K) (hxz : ξ - ζ ≠ 0) (hxc : ξ - χ ≠ 0) (hzc : ζ - χ ≠ 0) (ng₀ : g₀ ≠ 0)
+  (ng₁ : g₁ ≠ 0) (nh₁ : h₁ ≠ 0) (nhζ : hζ ≠ 0) (nhχ : hχ ≠ 0) (hg : g₀ * d₀ + g₁ * d₁ = 0)
+  (hh : h₁ * d₁ + hζ * dζ + hχ * dχ = 0) (hc : ξ * (h₁ * d₁) + ζ * (hζ * dζ) + χ * (hχ * dχ) = 0)
+  (hn : ¬(d₀ = 0 ∧ d₁ = 0 ∧ dζ = 0 ∧ dχ = 0)) : d₀ ≠ 0 ∧ d₁ ≠ 0 ∧ dζ ≠ 0 ∧ dχ ≠ 0
+RKResearch.Certified.Graded.InvisibleOffSlackField.normalize_pair_column {K : Type} [Lean.Grind.Field K]
+  (b₀ b₁ G₀ G₁ κ a₀ a₁ : K) (hκ : κ ≠ 0) (hb : b₀ + b₁ = 0) (hG : G₀ + G₁ = 0) (hj : G₁ = κ * b₁) :
+  (G₀ * a₀ + G₁ * a₁) / κ = b₀ * a₀ + b₁ * a₁
+RKResearch.Certified.Graded.InvisibleOffSlackField.two_regular_columns_kill {K : Type} [Lean.Grind.Field K]
+  (V U W x : K) (hV : V ≠ 0) (hVU : V - U ≠ 0) (hUW : U / 2 - W ≠ 0)
+  (h : (V ^ 3 - V * (V - U) * (V - U / 2)) * x - (U + W) * (V ^ 2 * x) + U * W * (V * x) = 0) : x = 0
+'RKResearch.Certified.Graded.InvisibleOffSlackField.three_reads_live' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleOffSlackField.invisible_ghosts_and_pair_live' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleOffSlackField.normalize_pair_column' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleOffSlackField.two_regular_columns_kill' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+4.37.0-rc1 off-slack OK

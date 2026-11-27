@@ -1,0 +1,5 @@
+15 distinct strict physical rows; exact order conditions: [1, 1, 2, 4, 9, 20, 48, 115, 286]
+Second common denominator: 60872310928282105497538809785677333251786646659783059681175834555608375037426392441416230346497300480000
+D1/D2 gcd: 10450944000 divides (9!)^3
+Tenth tall, bush and mixed bush attachment: -2945609/320 71019553/1282889664 -24755745567906941/5885687017987200
+Tall/bush and mixed/bush cleared numerator gcds are both one.

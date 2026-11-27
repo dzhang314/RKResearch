@@ -1,0 +1,17 @@
+@order_nine : ∀ {R : Type u_1} [inst : CommRing R] (d : R), ↑D * d = 1 → RKResearch.HasOrder 9 (A d) (b d)
+@bush_defect : ∀ {R : Type u_1} [inst : CommRing R] (d : R),
+  ↑D * d = 1 → 2160 * (↑↑bush10.factorial * b d ⬝ᵥ RKResearch.Φ bush10 (A d) - 1) = -1
+@exists_exact_of_unit : ∀ {R : Type u_1} [inst : CommRing R] [Nontrivial R],
+  IsUnit ↑D → ∃ U w, RKResearch.ERK U ∧ RKResearch.HasOrder 9 U w ∧ ¬RKResearch.HasOrder 10 U w
+exists_exact_charZero : ∀ (K : Type u_1) [inst : Field K] [CharZero K],
+  ∃ U w, RKResearch.ERK U ∧ RKResearch.HasOrder 9 U w ∧ ¬RKResearch.HasOrder 10 U w
+RKResearch.Certified.ERK9RationalFourteen.exists_exact_rational :
+  ∃ U w, RKResearch.ERK U ∧ RKResearch.HasOrder 9 U w ∧ ¬RKResearch.HasOrder 10 U w
+'RKResearch.Certified.ERK9RationalFourteen.order_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK9RationalFourteen.bush_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK9RationalFourteen.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK9RationalFourteen.exists_exact_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -89,3 +89,8 @@ For \(q=X-\xi\), the corner system fixes \(p\) rationally in \(\xi\); the unique
 ## Verification and scope
 
 Run each Python check file in this directory with Python 3 and SymPy. All calculations use rational quotient arithmetic in \(\mathbb Q[t]/(t^2-1/2)\), exact polynomial gcds, and verified units; no root search or network access is used. The Lean receipt proves the reusable polynomial kernel step, not the entire Runge–Kutta argument. Coprimality is essential when evaluating \(p/q\) at actual clocks. A common factor may vanish at a real physical clock where the original relation does not determine \(h\); that possibility is not removed by symbolic cancellation. Repeated roots of a denominator coprime to \(p\) are allowed in the square-denominator identity.
+
+The [exact line-pole follow-up](../sdirk-eight-half-line-pole/README.md)
+rules out the entire coprime linear-denominator case and the coprime
+central double pole. The generic quadratic and common-factor cases
+remain separate.

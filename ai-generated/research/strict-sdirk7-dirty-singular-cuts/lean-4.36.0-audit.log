@@ -1,0 +1,30 @@
+RKResearch.Certified.SDIRKSevenDirtySingularSuffix.no_two_or_three.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {B : Matrix SDIRKSevenDirtySingularSuffix.F SDIRKSevenDirtySingularSuffix.F K}
+  {b y D : SDIRKSevenDirtySingularSuffix.F → K} {z h δ : K} (ha : B.IsLowerTriangular)
+  (he : ∀ (i : SDIRKSevenDirtySingularSuffix.F), B i i = 1) (hz : z ≠ 0) (inj : Function.Injective y) (finish : y 5 = 1)
+  (first : ∀ (i : SDIRKSevenDirtySingularSuffix.F), Matrix.vecMul b B i = b i * y i)
+  (second : ∀ (i : SDIRKSevenDirtySingularSuffix.F), Matrix.vecMul (fun j => b j * y j) B i = b i * y i ^ 2 / 2 - D i)
+  (reverse :
+    ∀ (i : SDIRKSevenDirtySingularSuffix.F), Matrix.vecMul D B i = D i * (1 + (1 - y i) / (y 4 ^ 2 - 4 * y 4 + 2)))
+  (mom : ∀ i ≤ 3, ∑ j, b j * y j ^ i = z ^ i / (↑i + 1)) (dmom : ∀ i ≤ 2, δ * h ^ i + ∑ j, D j * y j ^ i = 0) :
+  y 4 ≠ 2 ∧ y 4 ≠ 3
+RKResearch.Certified.SDIRKSevenDirtyEarlyAliases.reflection_alias_impossible {z s t w c u : ℚ}
+  (h : SDIRKSevenDirtyEarlyAliases.ReflectionAlias z s t w c u) : False
+RKResearch.Certified.SDIRKSevenDirtyRationalHelper.rational_tap_den_ne {w η t : ℚ} (ht : t ≠ 0)
+  (h : SDIRKSevenDirtyRationalHelper.q w η (1 + t) = (1 + 2 * t - t ^ 2) * SDIRKSevenDirtyRationalHelper.q w η 1) :
+  SDIRKSevenDirtyRationalHelper.hDen w η ≠ 0
+'RKResearch.Certified.SDIRKSevenDirtySingularSuffix.no_two_or_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyEarlyAliases.reflection_alias_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyRationalHelper.rational_tap_den_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyRationalHelper.solve_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyRationalHelper.solve_first_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

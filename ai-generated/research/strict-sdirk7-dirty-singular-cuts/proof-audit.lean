@@ -1,0 +1,12 @@
+import RKCert.Research.SDIRKSevenDirtySingularSuffix
+import RKCert.Research.SDIRKSevenDirtyEarlyAliases
+import RKCert.Research.SDIRKSevenDirtyRationalHelper
+open RKResearch.Certified
+#check SDIRKSevenDirtySingularSuffix.no_two_or_three
+#check SDIRKSevenDirtyEarlyAliases.reflection_alias_impossible
+#check SDIRKSevenDirtyRationalHelper.rational_tap_den_ne
+#print axioms SDIRKSevenDirtySingularSuffix.no_two_or_three
+#print axioms SDIRKSevenDirtyEarlyAliases.reflection_alias_impossible
+#print axioms SDIRKSevenDirtyRationalHelper.rational_tap_den_ne
+#print axioms SDIRKSevenDirtyRationalHelper.solve_tap
+#print axioms SDIRKSevenDirtyRationalHelper.solve_first_read

@@ -1,0 +1,35 @@
+directSourceD : ∀ (j : Fin 7),
+  -9 * RKResearch.Certified.ERK149SevenClockPrefix.residual source0 j +
+        27 / 2 * RKResearch.Certified.ERK149SevenClockPrefix.residual source1 j +
+      18 * RKResearch.Certified.ERK149SevenClockPrefix.residual source2 j =
+    RKResearch.Certified.ERK149SevenClockPrefix.shape₀ j
+directSourceXD : ∀ (j : Fin 7),
+  9 / 2 * RKResearch.Certified.ERK149SevenClockPrefix.residual source0 j +
+        27 / 4 * RKResearch.Certified.ERK149SevenClockPrefix.residual source1 j -
+      27 * RKResearch.Certified.ERK149SevenClockPrefix.residual source2 j =
+    shapeX j
+sizeSixSourceD : ∀ (j : Fin 7),
+  -9 * RKResearch.Certified.ERK149SevenClockPrefix.residual six0 j +
+      27 * RKResearch.Certified.ERK149SevenClockPrefix.residual six1 j =
+    RKResearch.Certified.ERK149SevenClockPrefix.shape₀ j
+sizeSixSourceDQ : ∀ (j : Fin 7),
+  3 * RKResearch.Certified.ERK149SevenClockPrefix.residual six0 j -
+      6 * RKResearch.Certified.ERK149SevenClockPrefix.residual six1 j =
+    RKResearch.Certified.ERK149SevenClockPrefix.shape₁ j
+@firstCharge_zero : ∀ {K : Type u_1} [inst : Field K] (a b c u v w : K),
+  a ≠ b → a ≠ c → u + v + w = 0 → a * u + b * v + c * w = 0 → a ^ 2 * u + b ^ 2 * v + c ^ 2 * w = 0 → u = 0
+@split_gauge : ∀ {K : Type u_1} [inst : Field K] (s W a r : K), s ≠ 0 → s * (a + r / s) + (W - s) * a = W * a + r
+'RKResearch.Certified.ERK149SevenClockOrderTen.directSourceD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149SevenClockOrderTen.directSourceXD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149SevenClockOrderTen.sizeSixSourceD' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149SevenClockOrderTen.sizeSixSourceDQ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149SevenClockOrderTen.firstCharge_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK149SevenClockOrderTen.split_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]

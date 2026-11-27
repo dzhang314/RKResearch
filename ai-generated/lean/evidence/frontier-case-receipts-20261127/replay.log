@@ -1,0 +1,43 @@
+=== RKCert/ReviewedNative/ERK8RankFourTerminalKernel.lean
+'RKResearch.Certified.Graded.Reverse.width11_rank_four_terminal_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.width11_rank_four_terminal_pure_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.width11_rank_four_terminal_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.width11_rank_four_next_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.width11_rank_four_pure_node_zero_or_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.width11_rank_four_pure_terminal_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== RKCert/ReviewedNative/TwoSidedSupportRank.lean
+exit=0
+=== RKCert/ReviewedNative/SDIRK8TwoZeroLineScalarReceipt.lean
+exit=0
+=== RKCert/ReviewedNative/SDIRK8SingletonSlopeReceipts.lean
+exit=0
+=== evidence/five-ladder-thirteen-20261127/AuditFront13.lean
+'RKResearch.Certified.FiveLadderThirteen.no_seven_site_ladder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TwoDonorDense.paid_append_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TwoDonorDense.residual_row_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
+=== AuditDIRKOrderTenInvisibleFourScalar.lean
+RKResearch.Certified.Graded.InvisibleFourScalar.quartic_roots :
+  List.filter (fun x => quartic x == 0) (List.range p) = interior
+RKResearch.Certified.Graded.InvisibleFourScalar.paid_divisions :
+  ([2, 3, 4, 5, 6, 7, 8, 9, 10].all fun x => mul x (divide 1 x) == 1) = true
+RKResearch.Certified.Graded.InvisibleFourScalar.all_distinct_clock_tuples : clockSet.all goodCore = true
+'RKResearch.Certified.Graded.InvisibleFourScalar.quartic_roots' does not depend on any axioms
+'RKResearch.Certified.Graded.InvisibleFourScalar.paid_divisions' does not depend on any axioms
+'RKResearch.Certified.Graded.InvisibleFourScalar.all_distinct_clock_tuples' depends on axioms: [propext]
+exit=0

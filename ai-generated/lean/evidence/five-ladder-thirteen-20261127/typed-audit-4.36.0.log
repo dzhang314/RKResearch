@@ -1,0 +1,40 @@
+RKCert/ReviewedNative/FiveLadderThirteen.lean:35:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.FiveLadderThirteen.0.RKResearch.Certified.FiveLadderThirteen.bezout`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/FiveLadderThirteen.lean:45:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.FiveLadderThirteen.0.RKResearch.Certified.FiveLadderThirteen.det3_zero_of_kernel`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/FiveLadderThirteen.lean:89:8: warning: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.FiveLadderThirteen.0.RKResearch.Certified.FiveLadderThirteen.weightedHull`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'RKResearch.Certified.FiveLadderThirteen.no_seven_site_ladder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKCert/ReviewedNative/PaidStageAppend.lean:28:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoDonorDense.paid_append_clock`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/PaidStageAppend.lean:62:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoDonorDense.residual_row_payment`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'RKResearch.Certified.TwoDonorDense.paid_append_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TwoDonorDense.residual_row_payment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.FiveLadderThirteen.no_seven_site_ladder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TwoDonorDense.paid_append_pure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TwoDonorDense.residual_row_payment' depends on axioms: [propext, Classical.choice, Quot.sound]

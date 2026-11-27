@@ -1,0 +1,5 @@
+360 chronology classes (including 24 with a zero chronological pivot).
+Regular chart counts: {'regular charts': 336, 'no rational root': 282, 'unpaid regular roots': 54}
+Singular-direction checks: {'inconsistent singular direction': 22, 'zero chronological pivot': 2}
+The only admitted rational k is 2/3; all 54 literal midpoint taps are unpaid.
+Gate factor certificates: {'prime-no-root': 282, 'linear': 54, 'nonsquare': 54}

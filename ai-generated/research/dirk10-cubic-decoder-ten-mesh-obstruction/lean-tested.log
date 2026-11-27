@@ -1,0 +1,54 @@
+Lean 4.34.1
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.cubic_receipts' does not depend on any axioms
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.quadratic_receipts' depends on axioms: [propext]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.unpaid_receipts' does not depend on any axioms
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.singular_receipts' does not depend on any axioms
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.zero_pivot_receipts' does not depend on any axioms
+Lean 4.35.0
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.cubic_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.quadratic_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.unpaid_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.singular_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.zero_pivot_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.36.0
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.cubic_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.quadratic_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.unpaid_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.singular_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.zero_pivot_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.37.0-rc1
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.cubic_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.quadratic_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.unpaid_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.singular_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10CubicDecoderTenMeshArithmetic.zero_pivot_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

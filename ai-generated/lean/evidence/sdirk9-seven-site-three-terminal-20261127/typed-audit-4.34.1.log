@@ -1,0 +1,6 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+RKResearch.Certified.SDIRK9SevenSiteThreeTerminalMod43.bezout_twelve : allPairs.length = 12 ∧ allPairs.all verify = true
+RKResearch.Certified.SDIRK9SevenSiteThreeTerminalMod43.determinant_twenty_four :
+  determinantValues.length = 24 ∧ (determinantValues.all fun x => x != 0) = true
+'RKResearch.Certified.SDIRK9SevenSiteThreeTerminalMod43.bezout_twelve' depends on axioms: [propext]
+'RKResearch.Certified.SDIRK9SevenSiteThreeTerminalMod43.determinant_twenty_four' does not depend on any axioms

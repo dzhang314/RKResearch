@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.SDIRK9SevenSiteThreeTerminalMod43
+open RKResearch.Certified.SDIRK9SevenSiteThreeTerminalMod43
+#check bezout_twelve
+#check determinant_twenty_four
+#print axioms bezout_twelve
+#print axioms determinant_twenty_four

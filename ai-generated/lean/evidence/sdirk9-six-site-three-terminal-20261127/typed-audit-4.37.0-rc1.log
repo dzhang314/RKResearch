@@ -1,0 +1,11 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_v : cert 4 f0 g0 u0 v0 = true
+RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_w : cert 4 f1 g1 u1 v1 = true
+RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_live : cert 11 f2 g2 u2 v2 = true
+RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_terminal : cert 30 f3 g3 u3 v3 = true
+'RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_w' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_live' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRK9ThreeTerminalMod37.first_is_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

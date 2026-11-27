@@ -1,0 +1,5 @@
+Cubic irreducible over Q; mod-31 and mod-17 irreducibility tests passed; all three residue roots at p=37 simple.
+role 0: exact degree-4 coprime residue pair; Bézout verified.
+role 1: exact degree-4 coprime residue pair; Bézout verified.
+role 2: exact degree-11 coprime residue pair; Bézout verified.
+role 3: exact degree-30 coprime residue pair; Bézout verified.

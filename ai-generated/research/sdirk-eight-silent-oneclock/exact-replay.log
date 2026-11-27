@@ -1,0 +1,22 @@
+True verified inverse supports 16 [30, 22, 16]
+False verified inverse supports 32 [67, 44, 32]
+rear Gauss pair excluded True 1
+rear Gauss pair excluded True -1
+rear Gauss pair excluded False 1
+rear Gauss pair excluded False -1
+five-site determinant nonzero True 0 True 1
+five-site determinant nonzero True 0 True -1
+five-site determinant nonzero True 0 False 1
+five-site determinant nonzero True 0 False -1
+five-site determinant nonzero True 1 True 1
+five-site determinant nonzero True 1 True -1
+five-site determinant nonzero True 1 False 1
+five-site determinant nonzero True 1 False -1
+five-site determinant nonzero False 0 True 1
+five-site determinant nonzero False 0 True -1
+five-site determinant nonzero False 0 False 1
+five-site determinant nonzero False 0 False -1
+five-site determinant nonzero False 1 True 1
+five-site determinant nonzero False 1 True -1
+five-site residual exact gcd False 1 False 1 0
+five-site determinant nonzero False 1 False -1

@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.SDIRK8SilentClockReceipts
+#print axioms RKCert.ReviewedNative.SDIRK8SilentClockReceipts.gaussFour_midpoint
+#print axioms RKCert.ReviewedNative.SDIRK8SilentClockReceipts.earlyGaussCubic_of_taps
+#print axioms RKCert.ReviewedNative.SDIRK8SilentClockReceipts.starGauss
+#print axioms RKCert.ReviewedNative.SDIRK8SilentClockReceipts.arithmeticGauss

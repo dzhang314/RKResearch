@@ -1,0 +1,10 @@
+'RKCert.ReviewedNative.SDIRK8SilentClockReceipts.gaussFour_midpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SilentClockReceipts.earlyGaussCubic_of_taps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SilentClockReceipts.starGauss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SilentClockReceipts.arithmeticGauss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

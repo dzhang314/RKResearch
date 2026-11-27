@@ -1,0 +1,10 @@
+
+real	0m4.240s
+user	0m3.746s
+sys	0m0.474s
+'RKResearch.Certified.EvenTerminal18.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenTerminal18.copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m39.562s
+user	0m38.025s
+sys	0m1.366s

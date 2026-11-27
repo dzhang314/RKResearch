@@ -1,0 +1,7 @@
+'RKResearch.Certified.EvenPrep14.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenPrep14.pure_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenPrep14.pure_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m22.078s
+user	0m14.933s
+sys	0m4.487s

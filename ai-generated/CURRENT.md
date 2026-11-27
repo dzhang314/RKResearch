@@ -96,7 +96,7 @@ is now kernel-checked in Lean 4.36.0, reducing the previously verified rational 
 The proof uses a reusable symbolic rooted-tree induction and a verified causal stage merge.
 At order fifteen, the [46-stage continuation](lean/evidence/fixed-one-symbolic-order15-20261127/README.md) is likewise kernel-checked, reducing the previously verified rational upper from 48. The same symbolic method now certifies [58 stages at order seventeen](lean/evidence/fixed-one-symbolic-order17-20261127/README.md) and [72 at order nineteen](lean/evidence/fixed-one-symbolic-order19-20261127/README.md), down from 60 and 74 for rational coefficients. All three higher continuations use the actual physical stage folds, and none changes the real-algebraic upper bounds.
 
-The [even-order head-sharing construction](research/even-terminal-head-sharing/README.md) lowers the rational upper bounds at orders 12, 14, 16, 18, and 20 to **28, 38, 49, 61, and 75**. Exact order twelve in 28 physical stages is [kernel-checked](lean/evidence/even-moment-tail-20261127/README.md), including the five literal stage merges. The higher counts use checked finite construction identities and the symbolic argument, not full per-tableau Lean builds. No real-algebraic endpoint changes.
+The [even-order head-sharing construction](research/even-terminal-head-sharing/README.md) lowers the rational upper bounds at orders 12, 14, 16, 18, and 20 to **28, 38, 49, 61, and 75**. All five exact witnesses now pass Lean 4.36.0 end to end, including their actual stage merges and next-order failures. An independent integer Gram replay also checks the complete rooted conditions at all five orders. No real-algebraic endpoint changes.
 
 ## General mechanisms for changing or bounding stage counts
 

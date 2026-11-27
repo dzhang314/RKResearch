@@ -1,0 +1,6 @@
+'RKResearch.Certified.EvenTerminal14.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenTerminal14.copies' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m16.834s
+user	0m15.856s
+sys	0m0.861s

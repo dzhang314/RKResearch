@@ -1,0 +1,5 @@
+order 12, 28 stages: nonzero next-bush defect, sign -1, SHA-256 f2fb33dec2aa623d721b8a9d4e4cd53270ac563349bfdaa4f1a586deecaff494
+order 14, 38 stages: nonzero next-bush defect, sign -1, SHA-256 0cfb98f9b5b6473ad5e62cd2be153e5eaddd2b762d64d00d9550928a70eb0521
+order 16, 49 stages: nonzero next-bush defect, sign -1, SHA-256 2d49391227749cbecb11ec42a0bf691f1a30e35f8f43a8a52f7c7503cb368184
+order 18, 61 stages: nonzero next-bush defect, sign 1, SHA-256 80bc6b8c018f7ff2942d27db5a96c8e6844cc8b60b349ae2c99afec0762ea8f8
+order 20, 75 stages: nonzero next-bush defect, sign 1, SHA-256 3d3c933882486bdd262cf93f376fe8355792861fb926a04a60f95689dac39eb3

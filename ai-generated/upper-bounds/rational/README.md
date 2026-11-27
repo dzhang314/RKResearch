@@ -5,7 +5,7 @@ Examples at current stage counts: ERK orders 1–4; DIRK orders 1, 2, 4, 5, 6 an
 - [Exact rational ERK order eight in 11 stages](../../research/erk-eight-rank3-four/README.md): Lean-checked rational tableau, matching the known ordered-field lower bound.
 - [Exact rational strict SDIRK order seven in 10 stages](../../research/strict-sdirk7/README.md): two Lean-checked tableaux cover all admissible local coefficient rings.
 - [Exact rational strict SDIRK order thirteen in 35 stages](../../research/fixed-one-odd-continuation/README.md): the tableau and the symbolic stage-merge proof are Lean-checked.
-- [Even-order head sharing for exact rational strict SDIRK](../../research/even-terminal-head-sharing/README.md): 28 stages at order twelve in Lean, and exact construction arguments at 14, 16, 18, and 20.
+- [Even-order head sharing for exact rational strict SDIRK](../../research/even-terminal-head-sharing/README.md): 28, 38, 49, 61, and 75 stages at orders 12, 14, 16, 18, and 20, with full Lean witnesses.
 - [Exact rational strict SDIRK at orders 15, 17 and 19](../../research/fixed-one-higher-odd/README.md): 46, 58 and 72 physical stages, respectively, with Lean-checked symbolic receipts.
 
 - [Exact rational strict SDIRK order eight in 15 stages](../../lean/evidence/reviewed-native-rational-sdirk-fifteen-stage-eight-20261125/README.md): the literal common-diagonal `1/8` tableau and exact order are Lean-checked. This is a rational upper witness, not a stage minimum.

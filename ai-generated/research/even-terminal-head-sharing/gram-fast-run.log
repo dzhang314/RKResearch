@@ -1,0 +1,25 @@
+28 strict SDIRK stages; all integer Gram energies zero at orders 1-12; diagonal 1/4
+
+real	0m0.114s
+user	0m0.105s
+sys	0m0.016s
+38 strict SDIRK stages; all integer Gram energies zero at orders 1-14; diagonal 1/4
+
+real	0m1.744s
+user	0m1.624s
+sys	0m0.146s
+49 strict SDIRK stages; all integer Gram energies zero at orders 1-16; diagonal 1/4
+
+real	0m8.159s
+user	0m7.807s
+sys	0m0.402s
+61 strict SDIRK stages; all integer Gram energies zero at orders 1-18; diagonal 1/4
+
+real	0m52.176s
+user	0m50.542s
+sys	0m1.884s
+75 strict SDIRK stages; all integer Gram energies zero at orders 1-20; diagonal 1/4
+
+real	4m22.772s
+user	4m12.302s
+sys	0m9.334s

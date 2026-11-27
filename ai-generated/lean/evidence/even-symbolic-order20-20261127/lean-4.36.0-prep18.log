@@ -1,0 +1,11 @@
+
+real	0m4.256s
+user	0m4.052s
+sys	0m0.200s
+'RKResearch.Certified.EvenPrep18.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenPrep18.pure_head' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.EvenPrep18.pure_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m33.209s
+user	0m31.869s
+sys	0m1.124s

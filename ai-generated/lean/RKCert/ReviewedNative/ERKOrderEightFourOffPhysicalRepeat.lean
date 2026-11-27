@@ -110,7 +110,7 @@ end LinearTools
 
 section RankOne
 
-variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
+variable {K : Type*} [Field K] [CharZero K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]}
 
 private noncomputable def tagOf (A : Matrix (Fin 10) (Fin 10) K) (i : Fin 10) :
@@ -333,7 +333,7 @@ end RankOne
 
 section Penultimate
 
-variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
+variable {K : Type*} [Field K] [CharZero K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]}
 
 private theorem exists_latest_weighted (ho : HasOrder 8 A b) :

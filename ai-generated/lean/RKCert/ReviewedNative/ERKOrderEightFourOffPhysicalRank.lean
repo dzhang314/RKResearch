@@ -1,7 +1,7 @@
 module
 
 public import RKCert.ReviewedNative.ERKOrderEightTaggedCensus
-public import RKCert.ReviewedNative.UnitBetaSquareMass
+public import RKCert.ReviewedNative.ERK8UnorderedScalarGates
 
 import Lean.Elab.Tactic.Omega
 import Mathlib.LinearAlgebra.Lagrange
@@ -195,7 +195,7 @@ end Tags
 
 section ActualRank
 
-variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
+variable {K : Type*} [Field K] [CharZero K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K}
 
 private theorem origin_data (ha : ∀ i j, i ≤ j → A i j=0) :
@@ -214,45 +214,46 @@ private theorem clean_mass_paid_nonzero (ho : HasOrder 8 A b)
   classical
   intro x hx x0
   have xn : x≠1 := fun e => terminal (e ▸ x0)
-  let T := ((cleanKnots A).erase 1).erase x
+  let C := cleanKnots A
+  let T := (C.erase 1).erase x
   have c1 := Finset.card_erase_add_one h1
-  have cx : T.card+1=((cleanKnots A).erase 1).card :=
+  have cx : T.card+1=(C.erase 1).card :=
     Finset.card_erase_add_one (Finset.mem_erase.mpr ⟨xn,hx⟩)
-  let D := nodalHull T
-  let Q := (1-X)*D^2
-  have dD : D.natDegree=3 := by rw [show D.natDegree=T.card from natDegree_nodalHull T]; omega
-  have hD : D ≠ 0 := (monic_nodalHull T).ne_zero
-  have d1 : ((1-X):K[X]).natDegree≤1 :=
-    (natDegree_sub_le (1 : K[X]) (X : K[X])).trans
-      (by rw [natDegree_one,natDegree_X] <;> decide)
-  have d2 : (D^2).natDegree≤6 := by
-    rw [pow_two]
-    exact natDegree_mul_le_of_le dD.le dD.le
-  have de : Q.natDegree≤7 := natDegree_mul_le_of_le d1 d2
-  have pos : 0 < (primitive Q).eval 1 := by
-    rw [←formalPrimitive_eq_native Q]
-    simpa [Q] using (RKCert.ReviewedNative.UnitBetaSquareMass.beta_square_pos 0 1 hD)
-  have z : row b (evalNodes A Q)=0 := by
-    rw [row_evalNodes_tag_sum]
-    have zr : (∑ y ∈ offKnots A, offMass A b y*Q.eval y)=0 := by
+  have cT : T.card=3 := by
+    change C.card=5 at hM
+    change (C.erase 1).card+1=C.card at c1
+    omega
+  obtain ⟨a,d,e,_,_,_,heq⟩ := Finset.card_eq_three.mp cT
+  let B : C → K := fun y => cleanMass A b y.val
+  let Xc : C → K := Subtype.val
+  have hquad : HasQuadratureOrder 8 B Xc := by
+    intro k hk
+    have hs := row_evalNodes_tag_sum A b ((X:K[X])^k)
+    have hz : (∑ y ∈ offKnots A, offMass A b y * ((X:K[X])^k).eval y)=0 := by
       apply Finset.sum_eq_zero
       intro y hy
       rw [cancel y hy,zero_mul]
-    rw [zr,add_zero]
-    apply Finset.sum_eq_zero
-    intro y hy
-    by_cases y1 : y=1
-    · subst y
-      simp [Q]
-    by_cases yx : y=x
-    · subst y
-      simp [x0]
-    have memT : y∈T := Finset.mem_erase.mpr ⟨yx,Finset.mem_erase.mpr ⟨y1,hy⟩⟩
-    have vD : D.eval y=0 := nodalHull_eval_of_mem memT
-    simp [Q,vD]
-  have paid := probe_evalNodes ho Q 0 (by omega)
-  simp only [probe,pow_zero,mul_one,one_mul] at paid
-  exact (ne_of_gt pos) (paid.symm.trans z)
+    rw [hz,add_zero] at hs
+    have hv : evalNodes A ((X:K[X])^k) = (nodes A)^k := by
+      ext i
+      simp [Pi.pow_apply]
+    rw [hv,row_apply] at hs
+    simp only [Polynomial.eval_pow,Polynomial.eval_X] at hs
+    have q := ho.hasQuadratureOrder k hk
+    rw [hs] at q
+    change ((k+1:ℕ):K) * (∑ y : C, cleanMass A b y.val * y.val^k) = 1
+    rw [Finset.sum_coe_sort C (fun y => cleanMass A b y * y^k)]
+    exact q
+  apply RKResearch.Certified.ERK8UnorderedScalarGates.no_four_sites_at_one hquad a d e
+  intro i
+  change cleanMass A b i.val=0 ∨ i.val=1 ∨ i.val=a ∨ i.val=d ∨ i.val=e
+  by_cases ix : i.val=x
+  · exact Or.inl (ix.symm ▸ x0)
+  by_cases i1 : i.val=1
+  · exact Or.inr (Or.inl i1)
+  have yi : i.val∈T := Finset.mem_erase.mpr ⟨ix,Finset.mem_erase.mpr ⟨i1,i.property⟩⟩
+  rw [heq] at yi
+  exact Or.inr (Or.inr (by simpa only [Finset.mem_insert,Finset.mem_singleton] using yi))
 
 /-- All rank and tag facts used for physical localization, obtained from the
 measured census and actual order; P is the actual common off profile. -/

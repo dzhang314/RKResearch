@@ -11,7 +11,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 5 | 6 / 4 / 5 | 6 / 4 / 5 | 6 / 4 / 5 |
 | 6 | 7 / 5 / 6 | 7 / 5 / 7 | 7 / 5 / 7 |
 | 7 | 9 / 7 / 8 | 9 / 7 / 8 | 9 / 7 / 8 |
-| 8 | 10 / 8 / 10 | 10 / 8 / 10 | 11 / 8 / 10 |
+| 8 | 10 / 8 / 10 | 11 / 8 / 10 | 11 / 8 / 10 |
 | 9 | 12 / 10 / 13 | 12 / 10 / 13 | 13 / 10 / 13 |
 | 10 | 14 / 11 / 15 | 14 / 11 / 15 | 14 / 11 / 15 |
 | 11 | 17 / 13 / 18 | 17 / 13 / 18 | 17 / 13 / 18 |
@@ -27,6 +27,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 
 Every real statement in the last column transfers by real-closed-field theory: for a fixed order and stage count the question is a finite rational-polynomial feasibility problem. The proof itself can still use properties of the reals. Neither real nor ordered feasibility implies an unordered characteristic-zero lower bound. The ring column uses uniform proofs and is not a claim that the stronger characteristic-zero bounds have counterexamples in positive characteristic.
 
+- [Order-eight ERK without ordered coefficients](../research/erk-eight-unordered/README.md): eleven stages are necessary in every characteristic-zero field and nonzero characteristic-zero commutative ring. The full lower proof is mathematical, with a native physical bridge and scalar checks; positive-characteristic minimality is not asserted.
 - [Transfer from separated stage residuals](paid-beta/separated-pure/README.md): the ERK lower bounds at orders 17–20 in characteristic zero are 27, 28, 30, and 31. The last two also hold over every nonzero commutative ring. This does not change the ordered-field bounds and is not yet formalized in Lean.
 - [Weighted explicit stage bound](paid-beta/07-WEIGHTED-DETECTOR-STAGE-BOUND.md) and [order-eleven refinement](paid-beta/08-ORDER-ELEVEN-THRESHOLD.md): effective order \(r\ge11\) requires at least \(\lceil3r/2
 ceil\) stages through the last contributing coefficient. For ordinary explicit methods this raises order 11 to 17 in all columns and the arbitrary-ring order-16 floor to 24. These are mathematical proofs, not Lean certificates.

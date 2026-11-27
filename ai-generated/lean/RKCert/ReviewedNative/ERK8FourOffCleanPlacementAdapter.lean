@@ -21,7 +21,7 @@ open RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape
 open RKResearch.Certified.Graded.MultiOff.FourOff8Scalar
 open scoped Matrix Classical
 
-variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
+variable {K : Type*} [Field K] [CharZero K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]} {dup k : Fin 10}
 
 private theorem marked_k_before_six (M : Placement A b P dup k) : k<6 := by

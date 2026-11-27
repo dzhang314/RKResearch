@@ -20,7 +20,7 @@ namespace RKResearch.Certified.Graded.FourOffPhysical
 open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon
 open scoped Matrix Classical
 
-variable {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
+variable {K : Type*} [Field K] [CharZero K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]} {i : Fin 10}
 
 private abbrev y (A : Matrix (Fin 10) (Fin 10) K) := reflectedClock A

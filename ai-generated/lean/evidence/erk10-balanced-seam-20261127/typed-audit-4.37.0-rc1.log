@@ -1,0 +1,205 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.ERK10BalancedSeamDeterminants.rootBrackets' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det1234' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det1243' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det1324' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det1342' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det1423' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det1432' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det2134' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det2143' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det2314' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det2341' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det2413' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det2431' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det3124' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det3142' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det3214' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det3241' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det3412' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det3421' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det4123' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det4132' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det4213' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det4231' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det4312' does not depend on any axioms
+'RKResearch.ERK10BalancedSeamDeterminants.det4321' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.rootBrackets :
+  0 < RKResearch.ERK10BalancedSeamDeterminants.root₁.lo ∧
+    RKResearch.ERK10BalancedSeamDeterminants.root₁.lo < RKResearch.ERK10BalancedSeamDeterminants.root₁.hi ∧
+      RKResearch.ERK10BalancedSeamDeterminants.root₁.hi < RKResearch.ERK10BalancedSeamDeterminants.root₂.lo ∧
+        RKResearch.ERK10BalancedSeamDeterminants.root₂.lo < RKResearch.ERK10BalancedSeamDeterminants.root₂.hi ∧
+          RKResearch.ERK10BalancedSeamDeterminants.root₂.hi < RKResearch.ERK10BalancedSeamDeterminants.root₃.lo ∧
+            RKResearch.ERK10BalancedSeamDeterminants.root₃.lo < RKResearch.ERK10BalancedSeamDeterminants.root₃.hi ∧
+              RKResearch.ERK10BalancedSeamDeterminants.root₃.hi < RKResearch.ERK10BalancedSeamDeterminants.root₄.lo ∧
+                RKResearch.ERK10BalancedSeamDeterminants.root₄.lo < RKResearch.ERK10BalancedSeamDeterminants.root₄.hi ∧
+                  RKResearch.ERK10BalancedSeamDeterminants.root₄.hi < RKResearch.ERK10BalancedSeamDeterminants.unit ∧
+                    0 <
+                        RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                          RKResearch.ERK10BalancedSeamDeterminants.root₁.lo ∧
+                      RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                            RKResearch.ERK10BalancedSeamDeterminants.root₁.hi <
+                          0 ∧
+                        RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                              RKResearch.ERK10BalancedSeamDeterminants.root₂.lo <
+                            0 ∧
+                          0 <
+                              RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                                RKResearch.ERK10BalancedSeamDeterminants.root₂.hi ∧
+                            0 <
+                                RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                                  RKResearch.ERK10BalancedSeamDeterminants.root₃.lo ∧
+                              RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                                    RKResearch.ERK10BalancedSeamDeterminants.root₃.hi <
+                                  0 ∧
+                                RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                                      RKResearch.ERK10BalancedSeamDeterminants.root₄.lo <
+                                    0 ∧
+                                  0 <
+                                    RKResearch.ERK10BalancedSeamDeterminants.lobattoNumerator
+                                      RKResearch.ERK10BalancedSeamDeterminants.root₄.hi
+'RKResearch.ERK10BalancedSeamDeterminants.rootBrackets' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det1234 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det1234' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det1243 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det1243' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det1324 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det1324' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det1342 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det1342' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det1423 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det1423' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det1432 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det1432' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det2134 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det2134' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det2143 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det2143' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det2314 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det2314' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det2341 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det2341' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det2413 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det2413' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det2431 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det2431' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det3124 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det3124' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det3142 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det3142' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det3214 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det3214' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det3241 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det3241' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det3412 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det3412' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det3421 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₄ RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det3421' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det4123 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det4123' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det4132 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign false RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det4132' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det4213 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det4213' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det4231 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ RKResearch.ERK10BalancedSeamDeterminants.root₃
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det4231' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det4312 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ RKResearch.ERK10BalancedSeamDeterminants.root₁
+      RKResearch.ERK10BalancedSeamDeterminants.root₂ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det4312' does not depend on any axioms
+RKResearch.ERK10BalancedSeamDeterminants.det4321 :
+  RKResearch.ERK10BalancedSeamDeterminants.detSign true RKResearch.ERK10BalancedSeamDeterminants.root₄
+      RKResearch.ERK10BalancedSeamDeterminants.root₃ RKResearch.ERK10BalancedSeamDeterminants.root₂
+      RKResearch.ERK10BalancedSeamDeterminants.root₁ =
+    true
+'RKResearch.ERK10BalancedSeamDeterminants.det4321' does not depend on any axioms

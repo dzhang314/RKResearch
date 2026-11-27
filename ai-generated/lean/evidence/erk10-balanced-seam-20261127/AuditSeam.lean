@@ -1,0 +1,51 @@
+import RKCert.Research.ERK10BalancedSeamDeterminants
+#check RKResearch.ERK10BalancedSeamDeterminants.rootBrackets
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.rootBrackets
+#check RKResearch.ERK10BalancedSeamDeterminants.det1234
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det1234
+#check RKResearch.ERK10BalancedSeamDeterminants.det1243
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det1243
+#check RKResearch.ERK10BalancedSeamDeterminants.det1324
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det1324
+#check RKResearch.ERK10BalancedSeamDeterminants.det1342
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det1342
+#check RKResearch.ERK10BalancedSeamDeterminants.det1423
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det1423
+#check RKResearch.ERK10BalancedSeamDeterminants.det1432
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det1432
+#check RKResearch.ERK10BalancedSeamDeterminants.det2134
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det2134
+#check RKResearch.ERK10BalancedSeamDeterminants.det2143
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det2143
+#check RKResearch.ERK10BalancedSeamDeterminants.det2314
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det2314
+#check RKResearch.ERK10BalancedSeamDeterminants.det2341
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det2341
+#check RKResearch.ERK10BalancedSeamDeterminants.det2413
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det2413
+#check RKResearch.ERK10BalancedSeamDeterminants.det2431
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det2431
+#check RKResearch.ERK10BalancedSeamDeterminants.det3124
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det3124
+#check RKResearch.ERK10BalancedSeamDeterminants.det3142
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det3142
+#check RKResearch.ERK10BalancedSeamDeterminants.det3214
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det3214
+#check RKResearch.ERK10BalancedSeamDeterminants.det3241
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det3241
+#check RKResearch.ERK10BalancedSeamDeterminants.det3412
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det3412
+#check RKResearch.ERK10BalancedSeamDeterminants.det3421
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det3421
+#check RKResearch.ERK10BalancedSeamDeterminants.det4123
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det4123
+#check RKResearch.ERK10BalancedSeamDeterminants.det4132
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det4132
+#check RKResearch.ERK10BalancedSeamDeterminants.det4213
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det4213
+#check RKResearch.ERK10BalancedSeamDeterminants.det4231
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det4231
+#check RKResearch.ERK10BalancedSeamDeterminants.det4312
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det4312
+#check RKResearch.ERK10BalancedSeamDeterminants.det4321
+#print axioms RKResearch.ERK10BalancedSeamDeterminants.det4321

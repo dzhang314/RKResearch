@@ -1,0 +1,6 @@
+Exactly the nonfactorial norm guards: [11, 17, 37, 41, 43, 79]
+17 [4, 14] {'quadratic': 5, 'shared last': 1}
+37 [12, 26] {'linear': 1, 'quadratic': 5}
+41 [16, 26] {'quadratic': 5, 'linear': 1}
+43 [3, 41] {'shared first': 1, 'quadratic': 5}
+79 [28, 52] {'quadratic': 5, 'shared center': 1}

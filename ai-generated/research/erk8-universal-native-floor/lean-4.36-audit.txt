@@ -1,0 +1,401 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib revision: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidTerminal ===
+'RKResearch.Certified.Graded.FourOffNewton.no_paid_single_shared_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidQuadraticClosure ===
+'RKResearch.Certified.Graded.FourOffNewton.no_actual_paid_four_off_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidChart ===
+RKCert/ReviewedNative/ERK8FourOffPaidChart.lean:115:13: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [shape, coeff_add, coeff_sub, coeff_C_mul, coeff_X_pow, coeff_X, c1, c2, coeff_C_zero,
+    show (0 : ℕ) ≠ 2 by decide, show (1 : ℕ) ≠ 2 by decide, show (1 : ℕ) ≠ 0 by decide, ite_true, ite_false, mul_zero,
+    mul_one, one_mul, add_zero, zero_add, sub_zero, zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChart.lean:115:30: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [shape, coeff_add, coeff_sub, coeff_C_mul, coeff_X_pow, coeff_X, c1, c2, coeff_C_zero,
+    show (0 : ℕ) ≠ 2 by decide, show (1 : ℕ) ≠ 2 by decide, show (1 : ℕ) ≠ 0 by decide, ite_true, ite_false, mul_zero,
+    zero_mul, mul_one, add_zero, zero_add, sub_zero, zero_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChart.lean:130:71: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Quad.eval, eval_add, eval_monomial, pow_zero, pow_one, mul_one, mul_add, ← mul_assoc, S.eq0, S.eq1,
+    S.eq2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidNormalization ===
+'RKResearch.Certified.Graded.FourOffNewton.scaled_actual_head_outside11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidMeasure ===
+RKCert/ReviewedNative/ERK8FourOffPaidMeasure.lean:103:38: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidMeasure.lean:103:38: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'RKResearch.Certified.Graded.FourOffNewton.paid_cleared_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidLinear ===
+'RKResearch.Certified.Graded.FourOffNewton.nodalMeasure_transfer_four_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.linear_moments_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidGates ===
+'RKResearch.Certified.Graded.FourOffNewton.native_quadratic_receipt_of_chart_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidChartValues ===
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:21:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:23:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:26:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:28:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:31:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:33:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:46:45: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:55:32: warning: This simp argument is unused:
+  firstCleanFiveGram
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:55:51: warning: This simp argument is unused:
+  firstCleanFiveGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:63:6: warning: Unused tactic linter: `simp only [chartQuadratic]` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:68:13: warning: This simp argument is unused:
+  firstCleanFourGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFiveGram, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:68:51: warning: This simp argument is unused:
+  firstCleanFiveGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:68:84: warning: This simp argument is unused:
+  chartH
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, firstCleanFiveGate, clearedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:76:6: warning: Unused tactic linter: `simp only [chartQuadratic]` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:81:13: warning: This simp argument is unused:
+  firstCleanFourGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFiveGram, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:81:32: warning: This simp argument is unused:
+  firstCleanFiveGram
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:81:84: warning: This simp argument is unused:
+  chartH
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, firstCleanFiveGate, clearedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:89:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:92:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:94:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:97:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:99:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:102:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:104:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:117:45: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:126:32: warning: This simp argument is unused:
+  firstCleanFiveGram
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:126:51: warning: This simp argument is unused:
+  firstCleanFiveGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:134:6: warning: Unused tactic linter: `simp only [chartQuadratic]` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:139:13: warning: This simp argument is unused:
+  firstCleanFourGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFiveGram, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:139:51: warning: This simp argument is unused:
+  firstCleanFiveGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:139:84: warning: This simp argument is unused:
+  chartH
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, firstCleanFiveGate, clearedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:147:6: warning: Unused tactic linter: `simp only [chartQuadratic]` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:152:13: warning: This simp argument is unused:
+  firstCleanFourGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFiveGram, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:152:32: warning: This simp argument is unused:
+  firstCleanFiveGram
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:152:84: warning: This simp argument is unused:
+  chartH
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, firstCleanFiveGate, clearedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:160:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:163:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:165:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:168:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:170:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:173:46: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:175:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:188:45: warning: Variable name `hq` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hq
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:197:32: warning: This simp argument is unused:
+  firstCleanFiveGram
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:197:51: warning: This simp argument is unused:
+  firstCleanFiveGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:205:6: warning: Unused tactic linter: `simp only [chartQuadratic]` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:212:13: warning: This simp argument is unused:
+  firstCleanFourGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFiveGram, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:212:51: warning: This simp argument is unused:
+  firstCleanFiveGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:212:84: warning: This simp argument is unused:
+  chartH
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, firstCleanFiveGate, clearedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:220:6: warning: Unused tactic linter: `simp only [chartQuadratic]` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:225:13: warning: This simp argument is unused:
+  firstCleanFourGate
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFiveGram, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:225:32: warning: This simp argument is unused:
+  firstCleanFiveGram
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGate, clearedMoment, chartH]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:225:84: warning: This simp argument is unused:
+  chartH
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [firstCleanFourGate, firstCleanFiveGram, firstCleanFiveGate, clearedMoment]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+RKCert/ReviewedNative/ERK8FourOffPaidChartValues.lean:233:2: warning: Unused tactic linter: `try` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidGenericGuards ===
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidExceptionalCharts ===
+RKCert/ReviewedNative/ERK8FourOffPaidExceptionalCharts.lean:23:2: warning: Try this:
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidLinearClosure ===
+RKCert/ReviewedNative/ERK8FourOffPaidLinearClosure.lean:78:42: warning: This simp argument is unused:
+  S
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [cleanSites]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'RKResearch.Certified.Graded.FourOffNewton.no_actual_paid_four_off_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8FourOffPaidExclusion ===
+'RKResearch.Certified.Graded.FourOffNewton.no_four_off_paid_outside11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8UniversalStageFloor ===
+'RKResearch.Certified.ERK8Universal.no_order8_fin10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK8Universal.stages_at_least_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK8Universal.exact_order_eight_exists_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

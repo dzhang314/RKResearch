@@ -1,6 +1,6 @@
 # The rational DIRK order-ten minimum is twelve stages
 
-The [literal tableau](tableau.json) is an ordinary, unequal-diagonal DIRK with **12 distinct stages and exact order ten over the rationals**. Together with the [rational lower bound](../causal-profile-reduction/dirk-order10-rational-lower-twelve.md), this proves the rational minimum is **12**. The real-algebraic minimum remains 11. The lower proof is mathematical; it is not implied by the Lean upper certificate.
+The [literal tableau](tableau.json) is an ordinary, unequal-diagonal DIRK with **12 distinct stages and exact order ten over the rationals**. Together with the [rational lower bound](../causal-profile-reduction/dirk-order10-rational-lower-twelve.md), this proves the rational minimum is **12**. The real-algebraic minimum remains 11. The lower proof is mathematical, with separate Lean receipts for key steps.
 
 The same literal upper witness applies to all characteristic-zero fields, and to every **nonzero commutative unital ring** where
 \[
@@ -79,4 +79,4 @@ The constructor and selection-factor check use SymPy. The independent literal ch
     cmp tableau.json /tmp/dirk-twelve-rebuilt.json
     sha256sum -c arithmetic-sha256.txt
 
-The [native upper certificate](../dirk10-twelve-native-upper/README.md) checks the reviewed order predicate and exact next-bush failure independently via an integer Gram recurrence.
+An end-to-end Lean certificate for the upper bound is in progress. The exact arithmetic replays above verify the construction independently.

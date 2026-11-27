@@ -1,0 +1,25 @@
+# Both literal fronts active, nonzero reverse factor, and the Gauss defect hole
+
+Use the [seven-distinct active profile classification](../sdirk-eight-silent-one-seven-distinct-anchors/README.md) at the ten-stage strict SDIRK8 floor over a characteristic-zero field. The only nonzero quadratic-residual stage is the individually weight-zero first stage. There are seven distinct active clocks, both literal front stages are active, \(k\ne0\), and the affine multiplier \(Q\) shares a root \(r\) with \(L_4\). This note excludes precisely this shared-root class. Alternatives with a coprime nonconstant \(Q\), or fewer active literal fronts, remain separate; the unrestricted bound is still **10–11**.
+
+At the unique active Gauss hole \(r\), the actual \(h_r=0\) and its ordinary weight is \(\nu=\int_0^1 p_0(Y)\,dY/p_0(r)\), with \(p_0=L_4/(X-r)\). All six other active defects are a nonzero common scale of \(p_0\). The actual front defects are both nonzero, so neither front clock is \(r\).
+
+## Exact diagonal and literal reverse tails
+
+Normalize by \(\gamma\), and let \(A_0,B_0\) be the distinct literal front clocks in normalized coordinates. With the actual normalized \(h\) values there, pin \(Q\) by the two anchor reads, exactly as before. The homogeneous shared-root equation uses the full \(L_4\), with no midpoint deletion. The only stripped factors are zero diagonal, constant multiplier, or a Gauss clock at one of the actual nonzero-\(h\) literal fronts. The retained diagonal is an irreducible degree-12 polynomial in either front phase. Within its exact field the hole \(r\) differs from the terminal \(x\), reformulating the nonvanishing of \(x-r\) with the pinned affine root. [Replay](hole_nonzero.py).
+
+The actual reverse row is \(\boldsymbol h^{\mathsf T}B=\boldsymbol wP_1(C)\), with \(P_1\) affine. It is nonzero because the six other nonzero weights carry nonzero \(h\). Let \(X=x/\gamma,\ R=r/\gamma\), \(u=(x-c_9)/\gamma\), and \(k=1+2u-u^2\). An actual nonzero \(w_i\) at the hole forces \(P_1(r)=0\); it does not force a value of the singleton profile there.
+
+* If \(c_9=r\), then \(w_9=-\gamma^2b_9 k\ne0\), so \(P_1\) has root \(r\). For active eight, its actual ratio with the terminal gives a unit residual with this forced reverse root. For silent eight, its own \(w_8\ne0\) forces \(c_8=r\), whereas the actual silent clock equation with \(u=X-R\) would give \(2u+k(u-2)=0\), also a unit.
+* If active \(c_8=r\) and \(w_8\ne0\), the same root \(r\) makes the actual singleton ninth comparison fail. If \(w_8=0\), the actual normalized quadratic reverse factor is zero. In star it equals nonzero \(k\); in arithmetic its cleared numerator is a unit at the forced gap. Neither calculation uses the wrong \(h_8=p_0(r)\).
+* With no active tail hole, use the earlier exact singleton-tail projectors, which are homogeneous in the scale of \(p_0\). For active eight the unknown affine reverse root is eliminated between eighth and ninth, giving no admissible star gap or a cubic arithmetic projection. For silent eight, use its actual clock \(z=x+\gamma k(u-2)/2\) as the root forced by \(w_8\ne0\); the ninth comparison gives a cubic gap. The possible equality of this silent clock with an active hole elsewhere is retained.
+
+## Remove the known Gaussian atom
+
+For the no-active-tail-hole case, remove the precise atom \(\nu\delta_r\) from the ordinary scalar rule, replacing the functional by \(\int_0^1-\nu\delta_r\), still known through degree seven. This is not an assumption that the hole's ordinary weight vanishes. It leaves exactly six distinct singleton active sites outside \(r\).
+
+With an active eighth the five other ordinary pegs are the two literal fronts and all three tails. The one missing ordinary site gives the signed rank-one equation of the first three masked moments (precisions five, six and seven). Its residual is a unit in every retained finite quotient. With silent eighth the four ordinary pegs are the two literal fronts, terminal and penultimate. The signed two-node Hankel reconstructs the two missing ordinary sites. Both fronts active forces physical row four silent by the literal first-four rank check. Thus its fellow silent is physical eight and row five is active. If row five is \(r\), feed its actual zero \(h\) into the literal affine fifth-row elimination. Otherwise use its singleton cubic profile at one of the two reconstructed ordinary nodes. Both tests are units. No silent physical stage is normalized and the actual hole's amplitude is never replaced by the polynomial value there.
+
+## Replay
+
+Run `python3 check_nonzero_hole.py` in the sibling repository proof tree with `sympy==1.14.0` and `python-flint==0.9.0`. The exact degree-12 projections, their gap factors, signed moment pivots and all unit checks pass for 16 literal orientations at \((1103,161)\). The [Lean signed atom receipt](../../lean/RKCert/ReviewedNative/SDIRK8GaussHoleOrdinaryMask.lean) verifies the rank-one residual after removing a known atom, compiled in Lean/Mathlib 4.36.0. The full chart and finite arithmetic are source-level.

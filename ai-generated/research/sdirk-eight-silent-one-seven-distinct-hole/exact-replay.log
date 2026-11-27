@@ -1,0 +1,9 @@
+hole with both fronts exact diagonal factors True [12]
+silent eighth reverse tail projection True 12 3
+active8 singleton tail exact projection True 12 True 0
+active8 singleton tail exact projection True 12 False 3
+hole with both fronts exact diagonal factors False [12]
+silent eighth reverse tail projection False 12 3
+active8 singleton tail exact projection False 12 True 0
+active8 singleton tail exact projection False 12 False 3
+nonzero-factor both-front Gauss-hole orientations excluded: 16

@@ -1,0 +1,11 @@
+'RKResearch.ERK10NonconstantAmplitudeGate.sixthMomentExpansion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK10NonconstantAmplitudeGate.repeatImpliesDoubleContact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK10NonconstantAmplitudeGate.beforeContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10NonconstantAmplitudeGate.interleavedCalibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK10NonconstantAmplitudeGate.interleavedContact' depends on axioms: [propext, Classical.choice, Quot.sound]

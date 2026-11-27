@@ -1,0 +1,4 @@
+ℹ [1538/1539] Built RKCert.ReviewedNative.SDIRK8InvisibleGaussDoubleReceipt (718ms)
+info: RKCert/ReviewedNative/SDIRK8InvisibleGaussDoubleReceipt.lean:29:0: 'RKCert.ReviewedNative.SDIRK8InvisibleGaussDoubleReceipt.reverseProfileCross' depends on axioms: [propext, Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8InvisibleGaussDoubleReceipt.lean:30:0: 'RKCert.ReviewedNative.SDIRK8InvisibleGaussDoubleReceipt.zeroGapProfile' depends on axioms: [propext, Quot.sound]
+Build completed successfully (1539 jobs).

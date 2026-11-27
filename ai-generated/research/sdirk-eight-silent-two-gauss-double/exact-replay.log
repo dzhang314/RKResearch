@@ -1,0 +1,8 @@
+eight on seven clocks: guarded diagonal factor degrees True [(4, 1), (4, 1), (12, 1)]
+all literal active/silent and double/singleton tail orientations excluded front phase True degree 4 components 2
+all literal active/silent and double/singleton tail orientations excluded front phase True degree 4 components 2
+all literal active/silent and double/singleton tail orientations excluded front phase True degree 12 components 3
+eight on seven clocks: guarded diagonal factor degrees False [(4, 1), (4, 1), (12, 1)]
+all literal active/silent and double/singleton tail orientations excluded front phase False degree 4 components 2
+all literal active/silent and double/singleton tail orientations excluded front phase False degree 4 components 2
+all literal active/silent and double/singleton tail orientations excluded front phase False degree 12 components 2

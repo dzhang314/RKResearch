@@ -1,0 +1,7 @@
+'RKResearch.Certified.MixedTwoTerminal.primitive_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.MixedTwoTerminal.no_two_terminal_cancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.MixedTwoTerminal.no_two_terminal_cancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

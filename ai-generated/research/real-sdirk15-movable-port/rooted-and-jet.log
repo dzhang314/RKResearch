@@ -1,0 +1,5 @@
+Two original shifted-jet equations contract: norm < 2^(-82), displacement < 2^(-115)
+Actual row 14 forwards all 200 rooted profiles through size 8; worst enclosure < 2^(-59).
+After row 15 the paid size-seven residual rank is one.
+Rank of the size-eight residual plus the missing line, lower certificate: 7
+After the first 14 rows, the two shifted residual polynomials have no other common root (full Sylvester rank after removing v).

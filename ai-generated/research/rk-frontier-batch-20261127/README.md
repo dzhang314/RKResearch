@@ -118,3 +118,17 @@ also gives a mathematical 13-stage floor in characteristic zero, with
 Both weighted floors supply the numerical guard in the ordinary ERK11
 cutoff. The [remaining rank and prefix issues](../ERK11-AFTER-TWO-WEIGHTED-NINE-FLOORS.md)
 are still open and the ordinary 17–18 bound is unchanged.
+
+## More equality-case checks
+
+- [Strict SDIRK7 rational nine-stage chart](../strict-sdirk7-rational-nine-collision/README.md):
+  native distinct tail nodes in the paid-head subclass, and exact
+  algebraic-curve restrictions for specified head parameters.
+- [Strict SDIRK8 quadratic-zero rows](../sdirk-eight-offzero-clock-mass/README.md):
+  all ordinary mass is on zero-defect rows in the remaining
+  zero-containing chart; off-zero mass cancels at each fixed pair.
+- [DIRK10 single dirty node](../causal-profile-reduction/dirk-order10-one-physical-dirty-clock.md):
+  narrowly surviving chronology and two exact one-off-Lobatto exclusions.
+- [Real-algebraic SDIRK13 and SDIRK15 grouped families](../real-sdirk-grouped-terminal-refund/README.md):
+  count obstructions for the fixed full-column, one-merge stems,
+  distinct from either unrestricted stage endpoint.

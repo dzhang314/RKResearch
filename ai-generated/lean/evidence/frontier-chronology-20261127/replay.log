@@ -1,0 +1,197 @@
+=== AuditReviewedNativeDIRKOrderTenOneClockEndpoint.lean
+RKResearch.Certified.Graded.OneClockEndpointDebit.exists_endpoint_debited_support.{u_1, u_2} {K : Type u_1}
+  {ι : Type u_2} [Field K] [Fintype ι] [DecidableEq ι] (D : Finset ι) (L : Finset K) (c b : ι → K) (ν : K → K) {o t : ι}
+  (apart : o ≠ t) (oc : c o = 0) (tc : c t = 1) (zero : 0 ∈ L) (one : 1 ∈ L) (oD : o ∉ D) (tD : t ∉ D)
+  (atOne : b t = ν 1) (ref : ∀ x ∉ L, ν x = 0) :
+  ∃ J, J.card + D.card + 3 ≤ Fintype.card ι + L.card ∧ ∀ x ∉ J, fiberMass (Finset.univ \ D) c b x = ν x
+RKResearch.Certified.Graded.OneClockEndpointDebit.small_support_polynomial_test.{u_1} {K : Type u_1} [Field K]
+  (J : Finset K) (w : K → K) (d : ℕ) (small : J.card ≤ d + 1)
+  (tests : ∀ (P : Polynomial K), P.natDegree ≤ d → ∑ x ∈ J, w x * Polynomial.eval x P = 0) (x : K) : x ∈ J → w x = 0
+RKResearch.Certified.Graded.OneClockEndpointDebit.endpoint_debit_closes_power_tests.{u_1, u_2} {K : Type u_1}
+  {ι : Type u_2} [Field K] [Fintype ι] [DecidableEq ι] (D : Finset ι) (L W : Finset K) (c b : ι → K) (ν scale : K → K)
+  {o t : ι} (apart : o ≠ t) (oc : c o = 0) (tc : c t = 1) (zero : 0 ∈ L) (one : 1 ∈ L) (oD : o ∉ D) (tD : t ∉ D)
+  (atOne : b t = ν 1) (ref : ∀ x ∉ L, ν x = 0) (cover : ∀ x ∉ W, fiberMass (Finset.univ \ D) c b x = ν x)
+  (neScale : ∀ x ∈ W, fiberMass (Finset.univ \ D) c b x ≠ ν x → scale x ≠ 0) {k : ℕ}
+  (budget : Fintype.card ι + L.card ≤ k + 1 + D.card + 3)
+  (tests : ∀ n ≤ k, ∑ x ∈ W, scale x * (fiberMass (Finset.univ \ D) c b x - ν x) * x ^ n = 0) (x : K) :
+  fiberMass (Finset.univ \ D) c b x = ν x
+RKResearch.Certified.Graded.OneClockEndpointDebit.simple_pole_clears.{u_1} {K : Type u_1} [Field K] (W : Finset K)
+  (Δ : K → K) (τ : K) (d : ℕ) (noMass : Δ τ = 0) (ord : ∀ n ≤ d, ∑ x ∈ W, Δ x * x ^ n = 0)
+  (pole : ∑ x ∈ W, Δ x / (x - τ) = 0) (k : ℕ) : k ≤ d + 1 → ∑ x ∈ W, Δ x / (x - τ) * x ^ k = 0
+RKResearch.Certified.Graded.OneClockEndpointDebit.double_pole_clears.{u_1} {K : Type u_1} [Field K] (W : Finset K)
+  (Δ : K → K) (τ : K) (d : ℕ) (noMass : Δ τ = 0) (ord : ∀ n ≤ d, ∑ x ∈ W, Δ x * x ^ n = 0)
+  (simple : ∑ x ∈ W, Δ x / (x - τ) = 0) (double : ∑ x ∈ W, Δ x / (x - τ) ^ 2 = 0) (k : ℕ) :
+  k ≤ d + 2 → ∑ x ∈ W, Δ x / (x - τ) ^ 2 * x ^ k = 0
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.terminal_coordinate_mem.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b) :
+  Reverse.coordinate (Fin.last 10) ∈ treeSpace A 5
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.terminal_weight_eq.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} [CharZero K] (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+  (clean : ∀ f ∈ zeroSpace A 5, f (Fin.last 10) = 0) : b (Fin.last 10) = 1 / 30
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.fiberMass_remove_dark.{u_1} {K : Type u_1} [Field K]
+  (D : Finset (Fin 11)) (c b : Fin 11 → K) (dark : ∀ (x : K), fiberMass D c b x = 0) (x : K) :
+  fiberMass (Finset.univ \ D) c b x = fiberMass Finset.univ c b x
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.dirty_pair_has_zero_fibers.{u_1} {K : Type u_1} [Field K]
+  (c b : Fin 11 → K) (i j : Fin 11) (apart : i ≠ j) (clock : c i = c j) (cancel : b i + b j = 0) (x : K) :
+  fiberMass {i, j} c b x = 0
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.dark_rows_ordinary_measure_eq.{u_1} {K : Type u_1}
+  [Field K] {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} [CharZero K] (ha : A.IsLowerTriangular)
+  (ho : HasOrder 10 A b) (clean : ∀ f ∈ zeroSpace A 5, f (Fin.last 10) = 0) (D : Finset (Fin 11)) (L W : Finset K)
+  (ν scale : K → K) (zero : 0 ∈ L) (one : 1 ∈ L) (oD : 0 ∉ D) (tD : Fin.last 10 ∉ D) (refLast : ν 1 = 1 / 30)
+  (ref : ∀ x ∉ L, ν x = 0) (dark : ∀ (x : K), fiberMass D (nodes A) b x = 0)
+  (cover : ∀ x ∉ W, fiberMass Finset.univ (nodes A) b x = ν x)
+  (neScale : ∀ x ∈ W, fiberMass Finset.univ (nodes A) b x ≠ ν x → scale x ≠ 0) {k : ℕ}
+  (budget : 11 + L.card ≤ k + 1 + D.card + 3)
+  (tests : ∀ n ≤ k, ∑ x ∈ W, scale x * (fiberMass Finset.univ (nodes A) b x - ν x) * x ^ n = 0) (x : K) :
+  fiberMass Finset.univ (nodes A) b x = ν x
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.cancelled_pair_measure_eq_of_scaled11.{u_1} {K : Type u_1}
+  [Field K] {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} [CharZero K] (ha : A.IsLowerTriangular)
+  (ho : HasOrder 10 A b) (clean : ∀ f ∈ zeroSpace A 5, f (Fin.last 10) = 0) (i j : Fin 11) (apart : i ≠ j)
+  (coclock : nodes A i = nodes A j) (cancel : b i + b j = 0) (L W : Finset K) (ν scale : K → K) (zero : 0 ∈ L)
+  (one : 1 ∈ L) (oD : 0 ∉ {i, j}) (tD : Fin.last 10 ∉ {i, j}) (refLast : ν 1 = 1 / 30) (ref : ∀ x ∉ L, ν x = 0)
+  (refBudget : L.card ≤ 6) (cover : ∀ x ∉ W, fiberMass Finset.univ (nodes A) b x = ν x)
+  (neScale : ∀ x ∈ W, fiberMass Finset.univ (nodes A) b x ≠ ν x → scale x ≠ 0)
+  (tests : ∀ n ≤ 11, ∑ x ∈ W, scale x * (fiberMass Finset.univ (nodes A) b x - ν x) * x ^ n = 0) (x : K) :
+  fiberMass Finset.univ (nodes A) b x = ν x
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.three_dark_rows_measure_eq_of_simple_pole.{u_1}
+  {K : Type u_1} [Field K] {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} [CharZero K] (ha : A.IsLowerTriangular)
+  (ho : HasOrder 10 A b) (clean : ∀ f ∈ zeroSpace A 5, f (Fin.last 10) = 0) (D : Finset (Fin 11)) (L W : Finset K)
+  (ν : K → K) (τ : K) (zero : 0 ∈ L) (one : 1 ∈ L) (oD : 0 ∉ D) (tD : Fin.last 10 ∉ D) (refLast : ν 1 = 1 / 30)
+  (ref : ∀ x ∉ L, ν x = 0) (refBudget : L.card ≤ 6) (dcount : 3 ≤ D.card)
+  (dark : ∀ (x : K), fiberMass D (nodes A) b x = 0) (cover : ∀ x ∉ W, fiberMass Finset.univ (nodes A) b x = ν x)
+  (matchedPole : fiberMass Finset.univ (nodes A) b τ = ν τ)
+  (ordinary : ∀ n ≤ 9, ∑ x ∈ W, (fiberMass Finset.univ (nodes A) b x - ν x) * x ^ n = 0)
+  (pole : ∑ x ∈ W, (fiberMass Finset.univ (nodes A) b x - ν x) / (x - τ) = 0) (x : K) :
+  fiberMass Finset.univ (nodes A) b x = ν x
+RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.cancelled_pair_measure_eq_of_double_pole.{u_1}
+  {K : Type u_1} [Field K] {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} [CharZero K] (ha : A.IsLowerTriangular)
+  (ho : HasOrder 10 A b) (clean : ∀ f ∈ zeroSpace A 5, f (Fin.last 10) = 0) (i j : Fin 11) (apart : i ≠ j)
+  (coclock : nodes A i = nodes A j) (cancel : b i + b j = 0) (L W : Finset K) (ν : K → K) (τ : K) (zero : 0 ∈ L)
+  (one : 1 ∈ L) (oD : 0 ∉ {i, j}) (tD : Fin.last 10 ∉ {i, j}) (refLast : ν 1 = 1 / 30) (ref : ∀ x ∉ L, ν x = 0)
+  (refBudget : L.card ≤ 6) (cover : ∀ x ∉ W, fiberMass Finset.univ (nodes A) b x = ν x)
+  (matchedPole : fiberMass Finset.univ (nodes A) b τ = ν τ)
+  (ordinary : ∀ n ≤ 9, ∑ x ∈ W, (fiberMass Finset.univ (nodes A) b x - ν x) * x ^ n = 0)
+  (simple : ∑ x ∈ W, (fiberMass Finset.univ (nodes A) b x - ν x) / (x - τ) = 0)
+  (double : ∑ x ∈ W, (fiberMass Finset.univ (nodes A) b x - ν x) / (x - τ) ^ 2 = 0) (x : K) :
+  fiberMass Finset.univ (nodes A) b x = ν x
+'RKResearch.Certified.Graded.OneClockEndpointDebit.exists_endpoint_debited_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneClockEndpointDebit.small_support_polynomial_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneClockEndpointDebit.endpoint_debit_closes_power_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneClockEndpointDebit.simple_pole_clears' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneClockEndpointDebit.double_pole_clears' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.terminal_coordinate_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.terminal_weight_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.fiberMass_remove_dark' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.dirty_pair_has_zero_fibers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.dark_rows_ordinary_measure_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.cancelled_pair_measure_eq_of_scaled11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.three_dark_rows_measure_eq_of_simple_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.OneClockEndpoint.cancelled_pair_measure_eq_of_double_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== RKCert/ReviewedNative/SDIRK8ThreeZeroEndpointReceipt.lean
+exit=0
+=== RKCert/ReviewedNative/SDIRK8ThreeZeroSilentScalarReceipt.lean
+exit=0
+=== RKCert/ReviewedNative/SDIRK8OffZeroMassReceipts.lean
+exit=0
+=== evidence/sdirk13-two-terminal-20261127/AuditMixed.lean
+'RKResearch.Certified.MixedTwoTerminal.no_two_terminal_cancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== evidence/sdirk15-movable-port-20261127/AuditMovable.lean
+'RKResearch.Certified.TwoDonorDense.null_perturbation_firstExcess' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== evidence/sdirk-protected-terminal-refund-20261127/AuditProtectedRefund.lean
+RKResearch.Certified.ProtectedTerminalRefund.protected_mem_low_at_exact_count.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {V : Type u_2} {High : Type u_3} {Low : Type u_4} {Out : Type u_5} [Field K] [AddCommGroup V] [Module K V]
+  [AddCommGroup High] [Module K High] [AddCommGroup Low] [Module K Low] [AddCommGroup Out] [Module K Out]
+  [FiniteDimensional K V] [FiniteDimensional K High] [FiniteDimensional K Low] (P : V →ₗ[K] V)
+  (hP : Function.Injective ⇑P) (hi : High →ₗ[K] V) (lo : Low →ₗ[K] V) (D : V →ₗ[K] Out)
+  (hs : Module.finrank K (High × Low) = Module.finrank K V) (hlo : Function.Injective ⇑lo)
+  (hhi : Function.Injective ⇑(D ∘ₗ hi)) (hz : D ∘ₗ P ∘ₗ lo = 0) (e : V) (c : K) (hc : c ≠ 0) (he : P e = c • e)
+  (hde : D e = 0) : e ∈ lo.range
+RKResearch.Certified.ProtectedTerminalRefund.clockFrame_surjective_square.{u_1} {K : Type u_1} [Field K] {n : ℕ}
+  (hn : 0 < n) (x : Fin n → K) (v : K) (hx : Function.Injective x) (hv : ∀ (i : Fin n), x i ≠ v) :
+  Function.Surjective ⇑(RKResearch.Certified.GroupedTerminalRefund.clockFrame x v)
+RKResearch.Certified.ProtectedTerminalRefund.vanish_supported_discrepancy.{u_1, u_2, u_3, u_4} {K : Type u_1}
+  {V : Type u_2} {W : Type u_3} {H : Type u_4} [Field K] [AddCommGroup V] [Module K V] [AddCommGroup W] [Module K W]
+  [AddCommGroup H] [Module K H] (F : H →ₗ[K] V) (R : V →ₗ[K] W) (hs : Function.Surjective ⇑(R ∘ₗ F))
+  (l : Module.Dual K W) (h : F.dualMap (R.dualMap l) = 0) : l = 0
+RKResearch.Certified.ProtectedTerminalRefund.discrepancy_sum.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] (S Y : V →ₗ[K] V) (a : K) (u m j2 : V) (hm : Y m = a • m) :
+  S (Y u - a • u) - (Y (m + S u) - a • (m + S u) - j2) + (S (S u - u) - (j2 - (m + S u))) =
+    S (S u) + S (Y u) - Y (S u) + m
+RKResearch.Certified.ProtectedTerminalRefund.kill_site_commutator.{u_1} {K : Type u_1} [Field K] {n : ℕ}
+  (S : Matrix (Fin n) (Fin n) K) (y u : Fin n → K) (hdiag : ∀ (i : Fin n), S i i = 1)
+  (htri : ∀ (i j : Fin n), i < j → S i j = 0)
+  (h : (S * S + S * Matrix.diagonal y - Matrix.diagonal y * S).mulVec u = 0) : u = 0
+RKResearch.Certified.ProtectedTerminalRefund.exact_overlap_counts (r n t old d lo : ℕ) (ht : t ≤ n) (hn : r + 2 ≤ n)
+  (hlow : lo ≤ old) (hrefund : t - 1 ≤ d + (n - (r + 2))) (hpacket : lo + d ≤ old)
+  (hbudget : old + (n - t) ≤ lo + r + 1) : old = lo + d ∧ old + (n - t) = lo + r + 1 ∧ n - t ≤ r + 1
+'RKResearch.Certified.ProtectedTerminalRefund.protected_mem_low_at_exact_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.clockFrame_surjective_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.vanish_supported_discrepancy' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.discrepancy_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.kill_site_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.exact_overlap_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== Strict SDIRK7 tail-collision typed audit
+'RKResearch.Certified.SDIRKSevenTailCollision.firstError_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCollision.secondError_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCollision.fiber_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCollision.distinct_tail_of_headPaid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCollision.distinct_tail_in_seed_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenZeroFirstCurve.no_square_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenZeroFirstCurve.no_integral_reciprocal_zero_first_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0

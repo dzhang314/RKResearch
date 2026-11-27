@@ -1,0 +1,43 @@
+v,z strict contraction: norm < 2^-594, displacement < 2^-664
+w strict bracket; three evaluation determinant magnitude >= 2^8
+8 exact, separated real-algebraic sites on a precision-12 rule.
+First reverse actual labels y_3,y_2,y_1 are an arithmetic progression; both forward ports hit y_3 and y_7.
+Weight signs: [1, 1, -1, 1, 1, 1, 1, 1] ; degree-13 quadrature failure certified.
+{'nonzero mixed, rank >= 4': 120}
+{'nonzero mixed, rank >= 4': 140}
+{'nonzero mixed, rank >= 4': 240}
+{'nonzero mixed, rank >= 4': 260}
+{'nonzero mixed, rank >= 4': 360}
+{'nonzero mixed, rank >= 4': 380}
+{'nonzero mixed, rank >= 4': 480}
+{'nonzero mixed, rank >= 4': 500}
+{'nonzero mixed, rank >= 4': 620}
+{'nonzero mixed, rank >= 4': 730}
+{'nonzero mixed, rank >= 4': 850}
+{'nonzero mixed, rank >= 4': 960}
+{'nonzero mixed, rank >= 4': 980}
+{'nonzero mixed, rank >= 4': 1080}
+{'nonzero mixed, rank >= 4': 1200}
+{'nonzero mixed, rank >= 4': 1220}
+{'nonzero mixed, rank >= 4': 1320}
+{'nonzero mixed, rank >= 4': 1340}
+{'nonzero mixed, rank >= 4': 1440}
+{'nonzero mixed, rank >= 4': 1460}
+{'nonzero mixed, rank >= 4': 1560}
+{'nonzero mixed, rank >= 4': 1580}
+{'nonzero mixed, rank >= 4': 1700}
+{'nonzero mixed, rank >= 4': 1810}
+{'nonzero mixed, rank >= 4': 1930}
+{'nonzero mixed, rank >= 4': 2040}
+{'nonzero mixed, rank >= 4': 2060}
+{'nonzero mixed, rank >= 4': 2160}
+{'nonzero mixed, rank >= 4': 2180}
+{'nonzero mixed, rank >= 4': 2280}
+{'nonzero mixed, rank >= 4': 2300}
+{'nonzero mixed, rank >= 4': 2400}
+{'nonzero mixed, rank >= 4': 2420}
+{'nonzero mixed, rank >= 4': 2520}
+{'nonzero mixed, rank >= 4': 2540}
+{'nonzero mixed, rank >= 4': 2640}
+TOTAL 2640 {'nonzero mixed, rank >= 4': 2640}
+open regular cases 0 []

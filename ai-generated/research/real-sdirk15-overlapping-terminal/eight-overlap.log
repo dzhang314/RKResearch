@@ -1,0 +1,4 @@
+Two original shifted-jet equations contract: norm < 2^(-730), displacement < 2^(-776)
+Degree-15 port compatibility, degree-6 shifted-root quotient; check 90x90 multiplication matrix.
+Exact full rank 90; all elimination pivots have magnitude at least 2^(-49).
+No eight-site real precision-14 grid meets the reverse initial clock, fixed shared v, and any other shifted Q root.

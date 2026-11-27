@@ -1,0 +1,11 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.ERK11SharpPrefixMomentGate.actualWitnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11SharpPrefixMomentGate.models' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11SharpPrefixMomentGate.paidMomentDet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11SharpPrefixMomentGate.matrixValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11SharpPrefixMomentGate.alternateAliases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CalibratedMomentGate.noCalibratedFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CalibratedMomentGate.factor0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CalibratedMomentGate.factor1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CalibratedMomentGate.factor2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CalibratedMomentGate.momentRows' depends on axioms: [propext, Classical.choice, Quot.sound]

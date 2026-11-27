@@ -1,0 +1,14 @@
+v,z strict contraction: norm < 2^-594, displacement < 2^-664
+w strict bracket; three evaluation determinant magnitude >= 2^8
+8 exact, separated real-algebraic sites on a precision-12 rule.
+First reverse actual labels y_3,y_2,y_1 are an arithmetic progression; both forward ports hit y_3 and y_7.
+Weight signs: [1, 1, -1, 1, 1, 1, 1, 1] ; degree-13 quadrature failure certified.
+v,z strict contraction: norm < 2^-594, displacement < 2^-664
+w strict bracket; three evaluation determinant magnitude >= 2^8
+v,z strict contraction: norm < 2^-594, displacement < 2^-664
+w strict bracket; three evaluation determinant magnitude >= 2^8
+The degree-5 missing mode Q and its shifted primitive have only one common real root: v.
+Only the two prescribed representative sites have zero shifted Q primitive on this grid.
+Physical weighted transpose has 15 rows, with the whole missing-mode column equality checked.
+First nonzero tall-tree defect at size 13, magnitude >= 2^(0).
+7813 independently recomputed rooted conditions through size 12; worst enclosure < 2^(-192).

@@ -1,0 +1,42 @@
+RKResearch.Certified.ProtectedTerminalRefund.protected_mem_low_at_exact_count.{u_1, u_2, u_3, u_4, u_5} {K : Type u_1}
+  {V : Type u_2} {High : Type u_3} {Low : Type u_4} {Out : Type u_5} [Field K] [AddCommGroup V] [Module K V]
+  [AddCommGroup High] [Module K High] [AddCommGroup Low] [Module K Low] [AddCommGroup Out] [Module K Out]
+  [FiniteDimensional K V] [FiniteDimensional K High] [FiniteDimensional K Low] (P : V →ₗ[K] V)
+  (hP : Function.Injective ⇑P) (hi : High →ₗ[K] V) (lo : Low →ₗ[K] V) (D : V →ₗ[K] Out)
+  (hs : Module.finrank K (High × Low) = Module.finrank K V) (hlo : Function.Injective ⇑lo)
+  (hhi : Function.Injective ⇑(D ∘ₗ hi)) (hz : D ∘ₗ P ∘ₗ lo = 0) (e : V) (c : K) (hc : c ≠ 0) (he : P e = c • e)
+  (hde : D e = 0) : e ∈ lo.range
+RKResearch.Certified.ProtectedTerminalRefund.clockFrame_surjective_square.{u_1} {K : Type u_1} [Field K] {n : ℕ}
+  (hn : 0 < n) (x : Fin n → K) (v : K) (hx : Function.Injective x) (hv : ∀ (i : Fin n), x i ≠ v) :
+  Function.Surjective ⇑(RKResearch.Certified.GroupedTerminalRefund.clockFrame x v)
+RKResearch.Certified.ProtectedTerminalRefund.vanish_supported_discrepancy.{u_1, u_2, u_3, u_4} {K : Type u_1}
+  {V : Type u_2} {W : Type u_3} {H : Type u_4} [Field K] [AddCommGroup V] [Module K V] [AddCommGroup W] [Module K W]
+  [AddCommGroup H] [Module K H] (F : H →ₗ[K] V) (R : V →ₗ[K] W) (hs : Function.Surjective ⇑(R ∘ₗ F))
+  (l : Module.Dual K W) (h : F.dualMap (R.dualMap l) = 0) : l = 0
+RKResearch.Certified.ProtectedTerminalRefund.discrepancy_sum.{u_1, u_2} {K : Type u_1} {V : Type u_2} [Field K]
+  [AddCommGroup V] [Module K V] (S Y : V →ₗ[K] V) (a : K) (u m j2 : V) (hm : Y m = a • m) :
+  S (Y u - a • u) - (Y (m + S u) - a • (m + S u) - j2) + (S (S u - u) - (j2 - (m + S u))) =
+    S (S u) + S (Y u) - Y (S u) + m
+RKResearch.Certified.ProtectedTerminalRefund.kill_site_commutator.{u_1} {K : Type u_1} [Field K] {n : ℕ}
+  (S : Matrix (Fin n) (Fin n) K) (y u : Fin n → K) (hdiag : ∀ (i : Fin n), S i i = 1)
+  (htri : ∀ (i j : Fin n), i < j → S i j = 0)
+  (h : (S * S + S * Matrix.diagonal y - Matrix.diagonal y * S).mulVec u = 0) : u = 0
+RKResearch.Certified.ProtectedTerminalRefund.exact_overlap_counts (r n t old d lo : ℕ) (ht : t ≤ n) (hn : r + 2 ≤ n)
+  (hlow : lo ≤ old) (hrefund : t - 1 ≤ d + (n - (r + 2))) (hpacket : lo + d ≤ old)
+  (hbudget : old + (n - t) ≤ lo + r + 1) : old = lo + d ∧ old + (n - t) = lo + r + 1 ∧ n - t ≤ r + 1
+'RKResearch.Certified.ProtectedTerminalRefund.protected_mem_low_at_exact_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.clockFrame_surjective_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.vanish_supported_discrepancy' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.discrepancy_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.kill_site_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ProtectedTerminalRefund.exact_overlap_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,9 @@
+import RKCert.Research.SDIRKSevenTailCollisionIngress
+import RKCert.Research.SDIRKSevenZeroFirstCurve
+#print axioms RKResearch.Certified.SDIRKSevenTailCollision.firstError_moments
+#print axioms RKResearch.Certified.SDIRKSevenTailCollision.secondError_moments
+#print axioms RKResearch.Certified.SDIRKSevenTailCollision.fiber_zero
+#print axioms RKResearch.Certified.SDIRKSevenTailCollision.distinct_tail_of_headPaid
+#print axioms RKResearch.Certified.SDIRKSevenTailCollision.distinct_tail_in_seed_chart
+#print axioms RKResearch.Certified.SDIRKSevenZeroFirstCurve.no_square_integral
+#print axioms RKResearch.Certified.SDIRKSevenZeroFirstCurve.no_integral_reciprocal_zero_first_moments

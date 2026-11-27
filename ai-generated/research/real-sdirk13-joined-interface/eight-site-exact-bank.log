@@ -1,0 +1,12 @@
+v,z strict contraction: norm < 2^-594, displacement < 2^-664
+w strict bracket; three evaluation determinant magnitude >= 2^8
+8 exact, separated real-algebraic sites on a precision-12 rule.
+First reverse actual labels y_3,y_2,y_1 are an arithmetic progression; both forward ports hit y_3 and y_7.
+Weight signs: [1, 1, -1, 1, 1, 1, 1, 1] ; degree-13 quadrature failure certified.
+Actual nine reverse rows verified by the paid AP word architecture, and 63 directed word diagnostics.
+Worst word residual enclosure < 2^(-211).
+v,z strict contraction: norm < 2^-594, displacement < 2^-664
+w strict bracket; three evaluation determinant magnitude >= 2^8
+Exact lower rank of forward first-excess residual: 5
+Exact lower rank of reverse first-excess residual: 4
+The required terminal-only mixed pairing has a separated witness, magnitude >= 2^(22).

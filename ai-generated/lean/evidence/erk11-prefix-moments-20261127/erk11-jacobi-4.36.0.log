@@ -1,0 +1,12 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.ERK11JacobiPrefixGate.terminalEndpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.terminalOther' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.noEarlyTerminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.gradeSevenMinor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.jacobiBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.jacobiMomentValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.cubicPattern' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.fourSlotNoTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.fourSlotTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.geometricThird' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11JacobiPrefixGate.secondProvider' depends on axioms: [propext, Classical.choice, Quot.sound]

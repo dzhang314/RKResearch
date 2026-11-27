@@ -1,0 +1,45 @@
+RKResearch.Certified.GroupedTerminalRefund.clockFrame_injective.{u_1} {K : Type u_1} [Field K] {n d : ℕ} (hd : 0 < d)
+  (hs : d ≤ n) (x : Fin n → K) (v : K) (hx : Function.Injective x) (hv : ∀ (i : Fin n), x i ≠ v) :
+  Function.Injective ⇑(clockFrame x v)
+RKResearch.Certified.GroupedTerminalRefund.refund_rank.{u_1, u_2, u_3, u_4} {K : Type u_1} {X : Type u_2} {H : Type u_3}
+  {Z : Type u_4} [Field K] [AddCommGroup X] [Module K X] [AddCommGroup H] [Module K H] [AddCommGroup Z] [Module K Z]
+  [FiniteDimensional K X] [FiniteDimensional K Z] [FiniteDimensional K H] {F : H →ₗ[K] X} (hF : Function.Injective ⇑F)
+  (T : Module.Dual K X →ₗ[K] Z) :
+  Module.finrank K Z ≤ Module.finrank K ↥(refunded F T) + (Module.finrank K X - Module.finrank K H)
+RKResearch.Certified.GroupedTerminalRefund.refunded_word_steps.{u_1, u_2, u_3, u_4, u_5, u_6} {K : Type u_1}
+  {X : Type u_2} {H : Type u_3} {Z : Type u_4} {Y : Type u_5} {V : Type u_6} [Field K] [AddCommGroup X] [Module K X]
+  [AddCommGroup H] [Module K H] [AddCommGroup Z] [Module K Z] [AddCommGroup Y] [Module K Y] [AddCommGroup V]
+  [Module K V] (F : H →ₗ[K] X) (T : Module.Dual K X →ₗ[K] Z) (A C : V →ₗ[K] V) (M : V →ₗ[K] Z) (a : Y →ₗ[K] V)
+  (idealA idealC : Y →ₗ[K] Z) (err : Y →ₗ[K] Module.Dual K X) (hpair : ∀ (w : Y), F.dualMap (err w) = 0)
+  (hA : ∀ (w : Y), M (A (a w)) - idealA w = T (err w)) (hC : ∀ (w : Y), M (C (a w)) = idealC w) (l : ↥(refunded F T))
+  (w : Y) : ↑l (M (A (a w))) = ↑l (idealA w) ∧ ↑l (M (C (a w))) = ↑l (idealC w)
+RKResearch.Certified.GroupedTerminalRefund.four_block_floor.{u_1, u_2, u_6, u_7, u_8, u_9, u_10, u_11, u_12}
+  {K : Type u_1} {V : Type u_2} [Field K] [AddCommGroup V] [Module K V] {U0 : Type u_6} {U1 : Type u_7} {U2 : Type u_8}
+  {U3 : Type u_9} {H0 : Type u_10} {H1 : Type u_11} {H2 : Type u_12} [AddCommGroup U0] [Module K U0]
+  [FiniteDimensional K U0] [AddCommGroup U1] [Module K U1] [FiniteDimensional K U1] [AddCommGroup U2] [Module K U2]
+  [FiniteDimensional K U2] [AddCommGroup U3] [Module K U3] [FiniteDimensional K U3] [AddCommGroup H0] [Module K H0]
+  [AddCommGroup H1] [Module K H1] [AddCommGroup H2] [Module K H2] [FiniteDimensional K V] {P : V →ₗ[K] V}
+  (hP : Function.Injective ⇑P) {e0 : U0 →ₗ[K] V} {e1 : U1 →ₗ[K] V} {e2 : U2 →ₗ[K] V} {e3 : U3 →ₗ[K] V}
+  (h3 : Function.Injective ⇑e3) {D0 : V →ₗ[K] H0} {D1 : V →ₗ[K] H1} {D2 : V →ₗ[K] H2}
+  (h0 : Function.Injective ⇑(D0 ∘ₗ e0)) (h1 : Function.Injective ⇑(D1 ∘ₗ e1)) (h2 : Function.Injective ⇑(D2 ∘ₗ e2))
+  (z01 : ∀ (a : U1), D0 (P (e1 a)) = 0) (z02 : ∀ (a : U2), D0 (P (P (e2 a))) = 0)
+  (z03 : ∀ (a : U3), D0 (P (P (P (e3 a)))) = 0) (z12 : ∀ (a : U2), D1 (P (e2 a)) = 0)
+  (z13 : ∀ (a : U3), D1 (P (P (e3 a))) = 0) (z23 : ∀ (a : U3), D2 (P (e3 a)) = 0) :
+  Module.finrank K U0 + Module.finrank K U1 + Module.finrank K U2 + Module.finrank K U3 ≤ Module.finrank K V
+RKResearch.Certified.GroupedTerminalRefund.no_thirty_three (n t old d : ℕ) (ht : t ≤ n) (hn : 8 ≤ n)
+  (hrefund : t ≤ d + (n - 8)) (hpacket : 12 + d ≤ old) : 34 ≤ 15 + old + (n - t) - 1
+RKResearch.Certified.GroupedTerminalRefund.no_twenty_five (n t old d : ℕ) (ht : t ≤ n) (hn : 7 ≤ n)
+  (hrefund : t ≤ d + (n - 7)) (hpacket : 9 + d ≤ old) : 26 ≤ 11 + old + (n - t) - 1
+RKResearch.Certified.GroupedTerminalRefund.saturated_terminal_count (n t old front lo g : ℕ) (ht : t < n)
+  (hpacket : lo + g ≤ old) : front + lo + g ≤ front + old + (n - t) - 1
+'RKResearch.Certified.GroupedTerminalRefund.clockFrame_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.GroupedTerminalRefund.refund_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.GroupedTerminalRefund.refunded_word_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.GroupedTerminalRefund.four_block_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.GroupedTerminalRefund.no_thirty_three' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.GroupedTerminalRefund.no_twenty_five' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.GroupedTerminalRefund.saturated_terminal_count' depends on axioms: [propext, Quot.sound]

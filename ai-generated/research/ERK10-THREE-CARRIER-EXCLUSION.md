@@ -237,3 +237,5 @@ pointwise temporal bridges are mathematical; the
 cubic numerical exclusion reuses the prior native closed
 integers and field formulas. No new unrestricted stage
 floor is claimed.
+
+The [three-pair hyperplane exclusion](ERK10-THREE-PAIR-HYPERPLANE-EXCLUSION.md) closes the pooled-zero case of three clocks with two opposing stages each. The other cases in the census remain separate.

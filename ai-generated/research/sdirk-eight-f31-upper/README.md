@@ -1,0 +1,9 @@
+# Literal eleven-stage strict SDIRK8 over F31
+
+There is an eleven-stage strict SDIRK tableau of **exact order eight** over $\mathbb F_{31}$. Its common nonzero diagonal is 11. The literal matrix and weights are in `witness.json` and `RKCert.Research.SDIRKEightElevenF31`. This is an upper bound only: no claim is made that ten stages over $\mathbb F_{31}$ are impossible.
+
+The coefficient list is the finite specialization of the repository's [eleven-stage algebraic donor](../../upper-bounds/real-algebraic/sdirk11_order8_literal_coefficient_field_20261125.md) at the literal seed $(s,t,c,d)=(11,17,4,2)$. `specialize.py` reconstructs the six quadrature clocks, both four-row operators, eight virtual suffix rows, and contraction of old virtual row 4 into row 2 (zero-based). It uses only field quotients and rejects zero denominators. The proof over $\mathbb F_{31}$ does not invoke an ordered-field version of the real donor theorem: all 200 ordinary rooted-tree equations are checked on the actual emitted eleven-stage tableau independently.
+
+The ninth-order bush has $b^\mathsf T c^{\odot8}=2$, whereas $1/9=7$ in $\mathbb F_{31}$. Thus order eight is exact, with no reliance on a lower-bound theorem for order nine. By unital coefficient transport, this literal witness also gives an exact-order-eight upper bound over every nonzero commutative ring of characteristic 31: the common diagonal and the nonzero order-nine residual are units from the prime field.
+
+Run `python check_literal.py` for the independent integer-modular check, requiring no third-party packages. Run `python check_literal.py --specialize` with Python-flint 0.8 to cross-match the data against the donor reconstruction. Both verify that the JSON matches the literal Lean source. The native theorem uses the repository's rooted-order checker with kernel `decide`, and checks triangularity, the unit common diagonal, and the explicit order-nine failure.

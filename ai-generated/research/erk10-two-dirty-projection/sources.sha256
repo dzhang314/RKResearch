@@ -1,0 +1,8 @@
+c102c4e580775891cf3aa7128f8b96a379a57bd8d846f80156ef4cafe9128bc9  README.md
+77a55bdba9874846239aa87f228c2b4bd3981b01c0adf6c8d2fb4ed23a37e923  check_matched.py
+702a129c0fe23622a95da62320e323192ca21031d5d3598979820c3c5fa1793d  ../../lean/RKCert/Research/ERK10TwoDirtyMatchedMod227.lean
+fe1bcf3e097a6c69a84d0aa31e4dca4f25bf2e1fad7026cf0d483664341ec6bf  ../../lean/RKCert/ReviewedNative/ERK10TwoDirtyProjection.lean
+30b2a8fd854d849469d73cf0b6b203af93e093f96a314e068ffc19d426e3d5de  ../../lean/AuditERK10TwoDirtyProjection.lean
+aeb46bea90fb8a0bb619440cbf06e682f5807895d6ca0773a1ed5a7cdead541a  ../../lean/evidence/erk10-two-dirty-projection-20261127/scalar.log
+40d179c9315cd557200e146bd3ae3b4450bfa925ea64dca272e24d094b73ba18  ../../lean/evidence/erk10-two-dirty-projection-20261127/core-versions.log
+1c47b3622a7f39ad4b3b8945e6ac62349432065e8169ff9a3d13c6591980ff4b  ../../lean/evidence/erk10-two-dirty-projection-20261127/native-typed-4.36.0.log

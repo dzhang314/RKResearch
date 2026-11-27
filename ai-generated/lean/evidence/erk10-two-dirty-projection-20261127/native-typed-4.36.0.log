@@ -1,0 +1,28 @@
+@pointwise_four_clock : ∀ {K : Type u_1} [inst : Field K] (p q x y dp dq dx dy fp fq fx fy gp gq gx gy : K),
+  p ≠ x →
+    p ≠ y →
+      q ≠ x →
+        q ≠ y →
+          x ≠ y →
+            fp * gq - gp * fq ≠ 0 →
+              fx ≠ 0 ∨ gx ≠ 0 →
+                fy ≠ 0 ∨ gy ≠ 0 →
+                  dp * fp + dq * fq + dx * fx + dy * fy = 0 →
+                    p * (dp * fp) + q * (dq * fq) + x * (dx * fx) + y * (dy * fy) = 0 →
+                      p ^ 2 * (dp * fp) + q ^ 2 * (dq * fq) + x ^ 2 * (dx * fx) + y ^ 2 * (dy * fy) = 0 →
+                        dp * gp + dq * gq + dx * gx + dy * gy = 0 →
+                          p * (dp * gp) + q * (dq * gq) + x * (dx * gx) + y * (dy * gy) = 0 →
+                            p ^ 2 * (dp * gp) + q ^ 2 * (dq * gq) + x ^ 2 * (dx * gx) + y ^ 2 * (dy * gy) = 0 →
+                              dp = 0 ∧ dq = 0 ∧ dx = 0 ∧ dy = 0
+@marked_axes : ∀ {K : Type u_1} [inst : Field K] (p q u v : K),
+  p ≠ 0 → q ≠ 0 → p ≠ q → p * u + q * v = 0 → p ^ 2 * u + q ^ 2 * v = 0 → u = 0 ∧ v = 0
+@aligned_hull : ∀ {K : Type u_1} [inst : Field K] (a b p u v T : K),
+  a ≠ b → u ≠ 0 → (a - p) * u + (b - p) * v = 0 → (u + v) * T = 0 → T = 0
+@quad_affine_resultant_zero : ∀ {K : Type u_1} [inst : Field K] (f0 f1 f2 g0 g1 z : K),
+  f0 + f1 * z + f2 * z ^ 2 = 0 → g0 + g1 * z = 0 → f0 * g1 ^ 2 - f1 * g0 * g1 + f2 * g0 ^ 2 = 0
+'RKResearch.Certified.ERK10TwoDirtyProjection.pointwise_four_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TwoDirtyProjection.marked_axes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10TwoDirtyProjection.aligned_hull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10TwoDirtyProjection.quad_affine_resultant_zero' depends on axioms: [propext, Quot.sound]

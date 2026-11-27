@@ -1,0 +1,9 @@
+import RKCert.ReviewedNative.DIRKOrderTenOffCoreHeadOneScalar
+
+open RKResearch.Certified.Graded.OffCoreHeadOneScalar
+
+#check all_head_one_late_forward_cases
+#check all_early_off_core_head_one_cases
+
+#print axioms all_head_one_late_forward_cases
+#print axioms all_early_off_core_head_one_cases

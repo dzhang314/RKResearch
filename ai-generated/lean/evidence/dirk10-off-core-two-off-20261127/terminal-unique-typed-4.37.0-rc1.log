@@ -1,0 +1,10 @@
+RKResearch.Certified.Graded.OffCoreTwoOffScalar.all_late_forward_cases :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun t =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (lateForward t)) =
+    true
+RKResearch.Certified.Graded.OffCoreTwoOffScalar.all_early_off_core_terminal_unique_cases :
+  RKResearch.Certified.Graded.FixedCoreTwoOffScalar.earlyOrders.all checkEarlyOrder = true
+'RKResearch.Certified.Graded.OffCoreTwoOffScalar.all_late_forward_cases' does not depend on any axioms
+'RKResearch.Certified.Graded.OffCoreTwoOffScalar.all_early_off_core_terminal_unique_cases' depends on axioms: [propext,
+ Classical.choice]
+4.37.0-rc1 terminal-unique OK

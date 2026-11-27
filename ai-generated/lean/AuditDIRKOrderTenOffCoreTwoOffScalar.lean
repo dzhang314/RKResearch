@@ -1,0 +1,9 @@
+import RKCert.ReviewedNative.DIRKOrderTenOffCoreTwoOffScalar
+
+open RKResearch.Certified.Graded.OffCoreTwoOffScalar
+
+#check all_late_forward_cases
+#check all_early_off_core_terminal_unique_cases
+
+#print axioms all_late_forward_cases
+#print axioms all_early_off_core_terminal_unique_cases

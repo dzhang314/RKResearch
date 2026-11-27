@@ -1,0 +1,10 @@
+RKResearch.Certified.Graded.OffCoreHeadOneScalar.all_head_one_late_forward_cases :
+  RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all
+      (RKResearch.Certified.Graded.OffCoreTwoOffScalar.lateForward 1) =
+    true
+RKResearch.Certified.Graded.OffCoreHeadOneScalar.all_early_off_core_head_one_cases :
+  RKResearch.Certified.Graded.FixedCoreTwoOffScalar.earlyOrders.all checkEarlyOrder = true
+'RKResearch.Certified.Graded.OffCoreHeadOneScalar.all_head_one_late_forward_cases' does not depend on any axioms
+'RKResearch.Certified.Graded.OffCoreHeadOneScalar.all_early_off_core_head_one_cases' depends on axioms: [propext,
+ Classical.choice]
+4.37.0-rc1 head-one OK

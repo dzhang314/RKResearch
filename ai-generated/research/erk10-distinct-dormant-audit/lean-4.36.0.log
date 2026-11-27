@@ -1,0 +1,7 @@
+'RKResearch.ERK10DistinctDormantElimination.baseDetGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DistinctDormantElimination.centeredFactorGrid' does not depend on any axioms
+'RKResearch.ERK10DistinctDormantElimination.resultantGrid1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DistinctDormantElimination.resultantGrid2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DistinctDormantElimination.resultantGrid3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DistinctDormantElimination.factor0' depends on axioms: [propext]
+'RKResearch.ERK10DistinctDormantElimination.factor2' depends on axioms: [propext]

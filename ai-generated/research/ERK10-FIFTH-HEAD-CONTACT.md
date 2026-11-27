@@ -185,3 +185,5 @@ identities.
 checks the cleared quartic, zero-tap case, and Simpson
 identities. The rooted-space and literal deletion
 arguments are the mathematical bridge above.
+
+The [distinct-dormant seam follow-up](ERK10-DISTINCT-DORMANT-SEAM-EXCLUSION.md) rules out the complementary case of two distinct dormant clocks when all eight active clocks are distinct. The [doubled-entrance follow-up](ERK10-DOUBLED-ENTRANCE-TRIPLET-EXCLUSION.md) also rules out the (2,3,3) population.

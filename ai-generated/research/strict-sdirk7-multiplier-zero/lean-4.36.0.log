@@ -1,0 +1,49 @@
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.active_adjoint (i : Fin 9) :
+  2 ≤ ↑i → Second.D i * Second.activeDeriv i = 15 * Second.W (Second.Y i) ∧ Second.W (Second.Y i) ≠ 0
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.multiplier_site :
+  Second.Y 3 = 13 ∧
+    (∀ (i : Fin 9), 2 ≤ ↑i → (Second.V i = 0 ↔ i = 3)) ∧
+      Second.b 3 *
+          RKResearch.Certified.SDIRKSevenChristoffelScalar.kernelFour (7 * Second.Y 3 - 1) (7 * Second.Y 3 - 1) ≠
+        4
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.order_seven : RKResearch.HasOrder 7 Second.A Second.b
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.not_order_eight : ¬RKResearch.HasOrder 8 Second.A Second.b
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.active_adjoint (i : Fin 9) :
+  2 ≤ ↑i → Fourth.D i * Fourth.activeDeriv i = 6 * Fourth.W (Fourth.Y i) ∧ Fourth.W (Fourth.Y i) ≠ 0
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.multiplier_site :
+  Fourth.Y 5 = 12 ∧
+    (∀ (i : Fin 9), 2 ≤ ↑i → (Fourth.V i = 0 ↔ i = 5)) ∧
+      Fourth.b 5 *
+          RKResearch.Certified.SDIRKSevenChristoffelScalar.kernelFour (9 * Fourth.Y 5 - 1) (9 * Fourth.Y 5 - 1) ≠
+        4
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.order_seven : RKResearch.HasOrder 7 Fourth.A Fourth.b
+RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.not_order_eight : ¬RKResearch.HasOrder 8 Fourth.A Fourth.b
+RKResearch.Certified.SDIRKSevenQuarticPoleScalar.centered_last_reflection_gate {c : ℚ}
+  (h : 5 * c ^ 2 - 19 * c + 10 = 0) : False
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.active_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.multiplier_site' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Second.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.active_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.multiplier_site' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenMultiplierZeroF19.Fourth.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleScalar.centered_last_reflection_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,52 @@
+RKResearch.Certified.SDIRKSevenQuarticPoleScalar.quartic_pole_payments.{u_1, u_2} {R : Type u_1} {I : Type u_2}
+  [CommRing R] [Fintype I] {y p b D V : I → R} (paid : ∀ k ≤ 5, rawMoment y p k = 0) (w₀ w₁ l₀ l₁ a b' c d e τ : R)
+  (hD : ∀ (i : I), D i = τ * p i * (w₀ + w₁ * y i)) (hV : ∀ (i : I), (w₀ + w₁ * y i) * V i = q4 a b' c d e (y i))
+  (hb : ∀ (i : I), b i * V i = τ * p i * (w₀ + w₁ * y i) * (l₀ + l₁ * y i)) :
+  (∀ k ≤ 3, ∑ i, b i * y i ^ k * V i = 0) ∧ ∑ i, b i * V i ^ 2 = 0 ∧ ∑ i, D i * V i = 0 ∧ ∑ i, D i * y i * V i = 0
+RKResearch.Certified.SDIRKSevenQuarticPoleScalar.reflection_quartic_fourth.{u_1} {R : Type u_1} [CommRing R]
+  (a b c d M Y : R) :
+  have g := q4 a b c d 1 Y;
+  have T :=
+    (M + a + b + 2 * c + 6 * d + 20) * Y ^ 2 + (M * d + 4 * M - 4 * a - 3 * b - 4 * c - 10 * d - 32) * Y +
+      (-M * a - M * b - M * c - 2 * M * d - 6 * M + 3 * a + 2 * b + 2 * c + 4 * d + 12);
+  (Y ^ 3 - 9 * Y ^ 2 + 18 * Y - 6) * T + (5 * M - 4 + (4 - M) * Y) * g =
+    (Y - 1) * (Y ^ 2 - 4 * Y + 2 - M) *
+      ((a + b + 2 * c + 6 * d + 24) * Y ^ 2 + (-8 * a - 7 * b - 12 * c - 30 * d - 96) * Y + 11 * a + 6 * b + 6 * c +
+          12 * d +
+        36)
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.cubic_direction (i : Fin 9) :
+  2 ≤ ↑i → Reflection.cubic i = 1 * Reflection.V i
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.quartic_profile (i : Fin 9) :
+  2 ≤ ↑i → Reflection.W (Reflection.Y i) * Reflection.V i = Reflection.g (Reflection.Y i) ∧ Reflection.V i ≠ 0
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.order_seven : RKResearch.HasOrder 7 Reflection.A Reflection.b
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.not_order_eight :
+  ¬RKResearch.HasOrder 8 Reflection.A Reflection.b
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.cubic_direction (i : Fin 9) :
+  2 ≤ ↑i → Arithmetic.cubic i = 4 * Arithmetic.V i
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.quartic_profile (i : Fin 9) :
+  2 ≤ ↑i → Arithmetic.W (Arithmetic.Y i) * Arithmetic.V i = Arithmetic.g (Arithmetic.Y i) ∧ Arithmetic.V i ≠ 0
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.order_seven : RKResearch.HasOrder 7 Arithmetic.A Arithmetic.b
+RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.not_order_eight :
+  ¬RKResearch.HasOrder 8 Arithmetic.A Arithmetic.b
+'RKResearch.Certified.SDIRKSevenQuarticPoleScalar.quartic_pole_payments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleScalar.reflection_quartic_fourth' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.quartic_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleF19.Reflection.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.quartic_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPoleF19.Arithmetic.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

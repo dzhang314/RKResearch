@@ -1,0 +1,4 @@
+quartic-reflection-F19 85 rooted orders, next-order failure, and actual adjoint/defect profiles verified
+quartic-arithmetic-F19 85 rooted orders, next-order failure, and actual adjoint/defect profiles verified
+reflection z=2,u=0,c= 1942/1399 h= -3 delta= -1333/392 tau= 1689416818/350280088095 residual cubic projectively rootless modulo 29
+arithmetic z=2,u=0,c= -186/83 h= 2 delta= -86/119 tau= -29129297/23774520 residual cubic projectively rootless modulo 13

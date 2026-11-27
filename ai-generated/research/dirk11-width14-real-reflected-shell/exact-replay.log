@@ -1,0 +1,13 @@
+exact real place: gb in (0.160057,0.160058), quadratic signs opposite
+exact tower tableau constructed
+order 2 shapes 1 PASS
+order 3 shapes 2 PASS
+order 4 shapes 4 PASS
+order 5 shapes 9 PASS
+order 6 shapes 20 PASS
+order 7 shapes 48 PASS
+order 8 shapes 115 PASS
+order 9 shapes 286 PASS
+order 10 shapes 719 PASS
+order 11 shapes 1842 PASS
+3047 rooted conditions; order-12 four leaves plus size-7 bush has verified unit defect

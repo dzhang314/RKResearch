@@ -239,3 +239,5 @@ integers and field formulas. No new unrestricted stage
 floor is claimed.
 
 The [three-pair hyperplane exclusion](ERK10-THREE-PAIR-HYPERPLANE-EXCLUSION.md) closes the pooled-zero case of three clocks with two opposing stages each. The other cases in the census remain separate.
+
+The [two-triple chronology](ERK10-TWO-TRIPLE-FRONTIER.md) gives necessary first and last placement restrictions in the surviving (2,3,3) branch without excluding it.

@@ -1,0 +1,3 @@
+'RKResearch.ERK10TwoTripleFrontierGate.bezoutDouble' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10TwoTripleFrontierGate.noDouble' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10TwoTripleFrontierGate.tripleCharge' depends on axioms: [propext, Classical.choice, Quot.sound]

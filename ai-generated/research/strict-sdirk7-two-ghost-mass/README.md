@@ -261,3 +261,5 @@ modules with the earlier Christoffel module available and run the
 typed audit. The native checks were run under stock Lean 4.36.0.
 
 The [reflection-suffix follow-up](../strict-sdirk7-mass-reflection/README.md) excludes the entire rational reflection suffix in this same Christoffel-mass chart, independent of the center or the first active clock.
+
+For the arithmetic suffix, the [five-adic follow-up](../strict-sdirk7-mass-arithmetic-at-five/README.md) excludes an integral penultimate clock reducing to zero modulo 5. Other residue classes remain, and an exact local clock core shows that the scalar splitting condition is not globally obstructed at 5.

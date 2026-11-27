@@ -1,0 +1,15 @@
+RKResearch.Certified.SDIRKSevenChristoffelArithmeticAtFive.late_rootless (a d : ZMod 5) :
+  a ≠ 0 ∨ d ≠ 0 → lateHom 0 a d ≠ 0
+RKResearch.Certified.SDIRKSevenChristoffelArithmeticAtFive.chart_A_not_square {s n : ℤ} {d f g : ZMod 5} (hd : d ≠ 0)
+  (hf : f ≠ 0) (hg : g ≠ 0) (h : ↑n = 2 * d ^ 34 * f ^ 36 * g ^ 18) (sq : s ^ 2 = 5 ^ 7 * n) : False
+RKResearch.Certified.SDIRKSevenChristoffelArithmeticAtFive.chart_B_not_square {s n : ℤ} {d f g : ZMod 5} (hd : d ≠ 0)
+  (hf : f ≠ 0) (hg : g ≠ 0) (h : ↑n = 3 * d ^ 34 * f ^ 22 * g ^ 18) (sq : s ^ 2 = 5 ^ 5 * n) : False
+'RKResearch.Certified.SDIRKSevenChristoffelArithmeticAtFive.late_rootless' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelArithmeticAtFive.chart_A_not_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelArithmeticAtFive.chart_B_not_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

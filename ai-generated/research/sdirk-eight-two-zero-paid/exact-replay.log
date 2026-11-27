@@ -1,0 +1,19 @@
+
+>>> check_norms.py
+all paid-characteristic candidates: 13,19,107,137,997,3137
+
+>>> check_primes.py
+13 2 0 0
+19 2 1 0
+107 1 0 0
+137 1 2 0
+997 1 1 1
+3137 1 0 0
+
+>>> check_p997.py
+left actual normalized first3 [1, 544, 1087] fourth poly 500*x^3 + 396*x^2 + 32*x + 69 roots [(90, 1), (642, 1), (1, 1)]
+right actual normalized first3 [1, 138, 275] fourth poly 802*x^3 + 970*x^2 + 703*x + 516 roots [(138, 1), (275, 1), (1, 1)]
+known corners c [591, 470, 349] [407, 197, 984] [562] zero weights 694 802
+six actual pegs [591, 349, 562, 407, 197, 984] nodal pair 572 968
+last graph clock 922 g 672
+F997: both all-moment placements fail actual row-five rank

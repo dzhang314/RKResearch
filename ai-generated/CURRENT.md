@@ -49,6 +49,8 @@ At order eleven, an [exact 14-stage real-algebraic DIRK tableau](research/dirk11
 
 [A complementary exact 12-stage rational DIRK10 witness](research/dirk10-twelve-five-extra-primes/README.md) has only five denominator primes outside 10!: 47, 83, 97, 199, and 647. It is checked end to end in Lean/Mathlib 4.36.0 wherever its denominator is a unit. This is not a 12-stage construction over the factorial localization.
 
+The [two normalized 13-stage DIRK11 chronologies](research/causal-profile-reduction/dirk-order11-thirteen-dirty-chronology.md) give a late-ghost midpoint and degree-eight Jacobi constraint in the two-label case, and a virtual seven-site quadrature with eight possible schedules in the nine-label case. The two scalar elimination gates check in Lean/Mathlib 4.36.0. These are necessary conditions within the normalized chart; the 13–14 real interval is unchanged.
+
 ## Exact explicit minima over nonzero commutative rings
 
 - [Order five](research/erk-five-ring-witness/README.md): six stages are necessary and sufficient if 120 is a unit. Otherwise no stage count attains order five.
@@ -97,6 +99,8 @@ A [mixed rooted-moment obstruction](research/erk10-fixed-high-block-deletion/REA
 The [real-algebraic order-13 port study](research/real-sdirk13-forward-ports/README.md) builds a minimal twelve-row dense size-six decoder with two actual size-seven pure stages, and excludes the straightforward five-pivot extension to 25 stages. The forward bank is an ingredient, not an order-13 witness. The [grouped one-merge analysis](research/real-sdirk-grouped-terminal-refund/README.md) and [protected terminal extension](research/real-sdirk15-overlapping-terminal/README.md) rule out 25 stages at order 13 and 33 at order 15 in their specific fixed-stem, fully paid architectures. The unrestricted real-algebraic upper bounds are unchanged.
 
 For the characteristic-zero strict SDIRK8 ten-stage case with exactly one nonzero quadratic defect (at the weight-zero first stage) and seven distinct active clocks, [the coprime affine profile exclusion](research/sdirk-eight-silent-one-seven-distinct-coprime/README.md) completes the case where both literal fronts are active. The inactive-front cases are not covered by that result. Exact projections and several native identities are verified separately; the unrestricted interval remains 10–11.
+
+At the ten-stage strict SDIRK8 boundary, the [exactly-two quadratic-zero exclusion](research/sdirk-eight-two-zero-paid/README.md) extends to every field where 8! is nonzero. Splitting-field census and modular norms cover the finite characteristics, and Lean/Mathlib 4.36.0 checks the two last chronological rejections in characteristic 997. This does not settle other residual multiplicities.
 
 ## Raising order while keeping the old stages
 

@@ -1,0 +1,26 @@
+import RKCert.Research.SDIRKSevenDirtyArithmeticAtlas
+import RKCert.Research.SDIRKSevenDirtyArithmeticF19
+
+open RKResearch.Certified
+
+#check SDIRKSevenDirtyArithmeticAtlas.quadrature_pivot
+#check SDIRKSevenDirtyArithmeticAtlas.fourth_ratio
+#check SDIRKSevenDirtyArithmeticAtlas.ghost_pivot
+#check SDIRKSevenDirtyArithmeticAtlas.fourth_cross
+#check SDIRKSevenDirtyArithmeticAtlas.linear_helper_tap
+#check SDIRKSevenDirtyArithmeticF19.arithmetic_not_reflection
+#check SDIRKSevenDirtyArithmeticF19.ghost_is_distinct
+#check SDIRKSevenDirtyArithmeticF19.early_strictly_unpaired
+#check SDIRKSevenDirtyArithmeticF19.exists_dirty_exact
+
+#print axioms SDIRKSevenDirtyArithmeticAtlas.quadrature_pivot
+#print axioms SDIRKSevenDirtyArithmeticAtlas.fourth_ratio
+#print axioms SDIRKSevenDirtyArithmeticAtlas.ghost_pivot
+#print axioms SDIRKSevenDirtyArithmeticAtlas.fourth_cross
+#print axioms SDIRKSevenDirtyArithmeticAtlas.graph_injective
+#print axioms SDIRKSevenDirtyArithmeticAtlas.linear_helper_tap
+#print axioms SDIRKSevenDirtyArithmeticF19.arithmetic_not_reflection
+#print axioms SDIRKSevenDirtyArithmeticF19.ghost_is_distinct
+#print axioms SDIRKSevenDirtyArithmeticF19.early_strictly_unpaired
+#print axioms SDIRKSevenDirtyArithmeticF19.order_seven
+#print axioms SDIRKSevenDirtyArithmeticF19.exists_dirty_exact

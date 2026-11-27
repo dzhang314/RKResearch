@@ -1,0 +1,82 @@
+RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.quadrature_pivot {z u c s p : ℚ} (hz : z ≠ 0)
+  (eq :
+    SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 2 - s * SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 1 +
+        p * SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 0 =
+      0) :
+  SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 0 ≠ 0 ∧
+      p =
+        (s * SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 1 - SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 2) /
+          SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 0 ∨
+    SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 0 = 0 ∧
+      SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 1 ≠ 0 ∧
+        s = SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 2 / SDIRKSevenDirtyArithmeticAtlas.rawMoment z u c 1
+RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.fourth_ratio.{u_1} {K : Type u_1} [Field K] {u c r : K} (h₈ : 8 ≠ 0)
+  (hu₁ : u ≠ 1) (hu₂ : u ≠ 2) (hu₃ : u ≠ 3) (hc₁ : c ≠ 1) (hcᵤ : c ≠ u) (hcᵥ : c ≠ 2 * u - 1)
+  (read :
+    SDIRKSevenDirtyArithmeticAtlas.M u * SDIRKSevenDirtyArithmeticAtlas.Ghat u c +
+        SDIRKSevenDirtyArithmeticAtlas.Ehat u c * r =
+      0) :
+  SDIRKSevenDirtyArithmeticAtlas.Ehat u c ≠ 0 ∧
+    r =
+      -SDIRKSevenDirtyArithmeticAtlas.M u * SDIRKSevenDirtyArithmeticAtlas.Ghat u c /
+        SDIRKSevenDirtyArithmeticAtlas.Ehat u c
+RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.ghost_pivot.{u_1} {K : Type u_1} [Field K] {u h m n L₁ Lᵤ Lᵥ : K}
+  (hu : u ≠ 1) (h₂ : 2 ≠ 0) (hW : m * h + n ≠ 0) (e₁ : m + n = (1 - h) * L₁) (eᵤ : m * u + n = (u - h) * Lᵤ)
+  (eᵥ : m * (2 * u - 1) + n = (2 * u - 1 - h) * Lᵥ) :
+  SDIRKSevenDirtyArithmeticAtlas.ghostDen L₁ Lᵤ Lᵥ ≠ 0 ∧
+    h = SDIRKSevenDirtyArithmeticAtlas.ghostNum u L₁ Lᵤ Lᵥ / SDIRKSevenDirtyArithmeticAtlas.ghostDen L₁ Lᵤ Lᵥ
+RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.fourth_cross.{u_1} {K : Type u_1} [Field K]
+  {u c h m n L₁ Lᵤ Lᵥ Lc : K} (e₁ : m + n = (1 - h) * L₁) (eᵤ : m * u + n = (u - h) * Lᵤ)
+  (eᵥ : m * (2 * u - 1) + n = (2 * u - 1 - h) * Lᵥ) (ec : m * c + n = (c - h) * Lc) :
+  SDIRKSevenDirtyArithmeticAtlas.ghostDen L₁ Lᵤ Lᵥ * SDIRKSevenDirtyArithmeticAtlas.fourthNum u c L₁ Lᵤ Lc -
+      SDIRKSevenDirtyArithmeticAtlas.ghostNum u L₁ Lᵤ Lᵥ * SDIRKSevenDirtyArithmeticAtlas.fourthDen u c L₁ Lᵤ Lc =
+    0
+RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.linear_helper_tap.{u_1} {K : Type u_1} [Field K] {w t : K}
+  (ht : t ≠ 0) (h : 1 + t - w = (1 + 2 * t - t ^ 2) * (1 - w)) : w ≠ 1 ∧ t = 2 + 1 / (w - 1)
+RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.arithmetic_not_reflection :
+  SDIRKSevenDirtyArithmeticF19.y 8 = 1 ∧
+    SDIRKSevenDirtyArithmeticF19.y 7 = 4 ∧
+      SDIRKSevenDirtyArithmeticF19.y 6 = 7 ∧
+        SDIRKSevenDirtyArithmeticF19.y 6 = 2 * SDIRKSevenDirtyArithmeticF19.y 7 - SDIRKSevenDirtyArithmeticF19.y 8 ∧
+          SDIRKSevenDirtyArithmeticF19.y 6 ≠ 4 - SDIRKSevenDirtyArithmeticF19.y 7
+RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.ghost_is_distinct (i : Fin 9) :
+  3 ≤ ↑i → SDIRKSevenDirtyArithmeticF19.y i ≠ SDIRKSevenDirtyArithmeticF19.y 2
+RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.early_strictly_unpaired (i j : Fin 9) :
+  3 ≤ ↑i → ↑i < 6 → 3 ≤ ↑j → ↑j < 6 → SDIRKSevenDirtyArithmeticF19.y i + SDIRKSevenDirtyArithmeticF19.y j ≠ 8
+RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.exists_dirty_exact :
+  ∃ M w γ,
+    M.IsLowerTriangular ∧
+      (∀ (i : Fin 9), M i i = γ) ∧
+        IsUnit γ ∧
+          RKResearch.HasOrder 7 M w ∧
+            ¬RKResearch.HasOrder 8 M w ∧
+              (∀ (i : Fin 9), ↑i < 3 → w i = 0) ∧
+                (∀ (i : Fin 9), 3 ≤ ↑i → w i ≠ 0) ∧
+                  (∀ (i j : Fin 9), 3 ≤ ↑i → 3 ≤ ↑j → Graded.nodes M i = Graded.nodes M j → i = j) ∧
+                    RKResearch.monomialStageDefect M 1 2 = 0 ∧
+                      Pi.single 2 1 ∉ Graded.zeroSpace M 4 ∧ ∃ v ∈ Graded.zeroSpace M 3, v 3 ≠ 0
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.quadrature_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.fourth_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.ghost_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.fourth_cross' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.graph_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticAtlas.linear_helper_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.arithmetic_not_reflection' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.ghost_is_distinct' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.early_strictly_unpaired' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenDirtyArithmeticF19.exists_dirty_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

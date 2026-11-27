@@ -43,7 +43,7 @@ theorem finite_idempotent_power {S : Type*} [Monoid S] [Finite S] (a : S) :
     rw [Nat.mul_one] at h
     exact le_trans (by omega) h
   have hh := shifts n (i+1) hin
-  have mEq : k*(i+1)=n := Nat.mul_comm .. 
+  have mEq : k*(i+1)=n := Nat.mul_comm ..
   refine ⟨n,hn,?_⟩
   change a^n*a^n=a^n
   rw [mEq] at hh

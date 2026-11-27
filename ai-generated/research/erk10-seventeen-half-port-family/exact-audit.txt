@@ -1,0 +1,3 @@
+All 121 parameter pairs mod 11 have full profile rank 17 through order nine
+Exact integer tensor-grid receipts 120500 selected defect constant -1/77760
+Plain endpoint transfer creates cleared size-seven defect +2/45

@@ -132,3 +132,10 @@ are still open and the ordinary 17–18 bound is unchanged.
 - [Real-algebraic SDIRK13 and SDIRK15 grouped families](../real-sdirk-grouped-terminal-refund/README.md):
   count obstructions for the fixed full-column, one-merge stems,
   distinct from either unrestricted stage endpoint.
+
+## Further grouped SDIRK9 chart exclusions
+
+The twin-port 13-stage family loses its [six-site three-terminal](../real-sdirk9-six-site-three-terminal/README.md),
+[seven-site three-terminal](../real-sdirk9-seven-site-three-terminal/README.md), and
+[seven-site two-terminal](../real-sdirk9-seven-site-two-terminal/README.md) charts.
+These are exclusions of fixed constructions, not unrestricted lower bounds.

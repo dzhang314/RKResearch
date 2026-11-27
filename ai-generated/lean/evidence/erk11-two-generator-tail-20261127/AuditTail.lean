@@ -1,0 +1,24 @@
+import RKCert.Research.ERK11LiveTailGate
+import RKCert.Research.ERK11TwoGeneratorTailGate
+#check RKResearch.ERK11LiveTailGate.independentThirdRead
+#print axioms RKResearch.ERK11LiveTailGate.independentThirdRead
+#check RKResearch.ERK11LiveTailGate.sameCarrierValue
+#print axioms RKResearch.ERK11LiveTailGate.sameCarrierValue
+#check RKResearch.ERK11LiveTailGate.halfClockLoads
+#print axioms RKResearch.ERK11LiveTailGate.halfClockLoads
+#check RKResearch.ERK11LiveTailGate.threeCharges
+#print axioms RKResearch.ERK11LiveTailGate.threeCharges
+#check RKResearch.ERK11LiveTailGate.propagatedQuadratic
+#print axioms RKResearch.ERK11LiveTailGate.propagatedQuadratic
+#check RKResearch.ERK11TwoGeneratorTailGate.paidModes
+#print axioms RKResearch.ERK11TwoGeneratorTailGate.paidModes
+#check RKResearch.ERK11TwoGeneratorTailGate.normalizedMode
+#print axioms RKResearch.ERK11TwoGeneratorTailGate.normalizedMode
+#check RKResearch.ERK11TwoGeneratorTailGate.quadraticHead
+#print axioms RKResearch.ERK11TwoGeneratorTailGate.quadraticHead
+#check RKResearch.ERK11TwoGeneratorTailGate.tailCurve
+#print axioms RKResearch.ERK11TwoGeneratorTailGate.tailCurve
+#check RKResearch.ERK11TwoGeneratorTailGate.tiedDefect
+#print axioms RKResearch.ERK11TwoGeneratorTailGate.tiedDefect
+#check RKResearch.ERK11TwoGeneratorTailGate.tiedResonance
+#print axioms RKResearch.ERK11TwoGeneratorTailGate.tiedResonance

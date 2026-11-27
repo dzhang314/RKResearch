@@ -1,0 +1,55 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.ERK11LiveTailGate.independentThirdRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTailGate.sameCarrierValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTailGate.halfClockLoads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTailGate.threeCharges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTailGate.propagatedQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoGeneratorTailGate.paidModes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoGeneratorTailGate.normalizedMode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoGeneratorTailGate.quadraticHead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoGeneratorTailGate.tailCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoGeneratorTailGate.tiedDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoGeneratorTailGate.tiedResonance' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11LiveTailGate.independentThirdRead {K : Type} [Lean.Grind.Field K] (v a b c : K) (nv : v ≠ 0)
+  (e1 : a + b * v + 6 * c = 0) (e2 : a + 2 * b + 4 * c = 0) (e3 : a + 3 * b + 3 * c = 0) : a = 0 ∧ b = 0 ∧ c = 0
+'RKResearch.ERK11LiveTailGate.independentThirdRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11LiveTailGate.sameCarrierValue {K : Type} [Lean.Grind.Field K] (a b x y : K) (na : a ≠ 0) (nx : x ≠ 0)
+  (e1 : a * x + b * y = 0) (e2 : a * x * x + b * y * y = 0) : x = y
+'RKResearch.ERK11LiveTailGate.sameCarrierValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11LiveTailGate.halfClockLoads {K : Type} [Lean.Grind.Field K] (a b c u v w : K) (nu : u ≠ 0)
+  (nvw : v - w ≠ 0) (pair : b + c = 0) (head : u * a + v * b + w * c = 0) : (a = 0 ↔ b = 0) ∧ (b = 0 ↔ c = 0)
+'RKResearch.ERK11LiveTailGate.halfClockLoads' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11LiveTailGate.threeCharges {K : Type} [Lean.Grind.Field K] (x y z a b c : K) (hxy : x - y ≠ 0)
+  (hxz : x - z ≠ 0) (hyz : y - z ≠ 0) (e0 : a + b + c = 0) (e1 : a * x + b * y + c * z = 0)
+  (e2 : a * x * x + b * y * y + c * z * z = 0) : a = 0 ∧ b = 0 ∧ c = 0
+'RKResearch.ERK11LiveTailGate.threeCharges' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11LiveTailGate.propagatedQuadratic {K : Type} [Lean.Grind.Field K] (t v d L z a f k2 k3 : K) (n6 : 6 ≠ 0)
+  (tv : t * v = 1) (hd : (d + 6) * (t - 1) = 1) (hk2 : k2 = -6 * L * (4 + d - v)) (hk3 : k3 = 12 * L * (6 + d - 2 * v))
+  (first : 2 * t * (t - 1) * a = L) (transport : 12 * (t - 1) * (f - a) = (z - 1) * (k2 - (z - t) * k3)) :
+  2 * t * (t - 1) * (t - 1) * f = L * (2 * (t - 2) * z * z + 3 * z - t)
+'RKResearch.ERK11LiveTailGate.propagatedQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoGeneratorTailGate.paidModes {K : Type} [Lean.Grind.Field K] (t a d B e x : K) (n2 : 2 ≠ 0)
+  (h2 : 2 * (2 * a + d) = 2 * (t * x + B) + e) (h3 : 3 * (3 * a + d) = 3 * (t * (2 * a + d) + B) + e)
+  (h4 : 4 * (4 * a + d) = 4 * (t * (3 * a + d) + B) + e) : e = 12 * a * (t - 1) ∧ t * (x - d) = a
+'RKResearch.ERK11TwoGeneratorTailGate.paidModes' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoGeneratorTailGate.normalizedMode {K : Type} [Lean.Grind.Field K] (t d e f x : K) (n2 : 2 ≠ 0)
+  (h2 : 2 * (2 + d) = 2 * t * x + e) (he : e = 12 * (t - 1)) (hx : t * (x - d) = 1) (hf : 24 * x = 24 * (1 + d) + f) :
+  d * (t - 1) + 6 * t - 7 = 0 ∧ t * f = 24 * (1 - t)
+'RKResearch.ERK11TwoGeneratorTailGate.normalizedMode' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoGeneratorTailGate.quadraticHead {K : Type} [Lean.Grind.Field K] (t v d e s L g k2 k3 k5 : K)
+  (n6 : 6 ≠ 0) (tv : t * v = 1) (dd : d * (t - 1) + 6 * t - 7 = 0) (ee : e = 12 * (t - 1))
+  (g0 : 24 * t * g + 24 * e - e * s = 24 * (d + v)) (pure0 : 24 * L * g + 24 * k2 + 12 * k3 + k5 = 0)
+  (pure1 : 6 * L * (d + v) + 3 * k2 + k3 = 0) (pure2 : 12 * L * (2 + d) + 4 * k2 + k3 = 0)
+  (last : k5 + s * (k2 + k3) = 0) : L * (t * s - 8 * t + 4) = 0
+'RKResearch.ERK11TwoGeneratorTailGate.quadraticHead' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoGeneratorTailGate.tailCurve {K : Type} [Lean.Grind.Field K] (t p q s J L : K) (n2 : 2 ≠ 0)
+  (head : L * (t * s - 8 * t + 4) = 0) (third : p * s + (2 - 4 * p) * J + 4 * (p - 1) = 0)
+  (fourth : q * J = 4 * q - 1) : L * (2 * p * q * (t + 1) - 2 * t * (p + q) + t) = 0
+'RKResearch.ERK11TwoGeneratorTailGate.tailCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoGeneratorTailGate.tiedDefect {K : Type} [Lean.Grind.Field K] (t v d L k2 a : K) (n6 : 6 ≠ 0)
+  (nt : t - 1 ≠ 0) (tv : t * v = 1) (dd : d * (t - 1) + 6 * t - 7 = 0) (k : k2 = -6 * L * (4 + d - v))
+  (clock : 12 * (t - 1) * a = 12 * (t - 1) * L + (1 - t) * k2) : 2 * t * (t - 1) * a = L
+'RKResearch.ERK11TwoGeneratorTailGate.tiedDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoGeneratorTailGate.tiedResonance {K : Type} [Lean.Grind.Field K] (p k a2 a3 : K) (n12 : 12 ≠ 0)
+  (h2 : a2 = -6 * k) (h3 : a3 = 12 * k) (diag : -a2 + (p - 1) * a3 = 0) : (2 * p - 1) * k = 0
+'RKResearch.ERK11TwoGeneratorTailGate.tiedResonance' depends on axioms: [propext, Classical.choice, Quot.sound]

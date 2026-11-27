@@ -1,0 +1,20 @@
+[(4, 5, 3, 0), (17, 3, 9, 0), (6, 5, 15, 0), (6, 0, 14, 16)] 18 {'qPivot': 10, 'forward': 4, 'reverse': 5, 'rho0': 14, 'va': 8, 'b': [10, 10, 7, 7, 3, 18, 3]}
+[(9, 6, 18, 0), (14, 9, 16, 0), (12, 9, 13, 0), (0, 0, 18, 1)] 8 {'qPivot': 1, 'forward': 16, 'reverse': 7, 'rho0': 0, 'va': 15, 'b': [12, 10, 11, 8, 16, 6, 14]}
+raw (26, 6) (333, 84) saturated (12, 3) (26, 4)
+forbidden linear root 0
+projectively rootless 7 1 11
+projectively rootless 75 1 11
+forbidden linear root 3
+projectively rootless 3 2 2
+projectively rootless 10 2 3
+pivot factor rootless 28 13
+pivot factor rootless 2 2
+forbidden pivot specialization 3
+forbidden pivot specialization 2
+forbidden pivot specialization 1/2
+pivot factor rootless 2 3
+forbidden pivot specialization 1
+fixed u, all rational z excluded 4
+fixed u, all rational z excluded 9
+line through finite control 38 projective rootless mod 17
+extra reflected pair 38 projective rootless mod 19

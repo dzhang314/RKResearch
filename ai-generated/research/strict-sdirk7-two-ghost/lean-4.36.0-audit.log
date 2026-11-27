@@ -1,0 +1,44 @@
+RKResearch.Certified.SDIRKSevenTwoGhostScalar.seven_active_rank.{u_1} {K : Type u_1} [Field K] {b : Fin 7 → K}
+  (hb : ∀ (i : Fin 7), b i ≠ 0) {P W : Submodule K (Fin 7 → K)} (p : Module.finrank K ↥P = 4) (dis : Disjoint P W)
+  (orth : Submodule.map (RKResearch.Certified.Graded.diag b) W ≤ RKResearch.Certified.Graded.Reverse.annih (P ⊔ W)) :
+  Module.finrank K ↥W ≤ 1
+RKResearch.Certified.SDIRKSevenTwoGhostScalar.gram_kernel.{u_2} {R : Type u_2} [CommRing R] {a b c : R}
+  (h : a * c - b ^ 2 = 0) : a * -b + b * a = 0 ∧ b * -b + c * a = 0
+RKResearch.Certified.SDIRKSevenTwoGhostScalar.centered_radius_pivot {A B r s : ℚ} (hb : B ≠ 0)
+  (h :
+    A * RKResearch.Certified.SDIRKSevenPairedClean.momNum r s -
+        B * RKResearch.Certified.SDIRKSevenPairedClean.momDen r s =
+      0) :
+  A * (s / 3 - 1 / 5) - B * (s - 1 / 3) ≠ 0
+RKResearch.Certified.SDIRKSevenTwoGhostScalar.parity_det (a b m₀ m₂ m₄ : ℚ) :
+  (a ^ 2 * m₀ + b ^ 2 * m₂) * (a ^ 2 * m₂ + b ^ 2 * m₄) - (2 * a * b * m₂) ^ 2 =
+    a ^ 4 * m₀ * m₂ + a ^ 2 * b ^ 2 * (m₀ * m₄ - 3 * m₂ ^ 2) + b ^ 4 * m₂ * m₄
+RKResearch.Certified.SDIRKSevenTwoGhostScalar.crt_gram_det (s p u₄ v₀ v₁ : ℚ) :
+  v₁ * (u₄ + s * v₀ + (s ^ 2 - p) * v₁) - (v₀ + s * v₁) ^ 2 = v₁ * u₄ - v₀ ^ 2 - s * v₀ * v₁ - p * v₁ ^ 2
+RKResearch.Certified.SDIRKSevenTwoGhostF19.Centered.order_seven : RKResearch.HasOrder 7 Centered.A Centered.b
+RKResearch.Certified.SDIRKSevenTwoGhostF19.Centered.bad_value :
+  ↑↑Centered.bad.factorial * Centered.b ⬝ᵥ RKResearch.Φ Centered.bad Centered.A = 10
+RKResearch.Certified.SDIRKSevenTwoGhostF19.Centered.not_order_eight : ¬RKResearch.HasOrder 8 Centered.A Centered.b
+RKResearch.Certified.SDIRKSevenTwoGhostF19.Affine.order_seven : RKResearch.HasOrder 7 Affine.A Affine.b
+RKResearch.Certified.SDIRKSevenTwoGhostF19.Affine.not_order_eight : ¬RKResearch.HasOrder 8 Affine.A Affine.b
+'RKResearch.Certified.SDIRKSevenTwoGhostScalar.seven_active_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostScalar.gram_kernel' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostScalar.centered_radius_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostScalar.parity_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostScalar.crt_gram_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostF19.Centered.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostF19.Centered.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostF19.Affine.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTwoGhostF19.Affine.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

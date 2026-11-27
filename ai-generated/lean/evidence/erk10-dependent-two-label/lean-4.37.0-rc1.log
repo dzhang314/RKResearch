@@ -1,0 +1,7 @@
+'RKResearch.ERK10DependentLocalGate.cleanFiveContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentLocalGate.repeatedClock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentLocalGate.sameRepeat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentLocalGate.oppositeRepeatContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentLocalGate.lobattoRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentLocalGate.lobattoConflict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentLocalGate.mixedCubicGrid' depends on axioms: [propext, Classical.choice]

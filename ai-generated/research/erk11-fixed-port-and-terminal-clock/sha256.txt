@@ -1,0 +1,4 @@
+3ec0e272d68cb819995750e9f8d44fcbfbacfe3c2a0efd8ee25d2ea74aa1e510  lean/RKCert/ReviewedNative/ERK4TerminalClock.lean
+679a4f3fdc24e0a26d8db70f3a2fcb2448078a088e79850a0be6a48430747e04  lean/RKCert/ReviewedNative/ERK11FixedSevenPortsF13.lean
+43273f5ac4237503db54aff96879e22c2e335a5468e8547c958c49836fbf18e8  research/erk11-fixed-port-and-terminal-clock/README.md
+95f469200e938aa849e13f4d353a6333dbf22e290236c56091ed204ad3b365d5  research/erk11-fixed-port-and-terminal-clock/lean-4.36-audit.txt

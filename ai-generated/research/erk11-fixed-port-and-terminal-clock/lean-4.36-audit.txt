@@ -1,0 +1,10 @@
+Lean 4.36.0, pinned Mathlib
+
+=== RKCert/ReviewedNative/ERK4TerminalClock ===
+'RKResearch.Certified.ERK4TerminalClock.scalar' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK4TerminalClock.terminal_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== RKCert/ReviewedNative/ERK11FixedSevenPortsF13 ===
+'RKResearch.Certified.ERK11FixedSevenPortsF13.no_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK11FixedSevenPortsF13.no_weighted_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

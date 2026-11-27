@@ -1,0 +1,8 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+RKResearch.Certified.SDIRK9SevenSiteTwoTerminalMod43.bezout_twelve : allPairs.length = 12 ∧ allPairs.all verify = true
+RKResearch.Certified.SDIRK9SevenSiteTwoTerminalMod43.determinant_twenty_four :
+  determinantValues.length = 24 ∧ (determinantValues.all fun x => x != 0) = true
+'RKResearch.Certified.SDIRK9SevenSiteTwoTerminalMod43.bezout_twelve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRK9SevenSiteTwoTerminalMod43.determinant_twenty_four' does not depend on any axioms

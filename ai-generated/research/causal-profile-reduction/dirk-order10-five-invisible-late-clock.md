@@ -133,3 +133,7 @@ The cubic factor identity, all-five-live ghost entries in
 the true reverse row, and these prefix bounds are simultaneous
 necessary restrictions. They do not yet exclude the five-distinct
 case.
+
+The separate [finite cuts](dirk-order10-invisible-five-finite-cuts.md)
+exclude a fixed-factor branch with all five invisible stages early.
+They do not exclude arbitrary chronological interleaving.

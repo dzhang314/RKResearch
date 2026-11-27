@@ -1,0 +1,78 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKSevenTailCubicPurity.first_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCubicPurity.second_error_last' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCubicPurity.tail_cubic_pure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenTailCubicPurity.rational_seed_chart_cubic_pure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.SDIRKSevenTailCubicPurity.first_adjoint.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Matrix RKResearch.Certified.SDIRKSevenTailCollision.F RKResearch.Certified.SDIRKSevenTailCollision.F K}
+  {b : RKResearch.Certified.SDIRKSevenTailCollision.F → K} (ho : RKResearch.HasOrder 7 A b)
+  (head : RKResearch.Certified.SDIRKSevenTailCubicPurity.PaidHead A)
+  (inj :
+    ∀ (i j : RKResearch.Certified.SDIRKSevenTailCollision.F),
+      i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+        j ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+          RKResearch.Certified.SDIRKSevenTailCollision.x A i = RKResearch.Certified.SDIRKSevenTailCollision.x A j →
+            i = j) :
+  RKResearch.Certified.SDIRKSevenTailCollision.firstRow A b =
+    RKResearch.Certified.SDIRKSevenTailCollision.firstTarget A b
+RKResearch.Certified.SDIRKSevenTailCubicPurity.second_error_last.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Matrix RKResearch.Certified.SDIRKSevenTailCollision.F RKResearch.Certified.SDIRKSevenTailCollision.F K}
+  {b : RKResearch.Certified.SDIRKSevenTailCollision.F → K} {γ : K} (ho : RKResearch.HasOrder 7 A b)
+  (head : RKResearch.Certified.SDIRKSevenTailCubicPurity.PaidHead A) (ha : A.IsLowerTriangular)
+  (he : ∀ (i : RKResearch.Certified.SDIRKSevenTailCollision.F), A i i = γ) (hg : γ ≠ 0) (hb : b 8 ≠ 0)
+  (inj :
+    ∀ (i j : RKResearch.Certified.SDIRKSevenTailCollision.F),
+      i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+        j ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+          RKResearch.Certified.SDIRKSevenTailCollision.x A i = RKResearch.Certified.SDIRKSevenTailCollision.x A j →
+            i = j) :
+  RKResearch.Certified.SDIRKSevenTailCollision.secondError A b 8 ≠ 0
+RKResearch.Certified.SDIRKSevenTailCubicPurity.second_error_every_tail.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Matrix RKResearch.Certified.SDIRKSevenTailCollision.F RKResearch.Certified.SDIRKSevenTailCollision.F K}
+  {b : RKResearch.Certified.SDIRKSevenTailCollision.F → K} {γ : K} (ho : RKResearch.HasOrder 7 A b)
+  (head : RKResearch.Certified.SDIRKSevenTailCubicPurity.PaidHead A) (ha : A.IsLowerTriangular)
+  (he : ∀ (i : RKResearch.Certified.SDIRKSevenTailCollision.F), A i i = γ) (hg : γ ≠ 0) (hb : b 8 ≠ 0)
+  (inj :
+    ∀ (i j : RKResearch.Certified.SDIRKSevenTailCollision.F),
+      i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+        j ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+          RKResearch.Certified.SDIRKSevenTailCollision.x A i = RKResearch.Certified.SDIRKSevenTailCollision.x A j →
+            i = j)
+  (j : RKResearch.Certified.SDIRKSevenTailCollision.F) (hj : j ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail) :
+  RKResearch.Certified.SDIRKSevenTailCollision.secondError A b j ≠ 0
+RKResearch.Certified.SDIRKSevenTailCubicPurity.tail_cubic_pure.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Matrix RKResearch.Certified.SDIRKSevenTailCollision.F RKResearch.Certified.SDIRKSevenTailCollision.F K}
+  {b v : RKResearch.Certified.SDIRKSevenTailCollision.F → K} {γ : K} (ho : RKResearch.HasOrder 7 A b)
+  (head : RKResearch.Certified.SDIRKSevenTailCubicPurity.PaidHead A) (ha : A.IsLowerTriangular)
+  (he : ∀ (i : RKResearch.Certified.SDIRKSevenTailCollision.F), A i i = γ) (hg : γ ≠ 0) (hb : b 8 ≠ 0)
+  (inj :
+    ∀ (i j : RKResearch.Certified.SDIRKSevenTailCollision.F),
+      i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+        j ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+          RKResearch.Certified.SDIRKSevenTailCollision.x A i = RKResearch.Certified.SDIRKSevenTailCollision.x A j →
+            i = j)
+  (hv : v ∈ RKResearch.Certified.Graded.zeroSpace A 3) (i : RKResearch.Certified.SDIRKSevenTailCollision.F) :
+  i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail → v i = 0
+RKResearch.Certified.SDIRKSevenTailCubicPurity.rational_seed_chart_cubic_pure
+  {A : Matrix RKResearch.Certified.SDIRKSevenTailCollision.F RKResearch.Certified.SDIRKSevenTailCollision.F ℚ}
+  {b v : RKResearch.Certified.SDIRKSevenTailCollision.F → ℚ} {γ : ℚ} (ho : RKResearch.HasOrder 7 A b)
+  (ha : A.IsLowerTriangular) (he : ∀ (i : RKResearch.Certified.SDIRKSevenTailCollision.F), A i i = γ) (hg : γ ≠ 0)
+  (clean : ∀ i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail, RKResearch.monomialStageDefect A 1 i = 0)
+  (distinct :
+    ∀ (i j : RKResearch.Certified.SDIRKSevenTailCollision.F),
+      i ∉ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+        j ∉ RKResearch.Certified.SDIRKSevenTailCollision.tail →
+          i ≠ j →
+            RKResearch.Certified.SDIRKSevenTailCollision.x A i ≠ RKResearch.Certified.SDIRKSevenTailCollision.x A j)
+  (seed : ∀ i ∉ RKResearch.Certified.SDIRKSevenTailCollision.tail, RKResearch.monomialStageDefect A 1 i ≠ 0)
+  (active : ∀ i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail, b i ≠ 0)
+  (hv : v ∈ RKResearch.Certified.Graded.zeroSpace A 3) (i : RKResearch.Certified.SDIRKSevenTailCollision.F) :
+  i ∈ RKResearch.Certified.SDIRKSevenTailCollision.tail → v i = 0

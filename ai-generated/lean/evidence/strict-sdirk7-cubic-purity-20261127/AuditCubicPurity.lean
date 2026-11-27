@@ -1,0 +1,10 @@
+import RKCert.Research.SDIRKSevenTailCubicPurity
+#print axioms RKResearch.Certified.SDIRKSevenTailCubicPurity.first_adjoint
+#print axioms RKResearch.Certified.SDIRKSevenTailCubicPurity.second_error_last
+#print axioms RKResearch.Certified.SDIRKSevenTailCubicPurity.tail_cubic_pure
+#print axioms RKResearch.Certified.SDIRKSevenTailCubicPurity.rational_seed_chart_cubic_pure
+#check RKResearch.Certified.SDIRKSevenTailCubicPurity.first_adjoint
+#check RKResearch.Certified.SDIRKSevenTailCubicPurity.second_error_last
+#check RKResearch.Certified.SDIRKSevenTailCubicPurity.second_error_every_tail
+#check RKResearch.Certified.SDIRKSevenTailCubicPurity.tail_cubic_pure
+#check RKResearch.Certified.SDIRKSevenTailCubicPurity.rational_seed_chart_cubic_pure

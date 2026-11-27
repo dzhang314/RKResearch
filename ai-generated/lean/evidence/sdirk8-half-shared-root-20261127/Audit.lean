@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.SDIRK8SharedClockReceipts
+#print axioms RKCert.ReviewedNative.SDIRK8SharedClockReceipts.affineReadUnique
+#print axioms RKCert.ReviewedNative.SDIRK8SharedClockReceipts.singletonPairing
+#print axioms RKCert.ReviewedNative.SDIRK8SharedClockReceipts.reducedDualBudget
+#print axioms RKCert.ReviewedNative.SDIRK8SharedClockReceipts.doubleClockVariance

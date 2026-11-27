@@ -1,0 +1,10 @@
+Literal row five has no repeated-clock fiber
+s projection True True 3 [3]
+excluded singleton pitch True True 3
+s projection True False 9 [3, 6]
+excluded singleton pitch True False 3
+excluded singleton pitch True False 6
+s projection False True 3 [3]
+excluded singleton pitch False True 3
+s projection False False 9 [9]
+excluded singleton pitch False False 9

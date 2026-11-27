@@ -1,0 +1,8 @@
+'RKCert.ReviewedNative.SDIRK8SharedClockReceipts.affineReadUnique' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SharedClockReceipts.singletonPairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SharedClockReceipts.reducedDualBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SharedClockReceipts.doubleClockVariance' depends on axioms: [propext, Quot.sound]

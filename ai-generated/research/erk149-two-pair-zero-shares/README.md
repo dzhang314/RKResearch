@@ -86,3 +86,5 @@ From ai-generated/lean:
 
     lake build +RKCert.ReviewedNative.ERK149TwoPairRawTranspose
     lake env lean AuditERK149TwoPairRawTranspose.lean
+
+The [dormant-aggregate follow-up](../erk149-two-pair-dormant-aggregate/README.md) closes the zero-aggregate cases as well, completing this fixed cubic-decoder, two-pair shape only.

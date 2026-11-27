@@ -1,0 +1,8 @@
+RKResearch.Certified.ERK149LobattoDormantCore.roots_exact : roots = [24, 51, 177, 204]
+RKResearch.Certified.ERK149LobattoDormantCore.no_three_halves :
+  (roots.all fun a => roots.all fun t => threeHalves a t != 0) = true
+RKResearch.Certified.ERK149LobattoDormantCore.no_two_donor_cubic :
+  (roots.all fun a => roots.all fun b => roots.all fun t => a == b || cubic a b t != 0) = true
+'RKResearch.Certified.ERK149LobattoDormantCore.roots_exact' does not depend on any axioms
+'RKResearch.Certified.ERK149LobattoDormantCore.no_three_halves' does not depend on any axioms
+'RKResearch.Certified.ERK149LobattoDormantCore.no_two_donor_cubic' does not depend on any axioms

@@ -111,3 +111,10 @@ excludes two specific rational compression routes at order seven and
 separates the mathematical reductions from the Lean arithmetic. It does
 not exclude arbitrary nine-stage rational tableaux or eight-stage tableaux
 over ordered fields.
+
+The [shift-one weighted census](../WEIGHTED-ORDER-NINE-SHIFT-ONE-ATLAS.md)
+also gives a mathematical 13-stage floor in characteristic zero, with
+[portable scalar Lean certificates](../../lean/evidence/weighted-order-nine-shift-one-20261127/).
+Both weighted floors supply the numerical guard in the ordinary ERK11
+cutoff. The [remaining rank and prefix issues](../ERK11-AFTER-TWO-WEIGHTED-NINE-FLOORS.md)
+are still open and the ordinary 17–18 bound is unchanged.

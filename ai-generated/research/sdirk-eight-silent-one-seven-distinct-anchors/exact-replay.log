@@ -1,0 +1,23 @@
+seven distinct zero factor exact γ True None 1 9 constant piece 0
+seven distinct zero factor exact γ True None -1 9 constant piece 0
+seven distinct zero factor exact γ True True 1 9 constant piece 4
+seven distinct zero factor exact γ True True -1 9 constant piece 4
+seven distinct zero factor exact γ True False 1 9 constant piece 0
+seven distinct zero factor exact γ True False -1 9 constant piece 0
+seven distinct zero factor exact γ False None 1 9 constant piece 0
+seven distinct zero factor exact γ False None -1 9 constant piece 0
+seven distinct zero factor exact γ False True 1 9 constant piece 0
+seven distinct zero factor exact γ False True -1 9 constant piece 0
+seven distinct zero factor exact γ False False 1 9 constant piece 4
+seven distinct zero factor exact γ False False -1 9 constant piece 0
+constant-Q nonzero exact gap True 4 True True 0
+constant-Q nonzero exact gap True 4 True False 3
+constant-Q nonzero exact gap True 4 False True 5
+constant-Q nonzero exact gap True 4 False False 3
+constant-Q nonzero exact gap True 4 None True 4
+constant-Q nonzero exact gap False 4 True True 2
+constant-Q nonzero exact gap False 4 True False 3
+constant-Q nonzero exact gap False 4 False True 4
+constant-Q nonzero exact gap False 4 False False 3
+constant-Q nonzero exact gap False 4 None True 4
+seven-distinct scoped orientations excluded: 4 12 10

@@ -1,0 +1,3 @@
+'RKResearch.Certified.RootedTreeGram.FactoredTrace.pureAt_of_local' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

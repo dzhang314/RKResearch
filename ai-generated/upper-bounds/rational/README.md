@@ -2,6 +2,9 @@
 
 Examples at current stage counts: ERK orders 1–4; DIRK orders 1, 2, 4, 5, 6 and 7; and strict SDIRK orders 1 and 2. Quadratic radicals are unnecessary for the newer 7-stage order-7 DIRK witness. The order-20 rational midpoint extrapolation fixture below is a certified alternative, not the 42-stage best-known construction in this archive.
 
+- [Exact rational strict SDIRK order seven in 10 stages](../../research/strict-sdirk7/README.md): two Lean-checked tableaux cover all admissible local coefficient rings.
+- [Exact rational strict SDIRK order thirteen in 35 stages](../../research/fixed-one-odd-continuation/README.md): the tableau and the symbolic stage-merge proof are Lean-checked.
+
 - [Exact rational strict SDIRK order eight in 15 stages](../../lean/evidence/reviewed-native-rational-sdirk-fifteen-stage-eight-20261125/README.md): the literal common-diagonal `1/8` tableau and exact order are Lean-checked. This is a rational upper witness, not a stage minimum.
 - [Exact rational strict SDIRK order nine in 23 stages](../../lean/evidence/reviewed-native-rational-sdirk-twenty-three-stage-nine-20261125/README.md): the common-diagonal 1/9 tableau and exact order are Lean-checked. This is a rational upper witness, not a minimum.
 - [Exact rational strict SDIRK order ten in 27 stages](strict-sdirk-order-ten-27/README.md): all rooted-tree conditions and the eleventh tall-tree failure are verified by exact arithmetic. The Lean certificate is pending; this is an upper witness, not a minimum.

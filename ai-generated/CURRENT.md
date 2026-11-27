@@ -69,13 +69,15 @@ The [complete field classification](research/strict-sdirk-endpoints/MINIMA.md) g
 ## Necessary conditions at two open stage boundaries
 
 - [Eleven stages at DIRK order ten](research/causal-profile-reduction/dirk-order10-crossed-cubic-pivots.md): any such tableau over a field must have zero diagonal at its first and last stages and at two distinct interior stages. Over a nonzero commutative ring at least four diagonal entries must be nonunits. Lean/Mathlib 4.36.0 checks these restrictions from the literal rooted equations. This does not settle the 11–12 stage interval.
-- [Eleven stages at rational ERK order eight](research/erk-eight-factorial/FOUR-TAP-ELEVEN-OBSTRUCTION.md): the head-silent four-tap architecture with the specified terminal gate is impossible, including repeated-clock cases. The scalar elimination is checked in Lean/Mathlib 4.36.0; the reduction to it is mathematical. Unrestricted eleven-stage rational existence remains open.
+- [Eleven stages at rational ERK order eight](research/erk-eight-factorial/FOUR-TAP-ELEVEN-OBSTRUCTION.md): the head-silent four-tap architecture with the specified terminal gate is impossible, including repeated-clock cases. The scalar elimination is checked in Lean/Mathlib 4.36.0; the reduction to it is mathematical. A [separate pure-head exclusion](research/erk-eight-factorial-escape/PURE-HEAD-OBSTRUCTION.md) assumes the low-order defect space equals the span of the four head stage coordinates but does not impose the tap or clock hypotheses. Its rational five-site quadrature obstruction is checked in Lean; the full tableau argument is mathematical. Unrestricted eleven-stage rational existence remains open.
 
 ## Raising order while keeping the old stages
 
 The [Newton-tail construction](research/newton-tail-order-raising/NEWTON-TAIL.md) raises order p−1 to at least p without changing the old stage equations, provided the output weights can be reassigned. It uses at most 2p new stages over nonzero commutative rings with p! invertible. Over the real algebraic numbers the [sharp worst-case costs](research/newton-tail-order-raising/SHARP-EXTENSION-COST.md) are floor(p/2) new ERK stages and ceil(p/2) for DIRK and SDIRK, with preservation of the SDIRK diagonal. For comparison, [fixing the old output weights](research/newton-tail-order-raising/FIXED-OUTPUT-LOWER.md) can force exponentially many new stages along a sequence of orders; some order-18 bases need at least 77 appended stages to reach order 19. These are extension costs, not absolute stage minima or Lean certificates.
 
-## Rational strict SDIRK upper bounds at orders 8–20
+## Rational strict SDIRK upper bounds at orders 7–20
+
+At order seven, [two exact ten-stage tableaux](research/strict-sdirk7/README.md) improve the rational upper from eleven to ten. Their extra denominator primes are disjoint, so the same upper bound holds over every nonzero local commutative ring with 7! invertible, including every admissible field. The Lean selection theorem is local; it does not give a single ten-stage tableau over the factorial localization.
 
 The [two-order Newton construction](research/rational-sdirk-two-order/TWO-ORDER-NEWTON-TAIL.md) gives exact rational strict SDIRK in 13, 19, and 21 physical stages at orders 8, 9, and 10, respectively. These improve the earlier rational witnesses of 15, 23, and 27 stages. All rooted equations and next-bush failures were checked with exact rational arithmetic on the [literal tableaux](research/rational-sdirk-two-order/README.md).
 
@@ -86,7 +88,11 @@ reduces the rational upper bounds to **18 stages at order nine** and
 **26 stages at order eleven**. Both exact-order witnesses were kernel
 checked in Lean 4.36.0 with the [integer Gram replay](research/rooted-tree-gram/README.md).
 No change to the real-algebraic bounds is implied. The same note gives
-constructive higher odd-order counts, with separate verification scope.
+constructive higher odd-order counts, with separate verification scope. At order thirteen,
+the [35-stage rational exact-order witness](research/fixed-one-odd-continuation/README.md)
+is now kernel-checked in Lean 4.36.0, reducing the previously verified rational upper from 37.
+The proof uses a reusable symbolic rooted-tree induction and a verified causal stage merge.
+The rational continuation counts at 15, 17, and 19 have not yet been checked end to end in Lean.
 
 ## General mechanisms for changing or bounding stage counts
 

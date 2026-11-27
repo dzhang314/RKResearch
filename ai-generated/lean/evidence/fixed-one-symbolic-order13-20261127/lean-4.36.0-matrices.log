@@ -1,0 +1,5 @@
+'RKResearch.Certified.TwoOrderMomentTail.adjoint_rows_from_matrices' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.TwoOrderMomentTail.pure_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.TwoOrderMomentTail.order_shifted' depends on axioms: [propext, Classical.choice, Quot.sound]

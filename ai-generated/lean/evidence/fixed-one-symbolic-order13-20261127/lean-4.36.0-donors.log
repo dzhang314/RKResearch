@@ -1,0 +1,3 @@
+'RKResearch.Certified.Seed11Donors.pure18' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Seed11Donors.pure19' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Seed11Donors.pure20' depends on axioms: [propext, Classical.choice, Quot.sound]

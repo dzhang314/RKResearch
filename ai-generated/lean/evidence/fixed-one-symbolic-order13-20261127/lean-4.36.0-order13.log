@@ -1,0 +1,5 @@
+'RKResearch.Certified.FixedOneOrder13.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m13.476s
+user	0m12.732s
+sys	0m0.670s

@@ -1,0 +1,25 @@
+RKCert/ReviewedNative/TwoOrderMomentTail.lean:31:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoOrderMomentTail.head_action`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/TwoOrderMomentTail.lean:37:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoOrderMomentTail.tail_action`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/TwoOrderMomentTail.lean:59:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoOrderMomentTail.read_eq_moment`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RKCert/ReviewedNative/TwoOrderMomentTail.lean:67:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.TwoOrderMomentTail.read_times_power`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'RKResearch.Certified.TwoOrderMomentTail.tail_hasOrder' depends on axioms: [propext, Classical.choice, Quot.sound]

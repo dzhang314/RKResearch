@@ -1,0 +1,53 @@
+Exact replay: four_active.py
+Both front phases and all 48 ordered Gauss pairs excluded.
+Exact replay: center.py
+active trailing third excluded True True 1
+active trailing third excluded True True -1
+active trailing third excluded True False 1
+active trailing third excluded True False -1
+silent trailing third excluded True 1
+silent trailing third excluded True -1
+active trailing third excluded False True 1
+active trailing third excluded False True -1
+active trailing third excluded False False 1
+active trailing third excluded False False -1
+silent trailing third excluded False 1
+silent trailing third excluded False -1
+Exact replay: off8_fibers.py
+silent r2 branch True raw 32 guarded 29 constant 0 shared-or-constant 0 coprime 29
+factor degrees [(29, 1)]
+factor degrees [(29, 1)]
+factor degrees []
+factor degrees []
+Silent trailing third: cubic unit True (1009, 285)
+silent r2 branch False raw 32 guarded 29 constant 0 shared-or-constant 0 coprime 29
+factor degrees [(29, 1)]
+factor degrees [(29, 1)]
+factor degrees []
+factor degrees []
+Silent trailing third: cubic unit False (1009, 285)
+Exact replay: tail8_fibers.py
+literal polynomial degrees True True (3, 10) (3, 10)
+projection raw 60
+projection guarded True True 26 constant 0 shared 0
+leading cubic exceptional degree 8
+Active trailing third: monic unit True True 8 2
+Active trailing third: monic unit True True 18 3
+literal polynomial degrees True False (3, 10) (6, 10)
+projection raw 90
+projection guarded True False 73 constant 0 shared 0
+leading cubic exceptional degree 8
+Active trailing third: monic unit True False 8 2
+Active trailing third: monic unit True False 65 3
+literal polynomial degrees False True (3, 10) (3, 10)
+projection raw 60
+projection guarded False True 31 constant 0 shared 0
+leading cubic exceptional degree 8
+Active trailing third: monic unit False True 8 2
+Active trailing third: monic unit False True 23 3
+literal polynomial degrees False False (3, 10) (6, 10)
+projection raw 90
+projection guarded False False 68 constant 0 shared 0
+leading cubic exceptional degree 8
+Active trailing third: monic unit False False 8 2
+Active trailing third: monic unit False False 60 3

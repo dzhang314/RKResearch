@@ -1,0 +1,5 @@
+Twelfth defect 8561/3849120 factorial 12 tree ((), (), (), (), (), (), (), (), (), (), ())
+Twelfth defect -1309396673493832996421/13471920 factorial 72 tree ((), (), (), (), (), ((), (), (), (), ()))
+Selected single unit defect -16/2673, factorial 20160, raw output 2657/53887680
+Strict distinct rows 22 common denominator 941072888448000 {2: 10, 3: 11, 5: 3, 7: 3, 11: 2}
+All exact paid conditions [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842] total 3047 next numerator gcd 1

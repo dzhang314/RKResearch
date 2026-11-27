@@ -1,0 +1,21 @@
+coprime pole row-five projection True 20 leading gap 0 20
+active separate-aggregate polys True True tail (0, 2, 14, 0) nodal (0, 6, 25, 0)
+star center powers True 3 common 0
+star exact projection degree True 33 exception 0
+active separate-aggregate polys True False tail (0, 5, 14, 0) nodal (0, 6, 25, 0)
+arithmetic extra projection True 209 116 0 116
+exact separate zero-gap subfactor True 0 116
+silent extra raw polynomials True (0, 4, 9, 0) (3, 0, 4, 0) (3, 3, 25, 0)
+silent extra y projection True (0, 9, 87, 0)
+silent extra exact projection True 429 171 gap lead 0 y lead 0 u0 0
+coprime pole row-five projection False 24 leading gap 0 24
+active separate-aggregate polys False True tail (0, 2, 14, 1) nodal (0, 6, 25, 1)
+star center powers False 3 common 0
+star exact projection degree False 33 exception 0
+active separate-aggregate polys False False tail (0, 5, 14, 1) nodal (0, 6, 25, 1)
+arithmetic extra projection False 209 116 0 116
+exact separate zero-gap subfactor False 0 116
+silent extra raw polynomials False (0, 4, 9, 1) (3, 0, 4, 1) (3, 3, 25, 1)
+silent extra y projection False (0, 9, 87, 1)
+silent extra exact projection False 429 171 gap lead 0 y lead 0 u0 0
+both-front coprime seven-clock orientations excluded: 6 4 2

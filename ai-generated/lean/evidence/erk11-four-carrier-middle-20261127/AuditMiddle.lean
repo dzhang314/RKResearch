@@ -1,0 +1,19 @@
+import RKCert.Research.ERK11MiddleDefectGate
+#check RKResearch.ERK11MiddleDefectGate.middleFactor
+#print axioms RKResearch.ERK11MiddleDefectGate.middleFactor
+#check RKResearch.ERK11MiddleDefectGate.interpolationAtHalf
+#print axioms RKResearch.ERK11MiddleDefectGate.interpolationAtHalf
+#check RKResearch.ERK11MiddleDefectGate.interpolationAtOne
+#print axioms RKResearch.ERK11MiddleDefectGate.interpolationAtOne
+#check RKResearch.ERK11MiddleDefectGate.interpolationAtZ
+#print axioms RKResearch.ERK11MiddleDefectGate.interpolationAtZ
+#check RKResearch.ERK11MiddleDefectGate.newSideRatio
+#print axioms RKResearch.ERK11MiddleDefectGate.newSideRatio
+#check RKResearch.ERK11MiddleDefectGate.repeatSideRatio
+#print axioms RKResearch.ERK11MiddleDefectGate.repeatSideRatio
+#check RKResearch.ERK11MiddleDefectGate.opposedQuadratic
+#print axioms RKResearch.ERK11MiddleDefectGate.opposedQuadratic
+#check RKResearch.ERK11MiddleDefectGate.opposedNewCubic
+#print axioms RKResearch.ERK11MiddleDefectGate.opposedNewCubic
+#check RKResearch.ERK11MiddleDefectGate.centeredPath
+#print axioms RKResearch.ERK11MiddleDefectGate.centeredPath

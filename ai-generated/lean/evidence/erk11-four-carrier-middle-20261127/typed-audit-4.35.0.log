@@ -1,0 +1,43 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'RKResearch.ERK11MiddleDefectGate.middleFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.interpolationAtHalf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.interpolationAtOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.interpolationAtZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.newSideRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.repeatSideRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.opposedQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.opposedNewCubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleDefectGate.centeredPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.middleFactor {K : Type} [Lean.Grind.Field K] (x z : K) :
+  (z - 1) * (z - 1) * x * RKResearch.ERK11MiddleDefectGate.G x + (1 - x) * RKResearch.ERK11MiddleDefectGate.R x z =
+    (x - z) * (2 * x - 1) * ((6 * z - 7) * x - 7 * z + 8)
+'RKResearch.ERK11MiddleDefectGate.middleFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.interpolationAtHalf {K : Type} [Lean.Grind.Field K] (x z : K) (half : 2 * x = 1) :
+  RKResearch.ERK11MiddleDefectGate.R x z = -4 * (z - 1) * (z - 1)
+'RKResearch.ERK11MiddleDefectGate.interpolationAtHalf' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.interpolationAtOne {K : Type} [Lean.Grind.Field K] (z : K) :
+  RKResearch.ERK11MiddleDefectGate.R 1 z = 2 * (z - 1) * (z - 1)
+'RKResearch.ERK11MiddleDefectGate.interpolationAtOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.interpolationAtZ {K : Type} [Lean.Grind.Field K] (z : K) :
+  RKResearch.ERK11MiddleDefectGate.R z z = z * (z - 1) * RKResearch.ERK11MiddleDefectGate.G z
+'RKResearch.ERK11MiddleDefectGate.interpolationAtZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.newSideRatio {K : Type} [Lean.Grind.Field K] (z x a : K)
+  (phi : (6 * z - 7) * x = 7 * z - 8) (cubicValueAtOne : (1 - z) * (1 - x) = -1)
+  (quadraticCoeff : 2 * (z + x) + 5 * a = 1) : 5 * a = 9
+'RKResearch.ERK11MiddleDefectGate.newSideRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.repeatSideRatio {K : Type} [Lean.Grind.Field K] (z a : K) (n3 : 3 ≠ 0)
+  (g : RKResearch.ERK11MiddleDefectGate.G z = 0) (fit : 5 * a * (z - 1) + 2 * z * z - z - 3 = 0) :
+  RKResearch.ERK11MiddleDefectGate.Kq a = 0
+'RKResearch.ERK11MiddleDefectGate.repeatSideRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.opposedQuadratic {K : Type} [Lean.Grind.Field K] (a b : K) (inverse : a * b = 1)
+  (notMinus : a + 1 ≠ 0) (n56 : 56 ≠ 0) (n7572 : 7572 ≠ 0) (n13 : 13 ≠ 0) (n152 : 152 ≠ 0)
+  (front : 5 * a = 9 ∨ RKResearch.ERK11MiddleDefectGate.Kq a = 0)
+  (rear : 5 * b = 9 ∨ RKResearch.ERK11MiddleDefectGate.Kq b = 0) : False
+'RKResearch.ERK11MiddleDefectGate.opposedQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.opposedNewCubic {K : Type} [Lean.Grind.Field K] (a b k h : K) (inverse : a * b = 1)
+  (notMinus : a + 1 ≠ 0) (n4 : 4 ≠ 0) (front : k = a * (5 * a - 9)) (rear : h = b * (5 * b - 9))
+  (reflect : a * a * a * h = -k) : False
+'RKResearch.ERK11MiddleDefectGate.opposedNewCubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11MiddleDefectGate.centeredPath {K : Type} [Lean.Grind.Field K] (x : K) :
+  16 * (660 * x ^ 4 - 1320 * x ^ 3 + 1045 * x ^ 2 - 385 * x + 56) = 660 * (2 * x - 1) ^ 4 + 220 * (2 * x - 1) ^ 2 + 16
+'RKResearch.ERK11MiddleDefectGate.centeredPath' depends on axioms: [propext, Classical.choice, Quot.sound]

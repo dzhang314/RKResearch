@@ -1,0 +1,20 @@
+base literal 12-stage lower triangular matrix with distinct rows and unequal diagonals
+base all 1205 integer order tests [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+base normalized next bush 1/2488320 ; normalized next (3 leaves + 7-bush child) 7/995328
+base literal D 101588047290852467338246934187117072000
+alternate literal 12-stage lower triangular matrix with distinct rows and unequal diagonals
+alternate all 1205 integer order tests [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+alternate normalized next bush 19891/520224768 ; normalized next (3 leaves + 7-bush child) -3253/247726080
+alternate literal D 27200218281512417863777752865356303988517513768290967792990592000
+integer Bézout for arbitrary D2-unit rings: -907(19891) - 5546(-3253) = 1
+gcd(D1,D2) = gcd(D1,D2*19891) = 2^7*3^5*5^3*7
+prime 11 : alternate D and normalized bush residues 6 10
+prime 17 : alternate D and normalized bush residues 14 16
+prime 19 : alternate D and normalized bush residues 18 2
+prime 151 : alternate D and normalized bush residues 115 34
+prime 173 : alternate D and normalized bush residues 114 125
+prime 607 : alternate D and normalized bush residues 600 478
+prime 653 : alternate D and normalized bush residues 191 92
+prime 1063 : alternate D and normalized bush residues 863 1029
+prime 1499 : alternate D and normalized bush residues 360 1008
+prime 1553 : alternate D and normalized bush residues 256 341

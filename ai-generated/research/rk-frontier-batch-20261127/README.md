@@ -42,7 +42,10 @@ python3 check-independent.py tableau-9.json tableau-11.json
 ```
 
 The JSON format uses one common denominator for the stage matrix and one
-for the output weights. The independent replay alone is not a Lean proof.
+for the output weights. The independent replay alone is not a Lean proof. The separate [integer
+Gram certificate](../rooted-tree-gram/README.md) kernel-checks the
+18-stage order-nine witness in Lean 4.36. See its reproduction receipts for
+which exact files and versions were tested.
 
 ## Other coefficient-domain endpoints
 
@@ -65,3 +68,9 @@ The [four-word weighted ERK restriction](../WEIGHTED-ORDER-NINE-FOUR-TAP.md)
 and the [DIRK Volterra restriction](../causal-profile-reduction/zero-diagonal-volterra-bridges.md)
 narrow equality cases without changing the unrestricted lower bounds. Their
 local Lean modules are separate from the mathematical bridge arguments.
+
+The follow-up [weighted ERK support census](../WEIGHTED-ORDER-NINE-OFF-GATES.md)
+and [DIRK crossed-pivot restrictions](../causal-profile-reduction/dirk-order10-crossed-cubic-pivots.md)
+further constrain the surviving equality cases. The mathematical bridges
+and locally formalized lemmas have distinct scopes. Neither research lane
+has proved a new unrestricted stage floor.

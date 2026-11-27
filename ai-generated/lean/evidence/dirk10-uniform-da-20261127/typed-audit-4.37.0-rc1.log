@@ -1,0 +1,29 @@
+RKResearch.Certified.Graded.PaidDAObstructionScalar.all_fixed_da_defects :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun u =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun w =>
+        RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (checkTriple u w)) =
+    true
+RKResearch.Certified.Graded.PaidDAField.shift_cancel {K : Type} [Lean.Grind.Field K] (u v k : K) (hu : u ≠ 0)
+  (hv : v - u ≠ 0) :
+  have d := k / (u * (v - u));
+  d * u = k / (v - u) ∧
+    d * u ^ 2 - k * v / (v - u) = -k ∧ d * u ^ 3 - k * v ^ 2 / (v - u) + (v - u / 2) * k = -(u + u / 2) * k
+RKResearch.Certified.Graded.PaidDAField.tapOne {K : Type} [Lean.Grind.Field K] (u a S : K) (hu : u ≠ 0)
+  (h : a * u = S) : a = S / u
+RKResearch.Certified.Graded.PaidDAField.tapTwo {K : Type} [Lean.Grind.Field K] (u v a b S T : K) (hu : u ≠ 0)
+  (hv : u - v ≠ 0) (hS : a * u + b * v = S) (hT : a * u ^ 2 + b * v ^ 2 = T) : a = (T - v * S) / (u * (u - v))
+RKResearch.Certified.Graded.PaidDAField.tapThree {K : Type} [Lean.Grind.Field K] (u v w a b c S T R : K) (hu : u ≠ 0)
+  (hv : u - v ≠ 0) (hw : u - w ≠ 0) (hS : a * u + b * v + c * w = S) (hT : a * u ^ 2 + b * v ^ 2 + c * w ^ 2 = T)
+  (hR : a * u ^ 3 + b * v ^ 3 + c * w ^ 3 = R) : a = (R - (v + w) * T + v * w * S) / (u * (u - v) * (u - w))
+RKResearch.Certified.Graded.PaidDAField.affineDefect_addShift {K : Type} [Lean.Grind.Field K] (u w r a b c d : K) :
+  affineDefect u w r (a + d) (b + d) (c + d) = affineDefect u w r a b c
+RKResearch.Certified.Graded.PaidDAField.affineDefect_of_affine {K : Type} [Lean.Grind.Field K] (u w r a b : K) :
+  affineDefect u w r (a + b * u) (a + b * w) (a + b * r) = 0
+'RKResearch.Certified.Graded.PaidDAObstructionScalar.all_fixed_da_defects' does not depend on any axioms
+'RKResearch.Certified.Graded.PaidDAField.shift_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.PaidDAField.tapTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.PaidDAField.tapThree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.PaidDAField.affineDefect_of_affine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+4.37.0-rc1 uniform DA OK

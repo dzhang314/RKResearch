@@ -1,0 +1,14 @@
+erk-eight-dispersed target 9 m 1 rank reached 1 fail? False
+erk-eight-dispersed target 9 m 2 rank reached 2 fail? False
+erk-eight-dispersed target 9 m 3 rank reached 4 fail? False
+erk-eight-dispersed target 9 m 4 rank reached 6 fail? False
+erk-eight-dispersed target 9 m 5 rank reached 9 fail? False
+erk-eight-dispersed target 9 m 6 rank reached 10 fail? True
+Exact first bound: 4 new rows
+erk-eight-rank3-four target 9 m 1 rank reached 1 fail? False
+erk-eight-rank3-four target 9 m 2 rank reached 2 fail? False
+erk-eight-rank3-four target 9 m 3 rank reached 4 fail? False
+erk-eight-rank3-four target 9 m 4 rank reached 6 fail? False
+erk-eight-rank3-four target 9 m 5 rank reached 8 fail? False
+erk-eight-rank3-four target 9 m 6 rank reached 10 fail? True
+Exact first bound: 4 new rows

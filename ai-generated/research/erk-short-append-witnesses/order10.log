@@ -1,0 +1,14 @@
+erk9-fourteen-rational-triple target 10 m 1 rank reached 1 fail? False
+erk9-fourteen-rational-triple target 10 m 2 rank reached 2 fail? False
+erk9-fourteen-rational-triple target 10 m 3 rank reached 4 fail? False
+erk9-fourteen-rational-triple target 10 m 4 rank reached 6 fail? False
+erk9-fourteen-rational-triple target 10 m 5 rank reached 9 fail? False
+erk9-fourteen-rational-triple target 10 m 6 rank reached 12 fail? True
+Exact first bound: 5 new rows
+erk9-fourteen-field-portfolio target 10 m 1 rank reached 1 fail? False
+erk9-fourteen-field-portfolio target 10 m 2 rank reached 2 fail? False
+erk9-fourteen-field-portfolio target 10 m 3 rank reached 4 fail? False
+erk9-fourteen-field-portfolio target 10 m 4 rank reached 6 fail? False
+erk9-fourteen-field-portfolio target 10 m 5 rank reached 9 fail? False
+erk9-fourteen-field-portfolio target 10 m 6 rank reached 12 fail? True
+Exact first bound: 5 new rows

@@ -1,0 +1,21 @@
+RKResearch.Certified.ERKShortAppendCore.zero_relation0 : relation A0 746807040 rel0 = List.replicate 11 0
+RKResearch.Certified.ERKShortAppendCore.zero_relation1 :
+  relation A1
+      4203665430314407462558867179852878340285428707859521358546272285107734649632388604796323641519623882961154730710559879946300280881061746743225930094896087040
+      rel1 =
+    List.replicate 11 0
+RKResearch.Certified.ERKShortAppendCore.zero_relation2 : relation A2 3941167085856000 rel2 = List.replicate 14 0
+RKResearch.Certified.ERKShortAppendCore.zero_relation3 :
+  relation A3 3151133588145087800724072542400 rel3 = List.replicate 14 0
+RKResearch.Certified.ERKShortAppendCore.future_moment0 : moment 3 rel0 ≠ 0
+RKResearch.Certified.ERKShortAppendCore.future_moment1 : moment 3 rel1 ≠ 0
+RKResearch.Certified.ERKShortAppendCore.future_moment2 : moment 4 rel2 ≠ 0
+RKResearch.Certified.ERKShortAppendCore.future_moment3 : moment 4 rel3 ≠ 0
+'RKResearch.Certified.ERKShortAppendCore.zero_relation0' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.zero_relation1' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.zero_relation2' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.zero_relation3' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.future_moment0' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.future_moment1' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.future_moment2' does not depend on any axioms
+'RKResearch.Certified.ERKShortAppendCore.future_moment3' does not depend on any axioms

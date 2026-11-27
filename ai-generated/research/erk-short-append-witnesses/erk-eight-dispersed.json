@@ -1,0 +1,87 @@
+{
+  "old_row_count": 11,
+  "target": 9,
+  "grade_size_cap": 6,
+  "required_new": 4,
+  "future_moment": "-1/315",
+  "terms": [
+    {
+      "tree": [
+        []
+      ],
+      "coefficient": 8
+    },
+    {
+      "tree": [
+        [],
+        []
+      ],
+      "coefficient": -93
+    },
+    {
+      "tree": [
+        [
+          []
+        ]
+      ],
+      "coefficient": 13
+    },
+    {
+      "tree": [
+        [],
+        [],
+        []
+      ],
+      "coefficient": 248
+    },
+    {
+      "tree": [
+        [
+          [],
+          []
+        ]
+      ],
+      "coefficient": -8
+    },
+    {
+      "tree": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "coefficient": -128
+    },
+    {
+      "tree": [
+        [],
+        [
+          [],
+          []
+        ]
+      ],
+      "coefficient": -40
+    },
+    {
+      "tree": [
+        [
+          [],
+          [],
+          []
+        ]
+      ],
+      "coefficient": -112
+    },
+    {
+      "tree": [
+        [],
+        [
+          [],
+          [],
+          []
+        ]
+      ],
+      "coefficient": 112
+    }
+  ]
+}

@@ -310,7 +310,9 @@ These possibilities exhaust the first nonzero clean node.
 Thus the unbalanced quadratic branch has exactly five distinct
 clean rows and nine distinct, individually active dirty rows.
 
-## Remaining scalar reconstruction in the unbalanced chart
+## Scalar reconstruction in the unbalanced chart
+
+The [follow-up exclusion](ERK10-UNBALANCED-CLEAN-FIVE-EXCLUSION.md) closes this chart over every characteristic-zero field.
 
 Let \(u,w,v\) be the three remaining interior-in-time clean
 rows (numerically distinct from each other and the endpoints).

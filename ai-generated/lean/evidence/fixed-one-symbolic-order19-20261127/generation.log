@@ -1,0 +1,15 @@
+order 15, 46 physical stages, 49 virtual, 3 actual copied rows; next-bush defect sign -1
+  new physical bank [35, 36, 37, 38]; exact arithmetic time 0.58s
+order 17, 58 physical stages, 62 virtual, 4 actual copied rows; next-bush defect sign -1
+  new physical bank [46, 47, 48, 49]; exact arithmetic time 1.64s
+order 19, 72 physical stages, 76 virtual, 4 actual copied rows; next-bush defect sign -1
+  new physical bank [58, 59, 60, 61, 62]; exact arithmetic time 3.96s
+tableau-15.json: OK
+Stage15.lean: OK
+Stage15Data.lean: OK
+tableau-17.json: OK
+Stage17.lean: OK
+Stage17Data.lean: OK
+tableau-19.json: OK
+Stage19.lean: OK
+Stage19Data.lean: OK

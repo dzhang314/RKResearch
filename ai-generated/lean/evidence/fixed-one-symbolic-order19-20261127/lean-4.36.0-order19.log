@@ -1,0 +1,6 @@
+'RKResearch.Certified.FixedOneOrder19.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.FixedOneOrder19.pure_bank' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m40.538s
+user	0m39.112s
+sys	0m1.326s

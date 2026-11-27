@@ -43,3 +43,20 @@ generator also supports the subsequent two targets. Consult each
 order-specific receipt for its **verified** Lean status; generation
 alone is not a kernel check. No unconditional real-algebraic or
 stability improvement is claimed.
+
+The [order-17 receipt](../../lean/evidence/fixed-one-symbolic-order17-20261127/README.md)
+certifies **58 physical stages** and four actual next-bank rows
+through size ten. The optimized higher-order template uses
+chronological block triangularity structurally and tests predecessor
+equality only on the actual removed copy slots. The order-15
+generator deliberately still selects the original template; its
+three frozen hashes matched without changes.
+
+The [order-19 receipt](../../lean/evidence/fixed-one-symbolic-order19-20261127/README.md)
+certifies **72 physical stages** and five actual next-bank rows
+through size eleven. The full 15/17/19 generation was repeated
+independently and matched all nine frozen source/literal hashes.
+The generated integer-scaled JSON fixtures are approximately
+2.9 MB, 7.9 MB and 20 MB, respectively; the checked symbolic inputs
+and generator are much smaller. The verified build toolchain for
+these three receipts is Lean/Mathlib 4.36.0.

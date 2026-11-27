@@ -114,7 +114,7 @@ namespace RKResearch.Certified.Stage{p}Data
         src+=vecDef(name,v)
     src+=f'end RKResearch.Certified.Stage{p}Data\n'
     (out/f'Stage{p}Data.lean').write_text(src)
-    tex=Path(__file__).with_name('Stage.lean.in').read_text()
+    tex=Path(__file__).with_name('Stage.lean.in' if p==15 else 'StageFast.lean.in').read_text()
     prevModule='Seed13Fast' if p==15 else f'Stage{p-2}'
     prevNS='FixedOneSeed13' if p==15 else f'FixedOneOrder{p-2}'
     for key,zv in dict(P=p,Q=q,OLD=n0,COPIES=r,PREV_MODULE=prevModule,PREV_NS=prevNS).items():

@@ -77,5 +77,4 @@ quadrature and next-bush check, and the literal causal quotient.
 To continue again, pay the first unused grade on the protected new
 head rows and transport their purity through that quotient. These
 checks are scalar or matrix obligations, not an exhaustive
-tree-enumeration requirement. The complete order-15/17/19 Lean
-applications are not claimed in this packet.
+tree-enumeration requirement. Those applications are now checked separately in the [higher-order receipt](../fixed-one-higher-odd/README.md); they are not dependencies of the order-thirteen proof.

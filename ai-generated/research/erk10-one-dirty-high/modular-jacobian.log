@@ -1,0 +1,16 @@
+exact radical reduction: 227 177 37 148 dirty candidates [51, 204] d1 residues [19, 65]
+p=227, donor orientation (92, 100), dirty=(0,), splits=False: n=39, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=227, donor orientation (92, 100), dirty=(0,), splits=True: n=42, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=227, donor orientation (92, 100), dirty=(1,), splits=False: n=39, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=227, donor orientation (92, 100), dirty=(1,), splits=True: n=42, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=227, donor orientation (92, 100), dirty=(0, 1), splits=False: n=40, paid rank=36, dirty cubic direction=0, with rough=0, full top rank=40, augmented rank=41, failed residuals mod p=315
+p=227, donor orientation (92, 100), dirty=(0, 1), splits=True: n=42, paid rank=36, dirty cubic direction=0, with rough=0, full top rank=40, augmented rank=41, failed residuals mod p=315
+p=227, donor orientation (100, 92), dirty=(0,), splits=True: n=42, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+exact radical reduction: 251 175 209 162 dirty candidates [15, 94] d1 residues [57, 30]
+p=251, donor orientation (4, 33), dirty=(0,), splits=False: n=39, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=251, donor orientation (4, 33), dirty=(0,), splits=True: n=42, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=251, donor orientation (4, 33), dirty=(1,), splits=False: n=39, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=251, donor orientation (4, 33), dirty=(1,), splits=True: n=42, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315
+p=251, donor orientation (4, 33), dirty=(0, 1), splits=False: n=40, paid rank=36, dirty cubic direction=0, with rough=0, full top rank=40, augmented rank=41, failed residuals mod p=315
+p=251, donor orientation (4, 33), dirty=(0, 1), splits=True: n=42, paid rank=36, dirty cubic direction=0, with rough=0, full top rank=40, augmented rank=41, failed residuals mod p=315
+p=251, donor orientation (33, 4), dirty=(0,), splits=True: n=42, paid rank=35, dirty cubic direction=0, with rough=0, full top rank=39, augmented rank=40, failed residuals mod p=315

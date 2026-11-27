@@ -1,0 +1,9 @@
+RKResearch.Certified.Graded.InvisibleInteriorDuplicateScalar.oneLater (U W V : Nat) : Bool
+RKResearch.Certified.Graded.InvisibleInteriorDuplicateScalar.twoLater (U W V : Nat) : Bool
+RKResearch.Certified.Graded.InvisibleInteriorDuplicateScalar.all_interior_duplicate_gates :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun U =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun W =>
+        RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (checks U W)) =
+    true
+'RKResearch.Certified.Graded.InvisibleInteriorDuplicateScalar.all_interior_duplicate_gates' does not depend on any axioms
+4.35.0 fixed-duplicate OK

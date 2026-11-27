@@ -1,0 +1,9 @@
+import RKCert.ReviewedNative.DIRKOrderTenInvisibleInteriorDuplicateScalar
+
+open RKResearch.Certified.Graded.InvisibleInteriorDuplicateScalar
+
+#check oneLater
+#check twoLater
+#check all_interior_duplicate_gates
+
+#print axioms all_interior_duplicate_gates

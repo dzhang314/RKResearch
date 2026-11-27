@@ -44,7 +44,8 @@ python3 check-independent.py tableau-9.json tableau-11.json
 The JSON format uses one common denominator for the stage matrix and one
 for the output weights. The independent replay alone is not a Lean proof. The separate [integer
 Gram certificate](../rooted-tree-gram/README.md) kernel-checks the
-18-stage order-nine witness in Lean 4.36. See its reproduction receipts for
+18-stage order-nine and 26-stage order-eleven witnesses in Lean 4.36. See
+its reproduction receipts for
 which exact files and versions were tested.
 
 ## Other coefficient-domain endpoints

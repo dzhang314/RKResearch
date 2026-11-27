@@ -68,6 +68,19 @@ The [two-order Newton construction](research/rational-sdirk-two-order/TWO-ORDER-
 
 At orders 11 through 20, an independently audited [extension using existing output stages](research/rational-sdirk-two-order/higher-orders/FAMILIES-AND-COUNTS.md) gives exact rational strict SDIRK in 28, 29, 37, 39, 48, 50, 60, 63, 74, and 77 stages, respectively. [The frontier argument](research/rational-sdirk-two-order/higher-orders/HEAD-PREPARATION-AND-FRONTIER.md) and [the rational quadrature choices](research/rational-sdirk-two-order/higher-orders/RATIONAL-GATES.md) prove these as symbolic recipes; no expanded higher-order tableau replay or Lean verification is claimed. These rational results do not change the real-algebraic table or Lean coverage.
 
+A newer [common-diagonal-one construction](research/fixed-one-newton/README.md)
+reduces the rational upper bounds to **18 stages at order nine** and
+**26 stages at order eleven**. Both exact-order witnesses were kernel
+checked in Lean 4.36.0 with the [integer Gram replay](research/rooted-tree-gram/README.md).
+No change to the real-algebraic bounds is implied. The same note gives
+constructive higher odd-order counts, with separate verification scope.
+
+At order five, the [two-chart result](research/strict-sdirk-rational/order-five-paid-local.md)
+gives a strict SDIRK minimum of **five stages over every local commutative
+ring in which 30 is a unit**, in particular all admissible coefficient fields.
+The corresponding claim for general commutative rings is not included in
+the Lean theorem.
+
 ## General mechanisms for changing or bounding stage counts
 
 - [An iterable explicit two-order lift over factorial-unit rings](research/paid-affine-erk-two-order/AFFINE-TWO-ORDER-LIFT.md): from a prepared order-q seed, add n+2 physical rows for exact order p=q+2, with n=p if p is odd and n=p−1 if p is even. The exactness test does not require p+1 to be a unit. Both the hypotheses on the existing rows and the separate preparation costs are part of the theorem.

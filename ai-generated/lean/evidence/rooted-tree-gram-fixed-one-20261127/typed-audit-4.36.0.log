@@ -1,0 +1,14 @@
+/tmp/sdirk_gram/publish/ai-generated/lean/evidence/rooted-tree-gram-fixed-one-20261127/Audit.lean:9:2: error: Type mismatch
+  Certified.StrictSDIRKGram18Order9.witness
+has type
+  ∃ U b', U.IsLowerTriangular ∧ (∀ (i : Fin 18), U i i = 1 / 1) ∧ 1 / 1 ≠ 0 ∧ HasOrder 9 U b' ∧ ¬HasOrder 10 U b'
+but is expected to have type
+  ∃ A b, A.IsLowerTriangular ∧ (∀ (i : Fin 18), A i i = 1) ∧ 1 ≠ 0 ∧ HasOrder 9 A b ∧ ¬HasOrder 10 A b
+/tmp/sdirk_gram/publish/ai-generated/lean/evidence/rooted-tree-gram-fixed-one-20261127/Audit.lean:14:2: error: Type mismatch
+  Certified.StrictSDIRKGram26Order11.witness
+has type
+  ∃ U b', U.IsLowerTriangular ∧ (∀ (i : Fin 26), U i i = 1 / 1) ∧ 1 / 1 ≠ 0 ∧ HasOrder 11 U b' ∧ ¬HasOrder 12 U b'
+but is expected to have type
+  ∃ A b, A.IsLowerTriangular ∧ (∀ (i : Fin 26), A i i = 1) ∧ 1 ≠ 0 ∧ HasOrder 11 A b ∧ ¬HasOrder 12 A b
+'RKResearch.Certified.StrictSDIRKGram18Order9.witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.StrictSDIRKGram26Order11.witness' depends on axioms: [propext, Classical.choice, Quot.sound]

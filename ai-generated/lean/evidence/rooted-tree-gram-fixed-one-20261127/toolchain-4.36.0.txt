@@ -1,0 +1,3 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib git revision: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+Lean checker and compiler both exited 0 for the reusable module and order-nine witness.

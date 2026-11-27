@@ -19,13 +19,14 @@ From the repository root, with the selected Lean/Mathlib version
 installed:
 
 ```sh
+repo="$PWD"
 certdir="$(mktemp -d)"
 for n in 9 11; do
   python3 ai-generated/research/rooted-tree-gram/gen_lean.py \
     "ai-generated/research/fixed-one-newton/tableau-$n.json" --graded \
     > "$certdir/Certificate$n.lean"
 done
-(cd "$certdir" && sha256sum -c "$OLDPWD/ai-generated/lean/evidence/rooted-tree-gram-fixed-one-20261127/generated-source.sha256")
+(cd "$certdir" && sha256sum -c "$repo/ai-generated/lean/evidence/rooted-tree-gram-fixed-one-20261127/generated-source.sha256")
 cd ai-generated/lean
 lake build RKCert.ReviewedNative.RootedTreeGram
 for n in 9 11; do
@@ -35,7 +36,9 @@ done
 ```
 
 The source hash uses `--graded` to print each finished Gram recurrence;
-the optional diagnostic lines do not change the theorem. No
+the optional diagnostic lines do not change the theorem. The 4.36.0
+compiler and a separate `leanchecker` kernel replay both accepted the
+order-nine witness. No
 `native_decide` or compiler oracle is involved in the checked
 proofs. See the individual replay receipts for actually verified
 toolchain versions.

@@ -335,3 +335,5 @@ induction as a reusable theorem with actual adjoint and
 low-lift hypotheses. The pure-rank, initial-value and
 rooted-model bridges are the mathematical proof above.
 There is no unrestricted numerical stage improvement.
+
+The [subsequent internal-stage argument](ERK10-ZERO-INJECTIVE-INTERNAL-EXCLUSION.md), combined with the sole-origin exclusion, rules out the entire injective case. It does not rule out noninjectivity.

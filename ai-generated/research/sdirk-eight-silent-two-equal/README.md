@@ -98,3 +98,5 @@ All good-reduction tests use fixed finite monic bases over the local coefficient
 The [Lean receipt](../../lean/RKCert/ReviewedNative/SDIRK8EqualInvisibleReceipts.lean) verifies the common-tag moment identity and the exact signed two-site Hankel and reconstruction formulas over commutative rings. These compiled in Lean/Mathlib 4.36.0 with standard axioms. The flag argument, chart census, and finite-algebra arithmetic are the source-level proof above, not a single end-to-end Lean theorem.
 
 The [low-active follow-up](../sdirk-eight-silent-two-low/README.md) excludes the last five-active placement cases left here. With this, at most six active zero-residual stages are impossible in the two-invisible-stage single-clock chart.
+
+The [high-active follow-up](../sdirk-eight-silent-two-high/README.md) excludes all seven-active configurations, all midpoint diagonals, and all cases with a vanishing clock aggregate of the reverse quadratic row. The only remaining cases in this chart have eight active stages at seven or eight distinct clocks, a non-midpoint diagonal, and a nonzero clock aggregate. This does not exclude a ten-stage method in general.

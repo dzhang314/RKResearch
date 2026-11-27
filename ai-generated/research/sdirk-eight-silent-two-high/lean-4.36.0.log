@@ -1,0 +1,11 @@
+ℹ [1922/1923] Built RKCert.ReviewedNative.SDIRK8InvisibleHighReceipts (1.1s)
+info: RKCert/ReviewedNative/SDIRK8InvisibleHighReceipts.lean:49:0: 'RKCert.ReviewedNative.SDIRK8InvisibleHighReceipts.canceledDouble' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8InvisibleHighReceipts.lean:50:0: 'RKCert.ReviewedNative.SDIRK8InvisibleHighReceipts.reverseDoubleEqual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8InvisibleHighReceipts.lean:51:0: 'RKCert.ReviewedNative.SDIRK8InvisibleHighReceipts.pointDiscrepancy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (1923 jobs).

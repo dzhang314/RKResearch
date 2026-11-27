@@ -1,0 +1,5 @@
+15 strict, distinct physical rows
+Common denominator: 2116800 prime powers {2: 6, 3: 3, 5: 2, 7: 2}
+Exact rooted conditions: [1, 1, 2, 4, 9, 20, 48, 115, 286] total 486
+Unit tenth bush defect: -7/23328
+Exactness after every nonzero unital base change from Z[1/210].

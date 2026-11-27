@@ -1,5 +1,7 @@
 # Exact universal-ring order nine in 16 explicit stages
 
+**Current upper bound:** the [15-stage universal tableau](../erk9-fifteen-ten-clock/README.md) supersedes 16 stages. This earlier construction and its spent conditions are retained unchanged below.
+
 This literal tableau pays all rooted order conditions through nine in
 16 stages over $\mathbb Z[1/9!]$, and has exact order nine in every
 nonzero commutative ring in which $9!$ is a unit. The requirement on

@@ -123,3 +123,5 @@ the two complete towers, including every asserted unit.
 The rooted seam and congruence proofs are the preceding
 mathematical reductions using the base two-pair packet.
 The unrestricted 14–15 interval is unchanged.
+
+The [quadratic-mean follow-up](ERK10-QUADRATIC-MEAN-EXCLUSION.md) excludes degree two with the same nonendpoint repeats. A cubic mean is the only one that remains in this chart.

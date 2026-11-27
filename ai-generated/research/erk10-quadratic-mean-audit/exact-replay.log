@@ -1,0 +1,5 @@
+zero-parameter Lobatto assignments: 12
+infinite-parameter linear reductions: ([12, 19, 26], 6)
+infinite-parameter repeated-root choices: [12, 19, 26]
+exceptional finite contact factors: [[35, 15, 17, 1], [33, 8, 29, 1]]
+rational norm degrees, coprime reduced quotient degrees: ([336, 336], [168, 168])

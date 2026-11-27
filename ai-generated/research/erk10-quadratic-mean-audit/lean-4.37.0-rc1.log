@@ -1,0 +1,5 @@
+'RKResearch.ERK10QuadraticMeanGate.contactResultantGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10QuadraticMeanGate.endpointMoment' does not depend on any axioms
+'RKResearch.ERK10QuadraticMeanGate.outerClear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10QuadraticMeanGate.factor37' depends on axioms: [propext, Classical.choice]
+'RKResearch.ERK10QuadraticMeanGate.cubicIrreducibleTests37' does not depend on any axioms

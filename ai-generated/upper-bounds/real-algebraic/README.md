@@ -6,6 +6,8 @@ This first batch includes exact radical or isolated algebraic-root constructions
 - [erk_four_mark_lobatto_order18_42_replay_20261123.md](erk_four_mark_lobatto_order18_42_replay_20261123.md)
 - [erk_nested_four_mark_contrasts_order20_51_20261123.md](erk_nested_four_mark_contrasts_order20_51_20261123.md)
 - [erk_nested_four_mark_contrasts_order20_51_replay_20261123.md](erk_nested_four_mark_contrasts_order20_51_replay_20261123.md)
+- [Native exact 15-stage ERK10 certificate](../../research/erk10-stepanov-native-upper/README.md)
+- [Exact 14-stage order-nine seven-site control](erk14-order9-seven-clock/README.md), a separate construction.
 - [erk_stepanov15_four_marks_integer_input_20261123.md](erk_stepanov15_four_marks_integer_input_20261123.md)
 - [sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123.md](sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123.md)
 - [sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123_replay.md](sdirk_order17_43_joint_genuine_forward_and_paid_reverse_20261123_replay.md)

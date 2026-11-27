@@ -1,5 +1,7 @@
 # ERK order eight: characteristic-zero stage floor without an order on coefficients
 
+**Later result.** The [characteristic-11 lower proof](../erk-eight-char11/README.md), combined with the outside-11 result, makes eleven optimal over every nonzero commutative ring with 8! invertible.
+
 **Later result.** The [paid extension](../erk-eight-finite/README.md) covers all admissible fields except characteristic 11, and rings with nonnilpotent 11.
 
 **Result (source-level floor):** eleven is the minimum ERK stage count over

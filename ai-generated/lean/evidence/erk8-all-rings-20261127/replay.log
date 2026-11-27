@@ -1,0 +1,21 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_count_one_four_five_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.omitted_root_eq_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.impossible_first_clean_five_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.impossible_four_late' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.fifth_off_eq_two' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.high_tail_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_eq_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+All characteristic-eleven scalar receipts passed in the exact quadratic algebra.

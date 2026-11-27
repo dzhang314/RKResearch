@@ -11,7 +11,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 | 5 | 6 / 4 / 5 | 6 / 4 / 5 | 6 / 4 / 5 |
 | 6 | 7 / 5 / 6 | 7 / 5 / 7 | 7 / 5 / 7 |
 | 7 | 9 / 7 / 8 | 9 / 7 / 8 | 9 / 7 / 8 |
-| 8 | 10 / 8 / 10 | 11 / 8 / 10 | 11 / 8 / 10 |
+| 8 | 11 / 8 / 10 | 11 / 8 / 10 | 11 / 8 / 10 |
 | 9 | 12 / 10 / 13 | 12 / 10 / 13 | 13 / 10 / 13 |
 | 10 | 14 / 11 / 15 | 14 / 11 / 15 | 14 / 11 / 15 |
 | 11 | 17 / 13 / 18 | 17 / 13 / 18 | 17 / 13 / 18 |
@@ -28,7 +28,7 @@ The table lists ERK / DIRK / strict SDIRK for each order. Rings are nonzero comm
 Every real statement in the last column transfers by real-closed-field theory: for a fixed order and stage count the question is a finite rational-polynomial feasibility problem. The proof itself can still use properties of the reals. Neither real nor ordered feasibility implies an unordered characteristic-zero lower bound. The ring column uses uniform proofs and is not a claim that the stronger characteristic-zero bounds have counterexamples in positive characteristic.
 
 - [Strict SDIRK order seven over the prime field of order 19](../research/strict-sdirk7-eight-stage-face/README.md): at least nine stages there and over rings admitting a unital map to it. This does not change the universal eight-stage floor.
-- [Order-eight ERK without ordered coefficients](../research/erk-eight-unordered/README.md): eleven stages are necessary in every characteristic-zero field and nonzero characteristic-zero commutative ring. A [later paid-field proof](../research/erk-eight-finite/README.md) gives the same lower bound over every admissible field except characteristic 11 and every admissible ring in which 11 is not nilpotent. The complete lower proof is mathematical, with native census and physical bridges and scalar checks.
+- [Order-eight ERK over arbitrary nonzero rings](../research/erk-eight-char11/README.md): eleven stages are necessary. The [paid-field proof outside characteristic 11](../research/erk-eight-finite/README.md) and the characteristic-11 proof exhaust all residue fields. Passing to a maximal quotient preserves the order equations and triangular shape. The complete lower proof is mathematical, with native census and scalar gates.
 - [Transfer from separated stage residuals](paid-beta/separated-pure/README.md): the ERK lower bounds at orders 17–20 in characteristic zero are 27, 28, 30, and 31. The last two also hold over every nonzero commutative ring. This does not change the ordered-field bounds and is not yet formalized in Lean.
 - [Weighted explicit stage bound](paid-beta/07-WEIGHTED-DETECTOR-STAGE-BOUND.md) and [order-eleven refinement](paid-beta/08-ORDER-ELEVEN-THRESHOLD.md): effective order \(r\ge11\) requires at least \(\lceil3r/2
 ceil\) stages through the last contributing coefficient. For ordinary explicit methods this raises order 11 to 17 in all columns and the arbitrary-ring order-16 floor to 24. These are mathematical proofs, not Lean certificates.

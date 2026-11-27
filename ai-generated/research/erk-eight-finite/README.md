@@ -1,5 +1,7 @@
 # ERK8: the only possible ten-stage characteristic is 11
 
+**Later result.** The [characteristic-11 lower proof](../erk-eight-char11/README.md), combined with the outside-11 result, makes eleven optimal over every nonzero commutative ring with 8! invertible.
+
 **Result, mathematical lower proof:** a nontrivial commutative ring with
 invertible \(8!\) and nonnilpotent \(11\cdot1_R\) has minimum ERK stage
 count **11** at order eight. This covers every admissible

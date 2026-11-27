@@ -1,5 +1,7 @@
 # Eleven explicit stages suffice for order eight over the factorial localization
 
+**Later result.** The [characteristic-11 lower proof](../erk-eight-char11/README.md), combined with the outside-11 result, makes eleven optimal over every nonzero commutative ring with 8! invertible.
+
 There is a single strictly lower triangular eleven-stage tableau with coefficients in \(\mathbb Z[1/210]\) and exact order eight. Thus every nontrivial commutative ring in which \(8!\) is a unit admits an exact eleven-stage method, even in characteristic zero without a field hypothesis. The result does not require selecting a chart or patching local solutions. The same factorial condition is necessary for order eight by the tall tree.
 
 The [literal tableau](tableau.json) uses seven distinct nonzero-output clock sites. In physical stage order its clocks and weights are

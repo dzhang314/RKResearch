@@ -1,0 +1,10 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'RKResearch.OneOffShiftTwoGate.doubledIntercept' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.OneOffShiftTwoGate.masterResidual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.OneOffShiftTwoGate.noDoubleRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.OneOffShiftTwoGate.simpleCubicOrthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.OneOffShiftTwoGate.twiceDoubledImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m15.581s
+user	0m12.505s
+sys	0m1.690s

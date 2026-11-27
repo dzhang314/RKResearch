@@ -1,0 +1,10 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.FiveSixGate.twoVisibleWeights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiveSixGate.affineMode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiveSixGate.eliminateSecondClean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiveSixGate.cleanHeadEquations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.FiveSixGate.fiveSixImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m16.780s
+user	0m17.909s
+sys	0m1.168s

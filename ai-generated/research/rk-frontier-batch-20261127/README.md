@@ -89,5 +89,10 @@ or [six clean clocks](../WEIGHTED-ORDER-NINE-SIX-OFF-SIX-CLEAN.md) are also
 excluded for the same shift-two problem in characteristic zero. The
 [core Lean replays](../../lean/evidence/weighted-order-nine-six-off-20261127/)
 check the new arithmetic and terminal-state gates, not the entire
-weighted rooted-order reduction. The one-off and five-off/six-clean
-branches remain open.
+weighted rooted-order reduction. The last [one-off](../WEIGHTED-ORDER-NINE-SINGLE-OFF.md) and
+[five-off/six-clean](../WEIGHTED-ORDER-NINE-FIVE-OFF-SIX-CLEAN.md)
+branches have now been excluded. This gives a mathematical lower bound of
+13 stages for shift-two weighted order nine in characteristic zero. The
+[core Lean replays](../../lean/evidence/weighted-order-nine-shift-two-20261127/)
+verify separate gates. These are not end-to-end weighted order certificates.
+The ordinary order-eleven lower bound has not changed.

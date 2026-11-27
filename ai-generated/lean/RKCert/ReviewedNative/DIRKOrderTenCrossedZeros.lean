@@ -3,6 +3,8 @@ module
 public import RKCert.ReviewedNative.DIRKOrderTenKernelSeeds
 public import RKCert.ReviewedNative.DIRKCrossedCubicPivot
 public import RKCert.ReviewedNative.DIRKAdjacentCubicScalar
+public import RKCert.ReviewedNative.DIRKTwoClockPrimitiveOverlap
+public import RKCert.ReviewedNative.DIRKThreeStageOverlap
 import Mathlib.Tactic.FieldSimp
 
 @[expose] public section
@@ -686,6 +688,357 @@ theorem crossed_nonunit_sites_buffer {R : Type*} [CommRing R] [Nontrivial R]
   have n (k : Fin 11) (die : f (D k k)=0) : ¬IsUnit (D k k) :=
     fun hu => (hu.map f).ne_zero die
   exact ⟨i,j,hi,hij,hj,n 0 e0,n i ei,n j ej,n _ et⟩
+
+private theorem no_geometric_overlap (ho : HasOrder 10 A b) (S : Saturated A b)
+    (F : FrontSeed A) (B : BackSeed A b) (x eta T U W : K)
+    (L : ∀ k : Nat, row B.v (clockAct A k F.v)=T*x^k+U*eta^k)
+    (J : ∀ j k : Nat, row B.v (mixed A j k F.v)=W*x^(j+k)) : False := by
+  have nw : W≠0 := by
+    intro h
+    exact no_all_zero_mixes ho S F B (fun j k => by rw [J j k,h,zero_mul])
+  let M := CrossedCubicPivot.moment (mu K) (h B) (l B) (m B)
+  have mEq (j k : Nat) (paid : j+k ≤ 2) :
+      F.a 1*mu K (j+1)*M (j+k+2)+F.a 2*mu K (j+2)*M (j+k+3)
+        +F.a 3*mu K (j+3)*M (j+k+4)=W*x^(j+k) :=
+    (mix_read ho S F B j k paid).symm.trans (J j k)
+  have row0 (k : Nat) (hk : k ≤ 2) :
+      6*(F.a 1*M (k+2))+4*(F.a 2*M (k+3))+3*(F.a 3*M (k+4))=12*W*x^k := by
+    have e := mEq 0 k (by omega)
+    simp only [Nat.zero_add] at e
+    have e1 : (12:K)*mu K 1=6 := scale_mu ho 12 6 1 (by decide) (by decide)
+    have e2 : (12:K)*mu K 2=4 := scale_mu ho 12 4 2 (by decide) (by decide)
+    have e3 : (12:K)*mu K 3=3 := scale_mu ho 12 3 3 (by decide) (by decide)
+    rw [←e1,←e2,←e3]
+    linear_combination 12*e
+  have row1 (k : Nat) (hk : k ≤ 1) :
+      20*(F.a 1*M (1+k+2))+15*(F.a 2*M (1+k+3))+12*(F.a 3*M (1+k+4))=60*W*x^(1+k) := by
+    have e := mEq 1 k (by omega)
+    have e1 : (60:K)*mu K 2=20 := scale_mu ho 60 20 2 (by decide) (by decide)
+    have e2 : (60:K)*mu K 3=15 := scale_mu ho 60 15 3 (by decide) (by decide)
+    have e3 : (60:K)*mu K 4=12 := scale_mu ho 60 12 4 (by decide) (by decide)
+    rw [←e1,←e2,←e3]
+    linear_combination 60*e
+  have row2 : 15*(F.a 1*M 4)+12*(F.a 2*M 5)+10*(F.a 3*M 6)=60*W*x^2 := by
+    have e := mEq 2 0 (by decide)
+    have e1 : (60:K)*mu K 3=15 := scale_mu ho 60 15 3 (by decide) (by decide)
+    have e2 : (60:K)*mu K 4=12 := scale_mu ho 60 12 4 (by decide) (by decide)
+    have e3 : (60:K)*mu K 5=10 := scale_mu ho 60 10 5 (by decide) (by decide)
+    rw [←e1,←e2,←e3]
+    linear_combination 60*e
+  have eq : TwoClockPrimitive.Geometric (F.a 1) (F.a 2) (F.a 3) M W x :=
+    ⟨by simpa only [pow_zero,mul_one] using row0 0 (by decide),
+      by simpa only [pow_one] using row0 1 (by decide),
+      by simpa only [Nat.add_zero,pow_one] using row1 0 (by decide),
+      row0 2 (by decide),row1 1 (by decide),row2⟩
+  have p (k : Nat) (paid : k≤3) :
+      TwoClockPrimitive.plain (F.a 1) (F.a 2) (F.a 3) M k=T*x^k+U*eta^k :=
+    (plain_read ho S F B k paid).symm.trans (L k)
+  have z := TwoClockPrimitive.no_two_clock_geometric (mu K) (mu_paid ho)
+    (F.a 1) (F.a 2) (F.a 3) (h B) (l B) (m B) W x eta T U nw (front_coeffs_live F) eq p
+  rcases back_coeffs_live S B with h|l|m
+  · exact h z.1
+  · exact l z.2.1
+  · exact m z.2.2
+
+private theorem triplet_cases {i k j u : Fin 11} (ik : k.val=i.val+1)
+    (kj : j.val=k.val+1) (hu : i ≤ u) (uj : u ≤ j) : u=i ∨ u=k ∨ u=j := by
+  have t1 : i.val ≤ u.val := hu
+  have t2 : u.val ≤ j.val := uj
+  rcases (show u.val=i.val ∨ u.val=k.val ∨ u.val=j.val by omega) with h|h|h
+  · exact Or.inl (Fin.ext h)
+  · exact Or.inr (Or.inl (Fin.ext h))
+  · exact Or.inr (Or.inr (Fin.ext h))
+
+private theorem triple_mat_middle (ha : A.IsLowerTriangular) {i k : Fin 11}
+    (ik : k.val=i.val+1) (v : Fin 11→K) (pre : ∀ t < i, v t=0) :
+    mat A v k=A k i*v i+A k k*v k := by
+  classical
+  have lt : i < k := show i.val<k.val by omega
+  have ni := ne_of_lt lt
+  rw [mat_apply,Matrix.mulVec_apply_eq_sum]
+  calc
+    _ = ∑ t∈({i,k}:Finset (Fin 11)), A k t*v t := by
+      symm
+      apply Finset.sum_subset (by simp)
+      intro u _ nu
+      by_cases hi : u < i
+      · rw [pre u hi,mul_zero]
+      · by_cases hk : k < u
+        · rw [ha hk,zero_mul]
+        · rcases adjacent_cases ik (le_of_not_gt hi) (le_of_not_gt hk) with h|h
+          · subst u
+            exact False.elim (nu (by simp))
+          · subst u
+            exact False.elim (nu (by simp))
+    _ = _ := by simp [ni]
+
+private theorem triple_mat_last (ha : A.IsLowerTriangular) {i k j : Fin 11}
+    (ik : k.val=i.val+1) (kj : j.val=k.val+1)
+    (v : Fin 11→K) (pre : ∀ t < i, v t=0) (d : A j j=0) :
+    mat A v j=A j i*v i+A j k*v k := by
+  classical
+  have lt : i < k := show i.val<k.val by omega
+  have ni := ne_of_lt lt
+  rw [mat_apply,Matrix.mulVec_apply_eq_sum]
+  calc
+    _ = ∑ t∈({i,k}:Finset (Fin 11)), A j t*v t := by
+      symm
+      apply Finset.sum_subset (by simp)
+      intro u _ nu
+      by_cases hi : u < i
+      · rw [pre u hi,mul_zero]
+      · by_cases hj : j < u
+        · rw [ha hj,zero_mul]
+        · rcases triplet_cases ik kj (le_of_not_gt hi) (le_of_not_gt hj) with rfl|rfl|rfl
+          · exact False.elim (nu (by simp))
+          · exact False.elim (nu (by simp))
+          · rw [d,zero_mul]
+    _ = _ := by simp [ni]
+
+private theorem triple_transpose_middle (ha : A.IsLowerTriangular) {k j : Fin 11}
+    (kj : j.val=k.val+1) (v : Fin 11→K) (after : ∀ t, j < t → v t=0) :
+    mat A.transpose v k=A k k*v k+A j k*v j := by
+  classical
+  have lt : k < j := show k.val<j.val by omega
+  have ni := ne_of_lt lt
+  rw [mat_apply,Matrix.mulVec_apply_eq_sum]
+  calc
+    _ = ∑ t∈({k,j}:Finset (Fin 11)), A t k*v t := by
+      symm
+      apply Finset.sum_subset (by simp)
+      intro u _ nu
+      by_cases hk : u < k
+      · rw [ha hk,zero_mul]
+      · by_cases hj : j < u
+        · rw [after u hj,mul_zero]
+        · rcases adjacent_cases kj (le_of_not_gt hk) (le_of_not_gt hj) with h|h
+          · subst u
+            exact False.elim (nu (by simp))
+          · subst u
+            exact False.elim (nu (by simp))
+    _ = _ := by simp [ni]
+
+private theorem triple_observe {i k j : Fin 11}
+    (ik : k.val=i.val+1) (kj : j.val=k.val+1) (l v : Fin 11→K)
+    (pre : ∀ t < i, v t=0) (after : ∀ t, j < t → l t=0) :
+    row l v=l i*v i+l k*v k+l j*v j := by
+  classical
+  have lt : i < k := show i.val<k.val by omega
+  have lj : k < j := show k.val<j.val by omega
+  rw [row_apply,dotProduct]
+  calc
+    _ = ∑ t∈({i,k,j}:Finset (Fin 11)), l t*v t := by
+      symm
+      apply Finset.sum_subset (by simp)
+      intro u _ nu
+      by_cases hi : u < i
+      · rw [pre u hi,mul_zero]
+      · by_cases hj : j < u
+        · rw [after u hj,zero_mul]
+        · rcases triplet_cases ik kj (le_of_not_gt hi) (le_of_not_gt hj) with h|h|h
+          · subst u
+            exact False.elim (nu (by simp))
+          · subst u
+            exact False.elim (nu (by simp))
+          · subst u
+            exact False.elim (nu (by simp))
+    _ = _ := by
+      simp [ne_of_lt lt,ne_of_lt lj,ne_of_lt (lt.trans lj)]
+      ring
+
+private def triple_packet (F : FrontSeed A) (B : BackSeed A b) (k : Fin 11) :
+    ThreeStageOverlap.Packet K where
+  x := nodes A F.pivot
+  y := nodes A k
+  z := nodes A B.pivot
+  d := A k k
+  p := A k F.pivot
+  q := A B.pivot k
+  w := A B.pivot F.pivot
+  f := F.v F.pivot
+  g := F.v k
+  h := F.v B.pivot
+  alpha := B.v F.pivot
+  beta := B.v k
+  gamma := B.v B.pivot
+
+private theorem triple_clipped_plain (F : FrontSeed A) (B : BackSeed A b) (k : Fin 11)
+    (ik : k.val=F.pivot.val+1) (kj : B.pivot.val=k.val+1) (r : Nat) :
+    row B.v (clockAct A r F.v)=(triple_packet F B k).plain r := by
+  rw [triple_observe ik kj _ _ (clock_seed_before F r) B.after]
+  simp only [ThreeStageOverlap.Packet.plain,triple_packet,clockAct,diag_apply,Pi.pow_apply]
+  ring
+
+private theorem triple_clipped_primitive (ha : A.IsLowerTriangular)
+    (F : FrontSeed A) (B : BackSeed A b) (k : Fin 11)
+    (ik : k.val=F.pivot.val+1) (kj : B.pivot.val=k.val+1) (r s : Nat) :
+    row B.v (mixed A r s F.v)=(triple_packet F B k).primitive r s := by
+  have pre : ∀ t < F.pivot, mixed A r s F.v t=0 := by
+    intro t tl
+    have f := mat_vanish_through ha (clock_seed_before F r) F.explicit tl.le
+    simp only [mixed,LinearMap.comp_apply,clockAct,diag_apply] at f ⊢
+    rw [f,mul_zero]
+  rw [triple_observe ik kj _ _ pre B.after]
+  have e0 := mat_vanish_through ha (clock_seed_before F r) F.explicit (u:=F.pivot) le_rfl
+  have e1 := triple_mat_middle ha ik (clockAct A r F.v) (clock_seed_before F r)
+  have e2 := triple_mat_last ha ik kj (clockAct A r F.v) (clock_seed_before F r) B.explicit
+  simp only [mixed,LinearMap.comp_apply,clockAct,diag_apply] at e0 e1 e2 ⊢
+  rw [e0,e1,e2]
+  simp only [ThreeStageOverlap.Packet.primitive,triple_packet,Pi.pow_apply]
+  ring
+
+private theorem triple_kernel_cut (ha : A.IsLowerTriangular)
+    (F : FrontSeed A) (B : BackSeed A b) (k : Fin 11)
+    (ik : k.val=F.pivot.val+1) (kj : B.pivot.val=k.val+1) :
+    ThreeStageOverlap.KernelCut (triple_packet F B k) := by
+  let N := diag (nodes A)
+  let Y := diag (reflectedClock A)
+  let L := mat A
+  let T := mat A.transpose
+  have nv : ∀ t < F.pivot, N F.v t=0 := by
+    intro t ht
+    simp only [N,diag_apply,F.before t ht,mul_zero]
+  have lv0 : L F.v F.pivot=0 := mat_vanish_through ha F.before F.explicit le_rfl
+  have lv : ∀ t < F.pivot, L F.v t=0 := by
+    intro t ht
+    exact mat_vanish_through ha F.before F.explicit ht.le
+  have yv : ∀ t, B.pivot < t → Y B.v t=0 := by
+    intro t ht
+    simp only [Y,diag_apply,B.after t ht,mul_zero]
+  have tv : ∀ t, B.pivot < t → T B.v t=0 := by
+    intro t ht
+    change mat A.transpose B.v t=0
+    rw [transpose_mat_pivot ha t _ (fun u hu => B.after u (ht.trans hu)),B.after t ht,mul_zero]
+  have tv0 : T B.v B.pivot=0 := by
+    change mat A.transpose B.v B.pivot=0
+    rw [transpose_mat_pivot ha B.pivot _ B.after,B.explicit,zero_mul]
+  have g1 := triple_mat_middle ha ik F.v F.before
+  have can := triple_mat_middle ha ik (N F.v) nv
+  have gan := triple_mat_middle ha ik (L F.v) lv
+  have g2 := triple_mat_last ha ik kj F.v F.before B.explicit
+  have can2 := triple_mat_last ha ik kj (N F.v) nv B.explicit
+  have gan2 := triple_mat_last ha ik kj (L F.v) lv B.explicit
+  have d1 := triple_transpose_middle ha kj B.v B.after
+  have yd := triple_transpose_middle ha kj (Y B.v) yv
+  have dd := triple_transpose_middle ha kj (T B.v) tv
+  have H1 := congrFun F.kernel k
+  have H2 := congrFun B.kernel k
+  have H3 := congrFun F.kernel B.pivot
+  refine ⟨F.live,B.live,?_,?_,?_⟩
+  · change (N (L F.v) k-L (N F.v) k-L (L F.v) k)=0 at H1
+    change L F.v k=_ at g1
+    change L (N F.v) k=_ at can
+    change L (L F.v) k=_ at gan
+    unfold N at H1
+    rw [diag_apply] at H1
+    change nodes A k*L F.v k-L (N F.v) k-L (L F.v) k=0 at H1
+    rw [can,gan,g1,lv0] at H1
+    simp only [N,diag_apply] at H1
+    dsimp only [triple_packet]
+    linear_combination H1
+  · change (Y (T B.v) k-T (Y B.v) k-T (T B.v) k)=0 at H2
+    change T B.v k=_ at d1
+    change T (Y B.v) k=_ at yd
+    change T (T B.v) k=_ at dd
+    unfold Y at H2
+    rw [diag_apply] at H2
+    change reflectedClock A k*T B.v k-T (Y B.v) k-T (T B.v) k=0 at H2
+    rw [yd,dd,d1,tv0] at H2
+    simp only [Y,diag_apply,reflectedClock,Pi.sub_apply,Pi.one_apply] at H2
+    dsimp only [triple_packet]
+    linear_combination H2
+  · change (N (L F.v) B.pivot-L (N F.v) B.pivot-L (L F.v) B.pivot)=0 at H3
+    change L F.v B.pivot=_ at g2
+    change L (N F.v) B.pivot=_ at can2
+    change L (L F.v) B.pivot=_ at gan2
+    unfold N at H3
+    rw [diag_apply] at H3
+    change nodes A B.pivot*L F.v B.pivot-L (N F.v) B.pivot-L (L F.v) B.pivot=0 at H3
+    rw [can2,gan2,g2,g1,lv0] at H3
+    simp only [N,diag_apply] at H3
+    dsimp only [triple_packet]
+    linear_combination H3
+
+private theorem forbidden_triple_shape (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b) (k : Fin 11)
+    (ik : k.val=F.pivot.val+1) (kj : B.pivot.val=k.val+1) :
+    ¬ ((triple_packet F B k).NoPrimitive ∨ (triple_packet F B k).Geometric) := by
+  intro e
+  rcases e with n|v
+  · exact no_all_zero_mixes ho S F B
+      (fun j k' => (triple_clipped_primitive ha F B k ik kj j k').trans (n j k'))
+  · obtain ⟨x,eta,T,U,W,q,p⟩ := v
+    exact no_geometric_overlap ho S F B x eta T U W
+      (fun r => (triple_clipped_plain F B k ik kj r).trans (q r))
+      (fun j k' => (triple_clipped_primitive ha F B k ik kj j k').trans (p j k'))
+
+private theorem required_middle (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b) (k : Fin 11)
+    (ik : k.val=F.pivot.val+1) (kj : B.pivot.val=k.val+1) :
+    A k k≠0 ∧ A k F.pivot≠0 ∧ A B.pivot k≠0 ∧
+      nodes A k≠nodes A F.pivot ∧ nodes A B.pivot≠nodes A k ∧
+        nodes A B.pivot≠nodes A F.pivot := by
+  have K := triple_kernel_cut ha F B k ik kj
+  have no := forbidden_triple_shape ha ho S F B k ik kj
+  have hd : A k k≠0 := fun h => no (ThreeStageOverlap.split_if_zero_middle _ K h)
+  have hp : A k F.pivot≠0 :=
+    fun h => no (ThreeStageOverlap.split_if_hop_missing _ K hd (Or.inl h))
+  have hq : A B.pivot k≠0 :=
+    fun h => no (ThreeStageOverlap.split_if_hop_missing _ K hd (Or.inr h))
+  have first : nodes A k≠nodes A F.pivot :=
+    fun h => no (ThreeStageOverlap.split_if_first_repeat _ K hd h)
+  have last : nodes A B.pivot≠nodes A k :=
+    fun h => no (ThreeStageOverlap.split_if_last_repeat _ K hd h)
+  have outer : nodes A B.pivot≠nodes A F.pivot :=
+    fun h => first (ThreeStageOverlap.middle_eq_of_outer_repeat _ K hp hq h)
+  exact ⟨hd,hp,hq,first,last,outer⟩
+
+/-- If just one stage lies between the two earned interior zero pivots,
+it must be implicit, both neighboring taps must be live, and the three
+clocks must be pairwise distinct. No other stage clock is constrained. -/
+theorem crossed_zero_sites_three_stage (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b) :
+    ∃ i j : Fin 11, 0 < i ∧ i.val+2 ≤ j.val ∧ j < Fin.last 10 ∧
+      A 0 0=0 ∧ A i i=0 ∧ A j j=0 ∧ A (Fin.last 10) (Fin.last 10)=0 ∧
+      (∀ k : Fin 11, k.val=i.val+1 → j.val=k.val+1 →
+        A k k≠0 ∧ A k i≠0 ∧ A j k≠0 ∧
+        nodes A k≠nodes A i ∧ nodes A j≠nodes A k ∧ nodes A j≠nodes A i) := by
+  let S := saturated ha ho
+  let F := Classical.choice (exists_front_seed ha ho S)
+  let B := Classical.choice (exists_back_seed ha ho S)
+  have lt : F.pivot.val < B.pivot.val := ordered_pivots ha ho S F B
+  have nq : B.pivot.val ≠ F.pivot.val+1 := adjacent_impossible ha ho S F B
+  exact ⟨F.pivot,B.pivot,F.interior,by omega,B.interior,
+    S.physical_origin 0,F.explicit,B.explicit,S.last_column _,
+    required_middle ha ho S F B⟩
+
+/-- The same counted residue field witnesses nonzero taps and a
+nonzero middle diagonal in the coefficient ring. No assertion is made
+that these three entries must be units in the original ring. -/
+theorem crossed_nonunit_sites_three_stage {R : Type*} [CommRing R] [Nontrivial R]
+    {D : Matrix (Fin 11) (Fin 11) R} {w : Fin 11 → R}
+    (ha : D.IsLowerTriangular) (ho : HasOrder 10 D w) :
+    ∃ i j : Fin 11, 0 < i ∧ i.val+2 ≤ j.val ∧ j < Fin.last 10 ∧
+      ¬IsUnit (D 0 0) ∧ ¬IsUnit (D i i) ∧ ¬IsUnit (D j j)
+        ∧ ¬IsUnit (D (Fin.last 10) (Fin.last 10))
+        ∧ (∀ k : Fin 11, k.val=i.val+1 → j.val=k.val+1 →
+          D k k≠0 ∧ D k i≠0 ∧ D j k≠0 ∧
+          nodes D k≠nodes D i ∧ nodes D j≠nodes D k ∧ nodes D j≠nodes D i) := by
+  obtain ⟨I,hI⟩ := Ideal.exists_maximal R
+  let := hI
+  let := Ideal.Quotient.field I
+  let f := Ideal.Quotient.mk I
+  obtain ⟨i,j,hi,hij,hj,e0,ei,ej,et,trip⟩ := crossed_zero_sites_three_stage (ha.map f) (ho.map f)
+  have n (k : Fin 11) (die : f (D k k)=0) : ¬IsUnit (D k k) :=
+    fun hu => (hu.map f).ne_zero die
+  refine ⟨i,j,hi,hij,hj,n 0 e0,n i ei,n j ej,n _ et,?_⟩
+  intro k ik kj
+  obtain ⟨hd,hp,hq,first,last,outer⟩ := trip k ik kj
+  have nonzero {x : R} (hz : f x≠0) : x≠0 := fun e => hz (e ▸ map_zero f)
+  have clock_map (u : Fin 11) : nodes (D.map f) u=f (nodes D u) := by
+    simp [nodes,Matrix.mulVec_apply_eq_sum,map_sum]
+  have pull {u v : Fin 11} (nn : nodes (D.map f) u≠nodes (D.map f) v) :
+      nodes D u≠nodes D v := fun e => nn (by rw [clock_map,clock_map,e])
+  exact ⟨nonzero hd,nonzero hp,nonzero hq,pull first,pull last,pull outer⟩
 
 end
 end RKResearch.Certified.Graded.CrossedOrderTen

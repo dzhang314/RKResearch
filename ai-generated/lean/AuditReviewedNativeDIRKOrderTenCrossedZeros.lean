@@ -20,3 +20,11 @@ open RKResearch.Certified.Graded
 #print axioms AdjacentCubicScalar.zero_of_tests
 #print axioms CrossedOrderTen.crossed_zero_sites_buffer
 #print axioms CrossedOrderTen.crossed_nonunit_sites_buffer
+
+#check TwoClockPrimitive.no_two_clock_geometric
+#check CrossedOrderTen.crossed_zero_sites_three_stage
+#check CrossedOrderTen.crossed_nonunit_sites_three_stage
+
+#print axioms TwoClockPrimitive.no_two_clock_geometric
+#print axioms CrossedOrderTen.crossed_zero_sites_three_stage
+#print axioms CrossedOrderTen.crossed_nonunit_sites_three_stage

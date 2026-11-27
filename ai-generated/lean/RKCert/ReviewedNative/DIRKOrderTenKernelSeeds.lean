@@ -124,6 +124,7 @@ structure FrontSeed (A : Matrix (Fin 11) (Fin 11) K) where
   form : v=coeffEval A 3 a+d • monomialStageDefect A 2
   a0 : a 0=0
   a_live : a≠0
+  kernel : volterra A v=0
   pivot : Fin 11
   live : v pivot≠0
   before : ∀ j < pivot, v j=0
@@ -162,7 +163,7 @@ theorem exists_front_seed (ha : A.IsLowerTriangular)
     have z' : i=0 := le_antisymm z (Fin.zero_le i)
     subst i
     exact vi v0
-  exact ⟨⟨_,a,d,rfl,a0,an,i,vi,pre,ad,pos⟩⟩
+  exact ⟨⟨_,a,d,rfl,a0,an,kv,i,vi,pre,ad,pos⟩⟩
 
 
 /-- The physical row version of Volterra, with the original clock
@@ -381,6 +382,7 @@ structure BackSeed (A : Matrix (Fin 11) (Fin 11) K) (b : Fin 11 → K) where
   form : v=diag b (coeffEval A 3 a)+d • reflectedStageRow A b 2
   a_last : coeffEval A 3 a (Fin.last 10)=0
   a_live : a≠0
+  kernel : backVolterra A v=0
   pivot : Fin 11
   live : v pivot≠0
   after : ∀ j, pivot < j → v j=0
@@ -420,7 +422,7 @@ theorem exists_back_seed (ha : A.IsLowerTriangular)
   rw [backVolterra_pivot ha i _ aft] at nk
   have di : A i i=0 := sq_eq_zero_iff.mp (neg_eq_zero.mp ((mul_eq_zero.mp nk).resolve_right va))
   have il : i < Fin.last 10 := lt_of_le_of_ne (Fin.le_last i) (fun h => va (h.symm ▸ vt))
-  exact ⟨⟨_,a,d,backSpanMap_eq a d,aval,an,i,va,aft,di,il⟩⟩
+  exact ⟨⟨_,a,d,backSpanMap_eq a d,aval,an,kv,i,va,aft,di,il⟩⟩
 
 end
 end RKResearch.Certified.Graded.CrossedOrderTen

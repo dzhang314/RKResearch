@@ -46,6 +46,8 @@ These signs are checked by rational interval evaluation of all cubic coefficient
 
 ## Deterministic exact tableau
 
+The [exact coefficient export](dirk-order10-eleven-real-coefficients.json) contains every lower-triangular entry of \(A\), the weights, the three monic moduli, and a unit certificate for the eleventh-star residual. Each coefficient is given by its rational coordinates in the nested quotient basis, in increasing degree order. The [decimal CSV](dirk-order10-eleven-real-decimal.csv) is for inspection only. Run `python3 -B check-dirk10-real-export.py` to compare the exact export with the deterministic solve below.
+
 The replay specifies the tableau by a full-rank linear system over this exact algebra, with rational division and all residual rows checked. This gives all literal entries, not approximate coefficients or eigenvalue data.
 
 Let \(\mathcal N\) consist of the nine nonterminal exterior labels (all positions other than 2 and 11). Let \(P_9(X)\) be their monic nodal polynomial. On these labels put

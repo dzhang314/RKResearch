@@ -1,0 +1,17 @@
+RKResearch.Certified.Graded.InvisibleConstantHeadField.lone_cubic_read_zero {K : Type} [Lean.Grind.Field K] (γ d : K)
+  (hγ : γ ≠ 0) (hg : γ * d = 0) : d = 0
+RKResearch.Certified.Graded.InvisibleConstantHeadField.constant_cubic_pair_balance {K : Type} [Lean.Grind.Field K]
+  (γ a b : K) (hγ : γ ≠ 0) (hg : γ * a + γ * b = 0) : a + b = 0
+RKResearch.Certified.Graded.InvisibleConstantHeadField.four_head_reads_live {K : Type} [Lean.Grind.Field K]
+  (a b c d x y z w : K) (hab : a - b ≠ 0) (hac : a - c ≠ 0) (had : a - d ≠ 0) (hbc : b - c ≠ 0) (hbd : b - d ≠ 0)
+  (hcd : c - d ≠ 0) (h₀ : x + y + z + w = 0) (h₁ : a * x + b * y + c * z + d * w = 0)
+  (h₂ : a ^ 2 * x + b ^ 2 * y + c ^ 2 * z + d ^ 2 * w = 0) (hne : ¬(x = 0 ∧ y = 0 ∧ z = 0 ∧ w = 0)) :
+  x ≠ 0 ∧ y ≠ 0 ∧ z ≠ 0 ∧ w ≠ 0
+'RKResearch.Certified.Graded.InvisibleConstantHeadField.lone_cubic_read_zero' does not depend on any axioms
+'RKResearch.Certified.Graded.InvisibleConstantHeadField.constant_cubic_pair_balance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleConstantHeadField.four_head_reads_live' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+4.35.0 invisible constant heads OK

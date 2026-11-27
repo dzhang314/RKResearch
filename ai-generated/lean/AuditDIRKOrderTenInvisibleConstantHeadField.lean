@@ -1,0 +1,11 @@
+import RKCert.ReviewedNative.DIRKOrderTenInvisibleConstantHeadField
+
+open RKResearch.Certified.Graded.InvisibleConstantHeadField
+
+#check lone_cubic_read_zero
+#check constant_cubic_pair_balance
+#check four_head_reads_live
+
+#print axioms lone_cubic_read_zero
+#print axioms constant_cubic_pair_balance
+#print axioms four_head_reads_live

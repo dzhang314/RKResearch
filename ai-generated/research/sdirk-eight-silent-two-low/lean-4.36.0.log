@@ -1,0 +1,9 @@
+ℹ [3751/3798] Built RKCert.ReviewedNative.SDIRK8SilentFiveMomentReceipts (1.4s)
+info: RKCert/ReviewedNative/SDIRK8SilentFiveMomentReceipts.lean:74:0: 'RKCert.ReviewedNative.SDIRK8SilentFiveMomentReceipts.threeSilentRead' depends on axioms: [propext,
+ Classical.choice,
+--
+info: RKCert/ReviewedNative/SDIRK8SilentFiveMomentReceipts.lean:75:0: 'RKCert.ReviewedNative.SDIRK8SilentFiveMomentReceipts.oneSilentClockSupport' depends on axioms: [propext,
+ Classical.choice,
+--
+info: RKCert/ReviewedNative/SDIRK8SilentFiveMomentReceipts.lean:76:0: 'RKCert.ReviewedNative.SDIRK8SilentFiveMomentReceipts.silentHalf' depends on axioms: [propext,
+ Classical.choice,

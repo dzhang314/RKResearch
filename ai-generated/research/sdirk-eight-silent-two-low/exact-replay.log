@@ -1,0 +1,4 @@
+True 3 3 0 [True, True, True]
+Both literal silent-clock placements excluded, phase True
+False 3 3 0 [True, True, True]
+Both literal silent-clock placements excluded, phase False

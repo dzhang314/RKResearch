@@ -1,0 +1,3 @@
+Finitely factored integer 25x25 covariance trace, grades 0–11.
+Largest covariance entry: 140 decimal digits.
+All 12 integer output energies vanish.

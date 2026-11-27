@@ -101,3 +101,5 @@ ordinary rooted conditions and both next-order witnesses.
     python3 -B regenerate.py
     python3 -B audit_tableau.py
     sha256sum -c arithmetic-sha256.txt
+
+The [end-to-end Lean certificate](LEAN.md) verifies the rooted order conditions, the two exact-order defects, and the factorial-unit existence equivalence at width 24 on Lean/Mathlib 4.36.0.

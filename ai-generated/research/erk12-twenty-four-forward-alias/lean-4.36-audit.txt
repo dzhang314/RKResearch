@@ -1,0 +1,12 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Pinned Mathlib: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+51 kernel-checked modules, 49 deterministic generated files, 25x25 factored Gram recurrence.
+
+=== RKCert/ReviewedNative/ERK12UniversalTwentyFourChecks ===
+
+=== RKCert/ReviewedNative/ERK12UniversalTwentyFour ===
+'RKResearch.Certified.ERK12UniversalTwentyFour.order_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK12UniversalTwentyFour.exists_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK12UniversalTwentyFour.exists_exact_iff_factorial_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

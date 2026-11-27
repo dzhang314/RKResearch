@@ -1,0 +1,756 @@
+module
+
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade0
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin0
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction0
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay0
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade4
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin2
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction3
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay4
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade8
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin4
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction6
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay8
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade12
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin6
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction9
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay12
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade16
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin8
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction12
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay16
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade20
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin10
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction15
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay20
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade24
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin12
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction18
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay24
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckGrade28
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin14
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction21
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay28
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin16
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction24
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay32
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin18
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction27
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay36
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin20
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction30
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay40
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin22
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction33
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay44
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin24
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction36
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay48
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin26
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction39
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay52
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin28
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction42
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay56
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin30
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction45
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay60
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin32
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction48
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay64
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin34
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction51
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay68
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin36
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction54
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay72
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin38
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction57
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay76
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin40
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction60
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay80
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin42
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction63
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay84
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin44
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction66
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay88
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin46
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction69
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay92
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin48
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction72
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay96
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin50
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction75
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay100
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin52
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction78
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay104
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin54
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction81
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay108
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin56
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction84
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckPay112
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin58
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction87
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin60
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction90
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin62
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction93
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin64
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction96
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin66
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction99
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin68
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction102
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin70
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction105
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin72
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction108
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin74
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction111
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin76
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction114
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin78
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction117
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin80
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction120
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin82
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction123
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin84
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction126
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin86
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction129
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin88
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction132
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin90
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction135
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin92
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction138
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin94
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction141
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin96
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction144
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin98
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction147
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin100
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction150
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin102
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction153
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin104
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction156
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin106
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction159
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin108
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction162
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin110
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction165
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin112
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction168
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin114
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction171
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin116
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction174
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin118
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction177
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin120
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction180
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin122
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction183
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin124
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction186
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin126
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckAction189
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin128
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin130
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin132
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin134
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin136
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin138
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin140
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin142
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin144
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin146
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin148
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin150
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin152
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin154
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin156
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin158
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin160
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin162
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin164
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin166
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin168
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin170
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin172
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin174
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin176
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin178
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin180
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin182
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin184
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin186
+public import RKCert.ReviewedNative.ERK11UniversalTwentyTwoCheckJoin188
+import Mathlib.Tactic.IntervalCases
+
+@[expose] public section
+
+/-! Generated exact certificate; see the literal tableau and generator. -/
+
+namespace RKResearch.Certified.ERK11UniversalTwentyTwo
+
+set_option maxHeartbeats 0
+set_option maxRecDepth 50000
+
+theorem allGrade (i : ℕ) (hi : i < 29) :
+    checkBlock gradeOK Count i 64 = true := by
+  interval_cases i
+  · exact checkGrade0
+  · exact checkGrade1
+  · exact checkGrade2
+  · exact checkGrade3
+  · exact checkGrade4
+  · exact checkGrade5
+  · exact checkGrade6
+  · exact checkGrade7
+  · exact checkGrade8
+  · exact checkGrade9
+  · exact checkGrade10
+  · exact checkGrade11
+  · exact checkGrade12
+  · exact checkGrade13
+  · exact checkGrade14
+  · exact checkGrade15
+  · exact checkGrade16
+  · exact checkGrade17
+  · exact checkGrade18
+  · exact checkGrade19
+  · exact checkGrade20
+  · exact checkGrade21
+  · exact checkGrade22
+  · exact checkGrade23
+  · exact checkGrade24
+  · exact checkGrade25
+  · exact checkGrade26
+  · exact checkGrade27
+  · exact checkGrade28
+
+theorem allJoin (i : ℕ) (hi : i < 190) :
+    checkBlock joinOK ActCount i 4 = true := by
+  interval_cases i
+  · exact checkJoin0
+  · exact checkJoin1
+  · exact checkJoin2
+  · exact checkJoin3
+  · exact checkJoin4
+  · exact checkJoin5
+  · exact checkJoin6
+  · exact checkJoin7
+  · exact checkJoin8
+  · exact checkJoin9
+  · exact checkJoin10
+  · exact checkJoin11
+  · exact checkJoin12
+  · exact checkJoin13
+  · exact checkJoin14
+  · exact checkJoin15
+  · exact checkJoin16
+  · exact checkJoin17
+  · exact checkJoin18
+  · exact checkJoin19
+  · exact checkJoin20
+  · exact checkJoin21
+  · exact checkJoin22
+  · exact checkJoin23
+  · exact checkJoin24
+  · exact checkJoin25
+  · exact checkJoin26
+  · exact checkJoin27
+  · exact checkJoin28
+  · exact checkJoin29
+  · exact checkJoin30
+  · exact checkJoin31
+  · exact checkJoin32
+  · exact checkJoin33
+  · exact checkJoin34
+  · exact checkJoin35
+  · exact checkJoin36
+  · exact checkJoin37
+  · exact checkJoin38
+  · exact checkJoin39
+  · exact checkJoin40
+  · exact checkJoin41
+  · exact checkJoin42
+  · exact checkJoin43
+  · exact checkJoin44
+  · exact checkJoin45
+  · exact checkJoin46
+  · exact checkJoin47
+  · exact checkJoin48
+  · exact checkJoin49
+  · exact checkJoin50
+  · exact checkJoin51
+  · exact checkJoin52
+  · exact checkJoin53
+  · exact checkJoin54
+  · exact checkJoin55
+  · exact checkJoin56
+  · exact checkJoin57
+  · exact checkJoin58
+  · exact checkJoin59
+  · exact checkJoin60
+  · exact checkJoin61
+  · exact checkJoin62
+  · exact checkJoin63
+  · exact checkJoin64
+  · exact checkJoin65
+  · exact checkJoin66
+  · exact checkJoin67
+  · exact checkJoin68
+  · exact checkJoin69
+  · exact checkJoin70
+  · exact checkJoin71
+  · exact checkJoin72
+  · exact checkJoin73
+  · exact checkJoin74
+  · exact checkJoin75
+  · exact checkJoin76
+  · exact checkJoin77
+  · exact checkJoin78
+  · exact checkJoin79
+  · exact checkJoin80
+  · exact checkJoin81
+  · exact checkJoin82
+  · exact checkJoin83
+  · exact checkJoin84
+  · exact checkJoin85
+  · exact checkJoin86
+  · exact checkJoin87
+  · exact checkJoin88
+  · exact checkJoin89
+  · exact checkJoin90
+  · exact checkJoin91
+  · exact checkJoin92
+  · exact checkJoin93
+  · exact checkJoin94
+  · exact checkJoin95
+  · exact checkJoin96
+  · exact checkJoin97
+  · exact checkJoin98
+  · exact checkJoin99
+  · exact checkJoin100
+  · exact checkJoin101
+  · exact checkJoin102
+  · exact checkJoin103
+  · exact checkJoin104
+  · exact checkJoin105
+  · exact checkJoin106
+  · exact checkJoin107
+  · exact checkJoin108
+  · exact checkJoin109
+  · exact checkJoin110
+  · exact checkJoin111
+  · exact checkJoin112
+  · exact checkJoin113
+  · exact checkJoin114
+  · exact checkJoin115
+  · exact checkJoin116
+  · exact checkJoin117
+  · exact checkJoin118
+  · exact checkJoin119
+  · exact checkJoin120
+  · exact checkJoin121
+  · exact checkJoin122
+  · exact checkJoin123
+  · exact checkJoin124
+  · exact checkJoin125
+  · exact checkJoin126
+  · exact checkJoin127
+  · exact checkJoin128
+  · exact checkJoin129
+  · exact checkJoin130
+  · exact checkJoin131
+  · exact checkJoin132
+  · exact checkJoin133
+  · exact checkJoin134
+  · exact checkJoin135
+  · exact checkJoin136
+  · exact checkJoin137
+  · exact checkJoin138
+  · exact checkJoin139
+  · exact checkJoin140
+  · exact checkJoin141
+  · exact checkJoin142
+  · exact checkJoin143
+  · exact checkJoin144
+  · exact checkJoin145
+  · exact checkJoin146
+  · exact checkJoin147
+  · exact checkJoin148
+  · exact checkJoin149
+  · exact checkJoin150
+  · exact checkJoin151
+  · exact checkJoin152
+  · exact checkJoin153
+  · exact checkJoin154
+  · exact checkJoin155
+  · exact checkJoin156
+  · exact checkJoin157
+  · exact checkJoin158
+  · exact checkJoin159
+  · exact checkJoin160
+  · exact checkJoin161
+  · exact checkJoin162
+  · exact checkJoin163
+  · exact checkJoin164
+  · exact checkJoin165
+  · exact checkJoin166
+  · exact checkJoin167
+  · exact checkJoin168
+  · exact checkJoin169
+  · exact checkJoin170
+  · exact checkJoin171
+  · exact checkJoin172
+  · exact checkJoin173
+  · exact checkJoin174
+  · exact checkJoin175
+  · exact checkJoin176
+  · exact checkJoin177
+  · exact checkJoin178
+  · exact checkJoin179
+  · exact checkJoin180
+  · exact checkJoin181
+  · exact checkJoin182
+  · exact checkJoin183
+  · exact checkJoin184
+  · exact checkJoin185
+  · exact checkJoin186
+  · exact checkJoin187
+  · exact checkJoin188
+  · exact checkJoin189
+
+theorem allAction (i : ℕ) (hi : i < 190) :
+    checkBlock actOK ActCount i 4 = true := by
+  interval_cases i
+  · exact checkAction0
+  · exact checkAction1
+  · exact checkAction2
+  · exact checkAction3
+  · exact checkAction4
+  · exact checkAction5
+  · exact checkAction6
+  · exact checkAction7
+  · exact checkAction8
+  · exact checkAction9
+  · exact checkAction10
+  · exact checkAction11
+  · exact checkAction12
+  · exact checkAction13
+  · exact checkAction14
+  · exact checkAction15
+  · exact checkAction16
+  · exact checkAction17
+  · exact checkAction18
+  · exact checkAction19
+  · exact checkAction20
+  · exact checkAction21
+  · exact checkAction22
+  · exact checkAction23
+  · exact checkAction24
+  · exact checkAction25
+  · exact checkAction26
+  · exact checkAction27
+  · exact checkAction28
+  · exact checkAction29
+  · exact checkAction30
+  · exact checkAction31
+  · exact checkAction32
+  · exact checkAction33
+  · exact checkAction34
+  · exact checkAction35
+  · exact checkAction36
+  · exact checkAction37
+  · exact checkAction38
+  · exact checkAction39
+  · exact checkAction40
+  · exact checkAction41
+  · exact checkAction42
+  · exact checkAction43
+  · exact checkAction44
+  · exact checkAction45
+  · exact checkAction46
+  · exact checkAction47
+  · exact checkAction48
+  · exact checkAction49
+  · exact checkAction50
+  · exact checkAction51
+  · exact checkAction52
+  · exact checkAction53
+  · exact checkAction54
+  · exact checkAction55
+  · exact checkAction56
+  · exact checkAction57
+  · exact checkAction58
+  · exact checkAction59
+  · exact checkAction60
+  · exact checkAction61
+  · exact checkAction62
+  · exact checkAction63
+  · exact checkAction64
+  · exact checkAction65
+  · exact checkAction66
+  · exact checkAction67
+  · exact checkAction68
+  · exact checkAction69
+  · exact checkAction70
+  · exact checkAction71
+  · exact checkAction72
+  · exact checkAction73
+  · exact checkAction74
+  · exact checkAction75
+  · exact checkAction76
+  · exact checkAction77
+  · exact checkAction78
+  · exact checkAction79
+  · exact checkAction80
+  · exact checkAction81
+  · exact checkAction82
+  · exact checkAction83
+  · exact checkAction84
+  · exact checkAction85
+  · exact checkAction86
+  · exact checkAction87
+  · exact checkAction88
+  · exact checkAction89
+  · exact checkAction90
+  · exact checkAction91
+  · exact checkAction92
+  · exact checkAction93
+  · exact checkAction94
+  · exact checkAction95
+  · exact checkAction96
+  · exact checkAction97
+  · exact checkAction98
+  · exact checkAction99
+  · exact checkAction100
+  · exact checkAction101
+  · exact checkAction102
+  · exact checkAction103
+  · exact checkAction104
+  · exact checkAction105
+  · exact checkAction106
+  · exact checkAction107
+  · exact checkAction108
+  · exact checkAction109
+  · exact checkAction110
+  · exact checkAction111
+  · exact checkAction112
+  · exact checkAction113
+  · exact checkAction114
+  · exact checkAction115
+  · exact checkAction116
+  · exact checkAction117
+  · exact checkAction118
+  · exact checkAction119
+  · exact checkAction120
+  · exact checkAction121
+  · exact checkAction122
+  · exact checkAction123
+  · exact checkAction124
+  · exact checkAction125
+  · exact checkAction126
+  · exact checkAction127
+  · exact checkAction128
+  · exact checkAction129
+  · exact checkAction130
+  · exact checkAction131
+  · exact checkAction132
+  · exact checkAction133
+  · exact checkAction134
+  · exact checkAction135
+  · exact checkAction136
+  · exact checkAction137
+  · exact checkAction138
+  · exact checkAction139
+  · exact checkAction140
+  · exact checkAction141
+  · exact checkAction142
+  · exact checkAction143
+  · exact checkAction144
+  · exact checkAction145
+  · exact checkAction146
+  · exact checkAction147
+  · exact checkAction148
+  · exact checkAction149
+  · exact checkAction150
+  · exact checkAction151
+  · exact checkAction152
+  · exact checkAction153
+  · exact checkAction154
+  · exact checkAction155
+  · exact checkAction156
+  · exact checkAction157
+  · exact checkAction158
+  · exact checkAction159
+  · exact checkAction160
+  · exact checkAction161
+  · exact checkAction162
+  · exact checkAction163
+  · exact checkAction164
+  · exact checkAction165
+  · exact checkAction166
+  · exact checkAction167
+  · exact checkAction168
+  · exact checkAction169
+  · exact checkAction170
+  · exact checkAction171
+  · exact checkAction172
+  · exact checkAction173
+  · exact checkAction174
+  · exact checkAction175
+  · exact checkAction176
+  · exact checkAction177
+  · exact checkAction178
+  · exact checkAction179
+  · exact checkAction180
+  · exact checkAction181
+  · exact checkAction182
+  · exact checkAction183
+  · exact checkAction184
+  · exact checkAction185
+  · exact checkAction186
+  · exact checkAction187
+  · exact checkAction188
+  · exact checkAction189
+
+theorem allPay (i : ℕ) (hi : i < 113) :
+    checkBlock payOK Count i 16 = true := by
+  interval_cases i
+  · exact checkPay0
+  · exact checkPay1
+  · exact checkPay2
+  · exact checkPay3
+  · exact checkPay4
+  · exact checkPay5
+  · exact checkPay6
+  · exact checkPay7
+  · exact checkPay8
+  · exact checkPay9
+  · exact checkPay10
+  · exact checkPay11
+  · exact checkPay12
+  · exact checkPay13
+  · exact checkPay14
+  · exact checkPay15
+  · exact checkPay16
+  · exact checkPay17
+  · exact checkPay18
+  · exact checkPay19
+  · exact checkPay20
+  · exact checkPay21
+  · exact checkPay22
+  · exact checkPay23
+  · exact checkPay24
+  · exact checkPay25
+  · exact checkPay26
+  · exact checkPay27
+  · exact checkPay28
+  · exact checkPay29
+  · exact checkPay30
+  · exact checkPay31
+  · exact checkPay32
+  · exact checkPay33
+  · exact checkPay34
+  · exact checkPay35
+  · exact checkPay36
+  · exact checkPay37
+  · exact checkPay38
+  · exact checkPay39
+  · exact checkPay40
+  · exact checkPay41
+  · exact checkPay42
+  · exact checkPay43
+  · exact checkPay44
+  · exact checkPay45
+  · exact checkPay46
+  · exact checkPay47
+  · exact checkPay48
+  · exact checkPay49
+  · exact checkPay50
+  · exact checkPay51
+  · exact checkPay52
+  · exact checkPay53
+  · exact checkPay54
+  · exact checkPay55
+  · exact checkPay56
+  · exact checkPay57
+  · exact checkPay58
+  · exact checkPay59
+  · exact checkPay60
+  · exact checkPay61
+  · exact checkPay62
+  · exact checkPay63
+  · exact checkPay64
+  · exact checkPay65
+  · exact checkPay66
+  · exact checkPay67
+  · exact checkPay68
+  · exact checkPay69
+  · exact checkPay70
+  · exact checkPay71
+  · exact checkPay72
+  · exact checkPay73
+  · exact checkPay74
+  · exact checkPay75
+  · exact checkPay76
+  · exact checkPay77
+  · exact checkPay78
+  · exact checkPay79
+  · exact checkPay80
+  · exact checkPay81
+  · exact checkPay82
+  · exact checkPay83
+  · exact checkPay84
+  · exact checkPay85
+  · exact checkPay86
+  · exact checkPay87
+  · exact checkPay88
+  · exact checkPay89
+  · exact checkPay90
+  · exact checkPay91
+  · exact checkPay92
+  · exact checkPay93
+  · exact checkPay94
+  · exact checkPay95
+  · exact checkPay96
+  · exact checkPay97
+  · exact checkPay98
+  · exact checkPay99
+  · exact checkPay100
+  · exact checkPay101
+  · exact checkPay102
+  · exact checkPay103
+  · exact checkPay104
+  · exact checkPay105
+  · exact checkPay106
+  · exact checkPay107
+  · exact checkPay108
+  · exact checkPay109
+  · exact checkPay110
+  · exact checkPay111
+  · exact checkPay112
+
+
+theorem receipts : Receipts where
+  grade i := checkBlock_covers (by decide) (by decide) allGrade i i.isLt
+  join i hi := checkBlock_covers (by decide) (by decide) allJoin i hi
+  act i hi := checkBlock_covers (by decide) (by decide) allAction i hi
+  pay i := checkBlock_covers (by decide) (by decide) allPay i i.isLt
+
+
+end RKResearch.Certified.ERK11UniversalTwentyTwo

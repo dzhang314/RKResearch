@@ -106,3 +106,5 @@ floating-point decision.
     python3 -B regenerate.py
     python3 -B audit_tableau.py
     sha256sum -c arithmetic-sha256.txt
+
+The [end-to-end Lean certificate](LEAN.md) checks the reviewed rooted order predicate, a unit twelfth-order defect, and exact existence at width 22 if and only if 11! is invertible.

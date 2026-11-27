@@ -1,0 +1,152 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OneOff.EightPaid.terminal_polynomial_paid.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} (ho : RKResearch.HasOrder 8 A b) {P : Polynomial K}
+  (deg : P.natDegree ≤ 4) (p0 : Polynomial.eval 0 P = 0) (p1 : Polynomial.eval 1 P = 1) (w : K)
+  (paid : ∀ (k : Fin 4), (RKResearch.Certified.Graded.probe A b ↑k) ((RKResearch.Certified.Graded.evalNodes A) P) = w) :
+  P = Polynomial.X * (Polynomial.C 14 * RKResearch.Certified.Graded.LobattoEight.lobattoCubic)
+'RKResearch.Certified.Graded.OneOff.EightPaid.terminal_polynomial_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.OneOff.EightPaid.repeated_clean_terminal_paid.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} (ho : RKResearch.HasOrder 8 A b) {P Q : Polynomial K}
+  (Qd : Q.natDegree ≤ 1)
+  (shape : P = Polynomial.X * (Polynomial.C 14 * RKResearch.Certified.Graded.LobattoEight.lobattoCubic))
+  {d z H₁ H₂ U₁ U₂ V : K} (dn : d ≠ 0) (zd : z ≠ 2 * d) (Hne : H₁ ≠ H₂) (Une : U₁ ≠ U₂)
+  (D₁ : Polynomial.eval (2 * d) P + H₁ * Polynomial.eval (2 * d) Q = 0)
+  (D₂ : Polynomial.eval (2 * d) P + H₂ * Polynomial.eval (2 * d) Q = 0)
+  (Z₁ : Polynomial.eval z P + U₁ * Polynomial.eval z Q = 0) (Z₂ : Polynomial.eval z P + U₂ * Polynomial.eval z Q = 0)
+  (D₀ : Polynomial.eval d P + V * Polynomial.eval d Q = 0) : False
+'RKResearch.Certified.Graded.OneOff.EightPaid.repeated_clean_terminal_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0)
+  (branch :
+    (RKResearch.Certified.Graded.OneOff.offKnots A).card = 5 ∨
+      (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7 ∧
+        (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) :
+  ∃ theta, RKResearch.Certified.Graded.ERK8CharEleven.ExceptionalHead A theta
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) {theta : K}
+  (H : RKResearch.Certified.Graded.ERK8CharEleven.ExceptionalHead A theta) :
+  ∃ i,
+    RKResearch.Certified.Graded.OneOff.g A i = 0 ∧
+      RKResearch.Certified.Graded.nodes A i = 6 ∧
+        ∀ j < i, RKResearch.Certified.Graded.OneOff.g A j = 0 → RKResearch.Certified.Graded.nodes A j = 0
+'RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0)
+  (branch :
+    (RKResearch.Certified.Graded.OneOff.offKnots A).card = 5 ∨
+      (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7 ∧
+        (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) :
+  ∃ theta i,
+    RKResearch.Certified.Graded.ERK8CharEleven.ExceptionalHead A theta ∧
+      RKResearch.Certified.Graded.OneOff.g A i = 0 ∧
+        RKResearch.Certified.Graded.nodes A i = 6 ∧
+          (∀ j < i, RKResearch.Certified.Graded.OneOff.g A j = 0 → RKResearch.Certified.Graded.nodes A j = 0) ∧
+            3 ≤ (RKResearch.Certified.Graded.ERK8CharEleven.offPrefixClocks A i).card
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K}
+  (total :
+    (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card +
+        (RKResearch.Certified.Graded.OneOff.offKnots A).card =
+      10) :
+  (∀ (i j : Fin 10),
+      RKResearch.Certified.Graded.OneOff.g A i = 0 →
+        RKResearch.Certified.Graded.OneOff.g A j = 0 →
+          RKResearch.Certified.Graded.nodes A i = RKResearch.Certified.Graded.nodes A j → i = j) ∧
+    ∀ (i j : Fin 10),
+      RKResearch.Certified.Graded.OneOff.g A i ≠ 0 →
+        RKResearch.Certified.Graded.OneOff.g A j ≠ 0 →
+          RKResearch.Certified.Graded.nodes A i = RKResearch.Certified.Graded.nodes A j → i = j
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (five : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 5) {P : Polynomial K}
+  (fit :
+    ∀ (j : Fin 10),
+      RKResearch.Certified.Graded.OneOff.g A j ≠ 0 →
+        Polynomial.eval (RKResearch.Certified.Graded.nodes A j) P = RKResearch.Certified.Graded.OneOff.g A j)
+  (i : Fin 10) (gi : RKResearch.Certified.Graded.OneOff.g A i ≠ 0) : b i = 0
+'RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.order8_four_off_center_or_quadratic.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (off : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 4) :
+  ∃ P R dup k theta scale,
+    RKResearch.Certified.Graded.FourOffPhysical.Placement A b P dup k ∧
+      RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.CleanPrimitivePlacement A b k 6
+          (RKResearch.Certified.Graded.nodes A 7) ∧
+        RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.CleanTerminalProfile A
+            (RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.quartic (RKResearch.Certified.Graded.nodes A k)
+              (RKResearch.Certified.Graded.nodes A 6) (RKResearch.Certified.Graded.nodes A 7))
+            R ∧
+          RKResearch.Certified.Graded.ERK8PaidField.RawPaidShape P (RKResearch.Certified.Graded.nodes A k)
+              (RKResearch.Certified.Graded.nodes A 6) (RKResearch.Certified.Graded.nodes A 7) theta scale ∧
+            (RKResearch.Certified.Graded.nodes A k = 6 ∧
+                scale = 0 ∧
+                  theta ≠ 0 ∧
+                    P = Polynomial.C theta * RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic ∧
+                      RKResearch.Certified.Graded.nodes A 6 + RKResearch.Certified.Graded.nodes A 7 = 1 ∧
+                        RKResearch.Certified.Graded.nodes A 6 * RKResearch.Certified.Graded.nodes A 7 = 8 ∨
+              Polynomial.eval (RKResearch.Certified.Graded.nodes A k)
+                  RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic =
+                0)
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_four_off_center_or_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_count.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0)
+  (noRoot : ∀ (x : K), Polynomial.eval x RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic ≠ 0) :
+  (RKResearch.Certified.Graded.OneOff.offKnots A).card = 1 ∨
+    (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7 ∧
+      (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) :
+  ∃ lambda,
+    lambda ≠ 0 ∧
+      ∀ (i : Fin 10),
+        RKResearch.Certified.Graded.OneOff.g A i ≠ 0 →
+          b i * RKResearch.Certified.Graded.OneOff.g A i *
+              RKResearch.Certified.Graded.ERK8CharEleven.offCofactor A (RKResearch.Certified.Graded.nodes A i) =
+            lambda
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} (ha : ∀ (i j : Fin 10), i ≤ j → A i j = 0)
+  (ho : RKResearch.HasOrder 8 A b) (p : 11 = 0) (seven : (RKResearch.Certified.Graded.OneOff.offKnots A).card = 7)
+  (three : (RKResearch.Certified.Graded.ERKTaggedHorizon.cleanKnots A).card = 3) :
+  ∃ lambda,
+    lambda ≠ 0 ∧
+      ∀ (i : Fin 10),
+        RKResearch.Certified.Graded.OneOff.g A i ≠ 0 →
+          b i =
+            lambda /
+              (Polynomial.eval (RKResearch.Certified.Graded.nodes A i)
+                  RKResearch.Certified.Graded.ERK8CharEleven.exceptionalQuadratic *
+                RKResearch.Certified.Graded.ERK8CharEleven.offCofactor A (RKResearch.Certified.Graded.nodes A i))
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,41 @@
+
+=== RKCert/ReviewedNative/ERK8PaidOneOffClosing ===
+'RKResearch.Certified.Graded.OneOff.EightPaid.terminal_polynomial_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OneOff.EightPaid.repeated_clean_terminal_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenOmittedHead ===
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFourHead ===
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_four_off_center_or_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighWeights ===
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

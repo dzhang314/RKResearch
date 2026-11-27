@@ -1,0 +1,26 @@
+import RKCert.ReviewedNative.ERK8PaidOneOffClosing
+import RKCert.ReviewedNative.ERK8CharElevenOmittedHead
+import RKCert.ReviewedNative.ERK8CharElevenFourHead
+import RKCert.ReviewedNative.ERK8CharElevenHighWeights
+#check RKResearch.Certified.Graded.OneOff.EightPaid.terminal_polynomial_paid
+#print axioms RKResearch.Certified.Graded.OneOff.EightPaid.terminal_polynomial_paid
+#check RKResearch.Certified.Graded.OneOff.EightPaid.repeated_clean_terminal_paid
+#print axioms RKResearch.Certified.Graded.OneOff.EightPaid.repeated_clean_terminal_paid
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head
+#check RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count
+#check RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_four_off_center_or_quadratic
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_four_off_center_or_quadratic
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_count
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_count
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights

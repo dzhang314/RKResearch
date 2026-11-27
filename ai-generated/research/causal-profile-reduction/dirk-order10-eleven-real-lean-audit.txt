@@ -1,0 +1,7 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.dirk_order_ten_eleven_stages_real :
+  ∃ U w, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U w ∧ ¬RKResearch.HasOrder 11 U w
+RKResearch.Certified.dirk_order_ten_real_stage_floor {s : ℕ} {U : Matrix (Fin s) (Fin s) ℝ} {w : Fin s → ℝ}
+  (hU : U.IsLowerTriangular) (hw : RKResearch.HasOrder 10 U w) : 11 ≤ s
+'RKResearch.Certified.dirk_order_ten_eleven_stages_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.dirk_order_ten_real_stage_floor' depends on axioms: [propext, Classical.choice, Quot.sound]

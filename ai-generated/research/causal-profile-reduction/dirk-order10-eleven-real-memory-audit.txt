@@ -1,0 +1,7 @@
+Lean 4.36.0, serial replays measured by Linux getrusage(RUSAGE_CHILDREN):
+DIRKRealIntegerFlagCheckA8From0 wall_s 2.67 peak_RSS_KiB 1475360
+DIRKRealIntegerFlagCheckMoments6 wall_s 67.10 peak_RSS_KiB 3531756
+One worker is recommended, with at least 4 GiB available for the proof run
+and headroom for the OS. Use two only where roughly 8 GiB is available.
+The combined unsplit high-A advance block was rejected for memory; the
+12 split high-A modules and the top typed audit passed independently.

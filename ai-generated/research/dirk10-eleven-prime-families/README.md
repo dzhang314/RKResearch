@@ -93,5 +93,4 @@ From this directory, run:
 
 The finite arithmetic and full real-algebraic tower identities have
 separate exact replays. The 32-prime transfer and its Hensel argument
-are mathematical proofs, not new Lean certificates; the stage floor
-is already checked in Lean.
+are mathematical proofs. The [separate native CRT certificate](../dirk10-eleven-prime-crt-native/README.md) proves exact minimality for every characteristic dividing its fixed modulus, including all 32 primes, 59², and their mixed divisors. It does not formalize the general Hensel step.

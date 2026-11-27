@@ -1,0 +1,48 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+building RingFlagReplay
+
+real	0m3.399s
+user	0m1.675s
+sys	0m0.830s
+building DIRK10PrimeCRTArithmetic
+'RKResearch.Certified.DIRK10PrimeCRT.factorProduct' does not depend on any axioms
+'RKResearch.Certified.DIRK10PrimeCRT.divides_of_mem' depends on axioms: [propext, Quot.sound]
+
+real	0m0.310s
+user	0m0.221s
+sys	0m0.099s
+building DIRK10PrimeCRTData
+
+real	0m1.493s
+user	0m1.243s
+sys	0m0.326s
+building DIRK10PrimeCRTMoments
+
+real	0m1.993s
+user	0m1.689s
+sys	0m0.294s
+building DIRK10PrimeCRTActionsA
+
+real	0m2.472s
+user	0m2.133s
+sys	0m0.327s
+building DIRK10PrimeCRTActionsC
+
+real	0m1.895s
+user	0m1.526s
+sys	0m0.354s
+building DIRK10PrimeCRTSilence
+
+real	0m1.259s
+user	0m0.992s
+sys	0m0.279s
+building DIRK10PrimeCRTProducts
+
+real	0m2.574s
+user	0m2.264s
+sys	0m0.306s
+building DIRK10PrimeCRT
+
+real	0m1.869s
+user	0m1.474s
+sys	0m0.387s

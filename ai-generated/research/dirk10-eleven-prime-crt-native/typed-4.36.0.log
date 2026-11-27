@@ -1,0 +1,33 @@
+RKResearch.Certified.DIRK10PrimeCRT.paid : RKResearch.HasOrder 10 A b
+RKResearch.Certified.DIRK10PrimeCRT.next_unit :
+  IsUnit
+    (↑↑(RKResearch.FiniteRootedTree.bushyTree 11).factorial *
+        b ⬝ᵥ RKResearch.Φ (RKResearch.FiniteRootedTree.bushyTree 11) A -
+      1)
+RKResearch.Certified.DIRK10PrimeCRT.exists_paid_of_dvd.{u_1} (R : Type u_1) [CommRing R] (n : ℕ) [CharP R n]
+  (h : n ∣ modulus) :
+  ∃ U w,
+    U.IsLowerTriangular ∧
+      RKResearch.HasOrder 10 U w ∧
+        IsUnit
+          (↑↑(RKResearch.FiniteRootedTree.bushyTree 11).factorial *
+              w ⬝ᵥ RKResearch.Φ (RKResearch.FiniteRootedTree.bushyTree 11) U -
+            1)
+RKResearch.Certified.DIRK10PrimeCRT.exists_exact_of_dvd.{u_1} (R : Type u_1) [CommRing R] [Nontrivial R] (n : ℕ)
+  [CharP R n] (h : n ∣ modulus) : ∃ U w, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U w ∧ ¬RKResearch.HasOrder 11 U w
+RKResearch.Certified.DIRK10PrimeCRT.exists_exact_prime_in_list.{u_1} (K : Type u_1) [Field K] (p : ℕ) [CharP K p]
+  (hp : p ∈ primes) : ∃ U w, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U w ∧ ¬RKResearch.HasOrder 11 U w
+RKResearch.Certified.DIRK10PrimeCRT.exists_exact_char_59.{u_1} (R : Type u_1) [CommRing R] [Nontrivial R] [CharP R 59] :
+  ∃ U w, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U w ∧ ¬RKResearch.HasOrder 11 U w
+RKResearch.Certified.DIRK10PrimeCRT.exists_exact_char_3481.{u_1} (R : Type u_1) [CommRing R] [Nontrivial R]
+  [CharP R 3481] : ∃ U w, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U w ∧ ¬RKResearch.HasOrder 11 U w
+@minimum_stages_floor : ∀ {R : Type u_1} [inst : CommRing R] [Nontrivial R] {s : ℕ} {U : Matrix (Fin s) (Fin s) R}
+  {w : Fin s → R}, U.IsLowerTriangular → RKResearch.HasOrder 10 U w → 11 ≤ s
+'RKResearch.Certified.DIRK10PrimeCRT.paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK10PrimeCRT.next_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK10PrimeCRT.exists_exact_of_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK10PrimeCRT.exists_exact_prime_in_list' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10PrimeCRT.exists_exact_char_3481' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK10PrimeCRT.minimum_stages_floor' depends on axioms: [propext, Classical.choice, Quot.sound]

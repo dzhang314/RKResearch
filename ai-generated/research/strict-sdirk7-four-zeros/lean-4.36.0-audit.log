@@ -1,0 +1,35 @@
+RKResearch.Certified.SDIRKSevenFourZerosScalar.head_cases {t w r : ℚ} (ht : t ≠ 0) (com : r * t * (2 * t - w) = 0)
+  (read : w * (seed w + 2 * r * t) = seed t * (w + r * (seed t - 1))) :
+  r = 0 ∧ (w = 0 ∨ w = t ∨ w = 2 - t) ∨ w = 2 * t ∧ headDen t * r = -2 * t * (3 * t - 2)
+RKResearch.Certified.SDIRKSevenFourZerosScalar.head_den_ne {t r : ℚ} (ht : t ≠ 0)
+  (h : headDen t * r = -2 * t * (3 * t - 2)) : headDen t ≠ 0
+RKResearch.Certified.SDIRKSevenFourZerosScalar.ap_interpolation {t r : ℚ} (h : headDen t * r = -2 * t * (3 * t - 2)) :
+  q t 1 = headDen t ∧ q t (1 + t) = headDen t * seed t ∧ q t (1 + 2 * t) = headDen t * (seed (2 * t) + 2 * r * t)
+RKResearch.Certified.SDIRKSevenFourZerosScalar.double_opening {t w : ℚ} (ht : t ≠ 0) (h : jq t w = q t w)
+  (k : jxq t w = w * q t w) : t = 1 ∧ w = 0
+RKResearch.Certified.SDIRKSevenFourZerosScalar.zero_clock_three_prior {a b c : ℚ} (h₀ : a + b + c + 1 = 0)
+  (h₁ : a + 2 * b + 3 * c = 0) (h₂ : a + 4 * b + 9 * c = 0) (h₃ : a + 8 * b + 27 * c = 0) : False
+RKResearch.Certified.SDIRKSevenFourZerosScalar.second_active_impossible {x : ℚ} (hx : x ≠ 0) (h₂ : x = x ^ 2 / 2)
+  (h₃ : x ^ 2 = x ^ 3 / 3) : False
+RKResearch.Certified.SDIRKSevenOpenerQuartic.no_polar_center (p : P) :
+  quartic p ≠ 0 → ∃ v, polar v p = 0 ∧ polar p v ≠ 0
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.head_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.head_den_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.ap_interpolation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.double_opening' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.zero_clock_three_prior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.second_active_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenFourZerosScalar.invariant_mass_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenOpenerQuartic.no_polar_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

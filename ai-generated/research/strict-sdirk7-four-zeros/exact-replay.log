@@ -1,0 +1,3 @@
+Canonical quartic: 6*A**3*B - 6*A**3*C + 12*A**2*B**2 - 36*A**2*B*C + 18*A**2*C**2 + 6*A*B**3 - 21*A*B**2*C + 27*A*B*C**2 - 9*A*C**3 - 2*B**3*C + 5*B**2*C**2 - 4*B*C**3 + C**4
+Good mod-5 reduction, and no projective polar center for an involution.
+Double-read elimination and all 17 first-active partial stage profiles checked.

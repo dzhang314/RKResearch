@@ -1,0 +1,23 @@
+RKResearch.Certified.SDIRKSevenQuarticPort.forced_port_affine.{u_1} {R : Type u_1} [CommRing R]
+  {ga gc aa ac ba bc h : R} (e : (ac - h * bc) * ga - gc * (aa - h * ba) = 0) :
+  h * (bc * ga - gc * ba) = ac * ga - gc * aa
+RKResearch.Certified.SDIRKSevenQuarticPort.mirrored_ports.{u_1} {R : Type u_1} [CommRing R]
+  (a₀ a₁ a₂ a₃ b₀ b₁ b₂ b₃ t : R) :
+  c3 a₀ a₁ a₂ a₃ t * c3 b₀ b₁ b₂ b₃ (-t) - c3 b₀ b₁ b₂ b₃ t * c3 a₀ a₁ a₂ a₃ (-t) =
+    2 * t * (a₁ * b₀ - a₀ * b₁ + (a₃ * b₀ - a₂ * b₁ + a₁ * b₂ - a₀ * b₃) * t ^ 2 + (a₃ * b₂ - a₂ * b₃) * t ^ 4)
+RKResearch.Certified.SDIRKSevenQuarticPort.suffix_square.{u_1} {R : Type u_1} [CommRing R] {u n d : R}
+  (h : (u - 2) ^ 2 * d = n) : n * d = ((u - 2) * d) ^ 2
+RKResearch.Certified.SDIRKSevenQuarticPort.no_two_squares {q : ℕ} [NeZero q] {a b : List ℤ}
+  (h : bothSquaresExcluded q a b = true) (x s t : ZMod q) : ¬(evalMod q a x = s ^ 2 ∧ evalMod q b x = t ^ 2)
+RKResearch.Certified.SDIRKSevenQuarticPort.wide_both_charts :
+  bothSquaresExcluded 256 receiptWideU receiptWideQ = true ∧
+    bothSquaresExcluded 256 receiptWideU.reverse receiptWideQ.reverse = true
+RKResearch.Certified.SDIRKSevenQuarticPort.old_both_charts :
+  bothSquaresExcluded 19 receiptOldU receiptOldQ = true ∧
+    bothSquaresExcluded 19 receiptOldU.reverse receiptOldQ.reverse = true
+'RKResearch.Certified.SDIRKSevenQuarticPort.forced_port_affine' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPort.mirrored_ports' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPort.suffix_square' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPort.no_two_squares' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPort.wide_both_charts' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenQuarticPort.old_both_charts' depends on axioms: [propext, Quot.sound]

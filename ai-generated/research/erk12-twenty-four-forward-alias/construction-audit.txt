@@ -1,0 +1,10 @@
+Order 12: 4 weights, 3 unknowns, 3 maximal minors in the unit certificate.
+11 rows: all 37 tree columns tested at grades range(1, 7).
+6 rows: all 8 tree columns tested at grades range(1, 5).
+11 rows: all 48 tree columns tested at grades (7,).
+6 rows: all 9 tree columns tested at grades (5,).
+p=12: 25 physical rows after 17 literal merges.
+Scaled forward, rough reverse, mixed reverse: 1/2 3 9/8
+Early sites: ('-5/4', '-1/2', '5/11') late: ('-5', '-5/11', '1/2', '5/4', '5')
+Checked 17 forward child zeros and all 63 weighted reverse words.
+New literal aliases: (16,9), (17,9), (25,9); 24 strict physical rows.

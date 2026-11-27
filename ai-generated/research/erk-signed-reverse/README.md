@@ -39,7 +39,7 @@ At order seventeen, [weighted regular probes](WEIGHTED-REGULAR-PROBES.md) use ex
 
 [Weighted probes at orders 11–16](WEIGHTED-ORDERS-11-16.md) use a common three-size family of short reverse charts. The earlier constructions at these orders remain available through the historical option.
 
-At order twelve, [combining the nine-row forward chart with the eight-row reverse chart](order-12-factorial-25/README.md) gives 25 stages and verifies exact order without inverting 13. The former 26-stage tableau is unchanged.
+At order twelve, [combining the nine-row forward chart with the eight-row reverse chart](order-12-factorial-25/README.md) gives 25 stages and verifies exact order without inverting 13. The former 26-stage tableau is unchanged. A [separate paid forward-row alias](../erk12-twenty-four-forward-alias/README.md) improves the universal upper bound to 24 stages; the table above describes this construction family as originally allocated.
 
 At order 15, [two tiers of weighted receivers](order-15-factorial-39/README.md) recover the missing donor direction in 39 stages instead of 40. The checker verifies the additional intermediate source pairing as well as the final one. The [40-stage tableau and its compact certificate](order-15-certificate/README.md) remain available.
 

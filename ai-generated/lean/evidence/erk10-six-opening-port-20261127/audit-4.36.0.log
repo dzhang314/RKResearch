@@ -1,0 +1,13 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.ERK10SixOpeningLocalPort.strict (i j : Fin 6) : i ≤ j → A i j = 0
+RKResearch.Certified.ERK10SixOpeningLocalPort.orderFive : RKResearch.HasOrder 5 A b
+RKResearch.Certified.ERK10SixOpeningLocalPort.sixthTall :
+  b ⬝ᵥ RKResearch.Φ (RKResearch.FiniteRootedTree.tallTree 6) A = 1 / 800
+RKResearch.Certified.ERK10SixOpeningLocalPort.notOrderSix : ¬RKResearch.HasOrder 6 A b
+RKResearch.Certified.ERK10SixOpeningLocalPort.localThroughSix (t : RKResearch.FiniteRootedTree) (ht : ↑t.order ≤ 6) :
+  ↑↑t.forestFactorial * RKResearch.Φ t A7 (Sum.inr ()) = 1
+'RKResearch.Certified.ERK10SixOpeningLocalPort.orderFive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SixOpeningLocalPort.notOrderSix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SixOpeningLocalPort.localThroughSix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

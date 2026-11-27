@@ -1,0 +1,27 @@
+import RKCert.Research.ERK10EqualityClockGate
+#check RKResearch.ERK10EqualityClockGate.lobattoBezout
+#print axioms RKResearch.ERK10EqualityClockGate.lobattoBezout
+#check RKResearch.ERK10EqualityClockGate.halfShift
+#print axioms RKResearch.ERK10EqualityClockGate.halfShift
+#check RKResearch.ERK10EqualityClockGate.lobattoNoHalfShift
+#print axioms RKResearch.ERK10EqualityClockGate.lobattoNoHalfShift
+#check RKResearch.ERK10EqualityClockGate.noLobattoRootModEleven
+#print axioms RKResearch.ERK10EqualityClockGate.noLobattoRootModEleven
+#check RKResearch.ERK10EqualityClockGate.centeredBezout
+#print axioms RKResearch.ERK10EqualityClockGate.centeredBezout
+#check RKResearch.ERK10EqualityClockGate.firstTwoCenteredCoeffs
+#print axioms RKResearch.ERK10EqualityClockGate.firstTwoCenteredCoeffs
+#check RKResearch.ERK10EqualityClockGate.centeredElimination
+#print axioms RKResearch.ERK10EqualityClockGate.centeredElimination
+#check RKResearch.ERK10EqualityClockGate.noCenteredRoots
+#print axioms RKResearch.ERK10EqualityClockGate.noCenteredRoots
+#check RKResearch.ERK10EqualityClockGate.oppositeBezout
+#print axioms RKResearch.ERK10EqualityClockGate.oppositeBezout
+#check RKResearch.ERK10EqualityClockGate.crossedBezout
+#print axioms RKResearch.ERK10EqualityClockGate.crossedBezout
+#check RKResearch.ERK10EqualityClockGate.crossedNecessary
+#print axioms RKResearch.ERK10EqualityClockGate.crossedNecessary
+#check RKResearch.ERK10EqualityClockGate.oppositeAtOne
+#print axioms RKResearch.ERK10EqualityClockGate.oppositeAtOne
+#check RKResearch.ERK10EqualityClockGate.crossedAtOne
+#print axioms RKResearch.ERK10EqualityClockGate.crossedAtOne

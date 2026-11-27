@@ -1,0 +1,65 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.ERK10EqualityClockGate.lobattoBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.halfShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.lobattoNoHalfShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.noLobattoRootModEleven' does not depend on any axioms
+'RKResearch.ERK10EqualityClockGate.centeredBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.firstTwoCenteredCoeffs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.centeredElimination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.noCenteredRoots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.oppositeBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.crossedBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.crossedNecessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.oppositeAtOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10EqualityClockGate.crossedAtOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.lobattoBezout {K : Type} [Lean.Grind.Field K] (x : K) :
+  (59136 * x ^ 3 + 14784 * x ^ 2 - 5248 * x - 856) * RKResearch.ERK10EqualityClockGate.L x +
+      (-7392 * x ^ 3 + 12936 * x ^ 2 - 6736 * x + 951) * RKResearch.ERK10EqualityClockGate.Q x =
+    95
+'RKResearch.ERK10EqualityClockGate.lobattoBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.halfShift {K : Type} [Lean.Grind.Field K] (u v : K) (shift : 2 * (u - v) = 1)
+  (n2 : 2 ≠ 0) : 8 * RKResearch.ERK10EqualityClockGate.L u = RKResearch.ERK10EqualityClockGate.Q v
+'RKResearch.ERK10EqualityClockGate.halfShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.lobattoNoHalfShift {K : Type} [Lean.Grind.Field K] (u v : K)
+  (hU : RKResearch.ERK10EqualityClockGate.L u = 0) (hV : RKResearch.ERK10EqualityClockGate.L v = 0)
+  (shift : 2 * (u - v) = 1) (n2 : 2 ≠ 0) (n95 : 95 ≠ 0) : False
+'RKResearch.ERK10EqualityClockGate.lobattoNoHalfShift' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.noLobattoRootModEleven (j : Fin 11) :
+  (42 * ↑↑j ^ 4 - 84 * ↑↑j ^ 3 + 56 * ↑↑j ^ 2 - 14 * ↑↑j + 1) % 11 ≠ 0
+'RKResearch.ERK10EqualityClockGate.noLobattoRootModEleven' does not depend on any axioms
+RKResearch.ERK10EqualityClockGate.centeredBezout {K : Type} [Lean.Grind.Field K] (t : K) :
+  (87 - 55 * t) * RKResearch.ERK10EqualityClockGate.p t + (35 * t - 19) * RKResearch.ERK10EqualityClockGate.q t = 2048
+'RKResearch.ERK10EqualityClockGate.centeredBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.firstTwoCenteredCoeffs {K : Type} [Lean.Grind.Field K] (s₂ s₄ : K)
+  (h₀ : 3 + 7 * s₂ + 35 * s₄ = 0) (h₂ : 5 + 9 * s₂ + 21 * s₄ = 0) (n5 : 5 ≠ 0) (n8 : 8 ≠ 0) :
+  3 * s₂ + 2 = 0 ∧ 21 * s₄ = 1
+'RKResearch.ERK10EqualityClockGate.firstTwoCenteredCoeffs' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.centeredElimination {K : Type} [Lean.Grind.Field K] (z w : K)
+  (h₂ : 7 * z ^ 2 + 5 + 16 * z * w = 0) (h₄ : 7 * z * (z ^ 2 - 1) * w = 4)
+  (h₃ : 7 * z ^ 3 + 41 * z + (49 * z ^ 2 + 15) * w = 0) (n3 : 3 ≠ 0) :
+  RKResearch.ERK10EqualityClockGate.p (z ^ 2) = 0 ∧ RKResearch.ERK10EqualityClockGate.q (z ^ 2) = 0
+'RKResearch.ERK10EqualityClockGate.centeredElimination' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.noCenteredRoots {K : Type} [Lean.Grind.Field K] (z w : K)
+  (h₂ : 7 * z ^ 2 + 5 + 16 * z * w = 0) (h₄ : 7 * z * (z ^ 2 - 1) * w = 4)
+  (h₃ : 7 * z ^ 3 + 41 * z + (49 * z ^ 2 + 15) * w = 0) (n3 : 3 ≠ 0) (n2048 : 2048 ≠ 0) : False
+'RKResearch.ERK10EqualityClockGate.noCenteredRoots' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.oppositeBezout {K : Type} [Lean.Grind.Field K] (u : K) :
+  (-63 * u - 256) * RKResearch.ERK10EqualityClockGate.J4 u +
+      (147 * u ^ 3 + 630 * u ^ 2 + 91 * u - 168) * RKResearch.ERK10EqualityClockGate.opposite u =
+    248
+'RKResearch.ERK10EqualityClockGate.oppositeBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.crossedBezout {K : Type} [Lean.Grind.Field K] (u : K) :
+  (-50611575 * u ^ 3 + 15646491 * u ^ 2 + 16492714 * u - 1578139) * RKResearch.ERK10EqualityClockGate.J4 u +
+      (2377725 * u ^ 3 + 796887 * u ^ 2 - 1325254 * u - 412839) * RKResearch.ERK10EqualityClockGate.crossed u =
+    486056
+'RKResearch.ERK10EqualityClockGate.crossedBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.crossedNecessary {K : Type} [Lean.Grind.Field K] (u v : K)
+  (h : 7 * u ^ 2 - 4 * u + 1 + (2 - 10 * u) * v = 0) (hv : 3 * v ^ 2 = 2 - 3 * u ^ 2) :
+  RKResearch.ERK10EqualityClockGate.crossed u = 0
+'RKResearch.ERK10EqualityClockGate.crossedNecessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.oppositeAtOne {K : Type} [Lean.Grind.Field K] (s : K)
+  (hJ : 21 * s ^ 2 - 14 * s + 1 = 0) (h : 3 * s = 1) (n4 : 4 ≠ 0) : False
+'RKResearch.ERK10EqualityClockGate.oppositeAtOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK10EqualityClockGate.crossedAtOne {K : Type} [Lean.Grind.Field K] (s p : K) (hp : 21 * p ^ 2 = 1)
+  (hs : 3 * s ^ 2 = 2 + 6 * p) (h : s = 1 + 3 * p) (n4 : 4 ≠ 0) (n5 : 5 ≠ 0) : False
+'RKResearch.ERK10EqualityClockGate.crossedAtOne' depends on axioms: [propext, Classical.choice, Quot.sound]

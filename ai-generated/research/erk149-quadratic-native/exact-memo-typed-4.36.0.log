@@ -1,0 +1,11 @@
+@orderNine : ∀ {R : Type u_1} [inst : CommRing R] {s d : R},
+  s * s = ↑15 → ↑RKResearch.Certified.ERK149QuadraticMemoData.den * d = 1 → RKResearch.HasOrder 9 (A s d) (b s d)
+@failedDefect : ∀ {R : Type u_1} [inst : CommRing R] {s d : R},
+  s * s = ↑15 →
+    ↑RKResearch.Certified.ERK149QuadraticMemoData.den * d = 1 →
+      ↑3456 * (↑↑failed.factorial * b s d ⬝ᵥ RKResearch.Φ failed (A s d) - 1) = 1
+RKResearch.Certified.ERK149QuadraticMemo.exactOverReal :
+  ∃ U v, RKResearch.ERK U ∧ RKResearch.HasOrder 9 U v ∧ ¬RKResearch.HasOrder 10 U v
+'RKResearch.Certified.ERK149QuadraticMemo.orderNine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149QuadraticMemo.failedDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK149QuadraticMemo.exactOverReal' depends on axioms: [propext, Classical.choice, Quot.sound]

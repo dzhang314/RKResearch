@@ -1,0 +1,12 @@
+import RKCert.ReviewedNative.DIRK10FactorialThirteen
+
+open RKResearch.Certified.DIRK10FactorialThirteenFlagReplay
+#check @transport
+#check @next_star_defect
+#check @next_mixed_defect
+#check @exists_exact_of_unit
+#check @exists_exact_factorial
+#check @exists_exact_iff_factorial_unit
+#print axioms RKResearch.Certified.DIRK10FactorialThirteenFlagReplay.transport
+#print axioms RKResearch.Certified.DIRK10FactorialThirteenFlagReplay.exists_exact_factorial
+#print axioms RKResearch.Certified.DIRK10FactorialThirteenFlagReplay.exists_exact_iff_factorial_unit

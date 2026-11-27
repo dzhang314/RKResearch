@@ -1,0 +1,3 @@
+'RKResearch.Certified.DIRK10FactorialThirteenFlagReplay.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

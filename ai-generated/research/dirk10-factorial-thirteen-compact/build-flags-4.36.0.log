@@ -1,0 +1,13 @@
+building DIRK10FactorialThirteenFlagReplayData
+building DIRK10FactorialThirteenFlagReplayMoments
+building DIRK10FactorialThirteenFlagReplayActionsA
+building DIRK10FactorialThirteenFlagReplayActionsC
+building DIRK10FactorialThirteenFlagReplaySilence
+building DIRK10FactorialThirteenFlagReplayProducts
+building DIRK10FactorialThirteenFlagReplay
+'RKResearch.Certified.DIRK10FactorialThirteenFlagReplay.order_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10FactorialThirteenFlagReplay.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

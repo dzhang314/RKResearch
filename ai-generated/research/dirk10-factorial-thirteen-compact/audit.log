@@ -1,0 +1,6 @@
+13 distinct lower triangular rows with unequal nonzero diagonals; 1205 integer order checks [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+D= 1555848000 divides 10!^ 4 ; eleventh normalized defects 179/279936 -9809/1049760
+both cleared numerator exactness: 274*179 + 5*(-9809) = 1
+14 distinct lower triangular rows with unequal nonzero diagonals; 1205 integer order checks [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+D= 4200789600 divides 10!^ 4 ; eleventh normalized defects 179/279936 -9809/1049760
+both cleared numerator exactness: 274*179 + 5*(-9809) = 1

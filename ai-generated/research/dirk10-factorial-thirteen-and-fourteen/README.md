@@ -72,3 +72,5 @@ Both eleventh conditions cannot hold in any nonzero ring inverting the tableau d
     sha256sum -c sources.sha256
 
 These are the original rational solutions with the recorded Smith tap vectors. Regeneration and the independent all-tree witness checks require only the Python standard library. Native kernel evidence, if supplied, is a separate receipt.
+
+A [compact 13-stage variant with a full Lean proof](../dirk10-factorial-thirteen-compact/README.md) improves coefficient size while retaining the same universal upper bound. The original two tableaux above are unchanged.

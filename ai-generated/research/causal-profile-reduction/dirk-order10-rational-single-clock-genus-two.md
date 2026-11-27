@@ -1,6 +1,6 @@
 # The eleven-stage rational DIRK10 method must have at least two dirty clocks
 
-**Result.** A lower triangular eleven-stage tableau with rational coefficients and actual rooted order ten cannot have all of its nonzero cubic defects at one numerical clock. Let \(c=A1\), \(g=Ac^2-c^3/3\). At least two distinct values of \(c_i\) must occur on \(\{i:g_i\ne0\}\). No exclusion of the remaining multiple-dirty-clock case is claimed. The real eleven-stage endpoint is unchanged.
+**Result.** A lower triangular eleven-stage tableau with rational coefficients and actual rooted order ten cannot have all of its nonzero cubic defects at one numerical clock. Let \(c=A1\), \(g=Ac^2-c^3/3\). At least two distinct values of \(c_i\) must occur on \(\{i:g_i\ne0\}\). No exclusion of the remaining multiple-dirty-clock case is claimed. The real eleven-stage endpoint is unchanged. The [subsequent full rational lower bound](dirk-order10-rational-lower-twelve.md) combines this argument with a separate analysis of all multiple-clock cases.
 
 This concludes the [rational single-clock reduction](dirk-order10-rational-clock-gates.md) and the [positive fourth-power coset](dirk-order10-rational-local-and-coset-cuts.md) by a global genus-two obstruction. The exact point and rank computation below is not a search up to a height, nor a failed local split test.
 

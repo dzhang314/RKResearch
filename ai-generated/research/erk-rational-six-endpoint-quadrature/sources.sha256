@@ -1,0 +1,9 @@
+85a4afdf06489a1499d239f182699db3d8813336acd1fd1c3f1b2db3e73c0a26  research/erk-rational-six-endpoint-quadrature/README.md
+defaa3275fff7c30d98bfcc711b1671ac512088466627fbe226f048741828490  research/erk-rational-six-endpoint-quadrature/replay.py
+99e19fbfb4704fa931162eae2a7c7b5728ace7cf1c6a8d51b4467241789cad47  research/erk-rational-six-endpoint-quadrature/replay.log
+6dd5de57755926e9256ab19d8048b7ad593d1e7b5011b1deb5431ab74758c80b  research/erk-rational-six-endpoint-quadrature/typed-4.34.1.log
+6dd5de57755926e9256ab19d8048b7ad593d1e7b5011b1deb5431ab74758c80b  research/erk-rational-six-endpoint-quadrature/typed-4.35.0.log
+6dd5de57755926e9256ab19d8048b7ad593d1e7b5011b1deb5431ab74758c80b  research/erk-rational-six-endpoint-quadrature/typed-4.36.0.log
+6dd5de57755926e9256ab19d8048b7ad593d1e7b5011b1deb5431ab74758c80b  research/erk-rational-six-endpoint-quadrature/typed-4.37.0-rc1.log
+cb3418456b4ebf002f07b179283f3b9f8798b58096b88600dcfa8bfeb42742df  lean/AuditRationalERKEndpointSixMod11.lean
+005178a48732be7afc31dcd621618d9a84d784d213a8d30e9edab29cdc0025d2  lean/RKCert/ReviewedNative/RationalERKEndpointSixMod11.lean

@@ -1,0 +1,5 @@
+RKResearch.Certified.RationalERKEndpointSixMod11.finite_pencil_not_split :
+  ((List.range 11).all fun a => !split (quartic a)) = true
+RKResearch.Certified.RationalERKEndpointSixMod11.infinity_pencil_not_split : split cubic = false
+'RKResearch.Certified.RationalERKEndpointSixMod11.finite_pencil_not_split' does not depend on any axioms
+'RKResearch.Certified.RationalERKEndpointSixMod11.infinity_pencil_not_split' does not depend on any axioms

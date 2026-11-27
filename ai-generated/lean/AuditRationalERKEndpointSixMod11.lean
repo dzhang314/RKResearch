@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.RationalERKEndpointSixMod11
+open RKResearch.Certified.RationalERKEndpointSixMod11
+#check finite_pencil_not_split
+#check infinity_pencil_not_split
+#print axioms finite_pencil_not_split
+#print axioms infinity_pencil_not_split

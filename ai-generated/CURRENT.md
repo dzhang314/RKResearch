@@ -53,6 +53,8 @@ The [two normalized 13-stage DIRK11 chronologies](research/causal-profile-reduct
 
 The [coupled cubic-decoder obstruction](research/dirk10-cubic-decoder-ten-mesh-obstruction/README.md) exhausts 360 chronology classes of a specific six-opening, three-merge, rank-one DIRK10 construction. Its only regular rational candidate parameter forces a literal unpaid matrix entry. This does not change the 12–13 width range over the factorial localization.
 
+The [14-stage DIRK11 algebraic shell](research/dirk11-fourteen-prime-families/README.md) also gives exact order eleven in 68 prime families, over their p-adic integers and any nonzero commutative ring whose finite characteristic is supported on those primes. Independent replay checks all 3,047 rooted equations at each listed prime and prime square. The same construction gives order eleven over fields of size p⁸ for every p outside its stated denominator. These are upper bounds, not exclusions of 13.
+
 ## Exact explicit minima over nonzero commutative rings
 
 - [Order five](research/erk-five-ring-witness/README.md): six stages are necessary and sufficient if 120 is a unit. Otherwise no stage count attains order five.

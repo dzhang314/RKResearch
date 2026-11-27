@@ -1,0 +1,28 @@
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+both extra silent h zero: repeated and distinct physical charts excluded True
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+both extra silent h zero: repeated and distinct physical charts excluded False
+five-site fixed tail diagonal factors True 1 [(9, 1)]
+zero reverse factor with active eighth: exact orientation excluded True True 1 9
+zero reverse factor with active eighth: exact orientation excluded False True 1 9
+five-site fixed tail diagonal factors True -1 [(9, 1)]
+zero reverse factor with active eighth: exact orientation excluded True True -1 9
+zero reverse factor with active eighth: exact orientation excluded False True -1 9
+five-site fixed tail diagonal factors False 1 [(1, 1), (8, 1)]
+zero reverse factor with active eighth: exact orientation excluded True False 1 1
+zero reverse factor with active eighth: exact orientation excluded False False 1 1
+zero reverse factor with active eighth: exact orientation excluded True False 1 8
+zero reverse factor with active eighth: exact orientation excluded False False 1 8
+five-site fixed tail diagonal factors False -1 [(1, 1), (8, 1)]
+zero reverse factor with active eighth: exact orientation excluded True False -1 1
+zero reverse factor with active eighth: exact orientation excluded False False -1 1
+zero reverse factor with active eighth: exact orientation excluded True False -1 8
+zero reverse factor with active eighth: exact orientation excluded False False -1 8

@@ -1,0 +1,9 @@
+import RKCert.Research.ERK10StepanovFiveOpeningMod227
+#check RKResearch.ERK10StepanovFiveOpeningMod227.canonicalColumns
+#print axioms RKResearch.ERK10StepanovFiveOpeningMod227.canonicalColumns
+#check RKResearch.ERK10StepanovFiveOpeningMod227.relaxedColumns
+#print axioms RKResearch.ERK10StepanovFiveOpeningMod227.relaxedColumns
+#check RKResearch.ERK10StepanovFiveOpeningMod227.canonicalMoment
+#print axioms RKResearch.ERK10StepanovFiveOpeningMod227.canonicalMoment
+#check RKResearch.ERK10StepanovFiveOpeningMod227.relaxedMoment
+#print axioms RKResearch.ERK10StepanovFiveOpeningMod227.relaxedMoment

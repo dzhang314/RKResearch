@@ -1,0 +1,5 @@
+canonical Lambda constants,slopes: [(154, 11), (131, 201), (219, 144), (120, 93)]
+det Lambda X/X² = 3
+relaxed basis v: [0, 0, 1, 59, 89, 163, 100, 187, 52] d1C² v= 205
+relaxed high-only constraints column ranks: [6, 6, 6, 5, 4, 3, 2, 1]
+relaxed 3-vector high gate [[154, 204, 177], [131, 75, 3], [120, 177, 9]] det= 178

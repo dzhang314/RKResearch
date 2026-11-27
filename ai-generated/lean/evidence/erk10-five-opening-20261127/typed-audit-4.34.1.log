@@ -1,0 +1,22 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+RKResearch.ERK10StepanovFiveOpeningMod227.canonicalColumns :
+  RKResearch.ERK10StepanovFiveOpeningMod227.det✝ 7
+        [[106, 224, 43, 142, 185, 103, 53], [185, 74, 124, 3, 58, 71, 53], [128, 142, 25, 72, 28, 82, 53],
+          [172, 205, 146, 139, 37, 213, 53], [37, 190, 223, 4, 186, 135, 0], [71, 156, 131, 96, 35, 60, 0],
+          [109, 50, 191, 66, 32, 205, 53]] %
+      227 =
+    159
+'RKResearch.ERK10StepanovFiveOpeningMod227.canonicalColumns' does not depend on any axioms
+RKResearch.ERK10StepanovFiveOpeningMod227.relaxedColumns :
+  RKResearch.ERK10StepanovFiveOpeningMod227.det✝ 6
+        [[224, 43, 142, 185, 103, 53], [74, 124, 3, 58, 71, 53], [142, 25, 72, 28, 82, 53],
+          [205, 146, 139, 37, 213, 53], [190, 223, 4, 186, 135, 0], [156, 131, 96, 35, 60, 0]] %
+      227 =
+    199
+'RKResearch.ERK10StepanovFiveOpeningMod227.relaxedColumns' does not depend on any axioms
+RKResearch.ERK10StepanovFiveOpeningMod227.canonicalMoment :
+  RKResearch.ERK10StepanovFiveOpeningMod227.det✝ 2 [[154, 11], [131, 201]] % 227 = 3
+'RKResearch.ERK10StepanovFiveOpeningMod227.canonicalMoment' does not depend on any axioms
+RKResearch.ERK10StepanovFiveOpeningMod227.relaxedMoment :
+  RKResearch.ERK10StepanovFiveOpeningMod227.det✝ 3 [[154, 204, 177], [131, 75, 3], [120, 177, 9]] % 227 = 178
+'RKResearch.ERK10StepanovFiveOpeningMod227.relaxedMoment' does not depend on any axioms

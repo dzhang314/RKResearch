@@ -1,0 +1,7 @@
+Exact high-block cubic kernel at published a87; same rank-at-most-two affine pencil certified (U in image).
+Top word support:  ['bbbb', 'bbbc', 'bbcb', 'bbcc', 'bcbb', 'bcbc', 'bccb', 'bccc', 'cbbb', 'cbbc', 'cbcb', 'cbcc', 'ccbb', 'ccbc', 'cccb', 'cccc']
+Two positive separated exact donor clocks in (22/100,23/100),(53/100,54/100).
+All nine size-five generator values nonzero in both real donor orientations (exact quadratic norms).
+Exact counts by size-five source before the three generator checks: [('((((()))))', 35), ('(((()())))', 35), ('((()(())))', 35), ('((()()()))', 35), ('((())(()))', 35), ('(()((())))', 35), ('(()(()()))', 35), ('(()()(()))', 35), ('(()()()())', 35)]
+Potential nonzero: 315
+cubic kernel 0.11916471975962176105 -0.76011727526116443102 1.0000000000000000000

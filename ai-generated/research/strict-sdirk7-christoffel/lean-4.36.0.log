@@ -1,0 +1,32 @@
+RKResearch.Certified.SDIRKSevenChristoffelScalar.uniform_kernel (x y : ℚ) :
+  4 * ∑ i, (2 * ↑↑i + 1) * legendre x i * legendre y i = kernelFour x y
+RKResearch.Certified.SDIRKSevenChristoffelScalar.kernel_to_curve {x y : ℚ} (h : kernelFour x y = 0) :
+  have X := curveX (x * y);
+  have Y := curveY (x * y) (x + y);
+  Y ^ 2 = X * (X ^ 2 + 1350 * X + 23625)
+RKResearch.Certified.SDIRKSevenChristoffelScalar.kernel_nonzero_of_curve
+  (hE : ∀ (X Y : ℚ), Y ^ 2 = X * (X ^ 2 + 1350 * X + 23625) → X = 0) (x y : ℚ) : kernelFour x y ≠ 0
+RKResearch.Certified.SDIRKSevenChristoffelScalar.five_support_cubic.{u_1} {K : Type u_1} [Field K]
+  {P : Submodule K (Fin 5 → K)} (p : Module.finrank K ↥P = 4) {b v : Fin 5 → K} (hb : ∀ (i : Fin 5), b i ≠ 0)
+  (hv : v ≠ 0) (horth : (RKResearch.Certified.Graded.diag b) v ∈ RKResearch.Certified.Graded.Reverse.annih P)
+  (hnum : (RKResearch.Certified.Graded.row ((RKResearch.Certified.Graded.diag b) v)) v = 0) : v ∈ P
+RKResearch.Certified.SDIRKSevenChristoffelScalar.local_quartic_obstruction {q : ℕ} [NeZero q] {a b c : ℤ}
+  (h : (q, a, b, c) ∈ localReceipts) {m n v : ZMod q} (unit : IsUnit m ∨ IsUnit n) :
+  v ^ 2 ≠ ↑a * m ^ 4 + ↑b * m ^ 2 * n ^ 2 + ↑c * n ^ 4
+RKResearch.Certified.SDIRKSevenChristoffelScalar.good_reduction_counts : natCurveCount 11 = 6 ∧ natCurveCount 17 = 16
+RKResearch.Certified.SDIRKSevenChristoffelScalar.affine_f19_mass : 11 * kernelFour 17 17 = 4
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.uniform_kernel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.kernel_to_curve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.kernel_nonzero_of_curve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.five_support_cubic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.local_quartic_obstruction' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.good_reduction_counts' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKSevenChristoffelScalar.affine_f19_mass' depends on axioms: [propext, Quot.sound]

@@ -260,3 +260,5 @@ then run [proof-audit.lean](proof-audit.lean). We checked
 stock Lean 4.36.0. The full rational subclass eliminations
 are explicit mathematical arguments and arithmetic replays
 in addition to the native rank, scalar and literal gates.
+
+Two separate rational follow-ups exclude a [fully reflection-symmetric active clock set](../strict-sdirk7-two-ghost-symmetric/README.md) and [two distinct active zeros of the virtual defect](../strict-sdirk7-christoffel/README.md). Neither excludes asymmetric nine-stage tableaux in general.

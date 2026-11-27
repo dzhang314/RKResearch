@@ -1,0 +1,61 @@
+reflection all represented terminal (2, 4)
+ fourth 0 (5, 7) (20, 0) [(4, (1, 19)), (16, (1, 13))]
+ fourth 1 (5, 5) (12, 0) [(4, (1, 11)), (2, (4, 13))]
+ fourth 2 (5, 5) (12, 0) [(2, (1, 5)), (10, (1, 11))]
+ fourth 3 (5, 5) (14, 0) [(4, (1, 19)), (10, (1, 11))]
+reflection center 0 pivot (5, 0) constant exceptional gcd
+ fourth 1 (3, 0) gram (12, 0) gcd constant
+ fourth 2 (3, 0) gram (12, 0) gcd constant
+ fourth 3 (27, 0) gram (12, 0) gcd constant
+reflection center 1 pivot (7, 0) constant exceptional gcd
+ fourth 1 (6, 0) gram (22, 0) gcd constant
+ fourth 2 (6, 0) gram (22, 0) gcd constant
+ fourth 3 (43, 0) gram (22, 0) gcd constant
+reflection center 2 pivot (7, 0) constant exceptional gcd
+ fourth 1 (6, 0) gram (22, 0) gcd constant
+ fourth 2 (6, 0) gram (22, 0) gcd constant
+ fourth 3 (43, 0) gram (22, 0) gcd constant
+reflection pair 01 pivot (7, 0) constant exceptional gcd
+ fourth 0 (6, 0) gram (10, 0) gcd constant
+ fourth 2 (1, 0) gram (10, 0) gcd constant
+ fourth 3 (39, 0) gram (10, 0) gcd constant
+reflection pair 02 pivot (7, 0) constant exceptional gcd
+ fourth 0 (6, 0) gram (10, 0) gcd constant
+ fourth 2 (1, 0) gram (10, 0) gcd constant
+ fourth 3 (39, 0) gram (10, 0) gcd constant
+reflection pair 12 pivot (3, 0) constant exceptional gcd
+ fourth 0 (0, 0) gram (2, 0) gcd constant
+ fourth 1 (0, 0) gram (2, 0) gcd constant
+ fourth 3 (13, 0) gram (2, 0) gcd constant
+arithmetic all represented terminal (5, 4)
+ fourth 0 (8, 7) (47, 0) [(7, (1, 19)), (40, (1, 11))]
+ fourth 1 (8, 5) (35, 0) [(7, (1, 19)), (28, (1, 17))]
+ fourth 2 (8, 5) (35, 0) [(28, (1, 17)), (7, (1, 11))]
+ fourth 3 (8, 5) (35, 0) [(28, (1, 13)), (7, (1, 19))]
+arithmetic center 0 pivot (8, 0) constant exceptional gcd
+ fourth 1 (9, 0) gram (24, 0) gcd constant
+ fourth 2 (9, 0) gram (24, 0) gcd constant
+ fourth 3 (48, 0) gram (24, 0) gcd constant
+arithmetic center 1 covered by previous centered theorem
+arithmetic center 2 pivot (10, 0) constant exceptional gcd
+ fourth 1 (12, 0) gram (34, 0) gcd constant
+ fourth 2 (12, 0) gram (34, 0) gcd constant
+ fourth 3 (64, 0) gram (34, 0) gcd constant
+arithmetic pair 01 pivot (10, 0) constant exceptional gcd
+ fourth 0 (12, 0) gram (16, 0) gcd constant
+ fourth 2 (5, 0) gram (16, 0) gcd constant
+ fourth 3 (60, 0) gram (16, 0) gcd constant
+arithmetic pair 02 covered by previous centered theorem
+arithmetic pair 12 pivot (10, 0) constant exceptional gcd
+ fourth 0 (12, 0) gram (18, 0) gcd constant
+ fourth 1 (5, 0) gram (18, 0) gcd constant
+ fourth 3 (60, 0) gram (18, 0) gcd constant
+reflection double 5 fourth (3, 0) gram (4, 0) gcd constant
+reflection double 7 fourth (3, 0) gram (4, 0) gcd constant
+raw (26, 6) (333, 84) saturated (12, 3) (26, 4)
+forbidden linear root 0
+projectively rootless 7 1 11
+projectively rootless 75 1 11
+forbidden linear root 3
+projectively rootless 3 2 2
+projectively rootless 10 2 3

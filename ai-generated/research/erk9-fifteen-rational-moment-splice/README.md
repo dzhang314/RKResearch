@@ -1,5 +1,7 @@
 # Exact rational ERK order nine in fifteen stages
 
+**Current rational upper bound:** the [14-stage rational method](../erk9-fourteen-rational-triple/README.md) supersedes this 15-stage rational construction. The separate factorial-unit ring question is covered by the [universal 15-stage method](../erk9-fifteen-ten-clock/README.md).
+
 The [literal tableau](tableau.json) has **exact order nine in fifteen
 physical explicit stages over \(\mathbb Q\)**, hence over every
 characteristic-zero field. This reduces the previous rational

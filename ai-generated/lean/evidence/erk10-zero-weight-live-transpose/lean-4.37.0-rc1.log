@@ -1,0 +1,6 @@
+'RKResearch.ERK10GhostFrontierGate.lastTwoTaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostFrontierGate.lastThreeTaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostFrontierGate.threeVisibleMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostFrontierGate.exchangeOneGhostResponse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostFrontierGate.originTerminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostFrontierGate.originMoments' does not depend on any axioms

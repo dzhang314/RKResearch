@@ -1,0 +1,40 @@
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.one_label_has_no_debit {K : Type} [Lean.Grind.Field K]
+  (V b e t : K) (hV : V ≠ 0) (h₁ : 2 * (V * t) = b * V ^ 2) (h₂ : 6 * (V ^ 2 * t) = (2 * b + e) * V ^ 3) : b = e
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.one_later_debit_polynomial {K : Type} [Lean.Grind.CommRing K]
+  (U V b e D K₄ u t : K) (h₁ : 2 * (U * u + V * t) = b * V ^ 2) (h₂ : 6 * (U ^ 2 * u + V ^ 2 * t) = (2 * b + e) * V ^ 3)
+  (h₃ : 4 * (U ^ 3 * u + V ^ 3 * t) = (b + e) * V ^ 4 + 4 * K₄ * D - 2 * e * K₄ * V) :
+  12 * K₄ * D - 6 * e * K₄ * V = (b - e) * V ^ 3 * (V - 2 * U)
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.late_block_contribution {K : Type} [Lean.Grind.CommRing K]
+  (d v : K) (xs : List (Tap K)) : paidRead d v xs = d * (weightRead xs - markedRead xs) + v * markedRead xs
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.three_nonzero_head_weights {K : Type} [Lean.Grind.Field K]
+  (a b c wa wb wc m : K) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (hm : m ≠ 0) (hd₁ : a - b ≠ 0) (hd₂ : a - c ≠ 0)
+  (hd₃ : b - c ≠ 0) (h₀ : wa + wb + wc = m) (h₁ : wa * a + wb * b + wc * c = 0)
+  (h₂ : wa * a ^ 2 + wb * b ^ 2 + wc * c ^ 2 = 0) : wa ≠ 0 ∧ wb ≠ 0 ∧ wc ≠ 0
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.debit_from_distinct_weighted_head {K : Type}
+  [Lean.Grind.Field K] (b h hJ : K) (hb : b ≠ 0) (hJ₀ : hJ ≠ 0) (hd : hJ - h ≠ 0) : b - b * h / hJ ≠ 0
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.marked_mass {K : Type} [Lean.Grind.Field K] (b e bJ : K)
+  (hbJ : bJ ≠ 0) : b - e / bJ * bJ = b - e
+RKResearch.Certified.Graded.InvisibleDistinctSlackField.two_row_marked_da {K : Type} [Lean.Grind.Field K]
+  (e bJ V d t : K) (hbJ : bJ ≠ 0) :
+  (e * d + bJ * t) * d + bJ * (V / 2) * (t - e / bJ * (V / 2)) =
+    (e * d + bJ * t - e / bJ * (bJ * (V / 2))) * (d + V / 2)
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.one_label_has_no_debit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.one_later_debit_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.late_block_contribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.three_nonzero_head_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.debit_from_distinct_weighted_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.marked_mass' does not depend on any axioms
+'RKResearch.Certified.Graded.InvisibleDistinctSlackField.two_row_marked_da' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+4.35.0 distinct-slack OK

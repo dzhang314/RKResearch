@@ -1,0 +1,19 @@
+import RKCert.ReviewedNative.DIRKOrderTenInvisibleDistinctSlackField
+
+open RKResearch.Certified.Graded.InvisibleDistinctSlackField
+
+#check one_label_has_no_debit
+#check one_later_debit_polynomial
+#check late_block_contribution
+#check three_nonzero_head_weights
+#check debit_from_distinct_weighted_head
+#check marked_mass
+#check two_row_marked_da
+
+#print axioms one_label_has_no_debit
+#print axioms one_later_debit_polynomial
+#print axioms late_block_contribution
+#print axioms three_nonzero_head_weights
+#print axioms debit_from_distinct_weighted_head
+#print axioms marked_mass
+#print axioms two_row_marked_da

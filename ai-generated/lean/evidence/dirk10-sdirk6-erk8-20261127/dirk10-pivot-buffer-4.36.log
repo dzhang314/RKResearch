@@ -1,0 +1,47 @@
+RKResearch.Certified.Graded.CrossedOrderTen.crossed_zero_sites.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 10 A b) :
+  ∃ i j, 0 < i ∧ i < j ∧ j < Fin.last 10 ∧ A 0 0 = 0 ∧ A i i = 0 ∧ A j j = 0 ∧ A (Fin.last 10) (Fin.last 10) = 0
+RKResearch.Certified.Graded.CrossedOrderTen.four_zeros.{u_1} {K : Type u_1} [Field K] {A : Matrix (Fin 11) (Fin 11) K}
+  {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 10 A b) : 4 ≤ {i | A i i = 0}.card
+RKResearch.Certified.Graded.CrossedOrderTen.four_nonunit_diagonals.{u_2} {R : Type u_2} [CommRing R] [Nontrivial R]
+  {D : Matrix (Fin 11) (Fin 11) R} {w : Fin 11 → R} (ha : D.IsLowerTriangular) (ho : RKResearch.HasOrder 10 D w) :
+  4 ≤ {i | ¬IsUnit (D i i)}.card
+RKResearch.Certified.Graded.CrossedCubicChronology.adjacent_tap_and_clock {K : Type} [Lean.Grind.Field K]
+  (A : ℕ → ℕ → K) (c l v : ℕ → K) (n i : ℕ) (paid : i + 1 < n) (hd : A i i = 0) (hr : A (i + 1) (i + 1) = 0)
+  (left : ∀ (j : ℕ), i + 1 < j → j < n → l j = 0) (right : ∀ j < i, v j = 0) (live : v i ≠ 0)
+  (kernel : VolterraZeroBridge.vol A c v (i + 1) = 0) (mu : ℕ → K) (pay : ∀ t < 10, OfNat.ofNat (t + 1) * mu t = 1)
+  (a b d h f g : K) (front : a ≠ 0 ∨ b ≠ 0 ∨ d ≠ 0) (back : h ≠ 0 ∨ f ≠ 0 ∨ g ≠ 0)
+  (P : CrossedCubicChronology.PaidReads A c l v n a b d (CrossedCubicPivot.moment mu h f g)) :
+  A (i + 1) i ≠ 0 ∧ c (i + 1) = c i
+'RKResearch.Certified.Graded.CrossedOrderTen.crossed_zero_sites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.four_zeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.four_nonunit_diagonals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedCubicChronology.adjacent_tap_and_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.AdjacentCubicScalar.zero_of_tests.{u_1} {K : Type u_1} [Field K]
+  (P : AdjacentCubicScalar.Paid K) (x : K) (u : Fin 9 → K) (T : AdjacentCubicScalar.Tests x u)
+  (O : AdjacentCubicScalar.RankOne u) (i : Fin 9) : u i = 0
+RKResearch.Certified.Graded.CrossedOrderTen.crossed_zero_sites_buffer.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 10 A b) :
+  ∃ i j, 0 < i ∧ ↑i + 2 ≤ ↑j ∧ j < Fin.last 10 ∧ A 0 0 = 0 ∧ A i i = 0 ∧ A j j = 0 ∧ A (Fin.last 10) (Fin.last 10) = 0
+RKResearch.Certified.Graded.CrossedOrderTen.crossed_nonunit_sites_buffer.{u_2} {R : Type u_2} [CommRing R]
+  [Nontrivial R] {D : Matrix (Fin 11) (Fin 11) R} {w : Fin 11 → R} (ha : D.IsLowerTriangular)
+  (ho : RKResearch.HasOrder 10 D w) :
+  ∃ i j,
+    0 < i ∧
+      ↑i + 2 ≤ ↑j ∧
+        j < Fin.last 10 ∧ ¬IsUnit (D 0 0) ∧ ¬IsUnit (D i i) ∧ ¬IsUnit (D j j) ∧ ¬IsUnit (D (Fin.last 10) (Fin.last 10))
+'RKResearch.Certified.Graded.AdjacentCubicScalar.zero_of_tests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.crossed_zero_sites_buffer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.crossed_nonunit_sites_buffer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

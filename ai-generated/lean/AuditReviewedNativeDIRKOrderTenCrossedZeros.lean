@@ -12,3 +12,11 @@ open RKResearch.Certified.Graded
 #print axioms CrossedOrderTen.four_zeros
 #print axioms CrossedOrderTen.four_nonunit_diagonals
 #print axioms CrossedCubicChronology.adjacent_tap_and_clock
+
+#check AdjacentCubicScalar.zero_of_tests
+#check CrossedOrderTen.crossed_zero_sites_buffer
+#check CrossedOrderTen.crossed_nonunit_sites_buffer
+
+#print axioms AdjacentCubicScalar.zero_of_tests
+#print axioms CrossedOrderTen.crossed_zero_sites_buffer
+#print axioms CrossedOrderTen.crossed_nonunit_sites_buffer

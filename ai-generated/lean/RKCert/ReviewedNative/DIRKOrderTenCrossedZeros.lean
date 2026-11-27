@@ -2,6 +2,8 @@ module
 
 public import RKCert.ReviewedNative.DIRKOrderTenKernelSeeds
 public import RKCert.ReviewedNative.DIRKCrossedCubicPivot
+public import RKCert.ReviewedNative.DIRKAdjacentCubicScalar
+import Mathlib.Tactic.FieldSimp
 
 @[expose] public section
 
@@ -236,14 +238,14 @@ private theorem scale_mu (ho : HasOrder 10 A b) (L q n : Nat)
     (paid : n<10) (id : L=(n+1)*q) : (L:K)*mu K n=(q:K) := by
   rw [id,Nat.cast_mul,mul_comm (((n+1:Nat):K)) (q:K),mul_assoc,mu_paid ho n paid,mul_one]
 
-private theorem ordered_pivots (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
-    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b) : F.pivot<B.pivot := by
-  by_contra! cross
+private theorem no_all_zero_mixes (ho : HasOrder 10 A b)
+    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b)
+    (Z : ∀ (j k : Nat), row B.v (mixed A j k F.v)=0) : False := by
   let M := CrossedCubicPivot.moment (mu K) (h B) (l B) (m B)
   have eval (j k : Nat) (paid : j+k ≤ 2) :
       F.a 1*mu K (j+1)*M (j+k+2)+F.a 2*mu K (j+2)*M (j+k+3)+
         F.a 3*mu K (j+3)*M (j+k+4)=0 := by
-    exact (mix_read ho S F B j k paid).symm.trans (mix_zero_crossed ha F B cross j k)
+    exact (mix_read ho S F B j k paid).symm.trans (Z j k)
   have tests : CrossedCubicPivot.Tests (F.a 1) (F.a 2) (F.a 3) M := by
     constructor
     · intro t ht
@@ -275,6 +277,11 @@ private theorem ordered_pivots (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
   · exact h z.1
   · exact l z.2.1
   · exact m z.2.2
+
+private theorem ordered_pivots (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b) : F.pivot < B.pivot := by
+  by_contra! cross
+  exact no_all_zero_mixes ho S F B (mix_zero_crossed ha F B cross)
 
 /-- An actual eleven-stage order-ten DIRK tableau must have two distinct
 interior zero diagonals as well as its first and last zero diagonals. -/
@@ -344,6 +351,341 @@ theorem four_nonunit_diagonals {R : Type*} [CommRing R] [Nontrivial R]
   intro hu
   exact (hu.map f).ne_zero hi.2
 
+
+private theorem front_is_tree (F : FrontSeed A) : F.v∈treeSpace A 3 := by
+  rw [F.form]
+  exact (treeSpace A 3).add_mem (coeffEval_mem_treeSpace _ _ _)
+    ((zeroSpace_le_treeSpace _ _) ((zeroSpace A 3).smul_mem _ (monomialStageDefect_mem _ _)))
+
+private theorem plain_read (ho : HasOrder 10 A b) (S : Saturated A b)
+    (F : FrontSeed A) (B : BackSeed A b) (k : Nat) (paid : k ≤ 3) :
+    row B.v (clockAct A k F.v) =
+      F.a 1 * CrossedCubicPivot.moment (mu K) (h B) (l B) (m B) (k+1)
+      + F.a 2 * CrossedCubicPivot.moment (mu K) (h B) (l B) (m B) (k+2)
+      + F.a 3 * CrossedCubicPivot.moment (mu K) (h B) (l B) (m B) (k+3) := by
+  have tre := clockAct_tree (front_is_tree F) k
+  have dead := reflectedStageRow_treeSpace ho (3+k) 2 (by omega) tre
+  change row (reflectedStageRow A b 2) (clockAct A k F.v)=0 at dead
+  rw [B.form]
+  simp only [row_apply,add_dotProduct,smul_dotProduct,smul_eq_mul]
+  rw [show (reflectedStageRow A b 2) ⬝ᵥ clockAct A k F.v=0 from dead,mul_zero,add_zero]
+  change row (diag b (coeffEval A 3 B.a)) (clockAct A k F.v)=_
+  rw [profile_row S B]
+  have f (i : Nat) (ip : i ≤ 3) :
+      probe A b i (clockAct A k F.v) =
+        F.a 1*mu K (k+1+i) + F.a 2*mu K (k+2+i) + F.a 3*mu K (k+3+i) := by
+    have ghost := clockAct_defect (monomialStageDefect_mem A 2) k
+    have gz : probe A b i (clockAct A k (monomialStageDefect A 2))=0 :=
+      probe_zeroSpace ho (by omega) ghost
+    rw [front_expansion]
+    simp only [map_add,map_smul,smul_eq_mul,gz,mul_zero,add_zero]
+    have q (d : Nat) (dp : 1 ≤ d ∧ d ≤ 3) :
+        probe A b i (clockAct A k ((nodes A)^d)) = mu K (k+d+i) := by
+      rw [probe_clockAct,probe_pow ho (i+k) d (by omega)]
+      congr 1
+      omega
+    have q1 := q 1 (by decide)
+    rw [pow_one] at q1
+    rw [q1,q 2 (by decide),q 3 (by decide)]
+    ring
+  rw [f 0 (by decide),f 1 (by decide),f 2 (by decide),f 3 (by decide)]
+  simp only [CrossedCubicPivot.moment,Nat.add_zero]
+  ring
+
+private theorem mat_vanish_through (ha : A.IsLowerTriangular) {v : Fin 11→K}
+    {i : Fin 11} (hz : ∀ j < i, v j=0) (hd : A i i=0) {u : Fin 11} (ui : u ≤ i) :
+    mat A v u=0 := by
+  have pre : ∀ j < u, v j=0 := fun j hj => hz j (hj.trans_le ui)
+  rw [mat_apply,lowerTriangular_mulVec_pivot ha u _ pre]
+  rcases lt_or_eq_of_le ui with lt|rfl
+  · rw [hz u lt,mul_zero]
+  · rw [hd,zero_mul]
+
+private theorem clock_seed_before (F : FrontSeed A) (j : Nat) :
+    ∀ u < F.pivot, clockAct A j F.v u=0 := by
+  intro u hu
+  rw [clockAct,diag_apply,F.before u hu,mul_zero]
+
+private theorem adjacent_cases {i j u : Fin 11} (adj : j.val=i.val+1)
+    (hi : i ≤ u) (hj : u ≤ j) : u=i ∨ u=j := by
+  have vi : i.val ≤ u.val := hi
+  have vj : u.val ≤ j.val := hj
+  by_cases h : u.val=i.val
+  · exact Or.inl (Fin.ext h)
+  · exact Or.inr (Fin.ext (by omega))
+
+private theorem adjacent_inner (ha : A.IsLowerTriangular)
+    (F : FrontSeed A) (B : BackSeed A b) (adj : B.pivot.val=F.pivot.val+1) (j : Nat) :
+    mat A (clockAct A j F.v) B.pivot =
+      A B.pivot F.pivot * ((nodes A F.pivot)^j * F.v F.pivot) := by
+  rw [mat_apply,Matrix.mulVec_apply_eq_sum]
+  rw [Finset.sum_eq_single F.pivot]
+  · rfl
+  · intro w _ wne
+    by_cases hh : w < F.pivot
+    · rw [clock_seed_before F j w hh,mul_zero]
+    · by_cases hi : B.pivot < w
+      · rw [ha hi,zero_mul]
+      · rcases adjacent_cases adj (le_of_not_gt hh) (le_of_not_gt hi) with q|rfl
+        · exact False.elim (wne q)
+        · rw [B.explicit,zero_mul]
+  · intro h
+    exact False.elim (h (Finset.mem_univ _))
+
+private theorem adjacent_read (ha : A.IsLowerTriangular)
+    (F : FrontSeed A) (B : BackSeed A b) (adj : B.pivot.val=F.pivot.val+1) (j k : Nat) :
+    row B.v (mixed A j k F.v) =
+      (B.v B.pivot * A B.pivot F.pivot * F.v F.pivot)
+        *(nodes A B.pivot)^k*(nodes A F.pivot)^j := by
+  rw [row_apply,dotProduct,Finset.sum_eq_single B.pivot]
+  · simp only [mixed,LinearMap.comp_apply,clockAct,diag_apply,Pi.pow_apply]
+    have a := adjacent_inner ha F B adj j
+    change mat A (diag ((nodes A)^j) F.v) B.pivot = _ at a
+    rw [a]
+    ring
+  · intro u _ une
+    by_cases h : B.pivot < u
+    · rw [B.after u h,zero_mul]
+    · have le : u.val ≤ B.pivot.val := le_of_not_gt h
+      have lt : u.val < B.pivot.val := lt_of_le_of_ne le (fun eq => une (Fin.ext eq))
+      have ui : u ≤ F.pivot := show u.val ≤ F.pivot.val by omega
+      have z := mat_vanish_through ha (clock_seed_before F j) F.explicit ui
+      change B.v u * (clockAct A k (mat A (clockAct A j F.v))) u=0
+      rw [clockAct,diag_apply,z,mul_zero,mul_zero]
+  · intro h
+    exact False.elim (h (Finset.mem_univ _))
+
+private theorem adjacent_plain (F : FrontSeed A) (B : BackSeed A b)
+    (adj : B.pivot.val=F.pivot.val+1) (same : nodes A B.pivot=nodes A F.pivot) (k : Nat) :
+    row B.v (clockAct A k F.v) =
+      (row B.v F.v)*(nodes A F.pivot)^k := by
+  simp only [row_apply,dotProduct,Finset.sum_mul,clockAct,diag_apply,Pi.pow_apply]
+  apply Finset.sum_congr rfl
+  intro u _
+  by_cases hi : u < F.pivot
+  · rw [F.before u hi]
+    ring
+  · by_cases hj : B.pivot < u
+    · rw [B.after u hj]
+      ring
+    · rcases adjacent_cases adj (le_of_not_gt hi) (le_of_not_gt hj) with rfl|rfl
+      · ring
+      · rw [same]
+        ring
+
+private theorem adjacent_double_zero (ha : A.IsLowerTriangular)
+    (F : FrontSeed A) (B : BackSeed A b) (adj : B.pivot.val=F.pivot.val+1) :
+    row B.v (mat A (mat A F.v))=0 := by
+  rw [row_apply,dotProduct]
+  apply Finset.sum_eq_zero
+  intro u _
+  by_cases hi : B.pivot < u
+  · rw [B.after u hi,zero_mul]
+  · have up : u ≤ B.pivot := le_of_not_gt hi
+    have z : mat A (mat A F.v) u=0 := by
+      apply mat_vanish_through ha _ B.explicit up
+      intro w hw
+      have v : w.val < B.pivot.val := hw
+      have wp : w ≤ F.pivot := by
+        change w.val ≤ F.pivot.val
+        omega
+      exact mat_vanish_through ha F.before F.explicit wp
+    rw [z,mul_zero]
+
+private theorem back_volterra_paid_zero (ho : HasOrder 10 A b)
+    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b) :
+    row B.v (volterra A F.v)=0 := by
+  have p := volterra_treeSpace ho 3 (by decide) (front_is_tree F)
+  have tre := zeroSpace_le_treeSpace _ _ p
+  have d := reflectedStageRow_treeSpace ho 5 2 (by decide) tre
+  change row (reflectedStageRow A b 2) (volterra A F.v)=0 at d
+  rw [B.form]
+  simp only [row_apply,add_dotProduct,smul_dotProduct,smul_eq_mul]
+  rw [show (reflectedStageRow A b 2) ⬝ᵥ volterra A F.v=0 from d,mul_zero,add_zero]
+  change row (diag b (coeffEval A 3 B.a)) (volterra A F.v)=0
+  rw [profile_row S B]
+  have w (n : Nat) (hn : n≤3) : probe A b n (volterra A F.v)=0 :=
+    probe_zeroSpace ho (by omega) p
+  rw [w 0 (by decide),w 1 (by decide),w 2 (by decide),w 3 (by decide)]
+  ring
+
+private theorem adjacent_same_clock (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+    (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b)
+    (adj : B.pivot.val=F.pivot.val+1) :
+    (B.v B.pivot * A B.pivot F.pivot * F.v F.pivot) ≠ 0 ∧
+      nodes A B.pivot=nodes A F.pivot := by
+  set d := B.v B.pivot * A B.pivot F.pivot * F.v F.pivot
+  have dn : d≠0 := by
+    intro z
+    exact no_all_zero_mixes ho S F B (fun j k => by
+      rw [adjacent_read ha F B adj,show B.v B.pivot * A B.pivot F.pivot * F.v F.pivot=d from rfl,
+        z,zero_mul,zero_mul])
+  have vk := back_volterra_paid_zero ho S F B
+  have id0 (v : Fin 11 → K) : clockAct A 0 v=v := by ext i; simp [clockAct]
+  have id1 (v : Fin 11 → K) : clockAct A 1 v=diag (nodes A) v := by simp [clockAct]
+  have eq (j k : Nat) :
+      row B.v (clockAct A k (mat A (clockAct A j F.v))) =
+        d*(nodes A B.pivot)^k*(nodes A F.pivot)^j :=
+    adjacent_read ha F B adj j k
+  change row B.v (diag (nodes A) (mat A F.v) - mat A (diag (nodes A) F.v)
+    - mat A (mat A F.v))=0 at vk
+  rw [map_sub,map_sub,adjacent_double_zero ha F B adj,sub_zero,←id1,←id1] at vk
+  have x := eq 0 1
+  have y := eq 1 0
+  rw [id0,pow_zero,pow_one,mul_one] at x y
+  rw [x,y] at vk
+  have e : d*(nodes A B.pivot - nodes A F.pivot)=0 := by linear_combination vk
+  exact ⟨dn,sub_eq_zero.mp ((mul_eq_zero.mp e).resolve_left dn)⟩
+
+private def adjacent_products (F : FrontSeed A) (B : BackSeed A b) (i : Fin 9) : K :=
+  if i=0 then F.a 1*h B else if i=1 then F.a 1*l B else if i=2 then F.a 1*m B
+  else if i=3 then F.a 2*h B else if i=4 then F.a 2*l B else if i=5 then F.a 2*m B
+  else if i=6 then F.a 3*h B else if i=7 then F.a 3*l B else F.a 3*m B
+
+private theorem adjacent_products_rankone (F : FrontSeed A) (B : BackSeed A b) :
+    AdjacentCubicScalar.RankOne (adjacent_products F B) := by
+  constructor <;> norm_num [adjacent_products] <;> ring
+
+private theorem adjacent_products_live (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b) :
+    ∃ i, adjacent_products F B i≠0 := by
+  rcases front_coeffs_live F with h1|h2|h3 <;> rcases back_coeffs_live S B with hh|hl|hm
+  · exact ⟨0,by simpa [adjacent_products] using mul_ne_zero h1 hh⟩
+  · exact ⟨1,by simpa [adjacent_products] using mul_ne_zero h1 hl⟩
+  · exact ⟨2,by simpa [adjacent_products] using mul_ne_zero h1 hm⟩
+  · exact ⟨3,by simpa [adjacent_products] using mul_ne_zero h2 hh⟩
+  · exact ⟨4,by simpa [adjacent_products] using mul_ne_zero h2 hl⟩
+  · exact ⟨5,by simpa [adjacent_products] using mul_ne_zero h2 hm⟩
+  · exact ⟨6,by simpa [adjacent_products] using mul_ne_zero h3 hh⟩
+  · exact ⟨7,by simpa [adjacent_products] using mul_ne_zero h3 hl⟩
+  · exact ⟨8,by simpa [adjacent_products] using mul_ne_zero h3 hm⟩
+
+set_option maxHeartbeats 1000000 in
+private theorem adjacent_impossible (ha : A.IsLowerTriangular)
+    (ho : HasOrder 10 A b) (S : Saturated A b) (F : FrontSeed A) (B : BackSeed A b)
+    (adj : B.pivot.val=F.pivot.val+1) : False := by
+  let x := nodes A F.pivot
+  let u := adjacent_products F B
+  let d := B.v B.pivot * A B.pivot F.pivot * F.v F.pivot
+  let V := CrossedCubicPivot.moment (mu K) (h B) (l B) (m B)
+  let L (k : Nat) := F.a 1*V (k+1) + F.a 2*V (k+2) + F.a 3*V (k+3)
+  let J (j k : Nat) := F.a 1*mu K (j+1)*V (j+k+2) + F.a 2*mu K (j+2)*V (j+k+3) +
+        F.a 3*mu K (j+3)*V (j+k+4)
+  obtain ⟨_,same⟩ := adjacent_same_clock ha ho S F B adj
+  have lEq (k : Nat) (paid : k≤3) : L k = (row B.v F.v)*x^k :=
+    (plain_read ho S F B k paid).symm.trans (adjacent_plain F B adj same k)
+  have mEq (j k : Nat) (paid : j+k≤2) : J j k = d*x^(j+k) := by
+    rw [show J j k = row B.v (mixed A j k F.v) from (mix_read ho S F B j k paid).symm]
+    rw [adjacent_read ha F B adj,same,pow_add]
+    dsimp only [x,d]
+    ring
+  have lStep (k : Nat) (paid : k ≤ 2) : L (k+1)-x*L k=0 := by
+    rw [lEq (k+1) (by omega),lEq k (by omega),pow_succ]
+    ring
+  have j3 : J 0 1-x*J 0 0=0 := by rw [mEq 0 1 (by decide),mEq 0 0 (by decide)]; ring
+  have j4 : J 1 0-J 0 1=0 := by rw [mEq 1 0 (by decide),mEq 0 1 (by decide)]; ring
+  have j5 : J 0 2-x*J 0 1=0 := by rw [mEq 0 2 (by decide),mEq 0 1 (by decide)]; ring
+  have j6 : J 1 1-J 0 2=0 := by rw [mEq 1 1 (by decide),mEq 0 2 (by decide)]; ring
+  have j7 : J 2 0-J 0 2=0 := by rw [mEq 2 0 (by decide),mEq 0 2 (by decide)]; ring
+  have nz2 : (2:K) ≠ 0 := (ho.natCast_isUnit (n:=2) (by decide) (by decide)).ne_zero
+  have nz3 : (3:K) ≠ 0 := (ho.natCast_isUnit (n:=3) (by decide) (by decide)).ne_zero
+  have nz4 : (4:K) ≠ 0 := (ho.natCast_isUnit (n:=4) (by decide) (by decide)).ne_zero
+  have nz5 : (5:K) ≠ 0 := (ho.natCast_isUnit (n:=5) (by decide) (by decide)).ne_zero
+  have nz6 : (6:K) ≠ 0 := (ho.natCast_isUnit (n:=6) (by decide) (by decide)).ne_zero
+  have nz7 : (7:K) ≠ 0 := (ho.natCast_isUnit (n:=7) (by decide) (by decide)).ne_zero
+  have nz8 : (8:K) ≠ 0 := (ho.natCast_isUnit (n:=8) (by decide) (by decide)).ne_zero
+  have nz9 : (9:K) ≠ 0 := (ho.natCast_isUnit (n:=9) (by decide) (by decide)).ne_zero
+  have nz10 : (10:K) ≠ 0 := (ho.natCast_isUnit (n:=10) (by decide) (by decide)).ne_zero
+  have r0 : AdjacentCubicScalar.row0 x u=0 := by
+    calc
+      _ = (840:K)*(L 1-x*L 0) := by
+        norm_num [AdjacentCubicScalar.row0,u,adjacent_products,L,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [lStep 0 (by decide),mul_zero]
+  have r1 : AdjacentCubicScalar.row1 x u=0 := by
+    calc
+      _ = (2520:K)*(L 2-x*L 1) := by
+        norm_num [AdjacentCubicScalar.row1,u,adjacent_products,L,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [lStep 1 (by decide),mul_zero]
+  have r2 : AdjacentCubicScalar.row2 x u=0 := by
+    calc
+      _ = (2520:K)*(L 3-x*L 2) := by
+        norm_num [AdjacentCubicScalar.row2,u,adjacent_products,L,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [lStep 2 (by decide),mul_zero]
+  have r3 : AdjacentCubicScalar.row3 x u=0 := by
+    calc
+      _ = (10080:K)*(J 0 1-x*J 0 0) := by
+        norm_num [AdjacentCubicScalar.row3,u,adjacent_products,J,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [j3,mul_zero]
+  have r4 : AdjacentCubicScalar.row4 x u=0 := by
+    calc
+      _ = (10080:K)*(J 1 0-J 0 1) := by
+        norm_num [AdjacentCubicScalar.row4,u,adjacent_products,J,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [j4,mul_zero]
+  have r5 : AdjacentCubicScalar.row5 x u=0 := by
+    calc
+      _ = (30240:K)*(J 0 2-x*J 0 1) := by
+        norm_num [AdjacentCubicScalar.row5,u,adjacent_products,J,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [j5,mul_zero]
+  have r6 : AdjacentCubicScalar.row6 x u=0 := by
+    calc
+      _ = (151200:K)*(J 1 1-J 0 2) := by
+        norm_num [AdjacentCubicScalar.row6,u,adjacent_products,J,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [j6,mul_zero]
+  have r7 : AdjacentCubicScalar.row7 x u=0 := by
+    calc
+      _ = (30240:K)*(J 2 0-J 0 2) := by
+        norm_num [AdjacentCubicScalar.row7,u,adjacent_products,J,V,CrossedCubicPivot.moment,mu]
+        field_simp [nz2,nz3,nz4,nz5,nz6,nz7,nz8,nz9,nz10]
+        ring
+      _ = 0 := by rw [j7,mul_zero]
+
+  have z := AdjacentCubicScalar.zero_of_tests ⟨nz2,nz3,nz5,nz7⟩ x u
+    ⟨r0,r1,r2,r3,r4,r5,r6,r7⟩ (adjacent_products_rankone F B)
+  obtain ⟨i,ine⟩ := adjacent_products_live S F B
+  exact ine (z i)
+
+/-- The two interior zero diagonals have at least one physical row
+strictly between them. No assumption on its diagonal or weights is used. -/
+theorem crossed_zero_sites_buffer (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b) :
+    ∃ i j : Fin 11, 0 < i ∧ i.val+2 ≤ j.val ∧ j < Fin.last 10 ∧
+      A 0 0=0 ∧ A i i=0 ∧ A j j=0 ∧ A (Fin.last 10) (Fin.last 10)=0 := by
+  let S := saturated ha ho
+  let F := Classical.choice (exists_front_seed ha ho S)
+  let B := Classical.choice (exists_back_seed ha ho S)
+  have lt : F.pivot.val < B.pivot.val := ordered_pivots ha ho S F B
+  have nq : B.pivot.val ≠ F.pivot.val+1 := adjacent_impossible ha ho S F B
+  refine ⟨F.pivot,B.pivot,F.interior,by omega,B.interior,
+    S.physical_origin 0,F.explicit,B.explicit,S.last_column _⟩
+
+/-- Spatial ring consequence under the same residue-field transport:
+the two interior nonunit diagonals are not consecutive. -/
+theorem crossed_nonunit_sites_buffer {R : Type*} [CommRing R] [Nontrivial R]
+    {D : Matrix (Fin 11) (Fin 11) R} {w : Fin 11 → R}
+    (ha : D.IsLowerTriangular) (ho : HasOrder 10 D w) :
+    ∃ i j : Fin 11, 0 < i ∧ i.val+2 ≤ j.val ∧ j < Fin.last 10 ∧
+      ¬IsUnit (D 0 0) ∧ ¬IsUnit (D i i) ∧ ¬IsUnit (D j j)
+        ∧ ¬IsUnit (D (Fin.last 10) (Fin.last 10)) := by
+  obtain ⟨I,hI⟩ := Ideal.exists_maximal R
+  let := hI
+  let := Ideal.Quotient.field I
+  let f := Ideal.Quotient.mk I
+  obtain ⟨i,j,hi,hij,hj,e0,ei,ej,et⟩ := crossed_zero_sites_buffer (ha.map f) (ho.map f)
+  have n (k : Fin 11) (die : f (D k k)=0) : ¬IsUnit (D k k) :=
+    fun hu => (hu.map f).ne_zero die
+  exact ⟨i,j,hi,hij,hj,n 0 e0,n i ei,n j ej,n _ et⟩
 
 end
 end RKResearch.Certified.Graded.CrossedOrderTen

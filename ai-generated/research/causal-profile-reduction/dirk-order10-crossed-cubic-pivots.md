@@ -212,3 +212,5 @@ hypotheses are asserted or taken for granted here.
 * The sharpened two index ranges and the general scalar degree variant
   above are documented mathematical deductions, not extra endpoints of
   the new native theorem.
+
+The [subsequent nonadjacency theorem](dirk-order10-no-adjacent-cubic-pivots.md) rules out the adjacent live-tap case entirely.

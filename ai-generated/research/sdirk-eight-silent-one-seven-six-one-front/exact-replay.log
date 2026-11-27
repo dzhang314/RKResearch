@@ -1,0 +1,22 @@
+eight on seven clocks: guarded diagonal factor degrees True [(4, 1), (4, 1), (12, 1)]
+silent eighth reverse tail projection True 4 3
+active8 singleton tail exact projection True 4 True 0
+active8 singleton tail exact projection True 4 False 3
+nonzero k shared reverse root at literal silent front excluded True 1
+silent eighth reverse tail projection True 4 3
+active8 singleton tail exact projection True 4 True 0
+active8 singleton tail exact projection True 4 False 3
+nonzero k shared reverse root at literal silent front excluded True 0
+zero k with Gauss terminal or literal silent front terminal excluded True 0
+zero k with Gauss terminal or literal silent front terminal excluded True 1
+eight on seven clocks: guarded diagonal factor degrees False [(4, 1), (4, 1), (12, 1)]
+silent eighth reverse tail projection False 4 3
+active8 singleton tail exact projection False 4 True 0
+active8 singleton tail exact projection False 4 False 3
+nonzero k shared reverse root at literal silent front excluded False 1
+silent eighth reverse tail projection False 4 3
+active8 singleton tail exact projection False 4 True 0
+active8 singleton tail exact projection False 4 False 3
+nonzero k shared reverse root at literal silent front excluded False 0
+zero k with Gauss terminal or literal silent front terminal excluded False 0
+zero k with Gauss terminal or literal silent front terminal excluded False 1

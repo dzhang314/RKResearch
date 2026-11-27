@@ -1,0 +1,8 @@
+ℹ [1606/1607] Built RKCert.ReviewedNative.SDIRK8SilentSixReverseSupport (3.2s)
+info: RKCert/ReviewedNative/SDIRK8SilentSixReverseSupport.lean:27:0: 'RKCert.ReviewedNative.SDIRK8SilentSixReverseSupport.affineSupportRoot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8SilentSixReverseSupport.lean:28:0: 'RKCert.ReviewedNative.SDIRK8SilentSixReverseSupport.silentTerminalGap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (1607 jobs).

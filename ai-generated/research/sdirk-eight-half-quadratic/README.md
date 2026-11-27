@@ -102,3 +102,5 @@ python3 -m venv .venv
 .venv/bin/python check_finite_projection.py
 ```
 No network is needed for the replays once dependencies are installed. The [Lean receipt](../../lean/RKCert/ReviewedNative/SDIRK8HalfQuadraticReceipts.lean) checks the Vandermonde-cleared three-tap read, affine elimination, and the six-peg Hankel determinant over an arbitrary commutative ring. The tableau reductions, polynomial projections, and finite quotient receipts are exact source mathematics and replay, not an end-to-end Lean nonexistence theorem.
+
+The [star-end exclusion](../sdirk-eight-half-star-quadratic/README.md) completes the exact characteristic-zero coprime analysis whenever either chronological end is a star.

@@ -1,0 +1,17 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKCert.ReviewedNative.SDIRK8SharedRootResidues.commonRootDvd.{u_1} {R : Type u_1} [CommRing R] (p q : Polynomial R)
+  (r : R) (hp : p.IsRoot r) (hq : q.IsRoot r) :
+  (Polynomial.X - Polynomial.C r) ^ 2 ∣ q * p %ₘ q ^ 2 ∧
+    (Polynomial.X - Polynomial.C r) ^ 2 ∣ Polynomial.X * q * p %ₘ q ^ 2 ∧
+      (Polynomial.X - Polynomial.C r) ^ 2 ∣ p ^ 2 %ₘ q ^ 2 ∧
+        (Polynomial.X - Polynomial.C r) ^ 2 ∣ Polynomial.X * p ^ 2 %ₘ q ^ 2
+'RKCert.ReviewedNative.SDIRK8SharedRootResidues.commonRootDvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKCert.ReviewedNative.SDIRK8SharedRootResidues.divisibleQuadraticResidue.{u_1} {K : Type u_1} [Field K]
+  (f q : Polynomial K) (r : K) (hm : q.Monic) (hd : q.natDegree = 2)
+  (h : (Polynomial.X - Polynomial.C r) ^ 2 ∣ f %ₘ q ^ 2) :
+  ∃ a, a.natDegree ≤ 1 ∧ f %ₘ q ^ 2 = (Polynomial.X - Polynomial.C r) ^ 2 * a
+'RKCert.ReviewedNative.SDIRK8SharedRootResidues.divisibleQuadraticResidue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

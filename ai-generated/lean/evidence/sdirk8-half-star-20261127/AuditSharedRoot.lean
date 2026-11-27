@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.SDIRK8SharedRootResidues
+#check RKCert.ReviewedNative.SDIRK8SharedRootResidues.commonRootDvd
+#print axioms RKCert.ReviewedNative.SDIRK8SharedRootResidues.commonRootDvd
+#check RKCert.ReviewedNative.SDIRK8SharedRootResidues.divisibleQuadraticResidue
+#print axioms RKCert.ReviewedNative.SDIRK8SharedRootResidues.divisibleQuadraticResidue

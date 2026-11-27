@@ -1,0 +1,59 @@
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighEarlySetup ===
+'RKResearch.Certified.Graded.ERK8CharEleven.high_center_of_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.high_center_four_or_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighEarlyFour ===
+'RKResearch.Certified.Graded.ERK8CharEleven.early_four_origin_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.early_three_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighSentinel ===
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_early_chart_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenEarlyNewton ===
+'RKResearch.Certified.Graded.ERK8CharEleven.early_paid_newton_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenEarlyMeasures ===
+'RKResearch.Certified.Graded.ERK8CharEleven.earlyBary_hull_receipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.early_four_hull_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenEarlyFiveScalars ===
+'RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_fourth_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_two_measurement_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenHighExclusion ===
+'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.no_seven_off_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_four_or_five_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_forces_one_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

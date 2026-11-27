@@ -1,0 +1,31 @@
+import RKCert.ReviewedNative.ERK8CharElevenHighExclusion
+#check RKResearch.Certified.Graded.ERK8CharEleven.earlyBary_hull_receipt
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.earlyBary_hull_receipt
+#check RKResearch.Certified.Graded.ERK8CharEleven.early_four_hull_of_center_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.early_four_hull_of_center_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.early_four_origin_tap
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.early_four_origin_tap
+#check RKResearch.Certified.Graded.ERK8CharEleven.early_paid_newton_two
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.early_paid_newton_two
+#check RKResearch.Certified.Graded.ERK8CharEleven.early_three_hull_remainder
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.early_three_hull_remainder
+#check RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_fourth_clock
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_fourth_clock
+#check RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_two_measurement_ratio
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_two_measurement_ratio
+#check RKResearch.Certified.Graded.ERK8CharEleven.high_center_four_or_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.high_center_four_or_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.high_center_of_literal
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.high_center_of_literal
+#check RKResearch.Certified.Graded.ERK8CharEleven.no_seven_off_char11
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.no_seven_off_char11
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_forces_one_off
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_forces_one_off
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_four_or_five_off
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_four_or_five_off
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_four
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_four
+#check RKResearch.Certified.Graded.ERK8CharEleven.seven_off_early_chart_of_center_four
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.seven_off_early_chart_of_center_four

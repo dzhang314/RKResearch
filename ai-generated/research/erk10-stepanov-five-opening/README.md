@@ -67,6 +67,8 @@ If the paper's $\mathbf d_4$ identity with its original coefficient $\eta$ is al
 
 The modular map is the known integral basis reduction $\sqrt3\mapsto177$, $\sqrt7\mapsto190$, $\sqrt{147+42\sqrt7}\mapsto149$ at 227. All coefficient denominators and the normalizing divisor for $\eta$ are units. The official radicals generate the degree-eight field, as established in the archived exact replay. Nonzero reductions certify the indicated characteristic-zero linear determinants; they are not taken as proofs of the entire rooted equality.
 
+The [reordered-pair follow-up](../erk10-stepanov-reordered-coorder/README.md) removes the fixed high-block coefficients assumption while retaining the stated low interface, four interior pairs, and per-site co-order conditions.
+
 ## Replay
 
     sha256sum -c sources.sha256

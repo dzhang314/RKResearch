@@ -75,3 +75,11 @@ and [DIRK crossed-pivot restrictions](../causal-profile-reduction/dirk-order10-c
 further constrain the surviving equality cases. The mathematical bridges
 and locally formalized lemmas have distinct scopes. Neither research lane
 has proved a new unrestricted stage floor.
+
+The [high-off branch](../WEIGHTED-ORDER-NINE-HIGH-OFF.md) excludes at
+least eight distinct off clocks for shift-two weighted order nine with
+twelve explicit rows and an active final output, over any characteristic-zero
+field. It does not need an ordering. Its [scalar Lean certificate and
+replay logs](../../lean/evidence/weighted-order-nine-high-off-20261127/)
+are separate from the mathematical rooted-order argument. Remaining branches
+still prevent an unrestricted ERK order-eleven stage improvement.

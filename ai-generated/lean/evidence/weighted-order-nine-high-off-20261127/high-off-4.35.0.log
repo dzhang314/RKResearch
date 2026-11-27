@@ -1,0 +1,10 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'RKResearch.HighOffGate.anchoredQuarticImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HighOffGate.lobattoCubicPairImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HighOffGate.lobattoQuarticImpossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HighOffGate.cubicMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.HighOffGate.momentIntegersCorrect' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	1m2.338s
+user	0m58.591s
+sys	0m3.119s

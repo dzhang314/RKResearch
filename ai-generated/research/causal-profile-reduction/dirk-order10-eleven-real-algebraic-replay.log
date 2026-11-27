@@ -1,0 +1,27 @@
+exact real isolating intervals and degree<=18 quotient construction PASS
+exact ordinary quadrature PASS
+linear block A1 rank contribution 10
+linear block Ac rank contribution 10
+linear block Ac2 rank contribution 9
+linear block Ag rank contribution 8
+linear block Ac3 rank contribution 8
+linear block Ac4 rank contribution 9
+linear block Ah rank contribution 6
+linear block ACh rank contribution 9
+linear block Ac5 rank contribution 5
+linear block D1 rank contribution 2
+linear block D2 rank contribution 2
+linear block G rank contribution 1
+exact actual tableau solved
+eleven-vertex star failure: exact unit witness
+verified all rooted trees of size 1 : 1
+verified all rooted trees of size 2 : 1
+verified all rooted trees of size 3 : 2
+verified all rooted trees of size 4 : 4
+verified all rooted trees of size 5 : 9
+verified all rooted trees of size 6 : 20
+verified all rooted trees of size 7 : 48
+verified all rooted trees of size 8 : 115
+verified all rooted trees of size 9 : 286
+verified all rooted trees of size 10 : 719
+all 1205 literal rooted equations PASS over the exact real algebraic tableau

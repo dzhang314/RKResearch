@@ -28,3 +28,5 @@ These include exact new tableaux, alternate tableaux at existing upper bounds, a
 - [Standalone exact-data reproduction: an early 21-row local-ten port, and three in 24](erk_volterra_three_knot_early_local_ten_21_and_24_replay_20261124.md)
 - [Order sixteen in 38 ordinary strictly common-diagonal RK stages](sdirk_order16_38_six_causal_entries_and_second_quadrature_reverse_20261123.md)
 - [Standalone order-16 strict real SDIRK proof with 38 actual stages](sdirk_order16_38_six_causal_entries_and_second_quadrature_reverse_20261123_replay.md)
+
+- [Exact 11-stage DIRK order ten](../../research/causal-profile-reduction/dirk-order10-eleven-real-algebraic.md): a real coefficient field of degree at most 18, with all 1,205 rooted conditions and strict eleventh-order failure independently replayed. Matches the uniform 11-stage floor.

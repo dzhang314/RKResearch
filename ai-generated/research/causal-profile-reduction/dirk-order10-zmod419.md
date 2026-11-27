@@ -19,9 +19,7 @@ eleven-vertex star fails: its degree-ten moment is 224, instead of
 1/11 = 381, and the cleared output is 369 instead of one. Thus the
 order is exactly ten.
 
-This is a finite-field endpoint. It does not change the characteristic-
-zero or real 11–12 interval, and no lift follows from the finite tableau
-alone. The explicit field minimum is 11 by the reviewed generic lower
+This is a finite-field endpoint, and no characteristic-zero lift follows from the finite tableau alone. A [separate exact real-algebraic construction](dirk-order10-eleven-real-algebraic.md) also attains the eleven-stage minimum over the reals. The explicit field minimum is 11 by the reviewed generic lower
 bound, not by optimization or by reduction of the real method.
 
 The same minimum is 11 over any nonzero commutative unital ring of characteristic 419: map the tableau along the canonical embedding of the prime field. The order identities and triangularity map along it, and the nonzero star defect remains nonzero. The [uniform ring lower bound](../../lean/RKCert/UniformDIRK.lean) also applies to these rings.

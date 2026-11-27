@@ -72,3 +72,5 @@ The remaining \(\ell=3\) variable-residual branch has \(r_2=1\) and either \(B\b
 ## Verification
 
 Run `python3 check_earliest_gauss.py` and `python3 check_tail.py` with Python 3 and `sympy==1.14.0`. They use rational coefficient and exact quadratic quotient arithmetic. The [Lean receipts](../../lean/RKCert/ReviewedNative/SDIRK8SilentClockReceipts.lean) check the literal three-clock integration gate, the midpoint exclusion, and the two explicit Gauss cubic ideal identities. The support rank, chronology and remaining exact tail calculation are source-level.
+
+For exactly one invisible defective stage, the [single-invisible follow-up](../sdirk-eight-silent-one-row/README.md) excludes all seven-active cases where the cubic defect vanishes on active stages and narrows several lower-active cases.

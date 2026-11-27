@@ -1,0 +1,38 @@
+Equal tag four-active: exact monic Gauss-site test 96
+Equal tag Gauss gates: literal row four, earliest active, invisible eighth, midpoint tail
+True 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+False 3 3 0 [True, True, True]
+True 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded True True 1
+True 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded True True -1
+True 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded True False 1
+True 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded True False -1
+False 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded False True 1
+False 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded False True -1
+False 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded False False 1
+False 3 3 0 [True, True, True]
+seven active with repeat, and six active with attached active eighth, excluded False False -1
+True 3 3 0 [True, True, True]
+seven distinct active clocks excluded True True
+True 3 3 0 [True, True, True]
+seven distinct active clocks excluded True False
+False 3 3 0 [True, True, True]
+seven distinct active clocks excluded False True
+False 3 3 0 [True, True, True]
+seven distinct active clocks excluded False False
+True 3 3 0 [True, True, True]
+six active with attached silent eighth excluded True 1
+True 3 3 0 [True, True, True]
+six active with attached silent eighth excluded True -1
+False 3 3 0 [True, True, True]
+six active with attached silent eighth excluded False 1
+False 3 3 0 [True, True, True]
+six active with attached silent eighth excluded False -1

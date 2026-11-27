@@ -1,0 +1,10 @@
+ℹ [1606/1607] Built RKCert.ReviewedNative.SDIRK8SingleInvisibleReciprocal (1.2s)
+info: RKCert/ReviewedNative/SDIRK8SingleInvisibleReciprocal.lean:38:0: 'RKCert.ReviewedNative.SDIRK8SingleInvisibleReciprocal.reciprocalReverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8SingleInvisibleReciprocal.lean:39:0: 'RKCert.ReviewedNative.SDIRK8SingleInvisibleReciprocal.oneMissingClock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/SDIRK8SingleInvisibleReciprocal.lean:40:0: 'RKCert.ReviewedNative.SDIRK8SingleInvisibleReciprocal.reciprocalTailCancellation' depends on axioms: [propext,
+ Quot.sound]
+Build completed successfully (1607 jobs).

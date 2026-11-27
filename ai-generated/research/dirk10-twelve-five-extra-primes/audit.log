@@ -1,0 +1,3 @@
+12 distinct lower triangular rows with unequal nonzero diagonals; 1205 integer order checks [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+D= 14762353142762908220160000000 ; five extras 47,83,97,199,647; eleventh normalized defects -1207/5184000 2711/3888000
+both cleared numerator exactness: 1141*(-1207) + 508*2711 = 1

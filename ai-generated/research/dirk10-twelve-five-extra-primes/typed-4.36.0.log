@@ -1,0 +1,14 @@
+@transport : ∀ {R : Type u_1} [inst : CommRing R] (d : R),
+  ↑denominator * d = 1 → RKResearch.HasOrder 10 (A d) (weights d)
+@next_star_defect : ∀ {R : Type u_1} [inst : CommRing R] (d : R),
+  ↑denominator * d = 1 → 5184000 * (↑↑nextTree.factorial * weights d ⬝ᵥ RKResearch.Φ nextTree (A d) - 1) = -1207
+@next_mixed_defect : ∀ {R : Type u_1} [inst : CommRing R] (d : R),
+  ↑denominator * d = 1 → 3888000 * (↑↑mixedTree.factorial * weights d ⬝ᵥ RKResearch.Φ mixedTree (A d) - 1) = 2711
+@exists_exact_of_unit : ∀ {R : Type u_1} [inst : CommRing R] [Nontrivial R],
+  IsUnit ↑denominator → ∃ T w, T.IsLowerTriangular ∧ RKResearch.HasOrder 10 T w ∧ ¬RKResearch.HasOrder 11 T w
+'RKResearch.Certified.DIRK10FiveExtraTwelveFlagReplay.transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10FiveExtraTwelveFlagReplay.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

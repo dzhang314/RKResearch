@@ -1,0 +1,267 @@
+=== RKCert/ReviewedNative/ERK10UniversalNineteenData ===
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCore ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinPoint ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At48 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At72 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At96 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At120 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At144 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At168 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At192 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At216 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At240 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice0At264 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice1At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice1At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice1At48 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice1At72 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice1At96 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice1At120 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue1 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice2At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice2At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice2At48 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue2 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice3At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice3At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice3At48 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue3 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice4At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice4At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue4 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice5At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice5At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue5 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice6At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice6At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue6 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice7At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice7At24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue7 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice8At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue8 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice9At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue9 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice10At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue10 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice11At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue11 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice12At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue12 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice13At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue13 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice14At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue14 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinSlice15At0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenJoinValue15 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckGrade0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay0 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckGrade4 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin2 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction3 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay4 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckGrade8 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin4 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction6 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay8 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin6 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction9 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay12 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin8 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction12 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay16 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin10 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction15 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay20 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin12 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction18 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin14 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction21 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay28 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin16 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay32 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin18 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction27 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckPay36 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin20 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction30 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin22 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction33 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin24 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction36 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin26 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction39 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin28 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction42 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin30 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction45 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin32 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction48 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin34 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction51 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin36 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction54 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin38 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction57 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin40 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction60 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin42 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction63 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin44 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckAction66 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin46 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin48 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin50 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin52 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin54 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin56 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin58 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin60 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin62 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin64 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin66 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenCheckJoin68 ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteenChecks ===
+
+=== RKCert/ReviewedNative/ERK10UniversalNineteen ===
+'RKResearch.Certified.ERK10UniversalNineteen.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10UniversalNineteen.exists_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10UniversalNineteen.exists_exact_iff_factorial_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

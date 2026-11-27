@@ -1,0 +1,10 @@
+⚠ [3750/3830] Replayed RKCert.ReviewedNative.GradedProducts
+warning: RKCert/ReviewedNative/GradedProducts.lean:21:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+✔ [3859/3874] Built RKCert.Research.SDIRKSevenSixActiveTerminalScalar (2.5s)
+✔ [3863/3874] Built RKCert.Research.SDIRKSevenSixActiveQuadratic (3.0s)
+✔ [3871/3874] Built RKCert.Research.SDIRKSevenSixActiveDirtyF19 (8.5s)
+✔ [3873/3874] Built RKCert.Research.SDIRKSevenSixActiveHead (14s)
+Build completed successfully (3874 jobs).

@@ -1,0 +1,22 @@
+import RKCert.Research.SDIRKSevenSixActiveHead
+import RKCert.Research.SDIRKSevenSixActiveTerminalScalar
+import RKCert.Research.SDIRKSevenSixActiveDirtyF19
+
+open RKResearch.Certified
+#check SDIRKSevenSixActive.quadratic_hidden
+#check SDIRKSevenSixActive.implicit_fold
+#check SDIRKSevenSixActive.rational_unpaid_iff_dirty
+#check SDIRKSevenSixActiveTerminalScalar.two_branches
+#check SDIRKSevenSixActiveDirtyF19.exists_dirty_exact
+
+#print axioms SDIRKSevenSixActive.quadratic_hidden
+#print axioms SDIRKSevenSixActive.implicit_fold
+#print axioms SDIRKSevenSixActive.rational_head_paid_of_third_seed
+#print axioms SDIRKSevenSixActive.rational_first_two_cubic_of_third_seed_zero
+#print axioms SDIRKSevenSixActive.rational_third_cubic_nonzero
+#print axioms SDIRKSevenSixActive.rational_unpaid_iff_dirty
+#print axioms SDIRKSevenSixActiveTerminalScalar.two_branches
+#print axioms SDIRKSevenSixActiveTerminalScalar.fourth_at_zero
+#print axioms SDIRKSevenSixActiveDirtyF19.order_seven
+#print axioms SDIRKSevenSixActiveDirtyF19.unpaid_third
+#print axioms SDIRKSevenSixActiveDirtyF19.exists_dirty_exact

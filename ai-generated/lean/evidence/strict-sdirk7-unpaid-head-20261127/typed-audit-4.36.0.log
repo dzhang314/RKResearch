@@ -1,0 +1,72 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.SDIRKSevenSixActive.quadratic_hidden.{u_1, u_2} {ι : Type u_1} {K : Type u_2} [Fintype ι] [Field K]
+  [CharZero K] {A : Matrix ι ι K} {b v : ι → K} (ho : RKResearch.HasOrder 7 A b) (S : Finset ι) (card : S.card = 6)
+  (head : ∀ i ∉ S, b i = 0) (active : ∀ i ∈ S, b i ≠ 0)
+  (inj : ∀ (i j : ι), i ∈ S → j ∈ S → Graded.nodes A i = Graded.nodes A j → i = j) (hv : v ∈ Graded.zeroSpace A 2)
+  (i : ι) : i ∈ S → v i = 0
+RKResearch.Certified.SDIRKSevenSixActive.implicit_fold.{u_1} {R : Type u_1} [CommRing R] {n p : ℕ}
+  {A : Matrix (Fin (n + 1)) (Fin (n + 1)) R} {b : Fin (n + 1) → R} {γ : R} (ho : RKResearch.HasOrder p A b)
+  (ha : A.IsLowerTriangular) (he : ∀ (i : Fin (n + 1)), A i i = γ) {i j : Fin (n + 1)} (hij : i < j) (tap : A j i = 0)
+  (eq : ∀ (k : Fin (n + 1)), k ≠ i → k ≠ j → A i k = A j k) (bi : b i = 0) (bj : b j = 0) :
+  ∃ B w, RKResearch.HasOrder p B w ∧ B.IsLowerTriangular ∧ (∀ (k : Fin n), B k k = γ) ∧ ∃ k, w k = 0
+RKResearch.Certified.SDIRKSevenSixActive.rational_unpaid_iff_dirty
+  {A : Matrix SDIRKSevenTailCollision.F SDIRKSevenTailCollision.F ℚ} {b : SDIRKSevenTailCollision.F → ℚ} {γ : ℚ}
+  (ho : RKResearch.HasOrder 7 A b) (ha : A.IsLowerTriangular) (he : ∀ (i : SDIRKSevenTailCollision.F), A i i = γ)
+  (hγ : γ ≠ 0) (hz : ∀ i ∉ SDIRKSevenTailCollision.tail, b i = 0) (active : ∀ i ∈ SDIRKSevenTailCollision.tail, b i ≠ 0)
+  (inj :
+    ∀ (i j : SDIRKSevenTailCollision.F),
+      i ∈ SDIRKSevenTailCollision.tail →
+        j ∈ SDIRKSevenTailCollision.tail → Graded.nodes A i = Graded.nodes A j → i = j) :
+  ¬SDIRKSevenTailCubicPurity.PaidHead A ↔
+    RKResearch.monomialStageDefect A 1 2 = 0 ∧ ∃ v ∈ Graded.zeroSpace A 3, ∃ i ∈ SDIRKSevenTailCollision.tail, v i ≠ 0
+RKResearch.Certified.SDIRKSevenSixActiveTerminalScalar.two_branches.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {u v p d : K} (n₁ : u ≠ 1) (n₂ : u ≠ v) (n₃ : v ≠ 1) (nM : SDIRKSevenSixActiveTerminalScalar.M u ≠ 0)
+  (h₁ : (u - 1) * p = SDIRKSevenSixActiveTerminalScalar.L₂ v - d)
+  (h₂ :
+    3 * SDIRKSevenSixActiveTerminalScalar.M u * (v ^ 2 + v - 1 - v ^ 3 / 3 + p * (u ^ 2 - 1)) =
+      SDIRKSevenSixActiveTerminalScalar.mf u v * d)
+  (h₃ :
+    SDIRKSevenSixActiveTerminalScalar.M u * ((SDIRKSevenSixActiveTerminalScalar.M u + 1) * p - (v - 1)) =
+      2 * (1 - v) * d) :
+  v = 4 - u ∨ v = 2 * u - 1
+RKResearch.Certified.SDIRKSevenSixActiveDirtyF19.exists_dirty_exact :
+  ∃ M w γ,
+    M.IsLowerTriangular ∧
+      (∀ (i : Fin 9), M i i = γ) ∧
+        IsUnit γ ∧
+          RKResearch.HasOrder 7 M w ∧
+            ¬RKResearch.HasOrder 8 M w ∧
+              (∀ (i : Fin 9), ↑i < 3 → w i = 0) ∧
+                (∀ (i : Fin 9), 3 ≤ ↑i → w i ≠ 0) ∧
+                  (∀ (i j : Fin 9), 3 ≤ ↑i → 3 ≤ ↑j → Graded.nodes M i = Graded.nodes M j → i = j) ∧
+                    RKResearch.monomialStageDefect M 1 2 = 0 ∧
+                      Pi.single 2 1 ∉ Graded.zeroSpace M 4 ∧ ∃ v ∈ Graded.zeroSpace M 3, v 3 ≠ 0
+'RKResearch.Certified.SDIRKSevenSixActive.quadratic_hidden' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActive.implicit_fold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActive.rational_head_paid_of_third_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActive.rational_first_two_cubic_of_third_seed_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActive.rational_third_cubic_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActive.rational_unpaid_iff_dirty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActiveTerminalScalar.two_branches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActiveTerminalScalar.fourth_at_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActiveDirtyF19.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActiveDirtyF19.unpaid_third' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenSixActiveDirtyF19.exists_dirty_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

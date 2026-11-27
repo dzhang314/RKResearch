@@ -1,0 +1,13 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKCert.ReviewedNative.SDIRK8HalfPairReceipts.earlyCubic_of_two_taps.{u_1} {K : Type u_1} [Field K] (a b x p q : K)
+  (h0 : p + q = x - 1 / 2) (h1 : a * p + b * q = x ^ 2 / 2 - x / 2)
+  (h2 : a ^ 2 * p + b ^ 2 * q = x ^ 3 / 3 - x ^ 2 / 2) : earlyCubic a b x = 0
+RKCert.ReviewedNative.SDIRK8HalfPairReceipts.noEarlyAndHankel.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (fs bs neg : Bool) (t x : K) (ht : t ^ 2 - 1 / 2 = 0) (hF : earlyCubic (frontPair fs t).1 (frontPair fs t).2 x = 0)
+  (hH : nodeHankel (backPair bs neg t).1 (backPair bs neg t).2 x = 0) : False
+'RKCert.ReviewedNative.SDIRK8HalfPairReceipts.earlyCubic_of_two_taps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8HalfPairReceipts.noEarlyAndHankel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -79,4 +79,4 @@ The constructor and selection-factor check use SymPy. The independent literal ch
     cmp tableau.json /tmp/dirk-twelve-rebuilt.json
     sha256sum -c arithmetic-sha256.txt
 
-An end-to-end Lean certificate for the upper bound is in progress. The exact arithmetic replays above verify the construction independently.
+The [end-to-end Lean upper certificate](../dirk10-twelve-native-upper/README.md) checks exact order, triangularity, and specialization over any nonzero commutative ring inverting the displayed denominator on Lean/Mathlib 4.36.0.

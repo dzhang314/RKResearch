@@ -1,0 +1,18 @@
+RKResearch.Certified.DIRK10RationalTwelve.rational_diagonals : A (↑D)⁻¹ 1 1 = 1 / 14 ∧ A (↑D)⁻¹ 2 2 = 29 / 1224
+@order_ten : ∀ {R : Type u_1} [inst : CommRing R] (d : R), ↑D * d = 1 → RKResearch.HasOrder 10 (A d) (b d)
+@bush_defect : ∀ {R : Type u_1} [inst : CommRing R] (d : R),
+  ↑D * d = 1 → 2488320 * (↑↑bush11.factorial * b d ⬝ᵥ RKResearch.Φ bush11 (A d) - 1) = 1
+@exists_exact_of_unit : ∀ {R : Type u_1} [inst : CommRing R] [Nontrivial R],
+  IsUnit ↑D → ∃ U z, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U z ∧ ¬RKResearch.HasOrder 11 U z
+RKResearch.Certified.DIRK10RationalTwelve.exists_exact_charZero.{u_2} (K : Type u_2) [Field K] [CharZero K] :
+  ∃ U z, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U z ∧ ¬RKResearch.HasOrder 11 U z
+RKResearch.Certified.DIRK10RationalTwelve.exists_exact_rational :
+  ∃ U z, U.IsLowerTriangular ∧ RKResearch.HasOrder 10 U z ∧ ¬RKResearch.HasOrder 11 U z
+'RKResearch.Certified.DIRK10RationalTwelve.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelve.bush_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelve.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelve.exists_exact_rational' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

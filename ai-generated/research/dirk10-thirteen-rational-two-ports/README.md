@@ -69,4 +69,4 @@ The constructor needs SymPy. The literal arithmetic checker needs only the Pytho
     cmp tableau.json /tmp/dirk-thirteen-rebuilt.json
     sha256sum -c arithmetic-sha256.txt
 
-Kernel certification is reported separately.
+The [end-to-end Lean upper certificate](../dirk10-thirteen-native-upper/README.md) checks exact order, triangularity, and specialization over any nonzero commutative ring inverting the displayed denominator on Lean/Mathlib 4.36.0.

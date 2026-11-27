@@ -1,0 +1,40 @@
+RKResearch.Certified.DIRK10RationalThirteen.hNext0 :
+  lhs 0 • cov (0 + 1) =
+    (List.map (fun i => coeff 0 ↑i • entryMul (cov ↑i) (reweight (0 - ↑i + 1) (right (0 - ↑i))))
+        (List.finRange (0 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext1 :
+  lhs 1 • cov (1 + 1) =
+    (List.map (fun i => coeff 1 ↑i • entryMul (cov ↑i) (reweight (1 - ↑i + 1) (right (1 - ↑i))))
+        (List.finRange (1 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext2 :
+  lhs 2 • cov (2 + 1) =
+    (List.map (fun i => coeff 2 ↑i • entryMul (cov ↑i) (reweight (2 - ↑i + 1) (right (2 - ↑i))))
+        (List.finRange (2 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext3 :
+  lhs 3 • cov (3 + 1) =
+    (List.map (fun i => coeff 3 ↑i • entryMul (cov ↑i) (reweight (3 - ↑i + 1) (right (3 - ↑i))))
+        (List.finRange (3 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext4 :
+  lhs 4 • cov (4 + 1) =
+    (List.map (fun i => coeff 4 ↑i • entryMul (cov ↑i) (reweight (4 - ↑i + 1) (right (4 - ↑i))))
+        (List.finRange (4 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext5 :
+  lhs 5 • cov (5 + 1) =
+    (List.map (fun i => coeff 5 ↑i • entryMul (cov ↑i) (reweight (5 - ↑i + 1) (right (5 - ↑i))))
+        (List.finRange (5 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext6 :
+  lhs 6 • cov (6 + 1) =
+    (List.map (fun i => coeff 6 ↑i • entryMul (cov ↑i) (reweight (6 - ↑i + 1) (right (6 - ↑i))))
+        (List.finRange (6 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext7 :
+  lhs 7 • cov (7 + 1) =
+    (List.map (fun i => coeff 7 ↑i • entryMul (cov ↑i) (reweight (7 - ↑i + 1) (right (7 - ↑i))))
+        (List.finRange (7 + 1))).sum
+RKResearch.Certified.DIRK10RationalThirteen.hNext8 :
+  lhs 8 • cov (8 + 1) =
+    (List.map (fun i => coeff 8 ↑i • entryMul (cov ↑i) (reweight (8 - ↑i + 1) (right (8 - ↑i))))
+        (List.finRange (8 + 1))).sum
+
+real	1m2.059s
+user	0m52.058s
+sys	0m2.996s

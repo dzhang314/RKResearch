@@ -259,3 +259,5 @@ The first uses python-flint 0.8, the second SymPy 1.14, and the
 finite replays use standard Python. Then build the two Lean
 modules with the earlier Christoffel module available and run the
 typed audit. The native checks were run under stock Lean 4.36.0.
+
+The [reflection-suffix follow-up](../strict-sdirk7-mass-reflection/README.md) excludes the entire rational reflection suffix in this same Christoffel-mass chart, independent of the center or the first active clock.

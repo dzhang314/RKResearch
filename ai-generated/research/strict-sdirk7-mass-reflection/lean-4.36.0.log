@@ -1,0 +1,32 @@
+RKResearch.Certified.SDIRKSevenChristoffelReflection.reflection_fourth_coefficients {M a₀ a₂ a₃ L₀ L₁ κ : ℚ}
+  (h₀ : a₀ = L₀ + (M - 2) * κ) (h₂ : a₂ = L₀ / 2 - 2 * L₁ - 5 * κ) (h₃ : a₃ = L₁ / 2 + κ) :
+  2 * L₀ + (5 * M - 4) * κ = 5 * a₀ - 6 * a₂ - 24 * a₃ ∧ 2 * L₁ + (4 - M) * κ = 2 * a₂ + 12 * a₃ - a₀
+RKResearch.Certified.SDIRKSevenChristoffelReflection.reflection_pivot_degenerate {a₀ a₁ a₂ a₃ : ℚ}
+  (opener : a₀ + a₁ + 2 * a₂ + 6 * a₃ = 0) (slope : 2 * a₂ + 12 * a₃ - a₀ = 0)
+  (constant : 5 * a₀ - 6 * a₂ - 24 * a₃ = 0) : a₀ = -6 * a₃ ∧ a₁ = 18 * a₃ ∧ a₂ = -9 * a₃
+RKResearch.Certified.SDIRKSevenChristoffelReflection.no_late_reflection_mass {x : ℚ}
+  (h : x ^ 3 - 9 * x ^ 2 + 18 * x - 6 = 0) : False
+RKResearch.Certified.SDIRKSevenChristoffelReflection.five_odd_factor (k : ℕ) {s n : ℤ}
+  (h : s ^ 2 = 5 ^ (2 * k + 1) * n) : ↑n = 0
+RKResearch.Certified.SDIRKSevenChristoffelReflection.chart_A_not_square {s n : ℤ} {d f k : ZMod 5} (hd : d ≠ 0)
+  (hf : f ≠ 0) (hk : k = 4) (h : ↑n = d ^ 36 * f ^ 18 * residueA k) (sq : s ^ 2 = 5 ^ 7 * n) : False
+RKResearch.Certified.SDIRKSevenChristoffelReflection.chart_B_not_square {s n : ℤ} {d f : ZMod 5} (hd : d ≠ 0)
+  (hf : f ≠ 0) (h : ↑n = 2 * d ^ 22 * f ^ 18) (sq : s ^ 2 = 5 ^ 5 * n) : False
+'RKResearch.Certified.SDIRKSevenChristoffelReflection.reflection_fourth_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelReflection.reflection_pivot_degenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelReflection.no_late_reflection_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelReflection.five_odd_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelReflection.chart_A_not_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelReflection.chart_B_not_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

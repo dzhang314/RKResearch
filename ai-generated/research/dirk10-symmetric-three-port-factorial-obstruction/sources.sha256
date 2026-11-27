@@ -1,0 +1,8 @@
+fe09b36536584957e2765396fde552b510fecd2071176a92ead8fe175fa0ff80  research/dirk10-symmetric-three-port-factorial-obstruction/README.md
+7d50ceb3a6816587858302a466a0010208236429d054bb9163cc6ead265cf9c1  research/dirk10-symmetric-three-port-factorial-obstruction/check.py
+5a7a9dfdfdd1d7ab4686feb4ec62ea68fba40442afd08a7eeea8894b95f101cf  research/dirk10-symmetric-three-port-factorial-obstruction/checked.log
+18d278eb56e1ed8ef50caac444967551d7a2373d7bfc0daac2e38dfcb0dd43c0  research/dirk10-symmetric-three-port-factorial-obstruction/lean-4.34.1.log
+d1889220c3143843966eca81ce04a8aff98ef0fd4446987b75194af4660441b2  research/dirk10-symmetric-three-port-factorial-obstruction/lean-4.35.0.log
+7e4819f91e462e0b4edb6e125a659e216486cffacf1ff114acb7aad0e831712e  research/dirk10-symmetric-three-port-factorial-obstruction/lean-4.36.0.log
+05ccbcf03eb303677db855b6d8161bb6f75b51fdde73e6bc94cba5e773cb666b  research/dirk10-symmetric-three-port-factorial-obstruction/lean-4.37.0-rc1.log
+5808cdc01f1f92f0f9f39fa63c910ab36ab7b9288368d9a6ac6dff8c7648f52f  lean/RKCert/ReviewedNative/DIRK10SymmetricThreePortArithmetic.lean

@@ -1,0 +1,5 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.DIRK10SymmetricThreePortArithmetic.candidatesC_eq' does not depend on any axioms
+'RKResearch.Certified.DIRK10SymmetricThreePortArithmetic.determinantCap' does not depend on any axioms
+'RKResearch.Certified.DIRK10SymmetricThreePortArithmetic.allTerminalNonsmooth' does not depend on any axioms
+'RKResearch.Certified.DIRK10SymmetricThreePortArithmetic.pinEleven' does not depend on any axioms

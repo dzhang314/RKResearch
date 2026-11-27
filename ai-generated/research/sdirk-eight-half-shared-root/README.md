@@ -7,7 +7,7 @@ Use the [all-active half-diagonal endpoint pair](../sdirk-eight-half-equal/READM
 \]
 The [coprime exclusion](../sdirk-eight-half-arithmetic-quadratic/README.md) leaves only shared roots. Write \(p=d_0p_0,q=d_0q_0\) after maximal cancellation. A **discrepancy** is a row where \(q_0(c_i)h_i-p_0(c_i)\ne0\), necessarily at an actual root clock of \(d_0\).
 
-**Result.** No discrepancy clock consists of just one physical row. This includes charts with eight distinct physical clocks and charts with one or more other repetitions. Consequently the remaining endpoint-pair chart has **either seven distinct clocks and one unequal-\(h\) double group at a linear common factor, or six distinct clocks and two unequal-\(h\) double groups at both roots of a fully canceled quadratic**. Both repeated group charts remain undecided here. The unrestricted strict SDIRK8 stage interval remains **10–11**.
+**Result.** No discrepancy clock consists of just one physical row. This includes charts with eight distinct physical clocks and charts with one or more other repetitions. Consequently the remaining endpoint-pair chart has **either seven distinct clocks and one unequal-\(h\) double group at a linear common factor, or six distinct clocks and two unequal-\(h\) double groups at both roots of a fully canceled quadratic**. The [repeated-clock follow-up](../sdirk-eight-half-repeated/README.md) excludes both remaining group charts. The unrestricted strict SDIRK8 stage interval remains **10–11**.
 
 ## 1. A chronological gate that also works at repeated clocks
 

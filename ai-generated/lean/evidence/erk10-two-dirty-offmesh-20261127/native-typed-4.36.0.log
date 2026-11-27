@@ -1,0 +1,11 @@
+@project_axis : ∀ {K : Type u_1} [inst : Field K] (a b k u v : K),
+  (a - k) * u + (b - k) * v = 0 → (b - a) * u = (b - k) * (u + v)
+@missing_cardinal : ∀ {K : Type u_1} [inst : Field K] (a b p q up uq vp vq Hp Hq : K),
+  b ≠ a →
+    (a - p) * up + (b - p) * vp = 0 →
+      (a - q) * uq + (b - q) * vq = 0 → (up + vp) * (p - b) * Hp + (uq + vq) * (q - b) * Hq = 0 → up * Hp + uq * Hq = 0
+@xp_pressure : ∀ {K : Type u_1} [inst : Field K] (w a x y H K0 r : K),
+  w - x * H + y * (a * K0 - r) = 0 → w = x * H + y * r - y * a * K0
+'RKResearch.Certified.ERK10TwoDirtyOffMesh.project_axis' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10TwoDirtyOffMesh.missing_cardinal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10TwoDirtyOffMesh.xp_pressure' depends on axioms: [propext, Quot.sound]

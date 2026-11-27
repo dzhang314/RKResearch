@@ -1,6 +1,6 @@
 # Exact universal-ring order ten in 21 explicit stages
 
-**Current upper bound:** the [19-stage general-ring method](../erk10-nineteen-compressed-reverse/README.md) is strongest. It follows the [20-stage construction](../erk10-twenty-compressed-reverse/README.md), which also superseded this 21-stage result.
+**Current upper bound:** the [18-stage general-ring method](../erk10-eighteen-ten-clock/README.md) is strongest. The intermediate [19-stage](../erk10-nineteen-compressed-reverse/README.md) and [20-stage](../erk10-twenty-compressed-reverse/README.md) constructions are retained as separate results.
 
 The literal tableau in tableau.json has exact order ten in 21
 explicit stages over every nonzero commutative unital ring in

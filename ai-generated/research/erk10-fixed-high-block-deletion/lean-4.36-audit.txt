@@ -1,0 +1,9 @@
+Lean 4.36.0 with pinned Mathlib
+
+=== RKCert/ReviewedNative/ERK10TerminalBlockPolynomial ===
+'RKResearch.Certified.ERK10TerminalBlockPolynomial.observation_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TerminalBlockPolynomial.last_contribution_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

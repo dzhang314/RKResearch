@@ -1,0 +1,4 @@
+All ten scalar sites and paid gaps checked.
+Unchanged old clock hull zeros; only duplicated high clocks are 1/3 and 2/3.
+Reference last contribution (all affine parameters): -2/8505
+With integer-polynomial scaling: -2304/35

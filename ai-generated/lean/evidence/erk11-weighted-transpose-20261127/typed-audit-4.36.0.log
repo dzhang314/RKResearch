@@ -1,0 +1,33 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.ERK11ReversalGate.adjointAdvance' depends on axioms: [propext, Quot.sound]
+'RKResearch.ERK11ReversalGate.mixedProduct' depends on axioms: [propext, Quot.sound]
+'RKResearch.ERK11ReversalGate.spareIsotropic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11ReversalGate.fourthCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11ReversalGate.primitiveMoments' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11ReversalGate.adjointAdvance {K V : Type} [Lean.Grind.Field K] (E : Nat → V → Prop) (terminal : V → K)
+  (pair : V → V → K) (A adj : V → V) (advanced : ∀ (k : Nat) (w : V), E k w → E (k + 1) (A w))
+  (duality : ∀ (x y : V), pair (adj x) y = pair x (A y)) (last : ∀ (x : V), terminal (adj x) = 0) (j : Nat)
+  (budget : j < 10) (x : V) (hx : RKResearch.ERK11ReversalGate.dualFlag E terminal pair j x) :
+  RKResearch.ERK11ReversalGate.dualFlag E terminal pair (j + 1) (adj x)
+'RKResearch.ERK11ReversalGate.adjointAdvance' depends on axioms: [propext, Quot.sound]
+RKResearch.ERK11ReversalGate.mixedProduct {K V : Type} [Lean.Grind.Field K] (E : Nat → V → Prop) (terminal : V → K)
+  (pair : V → V → K) (mul : V → V → V) (root : ∀ (i k : Nat) (f w : V), E i f → E k w → E (i + k) (mul f w))
+  (assoc : ∀ (f x w : V), pair (mul f x) w = pair x (mul f w))
+  (last : ∀ (f x : V), terminal x = 0 → terminal (mul f x) = 0) (i j : Nat) (budget : i + j ≤ 10) (f x : V) (hf : E i f)
+  (hx : RKResearch.ERK11ReversalGate.dualFlag E terminal pair j x) :
+  RKResearch.ERK11ReversalGate.dualFlag E terminal pair (i + j) (mul f x)
+'RKResearch.ERK11ReversalGate.mixedProduct' depends on axioms: [propext, Quot.sound]
+RKResearch.ERK11ReversalGate.spareIsotropic {K : Type} [Lean.Grind.Field K] (a q : K) (nq : q ≠ 0)
+  (iso : a * a * q = 0) : a = 0
+'RKResearch.ERK11ReversalGate.spareIsotropic' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11ReversalGate.fourthCarrier {K : Type} [Lean.Grind.Field K] (N a B : K) (nN : N ≠ 0) (h1 : a + N * B = 0)
+  (h2 : 3 * (a + N * N * B) = (3 - 2 * N) * a) : a = 0 ∧ B = 0
+'RKResearch.ERK11ReversalGate.fourthCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11ReversalGate.primitiveMoments :
+  ((List.range 11).all fun i =>
+      (List.range (10 - i)).all fun k =>
+        decide
+          (RKResearch.ERK11ReversalGate.beta✝ (i + 1) k / ↑(i + 1) =
+            RKResearch.ERK11ReversalGate.beta✝ i (k + 1) / ↑(k + 1))) =
+    true
+'RKResearch.ERK11ReversalGate.primitiveMoments' depends on axioms: [propext, Classical.choice, Quot.sound]

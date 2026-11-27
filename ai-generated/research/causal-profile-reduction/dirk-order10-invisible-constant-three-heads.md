@@ -58,4 +58,4 @@ The native field packet verifies constant-core cancellation and the four-label l
 
 The [four-head follow-up](dirk-order10-invisible-constant-four-head-cutoffs.md) forces the last three regular interior rows at positions 8–10 and restricts the first regular interior row to positions 5–7, but does not exclude that branch.
 
-For a non-Lobatto aggregate, the [constant nonzero L exclusion](dirk-order10-invisible-constant-nonlobatto.md) closes the constant-polynomial case; affine and shared-root cases remain separate.
+**Correction.** The constant nonzero terminal-polynomial case with a non-Lobatto aggregate also remains open. Commit `3d28b24` used an incorrect coefficient in the scalar elimination: one term from the product of the linear polynomial and the nodal divisor was omitted. The exact replay certified the resulting system, not the necessary system for the tableau. The claimed exclusion has been withdrawn. The earlier three-head exclusion and four-head chronology cutoffs are unaffected.

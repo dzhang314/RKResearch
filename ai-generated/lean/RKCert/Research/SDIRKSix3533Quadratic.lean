@@ -5,6 +5,7 @@ public import Mathlib.Data.ZMod.Basic
 public import Mathlib.Algebra.Field.ZMod
 public import Mathlib.LinearAlgebra.Matrix.Block
 public import Mathlib.Algebra.QuadraticAlgebra.Basic
+import Mathlib.Tactic.LinearCombination
 
 @[expose] public section
 

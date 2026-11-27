@@ -208,9 +208,33 @@ private theorem nonzero_algebra_paid {z u w r : K} (v:K) (h2 : (2 : K) ≠ 0) (h
          (1+2*u-u^2)*(20-30*z+12*z^2-z^3))*((1+2*u-u^2)-1))*hd
   exact ⟨rfl,hd,(mul_eq_zero.mp ht).resolve_left (mul_ne_zero (neg_ne_zero.mpr h2) (pow_ne_zero _ hu))⟩
 
-/-- Six physical stages cannot attain all order-six rooted-tree conditions. -/
-theorem order_six_six_stages_impossible_away_four {A : Matrix (Fin 6) (Fin 6) K} {b : (Fin 6 → K)} {γ:K}
-    (hD : (fourExceptionProduct : K) ≠ 0) (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (he : ∀ i,A i i=γ) (hγ : γ≠0) : False := by
+/-- Necessary physical chart for an order-six, six-stage common-diagonal
+tableau. The clocks are those of the normalized actual matrix; the chart
+does not assert that an arbitrary scalar solution lifts to a tableau. -/
+structure SixStageChart (A : Matrix (Fin 6) (Fin 6) K) (γ z u v : K) : Prop where
+  paid : IsUnit (30 : K)
+  z_ne : z ≠ 0
+  z_eq : z = γ⁻¹
+  u_eq : u = scaleTable z A 1 0
+  v_eq : v = (nodes A 5 - nodes A 4) / γ
+  front_data : Front (scaleTable z A) z
+  seed_ratio : seed (scaleTable z A) 4 = kap v * seed (scaleTable z A) 5
+  clock₀ : nodes (scaleTable z A) 0 = 1
+  clock₁ : nodes (scaleTable z A) 1 = 1 + u
+  clock₂ : nodes (scaleTable z A) 2 = 1 + 2*u
+  clock₄ : nodes (scaleTable z A) 4 = z - 1 - v
+  clock₅ : nodes (scaleTable z A) 5 = z - 1
+  front_zero : front z u v = 0
+  bridge1_zero : bridge1 z u v = 0
+  bridge2_zero : bridge2 z u v = 0
+  last_zero : kappa z u v = 0 ∨ terminal z u v = 0
+
+/-- Recover scalar chart constraints and the five forced clocks.
+The zero-tap branch is impossible in every characteristic allowed by the
+order conditions. No exception integer is canceled by this theorem. -/
+theorem order_six_six_stage_chart {A : Matrix (Fin 6) (Fin 6) K} {b : Fin 6 → K} {γ : K}
+    (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular) (he : ∀ i, A i i = γ) (hγ : γ ≠ 0) :
+    ∃ z u v, SixStageChart A γ z u v := by
   have h30 := paid_thirty ho
   have hn2 : (2 : K) ≠ 0 := (isUnit_of_dvd_paid_power h30 (n := 2) (by decide)).ne_zero
   let z:=γ⁻¹
@@ -246,7 +270,7 @@ theorem order_six_six_stages_impossible_away_four {A : Matrix (Fin 6) (Fin 6) K}
     have hs:=first_clear hf _ (J2_clear hf hr)
     have hl:=Op.zero_word_paid ho h30 z u v
     rw [hs,map_zero,mul_zero] at hl
-    exact RKCert.ReviewedNative.SDIRKSixReceipts.zero_chart_excluded_paid h30
+    exact False.elim <| RKCert.ReviewedNative.SDIRKSixReceipts.zero_chart_excluded_paid h30
       (z := z) (u := u) (v := v)
       (by change zeroCubic z u v = 0; exact hc)
       (by change zeroLaguerre z u v = 0; linear_combination hl)
@@ -256,12 +280,25 @@ theorem order_six_six_stages_impossible_away_four {A : Matrix (Fin 6) (Fin 6) K}
     have h₂:=Op.second_word_paid ho h30 z u v
     rw [first_clear hf _ hs,map_zero,mul_zero] at h₁
     rw [second_clear hf h4 h5 _ hs,map_zero,mul_zero] at h₂
-    exact RKCert.ReviewedNative.SDIRKSixReceipts.nonzero_chart_excluded_away_four h30 hD
-      (z := z) (u := u) (v := v) hz
-      (by change front z u v = 0; exact hfront)
-      (by change bridge1 z u v = 0; exact h₁.symm)
-      (by change bridge2 z u v = 0; exact h₂.symm)
-      (by change kappa z u v = 0 ∨ terminal z u v = 0; exact terminal_algebra hf h4 h5 hg)
+    have h₀ : nodes B 0 = 1 := by rw [node_mat_one, at0 hf.tri hf.single]; simp
+    have hc₁ : nodes B 1 = 1 + u := by
+      rw [node_mat_one, at1 hf.tri hf.single]
+      simp [u, add_comm]
+    have hc₂ : nodes B 2 = 1 + 2*u := by
+      change w3 B = 2*u at hw
+      rw [← hw, node_mat_one, at2 hf.tri hf.single]
+      simp [w3]
+      ring
+    exact ⟨z, u, v, ⟨h30, hz, rfl, rfl, rfl, hf, hg, h₀, hc₁, hc₂, h4, h5, hfront, h₁.symm, h₂.symm,
+      terminal_algebra hf h4 h5 hg⟩⟩
+
+/-- The original away-four theorem, now using the separately exposed chart. -/
+theorem order_six_six_stages_impossible_away_four {A : Matrix (Fin 6) (Fin 6) K} {b : Fin 6 → K} {γ : K}
+    (hD : (fourExceptionProduct : K) ≠ 0) (ho : HasOrder 6 A b) (ha : A.IsLowerTriangular)
+    (he : ∀ i, A i i = γ) (hγ : γ ≠ 0) : False := by
+  obtain ⟨z, u, v, h⟩ := order_six_six_stage_chart ho ha he hγ
+  exact RKCert.ReviewedNative.SDIRKSixReceipts.nonzero_chart_excluded_away_four h.paid hD
+    h.z_ne h.front_zero h.bridge1_zero h.bridge2_zero h.last_zero
 
 /-- The strict order-six lower bound over a field in which the four-factor product survives. -/
 theorem seven_le_of_strict_order_six_away_four {s:ℕ} {A : Matrix (Fin s) (Fin s) K} {b : (Fin s → K)} {γ:K}

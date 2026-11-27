@@ -53,8 +53,11 @@ for the output weights. The independent replay alone is not a Lean proof.
   and [three more prime characteristics](../strict-sdirk-endpoints/README.md):
   exact native Lean witnesses supplement the existing six-stage lower bound.
 - The [quadratic-field example in characteristic 3533](../strict-sdirk-endpoints/quadratic3533.json)
-  gives an exact six-stage method over the degree-two extension. It is not
-  an exclusion or a construction over the prime field.
+  gives an exact six-stage method over the degree-two extension. The new
+  [lower certificate](../sdirk6/small-characteristic-exclusions.md) makes this
+  sharp: the minimum is seven over the prime field, and over any field of
+  characteristic 3533 it is six exactly when 2077 is a square. The same lower
+  certificate makes seven sharp in characteristic 7.
 
 ## Supporting lower-bound arguments
 

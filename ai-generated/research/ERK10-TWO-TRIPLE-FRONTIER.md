@@ -59,3 +59,5 @@ The identity itself is characteristic-zero algebraic.
 The Lean companion checks the doubling and amplitude identities.
 The literal stage bridge is mathematical, and the unrestricted
 ERK10 14–15 interval is unchanged.
+
+The [doubled-entrance follow-up](ERK10-DOUBLED-ENTRANCE-TRIPLET-EXCLUSION.md) excludes the entire (2,3,3) population using the two forced adjacent repeats. No conclusion about other populations follows from that closure.

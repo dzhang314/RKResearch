@@ -1,0 +1,2 @@
+'RKResearch.ERK10DoubledEntranceGate.universalDoubling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DoubledEntranceGate.lobattoUnitGap' depends on axioms: [propext, Classical.choice, Quot.sound]

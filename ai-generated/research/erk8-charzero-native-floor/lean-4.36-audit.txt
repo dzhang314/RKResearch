@@ -1,0 +1,19 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib revision: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+
+=== RKCert/ReviewedNative/ERK8FourOffCharZero ===
+'RKResearch.Certified.Graded.FourOffNewton.no_four_off_charZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharZeroStageFloor ===
+'RKResearch.Certified.ERK8CharZero.no_order8_fin10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK8CharZero.stages_at_least_eleven_field' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK8CharZero.stages_at_least_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharZeroExactWidth ===
+'RKResearch.Certified.ERK8CharZero.exact_order_eight_exists_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

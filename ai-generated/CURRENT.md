@@ -58,6 +58,10 @@ The [paid grade-six proof](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) raises
 
 The stated factorial unit is necessary for existence at any stage count. Literal arithmetic replays check all 3,047, 7,813, 20,299, and 53,272 rooted conditions at orders eleven through fourteen. At orders fifteen to twenty the general symbolic argument proves every rooted condition, and the literal tableaux have sample replays and exact next-order checks. None of these constructions is a new Lean certificate.
 
+## Strict SDIRK at order five over nonzero commutative rings
+
+A [single six-stage tableau](research/strict-sdirk-rational/order-five-paid-six.md) has exact order five over every nonzero commutative ring in which 30 is a unit. This gives an interval of **five to six stages**; if 30 is not a unit, order five is impossible at any stage count. The [two-chart result](research/strict-sdirk-rational/order-five-paid-local.md) gives an exact five-stage minimum over all admissible local rings, including fields. The [central repeated-clock family](research/strict-sdirk-rational/order-five-paid-central-repeat-exclusion.md) cannot give five stages over the localization with only 30 inverted; other five-stage families are not excluded.
+
 ## Exact order-six strict SDIRK minima by coefficient domain
 
 The [complete field classification](research/strict-sdirk-endpoints/MINIMA.md) gives six stages in characteristics 11, 17, 163, 263, 457 and 126963077, and in characteristic 3533 precisely when 2077 is a square. Characteristics 2, 3 and 5 are impossible; all other fields, including characteristic zero, require seven. Over nonzero commutative rings a seven-stage tableau of exact order six exists whenever 720 is a unit, and otherwise order six is impossible at any stage count. The same note gives six-stage minima on specified squarefree annihilator loci and a nilpotence obstruction over general rings. Lean/Mathlib 4.36.0 checks these claims without ordered-field assumptions.
@@ -83,12 +87,6 @@ reduces the rational upper bounds to **18 stages at order nine** and
 checked in Lean 4.36.0 with the [integer Gram replay](research/rooted-tree-gram/README.md).
 No change to the real-algebraic bounds is implied. The same note gives
 constructive higher odd-order counts, with separate verification scope.
-
-At order five, the [two-chart result](research/strict-sdirk-rational/order-five-paid-local.md)
-gives a strict SDIRK minimum of **five stages over every local commutative
-ring in which 30 is a unit**, in particular all admissible coefficient fields.
-The corresponding claim for general commutative rings is not included in
-the Lean theorem.
 
 ## General mechanisms for changing or bounding stage counts
 

@@ -1,0 +1,2 @@
+import RKCert.ReviewedNative.SDIRKFivePaidSix
+#print axioms RKResearch.Certified.SDIRKFivePaidSix.exists_exact_iff_paid

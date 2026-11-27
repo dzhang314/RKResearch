@@ -1,0 +1,15 @@
+Global rational Cramer receipts: [(1, 1, '3'), (2, 1, 3), (2, 1, 5), (2, 1, 3), (30, 1, 17), (1, 2, '1')]
+Verified the primitive bidegree-(17,12) curve after only genuine unit-factor cancellations.
+fixed u -1 rootless mod 43
+fixed u 0 rootless mod 31
+fixed u 4 rootless mod 43
+fixed u 5 rootless mod 17
+fixed u 7 rootless mod 47
+fixed u 9 rootless mod 31
+fixed u 11 rootless mod 41
+paired terminal arithmetic grid degree 27 projectively rootless mod 29
+other arithmetic endpoint degree 27 projectively rootless mod 31
+line through residue control degree 27 projectively rootless mod 41
+ghost forward zero degree 77 projectively rootless mod 23
+ghost at midpoint degree 77 projectively rootless mod 11
+The 85 order-seven trees, eighth bush, and affine arithmetic Jacobian check exactly.

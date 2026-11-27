@@ -1,0 +1,6 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.SDIRKSevenDirtyDegreeReceipt.only_degrees (d : Fin 325) : allowed ↑d = true → ↑d = 0 ∨ ↑d = 324
+RKResearch.Certified.SDIRKSevenDirtyDegreeReceipt.bounded_crt_unique {a b M : ℤ} {B : ℕ} (ha : a.natAbs ≤ B)
+  (hb : b.natAbs ≤ B) (hm : 2 * B < M.natAbs) (h : a ≡ b [ZMOD M]) : a = b
+'RKResearch.Certified.SDIRKSevenDirtyDegreeReceipt.only_degrees' does not depend on any axioms
+'RKResearch.Certified.SDIRKSevenDirtyDegreeReceipt.bounded_crt_unique' depends on axioms: [propext, Quot.sound]

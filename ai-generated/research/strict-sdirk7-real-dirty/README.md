@@ -1,5 +1,7 @@
 # Exact real-algebraic cubic dirt at nine strict SDIRK7 stages
 
+> **Follow-up:** The [exact primitive-field calculation](../strict-sdirk7-dirty-number-field/README.md) identifies the two isolated points as embeddings of a single degree-324 field. This original construction did not determine the field or its other embedding.
+
 The reflection branch of the [unpaid three-helper chart](../strict-sdirk7-unpaid-head/README.md)
 has a second, **real-algebraic** point giving a strict nine-stage
 tableau of exact order seven. The first three output weights and

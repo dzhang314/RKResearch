@@ -1,5 +1,7 @@
 # The unpaid three-helper chart is genuinely cubic-dirty
 
+> **Follow-up:** The [exact primitive-field calculation](../strict-sdirk7-dirty-number-field/README.md) identifies the two isolated points as embeddings of a single degree-324 field. This original construction did not determine the field or its other embedding.
+
 A strict nine-stage order-seven tableau can have three initial zero
 weights, six nonzero weights at distinct clocks, and a vanishing
 third quadratic defect **without** having a paid third helper. It can

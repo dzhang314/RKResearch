@@ -1,0 +1,50 @@
+RKResearch.Certified.SDIRKSevenLateGhostScalar.two_taps_factor {u h p δ : ℚ} (hd : δ ≠ 0) (hm : M u ≠ 0)
+  (r₂ : (u - 1) * p = -δ) (r₃ : (u ^ 2 - 1) * p = f u h * δ) (r₄ : (M u + 1) / 2 * p = (1 - h) / M u * δ) :
+  (u - 1) * T u = 0
+RKResearch.Certified.SDIRKSevenLateGhostScalar.three_taps_gate {y z w p q r a b c δ ϕ θ h : ℚ} (hd : δ ≠ 0)
+  (r₁ : p + q + r = 0) (r₂ : y * p + z * q + w * r = -δ) (r₃ : y ^ 2 * p + z ^ 2 * q + w ^ 2 * r = ϕ * δ)
+  (r₄ : ratioQ a b c y * p + ratioQ a b c z * q + ratioQ a b c w * r = θ * (1 - h) * δ) : -b + c * ϕ - θ * (1 - h) = 0
+RKResearch.Certified.SDIRKSevenLateGhostScalar.reflection_ghost_pin {u h : ℚ} (hm : M u ≠ 0)
+  (read : 2 + f u h / 2 - (1 - h) / M u = 0) : 4 - M u ≠ 0 ∧ h = (4 - 5 * M u) / (4 - M u)
+RKResearch.Certified.SDIRKSevenLateGhostScalar.affine_helper {t x lam : ℚ} (pivot : V x + lam / 2 ≠ 0)
+  (read : gap t x = lam * gap t 1) : t = (U x - lam / 3) / (V x + lam / 2)
+RKResearch.Certified.SDIRKSevenLateGhostF19.Reflection.visible_third_cubic :
+  RKResearch.monomialStageDefect Reflection.A 2 2 ≠ 0
+RKResearch.Certified.SDIRKSevenLateGhostF19.Reflection.sixth_ghost_unpaid :
+  Pi.single 5 1 ∉ RKResearch.Certified.Graded.zeroSpace Reflection.A 4
+RKResearch.Certified.SDIRKSevenLateGhostF19.Arithmetic.suffix_not_reflection :
+  Arithmetic.y 8 = 1 ∧ Arithmetic.y 6 = 2 * Arithmetic.y 7 - Arithmetic.y 8 ∧ Arithmetic.y 6 ≠ 4 - Arithmetic.y 7
+RKResearch.Certified.SDIRKSevenLateGhostF19.Affine.first_active_one : 10 * Affine.c 2 = 1
+'RKResearch.Certified.SDIRKSevenLateGhostScalar.two_taps_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostScalar.three_taps_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostScalar.reflection_ghost_pin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostScalar.affine_helper' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Reflection.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Reflection.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Reflection.sixth_ghost_unpaid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Arithmetic.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Arithmetic.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Affine.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenLateGhostF19.Affine.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,12 @@
+{'modulus': 2213314919066161, 'coordinates': [1, 0, 1922065027780008, 21912837140429, 1864290515569617, 91064318685119], 'all_85': True, 'eighth_bush': 483594591829449}
+{'modulus': 130321, 'coordinates': [20, 19, 122006, 75512, 8027, 35514], 'all_85': True, 'eighth_bush': 68116}
+pivot [(1, 2), (6, 1)]
+only linear root zero
+projective rootless 6 13
+isotropy [(1, 8), (6, 1), (8, 1), (8, 1), (8, 1), (12, 1)]
+only linear root zero
+projective rootless 6 17
+projective rootless 8 11
+projective rootless 8 11
+projective rootless 8 31
+projective rootless 12 11

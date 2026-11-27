@@ -91,3 +91,5 @@ The remaining five pegs \(a,b,c_8,c_9,x\) give the degree-nine weighted Hankel d
 ## Replay and scope
 
 Run `python3 four_active.py`, `python3 center.py`, `python3 off8_fibers.py`, and `python3 tail8_fibers.py` with `sympy==1.14.0` and `python-flint==0.9.0`. Once installed these replays need no network. The Lean file checks the two silent-tail scalar read identities; tableau saturation, chronology and the finite-quotient exclusions are the source proof, not a single full Lean theorem.
+
+The [two-stage follow-up](../sdirk-eight-silent-two-unequal/README.md) excludes unequal residuals at the common invisible clock. Equal residuals and one off-zero stage remain separate.

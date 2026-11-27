@@ -1,0 +1,13 @@
+root interval: |center step| <= 2^-313, Lipschitz <= 2^-138, radius 2^-160
+fixed scalar mesh excludes all regular pure-rank-two old three-row arrangements
+separated real mixed XQ obstruction (-0.009692731649633302, -0.009692731649633302)
+tree rows 1 1 targets in interval 1 worst bound exponent -142
+tree rows 2 1 targets in interval 1 worst bound exponent -130
+tree rows 3 2 targets in interval 2 worst bound exponent -130
+tree rows 4 4 targets in interval 4 worst bound exponent -130
+tree rows 5 9 targets in interval 9 worst bound exponent -130
+tree rows 6 20 targets in interval 20 worst bound exponent -130
+tree rows 7 48 targets in interval 48 worst bound exponent -130
+tree rows 8 115 targets in interval 115 worst bound exponent -130
+tree rows 9 286 targets in interval 169 worst bound exponent -13
+direct actual order-nine failure (9, ((), (), (), ((), (), (), ())), (9.609148676885344e-05, 9.609148676885344e-05))

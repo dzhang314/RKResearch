@@ -1,0 +1,60 @@
+⚠ [2788/2846] Replayed RKCert.ReviewedNative.PaidDefectBridge
+warning: RKCert/ReviewedNative/PaidDefectBridge.lean:65:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.PaidDefectBridge.0.RKResearch.Certified.PaidDefectBridge.idealDerivative_leaf`:
+  [Fintype S]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype S] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/PaidDefectBridge.lean:69:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.PaidDefectBridge.0.RKResearch.Certified.PaidDefectBridge.idealDerivative_join`:
+  [Fintype S]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype S] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3629/3632] Replayed RKCert.ReviewedNative.DiagonalTwin
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:137:33: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:138:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:138:37: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:142:33: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:143:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:143:37: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:137:33: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mergeCoefficient, hd, hr, if_neg (Fin.succAbove_ne j r), if_neg (Fin.ne_succAbove j r), add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:156:49: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:166:49: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/DiagonalTwin.lean:186:4: Unused tactic linter: `change
+  A j k =
+    (A (j.succAbove r) k - (if k = j.succAbove r then γ else 0)) + (if k = j then γ else 0)` does not change the goal.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3631/3632] Built RKCert.ReviewedNative.SDIRK9TriplePort (3.1s)
+Build completed successfully (3632 jobs).

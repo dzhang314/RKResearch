@@ -1,0 +1,61 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+@factor_shifted_primitive : ∀ {K : Type u_1} [inst : CommRing K] (v w x : K),
+  portPrimitive v w x - portShape v w x = (x - v) * (x - w) * thirdGate v w x
+@retain_read : ∀ {K : Type u_1} [inst : Field K] {V : Type u_2} {P : Type u_3} [inst_1 : AddCommGroup V]
+  [inst_2 : Module K V] [inst_3 : AddCommGroup P] [inst_4 : Module K P] (D : V →ₗ[K] P) (χ : V →ₗ[K] K) (shape : P)
+  (E : P →ₗ[K] K), E shape = 0 → E ∘ₗ extendRead D χ shape = E ∘ₗ D
+@install_read : ∀ {K : Type u_1} [inst : Field K] {V : Type u_2} {P : Type u_3} [inst_1 : AddCommGroup V]
+  [inst_2 : Module K V] [inst_3 : AddCommGroup P] [inst_4 : Module K P] (D : V →ₗ[K] P) (e : V →ₗ[K] K) (shape : P)
+  (E : P →ₗ[K] K), E shape = 1 → E ∘ₗ extendRead D (e - E ∘ₗ D) shape = e
+@orderEight_of_split_payments : ∀ {K : Type u_1} [inst : Field K] [CharZero K]
+  (A : Matrix (Fin 7 ⊕ Fin 9) (Fin 7 ⊕ Fin 9) K) (w ξ : Fin 9 → K),
+  RKResearch.HasQuadratureOrder 8 w ξ →
+    (∀ (t : RKResearch.FiniteRootedTree),
+        RKResearch.Certified.PaidDefectBridge.treeSize t ≤ 4 →
+          RKResearch.Certified.PaidDefectBridge.primitiveSeed A ξ t = 0) →
+      (∀ (t : RKResearch.FiniteRootedTree) (W : List RKResearch.Certified.PaidDefectBridge.Letter),
+          4 < RKResearch.Certified.PaidDefectBridge.treeSize t →
+            W.length + RKResearch.Certified.PaidDefectBridge.treeSize t < 8 →
+              W.length ≤ 1 →
+                (RKResearch.Certified.Graded.row w)
+                    ((RKResearch.Certified.PaidDefectBridge.wordMap
+                        (RKResearch.Certified.PaidDefectBridge.suffixBlock A) ξ W)
+                      (RKResearch.Certified.PaidDefectBridge.primitiveSeed A ξ t)) =
+                  0) →
+        (∀ (t : RKResearch.FiniteRootedTree) (W : List RKResearch.Certified.PaidDefectBridge.Letter),
+            RKResearch.Certified.PaidDefectBridge.treeSize t = 5 →
+              W.length = 2 →
+                (RKResearch.Certified.Graded.row w)
+                    ((RKResearch.Certified.PaidDefectBridge.wordMap
+                        (RKResearch.Certified.PaidDefectBridge.suffixBlock A) ξ W)
+                      (RKResearch.Certified.PaidDefectBridge.primitiveSeed A ξ t)) =
+                  0) →
+          RKResearch.HasOrder 8 A (Sum.elim 0 w)
+@contractThreePorts : ∀ {K : Type u_1} [inst : Field K] (A : Matrix (Fin 16) (Fin 16) K) (b : Fin 16 → K) (γ : K),
+  A.IsLowerTriangular →
+    (∀ (k : Fin 16), A k k = γ) →
+      γ ≠ 0 →
+        RKResearch.HasOrder 8 A b →
+          RKResearch.Certified.DiagonalTwin.DiagonalTwins 9 4 γ A →
+            RKResearch.Certified.DiagonalTwin.DiagonalTwins 8 5 γ
+                (RKResearch.Certified.DiagonalTwin.contractMatrix 9 4 A) →
+              RKResearch.Certified.DiagonalTwin.DiagonalTwins 7 6 γ
+                  (RKResearch.Certified.DiagonalTwin.contractMatrix 8 5
+                    (RKResearch.Certified.DiagonalTwin.contractMatrix 9 4 A)) →
+                have A₁ := RKResearch.Certified.DiagonalTwin.contractMatrix 9 4 A;
+                have b₁ := RKResearch.Certified.Graded.mergeCoefficient 9 4 b;
+                have A₂ := RKResearch.Certified.DiagonalTwin.contractMatrix 8 5 A₁;
+                have b₂ := RKResearch.Certified.Graded.mergeCoefficient 8 5 b₁;
+                have A₃ := RKResearch.Certified.DiagonalTwin.contractMatrix 7 6 A₂;
+                have b₃ := RKResearch.Certified.Graded.mergeCoefficient 7 6 b₂;
+                A₃.IsLowerTriangular ∧ (∀ (k : Fin 13), A₃ k k = γ) ∧ γ ≠ 0 ∧ RKResearch.HasOrder 8 A₃ b₃
+'RKResearch.Certified.PaidDefectBridge.SDIRK9TriplePort.factor_shifted_primitive' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK9TriplePort.retain_read' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK9TriplePort.install_read' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK9TriplePort.orderEight_of_split_payments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.PaidDefectBridge.SDIRK9TriplePort.contractThreePorts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

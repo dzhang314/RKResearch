@@ -1,0 +1,12 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+RKResearch.Certified.Graded.OneOffSharedScalar.jacobi_roots :
+  List.filter (fun x => jacobi x == 0) (List.range p) = interior
+RKResearch.Certified.Graded.OneOffSharedScalar.paid_divisor_guards : [2, 3, 4, 5, 6, 36, 60].all unit = true
+RKResearch.Certified.Graded.AllFixedPrefixScalar.other_interior_taps_nonzero :
+  (interior.all fun ξ => interior.all fun a => interior.all fun b => interior.all (eachOtherTap ξ a b)) = true
+RKResearch.Certified.Graded.AllFixedPrefixScalar.all_first_change_guards :
+  (interior.all fun ξ => interior.all fun a => interior.all fun b => interior.all (validInteriorCase ξ a b)) = true
+'RKResearch.Certified.Graded.AllFixedPrefixScalar.other_interior_taps_nonzero' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.AllFixedPrefixScalar.all_first_change_guards' depends on axioms: [propext,
+ Classical.choice]

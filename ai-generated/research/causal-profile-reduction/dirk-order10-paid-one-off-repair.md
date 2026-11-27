@@ -1,5 +1,7 @@
 # DIRK10/11: corrected one-off exclusions and exact reflected suffix
 
+> **Follow-up:** The [all-fixed degree-four prefix proof](dirk-order10-all-fixed-prefix-exclusion.md) subsequently closes the all-fixed nonconstant exception left open in this note.
+
 **Erratum.** A row with `g=h=0` has exact `C(5)`, which integrates inputs of degrees **0 through 4**. The old anchored quintic and the `X` multiple of an anchored quartic have degree 5. Those tests in the prior first-clean cut, including the resulting `q` formula, must not be used. The old Lean scalar computations are arithmetic under their displayed premises, not proofs that `C(5)` supplies those premises. This note replaces the one-off bridges. It does not modify the frozen packets in place.
 
 Throughout, the tableau is lower triangular, has eleven physical stages and actual rooted order ten over a characteristic-zero field. Assume `g=Ac²−c³/3` is physically nonzero at only one numerical clock `ξ`, with at least one nonzero `b_i g_i`. We use the valid one-clock rank band of the original note, with `h=(A−ξ/2)g`, `c=A1`, `C=diag(c)`, `β=bᵀ`,

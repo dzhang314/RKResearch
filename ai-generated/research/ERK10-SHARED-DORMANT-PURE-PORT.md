@@ -300,3 +300,5 @@ and three-root tests. The polynomial division and stage-profile
 reductions above are mathematical. The remaining literal middle
 support chart is not excluded, and the unrestricted ERK10 interval
 is unchanged.
+
+The [fifth-row contact follow-up](ERK10-FIFTH-HEAD-CONTACT.md) excludes this shared-clock chart by combining the doubled-contact norm above with a separate actual grade-four test.

@@ -1,0 +1,7 @@
+'RKResearch.ERK10FifthHeadContactGate.probeEntrance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10FifthHeadContactGate.probeQuartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10FifthHeadContactGate.zeroFourthTapForcesOldClock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK10FifthHeadContactGate.fourthTapForcesRepeat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10FifthHeadContactGate.simpsonMasses' depends on axioms: [propext, Classical.choice, Quot.sound]

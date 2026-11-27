@@ -1,0 +1,6 @@
+'RKResearch.ERK10SharedDormantGate.doubleContactClear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SharedDormantGate.doubleContactBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SharedDormantGate.threeResidues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SharedDormantGate.pairedPureSplit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SharedDormantGate.quadraticNoThree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10SharedDormantGate.mixedNorm' depends on axioms: [propext, Classical.choice, Quot.sound]

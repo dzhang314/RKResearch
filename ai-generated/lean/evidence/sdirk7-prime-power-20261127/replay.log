@@ -1,0 +1,50 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.checked' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.simple_root_mod19' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_of_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_of_nineteen_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_mod_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.coefficient_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow2.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow2.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow12.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow12.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.exists_exact_of_pow_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Reconstructed the literal quadratic nine-stage tableau with exact linear solves.
+All 85 exact quadratic conditions, including unit-residual exactness data, verified.
+Direct modulo-19 failed bush values are 6 and 17; twelve simple-root specializations also replayed.
+Lift verified modulo 19^2 (residual Jacobian rank 43).
+Lift verified modulo 19^3 (residual Jacobian rank 43).
+Lift verified modulo 19^4 (residual Jacobian rank 43).
+Lift verified modulo 19^5 (residual Jacobian rank 43).
+Lift verified modulo 19^6 (residual Jacobian rank 43).
+Lift verified modulo 19^7 (residual Jacobian rank 43).
+Lift verified modulo 19^8 (residual Jacobian rank 43).
+Lift verified modulo 19^9 (residual Jacobian rank 43).
+Lift verified modulo 19^10 (residual Jacobian rank 43).
+Lift verified modulo 19^11 (residual Jacobian rank 43).
+Lift verified modulo 19^12 (residual Jacobian rank 43).
+Independently checked all 85 rooted conditions and unit next-bush failure modulo each 19^k, 1 <= k <= 12.

@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKNineStageOrderSevenQuadratic
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.checked
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.simple_root_mod19
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_of_root
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_of_nineteen_nilpotent
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_mod_power
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.exists_exact_quadratic
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.coefficient_degree

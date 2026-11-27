@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKNineStageOrderSeven19Powers
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow2.order_seven
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow2.exists_exact
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow12.order_seven
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.Pow12.exists_exact
+#print axioms RKResearch.Certified.SDIRKNineStageOrderSeven19Powers.exists_exact_of_pow_eq_zero

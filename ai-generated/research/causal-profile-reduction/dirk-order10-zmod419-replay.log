@@ -1,0 +1,3 @@
+F419: 1205/1205 unordered rooted conditions through order 10
+ordered attach-word counts: [1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862]
+11-vertex star: degree-ten moment 224; expected 381 (cleared 369 ≠ 1)

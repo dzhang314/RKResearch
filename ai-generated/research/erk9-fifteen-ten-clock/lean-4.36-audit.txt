@@ -1,0 +1,46 @@
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCore ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckGrade0 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckJoin0 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckAction0 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckPay0 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckGrade4 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckJoin4 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckAction4 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckPay4 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckJoin8 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckAction8 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckPay8 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckJoin12 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckAction12 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckPay12 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckJoin16 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckAction16 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenCheckPay16 ===
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteenChecks ===
+
+
+=== RKCert/ReviewedNative/ERK9UniversalFifteen ===
+'RKResearch.Certified.ERK9UniversalFifteen.order_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK9UniversalFifteen.exists_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK9UniversalFifteen.exists_exact_iff_factorial_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

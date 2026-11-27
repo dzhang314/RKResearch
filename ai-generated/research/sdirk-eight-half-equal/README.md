@@ -147,3 +147,5 @@ In the all-active endpoint-pair family, \(\boldsymbol h\) vanishes on the two of
           \qquad q(c_i)h_i=p(c_i)\quad (i\in U).
 \]
 This is a finite-degree rational interpolation restriction, not a license to divide through a zero of \(q\) and not yet an exclusion. The all-active family must also satisfy the rank-three \(F_4|_U\) constraints at all true chronological rows.
+
+The [rational-profile follow-up](../sdirk-eight-half-rational/README.md) gives a linear nodal reconstruction in the coprime case and excludes three special profiles. The generic quadratic and common-factor cases remain open.

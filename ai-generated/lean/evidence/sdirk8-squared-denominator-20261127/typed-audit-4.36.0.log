@@ -1,0 +1,17 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKCert.ReviewedNative.SDIRK8SquaredDenominatorReceipts.squared_denominator_independent.{u_1} {K : Type u_1} [Field K]
+  {p q r s : Polynomial K} (hpq : IsCoprime p q) (hq : q ≠ 0) (hr : r.degree < q.degree) (hs : s.degree < q.degree)
+  (h : q ^ 2 ∣ r * p ^ 2 + q * s * p) : r = 0 ∧ s = 0
+RKCert.ReviewedNative.SDIRK8SquaredDenominatorReceipts.squared_denominator_flags.{u_1} {K : Type u_1} [Field K]
+  {p q : Polynomial K} (hpq : IsCoprime p q) (hq : q.degree = 2) (a b c d : K)
+  (h :
+    q ^ 2 ∣
+      (Polynomial.C a + Polynomial.C b * Polynomial.X) * p ^ 2 +
+        q * (Polynomial.C c + Polynomial.C d * Polynomial.X) * p) :
+  Polynomial.C a + Polynomial.C b * Polynomial.X = 0 ∧ Polynomial.C c + Polynomial.C d * Polynomial.X = 0
+'RKCert.ReviewedNative.SDIRK8SquaredDenominatorReceipts.squared_denominator_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8SquaredDenominatorReceipts.squared_denominator_flags' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

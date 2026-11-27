@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.SDIRK8SquaredDenominatorReceipts
+
+open RKCert.ReviewedNative.SDIRK8SquaredDenominatorReceipts
+
+#check squared_denominator_independent
+#check squared_denominator_flags
+#print axioms squared_denominator_independent
+#print axioms squared_denominator_flags

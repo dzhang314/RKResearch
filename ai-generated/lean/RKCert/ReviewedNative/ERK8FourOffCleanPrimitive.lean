@@ -1,10 +1,11 @@
 module
 
-public import RKCert.ReviewedNative.ERK8FourOffCleanShapeAlgebra
+public import RKCert.ReviewedNative.ERK8PaidCleanShape
 public import RKCert.ReviewedNative.ERKTaggedHorizonSupport
 import Mathlib.Tactic.Abel
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Ring
+import Mathlib.Tactic.LinearCombination
 
 @[expose] public section
 
@@ -17,11 +18,11 @@ transfer assumption. No off-degree drop or scalar contradiction is used here.
 -/
 namespace RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape
 
-open RKResearch Polynomial OneOff ERKTaggedHorizon
+open RKResearch Polynomial OneOff ERKTaggedHorizon ERK8PaidField
 open RKResearch.Certified.Graded.MultiOff.FourOff8Scalar
 open scoped BigOperators Matrix Classical
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K}
 
 abbrev lastPhysical : Fin 10 := Fin.last 9
@@ -148,15 +149,15 @@ private theorem last_column_zero (ha : ∀ j l, j≤l → A j l=0) :
   simp [Pi.single_apply,hne,hne.symm]
 
 /-- The terminal constraint puts the whole physical pure primitive column in F5. -/
-private theorem quartic_primitive_mem (ha : ∀ j l, j≤l → A j l=0)
+private theorem quartic_primitive_mem (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 8 A b)
     (hF : zeroSpace A 4=band A 2) (Q R : K[X]) (hd : Q.natDegree≤4)
     (F : CleanTerminalProfile A Q R) : evalNodes A (primitive Q) ∈ zeroSpace A 5 := by
   have off : diag (g A) (evalNodes A R) ∈ zeroSpace A 4 := by
     rw [hF]
     exact band_iff.mpr ⟨R,F.degR,rfl⟩
   have step : mat A (diag (g A) (evalNodes A R)) ∈ zeroSpace A 5 :=
-    mat_zeroSpace_charZero A 4 off
-  have dif := primitive_defect A Q (q:=4) hd
+    mat_zeroSpace ho 4 (by decide) off
+  have dif := primitive_defect_paid ho Q (q:=4) hd (by decide)
   have mem := (zeroSpace A 5).add_mem dif step
   have eq : (mat A (evalNodes A Q)-evalNodes A (primitive Q))+
       mat A (diag (g A) (evalNodes A R))=-(evalNodes A (primitive Q)) := by
@@ -168,10 +169,25 @@ private theorem quartic_primitive_mem (ha : ∀ j l, j≤l → A j l=0)
   rw [eq] at mem
   simpa using (zeroSpace A 5).neg_mem mem
 
-private theorem lobatto_primitive_one :
-    (primitive ((X:K[X])*LobattoEight.lobattoCubic)).eval 1 = (1:K)/280 := by
-  simp only [LobattoEight.lobattoCubic,mul_add,X_mul_monomial,map_add,primitive_monomial,eval_add,eval_monomial]
-  norm_num
+private theorem lobatto_primitive_one_ne (ho : HasOrder 8 A b) :
+    (primitive ((X:K[X])*LobattoEight.lobattoCubic)).eval 1 ≠ 0 := by
+  have n2 := ERK8PaidField.two_ne ho
+  have n14 := fourteen_ne ho
+  have n3 : (3:K)≠0 := (ho.natCast_isUnit (n:=3) (by decide) (by decide)).ne_zero
+  have n4 : (4:K)≠0 := (ho.natCast_isUnit (n:=4) (by decide) (by decide)).ne_zero
+  have n5 : (5:K)≠0 := (ho.natCast_isUnit (n:=5) (by decide) (by decide)).ne_zero
+  have c0 : ((-1:K)/14)*14=-1 := div_mul_cancel₀ _ n14
+  have c1 : ((9:K)/14)*14=9 := div_mul_cancel₀ _ n14
+  have c2 : ((-3:K)/2)*2=-3 := div_mul_cancel₀ _ n2
+  have e0 : (((-1:K)/14)/2)*2=(-1)/14 := div_mul_cancel₀ _ n2
+  have e1 : (((9:K)/14)/3)*3=9/14 := div_mul_cancel₀ _ n3
+  have e2 : (((-3:K)/2)/4)*4=(-3)/2 := div_mul_cancel₀ _ n4
+  have e3 : ((1:K)/5)*5=1 := div_mul_cancel₀ _ n5
+  intro z
+  simp only [LobattoEight.lobattoCubic,mul_add,X_mul_monomial,map_add,primitive_monomial,
+    eval_add,eval_monomial,one_pow,mul_one,Nat.reduceAdd,Nat.cast_ofNat] at z
+  apply n3
+  linear_combination 840*z-420*e0-280*e1-210*e2-168*e3-30*c0-20*c1-105*c2
 
 private theorem one_theta_at_both_clean_rows (ha : ∀ j l, j≤l → A j l=0)
     (ho : HasOrder 8 A b) (cancel : ∀ u∈offKnots A, offMass A b u=0)
@@ -186,8 +202,8 @@ private theorem one_theta_at_both_clean_rows (ha : ∀ j l, j≤l → A j l=0)
   let phi := primitive (quartic h x z)
   have p1 : phi.eval 1≠0 := by
     change (primitive (quartic (nodes A iH) (nodes A iX) z)).eval 1≠0
-    rw [L.quartic_id,lobatto_primitive_one]
-    norm_num
+    rw [L.quartic_id]
+    exact lobatto_primitive_one_ne ho
   let theta := w lastPhysical / phi.eval 1
   let v := w-theta • evalNodes A phi
   have mem : v∈zeroSpace A 5 := (zeroSpace A 5).sub_mem hw ((zeroSpace A 5).smul_mem _ phi_mem)
@@ -226,7 +242,7 @@ private theorem one_theta_at_both_clean_rows (ha : ∀ j l, j≤l → A j l=0)
   change w iX-theta*phi.eval x=0 at VX
   exact ⟨theta,sub_eq_zero.mp VH,sub_eq_zero.mp VX⟩
 
-private theorem clean_tap_residual_mem (hF : zeroSpace A 4=band A 2)
+private theorem clean_tap_residual_mem (ho : HasOrder 8 A b) (hF : zeroSpace A 4=band A 2)
     (P : K[X]) (hd : P.natDegree≤2) (h : K)
     (fit : ∀ j, g A j≠0 → P.eval (nodes A j)=g A j) :
     evalNodes A (primitive (tapFactor h*P))-mat A (cleanInput A (tapFactor h*P))∈zeroSpace A 5 := by
@@ -240,8 +256,8 @@ private theorem clean_tap_residual_mem (hF : zeroSpace A 4=band A 2)
   have ofmem : off∈zeroSpace A 4 := by
     rw [hF]
     exact band_iff.mpr ⟨tapFactor h,tapFactor_degree_le h,rfl⟩
-  have ofimg : mat A off∈zeroSpace A 5 := mat_zeroSpace_charZero A 4 ofmem
-  have pd := primitive_defect A S (q:=4) (natDegree_mul_le_of_le (tapFactor_degree_le h) hd)
+  have ofimg : mat A off∈zeroSpace A 5 := mat_zeroSpace ho 4 (by decide) ofmem
+  have pd := primitive_defect_paid ho S (q:=4) (natDegree_mul_le_of_le (tapFactor_degree_le h) hd) (by decide)
   have eq : evalNodes A (primitive S)-mat A (cleanInput A S)=
       mat A off-(mat A (evalNodes A S)-evalNodes A (primitive S)) := by
     have act := congrArg (mat A) split
@@ -253,15 +269,15 @@ private theorem clean_tap_residual_mem (hF : zeroSpace A 4=band A 2)
   exact (zeroSpace A 5).sub_mem ofimg pd
 
 /-- The local first-clean XP test is automatic, without a P(0)=0 premise. -/
-theorem primitive_X_head_zero_of_clean_prefix (ha : ∀ j l, j≤l → A j l=0)
+theorem primitive_X_head_zero_of_clean_prefix_paid (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 8 A b)
     (hF : zeroSpace A 4=band A 2) {i : Fin 10} (hi : g A i=0)
     (pre : ∀ j, j < i → g A j=0 → nodes A j=0)
     {P : K[X]} (hd : P.natDegree≤2)
     (fit : ∀ j, g A j≠0 → P.eval (nodes A j)=g A j) :
     (primitive (X*P)).eval (nodes A i)=0 := by
   have dX : (X*P).natDegree≤3 := natDegree_mul_le_of_le (show (X:K[X]).natDegree≤1 by simp) hd
-  exact on_primitive_zero_of_prefix ha hF hi (X*P) dX
-    (diag (nodes A) (g A)) (clean_mixed_defect hF hi) (fun j hj => by
+  exact on_primitive_zero_paid ha ho hF hi (X*P) dX
+    (diag (nodes A) (g A)) (clean_mixed_defect_paid ho hF hi) (fun j hj => by
       by_cases hj' : g A j=0
       · simp [hj',pre j hj hj']
       · simp [fit j hj'])
@@ -283,8 +299,8 @@ theorem shared_clean_primitive (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 
   let x := nodes A iX
   let S := tapFactor h*P
   let w := evalNodes A (primitive S)-mat A (cleanInput A S)
-  have hm : w∈zeroSpace A 5 := clean_tap_residual_mem hF P hd h fit
-  have phi := quartic_primitive_mem ha hF (quartic h x z) R (quartic_degree_le h x z) term
+  have hm : w∈zeroSpace A 5 := clean_tap_residual_mem ho hF P hd h fit
+  have phi := quartic_primitive_mem ha ho hF (quartic h x z) R (quartic_degree_le h x z) term
   obtain ⟨theta,hh,hx⟩ := one_theta_at_both_clean_rows ha ho cancel L hm phi
   have Hact : mat A (cleanInput A S) iH=0 := by
     refine causal_mat ha iH _ (fun j hj => ?_)
@@ -302,9 +318,43 @@ theorem shared_clean_primitive (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 
   · simpa only [w,Pi.sub_apply,evalNodes_apply,Hact,sub_zero] using hh
   · simpa only [w,Pi.sub_apply,evalNodes_apply,Xact,sub_zero] using hx
 
+/-- Paid finite-characteristic clean shape from genuine tagged placement.
+In contrast to NormalizedShape, the scale and quadratic term may vanish. -/
+theorem raw_clean_shape_from_actual_prefix (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 8 A b)
+    (hF : zeroSpace A 4=band A 2) (nOff : (offKnots A).card=4)
+    {iH iX : Fin 10} {z : K} (L : CleanPrimitivePlacement A b iH iX z)
+    {P R : K[X]} (hd : P.natDegree≤2)
+    (fit : ∀ j, g A j≠0 → P.eval (nodes A j)=g A j)
+    (term : CleanTerminalProfile A (quartic (nodes A iH) (nodes A iX) z) R) :
+    ∃ theta k, RawPaidShape P (nodes A iH) (nodes A iX) z theta k := by
+  have cancel := offMass_zero_of_head ho fit (by rw [nOff]; decide)
+  obtain ⟨theta,Hh,Hx⟩ := shared_clean_primitive ha ho hF cancel L hd fit term
+  have XP := primitive_X_head_zero_of_clean_prefix_paid ha ho hF L.h_clean L.before_h hd fit
+  have N (u : K) (r : lobattoNumer u=0) : u≠0 := by
+    rintro rfl
+    simpa [lobattoNumer] using r
+  obtain ⟨κ,receipt⟩ := raw_shape_from_primitive ho P hd (N _ L.roots.root_h)
+    (N _ L.roots.root_x) L.roots.h_ne_x.symm Hh Hx XP
+  exact ⟨theta,κ,receipt⟩
+
+/-- The local first-clean XP test is automatic, without a P(0)=0 premise. -/
+theorem primitive_X_head_zero_of_clean_prefix [CharZero K] (ha : ∀ j l, j≤l → A j l=0)
+    (hF : zeroSpace A 4=band A 2) {i : Fin 10} (hi : g A i=0)
+    (pre : ∀ j, j < i → g A j=0 → nodes A j=0)
+    {P : K[X]} (hd : P.natDegree≤2)
+    (fit : ∀ j, g A j≠0 → P.eval (nodes A j)=g A j) :
+    (primitive (X*P)).eval (nodes A i)=0 := by
+  have dX : (X*P).natDegree≤3 := natDegree_mul_le_of_le (show (X:K[X]).natDegree≤1 by simp) hd
+  exact on_primitive_zero_of_prefix ha hF hi (X*P) dX
+    (diag (nodes A) (g A)) (clean_mixed_defect hF hi) (fun j hj => by
+      by_cases hj' : g A j=0
+      · simp [hj',pre j hj hj']
+      · simp [fit j hj'])
+
+
 /-- Acyclic native consumer: from literal tagged placement and the terminal
 profile, produce both branches' exact shared checked scalar shape inputs. -/
-theorem clean_shape_from_actual_prefix (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 8 A b)
+theorem clean_shape_from_actual_prefix [CharZero K] (ha : ∀ j l, j≤l → A j l=0) (ho : HasOrder 8 A b)
     (hF : zeroSpace A 4=band A 2) (nOff : (offKnots A).card=4)
     {iH iX : Fin 10} {z : K} (L : CleanPrimitivePlacement A b iH iX z)
     {P R : K[X]} (hd : P.natDegree≤2) (hnz : P≠0)

@@ -1,6 +1,6 @@
 module
 
-public import RKCert.ReviewedNative.ERKOrderEightTaggedCensus
+public import RKCert.ReviewedNative.ERK8PaidCensus
 public import RKCert.ReviewedNative.ERK8UnorderedScalarGates
 
 import Lean.Elab.Tactic.Omega
@@ -15,7 +15,7 @@ order. It does not assign chronological positions to noninitial senders.
 -/
 namespace RKResearch.Certified.Graded.FourOffPhysical
 
-open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon RKCert.Endpoint
+open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon ERK8PaidField RKCert.Endpoint
 open scoped Matrix Classical
 
 section Tags
@@ -195,7 +195,7 @@ end Tags
 
 section ActualRank
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K}
 
 private theorem origin_data (ha : ∀ i j, i ≤ j → A i j=0) :
@@ -203,9 +203,7 @@ private theorem origin_data (ha : ∀ i j, i ≤ j → A i j=0) :
   have v0 (v : Fin 10 → K) : mat A v 0=0 :=
     causal_mat ha 0 v (fun j hj => ((not_lt_of_ge (Fin.zero_le j)) hj).elim)
   have c0 : nodes A 0=0 := by simpa [mat_apply,nodes] using v0 (1 : Fin 10 → K)
-  refine ⟨?_,c0⟩
-  rw [g_apply,c0,v0]
-  simp
+  exact ⟨origin_zeroSpace ha 2 (mDef_mem A 1),c0⟩
 
 private theorem clean_mass_paid_nonzero (ho : HasOrder 8 A b)
     (hM : (cleanKnots A).card=5) (h1 : (1:K)∈cleanKnots A)
@@ -280,15 +278,12 @@ structure RankData (A : Matrix (Fin 10) (Fin 10) K) (b : Fin 10 → K) (P : K[X]
 
 theorem rankData_of_order8_four_off (ha : ∀ i j, i ≤ j → A i j=0)
     (ho : HasOrder 8 A b) (off : (offKnots A).card=4) : ∃ P, RankData A b P := by
-  obtain ⟨H,hcases⟩ := MultiOff.order8_native_tagged_census ha ho
-  have hc5 : (cleanKnots A).card=5 := by
-    rcases hcases with one | ⟨_,hc5⟩
-    · omega
-    · exact hc5
-  obtain ⟨r3,r4,_,_⟩ := forward_minimal_ranks ha ho (by decide) (by simpa using H.treeRank.le)
+  have H := order8_paid_even_horizon ha ho
+  obtain ⟨r3,r4,capFive⟩ := order8_paid_ranks ha ho H
   obtain ⟨P,dP,Pn,B3,B4,fit⟩ := two_curve_head r3 r4 (by omega)
   have cancel : ∀ x ∈ offKnots A, offMass A b x=0 :=
     offMass_zero_of_head ho fit (by omega)
+  have hc5 := order8_paid_five_clean ha ho capFive (by omega) cancel
   have wle := onOffSpace_le_E5 fit (by omega) (by omega)
   have w9 : finrank K (onOffSpace A)=9 := by
     rw [onOffSpace_rank,hc5,off]

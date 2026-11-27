@@ -17,10 +17,10 @@ the branch or constructs a clean-grid scalar contradiction.
 -/
 namespace RKResearch.Certified.Graded.FourOffPhysical
 
-open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon
+open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon ERK8PaidField
 open scoped Matrix Classical
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]} {i : Fin 10}
 
 private abbrev y (A : Matrix (Fin 10) (Fin 10) K) := reflectedClock A
@@ -212,7 +212,7 @@ private theorem delta_at7 (ha : ∀ i j, i≤j → A i j=0) (R : RepeatAtEight A
   rw [transpose_contrast_apply,ha i 7 il,sub_zero]
 
 theorem row7_clean (D : RankData A b P) (R : RepeatAtEight A b i)
-    (ha : ∀ i j, i≤j → A i j=0) : g A 7=0 := by
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 8 A b) : g A 7=0 := by
   by_contra off
   have paid := (off_seed_offsets D R (by decide : (7:Fin 10)<8) off).1
   have ne := delta_early_off_nonzero ha R (by decide : (7:Fin 10)<8) off
@@ -221,12 +221,12 @@ theorem row7_clean (D : RankData A b P) (R : RepeatAtEight A b i)
   change (2:K)*(A 8 7*(b 8*(y A 8)^1))-b 7*(y A 7)^2= -(b 7*(y A 7)^2) at paid
   simp only [pow_one] at paid
   have x : (2:K)*A 8 7*(b 8*y A 8)=0 := by linear_combination paid
-  exact (mul_ne_zero (mul_ne_zero (by norm_num) ne) (mul_ne_zero R.liveEight R.reflEight)) x
+  exact (mul_ne_zero (mul_ne_zero (two_ne ho) ne) (mul_ne_zero R.liveEight R.reflEight)) x
 
 theorem row6_clean (D : RankData A b P) (R : RepeatAtEight A b i)
     (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 8 A b) : g A 6=0 := by
   by_contra off
-  have g7 := row7_clean D R ha
+  have g7 := row7_clean D R ha ho
   obtain ⟨ξ,rev⟩ := cubic_line D R ha ho
   have d6 := delta_early_off_nonzero ha R (by decide : (6:Fin 10)<8) off
   have b6 := off_seed_offsets D R (by decide : (6:Fin 10)<8) off
@@ -240,7 +240,7 @@ theorem row6_clean (D : RankData A b P) (R : RepeatAtEight A b i)
     simp only [pow_one] at j16
     have zz : (2:K)*(A 7 6*(b 7*y A 7)+A 8 6*(b 8*y A 8))=0 := by
       linear_combination b6.1-j16
-    exact (mul_eq_zero.mp zz).resolve_left (by norm_num)
+    exact (mul_eq_zero.mp zz).resolve_left (two_ne ho)
   have c6 : (3:K)*(A 7 6*(b 7*(y A 7)^2)+A 8 6*(b 8*(y A 8)^2))=ξ*Δ A i 6 := by
     change J A b 2 6=(3:K)*(A 7 6*(b 7*(y A 7)^2)+A 8 6*(b 8*(y A 8)^2))-
       b 6*(y A 6)^3 at j26

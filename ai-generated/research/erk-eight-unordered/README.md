@@ -1,5 +1,7 @@
 # ERK order eight: characteristic-zero stage floor without an order on coefficients
 
+**Later result.** The [paid extension](../erk-eight-finite/README.md) covers all admissible fields except characteristic 11, and rings with nonnilpotent 11.
+
 **Result (source-level floor):** eleven is the minimum ERK stage count over
 every characteristic-zero field. More generally, for a nontrivial
 characteristic-zero commutative ring \(R\), a method exists precisely when

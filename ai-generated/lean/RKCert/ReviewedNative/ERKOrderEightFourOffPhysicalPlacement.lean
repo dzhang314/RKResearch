@@ -17,10 +17,10 @@ no Lobatto scalar elimination or one-off argument.
 -/
 namespace RKResearch.Certified.Graded.FourOffPhysical
 
-open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon
+open RKResearch Module Polynomial Reverse OneOff ERKTaggedHorizon ERK8PaidField
 open scoped Matrix Classical
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]} {i : Fin 10}
 
 private def zone : Finset (Fin 10) := {1,2,3,4,5}
@@ -105,14 +105,14 @@ private theorem earlier3 : (Finset.univ.filter (fun l : Fin 10 => l<3)) = {0,1,2
   fin_cases l <;> decide
 
 private theorem clean_first_at_least_four (D : RankData A b P) (R : RepeatAtEight A b i)
-    (ha : ∀ i j, i≤j → A i j=0) {k : Fin 10}
+    (ha : ∀ i j, i≤j → A i j=0) (ho : HasOrder 8 A b) {k : Fin 10}
     (kpos : 0<k) (kg : g A k=0) (kc : nodes A k≠0)
     (early : ∀ l : Fin 10, l<k → g A l=0 → l=0) : (4:Fin 10)≤k := by
   have ag : mat A (g A) k=0 := clean_four_vanish D.bandFour kg
-    (zeroSpace_mono A (by decide : 3≤4) (mat_zeroSpace_charZero A 2 (mDef_mem A 1)))
-  have acg : mat A (diag (nodes A) (g A)) k=0 := clean_mixed_defect D.bandFour kg
+    (zeroSpace_mono A (by decide : 3≤4) (mat_zeroSpace ho 2 (by decide) (mDef_mem A 1)))
+  have acg : mat A (diag (nodes A) (g A)) k=0 := clean_mixed_defect_paid ho D.bandFour kg
   have ac : mat A (nodes A) k=(nodes A k)^2/2 := by
-    rw [g_apply] at kg
+    rw [g_apply_paid ho (by decide)] at kg
     exact sub_eq_zero.mp kg
   apply le_of_not_gt
   intro sm
@@ -120,7 +120,7 @@ private theorem clean_first_at_least_four (D : RankData A b P) (R : RepeatAtEigh
   rcases cases with e|e|e
   · subst k
     rw [mat_earlier ha,earlier1,Finset.sum_singleton,D.clockZero,mul_zero] at ac
-    exact (div_ne_zero (pow_ne_zero 2 kc) (by norm_num)) ac.symm
+    exact (div_ne_zero (pow_ne_zero 2 kc) (two_ne ho)) ac.symm
   · subst k
     have go1 : g A 1≠0 := fun z => (by decide : (1:Fin 10)≠0) (early 1 (by decide) z)
     rw [mat_earlier ha,earlier2,Finset.sum_pair (by decide : (0:Fin 10)≠1),
@@ -128,7 +128,7 @@ private theorem clean_first_at_least_four (D : RankData A b P) (R : RepeatAtEigh
     have a1 : A 2 1=0 := (mul_eq_zero.mp ag).resolve_right go1
     rw [mat_earlier ha,earlier2,Finset.sum_pair (by decide : (0:Fin 10)≠1),
       D.clockZero,a1,mul_zero,zero_mul,add_zero] at ac
-    exact (div_ne_zero (pow_ne_zero 2 kc) (by norm_num)) ac.symm
+    exact (div_ne_zero (pow_ne_zero 2 kc) (two_ne ho)) ac.symm
   · subst k
     have go1 : g A 1≠0 := fun z => (by decide : (1:Fin 10)≠0) (early 1 (by decide) z)
     have go2 : g A 2≠0 := fun z => (by decide : (2:Fin 10)≠0) (early 2 (by decide) z)
@@ -151,7 +151,7 @@ private theorem clean_first_at_least_four (D : RankData A b P) (R : RepeatAtEigh
     rw [a2,zero_mul,add_zero] at ag
     have a1 : A 3 1=0 := (mul_eq_zero.mp ag).resolve_right go1
     rw [expand,D.clockZero,a1,a2,mul_zero,zero_mul,add_zero,zero_mul,add_zero] at ac
-    exact (div_ne_zero (pow_ne_zero 2 kc) (by norm_num)) ac.symm
+    exact (div_ne_zero (pow_ne_zero 2 kc) (two_ne ho)) ac.symm
 
 /-- Upstream physical placements earned on the actual matrix. The chosen
 clean row is the only clean occurrence in physical indices 1 through 5.
@@ -177,7 +177,7 @@ theorem physical_placement_of_order8_four_off (ha : ∀ i j, i≤j → A i j=0)
     ∃ (P : K[X]) (i k : Fin 10), Placement A b P i k := by
   obtain ⟨P,D,i,R⟩ := rank_and_repeat_of_order8_four_off ha ho off
   have g6 := row6_clean D R ha ho
-  have g7 := row7_clean D R ha
+  have g7 := row7_clean D R ha ho
   obtain ⟨k,k0,k6,kg,single⟩ := unique_clean_in_zone D R g6 g7
   have kn : nodes A k≠0 := by
     intro e
@@ -188,7 +188,7 @@ theorem physical_placement_of_order8_four_off (ha : ∀ i j, i≤j → A i j=0)
     by_contra ne
     have pos : (0:Fin 10)<l := lt_of_le_of_ne (Fin.zero_le _) (fun e => ne e.symm)
     exact (ne_of_lt lk) (single l pos (lk.trans k6) lg)
-  have bound := clean_first_at_least_four D R ha k0 kg kn early
+  have bound := clean_first_at_least_four D R ha ho k0 kg kn early
   have whereK : k=4 ∨ k=5 := by omega
   exact ⟨P,i,k,D,R,g6,g7,D.cleanNine,kg,kn,whereK,early,single,off_occurs_in_zone D R g6 g7⟩
 

@@ -13,7 +13,7 @@ namespace RKResearch.Certified.Graded.FourOffNewton
 open Polynomial RKResearch OneOff ERKTaggedHorizon RKCert.Endpoint
 open scoped Matrix Classical
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K}
 
 noncomputable abbrev terminalCleanHull (A : Matrix (Fin 10) (Fin 10) K) : K[X] :=

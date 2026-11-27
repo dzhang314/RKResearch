@@ -5,6 +5,7 @@ public import RKCert.ReviewedNative.ERK8FourOffCleanPrimitive
 
 import Lean.Elab.Tactic.Omega
 import Mathlib.Tactic.Ring
+import Mathlib.Tactic.LinearCombination
 
 @[expose] public section
 
@@ -16,12 +17,12 @@ and does not repeat the geometric clean shape computation.
 -/
 namespace RKResearch.Certified.Graded.FourOffNewton
 
-open Polynomial RKResearch OneOff ERKTaggedHorizon FourOffPhysical RKCert.Endpoint
+open Polynomial RKResearch OneOff ERKTaggedHorizon FourOffPhysical ERK8PaidField RKCert.Endpoint
 open RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape
 open RKResearch.Certified.Graded.MultiOff.FourOff8Scalar
 open scoped Matrix Classical
 
-variable {K : Type*} [Field K] [CharZero K]
+variable {K : Type*} [Field K]
 variable {A : Matrix (Fin 10) (Fin 10) K} {b : Fin 10 → K} {P : K[X]} {dup k : Fin 10}
 
 private theorem marked_k_before_six (M : Placement A b P dup k) : k<6 := by
@@ -98,7 +99,7 @@ theorem marked_paid_clean_cubic (ho : HasOrder 8 A b) (M : Placement A b P dup k
     change (T.erase 0).card=3
     rw [Finset.card_erase_of_mem zT,tc]
   have ld : L.natDegree=3 := (natDegree_nodalHull S).trans sc
-  have beta := beta_cubic_from_actual_probes ho (by decide) L ld.le (fun j=>by
+  have beta := beta_cubic_from_probes_paid ho L ld.le (fun j=>by
     have factor {U : Finset K} {a : K} (ha : a∈U) :
         nodalHull U=(X-C a)*nodalHull (U.erase a) := by
       unfold nodalHull
@@ -117,15 +118,16 @@ theorem marked_paid_clean_cubic (ho : HasOrder 8 A b) (M : Placement A b P dup k
     exact (monic_nodalHull S).coeff_natDegree
   simpa only [lc,map_one,one_mul] using beta
 
-private theorem scalar_root_of_cubic {u : K}
+private theorem scalar_root_of_cubic (ho : HasOrder 8 A b) {u : K}
     (r : (LobattoEight.lobattoCubic : K[X]).eval u=0) :
     lobattoNumer u=0 := by
-  have e : (14:K)*(LobattoEight.lobattoCubic : K[X]).eval u=lobattoNumer u := by
-    simp only [LobattoEight.lobattoCubic,lobattoNumer,eval_add,eval_monomial,pow_zero,pow_one,
-      mul_one,one_mul]
-    ring
-  rw [r,mul_zero] at e
-  exact e.symm
+  have d0 : ((-1:K)/14)*14=-1 := div_mul_cancel₀ _ (fourteen_ne ho)
+  have d1 : ((9:K)/14)*14=9 := div_mul_cancel₀ _ (fourteen_ne ho)
+  have d2 : ((-3:K)/2)*2=-3 := div_mul_cancel₀ _ (two_ne ho)
+  simp only [LobattoEight.lobattoCubic,eval_add,eval_monomial,
+    pow_zero,pow_one,mul_one,one_mul] at r
+  unfold lobattoNumer
+  linear_combination 14*r-d0-u*d1-7*u^2*d2
 
 theorem marked_actual_clean_geometry (ho : HasOrder 8 A b) (M : Placement A b P dup k) :
     CleanClocks (nodes A k) (nodes A 6) (nodes A 7) ∧
@@ -162,7 +164,7 @@ theorem marked_actual_clean_geometry (ho : HasOrder 8 A b) (M : Placement A b P 
     ⟨z1,mem_cleanKnots.mpr ⟨7,M.cleanSeven,rfl⟩⟩⟩
   have ce : nodalHull S = (LobattoEight.lobattoCubic : K[X]) := marked_paid_clean_cubic ho M
   have root {u : K} (hu : u∈S) : lobattoNumer u=0 := by
-    apply scalar_root_of_cubic
+    apply scalar_root_of_cubic ho
     rw [←ce]
     exact nodalHull_eval_of_mem hu
   refine ⟨⟨hx,hz,xz,root hS,root xS,root zS⟩,?_⟩

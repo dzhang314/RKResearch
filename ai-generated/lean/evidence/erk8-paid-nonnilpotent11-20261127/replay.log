@@ -1,0 +1,16 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.Graded.ERK8PaidField.order8_paid_tagged_census' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.actual_raw_head_of_order8_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.FourOffNewton.actual_normalized_head_of_order8_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+All inversion/norm guards beyond factorial: [11, 17, 37, 41, 43, 79]
+17 roots [4, 9, 14] repairs ['z-root']
+37 roots [12, 19, 26] repairs ['linear']
+41 roots [16, 21, 26] repairs ['linear']
+43 roots [3, 22, 41] repairs ['h-root']
+79 roots [28, 40, 52] repairs ['h-root']

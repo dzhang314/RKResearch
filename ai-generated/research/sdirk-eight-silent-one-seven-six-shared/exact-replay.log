@@ -1,0 +1,149 @@
+exact star diagonal degree True 0 3
+known tail double exact gap degree True 0 True 8 5
+known tail double exact gap degree True 0 True 9 5
+known tail double exact gap degree True 0 True 10 2
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+known tail double exact gap degree True 0 False 8 5
+known tail double exact gap degree True 0 False 9 8
+known tail double exact gap degree True 0 False 10 5
+literal shared-root silent eighth fixed gap True 0 0 11
+literal shared-root silent eighth fixed gap True 0 9 3
+literal shared-root silent eighth fixed gap True 0 10 3
+chronological r copy affine slopes coprime True 0
+front-pair y degrees True 0 3 3
+active Gauss front fixed diagonal tail True 0 True 0 False 0
+active Gauss front fixed diagonal tail True 0 True 8 False 1
+front pair exact row-four projection True 0 9
+degree-leading branch gcds 0 0
+front projection removes only padded y=r via split True 0 2 7
+active Gauss front fixed diagonal tail True 0 True 9 False 1
+active Gauss front fixed diagonal tail True 0 False 0 False 3
+active Gauss front fixed diagonal tail True 0 False 8 False 1
+active Gauss front fixed diagonal tail True 0 False 9 False 1
+active Gauss front fixed diagonal tail True 0 True 0 True 3
+active Gauss front fixed diagonal tail True 0 True 9 True 1
+exact star diagonal degree True 1 3
+known tail double exact gap degree True 1 True 8 5
+known tail double exact gap degree True 1 True 9 5
+known tail double exact gap degree True 1 True 10 2
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+known tail double exact gap degree True 1 False 8 5
+known tail double exact gap degree True 1 False 9 8
+known tail double exact gap degree True 1 False 10 5
+literal shared-root silent eighth fixed gap True 1 0 11
+literal shared-root silent eighth fixed gap True 1 9 3
+literal shared-root silent eighth fixed gap True 1 10 3
+chronological r copy affine slopes coprime True 1
+front-pair y degrees True 1 3 3
+active Gauss front fixed diagonal tail True 1 True 0 False 0
+active Gauss front fixed diagonal tail True 1 True 8 False 1
+front pair exact row-four projection True 1 9
+degree-leading branch gcds 0 0
+front projection removes only padded y=r via split True 1 2 7
+active Gauss front fixed diagonal tail True 1 True 9 False 1
+active Gauss front fixed diagonal tail True 1 False 0 False 3
+active Gauss front fixed diagonal tail True 1 False 8 False 1
+active Gauss front fixed diagonal tail True 1 False 9 False 1
+active Gauss front fixed diagonal tail True 1 True 0 True 3
+active Gauss front fixed diagonal tail True 1 True 9 True 1
+exact star diagonal degree False 0 3
+known tail double exact gap degree False 0 True 8 5
+known tail double exact gap degree False 0 True 9 5
+known tail double exact gap degree False 0 True 10 2
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+known tail double exact gap degree False 0 False 8 5
+known tail double exact gap degree False 0 False 9 8
+known tail double exact gap degree False 0 False 10 5
+literal shared-root silent eighth fixed gap False 0 0 11
+literal shared-root silent eighth fixed gap False 0 9 3
+literal shared-root silent eighth fixed gap False 0 10 3
+chronological r copy affine slopes coprime False 0
+front-pair y degrees False 0 3 3
+active Gauss front fixed diagonal tail False 0 True 0 False 0
+active Gauss front fixed diagonal tail False 0 True 8 False 1
+front pair exact row-four projection False 0 9
+degree-leading branch gcds 0 0
+front projection removes only padded y=r via split False 0 2 7
+active Gauss front fixed diagonal tail False 0 True 9 False 1
+active Gauss front fixed diagonal tail False 0 False 0 False 3
+active Gauss front fixed diagonal tail False 0 False 8 False 1
+active Gauss front fixed diagonal tail False 0 False 9 False 1
+active Gauss front fixed diagonal tail False 0 True 0 True 3
+active Gauss front fixed diagonal tail False 0 True 9 True 1
+exact star diagonal degree False 1 3
+known tail double exact gap degree False 1 True 8 5
+known tail double exact gap degree False 1 True 9 5
+known tail double exact gap degree False 1 True 10 2
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+known tail double exact gap degree False 1 False 8 5
+known tail double exact gap degree False 1 False 9 8
+known tail double exact gap degree False 1 False 10 5
+literal shared-root silent eighth fixed gap False 1 0 11
+literal shared-root silent eighth fixed gap False 1 9 3
+literal shared-root silent eighth fixed gap False 1 10 3
+chronological r copy affine slopes coprime False 1
+front-pair y degrees False 1 3 3
+active Gauss front fixed diagonal tail False 1 True 0 False 0
+active Gauss front fixed diagonal tail False 1 True 8 False 1
+front pair exact row-four projection False 1 9
+degree-leading branch gcds 0 0
+front projection removes only padded y=r via split False 1 2 7
+active Gauss front fixed diagonal tail False 1 True 9 False 1
+active Gauss front fixed diagonal tail False 1 False 0 False 3
+active Gauss front fixed diagonal tail False 1 False 8 False 1
+active Gauss front fixed diagonal tail False 1 False 9 False 1
+active Gauss front fixed diagonal tail False 1 True 0 True 3
+active Gauss front fixed diagonal tail False 1 True 9 True 1
+shared and active Gauss-front orientations excluded: 52 32

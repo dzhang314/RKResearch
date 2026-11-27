@@ -1,0 +1,12 @@
+'RKResearch.Certified.DIRK10RationalTwelveFlagReplay.order_ten' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelveFlagReplay.not_order_eleven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelveFlagReplay.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK10RationalTwelveFlagReplay.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

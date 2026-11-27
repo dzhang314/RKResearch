@@ -1,0 +1,8 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+RKResearch.Certified.SDIRK9SixSiteSmallGates.validate_bezout : pairs.length = 13 ∧ pairs.all validate = true
+RKResearch.Certified.SDIRK9SixSiteSmallGates.validate_constants :
+  residues.length = 38 ∧ (residues.all fun t => t.snd % t.fst != 0) = true
+'RKResearch.Certified.SDIRK9SixSiteSmallGates.validate_bezout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRK9SixSiteSmallGates.validate_constants' does not depend on any axioms

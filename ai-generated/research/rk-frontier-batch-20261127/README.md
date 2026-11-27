@@ -135,7 +135,11 @@ are still open and the ordinary 17–18 bound is unchanged.
 
 ## Further grouped SDIRK9 chart exclusions
 
-The twin-port 13-stage family loses its [six-site three-terminal](../real-sdirk9-six-site-three-terminal/README.md),
+The regular twin-port, two-disjoint-merge 13-stage family is excluded.
+The [six-site three-terminal](../real-sdirk9-six-site-three-terminal/README.md),
 [seven-site three-terminal](../real-sdirk9-seven-site-three-terminal/README.md), and
-[seven-site two-terminal](../real-sdirk9-seven-site-two-terminal/README.md) charts.
-These are exclusions of fixed constructions, not unrestricted lower bounds.
+[seven-site two-terminal](../real-sdirk9-seven-site-two-terminal/README.md) cuts
+leave just the [last two six-site charts](../real-sdirk9-six-site-last-two/README.md),
+which are excluded by literal reverse primitive tests and exact modular
+compactification. The smaller arithmetic gates are also checked in Lean.
+This is an exclusion of a fixed construction family, not an unrestricted lower bound.

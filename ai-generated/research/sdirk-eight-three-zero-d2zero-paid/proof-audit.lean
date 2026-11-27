@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightThreeZeroLowSupport
+open RKResearch.Certified.SDIRKEightThreeZeroLowSupport
+#check arithmetic_zero_factor
+#check repeated_clock_slope
+#check zero_forward_3517
+#print axioms arithmetic_zero_factor
+#print axioms repeated_clock_slope
+#print axioms zero_forward_3517

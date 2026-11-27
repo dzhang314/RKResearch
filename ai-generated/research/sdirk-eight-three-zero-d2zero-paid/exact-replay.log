@@ -1,0 +1,10 @@
+
+>>> check_support.py
+one-clock support: 13 (coordinate exception),17,103,7793
+two-clock support: [1, 1, 1, 103, 1, 3517, 1, 1]
+
+>>> check_further.py
+one active off-zero clock 17 [(7, 11)] fourth coefficients [None, None, None, None]
+one active off-zero clock 103 [(97, 30)] fourth coefficients [34, 31, 34, 62]
+one active off-zero clock 7793 [(6924, 2220)] fourth coefficients [1763, 7390, 1763, 1623]
+two active off-zero clocks: [(3517, 6, 1718, 1800, 1759, 1800)] force forward g3=0

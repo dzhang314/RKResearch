@@ -86,3 +86,5 @@ From ai-generated/lean:
 
     lake build +RKCert.ReviewedNative.ERK149TripleDormant
     lake env lean AuditERK149TripleDormant.lean
+
+The later [actual grade-five rank proof](../erk10-canonical-cubic-rank/README.md) excludes every high shape in this fixed canonical cubic-decoder architecture, including the one-triple case.

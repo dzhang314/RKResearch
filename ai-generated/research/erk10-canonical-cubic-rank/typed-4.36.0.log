@@ -1,0 +1,25 @@
+@lower_donor_minor : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (p q : K),
+  p ≠ 0 →
+    -p ^ 4 / 36 * (3 * q ^ 2 * (3 * p - 2 * q) / (4 * p ^ 2)) -
+        (5 * p * q ^ 3 / 9 - p ^ 2 * q ^ 2 / 3 - q ^ 4 / 4) * (3 * p / 4) =
+      3 * p * q ^ 2 * (p - q) ^ 2 / 16
+@point_first_high : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a r μ : K),
+  r ≠ 0 → j₀ r a = μ * j₀ r r → j₁ r a = μ * j₁ r r → a = 0 ∨ a = r
+@generic_second_high : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a b u v : K),
+  a ≠ 0 →
+    b ^ 2 / 2 = u * (a ^ 2 / 2) + v * a →
+      b ^ 3 / 3 = u * (a ^ 3 / 3) + v * a ^ 2 → b ^ 4 / 4 = u * (a ^ 4 / 4) + v * a ^ 3 → b = 0 ∨ b = a
+@same_clock_tap_zero : ∀ {K : Type u_1} [inst : Field K] [CharZero K] (a v μ : K),
+  a ≠ 0 → v * a = μ * (a ^ 2 / 2) → v * a ^ 2 = μ * (a ^ 3 / 3) → v = 0
+'RKResearch.Certified.ERK10CanonicalCubicRankGate.lower_donor_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10CanonicalCubicRankGate.point_first_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10CanonicalCubicRankGate.generic_second_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10CanonicalCubicRankGate.same_clock_tap_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

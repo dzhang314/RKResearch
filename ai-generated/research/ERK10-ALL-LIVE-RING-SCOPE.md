@@ -24,3 +24,7 @@ denominator-cleared rooted order equation. These are algebraic
 reductions to the existing characteristic-zero field theorem,
 not an unconditional numerical lower bound of fifteen and not
 a bound asserted for arbitrary positive characteristics.
+
+## Internal weights
+
+The [sole-origin exclusion](ERK10-SOLE-ORIGIN-GHOST-EXCLUSION.md), the all-live exclusion, and deletion of an unused final stage show that any characteristic-zero-field equality candidate has a zero weight at some physical index 2 through 13. The same fraction-field argument forces an internal weight to vanish over a characteristic-zero integral domain. The same localization argument, but applied only to the product of the internal weights, shows that this internal product is nilpotent over any nonzero commutative rational algebra. This does not exclude an origin zero together with an internal zero.

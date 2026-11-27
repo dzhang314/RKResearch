@@ -1,0 +1,37 @@
+h2 all 85 rooted conditions, strict unit diagonal, exact next-order failure
+q all 85 rooted conditions, strict unit diagonal, exact next-order failure
+fixed-u -2 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 11, []), (6, 2, 11, [])]
+fixed-u -1 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 17, []), (6, 2, 11, [])]
+fixed-u 0 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 19, []), (6, 2, 11, [])]
+fixed-u 4 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 19, []), (6, 2, 11, [])]
+fixed-u 5 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 17, []), (6, 2, 11, [])]
+fixed-u 6 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 29, []), (6, 2, 17, [])]
+fixed-u 7 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 17, []), (6, 2, 11, [])]
+fixed-u 8 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 29, []), (6, 2, 11, [])]
+fixed-u 9 F/P/R raw (3, 3) (13, 9) (60, 0)
+ r factors [(42, 1, 11, []), (6, 2, 11, [])]
+fixed-helper 2 F/P/R raw (3, 6) (17, 21) (153, 0)
+ u factors [(2, 1, 5, []), (27, 1, 11, []), (66, 1, 19, [])]
+fixed-helper 4 F/P/R raw (3, 6) (17, 21) (153, 0)
+ u factors [(2, 1, 5, []), (66, 1, 11, []), (27, 1, 11, [])]
+fixed-helper 5 F/P/R raw (3, 6) (17, 21) (153, 0)
+ u factors [(2, 1, 5, []), (27, 1, 11, []), (66, 1, 29, [])]
+fixed-helper 9 F/P/R raw (3, 6) (17, 21) (153, 0)
+ u factors [(2, 1, 5, []), (27, 1, 13, []), (66, 1, 11, [])]
+full operands (3, 3, 3) (17, 13, 9)
+full resultant (72, 60, 0)
+full factors [((9, 6, 0), 70, 2), ((36, 42, 0), 1591, 1)]
+q a0 operands (3, 9) (17, 30) projection (0, 192)
+q a0 factors [(36, 1, 11, []), (84, 1, 37, []), (9, 2, 11, []), (27, 2, 13, [])]
+h2 c=z 5 projected (op,c) (18, 0) (op,first) (48, 0)
+common projection (0, 0)
+h2 c=z None projected (op,c) (27, 18, 0) (op,first) (36, 48, 0)
+common projection (0, 0, 0)

@@ -1,0 +1,45 @@
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.q_profile_schedule {x : ℚ} (h₁ : x ≠ 1)
+  (hM : x ^ 2 - 4 * x + 2 ≠ 0) :
+  (2 - qTap x) * qFirst x + qTap x - 1 = 0 ∧ x ^ 2 - 3 * x + 1 - qTap x * (x ^ 2 - 4 * x + 2) / 2 = 0
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.H2.schedule :
+  H2.y 3 = 16 ∧
+    H2.t = 2 ∧
+      H2.y 5 = 14 ∧
+        14 - H2.y 2 = 1 + H2.t ∧
+          H2.b 3 * RKResearch.Certified.SDIRKSevenChristoffelScalar.kernelFour (11 * H2.y 3 - 1) (11 * H2.y 3 - 1) = 4
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.H2.order_seven : RKResearch.HasOrder 7 H2.A H2.b
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.H2.not_order_eight : ¬RKResearch.HasOrder 8 H2.A H2.b
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.QProfile.schedule :
+  QProfile.y 3 = 5 ∧
+    QProfile.t = 17 ∧
+      QProfile.y 2 = 0 ∧
+        (2 - QProfile.t) * (15 - QProfile.y 2) = 1 - QProfile.t ∧
+          QProfile.b 3 *
+              RKResearch.Certified.SDIRKSevenChristoffelScalar.kernelFour (9 * QProfile.y 3 - 1)
+                (9 * QProfile.y 3 - 1) =
+            4
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.QProfile.order_seven :
+  RKResearch.HasOrder 7 QProfile.A QProfile.b
+RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.QProfile.not_order_eight :
+  ¬RKResearch.HasOrder 8 QProfile.A QProfile.b
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.q_profile_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.H2.schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.H2.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.H2.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.QProfile.schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.QProfile.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenChristoffelAlternativeF19.QProfile.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

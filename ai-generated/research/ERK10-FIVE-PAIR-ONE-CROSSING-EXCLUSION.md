@@ -175,3 +175,5 @@ checks the determinant, solved coefficients, exact integral,
 cleared norm, and both modular Bézout identities.
 The grade budgets and stage topology are the mathematical
 bridges in this note. No unrestricted 14–15 bound changes.
+
+The [three-crossing follow-up](ERK10-FIVE-PAIR-THREE-CROSSING-EXCLUSION.md) excludes the complementary topology and completes the five-unequal-pair case.

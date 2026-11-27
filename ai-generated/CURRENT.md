@@ -60,7 +60,7 @@ The stated factorial unit is necessary for existence at any stage count. Literal
 
 ## Strict SDIRK at order five over nonzero commutative rings
 
-A [single six-stage tableau](research/strict-sdirk-rational/order-five-paid-six.md) has exact order five over every nonzero commutative ring in which 30 is a unit. This gives an interval of **five to six stages**; if 30 is not a unit, order five is impossible at any stage count. The [two-chart result](research/strict-sdirk-rational/order-five-paid-local.md) gives an exact five-stage minimum over all admissible local rings, including fields. The [central repeated-clock family](research/strict-sdirk-rational/order-five-paid-central-repeat-exclusion.md) cannot give five stages over the localization with only 30 inverted; other five-stage families are not excluded.
+A [single six-stage tableau](research/strict-sdirk-rational/order-five-paid-six.md) has exact order five over every nonzero commutative ring in which 30 is a unit. This gives an interval of **five to six stages**; if 30 is not a unit, order five is impossible at any stage count. The [two-chart result](research/strict-sdirk-rational/order-five-paid-local.md) gives an exact five-stage minimum over all admissible local rings, including fields. All [eight repeated-clock patterns](research/strict-sdirk-rational/order-five-paid-all-repeated-clock-exclusion.md) are excluded at five stages over the localization with only 30 inverted. The [distinct-clock case](research/strict-sdirk-rational/order-five-paid-distinct-clock-gate.md) remains open. The repeat exclusion is mathematical with an exact replay, not a Lean certificate.
 
 ## Exact order-six strict SDIRK minima by coefficient domain
 

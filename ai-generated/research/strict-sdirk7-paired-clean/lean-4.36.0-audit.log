@@ -1,0 +1,25 @@
+RKResearch.Certified.SDIRKSevenPairedClean.odd_quintic_zero_mass.{u_1} {K : Type u_1} [Field K]
+  {a b c wa wb wd we wf : K} (hc : c ≠ 0) (ha : c ^ 2 ≠ a ^ 2) (hb : c ^ 2 ≠ b ^ 2)
+  (h₁ : (wa - wb) * a + (wd - we) * b + wf * c = 0) (h₃ : (wa - wb) * a ^ 3 + (wd - we) * b ^ 3 + wf * c ^ 3 = 0)
+  (h₅ : (wa - wb) * a ^ 5 + (wd - we) * b ^ 5 + wf * c ^ 5 = 0) : wf = 0
+RKResearch.Certified.SDIRKSevenPairedClean.terminal_cubic_zero {r q D : ℚ} (distinct : q ≠ r)
+  (paid : momNum (r ^ 2) (q ^ 2) - momDen (r ^ 2) (q ^ 2) * D = 0)
+  (reverse : Mhat r q * q * residue (r ^ 2) D + (r + 1) ^ 2 * r * residue (q ^ 2) D = 0) : terminalCubic r q = 0
+RKResearch.Certified.SDIRKSevenPairedClean.moment_pivot {R U D : ℚ} (paid : momNum R U - momDen R U * D = 0) :
+  momDen R U ≠ 0
+RKResearch.Certified.SDIRKSevenPairedClean.reverse_pair_impossible {u : ℚ} (h : u ^ 2 - 4 * u + 2 = 1) : False
+RKResearch.Certified.SDIRKSevenPairedClean.star_head_values (t : ℚ) :
+  starQ 1 = 1 ∧ starQ (1 + t) = 1 + 2 * t - t ^ 2 ∧ starQ (3 - t) = 1 + 2 * t - t ^ 2
+RKResearch.Certified.SDIRKSevenPairedClean.no_star_opening {x : ℚ} (h : starQ x = starJ x) : False
+'RKResearch.Certified.SDIRKSevenPairedClean.odd_quintic_zero_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenPairedClean.terminal_cubic_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenPairedClean.moment_pivot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenPairedClean.reverse_pair_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSevenPairedClean.star_head_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSevenPairedClean.no_star_opening' depends on axioms: [propext, Classical.choice, Quot.sound]

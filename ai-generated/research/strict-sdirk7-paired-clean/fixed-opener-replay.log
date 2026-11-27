@@ -1,0 +1,38 @@
+OPEN 0
+U= (7*r**2 - 3)/(7*(5*r**2 - 1))
+factors [(2, 1, None)]
+modproj 2 3
+factors [(8, 1, None), (4, 2, None)]
+modproj 8 19
+modproj 4 11
+factors [(1, 1, 'x + 1'), (4, 1, None)]
+modproj 4 13
+OPEN 2
+U= (70*r**4 + 70*r**3 - 35*r**2 - 42*r - 3)/(7*(30*r**4 + 30*r**3 - 5*r**2 - 10*r - 1))
+factors [(4, 1, None)]
+modproj 4 17
+factors [(14, 1, None), (4, 2, None)]
+modproj 14 11
+modproj 4 11
+factors [(1, 1, 'x + 1'), (5, 1, None)]
+modproj 5 11
+OPEN 11
+U= (4235*r**4 + 7700*r**3 + 938*r**2 - 4620*r - 2085)/(7*(1815*r**4 + 3300*r**3 + 890*r**2 - 1100*r - 497))
+factors [(4, 1, None)]
+modproj 4 37
+factors [(14, 1, None), (4, 2, None)]
+modproj 14 37
+modproj 4 11
+factors [(1, 1, 'x + 1'), (5, 1, None)]
+modproj 5 17
+The openers 0, 2, and 11 have no fully reflection-paired six-site clean grid.
+before resultant 0 (16, 10)
+factors before [((16, 10), 1)]
+resultant factor grades (16, 10) [(70, 1, 19), (8, 1, 17), (4, 2, 11), (1, 4, 'x + 1')]
+before resultant 1 (20, 10)
+factors before [((20, 10), 1)]
+resultant factor grades (20, 10) [(58, 1, 11), (8, 2, 17), (1, 4, 'x + 1'), (4, 6, 11)]
+before resultant 2 (24, 12)
+factors before [((2, 2), 1), ((22, 10), 1)]
+resultant factor grades (2, 2) [(8, 1, 17), (4, 2, 11)]
+resultant factor grades (22, 10) [(1, 2, 'x'), (66, 1, 11), (1, 8, 'x + 1'), (4, 8, 11)]

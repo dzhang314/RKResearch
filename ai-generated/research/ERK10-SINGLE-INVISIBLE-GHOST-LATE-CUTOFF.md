@@ -252,3 +252,8 @@ formulas. The paper rank, physical matching, and moment
 bridges above reuse the earlier invisible-ghost ledger.
 No reverse ordinary order, ordered field, or unrestricted
 15-stage claim is used.
+
+The [fifth-row calculation](ERK10-SINGLE-INVISIBLE-GHOST-FIFTH-ROW-EXCLUSION.md)
+subsequently excludes the remaining tap-at-11 pattern by forcing a
+literal duplicate physical stage. The one-clock case still allows taps
+ending at 12 or 13 in the current analysis.

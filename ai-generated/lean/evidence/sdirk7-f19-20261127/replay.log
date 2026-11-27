@@ -1,0 +1,28 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKSeven.F19.prohibit_of_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSeven.F19.finite_validity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSeven.F19.actual_mask' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSeven.F19.actual_quad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.SDIRKSeven.F19.actual_first_seed_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSeven.F19.forbid_receipted_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKSeven.F19.no_reviewed_order_with_receipted_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Complete F19 independent audit: {'causal': 150, 'quad_family': 78, 'first_seed_reject': 1014, 'quad_reject': 72}
+Both-zero resultant is nonzero in characteristic zero.
+Every nonzero parameter factor for one zero edge is projectively rootless modulo 43.
+Reconstructed the exact nine-stage F19 witness by the linear six-tail solve.
+Verified all 85 rooted conditions over F19. Eighth bush = 12, so the order is exactly seven.
+'RKResearch.Certified.SDIRKNineStageOrderSevenF19.order_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenF19.not_order_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenF19.exists_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

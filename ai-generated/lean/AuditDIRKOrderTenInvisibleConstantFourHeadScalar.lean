@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.DIRKOrderTenInvisibleConstantFourHeadScalar
+
+open RKResearch.Certified.Graded.InvisibleConstantFourHeadScalar
+
+#check all_late_ghost_cutoffs
+#check all_first_five_pole_guards
+#print axioms all_late_ghost_cutoffs
+#print axioms all_first_five_pole_guards

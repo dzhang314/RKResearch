@@ -1,0 +1,10 @@
+RKResearch.Certified.Graded.InvisibleConstantFourHeadScalar.all_late_ghost_cutoffs :
+  (RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun U =>
+      RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all fun V =>
+        RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all (lateGhostGate U V)) =
+    true
+RKResearch.Certified.Graded.InvisibleConstantFourHeadScalar.all_first_five_pole_guards :
+  RKResearch.Certified.Graded.ConstantOneOffScalar.interior.all earlyGate = true
+'RKResearch.Certified.Graded.InvisibleConstantFourHeadScalar.all_late_ghost_cutoffs' does not depend on any axioms
+'RKResearch.Certified.Graded.InvisibleConstantFourHeadScalar.all_first_five_pole_guards' does not depend on any axioms
+4.37.0-rc1 four-head gates OK

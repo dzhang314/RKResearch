@@ -55,3 +55,5 @@ Indeed the first is the nine-site barycentric annihilator, and the E₅ annihila
 ## Verification boundary
 
 The native field packet verifies constant-core cancellation and the four-label live G-read lemma. The existing paid DA and marked fixed-slack packets provide all exact numerical and column compensation certificates used for the three-label exclusion. The actual E₆ block/chronology and discrepancy reductions are the mathematical bridge here. The unpublished non-Lobatto and four-head constraints are recorded only at the scope proved, and no arbitrary-ring or real-ordering assumption is invoked.
+
+The [four-head follow-up](dirk-order10-invisible-constant-four-head-cutoffs.md) forces the last three regular interior rows at positions 8–10 and restricts the first regular interior row to positions 5–7, but does not exclude that branch.

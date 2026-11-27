@@ -1,0 +1,8 @@
+RKResearch.Certified.Graded.InvisibleConstantFourHeadField.first_five_h_slope {K : Type} [Lean.Grind.Field K]
+  (a b r da db wA wB ba hA hB m n : K) (hnWB : wB ≠ 0) (hnHB : hB ≠ 0) (hba : b - a ≠ 0) (h₀ : wA * hA + wB * hB = 0)
+  (h₁ : wB * ba = (r - a - da) * wA) (h₂ : db = r - b) (h₃ : m + n * a = da) (h₄ : (m + n * b - db) * hB = ba * hA) :
+  n = -1
+'RKResearch.Certified.Graded.InvisibleConstantFourHeadField.first_five_h_slope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+4.35.0 four-head field OK

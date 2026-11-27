@@ -1,0 +1,3 @@
+'RKResearch.ERK10DependentPairGate.opposingPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentPairGate.threeCharges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10DependentPairGate.pairDifferences' depends on axioms: [propext, Classical.choice, Quot.sound]

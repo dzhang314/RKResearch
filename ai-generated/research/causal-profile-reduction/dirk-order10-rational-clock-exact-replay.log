@@ -1,0 +1,5 @@
+prescribed slopes and Jacobi/front modular rational-root cuts PASS
+rational unit-head resultants (early a,b,u,y,w) and split guards PASS
+fixed t=2/3 front and integral mod-11 cut, both infinity residue cubics PASS
+mod-11 boundary cuts (6,0) and (9,6) PASS
+height ≤1000000000: 5898 integers, 1104666 primitive signed ratios, 19 shifted-fourth candidates; only t=2/3, already excluded

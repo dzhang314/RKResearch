@@ -85,3 +85,5 @@ For a rooted tree with immediate children \(t_1,\ldots,t_m\), the replay compute
 is checked by equality of rational polynomial coefficient lists in the exact tower; no floating value is used in this step. These tests include all mixed products. They agree with the reviewed rooted-tree order definition: the order of siblings does not affect products in a commutative algebra. The subsequent real homomorphism preserves them. The next star test has \(11\beta c^{10}-1\) invertible in the algebra; thus its real value cannot vanish. This also avoids assuming that a nonzero quotient element must be nonzero at every real place.
 
 The [reviewed native Lean certificate](dirk-order10-eleven-real-lean-certificate.md) now also proves exact order ten for the real tableau, its failure of order eleven, and the matching real lower bound.
+
+A separate [rational-clock analysis](dirk-order10-rational-clock-gates.md) excludes several one-dirty-clock branches and gives a primitive height obstruction for the remaining variable-pole branch. It does not decide the rational minimum.

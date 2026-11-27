@@ -1,0 +1,50 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.DIRKTenRationalPoles.coefficient_system.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (s t r z e f : K) (ht : t ≠ 0) (h1 : -r * s ^ 3 + t ^ 2 - 6 * t = 0)
+  (h2 : e * s ^ 2 * t + 12 * r * s ^ 2 - 2 * s ^ 3 * z - 28 * t ^ 2 + 168 * t = 0)
+  (h3 :
+    2 * e * s * t ^ 2 - 12 * e * s * t + 3 * f * s ^ 2 * t + 6 * r * s * t ^ 2 - 30 * r * s * t - 36 * r * s +
+            36 * s ^ 2 * z +
+          336 * t ^ 2 -
+        2016 * t =
+      0)
+  (h4 : 3 * e * t - 4 * f * s * t + 12 * r * t - 12 * s * t * z - 12 * s * z + 1008 * t = 0)
+  (h5 : f + 4 * z - 168 = 0) :
+  early s t = 0 ∧ 5 * s ^ 3 * (2 * t - 3) * e = 12 * originNum s t ∧ 5 * s ^ 4 * (2 * t - 3) * f = -6 * slopeNum s t
+RKResearch.Certified.DIRKTenRationalPoles.paired_rational_guards {a b u : ℚ} (ha : a ≠ 0) (_hb : b ≠ 0) (hu : u ≠ 0)
+  (hab : a ≠ b) (hau : a ≠ u) (hbu : b ≠ u) (hpair : u * (4 * a * b - a ^ 2 - b ^ 2) = a * b * (a + b)) :
+  have t := (a + b) / u;
+  t ≠ 0 ∧ t ≠ 2 ∧ t ≠ 3 ∧ t ≠ 6 ∧ t ≠ 3 / 2
+RKResearch.Certified.DIRKTenRationalPoles.no_rat_root_of_prime {p : ℕ} [Fact (Nat.Prime p)] (l : List ℤ)
+  (hfinite : ∀ (x : ZMod p), hval l x 1 ≠ 0) (hinfinity : hval l 1 0 ≠ 0) (x : ℚ) : hval l x 1 ≠ 0
+RKResearch.Certified.DIRKTenRationalPoles.no_rat_root_jacobi (t : ℚ) : hval polyJacobi t 1 ≠ 0
+RKResearch.Certified.DIRKTenRationalPoles.no_prescribed_pole {s t e f : ℚ} (ht₂ : t ≠ 2) (ht₃ : t ≠ 3) (ht₆ : t ≠ 6)
+  (he : early s t = 0) (h₀ : 5 * s ^ 3 * (2 * t - 3) * e = 12 * originNum s t)
+  (h₁ : 5 * s ^ 4 * (2 * t - 3) * f = -6 * slopeNum s t) : e ≠ 0 ∧ e + f ≠ 0 ∧ f ≠ 0
+RKResearch.Certified.DIRKTenRationalPoles.fixed_front_two_fifths_no_rat (k : ℚ) :
+  -4 / 225 * (125 * k ^ 3 - 100 * k ^ 2 - 87 * k + 1314) ≠ 0
+RKResearch.Certified.DIRKTenRationalPoles.fixed_front_two_thirds_degenerate {k y w : ℚ}
+  (h : -12 / 25 * (k - 6) * (k - 3) ^ 2 = 0) (hyD : 84 / 5 * k - 504 / 5 ≠ 0)
+  (hy : (84 / 5 * k - 504 / 5) * y = -432 / 5 + 12 * k)
+  (hw : -(84 / 25) * (k - 6) * w = -(12 / 25) * (k - 6) * (k + 4)) : k = 3 ∧ y = 1 ∧ w = 1
+'RKResearch.Certified.DIRKTenRationalPoles.coefficient_system' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRKTenRationalPoles.paired_rational_guards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRKTenRationalPoles.no_rat_root_of_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRKTenRationalPoles.no_rat_root_jacobi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRKTenRationalPoles.no_prescribed_pole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRKTenRationalPoles.fixed_front_two_fifths_no_rat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRKTenRationalPoles.fixed_front_two_thirds_degenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

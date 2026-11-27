@@ -1,0 +1,13 @@
+RKResearch.Certified.Graded.ConstantSharedZeroScalar.normalization_units :
+  [2016, 7990348842, 2, 3, 4, 5, 6, 7, 8, 9, 30].all RKResearch.Certified.Graded.ConstantOneOffScalar.unit = true
+RKResearch.Certified.Graded.ConstantSharedZeroScalar.normalized_coefficients :
+  octic = octic419 ∧ sumToProduct = sumToProduct419
+RKResearch.Certified.Graded.ConstantSharedZeroScalar.fixed_heads_coefficients : front = front419 ∧ back = back419
+RKResearch.Certified.Graded.ConstantSharedZeroScalar.fixed_interior_moments :
+  List.map moments (List.range 9) = moment419
+RKResearch.Certified.Graded.ConstantSharedZeroScalar.minor_exact : n8.all (minorCheck (J 0) (J 1) (J 2)) = true
+RKResearch.Certified.Graded.ConstantSharedZeroScalar.minor_unit : n8.all witnessCheck = true
+'RKResearch.Certified.Graded.ConstantSharedZeroScalar.normalization_units' does not depend on any axioms
+'RKResearch.Certified.Graded.ConstantSharedZeroScalar.minor_exact' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.ConstantSharedZeroScalar.minor_unit' depends on axioms: [propext, Quot.sound]
+4.35.0 tensor OK

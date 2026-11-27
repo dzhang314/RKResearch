@@ -60,8 +60,28 @@ exhaustive numerical search.
     python3 -B audit.py
     sha256sum -c sha256.txt
 
-The separate Lean module ERK10TerminalBlockPolynomial verifies
-the reusable rooted-order invariant and its nonzero last
-contribution contradiction, with \(P,Q\) scaled by \(6^2,6^5\).
-The identification with the particular half-port family is the
-above mathematical argument and exact arithmetic receipt.
+## Lean evidence
+
+`RKCert.ReviewedNative.ERK10TerminalBlockPolynomial` verifies the
+mixed rooted-order invariant, with \(P,Q\) scaled by \(6^2,6^5\).
+`RKCert.ReviewedNative.ERK10TerminalBlockClockAdapter.no_fixed_block_compensation`
+checks the actual 17-entry clock pattern and proves that any two
+literal explicit order-ten systems with these clocks and the
+same surviving high-high block cannot differ by deleting the
+last output, provided the reference's scaled last read is
+\(-2304/35\). The zero-output last row is chronological padding
+of the candidate and cannot affect earlier rows. The cardinal
+polynomials, the units used to recover the surviving weights,
+and the polynomial evaluation on the clock pattern are checked
+over arbitrary paid rings, not over a field.
+
+The final scaled read for all members of the specific affine
+reference family is verified by the independent exact arithmetic
+receipt above; its derivation from the family coefficients is
+not a Lean premise discharge in this packet.
+
+    cd ../../lean
+    lake build +RKCert.ReviewedNative.ERK10TerminalBlockPolynomial:olean \
+      +RKCert.ReviewedNative.ERK10TerminalBlockClockAdapter:olean
+
+Checked on Lean 4.36.0, with standard axioms only.

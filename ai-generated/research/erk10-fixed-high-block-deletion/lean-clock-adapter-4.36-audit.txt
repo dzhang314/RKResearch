@@ -1,0 +1,5 @@
+
+=== RKCert/ReviewedNative/ERK10TerminalBlockClockAdapter ===
+'RKResearch.Certified.ERK10TerminalBlockClockAdapter.no_fixed_block_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

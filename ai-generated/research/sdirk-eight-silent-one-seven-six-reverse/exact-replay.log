@@ -1,0 +1,160 @@
+exact diagonal degree True 0 None 1 none 3
+exact diagonal degree True 0 None 1 0 1
+exact diagonal degree True 0 None -1 none 3
+exact diagonal degree True 0 None -1 0 1
+exact diagonal degree True 0 None -1 9 1
+exact diagonal degree True 0 True 1 none 3
+exact diagonal degree True 0 True 1 0 1
+exact diagonal degree True 0 True 1 8 1
+exact diagonal degree True 0 True -1 none 3
+exact diagonal degree True 0 True -1 0 1
+exact diagonal degree True 0 True -1 9 1
+exact diagonal degree True 0 False 1 none 3
+exact diagonal degree True 0 False 1 0 1
+exact diagonal degree True 0 False 1 8 1
+exact diagonal degree True 0 False -1 none 3
+exact diagonal degree True 0 False -1 0 1
+exact diagonal degree True 0 False -1 9 1
+exact diagonal degree True 0 False -1 8 1
+exact star diagonal degree True 0 3
+known tail double exact gap degree True 0 True 8 5
+known tail double exact gap degree True 0 True 9 5
+known tail double exact gap degree True 0 True 10 2
+known tail double exact gap degree True 0 False 8 5
+known tail double exact gap degree True 0 False 9 8
+known tail double exact gap degree True 0 False 10 5
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+exact diagonal degree True 1 None 1 none 3
+exact diagonal degree True 1 None 1 0 1
+exact diagonal degree True 1 None 1 9 1
+exact diagonal degree True 1 None -1 none 3
+exact diagonal degree True 1 None -1 0 1
+exact diagonal degree True 1 True 1 none 3
+exact diagonal degree True 1 True 1 0 1
+exact diagonal degree True 1 True 1 9 1
+exact diagonal degree True 1 True -1 none 3
+exact diagonal degree True 1 True -1 0 1
+exact diagonal degree True 1 True -1 8 1
+exact diagonal degree True 1 False 1 none 3
+exact diagonal degree True 1 False 1 0 1
+exact diagonal degree True 1 False 1 9 1
+exact diagonal degree True 1 False 1 8 1
+exact diagonal degree True 1 False -1 none 3
+exact diagonal degree True 1 False -1 0 1
+exact diagonal degree True 1 False -1 8 1
+exact star diagonal degree True 1 3
+known tail double exact gap degree True 1 True 8 5
+known tail double exact gap degree True 1 True 9 5
+known tail double exact gap degree True 1 True 10 2
+known tail double exact gap degree True 1 False 8 5
+known tail double exact gap degree True 1 False 9 8
+known tail double exact gap degree True 1 False 10 5
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+exact diagonal degree False 0 None 1 none 3
+exact diagonal degree False 0 None 1 0 1
+exact diagonal degree False 0 None -1 none 3
+exact diagonal degree False 0 None -1 0 1
+exact diagonal degree False 0 None -1 9 1
+exact diagonal degree False 0 True 1 none 3
+exact diagonal degree False 0 True 1 0 1
+exact diagonal degree False 0 True 1 8 1
+exact diagonal degree False 0 True -1 none 3
+exact diagonal degree False 0 True -1 0 1
+exact diagonal degree False 0 True -1 9 1
+exact diagonal degree False 0 False 1 none 3
+exact diagonal degree False 0 False 1 0 1
+exact diagonal degree False 0 False 1 8 1
+exact diagonal degree False 0 False -1 none 3
+exact diagonal degree False 0 False -1 0 1
+exact diagonal degree False 0 False -1 9 1
+exact diagonal degree False 0 False -1 8 1
+exact star diagonal degree False 0 3
+known tail double exact gap degree False 0 True 8 5
+known tail double exact gap degree False 0 True 9 5
+known tail double exact gap degree False 0 True 10 2
+known tail double exact gap degree False 0 False 8 5
+known tail double exact gap degree False 0 False 9 8
+known tail double exact gap degree False 0 False 10 5
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+exact diagonal degree False 1 None 1 none 3
+exact diagonal degree False 1 None 1 0 1
+exact diagonal degree False 1 None 1 9 1
+exact diagonal degree False 1 None -1 none 3
+exact diagonal degree False 1 None -1 0 1
+exact diagonal degree False 1 None -1 9 1
+exact diagonal degree False 1 True 1 none 3
+exact diagonal degree False 1 True 1 0 1
+exact diagonal degree False 1 True 1 9 1
+exact diagonal degree False 1 True 1 8 1
+exact diagonal degree False 1 True -1 none 3
+exact diagonal degree False 1 True -1 0 1
+exact diagonal degree False 1 True -1 9 1
+exact diagonal degree False 1 True -1 8 1
+exact diagonal degree False 1 False 1 none 3
+exact diagonal degree False 1 False 1 0 1
+exact diagonal degree False 1 False 1 9 1
+exact diagonal degree False 1 False -1 none 3
+exact diagonal degree False 1 False -1 0 1
+exact diagonal degree False 1 False -1 9 1
+exact diagonal degree False 1 False -1 8 1
+exact star diagonal degree False 1 3
+known tail double exact gap degree False 1 True 8 5
+known tail double exact gap degree False 1 True 9 5
+known tail double exact gap degree False 1 True 10 2
+known tail double exact gap degree False 1 False 8 5
+known tail double exact gap degree False 1 False 9 8
+known tail double exact gap degree False 1 False 10 5
+F degrees [4, 4, 4] prem degrees 17 17 common 0
+raw res deg 38
+generic clean deg 21
+guard u 17
+guard k 17
+guard H 17
+guard C3 17
+guard c-z 17
+guard d-z 17
+guard c-r 17
+guard d-r 17
+guard p(c) 17
+guard p(d) 17
+exceptional pivot degrees 0 3
+all reverse-support orientations excluded: 88 28 4

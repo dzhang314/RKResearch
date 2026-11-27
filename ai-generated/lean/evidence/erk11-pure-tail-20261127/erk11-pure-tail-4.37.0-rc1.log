@@ -1,0 +1,16 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.ERK11PureTailGate.noConsecutiveFirstSeeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.noZeroSecondSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.fullTestsKillRow' depends on axioms: [Quot.sound]
+'RKResearch.ERK11PureTailGate.replaceCausal' depends on axioms: [propext]
+'RKResearch.ERK11PureTailGate.replaceIgnoresPivot' depends on axioms: [propext, Quot.sound]
+'RKResearch.ERK11PureTailGate.gradedReplace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.projectedRootExact' does not depend on any axioms
+'RKResearch.ERK11PureTailGate.eraseCausal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.eraseClock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.middleZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.localAllWords' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.localPositiveTaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.localFirstSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.customSeedPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11PureTailGate.lowerAgreement' does not depend on any axioms

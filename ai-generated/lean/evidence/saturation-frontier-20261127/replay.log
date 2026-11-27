@@ -1,0 +1,82 @@
+=== AuditReviewedNativeDIRKOrderTenDirtyInventory.lean
+RKResearch.Certified.Graded.CrossedOrderTen.dirty_inventory_of_small.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+  (small : (dirtyClockLabels (nodes A) b (monomialStageDefect A 2)).card ≤ 4) :
+  6 + 2 * (dirtyClockLabels (nodes A) b (monomialStageDefect A 2)).card +
+      (ghostDirtyRows b (monomialStageDefect A 2)).card ≤
+    11
+RKResearch.Certified.Graded.CrossedOrderTen.dirty_first_inventory_of_seven.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b)
+  (small : (dirtyClockLabels (nodes A) b (monomialStageDefect A 2)).card ≤ 7) :
+  2 * (dirtyClockLabels (nodes A) b (monomialStageDefect A 2)).card ≤ 9
+RKResearch.Certified.Graded.CrossedOrderTen.dirty_labels_small_or_high.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 11) (Fin 11) K} {b : Fin 11 → K} (ha : A.IsLowerTriangular) (ho : HasOrder 10 A b) :
+  (dirtyClockLabels (nodes A) b (monomialStageDefect A 2)).card ≤ 2 ∨
+    8 ≤ (dirtyClockLabels (nodes A) b (monomialStageDefect A 2)).card
+'RKResearch.Certified.Graded.CrossedOrderTen.dirty_inventory_of_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.dirty_first_inventory_of_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.CrossedOrderTen.dirty_labels_small_or_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== RKCert/ReviewedNative/SDIRKOrderEightSingletonZero.lean
+exit=0
+=== RKCert/ReviewedNative/SDIRKOrderEightSingletonZeroSaturation.lean
+exit=0
+=== RKCert/ReviewedNative/ERK8CenteredQuadratureConstraints.lean
+'RKResearch.Certified.ERK8CenteredQuadratureConstraints.centered_sum_zero_mod_eleven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK8CenteredQuadratureConstraints.centered_sum_zero_mod_thirteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK8CenteredQuadratureConstraints.no_symmetric_rational_centered_rule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK8CenteredQuadratureConstraints.reciprocal_pair_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== RKCert/ReviewedNative/ERK8ProjectedReverseLine.lean
+'RKResearch.Certified.Graded.Reverse.no_stationary_second_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.strict_transpose_line_zero_at_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.Reverse.projected_prefix_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.Reverse.projected_prefix_with_line_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+=== SDIRK7 typed axiom audit
+'RKResearch.Certified.Graded.SDIRKSeven.ghost_census' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.signed_ghost_census' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.cubic_hidden_of_ghost_no_sqrt_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.pure_third_clock_laguerre' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.rational_all_weights_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.rational_support_signature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.rational_stage_floor_of_ghost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.SDIRKSeven.rational_stage_floor_of_at_most_one_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.RationalFourClock.rational_four_factor_pencil_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+exit=0
+Verified Legendre/Hilbert arithmetic, 20 projective mod-19 directions, and all six projective mod-5 points.
+Finite-root counts for the mod-19 pencil: [2, 2, 1, 1, 1, 0, 2, 0, 0, 1, 1, 0, 0, 2, 0, 1, 1, 1, 2] infinity direction: 1

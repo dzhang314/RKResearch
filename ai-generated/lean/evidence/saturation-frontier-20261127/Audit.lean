@@ -1,0 +1,12 @@
+import RKCert.Research.SDIRKSevenEightStageGhostExclusion
+import RKCert.Research.RationalFourClockOrderSeven
+open RKResearch.Certified.Graded.SDIRKSeven
+#print axioms ghost_census
+#print axioms signed_ghost_census
+#print axioms cubic_hidden_of_ghost_no_sqrt_two
+#print axioms pure_third_clock_laguerre
+#print axioms rational_all_weights_ne_zero
+#print axioms rational_support_signature
+#print axioms rational_stage_floor_of_ghost
+#print axioms rational_stage_floor_of_at_most_one_negative
+#print axioms RKResearch.Certified.RationalFourClock.rational_four_factor_pencil_impossible

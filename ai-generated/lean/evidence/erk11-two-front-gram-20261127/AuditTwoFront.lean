@@ -1,0 +1,7 @@
+import RKCert.Research.ERK11TwoFrontGramGate
+#check RKResearch.ERK11TwoFrontGramGate.ordinaryProvider
+#print axioms RKResearch.ERK11TwoFrontGramGate.ordinaryProvider
+#check RKResearch.ERK11TwoFrontGramGate.complementary
+#print axioms RKResearch.ERK11TwoFrontGramGate.complementary
+#check RKResearch.ERK11TwoFrontGramGate.coprimeFronts
+#print axioms RKResearch.ERK11TwoFrontGramGate.coprimeFronts

@@ -1,0 +1,15 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.ERK11TwoFrontGramGate.ordinaryProvider' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoFrontGramGate.complementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoFrontGramGate.coprimeFronts' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoFrontGramGate.ordinaryProvider {K : Type} [Lean.Grind.Field K] (x z : K) (n2 : 2 ≠ 0) (n5 : 5 ≠ 0)
+  (a : RKResearch.ERK11TwoFrontGramGate.G x = 0) (h : RKResearch.ERK11TwoFrontGramGate.H x z = 0) :
+  RKResearch.ERK11TwoFrontGramGate.G z = 0 ∧ x = z
+'RKResearch.ERK11TwoFrontGramGate.ordinaryProvider' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoFrontGramGate.complementary {K : Type} [Lean.Grind.Field K] (z w : K) (n2 : 2 ≠ 0)
+  (geometry : 4 * (z - 1) * w = 4 * z - 3) (hw : RKResearch.ERK11TwoFrontGramGate.G w = 0) :
+  RKResearch.ERK11TwoFrontGramGate.J z = 0
+'RKResearch.ERK11TwoFrontGramGate.complementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+RKResearch.ERK11TwoFrontGramGate.coprimeFronts {K : Type} [Lean.Grind.Field K] (z : K) (n16 : 16 ≠ 0)
+  (g : RKResearch.ERK11TwoFrontGramGate.G z = 0) (h : RKResearch.ERK11TwoFrontGramGate.J z = 0) : False
+'RKResearch.ERK11TwoFrontGramGate.coprimeFronts' depends on axioms: [propext, Classical.choice, Quot.sound]

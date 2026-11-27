@@ -1,0 +1,63 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.eighth_tall_relation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.lift_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_4217_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_27367649_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.original_norm_zero_iff' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_mixed_primary_nilpotent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.eighth_tall_relation :
+  957274560 *
+      (↑↑(RKResearch.FiniteRootedTree.tallTree 8).factorial *
+          RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.bNum ⬝ᵥ
+            RKResearch.Φ (RKResearch.FiniteRootedTree.tallTree 8)
+              RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.ANum -
+        ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.bDen *
+          ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.aDen ^ 7) =
+    ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.bDen *
+        ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.aDen ^ 7 *
+      RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.tallDefect
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_root.{u_1} {R : Type u_1} [CommRing R]
+  [Nontrivial R] {ρ : R} (hr : ρ * ρ = ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.radicand)
+  (hd : IsUnit ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.aDen)
+  (he : IsUnit ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.bDen) :
+  ∃ A b γ,
+    A.IsLowerTriangular ∧
+      (∀ (i : Fin 9), A i i = γ) ∧ IsUnit γ ∧ 4 * γ = 1 ∧ RKResearch.HasOrder 7 A b ∧ ¬RKResearch.HasOrder 8 A b
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.lift_root (p : ℕ) (a j v₀ v₁ : ℤ)
+  (base : a ^ 2 - RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.radicand = ↑p * v₀)
+  (step : 1 - 2 * a * j = ↑p * v₁) (k : ℕ) :
+  ∃ t v, (a + ↑p * t) ^ 2 - RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.radicand = ↑p ^ (k + 1) * v
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_4217_nilpotent.{u_1} (R : Type u_1)
+  [CommRing R] [Nontrivial R] (h : IsNilpotent 4217) :
+  ∃ A b γ,
+    A.IsLowerTriangular ∧
+      (∀ (i : Fin 9), A i i = γ) ∧ IsUnit γ ∧ 4 * γ = 1 ∧ RKResearch.HasOrder 7 A b ∧ ¬RKResearch.HasOrder 8 A b
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_27367649_nilpotent.{u_1} (R : Type u_1)
+  [CommRing R] [Nontrivial R] (h : IsNilpotent 27367649) :
+  ∃ A b γ,
+    A.IsLowerTriangular ∧
+      (∀ (i : Fin 9), A i i = γ) ∧ IsUnit γ ∧ 4 * γ = 1 ∧ RKResearch.HasOrder 7 A b ∧ ¬RKResearch.HasOrder 8 A b
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.original_norm_zero_iff.{u_1} {R : Type u_1} [CommRing R]
+  (hd : IsUnit ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.aDen)
+  (he : IsUnit ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.bDen) :
+  ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadratic.defectNorm = 0 ↔
+    ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.mixedPrimaryModulus = 0
+RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.exists_exact_of_mixed_primary_nilpotent.{u_1} (R : Type u_1)
+  [CommRing R] [Nontrivial R]
+  (h : IsNilpotent ↑RKResearch.Certified.SDIRKNineStageOrderSevenQuadraticExact.mixedPrimaryModulus) :
+  ∃ A b γ,
+    A.IsLowerTriangular ∧
+      (∀ (i : Fin 9), A i i = γ) ∧ IsUnit γ ∧ 4 * γ = 1 ∧ RKResearch.HasOrder 7 A b ∧ ¬RKResearch.HasOrder 8 A b

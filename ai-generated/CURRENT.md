@@ -92,7 +92,7 @@ constructive higher odd-order counts, with separate verification scope. At order
 the [35-stage rational exact-order witness](research/fixed-one-odd-continuation/README.md)
 is now kernel-checked in Lean 4.36.0, reducing the previously verified rational upper from 37.
 The proof uses a reusable symbolic rooted-tree induction and a verified causal stage merge.
-The rational continuation counts at 15, 17, and 19 have not yet been checked end to end in Lean.
+At order fifteen, the [46-stage continuation](lean/evidence/fixed-one-symbolic-order15-20261127/README.md) is likewise kernel-checked, reducing the previously verified rational upper from 48. The counts at 17 and 19 have not yet been checked end to end in Lean.
 
 ## General mechanisms for changing or bounding stage counts
 

@@ -1,0 +1,3 @@
+'RKResearch.ERK10GhostCrossoverGate.bothLanes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostCrossoverGate.uniformLane' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK10GhostCrossoverGate.qTwoCleanBudget' depends on axioms: [propext, Quot.sound]

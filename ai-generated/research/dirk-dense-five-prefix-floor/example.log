@@ -1,0 +1,9 @@
+seven-stage honest degree-four decoder; all 17 true rooted cases [1, 1, 2, 4, 9]
+literal matrix and decoder common denominator 480 divides (5!)^2
+row 1 0
+row 2 1/8 1/8
+row 3 1/12 1/3 1/12
+row 4 1/6 0 2/3 1/6
+row 5 3/16 0 9/16 9/16 3/16
+row 6 1/3 0 0 4/3 0 1/3
+row 7 35/48 0 -125/96 125/48 0 0 15/32

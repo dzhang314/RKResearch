@@ -1,0 +1,5 @@
+d47f3fc2699d8892f8eb9f655dee916960c924e415951bc22bd2b0e803b6de93  research/dirk-dense-five-prefix-floor/README.md
+fe030502e0643b9f055c6edf95524e64f9c3838982cdc3c973d105f02b2c4fc9  research/dirk-dense-five-prefix-floor/check_example.py
+673119eda3265d4d43022c5e0638b5102e85ccafa89550b975dd45947dcb6ce8  research/dirk-dense-five-prefix-floor/example.log
+bff2f5a8f8f5eef835ae312462a340c631fbc241c5413c04e5732f86de7456a4  research/dirk-dense-five-prefix-floor/lean-4.36.0.log
+57c0d1beac7ee56e87203f16b2754db0ec0bf45328a3085388d4f7a8445cb1fc  lean/RKCert/ReviewedNative/DIRKDenseFiveScalar.lean

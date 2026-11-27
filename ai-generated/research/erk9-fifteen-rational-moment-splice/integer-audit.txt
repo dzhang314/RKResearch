@@ -1,0 +1,6 @@
+15 strict, distinct physical rows
+Common denominator: 167647010724053278598487250944000
+Prime powers: {2: 14, 3: 6, 5: 3, 7: 1, 11: 2, 13: 5, 19: 1, 43: 1, 47: 1, 59: 1, 83: 1, 241: 1, 7879: 1}
+Exact rooted residual checks: [1, 1, 2, 4, 9, 20, 48, 115, 286] (total 486 )
+Tenth tall defect: -29627/5184 ; tenth bush defect: 5/9984
+Unit-defect Bézout: 2·(−29627)+11851·5=1

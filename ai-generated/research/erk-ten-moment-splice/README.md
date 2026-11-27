@@ -1,5 +1,7 @@
 # Exact universal-ring order ten in 21 explicit stages
 
+**Current upper bound:** the [20-stage general-ring method](../erk10-twenty-compressed-reverse/README.md) supersedes this 21-stage construction.
+
 The literal tableau in tableau.json has exact order ten in 21
 explicit stages over every nonzero commutative unital ring in
 which $10!$ is invertible. The factorial condition is necessary

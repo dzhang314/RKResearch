@@ -1,0 +1,99 @@
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlyPrefix ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.center_prefix_of_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.high_center_four_or_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlyNewton ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_paid_newton_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlyMeasures ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.earlyBary_hull_receipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_hull_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFiveScalars ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_fourth_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_two_measurement_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFiveExclusion ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_contradiction_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFour ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_origin_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_three_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveEarlySentinel ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_early_chart_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveGeometry ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_clean_tail_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulk_clock_inj' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveProfile ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkProfile_range_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveCofactor ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkReverse_mem_annih_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_reflected_bulk_multiple' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveWeights ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.clean_quadratic_weights_equal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveLatePlacement ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_later_clean_is_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveTailPhysical ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_tail_reflection_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveTailScalar ===
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_six_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_seven_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+=== RKCert/ReviewedNative/ERK8CharElevenFiveExclusion ===
+'RKResearch.Certified.Graded.ERK8CharEleven.no_five_off_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_or_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

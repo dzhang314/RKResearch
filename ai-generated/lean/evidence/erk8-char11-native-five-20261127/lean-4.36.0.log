@@ -1,0 +1,659 @@
+⚠ [3865/3964] Replayed RKCert.ReviewedNative.GradedProducts
+warning: RKCert/ReviewedNative/GradedProducts.lean:21:37: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+ℹ [3875/3964] Replayed RKCert.ReviewedNative.ERK8PaidCensus
+info: RKCert/ReviewedNative/ERK8PaidCensus.lean:430:0: 'RKResearch.Certified.Graded.ERK8PaidField.order8_paid_tagged_census' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3877/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenScalar
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:130:0: 'RKResearch.Certified.Graded.ERK8CharEleven.omitted_root_eq_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:131:0: 'RKResearch.Certified.Graded.ERK8CharEleven.impossible_first_clean_five_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:132:0: 'RKResearch.Certified.Graded.ERK8CharEleven.impossible_four_late' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:133:0: 'RKResearch.Certified.Graded.ERK8CharEleven.fifth_off_eq_two' depends on axioms: [propext, Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:134:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_tail_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenScalar.lean:135:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_eq_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3879/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenCensus
+info: RKCert/ReviewedNative/ERK8CharElevenCensus.lean:82:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_count_one_four_five_seven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3881/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenOmittedHead
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:636:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_five_or_seven_exceptional_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:637:0: 'RKResearch.Certified.Graded.ERK8CharEleven.first_nonzero_clean_is_center' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:639:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_five_seven_exceptional_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:640:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_tag_injective_of_full_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenOmittedHead.lean:641:0: 'RKResearch.Certified.Graded.ERK8CharEleven.five_off_actual_weights_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3883/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighWeights
+info: RKCert/ReviewedNative/ERK8CharElevenHighWeights.lean:184:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_nonzero_cofactor_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighWeights.lean:186:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_literal_barycentric_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3887/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighHull
+info: RKCert/ReviewedNative/ERK8CharElevenHighHull.lean:215:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3889/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenReflectedTail
+info: RKCert/ReviewedNative/ERK8CharElevenReflectedTail.lean:204:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_reflected_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenReflectedTail.lean:205:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_product_of_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3891/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenTailMoments
+info: RKCert/ReviewedNative/ERK8CharElevenTailMoments.lean:218:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_paid_tail_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenTailMoments.lean:219:0: 'RKResearch.Certified.Graded.ERK8CharEleven.highTail_moments_of_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3893/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighEndgame
+info: RKCert/ReviewedNative/ERK8CharElevenHighEndgame.lean:109:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_fifth_clock_of_hull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighEndgame.lean:110:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_early_chart' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3895/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighEarlySetup
+info: RKCert/ReviewedNative/ERK8CharElevenHighEarlySetup.lean:228:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_center_of_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighEarlySetup.lean:229:0: 'RKResearch.Certified.Graded.ERK8CharEleven.high_center_four_or_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3897/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighEarlyFour
+info: RKCert/ReviewedNative/ERK8CharElevenHighEarlyFour.lean:216:0: 'RKResearch.Certified.Graded.ERK8CharEleven.early_four_origin_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighEarlyFour.lean:217:0: 'RKResearch.Certified.Graded.ERK8CharEleven.early_three_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3899/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighSentinel
+info: RKCert/ReviewedNative/ERK8CharElevenHighSentinel.lean:270:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_early_chart_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighSentinel.lean:271:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3901/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenEarlyNewton
+info: RKCert/ReviewedNative/ERK8CharElevenEarlyNewton.lean:271:0: 'RKResearch.Certified.Graded.ERK8CharEleven.early_paid_newton_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3903/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenEarlyMeasures
+info: RKCert/ReviewedNative/ERK8CharElevenEarlyMeasures.lean:192:0: 'RKResearch.Certified.Graded.ERK8CharEleven.earlyBary_hull_receipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenEarlyMeasures.lean:193:0: 'RKResearch.Certified.Graded.ERK8CharEleven.early_four_hull_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3905/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenEarlyFiveScalars
+info: RKCert/ReviewedNative/ERK8CharElevenEarlyFiveScalars.lean:204:0: 'RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_fourth_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenEarlyFiveScalars.lean:205:0: 'RKResearch.Certified.Graded.ERK8CharEleven.first_center_five_two_measurement_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3907/3964] Replayed RKCert.ReviewedNative.ERK8UnorderedScalarGates
+info: RKCert/ReviewedNative/ERK8UnorderedScalarGates.lean:95:0: 'RKResearch.Certified.ERK8UnorderedScalarGates.no_four_sites_at_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8UnorderedScalarGates.lean:96:0: 'RKResearch.Certified.ERK8UnorderedScalarGates.no_lobatto_double' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [3909/3964] Replayed RKCert.ReviewedNative.ERKOrderEightFourOffPhysicalRank
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:131:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:132:8: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:140:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:140:56: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:131:30: This simp argument is unused:
+  if_pos hi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, hi, true_and, not_true_eq_false, false_and, if_false, zero_mul, Finset.sum_const_zero,
+    add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:131:55: This simp argument is unused:
+  not_true_eq_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_pos hi, hi, true_and, false_and, if_false, zero_mul, Finset.sum_const_zero,
+    add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:131:74: This simp argument is unused:
+  false_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_pos hi, hi, true_and, not_true_eq_false, if_false, zero_mul, Finset.sum_const_zero,
+    add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:132:8: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_pos hi, hi, true_and, not_true_eq_false, false_and, zero_mul,
+    Finset.sum_const_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:132:18: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_pos hi, hi, true_and, not_true_eq_false, false_and, if_false,
+    Finset.sum_const_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:132:28: This simp argument is unused:
+  Finset.sum_const_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_pos hi, hi, true_and, not_true_eq_false, false_and, if_false, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:132:51: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_pos hi, hi, true_and, not_true_eq_false, false_and, if_false, zero_mul,
+    Finset.sum_const_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:140:30: This simp argument is unused:
+  if_neg hi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, hi, false_and, if_false, zero_mul, Finset.sum_const_zero, zero_add, not_false_eq_true,
+    true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:141:41: This simp argument is unused:
+  not_false_eq_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_neg hi, hi, false_and, if_false, zero_mul, Finset.sum_const_zero, zero_add,
+    true_and]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRank.lean:141:60: This simp argument is unused:
+  true_and
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [taggedValue, if_neg hi, hi, false_and, if_false, zero_mul, Finset.sum_const_zero, zero_add,
+    not_false_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3911/3964] Replayed RKCert.ReviewedNative.ERKOrderEightFourOffPhysicalRepeat
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:32:71: This simp argument is unused:
+  Ne.symm ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [contrast, coordinate_as_single, ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:35:67: This simp argument is unused:
+  ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [contrast, coordinate_as_single, Ne.symm ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:39:44: This simp argument is unused:
+  Ne.symm ki
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [contrast, coordinate_as_single, ki, kj, Ne.symm kj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:39:55: This simp argument is unused:
+  Ne.symm kj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [contrast, coordinate_as_single, ki, kj, Ne.symm ki]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:99:29: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:99:41: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:101:29: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:101:41: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:123:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:123:32: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:127:21: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:127:32: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:329:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:354:10: This simp argument is unused:
+  row_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [dotProduct]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRepeat.lean:354:20: This simp argument is unused:
+  dotProduct
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [row_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3913/3964] Replayed RKCert.ReviewedNative.ERKOrderEightFourOffPhysicalRows
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:50:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:57:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:50:24: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [and_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:169:48: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:179:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:179:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:184:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:184:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:265:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RKCert/ReviewedNative/ERKOrderEightFourOffPhysicalRows.lean:283:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3917/3964] Replayed RKCert.ReviewedNative.ERK8FourOffScalar
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:374:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.shape_scale`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:379:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.eval_scale`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:384:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.gate_scale`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:404:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.moment_test`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:410:11: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:410:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:412:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.weight_cancel`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:416:58: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:416:62: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:416:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:418:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.weight_rec`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:422:58: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:422:62: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:422:62: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:424:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.barycentric1`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:428:35: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:428:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:430:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.barycentricX`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:434:35: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:434:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:477:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffScalar.0.RKResearch.Certified.Graded.MultiOff.FourOff8Scalar.trace_test`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:481:11: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:481:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:626:32: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:626:36: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:629:85: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:629:89: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:626:36: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffScalar.lean:629:89: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3919/3964] Replayed RKCert.ReviewedNative.ERK8FourOffCleanShapeAlgebra
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:70:8: automatically included section variable(s) unused in theorem `_private.RKCert.ReviewedNative.ERK8FourOffCleanShapeAlgebra.0.RKResearch.Certified.Graded.MultiOff.FourOff8CleanShape.cleanPair_monomials`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:82:11: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:82:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:138:32: This simp argument is unused:
+  coeff_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [R, cleanPair_monomials, coeff_monomial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:140:59: This simp argument is unused:
+  sub_neg_eq_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [R, cleanPair_monomials, coeff_C_mul, coeff_monomial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:140:75: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanShapeAlgebra.lean:140:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3921/3964] Replayed RKCert.ReviewedNative.ERK8PaidCleanShape
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:96:50: This simp argument is unused:
+  map_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Polynomial.derivative_mul, Polynomial.derivative_C, Polynomial.derivative_X,
+    Polynomial.derivative_sub, Polynomial.derivative_pow, B, tapFactor, zero_mul, zero_add, sub_zero, map_add, map_mul,
+    Polynomial.C_ofNat, Nat.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:104:41: This simp argument is unused:
+  Finset.Nat.antidiagonal_succ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [cleanPair, coeff_X, coeff_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:104:71: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:104:75: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:107:71: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:110:71: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:104:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:107:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RKCert/ReviewedNative/ERK8PaidCleanShape.lean:110:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3923/3964] Replayed RKCert.ReviewedNative.ERK8FourOffCleanPrimitive
+warning: RKCert/ReviewedNative/ERK8FourOffCleanPrimitive.lean:149:8: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hne, hne.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanPrimitive.lean:149:28: This simp argument is unused:
+  hne.symm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Pi.single_apply, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RKCert/ReviewedNative/ERK8FourOffCleanPrimitive.lean:335:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [lobattoNumer] at r
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ℹ [3929/3964] Replayed RKCert.ReviewedNative.ERK8PaidPhysicalBridge
+info: RKCert/ReviewedNative/ERK8PaidPhysicalBridge.lean:52:0: 'RKResearch.Certified.Graded.FourOffNewton.actual_raw_head_of_order8_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3931/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenFourHead
+info: RKCert/ReviewedNative/ERK8CharElevenFourHead.lean:138:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_four_off_center_or_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFourHead.lean:140:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3933/3964] Replayed RKCert.ReviewedNative.ERK8CharElevenHighExclusion
+info: RKCert/ReviewedNative/ERK8CharElevenHighExclusion.lean:214:0: 'RKResearch.Certified.Graded.ERK8CharEleven.seven_off_contradiction_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighExclusion.lean:215:0: 'RKResearch.Certified.Graded.ERK8CharEleven.no_seven_off_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighExclusion.lean:217:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_four_or_five_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenHighExclusion.lean:218:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_char11_nonsplit_forces_one_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3935/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlyPrefix (1.6s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyPrefix.lean:158:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.center_prefix_of_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyPrefix.lean:159:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.high_center_four_or_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3937/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlyNewton (2.4s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyNewton.lean:196:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_paid_newton_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3939/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlyFour (2.6s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFour.lean:162:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_origin_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFour.lean:163:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_three_hull_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3941/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlyMeasures (2.2s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyMeasures.lean:163:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.earlyBary_hull_receipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyMeasures.lean:164:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_hull_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3943/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlySentinel (4.2s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlySentinel.lean:202:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_early_chart_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3945/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlyFiveScalars (2.8s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFiveScalars.lean:195:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_fourth_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFiveScalars.lean:196:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_two_measurement_ratio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3947/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveEarlyFiveExclusion (2.2s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveEarlyFiveExclusion.lean:156:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_contradiction_of_center_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3949/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveGeometry (5.9s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveGeometry.lean:173:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_clean_tail_of_center_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveGeometry.lean:174:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulk_clock_inj' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3951/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveWeights (1.6s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveWeights.lean:114:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.clean_quadratic_weights_equal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3953/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveProfile (2.2s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveProfile.lean:161:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkProfile_range_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3955/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveCofactor (1.3s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveCofactor.lean:107:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkReverse_mem_annih_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveCofactor.lean:108:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_reflected_bulk_multiple' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3957/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveLatePlacement (1.7s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveLatePlacement.lean:110:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_later_clean_is_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3959/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveTailPhysical (1.6s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveTailPhysical.lean:165:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_tail_reflection_rows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3961/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveTailScalar (2.6s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveTailScalar.lean:196:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_six_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveTailScalar.lean:197:0: 'RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_seven_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [3963/3964] Built RKCert.ReviewedNative.ERK8CharElevenFiveExclusion (1.2s)
+info: RKCert/ReviewedNative/ERK8CharElevenFiveExclusion.lean:49:0: 'RKResearch.Certified.Graded.ERK8CharEleven.no_five_off_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: RKCert/ReviewedNative/ERK8CharElevenFiveExclusion.lean:50:0: 'RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_or_four_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3964 jobs).

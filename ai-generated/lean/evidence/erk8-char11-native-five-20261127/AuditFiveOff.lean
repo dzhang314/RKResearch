@@ -1,0 +1,47 @@
+import RKCert.ReviewedNative.ERK8CharElevenFiveExclusion
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkProfile_range_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkProfile_range_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkReverse_mem_annih_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulkReverse_mem_annih_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulk_clock_inj
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.bulk_clock_inj
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.center_prefix_of_literal
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.center_prefix_of_literal
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.clean_quadratic_weights_equal_nonzero
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.clean_quadratic_weights_equal_nonzero
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.earlyBary_hull_receipt
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.earlyBary_hull_receipt
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_hull_of_center_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_hull_of_center_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_origin_tap
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_four_origin_tap
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_paid_newton_two
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_paid_newton_two
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_three_hull_remainder
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.early_three_hull_remainder
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_fourth_clock
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_fourth_clock
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_two_measurement_ratio
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_center_five_two_measurement_ratio
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_reflected_bulk_multiple
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.first_reflected_bulk_multiple
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_clean_tail_of_center_four
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_clean_tail_of_center_four
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_later_clean_is_eight
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_later_clean_is_eight
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_contradiction_of_center_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_contradiction_of_center_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_early_chart_of_center_four
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_early_chart_of_center_four
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_seven_impossible
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_seven_impossible
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_six_impossible
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_off_tail_at_six_impossible
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_tail_reflection_rows
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.five_tail_reflection_rows
+#check RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.high_center_four_or_five
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.FiveOff.high_center_four_or_five
+#check RKResearch.Certified.Graded.ERK8CharEleven.no_five_off_char11
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.no_five_off_char11
+#check RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_or_four_off
+#print axioms RKResearch.Certified.Graded.ERK8CharEleven.order8_paid_only_one_or_four_off

@@ -28,8 +28,8 @@ decreasing_by all_goals omega
 
 theorem mem_treesOfOrderSucc (n : ℕ) (t : FiniteRootedTree) :
     t ∈ treesOfOrderSucc n ↔ (t.order : ℕ) = n + 1 := by
-  induction n using Nat.strong_induction_on generalizing t with
-  | ind n ih =>
+  induction n using Nat.strong_induction_on generalizing t
+  next n ih =>
     cases n with
     | zero =>
       cases t with

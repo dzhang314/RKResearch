@@ -16,8 +16,8 @@ are now also certified by closed Lean theorems.
 
 These theorems require neither a field nor positivity. They do not
 assert a single tableau over the universal factorial localization.
-The finite-characteristic CRT consequence is proved in the companion
-arithmetic note, not by the native local-ring theorem here.
+The [finite-characteristic companion theorem](../erk9-fifteen-finite-native/README.md)
+now also checks the CRT consequence end to end in Lean.
 
 Replay from ai-generated/lean with matching Mathlib:
 

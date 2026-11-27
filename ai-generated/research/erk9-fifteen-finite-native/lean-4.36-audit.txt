@@ -1,0 +1,9 @@
+
+=== RKCert/ReviewedNative/ERKIdempotentScalarCut ===
+
+=== RKCert/ReviewedNative/ERK9FifteenIdempotentPortfolio ===
+
+=== RKCert/ReviewedNative/ERK9FifteenFiniteCharacteristic ===
+'RKResearch.Certified.ERK9FifteenLocalRing.exists_exact_finite_characteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

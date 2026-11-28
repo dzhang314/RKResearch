@@ -1,0 +1,49 @@
+raw G (2, 7, 7) [(0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False)]
+raw F (6, 18, 20) [(0, (0, 0, 1), False), (0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (11, (2, 4, 4), False)]
+raw P (5, 7, 11) [(0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (3, (0, 0, 1), False), (9, (0, 1, 1), False), (11, (2, 4, 4), False)]
+raw N (8, 10, 16) [(1, (0, 1, 0), False), (1, (0, 1, 0), False), (11, (2, 4, 4), False)]
+raw S (6, 14, 15) [(0, (0, 0, 1), False), (1, (0, 1, 0), False)]
+raw T (8, 14, 14) []
+raw M (9, 24, 28) [(0, (0, 0, 1), False), (0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (11, (2, 4, 4), False)]
+zero F (0, 18) (0, 266) (0, 9) [((0, 9), 1)]
+zero P (0, 18) (0, 277) (0, 9) [((0, 9), 1)]
+zero N (0, 18) (0, 484) (0, 0) []
+raw G (2, 7, 7) [(0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False)]
+raw F (6, 18, 20) [(0, (0, 0, 1), False), (0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (11, (2, 4, 4), False)]
+raw P (5, 7, 11) [(0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (3, (0, 0, 1), False), (9, (0, 1, 1), False), (11, (2, 4, 4), False)]
+raw N (8, 10, 16) [(1, (0, 1, 0), False), (1, (0, 1, 0), False), (11, (2, 4, 4), False)]
+raw S (6, 14, 15) [(0, (0, 0, 1), False), (1, (0, 1, 0), False)]
+raw T (8, 14, 14) []
+raw M (9, 24, 28) [(0, (0, 0, 1), False), (0, (0, 0, 1), False), (1, (0, 1, 0), False), (1, (0, 1, 0), False), (11, (2, 4, 4), False)]
+regular G (13, 15) [(1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+regular F (36, 44) [(1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+regular P (22, 26) [(0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+regular N (34, 36) [(0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+regular S (32, 37) [(0, (0, 1), False), (0, (0, 1), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+regular T (38, 42) [(0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (0, (0, 1), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+regular M (51, 61) [(0, (0, 1), False), (0, (0, 1), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False), (1, (1, 0), False)]
+exact projection P 630 gcd 630 elapsed 29.3
+exact projection F 1036 gcd 358 elapsed 163.4
+exact projection N 954 gcd 312 elapsed 256.08
+factors [(1, 36), (108, 1), (6, 10), (9, 12)]
+Hankel guard subresultant chain b degrees [14, 6, 5, 4, 3, 2, 1, 0] 30.97
+affine residue degrees 107 107 30.98
+exact B factor through Hankel guard 16 34.07
+exact B factor through Hankel guard 18 36.43
+exact B factor through Hankel guard 19 39.17
+exact B factor through Hankel guard 25 39.67
+degree 108 exact local lift 107 48 full ['G', 'F', 'P', 'N', 'S', 'T']
+exact guard removal 6 G 2
+exact guard removal 6 F 3
+exact guard removal 6 P 3
+exact guard removal 6 N 3
+exact guard removal 6 S 3
+exact guard removal 6 T 3
+degree 6 exact local lift 103 1 full ['G', 'F', 'P', 'N', 'S', 'T']
+exact guard removal 9 G 2
+exact guard removal 9 F 3
+exact guard removal 9 P 3
+exact guard removal 9 N 3
+exact guard removal 9 S 3
+exact guard removal 9 T 3
+degree 9 exact local lift 103 1 full ['G', 'F', 'P', 'N', 'S', 'T']

@@ -1,0 +1,21 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+small CRT exact 5 3 (85, 29) 4 224
+noncubic star Ψ front (5, 0, 9, 1) [1, 0, 0, 0, 0, 0, 0, 0]
+arith rear projection in Y False inputs (3, 5, 10, 1) (4, 3, 11, 1) exact (29, 0, 85, 0) guards (26, 0, 72, 1) [7, 0, 1, 0, 0, 0, 0, 0]
+small exact shape CRT 5 26 8
+small exact shape CRT 5 26 16
+small exact shape CRT 5 26 24
+small CRT exact 5 26 (594, 0) 26 1544
+arith rear diagonal False exact (0, 0, 510, 1) guards (0, 0, 320, 0) [106, 21, 0, 0] non L (0, 0, 320, 0) [0]
+arithmetic corrected hole5 silent4 complete False 1129 203 usual kept 320 done [('weight', ('usual', 1, 1, 1, 1)), ('weight', ('usual', 2, 1, 1, 1)), ('weight', ('usual', 3, 1, 1, 1)), ('weight', ('usual', 9, 1, 1, 1)), ('weight', ('usual', 28, 1, 1, 1)), ('weight', ('usual', 57, 1, 1, 1)), ('weight', ('usual', 220, 1, 1, 1))] bad []
+small exact shape CRT 5 6 8
+small CRT exact 5 6 (220, 22) 11 638
+ordinary hole5 exact cubic alpha quotient (2, 0, 182, 1) 2
+arith rear projection in Y True inputs (2, 5, 10, 1) (2, 6, 32, 1) exact (2, 0, 220, 1) guards (2, 0, 182, 1) [26, 0, 0, 0, 0, 0, 0, 0]
+small exact shape CRT 3 2 8
+small exact shape CRT 3 2 16
+small exact shape CRT 3 2 24
+small CRT exact 3 2 (546, 0) 29 1693
+arith rear diagonal True exact (0, 0, 546, 1) guards (0, 0, 546, 1) [0, 0, 0, 0] non L (0, 0, 546, 1) [0]
+arithmetic corrected hole5 silent4 complete True 1129 203 usual kept 546 done [('weight', ('usual', 1, 1, 1, 5)), ('weight', ('usual', 1, 1, 1, 5)), ('weight', ('usual', 1, 1, 1, 5)), ('weight', ('usual', 1, 1, 1, 5)), ('weight', ('usual', 1, 1, 1, 5)), ('weight', ('usual', 3, 1, 1, 5)), ('weight', ('usual', 7, 1, 1, 5)), ('weight', ('usual', 7, 1, 1, 5)), ('weight', ('usual', 7, 1, 1, 5)), ('weight', ('usual', 7, 1, 1, 5)), ('weight', ('usual', 8, 1, 1, 5)), ('weight', ('usual', 8, 1, 1, 5)), ('weight', ('usual', 25, 1, 1, 5)), ('weight', ('usual', 38, 1, 1, 5)), ('weight', ('usual', 38, 1, 1, 5)), ('weight', ('usual', 47, 1, 1, 5)), ('weight', ('usual', 47, 1, 1, 5)), ('weight', ('usual', 62, 1, 1, 5)), ('weight', ('usual', 104, 1, 1, 5)), ('weight', ('usual', 133, 1, 1, 5))] bad []
+regular ordinary hole5 star-front arithmetic-rear actual literal fourth excluded

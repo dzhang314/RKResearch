@@ -1,0 +1,8 @@
+Lean and Mathlib 4.36.0, compiled directly against verified dependencies.
+'RKResearch.Certified.ERK10LateHelperGate.four_donor_cubic_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10LateHelperGate.helper_move' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10LateHelperGate.pair_terminal_gate' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10LateHelperGate.no_early_helper' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10LateHelperMod29.pressure_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

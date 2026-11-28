@@ -1,0 +1,7 @@
+both homogeneous factors are nonzero on the 30 projective points
+c^0 coefficient mod 29, ascending: [26, 2, 14, 21, 11, 7, 14, 20, 14, 14]
+c^1 coefficient mod 29, ascending: [5, 16, 25, 23, 1, 27, 25, 15, 25, 25]
+c^2 coefficient mod 29, ascending: [4, 7, 20, 1, 24, 10, 20, 12, 20, 20]
+homogeneous degree-18 discriminant modulo 29, ascending: [15, 9, 2, 9, 28, 7, 24, 4, 14, 16, 6, 6, 15, 14, 13, 11, 13, 25, 27]
+values at affine 0 through 28, then infinity: [15, 26, 27, 15, 11, 17, 10, 2, 3, 21, 17, 26, 12, 12, 26, 19, 12, 14, 12, 2, 15, 8, 12, 3, 19, 2, 11, 10, 27, 27]
+all 30 are nonsquares; late clock residues: (18, 19, 22)

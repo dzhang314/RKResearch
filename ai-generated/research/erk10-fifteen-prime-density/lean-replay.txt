@@ -1,0 +1,50 @@
+2d0c212772c98b58c31288c2a3229034e3b6489a73af68cf6a3f6c9f89b8ecb6  ERK10FifteenPrimeDensityScalars.lean
+=== 4.34.1 ===
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.resultantReceipt' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.derivativeResultantReceipt' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.factorization31' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.frobenius31DegreeSeven' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.quotientBezout223' depends on axioms: [propext]
+=== 4.35.0 ===
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.resultantReceipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.derivativeResultantReceipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.factorization31' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.frobenius31DegreeSeven' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.quotientBezout223' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.36.0 ===
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.resultantReceipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.derivativeResultantReceipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.factorization31' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.frobenius31DegreeSeven' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.quotientBezout223' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.37.0-rc1 ===
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.resultantReceipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.derivativeResultantReceipt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.factorization31' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.frobenius31DegreeSeven' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.ERK10FifteenPrimeDensityScalars.quotientBezout223' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

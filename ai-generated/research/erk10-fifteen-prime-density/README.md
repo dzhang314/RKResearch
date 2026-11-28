@@ -134,3 +134,12 @@ discriminant, and rational group count. The normal-closure,
 specialization and Chebotarev arguments are mathematical. The two
 tableau constructions have separate exact and native certificates;
 the density theorem is not an end-to-end Lean result.
+
+The [portable Core Lean arithmetic](../../lean/RKCert/ReviewedNative/ERK10FifteenPrimeDensityScalars.lean)
+also checks the exact Sylvester matrix determinant by fraction-free
+elimination (including its derivative counterpart), the two relevant
+valuations, the modular factorization and degree-seven Frobenius check
+at 31, and the linear common factor and quotient Bézout receipt at 223.
+It passed on Lean 4.34.1, 4.35.0, 4.36.0 and 4.37.0-rc1, without
+native evaluation axioms. The link from those finite calculations to
+the Galois group and density remains mathematical.

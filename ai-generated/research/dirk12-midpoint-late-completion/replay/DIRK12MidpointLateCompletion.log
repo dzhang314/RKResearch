@@ -1,0 +1,12 @@
+'RKResearch.Certified.DIRK12MidpointForward.Late.three_weighted_probes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Late.remaining_three_clocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Late.paired_primitive_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Late.paid_reverse_to_forward_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

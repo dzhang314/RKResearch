@@ -1,0 +1,85 @@
+Corrected alpha=2 beta=0 exact projections; no grade-seven determinant.
+== regular ==
+common m scale normalized coefficient degree 16 guarded content degree 0
+common old inverse scale normalized coefficient degree 48 guarded content degree 0
+common quotient fit scale normalized coefficient degree 68 guarded content degree 0
+reverse input normalized coefficient degree 218 guarded content degree 117
+reverse relative normalized coefficient degree 586 guarded content degree 68
+reverse projection 2344
+adjacent input normalized coefficient degree 102 guarded content degree 72
+adjacent relative normalized coefficient degree 250 guarded content degree 56
+adjacent projection 1000
+exact joint degree 664
+allowed clock factor (60, -1461941766456) 2 old-norm 11 1
+forbidden exact factor 8 3 3
+allowed clock factor (12, 16227) 4 profile-ratio 11 12
+allowed clock factor (12, 54123) 24 c2 9 4
+forbidden exact factor 4 1 46
+exact-field certificate 60 -1461941766456 old-norm residue 1 rank 11
+exact-field certificate 12 16227 profile-ratio residue 12 rank 132
+exact-field certificate 12 54123 c2 residue 4 rank 36
+corrected beta=0 closure regular
+== F1 ==
+common m scale normalized coefficient degree 24 guarded content degree 0
+common old inverse scale normalized coefficient degree 48 guarded content degree 8
+common quotient fit scale normalized coefficient degree 60 guarded content degree 8
+reverse input normalized coefficient degree 178 guarded content degree 117
+reverse relative normalized coefficient degree 426 guarded content degree 108
+reverse projection 1704
+adjacent input normalized coefficient degree 86 guarded content degree 72
+adjacent relative normalized coefficient degree 186 guarded content degree 72
+adjacent projection 744
+singular-pivot input normalized coefficient degree 48 guarded content degree 16
+singular-pivot relative normalized coefficient degree 88 guarded content degree 56
+singular-pivot projection 352
+exact joint degree 304
+allowed clock factor (36, 137146315515648) 2 old-norm 11 1
+forbidden exact factor 4 1 28
+forbidden exact factor 4 3 30
+exact-field certificate 36 137146315515648 old-norm residue 1 rank 11
+corrected beta=0 closure F1
+== F2 ==
+common m scale normalized coefficient degree 24 guarded content degree 0
+common old inverse scale normalized coefficient degree 48 guarded content degree 8
+common quotient fit scale normalized coefficient degree 60 guarded content degree 8
+reverse input normalized coefficient degree 178 guarded content degree 117
+reverse relative normalized coefficient degree 426 guarded content degree 108
+reverse projection 1704
+adjacent input normalized coefficient degree 86 guarded content degree 72
+adjacent relative normalized coefficient degree 186 guarded content degree 72
+adjacent projection 744
+singular-pivot input normalized coefficient degree 48 guarded content degree 16
+singular-pivot relative normalized coefficient degree 88 guarded content degree 56
+singular-pivot projection 352
+exact joint degree 268
+allowed clock factor (36, -4682817) 1 old-norm 11 36
+forbidden exact factor 4 1 28
+forbidden exact factor 4 3 30
+exact-field certificate 36 -4682817 old-norm residue 36 rank 396
+corrected beta=0 closure F2
+== Fn ==
+common m scale normalized coefficient degree 40 guarded content degree 0
+common old inverse scale normalized coefficient degree 80 guarded content degree 8
+common quotient fit scale normalized coefficient degree 92 guarded content degree 8
+reverse input normalized coefficient degree 338 guarded content degree 117
+reverse relative normalized coefficient degree 946 guarded content degree 68
+reverse projection 3784
+adjacent input normalized coefficient degree 150 guarded content degree 72
+adjacent relative normalized coefficient degree 394 guarded content degree 56
+adjacent projection 1576
+singular-pivot input normalized coefficient degree 80 guarded content degree 16
+singular-pivot relative normalized coefficient degree 192 guarded content degree 48
+singular-pivot projection 768
+exact joint degree 624
+allowed clock factor (48, 162325396752128559) 2 old-norm 11 2
+allowed clock factor (12, 54123) 18 c2 9 4
+forbidden exact factor 4 3 24
+forbidden exact factor 4 1 54
+exact-field certificate 48 162325396752128559 old-norm residue 2 rank 22
+exact-field certificate 12 54123 c2 residue 4 rank 36
+corrected beta=0 closure Fn
+== finite ==
+m1 ordinary degree 12 tower dimension 12 p 103 reverse eliminant unit
+mY2 ordinary degree 12 tower dimension 12 p 103 reverse eliminant unit
+contact ordinary degree 48 tower dimension 48 p 103 reverse eliminant unit
+Fn-loss ordinary degree 12 tower dimension 24 p 103 reverse eliminant unit

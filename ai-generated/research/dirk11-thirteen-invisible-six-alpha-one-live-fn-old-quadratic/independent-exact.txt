@@ -1,0 +1,17 @@
+    0.01 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.03 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    1.65 Adj normalized coefficient degree 213 guarded content degree 24
+    2.03 old-linear relative norm normalized coefficient degree 120 guarded content degree 48
+    2.03 old-linear relative degree 120
+    2.11 old-linear final norm normalized coefficient degree 312 guarded content degree 480
+    2.13 old-linear raw/squarefree 312 168
+    2.19 old-linear projection factors [(12, 16227), (12, 54123), (36, -7295157), (48, 1865429207937), (60, -1461941766456)]
+    2.19 exact cap (12, 16227) ratio 22
+    2.20 exact cap (12, 54123) c2 18
+    2.31 exact cap (48, 1865429207937) q 22
+    2.51 exact cap (60, -1461941766456) old 22
+    2.55 joint image old-linear (12, 16227) ratio 12 22
+    1.82 joint image old-linear (12, 54123) c2 4 18
+    1.50 joint image old-linear (36, -7295157) full 4 24
+    1.90 joint image old-linear (48, 1865429207937) q 1 22
+    1.57 joint image old-linear (60, -1461941766456) old 1 22

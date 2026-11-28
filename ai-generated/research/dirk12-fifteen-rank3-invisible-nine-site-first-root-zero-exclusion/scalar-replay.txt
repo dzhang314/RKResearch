@@ -1,0 +1,2 @@
+exact cubic coefficient solve, quartic h coefficients and both leading guards
+all five actual moment ratios at the reflected-zero q=9/16 gate

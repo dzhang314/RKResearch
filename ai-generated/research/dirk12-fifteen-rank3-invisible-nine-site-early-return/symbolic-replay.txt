@@ -1,0 +1,3 @@
+exact third: rational resultant, explicit third diagonal, including double-root exception
+exact fourth nonzero: guarded quadratic-head impossibility
+exact fourth zero: true quartic gate and nonzero head gap

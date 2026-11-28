@@ -1,0 +1,1 @@
+Legendre constants 1/462, 0, 0 and leading coefficient 24024: passed

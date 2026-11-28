@@ -38,3 +38,9 @@ If its aggregate output mass is zero, the normalized cubic is still \(d^3/6\) th
 ## Why the \(m=7\) cut does not directly transfer
 
 With \(m\ge9\), a degree-six terminal-masked cardinal cannot isolate one live nonterminal clock among at least nine labels. The genuine \(T_6\) does not contain these nonterminal indicators, as a degree-six polynomial cannot vanish on the other \(m-1\ge8\) sites. Moreover there are **no** nonterminal singleton receivers clean for all of \(\mathcal B_5\). At \(m=9\), the actual \(\mathbf H\) has nonzero values at every nonterminal singleton by its barycentric form; at \(m=10\), \(\mathbf G\) itself is nonzero at every live nonterminal row. Thus neither the spent-clock cut with an individual \(T_6\) indicator nor the two separate exact clean primitive reads used in the [three-pair exclusion](../dirk12-fifteen-rank3-invisible-four-ghost-variable-three-pairs/README.md) may be assumed here. A successful continuation needs a linear combination of receiver rows killing those true head modes, or an additional constraint on the two ordinary Jacobi tap modes above. The current result is analytic; no new full native theorem is asserted for \(m=9,10\).
+
+Two follow-ons use the same actual stage hypotheses. The [rank and moment bridge](tap-rank-and-moments.md)
+shows the two tap modes are independent already on the first two distinct nonzero live receivers,
+and gives ten necessary exact equations in five scalars. The
+[grade-six reverse proof](reverse-grade-six.md) establishes its nonzero ghost projection, explicitly
+retaining the possible degree-twelve ordinary quadrature defect.

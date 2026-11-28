@@ -1,0 +1,1 @@
+exact scalar bridge self-test: passed (synthetic negative control only)

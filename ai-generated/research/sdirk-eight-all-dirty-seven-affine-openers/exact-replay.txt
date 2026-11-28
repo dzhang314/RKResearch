@@ -1,0 +1,25 @@
+A A mesh projection gcd 1
+A S mesh projection gcd 1
+S S mesh projection gcd 1
+verified affine S,S,D / S,S,D when both endpoints are singleton
+A linear a 2
+A linear a - 1 12
+A a degree 9 b gcd degree 1
+guarded normalized mesh; coincident third/terminal double: True
+S/S reverse A 9 0
+A degree 18 reverse D-read fits [('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded')]
+A a degree 22 b gcd degree 1
+guarded normalized mesh; coincident third/terminal double: False
+S/S reverse A 22 0
+A degree 22 reverse D-read fits [('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded')]
+S linear a 2
+S linear a - 1 12
+S a degree 8 b gcd degree 1
+guarded normalized mesh; coincident third/terminal double: True
+S/S reverse S 8 0
+S degree 16 reverse D-read fits [('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded')]
+S a degree 20 b gcd degree 1
+guarded normalized mesh; coincident third/terminal double: False
+S/S reverse S 20 0
+S degree 20 reverse D-read fits [('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded')]
+verified the one-doubled-endpoint affine graph when the second label at the singleton end is singleton

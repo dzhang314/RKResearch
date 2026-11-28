@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenAffineOpeners
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineOpeners.affine_opening_numerator
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineOpeners.pair_clock_divided_difference

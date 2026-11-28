@@ -1,0 +1,138 @@
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+exact source of the A1 coefficients and the three known D-roots audited
+universal old determinant (630*c0**3*c2 + 1512*c0**3 - 210*c0**2*c1**2 - 168*c0**2*c1*c2 + 504*c0**2*c1 - 168*c0**2*c2**2 - 42*c0**2*c2 + 18*c0**2 + 56*c0*c1**2 - 14*c0*c1*c2**2 - 14*c0*c1*c2 + 3*c0*c2**3 + 4*c1**3 - c1**2*c2**2)/360
+factor 630*c0**3*c2 + 1512*c0**3 - 210*c0**2*c1**2 - 168*c0**2*c1*c2 + 504*c0**2*c1 - 168*c0**2*c2**2 - 42*c0**2*c2 + 18*c0**2 + 56*c0*c1**2 - 14*c0*c1*c2**2 - 14*c0*c1*c2 + 3*c0*c2**3 + 4*c1**3 - c1**2*c2**2 power 1
+old clock content 9652754116018962432*(V - 1)**2*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**7 B deg 3
+base factors [(4, 2, '66*V**4 - 120*V**3 + 72*V**2 - 16*V + 1'), (4, 9, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (8, 2, '2772*V**8 - 11088*V**7 + 18648*V**6 - 17136*V**5 + 9360*V**4 - 3096*V**3 + 604*V**2 - 64*V + 3')]
+All old determinant factors are incompatible with distinct ordinary nonendpoints
+Fn degeneracy resultant factors [(4, 2), (12, 1)]
+Fn loss: reverse pure read unit in the full rank-24 tower 103
+    0.00 common m scale deg 16 content 0
+    0.01 common old inverse scale deg 48 content 0
+    0.07 common quotient fit scale deg 68 content 0
+    0.13 reverse and forward zero-diagonal gates prepared
+    0.76 chosen residue factor x + 42
+    0.77 exact upstream coefficients reduced 103 1
+    0.79 rank guard old-norm 12 11 11 needed 11
+    0.00 common m scale deg 16 content 0
+    0.01 common old inverse scale deg 48 content 0
+    0.06 common quotient fit scale deg 68 content 0
+    0.14 reverse and forward zero-diagonal gates prepared
+    0.73 chosen residue factor x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91
+    0.73 exact upstream coefficients reduced 103 12
+    1.03 rank guard profile-ratio 144 132 132 needed 132
+    0.00 common m scale deg 16 content 0
+    0.01 common old inverse scale deg 48 content 0
+    0.10 common quotient fit scale deg 68 content 0
+    0.21 reverse and forward zero-diagonal gates prepared
+    1.03 chosen residue factor x^4 + 40*x^3 + 73*x^2 + 90*x + 50
+    1.03 exact upstream coefficients reduced 103 4
+    1.13 rank guard c2 48 36 36 needed 36
+    0.05 common m scale deg 24 content 0
+    0.07 common old inverse scale deg 48 content 8
+    0.14 common quotient fit scale deg 60 content 8
+    0.20 reverse and forward zero-diagonal gates prepared
+    0.64 chosen residue factor x + 44
+    0.65 exact upstream coefficients reduced 103 1
+    0.68 rank guard old-norm 12 11 11 needed 11
+    0.04 common m scale deg 24 content 0
+    0.05 common old inverse scale deg 48 content 8
+    0.12 common quotient fit scale deg 60 content 8
+    0.17 reverse and forward zero-diagonal gates prepared
+    0.59 chosen residue factor x^36 + 75*x^35 + 87*x^34 + 47*x^33 + 61*x^32 + 21*x^31 + 15*x^30 + 87*x^29 + 52*x^28 + 95*x^27 + 94*x^26 + 73*x^25 + 21*x^24 + 36*x^23 + 84*x^22 + 86*x^21 + 79*x^20 + 59*x^19 + 44*x^18 + 28*x^17 + 15*x^16 + 53*x^15 + 40*x^14 + 12*x^13 + 90*x^12 + 8*x^11 + 98*x^10 + 27*x^9 + 81*x^8 + 64*x^7 + 52*x^6 + 16*x^5 + 8*x^4 + 77*x^3 + 10*x^2 + 51*x + 19
+    0.59 exact upstream coefficients reduced 103 36
+    2.37 rank guard old-norm 432 396 396 needed 396
+    0.12 common m scale deg 40 content 0
+    0.17 common old inverse scale deg 80 content 8
+    0.41 common quotient fit scale deg 92 content 8
+    0.53 reverse and forward zero-diagonal gates prepared
+    2.05 chosen residue factor x^2 + 9*x + 41
+    2.06 exact upstream coefficients reduced 103 2
+    2.13 rank guard old-norm 24 22 22 needed 22
+    0.08 common m scale deg 40 content 0
+    0.11 common old inverse scale deg 80 content 8
+    0.26 common quotient fit scale deg 92 content 8
+    0.34 reverse and forward zero-diagonal gates prepared
+    1.65 chosen residue factor x^4 + 40*x^3 + 73*x^2 + 90*x + 50
+    1.66 exact upstream coefficients reduced 103 4
+    1.79 rank guard c2 48 36 36 needed 36
+All seven literal Fn and singular guard fibers excluded.
+m1 ordinary degree 12 tower dimension 12 p 103 reverse eliminant unit
+mY2 ordinary degree 12 tower dimension 12 p 103 reverse eliminant unit
+contact ordinary degree 48 tower dimension 48 p 103 reverse eliminant unit
+Fn-loss ordinary degree 12 tower dimension 24 p 103 reverse eliminant unit
+    0.08 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.09 common old inverse scale normalized coefficient degree 48 guarded content degree 0
+    0.14 common quotient fit scale normalized coefficient degree 68 guarded content degree 0
+    1.19 reverse input normalized coefficient degree 218 guarded content degree 117
+    1.41 reverse relative normalized coefficient degree 586 guarded content degree 68
+    1.72 reverse projection 2344
+    1.73 adjacent input normalized coefficient degree 102 guarded content degree 72
+    1.78 adjacent relative normalized coefficient degree 250 guarded content degree 56
+    1.82 adjacent projection 1000
+    2.04 exact joint degree 664
+    2.13 allowed clock factor (60, -1461941766456) 2 old-norm 11 1
+    2.13 forbidden exact factor 8 3 3
+    2.13 allowed clock factor (12, 16227) 4 profile-ratio 11 12
+    2.13 allowed clock factor (12, 54123) 24 c2 9 4
+    2.13 forbidden exact factor 4 1 46
+    2.18 exact-field certificate 60 -1461941766456 old-norm residue 1 rank 11
+    2.57 exact-field certificate 12 16227 profile-ratio residue 12 rank 132
+    2.65 exact-field certificate 12 54123 c2 residue 4 rank 36
+    2.65 corrected beta=0 closure regular
+    0.05 common m scale normalized coefficient degree 24 guarded content degree 0
+    0.06 common old inverse scale normalized coefficient degree 48 guarded content degree 8
+    0.14 common quotient fit scale normalized coefficient degree 60 guarded content degree 8
+    1.08 reverse input normalized coefficient degree 178 guarded content degree 117
+    1.25 reverse relative normalized coefficient degree 426 guarded content degree 108
+    1.42 reverse projection 1704
+    1.43 adjacent input normalized coefficient degree 86 guarded content degree 72
+    1.49 adjacent relative normalized coefficient degree 186 guarded content degree 72
+    1.53 adjacent projection 744
+    1.62 singular-pivot input normalized coefficient degree 48 guarded content degree 16
+    1.64 singular-pivot relative normalized coefficient degree 88 guarded content degree 56
+    1.65 singular-pivot projection 352
+    1.66 exact joint degree 304
+    1.77 allowed clock factor (36, 137146315515648) 2 old-norm 11 1
+    1.77 forbidden exact factor 4 1 28
+    1.77 forbidden exact factor 4 3 30
+    1.84 exact-field certificate 36 137146315515648 old-norm residue 1 rank 11
+    1.84 corrected beta=0 closure F1
+    0.05 common m scale normalized coefficient degree 24 guarded content degree 0
+    0.06 common old inverse scale normalized coefficient degree 48 guarded content degree 8
+    0.16 common quotient fit scale normalized coefficient degree 60 guarded content degree 8
+    0.94 reverse input normalized coefficient degree 178 guarded content degree 117
+    1.11 reverse relative normalized coefficient degree 426 guarded content degree 108
+    1.25 reverse projection 1704
+    1.26 adjacent input normalized coefficient degree 86 guarded content degree 72
+    1.30 adjacent relative normalized coefficient degree 186 guarded content degree 72
+    1.32 adjacent projection 744
+    1.40 singular-pivot input normalized coefficient degree 48 guarded content degree 16
+    1.42 singular-pivot relative normalized coefficient degree 88 guarded content degree 56
+    1.42 singular-pivot projection 352
+    1.43 exact joint degree 268
+    1.50 allowed clock factor (36, -4682817) 1 old-norm 11 36
+    1.50 forbidden exact factor 4 1 28
+    1.50 forbidden exact factor 4 3 30
+    5.02 exact-field certificate 36 -4682817 old-norm residue 36 rank 396
+    5.02 corrected beta=0 closure F2
+    0.10 common m scale normalized coefficient degree 40 guarded content degree 0
+    0.15 common old inverse scale normalized coefficient degree 80 guarded content degree 8
+    0.37 common quotient fit scale normalized coefficient degree 92 guarded content degree 8
+    2.38 reverse input normalized coefficient degree 338 guarded content degree 117
+    2.96 reverse relative normalized coefficient degree 946 guarded content degree 68
+    4.22 reverse projection 3784
+    4.23 adjacent input normalized coefficient degree 150 guarded content degree 72
+    4.34 adjacent relative normalized coefficient degree 394 guarded content degree 56
+    4.46 adjacent projection 1576
+    5.36 singular-pivot input normalized coefficient degree 80 guarded content degree 16
+    5.41 singular-pivot relative normalized coefficient degree 192 guarded content degree 48
+    5.45 singular-pivot projection 768
+    5.50 exact joint degree 624
+    6.10 allowed clock factor (48, 162325396752128559) 2 old-norm 11 2
+    6.10 allowed clock factor (12, 54123) 18 c2 9 4
+    6.10 forbidden exact factor 4 3 24
+    6.10 forbidden exact factor 4 1 54
+    6.28 exact-field certificate 48 162325396752128559 old-norm residue 2 rank 22
+    6.41 exact-field certificate 12 54123 c2 residue 4 rank 36
+    6.41 corrected beta=0 closure Fn

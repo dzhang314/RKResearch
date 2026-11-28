@@ -1,0 +1,10 @@
+The new verify.sh replay exited 0. The degree-24 ordinary model and the
+new and old degree-72 signals were checked in the full residue tower at 103.
+The legacy separately corrected beta-zero exact towers and finite contacts
+also passed a separate cold replay, and the older quadratic stored exact
+guard-rank fixtures, lost-denominator/contact check and A1 ingress passed.
+The legacy zero-reciprocal independent debit/projection check also passed.
+None of these legacy comparisons is an extra premise of the unified proof.
+No withdrawn two-count grade-seven computation was run or reused.
+All four scalar Lean declarations checked on pinned Lean/Mathlib 4.36.0.
+No whole-tableau native theorem or new unrestricted stage bound.

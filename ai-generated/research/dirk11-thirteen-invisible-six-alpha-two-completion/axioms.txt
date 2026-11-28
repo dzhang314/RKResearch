@@ -1,0 +1,9 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoCompletion.counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoCompletion.genuine_fourth_read' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoCompletion.ordinary_det_zero' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoCompletion.adjacent_signal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

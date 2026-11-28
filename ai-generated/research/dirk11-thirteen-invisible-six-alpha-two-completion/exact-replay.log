@@ -1,0 +1,56 @@
+ai-generated/lean/AuditDIRKOrderElevenInvisibleSixNoLate.lean: OK
+ai-generated/lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixNoLate.lean: OK
+ai-generated/research/dirk11-thirteen-invisible-six-no-late/README.md: OK
+ai-generated/research/dirk11-thirteen-invisible-six-no-late/lean-audit.txt: OK
+ai-generated/lean/AuditDIRKOrderElevenInvisibleSixPrefix.lean: OK
+ai-generated/lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixPrefix.lean: OK
+ai-generated/lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixConstantArithmetic.lean: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/README.md: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/lean-audit.txt: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/replay_constant.py: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/replay_constant.log: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/constant-4.34.1.log: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/constant-4.35.0.log: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/constant-4.36.0.log: OK
+ai-generated/research/dirk11-thirteen-invisible-six-prefix/constant-4.37.0-rc1.log: OK
+research/dirk11-thirteen-invisible-six-early-profile-census/README.md: OK
+research/dirk11-thirteen-invisible-six-early-profile-census/project.py: OK
+lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixEarlyGhost.lean: OK
+research/dirk11-thirteen-invisible-six-alpha-two-debit/README.md: OK
+research/dirk11-thirteen-invisible-six-alpha-two-debit/project.py: OK
+research/dirk11-thirteen-invisible-six-alpha-two-debit/zero-cubic.py: OK
+research/dirk11-thirteen-invisible-six-alpha-two-debit/lean-audit-4.36.0.txt: OK
+lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixAlphaTwoDebit.lean: OK
+lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixAlphaTwoBetaOne.lean: OK
+research/dirk11-thirteen-invisible-six-alpha-two-live-cubic-beta-one/README.md: OK
+research/dirk11-thirteen-invisible-six-alpha-two-live-cubic-beta-one/ordinary.py: OK
+research/dirk11-thirteen-invisible-six-alpha-two-live-cubic-beta-one/finite.py: OK
+research/dirk11-thirteen-invisible-six-alpha-two-live-cubic-beta-one/coordinate-audit.py: OK
+research/dirk11-thirteen-invisible-six-alpha-two-live-cubic-beta-one/verification.txt: OK
+research/dirk11-thirteen-invisible-six-alpha-two-live-cubic-beta-one/lean-audit-4.36.0.txt: OK
+universal old determinant (630*c0**3*c2 + 1512*c0**3 - 210*c0**2*c1**2 - 168*c0**2*c1*c2 + 504*c0**2*c1 - 168*c0**2*c2**2 - 42*c0**2*c2 + 18*c0**2 + 56*c0*c1**2 - 14*c0*c1*c2**2 - 14*c0*c1*c2 + 3*c0*c2**3 + 4*c1**3 - c1**2*c2**2)/360
+factor 630*c0**3*c2 + 1512*c0**3 - 210*c0**2*c1**2 - 168*c0**2*c1*c2 + 504*c0**2*c1 - 168*c0**2*c2**2 - 42*c0**2*c2 + 18*c0**2 + 56*c0*c1**2 - 14*c0*c1*c2**2 - 14*c0*c1*c2 + 3*c0*c2**3 + 4*c1**3 - c1**2*c2**2 power 1
+old clock content 9652754116018962432*(V - 1)**2*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**7 B deg 3
+base factors [(4, 2, '66*V**4 - 120*V**3 + 72*V**2 - 16*V + 1'), (4, 9, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (8, 2, '2772*V**8 - 11088*V**7 + 18648*V**6 - 17136*V**5 + 9360*V**4 - 3096*V**3 + 604*V**2 - 64*V + 3')]
+All old determinant factors are incompatible with distinct ordinary nonendpoints
+ordinary determinant factor degrees [(6, 1)]
+Independent QQ coordinate audit: symbolic primitives, 8 rational reflections, and both 4-clean determinants checked.
+ordinary determinant factor degrees [(6, 1)]
+primitive ordinary content 3185408858286257602560*(V - 1)*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**8 B-degree 3
+ordinary factors [(4, 2, '66*V**4 - 120*V**3 + 72*V**2 - 16*V + 1'), (4, 9, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (8, 1, '2772*V**8 - 11088*V**7 + 18648*V**6 - 17136*V**5 + 9360*V**4 - 3096*V**3 + 604*V**2 - 64*V + 3'), (24, 1, '')]
+c1, c2 and mixed c2s=c0 contact are all units on exact degree24 ordinary algebra 103
+adjacent rank72: literal fifth commutator signal is a unit 103
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+F1 singular pivot forbidden by unit A1 in full rank72 103
+F2 singular pivot forbidden by unit A1 in full rank72 103
+Fn singular pivot forbidden by unit A1 in full rank72 103
+ordinary determinant factor degrees [(6, 1)]
+primitive ordinary content 3185408858286257602560*(V - 1)*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**8 B-degree 3
+ordinary factors [(4, 2, '66*V**4 - 120*V**3 + 72*V**2 - 16*V + 1'), (4, 9, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (8, 1, '2772*V**8 - 11088*V**7 + 18648*V**6 - 17136*V**5 + 9360*V**4 - 3096*V**3 + 604*V**2 - 64*V + 3'), (24, 1, '')]
+pure ordinary commutator determinant unit in full degree24 residue algebra 103
+c1, c2 and mixed c2s=c0 contact are all units on exact degree24 ordinary algebra 103
+F_n direct: forced zero forward J(b) has a unit eliminant in full rank72 103
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+F1 singular pivot forbidden by unit A1 in full rank72 103
+F2 singular pivot forbidden by unit A1 in full rank72 103
+Fn singular pivot forbidden by unit A1 in full rank72 103

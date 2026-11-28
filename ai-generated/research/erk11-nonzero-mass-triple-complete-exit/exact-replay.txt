@@ -1,0 +1,8 @@
+Exact contact projection asym live degree 156
+Exact contact projection opposite-half live degree 72
+Exact contact projection opposite-shared-free live degree 156
+Exact contact projection opposite-disjoint-free live degree 144
+Exact mod101 unit contacts asym [(16, 4, 4), (16, 4, 4)]
+Exact mod101 unit contacts opposite-half [(16, 0, 8)]
+Exact mod101 unit contacts opposite-shared-free [(16, 0, 8)]
+Exact mod101 unit contacts opposite-disjoint-free [(16, 0, 8)]

@@ -1,0 +1,20 @@
+saturated exact moment determinant: -P/280052640000
+leading coefficient A(a) has no residue root modulo 19
+affine 0 0 rows 0 1 2 monic nonsplit 3 1 2 1
+affine 1 17 rows 0 1 2 monic nonsplit 7 15 5 1
+affine 4 5 rows 0 1 3 monic nonsplit 18 10 3 1
+affine 4 10 rows 0 1 2 monic nonsplit 14 2 10 1
+affine 5 7 rows 0 1 2 monic nonsplit 7 5 18 1
+affine 5 10 rows 0 1 2 monic nonsplit 10 3 9 1
+affine 10 5 rows 0 1 2 monic nonsplit 18 10 3 1
+affine 10 15 rows 0 1 3 monic nonsplit 8 13 12 1
+affine 11 1 rows 0 1 2 monic nonsplit 8 5 17 1
+affine 11 15 rows 0 1 2 monic nonsplit 6 0 13 1
+affine 12 15 rows 0 1 2 monic nonsplit 6 0 13 1
+affine 12 16 rows 0 1 2 monic nonsplit 18 3 17 1
+affine 14 13 rows 0 1 2 monic nonsplit 14 6 7 1
+affine 14 15 rows 0 1 3 monic nonsplit 0 18 7 1
+affine residue branches: 14
+boundary 3 valuation exponent -3 unit-power 0 cofactor [5, -35, 70, -42] scale 4939200
+boundary -1 valuation exponent -6 unit-power 3 cofactor [-1, 9, -21, 14] scale 117600
+boundary quadratic discriminants: nonsquares 10 and 14 modulo 19

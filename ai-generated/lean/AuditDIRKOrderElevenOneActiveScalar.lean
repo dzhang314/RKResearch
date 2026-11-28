@@ -1,0 +1,12 @@
+import RKCert.ReviewedNative.DIRKOrderElevenOneActiveScalar
+
+#check RKResearch.Certified.Graded.OrderElevenOneActive.early_donor_conflict
+#check RKResearch.Certified.Graded.OrderElevenOneActive.readV_formula
+#check RKResearch.Certified.Graded.OrderElevenOneActive.cleared_three_read
+#check RKResearch.Certified.Graded.OrderElevenOneActive.undivided_affine_identity
+#check RKResearch.Certified.Graded.OrderElevenOneActive.undivided_diagonal_identity
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActive.early_donor_conflict
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActive.readV_formula
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActive.cleared_three_read
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActive.undivided_affine_identity
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActive.undivided_diagonal_identity

@@ -1,0 +1,17 @@
+exact degree-four calibration, undivided affine/diagonal identities: PASS
+resultant: y^20*(y-1)^8*(y-2)^8 times irreducible reciprocal degree 60
+linear penultimate subresultant unique u: PASS; every guard coprime
+ratio polynomial leading coefficient = 44574586460712
+12 ordered real ratio isolating intervals (exact rational endpoints):
+   (3649/24278, 3574/23779)
+   (1781/9119, 7382/37797)
+   (28444/95861, 28625/96471)
+   (8524/27685, 5801/18841)
+   (1776/5095, 18103/51934)
+   (6502/16993, 8383/21909)
+   (21909/8383, 38902/14885)
+   (57029/19879, 62124/21655)
+   (65367/20126, 46526/14325)
+   (96471/28625, 95861/28444)
+   (84713/16545, 46916/9163)
+   (71836/10797, 119893/18020)

@@ -1,0 +1,51 @@
+RKResearch.Certified.Graded.OrderElevenOneActive.early_donor_conflict.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (u v V beta : K) (hu : u ≠ 0) (hv : v ≠ 0) (hV : V ≠ 0) (hVu : V - u ≠ 0) (hb : beta ≠ 0)
+  (he : V * (V - u) * (V - v) = V * (V - u) * (V - u / 2)) (hm : beta * v ^ 3 * (2 * u - v) = 0) : False
+RKResearch.Certified.Graded.OrderElevenOneActive.readV_formula.{u_1} {K : Type u_1} [Field K] [CharZero K] (u v : K)
+  (hu : u ≠ 0) (hv : v ≠ 0) (huv : u - v ≠ 0) (hvu : v - u ≠ 0) (hu2v : u - 2 * v ≠ 0) (h2uv : 2 * u - v ≠ 0) :
+  (RKResearch.Certified.Graded.OrderElevenOneActive.kU u *
+          RKResearch.Certified.Graded.OrderElevenOneActive.tap2 u v v
+            (RKResearch.Certified.Graded.OrderElevenOneActive.kV u v) +
+        RKResearch.Certified.Graded.OrderElevenOneActive.kV u v *
+          RKResearch.Certified.Graded.OrderElevenOneActive.tap2 v u v
+            (RKResearch.Certified.Graded.OrderElevenOneActive.kV u v)) /
+      RKResearch.Certified.Graded.OrderElevenOneActive.kV u v =
+    RKResearch.Certified.Graded.OrderElevenOneActive.readV u v
+RKResearch.Certified.Graded.OrderElevenOneActive.cleared_three_read.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (u v w k : K) (hu : u ≠ 0) (hv : v ≠ 0) (hw : w ≠ 0) (huv : u - v ≠ 0) (hvu : v - u ≠ 0) (huw : u - w ≠ 0)
+  (hwu : w - u ≠ 0) (hvw : v - w ≠ 0) (hwv : w - v ≠ 0) (hu2v : u - 2 * v ≠ 0) (h2uv : 2 * u - v ≠ 0) :
+  72 * w * (u - 2 * v) * (u - w) * (2 * u - v) * (v - w) *
+      (k * (u / 2 + (RKResearch.Certified.Graded.OrderElevenOneActive.readV u v - u / 2) * (w - u) / (v - u)) -
+            RKResearch.Certified.Graded.OrderElevenOneActive.kU u *
+              RKResearch.Certified.Graded.OrderElevenOneActive.tap3 u v w u w k -
+          RKResearch.Certified.Graded.OrderElevenOneActive.kV u v *
+            RKResearch.Certified.Graded.OrderElevenOneActive.tap3 v u w u w k -
+        k * RKResearch.Certified.Graded.OrderElevenOneActive.tap3 w u v u w k) =
+    RKResearch.Certified.Graded.OrderElevenOneActive.numerator u v w (6 * k)
+RKResearch.Certified.Graded.OrderElevenOneActive.undivided_affine_identity.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (u v w q : K)
+  (hq :
+    RKResearch.Certified.Graded.OrderElevenOneActive.M u v w * q =
+      RKResearch.Certified.Graded.OrderElevenOneActive.F u v w) :
+  RKResearch.Certified.Graded.OrderElevenOneActive.M u v w ^ 2 *
+      RKResearch.Certified.Graded.OrderElevenOneActive.numerator u v w q =
+    36 * w ^ 4 * (u - w) ^ 2 * (2 * u - v) * (v - w) ^ 2 * RKResearch.Certified.Graded.OrderElevenOneActive.J u v w ^ 2
+RKResearch.Certified.Graded.OrderElevenOneActive.undivided_diagonal_identity.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (u v w q : K)
+  (hq :
+    RKResearch.Certified.Graded.OrderElevenOneActive.M u v w * q =
+      RKResearch.Certified.Graded.OrderElevenOneActive.F u v w) :
+  RKResearch.Certified.Graded.OrderElevenOneActive.M u v w *
+      (3 * w ^ 4 - 4 * (u + v) * w ^ 3 + 6 * u * v * w ^ 2 + (2 * v - u) * q) =
+    6 * w ^ 2 * (u - w) * (v - w) * RKResearch.Certified.Graded.OrderElevenOneActive.J u v w
+'RKResearch.Certified.Graded.OrderElevenOneActive.early_donor_conflict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenOneActive.readV_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenOneActive.cleared_three_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenOneActive.undivided_affine_identity' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenOneActive.undivided_diagonal_identity' depends on axioms: [propext, Quot.sound]

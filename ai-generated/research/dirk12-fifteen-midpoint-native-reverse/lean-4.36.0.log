@@ -1,0 +1,15 @@
+'RKResearch.Certified.DIRK12MidpointReverse.Physical.physical_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Physical.error_visible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.mass_d' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.mass_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.mass_u' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.actual_H_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.actual_pair_forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

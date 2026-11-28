@@ -1,0 +1,3 @@
+rank, duplicate diagonal shift, free scalar clock, affine slope: (53, Fraction(0, 1), Fraction(26881, 94316), Fraction(-17793879367, 6805627317))
+coefficient denominator bits 523 unpaid defect gcd stripped 1
+next bush 97680781467/62269814438819680

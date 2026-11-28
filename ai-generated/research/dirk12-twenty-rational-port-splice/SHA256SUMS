@@ -1,0 +1,12 @@
+26094b2b8d109826fbf5f4c89a338f6dc9d8f8145f784d023318705915d98231  ai-generated/research/dirk12-twenty-rational-port-splice/README.md
+d110b07dbb4837c60310480e98d8b405fd51369506a1e3afd930336981a9dfa1  ai-generated/research/dirk12-twenty-rational-port-splice/build.py
+f88174b0f5400e9fbaad4813ea2a4c688fcd2272449400d12e403f264e6f0a8c  ai-generated/research/dirk12-twenty-rational-port-splice/constructor.txt
+ce9b561963e40a7b01704671bf7b2e28d82c2d3f5d57a2e20c83917e77efcc3c  ai-generated/research/dirk12-twenty-rational-port-splice/probe.py
+57c86e8a8f77147d5278a1b760f6e91004e5c7634e0c4e34ffc8d13941505fac  ai-generated/research/dirk12-twenty-rational-port-splice/ranktwo.py
+65e8084b586fcc0978733010282a650e59ccd16587c56c1714c2e07a8a9fb6e8  ai-generated/research/dirk12-twenty-rational-port-splice/replay.txt
+31f714a5d56ec7f0455a37d51f3957baf3eefadfd5c47110d92533bcbbba6a20  ai-generated/research/dirk12-twenty-rational-port-splice/sha256.txt
+3cd4093815f6a995a186d1b4c8b0b26a123896b8a891a33a0ad701990aa7a4ca  ai-generated/research/dirk12-twenty-rational-port-splice/tableau20.json
+c4404cde2b4e13167cd0c1d0825b0e1164a34598712f44f131b57e576b2bd4e9  ai-generated/research/dirk12-twenty-rational-port-splice/trap_design.py
+551164b3906dab64814056c4d156736e095a76d42a5ac82976d05e6326504136  ai-generated/research/dirk12-twenty-rational-port-splice/verify.py
+9c23cfd554aa555ddde76a4e9d439437549bb9dbcc87b265396572f47129842d  ai-generated/research/dirk12-twenty-rational-port-splice/verify-independent.py
+8cc913dd93c618e8fcfb905ab0b9d599466a81432f8ffbe6165401ec397c3184  ai-generated/research/dirk12-twenty-rational-port-splice/replay-independent.txt

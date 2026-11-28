@@ -1,0 +1,1 @@
+Trees: 7813 denominator bits: 523 bush: 97680781467/62269814438819680 two numerator gcd: 1

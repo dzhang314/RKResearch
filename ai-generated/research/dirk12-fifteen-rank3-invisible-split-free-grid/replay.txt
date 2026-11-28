@@ -1,0 +1,4 @@
+exact early barycentric power sums and all scale-only tests
+same unordered cubic for all three endpoint cases, including exact m0=0
+literal pair-split cancellation and optional fourth reflected-zero gate
+three rational negative-control grid paths, including nonzero unpaid epsilon12

@@ -1,0 +1,19 @@
+Lean 4.34.1
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.gram_det' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_orthogonal' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_factor_coefficients' does not depend on any axioms
+
+Lean 4.35.0
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.gram_det' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_orthogonal' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_factor_coefficients' does not depend on any axioms
+
+Lean 4.36.0
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.gram_det' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_orthogonal' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_factor_coefficients' does not depend on any axioms
+
+Lean 4.37.0-rc1
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.gram_det' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_orthogonal' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLateJacobiReplay.endpoint_factor_coefficients' does not depend on any axioms

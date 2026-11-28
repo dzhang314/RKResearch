@@ -1,0 +1,6 @@
+bb09ceccb2de6b79e36b81f71b422a11fc270658fafd56b4b3089fa75253a426  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicZTailRead.lean
+4be6a871fde8a2d363aafa9539a6d4d0ea5142906bf209843d0a48b7b8b79089  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-TAIL-READ.md
+544e7bec0019be2741795a274435197d96d0e9f74580000ac1d02a689757ee51  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-read-kernel-4.34.1.log
+a1f2cc0c327f507b41fb100e5f849d4b199616366ec081dc291afc2ec441328b  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-read-kernel-4.35.0.log
+87203fcf059593217ea3224791d27dfb34a2f57a90c6ceed5cc5e37a0fbdc18b  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-read-kernel-4.36.0.log
+3b13788e824c65e0cee114f2d52054f215cfef06dc2bb7c3ed168aa8f9bbb1e2  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-read-kernel-4.37.0-rc1.log

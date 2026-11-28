@@ -1,0 +1,17 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.Certified.ERK10ZTailCore.den_paid' does not depend on any axioms
+'RKResearch.Certified.ERK10ZTailCore.div_0_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.div_1_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.div_2_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.div_3_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.div_4_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.div_5_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.div_6_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.scale_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.out_e_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.out_f_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ZTailCore.reduce_represents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10ZTailCore.represents_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10ZTailCore.represents_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10ZTailCore.represents_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10ZTailCore.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]

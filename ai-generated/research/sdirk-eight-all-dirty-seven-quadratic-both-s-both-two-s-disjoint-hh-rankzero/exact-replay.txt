@@ -1,0 +1,7 @@
+exact H degree/multiplicity 3 2 common a degree 2 true guard removals [('front', 3, 0)]
+exact H degree/multiplicity 6 2 common a degree 2 true guard removals [('front', 1, 1), ('front', 3, 0)]
+exact H degree/multiplicity 3 4 common a degree 2 true guard removals [('base', 3, 0)]
+exact H degree/multiplicity 1 6 common a degree 4 true guard removals [('base', 3, 2), ('front', 1, 0)]
+exact H degree/multiplicity 2 39 common a degree 6 true guard removals [('base', 3, 3), ('front', 2, 0)]
+exact H degree/multiplicity 3 39 common a degree 6 true guard removals [('base', 3, 3), ('front', 2, 0)]
+HH off-diagonal M=n=0: all characteristic-zero fields

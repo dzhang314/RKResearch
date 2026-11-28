@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHOddPivot
+
+open RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHOddPivot
+
+#print axioms odd_nodal_pivot_zero
+#print axioms cubic_special_shape

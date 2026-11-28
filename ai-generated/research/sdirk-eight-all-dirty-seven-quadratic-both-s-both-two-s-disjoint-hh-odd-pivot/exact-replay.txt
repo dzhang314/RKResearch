@@ -1,0 +1,15 @@
+unfolded [((4, 7, 7), 320), ((10, 10, 10), 1264), ((10, 11, 11), 1436), ((8, 11, 11), 1235), ((8, 10, 10), 1053)]
+folded [((4, 7, 7), 180), ((10, 10, 10), 688), ((10, 11, 11), 777), ((8, 11, 10), 656), ((8, 10, 9), 561)]
+odd-rank degrees before H recovery [(1, 4, 4), (6, 8, 8), (14, 8, 7), (9, 9, 8)]
+after true projected guard stripping [(0, 16, 16), (0, 64, 63), (0, 37, 36), (0, 16, 16), (0, 36, 35), (0, 37, 36), (0, 29, 27), (0, 28, 26)]
+outer univariate s degree 592
+outer univariate s degree 576
+outer univariate s degree 464
+outer univariate s degree 448
+outer univariate s degree 1024
+s field 3 8 joint z gcd 2 guards [(0, 0)] left 0
+s field 3 10 joint z gcd 2 guards [(0, 0)] left 0
+s field 3 24 joint z gcd 4 guards [(0, 0)] left 0
+s field 6 24 joint z gcd 4 guards [(0, 0)] left 0
+s field 1 28 joint z gcd 4 guards [(0, 0)] left 0
+odd singleton coefficient rank loss impossible over characteristic zero

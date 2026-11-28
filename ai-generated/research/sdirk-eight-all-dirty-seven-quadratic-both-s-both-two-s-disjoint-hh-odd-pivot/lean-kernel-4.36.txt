@@ -1,0 +1,3 @@
+'RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHOddPivot.odd_nodal_pivot_zero' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHOddPivot.cubic_special_shape' depends on axioms: [propext]

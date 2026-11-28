@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHRankZero
+
+open RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHRankZero
+
+#print axioms quadratic_even_of_equal_end_values
+#print axioms same_offset_of_even_singleton_quartic

@@ -1,0 +1,6 @@
+'RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHRankZero.quadratic_even_of_equal_end_values' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHHRankZero.same_offset_of_even_singleton_quartic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

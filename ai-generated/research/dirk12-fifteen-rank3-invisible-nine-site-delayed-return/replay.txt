@@ -1,0 +1,3 @@
+exact delayed fourth: guarded resultant and ordinary pivot
+exact delayed fourth: double-root exception with literal w−1 guard
+exact zero-mass return after fourth: one linear scale-ratio gate

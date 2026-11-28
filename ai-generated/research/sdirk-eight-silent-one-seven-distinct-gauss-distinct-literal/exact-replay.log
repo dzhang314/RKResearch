@@ -1,0 +1,41 @@
+distinct Gauss literal projection: True 0 True False 6 -1 0 -
+verified Gauss distinct literal: True 0 True shared 1129 5
+distinct Gauss literal projection: True 0 True True 6 -1 0 -
+verified Gauss distinct literal: True 0 True neither 1129 5
+distinct Gauss literal projection: True 0 False False 24 0 0 0
+verified Gauss distinct literal: True 0 False shared 1129 24
+distinct Gauss literal projection: True 0 False True 24 0 0 0
+verified Gauss distinct literal: True 0 False neither 1129 24
+distinct Gauss literal projection: True 0 None False 11 -1 0 -
+verified Gauss distinct literal: True 0 None shared 1129 13
+distinct Gauss literal projection: True 1 True False 6 -1 0 -
+verified Gauss distinct literal: True 1 True shared 1129 5
+distinct Gauss literal projection: True 1 True True 6 -1 0 -
+verified Gauss distinct literal: True 1 True neither 1129 5
+distinct Gauss literal projection: True 1 False False 24 0 0 0
+verified Gauss distinct literal: True 1 False shared 1129 23
+distinct Gauss literal projection: True 1 False True 24 0 0 0
+verified Gauss distinct literal: True 1 False neither 1129 23
+distinct Gauss literal projection: True 1 None False 11 -1 0 -
+verified Gauss distinct literal: True 1 None shared 1129 11
+distinct Gauss literal projection: False 0 True False 6 -1 0 -
+verified Gauss distinct literal: False 0 True shared 1129 5
+distinct Gauss literal projection: False 0 True True 6 -1 0 -
+verified Gauss distinct literal: False 0 True neither 1129 5
+distinct Gauss literal projection: False 0 False False 24 0 0 0
+verified Gauss distinct literal: False 0 False shared 1129 24
+distinct Gauss literal projection: False 0 False True 24 0 0 0
+verified Gauss distinct literal: False 0 False neither 1129 24
+distinct Gauss literal projection: False 0 None False 11 -1 0 -
+verified Gauss distinct literal: False 0 None shared 1129 13
+distinct Gauss literal projection: False 1 True False 6 -1 0 -
+verified Gauss distinct literal: False 1 True shared 1129 5
+distinct Gauss literal projection: False 1 True True 6 -1 0 -
+verified Gauss distinct literal: False 1 True neither 1129 5
+distinct Gauss literal projection: False 1 False False 24 0 0 0
+verified Gauss distinct literal: False 1 False shared 1129 24
+distinct Gauss literal projection: False 1 False True 24 0 0 0
+verified Gauss distinct literal: False 1 False neither 1129 24
+distinct Gauss literal projection: False 1 None False 11 -1 0 -
+verified Gauss distinct literal: False 1 None shared 1129 10
+different Gauss literal reverse-root checks: 8 8 12

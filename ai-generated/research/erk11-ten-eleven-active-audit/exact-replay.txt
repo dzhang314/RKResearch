@@ -1,0 +1,8 @@
+Exact width projections: degrees 40,40; gcd is the diagonal octic;
+reflected projection has only two forbidden octics and one degree-24 factor.
+Non-half pair: exact diagonal removed, full-degree residue gcd is 1.
+Half pair: degree 1 residue excludes both opposite-flank and middle placements.
+Half pair: degree 4 residue excludes both opposite-flank and middle placements.
+Half pair: degree 7 residue excludes both opposite-flank and middle placements.
+Half pair: degree 12 residue excludes both opposite-flank and middle placements.
+All q10, n11 characteristic-zero width and contact branches close.

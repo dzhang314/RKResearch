@@ -1,0 +1,9 @@
+'RKResearch.Certified.ERK10EndpointPlateau.rankCapFromObservers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10EndpointPlateau.escapedFlagCost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10EndpointPlateau.firstAdjointExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10EndpointPlateau.firstLiveAtEndpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10EndpointPlateau.paidTargetNonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

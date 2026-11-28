@@ -1,0 +1,2 @@
+paid shifted Hilbert 5, actual residual second difference, and weighted nominal 1/6 verified
+global label mask and strict principal triangular inverse checked symbolically

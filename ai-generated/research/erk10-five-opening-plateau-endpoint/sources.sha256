@@ -1,0 +1,7 @@
+7d51c92dcc30277672179e6508e5505560d4f27dd10da067f2f236259dd0ea97  ai-generated/research/erk10-five-opening-plateau-endpoint/README.md
+7cad201ff1da3d8e1c6bd8fa575dd2d99b5c31c5299b55e5ddc6e4f18726bf95  ai-generated/research/erk10-five-opening-plateau-endpoint/LEAN.md
+2f44b4cc3f46ada28d26cc5dfc5aa4a14889f809650b0a4a1c5d084eeff07a6c  ai-generated/research/erk10-five-opening-plateau-endpoint/audit.py
+c22d2c619de9dded9c98cb3420feace3727c0993ac32eb5868b964df6310696e  ai-generated/research/erk10-five-opening-plateau-endpoint/exact-audit.txt
+6e8563daddf30c3fa2402fdcc7ebbc5ec3fd26ec981800155c7ff90d2420d8b2  ai-generated/research/erk10-five-opening-plateau-endpoint/exact-f17-audit.txt
+5ddd916702e7b8b033cf65ada3692fe966753aa4a41d687549e9301dc9825e58  ai-generated/lean/RKCert/ReviewedNative/ERK10EndpointPlateau.lean
+884f0e212e09904422fa4c1612c302b2b1db84ab29a626481ed9e0341bd02c84  ai-generated/lean/RKCert/ReviewedNative/ERK10EndpointHilbertFive.lean

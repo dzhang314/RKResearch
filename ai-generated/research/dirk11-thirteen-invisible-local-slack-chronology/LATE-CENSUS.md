@@ -22,8 +22,11 @@ unrestricted DIRK methods of order eleven need fourteen stages.
   earlier marked pair [requires a nonzero companion](../dirk11-thirteen-invisible-local-old-repeat-companion/README.md).
 
 The remaining immediate next rows are a marked old completion with live
-companion, a silent slack at the origin, an earlier clock or the future
-fifth clock, or the consecutive fifth weighted nonendpoint debut. The
+companion, a silent slack at an earlier clock or the future fifth
+clock, or the consecutive fifth weighted nonendpoint debut. The
+[immediate origin-clock slack exclusion](../dirk11-thirteen-invisible-local-live-fourth-origin/README.md)
+now removes the separate origin-clock branch, retaining the fourth
+clock as a possible marked repeat after that hypothetical slack. The
 [fourth clock pin](../dirk11-thirteen-invisible-local-late-fourth-pin/README.md)
 restricts the surviving fourth geometry and requires a nonzero fifth
 diagonal in the consecutive case. The [matched fifth exclusion](../dirk11-thirteen-invisible-local-late-matched-fifth/README.md)

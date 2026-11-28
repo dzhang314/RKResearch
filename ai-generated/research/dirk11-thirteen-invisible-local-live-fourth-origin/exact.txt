@@ -1,0 +1,13 @@
+Exact immediate-origin double norm and three scalar audits: irreducible degrees 60 and 144; live linear fifth ratio in both
+degree 60, F101: next fourth repeat gate is a full-field unit
+degree 60, F101: next consecutive unmarked fifth gate is a full-field unit
+degree 60, F101: norm excludes all three old repeats
+degree 144, F101: next fourth repeat gate is a full-field unit
+degree 144, F101: next consecutive unmarked fifth gate is a full-field unit
+degree 144, F101: norm excludes all three old repeats
+degree 60, F107: next fourth repeat gate is a full-field unit
+degree 60, F107: next consecutive unmarked fifth gate is a full-field unit
+degree 60, F107: norm excludes all three old repeats
+degree 144, F107: next fourth repeat gate is a full-field unit
+degree 144, F107: next consecutive unmarked fifth gate is a full-field unit
+degree 144, F107: norm excludes all three old repeats

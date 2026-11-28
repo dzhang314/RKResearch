@@ -1,0 +1,6 @@
+orientation 0: fixed-degree width projection at a=3 is 33 mod 101
+orientation 1: fixed-degree width projection at a=3 is 26 mod 101
+exact dormant-diagonal projection at x=3: width degree 202
+exact dormant-diagonal projection at x=4: width degree 202
+exact dormant-diagonal projection at x=5: width degree 202
+common vertical width gcd: a^2(a-2)^6

@@ -1,0 +1,17 @@
+A2 reused regular [(21, 0), (12, 0)] H gcd factors []
+A2 new regular [(9, 7), (8, 7), (4, 8)] projections [82, 80, 84] H gcd factors [(1, 1), (3, 1)]
+A2 exact H degree 1 raw/guarded d degree 1 0
+first-departure clock: H=3,d=2
+A2 exact H degree 3 raw/guarded d degree 1 0
+specialization lies on the independently checked half-amplitude branch
+A3 reused regular [(11, 0), (5, 0)] H gcd factors []
+A3 new regular [(9, 4), (8, 4), (4, 1)] projections [33, 23, 22] H gcd factors []
+S reused regular [(10, 0), (5, 0)] H gcd factors []
+S new regular [(9, 4), (8, 4), (4, 1)] projections [32, 23, 22] H gcd factors []
+half-amplitude cubic Vieta branch: M(e) nonzero True
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDssStar.star_nodal_component' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDssStar.normalized_star_nodal_clear' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDssStar.half_amplitude_arithmetic_factor' depends on axioms: [propext,
+ Quot.sound]

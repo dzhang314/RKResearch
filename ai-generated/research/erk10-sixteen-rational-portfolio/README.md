@@ -50,7 +50,7 @@ From this directory:
     python3 -B replay.py
     sha256sum -c sources.sha256
 
-The literal arithmetic is checked by exact replay. The [generic Lean ring transfer](../../lean/RKCert/ReviewedNative/ExactExplicitPortfolio.lean) now proves the local Bézout selector, exact-order preservation under injective scalar extension, and prime-power assembly followed by an injective finite-characteristic cast. It compiles on the pinned Lean/Mathlib 4.36.0. These transfers take the exact chart proofs as inputs; this packet does not yet claim an end-to-end Lean theorem for the full portfolio.
+The literal arithmetic is checked by exact replay. The [generic Lean ring transfer](../../lean/RKCert/ReviewedNative/ExactExplicitPortfolio.lean) now proves the local Bézout selector, exact-order preservation under injective scalar extension, and prime-power assembly followed by an injective finite-characteristic cast. It compiles on the pinned Lean/Mathlib 4.36.0. The [native portfolio endpoint](../../lean/RKCert/ReviewedNative/ERK10MirrorPortfolio.lean) now combines four individually kernel-checked tableaux and proves exact order ten in sixteen stages over nonzero rings in the local, positive-characteristic, and clean cases with 10! a unit. Its two-residual certificate also gives exactness over any nonzero commutative ring receiving coefficients from such a clean ring. All four endpoint axiom audits on Lean/Mathlib 4.36.0 report only standard axioms.
 
 ### Native compact witness
 
@@ -67,3 +67,16 @@ From this research directory:
 
     sha256sum -c theta-four-native-sha256.txt
     sha256sum -c unit13-native-sha256.txt
+
+### Native portfolio
+
+From `ai-generated/lean`:
+
+    lake build +RKCert.ReviewedNative.ERK10MirrorPortfolio:olean
+
+To regenerate the small assembly file from the literal denominators,
+run from the repository root:
+
+    python3 -B ai-generated/research/erk10-sixteen-rational-portfolio/generate_glue.py /tmp/ERK10MirrorPortfolio.lean
+
+The generic [residual gluing](../../lean/RKCert/ReviewedNative/RobustExplicitPair.lean) checks that both clean-ring factor selection and the subsequent exactness under scalar extension use the same fixed residual pair. The theorem does not require an injective map for that pushforward.

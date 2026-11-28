@@ -2,7 +2,7 @@
 
 The [five literal rational tableaux](README.md) give a single exact
 sixteen-stage tableau over **every nonzero commutative clean ring**
-inverting \(10!\), and over every nonzero algebra over such a ring.
+inverting \(10!\), and over every nonzero commutative algebra over such a ring.
 A ring is clean if every element is the sum of a unit and an
 idempotent. This includes all commutative rings of Krull dimension
 zero, without a finiteness or characteristic assumption. This is a
@@ -44,7 +44,7 @@ each by its unit reduced denominator and use the integer Bézout
 identity. Taking the product of those Bézout coefficients shows
 the same unit-ideal relation for the assembled tableau in \(R\).
 In particular the two residuals cannot both vanish after any unital
-map to a **nonzero** ring. Thus the pushed-forward tableau still
+map to a **nonzero commutative** ring. Thus the pushed-forward tableau still
 has exact order ten, not just order at least ten, even if the target
 itself is not clean.
 
@@ -102,7 +102,6 @@ paid prime factors, so such a pair never blocks selection.
 
 Run `python3 -B clean-ring-replay.py` in this directory to verify
 all integer data used here. The exact ring argument above uses
-the literal charts' existing rooted checks; it is not yet a
-complete native Lean theorem for clean rings. It does not give a
+the literal charts' existing rooted checks. The [native clean-ring endpoint](../../lean/RKCert/ReviewedNative/ERK10MirrorPortfolio.lean) now checks the clean-ring theorem and its pushforward to any nonzero commutative coefficient ring on Lean/Mathlib 4.36.0, using four of the five literal charts. The separate dimension-zero implication to the clean hypothesis is the mathematical argument above. This does not give a
 16-stage tableau over \(\mathbb Z[1/10!]\), where the finite
 idempotent partition cannot split the domain.

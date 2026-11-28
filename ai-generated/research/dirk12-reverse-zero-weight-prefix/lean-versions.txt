@@ -1,0 +1,14 @@
+4.34.1
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.first_two_numerators_zero' does not depend on any axioms
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.no_literal_diagonal' depends on axioms: [propext, Quot.sound]
+4.35.0
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.first_two_numerators_zero' does not depend on any axioms
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.no_literal_diagonal' depends on axioms: [propext, Quot.sound]
+4.36.0
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.first_two_numerators_zero' does not depend on any axioms
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.no_literal_diagonal' depends on axioms: [propext, Quot.sound]
+4.37.0-rc1
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.first_two_numerators_zero' does not depend on any axioms
+'RKResearch.Certified.DIRK12ReverseZeroPrefix.no_literal_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

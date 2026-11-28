@@ -1,0 +1,20 @@
+actual rank and quadrature determinants checked
+possible r = 1/12, 1/6, 1/4, 1/3, 2/3, 3/4, 5/6, 11/12
+r at mini5 1/12 a roots ['6/13', '9/5']
+r at mini6/7 1/12 a roots ['0', '2/5', '1/2', '3/5', '1']
+r at mini5 1/6 a roots []
+r at mini6/7 1/6 a roots ['0', '1/3', '2/5', '1/2', '3/5', '4/5', '1']
+r at mini5 1/4 L=2 direct collision
+r at mini6/7 1/4 a roots ['0', '2/5', '1/2', '3/5', '1']
+r at mini5 1/3 a roots ['0', '3/5']
+r at mini6/7 1/3 a roots ['0', '2/5', '1/2', '3/5', '1']
+r at mini5 2/3 a roots []
+r at mini6/7 2/3 a roots ['0', '2/5', '1/2', '3/5', '1']
+r at mini5 3/4 a roots []
+r at mini6/7 3/4 a roots ['0', '2/5', '1/2', '3/5', '1']
+r at mini5 5/6 a roots []
+r at mini6/7 5/6 a roots ['0', '2/5', '1/2', '3/5', '1']
+r at mini5 11/12 a roots []
+r at mini6/7 11/12 a roots ['0', '2/5', '1/2', '3/5', '1']
+nonlinear factors proved rootless by finite residue checks: 44
+asymmetric rank-three AP13 chart excluded

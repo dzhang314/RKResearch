@@ -1,0 +1,4 @@
+degree-eleven scalar quadrature and paid affine cubic match: exact
+literal p=37 first two proper weight residues: 0 0
+remaining reflected-clock / weight residues: [(24, 33), (10, 32), (33, 17), (19, 6), (5, 17), (28, 32), (14, 33)]
+no low reverse continuation

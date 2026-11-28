@@ -1,0 +1,5 @@
+immediate active close: dormant dual coefficients b*(2*a - b)/(3*(3*a - 2*b)) 2*b*(2*a - b)/(3*(3*a - 2*b))
+one intermediate singleton: repeat b cannot kill both coefficient factors
+second head: exact (weighted) sixth-row closed-group transfer
+deferred closing copy exactly carries raw pooled G,Z, whatever its score
+aggregate-exact branch calibrated square: -x**2*(x - z)**2

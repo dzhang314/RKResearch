@@ -1,0 +1,55 @@
+opposite temporal laws raw/deflated [(58, 65), (68, 66)] [(48, 44), (58, 55)]
+a=1 and d=0 exact univariate joint gcd 1
+leading loss finite field degree 4 at (19, 15) exact b-degrees (13, 44) whole residue gcd 1
+leading loss finite field degree 8 at (17, 10) exact b-degrees (13, 43) whole residue gcd 1
+six simple Jacobi root allocations: all exact C2−sH nonzero
+(0, 1, 2, 31/29635200*x + (-193/46569600))
+(0, 2, 1, (-31/29635200)*x + (-193/46569600))
+(1, 0, 2, 1/1234800*x + (-1/1663200))
+(1, 2, 0, (-13/7408800)*x + (-709/81496800))
+(2, 0, 1, (-1/1234800)*x + (-1/1663200))
+(2, 1, 0, 13/7408800*x + (-709/81496800))
+CRT primes 20 bits 1201 limit 6880 wall 3.5553849060088396
+CRT primes 40 bits 2401 limit 6880 wall 7.454973526997492
+CRT primes 60 bits 3601 limit 6880 wall 11.476833307999186
+CRT primes 80 bits 4801 limit 6880 wall 15.087615151001955
+CRT primes 100 bits 6001 limit 6880 wall 18.99441192400991
+CRT primes 115 bits 6901 limit 6880 wall 21.715000197000336
+exact width resultant degree 1294 irreducibles [(1, 24), (2, 8), (2, 16), (8, 1), (8, 2), (8, 3), (8, 56), (12, 3), (12, 3), (12, 4), (20, 3), (258, 1), (288, 1)]
+small guard b competitor 8 2 b x x der 16
+width guard candidates count 1
+EXACT guard exit 8 2 b (17, 14, 0) 16
+small guard b competitor 8 3 H x + 10 x + 10 der 13
+width guard candidates count 1
+EXACT guard exit 8 3 H (19, 12, 9) 60
+small guard b competitor 12 3 zD x + 18 x + 18 der 9
+width guard candidates count 1
+EXACT guard exit 12 3 zD (23, 20, 5) 120
+small guard b competitor 12 3 U x + 6 x + 6 der 18
+width guard candidates count 1
+EXACT guard exit 12 3 U (29, 28, 23) 176
+small guard b competitor 12 4 J x + 15 x + 15 der 2
+width guard candidates count 1
+EXACT guard exit 12 4 J (17, 3, 2) 58
+small guard b competitor 20 3 s-d x + 10 x + 10 der 31
+width guard candidates count 1
+EXACT guard exit 20 3 s-d (41, 26, 31) 76
+wide exact H-zero b-root 13695/4*x^7 + (-54483/5)*x^6 + 2995431/200*x^5 + (-1146143/100)*x^4 + 576989/110*x^3 + (-78616/55)*x^2 + 23717/110*x + (-757/55) multiplicity in A 4
+wide after exact removed guard fiber 19 13 14 10 1
+EXACT octic^56 full b fiber closed by removing H-zero factors before reduction
+CRT primes 20 bits 1201 limit 10220 wall 8.490523824002594
+CRT primes 40 bits 2401 limit 10220 wall 17.763872537005227
+CRT primes 60 bits 3601 limit 10220 wall 26.48541466500319
+CRT primes 80 bits 4801 limit 10220 wall 35.105979037005454
+CRT primes 100 bits 6001 limit 10220 wall 43.788441371012595
+CRT primes 120 bits 7201 limit 10220 wall 52.09312460500223
+CRT primes 140 bits 8401 limit 10220 wall 60.45821955900465
+CRT primes 160 bits 9601 limit 10220 wall 69.2300776320044
+CRT primes 171 bits 10261 limit 10220 wall 73.78973201601184
+degree258 guard norm degree 1864; entire common simple b branch forces exact P(0)=0
+degree288: (47,12,9) product/residue units; reduced right-plateau ghost mark [7,31,30]
+sole left Q(0)=0 excluded in the neighboring s=c8 chart; other roots or masks not claimed
+
+real	1m38.139s
+user	1m37.498s
+sys	0m0.227s

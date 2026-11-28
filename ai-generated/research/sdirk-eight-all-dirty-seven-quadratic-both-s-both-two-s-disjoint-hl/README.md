@@ -1,7 +1,7 @@
 # Both singleton endpoints, disjoint later singleton taps: partial high/low exclusions
 
 Assume strict ten-stage SDIRK of ordinary order at least eight over a characteristic-zero field. All ten literal quadratic defects are nonzero, there are exactly seven clock labels, and both literal endpoint labels are singleton. Use the genuinely quadratic seven-clock graph with three doubled and four singleton labels. At each end the literal first three rows use one other singleton and one doubled label; the two observed doubled labels are different. This packet excludes the lost first scale-row case and the regular \(Q=0\) case defined below for both unequal-law charts **A2/A3 and A2/star**. The complementary regular \(Q
-e0\) case remains open. Reverse their roles by the actual weighted mirror, not by permuting stages. Both genuine star orders have the same paid scalar reads. It does not address the disjoint A2/A2 off-diagonal or unequal-count charts.
+e0\) case is not covered by this packet. It is closed by the [separate univariate off-curve proof](../sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/README.md), which does not use a bivariate gcd to infer membership. Reverse their roles by the actual weighted mirror, not by permuting stages. Both genuine star orders have the same paid scalar reads. It does not address the disjoint A2/A2 off-diagonal or unequal-count charts.
 
 ## True taps and two scale lines
 

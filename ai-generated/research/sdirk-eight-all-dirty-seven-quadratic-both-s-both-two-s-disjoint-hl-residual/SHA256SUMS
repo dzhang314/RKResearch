@@ -1,0 +1,8 @@
+c07ff781b0960430351280e41ab33d9e192354c7d856e6db9f0ea00091406d09  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/README.md
+8f002685beed581de19a44679e9d546f1b649ed8c3369821a5e48ae87252b453  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/check_degree_drop.py
+08c142c83ea6623bd4cc9e5f130167f8987b90624481400116571769d2b08eee  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/check_quadratic.py
+c17fb9d2f04c7c738a19e78ba901fcb15b64876aa50f1c5998bb01fcc60f1273  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/field_fmpq.py
+910f20b00d738be88c88aefaa788cdf833f846d92ea2ed61fac5a44281307dc2  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/places.py
+d48fa23e455fba821ea592ea6d8a56f562c506ecbf340b7c14ac435d473fc24c  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/projection_residual.py
+4efdb19636aeb94cd28ed6ccfa1710f67afae3dce6faf817e35d442cb84803a3  ai-generated/research/sdirk-eight-all-dirty-seven-quadratic-both-s-both-two-s-disjoint-hl-residual/proof-audit.lean
+6914ae3378110fc1e204e5c53bd137815fe863e68e122cc9a79a0cb4812c67cd  ai-generated/lean/RKCert/Research/SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHLResidual.lean

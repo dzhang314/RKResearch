@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHLResidual
+
+open RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHLResidual
+
+#print axioms pseudo_remainder_vanishes
+#print axioms affine_common_root_minor

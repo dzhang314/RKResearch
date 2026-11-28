@@ -1,0 +1,3 @@
+ordinary primitive determinant and exact clock relation
+grade-six Legendre factor and exact late-amplitude factor
+late numerical-zero quintic: exactly three real roots, each isolated

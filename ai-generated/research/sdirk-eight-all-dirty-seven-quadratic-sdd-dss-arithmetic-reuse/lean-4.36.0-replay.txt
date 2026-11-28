@@ -1,0 +1,6 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticReuse.ratio_pivot_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticReuse.ratio_pivot_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticReuse.cleared_paid_singleton' depends on axioms: [propext]

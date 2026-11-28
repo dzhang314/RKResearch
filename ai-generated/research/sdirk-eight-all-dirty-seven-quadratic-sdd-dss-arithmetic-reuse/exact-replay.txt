@@ -1,0 +1,4 @@
+A necessary rows [(18, 9), (20, 5), (20, 8)]
+A projected degrees [173, 229] H factors []
+S necessary rows [(18, 9), (14, 5), (14, 8)]
+S projected degrees [127, 179] H factors []

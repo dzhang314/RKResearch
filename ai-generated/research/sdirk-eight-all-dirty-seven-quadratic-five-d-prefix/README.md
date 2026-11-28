@@ -72,4 +72,4 @@ This is the second affine row. The check tests both rows and keeps zero coeffici
 
 ## Replay
 
-Run `python five_d_products.py` and `python check_five_d.py` (SymPy 1.14 and python-flint 0.8 tested). It takes under a second in the tested environment. The [Lean companion](../../lean/RKCert/Research/SDIRKEightDirtySevenQuadraticFiveDPrefix.lean) is staged scalar source for the scale-free shape identities; the exact chronological and trace proof is not an end-to-end native Lean theorem. No finite-characteristic claim is made.
+Run `python five_d_products.py` and `python check_five_d.py` (SymPy 1.14 and python-flint 0.8 tested). It takes under a second in the tested environment. The [Lean companion](../../lean/RKCert/Research/SDIRKEightDirtySevenQuadraticFiveDPrefix.lean) checks the scale-free shape identities on Lean/Mathlib 4.36.0; the exact chronological and trace proof is not an end-to-end native Lean theorem. No finite-characteristic claim is made.

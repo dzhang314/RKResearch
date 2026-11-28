@@ -96,4 +96,4 @@ Substitution into (1) and the proportionality mask gives univariate polynomials 
 
 ## Replay and scope
 
-Run `python shared_split_fullrank.py`, `python shared_split_reconstruct.py`, and `python shared_split_rankdrop.py`. Tested with SymPy 1.14 and python-flint 0.8. Only small exact polynomials and compact logs are needed. The [Lean companion](../../lean/RKCert/Research/SDIRKEightDirtySevenQuadraticSharedSplitArithmetic.lean) stages the denominator-cleared scalar remainder identities, not the full chronological exclusion. No native stock build or finite-characteristic bound is asserted.
+Run `python shared_split_fullrank.py`, `python shared_split_reconstruct.py`, and `python shared_split_rankdrop.py`. Tested with SymPy 1.14 and python-flint 0.8. Only small exact polynomials and compact logs are needed. The [Lean companion](../../lean/RKCert/Research/SDIRKEightDirtySevenQuadraticSharedSplitArithmetic.lean) checks the denominator-cleared scalar remainder identities on Lean core 4.34.1 through 4.37.0-rc1, not the full chronological exclusion. No finite-characteristic bound is asserted.

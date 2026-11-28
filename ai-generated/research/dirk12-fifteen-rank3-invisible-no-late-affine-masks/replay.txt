@@ -1,0 +1,3 @@
+exact first-two primitive integrals and half-clock mask
+guarded first-diagonal eliminant, exceptional 3/5, and cubic uniqueness
+exact discriminant and three Sturm-isolated interval endpoints

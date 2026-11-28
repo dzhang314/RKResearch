@@ -1,0 +1,7 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKCert.ReviewedNative.SDIRK8HoleSixCompactProjection.momentCramer' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8HoleSixCompactProjection.homogeneousActualReads' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8HoleSixCompactProjection.quarticRemainder' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8HoleSixCompactProjection.quadraticLinearProjection' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8HoleSixCompactProjection.linearProjection' depends on axioms: [propext]

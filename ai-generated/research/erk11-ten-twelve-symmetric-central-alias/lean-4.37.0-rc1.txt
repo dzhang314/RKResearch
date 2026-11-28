@@ -1,0 +1,8 @@
+'RKResearch.ERK11CentralAliasProfileGate.clearedOuterProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CentralAliasProfileGate.clearCentralDiagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11CentralAliasProfileGate.reflectedFirstExtra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CentralAliasProfileGate.proportionalFirstRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

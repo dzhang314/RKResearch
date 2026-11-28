@@ -1,0 +1,3 @@
+d exact guard powers (3, 1, 1, 1) width degree 21 mod 19 factors (2, 4, 4, 11) rank 8: 48 ; rank 7 with nonproportional first-pool rows: 16
+o exact guard powers (1, 1, 3, 0) width degree 18 mod 29 factors (7, 11) rank 8: 24 ; rank 7 with nonproportional first-pool rows: 8
+Both symmetric-width ordered aliases excluded.

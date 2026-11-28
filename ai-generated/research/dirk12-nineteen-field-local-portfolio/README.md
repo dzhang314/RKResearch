@@ -66,8 +66,9 @@ component. The two fixed-order-thirteen defects generate
 the unit ideal componentwise, hence also in the product.
 This proves exact order rather than only the paid moments.
 
-The argument does not allow gluing over an arbitrary
-mixed-characteristic ring. In particular the gap to the
+The [clean-ring extension](CLEAN-RINGS.md) allows nineteen stages over
+any admissible clean ring, including some mixed-characteristic rings,
+but does not allow gluing over an arbitrary commutative ring. In particular the gap to the
 [single 20-stage factorial-only witness](../dirk12-twenty-factorial-two-ports/README.md)
 remains for that broader coefficient claim. These are upper
 bounds, not minimum claims over every field. The real

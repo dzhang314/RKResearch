@@ -1,0 +1,72 @@
+singular Cmat (3, 3) [(0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+singular delta (6, 6) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+singular sN (6, 6) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+singular pN (4, 6) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+central matched singular exact constant width gcd
+regular Cmat (3, 3) [(0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+regular F (6, 6) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (19, (4, 3)), (21, (3, 4))]
+regular g (16, 16) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+regular Sup (33, 33) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+central matched regular exact constant width gcd
+C (0, 5, 5) []
+F (4, 11, 11) [0, 1]
+ML (3, 10, 11) [0, 0, 0, 1]
+MR (3, 11, 10) [0, 1, 1, 1]
+B (6, 11, 11) [0, 1]
+z elimination ML MR (0, 63, 63)
+width projection MR (0, 630)
+z elimination ML B (0, 93, 99)
+width projection B (0, 957)
+gcd (0, 32) [(2, 2), (2, 2), (1, 8), (1, 16)]
+z elimination ML F (0, 69, 75)
+width projection F (0, 718)
+gcd (0, 8) [(1, 8)]
+central opposite exact width gcd a^8
+edge matched affine-zero exact constant width gcd
+matched F (27, 23) [(1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+matched G (23, 22) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+matched R (15, 13) [(1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+integer coefficient bounds bits [5707, 3314]
+  CRT progress 20 5.52
+  CRT progress 40 11.0
+  CRT progress 60 16.1
+  CRT progress 80 20.9
+projection degrees [('F', 1081), ('R', 611)] primes 94
+edge matched exact width gcd degree 294
+matched F (27, 23) [(1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+matched G (23, 22) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+matched R (15, 13) [(1, (0, 1)), (1, (0, 1)), (1, (0, 1)), (1, (0, 1))]
+computing guard subresultant matched 108 27 17
+width 108 exact homogeneous guard 27 17 power 1
+  whole lift 101 component degrees [44, 1, 1, 2, 3, 7, 9, 41] full degree rows [0, 1, 2]
+computing guard subresultant matched 6 26 11
+width 6 exact homogeneous guard 26 11 power 2
+  whole lift 101 component degrees [6] full degree rows [0, 1, 2]
+computing guard subresultant matched 9 26 11
+width 9 exact homogeneous guard 26 11 power 2
+  whole lift 101 component degrees [9] full degree rows [0, 1, 2]
+edge opposite affine-zero exact constant width gcd
+opposite F (31, 27) []
+opposite G (28, 27) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+opposite R (20, 19) []
+integer coefficient bounds bits [7866, 5481]
+  CRT progress 20 10.99
+  CRT progress 40 22.67
+  CRT progress 60 33.88
+  CRT progress 80 44.72
+  CRT progress 100 56.36
+  CRT progress 120 68.75
+projection degrees [('F', 1537), ('R', 1048)] primes 129
+edge opposite exact width gcd degree 520
+opposite F (31, 27) []
+opposite G (28, 27) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+opposite R (20, 19) []
+computing guard subresultant opposite 132 27 17
+width 132 exact homogeneous guard 27 17 power 1
+  whole lift 101 component degrees [102, 1, 2, 4, 23] full degree rows [0, 1, 2]
+computing guard subresultant opposite 15 26 11
+width 15 exact homogeneous guard 26 11 power 2
+  whole lift 101 component degrees [1, 14] full degree rows [0, 1, 2]
+computing guard subresultant opposite 6 26 11
+width 6 exact homogeneous guard 26 11 power 3
+  whole lift 101 component degrees [6] full degree rows [0, 1, 2]

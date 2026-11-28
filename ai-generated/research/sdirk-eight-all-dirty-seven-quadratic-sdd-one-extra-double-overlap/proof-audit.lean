@@ -1,0 +1,2 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticSddOneExtraDoubleOverlap
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddOneExtraDoubleOverlap.paid_singleton_eliminates_scale

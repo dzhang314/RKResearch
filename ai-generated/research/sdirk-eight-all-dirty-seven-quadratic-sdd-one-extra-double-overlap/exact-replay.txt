@@ -1,0 +1,24 @@
+A A2 raw/guarded product degrees 11 7 factor degrees [(7, 1)]
+scalar H degree 7 raw third-D gcd 0
+guarded third-D degree 0
+A A2 post-fit 7 0
+A A3 raw/guarded product degrees 14 10 factor degrees [(10, 1)]
+scalar H degree 10 raw third-D gcd 0
+guarded third-D degree 0
+A A3 post-fit 10 0
+A S raw/guarded product degrees 11 7 factor degrees [(7, 1)]
+scalar H degree 7 raw third-D gcd 0
+guarded third-D degree 0
+A S post-fit 7 0
+S A2 raw/guarded product degrees 8 4 factor degrees [(4, 1)]
+scalar H degree 4 raw third-D gcd 0
+guarded third-D degree 0
+S A2 post-fit 4 0
+S A3 raw/guarded product degrees 11 8 factor degrees [(8, 1)]
+scalar H degree 8 raw third-D gcd 0
+guarded third-D degree 0
+S A3 post-fit 8 0
+S S raw/guarded product degrees 8 4 factor degrees [(4, 1)]
+scalar H degree 4 raw third-D gcd 0
+guarded third-D degree 0
+S S post-fit 4 0

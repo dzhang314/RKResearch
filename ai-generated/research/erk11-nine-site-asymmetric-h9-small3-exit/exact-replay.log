@@ -1,0 +1,35 @@
+gate F (5, 16, 15)
+gate G (5, 7, 9)
+gate R (6, 20, 23)
+gate L (3, 9, 11)
+gate Q (4, 12, 12)
+gate S (6, 15, 15)
+SMALL M (3, 5, 8) [(0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (1, (0, 1, 0)), (17, (1, 0, 1))]
+SMALL K (6, 14, 20) [(0, (0, 0, 1)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0))]
+WIDTH MG (46, 59) 0.53
+WIDTH MQ (56, 62) 1.25
+gcd (0, 0) []
+WIDTH MK (72, 91) 4.9
+gcd (0, 0) []
+WIDTH MF (73, 82) 6.68
+gcd (0, 0) []
+WIDTH MS (75, 87) 9.89
+gcd (0, 0) []
+gate F (5, 16, 15)
+gate G (5, 7, 9)
+gate R (6, 20, 23)
+gate L (3, 9, 11)
+gate Q (4, 12, 12)
+gate S (6, 15, 15)
+SMALL M (3, 5, 8) [(0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (1, (0, 1, 0)), (17, (1, 0, 1))]
+SMALL K (6, 14, 20) [(0, (0, 0, 1)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0))]
+WIDTH GQ (74, 72) 5.0
+WIDTH GF (87, 88) 19.57
+gcd (0, 0) []
+small-component exact projection Q (0, 516) (0, 516)
+small-component exact projection F (0, 660) (0, 99)
+small-component exact projection S (0, 699) (0, 87)
+small-component exact projection K (0, 702) (0, 63)
+small-component exact projection ZQ (0, 660) (0, 0)
+small-component exact projection ZF (0, 780) (0, 0)
+The entire (3,6) width component is excluded.

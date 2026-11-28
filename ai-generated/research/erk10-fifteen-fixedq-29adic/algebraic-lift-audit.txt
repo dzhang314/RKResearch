@@ -1,0 +1,5 @@
+origin polynomial degree 10 and 29-unit leading term / derivative
+exact A(1)=0 in Q[c]
+exact symmetric scalar spectrum reconstructed
+all three late physical cofactor contacts exact in Q[c]
+all three unused nonlinear eta-u moments exact: deg U ≤ 4 and U(R) = -1

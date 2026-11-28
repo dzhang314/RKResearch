@@ -1,0 +1,15 @@
+guarded linear projection u - 1 12
+guarded linear projection u - 2 45
+gap degree 3 a=1 True b-fibre gcd degree 3
+  exact b gcd is (b−1)^3
+covered a=1 cubic: unique b=1 forces zero interval
+guarded denominator cubic u**3 - 3*u**2 + 1 45
+gap degree 18 a=1 False b-fibre gcd degree 1
+guarded arithmetic S,D,S mesh 18 coincident True
+S/S reverse T 18 0
+T degree 36 reverse D-read fits [('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded')]
+gap degree 58 a=1 False b-fibre gcd degree 1
+guarded arithmetic S,D,S mesh 58 coincident False
+S/S reverse T 58 0
+T degree 58 reverse D-read fits [('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded'), ('D,S', 'excluded'), ('S,D', 'excluded')]
+verified arithmetic S,D,S at a singleton end opposite a doubled endpoint is impossible

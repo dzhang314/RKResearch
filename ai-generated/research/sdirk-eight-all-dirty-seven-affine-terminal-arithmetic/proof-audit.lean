@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenAffineTerminalArithmetic
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineTerminalArithmetic.a_one_cubic_gate
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineTerminalArithmetic.unit_gap_values

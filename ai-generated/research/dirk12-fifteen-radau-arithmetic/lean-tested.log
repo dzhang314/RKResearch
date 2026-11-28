@@ -1,0 +1,50 @@
+
+Lean 4.36.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J5_moments' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J6_moments' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.certifyPrime' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.degreesPreserved' does not depend on any axioms
+exit=0
+
+Lean 4.34.1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J5_moments' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J6_moments' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.certifyPrime' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.degreesPreserved' does not depend on any axioms
+exit=0
+
+Lean 4.35.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J5_moments' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J6_moments' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.certifyPrime' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.degreesPreserved' does not depend on any axioms
+exit=0
+
+Lean 4.37.0-rc1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J5_moments' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.J6_moments' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.certifyPrime' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair0.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair1.degreesPreserved' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.euclid' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RadauPencilArithmetic.Pair2.degreesPreserved' does not depend on any axioms
+exit=0

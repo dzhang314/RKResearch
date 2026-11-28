@@ -1,0 +1,8 @@
+11^2 compatible; 1205 ordinary rooted conditions and unit bush defect 120
+11^3 compatible; 1205 ordinary rooted conditions and unit bush defect 362
+13^2 compatible; 1205 ordinary rooted conditions and unit bush defect 122
+13^3 compatible; 1205 ordinary rooted conditions and unit bush defect 1305
+19^2 compatible; 1205 ordinary rooted conditions and unit bush defect 106
+19^3 compatible; 1205 ordinary rooted conditions and unit bush defect 1911
+23^2 compatible; 1205 ordinary rooted conditions and unit bush defect 153
+23^3 compatible; 1205 ordinary rooted conditions and unit bush defect 5972

@@ -1,0 +1,4 @@
+F11: strict distinct width 16; 1205 ordinary rooted conditions, bush defect 10
+F13: strict distinct width 16; 1205 ordinary rooted conditions, bush defect 5
+F19: strict distinct width 16; 1205 ordinary rooted conditions, bush defect 11
+F23: strict distinct width 16; 1205 ordinary rooted conditions, bush defect 15

@@ -1,0 +1,5 @@
+two actual forward residual rows: r^2 second difference = r^2*(r - 1)^2
+shifted Hilbert determinant: 1/67212633600000 {2: 12, 3: 7, 5: 5, 7: 4}
+normalized half/zero moment obstructions: 1/6, 1/12
+actual one-active-ghost head before fourth distinct row: cleared determinant 9*b*(-b + z)*(-c + z)**2
+inactive repeat checks: b factors (2c-b,b+c); c factor 2b-c

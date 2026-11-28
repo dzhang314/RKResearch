@@ -1,0 +1,4 @@
+pure ghost, extra endpoint after first normal: two-tap determinant = a*p**2
+tracked ghost-plus-pair two-target exit: x^2*(x-z)^2
+endpoint-after-two determinant and dormant q=2p cubic specialization checked
+corrected high-zero donors, blind primitive identity and cofactor collapse checked

@@ -1,0 +1,16 @@
+rawline slopes/pivots True [((52, 48), 2597), ((59, 52), 3180), ((74, 66), 5025)]
+line bidegrees True (55, 50) (55, 50) removed common factor (130, 116)
+rawline slopes/pivots False [((44, 43), 1884), ((51, 52), 2500), ((63, 64), 3906)]
+line bidegrees False (55, 57) (56, 57) removed common factor (102, 102)
+raw determinant (111, 107) 12096
+first determinant deflated (111, 107) 12096
+bivariate factors [((111, 107), 218, 1)]
+F vanishes at (17,7,7), K residue 12; both ordinary actual fits and both pool projectivities pass
+fixed ghost scale coefficient 0 is live: V0[0]=3, V1[0]=1, scale 14
+unit weight-sum inverse modulo monic Ds, although Ds'(s) reduces to zero
+actual left plateau mark 13 from B,nu,mu,tau,f,scale = [0, 0, 8, 11, 1, 14]
+transverse coefficient witness proves finite regular widths including first auxiliary denominator failures
+
+real	0m17.805s
+user	0m14.922s
+sys	0m0.351s

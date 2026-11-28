@@ -1,0 +1,12 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RationalProfileChannels.normalizeAtShared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RationalProfileChannels.repeatedRootChannels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RationalProfileChannels.separateTwoFibers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.RationalProfileChannels.twoNonzeroCorrections' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

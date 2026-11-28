@@ -1,0 +1,5 @@
+'RKResearch.Certified.ERK10FifteenDegreeEighteen.frobenius_nine' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.ERK10FifteenDegreeEighteen.frobenius_three_bezout' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.ERK10FifteenDegreeEighteen.other_17_place' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.ERK10FifteenDegreeEighteen.five_nonsquare_mod17' does not depend on any axioms
+'RKResearch.Certified.ERK10FifteenDegreeEighteen.ordinary_power_receipts' depends on axioms: [propext, Classical.choice]

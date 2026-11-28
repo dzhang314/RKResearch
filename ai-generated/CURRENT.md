@@ -31,6 +31,8 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 These narrow the search at the lower endpoints; they do not change the real stage intervals above.
 
+**ERK10, fifteen rational stages.** The [guarded five-opening, two-pair exclusion](research/erk10-fifteen-two-pair-rational-closure/README.md) closes both actual reverse starts, including delayed active-pair closure. In characteristic zero those guarded geometries require a [degree-18 coefficient subfield](research/erk10-fifteen-two-pair-rational-closure/FIELD.md). Other physical architectures remain open; the rational interval is still **14–16** and the real interval **14–15**.
+
 **ERK11, seventeen stages.** The [different-extra edge exclusion](research/ERK11-NINE-SITE-HALF-DIFFERENT-EDGE-EXIT.md) completes the characteristic-zero exclusion of the genuinely nine-site, half–half six-pair configurations, including the degenerate width fibers and both edge orientations. This is a conditional equality-case restriction; the four-distinct configurations and the unrestricted **17–18** interval are not settled.
 
 **Strict SDIRK8 zero count.** A ten-stage method over a characteristic-zero field would have **zero or at least seven** physical rows satisfying the quadratic stage condition. The prior exclusions of one through five combine with the [complete six-zero proof](research/sdirk-eight-six-zero-char-zero/README.md), including the final [three-off-clock active pair](research/sdirk-eight-six-zero-three-clock-active/README.md). The overall **10–11** interval is unchanged.

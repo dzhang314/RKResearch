@@ -1,0 +1,24 @@
+=== centered distinguished last-three row e=1/2 ===
+linear factor root 1/6 multiplicity 1
+linear factor root 0 multiplicity 12
+degree 2 multiplicity 1 no projective roots modulo 3
+degree 2 multiplicity 1 no projective roots modulo 3
+degree 2 multiplicity 9 no projective roots modulo 5
+degree 3 multiplicity 2 no projective roots modulo 29
+degree 23 multiplicity 1 no projective roots modulo 13
+only nonzero a=1/6; split tail 4/5,7/8; blind equation gives 0*c=-1/345600
+=== alternate blind pivot D=0 ===
+linear factor root 1/4 multiplicity 2
+linear factor root 0 multiplicity 12
+degree 2 multiplicity 1 no projective roots modulo 3
+degree 2 multiplicity 1 no projective roots modulo 3
+degree 2 multiplicity 1 no projective roots modulo 11
+degree 2 multiplicity 1 no projective roots modulo 13
+degree 4 multiplicity 9 no projective roots modulo 19
+degree 7 multiplicity 1 no projective roots modulo 11
+degree 9 multiplicity 2 no projective roots modulo 11
+degree 43 multiplicity 1 no projective roots modulo 37
+only nonzero a=1/4; e=2/3; tail V=Y²−6Y/5+2/5 has discriminant −4/25
+=== no first terminal Z response (Z_d=0) ===
+q4 projectively rootless mod19; q9 projectively rootless mod11
+regular resultant bidegrees and multiplicities [((2, 1), 9), ((3, 3), 2), ((6, 3), 1), ((24, 12), 1)]

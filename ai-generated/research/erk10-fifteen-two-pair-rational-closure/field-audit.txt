@@ -1,0 +1,7 @@
+unconditional identity: 4JG=(Y−c)M−JM
+late-active sixth-row cofactor normalization checked
+Cramer numerators and Gram pivot-resultant guards verified
+nonic N has simple 17-root a=16; derivative 4
+nonic N irreducible mod29 (Frobenius order-nine and degree-three gcd)
+other simple 17-place a=14 has nonsquare V discriminant 5; a=16 splits V at 4,6
+exact real signature via root intervals: [(9/100, 1/10), (11/50, 23/100), (39/100, 2/5)] ; all three real base places split V, so degree-18 field has signature (6,6)

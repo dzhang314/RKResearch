@@ -1,0 +1,3 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveStarInteriorZeroTail.missingQuadraticMinor' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveStarInteriorZeroTail.unorderedStarPair' depends on axioms: [propext, Quot.sound]

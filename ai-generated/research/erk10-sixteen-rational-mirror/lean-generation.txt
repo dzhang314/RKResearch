@@ -1,0 +1,2 @@
+Classes by grade: [1, 1, 2, 3, 6, 12, 25, 53, 118, 267]
+Profiles: 488 Actions: 221 Joins: 985

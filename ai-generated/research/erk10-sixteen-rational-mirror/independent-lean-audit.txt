@@ -1,0 +1,8 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Regenerated and byte-compared 111 numeric/source modules.
+Re-elaborated the endpoint with its compiled dependencies in a fresh overlay.
+'RKResearch.Certified.ERK10RationalSixteen.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10RationalSixteen.exists_exact_of_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10RationalSixteen.exists_exact_rat' depends on axioms: [propext, Classical.choice, Quot.sound]

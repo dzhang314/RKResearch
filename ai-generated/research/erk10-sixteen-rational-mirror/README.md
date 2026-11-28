@@ -73,5 +73,4 @@ From this directory:
     python3 -B replay.py
     sha256sum -c sources.sha256
 
-This is an exact integer replay and mathematical ring transfer. It is
-not yet an end-to-end native Lean certificate.
+The [native certificate](LEAN.md) now proves the exact rational witness and its transfer to every nonzero commutative ring inverting its denominator in Lean/Mathlib 4.36.0. The [independent endpoint audit](independent-lean-audit.txt) records regeneration and re-elaboration. The separate five-tableau portfolio is not claimed as a full native theorem.

@@ -1,0 +1,6 @@
+guarded endpoint factor degrees [(1, 2), (2, 1), (7, 1)]
+projection alive, degree 6
+ring Polynomial ring in Z over QQ<h> with lex order
+two-ended factor degrees []
+two-ended exact resultant gcd 1
+verified exact remaining distinct/shared small phase contradictions

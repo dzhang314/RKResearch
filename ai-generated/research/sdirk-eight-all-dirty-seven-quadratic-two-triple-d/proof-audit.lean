@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticTwoTripleD
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoTripleD.shared_center_vieta
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoTripleD.shared_center_remainder

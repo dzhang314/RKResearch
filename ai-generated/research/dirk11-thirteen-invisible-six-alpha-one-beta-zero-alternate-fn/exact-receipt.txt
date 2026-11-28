@@ -1,0 +1,9 @@
+Actual first-ghost affine remainder and profile resultant; repeated-Fn derivative and H3 triple-contact checks passed.
+    1.19 exact physical V/B transposition on the same ordinary field
+    1.19 exact ordinary V degree 36 constant -7295157 exact B gcd linear and pivot unit
+    1.31 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+    1.32 residue x^4 + 16*x^3 + 54*x^2 + 101*x + 100 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2
+   39.47 exact physical V/B transposition on the same ordinary field
+   39.47 exact ordinary V degree 60 constant -10289767396352176431 exact B gcd linear and pivot unit
+   45.04 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+   45.07 residue x^4 + 64*x^3 + 102*x^2 + 54*x + 44 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2

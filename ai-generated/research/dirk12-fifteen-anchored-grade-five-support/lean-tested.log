@@ -1,0 +1,49 @@
+Lean 4.34.1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.moment_identities' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.split_basis' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.nonterminal_receipts' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.terminal_receipts' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.all_pure_primitive_receipts' depends on axioms: [propext]
+Lean 4.35.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.moment_identities' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.split_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.nonterminal_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.terminal_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.all_pure_primitive_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.36.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.moment_identities' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.split_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.nonterminal_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.terminal_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.all_pure_primitive_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.37.0-rc1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.moment_identities' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.split_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.nonterminal_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.terminal_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LobattoArithmetic.all_pure_primitive_receipts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.equality_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

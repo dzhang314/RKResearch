@@ -57,6 +57,8 @@ The [native Lean certificate for the real 14-stage DIRK11 construction](research
 
 The [14-stage DIRK11 algebraic shell](research/dirk11-fourteen-prime-families/README.md) also gives exact order eleven in 68 prime families, over their p-adic integers and any nonzero commutative ring whose finite characteristic is supported on those primes. Independent replay checks all 3,047 rooted equations at each listed prime and prime square. The same construction gives order eleven over fields of size p⁸ for every p outside its stated denominator. These are upper bounds, not exclusions of 13.
 
+At order twelve, the [fifteen-stage DIRK equality frame](research/dirk12-fifteen-frame/README.md) makes every quadratic-defective stage unweighted and excludes three or more physical quadratic-defect clocks in the non-stage-order-two branch. On the [stage-order-two, grade-five rank-four face](research/dirk12-fifteen-anchored-grade-five-support/README.md) there are at most two distinct active cubic-defect clocks. Lean/Mathlib 4.36.0 verifies the equality frame and Legendre lemmas; the scalar receipts also check on all four Lean versions. The real interval remains 15–16.
+
 ## Exact explicit minima over nonzero commutative rings
 
 - [Order five](research/erk-five-ring-witness/README.md): six stages are necessary and sufficient if 120 is a unit. Otherwise no stage count attains order five.

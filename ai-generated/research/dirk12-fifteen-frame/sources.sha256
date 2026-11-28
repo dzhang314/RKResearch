@@ -1,0 +1,7 @@
+2496f676ad42c7a9a053ee6aaecb7b338a5bd8c96fa8ea3a91278c887ce2a1cf  README.md
+34d9c6001e73a238580f109ac667f7ab4c0787fa890702907d02471925b89803  frame-4.36.0.log
+67a2f6e0947833e7c64ab229348b4d86673c31093bd5bf9b8e22412b3115ef6d  legendre-4.36.0.log
+0d3e170935201398f154d6d3f3e1c924ca7fedef356f17a4f9c2dff28c784e25  typed-4.36.0.log
+6e2a270a62bb5aad251ee08c1d0c27da0234af9fadc1659dca0d807cc9242afd  ../../lean/AuditDIRKOrderTwelveFifteenFrame.lean
+7480536da269c0b603dffc8fab6fe60ffa88b1569f95f539af2e1b62573b126e  ../../lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenFrame.lean
+8a6ca2d4c09bdd15cbe8b2870a4048ef3dc33ce0683a8fbffab9f67f20b41c07  ../../lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenLegendre.lean

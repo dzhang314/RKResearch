@@ -1,0 +1,46 @@
+RKResearch.Certified.Graded.OrderTwelveFifteen.equality_frame.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 12 A b)
+  (surplus :
+    Module.finrank K ↥(RKResearch.Certified.Graded.zeroSpace A 3) + 4 ≤
+      Module.finrank K ↥(RKResearch.Certified.Graded.zeroSpace A 6))
+  (live : b (Fin.last 14) ≠ 0) : EqualityFrame A b
+RKResearch.Certified.Graded.OrderTwelveFifteen.EqualityFrame.lastInSix.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} (self : EqualityFrame A b) :
+  RKResearch.Certified.Graded.Reverse.coordinate (Fin.last 14) ∈ RKResearch.Certified.Graded.treeSpace A 6
+RKResearch.Certified.Graded.OrderTwelveFifteen.EqualityFrame.lastOutFive.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} (self : EqualityFrame A b) :
+  RKResearch.Certified.Graded.Reverse.coordinate (Fin.last 14) ∉ RKResearch.Certified.Graded.treeSpace A 5
+RKResearch.Certified.Graded.OrderTwelveFifteen.EqualityFrame.lastClean.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} (self : EqualityFrame A b) (f : Fin 15 → K) :
+  f ∈ RKResearch.Certified.Graded.zeroSpace A 5 → f (Fin.last 14) = 0
+RKResearch.Certified.Graded.OrderTwelveFifteen.EqualityFrame.quadraticInvisible.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} (self : EqualityFrame A b) (i : Fin 15) :
+  b i * RKResearch.monomialStageDefect A 1 i = 0
+RKResearch.Certified.Graded.OrderTwelveFifteen.EqualityFrame.nonC2_ranks.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} (self : EqualityFrame A b) :
+  RKResearch.monomialStageDefect A 1 ≠ 0 →
+    Module.finrank K ↥(RKResearch.Certified.Graded.zeroSpace A 3) = 2 ∧
+      Module.finrank K ↥(RKResearch.Certified.Graded.zeroSpace A 4) = 3 ∧
+        Module.finrank K ↥(RKResearch.Certified.Graded.zeroSpace A 5) = 4 ∧
+          Module.finrank K ↥(RKResearch.Certified.Graded.zeroSpace A 6) = 6
+RKResearch.Certified.Graded.OrderTwelveFifteen.legendre_in_six.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} [CharZero K] (ho : RKResearch.HasOrder 12 A b)
+  (H : EqualityFrame A b) (nc : RKResearch.monomialStageDefect A 1 ≠ 0) :
+  (RKResearch.Certified.Graded.coeffEval A 6) (legendreCoeffs K) ∈ RKResearch.Certified.Graded.zeroSpace A 6
+RKResearch.Certified.Graded.OrderTwelveFifteen.nonC2_clock_zero_row_reads_something.{u_1} {K : Type u_1} [Field K]
+  {A : Matrix (Fin 15) (Fin 15) K} {b : Fin 15 → K} [CharZero K] (ho : RKResearch.HasOrder 12 A b)
+  (H : EqualityFrame A b) (nc : RKResearch.monomialStageDefect A 1 ≠ 0) {i : Fin 15}
+  (ni : RKResearch.Certified.Graded.nodes A i = 0) :
+  ∃ v ∈ RKResearch.Certified.Graded.treeSpace A 5, (RKResearch.Certified.Graded.mat A) v i ≠ 0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.equality_frame' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.legendre_in_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.grade_six_defect_zero_at_readless_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.nonC2_clock_zero_row_reads_something' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

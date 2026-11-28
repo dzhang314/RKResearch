@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.legendre_in_six' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.grade_six_defect_zero_at_readless_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.nonC2_clock_zero_row_reads_something' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

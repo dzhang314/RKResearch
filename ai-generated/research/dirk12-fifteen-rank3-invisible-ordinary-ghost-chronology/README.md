@@ -142,3 +142,5 @@ The exact scalar replay independently checks the primitive determinant, clock an
 The typed consumer and source passed Lean/Mathlib 4.36.0 with only the standard axioms. No additional Mathlib-version pairing is claimed here.
 
 The separate [fourth-live-row exclusion](../dirk12-fifteen-rank3-invisible-late-zero-exclusion/README.md) now rules out every late numerical-zero fourth ghost in the two high-site subcharts above. It uses an independent true grade-seven pure read after eliminating the unknown early ghost geometry.
+
+The [general late-fourth finite projection](../dirk12-fifteen-rank3-invisible-late-finite-projection/README.md) eliminates the early ghost parameters when the first three ghost clocks are nonzero and confines the first four nonzero live clocks to a finite algebraic set, including coefficient-pivot specializations.

@@ -1,0 +1,9 @@
+9148fc5ef5f6991fcf9f13bf8b1bfea7b131fe71659e74416c14db46c9f6ce42  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/README.md
+fb4bd92e1102c7cf5a1cfd804082e792f231b13eb26c56e3ef941b1d09af8bed  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/check_eight_reverse_live_regular_finite.py
+8ce73f3ff40fbe724b95baf628dcba930a8297d390574aa3f2ef8773019b7f4c  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/regular_arith_nonliteral.py
+65f54fbc0a96f45b97d024e74c6071f3030c17674458deb795823e90c3b16ecb  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/regular_arith_projection.py
+4c668ff2df3572a1bb4f265dbfec927ac4916f166e5a6d4b7db9c82aafb34c0e  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/regular_star_nonliteral.py
+a88a8fe65e1bfd7d1f3079a41c9627514cb9974098935a6100737594e9c2a71a  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/regular_star_projection.py
+b3746637abee8c983497d2d2516664d0932b564add14298ecbd0e6070d322c08  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/exact-replay.txt
+dc3ad6caf98ff6cfe676679b48021b247ef3ec5a8fe2800f4fc782039a3240c3  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-regular-finite/lean-4.36.0-audit.txt
+f846c92b5a3f8fdb73d3dd04cdd668c6175553bc86f843e5fcefd1de3eeff01f  ai-generated/lean/RKCert/ReviewedNative/SDIRK8EightActiveRegularProjection.lean

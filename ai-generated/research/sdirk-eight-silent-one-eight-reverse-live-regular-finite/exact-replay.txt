@@ -1,0 +1,59 @@
+generic plus exceptional constant nine-site front True s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 0) (0, 21, 0) only exact gamma/EarlyGauss factors [12, 3, 3]
+regular star exact True 2 (0, 9, 61, 1) (0, 26, 160, 1) stripped (0, 9, 29, 1) (0, 26, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+finite regular star literal True 2 1129 203 2
+regular star exact True 3 (0, 9, 61, 1) (0, 26, 160, 1) stripped (0, 9, 29, 1) (0, 26, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+finite regular star literal True 3 1129 203 2
+regular star exact True 4 (0, 10, 61, 0) (0, 24, 160, 0) stripped (0, 10, 29, 0) (0, 24, 79, 0) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+finite regular star literal True 4 1129 203 2
+regular nonliteral star exact True (0, 1, 2) (0, 21, 126, 0) (0, 18, 55, 1) [14, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact True (0, 1, 3) (0, 20, 125, 0) (0, 17, 54, 1) [14, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact True (0, 2, 3) (0, 19, 124, 0) (0, 16, 54, 1) [13, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact True (1, 2, 3) (0, 19, 123, 0) (0, 16, 54, 1) [12, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+finite regular star nonliteral True 1129 203 2 1
+arith exact F/G raw True 2 (0, 29, 116, 1) 8.3
+arith exact F/G guarded True 2 (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+arith exact N True 2 (8, 14, 80, 1)
+finite regular arithmetic literal True 2 1129 203 2 1 [9, 18]
+arith exact F/G raw True 3 (0, 29, 116, 1) 10.1
+arith exact F/G guarded True 3 (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+arith exact N True 3 (8, 14, 80, 1)
+finite regular arithmetic literal True 3 1129 203 2 1 [1, 2, 2, 2, 2, 3, 3, 3, 3, 6]
+arith exact F/G raw True 4 (0, 35, 116, 0) 0.5
+arith exact F/G guarded True 4 (0, 33, 96, 0) [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+arith exact N True 4 (8, 12, 80, 0)
+finite regular arithmetic literal True 4 1129 203 2 1 [1, 1, 6, 25]
+arith nonliteral exact minor True (0, 1, 2) (6, 12, 66, 0) (6, 9, 28, 1) [5, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+arith nonliteral exact minor True (0, 1, 3) (6, 11, 65, 0) (6, 8, 27, 1) [5, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+arith nonliteral exact minor True (0, 2, 3) (6, 10, 64, 0) (6, 7, 27, 1) [4, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+arith nonliteral exact minor True (1, 2, 3) (6, 10, 63, 0) (6, 7, 27, 1) [3, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+finite regular arithmetic nonliteral True 1129 203 2 1 [1, 1, 2, 2, 3, 5, 15, 43]
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+regular star exact False 2 (0, 9, 61, 1) (0, 26, 160, 1) stripped (0, 9, 29, 1) (0, 26, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+finite regular star literal False 2 1129 203 2
+regular star exact False 3 (0, 9, 61, 1) (0, 26, 160, 1) stripped (0, 9, 29, 1) (0, 26, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+finite regular star literal False 3 1129 203 2
+regular star exact False 4 (0, 10, 61, 1) (0, 24, 160, 1) stripped (0, 10, 29, 1) (0, 24, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+finite regular star literal False 4 1129 203 2
+regular nonliteral star exact False (0, 1, 2) (0, 21, 126, 1) (0, 18, 55, 1) [14, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact False (0, 1, 3) (0, 20, 125, 1) (0, 17, 54, 1) [14, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact False (0, 2, 3) (0, 19, 124, 1) (0, 16, 54, 1) [13, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact False (1, 2, 3) (0, 19, 123, 1) (0, 16, 54, 1) [12, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+finite regular star nonliteral False 1129 203 2 1
+arith exact F/G raw False 2 (0, 29, 116, 1) 33.1
+arith exact F/G guarded False 2 (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+arith exact N False 2 (8, 14, 80, 1)
+finite regular arithmetic literal False 2 1129 203 2 1 [1, 2, 24]
+arith exact F/G raw False 3 (0, 29, 116, 1) 28.9
+arith exact F/G guarded False 3 (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+arith exact N False 3 (8, 14, 80, 1)
+finite regular arithmetic literal False 3 1129 203 2 1 [3, 24]
+arith exact F/G raw False 4 (0, 35, 116, 1) 44.4
+arith exact F/G guarded False 4 (0, 33, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+arith exact N False 4 (8, 12, 80, 1)
+finite regular arithmetic literal False 4 1129 203 2 1 [1, 5, 9, 18]
+arith nonliteral exact minor False (0, 1, 2) (6, 12, 66, 1) (6, 9, 28, 1) [5, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+arith nonliteral exact minor False (0, 1, 3) (6, 11, 65, 1) (6, 8, 27, 1) [5, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+arith nonliteral exact minor False (0, 2, 3) (6, 10, 64, 1) (6, 7, 27, 1) [4, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+arith nonliteral exact minor False (1, 2, 3) (6, 10, 63, 1) (6, 7, 27, 1) [3, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0]
+finite regular arithmetic nonliteral False 1129 203 2 1 [1, 2, 12, 16, 41]
+all regular ordinary-eighth orientations have finite characteristic-zero diagonal projections

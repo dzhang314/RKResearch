@@ -1,0 +1,5 @@
+'RKResearch.ERK11EndpointMomentPivotsGate.restoredRightFirstPoolMark' does not depend on any axioms
+'RKResearch.ERK11EndpointMomentPivotsGate.restoredBothFirstPoolMark' does not depend on any axioms
+'RKResearch.ERK11EndpointMomentPivotsGate.clearedRightCalibrationResidue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

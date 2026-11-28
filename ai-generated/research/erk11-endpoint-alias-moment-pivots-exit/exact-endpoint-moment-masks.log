@@ -1,0 +1,8 @@
+Alias o row divisors (1, 0) (0, 1) slope divisors (1, 0) (0, 0)
+right moment mask: exact degree 126, quartic (exact d gcd 1), quartic power5 (old right slope), degrees 42 and 60
+right 42: place (29,9,15), right actual temporal pivot, first-pool mark 16
+right 60: place (19,11,12), measured left profile/true right outer affine (2,12), t_R=3, right calibration remainder 5Y^2+16Y+8
+left moment mask: exact degree 115; a=0, d=0, no d, old right slope, and z_N=z_D=S=U=0 small exits
+left 24: place (31,25,7), both actual temporal pivots, first-pool mark 3
+left 36: exact d root with z_N=0, entire residue gcd linear at full degree8 (23,2,6)
+both fixed moment masks excluded; two raw affine masks remain separate

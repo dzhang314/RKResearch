@@ -1,0 +1,4 @@
+remaining counts: triple endpoint with or without one interior pair; four endpoints needs all singles
+intervening a-row reduced determinant: 3/4
+first live singleton k/Q equals -a/4
+next live singleton corrected cubic square: -w*x**2*(-3*a + 2*x)**2/2

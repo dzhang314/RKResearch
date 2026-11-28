@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10TripleEndpointInteriorPairScalars.trackingExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TripleEndpointInteriorPairScalars.correctedExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,74 @@
+Exact anchored Jacobi basis; H cardinal scalar -1/13860
+Exact early repeat primitives, paired head difference, companion subtraction
+at least two pre-fourth returns 90
+consecutive fifth, next fifth 24
+consecutive fifth, next fourth 24
+consecutive fifth, next old 72
+immediate fourth return, next fifth 24
+immediate fourth return, next old return 36
+immediate old return, next fifth 72
+immediate old return, next other return 108
+one pre-fourth return, next fifth 72
+one pre-fourth return, next marked return 108
+pre-third return 315
+Exact no-slack physical chronology census: 945 words, 11 nonempty leaves
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F101: repeat-V zero pivot excluded at rank48; other two repeats at rank96
+F101: actual nonzero fifth diagonal: matched V/B determinant unit at rank48
+F101: actual zero fifth diagonal: undivided quintic/match determinant unit at rank48
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F101: absent fourth G excluded by the full rank48 cleared primitive
+F101: immediate slack fifth twin excluded by the full fixed resultant
+F101: immediate slack origin twin excluded by the full fixed resultant
+F101: immediate slack fourth twin excluded by the full fixed resultant
+F101: immediate slack either other old twin excluded by the full fixed resultant
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F103: repeat-V zero pivot excluded at rank48; other two repeats at rank96
+F103: actual nonzero fifth diagonal: matched V/B determinant unit at rank48
+F103: actual zero fifth diagonal: undivided quintic/match determinant unit at rank48
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F103: absent fourth G excluded by the full rank48 cleared primitive
+F103: immediate slack fifth twin excluded by the full fixed resultant
+F103: immediate slack origin twin excluded by the full fixed resultant
+F103: immediate slack fourth twin excluded by the full fixed resultant
+F103: immediate slack either other old twin excluded by the full fixed resultant
+minus normalized affine second primitive and remainder: exact coefficient certificate
+minus common old root: all four exact Hankel minors have gcd 1
+minus common root at fifth/origin: exact gcds z^12 and 1
+minus zero diagonal at consecutive fifth: exact opposite old primitive signs
+minus consecutive matched fifth: exact ordinary determinant gcd z^16
+nonminus clock projection: normalized cubic pin, one exact degree24, normalized B unique linear ratio
+F101: immediate any old completion or old slack excluded by full scalar unit
+F101: immediate origin-clock slack excluded by full scalar unit
+F101: immediate fifth-clock slack excluded by full scalar unit
+F101: consecutive fifth excluded by full fixed quadratic/quintic determinant
+Exact old-event triple norm, two direct nested scalar audits: irreducible degree276 after ordinary guards, live linear fifth ratio
+F101: exact r and old-event x reconstruction ratios live
+F101: next fourth repeat unit
+F101: both remaining old repeat roots unit
+F101: next silent at fifth/origin after old marked completion units
+F101: consecutive fifth nonzero diagonal unit
+F101: consecutive fifth zero diagonal unit
+F107: exact r and old-event x reconstruction ratios live
+F107: next fourth repeat unit
+F107: both remaining old repeat roots unit
+F107: next silent at fifth/origin after old marked completion units
+F107: consecutive fifth nonzero diagonal unit
+F107: consecutive fifth zero diagonal unit
+Exact double norm (including three independent scalar audits): irreducible degree156 after live origin/Jacobi guards; unique later clock ratio
+F101: next fourth excludes e*K0=0
+F101: next fifth excludes e*K0=0
+F101: next origin excludes e*K0=0
+F101: full old cubic norm excludes e*K0=0 at all three old roots
+F107: next fourth excludes e*K0=0
+F107: next fifth excludes e*K0=0
+F107: next origin excludes e*K0=0
+F107: full old cubic norm excludes e*K0=0 at all three old roots
+Normalized fifth and next-row scalar identities exact
+Exact triple norm (two independent nested rational audits): degree631 = z^15 E4^18 J4^25 E8^3 D420, irreducible D420 and a live linear fifth ratio
+F103: exact r and old-event x reconstruction ratios live
+F103: immediate old contact with the commuting anchor is impossible
+F103: immediate old noncontact fails the actual companion commutator
+F107: exact r and old-event x reconstruction ratios live
+F107: immediate old contact with the commuting anchor is impossible
+F107: immediate old noncontact fails the actual companion commutator

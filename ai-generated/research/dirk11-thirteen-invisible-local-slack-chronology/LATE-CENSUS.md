@@ -48,5 +48,7 @@ also exclude origin slack by the normalized one-unmarked-label
 census. The [last old-label event closure](../dirk11-thirteen-invisible-local-four-pair-closure/README.md)
 excludes either remaining immediate event at an old clock, completing
 the entire normalized four-pair-plus-slack chart over characteristic-zero
-fields. The five-marked-pair, no-slack chart and different support
-regimes remain outside this conclusion.
+fields. The separate [five-marked-pair, no-slack proof](../dirk11-thirteen-invisible-local-five-pair-closure/README.md)
+now eliminates the other allocation in the same normalized
+multi-label grouped-square case. The one-label support and different
+grouped regimes remain outside these two conclusions.

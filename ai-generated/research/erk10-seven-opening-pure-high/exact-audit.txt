@@ -1,0 +1,10 @@
+fifth-row augmented determinant: r*s**2*(r - 1)*(r - s)**2*(2*r - 3)*(s - 1)/2
+fifth row at (r,s) = (r, 0) : (0, 0, 0)
+fifth row at (r,s) = (r, 1) : (1/2, 0, 0)
+fifth row at (r,s) = (r, r) : (-r**3 + 3*r**2/2, r**3 - r**2, 0)
+fifth row at (r,s) = (1/2, 0) : (0, 0, 0)
+fifth row at (r,s) = (-1, 1) : (1/2, 0, 0)
+fifth row at (r,s) = (2, 2) : (6*J - 2, 4 - 8*J, J)
+proportional V,CV: fifth-row starter coefficient s**2*(2*s - 3)**2/2
+one repetition and sixth clock: starter coefficient s**2*(2 - s)/2
+post-quadrature weighted direction: z**3*(3*z**2 - 15*z + 20)/15

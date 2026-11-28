@@ -1,0 +1,7 @@
+'RKResearch.Certified.ERK10SevenOpeningScalars.fifth_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SevenOpeningScalars.weighted_last_clock_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10SevenOpeningScalars.anchored_three_clock_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

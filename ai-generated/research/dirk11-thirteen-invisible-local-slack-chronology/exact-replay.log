@@ -1,0 +1,11 @@
+Clock quotient: rank 60, base divisions certified modulo 103
+Fourth clock quotient: rank 120, optional-fourth contradiction is a unit
+Fourth tap quotient: rank 240, optional-fifth resultant is a unit
+Fourth tap quotient: rank 240, consecutive-fifth resultant is a unit
+Checked primitive residue inverses: 6299
+All three pre-fourth repeat coefficients are units.
+All four pre-fifth repeat coefficients are units in the entire rank240 algebra.
+ordinary determinant factor degrees [(6, 1)]
+primitive ordinary content 3185408858286257602560*(V - 1)*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**8 B-degree 3
+ordinary factors [(4, 2, '66*V**4 - 120*V**3 + 72*V**2 - 16*V + 1'), (4, 9, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (8, 1, '2772*V**8 - 11088*V**7 + 18648*V**6 - 17136*V**5 + 9360*V**4 - 3096*V**3 + 604*V**2 - 64*V + 3'), (24, 1, '')]
+Old L0 is a unit in the full degree24 x 3 ordinary algebra 103

@@ -1,0 +1,10 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackChronology.two_clock_same_label_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackChronology.paid_pair_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackChronology.pre_fourth_repeat_factor' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackChronology.pre_fifth_repeat_factor' depends on axioms: [propext,
+ Quot.sound]

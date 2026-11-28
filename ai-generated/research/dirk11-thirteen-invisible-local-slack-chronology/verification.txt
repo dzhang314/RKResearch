@@ -1,0 +1,6 @@
+Cold verify.sh exit 0; all four pre-fifth repeat units checked at 103
+and the separate f24 x R3 L0 guard checked at 103.
+All four field/ring scalar lemmas passed Lean/Mathlib 4.36.0.
+The exact integer nodal coefficient pair passed core Lean 4.34.1,
+4.35.0, 4.36.0 and 4.37.0-rc1. Standard axioms only.
+No other chronology or whole HasOrder endpoint is asserted.

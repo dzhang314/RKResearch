@@ -1,0 +1,20 @@
+=== 4.34.1 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_determinant' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_integer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.35.0 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_determinant' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_integer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.36.0 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_determinant' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_integer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.37.0-rc1 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_determinant' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackPortable.primitive_pair_integer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

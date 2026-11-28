@@ -1,0 +1,4 @@
+Live edge coefficient: exact projections 228/250; gcd H19^4, second-width gcd is the forbidden zero-pair square.
+Zero edge coefficients: exact projection degree 44; five smaller factors violate literal calibration distinctness.
+Degree-19 exceptional width retains degree at 31; its exact linear second width and three full quadratics give gcd 1.
+Both physical edge positions excluded by reflection.

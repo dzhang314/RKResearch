@@ -1,0 +1,3 @@
+Exact width projections 602,602,640; gcd H9^2.
+Degree-9 width is irreducible at 61; second width has linear residue gcd; full quadratic profile gcd is 1.
+Physical 9 excluded.

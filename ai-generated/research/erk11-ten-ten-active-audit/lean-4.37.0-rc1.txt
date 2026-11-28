@@ -1,0 +1,5 @@
+'RKResearch.ERK11TenActiveMomentGate.markedRankOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TenActiveMomentGate.edgeNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TenActiveMomentGate.fourPrimitivePayments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TenActiveMomentGate.quadraticRowsDet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TenActiveMomentGate.quadraticPairMark' depends on axioms: [propext, Classical.choice, Quot.sound]

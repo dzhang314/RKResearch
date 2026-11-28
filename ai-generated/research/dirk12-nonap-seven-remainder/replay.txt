@@ -1,0 +1,4 @@
+new 7-site, non-AP nodal integral and eight paid moments: exact
+only unpaid base gap: 17/18
+unit delta positions: ['1/18', '1/6', '1/4', '5/6']
+paid literal old prefix, genuine size-six ports, and corrected size-seven rank-four band: exact

@@ -1,0 +1,9 @@
+import RKCert.Research.SDIRKEightFourZeroNativeTwoLive
+open RKResearch.Certified.SDIRKEightFourZeroNativeTwoLive
+#check two_live_chart_forces_constants
+#check two_live_chart_no_characteristic_zero
+#print axioms mirrorBézout
+#print axioms oppositeSitesBézout
+#print axioms two_live_chart_forces_constants
+#print axioms two_live_chart_no_characteristic_zero
+#print axioms integer_factorizations

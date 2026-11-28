@@ -1,0 +1,10 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSquare.pair_square_masses' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSquare.two_ghost_grouped_reverse_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSquare.four_marked_moments_kill_first' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSquare.two_clean_contrast_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

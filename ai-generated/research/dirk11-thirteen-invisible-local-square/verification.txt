@@ -1,0 +1,4 @@
+Independent exact scalar Python replay exited 0.
+All four Mathlib scalar declarations checked on Lean 4.36.0.
+Both core slot declarations checked on all four named Lean releases.
+No compactification of actual stage order or unrestricted lower claim.

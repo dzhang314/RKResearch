@@ -1,0 +1,23 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+noncubic star Ψ front (5, 0, 9, 1) [1, 0, 0, 0, 0, 0, 0, 0]
+centered star rear exact 2 (6, 0, 20, 1)
+small CRT exact 5 6 (154, 0) 7 398
+split star Ψ full 2 False exact (0, 0, 130, 1) guarded (0, 0, 82, 1) [24, 6, 0, 0] leading-outside (0, 0, 79, 1) [1]
+specialized leading target (4, 0, 2, 1) (5, 0, 2, 1)
+star corrected hole5 complete 2 False 1129 203 usual kept 79 done [('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 4, 1, 1)), ('weight', ('usual', 74, 1, 1))] bad []
+star corrected hole5 complete 2 False 1129 203 degenerate kept 3 done [('no_Y', ('degenerate', 3, 1, 0))] bad []
+small CRT exact 3 6 (60, 0) 3 178
+split star Ψ full 2 True exact (0, 0, 60, 1) guarded (0, 0, 60, 1) [0, 0, 0, 0] leading-outside (0, 0, 60, 1) [0]
+cubic actual leading is monic; leave L complete
+star corrected hole5 complete 2 True 1129 203 usual kept 60 done [('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 2, 1, 1)), ('weight', ('usual', 3, 1, 1)), ('weight', ('usual', 5, 1, 1)), ('weight', ('usual', 8, 1, 1)), ('weight', ('usual', 9, 1, 1)), ('weight', ('usual', 14, 1, 1)), ('weight', ('usual', 16, 1, 1))] bad []
+centered star rear exact 3 (6, 0, 20, 1)
+small CRT exact 5 6 (154, 0) 7 398
+split star Ψ full 3 False exact (0, 0, 130, 1) guarded (0, 0, 82, 1) [24, 6, 0, 0] leading-outside (0, 0, 79, 1) [1]
+specialized leading target (4, 0, 2, 1) (5, 0, 2, 1)
+star corrected hole5 complete 3 False 1129 203 usual kept 79 done [('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 5, 1, 1)), ('weight', ('usual', 6, 1, 1)), ('weight', ('usual', 8, 1, 1)), ('weight', ('usual', 8, 1, 1)), ('weight', ('usual', 9, 1, 1)), ('weight', ('usual', 13, 1, 1)), ('weight', ('usual', 14, 1, 1)), ('weight', ('usual', 15, 1, 1))] bad []
+star corrected hole5 complete 3 False 1129 203 degenerate kept 3 done [('no_Y', ('degenerate', 3, 1, 0))] bad []
+small CRT exact 3 6 (60, 0) 3 178
+split star Ψ full 3 True exact (0, 0, 60, 1) guarded (0, 0, 60, 1) [0, 0, 0, 0] leading-outside (0, 0, 60, 1) [0]
+cubic actual leading is monic; leave L complete
+star corrected hole5 complete 3 True 1129 203 usual kept 60 done [('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 2, 1, 1)), ('weight', ('usual', 2, 1, 1)), ('weight', ('usual', 2, 1, 1)), ('weight', ('usual', 2, 1, 1)), ('weight', ('usual', 6, 1, 1)), ('weight', ('usual', 10, 1, 1)), ('weight', ('usual', 14, 1, 1)), ('weight', ('usual', 18, 1, 1))] bad []
+regular ordinary hole5 star-front star-rear actual literal 2/3 excluded

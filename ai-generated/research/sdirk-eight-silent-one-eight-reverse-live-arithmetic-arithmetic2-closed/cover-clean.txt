@@ -1,0 +1,20 @@
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+3-peg cofactor family [(0, 13, 73, 1), (0, 13, 73, 1), (0, 13, 73, 1), (0, 13, 73, 1), (0, 12, 72, 1)] [(0, 8, 21, 1), (0, 8, 21, 1), (0, 8, 21, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [5, 4, 4, 1, 0, 0, 0, 0, 0, 1, 0]
+paid ratio nodal gates (7, 8, 25, 1) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (8, 11, 34, 1) [2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+ordinary five-peg determinant (8, 14, 80, 1) (8, 11, 34, 1) [5, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0]
+small CRT exact 6 4 (116, 30) 7 402 0.71
+arith literal silent two exact projected actual_tail_affine (0, 29, 116, 1) (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] 1.02
+small exact shape CRT 4 8 8 4.21
+small CRT exact 4 8 (232, 68) 14 810 7.54
+arith literal silent two exact projected actual_affine_and_nodal (0, 66, 232, 1) (0, 45, 136, 1) [25, 0, 0, 1, 0, 0, 0, 0, 0, 3, 4] 11.35
+full guard norm proposal 2 [('leading', 1), ('anchor', 18), ('quintic', 2), ('terminal_h', 18)] 130 1
+full guard norm proposal 6 [('leading', 2), ('quintic', 4)] 8 3
+full guard norm proposal 2 [('anchor', 3), ('terminal_h', 3)] 6 1
+full guard norm proposal 2 [('anchor', 3)] 7 1
+full guard norm proposal 2 [('anchor', 3)] 3 1
+full guard norm proposal 8 [('anchor', 3)] 4 4
+full guard norm proposal 20 [('anchor', 3)] 3 10
+full guard norm proposal 42 [('anchor', 9), ('quintic', 9), ('terminal_h', 9)] 108 21
+full guard norm proposal 92 [('terminal_h', 3)] 3 46
+full guard norm proposal 10 [('terminal_h', 3)] 3 5
+remaining norm quotient mod proposal 8142 aligned generic 4071 [(1, 1), (1, 1), (1, 1), (1, 3), (1, 3), (1, 3), (1, 3), (3, 1), (3, 3), (3, 3), (4, 1), (4, 1), (5, 3), (12, 1), (41, 1), (105, 1), (183, 1), (229, 1), (337, 1), (343, 1), (2762, 1)]

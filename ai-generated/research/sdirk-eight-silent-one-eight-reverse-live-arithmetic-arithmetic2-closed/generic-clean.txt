@@ -1,0 +1,35 @@
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+3-peg cofactor family [(0, 13, 73, 1), (0, 13, 73, 1), (0, 13, 73, 1), (0, 13, 73, 1), (0, 12, 72, 1)] [(0, 8, 21, 1), (0, 8, 21, 1), (0, 8, 21, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [5, 4, 4, 1, 0, 0, 0, 0, 0, 1, 0]
+paid ratio nodal gates (7, 8, 25, 1) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (8, 11, 34, 1) [2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+ordinary five-peg determinant (8, 14, 80, 1) (8, 11, 34, 1) [5, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0]
+small CRT exact 6 4 (116, 30) 7 402 1.08
+arith literal silent two exact projected actual_tail_affine (0, 29, 116, 1) (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] 1.5
+small exact shape CRT 4 8 8 6.06
+small CRT exact 4 8 (232, 68) 14 810 10.28
+arith literal silent two exact projected actual_affine_and_nodal (0, 66, 232, 1) (0, 45, 136, 1) [25, 0, 0, 1, 0, 0, 0, 0, 0, 3, 4] 13.62
+whole exact quotient residues 8142 4071 complete aligned factor count 21
+exact fixed quartic [(0, 14, 44, 1), (0, 14, 43, 1), (0, 14, 42, 1), (0, 14, 41, 1), (0, 13, 40, 1)] [(0, 8, 24, 1), (0, 8, 23, 1), (0, 8, 22, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+exact reduced centered tail coefficients [(0, 3, 11, 1), (0, 3, 11, 1)] [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact arith ordinary/silent fifth cubic (6, 10, 11, 1) (3, 5, 9, 1) [1, 1, 1, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0]
+whole gap probe gamma branch 1 1 through {'no_true_fifth': 1} open last []
+whole gap probe gamma branch 1 1 through {'no_true_fifth': 1, 'no_gap': 1} open last []
+whole gap probe gamma branch 1 1 through {'no_true_fifth': 1, 'no_gap': 2} open last []
+whole gap probe gamma branch 1 3 through {'no_true_fifth': 1, 'no_gap': 4} open last []
+whole gap probe gamma branch 1 3 through {'no_true_fifth': 1, 'no_gap': 5} open last []
+whole gap probe gamma branch 1 3 through {'no_true_fifth': 1, 'no_gap': 7} open last []
+whole gap probe gamma branch 1 3 through {'no_true_fifth': 1, 'no_gap': 10} open last []
+whole gap probe gamma branch 3 1 through {'no_true_fifth': 2, 'no_gap': 10} open last []
+whole gap probe gamma branch 3 3 through {'no_true_fifth': 2, 'no_gap': 12} open last []
+whole gap probe gamma branch 3 3 through {'no_true_fifth': 2, 'no_gap': 14} open last []
+whole gap probe gamma branch 4 1 through {'no_true_fifth': 2, 'no_gap': 15} open last []
+whole gap probe gamma branch 4 1 through {'no_true_fifth': 2, 'no_gap': 16} open last []
+whole gap probe gamma branch 5 3 through {'no_true_fifth': 2, 'no_gap': 18} open last []
+whole gap probe gamma branch 12 1 through {'no_true_fifth': 2, 'no_gap': 19} open last []
+whole gap probe gamma branch 41 1 through {'no_true_fifth': 2, 'no_gap': 20} open last []
+whole gap probe gamma branch 105 1 through {'no_true_fifth': 3, 'no_gap': 20} open last []
+whole gap probe gamma branch 183 1 through {'no_true_fifth': 4, 'no_gap': 20} open last []
+whole gap probe gamma branch 229 1 through {'no_true_fifth': 4, 'no_gap': 21} open last []
+whole gap probe gamma branch 337 1 through {'no_true_fifth': 4, 'no_gap': 22} open last []
+whole gap probe gamma branch 343 1 through {'no_true_fifth': 5, 'no_gap': 22} open last []
+whole gap probe gamma branch 2762 1 through {'no_true_fifth': 5, 'no_gap': 23} open last []
+complete exact quotient passed valid terminal nodal and fifth gates {'no_true_fifth': 5, 'no_gap': 23}

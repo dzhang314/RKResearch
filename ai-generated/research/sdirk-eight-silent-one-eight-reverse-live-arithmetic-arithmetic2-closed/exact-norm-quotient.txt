@@ -1,0 +1,14 @@
+whole quotient streamed certificate setup 13416 5274 8142 47896 14696 0
+streamed quotient CRT 64 3841 6.87
+streamed quotient CRT 128 7681 14.88
+streamed quotient CRT 192 11521 24.62
+streamed quotient CRT 256 15361 34.93
+streamed quotient CRT 320 19201 45.91
+streamed quotient CRT 384 23041 57.92
+streamed quotient CRT 448 26881 70.38
+streamed quotient CRT 512 30721 83.12
+streamed quotient CRT 576 34561 97.02
+streamed quotient CRT 640 38401 110.55
+streamed quotient CRT 704 42241 125.07
+streamed quotient CRT 768 46081 140.21
+exact norm product by streamed coefficient identity 8142 799 47896 47941 147.66

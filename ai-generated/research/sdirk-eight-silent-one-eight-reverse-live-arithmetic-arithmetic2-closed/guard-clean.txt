@@ -1,0 +1,40 @@
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+3-peg cofactor family [(0, 13, 73, 1), (0, 13, 73, 1), (0, 13, 73, 1), (0, 13, 73, 1), (0, 12, 72, 1)] [(0, 8, 21, 1), (0, 8, 21, 1), (0, 8, 21, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [5, 4, 4, 1, 0, 0, 0, 0, 0, 1, 0]
+paid ratio nodal gates (7, 8, 25, 1) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (8, 11, 34, 1) [2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+ordinary five-peg determinant (8, 14, 80, 1) (8, 11, 34, 1) [5, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0]
+small CRT exact 6 4 (116, 30) 7 402 0.57
+arith literal silent two exact projected actual_tail_affine (0, 29, 116, 1) (0, 27, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0] 0.9
+small exact shape CRT 4 8 8 3.87
+small CRT exact 4 8 (232, 68) 14 810 7.11
+arith literal silent two exact projected actual_affine_and_nodal (0, 66, 232, 1) (0, 45, 136, 1) [25, 0, 0, 1, 0, 0, 0, 0, 0, 3, 4] 10.22
+exact paired CRT proposal verified ('checked literal2 orientation', 2, 1) 61 16.7
+oriented literal2 guard branch 2 130 1 [('leading', 1), ('anchor', 18), ('quintic', 2), ('terminal_h', 18)] {'exact_gamma_collision': 1} exact support []
+exact paired CRT proposal verified ('checked literal2 orientation', 6, 3) 61 0.0
+exact fixed quartic [(0, 14, 44, 1), (0, 14, 43, 1), (0, 14, 42, 1), (0, 14, 41, 1), (0, 13, 40, 1)] [(0, 8, 24, 1), (0, 8, 23, 1), (0, 8, 22, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+exact reduced centered tail coefficients [(0, 3, 11, 1), (0, 3, 11, 1)] [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact arith ordinary/silent fifth cubic (6, 10, 11, 1) (3, 5, 9, 1) [1, 1, 1, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0]
+exact paired CRT proposal verified ('guard', 'quintic', 3, 1) 61 0.01
+oriented literal2 guard branch 6 8 3 [('leading', 2), ('quintic', 4)] {'no_s': 3} exact support [('quintic', 1)]
+exact paired CRT proposal verified ('checked literal2 orientation', 2, 1) 61 0.0
+oriented literal2 guard branch 2 6 1 [('anchor', 3), ('terminal_h', 3)] {'exact_gamma_collision': 1} exact support []
+exact paired CRT proposal verified ('checked literal2 orientation', 2, 1) 61 0.0
+exact paired CRT proposal verified ('guard', 'anchor', 1, 3) 61 0.01
+oriented literal2 guard branch 2 7 1 [('anchor', 3)] {'no_s': 1} exact support [('anchor', 3)]
+exact paired CRT proposal verified ('checked literal2 orientation', 2, 1) 61 0.0
+oriented literal2 guard branch 2 3 1 [('anchor', 3)] {'no_gap': 2} exact support []
+exact paired CRT proposal verified ('checked literal2 orientation', 8, 4) 61 0.0
+exact paired CRT proposal verified ('guard', 'anchor', 4, 3) 61 0.01
+oriented literal2 guard branch 8 4 4 [('anchor', 3)] {'no_s': 3} exact support [('anchor', 3)]
+exact paired CRT proposal verified ('checked literal2 orientation', 20, 10) 61 0.0
+exact paired CRT proposal verified ('guard', 'anchor', 10, 3) 301 0.1
+oriented literal2 guard branch 20 3 10 [('anchor', 3)] {'no_s': 2} exact support [('anchor', 3)]
+exact paired CRT proposal verified ('checked literal2 orientation', 42, 21) 181 0.79
+exact paired CRT proposal verified ('guard', 'anchor', 21, 9) 1561 2.46
+oriented literal2 guard branch 42 108 21 [('anchor', 9), ('quintic', 9), ('terminal_h', 9)] {'no_s': 4} exact support [('anchor', 9)]
+exact paired CRT proposal verified ('checked literal2 orientation', 92, 46) 301 0.71
+exact paired CRT proposal verified ('guard', 'terminal_h', 46, 3) 1861 5.38
+oriented literal2 guard branch 92 3 46 [('terminal_h', 3)] {'no_s': 3} exact support [('terminal_h', 3)]
+exact paired CRT proposal verified ('checked literal2 orientation', 10, 5) 61 0.0
+exact paired CRT proposal verified ('guard', 'terminal_h', 5, 3) 121 0.04
+oriented literal2 guard branch 10 3 5 [('terminal_h', 3)] {'no_s': 3} exact support [('terminal_h', 3)]
+complete exact small pieces and guard checks {'exact_gamma_collision': 2, 'no_s': 19, 'no_gap': 2}

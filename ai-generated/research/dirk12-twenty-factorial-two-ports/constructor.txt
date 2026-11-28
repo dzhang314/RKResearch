@@ -1,0 +1,5 @@
+two exact causal row shifts: [[Fraction(1, 24)], [Fraction(0, 1), Fraction(5, 24)]]
+D= 830216051280000 divides (12!)^6
+scaled next bush: 97351/161663040
+scaled next tall numerator bits: 922
+two defect numerator gcd: 1

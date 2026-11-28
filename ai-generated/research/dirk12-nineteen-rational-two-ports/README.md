@@ -20,7 +20,7 @@ It does not establish a rational minimum or improve the
 15-stage real minimum. The coefficient localization here
 inverts primes greater than twelve; over an arbitrary ring
 where only \(12!\) is known to be a unit, the separate certified
-arithmetic upper is [twenty-one stages](../dirk12-factorial-midpoint-21/README.md).
+arithmetic upper is [twenty stages](../dirk12-twenty-factorial-two-ports/README.md).
 This packet does not yet have an end-to-end Lean proof.
 
 ## Opening adjustment and actual rank debit

@@ -68,7 +68,7 @@ This proves exact order rather than only the paid moments.
 
 The argument does not allow gluing over an arbitrary
 mixed-characteristic ring. In particular the gap to the
-[single 21-stage factorial-only witness](../dirk12-factorial-midpoint-21/README.md)
+[single 20-stage factorial-only witness](../dirk12-twenty-factorial-two-ports/README.md)
 remains for that broader coefficient claim. These are upper
 bounds, not minimum claims over every field. The real
 minimum of fifteen is unrelated to this denominator cover.

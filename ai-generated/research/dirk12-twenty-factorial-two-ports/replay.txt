@@ -1,0 +1,5 @@
+rooted shapes: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766] total: 7813
+physical diagonal 0= 0 diagonal 1= 1/16
+common denominator: 830216051280000
+scaled next bush: 97351/161663040
+two normalized defect numerator gcd: 1 after removing D factors: 1

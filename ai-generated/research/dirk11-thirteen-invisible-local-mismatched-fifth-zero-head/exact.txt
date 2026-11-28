@@ -1,0 +1,8 @@
+Normalized fifth and next-row scalar identities exact
+Exact norm with two independent scalar audits: degree195 gives z^15 J4^15 D120, irreducible D120 with a live linear b ratio
+F101: zero fifth, next fourth impossible (unit eL)
+F101: zero fifth, next origin impossible (unit eL)
+F101: zero fifth, any of 3 old next events impossible (unit old cubic norm of eL)
+F107: zero fifth, next fourth impossible (unit eL)
+F107: zero fifth, next origin impossible (unit eL)
+F107: zero fifth, any of 3 old next events impossible (unit old cubic norm of eL)

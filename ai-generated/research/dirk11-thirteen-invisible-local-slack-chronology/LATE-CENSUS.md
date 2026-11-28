@@ -40,3 +40,13 @@ consecutive fifth. This
 record does not assert that any candidate of those types exists. The
 new exclusions have exact rational and finite-free residue replays,
 not end-to-end Lean proofs.
+
+The [missing-fifth-head and immediate-return exclusions](../dirk11-thirteen-invisible-local-mismatched-fifth-zero-head/README.md)
+force all five weighted debut heads to be live and prohibit an
+immediate fourth- or fifth-label return after the fifth. Live heads
+also exclude origin slack by the normalized one-unmarked-label
+census. The [last old-label event closure](../dirk11-thirteen-invisible-local-four-pair-closure/README.md)
+excludes either remaining immediate event at an old clock, completing
+the entire normalized four-pair-plus-slack chart over characteristic-zero
+fields. The five-marked-pair, no-slack chart and different support
+regimes remain outside this conclusion.

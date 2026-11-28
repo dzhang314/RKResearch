@@ -1,0 +1,7 @@
+Exact triple norm (two independent nested rational audits): degree631 = z^15 E4^18 J4^25 E8^3 D420, irreducible D420 and a live linear fifth ratio
+F103: exact r and old-event x reconstruction ratios live
+F103: immediate old contact with the commuting anchor is impossible
+F103: immediate old noncontact fails the actual companion commutator
+F107: exact r and old-event x reconstruction ratios live
+F107: immediate old contact with the commuting anchor is impossible
+F107: immediate old noncontact fails the actual companion commutator

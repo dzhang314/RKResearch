@@ -1,0 +1,182 @@
+from pathlib import Path
+from runpy import run_path
+from flint import nmod_poly
+from fractions import Fraction
+import argparse
+import sympy as S
+q=run_path(str(Path(__file__).with_name('projection.py')))
+H=q['H']; T=q['T']; z=q['z']; ds=[q['Df']]
+def run(p,ds):
+ K=ds.monic()
+ assert S.isprime(p) and p>11
+ def rr(a):
+  a=S.Rational(a)
+  return int(a.p)*pow(int(a.q),-1,p)%p
+ def nmp(a):
+  if not isinstance(a,S.Poly):a=S.Poly(a,z,domain=S.QQ)
+  return nmod_poly([rr(a.nth(i)) for i in range(a.degree()+1)] if not a.is_zero else [],p)
+
+ assert rr(ds.LC())!=0
+ modulus=nmp(K)
+ assert modulus.degree()==ds.degree()
+ class E:
+  def __init__(self,a):
+   if isinstance(a,E):self.q=a.q
+   elif isinstance(a,nmod_poly):self.q=a%modulus
+   else:
+    a=Fraction(a); self.q=nmod_poly([a.numerator*pow(a.denominator,-1,p)%p],p)
+  def __add__(self,b):return E(self.q+E(b).q)
+  __radd__=__add__
+  def __neg__(self):return E(-self.q)
+  def __sub__(self,b):return self+-E(b)
+  def __rsub__(self,b):return E(b)+-self
+  def __mul__(self,b):return E(self.q*E(b).q)
+  __rmul__=__mul__
+  def inv(self):
+   d,a,b=self.q.xgcd(modulus)
+   assert d==1,"nonunit gcd degree %s"%d.degree()
+   u=E(a)
+   assert self*u==1
+   return u
+  def __truediv__(self,b):return self*E(b).inv()
+  def __rtruediv__(self,b):return E(b)*self.inv()
+  def __pow__(self,n):
+   a=E(1); b=self
+   while n:
+    if n%2:a*=b
+    b*=b;n//=2
+   return a
+  def __eq__(self,b):return self.q==E(b).q
+ def pe(e):return E(nmp(e))
+ def ev(c,y):
+  a=E(0)
+  for v in reversed(c):a=a*y+v
+  return a
+ Z=E(nmod_poly([0,1],p))
+ B=-pe(q['q0'].rem(K))/pe(q['q1'].rem(K))
+ A=[pe(H.nth(i))/pe(H.LC()) for i in range(5)]
+ assert ev(A,B)==0 and ev([pe(T.nth(i)) for i in range(4)],B)==0
+ c2=A[3]+B;c1=A[2]+B*c2;c0=A[1]+B*c1
+ a=[-9*c0,-(9*c0-6*c1)/2,-(c0-c1+3*c2)/2,E(1)]
+ def plus(f,g):
+  return [(f[i] if i<len(f) else E(0))+(g[i] if i<len(g) else E(0)) for i in range(max(len(f),len(g)))]
+ def scale(f,n):return [x*n for x in f]
+ def minus(f,g):return plus(f,scale(g,-1))
+ def mul(f,g):
+  h=[E(0)]*(len(f)+len(g)-1)
+  for i,x in enumerate(f):
+   for j,y in enumerate(g):h[i+j]+=x*y
+  return h
+ def rem(f,g):
+  assert g[-1]==1 and len(f)>=len(g)
+  c=list(f)
+  k=len(g)-1
+  for i in range(len(c)-1,k-1,-1):
+   for j in range(k):c[i-k+j]-=c[i]*g[j]
+  return c[:k]
+
+ def det(M):
+  if len(M)==1:return M[0][0]
+  return sum((-1)**j*e*det([[v for k,v in enumerate(row) if k!=j] for row in M[1:]])
+             for j,e in enumerate(M[0]))
+ def norm(cols):
+  return det(list(zip(*cols)))
+ def Ext(conf,base):
+  n=len(conf)
+  class Cls:
+   def __init__(self,v):self.v=v
+   @staticmethod
+   def c(t):return t if isinstance(t,Cls) else Cls([base(t)]+[base(0)]*(n-1))
+   @staticmethod
+   def gen():return Cls([base(0),base(1)]+[base(0)]*(n-2))
+   def __add__(self,t):return Cls([a+b for a,b in zip(self.v,Cls.c(t).v)])
+   __radd__=__add__
+   def __neg__(self):return Cls([-a for a in self.v])
+   def __sub__(self,t):return self+-Cls.c(t)
+   def __rsub__(self,t):return Cls.c(t)+-self
+   def __mul__(self,t):
+    arr=[base(0)]*(2*n-1)
+    for i,a in enumerate(self.v):
+     for j,b in enumerate(Cls.c(t).v): arr[i+j]+=a*b
+    for i in range(2*n-2,n-1,-1):
+     for j in range(n):arr[i-n+j]-=arr[i]*conf[j]
+    return Cls(arr[:n])
+   __rmul__=__mul__
+   def __pow__(self,k):
+    ans=Cls.c(1);b=self
+    while k:
+     if k%2:ans*=b
+     b*=b;k//=2
+    return ans
+   def __eq__(self,b):return self.v==Cls.c(b).v
+   def inv(self):
+    M=list(zip(*[(self*Cls.gen()**j).v for j in range(n)]))
+    cof=[(-1)**j*det([[v for k,v in enumerate(row) if k!=j] for row in M[1:]]) for j in range(n)]
+    d=sum(a*b for a,b in zip(cof,M[0])).inv()
+    z=Cls([c*d for c in cof]);assert self*z==1
+    return z
+   def __truediv__(self,b):return self*Cls.c(b).inv()
+   def __rtruediv__(self,b):return Cls.c(b)*self.inv()
+  return Cls
+
+ def ratlin(t,a):
+  U=[t[2]*a[i]-(t[i-1] if i else 0) for i in range(3)]
+  W=[t[2]*U[i]-U[2]*t[i] for i in range(2)]
+  return -W[0]/W[1]
+ Old=Ext(a[:-1],E); rE=Old.gen()
+ C=Ext(list(map(Old.c,[c0,c1,c2])),Old.c);xC=C.gen()
+ Zx=q['old_gate'](C.c(rE),xC,C.c(Old.c(B)))
+ M=norm([(Zx*xC**j).v for j in range(3)])
+ r=ratlin(M.v,a)
+ assert ev(a,r)==0 and ev(M.v,r)==0
+ old=[c0,c1,c2,E(1)]
+ O=Ext(old[:-1],E);xO=O.gen()
+ ZO=q['old_gate'](O.c(r),xO,O.c(B))
+ x=ratlin(ZO.v,old)
+ assert ev(old,x)==0 and q['old_gate'](r,x,B)==0
+ print(f"F{p}: exact r and old-event x reconstruction ratios live",flush=True)
+ s=r*r/(r+6)
+ U=r*(r+6)*c1-r**3-(r+6)**2*c0
+ de=r**3/(4*U); lam=E(Fraction(1,4))-de;l0=-de*c0/s;e=lam+l0
+ Delta=de/e
+ t=B-1; t.inv(); x.inv(); (x-1).inv(); (x-B).inv()
+ ps=[-r/(5*(2*r+3)),(4*r+3)/(5*(2*r+3))]
+ xi=-r/(10*(2*r+3)); Xi=[E(0),-xi,xi]
+ ell=[l0,lam]
+ rho=plus(mul(ps,ell),Xi)
+ y=ev(rho,x)/((x-1)*ev(ell,x))
+ assert t*y*y-ev(ps,B)*y-xi*B*(1-y)==0
+ Dy=(1+lam)*y-lam
+ v=e*(1-y)/Dy
+ anchor=1+v
+ (x-anchor).inv()
+ print(f"F{p}: immediate old contact with the commuting anchor is impossible",flush=True)
+ d_B=t*y
+ P=[E(0),s,r,E(1)]; P0=[E(0),*old]
+ f=t*Delta*ev(P0,B)/(v-t)
+ k=ev(P,B)+v*Delta*ev(P0,B)/(v-t)
+ u=k*ev(ell,B)-ev([E(0),E(0),s/2,r/3,E(Fraction(1,4))],B)
+ assert u/f==e+lam*v
+ Hfac=[E(1),-14*Z,56*Z**2,-84*Z**3,42*Z**4]
+ kV=ev(P,E(1))+Delta*ev(P0,E(1))
+ rold=O.c(0)
+ for c in reversed(Hfac):rold=rold*xO+O.c(c)
+ mO=xO*xO+O.c(r)*xO+O.c(s)
+ qold=(rold/mO).v
+ u3=plus(qold,scale(old,(ev(Hfac,E(1))/kV-ev(qold,E(1)))/ev(old,E(1))))
+ Ux=ev(u3,x)
+ assert Ux* (x*x+r*x+s)==ev(Hfac,x)
+ Theta=B*ev(Hfac,B)-k*ev(u3,B)
+ Theta.inv()
+ Kx=Dy*(x-1)*ev(ell,x)/e
+ assert e*Kx==(1+lam)*ev(rho,x)-lam*(x-1)*ev(ell,x)
+ gate=(x-B-d_B)*Kx*Theta-d_B*d_B*f*Ux
+ gate.inv()
+ print(f"F{p}: immediate old noncontact fails the actual companion commutator",flush=True)
+if __name__=='__main__':
+ p=argparse.ArgumentParser()
+ p.add_argument('--prime',type=int,action='append')
+ a=p.parse_args()
+ for prime in a.prime or [103]:
+  for rp in ds:
+   run(prime,rp)

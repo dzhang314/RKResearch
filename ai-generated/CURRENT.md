@@ -33,7 +33,7 @@ The [exact real-algebraic construction](research/dirk12-fifteen-midpoint-real-up
 
 ### Separate cubic finite-field witness
 
-The [literal 15-stage DIRK tableau over the field of size 4913](research/dirk12-fifteen-f17-cubic-midpoint-upper/README.md) passes all 7,813 rooted conditions through order twelve and has a nonzero thirteenth-bush defect. The [arbitrary-ring lower bound](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) makes fifteen optimal over this field and every nonzero commutative algebra over it.
+The [literal 15-stage DIRK tableau over the field of size 4913](research/dirk12-fifteen-f17-cubic-midpoint-upper/README.md) passes all 7,813 rooted conditions through order twelve and has a nonzero thirteenth-bush defect. The [arbitrary-ring lower bound](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) makes fifteen optimal over this field and every nonzero commutative algebra over it. A [simple-root lift](research/dirk12-fifteen-midpoint-cubic-prime-powers/README.md) gives the same optimum over the unramified cubic extension of the 17-adic integers, every prime-power quotient of that extension, its fraction field, and their nonzero commutative algebras.
 
 ## Recent equality-case restrictions
 

@@ -1,0 +1,5 @@
+17^1: 7813 rooted conditions; scaled order-13 bush (11, 7, 12); residue (11, 7, 12)
+17^2: 7813 rooted conditions; scaled order-13 bush (266, 7, 165); residue (11, 7, 12)
+17^3: 7813 rooted conditions; scaled order-13 bush (1133, 2030, 165); residue (11, 7, 12)
+17^8: 7813 rooted conditions; scaled order-13 bush (1692893195, 2438633449, 6019633763); residue (11, 7, 12)
+17^20: 7813 rooted conditions; scaled order-13 bush (1009920552921308716875975, 988648172108063281344407, 966454895321791565725069); residue (11, 7, 12)

@@ -1,0 +1,17 @@
+RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.cancel_exterior_tap.{u_1} {K : Type u_1} [CommRing K]
+  (P Q F G z e : K) (h0 : P + e = F) (h1 : Q + z * e = G) : Q - z * P = G - z * F
+RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.quadratic_gate.{u_1} {K : Type u_1} [CommRing K]
+  (a b c d e f x : K) (hp : a * x ^ 2 + b * x + c = 0) (hq : d * x ^ 2 + e * x + f = 0) :
+  (a * f - c * d) ^ 2 - (a * e - b * d) * (b * f - c * e) = 0
+RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.real_discriminant_gate.{u_2} {R : Type u_2} [CommRing R]
+  [LinearOrder R] [IsStrictOrderedRing R] (a b c x : R) (hp : a * x ^ 2 + b * x + c = 0) : 0 ≤ b ^ 2 - 4 * a * c
+RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.fifth_rows_clear.{u_1} {K : Type u_1} [CommRing K]
+  (k z a b p q r s f g h : K) (h0 : (a + b * k) * k + p + q * k = f * k)
+  (h1 : z * (a + b * k) * k + r + s * k = g * k + h) :
+  b * k ^ 2 + (a + q - f) * k + p = 0 ∧ z * b * k ^ 2 + (z * a + s - g) * k + r - h = 0
+'RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.cancel_exterior_tap' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.quadratic_gate' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.real_discriminant_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.fifth_rows_clear' depends on axioms: [propext, Quot.sound]

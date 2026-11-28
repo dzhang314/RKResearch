@@ -1,0 +1,4 @@
+t-clock quotient: rank 60; every required base division is a unit mod 101
+Fourth clean quotient: rank 120; all guards and optional-fourth contradiction are units
+Fourth tap quotient: rank 240; both fifth Sylvester determinants and all guards are units
+Checked primitive residue inverses: 1243

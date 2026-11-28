@@ -1,0 +1,10 @@
+import RKCert.ReviewedNative.DIRKOrderElevenOneActiveGradeSixScalar
+
+#check RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.cancel_exterior_tap
+#check RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.quadratic_gate
+#check RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.real_discriminant_gate
+#check RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.fifth_rows_clear
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.cancel_exterior_tap
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.quadratic_gate
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.real_discriminant_gate
+#print axioms RKResearch.Certified.Graded.OrderElevenOneActiveGradeSix.fifth_rows_clear

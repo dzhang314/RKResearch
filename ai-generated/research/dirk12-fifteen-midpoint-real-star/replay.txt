@@ -1,0 +1,2 @@
+directed rational isolation: real x and f roots; 1.333<q<1.334; two real orientations and ten distinct scalar labels
+positive scaled order-13 bush in (85680969483153,85680969483154)/10^20, both real orientations

@@ -1,0 +1,13 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.DIRK12MidpointRealInterval.exists_real_parameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.exists_real_orientations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.midpoint_star_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.actual_star_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

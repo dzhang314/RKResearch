@@ -1,0 +1,4 @@
+'RKResearch.ERK11InitialSlopeFallbackGate.orthogonalDirection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11InitialSlopeFallbackGate.zeroFirstSlope' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+Exact left-mask widths: two resultants of degrees 32 and 80; a^4 times irreducible degree 12; common d-gcd linear.
+ lside True E scale (3, 0) DT (11, 12) raw g [(35, 36), (41, 45)] g gcd (17, 16) red g [(18, 20), (24, 29)] raw P (53, 61) (53, 61) P gcd (12, 12) red P [(41, 49), (41, 49)]
+ lside False E scale (0, 1) DT (11, 17) raw g [(25, 39), (33, 51)] g gcd (10, 16) red g [(15, 23), (23, 35)] raw P (49, 75) (49, 75) P gcd (11, 17) red P [(38, 58), (38, 58)]
+Actual L9 and alternate R11 give live slope and independent outer matches; all rotated moment/affine guards live.
+The required first-pool line determinant is a nonzero degree-11 residue in the exact degree-12 width field.

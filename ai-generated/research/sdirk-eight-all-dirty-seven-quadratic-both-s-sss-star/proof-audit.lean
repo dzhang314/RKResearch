@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonSSSStar
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonSSSStar.star_quadratic_coefficients
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonSSSStar.same_reflected_star_axis

@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonOneSharedDouble
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonOneSharedDouble.paid_endpoint_quadratic_gate
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonOneSharedDouble.scale_shared_vieta

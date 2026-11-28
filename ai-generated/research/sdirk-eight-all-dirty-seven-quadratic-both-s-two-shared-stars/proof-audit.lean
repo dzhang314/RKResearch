@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonTwoSharedStars
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonTwoSharedStars.symmetric_quadratic_linear_zero
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonTwoSharedStars.symmetric_vieta_quartic

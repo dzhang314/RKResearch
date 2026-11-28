@@ -1,0 +1,7 @@
+# Lower-memory exact fraction engine
+
+The final two-chart verifier calls the same literal equations and guard generation as the sibling disjoint frame. The evaluator uses a canonical reduced fraction in \(\mathbb Q[H,d]\): numerator and denominator coprime, denominator leading coefficient one. It does not change a polynomial equation, a guard or an elimination step.
+
+For addition of reduced \(a/b\) and \(c/d\), put \(g=\gcd(b,d)\), \(u=b/g\), \(v=d/g\). The new numerator \(av+cu\) is coprime to \(uv\): a prime dividing \(u\) cannot divide \(a\) or \(v\), and the reverse statement holds for \(v\). Therefore the **only** further cancellation is \(\gcd(av+cu,g)\). For multiplication, cancel the two cross gcds before multiplying. All numerator/denominator pairs are then already coprime; one merely restores the monic denominator. Zero uses \(0/1\), and reciprocal swaps the coprime pair before normalization. This avoids forming a large polynomial product only to cancel its already known factors from a second full bivariate gcd.
+
+`check_fraction_equivalence.py` compares reduced representations by exact cross multiplication and also compares **every resulting integer row and guard** against the original engine in two independently generated physical phase frames (A2/star and A3/A2). It requires no compiler. The final A2/A2 and A2/A3 replay uses the checked canonical engine with complete deterministic exact CRT and the same fixed field certificates. No new arithmetic assumption or search criterion is introduced.

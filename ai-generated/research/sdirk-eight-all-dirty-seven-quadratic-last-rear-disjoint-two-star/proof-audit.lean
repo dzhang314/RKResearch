@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticTwoSDisjointRearStar
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDisjointRearStar.scaled_front
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDisjointRearStar.scaled_rear
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDisjointRearStar.eliminate_shared_scale

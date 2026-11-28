@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonTwoSharedArithmetic
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonTwoSharedArithmetic.scaled_endpoint_third_difference
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonTwoSharedArithmetic.affine_fourth_cleared

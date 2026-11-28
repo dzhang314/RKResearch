@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonTwoSharedMixed
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonTwoSharedMixed.products_cancel
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonTwoSharedMixed.scaled_vieta_sum

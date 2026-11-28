@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonSSSArithmetic
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonSSSArithmetic.scale_paid_d_row
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonSSSArithmetic.paid_pair_cross

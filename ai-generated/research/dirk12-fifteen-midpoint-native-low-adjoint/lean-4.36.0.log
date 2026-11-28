@@ -1,0 +1,21 @@
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.real_reverse_ghost_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.installed_is_five' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.reverse_grade1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.reverse_grade2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.reverse_grade3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.reverse_grade4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.reverse_low_silent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

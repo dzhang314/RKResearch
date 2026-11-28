@@ -1,0 +1,17 @@
+Alias o row divisors (1, 0) (0, 1) slope divisors (1, 0) (0, 0)
+left common factors x=a forbidden or left slope
+ reduced projections / common degree (201, 268, 98) factors [(1, 6), (4, 1), (4, 1), (4, 5), (8, 2), (12, 1), (36, 1)]
+  degree1: a=0
+  first simple quartic: exact d-gcd 1
+  second simple quartic: exact linear d-root d=0
+  right quartic: original rho0 is identically zero in d
+  octic: exact linear d-root, H=z_N=z_D=0
+  degree12: exact linear d-root, z_N=z_D=variance=0
+  degree36: z_N=0 common exact root; full degree8 and linear whole residue gcd at (23,2,6)
+right common factors right slope, right moment, or z=d forbidden
+ reduced projections / common degree (198, 260, 52) factors [(4, 3), (8, 2), (12, 2)]
+  right quartic: original rho0 is identically zero in d
+  octic: exact linear d-root, H=z_N=z_D=0
+  degree12: exact linear d-root, z_N=z_D=variance=0
+both raw endpoint affine branches excluded; regular and other pivots closed separately
+wall 18.759 s; user 18.583 s; sys 0.088 s

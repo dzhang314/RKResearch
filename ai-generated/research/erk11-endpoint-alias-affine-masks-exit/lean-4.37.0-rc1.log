@@ -1,0 +1,6 @@
+'RKResearch.ERK11EndpointAffineClockGates.leftActualCollision' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11EndpointAffineClockGates.rightActualCollision' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

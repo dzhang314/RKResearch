@@ -1,0 +1,14 @@
+Lean 4.36.0; single persistent server document; completed revision 4, zero errors.
+Theorem bodies are preserved exactly in ERK10FixedQ29AdicCenterReadoutVerified.lean.
+This report covers the bodies in the bundled environment, not a fresh standalone .olean build.
+'RKResearch.Certified.ERK10CenterScalar.read1' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.read2' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.read3' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.readU' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.readYU' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.vary2' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.vary3' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.Chart.first_center_reads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterScalar.Chart.second_center_reads' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.chronologicalK_eq_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_early_from_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

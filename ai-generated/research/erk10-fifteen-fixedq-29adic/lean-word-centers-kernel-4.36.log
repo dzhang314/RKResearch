@@ -1,0 +1,9 @@
+Lean 4.36.0; single persistent server document; completed revision 9, zero errors.
+Theorem bodies are preserved exactly in ERK10FixedQ29AdicWordCenters.lean.
+This report covers the bodies in the bundled environment, not a fresh standalone .olean build.
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_center_first_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_center_nullGain_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.scaled_center_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_Z_earliest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_G_earliest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_center' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6 @@
+Lean 4.36.0; single persistent server document; completed revision 11, zero errors.
+Theorem bodies are preserved exactly in ERK10FixedQ29AdicWordD.lean.
+This report covers the bodies in the bundled environment, not a fresh standalone .olean build.
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.normal_primitive_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ellRead_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_d' depends on axioms: [propext, Classical.choice, Quot.sound]

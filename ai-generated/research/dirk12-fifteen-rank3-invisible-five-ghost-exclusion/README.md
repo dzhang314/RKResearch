@@ -53,3 +53,9 @@ If \(\mathbf G\) is local at \(d\), the other two repeated sites are the second 
 The checker verifies the derivative split and the 30 third-debut, 120 anchored, and 360 unanchored fixed-grid coefficients. It reduces only the fixed Lobatto root field, not any tableau, dirty-clock, or physical-weight variable. The simple roots split at \(1013\) with integral leading coefficient a unit; choosing a prime above \(1013\) in the splitting field maps all five roots to the verified distinct residues. All displayed denominator guards used in these tests are units. The first two fixed gates also have pre-existing four-version core Lean receipts in the one-label head packet. This new proof, including the pure ghost step and first singleton exclusion, is mathematical and is not an end-to-end native Lean theorem.
 
 This eliminates all exactly-five-ghost charts with three physical labels and at least two nonuniform groups, and all with five physical labels. For four physical labels it does not cover a uniform dirty pair, or a fifth ghost which is physically cubic-clean. Physically localized cubic dirt and the higher ghost counts are separate.
+
+The fixed split-field coefficients are also checked by the portable
+[Lean arithmetic file](../../lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenInvisibleCountGrid.lean),
+with [compiler and axiom receipts](core-lean-replay.txt) for Lean
+4.34.1, 4.35.0, 4.36.0, and 4.37.0-rc1. This does not formalize the
+analytic reduction of the tableau to the fixed scalar tests.

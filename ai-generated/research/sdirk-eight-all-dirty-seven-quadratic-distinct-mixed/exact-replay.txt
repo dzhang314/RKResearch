@@ -1,0 +1,21 @@
+split axis projection 50*h**4 - 262*h**3 + 377*h**2 + 60*h - 69
+even reuse A2 X gcd before/after 2 0
+even third A3 X gcd before/after 1 0
+split reuse A2 X gcd before/after 0 0
+split reuse S X gcd before/after 0 0
+split third A2 X gcd before/after 1 0
+split third A3 X gcd before/after 1 0
+all six actual reverse-star branches excluded
+even reuse A2 guarded exact projection degrees [27, 63] unit gcd
+even reuse A3 literal guard
+even reuse S guarded exact projection degrees [18, 54] unit gcd
+even third A2 literal guard
+even third A3 guarded exact projection degrees [96, 69, 93] unit gcd
+even third S guarded exact projection degrees [78, 57, 75] unit gcd
+split reuse A2 guarded exact projection degrees [70, 108] unit gcd
+split reuse A3 literal guard
+split reuse S guarded exact projection degrees [52, 90] unit gcd
+split third A2 guarded exact projection degrees [210, 164, 198] unit gcd
+split third A3 guarded exact projection degrees [206, 180, 194] unit gcd
+split third S guarded exact projection degrees [158, 112, 146] unit gcd
+all nine actual reverse-arithmetic branches excluded

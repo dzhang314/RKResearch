@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticDistinctMixed
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticDistinctMixed.quadratic_reverse_clock_mask
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticDistinctMixed.quadratic_reverse_ratio_clear

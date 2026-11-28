@@ -1,0 +1,18 @@
+Alias d row divisors (1, 0) (0, 1) slope divisors (0, 0) (0, 1)
+ lside True E scale (1, 0) DT (8, 7) raw g [(26, 23), (29, 27)] g gcd (15, 12) red g [(11, 11), (14, 15)] raw P (33, 33) (33, 33) P gcd (8, 7) red P [(25, 26), (25, 26)]
+ lside False E scale (0, 5) DT (6, 10) raw g [(15, 22), (18, 27)] g gcd (5, 9) red g [(10, 13), (13, 18)] raw P (29, 41) (29, 41) P gcd (6, 11) red P [(23, 30), (23, 30)]
+Independent first line mark raw (48, 56) factor types [((48, 56), 1)]
+Match 103 regular 1060
+Match 103 mask 1 32
+Match 103 mask 2 63
+Match 103 mask 3 143
+Match 103 mask 4 138
+Match 103 mask 5 494
+Match 103 mask 6 422
+Match 107 regular 1060
+Match 107 mask 1 32
+Match 107 mask 2 63
+Match 107 mask 3 143
+Match 107 mask 4 138
+Match 107 mask 5 494
+Match 107 mask 6 422

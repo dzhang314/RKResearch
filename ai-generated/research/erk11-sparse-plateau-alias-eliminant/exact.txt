@@ -1,0 +1,13 @@
+Alias d row divisors (1, 0) (0, 1) slope divisors (0, 0) (0, 1)
+ lside True E scale (1, 0) DT (8, 7) raw g [(26, 23), (29, 27)] g gcd (15, 12) red g [(11, 11), (14, 15)] raw P (33, 33) (33, 33) P gcd (8, 7) red P [(25, 26), (25, 26)]
+ lside False E scale (0, 5) DT (6, 10) raw g [(15, 22), (18, 27)] g gcd (5, 9) red g [(10, 13), (13, 18)] raw P (29, 41) (29, 41) P gcd (6, 11) red P [(23, 30), (23, 30)]
+Independent first line mark raw (48, 56) factor types [((48, 56), 1)]
+Coefficient specialization a=2 mod19: independent line mark and all six guarded masks have unit gcd with diagonal.
+All ten second-profile coefficient minors are identically zero, not independent width laws.
+Exact regular projection degree 1060 factor degrees and powers [(1, 16), (3, 3), (8, 8), (12, 6), (12, 7), (815, 1)]
+Mask 1 bidegree (0, 4) projection degree 32 factor degrees and powers [(1, 4), (12, 1), (16, 1)]
+Mask 2 bidegree (3, 3) projection degree 63 factor degrees and powers [(3, 1), (12, 1), (12, 1), (36, 1)]
+Mask 3 bidegree (7, 7) projection degree 143 factor degrees and powers [(1, 8), (12, 1), (51, 1), (72, 1)]
+Mask 4 bidegree (6, 8) projection degree 138 factor degrees and powers [(1, 8), (3, 1), (3, 1), (12, 1), (12, 1), (100, 1)]
+Mask 5 bidegree (22, 27) projection degree 494 factor degrees and powers [(1, 12), (8, 3), (12, 3), (12, 3), (16, 1), (64, 1), (72, 1), (234, 1)]
+Mask 6 bidegree (18, 24) projection degree 422 factor degrees and powers [(1, 8), (2, 1), (3, 3), (8, 3), (12, 3), (12, 3), (36, 1), (40, 1), (231, 1)]

@@ -1,0 +1,14 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+=== DIRK12F17CubicArithmetic ===
+=== DIRK12F17CubicData ===
+=== DIRK12F17CubicCore ===
+=== DIRK12F17CubicChecks ===
+=== DIRK12F17Cubic ===
+'RKResearch.Certified.DIRK12F17Cubic.order_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12F17Cubic.unit_next_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12F17Cubic.exact_f17_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12F17Cubic.extension_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+=== typed audit ===
+'RKResearch.Certified.DIRK12F17Cubic.exact_f17_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12F17Cubic.unit_next_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12F17Cubic.extension_degree' depends on axioms: [propext, Classical.choice, Quot.sound]

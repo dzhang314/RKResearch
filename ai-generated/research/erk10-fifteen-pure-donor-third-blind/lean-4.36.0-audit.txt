@@ -1,0 +1,5 @@
+'RKResearch.Certified.ERK10FifteenPureDonorThirdBlind.chronologicalCofactors' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10FifteenPureDonorThirdBlind.thirdBlindNumerator' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10FifteenPureDonorThirdBlind.thirdGateNoTwoMasses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

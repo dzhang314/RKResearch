@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10FifteenPureDonorLeakageScalars.forced_sums_and_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenPureDonorLeakageScalars.requires_sqrt_neg_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

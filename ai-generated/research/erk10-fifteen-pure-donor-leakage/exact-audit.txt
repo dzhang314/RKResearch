@@ -1,0 +1,8 @@
+common cofactor factor: a**5*(a - d)*(3*a - 2*d)*(d - e)/3
+exceptional d/e cofactors: -3*a**3*e*(a - e)*(3*a - 2*e)*(15*a - 11*e)/40960 3*a**3*d*(a - d)*(3*a - 2*d)*(15*a - 11*d)/40960
+generic mean row scale: a**4*d*e**2*(a - d)**2*(a - e)**2*(3*a - 2*d)**2*(3*a - 2*e)**2*(15*a - 11*e)*(d - e)**2/1215
+generic mean equation: mean_a = 32/27 mean_t
+forced h_T = 3*a^3/8; forced h_A = 19*a^3/36
+T_t/T_a = 19/9 requires: 110*a**2 - 87*a*(d + e) + 60*d*e
+nominal h primitive requires: 17*a**2 - 15*a*(d + e) + 11*d*e
+elimination gives 3(d+e)=10a, de=3a^2, (3d-5a)^2+2a^2=0

@@ -1,0 +1,6 @@
+exact geometry deflation powers (a,d,d-1,a-d) (3, 1, 1, 1) (1, 0, 1, 0) (1, 0, 1, 0)
+right slope resultants degrees 63 87 common exact irreducible degrees [3, 12, 12]
+cubic: linear d gcd, d=1
+first degree 12: linear d gcd, both left slopes zero
+second degree 12: linear d gcd, x_D=x_N=S=U=0 and variance zero
+all 3 right-initial-slope fibers excluded by live geometry, left mask, or nonzero variance

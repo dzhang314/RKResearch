@@ -1,0 +1,7 @@
+'RKResearch.ERK11RightSlopeVarianceGate.twoNodeProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11RightSlopeVarianceGate.twoNodeVarianceProduct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11RightSlopeVarianceGate.centralDenominatorLive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

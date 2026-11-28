@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphFourOrdinaryThird
+open RKResearch.Certified.SDIRKEightFiveZeroGraphFourOrdinaryThird
+#check weighted_second_power_from_two_taps
+#check two_gauss_fifth_grade_reads
+#print axioms weighted_second_power_from_two_taps
+#print axioms two_gauss_fifth_grade_reads

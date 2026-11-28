@@ -1,0 +1,14 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+noncubic star Ψ front (5, 0, 9, 1) [1, 0, 0, 0, 0, 0, 0, 0]
+small exact shape CRT 5 7 8
+small CRT exact 5 7 (163, 0) 8 427
+silent4 split centered False Y Q (7, 0, 20, 0) exact (0, 0, 139, 1) guarded (0, 0, 85, 1) [30, 6, 0, 0] leading-outside (0, 0, 82, 1) [1]
+silent4 specialized leading target (4, 0, 2, 1) (6, 0, 2, 0)
+star corrected hole5 silent4 complete False 1129 203 usual kept 82 done [('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 19, 1, 1)), ('weight', ('usual', 31, 1, 1)), ('weight', ('usual', 31, 1, 1))] bad []
+star corrected hole5 silent4 complete False 1129 203 degenerate kept 3 done [('no_Y', ('degenerate', 3, 1, 0))] bad []
+small CRT exact 2 1 (50, 15) 3 121
+cubic Y front+tail coupled (15, 0, 46, 1) [4, 0, 0, 0, 0, 0, 0, 0]
+small CRT exact 3 15 (138, 0) 7 417
+silent4 split centered True Y Q (15, 0, 46, 1) exact (0, 0, 138, 1) guarded (0, 0, 138, 1) [0, 0, 0, 0] leading-outside (0, 0, 138, 1) [0]
+star corrected hole5 silent4 complete True 1129 203 usual kept 138 done [('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 1, 1, 1)), ('weight', ('usual', 2, 1, 1)), ('weight', ('usual', 3, 1, 1)), ('weight', ('usual', 3, 1, 1)), ('weight', ('usual', 3, 1, 1)), ('weight', ('usual', 4, 1, 1)), ('weight', ('usual', 7, 1, 1)), ('weight', ('usual', 10, 1, 1)), ('weight', ('usual', 15, 1, 1)), ('weight', ('usual', 25, 1, 1)), ('weight', ('usual', 32, 1, 1)), ('weight', ('usual', 32, 1, 1))] bad []
+regular ordinary hole5 star-front star-rear actual literal fourth excluded

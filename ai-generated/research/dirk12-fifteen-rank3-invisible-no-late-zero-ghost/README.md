@@ -107,3 +107,5 @@ The diagonal at that zero does not enter either equation, because the numerical 
 The exact symbolic replay below checks the new nonzero donor geometry interpolation, all compatibility factors, and the special first Legendre-root configuration. The actual root, stage and band assumptions are analytic, not a complete native Lean theorem.
 
     python3 -B verify.py
+
+In the first-Legendre-root case with zero clock at the third physical ghost, the [half-clock exclusion](../dirk12-fifteen-rank3-invisible-no-late-half-clock/README.md) rules out the special second live ratio b/a=1/2.

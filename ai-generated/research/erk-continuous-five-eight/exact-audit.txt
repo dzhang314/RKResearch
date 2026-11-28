@@ -1,0 +1,7 @@
+Pinned primary implementation: exact literal A match.
+Actual size 6 residual rank: 4
+Actual size 7 residual rank: 5
+All 17 continuous order-five profile identities; literal FSAL alias; last profile exact through six.
+Clock vector: ['0', '1/6', '1/4', '1/2', '1/2', '9/14', '7/8', '1']
+Matrix denominator: 5576989017600
+Decoder denominator: 1171170

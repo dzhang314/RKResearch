@@ -1,5 +1,9 @@
 # Full five-opening seven-label, three-pair chart exit
 
+The [paid-field extension](ALL-PAID-FIELDS.md) removes the pair-total
+restriction in the original proof below and gives a consequence over
+commutative rings with \(10!\) invertible.
+
 **Theorem.** Take the actual five-opening decoder reverse word budget
 at order ten. Suppose the ten high rows have exactly seven distinct
 nonzero forward clocks, with the unique clock 1 in the first reverse

@@ -35,22 +35,10 @@ fourth \(u\)-entry might initially be zero. Its causal induction
 contradicts the first scalar \(u\) moment. The argument stops
 before any nonic, so is uniform over paid fields.
 
-## Scope of the combined search reduction
+## Complete rational exclusion of this decoder architecture
 
-For the specified five-opening architecture with ten high rows,
-unique first reverse endpoint and all high forward labels
-nonzero, a **rational** candidate now requires exactly **six**
-distinct high forward labels. At most five would give at most
-six scalar sites including the opening origin and fail the
-[origin-anchored rational parity floor](../erk-origin-degree-nine-scalar-floor/README.md).
-Seven is excluded by the
-[complete multiplicity census](../erk10-five-opening-triple-pair/ZERO-TRIPLE-POOL.md);
-eight by the
-[one triple](../erk10-five-opening-eight-label-triple/README.md)
-and [two pairs](../erk10-five-opening-eight-label-pairs-zero/README.md)
-proofs; nine by the main packet; ten by this note.
-Moreover if one of the six high pools were zero, deletion from
-the scalar support alone again leaves at most six permitted
-sites containing the origin. Thus all six high pool totals
-must be live. This is not a structural claim about general
-15-stage ERK10 tableaux, endpoint failure, or zero high clocks.
+Consider this particular five-opening decoder with ten physical high rows, all high forward clocks nonzero, the unique high clock (1) at the first reverse row, and only the opening origin allowed any output weight among the opening rows. There is **no rational fifteen-stage continuation** in this architecture.
+
+The remaining case of at most six distinct high labels is excluded by the stronger [two-endpoint rational quadrature obstruction](../rational-endpoint-moment-nine/README.md), not just the origin-only bound. The allowed set of scalar nodes is the opening origin together with the distinct high labels, hence contains both (0) and (1), even when one or both endpoint weights vanish. If there were at most six high labels the total allowed set would have at most seven sites. The degree-nine scalar rule imposed by order ten needs at least eight such rational sites. There are no sign or nonzero-weight hypotheses on this argument. Seven high labels are excluded by the [complete multiplicity census](../erk10-five-opening-triple-pair/ZERO-TRIPLE-POOL.md); eight by the [one-triple](../erk10-five-opening-eight-label-triple/README.md) and [two-pair](../erk10-five-opening-eight-label-pairs-zero/README.md) proofs; nine by the main packet; ten by the argument above.
+
+This closes only the stated architecture over the rationals. A rational tableau with a different opening, nonorigin weights in the opening, a zero high clock, or a missing, repeated, or displaced endpoint is not ruled out here. The general real interval remains 14–15, and the general rational interval remains 14–16.

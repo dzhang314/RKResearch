@@ -8,23 +8,25 @@ Use the [saturated support identity](../sdirk-eight-two-zero-line/README.md). Le
 \[
  w_2=o-r_3,\qquad w_3=o-r_2 .
 \]
-The off forward evaluation spans are \((1,c,c^2,g)\) and \((1,c,c^2,c^3,g,cg)\). All rows in the table follow by scalar clock interpolation and, at a repeated clock, by checking whether the physical residual values there differ. With live off weights, weighting \(E_2\) identifies it with \(W_2\) (the ordinary scalar Hilbert pairing detects the trace and a weighted nonzero residual detects the pure line); hence \(w_2\) also detects the rank on active off rows. If every off row is silent, \(w_2\le1\) because only \(Z_2\) may be nonzero off.
+The off forward evaluation spans are \((1,c,c^2,g)\) and \((1,c,c^2,c^3,g,h)\), where \(\mathbf h=(A-\gamma I)\mathbf g\). At two or more distinct off clocks, the pure grade-three subspace is also spanned by \(\mathbf g,C\mathbf g\), so clock interpolation gives the ranks in those rows. This replacement is not valid when all off clocks coincide; then the independent \(\mathbf h\) reading must be retained. With live off weights, weighting \(E_2\) identifies it with \(W_2\) (the ordinary scalar Hilbert pairing detects the trace and a weighted nonzero residual detects the pure line); hence \(w_2\) also detects the rank on active off rows. If every off row is silent, \(w_2\le1\) because only \(Z_2\) may be nonzero off.
 
 | Zero count | Physical off configuration | \((r_2,r_3)\) | \((w_2,w_3)\) | Possible active off weights |
 | ---: | --- | --- | --- | --- |
 | 7 | Three distinct clocks | \((3,3)\) | \((0,0)\) | None; genuine graph |
 | 7 | Two clocks, varying residual at the double clock | \((3,3)\) | \((0,0)\) | None; pure supported quadratic |
 | 7 | Two clocks, equal residuals at the double clock | \((2,2)\) | \((1,1)\) | None, or the canceled pair at the double clock |
-| 7 | One clock, varying physical residuals | \((2,2)\) | \((1,1)\) | None, or a canceled same-residual pair and a silent different residual |
-| 7 | One clock, three equal residuals | \((1,1)\) | \((2,2)\) | Impossible: \(w_2\le1\) with or without activity |
+| 7 | One clock, varying physical residuals | \((2,2)\) or \((2,3)\) | \((1,1)\) or \((0,1)\) | None, or a canceled same-residual pair and a silent different residual; active implies \(r_3=2\) |
+| 7 | One clock, three equal residuals | \((1,2)\) | \((1,2)\) | None, or two or three live weights with zero sum, before further chronology |
 | 8 | Two distinct clocks | \((2,2)\) | \((0,0)\) | None |
 | 8 | One clock, two different residuals | \((2,2)\) | \((0,0)\) | None |
-| 8 | One clock, equal residuals | \((1,1)\) | \((1,1)\) | None, or the canceled pair |
+| 8 | One clock, equal residuals | \((1,1)\) or \((1,2)\) | \((1,1)\) or \((0,1)\) | None, or the canceled pair; active implies \(r_3=1\) |
 | 9 | One physical nonzero residual | \((1,1)\) | \((0,0)\) | None; separate one-nonzero lane |
 
-The first three pure residual moments force cancellation of every live residual class when there are at most three off rows in one physical clock group; at two different clocks the constant and clock-linear residual probes separate the groups. These facts give the pair descriptions rather than just counts of weighted clocks.
+The first three pure residual moments force cancellation of every live residual class when there are at most three off rows in one physical clock group; at two different clocks the constant and clock-linear residual probes separate the groups. These facts give the pair descriptions when one residual class has only two rows, but do not exclude three canceling weights at a single clock with equal residuals. In that equal three-row case \(r_2=1\) and \(w_2\le1\) whether or not weights are active, so \(r_3=2\).
 
-In every active case in the table, \(\mathbf z^\mathsf T=-\mathbf b^\mathsf T(CA-AC-A^2)/2\) is the nonzero active pair difference and contains the terminal coordinate. The reflected ratio \(\kappa_R=0\), and rows 8 and 9 are distinct live zeros by the literal rear and ghost gates. The other pure reverse row \(\boldsymbol\eta^\mathsf T=\mathbf z^\mathsf T(A-\gamma I)\) vanishes off: the \(W_3\) off direction is the pair, whereas \(\eta_{10}=0\). If all physical off rows have one clock, \(\gamma=c_1=c_{10}=1-\gamma\) pins \(\gamma=1/2\). These statements use only paid field structure (characteristic zero or greater than seven).
+In the active-pair cases with \(w_3=1\), \(\mathbf z^\mathsf T=-\mathbf b^\mathsf T(CA-AC-A^2)/2\) is the nonzero active pair difference and contains the terminal coordinate. The reflected ratio \(\kappa_R=0\), and rows 8 and 9 are distinct live zeros by the literal rear and ghost gates. The other pure reverse row \(\boldsymbol\eta^\mathsf T=\mathbf z^\mathsf T(A-\gamma I)\) vanishes off: the \(W_3\) off direction is the pair, whereas \(\eta_{10}=0\). If all physical off rows have one clock, \(\gamma=c_1=c_{10}=1-\gamma\) pins \(\gamma=1/2\). These statements use only paid field structure (characteristic zero or greater than seven).
+
+The one-clock rows above retain the independent grade-three lift; the two-clock branches in the following proofs are unaffected.
 
 ## 2. Extra seven-zero chronology when \(r_2=r_3=3\)
 

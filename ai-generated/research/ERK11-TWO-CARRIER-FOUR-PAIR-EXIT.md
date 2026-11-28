@@ -5,15 +5,17 @@
 with exactly two physical carriers (2,16), all weights live,
 and both seventh boundary clocks genuinely new. Let \(r=As\)
 be the actual grade-three pure response to the carrier indicator.
-Assume in addition that the response at physical stage 13 is zero. This need not follow from the other chart premises and is used in the count of active sites.
 Assume the pooled ordinary charges \(b_i r_i\) vanish at every
 distinct active noncarrier clock, where active means \(r_i\ne0\).
 If there are at most five distinct active clocks, then there
-are exactly four, with **three active triples and one active pair**.
-The all-four-pairs subchart is impossible. The surviving pair
-is the right plateau clock \(c_{13}=c_{14}\), and the left
-physical 5 is active. The argument is characteristic zero after
-its conditional premises; it changes no ordinary stage bound.
+are exactly four, with either **three active triples and one
+active pair**, or **four active triples**. The all-four-pairs
+subchart is impossible. A dormant clean fifth row on one
+front forces its plateau to be an active pair, and at most
+one of the two fifth rows can be dormant in a surviving
+case. Neither fifth response is assumed zero. The argument
+is characteristic zero after its conditional premises; it changes
+no ordinary stage bound.
 
 ## 1. Exact pooled census
 
@@ -21,8 +23,8 @@ Write \(q\) for the number of active noncarrier clock labels and
 \(n\) for the number of active sites. The two front calibrations
 supply four distinct active noncarriers on each front (rows
 3,4,6,7 and 11,12,14,15). Thus \(q\ge4,n\ge8\).
-Of the 15 noncarriers, the endpoints 1,17 and the right clean
-fifth row 13 are dormant, so \(n\le12\).
+Of the 15 noncarriers, the endpoints 1,17 are dormant, so
+initially \(n\le13\). No dormancy at physical 5 or 13 is assumed.
 
 Every active label has multiplicity at least two, since all
 \(b_i,r_i\) there are nonzero and its first response pool vanishes.
@@ -58,14 +60,20 @@ Pairs' third-response pools vanish. The true zero total and
 first-clock moments of \(r^3\) (grades nine and ten) exclude
 one or two triple groups.
 
-The dormant physical 13 shares its clock with active 14,
-so that active clock group must be a pair. This also excludes
-four triples. The options are exactly four pairs (\(n=8\))
-or three triples and one pair (\(n=11\)). In the latter case
-the right plateau is the sole pair. If physical 5 were dormant,
-its clock is shared with active 4 and would have to be that
-same sole pair; then the two dormant clocks at 5 and 13 would
-coincide, contrary to saturation. Thus row 5 is active.
+Thus the only options are four pairs (\(n=8\)),
+three triples and one pair (\(n=11\)), or four triples
+(\(n=12\)). The two clean fifth rows are physical 5 and
+13. If one of them is dormant, its clock is shared with
+an active fourth row and hence that active group must be
+a pair (no dormant clock can coincide with a triple).
+If a clean fifth row is active, its response is distinct
+from its fourth-row partner. Those two live unequal
+responses cannot form a complete pair, so the group
+must be a triple. In the \(n=11\) case both fifth rows
+cannot be dormant: there is only one pair, and the
+dormant labels must be distinct. In the \(n=12\) case
+both must be active. In the \(n=8\) case both are dormant
+by the already accounted eight active sites.
 
 ## 2. Both-ended profiles in the four-pair subchart
 
@@ -158,6 +166,6 @@ four-pair chart is impossible.
 ERK11TwoCarrierPairGate.lean checks the symmetric differences,
 collided substitutions and the three polynomial Bezout identities
 over characteristic-zero fields. The actual grade/census and
-profile bridge is the mathematical argument above. The three-triple
-case, six active labels with pooled br zero, nonzero pools and
+profile bridge is the mathematical argument above. The three- and four-triple
+cases, six active labels with pooled br zero, nonzero pools and
 repeated boundaries are not asserted excluded.

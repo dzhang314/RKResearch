@@ -9,8 +9,6 @@ weighted transpose, which is order **ten**: no reverse order eleven
 or reverse dense first eleven is assumed. The field is characteristic
 zero, with ordering needed only for the later real central test.
 
-**Additional hypothesis for this version.** The response \(r=As\) is zero at physical stage 13. This has not been established for the full sole-late-carrier chart. The upstream all-loads-zero statement is insufficient to infer it for an independent response. All conclusions below are restricted to this additional hypothesis.
-
 There are either two or three carriers in total. In the latter case
 their physical positions are \(2,9,16\).
 Both fronts have an exact five-row clean-clock repeat, an independently
@@ -30,7 +28,9 @@ Let \(s\) be the carrier indicator and \(r=As\), and put
 \(B=\operatorname{diag}(b_i)\), \(A^\star=B^{-1}A^\mathsf{T}B\).
 The [sole-late-carrier data](ERK11-ALL-LIVE-ENDPOINT-REDUCTION.md#sole-late-carrier-at-16-exact-localization-of-the-second-seed)
 give a common carrier clock \(\theta=c_{16}\ne0,1\), \(r=0\)
-on *all* carriers and at most two early carriers. With the additional zero-response hypothesis at row 13, the active late noncarriers under consideration are 12, 14 and 15. The first carrier is 2: otherwise
+on *all* carriers, nonzero off-carrier responses at physical
+12,14,15, and at most two early carriers. The response at
+physical 13 need not be assumed zero. The first carrier is 2: otherwise
 the all-zero-clock initial rows would duplicate the origin in the
 full literal first-eleven \(E_5\). The fourth-row argument of
 [the weighted transpose note](ERK11-ONE-SPARE-WEIGHTED-TRANSPOSE.md#four-quadratic-carriers-in-the-half-clock-two-carrier-branch)
@@ -78,17 +78,15 @@ forces \(T=2N,c_5=T,f_5\ne f_4\) once literal repeats are
 excluded. Its local Case 1 equations use only the grade-four spans,
 not the dimensional assumption of that note at grade five, and only
 the initial carrier column is present through this row. In the
-reverse orientation the same plateau is already known:
-original physical 14 and 13 have identical clock, but 14 has
-nonzero response and 13 is dormant.
-In fact the normal form's grade-six eigenmode \(w\) is the literal
-atom \(e_{13}/b_{13}\) in this branch. It has no value at 16
-from its paid product with the sole late defect; its support
-is in 13,14. The paid product \(b(w r)=0\), of grades \(6+3\),
-kills its row-14 value because \(r_{13}=0,\ b_{14}r_{14}\ne0\).
-Its normalization \(bw=1\) then fixes the atom. This only
-gives point exactness at 13 through grade four, not five.
-
+reverse orientation the same clean plateau follows here from the
+[actual grade-six eigenmode](ERK11-TWO-GENERATOR-ENDPOINT-TAIL.md)
+\(w\), supported at physical 13,14 once its terminal value has been
+removed: its other possible same-clock coordinate 16 is killed by
+the paid product with the sole late defect. This mode satisfies
+\(bw=1\), and the paid product \(b(wr)=0\) has grade \(6+3\).
+If \(r_{13}=r_{14}\), that product would equal \(r_{14}bw\ne0\).
+Thus the two plateau responses are distinct, as required. Neither
+a zero response at 13 nor an individual point atom there is needed.
 Consequently in both directions
 \[
  T=2N,\quad f_4=-2N^2,\quad Af=(N-C)f,\quad

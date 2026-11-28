@@ -1,0 +1,13 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.ERK11TwoCarrierJacobiGate.reflection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierJacobiGate.doubling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierJacobiGate.oneApart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierJacobiGate.moments' does not depend on any axioms
+'RKResearch.ERK11TwoCarrierJacobiGate.determinantSamples' depends on axioms: [propext]
+'RKResearch.ERK11TwoCarrierJacobiGate.degreePreserved' does not depend on any axioms
+'RKResearch.ERK11TwoCarrierJacobiGate.residueBezout' depends on axioms: [propext]
+'RKResearch.ERK11TwoCarrierOmittedPairGate.parameterEnclosures' does not depend on any axioms
+'RKResearch.ERK11TwoCarrierOmittedPairGate.doublingSturm' depends on axioms: [propext]
+'RKResearch.ERK11TwoCarrierOmittedPairGate.doublingCount' does not depend on any axioms
+'RKResearch.ERK11TwoCarrierOmittedPairGate.oneOmitted' depends on axioms: [propext]
+'RKResearch.ERK11TwoCarrierOmittedPairGate.bothOmitted' depends on axioms: [propext]

@@ -1,0 +1,30 @@
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    0.89 Adj normalized coefficient degree 213 guarded content degree 24
+    1.52 zero-carrier relative norm normalized coefficient degree 479 guarded content degree 160
+    1.52 zero-carrier relative degree 479
+    2.82 zero-carrier final norm normalized coefficient degree 1224 guarded content degree 1916
+    2.94 zero-carrier raw/squarefree 1224 240
+    2.98 zero-carrier projection factors [(12, 16227), (12, 54123), (48, 1865429207937), (60, -1461941766456), (108, 7261365757665534336793103761342611)]
+    2.99 exact cap (12, 16227) ratio 22
+    2.99 exact cap (12, 54123) c2 18
+    3.02 exact cap (48, 1865429207937) q 22
+    3.09 exact cap (60, -1461941766456) old 22
+    1.03 joint image zero-carrier (12, 16227) ratio 12 22
+    0.89 joint image zero-carrier (12, 54123) c2 4 18
+    0.80 joint image zero-carrier (48, 1865429207937) q 1 22
+    0.60 joint image zero-carrier (60, -1461941766456) old 1 22
+    0.66 joint image zero-carrier (108, 7261365757665534336793103761342611) full 1 24
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    1.00 Adj normalized coefficient degree 213 guarded content degree 24
+    1.21 ghost-fifth relative norm normalized coefficient degree 100 guarded content degree 44
+    1.21 ghost-fifth relative degree 100
+    1.23 ghost-fifth final norm normalized coefficient degree 252 guarded content degree 400
+    1.24 ghost-fifth raw/squarefree 252 84
+    1.25 ghost-fifth projection factors [(60, 99738554904), (12, 16227), (12, 54123)]
+    1.25 exact cap (12, 16227) ratio 22
+    1.25 exact cap (12, 54123) c2 18
+    0.89 joint image ghost-fifth (60, 99738554904) full 3 24
+    0.93 joint image ghost-fifth (12, 16227) ratio 12 22
+    0.74 joint image ghost-fifth (12, 54123) c2 4 18

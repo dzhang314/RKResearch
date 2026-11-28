@@ -1,0 +1,4 @@
+guard degree 4 Tzero False Deltazero True
+guard degree 6 Tzero True Deltazero False
+guard degree 10 Tzero False Deltazero True
+Exact degree-72 width algebra: 48 unit second contacts.

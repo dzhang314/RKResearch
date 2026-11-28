@@ -1,0 +1,5 @@
+mod 1013, local_no_spent: 552
+mod 1013, local_d_spent: 432
+mod 1013, actual_half_clock_resonance: 48
+mod 1013, first_three_nodal: 120
+mod 1013, unanchored_four: 360

@@ -1,0 +1,22 @@
+# Exactly seven physical quadratic zeros are impossible at strict SDIRK8
+
+Let \(A,\mathbf b\) be a strict ten-stage SDIRK tableau of ordinary order at least eight over a characteristic-zero field, with common diagonal \(\gamma\ne0\). Write \(\mathbf c=A\mathbf1\) and \(\mathbf g=A\mathbf c-\mathbf c^{\odot2}/2\). Then \(\mathbf g\) cannot have **exactly seven physical zero entries**. This is a complete count-seven exclusion, not a bound for other zero counts or a change to the general strict SDIRK8 stage interval.
+
+A physical zero is an individual \(g_i=0\), regardless of its output weight or of clock repetitions. The [paid support census](../sdirk-eight-seven-eight-zero-census/README.md) and [characteristic-zero individual silence corollary](../sdirk-eight-seven-eight-off-silent/README.md) show that all three off-zero rows are silent. Their actual clock count is one, two or three.
+
+| Distinct physical off-zero clocks | Complete characteristic-zero exclusion |
+|---:|---|
+| One | The [three-silent single-clock closure](../sdirk-eight-silent-three-closure/README.md), which retains the independent grade-three lift, covers all three physical off rows at one clock. |
+| Two | The [varying double](../sdirk-eight-seven-zero-pure-distinct/README.md) and [constant double](../sdirk-eight-seven-zero-silent-double-final/README.md) packages cover all multiplicities and literal rear phases; the latter links the zero-ratio and off-eighth checks. |
+| Three, reflected second ratio zero | The [terminal-duplicate fourth-reverse exclusion](../sdirk-eight-seven-zero-three-clock-zero-ratio/README.md) handles all forward placements. |
+| Three, nonzero reflected second ratio and at most six literal zero labels | The [five-label exact geometric proof](../sdirk-eight-seven-zero-three-clock-five-label/README.md) excludes every placement, including lower ordinary rank by aggregation. |
+| Three, nonzero reflected second ratio, seven distinct zero labels, live rear arithmetic | The [supported early-quartic argument](../sdirk-eight-seven-zero-supported-quartic/README.md) excludes this over every paid field, without the arithmetic sextic. |
+| Three, same distinct-label case, rear live star or silent eighth zero | The [cubic-first-clock proof](../sdirk-eight-seven-zero-final-cubic-front/README.md) excludes physical first zero at 3 or a star front. The only remaining arithmetic front is closed by the [live-star proof](../sdirk-eight-seven-zero-final-arithmetic-star/README.md) and the [final silent-ghost proof](../sdirk-eight-seven-zero-final-arithmetic-ghost/README.md). |
+
+The first two physical rows of the three-clock chart are off by the [paid multi-clock row-two gate](../sdirk-eight-seven-eight-off-silent/README.md), so the first zero is at row 3 or row 4. The literal front and rear phases cited above exhaust those actual placements. This argument does not extend the complete exact-seven exclusion to arbitrary paid positive characteristic; only the pieces explicitly stated as paid hold there. The repository provides the independent exact polynomial replays and native scalar gates linked above, not one end-to-end native theorem from the rooted \(\mathrm{HasOrder}\) predicate.
+
+A corresponding **guarded ring corollary** follows whenever the tableau admits a unital reduction to a characteristic-zero field preserving the nonzero diagonal and all three nonzero residuals. The rooted equalities are polynomial and travel with that reduction. In particular this applies to characteristic-zero domains with the paid denominators, via their fraction fields, and to nonzero \(\mathbb Q\)-algebras with unit diagonal and unit off-zero residuals, via a maximal ideal. It makes no claim about arbitrary commutative rings where a nonzero residual can vanish in every relevant field reduction.
+
+## Combined physical count
+
+Together with the earlier exclusions of counts one through five and the [complete six-zero theorem](../sdirk-eight-six-zero-char-zero/README.md), the only surviving counts are **0, 8, or 9**. The first row always has nonzero defect: its only entry is the common diagonal, so its quadratic defect is half the square of this diagonal. The [Lean count adapter](../../lean/RKCert/ReviewedNative/SDIRK8PhysicalCount.lean) proves this literal first-row calculation in cleared form over a commutative ring, and assembles the conditional count conclusion over a field. It takes the exclusions of counts one through seven as hypotheses.

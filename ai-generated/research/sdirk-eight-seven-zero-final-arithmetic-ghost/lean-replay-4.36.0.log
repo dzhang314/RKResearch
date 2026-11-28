@@ -1,0 +1,4 @@
+'RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticGhost.ghost_affine_factor' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticGhost.two_atom_curve_clear' depends on axioms: [propext,
+ Quot.sound]

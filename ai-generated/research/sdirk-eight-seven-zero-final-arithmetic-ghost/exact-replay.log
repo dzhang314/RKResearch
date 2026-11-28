@@ -1,0 +1,14 @@
+0.0 scale norm 36
+1.05 formed scaled ordered early conditions
+47.5 cofactor cubic
+81.96 directed second-clock norm
+132.03 first-clock norm
+163.55 raw norm degree 8868
+204.44 exact guarded degrees 972 2916
+226.46 exact generic factors 1836 144 36 and separately checked guards 12 36 36
+fixed ghost fibre 1836 set() 101 [64, 1] directed pairs [12, 1, 0]
+fixed ghost fibre 144 {'disc'} 101 [79, 1] directed pairs [6, 0, 0]
+fixed ghost fibre 36 {'zero'} 101 [46, 1] directed pairs [6, 0, 0]
+fixed ghost fibre 12 {'a'} 101 [96, 1] directed pairs [30, 0, 0]
+fixed ghost fibre 36 {'s'} 101 [50, 1] directed pairs [36, 0, 0]
+fixed ghost fibre 36 {'s'} 101 [16, 94, 1] directed pairs [30, 0, 0]

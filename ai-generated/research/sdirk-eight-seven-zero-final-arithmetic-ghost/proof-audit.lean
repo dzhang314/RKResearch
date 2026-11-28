@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightSevenZeroFinalArithmeticGhost
+
+open RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticGhost
+
+#print axioms ghost_affine_factor
+#print axioms two_atom_curve_clear

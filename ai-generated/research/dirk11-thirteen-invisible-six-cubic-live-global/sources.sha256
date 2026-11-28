@@ -1,0 +1,11 @@
+cd3c8226e94ba69fb8f1c4f57705283d13d99b43497b7d63f2fd0c1838ddbb04  research/dirk11-thirteen-invisible-six-cubic-live-global/README.md
+1c56052bfd95b1178e95edab1705f0a672348ce371872425a81c1c1b32c5a145  research/dirk11-thirteen-invisible-six-cubic-live-global/rank.py
+4185ed8ed9a6d49e99ebb9e33c7cd05d20b8f06f22383f300bfd013fafaaaa97  research/dirk11-thirteen-invisible-six-cubic-live-global/divide-guards-first.py
+afb47d83e4df18d75fcac7033517e8289320ad6460d9e5b44149034333271e97  research/dirk11-thirteen-invisible-six-cubic-live-global/check-pair-support.py
+72815563a63b333c468dad10456588c854a4ee02f0f9d065d6a43b9dd4202821  research/dirk11-thirteen-invisible-six-cubic-live-global/check-jacobi-guards.py
+8639dac4473684debf90849e9da8791d97d3f73196449ee18d16931e0e092c06  research/dirk11-thirteen-invisible-six-cubic-live-global/pair-guard-support.txt
+97e0eddd2af94226a4afcb85a842cfde1c85e881b1bb518dc16c4a3949c67274  research/dirk11-thirteen-invisible-six-cubic-live-global/pair-cofactor.sha256
+8264c724cbc2e27184eba9d9e206b98ceab045698fc8feadc23eba0f418f4011  research/dirk11-thirteen-invisible-six-cubic-live-global/pair-bezout-103.txt
+0a2a82d0fcd955629cdc3d0920a4c0108b6b43ebf982fa6bb290bfd18c075536  research/dirk11-thirteen-invisible-six-cubic-live-global/run-guard-ranks.sh
+c8f30366bbbbc451d20db6e2a7d1b1269620fcff3be01ac56e7fbfcdf1226d57  research/dirk11-thirteen-invisible-six-cubic-live-global/lean-verification.txt
+846b0fec10e84bb31b364ca0ba76f67777bb8889b7a253f61327bf220af9cb25  lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixCubicLivePairBezout103.lean

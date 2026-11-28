@@ -1,0 +1,44 @@
+/tmp/astra_dirk11_global_regular/exact-pair/pair-quintic.txt: OK
+README.md: OK
+GB 0 or 1.txt: OK
+GC old constant.txt: OK
+GF3 degree.txt: OK
+GF3 derivative.txt: OK
+GF3 discriminant V.txt: OK
+GI(P)(V).txt: OK
+GR3 1.txt: OK
+GR3 B.txt: OK
+GR3 V.txt: OK
+GU at 1 or B.txt: OK
+GU leading.txt: OK
+GV 0 or 1 or B.txt: OK
+Gclock derivative.txt: OK
+Gclock scale.txt: OK
+Gdet m.txt: OK
+Gell V numerator.txt: OK
+Gfirst gap leader.txt: OK
+Gr denominator.txt: OK
+Gr numerator.txt: OK
+Gs numerator.txt: OK
+Gslope plus one.txt: OK
+21.55 first degree 17296
+46.58 discarded exact guard GB 0 or 1 4 705 left 14476
+64.95 discarded exact guard GC old constant 4 313 left 13224
+82.68 discarded exact guard GF3 degree 16 240 left 9384
+90.18 discarded exact guard GF3 derivative 28 120 left 6024
+92.76 discarded exact guard GI(P)(V) 24 38 left 5112
+93.37 discarded exact guard GI(P)(V) 24 3 left 5040
+95.18 discarded exact guard GU at 1 or B 60 25 left 3540
+96.05 discarded exact guard Gell V numerator 60 7 left 3120
+97.59 residual 3120 guard 220
+Exact paired-gap support and every removed coefficient content checked
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    0.99 common reverse-marks scale deg 180 content 56
+    1.10 carrier deg 111 content 36
+    1.23 clean quintic deg 116 content 36
+    1.23 first gap lead 168
+    1.23 U lead 99
+    1.39 switching to the proved degree-preserving reduction 103 3120
+    5.43 pair-commutator exact residual degree 3120 coprime gcd degree 0
+pair-filter-exact-verified

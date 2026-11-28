@@ -1,0 +1,195 @@
+    0.01 common cubic-fit scaling deg 32 content 0
+    0.22 common old-inverse scaling deg 72 content 8
+    5.04 common reverse-marks scale deg 180 content 56
+    5.14 carrier deg 111 content 36
+    5.26 clean quintic deg 116 content 36
+    5.26 first gap lead 168
+    5.26 U lead 99
+   46.41 gamma5 direct curvature numerator deg 518 content 132
+   46.43 five-curvature: extension numerator deg 518 content 0
+   48.24 five-curvature: norm 1554
+   48.93 five-curvature: relative norm content deg 1426 content 128
+   51.90 five-curvature: norm 5704
+   52.86 five-curvature: base projection 5704
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.04 common old-inverse scaling deg 72 content 8
+    0.99 common reverse-marks scale deg 180 content 56
+    1.09 carrier deg 111 content 36
+    1.22 clean quintic deg 116 content 36
+    1.22 first gap lead 168
+    1.22 U lead 99
+    1.30 guard clock scale norm 12
+    1.30 guard clock scale norm 48
+    1.30 guard B 0 or 1 norm 30
+    1.30 guard B 0 or 1 norm 120
+    1.30 guard V 0 or 1 or B norm 39
+    1.31 guard V 0 or 1 or B norm 156
+    1.32 guard C old constant norm 36
+    1.32 guard C old constant norm 144
+    1.32 guard R3 V norm 36
+    1.32 guard R3 V norm 144
+    1.32 guard R3 B norm 45
+    1.32 guard R3 B norm 180
+    1.33 guard R3 1 norm 36
+    1.33 guard R3 1 norm 144
+    1.33 guard clock derivative norm 36
+    1.33 guard clock derivative norm 144
+    1.33 guard F3 degree norm 24
+    1.33 guard F3 degree norm 96
+    1.34 guard F3 derivative norm 96
+    1.36 guard F3 derivative norm 384
+    1.37 guard r denominator norm 72
+    1.38 guard r denominator norm 288
+    1.39 guard r numerator norm 108
+    1.40 guard r numerator norm 432
+    1.42 guard s numerator norm 48
+    1.42 guard s numerator norm 192
+    1.48 guard det m norm 336
+    1.58 guard det m norm 1344
+    1.86 guard ell V numerator norm 348
+    1.98 guard ell V numerator norm 1392
+    2.13 guard I(P)(V) norm 144
+    2.15 guard I(P)(V) norm 576
+    2.24 guard slope plus one norm 336
+    2.43 guard slope plus one norm 1344
+    2.67 guard U leading norm 297
+    2.79 guard U leading norm 1188
+    3.20 guard U at 1 or B norm 675
+    3.97 guard U at 1 or B norm 2700
+    4.98 guard first gap leader norm 504
+    5.25 guard first gap leader norm 2016
+complete first projection degree 5704 height 13758
+squarefree projection degree 496 height 1274
+leftover 492 guard slot GB 0 or 1 4
+leftover 488 guard slot GC old constant 4
+leftover 472 guard slot GF3 degree 16
+leftover 444 guard slot GF3 derivative 28
+leftover 396 guard slot GI(P)(V) 48
+leftover 276 guard slot GU at 1 or B 120
+residual degree 276 height 710 exceptional projection degree 220
+possible leading good primes: [29, 43, 53, 67, 79, 101, 103, 107]
+possible leading good primes: [29, 43, 53, 67, 79, 101, 103, 107]
+Exact gamma-five support and every removed coefficient content checked
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.09 common old-inverse scaling deg 72 content 8
+    1.48 common reverse-marks scale deg 180 content 56
+    1.60 carrier deg 111 content 36
+    1.79 clean quintic deg 116 content 36
+    1.79 first gap lead 168
+    1.79 U lead 99
+    1.79 switching to the proved degree-preserving reduction 103 276
+    6.09 five-first-gap exact residual degree 276 coprime gcd degree 0
+compact-verified
+J4, endpoint-contact and multiple-ordinary-clock factors excluded in both charts
+    0.01 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    1.65 common reverse-marks scale deg 180 content 56
+    1.95 carrier deg 111 content 36
+    2.42 clean quintic deg 116 content 36
+    2.42 first gap lead 168
+    2.42 U lead 99
+actual guard base factor 2 16
+    2.55 chosen residue factor 103 4 x^4 + 54*x^3 + 99*x^2 + 15*x + 92
+    2.55 switching to the proved degree-preserving reduction 103 4
+    6.31 ranks over F_p 48 36 36 needed 36
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    0.99 common reverse-marks scale deg 180 content 56
+    1.11 carrier deg 111 content 36
+    1.23 clean quintic deg 116 content 36
+    1.23 first gap lead 168
+    1.23 U lead 99
+actual guard base factor 4 24
+    1.28 chosen residue factor 103 1 x + 99
+    1.28 switching to the proved degree-preserving reduction 103 1
+    3.69 ranks over F_p 12 11 11 needed 11
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    1.32 common reverse-marks scale deg 180 content 56
+    1.45 carrier deg 111 content 36
+    1.64 clean quintic deg 116 content 36
+    1.64 first gap lead 168
+    1.64 U lead 99
+actual guard base factor 5 28
+    1.70 chosen residue factor 103 1 x + 2
+    1.70 switching to the proved degree-preserving reduction 103 1
+    4.12 ranks over F_p 12 9 9 needed 9
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    1.49 common reverse-marks scale deg 180 content 56
+    1.60 carrier deg 111 content 36
+    1.80 clean quintic deg 116 content 36
+    1.80 first gap lead 168
+    1.80 U lead 99
+actual guard base factor 6 60
+    1.86 chosen residue factor 103 1 x + 42
+    1.86 switching to the proved degree-preserving reduction 103 1
+    4.58 ranks over F_p 12 11 11 needed 11
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.04 common old-inverse scaling deg 72 content 8
+    1.59 common reverse-marks scale deg 180 content 56
+    1.75 carrier deg 111 content 36
+    1.90 clean quintic deg 116 content 36
+    1.90 first gap lead 168
+    1.90 U lead 99
+actual guard base factor 2 16
+    1.95 chosen residue factor 103 4 x^4 + 54*x^3 + 99*x^2 + 15*x + 92
+    1.95 switching to the proved degree-preserving reduction 103 4
+    5.04 ranks over F_p 144 108 108 needed 108
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.06 common old-inverse scaling deg 72 content 8
+    1.06 common reverse-marks scale deg 180 content 56
+    1.19 carrier deg 111 content 36
+    1.39 clean quintic deg 116 content 36
+    1.39 first gap lead 168
+    1.39 U lead 99
+actual guard base factor 4 24
+    1.42 chosen residue factor 103 1 x + 99
+    1.42 switching to the proved degree-preserving reduction 103 1
+    2.70 ranks over F_p 36 33 33 needed 33
+    0.02 common cubic-fit scaling deg 32 content 0
+    0.04 common old-inverse scaling deg 72 content 8
+    1.40 common reverse-marks scale deg 180 content 56
+    1.59 carrier deg 111 content 36
+    1.80 clean quintic deg 116 content 36
+    1.80 first gap lead 168
+    1.80 U lead 99
+actual guard base factor 5 28
+    1.86 chosen residue factor 103 1 x + 2
+    1.86 switching to the proved degree-preserving reduction 103 1
+    3.14 ranks over F_p 36 27 27 needed 27
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    1.39 common reverse-marks scale deg 180 content 56
+    1.53 carrier deg 111 content 36
+    1.71 clean quintic deg 116 content 36
+    1.71 first gap lead 168
+    1.71 U lead 99
+actual guard base factor 6 60
+    1.77 chosen residue factor 103 1 x + 42
+    1.77 switching to the proved degree-preserving reduction 103 1
+    3.01 ranks over F_p 36 33 33 needed 33
+    0.01 common cubic-fit scaling deg 32 content 0
+    0.08 common old-inverse scaling deg 72 content 8
+    1.63 common reverse-marks scale deg 180 content 56
+    1.78 carrier deg 111 content 36
+    2.13 clean quintic deg 116 content 36
+    2.13 first gap lead 168
+    2.13 U lead 99
+actual guard base factor 7 60
+    2.20 chosen residue factor 103 1 x + 33
+    2.20 switching to the proved degree-preserving reduction 103 1
+    4.48 ranks over F_p 12 11 11 needed 11
+    0.00 common cubic-fit scaling deg 32 content 0
+    0.03 common old-inverse scaling deg 72 content 8
+    1.38 common reverse-marks scale deg 180 content 56
+    1.52 carrier deg 111 content 36
+    1.78 clean quintic deg 116 content 36
+    1.78 first gap lead 168
+    1.78 U lead 99
+actual guard base factor 7 60
+    1.87 chosen residue factor 103 3 x^3 + 32*x^2 + 12*x + 26
+    1.87 switching to the proved degree-preserving reduction 103 3
+    2.84 two exact singular guards have injective stacked map on profile layer: 36 36
+    5.40 ranks over F_p 108 90 90 needed 90
+All exact projection support factors excluded in both charts.

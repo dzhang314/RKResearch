@@ -1,0 +1,2 @@
+degrees of exact six integer quotient certificates [[212, 212, 212], [212, 212, 212]]
+literal coefficient scalar gate payload bytes 3220124

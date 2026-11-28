@@ -1,0 +1,42 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Checking IntegerPolyRootReplay
+Checking IntegerPolyPacking
+Checking IntegerPolyClearDen
+IntegerPolyClearDen.lean:42:0: warning: automatically included section variable(s) unused in theorem `RKResearch.Certified.IntegerPolyRootReplay.cubic_transfer_of_three`:
+  [CharZero K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CharZero K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking PaidNodalQuadrature
+'RKResearch.Certified.PaidNodalQuadrature.exact_two_more' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DIRK12MidpointScalarQuadrature
+'RKResearch.Certified.DIRK12MidpointRealInterval.scalar_quadrature_of_two_relations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking DIRK12Q36MomentData
+Checking DIRK12Q36PackedGatesCore
+Checking DIRK12Q36PackedGate30
+'RKResearch.Certified.DIRK12Q36Moments.gate30_checked' depends on axioms: [propext, Quot.sound]
+Checking DIRK12Q36PackedGate31
+'RKResearch.Certified.DIRK12Q36Moments.gate31_checked' depends on axioms: [propext, Quot.sound]
+Checking DIRK12Q36PackedGate32
+'RKResearch.Certified.DIRK12Q36Moments.gate32_checked' depends on axioms: [propext, Quot.sound]
+Checking DIRK12Q36PackedGate40
+'RKResearch.Certified.DIRK12Q36Moments.gate40_checked' depends on axioms: [propext, Quot.sound]
+Checking DIRK12Q36PackedGate41
+'RKResearch.Certified.DIRK12Q36Moments.gate41_checked' depends on axioms: [propext, Quot.sound]
+Checking DIRK12Q36PackedGate42
+'RKResearch.Certified.DIRK12Q36Moments.gate42_checked' depends on axioms: [propext, Quot.sound]
+Checking DIRK12Q36MomentReflect
+Checking DIRK12Q36RealMomentDataBridge
+DIRK12Q36RealMomentDataBridge.lean:82:65: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Checking DIRK12Q36RealMomentChecks
+'RKResearch.Certified.DIRK12Q36Moments.momentChecks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DIRK12Q36RealScalar
+'RKResearch.Certified.DIRK12Q36Moments.real_relations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Q36Moments.real_paid_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Q36Moments.real_relations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Q36Moments.real_paid_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]

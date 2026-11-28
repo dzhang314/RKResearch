@@ -1,0 +1,18 @@
+c1 content 12 deg 2
+c1 subresultant degrees [4, 2, 1, 0] factors [(4, 3, 1), (12, 1, 16227)]
+270c0+c2^3 content 1728 deg 3
+270c0+c2^3 subresultant degrees [4, 3, 2, 1, 0] factors [(4, 6, 1), (36, 1, 461298569088337587)]
+main content 36563462560677888*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**6 deg 3
+main subresultant degrees [4, 3, 2, 1, 0] factors [(4, 8, 1), (60, 1, -201158165054107372869)]
+c1 content 12 deg 2
+c1 subresultant degrees [4, 2, 1, 0] factors [(4, 3, 1), (12, 1, 16227)]
+270c0+c2^3 content 1728 deg 3
+270c0+c2^3 subresultant degrees [4, 3, 2, 1, 0] factors [(4, 6, 1), (36, 1, 461298569088337587)]
+main content 36563462560677888*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**6 deg 3
+main subresultant degrees [4, 3, 2, 1, 0] factors [(4, 8, 1), (60, 1, -201158165054107372869)]
+   13.66 all residue slope and geometry pivots live
+   13.68 clock tower and actual fit built
+   13.68 new Adj 2
+   13.70 quintic after affine middle 3
+   13.71 commutator after affine middle 4
+Entire monic degree-60 algebra, p=101: rank 360/360 at cap 5.

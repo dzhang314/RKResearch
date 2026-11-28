@@ -1,0 +1,6 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKCert.ReviewedNative.SDIRK8HoleSevenExceptionalTotalDrop.scaledProfile' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8HoleSevenExceptionalTotalDrop.necessaryUnits' does not depend on any axioms
+'RKCert.ReviewedNative.SDIRK8HoleSevenExceptionalTotalDrop.forcedEta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

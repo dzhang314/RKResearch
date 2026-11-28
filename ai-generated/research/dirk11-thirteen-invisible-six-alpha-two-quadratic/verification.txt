@@ -1,0 +1,21 @@
+Exact resultants: only J4(a) and degree 24
+unit old quintic divisibility on whole degree24 field 101
+Fn degeneracy resultant factors [(4, 2), (12, 1)]
+Fn loss: reverse pure read unit in the full rank-24 tower 103
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+exact source of the A1 coefficients and the three known D-roots audited
+    0.84 chosen residue factor x + 42
+    0.87 rank guard old-norm 12 11 11 needed 11
+    0.78 chosen residue factor x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91
+    1.09 rank guard profile-ratio 144 132 132 needed 132
+    0.82 chosen residue factor x^4 + 40*x^3 + 73*x^2 + 90*x + 50
+    0.94 rank guard c2 48 36 36 needed 36
+    0.68 chosen residue factor x + 44
+    0.72 rank guard old-norm 12 11 11 needed 11
+    0.60 chosen residue factor x^36 + 75*x^35 + 87*x^34 + 47*x^33 + 61*x^32 + 21*x^31 + 15*x^30 + 87*x^29 + 52*x^28 + 95*x^27 + 94*x^26 + 73*x^25 + 21*x^24 + 36*x^23 + 84*x^22 + 86*x^21 + 79*x^20 + 59*x^19 + 44*x^18 + 28*x^17 + 15*x^16 + 53*x^15 + 40*x^14 + 12*x^13 + 90*x^12 + 8*x^11 + 98*x^10 + 27*x^9 + 81*x^8 + 64*x^7 + 52*x^6 + 16*x^5 + 8*x^4 + 77*x^3 + 10*x^2 + 51*x + 19
+    2.30 rank guard old-norm 432 396 396 needed 396
+    1.94 chosen residue factor x^2 + 9*x + 41
+    2.04 rank guard old-norm 24 22 22 needed 22
+    1.89 chosen residue factor x^4 + 40*x^3 + 73*x^2 + 90*x + 50
+    2.02 rank guard c2 48 36 36 needed 36
+All seven literal Fn and singular guard fibers excluded.

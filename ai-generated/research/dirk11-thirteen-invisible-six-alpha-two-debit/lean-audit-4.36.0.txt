@@ -1,0 +1,32 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+InlineAlphaTwoAudit2.lean:57:4: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [he, h] at hE
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.primitive_determinant' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.repeated_clock_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.endpoint_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.zero_diagonal_from_quintic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.quad_remainder' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.cubic_remainder' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.linear_pair_wedge' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.other_d_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.basis_replacement' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.commutator_multipliers_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoDebit.next_ghost_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

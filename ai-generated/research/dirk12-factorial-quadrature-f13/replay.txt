@@ -1,0 +1,16 @@
+rho = [0, 0, 7, 8, 0, 6, 4, 3, 4, 6, 0, 8, 7]
+multiplicities = [(0, [0, 1, 4, 10]), (3, [7]), (4, [6, 8]), (6, [5, 9]), (7, [2, 12]), (8, [3, 11])]
+theta 0 required anchor-containing label count: 11
+theta 1 required anchor-containing label count: 13
+theta 2 required anchor-containing label count: 13
+theta 3 required anchor-containing label count: 13
+theta 4 required anchor-containing label count: 13
+theta 5 required anchor-containing label count: 11
+theta 6 required anchor-containing label count: 11
+theta 7 required anchor-containing label count: 11
+theta 8 required anchor-containing label count: 13
+theta 9 required anchor-containing label count: 11
+theta 10 required anchor-containing label count: 12
+theta 11 required anchor-containing label count: 13
+theta 12 required anchor-containing label count: 13
+unique fixed-anchor support floor 11 holds for all 13 scores

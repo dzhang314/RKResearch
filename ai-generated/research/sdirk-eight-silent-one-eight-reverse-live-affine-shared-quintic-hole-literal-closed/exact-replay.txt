@@ -1,0 +1,69 @@
+shared quintic no-hole literal silence positions 2–5 True True [(1, 1, 2), (3, 1, 2)]
+shared quintic no-hole: silent six or seven True True [(1, 1, 2), (3, 1, 2)]
+shared quintic no-hole literal silence positions 2–5 True False [(1, 1, 5), (3, 1, 5)]
+shared quintic no-hole: silent six or seven True False [(1, 1, 5), (3, 1, 5)]
+shared quintic no-hole: actual silent eighth True [(1, 1, 4), (3, 1, 4)]
+shared quintic no-hole literal silence positions 2–5 False True [(4, 1, 2)]
+shared quintic no-hole: silent six or seven False True [(4, 1, 2)]
+shared quintic no-hole literal silence positions 2–5 False False [(4, 1, 5)]
+shared quintic no-hole: silent six or seven False False [(4, 1, 5)]
+shared quintic no-hole: actual silent eighth False [(4, 1, 4)]
+all 26 actual affine shared-quintic no-ordinary-hole placements excluded
+shared-root ordinary-hole agreement case reuses all exact amplitude-matched fibers
+corrected shared quintic early rank loss; finite general, impossible hole4/8 True [(1, 1), (3, 1)]
+corrected shared quintic early rank loss; finite general, impossible hole4/8 False [(4, 1)]
+corrected hole4 tail shape True True 2 (2, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 2 3 (52, 15) 3 131
+corrected hole4 gap exact True True 2 (0, 15, 52, 1) (0, 12, 40, 1) [6, 1]
+small CRT exact 3 12 (120, 0) 6 355
+corrected hole4 γ exact True True 2 (0, 0, 120, 1)
+ordinary hole4 plus actual silent 2/3 True True 2 1129 203 [(1, 2, 1, 2), (1, 2, 1, 2), (1, 2, 1, 2), (2, 2, 1, 2), (3, 2, 1, 2), (5, 2, 1, 2), (8, 2, 1, 2), (9, 2, 1, 2), (14, 2, 1, 2), (16, 2, 1, 2)]
+corrected hole4 tail shape True True 3 (2, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 2 3 (52, 15) 3 131
+corrected hole4 gap exact True True 3 (0, 15, 52, 1) (0, 12, 40, 1) [6, 1]
+small CRT exact 3 12 (120, 0) 6 355
+corrected hole4 γ exact True True 3 (0, 0, 120, 1)
+ordinary hole4 plus actual silent 2/3 True True 3 1129 203 [(1, 2, 1, 2), (1, 2, 1, 2), (1, 2, 1, 2), (1, 2, 1, 2), (2, 2, 1, 2), (2, 2, 1, 2), (2, 2, 1, 2), (2, 2, 1, 2), (6, 2, 1, 2), (10, 2, 1, 2), (14, 2, 1, 2), (18, 2, 1, 2)]
+corrected hole4 tail shape True False 2 (5, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 5 3 (85, 24) 4 220
+corrected hole4 gap exact True False 2 (0, 24, 85, 1) (0, 21, 72, 1) [7, 1]
+small exact shape CRT 3 21 8
+small CRT exact 3 21 (216, 0) 11 621
+corrected hole4 γ exact True False 2 (0, 0, 216, 1)
+ordinary hole4 plus actual silent 2/3 True False 2 1129 203 [(1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (2, 1, 1, 1), (3, 1, 1, 1), (3, 1, 1, 1), (4, 1, 1, 1), (4, 1, 1, 1), (4, 1, 1, 1), (7, 1, 1, 1), (10, 1, 1, 1), (13, 1, 1, 1), (47, 1, 1, 1), (53, 1, 1, 1), (63, 1, 1, 1)]
+corrected hole4 tail shape True False 3 (5, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 5 3 (85, 24) 4 220
+corrected hole4 gap exact True False 3 (0, 24, 85, 1) (0, 21, 72, 1) [7, 1]
+small exact shape CRT 3 21 8
+small CRT exact 3 21 (216, 0) 11 621
+corrected hole4 γ exact True False 3 (0, 0, 216, 1)
+ordinary hole4 plus actual silent 2/3 True False 3 1129 203 [(1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (1, 1, 1, 1), (3, 1, 1, 1), (3, 1, 1, 1), (7, 1, 1, 1), (7, 1, 1, 1), (14, 1, 1, 1), (54, 1, 1, 1), (61, 1, 1, 1), (63, 1, 1, 1)]
+corrected hole4 tail shape False True 2 (2, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 2 3 (52, 15) 3 164
+corrected hole4 gap exact False True 2 (0, 15, 52, 1) (0, 12, 40, 1) [6, 1]
+small exact shape CRT 3 12 8
+small CRT exact 3 12 (120, 0) 9 483
+corrected hole4 γ exact False True 2 (0, 0, 120, 1)
+ordinary hole4 plus actual silent 2/3 False True 2 1129 203 [(3, 2, 1, 2), (4, 2, 1, 2), (8, 2, 1, 2), (17, 2, 1, 2), (28, 2, 1, 2)]
+corrected hole4 tail shape False True 3 (2, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 2 3 (52, 15) 3 165
+corrected hole4 gap exact False True 3 (0, 15, 52, 1) (0, 12, 40, 1) [6, 1]
+small exact shape CRT 3 12 8
+small CRT exact 3 12 (120, 0) 9 486
+corrected hole4 γ exact False True 3 (0, 0, 120, 1)
+ordinary hole4 plus actual silent 2/3 False True 3 1129 203 [(1, 2, 1, 2), (2, 2, 1, 2), (3, 2, 1, 2), (5, 2, 1, 2), (5, 2, 1, 2), (6, 2, 1, 2), (6, 2, 1, 2), (14, 2, 1, 2), (18, 2, 1, 2)]
+corrected hole4 tail shape False False 2 (5, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 5 3 (85, 24) 5 273
+corrected hole4 gap exact False False 2 (0, 24, 85, 1) (0, 21, 72, 1) [7, 1]
+small exact shape CRT 3 21 8
+small CRT exact 3 21 (216, 0) 15 846
+corrected hole4 γ exact False False 2 (0, 0, 216, 1)
+ordinary hole4 plus actual silent 2/3 False False 2 1129 203 [(2, 1, 1, 1), (4, 1, 1, 1), (8, 1, 1, 1), (10, 1, 1, 1), (12, 1, 1, 1), (20, 1, 1, 1), (58, 1, 1, 1), (102, 1, 1, 1)]
+corrected hole4 tail shape False False 3 (5, 3, 10, 1) (3, 3, 11, 1)
+small CRT exact 5 3 (85, 24) 5 276
+corrected hole4 gap exact False False 3 (0, 24, 85, 1) (0, 21, 72, 1) [7, 1]
+small exact shape CRT 3 21 8
+small CRT exact 3 21 (216, 0) 15 851
+corrected hole4 γ exact False False 3 (0, 0, 216, 1)
+ordinary hole4 plus actual silent 2/3 False False 3 1129 203 [(2, 1, 1, 1), (2, 1, 1, 1), (5, 1, 1, 1), (14, 1, 1, 1), (16, 1, 1, 1), (22, 1, 1, 1), (24, 1, 1, 1), (27, 1, 1, 1), (40, 1, 1, 1), (64, 1, 1, 1)]
+all eight fourth-hole corrected literal orientations excluded, complete components [10, 12, 15, 12, 5, 9, 8, 10]

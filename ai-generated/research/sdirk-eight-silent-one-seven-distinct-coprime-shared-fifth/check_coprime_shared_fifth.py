@@ -1,0 +1,33 @@
+"""Replay weighted virtual literal/fifth coprime charts."""
+from pathlib import Path
+import sys
+root=Path(__file__).resolve().parent.parent
+for dep in ("sdirk-eight-half-quadratic","sdirk-eight-half-star-quadratic",
+            "sdirk-eight-silent-three-closure","sdirk-eight-silent-two-unequal",
+            "sdirk-eight-silent-two-equal","sdirk-eight-silent-two-high",
+            "sdirk-eight-silent-one-seven-six-anchored",
+            "sdirk-eight-silent-one-seven-six-reverse",
+            "sdirk-eight-silent-one-seven-six-shared",
+            "sdirk-eight-silent-one-seven-distinct-anchors",
+            "sdirk-eight-silent-one-seven-distinct-coprime",
+            "sdirk-eight-silent-one-seven-distinct-one-front-zero",
+            "sdirk-eight-silent-one-seven-distinct-literal-pole",
+            "sdirk-eight-silent-one-seven-distinct-literal-reverse",
+            "sdirk-eight-silent-one-seven-distinct-gauss-root",
+            "sdirk-eight-silent-one-seven-distinct-gauss-nonliteral",
+            "sdirk-eight-silent-one-seven-distinct-constant-nonliteral"):
+    sys.path.insert(0,str(root/dep))
+from itertools import product
+from sympy import isprime
+from shared_fifth_checks import verify
+
+def main():
+    p,t=1103,161
+    assert isprime(p) and (2*t*t-1)%p==0
+    n=0
+    for f,i,star in product((True,False),(0,1),(True,False)):
+        assert verify(f,i,star,p,t);n+=1
+    assert n==8
+    print('coprime shared literal silent-fifth checks:',n)
+
+if __name__=='__main__':main()

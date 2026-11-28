@@ -1,0 +1,29 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.profile_coefficient_recovery.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (b t s ell mu q : K) (lead : 1 / 5 = q + ell) (first : q = 42 * b * t * mu)
+  (second : (ell - 1 / 2) * b * t + q / 3 - mu * (t - b * s) = 0) :
+  ell = 1 / 5 - q ∧ q * (b * s - t + 14 * b * t) = 42 * b ^ 2 * t ^ 2 * (3 / 10 + q)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.noncentral_head.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (y : K) (h : RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.pairQuartic y = 0) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.jacobiFour y = 28 / 11 * (y ^ 2 - y + 1 / 7)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.first_ghost_clock_zero.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (k x d : K) (h0 : d = x / 2) (h1 : k + x * d = k + x ^ 2 / 3) : x = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.head_calibration_zero.{u_1} {K : Type u_1} [Field K]
+  (u tau e : K) (un : u ≠ 0) (tn : tau ≠ 0) (h : e * (u / tau) = 0) : e = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.second_ghost_impossible.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (y d : K) (yn : y ≠ 0) (h0 : y * d = y ^ 2 / 3) (h1 : y ^ 2 * d = y ^ 3 / 4) : False
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.profile_coefficient_recovery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.noncentral_head' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.first_ghost_clock_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.head_calibration_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadratic.second_ghost_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

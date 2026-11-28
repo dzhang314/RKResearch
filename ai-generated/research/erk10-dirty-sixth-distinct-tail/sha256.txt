@@ -1,0 +1,5 @@
+e78eee7b0ef20297daafdb8164a6f2d1cd896d1c70256251ecb05ce637aef009  lean/RKCert/ReviewedNative/ERK10DirtySixthDistinctTailScalars.lean
+6099c05ce9a13283b71670004c867671f6013d08fc2bf778ed9ec473d847cb14  research/erk10-dirty-sixth-distinct-tail/README.md
+c5ea068dd80949458ee8d82f8e04d7893d8452bed7f5180943da4769ca77248a  research/erk10-dirty-sixth-distinct-tail/audit.py
+d0783d86fc239b2f66e49eafedd1249371f2a6d7c738c723b462b054aaca80d7  research/erk10-dirty-sixth-distinct-tail/exact-audit.txt
+2daa2719f3254d608c9a41c36b9004246e88635b669e77c6ad56db99b937355f  research/erk10-dirty-sixth-distinct-tail/lean-4.36-audit.txt

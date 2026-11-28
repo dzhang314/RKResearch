@@ -1,0 +1,7 @@
+'RKResearch.Certified.ERK10DirtySixthRelay.fsalPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10DirtySixthRelay.ghostPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10DirtySixthRelay.relayPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10DirtySixthRelay.ghostNotFifth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10DirtySixthRelay.exactDecoderNumerators' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

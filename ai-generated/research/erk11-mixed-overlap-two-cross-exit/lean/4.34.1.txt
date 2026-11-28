@@ -1,0 +1,4 @@
+'RKResearch.ERK11MixedOverlapTwoCrossGate.computedCofactor' depends on axioms: [propext]
+'RKResearch.ERK11MixedOverlapTwoCrossGate.contactGrid0' does not depend on any axioms
+'RKResearch.ERK11MixedOverlapTwoCrossGate.crossGrid17' depends on axioms: [propext]
+'RKResearch.ERK11MixedOverlapTwoCrossGate.coprimeNumerators' does not depend on any axioms

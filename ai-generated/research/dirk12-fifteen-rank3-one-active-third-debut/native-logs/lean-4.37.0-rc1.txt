@@ -1,0 +1,5 @@
+Lean (version 4.37.0-rc1, x86_64-unknown-linux-gnu, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveGrid.primeTrialDivision' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveGrid.split' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveGrid.noRadauRatio' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveGrid.noNodalTriple' does not depend on any axioms

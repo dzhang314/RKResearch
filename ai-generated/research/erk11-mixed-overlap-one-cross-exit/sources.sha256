@@ -1,0 +1,16 @@
+eabae81b326f068d01857eb472b1de203b323810b55a7907119a0724ef7a2f85  ai-generated/research/ERK11-LIVE-TRIPLE-EIGHT-CLOCK-HANKEL.md
+be867f1e88ff5b5904f70169c2f633009e0f0b0c80778708eb0c404fb4f01345  ai-generated/research/ERK11-MIXED-OVERLAP-TWO-CROSS-EXIT.md
+43eb3da9eaa6f5b346fad003622e63023a3da988eaf217e3ea0fe261c10043fc  ai-generated/research/ERK11-MIXED-OVERLAP-ONE-CROSS-EXIT.md
+38d847390ed32201f31d5396e6437333243563fbb98126c2e6e2423b872522d6  ai-generated/lean/RKCert/ReviewedNative/ERK11LiveTripleEightClockGate.lean
+b466a58269b26a353a7289336920f5bdd0fea3a5df47da4c08869f86662a144d  ai-generated/lean/RKCert/ReviewedNative/ERK11MixedOverlapTwoCrossGate.lean
+d8d50fad1cf37de87d5eb4a7d8e85ab1f1f54a9e0e7d6abf635bc8517213d394  ai-generated/research/erk11-live-triple-eight-clock-hankel/replay_specialization.py
+4d02faebd1fa664e308ec94568e8f5dfb5008c7f21be3816ce07933f9a5f23a2  ai-generated/research/erk11-live-triple-eight-clock-hankel/lean/4.34.1.txt
+00bedd0189260f87a74f8ca222434b8a7b1a85dc7e794097d381168067521699  ai-generated/research/erk11-live-triple-eight-clock-hankel/lean/4.35.0.txt
+00bedd0189260f87a74f8ca222434b8a7b1a85dc7e794097d381168067521699  ai-generated/research/erk11-live-triple-eight-clock-hankel/lean/4.36.0.txt
+00bedd0189260f87a74f8ca222434b8a7b1a85dc7e794097d381168067521699  ai-generated/research/erk11-live-triple-eight-clock-hankel/lean/4.37.0-rc1.txt
+abab97dafed76cb7fca44d62febbc827b720a80188906c981f7e8c916bb52034  ai-generated/research/erk11-mixed-overlap-two-cross-exit/replay_cleared_standalone.py
+13ba81aba6bbdc24df61afaf7fd48903229513929d43c46f1194568e1a44eef3  ai-generated/research/erk11-mixed-overlap-two-cross-exit/lean/4.34.1.txt
+107308b227efee0030824363f72fdfea6f3c3d6485b517365ace4d0a50f78ba5  ai-generated/research/erk11-mixed-overlap-two-cross-exit/lean/4.35.0.txt
+107308b227efee0030824363f72fdfea6f3c3d6485b517365ace4d0a50f78ba5  ai-generated/research/erk11-mixed-overlap-two-cross-exit/lean/4.36.0.txt
+107308b227efee0030824363f72fdfea6f3c3d6485b517365ace4d0a50f78ba5  ai-generated/research/erk11-mixed-overlap-two-cross-exit/lean/4.37.0-rc1.txt
+b3282d18788652df6d6ca10a189818a10c1ad388841158dd9d59c1357520732a  ai-generated/research/erk11-mixed-overlap-one-cross-exit/replay_mixed_onecross.py

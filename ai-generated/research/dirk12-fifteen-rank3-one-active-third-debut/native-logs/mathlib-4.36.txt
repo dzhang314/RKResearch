@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveScalar.thirdMoments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveScalar.nodalIntegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.OneActiveScalar.quarticReturn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

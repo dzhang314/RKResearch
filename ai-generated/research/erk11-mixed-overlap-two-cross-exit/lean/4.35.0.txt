@@ -1,0 +1,4 @@
+'RKResearch.ERK11MixedOverlapTwoCrossGate.computedCofactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MixedOverlapTwoCrossGate.contactGrid0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MixedOverlapTwoCrossGate.crossGrid17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MixedOverlapTwoCrossGate.coprimeNumerators' depends on axioms: [propext, Classical.choice, Quot.sound]

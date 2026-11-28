@@ -1,0 +1,8 @@
+source size 6 polynomial ['0', '49/360', '-233/240', '881/360', '-209/80', '1']
+source size 6 polynomial ['0', '-11/90', '37/60', '-143/180', '1/20', '1/4']
+source size 6 polynomial ['0', '1/36', '-31/120', '233/360', '-37/60', '1/5']
+source size 7 polynomial ['0', '2629/7200', '-11773/4800', '39661/7200', '-63661/14400', '0', '1']
+source size 8 polynomial ['0', '817591/1296000', '-3531167/864000', '11182319/1296000', '-1777591/288000', '0', '0', '1']
+source size 9 polynomial ['0', '2577769/2880000', '-97866377/17280000', '298399289/25920000', '-401439289/51840000', '0', '0', '0', '1']
+size-six coefficient minor 11/1728 and higher bush monic heads 6,7,8
+physical FSAL and relay both equal integrated decoder rows

@@ -1,0 +1,27 @@
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.weightedHankel_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.det_weightedHankel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.det_weightedHankel_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.det_weightedHankel_isUnit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.det_maskedHankel_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.det_maskedHankel_isUnit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.det_of_maskedMoment_isUnit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.maskedHankel_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightOrdinaryHankelPivot.cramer_of_maskedHankel_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

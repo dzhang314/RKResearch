@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10DirtySixthDistinctTailScalars.nonzero_source_minor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10DirtySixthDistinctTailScalars.latest_live_scalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

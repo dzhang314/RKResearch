@@ -1,0 +1,29 @@
+'RKResearch.ERK11LiveTripleEightClockGate.halfJacobiBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.leftCramer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.derivativeContactScale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.primitiveCalibration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.denominatorAndPrime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.gramAndContacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.verticalFactors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LiveTripleEightClockGate.halfHalfWits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ RKResearch.ERK11LiveTripleEightClockGate.halfHalfWits._native.native_decide.ax_1_1]
+'RKResearch.ERK11LiveTripleEightClockGate.plateauHalfWits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ RKResearch.ERK11LiveTripleEightClockGate.plateauHalfWits._native.native_decide.ax_1_1]
+'RKResearch.ERK11LiveTripleEightClockGate.halfPlateauWits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ RKResearch.ERK11LiveTripleEightClockGate.halfPlateauWits._native.native_decide.ax_1_1]
+'RKResearch.ERK11LiveTripleEightClockGate.fourWits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ RKResearch.ERK11LiveTripleEightClockGate.fourWits._native.native_decide.ax_1_1]

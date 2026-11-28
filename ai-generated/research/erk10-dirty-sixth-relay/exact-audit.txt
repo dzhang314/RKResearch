@@ -1,0 +1,5 @@
+physical row 7 clock 1 pure derivative profiles 37
+physical row 8 clock 1/3 pure derivative profiles 17
+physical row 9 clock 2/3 pure derivative profiles 37
+first size-six ghost: child bush5, primitive defect 11/4860, normalized primitive 3/4
+decoder 17 rooted profiles, five coefficients each; three physical cardinal aliases

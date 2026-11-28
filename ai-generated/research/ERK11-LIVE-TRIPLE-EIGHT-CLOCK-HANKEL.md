@@ -2,7 +2,7 @@
 
 **Scope.** Continue the [six-group triple reduction](ERK11-SIX-GROUP-TRIPLE-CROSS-PAIR.md): the maximal all-live 17-stage half-clock ERK11 chart with exactly two quadratic carriers, both seventh-stage boundaries new, six active noncarrier clock labels, thirteen active stages (five pairs, one triple), and zero first-response pools on all six labels. This packet concerns **nonzero ordinary scalar mass at the triple**. It gives a **finite algebraic set of possible clock layouts over characteristic-zero fields**, not a contradiction or a count of viable tableaux. The endpoint collision, cofactor pivots, derivative contact, and finite reduction are characteristic zero; the final support restriction uses an ordering. No reverse order eleven is used.
 
-The [standalone exact replay](erk11-live-triple-eight-clock-hankel/replay_specialization.py) verifies the finite-field unit witnesses independently from the fixed polynomial formulas. The tableau, grade, localization, and finite projection arguments are mathematical; no native Lean endpoint is claimed here.
+The [Lean companion](../lean/RKCert/ReviewedNative/ERK11LiveTripleEightClockGate.lean) checks the integer Bézout identity, Cramer and contact arithmetic, and exact Gram and polynomial coefficients. The four closed mod-101 witness batches use `native_decide` (compiler trust); the same finite checks have an [independent exact replay](erk11-live-triple-eight-clock-hankel/replay_specialization.py). The tableau, grade, localization, and finite projection arguments are mathematical.
 
 ## 1. Endpoint collisions are excluded before making an eight-clock Hankel
 

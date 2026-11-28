@@ -117,6 +117,21 @@ cleared identities are
      &=1680^3\,66^{27}D^{26}N_2(a).
  \end{aligned}
 \]
+The integer-grid checks use degree bounds 132 for the first identity
+and 258 for the second. Assign both \(W\) and \(Y\) degree weight nine,
+the degree of \(M\); the monic reductions preserve that weighted
+degree. The scaled contact factors have degrees at most \(20,18,20,18\)
+and the Gram factors degrees at most \(0,4,4,8\), giving weighted
+degree at most 44 for the contact. In the crossover, \(\widehat H\)
+has coefficient degree at most 12 in \(a\); \(\widehat{\mathcal J}\)
+has the same bound, and multiplication by the four clock factors
+increases it by at most two. Multiplying its coefficient at \(Y^j\)
+by \(M^{9-j}\) gives weighted degree at most 95; the linear remainder
+coefficient has weighted degree at most 86. For an element of
+weighted degree \(r\), its multiplication norm has degree at most
+\(3r\): the weights of basis powers cancel in each determinant term.
+The right sides satisfy the same bounds. Thus the exact grids
+\(0,\ldots,132\) and \(0,\ldots,258\) prove both identities.
 The residual numerators \(N_1,N_2\) have degrees 60 and 23;
 their integer arrays are in the companion. The factors
 discarded are only rational nonzero scalars and the
@@ -138,4 +153,7 @@ anchored bases and row roles. The reflected clocks would
 therefore solve the excluded \(a=e\) system. This needs no
 ordinary reverse order-eleven tableau.
 
-The [standalone exact replay](erk11-mixed-overlap-two-cross-exit/replay.py) checks the cleared integer polynomial arithmetic and the modular Bézout certificate. The actual order and physical chronology transfers are mathematical; no native Lean endpoint is claimed here.
+The [Lean companion](../lean/RKCert/ReviewedNative/ERK11MixedOverlapTwoCrossGate.lean) checks the cleared
+polynomial arithmetic and modular Bézout identities in the kernel.
+An [exact Python replay](erk11-mixed-overlap-two-cross-exit/replay_cleared_standalone.py) checks the same polynomial arithmetic.
+The actual order and physical chronology transfers are above.

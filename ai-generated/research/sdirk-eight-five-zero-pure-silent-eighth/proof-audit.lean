@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightFiveZeroPureSilentEighth
+open RKResearch.Certified.SDIRKEightFiveZeroPureSilentEighth
+#check second_zero_line_cross
+#check seventeen_gap_nonzero
+#print axioms second_zero_line_cross
+#print axioms seventeen_gap_nonzero
+#print axioms singular_D_literal

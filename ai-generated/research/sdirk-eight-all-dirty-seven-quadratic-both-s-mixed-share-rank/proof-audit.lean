@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonMixedShareRank
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonMixedShareRank.scale_line_determinant
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonMixedShareRank.quadratic_graph_secant

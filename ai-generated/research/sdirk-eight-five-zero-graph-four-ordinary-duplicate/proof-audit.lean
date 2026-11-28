@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphFourOrdinaryDuplicate
+open RKResearch.Certified.SDIRKEightFiveZeroGraphFourOrdinaryDuplicate
+#check singleton_pure_value_zero_of_cubic_moment
+#print axioms singleton_pure_value_zero_of_cubic_moment

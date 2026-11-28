@@ -1,0 +1,2 @@
+'RKResearch.Certified.DIRK12MidpointProbes.fromOne_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointProbes.fromOne_degree' depends on axioms: [propext, Classical.choice, Quot.sound]

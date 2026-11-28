@@ -1,0 +1,4 @@
+'RKResearch.Certified.DIRK12MidpointShape.coef_bound' does not depend on any axioms
+'RKResearch.Certified.DIRK12MidpointShape.reflected_integrals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

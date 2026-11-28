@@ -1,0 +1,5 @@
+'RKResearch.Certified.DIRK12MidpointShape.integral_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointShape.real_probe_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointShape.probe_combo_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

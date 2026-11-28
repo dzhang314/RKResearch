@@ -1,0 +1,9 @@
+'RKResearch.Certified.DIRK12MidpointProbes.fit_scale_relation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointProbes.integral_nodal_target' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointProbes.actual_nodal_probe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

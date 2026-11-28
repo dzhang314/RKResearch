@@ -1,0 +1,17 @@
+import RKCert.Research.SDIRKEightFourZeroNativeRear
+open RKResearch.Certified.SDIRKEightFourZeroNativeRear
+#check silent_rear_forces_constant
+#check arithmetic_rear_forces_constant
+#check star_rear_forces_constant
+#check canceled_arithmetic_forces_constant
+#check canceled_star_forces_constant
+#print axioms silent_rear_forces_constant
+#print axioms arithmetic_rear_forces_constant
+#print axioms star_rear_forces_constant
+#print axioms canceled_arithmetic_forces_constant
+#print axioms canceled_star_forces_constant
+#print axioms integer_factorizations
+#check no_gaussian_rear_characteristic_zero
+#check no_canceled_gaussian_rear_characteristic_zero
+#print axioms no_gaussian_rear_characteristic_zero
+#print axioms no_canceled_gaussian_rear_characteristic_zero

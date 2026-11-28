@@ -1,0 +1,15 @@
+Lean 4.36.0; one warm direct-import server document; revision 5 had zero errors.
+Portable Core/Sound/Read were built as separate stock modules under scratch aliases.
+The four module bodies below are the same checked bodies, split with canonical imports.
+The receipt is for these kernel-checked bodies; a separate canonical module build is not included here.
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_scale_read' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_output_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_output_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_norm_QZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_scale_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_targetZ_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_all_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_complete' depends on axioms: [propext, Classical.choice, Quot.sound]

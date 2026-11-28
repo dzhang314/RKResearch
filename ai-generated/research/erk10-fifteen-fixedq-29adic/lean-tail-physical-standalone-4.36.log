@@ -1,0 +1,27 @@
+Official Lean 4.36.0. Canonical split modules, direct serial builds; no lake subprocesses.
+Replay in the Lean package: lake build RKCert.ReviewedNative.ERK10FixedQ29AdicWordAll
+Frozen source copies matched byte-for-byte. Each module emitted its canonical .olean.
+Axiom results (std: propext, Classical.choice, Quot.sound only).
+
+ERK10FixedQ29AdicZTailActual
+source SHA256 65b5ae19d014963156884d7212c93084ec66c923d25f9bad70ced00957eb9018
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_scale_read' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_output_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_output_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicZTailPhysicalAlign
+source SHA256 ccf7b2856ca90c5d99e07c25ee80858c3afcc6d6153f85b0c478b31d7e734b8f
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.ZTail.actual_norm_QZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicZTailPhysicalRows
+source SHA256 70392d8c1fe79921df609d1768c69b7350ce46acb28b8c9991e80ca9df772b55
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_scale_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_targetZ_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicWordAll
+source SHA256 b22b782b257b243c7f2a167873cc370bb1f9c97c9286cfc80cf7332c92048c31
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_all_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_complete' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+Sturm variations at negative and positive infinity: 6 4
+Descartes variations on the ten bounded intervals: [0, 0, 0, 0, 1, 0, 1, 0, 0, 0]
+Root bracket: (79001089317030856056, 79001089317030856057) variations: (6, 5) H grid enclosure: (645172776, 645172777) head determinant: (-10883784, -10883783)
+Root bracket: (85314051436405470022, 85314051436405470023) variations: (5, 4) H grid enclosure: (737493556, 737493557) head determinant: (-136394680, -136394679)
+Exactly two real decic roots; both ordered head roots are real over each.

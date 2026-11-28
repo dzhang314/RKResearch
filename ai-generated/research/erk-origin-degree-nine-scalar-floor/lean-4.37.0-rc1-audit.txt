@@ -1,0 +1,2 @@
+'RKResearch.Certified.ERKOriginDegreeNineMod.mod2_only_three_shapes' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.ERKOriginDegreeNineMod.no_mod4_lifts' does not depend on any axioms

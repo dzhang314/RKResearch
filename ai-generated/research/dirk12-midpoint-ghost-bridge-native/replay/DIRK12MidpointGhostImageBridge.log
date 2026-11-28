@@ -1,0 +1,4 @@
+'RKResearch.Certified.DIRK12MidpointForward.Feed.third_lift_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.real_AG5_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]

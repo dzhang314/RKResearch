@@ -1,0 +1,5 @@
+cleared discriminant degrees (26,26,12); exact polynomial has 5607 terms
+radius 1/100 clock interval 71/100 37/50 all 13 coefficients negative; off-center sum / central magnitude below 93/100
+radius 1/200 clock interval 7/10 3/4 all 13 coefficients negative; off-center sum / central magnitude below 43/100
+both complete ordered boxes excluded by the necessary discriminant
+wall 0.857 s; user 0.740 s; sys 0.055 s

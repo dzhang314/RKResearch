@@ -1,0 +1,48 @@
+17 omitted row 2 Jacobian [[6, 0, 0], [0, 11, 1], [15, 1, 1]] det 9 base guards {"cardinal difference products": [3, 2, 5, 13, 8, 16, 5, 14, 15, 9], "cardinal masses": [6, 14, 6, 12, 1, 3, 4, 2, 6, 15], "first four donors": [[0, 14], [1, 2], [2, 6], [3, 5]], "first three donors": [[0, 14], [1, 2], [2, 6]], "first two donors": [[0, 14], [1, 2]], "five terminal equations": [[0, 3], [1, 9], [2, 3], [4, 9], [4, 15]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [12, 11], "two density reads": [[0, 11], [1, 10]]}
+17 1 checked all 1205 conditions; next bush defect 16
+17 2 checked all 1205 conditions; next bush defect 186
+17 3 checked all 1205 conditions; next bush defect 1342
+19 omitted row 2 Jacobian [[17, 0, 0], [0, 9, 12], [11, 9, 14]] det 2 base guards {"cardinal difference products": [5, 6, 17, 17, 11, 11, 13, 11, 18, 14], "cardinal masses": [17, 4, 14, 9, 3, 16, 6, 18, 12, 16], "first four donors": [[0, 4], [1, 10], [2, 2], [3, 9]], "first three donors": [[0, 4], [1, 10], [2, 2]], "first two donors": [[0, 4], [1, 10]], "five terminal equations": [[0, 8], [4, 1], [2, 16], [3, 11], [4, 4]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [18, 2], "two density reads": [[0, 10], [1, 18]]}
+19 1 checked all 1205 conditions; next bush defect 1
+19 2 checked all 1205 conditions; next bush defect 1
+19 3 checked all 1205 conditions; next bush defect 3972
+23 omitted row 0 Jacobian [[10, 0, 0], [0, 16, 5], [17, 14, 16]] det 20 base guards {"cardinal difference products": [3, 9, 11, 1, 16, 11, 19, 16, 9, 3], "cardinal masses": [2, 6, 20, 14, 21, 14, 6, 18, 21, 17], "first four donors": [[0, 6], [1, 17], [2, 5], [3, 21]], "first three donors": [[0, 6], [1, 17], [2, 5]], "first two donors": [[0, 6], [1, 17]], "five terminal equations": [[0, 17], [1, 7], [2, 19], [3, 8], [4, 4]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [8, 15], "two density reads": [[0, 6], [1, 3]]}
+23 1 checked all 1205 conditions; next bush defect 18
+23 2 checked all 1205 conditions; next bush defect 455
+23 3 checked all 1205 conditions; next bush defect 12093
+31 omitted row 2 Jacobian [[27, 0, 0], [0, 10, 20], [26, 19, 10]] det 4 base guards {"cardinal difference products": [23, 21, 11, 23, 6, 19, 17, 7, 13, 25], "cardinal masses": [21, 2, 7, 20, 12, 11, 29, 11, 1, 11], "first four donors": [[0, 2], [1, 11], [2, 11], [3, 24]], "first three donors": [[0, 2], [1, 11], [2, 11]], "first two donors": [[0, 2], [1, 11]], "five terminal equations": [[0, 1], [4, 5], [2, 10], [3, 26], [4, 12]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [7, 5], "two density reads": [[0, 29], [1, 25]]}
+31 1 checked all 1205 conditions; next bush defect 15
+31 2 checked all 1205 conditions; next bush defect 666
+31 3 checked all 1205 conditions; next bush defect 9315
+47 omitted row 2 Jacobian [[28, 0, 0], [0, 39, 25], [39, 36, 33]] det 26 base guards {"cardinal difference products": [9, 12, 25, 32, 21, 16, 42, 2, 26, 12], "cardinal masses": [19, 16, 31, 38, 30, 8, 1, 41, 13, 39], "first four donors": [[0, 16], [1, 30], [2, 27], [3, 25]], "first three donors": [[0, 16], [1, 30], [2, 27]], "first two donors": [[0, 16], [1, 30]], "five terminal equations": [[0, 9], [1, 3], [2, 24], [4, 42], [4, 10]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [15, 43], "two density reads": [[0, 34], [1, 28]]}
+47 1 checked all 1205 conditions; next bush defect 26
+47 2 checked all 1205 conditions; next bush defect 1953
+47 3 checked all 1205 conditions; next bush defect 94731
+53 omitted row 2 Jacobian [[12, 0, 0], [0, 14, 9], [47, 2, 20]] det 17 base guards {"cardinal difference products": [34, 22, 29, 16, 3, 19, 7, 26, 2, 10], "cardinal masses": [2, 41, 51, 14, 49, 39, 15, 21, 39, 48], "first four donors": [[0, 41], [1, 25], [2, 22], [3, 47]], "first three donors": [[0, 41], [1, 25], [2, 22]], "first two donors": [[0, 41], [1, 25]], "five terminal equations": [[0, 2], [1, 11], [2, 18], [4, 12], [4, 49]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [31, 17], "two density reads": [[0, 37], [1, 33]]}
+53 1 checked all 1205 conditions; next bush defect 24
+53 2 checked all 1205 conditions; next bush defect 2091
+53 3 checked all 1205 conditions; next bush defect 69507
+61 omitted row 2 Jacobian [[31, 0, 0], [0, 36, 12], [42, 22, 33]] det 35 base guards {"cardinal difference products": [49, 51, 52, 5, 29, 22, 58, 7, 21, 49], "cardinal masses": [12, 16, 31, 47, 37, 51, 5, 33, 18, 56], "first four donors": [[0, 16], [1, 12], [2, 48], [3, 4]], "first three donors": [[0, 16], [1, 12], [2, 48]], "first two donors": [[0, 16], [1, 12]], "five terminal equations": [[0, 46], [1, 3], [2, 32], [4, 3], [4, 20]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [28, 24], "two density reads": [[0, 39], [1, 44]]}
+61 1 checked all 1205 conditions; next bush defect 36
+61 2 checked all 1205 conditions; next bush defect 1561
+61 3 checked all 1205 conditions; next bush defect 131796
+79 omitted row 2 Jacobian [[71, 0, 0], [0, 65, 37], [54, 70, 23]] det 70 base guards {"cardinal difference products": [43, 69, 49, 52, 1, 67, 28, 21, 1, 10], "cardinal masses": [19, 37, 40, 39, 3, 8, 50, 58, 27, 36], "first four donors": [[0, 37], [1, 64], [2, 69], [3, 47]], "first three donors": [[0, 37], [1, 64], [2, 69]], "first two donors": [[0, 37], [1, 64]], "five terminal equations": [[0, 9], [1, 15], [2, 51], [4, 59], [4, 21]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [67, 55], "two density reads": [[0, 12], [1, 44]]}
+79 1 checked all 1205 conditions; next bush defect 61
+79 2 checked all 1205 conditions; next bush defect 1088
+79 3 checked all 1205 conditions; next bush defect 281933
+83 omitted row 2 Jacobian [[20, 0, 0], [0, 44, 34], [78, 19, 33]] det 18 base guards {"cardinal difference products": [49, 38, 55, 65, 7, 53, 71, 66, 69, 45], "cardinal masses": [82, 26, 12, 76, 67, 34, 8, 1, 2, 25], "first four donors": [[0, 26], [1, 33], [2, 32], [3, 3]], "first three donors": [[0, 26], [1, 33], [2, 32]], "first two donors": [[0, 26], [1, 33]], "five terminal equations": [[0, 59], [1, 44], [2, 58], [4, 50], [4, 32]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [75, 62], "two density reads": [[0, 48], [1, 21]]}
+83 1 checked all 1205 conditions; next bush defect 20
+83 2 checked all 1205 conditions; next bush defect 3257
+83 3 checked all 1205 conditions; next bush defect 457931
+107 omitted row 2 Jacobian [[78, 0, 0], [0, 68, 79], [70, 48, 30]] det 90 base guards {"cardinal difference products": [13, 94, 80, 68, 102, 68, 104, 8, 9, 70], "cardinal masses": [105, 81, 74, 28, 85, 22, 1, 79, 19, 42], "first four donors": [[0, 81], [1, 87], [2, 32], [3, 66]], "first three donors": [[0, 81], [1, 87], [2, 32]], "first two donors": [[0, 81], [1, 87]], "five terminal equations": [[0, 75], [1, 79], [2, 40], [4, 48], [4, 10]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [69, 71], "two density reads": [[0, 32], [1, 45]]}
+107 1 checked all 1205 conditions; next bush defect 7
+107 2 checked all 1205 conditions; next bush defect 9530
+107 3 checked all 1205 conditions; next bush defect 570531
+109 omitted row 2 Jacobian [[51, 0, 0], [0, 41, 50], [50, 19, 8]] det 106 base guards {"cardinal difference products": [102, 4, 48, 7, 75, 6, 32, 75, 49, 48], "cardinal masses": [91, 48, 92, 74, 98, 21, 56, 78, 44, 53], "first four donors": [[0, 48], [1, 22], [2, 87], [3, 77]], "first three donors": [[0, 48], [1, 22], [2, 87]], "first two donors": [[0, 48], [1, 22]], "five terminal equations": [[0, 85], [1, 34], [2, 88], [4, 44], [4, 1]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [11, 47], "two density reads": [[0, 104], [1, 79]]}
+109 1 checked all 1205 conditions; next bush defect 54
+109 2 checked all 1205 conditions; next bush defect 5613
+109 3 checked all 1205 conditions; next bush defect 326400
+113 omitted row 2 Jacobian [[95, 0, 0], [0, 88, 51], [26, 56, 10]] det 86 base guards {"cardinal difference products": [97, 3, 44, 19, 87, 53, 8, 109, 31, 22], "cardinal masses": [55, 27, 75, 32, 79, 51, 5, 65, 28, 36], "first four donors": [[0, 27], [1, 89], [2, 55], [3, 108]], "first three donors": [[0, 27], [1, 89], [2, 55]], "first two donors": [[0, 27], [1, 89]], "five terminal equations": [[0, 106], [1, 83], [2, 23], [4, 13], [4, 16]], "fixed numerical denominators": {"1": 1, "10": 10, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}, "theta, alias": [56, 99], "two density reads": [[0, 73], [1, 92]]}
+113 1 checked all 1205 conditions; next bush defect 101
+113 2 checked all 1205 conditions; next bush defect 12192
+113 3 checked all 1205 conditions; next bush defect 152651

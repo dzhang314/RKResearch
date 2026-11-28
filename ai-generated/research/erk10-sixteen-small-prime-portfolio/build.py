@@ -32,7 +32,7 @@ def decode(path):
  return {k:[[list(map(F,q))for q in r]for r in d]for k,d in json.loads(Path(path).read_text()).items()}
 S=json.loads((D.parent/'erk10-canonical-dense-rank3'/'rational-prefix.json').read_text())
 PRE={k:[[(F(v),F(0))for v in r]for r in S[k]]for k in ('A','Pi','H6')}
-def chart(raw,m,prime,pick=None,emit=False,guard=None):
+def chart(raw,m,prime,pick=None,emit=False,guard=None,*,prefix=PRE,theta_rule=lambda t:2*t-5):
  M.p=m
  theta=M(raw[0]);c=[M(1),*map(M,raw[1:])]
  assert len(c)==9 and int(theta)%prime and len({int(x)%prime for x in [M(0),*c]})==10
@@ -79,7 +79,7 @@ def chart(raw,m,prime,pick=None,emit=False,guard=None):
   free.append(vk)
  coeff=lambda a,b:M(a)+M(b)*theta
  def apply_pfx(q,x):return sum(coeff(*a)*x**j for j,a in enumerate(q))
- psi=[[apply_pfx(q,theta*x/c[-1])for x in c]for q in PRE['H6']]
+ psi=[[apply_pfx(q,theta*x/c[-1])for x in c]for q in prefix['H6']]
  KRaw=[[dot(r,vals)-(M0[4][i]/4 if j==0 else Z)for i,r in enumerate(K)]
        for j,vals in enumerate((M0[3],xu))]
  ts=[]
@@ -100,7 +100,7 @@ def chart(raw,m,prime,pick=None,emit=False,guard=None):
   assert tt is not None
  omit=next(i for i in range(6)if i not in pick)
  eq2=dot(C[omit],tt)-ts[omit]
- eq0=2*theta-5
+ eq0=theta_rule(theta)
  E=tuple(map(int,(eq0,eq1,eq2)))
  if not emit:return E,pick
  assert E==(0,0,0)
@@ -110,8 +110,8 @@ def chart(raw,m,prime,pick=None,emit=False,guard=None):
  assert all(dot(q,[dot(r,M0[3])-M0[4][i]/4 for i,r in enumerate(K)])==0 for q in psi)
  assert all(dot(q,[dot(r,xu)for r in K])==0 for q in psi)
  sc=c[-1]/theta
- A0=[[coeff(*a)*sc for a in r]for r in PRE['A']]
- Pi=[[coeff(*a)/sc**k for a in r]for k,r in enumerate(PRE['Pi'])]
+ A0=[[coeff(*a)*sc for a in r]for r in prefix['A']]
+ Pi=[[coeff(*a)/sc**k for a in r]for k,r in enumerate(prefix['Pi'])]
  seq=c[::-1];cols=range(9)
  BB=[[K[8-j][8-i]if j<i else Z for j in cols]for i in cols]
  cross=[]

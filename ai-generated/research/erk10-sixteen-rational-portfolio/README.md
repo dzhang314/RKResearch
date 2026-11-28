@@ -51,3 +51,16 @@ From this directory:
     sha256sum -c sources.sha256
 
 The literal arithmetic is checked by exact replay. The [generic Lean ring transfer](../../lean/RKCert/ReviewedNative/ExactExplicitPortfolio.lean) now proves the local Bézout selector, exact-order preservation under injective scalar extension, and prime-power assembly followed by an injective finite-characteristic cast. It compiles on the pinned Lean/Mathlib 4.36.0. These transfers take the exact chart proofs as inputs; this packet does not yet claim an end-to-end Lean theorem for the full portfolio.
+
+### Native compact witness
+
+The compact 5/4-horizon tableau now has its own unconditional Lean/Mathlib 4.36.0 certificate, under `RKResearch.Certified.ERK10MirrorCompact`. The endpoints `order_ten` and `exists_exact_of_unit` check the literal rooted order conditions and the two-tree exact-order obstruction over any nontrivial commutative ring inverting this chart's common denominator. `exists_exact_rat` specializes to rational coefficients. The arithmetic uses 488 profiles, 221 actions, and 985 joins; only standard axioms appear in the end-to-end receipts. The other newly generated chart endpoints are not asserted certified here.
+
+From `ai-generated/lean`:
+
+    lake build +RKCert.ReviewedNative.ERK10MirrorCompact:olean
+
+From this research directory:
+
+    sha256sum -c compact-native-sha256.txt
+    python3 -B generate_native.py compact /tmp/rk-compact-regenerated

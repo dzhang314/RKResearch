@@ -1,0 +1,6 @@
+exact zero-slope chart: two resultants coprime
+exact slope denominators: S=1 and L4 force the forbidden zero slope
+prime 19 squarefree factor degrees [2, 34]
+successful factor (2, 'linear p; unit affine norm')
+successful factor (34, 'linear p; unit affine norm')
+PASS: finite quotient generator ideal has full rank 288 modulo 19

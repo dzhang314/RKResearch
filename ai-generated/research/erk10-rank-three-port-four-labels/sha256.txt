@@ -1,0 +1,5 @@
+ff5512564d7b5ac1a5497a71e9f59c9e352e3b7a09ecdc9a1cd8202048537224  lean/RKCert/ReviewedNative/ERK10RankThreePortFourLabels.lean
+df462fc516913777ea36f9fb005aae852db9546a7a30ee6dbb03b8ca0284ab79  research/erk10-rank-three-port-four-labels/README.md
+c46a0ce5ee7c5ed94d3821247a127c0c2cd834cdc478142ba44c9726b3a5dc40  research/erk10-rank-three-port-four-labels/audit.py
+a2b308750694a3863b0920dcf5aec4b993f43d3fe7a14320e649aee099f070d9  research/erk10-rank-three-port-four-labels/exact-audit.txt
+9a4a8dd02311ac90a5e3277a94f1e7b502251666ac6b0f42ce4c1c5f4523225b  research/erk10-rank-three-port-four-labels/lean-4.36-audit.txt

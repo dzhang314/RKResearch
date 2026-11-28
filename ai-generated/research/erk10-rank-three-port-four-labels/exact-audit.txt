@@ -1,0 +1,4 @@
+last clean: J(XP0) = X**2*(X - 1)*(5*X - 3)/20
+fifth clean: monic c,d = {c: -3*(15*t**3 - 10*t**2 - 15*t + 12)/(5*(12*t**2 - 20*t + 9)), d: 3*t*(20*t**2 - 35*t + 16)/(10*(12*t**2 - 20*t + 9))}
+fifth clean output mass = -(t - 1)*(5*t - 3)/(2*t**2*(30*t**3 - 80*t**2 + 75*t - 24))
+fifth clean hull determinant = (10*t**2 - 15*t + 6)*(12*t**2 - 20*t + 9)/(36*(30*t**3 - 80*t**2 + 75*t - 24))

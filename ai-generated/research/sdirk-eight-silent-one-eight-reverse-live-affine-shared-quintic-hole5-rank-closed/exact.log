@@ -1,0 +1,39 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+ordinary fifth rank loss, full gamma/r/s degrees True 1 3 1
+rank-loss literal tail alone True True 2 (1, 1)
+rank-loss literal tail alone True True 3 (1, 1)
+rank-loss literal tail alone True True 4 (1, 1)
+rank-loss signed terminal unit True True 6 (1, 1)
+ordinary fifth rank loss, full gamma/r/s degrees True 3 3 1
+rank-loss literal tail alone True True 2 (3, 1)
+rank-loss literal tail alone True True 3 (3, 1)
+rank-loss literal tail alone True True 4 (3, 1)
+rank-loss signed terminal unit True True 6 (3, 1)
+ordinary fifth rank loss, full gamma/r/s degrees True 1 3 1
+rank-loss literal tail alone True False 2 (1, 1)
+rank-loss literal tail alone True False 3 (1, 1)
+rank-loss literal tail alone True False 4 (1, 1)
+rank-loss signed terminal unit True False 6 (1, 1)
+ordinary fifth rank loss, full gamma/r/s degrees True 3 3 1
+rank-loss literal tail alone True False 2 (3, 1)
+rank-loss literal tail alone True False 3 (3, 1)
+rank-loss literal tail alone True False 4 (3, 1)
+rank-loss signed terminal unit True False 6 (3, 1)
+ordinary fifth rank loss, full gamma/r/s degrees True 1 3 1
+rank-loss signed terminal unit True None 8 (1, 1)
+ordinary fifth rank loss, full gamma/r/s degrees True 3 3 1
+rank-loss signed terminal unit True None 8 (3, 1)
+actual zero fifth determinant False (4, 3, 0, 1) (0, 2, 0, 1) (0, 2, 0, 1)
+ordinary fifth rank loss, full gamma/r/s degrees False 4 3 3
+rank-loss literal tail alone False True 2 (4, 1)
+rank-loss literal tail alone False True 3 (4, 1)
+rank-loss literal tail alone False True 4 (4, 1)
+rank-loss signed terminal unit False True 6 (4, 1)
+ordinary fifth rank loss, full gamma/r/s degrees False 4 3 3
+rank-loss literal tail alone False False 2 (4, 1)
+rank-loss literal tail alone False False 3 (4, 1)
+rank-loss literal tail alone False False 4 (4, 1)
+rank-loss signed terminal unit False False 6 (4, 1)
+ordinary fifth rank loss, full gamma/r/s degrees False 4 3 3
+rank-loss signed terminal unit False None 8 (4, 1)
+all corrected ordinary hole5 early rank-loss placements excluded

@@ -1,0 +1,4 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveRank.quadraticReadFromThreeMoments' depends on axioms: [propext]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveRank.earlierCubicPaddedRead' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveRank.cancelFourthPadsInZeroFifthGate' depends on axioms: [propext]

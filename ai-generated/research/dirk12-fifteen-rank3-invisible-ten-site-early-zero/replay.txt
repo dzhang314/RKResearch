@@ -1,0 +1,2 @@
+ten-site third: exact ratio and genuine zero diagonal, including double root
+ten-site fourth: exact nonzero fourth divided difference eliminant

@@ -1,0 +1,23 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.ERK11MiddleInverseGate.gramInverse' depends on axioms: [propext]
+'RKResearch.ERK11MiddleInverseGate.reduceMixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11MiddleInverseGate.halfClock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.fit1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.fit2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.fit3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.fit4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.fit5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.unaryNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.row1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.row2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.row3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.row4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.row5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.rankMinor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.completeSquare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.primitivePositiveNumerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NeighbourPencilGate.doublePrimitivePositiveNumerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

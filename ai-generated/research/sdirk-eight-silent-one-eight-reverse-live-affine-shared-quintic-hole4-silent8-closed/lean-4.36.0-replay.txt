@@ -1,0 +1,6 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFourthSilentEight.reducedSilentEightWeightRow' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFourthSilentEight.monicCubicFourRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFourthSilentEight.cancelFifthTwoPads' depends on axioms: [propext]

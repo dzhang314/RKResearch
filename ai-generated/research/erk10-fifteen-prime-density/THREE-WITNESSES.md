@@ -105,4 +105,4 @@ with SymPy. The script regenerates the decic from the published origin
 equations, replays the actual head solve in the modular polynomial
 quotients with checked unit inverses, verifies all modular receipts,
 and computes the densities by both a recurrence and cycle partitions.
-The Galois and Chebotarev argument is mathematical, not a Lean theorem.
+The [Lean arithmetic check](../../lean/RKCert/ReviewedNative/ERK10ThreeWitnessDensity.lean) verifies the rank-six receipt and the specified and least-degree counts, on Lean 4.34.1, 4.35.0, 4.36.0 and 4.37.0-rc1. The modular polynomial computations, Galois proof, and Chebotarev step are not formalized here.

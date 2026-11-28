@@ -1,0 +1,10 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'RKResearch.ERK11TwoCarrierPairGate.halfDifference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.halfSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.symmetricCharge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.diagonalSubstitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.collidedSubstitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.offDiagonalSubstitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.diagonalBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.offDiagonalBezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwoCarrierPairGate.collidedBezout' depends on axioms: [propext, Classical.choice, Quot.sound]

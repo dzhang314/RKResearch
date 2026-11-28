@@ -29,7 +29,8 @@ For the size-eleven star, the weighted elementary value is 8
 and the cleared order defect is `11 * 8 - 1 = 2 mod 17`.
 The [replay transcript](exact-replay.log) includes that failure.
 
-This is an upper bound, not a 16-stage minimum. It does not
-show that the tableau lifts modulo powers of 17, and it changes
-neither the real 14–15 interval nor the single-tableau 17-stage
+This is an upper bound, not a 16-stage minimum. The [separate exact
+lifting proof](../erk10-sixteen-17-power-lift/README.md) extends the
+construction to every power of 17 and the 17-adic integers. Neither
+result changes the real 14–15 interval or the single-tableau 17-stage
 upper bound over the factorial localization.

@@ -1,0 +1,4 @@
+exact root relation, all dense order-five conditions, literal FSAL, rank-three H6: confirmed.
+A common denominator 432 residue 7
+Pi common denominator 960 residue 8
+H6 common denominator 240 residue 2

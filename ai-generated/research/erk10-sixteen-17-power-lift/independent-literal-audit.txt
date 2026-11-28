@@ -1,0 +1,4 @@
+17^2 lower-power compatible 1205 exact rooted checks; bush unit defect 104
+17^3 lower-power compatible 1205 exact rooted checks; bush unit defect 2994
+17^4 lower-power compatible 1205 exact rooted checks; bush unit defect 71776
+17^5 lower-power compatible 1205 exact rooted checks; bush unit defect 1408112

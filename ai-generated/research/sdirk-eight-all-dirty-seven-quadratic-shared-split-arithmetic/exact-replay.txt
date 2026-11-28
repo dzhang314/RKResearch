@@ -1,0 +1,23 @@
+bidegrees [((6, 6), 6), ((10, 8), 10), ((16, 14), 16)]
+first projected degree 60
+second projected degree 96
+gcd projection (1475739525896764129280000, [(203840*m^8 - 6052480*m^7 - 70209552*m^6 + 250767104*m^5 - 249226180*m^4 + 60382392*m^3 + 16469733*m^2 - 2437932*m - 332967, 1), (m^3 - 4*m^2 + 10*m - 8, 2), (16*m - 7, 6), (m, 16)])
+m projected degree 8 >3 p-gcd degree 1
+  after p guards degree 0
+m projected degree 3 m**3 - 4*m**2 + 10*m - 8 p-gcd degree 1
+  after p guards degree 0
+m projected degree 1 16*m - 7 p-gcd degree 2
+  after p guards degree 0
+m projected degree 1 m p-gcd degree 6
+  after p guards degree 0
+excluded every true rank-two fibre
+same gap B factors [(3, 1)]
+same gap rank drop excluded by even quartic mask
+unequal gap projection (256, [(3*m - 8, 1), (16*m - 7, 1), (m, 2)])
+rank drop m 0 raw (2*t**2 - 9*t - 4)/2
+  after known head guards (2*t**2 - 9*t - 4)/2
+rank drop m 8/3 raw (3*t - 4)/3
+  after known head guards 1
+rank drop m 7/16 raw (8*t + 1)/8
+  after known head guards (8*t + 1)/8
+rank drop w 59*Z/128 - 1/4 mask gcd 1

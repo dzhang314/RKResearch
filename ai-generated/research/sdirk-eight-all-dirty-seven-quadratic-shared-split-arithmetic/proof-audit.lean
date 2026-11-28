@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticSharedSplitArithmetic
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSharedSplitArithmetic.split_remainder_linear
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSharedSplitArithmetic.split_remainder_constant

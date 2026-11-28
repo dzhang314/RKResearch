@@ -1,0 +1,5 @@
+compact diagonal pole: two exact (10,9) conditions with b-coefficient gcd 1
+resultant degree 176; irreducible degrees/powers [(1, 8), (2, 2), (2, 2), (8, 1), (8, 1), (8, 9), (12, 1), (60, 1)]
+regular s=c8 witness (a,d)=(1/5,2/5): all reconstructive guards live, P mark residue 38 mod101; no Q mark
+all scoped neighboring singleton reductions replayed (not a full branch exclusion)
+wall 0.172 s; user 0.143 s; sys 0.029 s

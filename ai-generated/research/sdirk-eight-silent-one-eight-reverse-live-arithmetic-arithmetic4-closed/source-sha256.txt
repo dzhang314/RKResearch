@@ -1,0 +1,9 @@
+4f188daf3692af8c59e74dd9cb17fec30f79c2aea1583b4b165d9b5bdf5d5466  ./lean/RKCert/ReviewedNative/SDIRK8ArithmeticLiteralFourthProfilePivot.lean
+8ff5fdf9db0e1fa3cc5fcaa84cb143272b69d7a139061093016a287741a51b34  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/README.md
+dfab22a13b25c60d97b0d8af9a4856b9961b6b3869426b724fb7f50e8292f707  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/arith4_fibers.py
+01d367c3097b18f99c25f68bc9a2e99bcf6ec2115c2d2a428d5b50ae1b9db30a  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/arith4_guard_support.py
+9d0499809b847c0a710d4c989be070a46080efaff43096ae310742351ed4b047  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/arith4_outer.py
+44fca803ce45dd663ca7bada040a65dcae7647fef4a713f2debd360bb2f644bc  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/arith4_physical.py
+71dcd2107d7d16a80280b137bf0cc2ba5fda9898905cedf74253634520fbd56f  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/arith4_profile.py
+600180bc0b979d4d48e2d6e4a095509f1b38ce085b5c804718309dd85b459c40  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/arith4_projection.py
+c7e661bb7bd9cd73d4ad9769b37cee79cf05fe8e44d77df23f0295bdaad39f01  ./research/sdirk-eight-silent-one-eight-reverse-live-arithmetic-arithmetic4-closed/check_arithmetic_arithmetic4.py

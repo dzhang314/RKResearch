@@ -1,0 +1,86 @@
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+profile coefficient shape [(6, 0, 9, 1), (6, 0, 12, 1), (4, 0, 10, 1), (4, 0, 13, 1), (9, 0, 12, 1)] det guard factors [2, 1, 1, 0, 0, 0, 0, 0, 0]
+G-pivot homogeneous profile [(4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 9, 1), (3, 0, 8, 1)] [1, 1, 1, 0, 0, 0, 0, 0, 0]
+G-pivot exact fourth (4, 3, 12, 1) [1, 1, 1, 0, 0, 0, 0, 0, 0]
+F-pivot profile degrees and guards [(6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 8, 1), (5, 0, 7, 1)] [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] actual fourth in s (6, 3, 11, 1) [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+actual z as s amplitude (9, 0, 12, 1) (9, 0, 12, 1) (9, 0, 12, 1) [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact silent-fourth compact homogeneous and nodal polynomials (33, 0, 45, 1) (30, 0, 46, 1) guard powers [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] outer cap 2868
+stage4 exact diagonal CRT progress 32 7.29
+stage4 exact diagonal CRT progress 64 11.16
+stage4 exact diagonal CRT progress 96 15.49
+stage4 exact diagonal CRT progress 128 19.64
+stage4 exact diagonal CRT progress 160 23.64
+stage4 exact geometric terminal-clock result 2868 470 2868 2398 174 10410 26.99
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+profile coefficient shape [(6, 0, 9, 1), (6, 0, 12, 1), (4, 0, 10, 1), (4, 0, 13, 1), (9, 0, 12, 1)] det guard factors [2, 1, 1, 0, 0, 0, 0, 0, 0]
+G-pivot homogeneous profile [(4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 9, 1), (3, 0, 8, 1)] [1, 1, 1, 0, 0, 0, 0, 0, 0]
+G-pivot exact fourth (4, 3, 12, 1) [1, 1, 1, 0, 0, 0, 0, 0, 0]
+small exact shape CRT 6 6 8 0.04
+small CRT exact 6 6 (126, 0) 8 457 0.04
+exact stage-four zero F₀,F₁ projection (0, 0, 126, 1) (0, 0, 53, 1) [25, 6, 6, 0, 0]
+physical stage4 cofactor model [5, 4, 4, 1, 0, 0, 0, 0, 0, 1, 0] (7, 7, 25, 1) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (8, 9, 34, 1) [2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] (8, 9, 34, 1) [5, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0]
+small CRT exact 6 4 (116, 36) 7 394 0.71
+actual stage4 fourth input (0, 35, 116, 1) (0, 33, 96, 1) [14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+small exact shape CRT 4 8 8 3.81
+small CRT exact 4 8 (232, 68) 14 798 6.83
+actual stage4 fourth input (0, 64, 232, 1) (0, 43, 136, 1) [25, 0, 0, 1, 0, 0, 0, 0, 0, 3, 4]
+exact fixed quartic [(0, 14, 44, 1), (0, 14, 43, 1), (0, 14, 42, 1), (0, 14, 41, 1), (0, 13, 40, 1)] [(0, 8, 24, 1), (0, 8, 23, 1), (0, 8, 22, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+exact reduced centered tail coefficients [(0, 3, 11, 1), (0, 3, 11, 1)] [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact arith ordinary/silent fifth cubic (6, 10, 11, 1) (3, 5, 9, 1) [1, 1, 1, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0]
+stage4 complete independent rankdrop 53 7 {'no_gap': 3, 'no_s': 5}
+aux just guard exact anchor 585 1967 72 513 1026 33 1.26
+aux just guard exact quintic 390 1459 57 333 666 25 0.71
+aux just guard exact terminal_h 651 2141 135 516 1032 36 1.06
+aux just guard exact x_eq_q 129 374 26 103 206 7 0.14
+guard proposal norm pieces [(6, [('leading', 2), ('quintic', 4)]), (1, [('leading', 92)]), (80, [('anchor', 1)]), (134, [('anchor', 1)]), (284, [('anchor', 1)]), (2, [('anchor', 3)]), (2, [('anchor', 3), ('terminal_h', 3)]), (2, [('anchor', 3)]), (8, [('anchor', 3)]), (18, [('anchor', 6), ('terminal_h', 6), ('x_eq_q', 6)]), (42, [('anchor', 9), ('quintic', 9), ('terminal_h', 9)]), (14, [('quintic', 1), ('x_eq_q', 1)]), (250, [('quintic', 1)]), (92, [('terminal_h', 3)]), (10, [('terminal_h', 3)]), (66, [('terminal_h', 3)]), (6, [('terminal_h', 6), ('x_eq_q', 6)]), (24, [('x_eq_q', 1)]), (8, [('x_eq_q', 1)]), (16, [('x_eq_q', 1)])]
+F-pivot profile degrees and guards [(6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 8, 1), (5, 0, 7, 1)] [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] actual fourth in s (6, 3, 11, 1) [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+actual z as s amplitude (9, 0, 12, 1) (9, 0, 12, 1) (9, 0, 12, 1) [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+stage4 exact initial guard strip pivot 2398 2385 [0, 0, 0, 0, 13]
+exact paired CRT proposal verified ('actual oriented stage4 factor', 6, 3) 61 0.51
+stage4 direct orientation support pivot 6 3 10 [('leading', 2), ('quintic', 4)] remaining degree 2355
+exact paired CRT proposal verified ('actual oriented stage4 factor', 80, 40) 301 2.82
+stage4 direct orientation support pivot 80 40 2 [('anchor', 1)] remaining degree 2275
+exact paired CRT proposal verified ('actual oriented stage4 factor', 134, 67) 421 3.92
+stage4 direct orientation support pivot 134 67 2 [('anchor', 1)] remaining degree 2141
+exact paired CRT proposal verified ('actual oriented stage4 factor', 284, 142) 961 8.22
+stage4 direct orientation support pivot 284 142 1 [('anchor', 1)] remaining degree 1999
+exact paired CRT proposal verified ('actual oriented stage4 factor', 2, 1) 61 0.46
+stage4 direct orientation support pivot 2 1 7 [('anchor', 3)] remaining degree 1992
+exact paired CRT proposal verified ('actual oriented stage4 factor', 2, 1) 61 0.41
+stage4 direct orientation support pivot 2 1 7 [('anchor', 3)] remaining degree 1985
+exact paired CRT proposal verified ('actual oriented stage4 factor', 8, 4) 61 0.46
+stage4 direct orientation support pivot 8 4 9 [('anchor', 3)] remaining degree 1949
+exact paired CRT proposal verified ('actual oriented stage4 factor', 18, 9) 61 0.78
+stage4 direct orientation support pivot 18 9 12 [('anchor', 6), ('terminal_h', 6), ('x_eq_q', 6)] remaining degree 1841
+exact paired CRT proposal verified ('actual oriented stage4 factor', 92, 46) 301 2.0
+stage4 direct orientation support pivot 92 46 6 [('terminal_h', 3)] remaining degree 1565
+exact paired CRT proposal verified ('actual oriented stage4 factor', 10, 5) 61 0.41
+stage4 direct orientation support pivot 10 5 6 [('terminal_h', 3)] remaining degree 1535
+exact paired CRT proposal verified ('actual oriented stage4 factor', 66, 33) 241 1.35
+stage4 direct orientation support pivot 66 33 3 [('terminal_h', 3)] remaining degree 1436
+exact paired CRT proposal verified ('actual oriented stage4 factor', 8, 4) 61 0.36
+stage4 direct orientation support pivot 8 4 19 [('x_eq_q', 1)] remaining degree 1360
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'quintic'), 3, 1) 61 0.01
+stage4 all guard fibres pivot 3 10 [('leading', 2), ('quintic', 4)] {'no_s': 3} exact support removed [('quintic', 1)] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'anchor'), 40, 1) 2341 4.35
+stage4 all guard fibres pivot 40 2 [('anchor', 1)] {'no_s': 6} exact support removed [('anchor', 1)] remaining []
+stage4 all guard fibres pivot 67 2 [('anchor', 1)] {'no_s': 3} exact support removed [] remaining []
+stage4 all guard fibres pivot 142 1 [('anchor', 1)] {'no_s': 6} exact support removed [] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'anchor'), 1, 3) 61 0.01
+stage4 all guard fibres pivot 1 7 [('anchor', 3)] {'no_s': 1} exact support removed [('anchor', 3)] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'anchor'), 1, 3) 61 0.01
+stage4 all guard fibres pivot 1 7 [('anchor', 3)] {'no_s': 1} exact support removed [('anchor', 3)] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'anchor'), 4, 3) 61 0.02
+stage4 all guard fibres pivot 4 9 [('anchor', 3)] {'no_s': 3} exact support removed [('anchor', 3)] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'anchor'), 9, 6) 121 0.17
+stage4 all guard fibres pivot 9 12 [('anchor', 6), ('terminal_h', 6), ('x_eq_q', 6)] {'no_s': 1} exact support removed [('anchor', 6)] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'terminal_h'), 46, 3) 1861 7.4
+stage4 all guard fibres pivot 46 6 [('terminal_h', 3)] {'no_s': 3} exact support removed [('terminal_h', 3)] remaining []
+exact paired CRT proposal verified ('guard', ('stage4', 'pivot', 'terminal_h'), 5, 3) 121 0.05
+stage4 all guard fibres pivot 5 6 [('terminal_h', 3)] {'no_s': 3} exact support removed [('terminal_h', 3)] remaining []
+stage4 all guard fibres pivot 33 3 [('terminal_h', 3)] {'no_s': 1} exact support removed [] remaining []
+stage4 all guard fibres pivot 4 19 [('x_eq_q', 1)] {'no_gap': 3} exact support removed [] remaining []
+stage4 entire generic quotient pivot 1360 18
+stage4 complete generic quotient result pivot {'no_true_fifth': 8, 'no_gap': 11, 'no_s': 5} remaining []
+stage4 complete exact and local census pivot {'no_s': 31, 'no_gap': 3} {'no_true_fifth': 8, 'no_gap': 11, 'no_s': 5}
+strict SDIRK8 actual silent fourth regular arithmetic/ordinary-arithmetic excluded

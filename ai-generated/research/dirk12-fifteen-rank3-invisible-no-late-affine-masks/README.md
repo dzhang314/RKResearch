@@ -78,3 +78,5 @@ This is an exact analytic subchart calculus, not a full real nonexistence claim.
     lake env lean AuditDIRKOrderTwelveFifteenNoLateAffineMasks.lean
 
 The typed native scalar replay passed Lean/Mathlib 4.36.0, with only the usual standard axioms. It does not formalize the whole stage-space argument.
+
+The companion [no-late numerical-zero ghost analysis](../dirk12-fifteen-rank3-invisible-no-late-zero-ghost/README.md) now supplies the same two-dimensional mask in that previously unaddressed case and exact equations for its allowed third or fourth physical positions.

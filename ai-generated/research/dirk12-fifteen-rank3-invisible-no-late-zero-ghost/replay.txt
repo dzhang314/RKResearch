@@ -1,0 +1,3 @@
+actual three nonzero ghost amplitudes and symmetric hull projection
+exact compatibility factors, including all vanishing-pivot guards
+first Legendre-root branch: exact Lobatto-four donor clocks

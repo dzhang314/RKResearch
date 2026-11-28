@@ -38,6 +38,31 @@ This includes all characteristic-zero fields. The coefficient
 denominator involves primes outside 10!, so the universal
 factorial-only upper remains 17.
 
+## Combined characteristic coverage
+
+Combine this tableau with the [nineteen prime-power families](../erk10-sixteen-late-helper-primes/README.md).
+For primes not dividing the coefficient denominator, this rational
+tableau specializes at every power of the prime. Nine of its
+denominator primes are covered separately by the prime-power families.
+Consequently, among fields in which 10! is nonzero, the combined
+16-stage construction covers every characteristic except at most the
+following 21:
+
+    97, 131, 167, 173, 263, 277, 419, 491, 613, 881, 1091,
+    1307, 3137, 4111, 8747, 23117, 80273, 138323, 930617,
+    2327539, 3595702991173.
+
+An omitted characteristic is not an obstruction; it is not covered by
+these tableaux. The Chinese remainder theorem also gives exact order in
+any nonzero commutative ring of finite characteristic whose prime factors
+avoid this list and 2, 3, 5, 7. Combine the separate literal coefficient
+arrays over the prime-power components of its characteristic and then
+map into the target ring. At least one nonzero component survives in a
+nonzero target, so the order-eleven failure is retained. This does not
+give a single tableau over the localization that inverts only 10!.
+
+## Replay
+
 From this directory:
 
     python3 -B replay.py

@@ -1,0 +1,8 @@
+c2ee9167d5d78245d962248a0e429fa64f56bcad4e606fb7fc935e71450e0af0  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/README.md
+194de8be52be5a129cee698e1ed20611fc4ddf1ba4c21e037a8aba15b1fcbef7  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/check_eight_reverse_live_constant.py
+d3fbf24eb4256cc7890264d3ba69280f6e54c7b01c514018a2be63320b9f7065  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/mixed_front_projection.py
+4152373a4859f5a21ed68c65541485889caa24832f3bab00e06a5b871b3f0551  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/reverse_live_quartic.py
+58d7d205a980face1599e2aaa1e8c42bd3f8e31b1ef185d4d4a7820613bd8da7  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/reverse_live_quintic.py
+8e1cd3923d4205c8945cbbb19f14fbed66223eebdba8e99a99b009527095b6c8  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/exact-replay.txt
+a048c548f2d47c38f23e1b2c4d1c01869baaa6a88d77cb58de9b8e665cf0bfca  ai-generated/research/sdirk-eight-silent-one-eight-reverse-live-constant/lean-4.36.0-audit.txt
+5545a977892ae52c75da0e5f3578517730a5f52789f2770bbb9f363a693cd919  ai-generated/lean/RKCert/ReviewedNative/SDIRK8EightActiveReverseLiveDeflation.lean

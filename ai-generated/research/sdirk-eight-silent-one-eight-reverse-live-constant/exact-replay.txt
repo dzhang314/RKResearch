@@ -1,0 +1,39 @@
+generic plus exceptional constant nine-site front True s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 0) (0, 21, 0) only exact gamma/EarlyGauss factors [12, 3, 3]
+quartic pass True True 2 1129 203 2
+live constant pass True True 2 1129 203 2
+quartic pass True True 3 1129 203 2
+live constant pass True True 3 1129 203 2
+quartic pass True True 4 1129 203 2
+live constant pass True True 4 1129 203 2
+quartic pass True True 5 1129 203 2
+live constant pass True True 5 1129 203 2
+quartic pass True False 2 1129 203 2
+live constant pass True False 2 1129 203 2
+quartic pass True False 3 1129 203 2
+live constant pass True False 3 1129 203 2
+quartic pass True False 4 1129 203 2
+live constant pass True False 4 1129 203 2
+quartic pass True False 5 1129 203 2
+live constant pass True False 5 1129 203 2
+quartic pass True None 8 1129 203 2
+live constant pass True None 8 1129 203 2
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+quartic pass False True 2 1129 203 1
+live constant pass False True 2 1129 203 1
+quartic pass False True 3 1129 203 1
+live constant pass False True 3 1129 203 1
+quartic pass False True 4 1129 203 1
+live constant pass False True 4 1129 203 1
+quartic pass False True 5 1129 203 1
+live constant pass False True 5 1129 203 1
+quartic pass False False 2 1129 203 1
+live constant pass False False 2 1129 203 1
+quartic pass False False 3 1129 203 1
+live constant pass False False 3 1129 203 1
+quartic pass False False 4 1129 203 1
+live constant pass False False 4 1129 203 1
+quartic pass False False 5 1129 203 1
+live constant pass False False 5 1129 203 1
+quartic pass False None 8 1129 203 1
+live constant pass False None 8 1129 203 1
+all eighteen forced L4 phases and all eighteen conditional L5 phases excluded

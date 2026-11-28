@@ -1,0 +1,9 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveReverseLiveDeflation.deflatedAtOrdinaryNode' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveReverseLiveDeflation.silentEighthRead' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveReverseLiveDeflation.legendreFiveMoments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveReverseLiveDeflation.frontRankConflict' depends on axioms: [propext, Quot.sound]

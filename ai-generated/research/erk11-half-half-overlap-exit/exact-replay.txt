@@ -1,0 +1,2 @@
+Half-half two-plus exact residual norm gcds: 4 coprime cases.
+Half-half one-cross exact units: 48 different-extra + 24 opposite-plateau schedules.

@@ -1,0 +1,33 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+
+Prime 11: 73 dependency modules checked; all regenerated sources matched; endpoint re-elaborated
+'RKResearch.Certified.ERK10SixteenF11.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SixteenF11.exact_f11' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Prime 13: 73 dependency modules checked; all regenerated sources matched; endpoint re-elaborated
+'RKResearch.Certified.ERK10SixteenF13.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SixteenF13.exact_f13' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Prime 19: 73 dependency modules checked; all regenerated sources matched; endpoint re-elaborated
+'RKResearch.Certified.ERK10SixteenF19.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SixteenF19.exact_f19' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Prime 23: 73 dependency modules checked; all regenerated sources matched; endpoint re-elaborated
+'RKResearch.Certified.ERK10SixteenF23.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10SixteenF23.exact_f23' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+'RKResearch.Certified.ERK10PrimeFieldTransfer.exact_of_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10PrimeFieldTransfer.exact_of_char13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10PrimeFieldTransfer.exact_of_char17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10PrimeFieldTransfer.exact_of_char19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10PrimeFieldTransfer.exact_of_char23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

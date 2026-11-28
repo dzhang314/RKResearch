@@ -13,9 +13,10 @@ power of its prime, by the explicit guarded pressure equations
 below. In particular, for each listed prime \(p\), sixteen
 stages suffice over any nontrivial commutative ring in which
 \(p\) is nilpotent, and over \(\mathbb Z_p\) and \(\mathbb Q_p\).
-The lift proof is mathematical and has independent literal
-replays; the four new prime-field and prime-power results
-are not asserted as Lean theorems.
+The [four prime-field witnesses and their transfers to
+rings of the same characteristic](LEAN.md) are checked
+end to end in Lean/Mathlib 4.36.0. The lifts to higher
+prime powers remain mathematical, with independent literal replays.
 
 Together with the [17-power witness](../erk10-sixteen-17-power-lift/README.md),
 they give sixteen stages over **every nontrivial ring where

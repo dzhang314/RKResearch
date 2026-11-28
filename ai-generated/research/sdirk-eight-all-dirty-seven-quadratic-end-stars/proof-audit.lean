@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticEndStars
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticEndStars.squared_root_cross_product
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticEndStars.forward_star_endpoint_gap
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticEndStars.even_shared_odd_mask

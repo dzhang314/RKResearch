@@ -1,0 +1,6 @@
+double-star necessary discrepancy: 174196/84035
+degrees 4 9 gcd 0 1
+even mask deg 1 read deg 5 gcd deg 1
+gcd v - 2/3
+split distinct endpoints mask deg 2 read deg 6 gcd deg 0
+split same endpoint mask deg 2 read deg 6 gcd deg 0

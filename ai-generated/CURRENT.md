@@ -29,7 +29,7 @@ The lower bounds apply to all ordered fields. A construction over the real algeb
 
 ## Exact order-twelve DIRK in fifteen stages
 
-The [exact real-algebraic construction](research/dirk12-fifteen-midpoint-real-upper/README.md) lowers the real ordinary DIRK upper bound from 16 to **15**, matching the [arbitrary-ring lower bound](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md). A complementary-support argument proves every rooted-tree condition through order twelve; an exact reduction proves the order-thirteen bush fails. The construction embeds a degree-216 number field into the reals. It does not imply a fifteen-stage tableau over the rationals or every ordered subfield. The complete upper proof is mathematical with exact replays, not yet a full Lean certificate.
+The [exact real-algebraic construction](research/dirk12-fifteen-midpoint-real-upper/README.md) lowers the real ordinary DIRK upper bound from 16 to **15**, matching the [arbitrary-ring lower bound](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md). A complementary-support argument proves every rooted-tree condition through order twelve; an exact reduction proves the order-thirteen bush fails. The construction embeds a degree-216 number field into the reals. It does not imply a fifteen-stage tableau over the rationals or every ordered subfield. The complete upper proof is mathematical with exact replays, not yet a full Lean certificate. The [four-stage rational ghost block receipt](research/dirk12-fifteen-midpoint-native-ghost/README.md) checks on Lean 4.34.1 through 4.37.0-rc1.
 
 ### Separate cubic finite-field witness
 

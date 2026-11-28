@@ -1,0 +1,3 @@
+central singular projections [60, 60, 60] []
+central regular contact/support projections [132, 110] []
+Exact central half-half: no unordered centroid, singular, or regular residual fiber.

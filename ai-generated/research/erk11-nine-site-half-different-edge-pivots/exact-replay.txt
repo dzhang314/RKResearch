@@ -1,0 +1,2 @@
+Right singular: degree21 coefficient algebra, all three exact local gcds are 1.
+Left singular: degree6 coefficient algebra, consistency and diagonal gcds are 1.

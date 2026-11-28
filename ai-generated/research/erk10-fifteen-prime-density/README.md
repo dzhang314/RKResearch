@@ -143,3 +143,5 @@ at 31, and the linear common factor and quotient Bézout receipt at 223.
 It passed on Lean 4.34.1, 4.35.0, 4.36.0 and 4.37.0-rc1, without
 native evaluation axioms. The link from those finite calculations to
 the Galois group and density remains mathematical.
+
+The [residue-degree follow-up](RESIDUE-DEGREES.md) gives the least-degree distribution and exact coverage over specified finite extensions.

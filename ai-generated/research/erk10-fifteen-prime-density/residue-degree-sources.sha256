@@ -1,0 +1,5 @@
+c1c7dec7ff92956a4fa493612c7df3586a0d7bf9c8e0fc4d9667760a6b078ce5  RESIDUE-DEGREES.md
+6c4a7d3c214edb2c1cf0bef060475e5c13b49a52aee1650b86bb7843037b6fc9  verify-residue-degrees.py
+a93408ead8fb34e41a10c4fb7245940d170a4f409e8769c784a2acacd3e91e08  residue-degree-exact-replay.txt
+057c5c87733876a0158b57cce07d9a7981e2413f635c1f89545c225c44f0b6e2  residue-degree-lean-replay.txt
+ec65eb095a27583ab969d760621dc80b4dac059aa5c7c388e50b0c7feba8451d  ../../lean/RKCert/ReviewedNative/ERK10ResidueDegreeDensity.lean

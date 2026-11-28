@@ -1,0 +1,9 @@
+Least residue degree 1: 99646543/212336640 (46.928567298%)
+Least residue degree 2: 75818719/165150720 (45.908803183%)
+Least residue degree 3: 913/82944 (1.100742670%)
+Least residue degree 4: 175979/2903040 (6.061886850%)
+Specified extension degree 1: 99646543/212336640 (46.928567298%)
+Specified extension degree 2: 1347553/1451520 (92.837370481%)
+Specified extension degree 3: 13001399/23592960 (55.107112461%)
+Specified extension degree 4: 1 (100.000000000%)
+Three independent counts agree at all thresholds and for extension degrees 1–12.

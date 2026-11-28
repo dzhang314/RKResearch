@@ -1,0 +1,16 @@
+
+Lean 4.34.1
+'RKResearch.Certified.ERK10ResidueDegreeDensity.leastDegrees' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ResidueDegreeDensity.quadraticAndCubic' depends on axioms: [propext]
+
+Lean 4.35.0
+'RKResearch.Certified.ERK10ResidueDegreeDensity.leastDegrees' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ResidueDegreeDensity.quadraticAndCubic' depends on axioms: [propext]
+
+Lean 4.36.0
+'RKResearch.Certified.ERK10ResidueDegreeDensity.leastDegrees' depends on axioms: [propext]
+'RKResearch.Certified.ERK10ResidueDegreeDensity.quadraticAndCubic' depends on axioms: [propext]
+
+Lean 4.37.0-rc1
+'RKResearch.Certified.ERK10ResidueDegreeDensity.leastDegrees' depends on axioms: [propext, Classical.choice]
+'RKResearch.Certified.ERK10ResidueDegreeDensity.quadraticAndCubic' depends on axioms: [propext, Classical.choice]

@@ -1,0 +1,5 @@
+Small determinant 2/81, paid projection, and regular projected determinant verified.
+Six-term actual g=0 rooted relation and negative discriminant verified.
+Distinct 8 physical rows, all 17 dense identities, literal endpoint, rank 3 through size six.
+Paid common matrix/decoder denominators: 62208 1800
+All 20 higher residuals expressed in 3 basis rows using paid pivots.

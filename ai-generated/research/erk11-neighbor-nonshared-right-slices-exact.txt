@@ -1,0 +1,16 @@
+opposite temporal laws raw/deflated [(58, 65), (68, 66)] [(48, 44), (58, 55)]
+a=1: exact degree 14 -> left second slope, degree 6 -> s-z
+b=1: degree 23, good place (17,8,1), projectivity [[11, 1], [8, 16]] 13
+a=b: forbidden a=0 and degree 41; good place (19,7,7), projectivity [[1, 3], [14, 7]] 13
+outer 0 exact resultant 168 {1: 4, 8: 6, 12: 1, 104: 1}
+  guard fiber 1 gcd degree 2 index 0 saturation [2]
+  guard fiber 8 gcd degree 1 index 3 saturation [1]
+  guard fiber 12 gcd degree 1 index 5 saturation [1]
+  degree 104: (37,7,7), derivatives 4 28 projectivity [[32, 12], [17, 17]] 27
+outer 1 exact resultant 124 {1: 4, 4: 1, 8: 6, 12: 1, 56: 1}
+  guard fiber 1 gcd degree 2 index 0 saturation [2]
+  guard fiber 4 gcd degree 1 index 7 saturation [1]
+  guard fiber 8 gcd degree 2 index 3 saturation [1, 1]
+  guard fiber 12 gcd degree 1 index 5 saturation [1]
+  degree 56: (23,6,13), derivatives 7 11 actual right temporal row / cofactors ([0, 0, 0, 16, 14], [18, 7, 11, 0, 0])
+all five exact right nonshared slices closed

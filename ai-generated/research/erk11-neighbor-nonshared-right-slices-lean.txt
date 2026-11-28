@@ -1,0 +1,28 @@
+Lean 4.34.1
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullEndpointRatio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullTemporal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.35.0
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullEndpointRatio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullTemporal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.36.0
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullEndpointRatio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullTemporal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Lean 4.37.0-rc1
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullEndpointRatio' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NeighborNonsharedRightArithmetic.fixedNullTemporal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

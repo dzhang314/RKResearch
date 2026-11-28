@@ -1,0 +1,8 @@
+'RKResearch.Certified.ERK10EightPairRawScalars.rawClosingG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10EightPairRawScalars.rawClosingZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10EightPairRawScalars.sixthTargetExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10EightPairRawScalars.firstDormantRepeat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -80,3 +80,10 @@ Set \(D=\operatorname{Disc}(Q_A)/\Delta^2\) and \(L=N(L_4(a))/\Delta^{16}\). The
 The replay checks that \(\Delta^{48}D^3L^3\) divides both regular norms exactly. It also checks that \(\Delta^{30}DL\) divides all three singular norms exactly. These common divisors have degrees 504 and 252. The exact polynomials and divisors have degree-preserving reductions over \(\mathbb F_{19^3}\). The residue gcds for the regular pair and the singular pair \(N(D_0),N(A_N)\) are the displayed divisors up to a unit. The unused third singular norm also has the asserted exact divisor. In characteristic zero, the common gcd can have no larger degree: for a fixed pair the gcd degree is the nullity of its Sylvester matrix, and reduction can only lower rank when the polynomial degrees are preserved. Thus the exact common divisors exhaust the characteristic-zero possibilities, and there is no actual root.
 
 Run `python check_guarded_norms.py` with Python-flint 0.8. The replay is independently executable in about ten seconds. All norms use multiplication matrices over exact polynomial rings; the mod-19 test is a characteristic-zero rank certificate with exact common divisors, not a prime-field search. This note and its exact Python replay do not claim a Lean verification of the arithmetic exclusion.
+
+The [Lean graph-pencil module](../../lean/RKCert/Research/SDIRKEightFiveZeroGraphArithmeticFront.lean)
+checks the Cramer numerators, the third supported read, the arithmetic
+eliminant, and the singular-pencil case over an arbitrary commutative
+ring, without dividing by the pencil determinant. Checked in Lean
+4.36.0 with only standard axioms. The norms and the bridge from
+tableau data to these scalar hypotheses remain outside this module.

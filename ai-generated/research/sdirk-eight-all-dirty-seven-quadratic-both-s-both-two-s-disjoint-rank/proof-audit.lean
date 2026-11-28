@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointRank
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointRank.recovered_reverse_singleton
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointRank.paid_cubic_coefficients

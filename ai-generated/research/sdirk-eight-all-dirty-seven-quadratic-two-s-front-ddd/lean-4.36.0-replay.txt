@@ -1,0 +1,4 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDdd.paid_graph_value_clear' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDdd.paid_reverse_scaling' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDdd.paid_two_singleton_minor' depends on axioms: [propext]

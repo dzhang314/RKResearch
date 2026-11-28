@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticTwoSFrontDdd
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDdd.paid_graph_value_clear
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDdd.paid_reverse_scaling
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSFrontDdd.paid_two_singleton_minor

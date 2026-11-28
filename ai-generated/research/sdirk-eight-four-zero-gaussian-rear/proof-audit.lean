@@ -1,0 +1,11 @@
+import RKCert.Research.SDIRKEightFourZeroGaussianRear
+open RKResearch.Certified.SDIRKEightFourZeroGaussianRear
+
+#check silent_eighth_cubic
+#check silent_eighth_not_zero_second
+#check live_star_clock_even_when_zero_second
+#check integer_norm_products
+#print axioms silent_eighth_cubic
+#print axioms silent_eighth_not_zero_second
+#print axioms live_star_clock_even_when_zero_second
+#print axioms integer_norm_products

@@ -1,0 +1,13 @@
+RKResearch.Certified.Graded.OrderElevenLocalCore.no_core_only_first_clean.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {s : ℕ} {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 11 A b)
+  (d2 : RKResearch.Certified.Graded.reflectedStageRow A b 1 = 0) (u : Fin s) (V : K) (hV : V ≠ 0) (hu : b u ≠ 0)
+  (hy : RKResearch.Certified.Graded.reflectedClock A u ≠ 0)
+  (tail :
+    ∀ (j : Fin s),
+      u < j →
+        b j = 0 ∨
+          RKResearch.Certified.Graded.reflectedClock A j = 0 ∨ RKResearch.Certified.Graded.reflectedClock A j = V)
+  (clean : ∀ v ∈ RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A 6), v u = 0) : False
+'RKResearch.Certified.Graded.OrderElevenLocalCore.no_core_only_first_clean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

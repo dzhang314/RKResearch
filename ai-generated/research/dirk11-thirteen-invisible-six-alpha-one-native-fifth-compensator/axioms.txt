@@ -1,0 +1,5 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneFifthCompensator.fifth_transfer' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneFifthCompensator.zero_iff_literal_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

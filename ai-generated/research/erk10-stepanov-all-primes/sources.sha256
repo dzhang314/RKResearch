@@ -1,0 +1,6 @@
+24d6d30ae794a4402fbffaa9b9e0bbf0416a749fc4885e454aa6789e6a96d1d2  ai-generated/research/erk10-stepanov-all-primes/README.md
+99b99204a7b2157d4883da3b2a8f26fd6ea36cb0557714f07de0bfb75f2e95d0  ai-generated/research/erk10-stepanov-all-primes/check.py
+910881e48e199188dcc5c9a09ce262d8200314ae1c45fd3af68846dad56cd2bd  ai-generated/research/erk10-stepanov-all-primes/seeds.json
+eefc8ee1da7f9f0b60c2fa325693b9e4340dde0e13b962044ea407c548ea7f08  ai-generated/research/erk10-stepanov-all-primes/exact-replay.txt
+79d8db6f6cf40c084295531bfeb2b9d26a96418d8d9bc4dc4ebb6af80f5f6ba9  ai-generated/research/erk10-stepanov-all-primes/lean-replay.txt
+ab0c8d131e53c45c127f875f8fa3b7bf24ac43b1439d8a4c808fe0988d2b64ff  ai-generated/lean/RKCert/ReviewedNative/ERK10StepanovDomainScalars.lean

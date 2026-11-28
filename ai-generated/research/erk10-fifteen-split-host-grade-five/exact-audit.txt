@@ -1,0 +1,2 @@
+exact Jacobi moments; derivative quartic projectively rootless modulo 11
+head cofactor quotient, both nominal primitives, and exact Möbius formula

@@ -1,0 +1,1 @@
+supported early-quartic determinant and integer Bezout verified

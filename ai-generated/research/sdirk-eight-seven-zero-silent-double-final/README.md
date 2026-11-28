@@ -92,3 +92,5 @@ Combined with the other two-clock packets, precisely seven physical zeros in a c
 For three distinct off clocks and a nonzero second reflected defect ratio, the [low-label exclusion](../sdirk-eight-seven-zero-three-clock-five-label/README.md) additionally forces all seven quadratic-zero clocks to be distinct.
 
 The [zero second reflected ratio](../sdirk-eight-seven-zero-three-clock-zero-ratio/README.md) is also impossible. Together these results force seven distinct quadratic-zero clocks and a nonzero second reflected defect ratio in the exactly-seven case.
+
+The [supported early quartic](../sdirk-eight-seven-zero-supported-quartic/README.md) also excludes live reflected arithmetic when all seven zero clocks are distinct, for every front placement over characteristic zero or greater than seven. The remaining rear phases are live star and silent ghost.

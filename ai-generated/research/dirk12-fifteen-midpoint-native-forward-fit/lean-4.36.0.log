@@ -1,0 +1,15 @@
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.assembled_fw_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.actual_quintic_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.actual_quintic_bridge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.actual_nodal_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointReverse.Actual.actual_nodal_fourth_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

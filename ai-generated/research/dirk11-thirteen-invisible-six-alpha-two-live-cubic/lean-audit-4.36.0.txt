@@ -1,0 +1,19 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.homogeneous_quintic' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.eliminate_parameter' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.cleared_carrier' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.cleared_cubic_leader' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.exceptional_contact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.contact_sample' does not depend on any axioms
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.affine_numerator_at_a' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.affine_numerator_at_b' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.affine_rem_determinant' depends on axioms: [propext,
+ Quot.sound]

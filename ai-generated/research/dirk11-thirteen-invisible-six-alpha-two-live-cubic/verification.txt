@@ -1,0 +1,64 @@
+Python 3 exact rational projections and p=103 rank certificates.
+== regular ==
+common m scale normalized coefficient degree 16 guarded content degree 0
+common old inverse scale normalized coefficient degree 48 guarded content degree 0
+common quotient fit scale normalized coefficient degree 68 guarded content degree 0
+reverse input normalized coefficient degree 218 guarded content degree 117
+reverse relative normalized coefficient degree 586 guarded content degree 68
+reverse exact projection degree 2344
+seventh input normalized coefficient degree 273 guarded content degree 234
+seventh relative normalized coefficient degree 735 guarded content degree 84
+seventh exact projection degree 2940
+regular exact projection factor inventory (157, 3, 6, 3) [(60, -1461941766456), (12, 16227), (12, 54123)]
+guarded exact-field rank 60 -1461941766456 old-norm residue 1 rank 11 cap 11
+guarded exact-field rank 12 16227 profile-ratio residue 12 rank 132 cap 11
+guarded exact-field rank 12 54123 c2 residue 4 rank 36 cap 9
+All actual evaluations are excluded in regular
+== F1 ==
+common m scale normalized coefficient degree 24 guarded content degree 0
+common old inverse scale normalized coefficient degree 48 guarded content degree 8
+common quotient fit scale normalized coefficient degree 60 guarded content degree 8
+singular A1 input normalized coefficient degree 48 guarded content degree 16
+singular A1 relative normalized coefficient degree 88 guarded content degree 56
+singular A1 exact projection degree 352
+F1 exact projection factor inventory (28, 0, 30, 0) [(48, -14638292540815408663567), (36, 137146315515648)]
+guarded exact-field rank 48 -14638292540815408663567 None residue 1 rank 12 cap 12
+guarded exact-field rank 36 137146315515648 old-norm residue 1 rank 11 cap 11
+All actual evaluations are excluded in F1
+== F2 ==
+common m scale normalized coefficient degree 24 guarded content degree 0
+common old inverse scale normalized coefficient degree 48 guarded content degree 8
+common quotient fit scale normalized coefficient degree 60 guarded content degree 8
+singular A1 input normalized coefficient degree 48 guarded content degree 16
+singular A1 relative normalized coefficient degree 88 guarded content degree 56
+singular A1 exact projection degree 352
+F2 exact projection factor inventory (28, 0, 30, 0) [(36, -4682817), (36, 137146315515648), (48, 162325396752128559)]
+guarded exact-field rank 36 -4682817 old-norm residue 36 rank 396 cap 11
+guarded exact-field rank 36 137146315515648 None residue 1 rank 12 cap 12
+guarded exact-field rank 48 162325396752128559 None residue 2 rank 24 cap 12
+All actual evaluations are excluded in F2
+== Fn ==
+common m scale normalized coefficient degree 40 guarded content degree 0
+common old inverse scale normalized coefficient degree 80 guarded content degree 8
+common quotient fit scale normalized coefficient degree 92 guarded content degree 8
+singular A1 input normalized coefficient degree 80 guarded content degree 16
+singular A1 relative normalized coefficient degree 192 guarded content degree 48
+singular A1 exact projection degree 768
+Fn exact projection factor inventory (54, 0, 24, 0) [(48, -14638292540815408663567), (48, 162325396752128559), (48, 41521530286435), (12, 54123)]
+guarded exact-field rank 48 -14638292540815408663567 None residue 1 rank 12 cap 12
+guarded exact-field rank 48 162325396752128559 old-norm residue 2 rank 22 cap 11
+guarded exact-field rank 48 41521530286435 None residue 1 rank 12 cap 12
+guarded exact-field rank 12 54123 c2 residue 4 rank 36 cap 9
+All actual evaluations are excluded in Fn
+== finite ==
+m1 ordinary degree 12 tower dimension 12 p 103 reverse eliminant unit
+mY2 ordinary degree 12 tower dimension 12 p 103 reverse eliminant unit
+contact ordinary degree 48 tower dimension 48 p 103 reverse eliminant unit
+Fn-loss ordinary degree 12 tower dimension 24 p 103 reverse eliminant unit
+== pivot-loss ==
+Exact resultants: only J4(a) and degree 24
+unit old quintic divisibility on whole degree24 field 101
+== old-identity ==
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+exact source of the A1 coefficients and the three known D-roots audited
+clock.py uses the identical previously audited A1 array

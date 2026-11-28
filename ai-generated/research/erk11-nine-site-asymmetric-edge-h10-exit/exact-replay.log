@@ -1,0 +1,66 @@
+G (28, 27) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+R (55, 49) [(0, (1, 0)), (0, (1, 0))]
+F (48, 44) []
+Q (62, 54) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+integer coefficient bounds bits [12580, 14030]
+  CRT progress 20 58.1
+  CRT progress 40 112.61
+  CRT progress 60 176.01
+  CRT progress 80 232.08
+  CRT progress 100 294.91
+  CRT progress 120 348.83
+  CRT progress 140 417.88
+  CRT progress 160 468.68
+  CRT progress 180 516.82
+  CRT progress 200 567.79
+  CRT progress 220 617.65
+projection degrees [('F', 2440), ('R', 2757)] primes 231
+G (28, 27) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+R (55, 49) [(0, (1, 0)), (0, (1, 0))]
+F (48, 44) []
+Q (62, 54) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+S (44, 39) []
+T (54, 46) []
+forbidden x 264
+a factor 57 2 specialized b degrees [27, 44, 49, 39, 46, 54]
+ LIFT 57 103 42 ['G', 'F', 'R', 'S', 'T', 'Q'] 56.95
+a factor 50 2 specialized b degrees [27, 44, 49, 39, 46, 54]
+ LIFT 50 103 44 ['G', 'F', 'R', 'S', 'T', 'Q'] 57.07
+Hankel guard subresultant chain b degrees [12, 6, 5, 4, 3, 2, 1, 0] 12.09
+affine residue degrees 131 131 12.09
+exact B factor through Hankel guard 16 15.83
+exact B factor through Hankel guard 18 18.66
+exact B factor through Hankel guard 19 21.13
+exact B factor through Hankel guard 25 21.72
+testing mod place 95
+Degree-132 fiber exact forbidden factor + whole unit lift done 107 95
+a factor 3 4 specialized b degrees [26, 42, 47, 38, 45, 52]
+ LIFT 3 103 3 ['G', 'F', 'R', 'S', 'T', 'Q'] 78.92
+a factor 4 4 specialized b degrees [27, 44, 49, 39, 46, 54]
+ exact guard power 4 G 1
+ exact guard power 4 F 2
+ exact guard power 4 R 2
+ exact guard power 4 S 1
+ exact guard power 4 T 1
+ exact guard power 4 Q 2
+ LIFT 4 103 1 ['G', 'F', 'R', 'S', 'T', 'Q'] 78.97
+a factor 8 4 specialized b degrees [26, 42, 47, 38, 45, 52]
+ LIFT 8 103 1 ['G', 'F', 'R', 'S', 'T', 'Q'] 79.03
+forbidden x + (-1) 5
+a factor 15 30 specialized b degrees [27, 44, 49, 39, 46, 54]
+ exact guard power 15 G 5
+ exact guard power 15 F 5
+ exact guard power 15 R 5
+ exact guard power 15 S 5
+ exact guard power 15 T 5
+ exact guard power 15 Q 5
+ LIFT 15 103 2 ['G', 'F', 'R', 'S', 'T', 'Q'] 79.14
+a factor 6 30 specialized b degrees [27, 44, 49, 39, 46, 54]
+ exact guard power 6 G 5
+ exact guard power 6 F 5
+ exact guard power 6 R 5
+ exact guard power 6 S 5
+ exact guard power 6 T 5
+ exact guard power 6 Q 5
+ LIFT 6 103 1 ['G', 'F', 'R', 'S', 'T', 'Q'] 79.21
+forbidden x + (-2) 98

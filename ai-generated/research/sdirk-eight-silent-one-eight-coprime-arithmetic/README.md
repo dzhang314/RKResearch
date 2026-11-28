@@ -39,3 +39,5 @@ Every removed factor is a genuine geometric guard: strict nonzero \(\gamma,u,k\)
 ## Replay
 
 Install sympy==1.14.0 and python-flint==0.9.0 and run **python3 check_eight_coprime_arithmetic.py** in this repository proof directory, with the adjacent coprime-star packet available. The whole exact projection precedes verification at \((1097,345)\). This verifies all factors of each monic diagonal, primitive gap, and actual Gauss-root parameter and retains the full monic fifth fibers. No reduction of an unknown tableau is assumed. The [existing checked Lean sixth substitution](../../lean/RKCert/ReviewedNative/SDIRK8CoprimeReversePole.lean) supports the scalar chronology. The full chart and finite elimination remain source-level.
+
+The [Lean scalar companion](../../lean/RKCert/ReviewedNative/SDIRK8EightActiveArithmeticContact.lean) is checked on Lean/Mathlib 4.36.0; the [axiom audit](lean-audit-4.36.0.txt) reports standard axioms only. The scope remains the displayed scalar algebra rather than the full chart.

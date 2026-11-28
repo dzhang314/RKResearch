@@ -33,3 +33,5 @@ By the [eight-active Bézout identity](../sdirk-eight-silent-one-eight-reverse-v
 ## Replay
 
 Install sympy==1.14.0 and python-flint==0.9.0, then run **python3 check_eight_constant_one_front.py** in this directory. The whole exact diagonal projection and all fourth-root guard refinements precede reduction at \((1097,345)\). Each tested finite fourth fiber retains monicity; at least one cleared fifth equation, or their fixed linear combination, has its true degree-three leading coefficient a unit before taking the common-root fibers. All monic fifth and full tail gaps are retained. The counts of genuine candidate reduced fifth components tested in the four literal choices are \(5,9,7,3\) for each rear phase. These local finite-algebra unit checks do not assume an unknown tableau can be reduced. The saturation, primitive projections and finite atlas are source-level.
+
+The [Lean scalar companion](../../lean/RKCert/ReviewedNative/SDIRK8EightActiveSixPegMoments.lean) is checked on Lean/Mathlib 4.36.0; the [axiom audit](lean-audit-4.36.0.txt) reports standard axioms only. The scope remains the displayed scalar algebra rather than the full chart.

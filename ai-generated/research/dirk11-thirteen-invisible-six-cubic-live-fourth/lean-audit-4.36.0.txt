@@ -1,0 +1,17 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.uncanceled_double_primitive.{u_1} {K : Type u_1}
+  [CommRing K] (v p p₁ p₀ q d ip ip₁ ip₀ j r r₁ w t : K) (hp : p₁ = v * p - p₀) (hi : ip₁ = v * ip - j - ip₀)
+  (hr : r₁ = v * r - t - w) (h₀ : ip - d * (p - q) = r * q) (h₁ : ip₁ - d * (p₁ - v * q) = r₁ * q)
+  (hw : ip₀ - d * p₀ = w * q) : j = t * q
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.slope_minus_one.{u_1} {K : Type u_1} [CommRing K]
+  (a r s c₀ c₂ : K) (h₀ : 4 * a * s = -5 * c₀) (h₁ : 12 * a - 15 * (r - c₂) = r) : 16 * r * s = 15 * (c₂ * s - c₀)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.fourth_diagonal_zero.{u_1} {K : Type u_1} [Field K]
+  (p q p₀ d ip ip₀ j r w t δ a : K) (hδ : δ * p₀ ≠ 0) (hp : ip = r * p + δ * p₀) (h₀ : ip - d * (p - q) = r * q)
+  (hw : ip₀ - d * p₀ = w * q) (hj : j = t * q) (hInt : a * j = r * ip + δ * ip₀) (hFit : a * t = r ^ 2 + δ * w) :
+  d = 0 ∧ p ≠ q
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.uncanceled_double_primitive' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.slope_minus_one' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.fourth_diagonal_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

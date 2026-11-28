@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixCubicLiveFourth
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.uncanceled_double_primitive
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.slope_minus_one
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.fourth_diagonal_zero
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.uncanceled_double_primitive
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.slope_minus_one
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFourth.fourth_diagonal_zero

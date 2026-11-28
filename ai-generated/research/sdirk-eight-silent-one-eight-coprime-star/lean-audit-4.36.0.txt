@@ -1,0 +1,2 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveCenteredStar.centeredAffineShape' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveCenteredStar.homogeneousCenteredPair' depends on axioms: [propext, Quot.sound]

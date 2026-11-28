@@ -1,6 +1,8 @@
-837c76446c29d7bbe45f961b1860549e09a8b241e9be3539526649578ed881a8  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/README.md
+fc2c6f35da99e4aa9b3c50e8314487e7a9e56021c86c27cc5f1f933fa622c601  ai-generated/lean/RKCert/ReviewedNative/SDIRK8EightActiveCenteredStar.lean
+00bd39f9e4931e125375a793e7c49c0a26e55331774664ef87c0fcb8247cc5f1  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/README.md
 70d7d78f470f4e524d960a9c1d232ec852112605890dc15bcfb1134ef04974a6  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/check_eight_coprime_star.py
 f6555f67537c91dd32295363c64e889d4466f0cde02a3ce2c450cafbac3e019c  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/eight_star_projection.py
 520dbce8133a2600295d7eeaa609e9ac23f9f065cc95e879f5e1876ccb69d94e  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/star_fibers.py
 0fd8df653ab53f8d350507dff15674af8c084eab0561506687fc9d66aff2a324  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/star_gauss.py
 c3f334b037ac6e92855293be970cef94ef06a92b60eec257eaf805354a1f70b7  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/exact-replay.txt
+49f1b98e900206d97c8e8b47a8bf81b51978021262355bc36490afac6e96de09  ai-generated/research/sdirk-eight-silent-one-eight-coprime-star/lean-audit-4.36.0.txt

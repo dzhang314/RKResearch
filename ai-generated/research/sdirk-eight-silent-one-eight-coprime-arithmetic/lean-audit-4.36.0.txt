@@ -1,0 +1,3 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveArithmeticContact.gaussEighthMidpoint' depends on axioms: [propext]
+'RKCert.ReviewedNative.SDIRK8EightActiveArithmeticContact.gaussEighthAffineNumerator' depends on axioms: [propext,
+ Quot.sound]

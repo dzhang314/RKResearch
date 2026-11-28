@@ -1,0 +1,9 @@
+Exact three-cubic census and excluded zero-middle test
+Exact conditional slope −1 clock projection: primitive degree 60 only after J4(B)
+V pivot at 101
+s pivot
+old fitted k unit
+U reconstruction
+Five-initial-ghost determinant is a unit
+first second ghost pivots
+Both multi-ghost-gap crossing reads are excluded by a unit

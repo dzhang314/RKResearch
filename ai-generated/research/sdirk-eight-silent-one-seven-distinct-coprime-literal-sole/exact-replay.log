@@ -1,0 +1,17 @@
+sole coprime literal diagonal: True 0 True 34
+verified sole coprime literal: True 0 True 1103 1
+sole coprime literal diagonal: True 0 False 73
+verified sole coprime literal: True 0 False 1103 7
+sole coprime literal diagonal: True 1 True 34
+verified sole coprime literal: True 1 True 1103 3
+sole coprime literal diagonal: True 1 False 73
+verified sole coprime literal: True 1 False 1103 7
+sole coprime literal diagonal: False 0 True 34
+verified sole coprime literal: False 0 True 1103 1
+sole coprime literal diagonal: False 0 False 73
+verified sole coprime literal: False 0 False 1103 7
+sole coprime literal diagonal: False 1 True 34
+verified sole coprime literal: False 1 True 1103 2
+sole coprime literal diagonal: False 1 False 73
+verified sole coprime literal: False 1 False 1103 4
+coprime sole-literal reverse-root checks: 8

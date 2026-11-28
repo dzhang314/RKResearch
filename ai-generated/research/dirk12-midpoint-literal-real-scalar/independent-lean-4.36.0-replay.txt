@@ -1,0 +1,30 @@
+Checking DIRK12MidpointRealSupport
+'RKResearch.Certified.DIRK12MidpointRealInterval.site_distinct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.support_nodal_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking DIRK12MidpointRealSupportEndpoint
+'RKResearch.Certified.DIRK12MidpointRealInterval.exists_scalar_quadrature' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.actual_scalar_and_star' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Checking DIRK12MidpointRealPhysicalWeights
+DIRK12MidpointRealPhysicalWeights.lean:43:76: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+DIRK12MidpointRealPhysicalWeights.lean:43:80: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+DIRK12MidpointRealPhysicalWeights.lean:43:80: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'RKResearch.Certified.DIRK12MidpointRealInterval.weight_aggregate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.scalar_and_star_with_physical_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

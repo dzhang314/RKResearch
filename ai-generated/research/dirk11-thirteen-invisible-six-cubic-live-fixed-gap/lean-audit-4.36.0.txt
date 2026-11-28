@@ -1,0 +1,13 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFixedGap.retained_commutator.{u_1} {K : Type u_1}
+  [CommRing K] (z w d t u v μ : K) (hz : μ * u = d ^ 2) (hw : μ * v = -(w - z - d) * t) :
+  u * (w - z - d) * t + v * d ^ 2 = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFixedGap.homogeneous_first_gap_cubic.{u_1} {K : Type u_1}
+  [CommRing K] (a b c d u v z : K) (h : v = u * z) (hz : a * z ^ 3 + b * z ^ 2 + c * z + d = 0) :
+  a * v ^ 3 + b * v ^ 2 * u + c * v * u ^ 2 + d * u ^ 3 = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFixedGap.residue_separation :
+  6 * (23 - 3 - 33) * 6 + 31 * 33 ^ 2 = 28
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFixedGap.retained_commutator' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFixedGap.homogeneous_first_gap_cubic' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFixedGap.residue_separation' depends on axioms: [propext,
+ Quot.sound]

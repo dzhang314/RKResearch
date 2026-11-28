@@ -90,3 +90,5 @@ Run `python check_low_labels.py` and `python check_distinct.py ghost`, `python c
 Combined with the other two-clock packets, precisely seven physical zeros in a characteristic-zero ten-stage tableau require the three off rows to have **one or three distinct clocks**. The [one-clock closure](../sdirk-eight-silent-three-closure/README.md) independently rules out three silent off rows at one clock, and the [silence theorem](../sdirk-eight-seven-eight-off-silent/README.md) makes all three off weights individually zero. Thus three pairwise distinct off clocks, all with zero weights, are necessary in the exactly-seven case. This does not change the unrestricted stage interval.
 
 For three distinct off clocks and a nonzero second reflected defect ratio, the [low-label exclusion](../sdirk-eight-seven-zero-three-clock-five-label/README.md) additionally forces all seven quadratic-zero clocks to be distinct.
+
+The [zero second reflected ratio](../sdirk-eight-seven-zero-three-clock-zero-ratio/README.md) is also impossible. Together these results force seven distinct quadratic-zero clocks and a nonzero second reflected defect ratio in the exactly-seven case.

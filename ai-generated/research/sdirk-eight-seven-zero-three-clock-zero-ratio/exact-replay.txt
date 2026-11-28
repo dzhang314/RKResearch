@@ -1,0 +1,40 @@
+0.03 det and numerator degrees 12 [15, 14, 13] common [(1, 6)]
+0.05 primitive polynomial degrees 6 [9, 8, 7] 10 8
+1.8 raw norm degree 90
+1.81 removed guard 0 6
+1.84 removed guard 0 6
+2.17 removed guard 1 8
+2.21 removed guard 3 1
+2.22 removed guard 4 1
+2.22 guarded projections 4 18
+2.27 fixed geometric replay star s 17 12 diagonal roots 4 directed forward pairs 24
+0.06 det and numerator degrees 12 [15, 14, 13] common [(1, 6)]
+0.08 primitive polynomial degrees 6 [9, 8, 7] 10 8
+1.94 raw norm degree 90
+1.94 removed guard 0 6
+1.99 removed guard 0 6
+2.43 removed guard 1 8
+2.49 removed guard 3 1
+2.52 removed guard 4 1
+2.52 guarded projections 4 18
+2.74 fixed geometric replay star new 23 6 diagonal roots 18 directed forward pairs 108
+0.05 det and numerator degrees 12 [15, 14, 13] common [(1, 6)]
+0.07 primitive polynomial degrees 6 [9, 8, 7] 10 8
+1.99 raw norm degree 90
+1.99 removed guard 0 6
+2.04 removed guard 0 6
+2.38 removed guard 1 8
+2.43 removed guard 3 1
+2.45 removed guard 4 1
+2.45 guarded projections 4 18
+2.5 fixed geometric replay arith s 17 12 diagonal roots 4 directed forward pairs 24
+0.05 det and numerator degrees 12 [15, 14, 13] common [(1, 6)]
+0.07 primitive polynomial degrees 6 [9, 8, 7] 10 8
+1.8 raw norm degree 90
+1.82 removed guard 0 6
+1.85 removed guard 0 6
+2.05 removed guard 1 8
+2.08 removed guard 3 1
+2.09 removed guard 4 1
+2.09 guarded projections 4 18
+2.36 fixed geometric replay arith new 239 100 diagonal roots 18 directed forward pairs 108

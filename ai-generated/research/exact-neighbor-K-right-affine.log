@@ -1,0 +1,16 @@
+raw affine 0 (81, 90)
+deflated (52, 52)
+resultant degree 312
+raw affine 1 (93, 102)
+deflated (64, 65)
+resultant degree 387
+exact right affine projection on K 276 [(3, 1), (3, 1), (12, 1), (30, 1), (54, 1), (102, 1), (12, 2), (12, 4)]
+cubic b=0 / no finite b; exact degree12 roots force S=0 or U=0
+degree 30 exact slope norm 54 unique simple K branch 61 25 58 derivative 18
+degree 54 exact slope norm 78 unique simple K branch 19 6 1 derivative 15
+degree102: (19,17,16), actual rotated right outer k0/k1=(18,6), t=16, remainder 13X^2+11X+11
+right raw affine loss excluded on K only; regular fit remains
+
+real	0m7.821s
+user	0m4.888s
+sys	0m0.223s

@@ -1,0 +1,14 @@
+raw affine 0 (68, 60)
+deflated (39, 34)
+resultant degree 219
+raw affine 1 (71, 60)
+deflated (42, 34)
+resultant degree 228
+exact left affine projection on K 129 [(15, 1), (66, 1), (12, 2), (12, 2)]
+both exact degree12 b-roots force U=0; degree15 exact b-root forces s=a
+degree66: (41,33,22), actual left outer transfer k0/k1=(2,33), t=31, remainder 18X^2+28X+29
+left raw affine loss excluded on K only; right affine and regular masks remain
+
+real	0m2.878s
+user	0m2.663s
+sys	0m0.059s

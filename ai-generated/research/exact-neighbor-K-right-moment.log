@@ -1,0 +1,12 @@
+slope bidegs (27, 23) (27, 26) gcd (15, 13) gcd remaining after guards (9, 9)
+moment raw bideg (49, 51)
+deflated (44, 41)
+exact right moment projection on K 255 [(3, 1), (3, 1), (87, 1), (102, 1), (12, 2), (12, 3)]
+cubic branch b=0 / no finite b; both degree12 exact joint gcd force U=0
+degree87: (29,9,19), actual right temporal row restores rank, P lines [[14, 12], [9, 24]] mark 7
+degree102: (19,17,16), live left fit plus actual rotated right outer k0/k1=(18,6), t=16, remainder 13X^2+11X+11
+right fixed moment loss excluded on K only; affine and regular masks remain
+
+real	0m1.479s
+user	0m1.333s
+sys	0m0.082s

@@ -1,0 +1,9 @@
+moment raw bideg (42, 37)
+deflated bideg (40, 34) remaining factor shapes [((40, 34), 1)]
+exact left moment projection on K 222 [(108, 1), (66, 1), (12, 2), (12, 2)]
+both degree12 branches have exact linear b gcd with live U lost
+degree108: (19,9,6), actual left temporal row restores rank; first-pool mark 7 left/right lines [17, 1] [9, 2]
+degree66: (41,33,22), live right profile and actual original left outer k0/k1=(2,33), t=31, remainder 18X^2+28X+29
+  right transfer to left P/Q/B/quotient [15, 2] [16, 19, 10, 32, 20] [2, 39, 29, 1] [14, 30]
+left fixed moment loss excluded on K only; other curve masks remain
+wall 1.186 s; user 0.958 s; sys 0.047 s

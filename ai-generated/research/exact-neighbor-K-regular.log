@@ -1,0 +1,25 @@
+pivots True (40, 34) (62, 54) (65, 54) [32, 52, 52]
+shape ready True
+pivots False (44, 43) (51, 52) (63, 64) [40, 49, 61]
+shape ready False
+all ten physical second-pool projectivity minors vanish identically on K, not independent
+first-pool projection degree 3642, factors [(3, 9), (3, 594), (12, 3), (12, 18), (12, 18), (15, 2), (54, 2), (66, 3), (87, 1), (102, 3), (105, 2), (108, 1), (318, 1)]
+leading loss (37,11,24) actual P lines [14, 25] [14, 35] mark 13
+leading loss (37,11,26) actual P lines [9, 15] [22, 8] mark 4
+degree 87 mult 1 exact live guard lost right fixed moment at unique simple K place (23, 18, 20) derivative 3
+degree 108 mult 1 exact live guard lost left fixed moment at unique simple K place (17, 6, 4) derivative 1
+degree318: (29,5,20), actual left plateau mark 23 from B,nu,mu,tau,f,scale = [17, 15, 20, 10, 2, 5]
+degree 15 mult 2 exact live guard lost C2-aH at unique simple K place (17, 6, 4) derivative 1
+degree 54 mult 2 exact live guard lost right g0 at unique simple K place (17, 6, 4) derivative 1
+degree 105 mult 2 exact live guard lost alpha prime at unique simple K place (17, 6, 4) derivative 1
+degree 12 mult 3 exact live guard lost S at unique simple K place (29, 27, 2) derivative 7
+degree 66 mult 3 exact live guard lost left fixed moment at unique simple K place (17, 10, 4) derivative 8
+degree 102 mult 3 exact live guard lost right fixed moment at unique simple K place (19, 17, 16) derivative 1
+degree 3 mult 9 exact live guard lost b at unique simple K place (19, 12, 0) derivative 10
+degree 12 mult 18 exact live guard lost J at unique simple K place (17, 3, 2) derivative 16
+degree 12 mult 18 exact live guard lost zD at unique simple K place (17, 12, 11) derivative 7
+all regular K widths, including b-leading loss, excluded; other neighboring widths not covered
+
+real	0m49.344s
+user	0m46.000s
+sys	0m0.646s

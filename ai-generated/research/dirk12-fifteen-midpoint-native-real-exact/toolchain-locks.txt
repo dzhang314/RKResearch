@@ -1,0 +1,7 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+mathlib commit fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+prerequisite checkout 45ac6b9bb51c3e37028eedfa791b40be61158d14
+582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a  lean-toolchain
+d1f62fd948c69fda217cf88bc75a98f137ad3b4f9699d159fc5a7a3e1d16a9b8  lake-manifest.json
+582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a  ai-generated/lean/lean-toolchain
+635867e268b7736cca4545dc697090d99d496bc2659e4e1f8569e9ee84bb28a5  ai-generated/lean/lake-manifest.json

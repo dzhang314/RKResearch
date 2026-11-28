@@ -140,3 +140,5 @@ The exact scalar replay independently checks the primitive determinant, clock an
     lake env lean AuditDIRKOrderTwelveFifteenOrdinaryGhostChronology.lean
 
 The typed consumer and source passed Lean/Mathlib 4.36.0 with only the standard axioms. No additional Mathlib-version pairing is claimed here.
+
+The separate [fourth-live-row exclusion](../dirk12-fifteen-rank3-invisible-late-zero-exclusion/README.md) now rules out every late numerical-zero fourth ghost in the two high-site subcharts above. It uses an independent true grade-seven pure read after eliminating the unknown early ghost geometry.

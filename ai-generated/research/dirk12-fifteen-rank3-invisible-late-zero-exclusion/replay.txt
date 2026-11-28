@@ -1,0 +1,11 @@
+ordinary a residue 11: y factor degrees [1, 4]
+  unit clocks and mode determinant; degree-4/5 equations coprime in all factors
+ordinary a residue 82: y factor degrees [1, 2, 2]
+  unit clocks and mode determinant; degree-4/5 equations coprime in all factors
+ordinary a residue 99: y factor degrees [5]
+  unit clocks and mode determinant; degree-4/5 equations coprime in all factors
+ordinary a residue 134: y factor degrees [1, 4]
+  unit clocks and mode determinant; degree-4/5 equations coprime in all factors
+ordinary a residue 191: y factor degrees [1, 1, 3]
+  unit clocks and mode determinant; degree-4/5 equations coprime in all factors
+verified all 11 irreducible factors, total residue degree 25, prime 271

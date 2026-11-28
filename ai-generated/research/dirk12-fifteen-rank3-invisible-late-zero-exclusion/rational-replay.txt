@@ -1,0 +1,3 @@
+fixed-pole affine remainders and six exact moment constants
+actual a-row remainder integrals and degree-six mode constants
+genuine masked quintic zero mode and second-live late tap scale

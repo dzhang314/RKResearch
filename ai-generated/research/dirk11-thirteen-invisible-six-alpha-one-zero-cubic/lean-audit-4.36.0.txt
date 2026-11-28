@@ -1,0 +1,14 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroCubic.adjacent_mark' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroCubic.homogenized_difference' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroCubic.divided_difference_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroCubic.eliminate_middle' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroCubic.scaled_affine_determinant' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroCubic.squared_first_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,78 @@
+Exact characteristic-zero projections and p=103 finite-free rank certificates.
+== Fn0 ==
+common m scale normalized coefficient degree 16 guarded content degree 0
+E6 input normalized coefficient degree 76 guarded content degree 86
+E6 relative normalized coefficient degree 180 guarded content degree 48
+E6 exact projection degree 720
+Adj input normalized coefficient degree 72 guarded content degree 22
+Adj relative normalized coefficient degree 168 guarded content degree 48
+Adj exact projection degree 672
+exact joint degree 588 forbidden factors (39, 9) other support [(120, 6375864437904605062500000000), (12, 16227), (12, 54123)]
+residue ranks over F_103 120 6375864437904605062500000000 degree 11 beta1 None 132 beta2 unit 132
+residue ranks over F_103 12 16227 degree 12 beta1 profile-ratio 132 beta2 unit 144
+residue ranks over F_103 12 54123 degree 4 beta1 c2 36 beta2 unit 48
+both beta counts excluded in Fn0
+== F10 ==
+common m scale normalized coefficient degree 12 guarded content degree 0
+E6 input normalized coefficient degree 52 guarded content degree 86
+E6 relative normalized coefficient degree 92 guarded content degree 64
+E6 exact projection degree 368
+exact joint degree 368 forbidden factors (17, 24) other support [(24, 364663909217), (108, -16344301879687500000000000000), (24, 72)]
+residue ranks over F_103 24 364663909217 degree 3 beta1 zq 33 beta2 unit 36
+residue ranks over F_103 108 -16344301879687500000000000000 degree 1 beta1 None 12 beta2 unit 12
+residue ranks over F_103 24 72 degree 1 beta1 None 12 beta2 unit 12
+both beta counts excluded in F10
+== F1x ==
+common m scale normalized coefficient degree 24 guarded content degree 0
+E6 input normalized coefficient degree 64 guarded content degree 110
+E6 relative normalized coefficient degree 128 guarded content degree 64
+E6 exact projection degree 512
+Adj input normalized coefficient degree 60 guarded content degree 46
+Adj relative normalized coefficient degree 116 guarded content degree 64
+Adj exact projection degree 464
+A1 input normalized coefficient degree 48 guarded content degree 16
+A1 relative normalized coefficient degree 88 guarded content degree 56
+A1 exact projection degree 352
+exact joint degree 224 forbidden factors (26, 30) other support []
+both beta counts excluded in F1x
+== F2x ==
+common m scale normalized coefficient degree 24 guarded content degree 0
+E6 input normalized coefficient degree 64 guarded content degree 110
+E6 relative normalized coefficient degree 128 guarded content degree 64
+E6 exact projection degree 512
+Adj input normalized coefficient degree 60 guarded content degree 46
+Adj relative normalized coefficient degree 116 guarded content degree 64
+Adj exact projection degree 464
+A1 input normalized coefficient degree 48 guarded content degree 16
+A1 relative normalized coefficient degree 88 guarded content degree 56
+A1 exact projection degree 352
+exact joint degree 224 forbidden factors (26, 30) other support []
+both beta counts excluded in F2x
+== Fnx ==
+common m scale normalized coefficient degree 40 guarded content degree 0
+E6 input normalized coefficient degree 112 guarded content degree 110
+E6 relative normalized coefficient degree 288 guarded content degree 48
+E6 exact projection degree 1152
+Adj input normalized coefficient degree 108 guarded content degree 46
+Adj relative normalized coefficient degree 276 guarded content degree 48
+Adj exact projection degree 1104
+A1 input normalized coefficient degree 80 guarded content degree 16
+A1 relative normalized coefficient degree 192 guarded content degree 48
+A1 exact projection degree 768
+exact joint degree 576 forbidden factors (54, 24) other support [(48, 41521530286435), (12, 54123)]
+residue ranks over F_103 48 41521530286435 degree 1 beta1 zq 11 beta2 unit 12
+residue ranks over F_103 12 54123 degree 4 beta1 c2 36 beta2 unit 48
+both beta counts excluded in Fnx
+== finite ==
+m1 beta 1 ordinary degree 12 p 103 rank 12 / 12
+m1 beta 2 ordinary degree 12 p 103 rank 12 / 12
+mY2 beta 1 ordinary degree 12 p 103 rank 12 / 12
+mY2 beta 2 ordinary degree 12 p 103 rank 12 / 12
+contact beta 1 ordinary degree 48 p 103 rank 48 / 48
+contact beta 2 ordinary degree 48 p 103 rank 48 / 48
+Fn-loss beta 1 ordinary degree 12 p 103 rank 24 / 24
+Fn-loss beta 2 ordinary degree 12 p 103 rank 24 / 24
+r0 beta 1 ordinary degree 24 p 103 rank 24 / 24
+r0 beta 2 ordinary degree 24 p 103 rank 24 / 24
+== A1-check ==
+Exact A1 array agrees with the independently replayed alpha-two profile identity.

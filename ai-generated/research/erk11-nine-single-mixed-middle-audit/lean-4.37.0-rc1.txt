@@ -1,0 +1,7 @@
+'RKResearch.ERK11CubicRemainderNormGate.cubicResidueDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11CubicRemainderNormGate.scaledQuadraticNorm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CubicRemainderNormGate.centeredNormBeforeCancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3 @@
+Z quadratic degree 2 factor degrees [(1, 1), (1, 1)]
+ghost pivot gcd 0
+d at 8 gcd 0 d at 9 gcd 0

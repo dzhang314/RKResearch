@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphDistinctOff
+open RKResearch.Certified.SDIRKEightFiveZeroGraphDistinctOff
+#check equal_graph_residual_opposite_pair
+#check localized_pure_terminal_zero
+#print axioms equal_graph_residual_opposite_pair
+#print axioms localized_pure_terminal_zero

@@ -1,0 +1,20 @@
+A terminal reused, projected H factors [(15, 1)]
+star X fit degrees [1, 1, 2] raw/guarded 0 0
+A 15 terminal reused excluded
+S terminal reused, projected H factors [(10, 1)]
+star X fit degrees [1, 1, 2] raw/guarded 0 0
+S 10 terminal reused excluded
+both reused-terminal phase families excluded
+A new terminal projected mesh [(24, 1), (2, 2)]
+A 24 raw/guarded u degree 1 1
+u genuine factor degrees [(1, 1)]
+star X fit degrees [1, 2] raw/guarded 0 0
+A 24 post full fit excluded
+A 2 raw/guarded u degree 0 0
+u genuine factor degrees []
+S new terminal projected mesh [(2, 6)]
+S 2 raw/guarded u degree 4 4
+u genuine factor degrees [(4, 1)]
+star X fit degrees [1, 2] raw/guarded 0 0
+S 2 post full fit excluded
+all terminal-new phase families excluded

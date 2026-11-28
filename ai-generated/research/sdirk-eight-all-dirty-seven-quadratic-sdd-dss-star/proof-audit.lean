@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticSddDssStar
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssStar.cubic_axis_coefficient
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssStar.affine_star_fit_numerator
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssStar.terminal_star_clear

@@ -1,0 +1,6 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssStar.cubic_axis_coefficient' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssStar.affine_star_fit_numerator' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssStar.terminal_star_clear' depends on axioms: [propext,
+ Quot.sound]

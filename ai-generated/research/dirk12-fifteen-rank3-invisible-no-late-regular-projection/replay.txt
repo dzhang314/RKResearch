@@ -1,0 +1,3 @@
+primitive irreducible generic v quadratic and nondegenerate selected residue
+all special-point ghost geometry, first live pivot, and cardinal guards are 1399-units
+neighboring modes and exact degree-five two-jet guard

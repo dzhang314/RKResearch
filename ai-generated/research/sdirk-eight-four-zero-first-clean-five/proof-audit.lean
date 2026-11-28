@@ -1,0 +1,9 @@
+import RKCert.Research.SDIRKEightFourZeroFirstCleanFive
+open RKResearch.Certified.SDIRKEightFourZeroFirstCleanFive
+
+#check two_fifth_reads_eliminate_fourth_residual
+#check singular_fourth_recovery
+#check two_clean_reads_cancel_first_clock
+#print axioms two_fifth_reads_eliminate_fourth_residual
+#print axioms singular_fourth_recovery
+#print axioms two_clean_reads_cancel_first_clock

@@ -1,0 +1,5 @@
+minus normalized affine second primitive and remainder: exact coefficient certificate
+minus common old root: all four exact Hankel minors have gcd 1
+minus common root at fifth/origin: exact gcds z^12 and 1
+minus zero diagonal at consecutive fifth: exact opposite old primitive signs
+minus consecutive matched fifth: exact ordinary determinant gcd z^16

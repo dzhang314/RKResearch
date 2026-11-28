@@ -1,0 +1,9 @@
+nonminus clock projection: normalized cubic pin, one exact degree24, normalized B unique linear ratio
+F101: immediate any old completion or old slack excluded by full scalar unit
+F101: immediate origin-clock slack excluded by full scalar unit
+F101: immediate fifth-clock slack excluded by full scalar unit
+F101: consecutive fifth excluded by full fixed quadratic/quintic determinant
+F103: immediate any old completion or old slack excluded by full scalar unit
+F103: immediate origin-clock slack excluded by full scalar unit
+F103: immediate fifth-clock slack excluded by full scalar unit
+F103: consecutive fifth excluded by full fixed quadratic/quintic determinant

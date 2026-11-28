@@ -1,0 +1,20 @@
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F101: repeat-V zero pivot excluded at rank48; other two repeats at rank96
+F101: actual nonzero fifth diagonal: matched V/B determinant unit at rank48
+F101: actual zero fifth diagonal: undivided quintic/match determinant unit at rank48
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F101: absent fourth G excluded by the full rank48 cleared primitive
+F101: immediate slack fifth twin excluded by the full fixed resultant
+F101: immediate slack origin twin excluded by the full fixed resultant
+F101: immediate slack fourth twin excluded by the full fixed resultant
+F101: immediate slack either other old twin excluded by the full fixed resultant
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F103: repeat-V zero pivot excluded at rank48; other two repeats at rank96
+F103: actual nonzero fifth diagonal: matched V/B determinant unit at rank48
+F103: actual zero fifth diagonal: undivided quintic/match determinant unit at rank48
+Hermite old-clock contact: exact irreducible degree24, linear t, unique later quadratic
+F103: absent fourth G excluded by the full rank48 cleared primitive
+F103: immediate slack fifth twin excluded by the full fixed resultant
+F103: immediate slack origin twin excluded by the full fixed resultant
+F103: immediate slack fourth twin excluded by the full fixed resultant
+F103: immediate slack either other old twin excluded by the full fixed resultant

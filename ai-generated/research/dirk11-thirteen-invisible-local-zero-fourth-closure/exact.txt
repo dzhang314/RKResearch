@@ -1,0 +1,9 @@
+absent fourth: exact normalized old cubic pin, irreducible degree24, unique live normalized fifth ratio
+F101: full rank48 true fifth-head equation has live f,g (so d_B is live)
+F101: next fifth repetition excluded by the full product gate
+F101: next origin-clock slack excluded by the full product gate
+F101: next any old repetition excluded by the full product gate
+F103: full rank48 true fifth-head equation has live f,g (so d_B is live)
+F103: next fifth repetition excluded by the full product gate
+F103: next origin-clock slack excluded by the full product gate
+F103: next any old repetition excluded by the full product gate

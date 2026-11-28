@@ -1,0 +1,4 @@
+exact adjugate forces Rm²=(Rm+6)Sm at every live slope; slope cubics result in their 13-term gate
+exact clock resultants: irreducible degree 60 after z,J4; normalized fourth is a unique live linear ratio
+F101: all guards and actual fourth primitive gate are units in the full rank-180 old-repeat algebra
+F103: all guards and actual fourth primitive gate are units in the full rank-180 old-repeat algebra

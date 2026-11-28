@@ -1,0 +1,3 @@
+absent fourth: exact normalized old cubic pin, irreducible degree24, unique live normalized fifth ratio
+F101: immediate silent origin is impossible by a full rank24 commutator unit
+F103: immediate silent origin is impossible by a full rank24 commutator unit

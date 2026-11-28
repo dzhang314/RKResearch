@@ -1,0 +1,7 @@
+exact ordinary Hankel projection: one irreducible degree24, lambda a unique live linear ratio
+F101: unmarked fourth impossible, full rank48 primitive unit
+F101: any old pre-fifth completion impossible, full rank144 fourth compatibility unit
+F101: consecutive unmarked fifth impossible, full rank48 undivided resultant unit
+F103: unmarked fourth impossible, full rank48 primitive unit
+F103: any old pre-fifth completion impossible, full rank144 fourth compatibility unit
+F103: consecutive unmarked fifth impossible, full rank48 undivided resultant unit

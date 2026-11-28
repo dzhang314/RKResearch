@@ -1,0 +1,23 @@
+
+=== RKCert/ReviewedNative/ERK10FrozenTailMixedMoments ===
+'RKResearch.Certified.ERK10FrozenTailMixedMoments.score_agrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FrozenTailMixedMoments.grid_integrate_agrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+
+=== RKCert/ReviewedNative/ERK10FrozenTailCompensation ===
+'RKResearch.Certified.ERK10FrozenTailCompensation.no_three_tail_retap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FrozenTailCompensation.no_four_tail_retap_char11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FrozenTailCompensation.no_three_tail_retap_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FrozenTailCompensation.no_four_tail_retap_char11_literal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

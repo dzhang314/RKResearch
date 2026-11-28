@@ -1,0 +1,7 @@
+three term count 19 masked coefficient maximum total degree 8
+  literal affine-weighted missing read -96/5 kernel scaling 6^5: -746496/5
+  frozen row count 13 exempt zero-weight clock none
+four term count 14 masked coefficient maximum total degree 8
+  literal affine-weighted missing read -384/35 kernel scaling 6^5: -2985984/35
+  frozen row count 12 exempt zero-weight clock -1/6
+Both arrays and exact rational gates verified independently.

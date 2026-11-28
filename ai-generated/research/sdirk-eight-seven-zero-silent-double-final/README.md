@@ -96,3 +96,5 @@ The [zero second reflected ratio](../sdirk-eight-seven-zero-three-clock-zero-rat
 The [supported early quartic](../sdirk-eight-seven-zero-supported-quartic/README.md) also excludes live reflected arithmetic when all seven zero clocks are distinct, for every front placement over characteristic zero or greater than seven. The remaining rear phases are live star and silent ghost.
 
 In those two remaining rear phases, the [fixed-cubic-front exclusion](../sdirk-eight-seven-zero-final-cubic-front/README.md) rules out a first zero at row 3 and a star front ending at the first zero in row 4, over characteristic zero. Thus any remaining exactly-seven candidate begins with three distinct silent off rows in arithmetic phase and first reaches a quadratic-zero row at physical position 4.
+
+The [final arithmetic-front live-star exclusion](../sdirk-eight-seven-zero-final-arithmetic-star/README.md) removes every live reflected star over characteristic zero. Only the silent zero at physical row 8 remains in the exactly-seven case.

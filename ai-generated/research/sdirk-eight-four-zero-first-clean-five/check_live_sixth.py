@@ -22,15 +22,19 @@ def solve(F,R,U,p,mode,ga,a,xd):
   H=-2+U+4*U**2-U**3;j=3*U-2
   Rgn=U*k*H*j*(H*(1+4*U-4*U**2)+4*U**2*j)
   xs=[R.one(),1+U,1+2*U]
- P=[j*(1+U),H-j*(2+U),-H/2+j]
+ P=[j*(1+U)-H,2*H-j*(2+U),-H/2+j]
+ assert 2*val(P,xs[0])==H
+ assert 2*val(P,xs[1])==H*k
+ if mode=='S':assert 2*val(P,xs[2])==H*k
+ else:assert 2*val(P,xs[2])==H*(1+4*U-4*U**2)+4*U**2*j
  r=[R.one()]
  for x in xs:r=[-x*r[0]]+[r[i-1]-x*r[i] for i in range(1,len(r))]+[r[-1]]
  D=val(P,a)-J(P,a);N=a*val(P,a)-IJ(P,a)
  C=D.gcd(N)
  assert not C.is_zero()
  C=peel(C,Rgn)
- if C.degree()>0:return 0,0,[('singular D=N=0',C)]
- if D.is_zero():return 0,0,[]
+ if C.degree()>0:return 0,0,0,[('singular D=N=0',C)]
+ if D.is_zero():return 0,0,0,[]
  rho=[P[0],P[1]-P[0],P[2]-P[1]/2,-P[2]/3]
  sig=-3*H*(N-D)+3*k*P[1]*D+(4*k*D+2*(k+1)*(N-D))*P[2]
  B=J(r,a)-val(r,a)
@@ -47,7 +51,7 @@ def solve(F,R,U,p,mode,ga,a,xd):
  hp=[aa2*x-aa1*y for x,y in zip(rp1,rp2)]
  hgf=[aa2*x-aa1*y for x,y in zip(gh1,gh2)]
  def L(x):return 70*x**4-140*x**3+90*x*x-20*x+1
- ct=sn=0;out=[]
+ ct=sn=recovered=0;out=[]
  for f,m in E.factor()[1]:
   ct+=1
   def red(z):return (R([z]) if not hasattr(z,'degree') else z)%f
@@ -63,6 +67,7 @@ def solve(F,R,U,p,mode,ga,a,xd):
     if red(val(r,x4)).is_zero():out.append(('singular free g4',f,x4))
     continue
    g4=red(div(val(P,x4),H)+div(D*val(r,x4),H*B))
+   recovered+=1
   else:
    g4=div(3*k*homog(rho,3,N,D),D**2*sig)
   if g4.is_zero() or red(g4*H-val(P,x4)).is_zero():continue
@@ -98,7 +103,7 @@ def solve(F,R,U,p,mode,ga,a,xd):
   ff=trim(ff);hh=trim(hh)
   while hh:ff,hh=hh,rem(ff,hh)
   if len(ff)>1:out.append(('live sixth',f,ff))
- return ct,sn,out
+ return ct,sn,recovered,out
 
 for p in (13,17,103,131,7793):
  ds=lcm(*(f.degree() for f,e in nmod_poly([3,0,-30,0,35],p).factor()[1]))
@@ -106,7 +111,7 @@ for p in (13,17,103,131,7793):
  gs=[x for x,e in (35*U**4-30*U**2+3).roots()]
  ks=[x for x,e in (U**2-2*U-1).roots()]
  assert len(ks)==2
- cnt=nc=0;out=[]
+ cnt=nc=rr=0;out=[]
  for y,z in permutations(gs,2):
   for v in ks:
    for ph,b in (('arith',1+2*v),('star',3-v)):
@@ -116,9 +121,10 @@ for p in (13,17,103,131,7793):
      if aa in (y,z):continue
      a=(1-aa)/(2*ga)
      for mode in ('S','A'):
-      n,ns,L=solve(F,R,U,p,mode,ga,a,d/ga)
-      cnt+=n;nc+=ns
+      n,ns,nr,L=solve(F,R,U,p,mode,ga,a,d/ga)
+      cnt+=n;nc+=ns;rr+=nr
       if L:out.append((p,y,z,v,a,mode,L))
- assert not out and cnt=={13:28,17:14,103:15,131:36,7793:15}[p]
- assert nc==(2 if p==17 else 0)
- print(p,cnt,"irreducible opening factors, including",nc,"singular sigma",flush=True)
+ assert not out and cnt=={13:32,17:20,103:17,131:36,7793:22}[p]
+ assert nc=={13:0,17:0,103:1,131:4,7793:1}[p]
+ assert rr==nc
+ print(p,cnt,"irreducible opening factors, including",nc,"singular sigma; recovered through the separate cubic:",rr,flush=True)

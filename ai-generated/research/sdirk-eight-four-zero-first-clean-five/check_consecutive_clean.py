@@ -22,7 +22,11 @@ def check(F,R,U,ps,mode,a,b):
   H=-2+U+4*U**2-U**3;j=3*U-2
   Rgn=U*k*H*j*(H*(1+4*U-4*U**2)+4*U**2*j)
   xs=[R.one(),1+U,1+2*U]
- P=[j*(1+U),H-j*(2+U),-H/2+j]
+ P=[j*(1+U)-H,2*H-j*(2+U),-H/2+j]
+ assert 2*val(P,xs[0])==H
+ assert 2*val(P,xs[1])==H*k
+ if mode=='S':assert 2*val(P,xs[2])==H*k
+ else:assert 2*val(P,xs[2])==H*(1+4*U-4*U**2)+4*U**2*j
  r=[R.one()]
  for x in xs:r=[-x*r[0]]+[r[i-1]-x*r[i] for i in range(1,len(r))]+[r[-1]]
  D=val(P,a)-J(P,a);N=a*val(P,a)-IJ(P,a)

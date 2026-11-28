@@ -26,4 +26,32 @@ theorem two_clean_reads_cancel_first_clock {R : Type*} [CommRing R]
   rw [h₁,h₂]
   ring
 
+def twiceStar {R : Type*} [CommRing R] (X : R) : R := 4*X-2-X^2
+
+theorem twice_star_first {R : Type*} [CommRing R] :
+    twiceStar (1 : R) = 1 := by
+  unfold twiceStar
+  ring
+
+theorem twice_star_second {R : Type*} [CommRing R] (u : R) :
+    twiceStar (1+u) = 1+2*u-u^2 := by
+  unfold twiceStar
+  ring
+
+theorem twice_star_third {R : Type*} [CommRing R] (u : R) :
+    twiceStar (3-u) = 1+2*u-u^2 := by
+  unfold twiceStar
+  ring
+
+theorem twice_arithmetic_third {R : Type*} [CommRing R]
+    {u H tap : R} (h : tap*H=2*u*(3*u-2)) :
+    H*twiceStar (1+2*u)+2*(3*u-2)*(2*u)*u =
+      H*(1+4*u-4*u^2+2*tap*u) := by
+  calc
+    _ = H*(1+4*u-4*u^2)+2*u*(2*u*(3*u-2)) := by
+      unfold twiceStar
+      ring
+    _ = H*(1+4*u-4*u^2)+2*u*(tap*H) := by rw [h]
+    _ = _ := by ring
+
 end RKResearch.Certified.SDIRKEightFourZeroFirstCleanFive

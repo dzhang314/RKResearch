@@ -7,3 +7,11 @@ open RKResearch.Certified.SDIRKEightFourZeroFirstCleanFive
 #print axioms two_fifth_reads_eliminate_fourth_residual
 #print axioms singular_fourth_recovery
 #print axioms two_clean_reads_cancel_first_clock
+#check twice_star_first
+#print axioms twice_star_first
+#check twice_star_second
+#print axioms twice_star_second
+#check twice_star_third
+#print axioms twice_star_third
+#check twice_arithmetic_third
+#print axioms twice_arithmetic_third

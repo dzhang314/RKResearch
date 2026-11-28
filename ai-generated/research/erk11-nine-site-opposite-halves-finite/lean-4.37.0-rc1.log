@@ -1,0 +1,5 @@
+'RKResearch.ERK11OppositeHalfFiniteGate.scaledBilinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11OppositeHalfFiniteGate.scaledQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11OppositeHalfFiniteGate.compatibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11OppositeHalfFiniteGate.scaledNorm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11OppositeHalfFiniteGate.crossoverAtHalf' depends on axioms: [propext, Classical.choice, Quot.sound]

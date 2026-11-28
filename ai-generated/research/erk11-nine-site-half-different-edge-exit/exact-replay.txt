@@ -1,0 +1,54 @@
+width 4 fixed y orientation 0 shift degs 10 10 gcd 0
+  excluded exactly
+width 4 fixed y orientation 1 shift degs 10 10 gcd 0
+  excluded exactly
+width 4 fixed z orientation 0 shift degs 3 3 gcd 0
+  excluded exactly
+width 4 fixed z orientation 1 shift degs 3 3 gcd 0
+  excluded exactly
+width 6 fixed y orientation 0 shift degs 10 10 gcd 3
+  excluded exactly
+width 6 fixed y orientation 1 shift degs 10 10 gcd 6
+  excluded exactly
+F6 fixed z: exact left port dropout 0
+F6 fixed z: exact left port dropout 1
+integer coefficient bounds bits [2068, 2082, 2042]
+  CRT progress 20 0.62
+projection degrees [('S0', 624), ('S1', 624), ('Port', 616)] primes 35
+right-matched exact projected gcd 279
+exact coefficient width 17 guard pair 12 17 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 16] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 27 guard pair 13 20 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 103 component degrees [1, 3, 4, 7, 12] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 21 guard pair 12 13 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 2, 6, 12] uniform leading rows [0, 1, 2, 3]
+integer coefficient bounds bits [4105, 4133, 3948]
+  CRT progress 20 4.21
+  CRT progress 40 8.3
+  CRT progress 60 12.17
+projection degrees [('S0', 1253), ('S1', 1257), ('Port', 1193)] primes 68
+right-opposite exact projected gcd 668
+exact coefficient width 51 guard pair 13 26 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [25, 1, 1, 2, 5, 17] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 32 guard pair 12 23 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 1, 2, 3, 3, 4, 5, 5, 8] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 6 guard pair 3 3 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 2, 3] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 9 guard pair 5 5 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 2, 2, 4] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 14 guard pair 14 16 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 1, 3, 9] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 18 guard pair 15 18 removed power 1
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [2, 3, 6, 7] uniform leading rows [0, 1, 2, 3]
+exact coefficient width 21 guard pair 12 13 removed power 3
+  exact live guard root and division verified
+  unit ideal mod 101 component degrees [1, 2, 6, 12] uniform leading rows [0, 1, 2, 3]

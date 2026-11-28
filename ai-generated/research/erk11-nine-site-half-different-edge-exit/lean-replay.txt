@@ -1,0 +1,20 @@
+'RKResearch.ERK11EdgeDormantBilinearGate.edgeDormantRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.innerPrimitiveMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.cubicDividedDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.edgeDormantRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.innerPrimitiveMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.cubicDividedDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.edgeDormantRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.innerPrimitiveMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.cubicDividedDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.edgeDormantRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.innerPrimitiveMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EdgeDormantBilinearGate.cubicDividedDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

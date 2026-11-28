@@ -1,0 +1,40 @@
+# DIRK12/15: the two ordinary ghost-tap modes on the remaining variable grids
+
+Consider the real fifteen-stage \(C(2),f_5=3\) equality frame with invisible weighted forward cubic \(\mathbf b\odot\mathbf h=0\). Suppose exactly four physical rows have zero output weight and nonzero cubic defect \(h_i\), at four distinct ghost clocks. Assume there are \(m=9\) or \(m=10\) distinct numerical clocks among the ten nonterminal live rows. These are the remaining variable-site counts after eliminating the \(m=7,8\) charts. The order-twelve real interval is still **15–16**.
+
+In this face the ordinary live row taps to the four ghosts have **at most two scalar modes**, with exact Jacobi shape. Write \(L_n\) for the shifted Legendre polynomial normalized by \(L_n(1)=1\), and \(\ell_g\) for any nonzero generator of the four-ghost annihilator of \(\mathbf hP_2(\mathbf c)\). Every coordinate \(\ell_g\) is nonzero, by the Vandermonde matrix at the distinct ghost clocks and their nonzero \(h_g\). There are real constants \(\alpha,\gamma\), and a four-vector \(\boldsymbol\beta\) annihilating \(\mathbf h,\mathbf c\odot\mathbf h\) on the ghosts, so that for every nonterminal live physical row \(i\),
+\[
+                    A_{ig}
+                       =c_i\bigl[\beta_g L_6'(c_i)
+                           +\ell_g(\alpha L_5'(c_i)+\gamma L_7'(c_i))\bigr].
+\]
+No assertion is made that the two modes are independent. On the first ordinary live nonzero clock \(a\), if exactly three ghosts occur earlier, then \(L_6'(a)\ne0\).
+
+## Degree seven and the two modes, at the true \(7+4\) budget
+
+Use the preceding [actual variable-grid quotient](../dirk12-fifteen-rank3-invisible-four-ghost-variable-grid/README.md). Its nonterminal reflected clock hull is \(D\). At \(m=9\) the actual \(\mathcal B_4=\langle\mathbf G,\mathbf H\rangle\): the pure \(\mathbf G\) is the pair-difference line at \(d\), and the clock aggregates of \(\mathbf H\) are a nonzero multiple of \(1/D'\) on all nine labels. Consequently \(\operatorname{Ann}\mathcal B_4\) on the nonterminal live rows consists exactly of vectors constant on the live pair and represented elsewhere by a polynomial of degree at most seven. Indeed the pair line first imposes equality of its entries; the \(\mathbf H\) equation removes the degree-eight coefficient from the interpolant on all nine labels, by the barycentric formula. At \(m=10\), the actual \(\mathcal B_4=\langle\mathbf G,Y\mathbf G\rangle\), and \(\mathbf G\) has the same barycentric form at the ten distinct nonterminal live rows. The two equations give exactly degree at most seven: such polynomial evaluations are killed by both functionals, and their eight-dimensional evaluation space equals the codimension-two kernel. The same representation holds as a polynomial in ordinary \(c=1-y\). Thus genuine \(T_7=\operatorname{Ann}\mathcal B_4\) contains precisely these degree-seven live restrictions, plus a freely prescribed terminal coordinate and ghost coordinates.
+
+For each ghost \(g\) the true individual coordinate \(\mathbf e_g\in F_6\), so \(A\mathbf e_g\in F_7\). Its numerical restriction to nonterminal live rows is a polynomial \(R_g\in P_7\). At the literal ordinary origin (a live zero row) it vanishes, so \(R_g=XQ_g\) with \(Q_g\in P_6\). By the true grade \(7+4=11\) pure pairing, test its state against every scalar \((1-X)P(X)\), \(P\in P_3\). Its actual terminal value is killed by \(1-X\), and ghosts have weight zero. The ordinary exact scalar quadrature then gives
+\[
+                          \int_0^1 X(1-X)Q_g(X)P(X)\,dX=0.
+\]
+The \(X(1-X)\)-orthogonal complement of \(P_3\) in \(P_6\) has dimension three. The independent \(L_5',L_6',L_7'\) belong to it, by integration by parts against the ordinary shifted Legendre orthogonality, so they span it. Write the respective three coefficient vectors over ghosts as \(\boldsymbol\alpha,\boldsymbol\beta,\boldsymbol\gamma\).
+
+The true \(A\mathbf h\in F_4\) and \(AC\mathbf h\in F_5\) are both zero on live rows, since these ordinary pure spaces are \(\mathbf hP_1(\mathbf c),\mathbf hP_2(\mathbf c)\) and the weighted cubic is invisible. Hence all three coefficient vectors annihilate \(\mathbf h\) and \(C\mathbf h\). Here evaluation on the \(m\ge9\) distinct nonterminal live clocks is injective on \(P_7\). The true \(AC^2\mathbf h\in F_6\) has a live restriction in the terminal-profile line from the quotient: its nonterminal polynomial is a multiple of \(X L_6'\). Thus \(\boldsymbol\alpha,\boldsymbol\gamma\) also annihilate \(C^2\mathbf h\), and are each a scalar multiple of the same \(\boldsymbol\ell\). This establishes the two-mode formula. If desired, the **actual terminal** tap is obtained by adding \(-(\alpha\ell_g+\beta_g+\gamma\ell_g)/b_t\) to \(R_g(1)\); the pure \(7+0\) test fixes this correction because \(\int_0^1 X L_n'(X)\,dX=1\) for \(n\ge1\).
+
+Let \(a\ne0\) be the first ordinary live nonzero clock, and let \(g\) be the fourth, chronologically later ghost when only three precede \(a\). Its coefficient \(A_{ig}\) at that row is zero by literal causality. If \(L_6'(a)=0\), the formula and \(\ell_g\ne0\) force the second mode to vanish at \(a\) as well. Then every tap to ghosts is zero in that row, while every prior live source clock is \(0\). The actual scalar primitive of \(X(X-a)\) at \(a\) would be zero, contradicting exact grade three and its nonzero scalar integral. Thus \(L_6'(a)\ne0\) in that chronology. All four ghosts precede the second ordinary live nonzero distinct clock by the earlier quotient proof.
+
+## Small reverse chronology in the nine-label case
+
+At \(m=9\) put \(\mathbf H=N\mathbf G-(d/2)\mathbf G\), with the literal first nonzero reflected live label \(d\). The first \(d\)-row reads \(H=0\), so the second physical \(d\)-row has nonzero \(H\) by the exact nonzero aggregate at \(d\). It cannot occur before the next distinct nonzero live label \(v\): through such an early \(d\)-read, the true leading moment forces the aggregate \(d\)-tap to be \(d/2\); the normalized cubic is \(d^3/6\) on every observed \(d\)-row, so \(N\mathbf G-(d/2)\mathbf G\) would be zero there. This argument allows any earlier ghost rows and live zero clocks, since \(\mathbf G\) is zero on those.
+
+If the pair completes before the third nonzero live label, the [same-clock return identity](../dirk12-fifteen-rank3-one-active-third-debut/README.md) applies to its second row:
+\[
+              \lambda H_i/b_i=(v-d/2)(G_i/b_i-d^3/6),
+                     \qquad \lambda=3(v-d)(v-2d)/d^2 .
+\]
+If its aggregate output mass is zero, the normalized cubic is still \(d^3/6\) there because \(\mathbf G\) is centered on the pair. Since \(H_i\ne0\), this forces \(v=2d\). If its mass is nonzero, the two normalized amplitudes differ, so neither \(v=d/2\) nor \(v=2d\) is possible: substituting the first makes the right side zero and \(\lambda\ne0\); substituting the second makes \(\lambda=0\) with the right side nonzero. This is a necessary exact condition only when the pair completes in that literal prefix.
+
+## Why the \(m=7\) cut does not directly transfer
+
+With \(m\ge9\), a degree-six terminal-masked cardinal cannot isolate one live nonterminal clock among at least nine labels. The genuine \(T_6\) does not contain these nonterminal indicators, as a degree-six polynomial cannot vanish on the other \(m-1\ge8\) sites. Moreover there are **no** nonterminal singleton receivers clean for all of \(\mathcal B_5\). At \(m=9\), the actual \(\mathbf H\) has nonzero values at every nonterminal singleton by its barycentric form; at \(m=10\), \(\mathbf G\) itself is nonzero at every live nonterminal row. Thus neither the spent-clock cut with an individual \(T_6\) indicator nor the two separate exact clean primitive reads used in the [three-pair exclusion](../dirk12-fifteen-rank3-invisible-four-ghost-variable-three-pairs/README.md) may be assumed here. A successful continuation needs a linear combination of receiver rows killing those true head modes, or an additional constraint on the two ordinary Jacobi tap modes above. The current result is analytic; no new full native theorem is asserted for \(m=9,10\).

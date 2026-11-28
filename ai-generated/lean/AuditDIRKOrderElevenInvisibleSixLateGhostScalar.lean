@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixLateGhostScalar
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.cleared_ratio_determinant
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.radau_gate
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.cleared_ratio_determinant
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.radau_gate

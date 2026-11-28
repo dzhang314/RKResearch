@@ -1,0 +1,24 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.cleared_ratio_determinant.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (u v w : K) :
+  (v - w) * RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v u *
+            RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v v *
+          RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v w +
+        (w - u) * RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v v *
+            RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v u *
+          RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v w +
+      (u - v) * RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v w *
+          RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v u *
+        RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v v =
+    -u ^ 3 * v ^ 3 * w ^ 2 * (u - v) * (u - w) * (v - w) *
+        RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.gate u v w /
+      1440
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.radau_gate.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (u v w : K) (hw : w ≠ 0) (h0 : 3 * w ^ 2 - 4 * (u + v) * w + 6 * u * v = 0)
+  (h1 : 12 * w ^ 2 - 15 * (u + v) * w + 20 * u * v = 0) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.gate u v w = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.cleared_ratio_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.radau_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

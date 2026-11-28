@@ -1,0 +1,11 @@
+RKResearch.Certified.Graded.OrderElevenLocalDuplicate.same_amplitude.{u_1} {K : Type u_1} [Field K]
+  (base slope target head x y : K) (guard : slope - head ≠ 0) (hx : base + slope * x = target + head * x)
+  (hy : base + slope * y = target + head * y) : x = y
+RKResearch.Certified.Graded.OrderElevenLocalDuplicate.two_head_square_nonzero.{u_1} {K : Type u_1} [Field K]
+  (p q a b : K) (hp : p ≠ 0) (ha : a ≠ 0) (hab : a ≠ b) (h : p * a + q * b = 0) : p * a ^ 2 + q * b ^ 2 ≠ 0
+'RKResearch.Certified.Graded.OrderElevenLocalDuplicate.same_amplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenLocalDuplicate.two_head_square_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.DIRKOrderElevenLocalDuplicateScalar
+
+#check RKResearch.Certified.Graded.OrderElevenLocalDuplicate.same_amplitude
+#check RKResearch.Certified.Graded.OrderElevenLocalDuplicate.two_head_square_nonzero
+#print axioms RKResearch.Certified.Graded.OrderElevenLocalDuplicate.same_amplitude
+#print axioms RKResearch.Certified.Graded.OrderElevenLocalDuplicate.two_head_square_nonzero

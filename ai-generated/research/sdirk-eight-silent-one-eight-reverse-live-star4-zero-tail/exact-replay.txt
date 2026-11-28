@@ -1,0 +1,4 @@
+zero-tail exact fiber 1129 203 1 2
+zero-tail exact fiber 1129 203 1 2
+zero-tail exact fiber 1129 203 3 2
+all identically zero centered star tails excluded in this chart

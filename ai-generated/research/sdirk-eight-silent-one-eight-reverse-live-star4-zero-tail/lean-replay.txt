@@ -1,0 +1,4 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveStar4ZeroTail.topCenteredCollapse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveStar4ZeroTail.middleCenteredCollapse' depends on axioms: [propext, Quot.sound]

@@ -45,3 +45,5 @@ It must vanish at any true candidate. The good specialization certifies it is no
 ## Replay
 
 Install sympy==1.14.0 and python-flint==0.9.0 and run **python3 check_eight_reverse_live_regular_finite.py** with the designated sibling research folders. The exact projections are computed before the one finite specialization. The four combinations of early front and ordinary rear type each cover literal silent 2, 3, 4 and one collective nonliteral slot 5–7. The [native Lean file](../../lean/RKCert/ReviewedNative/SDIRK8EightActiveRegularProjection.lean) checks cleared homogeneous projections and the actual arithmetic comparison on Lean/Mathlib 4.36.0. Coefficient determination and the exact arithmetic remain source-level, and the full algebraic roots of the resulting diagonal polynomials are not yet classified.
+
+The separate [identically-zero centered star branch](../sdirk-eight-silent-one-eight-reverse-live-star4-zero-tail/README.md) is now excluded on the regular silent-fourth star front/rear chart.

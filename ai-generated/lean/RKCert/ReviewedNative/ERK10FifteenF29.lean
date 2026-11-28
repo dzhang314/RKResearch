@@ -1,0 +1,57 @@
+module
+
+public import RKCert.ReviewedNative.ERK10FifteenF29Checks
+
+@[expose] public section
+
+/-! Fifteen strictly explicit stages of exact order ten in the certified characteristic,
+independently checked using ordinary rooted trees. -/
+namespace RKResearch.Certified.ERK10FifteenF29
+open RKResearch FiniteRootedTree
+open scoped Matrix FiniteRootedTree
+
+theorem order_ten : HasOrder 10 A b := order_from_receipts receipts
+
+theorem exact_zmod : ERK A ∧ HasOrder 10 A b ∧ ¬ HasOrder 11 A b := by
+  refine ⟨explicit,order_ten,?_⟩
+  letI : Fact (1 < Modulus) := ⟨by decide +kernel⟩
+  intro h
+  apply defect_unit.ne_zero
+  exact sub_eq_zero.mpr (next_value.symm.trans (h nextTree next_size))
+
+theorem physical_failure_unit :
+    IsUnit (((nextTree.factorial:ℕ):K)*(b ⬝ᵥ Φ nextTree A)-1) := by
+  rw [next_value]
+  exact defect_unit
+
+theorem exact_of_hom {R : Type*} [CommRing R] [Nontrivial R] (f : K →+* R) :
+    ∃ (A : Matrix (Fin 15) (Fin 15) R) (b : Fin 15 → R),
+      ERK A ∧ HasOrder 10 A b ∧ ¬ HasOrder 11 A b := by
+  refine ⟨A.map f,f ∘ b,?_,order_ten.map f,?_⟩
+  · intro i j hij
+    change f (A i j) = 0
+    rw [explicit hij,map_zero]
+  · intro h
+    apply (physical_failure_unit.map f).ne_zero
+    rw [map_sub, map_one, RingHom.map_mul, map_natCast, RingHom.map_dotProduct, map_Φ]
+    exact sub_eq_zero.mpr (h nextTree next_size)
+
+theorem exact_of_char_dvd (R : Type*) [CommRing R] [Nontrivial R]
+    {m : ℕ} [CharP R m] (hm : m ∣ Modulus) :
+    ∃ (A : Matrix (Fin 15) (Fin 15) R) (b : Fin 15 → R),
+      ERK A ∧ HasOrder 10 A b ∧ ¬ HasOrder 11 A b :=
+  exact_of_hom (ZMod.castHom hm R)
+
+theorem exact_of_char (R : Type*) [CommRing R] [Nontrivial R] [CharP R Modulus] :
+    ∃ (A : Matrix (Fin 15) (Fin 15) R) (b : Fin 15 → R),
+      ERK A ∧ HasOrder 10 A b ∧ ¬ HasOrder 11 A b :=
+  exact_of_char_dvd R (dvd_refl Modulus)
+
+end RKResearch.Certified.ERK10FifteenF29
+
+#print axioms RKResearch.Certified.ERK10FifteenF29.next_value
+#print axioms RKResearch.Certified.ERK10FifteenF29.physical_failure_unit
+#print axioms RKResearch.Certified.ERK10FifteenF29.order_ten
+#print axioms RKResearch.Certified.ERK10FifteenF29.exact_zmod
+#print axioms RKResearch.Certified.ERK10FifteenF29.exact_of_char
+#print axioms RKResearch.Certified.ERK10FifteenF29.exact_of_char_dvd

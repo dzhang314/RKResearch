@@ -1,0 +1,2 @@
+Modulus 29 normalized eleventh bush 11 unit defect inverse 3
+Normalized profiles [1, 1, 2, 4, 8, 16, 35, 76, 167, 366] total 676 actions 310 joins 1430

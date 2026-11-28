@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10FifteenF29.next_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF29.physical_failure_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF29.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF29.exact_zmod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF29.exact_of_char' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF29.exact_of_char_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]

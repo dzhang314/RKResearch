@@ -116,6 +116,6 @@ def main():
     for mode in CASES:
         r0(mode)
         regular(mode)
-    print('complete paid high/low disjoint chart excluded in characteristic zero',flush=True)
+    print('paid high/low lost first row and conditional Q=0 branches excluded; regular Q!=0 unresolved',flush=True)
 
 if __name__=='__main__':main()

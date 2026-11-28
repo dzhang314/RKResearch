@@ -1,0 +1,18 @@
+Four QQ coordinate audits: exact primitive, old adjacent division, scaled endpoint and K-independent determinant.
+    0.01 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.13 pure degree-drop rank numerator normalized coefficient degree 76 guarded content degree 29
+    0.17 norm stage 228
+    0.26 norm stage 912
+raw/squarefree 912 176
+forbidden-2
+forbidden-1
+forbidden-0
+forbidden-3
+exact projected support ratio 12 16227
+exact projected support c2 12 54123
+exact projected support old 60 -1461941766456
+exact projected support full 72 70959087539532
+verified ratio residue degree 12 cap 11 degree cap 3 rank 528 of 528
+verified c2 residue degree 4 cap 9 degree cap 3 rank 144 of 144
+verified old residue degree 1 cap 11 degree cap 3 rank 44 of 44
+verified full residue degree 19 cap 12 degree cap 3 rank 912 of 912

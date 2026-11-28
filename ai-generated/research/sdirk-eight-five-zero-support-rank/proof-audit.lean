@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightFiveZeroSupportRank
+open RKResearch.Certified.SDIRKEightFiveZeroSupportRank
+#check affine_clock_factors_cannot_have_two_roots
+#check paid_pure_adjacent_rear_forces_seven
+#print axioms affine_clock_factors_cannot_have_two_roots
+#print axioms paid_pure_adjacent_rear_forces_seven

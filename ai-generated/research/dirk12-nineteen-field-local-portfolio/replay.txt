@@ -1,0 +1,26 @@
+portfolio member a
+rooted shapes: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766] total: 7813
+physical diagonal 0= 0 diagonal 1= 9/616
+common literal denominator bits: 538
+scaled next bush: 97680781467/62269814438819680
+two normalized defect numerator gcd: 1 after removing D factors: 1
+portfolio member b
+rooted shapes: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766] total: 7813
+physical diagonal 0= 0 diagonal 1= 1/112
+common literal denominator bits: 487
+scaled next bush: 790994693/44197561406250
+two normalized defect numerator gcd: 1 after removing D factors: 1
+portfolio member c
+rooted shapes: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766] total: 7813
+physical diagonal 0= 0 diagonal 1= 621/1414
+common literal denominator bits: 956
+scaled next bush: -47984213965607693/111471138240
+two normalized defect numerator gcd: 1 after removing D factors: 1
+portfolio member d
+rooted shapes: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766] total: 7813
+physical diagonal 0= 0 diagonal 1= 35/136
+common literal denominator bits: 1156
+scaled next bush: -4760816488705684472983/13216745437280
+two normalized defect numerator gcd: 1 after removing D factors: 1
+four-way denominator gcd 61963646976000 divides (12!)^3
+specific local coverage: third literal at p=13; fourth literal at p=19

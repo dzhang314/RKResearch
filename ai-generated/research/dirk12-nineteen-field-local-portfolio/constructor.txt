@@ -1,0 +1,3 @@
+b: rank=51, actual shift lists=[[Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1)]], denominator bits=487
+c: rank=51, actual shift lists=[[Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1)]], denominator bits=956
+d: rank=51, actual shift lists=[[Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1)]], denominator bits=1156

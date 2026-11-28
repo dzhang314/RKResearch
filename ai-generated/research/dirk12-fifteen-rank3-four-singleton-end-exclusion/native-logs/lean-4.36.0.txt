@@ -1,0 +1,9 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+verified module: DIRKOrderTwelveFifteenSingletonUnitCore
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingletonUnitCore.primeTrialDivision' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingletonUnitCore.derivativeSplit' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingletonUnitCore.coverage' depends on axioms: [propext]
+verified module: DIRKOrderTwelveFifteenFourSingletonArithmetic
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourSingletonArithmetic.allRankChecks' depends on axioms: [propext]
+verified module: DIRKOrderTwelveFifteenThreeSingletonArithmetic
+'RKResearch.Certified.Graded.OrderTwelveFifteen.ThreeSingletonArithmetic.allThreeChecks' depends on axioms: [propext]

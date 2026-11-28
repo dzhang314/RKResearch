@@ -1,0 +1,10 @@
+f92842060e27cb8a44af2b3d798341ac29ccc54114a627bd56bee19557500d12  ai-generated/lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenSingletonUnitCore.lean
+53b64e10f33c3cedc50907aee2297515cc7263461222e94dfb8d025c4432bfe9  ai-generated/lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenFourSingletonArithmetic.lean
+be3f3d672bb706536104929d4ac45dff7526b0d54242a73da7b3f91bbf36188c  ai-generated/lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenThreeSingletonArithmetic.lean
+22ed53d771a65374e233146d2f114adf3191235c3d268d9f87cdacbfcde6e859  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/NATIVE.md
+14d3ad72a638c470f4540262af5f67fb3dcf2afa9761a8711dae745b8eaf40c7  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/generate-lean.py
+b888f7cd3f738f1b8d1d30c24fbdaa8af01365be2319cec17ff32a8c62ad3cbd  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/replay-native.sh
+41360f401d4efc35166793d07451e9359695ee044a374d45bcd37a6d31e4fcd2  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/native-logs/lean-4.34.1.txt
+23d49f5be43f806bea1ce5654091909db71d85a7abea268dc9b3276c3026cd35  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/native-logs/lean-4.35.0.txt
+3c3e7487993f0ffb28acae241a2522fd8dc7acbb60a77010200a551ec5704aeb  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/native-logs/lean-4.36.0.txt
+f823853fd6021a548bcedd9e98d7ba7ec78c0ab9dab62a0f7e22a3cc83b046e4  ai-generated/research/dirk12-fifteen-rank3-four-singleton-end-exclusion/native-logs/lean-4.37.0-rc1.txt

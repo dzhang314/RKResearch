@@ -1,0 +1,18 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.first_multiplier.{u_1} {K : Type u_1} [Field K]
+  (z d r l₀ l₁ : K) (hr : r ≠ 0) (h₀ : l₀ * r = d ^ 2) (h₁ : l₁ * r = z * d ^ 2) : l₁ = z * l₀
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.second_diagonal_zero.{u_1} {K : Type u_1} [Field K]
+  (w z g d : K) (hwz : w ≠ z) (hg : g ≠ 0) (h : (w - z) * g * d ^ 2 = 0) : d = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.two_root_sum.{u_1} {K : Type u_1} [Field K]
+  (w z a b c : K) (hwz : w ≠ z) (hz : a * z ^ 2 + b * z + c = 0) (hw : a * w ^ 2 + b * w + c = 0) : a * (w + z) + b = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.crossing_primitive.{u_2} {R : Type u_2} [CommRing R]
+  (qz qw rz rw l : R) (hz : qz + l * rz = 0) (hw : qw + l * rw = 0) : qw * rz - qz * rw = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.first_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.second_diagonal_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.two_root_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.crossing_primitive' depends on axioms: [propext]

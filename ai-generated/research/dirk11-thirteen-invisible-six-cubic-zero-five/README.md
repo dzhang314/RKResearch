@@ -198,3 +198,5 @@ assumed integral or reduced modulo 101. The arithmetic
 gate here is distinct from the automatic Jacobi identities
 obtained by comparing the pure forward/backward fourth and
 sixth primitive reads.
+
+The [Lean companion](../../lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixCubicZeroFive.lean) certifies the affine determinant and mixed-prefix scalar gate. The [pinned Lean/Mathlib 4.36.0 audit](lean-audit-4.36.0.txt) reports standard axioms only. The finite elimination and rooted transfer remain separate.

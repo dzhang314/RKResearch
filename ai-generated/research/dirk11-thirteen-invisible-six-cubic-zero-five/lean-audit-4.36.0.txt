@@ -1,0 +1,17 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.affine_determinant.{u_1} {K : Type u_1} [CommRing K]
+  (V c₀ c₁ c₂ : K) :
+  have a := RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.adj0 V c₀ c₁ c₂;
+  have b := RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.adj1 V c₀ c₁ c₂;
+  have c := RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.adj2 V c₀ c₁ c₂;
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.det₃ a (-c₀ * c) (-3 * c₀ * c) b (a - c₁ * c)
+      (6 * a - 3 * c₁ * c) c (b - c₂ * c) (4 * b - 3 * c₂ * c) =
+    -V ^ 2 * RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.lread V c₀ c₁ c₂ ^ 2 *
+      RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.normD V c₀ c₁ c₂
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.mixed_prefix_gate.{u_1} {K : Type u_1} [CommRing K]
+  (f₀ f₁ f₂ g₀ g₁ g₂ d₀ d₁ d₂ z ell : K) (h₀ : g₀ = z * f₀ + ell * d₀) (h₁ : g₁ = z * f₁ + ell * d₁)
+  (h₂ : g₂ = z * f₂ + ell * d₂) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.det₃ f₀ g₀ d₀ f₁ g₁ d₁ f₂ g₂ d₂ = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.affine_determinant' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.mixed_prefix_gate' depends on axioms: [propext,
+ Quot.sound]

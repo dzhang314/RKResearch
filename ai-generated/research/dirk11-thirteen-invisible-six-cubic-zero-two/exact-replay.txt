@@ -1,0 +1,3 @@
+Exact affine determinant identity passed
+Exact resultants: only J4(a) and degree 24
+Both exact reconstruction pivots and the crossing primitive are units modulo 101 in rank 72.

@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixCubicZeroFive
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.affine_determinant
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.mixed_prefix_gate
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.affine_determinant
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroFive.mixed_prefix_gate

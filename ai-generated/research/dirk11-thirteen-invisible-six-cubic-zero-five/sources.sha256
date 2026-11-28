@@ -1,3 +1,6 @@
-04e9b1133dddb97d3121b96ab7ff20e59c5f5f3f49f9b9893f3ab2cfaf115fa3  ai-generated/research/dirk11-thirteen-invisible-six-cubic-zero-five/README.md
+c7e9b2fa2886fc2ddc4651cf100b7fe494af4d86de36d26079d9f9c774d80e8d  ai-generated/research/dirk11-thirteen-invisible-six-cubic-zero-five/README.md
 ac6d01ac38622a934982bd9d734886b56fe4d838c7279a4ed00b9e5c6ba9a7f0  ai-generated/research/dirk11-thirteen-invisible-six-cubic-zero-five/replay.py
 69ec6f4d39dc5c3a552c2a2d085652fa0d1605d3190bc596aa287039586d3c95  ai-generated/research/dirk11-thirteen-invisible-six-cubic-zero-five/exact-replay.txt
+6d8b9de0688432ae0a974c37bcb86da0c7aa27764299595f435221c74096ffe3  ai-generated/research/dirk11-thirteen-invisible-six-cubic-zero-five/lean-audit-4.36.0.txt
+5e8f03fb6bdd2712f01c8efdce285477c6916867178da60dd1478c7de6f92a71  ai-generated/lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixCubicZeroFive.lean
+9c76008f15599fa3da40fa1516fb3a90d658302be89fcce9cf4e1e349ba0ea50  ai-generated/lean/AuditDIRKOrderElevenInvisibleSixCubicZeroFive.lean

@@ -1,0 +1,10 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixCubicZeroTwo
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.first_multiplier
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.second_diagonal_zero
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.two_root_sum
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.crossing_primitive
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.first_multiplier
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.second_diagonal_zero
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.two_root_sum
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicZeroTwo.crossing_primitive

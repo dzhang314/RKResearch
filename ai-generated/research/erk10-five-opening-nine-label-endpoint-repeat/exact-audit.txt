@@ -1,0 +1,3 @@
+jump after two interiors: -4*k*(b - 1)*(2*k - 1)/3
+jump after three interiors: -4*b**2*c*k**3*(b - 1)*(b - c)*(c - 1)*(2*k - 1)/(3*b*k - 2*c*k + c)**2
+global causal transfers KF=YF/3 and KF=YF/4 verified

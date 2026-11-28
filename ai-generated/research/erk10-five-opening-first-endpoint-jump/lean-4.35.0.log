@@ -1,0 +1,7 @@
+'RKResearch.Certified.ERK10FirstEndpointJumpScalars.firstJumpCompatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FirstEndpointJumpScalars.paidHalf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FirstEndpointJumpScalars.twoLabelMomentExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

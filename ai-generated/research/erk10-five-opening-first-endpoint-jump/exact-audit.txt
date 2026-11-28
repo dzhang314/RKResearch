@@ -1,0 +1,4 @@
+first separated jump: augmented determinant z**3*(-b + z)**2*(b - 1)*(z - 1)/(2*b - 3)**2
+repeated-row minors: first 1 can't recur; repeat b only at b=2
+denominator-cleared determinant for portable Lean confirmed
+two-label primitive ratio and raw cardinal/terminal collapse confirmed

@@ -126,3 +126,5 @@ The exact standalone certificate verifies all eleven irreducible factors of the 
     python3 -B verify.py
 
 The first script checks the rational residue table, definite paid cancellations and shape constants. The second uses only the Python standard library; no floating-point arithmetic, factorization oracle, or reduction of unknown tableau data is used. The degree-seven live pure profile is justified by the genuine \(7+4=11\) pairing as in the third-live analysis. The overall stage-space argument is analytic with an exact finite certificate, not a complete native order-twelve proof.
+
+A [portable Lean companion](../../lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenLateZeroCore.lean) checks the denominator-cleared integer identities, the literal fourth-row commutator identity over integers, and the fixed prime 271 and its five first-clock residues. It passes on Lean 4.34.1, 4.35.0, 4.36.0 and 4.37.0-rc1; the field argument and eleven finite extension fibers remain separate.

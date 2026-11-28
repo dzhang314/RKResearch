@@ -1,0 +1,50 @@
+1bb3d7cf9810e76b62f359205d90430c91248402dec4f1f2cf78ecf3e09cd6fa  DIRKOrderTwelveFifteenLateZeroCore.lean
+=== 4.36.0 ===
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.firstNuCleared' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.geometryFreeGradeSixCleared' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fourthPureReadInt' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.primeTrial' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.quinticResidues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fixedGuards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.34.1 ===
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.firstNuCleared' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.geometryFreeGradeSixCleared' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fourthPureReadInt' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.primeTrial' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.quinticResidues' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fixedGuards' does not depend on any axioms
+=== 4.35.0 ===
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.firstNuCleared' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.geometryFreeGradeSixCleared' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fourthPureReadInt' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.primeTrial' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.quinticResidues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fixedGuards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+=== 4.37.0-rc1 ===
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.firstNuCleared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.geometryFreeGradeSixCleared' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fourthPureReadInt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.primeTrial' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.quinticResidues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.LateZeroCore.fixedGuards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

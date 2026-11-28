@@ -1,0 +1,46 @@
+Composed audit reusing the two separately bounded and hash-checked exact width CRT outputs; recomputes alpha norm.
+opposite temporal laws raw/deflated [(58, 65), (68, 66)] [(48, 44), (58, 55)]
+a=1 and d=0 exact univariate joint gcd 1
+leading loss 4 at (29, 8) exact degree20/full retained, whole b gcd 1
+leading loss 15 at (41, 24) exact degree20/full retained, whole b gcd 1
+six simple Jacobi root allocations: all exact C2−sH nonzero
+(0, 1, 2, 31/29635200*x + (-193/46569600))
+(0, 2, 1, (-31/29635200)*x + (-193/46569600))
+(1, 0, 2, 1/1234800*x + (-1/1663200))
+(1, 2, 0, (-13/7408800)*x + (-709/81496800))
+(2, 0, 1, (-1/1234800)*x + (-1/1663200))
+(2, 1, 0, 13/7408800*x + (-709/81496800))
+right exact width resultant degree2359 factors [(1, 28), (2, 10), (2, 12), (4, 4), (8, 3), (8, 119), (12, 3), (12, 3), (12, 3), (15, 4), (20, 3), (60, 3), (111, 1), (150, 1), (258, 1), (368, 1)]
+small guard b competitor 8 3 H x + 10 x + 10 der 13
+width guard candidates count 1
+EXACT guard exit 8 3 H (19, 12, 9) 84
+small guard b competitor 12 3 zD x + 19 x + 19 der 7
+width guard candidates count 1
+EXACT guard exit 12 3 zD (37, 3, 18) 167
+small guard b competitor 12 3 U x + 6 x + 6 der 8
+width guard candidates count 1
+EXACT guard exit 12 3 U (29, 28, 23) 246
+small guard b competitor 12 3 J x + 15 x + 15 der 14
+width guard candidates count 1
+EXACT guard exit 12 3 J (17, 3, 2) 82
+small guard b competitor 20 3 s-d x + 17 x + 17 der 12
+width guard candidates count 1
+EXACT guard exit 20 3 s-d (29, 5, 12) 104
+wide exact H-zero b-root 13695/4*x^7 + (-54483/5)*x^6 + 2995431/200*x^5 + (-1146143/100)*x^4 + 576989/110*x^3 + (-78616/55)*x^2 + 23717/110*x + (-757/55) multiplicity in A 7
+wide after exact removed guard fiber 19 13 14 14 1
+EXACT octic^119 full b fiber closed by removing H-zero factors before reduction
+CRT primes 20 bits 1201 limit 5094 wall 4.189188296993962
+CRT primes 40 bits 2401 limit 5094 wall 8.020128192991251
+CRT primes 60 bits 3601 limit 5094 wall 11.732855807989836
+CRT primes 80 bits 4801 limit 5094 wall 15.898350891991868
+CRT primes 85 bits 5101 limit 5094 wall 16.836287200989318
+degree 60 exact alpha guard, common simple b place (23, 16, 16) derivative 15
+degree 111 exact alpha guard, common simple b place (61, 3, 34) derivative 48
+degree 150 exact alpha guard, common simple b place (19, 2, 14) derivative 12
+degree258 common exact factor and shared b=28; formal left hull avoids0; calibrated transfer uses earlier P0 guard
+degree368: (53,15,42), actual products 33,47, reduced left-plateau ghost mark [44,7,48]
+sole right Q(1)=0 excluded in neighboring s=c8; all 16 factor fields/leading exits kept
+
+real	0m31.701s
+user	0m31.467s
+sys	0m0.190s

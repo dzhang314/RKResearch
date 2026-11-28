@@ -1,0 +1,21 @@
+=== alpha1-five-zero ===
+curvature factorization -1/216000 [(1, 1), (1, 1), (9, 1)]
+relative degree 3 16 removed 257887113122317441862694076416*(a - 1)**2*(42*a**4 - 84*a**3 + 56*a**2 - 14*a + 1)**12
+exact projection degrees [(4, 4), (60, 1)]
+unweighted-alpha quartic residue is a unit in the degree-60 clock field 101
+checked inversions [('F', 0), ('second forward clean a', 13), ('forward U cubic', 1), ('old reflected cubic', 2)]
+=== early-profile-census ===
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+=== quadratic-monomial-early ===
+k 0 raw factors [(4, 2, '42*a**4 - 84*a**3 + 56*a**2 - 14*a + 1'), (12, 1, '')]
+unit α=1 hull on exact ordinary clock field 0 12 101
+unit α=2 commutator on exact ordinary clock field 0 12 101
+k 2 raw factors [(4, 3, '42*a**4 - 84*a**3 + 56*a**2 - 14*a + 1'), (12, 1, '')]
+unit α=1 hull on exact ordinary clock field 2 12 101
+unit α=2 commutator on exact ordinary clock field 2 12 101
+=== quadratic-contact-early ===
+k zero-mid raw factors [(4, 5, '42*a**4 - 84*a**3 + 56*a**2 - 14*a + 1'), (24, 1, '')]
+unit α=1 hull on exact ordinary clock field zero-mid 24 101
+k nonzero-contact raw factors [(4, 7, '42*a**4 - 84*a**3 + 56*a**2 - 14*a + 1'), (48, 1, '')]
+unit α=1 hull on exact ordinary clock field nonzero-contact 48 101
+unit α=2 commutator on exact ordinary clock field nonzero-contact 48 101

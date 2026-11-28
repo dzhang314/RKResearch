@@ -1,0 +1,3 @@
+invalid v root, surviving cubic and hull, normalized physical diagonal, exact moments
+nonzero actual first mode pivot, exact quintic correction, chronological Q ratios
+exact first scalar quintic and two inadmissible third-clock factors

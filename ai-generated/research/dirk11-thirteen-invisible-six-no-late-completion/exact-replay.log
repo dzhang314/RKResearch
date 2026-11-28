@@ -1,0 +1,7 @@
+Frozen proof dependencies verified: 18 manifests; 130 file entries.
+Both scaled primitive readouts and exact integral nodal determinant verified.
+Weighted quadratic interpolation and the complete undivided three-ghost torsion transfer verified.
+Cleared zero-, one-, and two-ghost forward boundary identities verified.
+Complete chronological count and all degree cutoffs verified.
+Independently checked stored GF(103) Bézout identity: gamma5-bezout-103.txt
+Independently checked stored GF(103) Bézout identity: pair-bezout-103.txt

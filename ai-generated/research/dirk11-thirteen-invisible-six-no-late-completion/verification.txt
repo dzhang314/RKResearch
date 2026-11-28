@@ -1,0 +1,10 @@
+The exact independent verify.py exited 0: 18 manifests, 130 file entries,
+the exact integer polynomial identities, both stored Bezout witnesses,
+and the complete normalized no-late count enumeration.
+Cold late, alpha-zero zero-cubic, quadratic and named contact replays exited 0.
+Cold alpha-zero live residue rank with the stored exact guard-support inputs
+exited 0. The large raw paired rational norm was not regenerated.
+Alpha-one's dependency manifest checker also exited 0.
+The ring scalar declarations checked on Lean/Mathlib 4.36.0.
+The core count declarations separately checked on 4.34.1, 4.35.0, 4.36.0,
+and 4.37.0-rc1. All printed axioms are standard; no full HasOrder proof.

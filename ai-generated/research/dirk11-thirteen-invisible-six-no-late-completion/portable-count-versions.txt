@@ -1,0 +1,43 @@
+=== 4.34.1 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.all_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.nonconstant_gamma' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_one_gamma' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_two_gamma' depends on axioms: [propext,
+ Quot.sound]
+=== 4.35.0 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.all_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.nonconstant_gamma' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_one_gamma' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_two_gamma' depends on axioms: [propext,
+ Quot.sound]
+=== 4.36.0 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.all_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.nonconstant_gamma' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_one_gamma' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_two_gamma' depends on axioms: [propext,
+ Quot.sound]
+=== 4.37.0-rc1 ===
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.all_counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.nonconstant_gamma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_one_gamma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixNoLateCountsPortable.degree_two_gamma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

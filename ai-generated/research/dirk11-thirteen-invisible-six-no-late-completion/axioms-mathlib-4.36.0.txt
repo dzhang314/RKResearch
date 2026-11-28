@@ -1,0 +1,13 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.quadratic_interpolation' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.weighted_vandermonde' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.nodal_torsion_determinant' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.three_ghosts_torsion' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.first_forward_two_ghost_torsion' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.first_forward_one_ghost_torsion' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixThreeGapTorsion.first_forward_no_ghost_torsion' depends on axioms: [propext]

@@ -109,3 +109,5 @@ The exact symbolic replay below checks the new nonzero donor geometry interpolat
     python3 -B verify.py
 
 In the first-Legendre-root case with zero clock at the third physical ghost, the [half-clock exclusion](../dirk12-fifteen-rank3-invisible-no-late-half-clock/README.md) rules out the special second live ratio b/a=1/2.
+
+For the same first-Legendre-root and third-zero-ghost geometry, the [full finite projection](../dirk12-fifteen-rank3-invisible-no-late-first-root-projection/README.md) allows arbitrary second live ratio and leaves only finitely many four-live prefixes. It does not exclude the remaining ratios.

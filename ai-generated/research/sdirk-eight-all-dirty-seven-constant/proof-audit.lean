@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenConstant
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenConstant.trace_reweight_numerator
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenConstant.swapped_endpoint_numerator
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenConstant.equal_singleton_arithmetic_numerator

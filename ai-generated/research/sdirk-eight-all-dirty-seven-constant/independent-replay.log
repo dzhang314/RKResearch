@@ -1,0 +1,61 @@
+=== ./check_const_double_ends.py
+m 1 prefixes [('arith', -1, None), ('star', -1, None), ('arith', 1, None), ('star', 1, None)]
+read-out [8, 4, 4, 0, 0]
+m 5*a/2 + 5/2 prefixes [('arith', 0, 1), ('star', 0, None), ('arith', 1, None), ('star', 1, None)]
+read-out [7, 1, 4, 4, 0]
+=== ./check_const_double_star.py
+m=1: equal endpoint pair
+quadratic diagonal: trace fixes the half-gap square and no fourth paired root passes
+verified both D,S,S starred ends are impossible
+=== ./check_const_one_second.py
+m 1
+('arith', -1, None, 'arith', -1) excluded
+('star', -1, None, 'arith', -1) excluded
+('arith', 1, None, 'arith', -1) excluded
+('star', 1, None, 'arith', -1) excluded
+('arith', -1, None, 'star', -1) excluded
+('star', -1, None, 'star', -1) guard
+('arith', 1, None, 'star', -1) excluded
+('star', 1, None, 'star', -1) guard
+('arith', -1, None, 'arith', 1) excluded
+('star', -1, None, 'arith', 1) excluded
+('arith', 1, None, 'arith', 1) excluded
+('star', 1, None, 'arith', 1) excluded
+('arith', -1, None, 'star', 1) excluded
+('star', -1, None, 'star', 1) guard
+('arith', 1, None, 'star', 1) excluded
+('star', 1, None, 'star', 1) guard
+('arith', -1, None, 'arith', None) excluded
+('star', -1, None, 'arith', None) excluded
+('arith', 1, None, 'arith', None) excluded
+('star', 1, None, 'arith', None) excluded
+('arith', -1, None, 'star', None) unit gcd
+('star', -1, None, 'star', None) unit gcd
+('arith', 1, None, 'star', None) unit gcd
+('star', 1, None, 'star', None) unit gcd
+m 5*a/2 + 5/2
+('arith', 0, 1, 'arith', 0) paired-product
+('star', 0, None, 'arith', 0) excluded
+('arith', 1, None, 'arith', 0) excluded
+('star', 1, None, 'arith', 0) excluded
+('arith', 0, 1, 'star', 0) paired-product
+('star', 0, None, 'star', 0) guard
+('arith', 1, None, 'star', 0) excluded
+('star', 1, None, 'star', 0) excluded
+('arith', 0, 1, 'star', 1) paired-product
+('star', 0, None, 'star', 1) excluded
+('arith', 1, None, 'star', 1) excluded
+('star', 1, None, 'star', 1) excluded
+('arith', 0, 1, 'arith', None) excluded
+('star', 0, None, 'arith', None) excluded
+('arith', 1, None, 'arith', None) excluded
+('star', 1, None, 'arith', None) guard
+('arith', 0, 1, 'star', None) unit gcd
+('star', 0, None, 'star', None) unit gcd
+('arith', 1, None, 'star', None) unit gcd
+('star', 1, None, 'star', None) unit gcd
+verified all constant-graph doubled-endpoint cases with exactly one doubled second row
+=== ./check_const_two_single_seconds.py
+both seconds S, some third D 1 {('arith', -1, 'arith', -1): 'guard', ('arith', -1, 'arith', 1): 'guard', ('arith', -1, 'star', None): 'unit gcd', ('arith', 1, 'arith', -1): 'guard', ('arith', 1, 'arith', 1): 'guard', ('arith', 1, 'star', None): 'unit gcd'}
+both seconds S, some third D 5*a/2 + 5/2 {('arith', 0, 'arith', 0): 'guard', ('arith', 0, 'star', None): 'unit gcd'}
+verified both-second singleton cases with a doubled third

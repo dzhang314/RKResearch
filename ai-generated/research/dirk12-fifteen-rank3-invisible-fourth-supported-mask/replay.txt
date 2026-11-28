@@ -1,0 +1,6 @@
+signed Hankel determinant, true mask commutator, fifth slope cancellation and paid one-primitive recurrence
+characteristic zero: exact Möbius substitutions, retained x degrees 26 | 8,32, linear a subresultants
+nonroot x degree 26: p=17, factors [13, 13], lifted a and t pivots units; (2,3) roots disjoint
+firstroot x degree 8: p=17, factors [4, 4], lifted a and t pivots units; (2,3) roots disjoint
+firstroot x degree 32: p=19, factors [4, 4, 24], lifted a and t pivots units; (2,3) roots disjoint
+both nonzero-w literal tap paths (rational negative controls)

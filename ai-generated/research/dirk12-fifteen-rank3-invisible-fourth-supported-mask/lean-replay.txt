@@ -1,0 +1,3 @@
+Lean 4.34.1: core and typed audit verified (only standard axioms).
+Lean 4.35.0: core and typed audit verified (only standard axioms).
+Lean 4.36.0 and 4.37.0-rc1: no completed independent typed replay in this environment at freeze; recent local invocations stalled even on the two small scalar lemmas.

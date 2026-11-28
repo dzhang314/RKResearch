@@ -1,0 +1,6 @@
+Exact scalar base degrees 5,6,5,5,30; first-root c=1 strips x=1 and ax=1
+a1: p=17; 5 residue fields, total degree 25; unit cubic leading and no fourth root
+b1: p=19; 6 residue fields, total degree 30; unit cubic leading and no fourth root
+b1root: p=19; 6 residue fields, total degree 25; unit cubic leading and no fourth root
+c1root: p=19; 6 residue fields, total degree 25; unit cubic leading and no fourth root
+c1: p=19; 2 residue fields, total degree 30; unit cubic leading and no fourth root

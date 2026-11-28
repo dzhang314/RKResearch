@@ -1,0 +1,2 @@
+universal second primitive: exact split, determinant, and sharp normalized fourth coefficients
+matched fifth: cleared two-slope equation and old monic cubic, live-ratio delta formula

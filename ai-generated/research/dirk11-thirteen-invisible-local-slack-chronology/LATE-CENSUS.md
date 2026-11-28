@@ -23,7 +23,12 @@ unrestricted DIRK methods of order eleven need fourteen stages.
 
 The remaining immediate next rows are a marked old completion with live
 companion, a silent slack at the origin, an earlier clock or the future
-fifth clock, or the consecutive fifth weighted nonendpoint debut. This
+fifth clock, or the consecutive fifth weighted nonendpoint debut. The
+[fourth clock pin](../dirk11-thirteen-invisible-local-late-fourth-pin/README.md)
+restricts the surviving fourth geometry and requires a nonzero fifth
+diagonal in the consecutive case. The [matched fifth exclusion](../dirk11-thirteen-invisible-local-late-matched-fifth/README.md)
+then forces both a live companion and a mismatched sample for that
+consecutive fifth. This
 record does not assert that any candidate of those types exists. The
 new exclusions have exact rational and finite-free residue replays,
 not end-to-end Lean proofs.

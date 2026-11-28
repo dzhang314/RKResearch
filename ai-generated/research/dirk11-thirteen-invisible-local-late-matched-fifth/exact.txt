@@ -1,0 +1,9 @@
+Exact double norm (including three independent scalar audits): irreducible degree156 after live origin/Jacobi guards; unique later clock ratio
+F101: next fourth excludes e*K0=0
+F101: next fifth excludes e*K0=0
+F101: next origin excludes e*K0=0
+F101: full old cubic norm excludes e*K0=0 at all three old roots
+F107: next fourth excludes e*K0=0
+F107: next fifth excludes e*K0=0
+F107: next origin excludes e*K0=0
+F107: full old cubic norm excludes e*K0=0 at all three old roots

@@ -1,0 +1,12 @@
+'RKResearch.Certified.DIRK12MidpointForward.Opening.normalized_two_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.normalized_two_cardinals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.row6_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.real_opening_fw_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,7 @@
+exact cleared two-point entering degree 1
+exact cleared two-point entering degree 2
+exact cleared two-point entering degree 3
+exact cleared two-point entering degree 4
+exact cleared two-point entering degree 5
+exact centered Legendre determinant factor
+unpaid ghost excess 5/11088 and third lifted tap −1/47520

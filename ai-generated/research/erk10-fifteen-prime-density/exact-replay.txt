@@ -1,0 +1,8 @@
+Tail discriminant numerator: [21, -714, 10797, -94176, 515616, -1807200, 3951680, -4928000, 2688000]
+Frobenius gcd degrees mod 29: [0, 0, 0, 0, 0, 0, 0, 0, 9]
+Frobenius gcd degrees mod 31: [0, 2, 0, 2, 0, 2, 7, 2, 0]
+Resultant: 195940905549539664747294418998325590097920000000
+Nonic discriminant: -18265097881475268102630310354125563743835258880000
+At 223: resultant valuation 1; one common simple root, with monic gcd x+130
+Signed-pair fixed-point fraction: 73104463/185794560
+Union fixed-point fraction: 99646543/212336640

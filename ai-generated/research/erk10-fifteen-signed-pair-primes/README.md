@@ -74,3 +74,5 @@ From this directory, with SymPy available, run
 The second command needs only the standard library and the two
 existing geometry/reconstruction helpers; it checks all input data
 without rerunning the search.
+
+The [fixed-tableau density theorem](../erk10-fifteen-prime-density/README.md) gives an exact prime-density guarantee for this family and Stepanov together, independent of this bounded search.

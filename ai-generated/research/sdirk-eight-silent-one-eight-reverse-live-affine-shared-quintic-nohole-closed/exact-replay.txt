@@ -1,0 +1,11 @@
+shared quintic no-hole literal silence positions 2–5 True True [(1, 1, 2), (3, 1, 2)]
+shared quintic no-hole: silent six or seven True True [(1, 1, 2), (3, 1, 2)]
+shared quintic no-hole literal silence positions 2–5 True False [(1, 1, 5), (3, 1, 5)]
+shared quintic no-hole: silent six or seven True False [(1, 1, 5), (3, 1, 5)]
+shared quintic no-hole: actual silent eighth True [(1, 1, 4), (3, 1, 4)]
+shared quintic no-hole literal silence positions 2–5 False True [(4, 1, 2)]
+shared quintic no-hole: silent six or seven False True [(4, 1, 2)]
+shared quintic no-hole literal silence positions 2–5 False False [(4, 1, 5)]
+shared quintic no-hole: silent six or seven False False [(4, 1, 5)]
+shared quintic no-hole: actual silent eighth False [(4, 1, 4)]
+all 26 actual affine shared-quintic no-ordinary-hole placements excluded

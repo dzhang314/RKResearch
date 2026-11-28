@@ -1,0 +1,10 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticNoHole.quarticMomentRigid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticNoHole.affineReadRemainder' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticNoHole.twoColumnPivot' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticNoHole.actualTerminalWeightsEqual' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticNoHole.penultimateCardinalGate' depends on axioms: [propext]

@@ -263,3 +263,5 @@ donor factors have independent exact arithmetic checks. The full
 physical-chart bridge is mathematical rather than a Lean endpoint.
 
 The [complete chart exit](../erk10-five-opening-three-pair-complete/README.md) discharges the remaining early zero-score and pooled cancellation timings.
+
+See the [portable scalar checks](LEAN.md) for the free target, folded pair, and blind-row identities.

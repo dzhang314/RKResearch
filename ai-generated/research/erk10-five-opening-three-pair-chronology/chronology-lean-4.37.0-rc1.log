@@ -1,0 +1,12 @@
+'RKResearch.Certified.ERK10ThreePairChronologyScalars.freeTapDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10ThreePairChronologyScalars.foldTwoOpposed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10ThreePairChronologyScalars.freeTargetExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10ThreePairChronologyScalars.blindTwoTaps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

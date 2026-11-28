@@ -1,0 +1,5 @@
+'RKResearch.Certified.ERK10FixedQ29Adic.Packed.Form.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exactS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exactQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exact_phase_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exact_h_phase' depends on axioms: [propext, Classical.choice, Quot.sound]

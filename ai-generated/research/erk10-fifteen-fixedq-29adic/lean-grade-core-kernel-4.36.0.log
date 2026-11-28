@@ -1,0 +1,17 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.ERK10GradeCore.monic_M' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.nominal_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.primitive_observer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.paid_degree_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.primitive_G' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.opening_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.opening_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.opening_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.jacobi_moment_scaled' depends on axioms: [propext]
+'RKResearch.Certified.ERK10GradeCore.jacobi_scale_paid' does not depend on any axioms
+'RKResearch.Certified.ERK10GradeCore.jacobi_residue' does not depend on any axioms
+'RKResearch.Certified.ERK10GradeCore.delta_residue' does not depend on any axioms
+'RKResearch.Certified.ERK10GradeCore.bush_failure_residue' does not depend on any axioms
+'RKResearch.Certified.ERK10GradeCore.nonlinear_attach_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.edge_payment_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10GradeCore.attach_grade_budget' depends on axioms: [propext, Classical.choice, Quot.sound]

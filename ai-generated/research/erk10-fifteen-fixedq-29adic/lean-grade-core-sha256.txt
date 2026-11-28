@@ -1,0 +1,6 @@
+76ac653bb668ea74667afaf9ff7a1a3356bcd9be6fb3a44c33c37e20e9fa954d  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicGradeCore.lean
+16d53903001025502c03e74bd673c634b334cda86b74450190b887ad59674387  ai-generated/research/erk10-fifteen-fixedq-29adic/WORD-FILTER-TO-ORDER.md
+8e9ebf0840e91f91abe265995e79b8ab5e005d7bfb4c5413e2c146e08ecc80ca  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-grade-core-kernel-4.34.1.log
+43307f29a1a12ad4a64d77288f205d2b4906797da826f0b61256cb306a0ab0d7  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-grade-core-kernel-4.35.0.log
+115786112b22eb49083567f2e10bb18d12ed4790280682a919304533b65ff7b0  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-grade-core-kernel-4.36.0.log
+d725edbc321621c59aa51aece5a524f575742fe871aa4e464eeafe754e92cf13  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-grade-core-kernel-4.37.0-rc1.log

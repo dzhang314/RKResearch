@@ -102,6 +102,6 @@ paid prime factors, so such a pair never blocks selection.
 
 Run `python3 -B clean-ring-replay.py` in this directory to verify
 all integer data used here. The exact ring argument above uses
-the literal charts' existing rooted checks. The [native clean-ring endpoint](../../lean/RKCert/ReviewedNative/ERK10MirrorPortfolio.lean) now checks the clean-ring theorem and its pushforward to any nonzero commutative coefficient ring on Lean/Mathlib 4.36.0, using four of the five literal charts. The separate dimension-zero implication to the clean hypothesis is the mathematical argument above. This does not give a
+the literal charts' existing rooted checks. The [native clean-ring endpoint](../../lean/RKCert/ReviewedNative/ERK10MirrorPortfolio.lean) now checks the clean-ring theorem and its pushforward to any nonzero commutative coefficient ring on Lean/Mathlib 4.36.0, using four of the five literal charts. The [native dimension-zero endpoint](../../lean/RKCert/ReviewedNative/ERK10DimensionZeroPortfolio.lean) now checks that implication and the whole tableau result. Its two exact-order theorems apply to a nonzero ring of Krull dimension zero and to any nonzero algebra over a zero-dimensional coefficient ring, with \(10!\) a unit in the coefficient ring. Both are checked on Lean/Mathlib 4.36.0 with only standard axioms; see the [audit](dimension-zero-lean-4.36.0.txt). This does not give a
 16-stage tableau over \(\mathbb Z[1/10!]\), where the finite
 idempotent partition cannot split the domain.

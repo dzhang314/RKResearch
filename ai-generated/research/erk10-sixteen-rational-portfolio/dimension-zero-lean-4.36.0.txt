@@ -1,0 +1,7 @@
+'RKResearch.Certified.exists_unit_add_idempotent_dim_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10MirrorPortfolio.dimension_zero_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10MirrorPortfolio.dimension_zero_coefficients_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

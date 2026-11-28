@@ -1,0 +1,15 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenThirteen.two_primitive_determinant.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  (a b : K) :
+  a ^ 3 * (2 * b - a) / 12 * (b ^ 4 * (5 * a - 3 * b) / 60) -
+      a ^ 4 * (5 * b - 3 * a) / 60 * (b ^ 3 * (2 * a - b) / 12) =
+    a ^ 3 * b ^ 3 * (a - b) ^ 3 / 120
+RKResearch.Certified.Graded.OrderElevenThirteen.no_paired_reverse_cut.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Matrix (Fin 13) (Fin 13) K} {b : Fin 13 → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 11 A b)
+  (N : Normalized A b) (Cut : PairedReverseCut A b) : False
+'RKResearch.Certified.Graded.OrderElevenThirteen.two_primitive_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenThirteen.no_paired_reverse_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

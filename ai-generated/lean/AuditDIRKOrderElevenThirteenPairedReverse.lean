@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.DIRKOrderElevenThirteenPairedReverse
+open RKResearch.Certified.Graded.OrderElevenThirteen
+#check two_primitive_determinant
+#check no_paired_reverse_cut
+#print axioms two_primitive_determinant
+#print axioms no_paired_reverse_cut

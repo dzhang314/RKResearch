@@ -1,0 +1,3 @@
+'RKResearch.ERK11RepeatedPoolPortGate.liveDormantFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11RepeatedPoolPortGate.averageResponse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11RepeatedPoolPortGate.poolDeterminant' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,14 @@
+zero H,C width 8 second width gcd deg 1
+zero H,C remaining u: raw gates degrees 4,4,7, exact gcd 1
+integer coefficient bounds bits [3265, 3632]
+  CRT progress 20 2.6
+  CRT progress 40 5.18
+  CRT progress 60 7.87
+projection degrees [('F', 624), ('G', 672)] primes 60
+exact live-H width projection gcd degree 280
+width 72 exact homogeneous guard 25 26 power 1
+  whole lift 101 component degrees [37, 1, 1, 1, 3, 4, 5, 7, 13] full degree rows [0, 1, 2]
+width 12 exact homogeneous guard 11 18 power 2
+  whole lift 101 component degrees [3, 4, 5] full degree rows [0, 1, 2]
+width 8 exact homogeneous guard 10 12 power 4
+  whole lift 101 component degrees [1, 2, 5] full degree rows [0, 1, 2]

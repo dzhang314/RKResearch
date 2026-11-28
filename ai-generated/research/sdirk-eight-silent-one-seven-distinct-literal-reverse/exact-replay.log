@@ -1,0 +1,53 @@
+verified exact Gauss literal reverse root: True 0 True
+constant literal tail True 0 True True 16 both exact literals 0
+verified constant shared literal clock: True 0 True 1103 [(1, 2), (3, 2), (4, 2)]
+constant literal tail True 0 True False 16 both exact literals 0
+verified constant literal reverse root: True 0 True 1103 [(1, 2), (3, 2), (4, 2)]
+verified exact Gauss literal reverse root: True 0 False
+constant literal tail True 0 False True 35 both exact literals 0
+verified constant shared literal clock: True 0 False 1103 [(1, 1), (1, 1), (4, 1), (29, 1)]
+constant literal tail True 0 False False 35 both exact literals 0
+verified constant literal reverse root: True 0 False 1103 [(1, 1), (1, 1), (4, 1), (29, 1)]
+verified exact Gauss literal reverse root: True 0 None
+constant literal tail True 0 None True 14 both exact literals 0
+verified constant shared literal clock: True 0 None 1103 [(1, 1), (1, 1), (2, 1), (2, 1), (2, 1), (6, 1)]
+verified exact Gauss literal reverse root: True 1 True
+constant literal tail True 1 True True 16 both exact literals 0
+verified constant shared literal clock: True 1 True 1103 [(1, 2), (3, 2), (4, 2)]
+constant literal tail True 1 True False 16 both exact literals 0
+verified constant literal reverse root: True 1 True 1103 [(1, 2), (3, 2), (4, 2)]
+verified exact Gauss literal reverse root: True 1 False
+constant literal tail True 1 False True 35 both exact literals 0
+verified constant shared literal clock: True 1 False 1103 [(1, 1), (1, 1), (3, 1), (30, 1)]
+constant literal tail True 1 False False 35 both exact literals 0
+verified constant literal reverse root: True 1 False 1103 [(1, 1), (1, 1), (3, 1), (30, 1)]
+verified exact Gauss literal reverse root: True 1 None
+constant literal tail True 1 None True 14 both exact literals 0
+verified constant shared literal clock: True 1 None 1103 [(1, 1), (13, 1)]
+verified exact Gauss literal reverse root: False 0 True
+constant literal tail False 0 True True 16 both exact literals 0
+verified constant shared literal clock: False 0 True 1103 [(1, 2), (3, 2), (4, 2)]
+constant literal tail False 0 True False 16 both exact literals 0
+verified constant literal reverse root: False 0 True 1103 [(1, 2), (3, 2), (4, 2)]
+verified exact Gauss literal reverse root: False 0 False
+constant literal tail False 0 False True 35 both exact literals 0
+verified constant shared literal clock: False 0 False 1103 [(1, 1), (1, 1), (4, 1), (29, 1)]
+constant literal tail False 0 False False 35 both exact literals 0
+verified constant literal reverse root: False 0 False 1103 [(1, 1), (1, 1), (4, 1), (29, 1)]
+verified exact Gauss literal reverse root: False 0 None
+constant literal tail False 0 None True 14 both exact literals 0
+verified constant shared literal clock: False 0 None 1103 [(1, 1), (1, 1), (2, 1), (2, 1), (2, 1), (6, 1)]
+verified exact Gauss literal reverse root: False 1 True
+constant literal tail False 1 True True 16 both exact literals 0
+verified constant shared literal clock: False 1 True 1103 [(1, 2), (1, 2), (6, 2)]
+constant literal tail False 1 True False 16 both exact literals 0
+verified constant literal reverse root: False 1 True 1103 [(1, 2), (1, 2), (6, 2)]
+verified exact Gauss literal reverse root: False 1 False
+constant literal tail False 1 False True 35 both exact literals 0
+verified constant shared literal clock: False 1 False 1103 [(2, 1), (2, 1), (3, 1), (5, 1), (5, 1), (18, 1)]
+constant literal tail False 1 False False 35 both exact literals 0
+verified constant literal reverse root: False 1 False 1103 [(2, 1), (2, 1), (3, 1), (5, 1), (5, 1), (18, 1)]
+verified exact Gauss literal reverse root: False 1 None
+constant literal tail False 1 None True 14 both exact literals 0
+verified constant shared literal clock: False 1 None 1103 [(1, 1), (1, 1), (12, 1)]
+literal reverse-root checks: 12 8 12

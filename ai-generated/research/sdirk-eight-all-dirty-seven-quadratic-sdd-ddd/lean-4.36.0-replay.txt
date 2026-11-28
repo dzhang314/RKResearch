@@ -1,0 +1,4 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDdd.affine_legendre_collinearity' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDdd.two_true_overlap_products' depends on axioms: [propext,
+ Quot.sound]

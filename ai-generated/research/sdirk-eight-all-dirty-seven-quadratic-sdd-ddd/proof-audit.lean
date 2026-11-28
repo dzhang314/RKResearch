@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticSddDdd
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDdd.affine_legendre_collinearity
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDdd.two_true_overlap_products

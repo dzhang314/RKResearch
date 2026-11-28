@@ -1,0 +1,17 @@
+('AA', 1, 2) collinearity degree 12 overlap degree 11 gcd v**2
+('AA', 1, 3) collinearity degree 12 overlap degree 14 gcd v**2
+('AS', 1, 2) collinearity degree 12 overlap degree 11 gcd v
+('AS', 1, 3) collinearity degree 12 overlap degree 11 gcd v - 2
+('AS', 2, 3) collinearity degree 12 overlap degree 11 gcd v - 1
+('AS', 3, 2) collinearity degree 12 overlap degree 11 gcd v - 1
+('SA', 1, 2) collinearity degree 12 overlap degree 8 gcd v
+('SA', 1, 3) collinearity degree 12 overlap degree 11 gcd v
+('SA', 2, 1) collinearity degree 12 overlap degree 8 gcd v
+('SA', 2, 3) collinearity degree 12 overlap degree 11 gcd v
+('SA', 3, 1) collinearity degree 12 overlap degree 11 gcd v
+('SA', 3, 2) collinearity degree 12 overlap degree 11 gcd v
+('SS', 1, 2) collinearity degree 12 overlap degree 8 gcd v**2 - 2*v
+('SS', 1, 3) collinearity degree 12 overlap degree 8 gcd v**2 - 2*v
+('SS', 2, 1) collinearity degree 12 overlap degree 8 gcd v**2 - 2*v
+('SS', 3, 1) collinearity degree 12 overlap degree 8 gcd v**2 - 2*v
+all sixteen literal placements excluded; eight clocks-only losses

@@ -1,0 +1,7 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaZeroAlternateF1.specialized_affinity_product' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaZeroAlternateF1.only_alternate_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaZeroAlternateF1.alternate_eliminants_scaled' depends on axioms: [propext,
+ Quot.sound]

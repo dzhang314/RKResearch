@@ -1,0 +1,5 @@
+Exact alternate F1 old affinity, affine remainder, old determinant, and eliminated coefficients checked.
+   15.07 exact physical V/B transposition on the same degree-48 field
+   15.07 exact ordinary V degree 48 constant -14638292540815408663567 exact B gcd linear and pivot unit
+   17.57 exact a gcd and every pivot [(4, 3), (3, 2)] monic linear, a live
+   17.58 residue x + 25 ranks 1 1 dimension 1 J1 rank 1 adjugate rank 1 q rank 1

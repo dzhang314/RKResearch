@@ -1,0 +1,6 @@
+Alias d row divisors (1, 0) (0, 1) slope divisors (0, 0) (0, 1)
+exact right fixed moment mask degree 138: a^8, two cubics, two degree 12s, degree 100
+small exact d-linear fibers: cubics d=1; degree 12s left slopes zero / x_D=x_N=variance=0
+degree 100: (p,a,d)=(31,12,5), right moments 0,1 plus actual outer pivot; t_L=4,t_R=25; first-pool determinant=20
+  mod31 right restored rows: [9, 23, 16] [21, 13, 4] [18, 16, 9] det 7 g0,g1 10 12
+entire right fixed 3x3 moment-pivot mask excluded

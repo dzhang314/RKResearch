@@ -1,0 +1,8 @@
+p=131, exponent=1, x=111, f=57, d=69: 7813 conditions, scaled order-13 bush 20
+p=131, exponent=1, x=111, f=57, d=85: 7813 conditions, scaled order-13 bush 20
+p=131, exponent=1, x=99, f=57, d=69: 7813 conditions, scaled order-13 bush 20
+p=131, exponent=1, x=99, f=57, d=85: 7813 conditions, scaled order-13 bush 20
+p=149, exponent=1, x=103, f=2, d=113: 7813 conditions, scaled order-13 bush 18
+p=149, exponent=1, x=103, f=2, d=147: 7813 conditions, scaled order-13 bush 18
+p=149, exponent=1, x=103, f=41, d=10: 7813 conditions, scaled order-13 bush 118
+p=149, exponent=1, x=103, f=41, d=106: 7813 conditions, scaled order-13 bush 118

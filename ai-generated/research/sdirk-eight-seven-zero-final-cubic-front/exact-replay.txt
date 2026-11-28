@@ -1,0 +1,4 @@
+exact projected diagonal degree 14
+fixed residue star 13 4 all diagonal roots 14 directed forward pairs 28
+exact projected diagonal degree 18
+fixed residue ghost 127 91 all diagonal roots 18 directed forward pairs 36

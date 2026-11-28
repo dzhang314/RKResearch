@@ -94,3 +94,5 @@ For three distinct off clocks and a nonzero second reflected defect ratio, the [
 The [zero second reflected ratio](../sdirk-eight-seven-zero-three-clock-zero-ratio/README.md) is also impossible. Together these results force seven distinct quadratic-zero clocks and a nonzero second reflected defect ratio in the exactly-seven case.
 
 The [supported early quartic](../sdirk-eight-seven-zero-supported-quartic/README.md) also excludes live reflected arithmetic when all seven zero clocks are distinct, for every front placement over characteristic zero or greater than seven. The remaining rear phases are live star and silent ghost.
+
+In those two remaining rear phases, the [fixed-cubic-front exclusion](../sdirk-eight-seven-zero-final-cubic-front/README.md) rules out a first zero at row 3 and a star front ending at the first zero in row 4, over characteristic zero. Thus any remaining exactly-seven candidate begins with three distinct silent off rows in arithmetic phase and first reaches a quadratic-zero row at physical position 4.

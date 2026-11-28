@@ -1,0 +1,3 @@
+'RKResearch.Certified.ERK10FiveOpeningNonsplitKernelSeed.literal_row_clocks' does not depend on any axioms
+'RKResearch.Certified.ERK10FiveOpeningNonsplitKernelSeed.scaled_pivot' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FiveOpeningNonsplitKernelSeed.decoder_profiles' does not depend on any axioms

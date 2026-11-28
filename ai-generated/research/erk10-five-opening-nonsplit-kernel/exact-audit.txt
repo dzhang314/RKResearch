@@ -1,0 +1,9 @@
+literal quotient determinant 1/896 decoder coordinate columns [[Fraction(1, 1), Fraction(-21, 1), Fraction(26, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(-135, 1), Fraction(162, 1)], [Fraction(0, 1), Fraction(128, 1), Fraction(-160, 1)], [Fraction(0, 1), Fraction(28, 1), Fraction(-28, 1)]]
+all 8 actual profiles through size four realize the model modulo P
+through size 4 actual/pure/joint ranks (5, 2, 6)
+through size 5 actual/pure/joint ranks (5, 4, 9)
+paid row/decoder denominator 4032 1 pure pivot determinant -1/541165879296
+common-denominator integer minor -2200677387432292669409580536637161472
+first two true high rows [[Fraction(-5, 6), Fraction(0, 1), Fraction(-27, 2), Fraction(32, 3), Fraction(14, 3)], [Fraction(-56, 81), Fraction(0, 1), Fraction(-32, 3), Fraction(704, 81), Fraction(280, 81), Fraction(-10, 81)]]
+true high profiles through size five: 34 paid checks, nonzero high tap -10/81
+first high row normalized size-six [bush5] value 5/6

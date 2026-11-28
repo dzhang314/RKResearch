@@ -1,0 +1,4 @@
+generic quotient determinant checked
+first pure pivot 2*p**3*q*(p - q)*(p - s)*(q - s)*(2*p*v - 3*q*s**2 - s*v)/(3*s**6*(p*s - v))
+second pure pivot on first-pivot-zero branch -3*p**2*q**2*(p - q)**2*(p - s)*(2*p - 3*s)*(q - s)/(4*s**2*(2*p**2 - p*s - 3*q*s))
+split clean-donor fallback p,q minor checked

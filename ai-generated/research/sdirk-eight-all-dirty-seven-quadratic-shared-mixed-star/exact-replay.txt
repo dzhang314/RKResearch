@@ -1,0 +1,7 @@
+6dfd72e9e55f557e9e7caabc56a1233c15ca68fc9526399e305f92f0f26df01d  README.md
+f4180dba3ce57b08621a0e2df0bd578652027e6848cc5a96dbe91be6d59d8c7d  check_shared_mixed_star.py
+71727ba7d92df274d1913870559b3aa5f3598337391b819d5610d847ef54f87b  prefix_scalars.py
+A2 degree and raw gcd 2 1 0
+A2 guarded 0
+A3 degree and raw gcd 2 1 0
+A3 guarded 0

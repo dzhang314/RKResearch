@@ -1,0 +1,37 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.two_ghost_forward_impossible.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (x p q l r d g h : K) (x0 : x ≠ 0) (pg : g ≠ 0) (qh : h ≠ 0) (pq : p ≠ q) (m0 : l * g + r * h = 0)
+  (m1 : l * p * g + r * q * h = 0) (h1 : l * p + r * q + d * x = x ^ 2 / 2)
+  (h2 : l * p ^ 2 + r * q ^ 2 + d * x ^ 2 = x ^ 3 / 3) : False
+RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.nodal_ratio_determinant.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (u v : K) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v v *
+        RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v u -
+      RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v u *
+        RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v v =
+    u ^ 3 * v ^ 3 * (u - v) ^ 3 / 120
+RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.no_three_ghosts_next_gap.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (u v w fu fv : K) (u0 : u ≠ 0) (v0 : v ≠ 0) (uv : u ≠ v) (P Q : Polynomial K) (dP : P.natDegree ≤ 1)
+  (dQ : Q.natDegree ≤ 2)
+  (hu : Polynomial.eval u P * fu = RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v u)
+  (hv : Polynomial.eval v P * fv = RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IP u v v)
+  (ju : Polynomial.eval u Q * fu = RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v u)
+  (jv : Polynomial.eval v Q * fv = RKResearch.Certified.Graded.OrderElevenInvisibleSixLateGhost.IXP u v v)
+  (ghosts : Fin 3 → K) (distinct : Function.Injective ghosts)
+  (hg : ∀ (i : Fin 3), Polynomial.eval (ghosts i) Q = w * Polynomial.eval (ghosts i) P) : False
+RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.third_clean_mark_live.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (u v w l r d k1 k2 : K) (uv : u ≠ v) (w0 : w ≠ 0) (k1z : k1 ≠ 0) (k2z : k2 ≠ 0)
+  (m0 : l * k1 + r * k2 = 0) (m1 : u * l * k1 + v * r * k2 = 0) (h1 : l * u + r * v + d * w = w ^ 2 / 2)
+  (h2 : l * u ^ 2 + r * v ^ 2 + d * w ^ 2 = w ^ 3 / 3) : False
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.two_ghost_forward_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.nodal_ratio_determinant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.no_three_ghosts_next_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixNoLate.third_clean_mark_live' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

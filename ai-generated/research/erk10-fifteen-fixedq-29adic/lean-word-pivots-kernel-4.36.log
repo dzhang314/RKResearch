@@ -1,0 +1,13 @@
+Lean 4.36.0
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_word_input_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_eta_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.lead_inverse_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_lead_paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.chronologicalK_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.chronologicalK_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.chronologicalK_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.chronologicalK_actualPorts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actualK_ports' depends on axioms: [propext, Classical.choice, Quot.sound]

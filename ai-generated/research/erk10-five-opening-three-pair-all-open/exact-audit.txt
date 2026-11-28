@@ -1,0 +1,7 @@
+cleared cross determinant: -6*z*(-j + z)**2*(j - k)
+effective tap determinant: j*z**3*(-j + z)/(24*k*(j - k)*(-k + z))
+all six first/second closure orders: nonzero determinant
+leakage cancellation: -z**2*(-c + z)**2
+shifted Hilbert pivot: 1/67212633600000
+zero-score and zero-pool scalar eliminations: exact
+zero pool: both donor appearances tracked, including zero scalar score

@@ -1,0 +1,4 @@
+two-dimensional change determinant: -a**4/6
+first singleton at 3a/2: defects (-9/64,3/16)·w·a^4
+feedback into an intervening a-copy: 9*T*a**3/32
+next live singleton obstruction: -s**2*(-3*a + 2*s)**2/2

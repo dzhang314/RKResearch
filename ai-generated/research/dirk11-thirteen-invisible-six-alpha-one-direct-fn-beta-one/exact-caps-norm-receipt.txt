@@ -1,0 +1,8 @@
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    0.62 exact singular guard (60, -1461941766456) old 12
+    0.81 exact singular guard (60, -10517167453750047) lead 12
+    0.84 exact singular guard (48, 1865429207937) q 12
+    0.84 exact singular guard (12, 54123) c2 4
+    0.85 exact singular guard (12, 16227) ratio 12
+    2.55 exact old determinant rank 10 in rank 12

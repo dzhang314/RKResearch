@@ -1,0 +1,50 @@
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    4.97 compact AdjX constructed
+   21.27 compact Qx constructed
+   21.73 AdjX normalized coefficient degree 301 guarded content degree 100
+   22.13 Qx normalized coefficient degree 246 guarded content degree 97
+   81.50 relative projector normalized coefficient degree 1283 guarded content degree 88
+   81.52 bits 3890
+  101.79 relative projector normalized coefficient degree 3645 guarded content degree 204
+  101.81 bits 10985
+  128.05 raw base degree 14580 41630
+  129.13 raised 1 420 1071
+  129.13 raised 2 192 448
+  129.14 raised 12 336 728
+  129.14 raised 18 144 284
+  129.14 raised 19 912 2394
+  129.15 raised 21 1260 3130
+  129.15 raised 72 864 2573
+  129.15 raised 279 1116 2357
+  129.18 raised 472 5664 18017
+  129.19 raised 918 3672 6991
+  129.19 merged 336 735
+  129.20 merged 672 1466
+  129.20 merged 1092 2541
+  129.22 merged 1776 4971
+  129.23 merged 2208 4902
+  129.28 merged 3036 8106
+  129.45 merged 5244 13012
+  129.94 merged 8916 20009
+  131.02 merged 14580 38031
+  131.04 EXACT PRODUCT equality 14580 38031
+level 1 deg 420 bits 1071
+  131.31 exact irreducible residual factor 1 60 -10517167453750047
+  131.31 exact irreducible residual factor 1 108 -1072276807957297777154175020668413
+  131.31 exact irreducible residual factor 1 252 -1900844749533457989857434584838495093232550922764288
+level 2 deg 96 bits 223
+  131.32 exact irreducible residual factor 2 36 -7295157
+  131.32 exact irreducible residual factor 2 60 17286671927043
+level 12 deg 24 bits 51
+  131.32 exact irreducible residual factor 12 24 72
+level 18 deg 0 bits 1
+level 19 deg 48 bits 124
+  131.32 exact irreducible residual factor 19 48 1865429207937
+level 21 deg 60 bits 147
+  131.32 exact irreducible residual factor 21 60 -1461941766456
+level 72 deg 12 bits 34
+  131.32 exact irreducible residual factor 72 12 16227
+level 279 deg 0 bits 1
+level 472 deg 12 bits 37
+  131.32 exact irreducible residual factor 472 12 54123
+level 918 deg 0 bits 1

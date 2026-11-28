@@ -1,0 +1,19 @@
+Four independent exact QQ checks: Möbius carrier, primitive sign, exterior square, compact true quintic.
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.02 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    0.74 exact singular guard (60, -1461941766456) old 12
+    0.96 exact singular guard (60, -10517167453750047) lead 12
+    0.99 exact singular guard (48, 1865429207937) q 12
+    1.00 exact singular guard (12, 54123) c2 4
+    1.00 exact singular guard (12, 16227) ratio 12
+    2.43 exact old determinant rank 10 in rank 12
+    1.70 checked joint clock/carrier ranks (12, 16227) ratio p= 103 residue= x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91 ranks= [22, 22, 22]
+    1.49 checked joint clock/carrier ranks (12, 54123) c2 p= 103 residue= x^4 + 40*x^3 + 73*x^2 + 90*x + 50 ranks= [18, 18, 18]
+    1.35 checked joint clock/carrier ranks (24, 72) old p= 103 residue= x + 29 ranks= [20, 20, 20]
+    1.27 checked joint clock/carrier ranks (36, -7295157) full p= 103 residue= x^4 + 16*x^3 + 54*x^2 + 101*x + 100 ranks= [24, 24, 24]
+    1.51 checked joint clock/carrier ranks (48, 1865429207937) q p= 103 residue= x + 2 ranks= [22, 22, 22]
+    1.72 checked joint clock/carrier ranks (60, -10517167453750047) lead p= 103 residue= x^6 + 13*x^5 + 67*x^4 + 44*x^3 + 68*x^2 + 53*x + 11 ranks= [22, 22, 22]
+    1.87 checked joint clock/carrier ranks (60, -1461941766456) old p= 103 residue= x + 42 ranks= [22, 22, 22]
+    1.44 checked joint clock/carrier ranks (60, 17286671927043) full p= 103 residue= x^3 + 100*x^2 + 87*x + 98 ranks= [22, 22, 24]
+    1.32 checked joint clock/carrier ranks (108, -1072276807957297777154175020668413) full p= 101 residue= x + 56 ranks= [23, 24, 24]
+    1.71 checked joint clock/carrier ranks (252, -1900844749533457989857434584838495093232550922764288) full p= 103 residue= x^2 + 70*x + 44 ranks= [23, 23, 24]

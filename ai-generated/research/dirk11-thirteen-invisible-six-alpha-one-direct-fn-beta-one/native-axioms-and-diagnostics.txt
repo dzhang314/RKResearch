@@ -1,0 +1,31 @@
+DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.lean:13:35: warning: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [pow_two, mul_add, mul_comm, mul_left_comm, add_assoc, add_comm, add_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.lean:14:29: warning: This simp argument is unused:
+  add_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [pow_two, mul_add, mul_assoc, mul_comm, mul_left_comm, add_assoc, add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.lean:25:17: warning: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [show (2 : Nat) = 1 + 1 from rfl, show (3 : Nat) = (1 + 1) + 1 from rfl, pow_add, pow_one, mul_add,
+    mul_comm, mul_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.monic_adjacent' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.carrier_homogeneous_three' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.scaled_carrier_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.scaled_clock_contact_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneLiveCarrier.guarded_evaluation_ne' does not depend on any axioms

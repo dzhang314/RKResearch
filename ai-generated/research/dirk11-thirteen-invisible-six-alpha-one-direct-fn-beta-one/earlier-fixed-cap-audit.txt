@@ -1,0 +1,26 @@
+    0.59 intrinsic Qpin degree 3
+    0.65 joint image ghost-fifth (60, 99738554904) full 3 24
+    0.61 intrinsic Qpin degree 3
+    0.73 joint image ghost-fifth (12, 16227) ratio 12 22
+    0.56 intrinsic Qpin degree 3
+    0.70 joint image ghost-fifth (12, 54123) c2 4 18
+    0.60 intrinsic Qpin degree 3
+    0.85 joint image zero-carrier (12, 16227) ratio 12 22
+    0.48 intrinsic Qpin degree 3
+    0.60 joint image zero-carrier (12, 54123) c2 4 18
+    0.42 intrinsic Qpin degree 3
+    0.55 joint image zero-carrier (48, 1865429207937) q 1 22
+    0.43 intrinsic Qpin degree 3
+    0.61 joint image zero-carrier (60, -1461941766456) old 1 22
+    0.45 intrinsic Qpin degree 3
+    0.49 joint image zero-carrier (108, 7261365757665534336793103761342611) full 1 24
+    0.48 intrinsic Qpin degree 3
+    0.59 joint image old-linear (12, 16227) ratio 12 22
+    0.49 intrinsic Qpin degree 3
+    0.59 joint image old-linear (12, 54123) c2 4 18
+    0.64 intrinsic Qpin degree 3
+    0.69 joint image old-linear (36, -7295157) full 0 24
+    0.47 intrinsic Qpin degree 3
+    0.62 joint image old-linear (48, 1865429207937) q 1 22
+    0.51 intrinsic Qpin degree 3
+    0.68 joint image old-linear (60, -1461941766456) old 1 22

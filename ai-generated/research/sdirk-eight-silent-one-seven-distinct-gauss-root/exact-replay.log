@@ -1,0 +1,50 @@
+exact nonliteral Gauss tail projections True 6 6 5
+verified Gauss reverse root: True 0 True 0 1129 5
+verified Gauss reverse root: True 1 True 0 1129 5
+verified Gauss reverse root: False 0 True 0 1129 5
+verified Gauss reverse root: False 1 True 0 1129 5
+verified Gauss reverse root: True 0 True 8 1129 7
+verified Gauss reverse root: True 1 True 8 1129 7
+verified Gauss reverse root: False 0 True 8 1129 7
+verified Gauss reverse root: False 1 True 8 1129 7
+verified Gauss reverse root: True 0 True 9 1129 11
+verified Gauss reverse root: True 1 True 9 1129 11
+verified Gauss reverse root: False 0 True 9 1129 11
+verified Gauss reverse root: False 1 True 9 1129 11
+terminal hole exact gap True 3
+verified Gauss reverse root: True 0 True 10 1129 4
+verified Gauss reverse root: True 1 True 10 1129 4
+verified Gauss reverse root: False 0 True 10 1129 4
+verified Gauss reverse root: False 1 True 10 1129 4
+exact nonliteral Gauss tail projections False 21 8 5
+verified Gauss reverse root: True 0 False 0 1151 19
+verified Gauss reverse root: True 1 False 0 1129 19
+verified Gauss reverse root: False 0 False 0 1129 19
+verified Gauss reverse root: False 1 False 0 1129 19
+verified Gauss reverse root: True 0 False 8 1151 10
+verified Gauss reverse root: True 1 False 8 1151 10
+verified Gauss reverse root: False 0 False 8 1129 7
+verified Gauss reverse root: False 1 False 8 1129 7
+verified Gauss reverse root: True 0 False 9 1129 10
+verified Gauss reverse root: True 1 False 9 1129 10
+verified Gauss reverse root: False 0 False 9 1129 10
+verified Gauss reverse root: False 1 False 9 1129 10
+terminal hole exact gap False 5
+verified Gauss reverse root: True 0 False 10 1129 4
+verified Gauss reverse root: True 1 False 10 1129 4
+verified Gauss reverse root: False 0 False 10 1129 4
+verified Gauss reverse root: False 1 False 10 1129 4
+exact nonliteral Gauss tail projections None 11 3 -1
+verified Gauss reverse root: True 0 None 0 1129 11
+verified Gauss reverse root: True 1 None 0 1129 11
+verified Gauss reverse root: False 0 None 0 1129 11
+verified Gauss reverse root: False 1 None 0 1129 11
+verified Gauss reverse root: True 0 None 9 1129 8
+verified Gauss reverse root: True 1 None 9 1129 8
+verified Gauss reverse root: False 0 None 9 1129 8
+verified Gauss reverse root: False 1 None 9 1129 8
+verified Gauss reverse root: True 0 None 10 1129 4
+verified Gauss reverse root: True 1 None 10 1129 4
+verified Gauss reverse root: False 0 None 10 1129 4
+verified Gauss reverse root: False 1 None 10 1129 4
+same Gauss/reverse-root checks: 44

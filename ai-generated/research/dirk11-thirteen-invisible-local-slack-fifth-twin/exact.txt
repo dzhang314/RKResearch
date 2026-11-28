@@ -1,0 +1,3 @@
+exact slope −1: rho(1)=0 forces r²=(r+6)s with live old multiplication determinant
+fifth twin: three necessary rank-two resultants have exact gcd z^12 (no moment pivot inversions)
+origin: the two necessary rank-three ordinary minors are exactly coprime

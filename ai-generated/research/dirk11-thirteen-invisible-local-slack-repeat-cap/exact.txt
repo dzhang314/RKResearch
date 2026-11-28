@@ -1,0 +1,1 @@
+Jacobi fifth quotient: exact resultant/pseudoremainder gcd supported only on B=1 or J4(B)=0

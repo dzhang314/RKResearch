@@ -1,0 +1,14 @@
+Lean 4.34.1
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.cofactor_has_residue_inverse' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.product_gate_has_residue_inverse' depends on axioms: [propext]
+Lean 4.35.0
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.cofactor_has_residue_inverse' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.product_gate_has_residue_inverse' depends on axioms: [propext]
+Lean 4.36.0
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.cofactor_has_residue_inverse' depends on axioms: [propext]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.product_gate_has_residue_inverse' depends on axioms: [propext]
+Lean 4.37.0-rc1
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.cofactor_has_residue_inverse' depends on axioms: [propext,
+ Classical.choice]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackFourthTwinPortable.product_gate_has_residue_inverse' depends on axioms: [propext,
+ Classical.choice]

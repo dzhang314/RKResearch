@@ -1,0 +1,6 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackOldTwin.fourth_repeat_hinge' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackOldTwin.same_clock_zero_companion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleLocalSlackOldTwin.fifth_quintic_pair' depends on axioms: [propext]

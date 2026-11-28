@@ -1,0 +1,3 @@
+exact normalized 2×2 remainder determinant = S²(5S−1)/200
+exact degree-8 determinant and both Q Bezout identities verified
+independent residue certificates at 101, retaining degree eight

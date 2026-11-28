@@ -1,0 +1,3 @@
+exact diagonal projection degree 9 after D^6; factor degrees 1+8
+both exact Gaussian rear triples excluded
+fixed p37: 9 D roots; 108 ordered arithmetic checks; 3 possible first-zero-row3 and 3 front-star pairs all excluded

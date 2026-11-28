@@ -1,0 +1,33 @@
+Four QQ coordinate audits reproduce the B kernel gate, and the affine and quadratic late gates.
+carrier caps actually attained 2 3 4 6 (6, 6) [12, 12, 12] 24
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    3.30 zero Adj normalized coefficient degree 213 guarded content degree 24
+    3.32 zero B normalized coefficient degree 184 guarded content degree 29
+    4.68 zero resultant normalized coefficient degree 442 guarded content degree 112
+    5.81 zero relative norm normalized coefficient degree 1222 guarded content degree 104
+    5.81 zero norm stage 1222
+    8.07 zero norm stage 4888
+zero raw/squarefree 4888 508
+   13.17 diag Adj normalized coefficient degree 213 guarded content degree 24
+   13.25 diag B normalized coefficient degree 257 guarded content degree 69
+   15.44 diag resultant normalized coefficient degree 588 guarded content degree 112
+   18.01 diag relative norm normalized coefficient degree 1644 guarded content degree 120
+   18.01 diag norm stage 1644
+   22.03 diag norm stage 6576
+diag raw/squarefree 6576 632
+exact common squarefree degree 172
+forbidden-1
+forbidden-0
+forbidden-2
+exact surviving support ratio 12 16227
+exact surviving support c2 12 54123
+exact surviving support rank10 24 72
+exact surviving support q 48 1865429207937
+exact surviving support old 60 -1461941766456
+Exact characteristic-zero old guard rank on f24: 10
+verified ratio residue degree 12 cap 11 carrier cap 3 rank 528 of 528
+verified c2 residue degree 4 cap 9 carrier cap 3 rank 144 of 144
+verified rank10 residue degree 1 cap 10 carrier cap 3 rank 40 of 40
+verified q residue degree 1 cap 11 carrier cap 3 rank 44 of 44
+verified old residue degree 1 cap 11 carrier cap 3 rank 44 of 44

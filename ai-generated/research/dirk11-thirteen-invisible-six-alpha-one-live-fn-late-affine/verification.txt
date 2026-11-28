@@ -1,0 +1,18 @@
+Exact degree-four weighted Jacobi line and its independent minor verified.
+Exact old-fit specialization, zero-W2 guard, and pure V pin verified.
+Four QQ evaluations verify the homogeneous late-slope pin and literal first-middle scale.
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.03 old λ−1 numerator normalized coefficient degree 97 guarded content degree 8
+    0.07 norm stage 291
+    0.13 norm stage 1164
+raw and squarefree degrees 1164 164
+forbidden-1
+forbidden-0
+exact supported factor ratio 12 16227
+exact supported factor c2 12 54123
+exact supported factor proto 24 482450985
+exact supported factor full 108 -1072276807957297777154175020668413
+verified ratio at 103 residue degree 12 cap 11 rank 132 of 132
+verified c2 at 103 residue degree 4 cap 9 rank 36 of 36
+verified proto at 103 residue degree 4 cap 11 rank 44 of 44
+verified full at 101 residue degree 1 cap 12 rank 12 of 12

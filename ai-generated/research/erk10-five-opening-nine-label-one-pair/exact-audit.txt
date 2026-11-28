@@ -1,0 +1,6 @@
+the third row explicitly pays the actual two defect and three primitive reads
+fourth distinct physical row determinant: -2*b*k**3*z**2*(-b + z)*(b - 1)*(b - c)*(-c + z)**2*(c - 1)*(2*k - 1)*(z - 1)/(c*(3*b*k - 2*c*k + c)**2)
+repeat minors: 1 and b have full rank; c needs c(2κ−1)=4bκ
+after the close, independent scalar ratio N(Y)/[Y²(Y−c)]; two anchor cancellations
+blind primitive derivative and raw affine 3/4-site cofactors verified
+κ=1/2 propagates the forbidden raw u=−wY/2 relation

@@ -1,0 +1,77 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticA2Final.primitive_step_common_root' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticA2Final.remove_actual_nonzero_guard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+verified nominal row degrees [(18, 18, 0), (10, 11, 3), (22, 26, 2), (16, 17, 8), (26, 27, 8)]
+verified first nodal projection (84, 100, 0)
+terminal-new A2 exclusion not certified
+completed step H degrees 84 18 17 max d degree 278
+completed step H degrees 18 17 16 max d degree 545
+completed step H degrees 17 16 15 max d degree 810
+completed step H degrees 16 15 14 max d degree 893
+completed step H degrees 15 14 13 max d degree 974
+completed step H degrees 14 13 12 max d degree 1054
+completed step H degrees 13 12 11 max d degree 1106
+completed step H degrees 12 11 10 max d degree 1152
+completed step H degrees 11 10 9 max d degree 1198
+completed step H degrees 10 9 8 max d degree 1234
+completed step H degrees 9 8 7 max d degree 1270
+completed step H degrees 8 7 6 max d degree 1306
+completed step H degrees 7 6 5 max d degree 1314
+completed step H degrees 6 5 4 max d degree 1320
+completed step H degrees 5 4 3 max d degree 1318
+completed step H degrees 4 3 2 max d degree 1291
+completed step H degrees 3 2 1 max d degree 1200
+completed step H degrees 2 1 0 max d degree 0
+process exact valuation cancellations
+valuation step 2 1 0 degrees and powers [(494, 1), (1300, 2), (96, 3), (3, 5), (1, 6), (36, 8)]
+valuation step 3 2 1 degrees and powers [(494, 1), (8, 16), (1, 6), (96, 3), (3, 9), (1, 6), (36, 8), (1318, 4)]
+valuation step 4 3 2 degrees and powers [(494, 1), (8, 16), (1, 18), (96, 3), (3, 30), (1, 6), (36, 8), (1320, 6)]
+valuation step 5 4 3 degrees and powers [(494, 1), (8, 16), (1, 26), (96, 3), (3, 30), (1, 6), (36, 8), (1317, 8)]
+valuation step 6 5 4 degrees and powers [(494, 1), (8, 16), (1, 36), (96, 3), (3, 30), (1, 6), (36, 8), (3, 8), (1306, 10)]
+valuation step 7 6 5 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 18), (36, 8), (3, 8), (1270, 12)]
+valuation step 8 7 6 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 18), (36, 8), (3, 8), (1234, 14)]
+valuation step 9 8 7 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 18), (36, 8), (3, 8), (1198, 16)]
+valuation step 10 9 8 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 18), (36, 8), (3, 8), (1157, 18)]
+valuation step 11 10 9 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 18), (36, 8), (3, 8), (5, 18), (1106, 20)]
+valuation step 12 11 10 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 84), (36, 8), (3, 8), (5, 18), (1054, 22)]
+valuation step 13 12 11 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 84), (36, 8), (3, 20), (5, 18), (973, 24)]
+valuation step 14 13 12 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 84), (36, 8), (3, 33), (5, 18), (891, 26)]
+valuation step 15 14 13 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 98), (36, 8), (3, 33), (5, 18), (807, 28)]
+valuation step 16 15 14 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 98), (36, 8), (3, 33), (5, 18), (537, 30), (4, 705)]
+valuation step 17 16 15 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 98), (36, 8), (3, 33), (5, 18), (4, 755), (265, 32)]
+valuation step 18 17 16 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 98), (36, 8), (3, 50), (5, 18), (4, 759)]
+valuation step 84 18 17 degrees and powers [(494, 1), (8, 16), (1, 192), (96, 3), (3, 30), (1, 98), (36, 8), (3, 176), (5, 144), (4, 60)]
+factor final coprime block degree 494 1
+A2 projected d irreducible degree 4 1
+A2 projected d irreducible degree 134 1
+A2 projected d irreducible degree 356 1
+factor final coprime block degree 8 16
+A2 projected d irreducible degree 8 16
+factor final coprime block degree 1 192
+A2 projected d irreducible degree 1 192
+factor final coprime block degree 96 3
+A2 projected d irreducible degree 8 3
+A2 projected d irreducible degree 16 3
+A2 projected d irreducible degree 24 3
+A2 projected d irreducible degree 48 3
+factor final coprime block degree 3 30
+A2 projected d irreducible degree 3 30
+factor final coprime block degree 36 8
+A2 projected d irreducible degree 36 8
+factor final coprime block degree 3 60
+A2 projected d irreducible degree 3 60
+final d-factor table [(4, 1), (134, 1), (356, 1), (8, 16), (1, 192), (8, 3), (16, 3), (24, 3), (48, 3), (3, 30), (36, 8), (3, 60)]
+exact static guard trim (4, 1) 23 12 18 17 ('first graph value',)
+fixed direct d place (134, 1) 31 7 18 [17]
+fixed direct d place (356, 1) 11 7 18 [4]
+exact static guard trim (8, 16) 103 37 18 16 ('terminal Legendre', 'front Legendre')
+exact static guard trim (1, 192) 11 10 18 12 ('scale',)
+fixed direct d place (8, 3) 101 67 18 [11]
+fixed direct d place (16, 3) 17 15 18 [3]
+fixed direct d place (24, 3) 29 25 18 [22]
+fixed direct d place (48, 3) 101 52 18 [47]
+fixed direct d place (3, 30) 13 3 18 [11]
+exact static guard trim (36, 8) 31 10 18 17 ('anchor slope', 'paid affine slope')
+fixed direct d place (3, 60) 17 4 15 []
+all twelve true A2 outer factors excluded

@@ -1,0 +1,12 @@
+'RKResearch.ERK11SwitchedPlateauPrimitiveGate.plateauResponseHull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11SwitchedPlateauPrimitiveGate.foreignDeviation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11SwitchedPlateauPrimitiveGate.oppositePairProduct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11SwitchedPlateauPrimitiveGate.eliminateSharedMode' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

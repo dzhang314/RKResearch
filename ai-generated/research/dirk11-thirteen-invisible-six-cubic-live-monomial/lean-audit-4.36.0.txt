@@ -1,0 +1,24 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.affinity_det.{u_1} {K : Type u_1} [CommRing K]
+  (r s c₀ c₁ c₂ : K) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.det₃ s (-c₀) (-3 * c₀) r (s - c₁)
+      (6 * s - 3 * c₁) 1 (r - c₂) (4 * r - 3 * c₂) =
+    -2 * s ^ 2 * r + 3 * s ^ 2 * c₂ - s * r * c₁ - 3 * s * c₀ + r ^ 2 * c₀
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.linear_fit_monomial.{u_1} {K : Type u_1} [Field K]
+  (x y a b : K) (h₀ : a * x = 0) (h₁ : 2 * (a * y + b * x) = x) (h₂ : 3 * b * y = y) : x = 0 ∨ y = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.two_primitive_match.{u_1} {K : Type u_1} [Field K]
+  (V p q d e : K) (hV : V ≠ 0) (hpq : p ≠ q) (hp : e * (V * p - d) = 0) (hq : e * (V * q - d) = 0) : e = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.cubic_quartic_pair.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (V q c₀ c₁ c₂ : K) (hV : V ≠ 0)
+  (h₁ : (3 * V ^ 2 + 3 * c₂ * V + 2 * c₁) * q = -3 * c₀ * V ^ 2 - c₁ * V ^ 3)
+  (h₂ : (-18 * V ^ 2 - 15 * c₂ * V - 10 * c₁) * q = -3 * V ^ 5 + 5 * c₁ * V ^ 3 + 15 * c₀ * V ^ 2) : q = V ^ 3
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.affinity_det' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.linear_fit_monomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.two_primitive_match' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveMonomial.cubic_quartic_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

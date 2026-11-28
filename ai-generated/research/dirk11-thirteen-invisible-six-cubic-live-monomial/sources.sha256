@@ -1,0 +1,6 @@
+5ba50be958e72a8118b0b66181e536dbfdaf8e5868fe533f2129617f7bce46ae  ai-generated/research/dirk11-thirteen-invisible-six-cubic-live-monomial/README.md
+a53f26ed21302c05f6371ca9a8bbeeb120f10fff9a61c334236468aa29faba2a  ai-generated/research/dirk11-thirteen-invisible-six-cubic-live-monomial/replay.py
+e3a9e6a97f86db95923796b0f6446895b149c4ae6db48a080e3040c74c82227f  ai-generated/research/dirk11-thirteen-invisible-six-cubic-live-monomial/exact-replay.txt
+bb44cf2ab76a822c2b11570e2cd208f7781ea68a0a84f446d82fc7f67b2da785  ai-generated/research/dirk11-thirteen-invisible-six-cubic-live-monomial/lean-audit-4.36.0.txt
+2cb2a27af72fc1779424da7c44dcae25ca8ecb3a934ca58ba5b0e3f84d5a297f  ai-generated/lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixCubicLiveMonomial.lean
+1f8c8c9f568037601e3b59c4bb749b8f000c14f5b0b52069e911af97e74bd04e  ai-generated/lean/AuditDIRKOrderElevenInvisibleSixCubicLiveMonomial.lean

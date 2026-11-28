@@ -1,0 +1,65 @@
+0 star star pivot True
+reverse tap integral obstruction True
+0 star arith pivot True
+reverse tap integral obstruction True
+0 arith star pivot True
+reverse tap integral obstruction True
+0 arith arith pivot True
+reverse tap integral obstruction True
+1 star star pivot True
+reverse tap integral obstruction True
+1 star arith pivot True
+reverse tap integral obstruction True
+1 arith star pivot True
+reverse tap integral obstruction True
+1 arith arith pivot True
+reverse tap integral obstruction True
+frame 0 star star free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 1
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+candidate degree 1
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 0 star arith free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 2
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 0 arith star free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 2
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 0 arith arith free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 1
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+candidate degree 1
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 1 star star free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 1
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+candidate degree 1
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 1 star arith free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 2
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 1 arith star free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 2
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]
+frame 1 arith arith free roots pivot True
+framed reverse polynomial degree 2 active anchor weights True True True True True
+candidate degree 2
+pass elementary guards with front silent False False
+forward pure-square moments vanish? [False, False]

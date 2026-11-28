@@ -1,0 +1,4 @@
+p=43, lambda=0, split ordinary nonendpoint labels: [2, 9, 22, 35, 42]
+Nonzero actual three-clean marked residuals: 60
+Product modulo 43: 4
+Exact specialization certifies a nonzero clock norm (finite candidate set).

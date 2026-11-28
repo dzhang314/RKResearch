@@ -1,0 +1,60 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.two_anchor_primitive_not_divisible.{u_1} {K : Type u_1}
+  [Field K] [CharZero K] {U : Polynomial K} (uz : U ≠ 0) (x : K) (x0 : x ≠ 0)
+  (root : (RKResearch.Certified.Graded.primitive (U * (Polynomial.X * (Polynomial.X - Polynomial.C x)))).IsRoot x) :
+  ¬U ∣ RKResearch.Certified.Graded.primitive (U * (Polynomial.X * (Polynomial.X - Polynomial.C x)))
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.two_anchor_primitive_not_divisible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.monomial_of_self_primitive_dvd.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] {P : Polynomial K} (nz : P ≠ 0) (m : ℕ)
+  (div : P ∣ RKResearch.Certified.Graded.primitive (P * Polynomial.X ^ m)) :
+  ∃ a, a ≠ 0 ∧ P = Polynomial.C a * Polynomial.X ^ P.natDegree
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.self_primitive_dvd_of_many_ghosts.{u_1, u_2} {K : Type u_1}
+  [Field K] {P Q : Polynomial K} (m : ℕ) {ι : Type u_2} [Fintype ι] (clocks : ι → K)
+  (distinct : Function.Injective clocks) (dq : Q.natDegree ≤ m + 1) (big : P.natDegree + m + 1 < Fintype.card ι)
+  (hg :
+    ∀ (i : ι),
+      Polynomial.eval (clocks i) (RKResearch.Certified.Graded.primitive (P * Polynomial.X ^ m)) +
+          Polynomial.eval (clocks i) P * Polynomial.eval (clocks i) Q =
+        0) :
+  P ∣ RKResearch.Certified.Graded.primitive (P * Polynomial.X ^ m)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.masked_primitive_actual.{u_1, u_2} {K : Type u_1} [Field K]
+  [CharZero K] {ι : Type u_2} [Fintype ι] {A : Matrix ι ι K} {b : ι → K} {p : ℕ} (ho : RKResearch.HasOrder p A b)
+  {g : ι → K} (hg : g ∈ RKResearch.Certified.Graded.zeroSpace A 3) (U : Polynomial K) (du : U.natDegree ≤ 3) (j : ℕ)
+  (pay : j + 5 ≤ p) :
+  (RKResearch.Certified.Graded.mat A)
+        (((RKResearch.Certified.Graded.evalNodes A) U - g) *
+          (RKResearch.Certified.Graded.evalNodes A) (Polynomial.X ^ j)) -
+      (RKResearch.Certified.Graded.evalNodes A) (RKResearch.Certified.Graded.primitive (U * Polynomial.X ^ j)) ∈
+    RKResearch.Certified.Graded.zeroSpace A (j + 4)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.single_diagonal_two_powers.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (x d : K) (j : ℕ) (x0 : x ≠ 0) (h0 : d * x ^ j = x ^ (j + 1) / ↑(j + 1))
+  (h1 : d * x ^ (j + 1) = x ^ (j + 2) / ↑(j + 2)) : False
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.no_cubic_cancel_six_ghosts.{u_1} {K : Type u_1} [Field K]
+  (H Q : Polynomial K) (hd : H.natDegree = 5) (qd : Q.natDegree ≤ 3) (a : K) (clocks : Fin 6 → K)
+  (distinct : Function.Injective clocks)
+  (rows : ∀ (i : Fin 6), Polynomial.eval (clocks i) Q = a * Polynomial.eval (clocks i) H) : a = 0 ∧ Q = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.weighted_mask_annih_four.{u_1, u_2} {K : Type u_1} [Field K]
+  {ι : Type u_2} [Fintype ι] {A : Matrix ι ι K} {G m : ι → K}
+  (hG : G ∈ RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A 7))
+  (hm : m ∈ RKResearch.Certified.Graded.treeSpace A 3) :
+  G * m ∈ RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A 4)
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.monomial_of_self_primitive_dvd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.self_primitive_dvd_of_many_ghosts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.masked_primitive_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.single_diagonal_two_powers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.no_cubic_cancel_six_ghosts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPrefix.weighted_mask_annih_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

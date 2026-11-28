@@ -1,0 +1,3 @@
+'RKResearch.Certified.ERK10FifteenHenselJacobian.base_residual' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenHenselJacobian.geometry_jacobian' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenHenselJacobian.jacobian_minor_unit' depends on axioms: [propext]

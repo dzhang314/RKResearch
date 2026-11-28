@@ -1,0 +1,6 @@
+normalized donor rows
+-1/900 27/56 125/336
+-191051/159432300 931/1944 -6125/34992
+-7475/6377292 6625/13608 78125/898128
+third donor row = (3875/8019) first + (2000/3773) second
+exact actual size-seven old residual rank 3

@@ -1,0 +1,14 @@
+8bee54bc3e6cd4ebb9ee8144d47740bf46887c638eadcbc5749f9c2aa3724871  ai-generated/research/dirk12-nineteen-rational-two-ports/README.md
+a3dc22613d4ea7703dbef4a8413d886bf975b88e30fc42e7c527cbcf3415090d  ai-generated/research/dirk12-nineteen-rational-two-ports/build.py
+e34145f6e86f92375bb3bc15521ef9811f44f5662627df7a0f13ac9a3d175e02  ai-generated/research/dirk12-nineteen-rational-two-ports/constructor.txt
+5adfb59a1c4dd17e5e02ece7828550b0c3a52006d199610be624f94df22c2000  ai-generated/research/dirk12-nineteen-rational-two-ports/donor-rank.py
+31eb031c9d414eee70521b4098104ec533ad53a231a39deb05026793686c6f41  ai-generated/research/dirk12-nineteen-rational-two-ports/donor-rank.txt
+ce9b561963e40a7b01704671bf7b2e28d82c2d3f5d57a2e20c83917e77efcc3c  ai-generated/research/dirk12-nineteen-rational-two-ports/probe.py
+57c86e8a8f77147d5278a1b760f6e91004e5c7634e0c4e34ffc8d13941505fac  ai-generated/research/dirk12-nineteen-rational-two-ports/ranktwo.py
+06341bfc5264ca2a31b463b4e70f40e988bd0bb6159777f9ac9ec5201461c799  ai-generated/research/dirk12-nineteen-rational-two-ports/replay.txt
+e80a3906ea3052eacdd78d4f3a8464a77a4ff73d40e099e01809dd9fbafb8d6a  ai-generated/research/dirk12-nineteen-rational-two-ports/sha256.txt
+b3fb710ace3cb928380ee840e497864d94b614f3a41ae9621cbd59d2bb68c585  ai-generated/research/dirk12-nineteen-rational-two-ports/tableau19.json
+c4404cde2b4e13167cd0c1d0825b0e1164a34598712f44f131b57e576b2bd4e9  ai-generated/research/dirk12-nineteen-rational-two-ports/trap_design.py
+0c33fee4a1aa0b6932970ca114f28cb0d37c2227c81d102d955623b77e41923b  ai-generated/research/dirk12-nineteen-rational-two-ports/verify.py
+170bbf5791652b0fa18a8bbd66a0cd74e2f9d63d1c37967ab67043dda3b463be  ai-generated/research/dirk12-nineteen-rational-two-ports/verify-independent.py
+423c29ff874299a198ca09f0344b30c1509372a94ee170f5cceff43d5c8d5881  ai-generated/research/dirk12-nineteen-rational-two-ports/replay-independent.txt

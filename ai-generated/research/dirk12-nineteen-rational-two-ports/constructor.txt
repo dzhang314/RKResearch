@@ -1,0 +1,3 @@
+rank, duplicate causal shifts, free scalar clock, affine slope: (51, [[Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1)]], Fraction(26881, 94316), Fraction(-17793879367, 6805627317))
+coefficient denominator bits 538 unpaid defect gcd stripped 1
+next bush 97680781467/62269814438819680

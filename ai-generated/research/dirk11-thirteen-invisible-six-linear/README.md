@@ -328,6 +328,4 @@ consecutive cofactor pivots in the exact contact branch. Nothing
 requires reduction of a ghost clock, arbitrary weight, or diagonal.
 
 The exact symbolic and finite arithmetic above have independent Python
-replay. Earlier linked modules contain separate Lean certificates for
-quadratic and scalar steps. This note does not claim a Lean check of the
-new linear-profile elimination or an end-to-end nonexistence theorem.
+replay. The [Lean companion](../../lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixLinear.lean) certifies seven scalar identities, including the undivided pole contact, first-ghost mark, and two affine two-gap gates. The [Lean/Mathlib 4.36.0 audit](lean-audit-4.36.0.txt) reports ordinary mathematical axioms only. The rooted transfer and finite elimination are not an end-to-end Lean nonexistence theorem.

@@ -1,0 +1,16 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixLinear
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.pole_contact
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.first_ghost_marks
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.one_gap_location
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.homogeneous_quadratic_mark
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.contact_mark
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_affine_gate
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_scaled_gate
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.pole_contact
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.first_ghost_marks
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.one_gap_location
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.homogeneous_quadratic_mark
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.contact_mark
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_affine_gate
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_scaled_gate

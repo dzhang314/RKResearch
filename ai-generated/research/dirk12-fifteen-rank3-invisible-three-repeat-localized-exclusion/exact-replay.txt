@@ -1,0 +1,8 @@
+mod 1013, asymmetric: 140 nonzero/rank-two cases
+mod 1013, symmetric: 80 nonzero/rank-two cases
+mod 1013, literal_taps: 480 nonzero/rank-two cases
+mod 1013, singleton_leading: 480 nonzero/rank-two cases
+mod 1013, unspent: 480 nonzero/rank-two cases
+mod 1013, first_spent_before: 1440 nonzero/rank-two cases
+mod 1013, first_spent_after: 1440 nonzero/rank-two cases
+mod 1013, separable_derivative: 480 nonzero/rank-two cases

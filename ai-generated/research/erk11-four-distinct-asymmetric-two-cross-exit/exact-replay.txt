@@ -1,0 +1,3 @@
+asym two cross projection 252 108 [(4, 1), (10, 2)]
+asym two cross actual fiber 4 T 1 guard True
+asym two cross actual fiber 10 T 1 guard True

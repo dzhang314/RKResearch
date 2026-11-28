@@ -1,0 +1,29 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.pole_contact.{u_1} {K : Type u_1} [CommRing K]
+  (f h l u q r v s m : K) (hz : u = 0) (hg : f + u * q - h * l = -(42 * m * r)) (hh : s = r + u * v) :
+  f - h * l + 42 * m * s = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.first_ghost_marks.{u_1} {K : Type u_1} [CommRing K]
+  (z d n₀ n₁ v₀ v₁ e₀ e₁ r₀ r₁ : K) (hn₀ : v₀ = n₀ - d) (hn₁ : v₁ = n₁ - z * d) (he₀ : v₀ + e₀ = 0) (he₁ : v₁ + e₁ = 0)
+  (hr₀ : r₀ = n₀ + e₀) (hr₁ : r₁ = n₁ + e₁) : d = r₀ ∧ r₁ - z * r₀ = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.one_gap_location.{u_1} {K : Type u_1} [CommRing K]
+  (ρ ξ z t e s : K) (hclock : z = 1 - ξ) (hroot : (ρ - ξ) * t = -(42 * e * s)) : z * t = (1 - ρ) * t - 42 * e * s
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.homogeneous_quadratic_mark.{u_1} {K : Type u_1} [CommRing K]
+  (a b c n t z : K) (hclock : n = z * t) (hmark : a * z ^ 2 + b * z + c = 0) : a * n ^ 2 + b * n * t + c * t ^ 2 = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.contact_mark.{u_1} {K : Type u_1} [CommRing K]
+  (p a b c d e f : K) (h₀ : d = p * a) (h₁ : e = p * b) (h₂ : f = p * c) :
+  d + e * p + f * p ^ 2 - p * (a + b * p + c * p ^ 2) = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_affine_gate.{u_1} {K : Type u_1} [Field K]
+  (z w p a b l : K) (hzw : z ≠ w) (hz : a + b * z = l * (p - z)) (hw : a + b * w = l * (p - w)) : a + b * p = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_scaled_gate.{u_1} {K : Type u_1} [Field K]
+  (z w p a b l m : K) (hzw : z ≠ w) (hz : m * (a + b * z) = l * (p - z)) (hw : m * (a + b * w) = l * (p - w)) :
+  m * (a + b * p) = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.pole_contact' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.first_ghost_marks' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.one_gap_location' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.homogeneous_quadratic_mark' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.contact_mark' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_affine_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixLinear.two_gap_scaled_gate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

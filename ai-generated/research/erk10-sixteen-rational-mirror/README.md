@@ -40,6 +40,11 @@ factorial-only upper remains 17.
 
 ## Combined characteristic coverage
 
+The newer [five-tableau rational portfolio](../erk10-sixteen-rational-portfolio/README.md)
+covers every admissible local and finite-characteristic ring, including
+the 21 primes listed below. The remainder of this section describes
+only the initial two-construction comparison.
+
 Combine this tableau with the [nineteen prime-power families](../erk10-sixteen-late-helper-primes/README.md).
 For primes not dividing the coefficient denominator, this rational
 tableau specializes at every power of the prime. Nine of its

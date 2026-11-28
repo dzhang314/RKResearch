@@ -1,0 +1,7 @@
+../erk10-sixteen-rational-mirror/tableau.json distinct stages 16 rooted conditions 1205 defects -44183114898821/88516189142307000 -506482972805483195311/82783211226952318425000
+theta-five-fourths.json distinct stages 16 rooted conditions 1205 defects 1691/27783000 -50329/357210000
+denominator-unit-at-11.json distinct stages 16 rooted conditions 1205 defects 10281054770296984451/101430609698893769280000 -1580782435253197351837/779417264772637162560000
+denominator-unit-at-13.json distinct stages 16 rooted conditions 1205 defects 58014567931723802324069/895164549957335337177540096 -577229118592014411047078673162971/19595092960614736461392401950374400
+theta-four.json distinct stages 16 rooted conditions 1205 defects -46337/103680 723883/48384000
+gcd of the five coefficient denominators: 816480000
+No common denominator prime outside 10!.

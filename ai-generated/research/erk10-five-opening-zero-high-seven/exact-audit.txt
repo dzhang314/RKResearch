@@ -1,0 +1,5 @@
+seven visible labels (zero rows, endpoint excess, interior excess): [(1, 0, 2), (1, 1, 1), (1, 2, 0), (2, 0, 1), (2, 1, 0), (3, 0, 0)]
+early added endpoint: homogeneous two-tap solve and all three z=0 factors checked
+invisible double label: exceptional target residual = -z^2*(z-a)^2/4
+tripled endpoint: independent k_t value and corrected terminal square checked
+ghost + added endpoint: blind primitive and both nodal cofactor formulas checked

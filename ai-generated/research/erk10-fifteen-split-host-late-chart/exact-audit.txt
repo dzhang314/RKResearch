@@ -1,0 +1,4 @@
+exact orthogonal-quadratic moments, determinant and degree-eight discriminant
+all rational discriminant residues excluded: mod7 units and valuation-one edges
+three-site cardinal interpolation of V(z)/z; exact polynomial quotient
+A(1)=0: literal first two ratio formulas and symmetric sum/product reduction

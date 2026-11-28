@@ -1,0 +1,28 @@
+gate G (4, 15, 12)
+gate K (2, 6, 4)
+gate Q (4, 12, 12)
+gate F (3, 10, 10)
+gate X (4, 23, 21)
+proj K (32, 28) 0.02
+proj Q (58, 60) 2.56
+proj F (51, 53) 3.14
+proj X (52, 61) 12.18
+valuation progress 8 nullity 8 sec 23.4
+valuation progress 15 nullity 7 sec 46.64
+valuation progress 21 nullity 6 sec 58.65
+valuation progress 26 nullity 5 sec 69.34
+valuation progress 30 nullity 4 sec 78.97
+valuation progress 34 nullity 4 sec 87.34
+valuation progress 38 nullity 4 sec 96.28
+valuation progress 41 nullity 3 sec 103.85
+valuation progress 43 nullity 2 sec 110.25
+valuation progress 44 nullity 1 sec 114.72
+valuation progress 45 nullity 1 sec 117.36
+valuation progress 46 nullity 1 sec 119.72
+Q characteristic-zero degree 3544 exact (a-2) power witness [8, 7, 6, 5, 4, 4, 4, 3, 2, 1, 1, 1]
+valuation progress 14 nullity 14 sec 25.71
+valuation progress 25 nullity 11 sec 42.22
+valuation progress 36 nullity 11 sec 54.11
+valuation progress 46 nullity 10 sec 66.41
+X characteristic-zero degree 3408 exact (a-2) power witness [14, 11, 11, 10]
+Exact degrees and both common-factor lifts verified.

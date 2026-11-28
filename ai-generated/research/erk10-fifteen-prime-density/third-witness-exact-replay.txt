@@ -1,0 +1,17 @@
+Decic Frobenius 41 (10,) [0, 0, 0, 0, 0, 0, 0, 0, 0, 10]
+Decic Frobenius 53 (1, 2, 7) [1, 3, 1, 3, 1, 3, 8, 3, 1, 3]
+Decic Frobenius 269 (1, 1, 1, 7) [3, 3, 3, 3, 3, 3, 10, 3, 3, 3]
+Quadratic characters 19 011010 (2, 11)
+Quadratic characters 23 110001 (10, 13)
+Quadratic characters 31 101010 (7, 14)
+Quadratic characters 41 111111 (17, 29)
+Quadratic characters 43 010011 (42, 17)
+Quadratic characters 47 001100 (37, 13)
+Specified extension degree 1: 535038692663489723/789019852013568000 (67.810548911%)
+Specified extension degree 2: 2038195978321/2080899072000 (97.947853682%)
+Specified extension degree 3: 1070788017536573/1391569403904000 (76.948229426%)
+Specified extension degree 4: 1 (100.000000000%)
+Least residue degree 1: 535038692663489723/789019852013568000 (67.810548911%)
+Least residue degree 2: 1664525222582996707/5523138964094976000 (30.137304772%)
+Least residue degree 3: 4838132071/832359628800 (0.581255013%)
+Least residue degree 4: 61215527003/4161798144000 (1.470891304%)

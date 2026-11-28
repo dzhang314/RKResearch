@@ -1,0 +1,41 @@
+coprime generic fifth s/g True 0 (0, 21, 24, 0, 1) (0, 7, 12, 0, 1) [0, 0, 6, 0, 0, 0, 0, 1]
+coprime rear Gauss raw exact projection True 0 True 9 120 0.95 tail (0, 3, 12, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma True 0 True 9 99 literal s leading lower 0
+verified coprime rear Gauss phase True 0 True 9 1129 203 (35, 35, 35, 35)
+coprime rear Gauss raw exact projection True 0 False 9 134 1.22 tail (0, 3, 14, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma True 0 False 9 120 literal s leading lower 0
+verified coprime rear Gauss phase True 0 False 9 1129 203 (39, 39, 39, 39)
+coprime rear Gauss raw exact projection True 0 False 8 113 0.75 tail (0, 3, 11, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma True 0 False 8 99 literal s leading lower 0
+verified coprime rear Gauss phase True 0 False 8 1129 203 (37, 37, 37, 37)
+coprime generic fifth s/g True 1 (0, 21, 24, 0, 1) (0, 7, 12, 0, 1) [0, 0, 0, 6, 0, 0, 0, 1]
+coprime rear Gauss raw exact projection True 1 True 9 120 1.07 tail (0, 3, 12, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma True 1 True 9 99 literal s leading lower 0
+verified coprime rear Gauss phase True 1 True 9 1559 529 (33, 33, 33, 33)
+coprime rear Gauss raw exact projection True 1 False 9 134 1.37 tail (0, 3, 14, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma True 1 False 9 120 literal s leading lower 0
+verified coprime rear Gauss phase True 1 False 9 1129 203 (33, 33, 33, 33)
+coprime rear Gauss raw exact projection True 1 False 8 113 1.01 tail (0, 3, 11, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma True 1 False 8 99 literal s leading lower 0
+verified coprime rear Gauss phase True 1 False 8 1129 203 (28, 28, 28, 28)
+coprime generic fifth s/g False 0 (0, 21, 24, 0, 1) (0, 7, 12, 0, 1) [0, 0, 6, 0, 0, 0, 0, 1]
+coprime rear Gauss raw exact projection False 0 True 9 120 1.19 tail (0, 3, 12, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma False 0 True 9 99 literal s leading lower 0
+verified coprime rear Gauss phase False 0 True 9 1559 529 (23, 23, 23, 23)
+coprime rear Gauss raw exact projection False 0 False 9 134 1.63 tail (0, 3, 14, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma False 0 False 9 120 literal s leading lower 0
+verified coprime rear Gauss phase False 0 False 9 1559 529 (21, 21, 21, 21)
+coprime rear Gauss raw exact projection False 0 False 8 113 0.82 tail (0, 3, 11, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma False 0 False 8 99 literal s leading lower 0
+verified coprime rear Gauss phase False 0 False 8 1559 529 (14, 14, 14, 14)
+coprime generic fifth s/g False 1 (0, 21, 24, 0, 1) (0, 7, 12, 0, 1) [0, 0, 0, 6, 0, 0, 0, 1]
+coprime rear Gauss raw exact projection False 1 True 9 120 1.21 tail (0, 3, 12, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma False 1 True 9 99 literal s leading lower 0
+verified coprime rear Gauss phase False 1 True 9 1129 203 (17, 17, 17, 17)
+coprime rear Gauss raw exact projection False 1 False 9 134 1.27 tail (0, 3, 14, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma False 1 False 9 120 literal s leading lower 0
+verified coprime rear Gauss phase False 1 False 9 1129 203 (21, 21, 21, 21)
+coprime rear Gauss raw exact projection False 1 False 8 113 0.95 tail (0, 3, 11, 3, 1) strip tail [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+coprime rear Gauss retained gamma False 1 False 8 99 literal s leading lower 0
+verified coprime rear Gauss phase False 1 False 8 1129 203 (20, 20, 20, 20)
+all twelve rear Gauss orientations excluded

@@ -1,0 +1,7 @@
+894a56222672516b7168873a062bcb456a875e7319050102548d909f9421e665  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-rear-gauss/README.md
+467fb60da995b49f20555c849d513d97b543969869287e1091069db375cf3358  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-rear-gauss/check_eight_coprime_one_front_rear_gauss.py
+d8d459fa8cee6b29bcadddf2f23f0f3f0c69e67a3a808a5f0b0a2a33716318bb  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-rear-gauss/rear_gauss_fibers.py
+927f9e940326cfeb69a8e8eb67dc3585f688abb01406bab9d6162eb4be900a44  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-rear-gauss/rear_gauss_projection.py
+5c7e7c597a971b71b17890c81ac8540a8c68432dac823ecfda84270ed594c16c  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-rear-gauss/exact-replay.txt
+2c3d1957f35e6ce70e5c56f91f6df9ffb6b4551c649072dac17950952beed075  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-rear-gauss/lean-4.36.0-audit.txt
+1ec467fa1a4435be40896417cedc485708f74f6519c64671ef6e369d0f3991c9  ai-generated/lean/RKCert/ReviewedNative/SDIRK8EightActiveRearGaussReads.lean

@@ -1,5 +1,8 @@
 # ERK10: the regular seven-label triple-and-pair chart is impossible
 
+The [zero-opening extension](ZERO-OPENINGS.md) removes all individual
+score assumptions; only the two nonzero pooled scores are still needed.
+
 **Theorem.** Use the
 [actual five-opening reverse word budget](../erk10-five-opening-nonsplit-kernel/README.md)
 at order ten, with ten physical high rows and seven distinct nonzero

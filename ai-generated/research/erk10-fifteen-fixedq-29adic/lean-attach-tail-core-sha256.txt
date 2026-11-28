@@ -1,0 +1,11 @@
+6650c93bb966abdfcbe65a205cc8a3db088f9d495a728b9a6d046f3a742aa819  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicAttachCore.lean
+e3aa90110ecfa94db1edf01672a185a1459eec5eabb3f1efc8f0d2dc0e3941be  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicZTailCore.lean
+38caf5310f324bf7c0238c388d47792f0e2c05336c43f3dcd9f6156c9e8ae528  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-ATTACH-TAIL-CORE.md
+766a151478519f3a85e805c1621055525886b9536fe78ed0362250787fccfbcf  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-attach-core-kernel-4.34.1.log
+891d5eb36ab63d40c47bf534029e2dcad227d63d98411e7ec23e563c71407863  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-attach-core-kernel-4.35.0.log
+da38a5b91babe9cc4315648a45830b3d691ee7fa5aff0810a3512d963fbe44bf  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-attach-core-kernel-4.36.0.log
+a95ce0e4552ef2be2e7780f8ee74529ae2ede899f59b7dd7cd3db602ae17c59d  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-attach-core-kernel-4.37.0-rc1.log
+2c261589292842d796463ff47f4d22916df3aa1ae4119af8c590e447a51a9cc8  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-core-kernel-4.34.1.log
+0c0e524c4829202dc2ad44f22f25e85b02c65c820433fb5e63022ffb0ede9876  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-core-kernel-4.35.0.log
+835933d54a509700c591131d6618acfb6469bc49c85f15ad4f4c09f348d14122  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-core-kernel-4.36.0.log
+d09b24d7673ab5853651b3a5cc080ccb245082675f2523f157f482247c473d38  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-tail-core-kernel-4.37.0-rc1.log

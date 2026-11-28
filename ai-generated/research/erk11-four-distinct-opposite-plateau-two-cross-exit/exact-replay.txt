@@ -1,0 +1,4 @@
+opposite-half actual guard fiber 4 closed
+opposite-half actual guard fiber 10 closed
+opposite-free actual guard fiber 4 closed
+opposite-free actual guard fiber 10 closed

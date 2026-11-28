@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10FifteenPureDonorMirrorMod.same_pair_quintic_mod7' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.ERK10FifteenPureDonorMirrorMod.cross_pair_degree_twelve_mod19' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.ERK10FifteenPureDonorMirrorMod.different_pair_factors' depends on axioms: [propext,
+ Classical.choice]

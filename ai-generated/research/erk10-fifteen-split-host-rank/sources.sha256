@@ -1,0 +1,9 @@
+defc296a9e243b2d1e091ef3c9e933f21dbfef636480a684c1566cb3aacb1975  ai-generated/research/erk10-fifteen-split-host-rank/README.md
+3080e4102c7e115aa8d16cf333a07eddeae5f8030d51e6882ab0a5c9cc357533  ai-generated/research/erk10-fifteen-split-host-rank/HOST-GATES.md
+101417fa1073e0b7c64f170ebe31704c9b5d5acef993f315e70edcb26660cbee  ai-generated/research/erk10-fifteen-split-host-rank/COLOUR-SUPPORT.md
+ea2e4973bb42b6a3308581b457989022ab40a9788a7aa992dca86dba13996854  ai-generated/research/erk10-fifteen-split-host-rank/LARGEST-CLOCKS.md
+f827b206376d56c19e56164a8ee8a9aa91780b93cdc5df921377390bdff750ca  ai-generated/research/erk10-fifteen-split-host-rank/NONLINEAR.md
+96af2f5e131fd754639f61443c2762c0a1b3d5b83543f6435ed31d2eb3a3b17d  ai-generated/research/erk10-fifteen-split-host-rank/LEAN.md
+4b720c8912d9772820b03833141797b68aca8b9bed5ddfdc1083ae67ec245b1a  ai-generated/research/erk10-fifteen-split-host-rank/audit.py
+8bc2f1d70855680024ded8cc95000c40a46edea8d5a9d6b2f3dc48d7a46ef178  ai-generated/research/erk10-fifteen-split-host-rank/exact-audit.txt
+e98ee6b874b56ddde2dce906f8baa9247c98da528b7c837a37ada482527e694d  ai-generated/lean/RKCert/ReviewedNative/ERK10SplitHostRankScalars.lean

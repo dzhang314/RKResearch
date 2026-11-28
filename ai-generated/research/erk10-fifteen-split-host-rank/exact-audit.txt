@@ -1,0 +1,5 @@
+independent first reads and exact third debut z, d_t, d_z checked
+all four exact dirty-repeat/zero probes checked
+fourth distinct row compatibility determinant forces a previous clock
+all six projective guard polynomials have no root modulo 7
+literal host primitive, fixed-q quadratic, and both rank-two prefix dirt gates checked

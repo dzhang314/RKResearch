@@ -1,0 +1,51 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.primitive_paid_at_terminal.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] {A : Matrix (Fin 13) (Fin 13) K} {b : Fin 13 → K} (ha : A.IsLowerTriangular)
+  (ho : RKResearch.HasOrder 11 A b) (norm : RKResearch.Certified.Graded.OrderElevenThirteen.Normalized A b)
+  (P : Polynomial K) (j n : ℕ) (deg : P.natDegree ≤ n + 1) (pay : j + n + 3 ≤ 11) :
+  (RKResearch.Certified.Graded.mat A.transpose)
+        ((RKCert.Endpoint.weightedEval (RKResearch.Certified.Graded.reflectedClock A) b) P) -
+      (RKCert.Endpoint.weightedEval (RKResearch.Certified.Graded.reflectedClock A) b)
+        (RKResearch.Certified.Graded.primitive P) ∈
+    RKResearch.Certified.Graded.Reverse.zeroAt
+      (RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A j)) (Fin.last 12)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.compensated_paid_at_terminal.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] {A : Matrix (Fin 13) (Fin 13) K} {b : Fin 13 → K} (ha : A.IsLowerTriangular)
+  (ho : RKResearch.HasOrder 11 A b) (norm : RKResearch.Certified.Graded.OrderElevenThirteen.Normalized A b)
+  (P : Polynomial K) (j n : ℕ) (deg : P.natDegree ≤ n + 1) (pay : j + n + 3 ≤ 11) {m : Fin 13 → K}
+  (hm : m ∈ RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A (j + 1))) :
+  (RKResearch.Certified.Graded.mat A.transpose)
+        (m - (RKCert.Endpoint.weightedEval (RKResearch.Certified.Graded.reflectedClock A) b) P) +
+      (RKCert.Endpoint.weightedEval (RKResearch.Certified.Graded.reflectedClock A) b)
+        (RKResearch.Certified.Graded.primitive P) ∈
+    RKResearch.Certified.Graded.Reverse.zeroAt
+      (RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A j)) (Fin.last 12)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.calibrate_live_ghost.{u_1, u_2} {K : Type u_1} [Field K]
+  {I : Type u_2} (y G H raw : I → K) (z : I) (P : Polynomial K) (d : ℕ) (a : K) (deg : P.natDegree ≤ d + 1)
+  (live : G z ≠ 0) (head : H z = 0) (at_z : raw z = 0)
+  (shape : ∀ (i : I), raw i = Polynomial.eval (y i) P * G i + a * H i) :
+  ∃ Q, Q.natDegree ≤ d ∧ ∀ (i : I), raw i = Polynomial.eval (y i) Q * ((y i - y z) * G i) + a * H i
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_clock.{u_1} {K : Type u_1} [Field K]
+  (w x a e d q : K) (live : d ≠ 0) (h0 : q = -d) (h1 : w * q = -(a + e * x) * d) : a + e * x = w
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_diagonal.{u_1} {K : Type u_1} [Field K]
+  (x w d q : K) (live : q ≠ 0) (comm : (x - w - d) * q = 0) : d = x - w
+RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.two_nodal_taps.{u_1} {K : Type u_1} [Field K] (r s x y p q : K)
+  (distinct : r ≠ s) (h0 : x + y = p) (h1 : r * x + s * y = q) : x = (s * p - q) / (s - r) ∧ y = (q - r * p) / (s - r)
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.primitive_paid_at_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.compensated_paid_at_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.calibrate_live_ghost' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.two_nodal_taps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

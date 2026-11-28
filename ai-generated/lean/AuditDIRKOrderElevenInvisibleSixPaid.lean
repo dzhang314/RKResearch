@@ -1,0 +1,14 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixPaid
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.primitive_paid_at_terminal
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.compensated_paid_at_terminal
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.calibrate_live_ghost
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_clock
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_diagonal
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.two_nodal_taps
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.primitive_paid_at_terminal
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.compensated_paid_at_terminal
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.calibrate_live_ghost
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_clock
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.first_optional_diagonal
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixPaid.two_nodal_taps

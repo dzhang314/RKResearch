@@ -1,0 +1,20 @@
+reduced gate 2 subresultant degrees [4, 2, 1, 0]
+factors [(4, 4, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (24, 1, 482450985)]
+reduced gate 2 subresultant degrees [4, 2, 1, 0]
+factors [(4, 4, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (24, 1, 482450985)]
+    0.99 all residue contact and geometry pivots live
+    1.00 clock tower and actual fit built
+    1.00 new Adj 2
+    1.01 quintic after affine middle 3
+    1.01 commutator after affine middle 4
+Entire monic degree-24 algebra, p=101: rank 144/144 at cap 5.
+reduced gate 2 subresultant degrees [4, 2, 1, 0]
+factors [(4, 4, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1'), (24, 1, 482450985)]
+    0.88 all residue contact and geometry pivots live
+    0.90 clock tower and actual fit built
+    0.90 new Adj 2
+    0.90 quintic after affine middle 3
+    0.91 commutator after affine middle 4
+Entire monic degree-24 algebra, p=103: rank 144/144 at cap 5.
+QQ coordinate audit: exact Adj, Q, middle and reflection identities in four independent scaled evaluations.
+Independent exact fraction-field old-fit, determinant and monomial checks passed.

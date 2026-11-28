@@ -1,0 +1,15 @@
+Nonmirror singleton: exact collinearity equation verified.
+Mirror singleton: proved square formula and its impossible 7-adic residue.
+0 1 degree 12 10 rational roots {1: 1, -1: 1} factor degree/no-root prime [(2, 5), (8, 5)] noncolliding nonzero-mass {}
+0 2 degree 16 14 rational roots {1: 1, -1: 1} factor degree/no-root prime [(2, 5), (12, 13)] noncolliding nonzero-mass {}
+0 3 degree 16 14 rational roots {1: 1, -1: 1} factor degree/no-root prime [(2, 5), (12, 13)] noncolliding nonzero-mass {}
+1 0 degree 14 12 rational roots {1: 1, -1: 1} factor degree/no-root prime [(2, 5), (2, 3), (6, 5)] noncolliding nonzero-mass {}
+1 2 degree 14 12 rational roots {1: 1, -1: 1} factor degree/no-root prime [(2, 5), (2, 3), (6, 17)] noncolliding nonzero-mass {}
+1 3 degree 14 12 rational roots {1: 1, -1: 1} factor degree/no-root prime [(2, 5), (2, 3), (6, 17)] noncolliding nonzero-mass {}
+2 0 degree 18 12 rational roots {1: 1, 0: 1, -1: 1, 1/3: 1} factor degree/no-root prime [(2, 5), (12, 19)] noncolliding nonzero-mass {}
+2 1 degree 14 8 rational roots {1: 1, 0: 1, -1: 1, 1/3: 1} factor degree/no-root prime [(2, 5), (8, 17)] noncolliding nonzero-mass {}
+2 3 degree 16 12 rational roots {1: 1, 0: 1, -1: 1, 1/3: 1} factor degree/no-root prime [(2, 5), (10, 11)] noncolliding nonzero-mass {}
+3 0 degree 18 12 rational roots {1: 1, 0: 1, -1: 1, -1/3: 1} factor degree/no-root prime [(2, 5), (12, 19)] noncolliding nonzero-mass {}
+3 1 degree 14 8 rational roots {1: 1, 0: 1, -1: 1, -1/3: 1} factor degree/no-root prime [(2, 5), (8, 17)] noncolliding nonzero-mass {}
+3 2 degree 16 12 rational roots {1: 1, 0: 1, -1: 1, -1/3: 1} factor degree/no-root prime [(2, 5), (10, 11)] noncolliding nonzero-mass {}
+COMPLETE 12 cases 0 actual rational survivors

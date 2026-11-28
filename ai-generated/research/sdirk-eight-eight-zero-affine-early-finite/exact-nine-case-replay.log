@@ -1,0 +1,179 @@
+star 0
+0.08 primitive degree 6
+0.11 shape degrees [(6, 2), (1, 3)]
+0.2 A0 degrees 22 5
+0.28 projection pair 41 37
+0.37 unstripped norm 82
+0.83 degree after l2 factors 62
+linear guard multiplicity 12
+linear guard multiplicity 2
+linear guard multiplicity 0
+0.91 guarded norm degree 48
+1.31 rank guard degree 30 42 0
+1.36 rank exact branch remainder -inf True
+1.43 after exact saturation 18
+verified 0 (18, 17, 11)
+star 1
+0.06 primitive degree 6
+0.12 shape degrees [(6, 2), (1, 3)]
+0.19 A0 degrees 22 5
+0.28 projection pair 41 37
+0.39 unstripped norm 82
+0.88 degree after l2 factors 62
+linear guard multiplicity 12
+linear guard multiplicity 0
+linear guard multiplicity 2
+0.95 guarded norm degree 48
+1.21 rank guard degree 30 42 0
+1.31 rank exact branch remainder -inf True
+1.42 after exact saturation 18
+verified 1 (18, 17, 11)
+star 2
+0.11 primitive degree 6
+0.17 shape degrees [(6, 5), (1, 1)]
+0.32 A0 degrees 22 6
+0.5 projection pair 45 41
+0.62 unstripped norm 90
+1.47 degree after l2 factors 66
+linear guard multiplicity 12
+linear guard multiplicity 0
+linear guard multiplicity 0
+1.6 guarded norm degree 54
+1.63 collision exact division ANP([1], [1, -24, 399/2, -725, 17961/16, -1959/4, -1847/16], QQ) 6 True
+1.67 collision branch remainder -inf True
+2.02 rank guard degree 30 42 0
+2.09 rank exact branch remainder -inf True
+2.11 after exact saturation 18
+verified 2 (18, 13, 9)
+ghost 0
+0.45 primitive degree 18
+0.96 shape degrees [(6, 2), (3, 3)]
+2.15 A0 degrees 24 5
+3.23 projection pair 43 39
+4.24 unstripped norm 86
+4.59 safe leading-factor division complete 66
+4.59 degree after l2 factors 66
+linear guard multiplicity 12
+linear guard multiplicity 2
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+4.92 guarded norm degree 48
+5.64 rank guard degree 30 42 0
+6.36 rank exact branch remainder -inf True
+6.99 after exact saturation 18
+verified ghost 0 (18, 17, 6)
+ghost 1
+0.34 primitive degree 18
+0.8 shape degrees [(6, 2), (3, 3)]
+1.65 A0 degrees 24 5
+2.56 projection pair 43 39
+3.58 unstripped norm 86
+3.96 safe leading-factor division complete 66
+3.96 degree after l2 factors 66
+linear guard multiplicity 12
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+linear guard multiplicity 2
+4.18 guarded norm degree 48
+4.88 rank guard degree 30 42 0
+5.38 rank exact branch remainder -inf True
+6.28 after exact saturation 18
+verified ghost 1 (18, 17, 6)
+ghost 2
+0.19 primitive degree 18
+0.43 shape degrees [(6, 5), (3, 3)]
+1.2 A0 degrees 24 8
+2.98 projection pair 55 51
+3.56 unstripped norm 110
+3.93 safe leading-factor division complete 78
+3.93 degree after l2 factors 78
+linear guard multiplicity 12
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+3.98 guarded norm degree 66
+4.07 collision exact division 0 6 1
+4.11 collision branch remainder -inf True
+4.17 collision exact division 1 6 1
+4.2 collision branch remainder -inf True
+4.25 collision exact division 2 6 1
+4.28 collision branch remainder -inf True
+4.47 rank guard degree 30 42 0
+4.76 rank exact branch remainder -inf True
+4.82 after exact saturation 18
+verified ghost 2 (18, 17, 6)
+arith 0
+0.65 primitive degree 36
+5.91 shape degrees [(6, 2), (3, 3)]
+10.35 A0 degrees 25 5
+12.6 projection pair 44 40
+15.11 unstripped norm 88
+16.02 safe leading-factor division complete 68
+16.02 degree after l2 factors 68
+linear guard multiplicity 12
+linear guard multiplicity 4
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+16.38 guarded norm degree 48
+17.87 rank guard degree 30 42 0
+19.37 rank exact branch remainder -inf True
+20.71 after exact saturation 18
+verified arith 0 (18, 59, 28)
+arith 1
+0.55 primitive degree 36
+4.9 shape degrees [(6, 2), (3, 3)]
+8.33 A0 degrees 25 5
+11.14 projection pair 44 40
+15.14 unstripped norm 88
+16.36 safe leading-factor division complete 68
+16.36 degree after l2 factors 68
+linear guard multiplicity 12
+linear guard multiplicity 0
+linear guard multiplicity 4
+linear guard multiplicity 0
+linear guard multiplicity 2
+linear guard multiplicity 0
+linear guard multiplicity 2
+16.85 guarded norm degree 48
+19.32 rank guard degree 30 42 0
+21.35 rank exact branch remainder -inf True
+23.53 after exact saturation 18
+verified arith 1 (18, 59, 28)
+arith 2
+0.69 primitive degree 36
+5.86 shape degrees [(6, 5), (3, 3)]
+14.51 A0 degrees 25 9
+34.02 projection pair 60 56
+40.06 unstripped norm 120
+46.44 safe leading-factor division complete 84
+46.44 degree after l2 factors 84
+linear guard multiplicity 12
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+linear guard multiplicity 0
+46.68 guarded norm degree 72
+47.53 collision exact division 0 6 2
+47.76 collision branch remainder -inf True
+48.07 collision exact division 1 6 1
+48.34 collision branch remainder -inf True
+48.65 collision exact division 2 6 1
+48.96 collision branch remainder -inf True
+51.13 rank guard degree 30 42 0
+53.46 rank exact branch remainder -inf True
+53.73 after exact saturation 18
+verified arith 2 (18, 103, 65)

@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightEightZeroAffineFiniteMasks
+
+open RKResearch.Certified.SDIRKEightEightZeroAffineFiniteMasks
+
+#print axioms affine_relative_cardinal
+#print axioms affine_arithmetic_third
+#print axioms affine_late_star_mask

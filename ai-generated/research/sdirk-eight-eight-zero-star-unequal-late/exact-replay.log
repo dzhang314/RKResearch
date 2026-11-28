@@ -1,0 +1,16 @@
+0.09 primitive degree 6
+0.14 GK 3
+0.19 AB degree in gap 3
+0.19 coeff degrees [(3, 2, 12), (4, 2, 15), (5, 2, 18), (6, 2, 21)] [(10, 2, 21), (11, 2, 24), (12, 2, 24), (12, 2, 27)]
+54.71 inner resultant degrees (48, 12, 439)
+57.29 norm pair 93 89
+58.03 raw norm degree 186
+66.78 leading guard stripped norm degree 138
+67.14 scalar guard removed 24
+67.15 scalar guard removed 0
+67.18 scalar guard removed 0
+67.18 guarded norm degree 114
+67.9 exact square-cube split and Hankel branch 30 18
+fibre census rank [(24, 'Hankel two-atom'), (1, 'Hankel two-atom'), (5, 'Hankel two-atom')]
+fibre census regular [(1, 3, 'both fourth reads excluded'), (3, 3, 'both fourth reads excluded'), (5, 3, 'both fourth reads excluded'), (9, 3, 'both fourth reads excluded')]
+fibre census drop [(4, 'no common gap')]

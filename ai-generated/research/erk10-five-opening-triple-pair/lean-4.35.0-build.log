@@ -1,0 +1,7 @@
+'RKResearch.Certified.ERK10TriplePairScalars.shiftedTripleDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TriplePairScalars.zeroFirstQuotient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10TriplePairScalars.exceptionalExit' depends on axioms: [propext, Classical.choice, Quot.sound]

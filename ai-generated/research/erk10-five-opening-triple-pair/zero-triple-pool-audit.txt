@@ -1,0 +1,3 @@
+tracking two copies extends by both zero sums, even at zero score
+lifting w_a imposes A+rho B=0, so two old scalar tap rows have rank ≤1
+calibrated second-target square: -z**2*(-a + z)**2

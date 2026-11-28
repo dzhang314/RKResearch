@@ -1,5 +1,8 @@
 # ERK10: the regular seven-label triple-and-pair chart is impossible
 
+The [zero-pool closure](ZERO-TRIPLE-POOL.md) now treats all pooled and
+physical scores, completing the guarded seven-label census.
+
 The [zero-opening extension](ZERO-OPENINGS.md) removes all individual
 score assumptions; only the two nonzero pooled scores are still needed.
 

@@ -1,0 +1,6 @@
+'RKResearch.Certified.SDIRKEightEightZeroLowLabels.sextic_mod_front' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightEightZeroLowLabels.front_gap_bezout' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightEightZeroLowLabels.no_zero_third_of_sextic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightEightZeroLowLabels.cleared_last_label' depends on axioms: [propext]

@@ -1,0 +1,8 @@
+'RKResearch.ERK11CentralVarianceFactorGate.cancelDormantPrimitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11CentralVarianceFactorGate.zeroVarianceMask' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CentralVarianceFactorGate.quadraticAtRoot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11CentralVarianceFactorGate.reflectedBilinearCoefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

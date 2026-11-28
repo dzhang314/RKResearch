@@ -1,0 +1,5 @@
+repeated first exact-cubic target: second target double-root factor
+a,b,a exceptional quotient: b*(a - 2*b)*(a - b)/2
+b,a,a exceptional determinant: -a**2*b*(a**3 - a**2*b - 2*a*al*b + 3*al*b**2)/6
+b,a,a quotient after h transfer: b*(a - 2*b)*(a - b)/2
+both exceptional next-target residuals: -z**2*(-a + z)**2/4

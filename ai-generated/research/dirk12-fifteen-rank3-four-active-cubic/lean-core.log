@@ -1,0 +1,28 @@
+Lean 4.34.1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.modulusChecks' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.gridChecks' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allTapNumerators' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allMomentDeterminants' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allCrossedIntegrals' depends on axioms: [propext]
+Lean 4.35.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.modulusChecks' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.gridChecks' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allTapNumerators' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allMomentDeterminants' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allCrossedIntegrals' depends on axioms: [propext]
+Lean 4.36.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.modulusChecks' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.gridChecks' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allTapNumerators' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allMomentDeterminants' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allCrossedIntegrals' depends on axioms: [propext]
+Lean 4.37.0-rc1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.modulusChecks' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.gridChecks' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allTapNumerators' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allMomentDeterminants' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.FourDirtyArithmetic.allCrossedIntegrals' depends on axioms: [propext,
+ Classical.choice]

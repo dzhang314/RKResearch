@@ -1,0 +1,15 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.paidFirstCubicPower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.paidSecondCubicPower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.paidThirdCubicPower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.crossedPrimitiveZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.rankThreeFaceReverseAlternative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

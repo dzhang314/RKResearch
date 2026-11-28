@@ -1,0 +1,12 @@
+import RKCert.Research.SDIRKEightFourZeroLowSupportActiveClock
+
+open RKResearch.Certified.SDIRKEightFourZeroLowSupportActiveClock
+
+#check consecutive_reverse_supported_reads
+#check actual_fifth_clock_cross
+#check zero_third_cubic_gate
+#check literal_projection_products
+#print axioms consecutive_reverse_supported_reads
+#print axioms actual_fifth_clock_cross
+#print axioms zero_third_cubic_gate
+#print axioms literal_projection_products

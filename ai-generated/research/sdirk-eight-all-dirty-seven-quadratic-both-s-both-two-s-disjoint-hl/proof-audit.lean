@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHL
+
+open RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSDisjointHL
+
+#print axioms scale_determinant
+#print axioms zero_front_slope_nonzero
+#print axioms quadratic_residual_identity
+#print axioms quadratic_residual_root

@@ -1,0 +1,19 @@
+exact universal heads built 0.05
+generic exact degree <=21, nonzero head at 21 1500
+generic plus exceptional constant nine-site front True s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 0) (0, 21, 0) only exact gamma/EarlyGauss factors [12, 3, 3]
+base fiber True 1129 203 1 1 profile degrees 5 5
+literal fifth missing cubic unit (True, 1, None, 8) 7
+base fiber True 1129 203 20 1 profile degrees 5 5
+literal fifth missing cubic unit (True, 20, None, 8) 7
+total base True 1129 203 [(1, 1), (20, 1)] 2
+exception verified True 1129 203 [12, 4, 2]
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+base fiber False 1129 203 6 1 profile degrees 5 5
+literal fifth missing cubic unit (False, 6, None, 8) 7
+base fiber False 1129 203 6 1 profile degrees 5 5
+literal fifth missing cubic unit (False, 6, None, 8) 7
+base fiber False 1129 203 9 1 profile degrees 5 5
+literal fifth missing cubic unit (False, 9, None, 8) 7
+total base False 1129 203 [(6, 1), (6, 1), (9, 1)] 3
+exception verified False 1129 203 [18, 6, 3]
+all degree-21 exceptional mixed-quintic orientations excluded

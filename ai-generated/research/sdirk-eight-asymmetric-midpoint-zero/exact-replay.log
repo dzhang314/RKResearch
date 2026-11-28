@@ -1,0 +1,10 @@
+AA gate degrees [12, 8, 13, 10, 20] paid support 4826809
+AZ gate degrees [24, 42, 62, 29, 39, 20, 13, 10] paid support 23298085122481
+ZZ gate degrees [21, 17, 31, 27, 13, 10, 20] paid support 23298085122481
+AA geometric p13 modulus x^2 + 2*x + 1
+AZ geometric p13 modulus x^2 + 2*x + 1
+ZZ geometric p13 modulus x^2 + 2*x + 1
+singular gap independent supports [219735220141, 3139321086281830924014713] gcd 1
+signed Cramer and diagonal identities verified
+k 1 complete quadratic splitting roots [0, 4*u + 5, 9*u + 9] ordered diagonal anchor pairs 0
+k -1 complete quadratic splitting roots [0, 9*u + 8, 4*u + 4] ordered diagonal anchor pairs 0

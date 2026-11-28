@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightAsymmetricMidpoint
+open RKResearch.Certified.SDIRKEightAsymmetricMidpoint
+#check noncentral_opposite_reject
+#check nonsquare_f13
+#check singular_gap_prime_support
+#print axioms noncentral_opposite_reject
+#print axioms nonsquare_f13
+#print axioms singular_gap_prime_support

@@ -1,0 +1,3 @@
+'RKResearch.ERK11LeftAffineMaskGate.rawAffineLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LeftAffineMaskGate.splitRawPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11LeftAffineMaskGate.forcedPhysicalAlias' depends on axioms: [propext, Classical.choice, Quot.sound]

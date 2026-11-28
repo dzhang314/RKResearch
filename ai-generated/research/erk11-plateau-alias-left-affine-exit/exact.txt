@@ -1,0 +1,7 @@
+Alias d row divisors (1, 0) (0, 1) slope divisors (0, 0) (0, 1)
+common factor: a^7 times three distinct factors (0,4),(4,4),(4,4)
+each factor directly forces left initial slope zero, left moment determinant zero, or x_N=a*x_D (forbidden actual clock alias c8=a)
+reduced degree 8 (power 2): exact linear d gcd, H=x_D=0
+reduced degree 12 (power 1): exact linear d gcd, both left slopes zero
+reduced degree 12 (power 2): exact linear d gcd, x_D=x_N=variance=0
+all raw left affine slopes excluded; no right pivot or finite place used

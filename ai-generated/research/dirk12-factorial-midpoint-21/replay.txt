@@ -1,0 +1,3 @@
+checked 7813 trees by order [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766]
+A denominator 120 b denominator 19958400 common 19958400 divides (12!)^1
+next tall -231/1024 next bush -1414477/222953472000

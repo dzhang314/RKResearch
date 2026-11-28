@@ -1,0 +1,7 @@
+0e6fce86f2ab8c4ad4392554a011cc6f933107b75c16c9fabd0e13ad18e04c7b  README.md
+9ab88a51b553af65afffd702eba1c5489aaa828aa94040e4616589e68779478e  audit.py
+7601118a4b483142e9afeb3e25cac3412985360bd84f5d6058600266176c0c22  exact-audit.txt
+c865e1c97d6da62d0d4186ada348c0ebd207567d4533895ce050926739bfaaa5  lean-4.36-audit.txt
+976299b5670024c00a36d7ca323e48e4d90a90bd434e4053bbdbd2e025e01009  lean-symmetric-mod8-audit.txt
+c27e3f45996e4028e28675cd660a18a260eb650c67722903c25b9f0509e7f4eb  ../../lean/RKCert/ReviewedNative/ERK10FiveOpeningLeakageHeadScalars.lean
+de121ae21a81919c36dfc5852543014c709afbdeb66760d9c6ad989f8c43d501  ../../lean/RKCert/ReviewedNative/ERK10SymmetricRadiusModEight.lean

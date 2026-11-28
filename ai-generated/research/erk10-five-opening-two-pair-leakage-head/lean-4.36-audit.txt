@@ -1,0 +1,4 @@
+'RKResearch.Certified.ERK10FiveOpeningLeakageHeadScalars.immediate_a_closure' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10FiveOpeningLeakageHeadScalars.interleaved_a_closure' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10FiveOpeningLeakageHeadScalars.two_helpers_before_closure' depends on axioms: [propext,
+ Quot.sound]

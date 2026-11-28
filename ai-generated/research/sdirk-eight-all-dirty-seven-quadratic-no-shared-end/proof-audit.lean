@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticNoSharedEnd
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticNoSharedEnd.shared_arithmetic_ratio
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticNoSharedEnd.shared_terminal_scale_clear

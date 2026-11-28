@@ -1,0 +1,11 @@
+f44c6c12bb2c2ca5a679356d688dd4af4e79a37245982faf8f688d9e7d91aab8  README.md
+7104067f83f91ad4fbbc452dbb1af4b45e92652940aeb770dd92ba8af55e3727  check_shared_mixed_arithmetic.py
+71727ba7d92df274d1913870559b3aa5f3598337391b819d5610d847ef54f87b  prefix_scalars.py
+even A2 projection deg [22, 33, 50] common factors [] t 0.03
+even A3 projection deg [31, 42, 74] common factors [] t 0.03
+even S projection deg [13, 24, 26] common factors [(2, 1)] t 0.03
+retained genuine Hermite W=t²; exact fibre gcd v
+split A2 projection deg [44, 66, 100] common factors [] t 0.05
+split A3 projection deg [62, 78, 124] common factors [] t 0.08
+split S projection deg [26, 48, 52] common factors [] t 0.14
+all shared-clock mixed arithmetic cases excluded

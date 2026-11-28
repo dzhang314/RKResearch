@@ -1,0 +1,2 @@
+0 terms 100 degrees (4, 4, 3) substituted 249 quotient 213 packing bits 3671 source bytes 230421
+1 terms 59 degrees (5, 2, 3) substituted 179 quotient 143 packing bits 2614 source bytes 110525

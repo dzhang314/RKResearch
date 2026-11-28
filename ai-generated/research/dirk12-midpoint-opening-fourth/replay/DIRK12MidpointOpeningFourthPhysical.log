@@ -1,0 +1,15 @@
+'RKResearch.Certified.DIRK12MidpointForward.Opening.card_fidelity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.row8_actual_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.row8_zero_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.row8_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.four_opening_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

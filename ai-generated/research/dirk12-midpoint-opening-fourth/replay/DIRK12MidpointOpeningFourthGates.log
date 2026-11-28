@@ -1,0 +1,9 @@
+'RKResearch.Certified.DIRK12MidpointForward.Opening.factor_gate0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.factor_gate1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.fourth_kernel_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -53,6 +53,8 @@ The [two normalized 13-stage DIRK11 chronologies](research/causal-profile-reduct
 
 The [coupled cubic-decoder obstruction](research/dirk10-cubic-decoder-ten-mesh-obstruction/README.md) exhausts 360 chronology classes of a specific six-opening, three-merge, rank-one DIRK10 construction. Its only regular rational candidate parameter forces a literal unpaid matrix entry. This does not change the 12–13 width range over the factorial localization.
 
+The [native Lean certificate for the real 14-stage DIRK11 construction](research/dirk11-width14-native/README.md) checks the literal tableau against the reviewed rooted-tree definition of exact order. The full build is verified on Lean/Mathlib 4.36.0. Standalone representative arithmetic also checks on 4.34.1, 4.35.0 and 4.37.0-rc1. This certifies the upper endpoint; the real interval remains 13–14.
+
 The [14-stage DIRK11 algebraic shell](research/dirk11-fourteen-prime-families/README.md) also gives exact order eleven in 68 prime families, over their p-adic integers and any nonzero commutative ring whose finite characteristic is supported on those primes. Independent replay checks all 3,047 rooted equations at each listed prime and prime square. The same construction gives order eleven over fields of size p⁸ for every p outside its stated denominator. These are upper bounds, not exclusions of 13.
 
 ## Exact explicit minima over nonzero commutative rings

@@ -1,0 +1,8 @@
+Lean 4.34.1
+'compat_failure' depends on axioms: [propext]
+Lean 4.35.0
+'compat_failure' depends on axioms: [propext]
+Lean 4.36.0
+'compat_failure' depends on axioms: [propext]
+Lean 4.37.0-rc1
+'compat_failure' depends on axioms: [propext]

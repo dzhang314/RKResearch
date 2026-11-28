@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.DIRKOrderElevenFourteenReal
+
+#check RKResearch.Certified.DIRKOrderElevenFourteenReal.exact_of_roots
+#check RKResearch.Certified.DIRKOrderElevenFourteenReal.exists_exact_real
+#print axioms RKResearch.Certified.DIRKOrderElevenFourteenReal.exact_of_roots
+#print axioms RKResearch.Certified.DIRKOrderElevenFourteenReal.exists_exact_real

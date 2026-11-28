@@ -1,0 +1,12 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.equality_reverse_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.equality_reverse_six_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.equality_reverse_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.weighted_grade_three_on_reflected_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

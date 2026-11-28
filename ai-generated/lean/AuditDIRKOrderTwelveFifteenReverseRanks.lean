@@ -1,0 +1,13 @@
+import RKCert.ReviewedNative.DIRKOrderTwelveFifteenReverseRanks
+
+open RKResearch.Certified.Graded.OrderTwelveFifteen
+
+#check equality_reverse_prefix
+#check equality_reverse_six_cap
+#check equality_reverse_four
+#check weighted_grade_three_on_reflected_line
+
+#print axioms equality_reverse_prefix
+#print axioms equality_reverse_six_cap
+#print axioms equality_reverse_four
+#print axioms weighted_grade_three_on_reflected_line

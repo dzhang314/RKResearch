@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightFiveZeroPureFourOrdinary
+open RKResearch.Certified.SDIRKEightFiveZeroPureFourOrdinary
+#check coincident_gauss_bezout
+#check front_rear_literal_coprimality
+#print axioms coincident_gauss_bezout
+#print axioms front_rear_literal_coprimality

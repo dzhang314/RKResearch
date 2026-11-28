@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixCubicLiveF3
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveF3.two_distinct_affine_roots
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveF3.zero_pivot_resultant_jet
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveF3.simple_factor_debit
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveF3.two_distinct_affine_roots
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveF3.zero_pivot_resultant_jet
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveF3.simple_factor_debit

@@ -1,0 +1,39 @@
+Four exact independent old-profile checks; all horizontal scales and coefficient rows agree.
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    0.50 A normalized coefficient degree 152 guarded content degree 65
+    0.67 A inner norm normalized coefficient degree 392 guarded content degree 64
+    1.02 marked reverse A at t=0, norm/squarefree degree 1568 352
+forbidden Jacobi factor degree 4
+forbidden Jacobi factor degree 4
+forbidden Jacobi factor degree 8
+exact ordinary factor c2 12 54123 cap 9
+exact ordinary factor ratio 12 16227 cap 11
+exact ordinary factor old 60 -1461941766456 cap 11
+exact ordinary factor full 252 -351383915829049374509981333545308408021254041562048657856 cap 12
+ratio residue x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91 guard/marked/joint ranks (132, 132, 132)
+c2 residue x^4 + 40*x^3 + 73*x^2 + 90*x + 50 guard/marked/joint ranks (36, 36, 36)
+old residue x + 42 guard/marked/joint ranks (11, 11, 11)
+full residue x + 47 guard/marked/joint ranks (12, 11, 12)
+    0.72 exact ordinary V degree 12 constant 54123 exact B gcd linear and pivot unit
+m1 103 residue x^4 + 40*x^3 + 73*x^2 + 90*x + 50 ranks A/joint/dim 1 1 1
+    0.56 exact ordinary V degree 12 constant 16227 exact B gcd linear and pivot unit
+mY2 103 residue x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91 ranks A/joint/dim 1 1 1
+    4.45 exact ordinary V degree 48 constant 41521530286435 exact B gcd linear and pivot unit
+contact 101 residue x^2 + 44*x + 48 ranks A/joint/dim 1 1 1
+    0.50 exact ordinary V degree 12 constant 54123 exact B gcd linear and pivot unit
+Fn-loss 103 residue x^4 + 40*x^3 + 73*x^2 + 90*x + 50 ranks A/joint/dim 2 2 2
+   18.23 exact physical V/B transposition on the same degree-48 field
+   18.23 exact ordinary V degree 48 constant -14638292540815408663567 exact B gcd linear and pivot unit
+   21.09 exact a gcd and every pivot [(4, 3), (3, 2)] monic linear, a live
+F1 103 residue x + 25 ranks A/joint/dim 1 1 1
+    0.29 exact F2a clock degree 24, constant 3176523, both cubic leaders and linear s pivot live
+F2 103 residue x + 21 ranks A/joint/dim 2 2 2
+    0.93 exact physical V/B transposition on the same ordinary field
+    0.93 exact ordinary V degree 36 constant -7295157 exact B gcd linear and pivot unit
+    1.03 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+H3 103 residue x^4 + 16*x^3 + 54*x^2 + 101*x + 100 ranks A/joint/dim 2 2 2
+   40.28 exact physical V/B transposition on the same ordinary field
+   40.28 exact ordinary V degree 60 constant -10289767396352176431 exact B gcd linear and pivot unit
+   45.66 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+H5 103 residue x^4 + 64*x^3 + 102*x^2 + 54*x + 44 ranks A/joint/dim 2 2 2

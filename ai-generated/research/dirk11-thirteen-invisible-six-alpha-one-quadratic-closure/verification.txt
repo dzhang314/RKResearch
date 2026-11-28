@@ -1,0 +1,3 @@
+Cold verify.sh on the tracked sibling source tree exited 0; see exact-replay.log.
+The two scalar declarations were checked with Lean/Mathlib 4.36.0; see axioms.txt.
+No direct whole-tableau kernel claim; other compiler versions were not run here.

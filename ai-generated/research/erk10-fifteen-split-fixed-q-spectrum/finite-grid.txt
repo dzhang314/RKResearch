@@ -1,0 +1,5 @@
+ordered input quadruples: 5040
+a_b_collision 1036
+h_pivot 28
+late_collision 70
+not_distinct_rational_ab 4424

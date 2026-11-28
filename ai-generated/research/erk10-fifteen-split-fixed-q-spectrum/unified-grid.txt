@@ -1,0 +1,4 @@
+ordered four-clock skeletons: 5040
+a_b_discriminant 4942
+h_pivot 28
+late_collision 70

@@ -1,0 +1,5 @@
+fixed outer tail: 1/2 2/3 1/4  h,f= 19/20 22/39
+minor degrees: [32, 32, 32, 32, 33, 34, 35]
+gcd degree before excluding pivot and tau=0: 23
+remaining exact primitive polynomial: 107600091571325*tau**3 - 32692496039640*tau**2 - 4342746664868*tau + 362024293632
+remaining rational roots: {}

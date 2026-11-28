@@ -1,0 +1,6 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.ERK10SplitReciprocalScalars.pivotDiscriminantBracket' does not depend on any axioms
+'RKResearch.Certified.ERK10SplitReciprocalScalars.nonlinearCubicProjectiveModThirteen' depends on axioms: [propext]
+'RKResearch.Certified.ERK10SplitReciprocalScalars.residueTwoMinorFinite' does not depend on any axioms
+'RKResearch.Certified.ERK10SplitReciprocalScalars.residueMinorInfinity' does not depend on any axioms
+'RKResearch.Certified.ERK10SplitReciprocalScalars.pivotProjectiveModTwentyNine' depends on axioms: [propext]

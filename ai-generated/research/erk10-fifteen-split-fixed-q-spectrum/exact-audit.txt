@@ -1,0 +1,5 @@
+exact pair Möbius determinant and fixed-q host coefficient guards
+exact one-parameter A(1)=0 exclusion at c=2/3 and {g,R}={1/2,3/4}
+c=2 exact moment cubic, projective mod7 factoring, and two descents
+fixed-q literal 7-row fixture: physical decoder, all 17 low profiles, and size-five host line exact
+head linear rows are dependent via the exact 0,c,f Jacobi polynomial identity

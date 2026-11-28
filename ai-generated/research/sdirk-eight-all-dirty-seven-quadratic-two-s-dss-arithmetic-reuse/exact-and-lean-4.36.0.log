@@ -1,0 +1,28 @@
+A2 regular bivariate degrees [(24, 9), (12, 6), (16, 11), (19, 11)]
+A2 regular projected degrees [242, 361, 406] H factors [(15, 3)]
+regular A2 15 v gcd 1 0
+A3 regular bivariate degrees [(13, 6), (6, 6), (12, 10), (13, 11)]
+A3 regular projected degrees [112, 192, 211] H factors [(3, 2), (5, 2)]
+regular A3 3 v gcd 1 0
+regular A3 5 v gcd 1 0
+S regular bivariate degrees [(15, 9), (6, 6), (10, 11), (10, 11)]
+S regular projected degrees [142, 226, 243] H factors [(9, 3)]
+regular S 9 v gcd 1 0
+A2 rank zero projected degrees [15, 15, 21] H factors [(15, 1)]
+rank zero A2 15 v gcd 1 1
+rank-zero curvature row degrees [4, 2, 3, 3] gcd before/after 0 0
+rank zero A2 15 curvature survivor degree 0
+A3 rank zero projected degrees [5, 5, 5] H factors [(5, 1)]
+rank zero A3 5 v gcd 1 1
+rank-zero curvature row degrees [3, 2, 3, 3] gcd before/after 0 0
+rank zero A3 5 curvature survivor degree 0
+S rank zero projected degrees [9, 10, 9] H factors [(9, 1)]
+rank zero S 9 v gcd 1 1
+rank-zero curvature row degrees [4, 2, 3, 3] gcd before/after 0 0
+rank zero S 9 curvature survivor degree 0
+all reused-terminal regular and rank-zero charts excluded
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticReuse.affine_rank_zero_difference' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticReuse.component_scaled_singleton_fit' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticReuse.scaled_overlap_quartic' depends on axioms: [propext,
+ Quot.sound]

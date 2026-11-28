@@ -1,0 +1,8 @@
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exact_homogeneous_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exact_remainder_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exact_remainder_proportionality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.ResiduePivot.paidB0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.closure_remainder_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.closure_host' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.closure_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Nonlinear.exact_nonlinear_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+p=1009; exterior degree=2; polynomial degrees=40,40; evaluations=43; gcd=1
+p=1009; exterior degree=3; polynomial degrees=60,60; evaluations=63; gcd=1
+p=1013; exterior degree=2; polynomial degrees=40,40; evaluations=43; gcd=1
+p=1013; exterior degree=3; polynomial degrees=60,60; evaluations=63; gcd=1
+Jacobi moments and consecutive gcd verified.

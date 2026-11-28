@@ -1,0 +1,4 @@
+'RKResearch.Certified.ERK10MirrorFactorialGate.forced_old_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10MirrorFactorialGate.unpaid_divisor' depends on axioms: [propext]

@@ -1,0 +1,2 @@
+theta4-tableau.json literal checks 1205 D 421382472598873671046748625598560000 bush defect -46337/103680 mixed defect 723883/48384000 coprimality 1
+theta5-over-4-tableau.json literal checks 1205 D 1320541052251127574067200000 bush defect 1691/27783000 mixed defect -50329/357210000 coprimality 1

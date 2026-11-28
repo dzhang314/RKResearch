@@ -1,0 +1,8 @@
+63 primitive S-unit triples; 375 distinct first coordinates.
+branch 0 a {'blind-collision excluded': 373, 'distinct linear choices': 373, 'paid clocks': 2}
+paid scalar candidate 0 b 5/4 (Fraction(1, 1), Fraction(2, 3), Fraction(1, 3), Fraction(2, 3), Fraction(5, 7), Fraction(1, 5), Fraction(2, 7), Fraction(4, 5), Fraction(1, 2)) old clock-1 coefficient 5875/26112
+branch 0 b {'blind-collision excluded': 372, 'distinct linear choices': 372, 'paid clocks': 5, 'paid scalar masses': 1}
+branch 1 a {'blind-collision excluded': 374, 'distinct linear choices': 374}
+branch 1 b {'blind-collision excluded': 371, 'distinct linear choices': 371}
+branch 2 a {'blind-collision excluded': 372, 'distinct linear choices': 372}
+branch 2 b {'blind-collision excluded': 372, 'distinct linear choices': 372}

@@ -1,0 +1,3 @@
+theta4-tableau.json 421382472598873671046748625598560000 unpaid prime support [11, 13, 19, 37, 53, 79, 107, 227, 467, 797, 10531]
+theta5-over-4-tableau.json 1320541052251127574067200000 unpaid prime support [11, 13, 17, 19, 229]
+unpaid intersection of the three denominators: [11, 13]

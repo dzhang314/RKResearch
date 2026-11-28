@@ -1,0 +1,3 @@
+Both normalized cubic moment polynomials verified by degree-two identity.
+center [-13, 16, 45] 19-unit scale -375/128 projective residues [6, 10, 9, 3, 11, 14, 12, 5, 12, 14, 11, 3, 9, 10, 6, 16, 2, 2, 16, 7]
+side [13, -21, -187, -65, 372, 64] 19-unit scale 375/128 projective residues [13, 5, 15, 16, 6, 12, 18, 7, 3, 18, 18, 3, 11, 8, 6, 10, 3, 7, 11, 7]

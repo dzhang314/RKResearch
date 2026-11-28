@@ -1,0 +1,3 @@
+case 1b early aggregate mass: exact numerator constant -114661785600
+integer denominator constant 0 linear coefficient 242221056000
+at every unpaid prime, a positive valuation of theta forces a pole

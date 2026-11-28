@@ -1,0 +1,35 @@
+Four independent QQ audits of J_B, both reverse primitive rows, and both pins.
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    1.99 raw seed nonzero? True
+    1.99 Jleader normalized coefficient degree 20 guarded content degree 0
+    1.99 relative degree 80
+    1.99 base total normalized coefficient degree 24 guarded content degree 80
+    1.99 raw/sf 24 24 [(24, 123476771)]
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    1.99 raw seed nonzero? True
+    2.01 one-reverse normalized coefficient degree 159 guarded content degree 118
+    2.13 relative degree 477
+    2.16 one-reverse normalized coefficient degree 413 guarded content degree 64
+    2.35 relative degree 1652
+    3.04 base total normalized coefficient degree 1116 guarded content degree 1652
+    3.39 raw/sf 1116 408 [(12, 16227), (12, 54123), (60, -1461941766456), (324, -196415617829388101367598168434035849954392817069628809690733476419730006372538565705036836672)]
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.02 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    2.05 raw seed nonzero? True
+    2.07 two-reverse normalized coefficient degree 148 guarded content degree 121
+    2.16 relative degree 444
+    2.20 two-reverse normalized coefficient degree 380 guarded content degree 64
+    2.32 relative degree 1520
+    2.76 base total normalized coefficient degree 1188 guarded content degree 1520
+    3.22 raw/sf 1188 432 [(12, 16227), (12, 54123), (24, 72), (60, -1461941766456), (324, -41783928210115479845920954049978809791184804111925031341047432130441197812052357011589575018432)]
+Exact common support [(60, -1461941766456), (12, 54123), (12, 16227)] ; gcd with the affine-leader projection is 1.
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    1.19 exact singular mask (12, 16227) ratio 12
+    1.19 exact singular mask (12, 54123) c2 4
+    1.30 exact singular mask (60, -1461941766456) old 12
+joint (60, -1461941766456) old x + 42 rank 11 11
+joint (12, 54123) c2 x^4 + 40*x^3 + 73*x^2 + 90*x + 50 rank 9 9
+joint (12, 16227) ratio x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91 rank 11 11

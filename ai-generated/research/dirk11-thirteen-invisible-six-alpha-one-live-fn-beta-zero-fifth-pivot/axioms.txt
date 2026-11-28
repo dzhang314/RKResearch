@@ -1,0 +1,5 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaZeroFifthPivot.zero_diagonal_of_first_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaZeroFifthPivot.jacobi_contact_absurd' depends on axioms: [propext,
+ Quot.sound]

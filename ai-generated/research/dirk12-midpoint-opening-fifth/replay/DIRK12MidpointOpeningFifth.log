@@ -1,0 +1,12 @@
+'RKResearch.Certified.DIRK12MidpointForward.Opening.fifth_reads' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.row9_actual_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.row9_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.five_opening_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

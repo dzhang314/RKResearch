@@ -1,0 +1,24 @@
+quadratic remainder degrees 8,9; exact rational gcd 1
+cubic four resultants degree 54; exact common monic degree 36
+verified quotient units: two Euclidean steps, linear s pivot, and g,k determinant
+all four cubic hull moments recover exactly in the quotient
+exact same-clock determinant = t^7(3s+4t)(9s+16t)/300000
+real roots of the optional scalar-only parameter polynomial: 10
+prime 1009: monic degree 36, all 8 quotient units; quadratic degrees preserved
+  forward_first_diagonal: residue degree 35, gcd 1
+  forward_five_dirty: residue degree 35, gcd 1
+  empty_reverse_gap: residue degree 35, gcd 1
+  empty_forward_gap: residue degree 35, gcd 1
+  same_clock_factor_one: residue degree 35, gcd 1
+  same_clock_factor_two: residue degree 35, gcd 1
+  linear_s_pivot: residue degree 35, gcd 1
+  two_row_clean_hull_pivot: residue degree 35, gcd 1
+prime 1013: monic degree 36, all 8 quotient units; quadratic degrees preserved
+  forward_first_diagonal: residue degree 35, gcd 1
+  forward_five_dirty: residue degree 35, gcd 1
+  empty_reverse_gap: residue degree 35, gcd 1
+  empty_forward_gap: residue degree 35, gcd 1
+  same_clock_factor_one: residue degree 35, gcd 1
+  same_clock_factor_two: residue degree 35, gcd 1
+  linear_s_pivot: residue degree 35, gcd 1
+  two_row_clean_hull_pivot: residue degree 35, gcd 1

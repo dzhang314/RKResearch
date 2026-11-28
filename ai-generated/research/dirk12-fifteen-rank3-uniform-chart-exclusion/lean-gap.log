@@ -1,0 +1,9 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.UniformGapCore.fourLiveClockZeros' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.UniformGapCore.adjacentCommRead' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.UniformGapCore.adjacentSameClock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

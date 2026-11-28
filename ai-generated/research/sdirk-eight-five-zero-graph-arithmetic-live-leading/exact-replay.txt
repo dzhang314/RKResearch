@@ -1,0 +1,31 @@
+initial norm degrees [124, 158]
+common degree 100
+diag 72
+ordinary-pivot 0
+discriminant 4
+rear repeat 0
+known clock collision 0
+early Gauss 24
+late Gauss 0
+remaining gcd 0 []
+remaining 1
+initial norm degrees [54, 54, 52]
+common degree 36
+diag 26
+ordinary-pivot 0
+discriminant 2
+rear repeat 0
+known clock collision 0
+early Gauss 8
+late Gauss 0
+remaining gcd 0 []
+remaining 1
+arith 10*m**2 - 10*m + 1 r modulus degree 4
+regular degree before any guard stripping 0
+singular degree before any guard stripping 0
+star None r modulus degree 4
+regular degree before any guard stripping 0
+singular degree before any guard stripping 0
+star 5*m**2 - 3 r modulus degree 4
+regular degree before any guard stripping 0
+singular degree before any guard stripping 0

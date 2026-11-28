@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew.graph_ratio_cubic
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew.two_paid_front_D_fits
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew.scaled_terminal_D

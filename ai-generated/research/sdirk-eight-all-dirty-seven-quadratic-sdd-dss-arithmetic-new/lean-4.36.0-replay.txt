@@ -1,0 +1,5 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew.graph_ratio_cubic' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew.two_paid_front_D_fits' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSddDssArithmeticNew.scaled_terminal_D' depends on axioms: [propext,
+ Quot.sound]

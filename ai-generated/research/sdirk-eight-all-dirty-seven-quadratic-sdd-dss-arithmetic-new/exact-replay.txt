@@ -1,0 +1,23 @@
+A necessary rows [(9, 6, 0), (8, 5, 3), (24, 21, 7), (24, 16, 8)]
+A 0 outer v degrees (121, 96, 0)
+A 0 outer u degree 788
+A 1 outer v degrees (133, 85, 0)
+A 1 outer u degree 651
+A H factors [(36, 1), (42, 1), (4, 2), (4, 9), (2, 36)]
+exact Hensel collision ('A', 36) v=H/2 at 13 10 [(4, 10, 1, 5, 1, 1)]
+exact Hensel collision ('A', 42) v=H/1 at 19 4 [(12, 8, 1, 4, 2, 1)]
+small exact ('A', 4, 2) raw/guarded u degrees 1 0
+small exact ('A', 4, 9) raw/guarded u degrees 1 0
+small exact ('A', 2, 36) raw/guarded u degrees 0 0
+S necessary rows [(9, 6, 0), (8, 5, 3), (24, 15, 7), (24, 16, 8)]
+S 0 outer v degrees (121, 78, 0)
+S 0 outer u degree 622
+S 1 outer v degrees (133, 85, 0)
+S 1 outer u degree 656
+S H factors [(18, 2), (21, 2), (1, 9), (4, 9), (2, 38)]
+exact Hensel collision ('S', 18) v=H/2 at 29 12 [(8, 28, 14, 6, 7, 1), (23, 1, 15, 6, 1, 1)]
+exact Hensel collision ('S', 21) v=H/1 at 59 45 [(5, 49, 8, 45, 26, 1), (56, 10, 51, 45, 5, 1)]
+small exact ('S', 1, 9) raw/guarded u degrees 2 0
+small exact ('S', 4, 9) raw/guarded u degrees 2 0
+small exact ('S', 2, 38) raw/guarded u degrees 0 0
+terminal-new arithmetic: all ten projected factors excluded

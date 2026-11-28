@@ -1,0 +1,28 @@
+constant root-eliminated gap star 2
+front constant residual degrees True 0 (0, 27, 24, 1)
+literal constant fifth projection exact degrees True 0 100
+constant exact fourth splits True 0 100 12 64 [(12, 2, 3)]
+verified constant nonliteral tail: True 0 star 1103 11
+constant root-eliminated gap arith 5
+verified constant nonliteral tail: True 0 arith 1103 11
+constant root-eliminated gap silent 4
+verified constant nonliteral tail: True 0 silent 1103 11
+front constant residual degrees True 1 (0, 27, 24, 1)
+literal constant fifth projection exact degrees True 1 100
+constant exact fourth splits True 1 100 12 64 [(12, 2, 3)]
+verified constant nonliteral tail: True 1 star 1103 15
+verified constant nonliteral tail: True 1 arith 1103 15
+verified constant nonliteral tail: True 1 silent 1103 15
+front constant residual degrees False 0 (0, 27, 24, 1)
+literal constant fifth projection exact degrees False 0 100
+constant exact fourth splits False 0 100 12 64 [(12, 2, 3)]
+verified constant nonliteral tail: False 0 star 1103 10
+verified constant nonliteral tail: False 0 arith 1103 10
+verified constant nonliteral tail: False 0 silent 1103 10
+front constant residual degrees False 1 (0, 27, 24, 1)
+literal constant fifth projection exact degrees False 1 100
+constant exact fourth splits False 1 100 12 64 [(12, 2, 3)]
+verified constant nonliteral tail: False 1 star 1103 10
+verified constant nonliteral tail: False 1 arith 1103 10
+verified constant nonliteral tail: False 1 silent 1103 10
+constant nonliteral reverse-root checks: 12

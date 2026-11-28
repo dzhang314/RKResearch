@@ -1,0 +1,2 @@
+sixth-row cubic left coefficients at zero: q, q/2, pq/alpha
+missing Y produces nonzero -D/(pc); restored cofactor gives raw Z_s=0

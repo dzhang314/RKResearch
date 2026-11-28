@@ -1,0 +1,1 @@
+exact gamma306; d2 and degree12 true C_N guard; full degree144 r and q fibers: all signed phase gcds one

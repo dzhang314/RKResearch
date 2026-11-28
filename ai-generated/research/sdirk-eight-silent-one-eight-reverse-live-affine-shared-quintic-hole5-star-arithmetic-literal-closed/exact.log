@@ -1,0 +1,24 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+small CRT exact 2 1 (10, 11) 1 40
+corrected hole5 front exact True (3, 2, 10, 1) (4, 1, 0, 0) (11, 0, 10, 1) (11, 0, 9, 1) [1]
+small CRT exact 5 3 (85, 24) 4 220
+corrected hole5 rear exact True False 2 (3, 5, 10, 1) (3, 3, 11, 1) (24, 0, 85, 1) (21, 0, 72, 1) [7, 1]
+small exact shape CRT 11 21 8
+small exact shape CRT 11 21 16
+small exact shape CRT 11 21 24
+small exact shape CRT 11 21 32
+small exact shape CRT 11 21 40
+small CRT exact 11 21 (981, 0) 44 2611
+corrected hole5 diagonal exact True False 2 (0, 0, 897, 1) (0, 0, 729, 1) [84, 21]
+regular fifth hole literal full star-arithmetic 2 1129 203 [(1, 1, 1, 1, 1), (1, 2, 1, 2, 1), (1, 2, 1, 2, 1), (1, 2, 1, 2, 1), (2, 2, 1, 2, 1), (3, 2, 1, 2, 1), (3, 2, 1, 2, 1), (4, 2, 1, 2, 1), (4, 2, 1, 2, 1), (4, 2, 1, 2, 1), (7, 2, 1, 2, 1), (10, 2, 1, 2, 1), (11, 1, 1, 1, 1), (13, 2, 1, 2, 1), (36, 1, 1, 1, 1), (47, 2, 1, 2, 1), (53, 2, 1, 2, 1), (63, 2, 1, 2, 1), (79, 1, 1, 1, 1), (83, 1, 1, 1, 1), (87, 1, 1, 1, 1)]
+small CRT exact 5 3 (85, 24) 4 220
+corrected hole5 rear exact True False 3 (3, 5, 10, 1) (3, 3, 11, 1) (24, 0, 85, 1) (21, 0, 72, 1) [7, 1]
+small exact shape CRT 11 21 8
+small exact shape CRT 11 21 16
+small exact shape CRT 11 21 24
+small exact shape CRT 11 21 32
+small exact shape CRT 11 21 40
+small CRT exact 11 21 (981, 0) 44 2611
+corrected hole5 diagonal exact True False 3 (0, 0, 897, 1) (0, 0, 729, 1) [84, 21]
+regular fifth hole literal full star-arithmetic 3 1129 203 [(1, 1, 1, 1, 1), (1, 1, 1, 1, 1), (1, 2, 1, 2, 1), (1, 2, 1, 2, 1), (1, 2, 1, 2, 1), (1, 2, 1, 2, 1), (3, 2, 1, 2, 1), (3, 2, 1, 2, 1), (4, 1, 1, 1, 1), (7, 2, 1, 2, 1), (7, 2, 1, 2, 1), (10, 1, 1, 1, 1), (11, 1, 1, 1, 1), (14, 2, 1, 2, 1), (16, 1, 1, 1, 1), (54, 2, 1, 2, 1), (61, 2, 1, 2, 1), (63, 2, 1, 2, 1), (111, 1, 1, 1, 1), (143, 1, 1, 1, 1)]
+regular ordinary hole5 star-front arithmetic-rear actual literal 2/3 excluded

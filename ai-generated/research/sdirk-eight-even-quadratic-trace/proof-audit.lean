@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightEvenQuadraticTrace
+open RKResearch.Certified.SDIRKEightEvenQuadraticTrace
+#check symmetric_diagonal_form
+#check protected_diagonal_read
+#check protected_defects
+#print axioms symmetric_diagonal_form
+#print axioms protected_diagonal_read
+#print axioms protected_defects

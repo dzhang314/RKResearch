@@ -1,0 +1,40 @@
+certified prime 11
+certified prime 965179
+certified prime 3535032504307
+certified prime 3489226706289835873
+certified prime 1439
+certified prime 420941
+certified prime 48029
+certified prime 434112360658085729
+A stripped support 21090485361436322808530839807157681336713609
+Z stripped support 39636923688008764877792318431820055882984439
+singular stripped support 11
+p11 exceptional diagonal fits no actual third phase
+prime-field control 965179 A 145962 361260 289525 473960
+prime-field control 3535032504307 A 625653746961 1351632409401 2457052700601 2304862098039
+prime-field control 3489226706289835873 A 3393272511232824620 1810050983623843980 632303240149177960 1101643917088851657
+prime-field control 1439 Z 941 237 71 794
+prime-field control 420941 Z 83226 236804 381561 186651
+prime-field control 48029 Z 21002 21600 3240 33094
+prime-field control 434112360658085729 Z 80555814703890372 194195078734996566 34922908223391242 322414683518703671
+965179 phase A fourth off/on ([], [473960])
+  prefix protected A(c^3) defects [327053]
+  prefix protected A(c^3) defects [372905]
+3535032504307 phase A fourth off/on ([], [2304862098039])
+  prefix protected A(c^3) defects [274684677964]
+  prefix protected A(c^3) defects [2883704798279]
+3489226706289835873 phase A fourth off/on ([], [1101643917088851657])
+  prefix protected A(c^3) defects [3184654386934665632]
+  prefix protected A(c^3) defects [559218082341581846]
+1439 phase Z fourth off/on ([1039], [])
+  prefix protected A(c^3) defects [825]
+  prefix protected A(c^3) defects [1318]
+420941 phase Z fourth off/on ([204686], [])
+  prefix protected A(c^3) defects [204773]
+  prefix protected A(c^3) defects [83426]
+48029 phase Z fourth off/on ([11446], [])
+  prefix protected A(c^3) defects [45959]
+  prefix protected A(c^3) defects [7256]
+434112360658085729 phase Z fourth off/on ([116112499031277963], [])
+  prefix protected A(c^3) defects [80272079603567541]
+  prefix protected A(c^3) defects [238261968342116336]

@@ -1,0 +1,42 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.primitive_jacobi_hull.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (x l : K) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.IH x -
+      x * RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.J4 x * (-x / 5 + 7 * (1 - l) / 60) =
+    77 / 5 *
+      (x *
+          (RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.J5 x +
+            l * RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.J4 x) /
+        132)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.forward_remainder_factor.{u_1} {K : Type u_1}
+  [Field K] (f₀ f₁ s₀ s₁ x₀ x₁ c r d : K) (prop : f₀ * s₁ - f₁ * s₀ = 0) (h₀ : c * f₀ = r * s₀ + d * x₀)
+  (h₁ : c * f₁ = r * s₁ + d * x₁) : d * (x₀ * s₁ - x₁ * s₀) = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.diagonal_or_remainder.{u_1} {K : Type u_1} [Field K]
+  (d a u h det : K) (an : a ≠ 0) (un : u ≠ 0) (hn : h ≠ 0) (hdet : d ^ 2 * a * u / h * det = 0) : d = 0 ∨ det = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.sum_cubic_mark.{u_1, u_2} {K : Type u_1} [Field K]
+  [CharZero K] {ι : Type u_2} [Fintype ι] (T y : ι → K) (a b c s L k : K) (h₁ : ∑ i, T i * y i = s ^ 2 / 2)
+  (h₂ : ∑ i, T i * y i ^ 2 = s ^ 3 / 3 + k) (h₃ : ∑ i, T i * y i ^ 3 = s ^ 4 / 4 + L * k) :
+  ∑ i, T i * RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.cubic a b c (y i) =
+    RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.primitiveCubic a b c s + (b + c * L) * k
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.affine_remainder_coeff.{u_1} {K : Type u_1}
+  [Field K] (P : Polynomial K) (pd : P.natDegree ≤ 2) (s : Fin 3 → K) (inj : Function.Injective s) (a b : K)
+  (ht : ∀ (i : Fin 3), Polynomial.eval (s i) P = a + b * s i) : P.coeff 2 = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.fourth_symmetric_mark.{u_1} {K : Type u_1} [Field K]
+  (p raw off k R L d new old : K) (core : raw = p + off * k) (read : raw + d * (new - old) = L * k)
+  (fit : R = L - off) : p - R * k + d * (new - old) = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.primitive_jacobi_hull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.forward_remainder_factor' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.diagonal_or_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.sum_cubic_mark' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.affine_remainder_coeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixQuadraticClosure.fourth_symmetric_mark' depends on axioms: [propext,
+ Quot.sound]

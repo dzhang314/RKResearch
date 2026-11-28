@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphFourOrdinaryNongauss
+open RKResearch.Certified.SDIRKEightFiveZeroGraphFourOrdinaryNongauss
+#check quadratic_two_primitive_reads_force_zero
+#print axioms quadratic_two_primitive_reads_force_zero

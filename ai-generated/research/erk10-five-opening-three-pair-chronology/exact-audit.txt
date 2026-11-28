@@ -1,0 +1,4 @@
+arbitrary second-target determinant: s**3*t**2*(s - t)**2/(24*j*k*(-j + s)*(j - k)*(-k + s))
+next target differs only by own-site tap: -t**2*(s - t)**2
+opposed weights and opposed raw defects have the same column difference
+single-live-donor cubic contradiction: square difference s^2/4

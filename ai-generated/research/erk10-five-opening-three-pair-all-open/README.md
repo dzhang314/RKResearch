@@ -197,3 +197,5 @@ interpolation, determinant, two-row kernel and leakage cancellation.
 The exact audit in this packet is Python/Sympy; it does not claim a
 Lean run. The rank, grouping and chronology adapter is mathematical,
 not an end-to-end theorem on a literal Lean tableau.
+
+The [chronology extension](../erk10-five-opening-three-pair-chronology/README.md) permits every continuation once the three pairs open first, and also excludes every ordering when the three opening scores and pair totals are nonzero.

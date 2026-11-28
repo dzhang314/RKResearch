@@ -172,4 +172,4 @@ Lean 4.36.0 checks the three named scalar theorems
 `fifth_clock`, `weighted_last_clock_impossible`,
 and `anchored_three_clock_square` with only standard axioms.
 The rank and physical arguments above are mathematical, not claimed
-as native all-tableau results.
+as native all-tableau results. The related [minimal-defect order-five result](../erk-single-quadratic-defect/ORDER-FIVE-MINIMAL-DEFECT-FIELD-THRESHOLD.md) treats the low order-five rank and identifies the square-class threshold over general coefficient fields. The true FSAL missing-polynomial chronology is the additional obstruction here.

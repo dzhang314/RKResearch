@@ -1,0 +1,6 @@
+Graph 375 vertices 9900 edges
+scalar grids 9 {'cliques': 190620, 'reflection representatives': 95420, 'precision nine representatives': 221}
+repeated {'meshes': 222, 'head donor': 250, 'pressure passed': 6, 'blind-both false': 6}
+Graph 375 vertices 9900 edges
+scalar grids 10 {'cliques': 55935, 'reflection representatives': 28005, 'precision nine representatives': 28005}
+distinct {'meshes': 55935, 'survive mod 11 and 13': 146834, 'exact entrance': 478, 'blind-both false': 104}

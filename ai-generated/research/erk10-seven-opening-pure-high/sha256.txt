@@ -1,5 +1,5 @@
 c302158aef5487ac3bb1c2af13b30dbc7eafa87101d23bcfdeca6462299bbd43  lean/RKCert/ReviewedNative/ERK10SevenOpeningScalars.lean
-dd23dfa4c4a74718784fc08e6af85ce45e8a7bd6a12b752a652793ec6a258f56  research/erk10-seven-opening-pure-high/README.md
+4d60c69466c31d48624aaf87782ecffe065857411e2ffcb6bae18af7b55287de  research/erk10-seven-opening-pure-high/README.md
 1758b747af2198258a05e1dc755452e7981150a8e627600be6b5f80b3a2ca492  research/erk10-seven-opening-pure-high/audit.py
 a55360fea94471ab3bc83f2b13565980097c2bc7a62c351788f01610baf74107  research/erk10-seven-opening-pure-high/exact-audit.txt
 31b2cd18424b37a083fcbf1c9ffd82b1f29331d33588e9ea1eec60c72c2fcde4  research/erk10-seven-opening-pure-high/lean-4.36-audit.txt

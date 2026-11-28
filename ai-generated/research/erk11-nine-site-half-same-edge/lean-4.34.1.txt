@@ -1,0 +1,7 @@
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.primeAndInv' depends on axioms: [propext]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.leadingDegrees' does not depend on any axioms
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.bezoutCentroid' does not depend on any axioms
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.bezoutSingular' does not depend on any axioms
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.bezoutContact' does not depend on any axioms
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.grid0' depends on axioms: [propext]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.grid8' depends on axioms: [propext]

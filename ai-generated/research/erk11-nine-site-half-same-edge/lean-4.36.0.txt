@@ -1,0 +1,7 @@
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.primeAndInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.leadingDegrees' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.bezoutCentroid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.bezoutSingular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.bezoutContact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.grid0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NineSiteHalfSameEdgeGate.grid8' depends on axioms: [propext, Classical.choice, Quot.sound]

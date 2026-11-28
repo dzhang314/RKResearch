@@ -1,0 +1,1 @@
+Exact Q[a] gcds: centroid 1/1; singular shifted minors 1; contacts a(a−2).

@@ -1,0 +1,5 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveStarMiddle.firstSignedLinearCofactorCut' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveStarMiddle.secondSignedLinearCofactorCut' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveStarMiddle.zeroMomentPivotRetainsTwoConstraints' depends on axioms: [propext]

@@ -1,0 +1,31 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+signed centered six-known pegs (20, 2, 52, 0) (13, 2, 37, 1) [6, 0, 0, 0, 1, 0, 0, 0] (23, 2, 58, 1) (16, 2, 43, 0) [6, 0, 0, 0, 1, 0, 0, 0]
+noncubic star Ψ front (5, 0, 9, 1) [1, 0, 0, 0, 0, 0, 0, 0]
+affine s signed projection False (15, 0, 37, 1) (15, 0, 37, 1) [0, 0, 0, 0, 0, 0, 0, 0]
+small exact shape CRT 5 15 8
+small CRT exact 5 15 (320, 0) 15 844
+center six-peg gamma False False exact (0, 0, 278, 0) guarded (0, 0, 186, 1) [56, 9, 0, 0] non L (0, 0, 180, 1) [2]
+center six-peg specialized degrees (4, 0, 2, 1) (13, 0, 2, 1)
+affine s signed projection True (18, 0, 43, 0) (18, 0, 43, 0) [0, 0, 0, 0, 0, 0, 0, 0]
+small exact shape CRT 5 18 8
+small exact shape CRT 5 18 16
+small CRT exact 5 18 (377, 0) 17 993
+center six-peg gamma False True exact (0, 0, 323, 0) guarded (0, 0, 207, 0) [68, 12, 0, 0] non L (0, 0, 201, 0) [2]
+center six-peg specialized degrees (4, 0, 2, 1) (16, 0, 2, 0)
+six-peg exact diagonal gcd False usual 180 201 30
+six-peg exact diagonal gcd False degenerate 3 3 3
+six-peg centered residue False 1129 203 usual kept 30 done [('signed', ('usual', 2, 1, 1)), ('signed', ('usual', 5, 1, 1)), ('signed', ('usual', 23, 1, 1))] bad []
+six-peg centered residue False 1129 203 degenerate kept 3 done [('no_Y', ('degenerate', 3, 1, 0))] bad []
+small CRT exact 2 2 (94, 8) 5 284
+cubic Y signed elimination False (2, 2, 10, 1) (2, 2, 37, 1) (2, 0, 94, 0) (2, 0, 81, 1) [4, 0, 0, 0, 0, 0, 0, 0] 0 1
+small exact shape CRT 3 2 8
+small CRT exact 3 2 (243, 0) 13 753
+center six-peg gamma True False exact (0, 0, 243, 1) guarded (0, 0, 243, 1) [0, 0, 0, 0] non L (0, 0, 243, 1) [0]
+small CRT exact 2 2 (106, 8) 6 326
+cubic Y signed elimination True (2, 2, 10, 1) (2, 2, 43, 0) (2, 0, 106, 0) (2, 0, 87, 0) [4, 0, 0, 0, 0, 0, 0, 0] 1 1
+small exact shape CRT 3 2 8
+small CRT exact 3 2 (261, 0) 14 828
+center six-peg gamma True True exact (0, 0, 261, 0) guarded (0, 0, 261, 0) [0, 0, 0, 0] non L (0, 0, 261, 0) [0]
+six-peg exact diagonal gcd True usual 243 261 54
+six-peg centered residue True 1129 203 usual kept 54 done [('signed', ('usual', 1, 2, 1)), ('signed', ('usual', 2, 2, 1)), ('signed', ('usual', 2, 2, 1)), ('signed', ('usual', 3, 2, 1)), ('signed', ('usual', 4, 2, 1)), ('signed', ('usual', 6, 2, 1)), ('signed', ('usual', 9, 2, 1))] bad []
+regular ordinary hole5 star-front star-rear actual silent sixth and seventh excluded

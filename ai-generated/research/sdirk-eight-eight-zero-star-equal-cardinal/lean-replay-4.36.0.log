@@ -1,0 +1,7 @@
+'RKResearch.Certified.SDIRKEightEightZeroStarEqualCardinal.split_free_cleared' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightEightZeroStarEqualCardinal.split_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightEightZeroStarEqualCardinal.equal_cardinal_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

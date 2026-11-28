@@ -1,0 +1,7 @@
+exact X=-N/L is a simultaneous nodal root; L unit at 101
+component 78 quotient arithmetic unit ideal
+component 1 quotient arithmetic unit ideal
+component 1 quotient arithmetic unit ideal
+component 2 quotient arithmetic unit ideal
+component 2 quotient arithmetic unit ideal
+exact width projection gcd degree 862, prime count 162

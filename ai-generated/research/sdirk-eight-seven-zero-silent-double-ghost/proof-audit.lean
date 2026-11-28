@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightSevenZeroSilentDoubleGhost
+
+open RKResearch.Certified.SDIRKEightSevenZeroSilentDoubleGhost
+
+#print axioms nonzero_off_levels_agree
+#print axioms supported_ghost_third_clear

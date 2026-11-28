@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightSevenZeroSilentDoubleFinal
+
+open RKResearch.Certified.SDIRKEightSevenZeroSilentDoubleFinal
+
+#print axioms star_collision_factor
+#print axioms star_gap_free_moments
+#print axioms common_quadratic_root_projection

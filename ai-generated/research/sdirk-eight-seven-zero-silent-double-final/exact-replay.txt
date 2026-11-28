@@ -1,0 +1,27 @@
+0.11 primitive degree 18
+2.16 side 0 third-zero degrees [(2, 1)]
+4.53 side 1 third-zero degrees [(2, 1)]
+4.6 0 all <=6 label counts fail
+4.69 1 all <=6 label counts fail
+4.69 0 simple good reduction 59 1 (10, 4, 23, 1, 48) ((13, (19, 58, 38, (0, 31))), (37, (34, 0, 53, (46, 42))))
+4.69 1 simple good reduction 59 1 (10, 4, 23, 11, 58) ((5, (8, 50, 18, (9, 46))), (41, (34, 18, 56, (27, 21))))
+both distinct Gaussian rear triples excluded
+equal v generic five nodal gcd degree 0
+equal v six one-overlap determinants nonzero
+other v generic five nodal gcd degree 0
+other v six one-overlap determinants nonzero
+0.08 primitive degree 18
+0.11 det degree 15 ordinary pivot degree 10
+0.16 resultant degree 32
+0.16 guarded determinant degree 9 resultant degree 32
+0.17 exact unit gcd by good reduction ghost 17 1 (16, 7, 6)
+0.4 primitive degree 36
+0.58 det degree 15 ordinary pivot degree 10
+1.0 resultant degree 32
+1.01 guarded determinant degree 9 resultant degree 32
+1.05 exact unit gcd by good reduction arith 59 12 (10, 4, 58)
+0.03 primitive degree 6
+0.04 det degree 15 ordinary pivot degree 9
+0.04 resultant degree 30
+0.04 guarded determinant degree 9 resultant degree 30
+0.05 exact unit gcd by good reduction star 13 11 (4, 7)

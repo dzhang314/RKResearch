@@ -76,3 +76,5 @@ existing geometry/reconstruction helpers; it checks all input data
 without rerunning the search.
 
 The [fixed-tableau density theorem](../erk10-fifteen-prime-density/README.md) gives an exact prime-density guarantee for this family and Stepanov together, independent of this bounded search.
+
+The [portable Lean checks](lean-geometry/README.md) now verify the five geometry equations at the seed and its square, and the nonzero Jacobian determinant, for all 130 primes on all four target releases. The full rooted order checks remain the separate exact replay above.

@@ -1,0 +1,12 @@
+'RKResearch.Certified.ERK10FiveOpeningThreePairScalars.primitiveTap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FiveOpeningThreePairScalars.tapDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FiveOpeningThreePairScalars.opposedExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FiveOpeningThreePairScalars.leakageExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

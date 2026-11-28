@@ -1,0 +1,4 @@
+blind two-label coefficient determinants: -a*b*(a - b) U*V*(-a + b)
+one column difference covers a folded live or score-zero pair
+only new uncalibrated scalar donor equals target: -z**2*(-a + z)**2
+first two distinct forward residuals: second difference q**2*(q - 1)**2

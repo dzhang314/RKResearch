@@ -261,3 +261,5 @@ normalized scoring ratio, has been used.
 The scalar cross determinant, quotient cancellation and rank-one
 donor factors have independent exact arithmetic checks. The full
 physical-chart bridge is mathematical rather than a Lean endpoint.
+
+The [complete chart exit](../erk10-five-opening-three-pair-complete/README.md) discharges the remaining early zero-score and pooled cancellation timings.

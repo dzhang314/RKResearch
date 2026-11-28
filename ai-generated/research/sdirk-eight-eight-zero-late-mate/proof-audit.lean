@@ -1,0 +1,5 @@
+import RKCert.Research.SDIRKEightEightZeroLateMate
+
+open RKResearch.Certified.SDIRKEightEightZeroLateMate
+
+#print axioms three_moment_determinant

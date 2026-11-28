@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightEightZeroSilentPureRoot
+
+open RKResearch.Certified.SDIRKEightEightZeroSilentPureRoot
+
+#print axioms cancel_common_line
+#print axioms monic_tail_determinant

@@ -182,3 +182,5 @@ the symbolic marker identities and both Bézout witnesses.
 The finite rank calculations are exact source arithmetic certificates;
 there is no claim that the whole normalized DIRK exclusion is a
 single Lean theorem.
+
+The [portable packed Bézout receipts](../dirk11-thirteen-invisible-six-cubic-packed-compatibility/README.md) independently check both frozen finite-field arithmetic witnesses on Lean 4.34.1, 4.35.0, 4.36.0, and 4.37.0-rc1. They do not formalize the rooted tableau ingress.

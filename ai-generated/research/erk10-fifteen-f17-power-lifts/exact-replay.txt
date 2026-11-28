@@ -1,0 +1,4 @@
+15 stages, strictly explicit modulo 17^20
+1,205 rooted-tree identities verified, with counts: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+size-11 star: weighted value 2002959396507074884848945 normalized defect 1711396328339961121330389
+Reduction equals the archived characteristic-17 literal.

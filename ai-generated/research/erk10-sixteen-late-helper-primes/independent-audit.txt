@@ -1,0 +1,15 @@
+p 29 power 1 modulus 29 rooted conditions 1205 unit bush defect 24
+p 29 power 2 modulus 841 rooted conditions 1205 unit bush defect 691
+p 29 power 3 modulus 24389 rooted conditions 1205 unit bush defect 5737
+p 37 power 1 modulus 37 rooted conditions 1205 unit bush defect 16
+p 37 power 2 modulus 1369 rooted conditions 1205 unit bush defect 1237
+p 37 power 3 modulus 50653 rooted conditions 1205 unit bush defect 8082
+p 41 power 1 modulus 41 rooted conditions 1205 unit bush defect 13
+p 41 power 2 modulus 1681 rooted conditions 1205 unit bush defect 423
+p 41 power 3 modulus 68921 rooted conditions 1205 unit bush defect 55896
+p 43 power 1 modulus 43 rooted conditions 1205 unit bush defect 14
+p 43 power 2 modulus 1849 rooted conditions 1205 unit bush defect 1390
+p 43 power 3 modulus 79507 rooted conditions 1205 unit bush defect 14333
+p 59 power 1 modulus 59 rooted conditions 1205 unit bush defect 41
+p 59 power 2 modulus 3481 rooted conditions 1205 unit bush defect 1162
+p 59 power 3 modulus 205379 rooted conditions 1205 unit bush defect 154326

@@ -1,0 +1,5 @@
+29 pressure [18, 27, 3, 22] pair [15, 6, 21, 8] helper denominator [23] unit pivots {'old endpoint': [1, 20, 10, 27, 27, 9, 17], 'degree-six basis': [22, 12, 15], 'terminal cubic': [12, 28], 'terminal cofactor': [18, 11, 18]} bush 24
+37 pressure [9, 22, 22, 32] pair [12, 26, 27, 10] helper denominator [35] unit pivots {'old endpoint': [1, 13, 25, 35, 35, 31, 8], 'degree-six basis': [33, 6, 3], 'terminal cubic': [7, 5], 'terminal cofactor': [13, 32, 2]} bush 16
+41 pressure [21, 37, 29, 9] pair [32, 4, 2, 39] helper denominator [9] unit pivots {'old endpoint': [1, 28, 14, 39, 39, 18, 17], 'degree-six basis': [4, 21, 12], 'terminal cubic': [35, 40], 'terminal cofactor': [17, 18, 28]} bush 13
+43 pressure [36, 16, 27, 18] pair [20, 25, 5, 38] helper denominator [41] unit pivots {'old endpoint': [1, 15, 29, 41, 41, 12, 27], 'degree-six basis': [15, 9, 11], 'terminal cubic': [37, 31], 'terminal cofactor': [38, 30, 32]} bush 14
+59 pressure [13, 55, 52, 47] pair [23, 46, 39, 20] helper denominator [48] unit pivots {'old endpoint': [1, 40, 20, 57, 57, 1, 38], 'degree-six basis': [25, 22, 58], 'terminal cubic': [6, 11], 'terminal cofactor': [23, 13, 11]} bush 41

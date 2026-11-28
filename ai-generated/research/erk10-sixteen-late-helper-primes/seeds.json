@@ -1,0 +1,87 @@
+[
+  {
+    "field": 29,
+    "theta": "15",
+    "raw": [
+      1,
+      0,
+      6,
+      14,
+      16,
+      4,
+      22,
+      26,
+      25
+    ],
+    "next_failure_value": 24,
+    "pressure_simple_derivative": 22
+  },
+  {
+    "field": 37,
+    "theta": "5",
+    "raw": [
+      1,
+      0,
+      25,
+      35,
+      9,
+      12,
+      20,
+      31,
+      3
+    ],
+    "next_failure_value": 16,
+    "pressure_simple_derivative": 32
+  },
+  {
+    "field": 41,
+    "theta": "16",
+    "raw": [
+      1,
+      0,
+      20,
+      18,
+      27,
+      8,
+      36,
+      37,
+      23
+    ],
+    "next_failure_value": 13,
+    "pressure_simple_derivative": 9
+  },
+  {
+    "field": 43,
+    "theta": "18",
+    "raw": [
+      1,
+      0,
+      16,
+      11,
+      19,
+      8,
+      22,
+      40,
+      13
+    ],
+    "next_failure_value": 14,
+    "pressure_simple_derivative": 18
+  },
+  {
+    "field": 59,
+    "theta": "7",
+    "raw": [
+      1,
+      0,
+      33,
+      53,
+      47,
+      9,
+      5,
+      42,
+      26
+    ],
+    "next_failure_value": 41,
+    "pressure_simple_derivative": 47
+  }
+]

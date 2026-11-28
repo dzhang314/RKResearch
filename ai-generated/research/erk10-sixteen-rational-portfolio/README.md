@@ -6,7 +6,7 @@ commutative **local** ring and every nonzero commutative ring of
 **finite characteristic**, provided 10! is a unit. This includes all
 fields with 10! nonzero and all p-adic integers and fields for primes
 greater than seven. It does not give a single tableau over the factorial
-localization or change the real 14–15 gap.
+localization or change the real 14–15 gap. A separate [clean-ring gluing theorem](CLEAN-RINGS.md) extends the same 16-stage bound to all commutative clean rings, including all Krull-dimension-zero rings, and all nonzero algebras over such coefficient rings.
 
 | Tableau | Rational horizon | Family placement |
 | --- | ---: | --- |

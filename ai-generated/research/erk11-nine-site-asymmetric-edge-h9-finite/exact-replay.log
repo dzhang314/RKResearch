@@ -1,0 +1,10 @@
+gate F (5, 16, 15)
+gate G (5, 7, 9)
+gate R (6, 20, 23)
+gate L (3, 9, 11)
+gate Q (4, 12, 12)
+gate S (6, 15, 15)
+width GQ (74, 72) 3.92
+width GF (87, 88) 16.52
+common (0, 0) []
+Exact width projection gcd is a unit.

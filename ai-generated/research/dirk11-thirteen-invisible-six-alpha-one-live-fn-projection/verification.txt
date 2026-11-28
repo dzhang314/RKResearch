@@ -1,0 +1,2 @@
+beta 1 nominal carrier degrees 2 7 nonzero norm at V=2 mod 103: 32
+beta 2 nominal carrier degrees 2 5 nonzero norm at V=2 mod 103: 9

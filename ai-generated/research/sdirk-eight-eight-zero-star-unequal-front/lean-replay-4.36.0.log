@@ -1,0 +1,4 @@
+'RKResearch.Certified.SDIRKEightEightZeroStarUnequalFront.cleared_kernel_moments' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightEightZeroStarUnequalFront.singleton_minor_transfer' depends on axioms: [propext,
+ Quot.sound]

@@ -1,0 +1,5 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSharedOneExtraD.star_reflected_level' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticSharedOneExtraD.even_shared_product_difference' depends on axioms: [propext,
+ Quot.sound]

@@ -1,0 +1,39 @@
+A2 A2 identical singleton clock
+A2 A3 projection factor degrees [(5, 1)]
+('A2', 'A3', 5) even fit quartic fit
+('A2', 'A3', 5) split fit quartic fit
+('A2', 'A3', 5) split fit quartic fit
+A2 S projection factor degrees [(2, 1)]
+('A2', 'S', 2) even fit quartic fit
+('A2', 'S', 2) split fit quartic fit
+('A2', 'S', 2) split fit quartic fit
+A3 A3 identical singleton clock
+A3 S projection factor degrees [(5, 1)]
+('A3', 'S', 5) even fit quartic fit
+('A3', 'S', 5) split fit quartic fit
+('A3', 'S', 5) split fit quartic fit
+S S projection factor degrees [(2, 1)]
+('S', 'S', 2) even fit quartic fit
+('S', 'S', 2) split fit quartic fit
+('S', 'S', 2) split fit quartic fit
+verified shared-matching D chart 12
+A2 A3 raw degrees 16 16 3
+A2 A3 guarded gcd 0
+A2 S raw degrees 10 10 0
+A2 S guarded gcd 0
+A3 S raw degrees 13 13 0
+A3 S guarded gcd 0
+verified all three mixed centered-even opposite-label phases
+A2 A2 ingress ((6, 7), (7, 6)) 0.06
+A2 A2 guarded projection gcd 1 0.06
+A2 A3 ingress ((5, 9), (6, 8)) 0.04
+A2 A3 guarded projection gcd 1 0.04
+A2 S ingress ((6, 4), (6, 3)) 0.03
+A2 S guarded projection gcd 1 0.03
+A3 A3 ingress ((9, 10), (10, 9)) 0.04
+A3 A3 guarded projection gcd 1 0.05
+A3 S ingress ((9, 4), (9, 3)) 0.03
+A3 S guarded projection gcd 1 0.03
+S S ingress ((0, 0), (0, 0)) 0.01
+S S guarded projection gcd 1 0.01
+all shared distinct-extra split arithmetic/star phases excluded

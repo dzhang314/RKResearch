@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticSharedOneExtraD
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSharedOneExtraD.star_reflected_level
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticSharedOneExtraD.even_shared_product_difference

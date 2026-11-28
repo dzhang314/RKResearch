@@ -1,0 +1,18 @@
+terminal A2 A2 projection degrees [252, 172] H factors [(24, 1)]
+terminal A2 A2 exact H degree 24 d gcd 1 0
+terminal A2 A3 projection degrees [364, 284] H factors [(4, 1), (24, 1)]
+terminal A2 A3 exact H degree 4 d gcd 1 0
+terminal A2 A3 exact H degree 24 d gcd 1 0
+terminal A2 S projection degrees [162, 24] H factors []
+terminal A3 A2 projection degrees [149, 119] H factors [(13, 1)]
+terminal A3 A2 exact H degree 13 d gcd 1 0
+terminal A3 A3 projection degrees [195, 165] H factors [(13, 1)]
+terminal A3 A3 exact H degree 13 d gcd 1 0
+terminal A3 S projection degrees [102, 72] H factors [(13, 1)]
+terminal A3 S exact H degree 13 d gcd 1 0
+terminal S A2 projection degrees [162, 118] H factors [(15, 1)]
+terminal S A2 exact H degree 15 d gcd 1 0
+terminal S A3 projection degrees [238, 194] H factors [(15, 1)]
+terminal S A3 exact H degree 15 d gcd 1 0
+terminal S S projection degrees [99, 24] H factors []
+all nine literal terminal-overlap phase charts excluded

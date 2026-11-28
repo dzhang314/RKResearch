@@ -1,0 +1,42 @@
+extra A2 A2 projection degrees [570, 478] H factors [(2, 1), (36, 1), (3, 2), (12, 2), (18, 2), (27, 2)]
+A2 A2 (2, 1) raw 11 5 verified
+A2 A2 (36, 1) slope 31 27 verified
+A2 A2 (3, 2) taps 11 10 verified
+A2 A2 (12, 2) taps 29 0 verified
+A2 A2 (18, 2) taps 31 1 verified
+A2 A2 (27, 2) taps 11 8 verified
+extra A2 A3 projection degrees [570, 478] H factors [(4, 1), (36, 1), (3, 2), (12, 2), (18, 2), (27, 2)]
+A2 A3 (4, 1) pair 19 13 verified
+A2 A3 (36, 1) slope 31 27 verified
+A2 A3 (3, 2) taps 11 10 verified
+A2 A3 (12, 2) taps 29 0 verified
+A2 A3 (18, 2) taps 31 1 verified
+A2 A3 (27, 2) taps 11 8 verified
+extra A2 S projection degrees [480, 388] H factors [(36, 1), (3, 2), (12, 2), (18, 2), (27, 2)]
+A2 S (36, 1) slope 31 27 verified
+A2 S (3, 2) taps 11 10 verified
+A2 S (12, 2) taps 29 0 verified
+A2 S (18, 2) taps 31 1 verified
+A2 S (27, 2) taps 11 8 verified
+extra A3 A2 projection degrees [324, 295] H factors [(4, 1), (18, 1), (18, 2)]
+A3 A2 (4, 1) pair 19 14 verified
+A3 A2 (18, 1) slope 23 15 verified
+A3 A2 (18, 2) taps 31 1 verified
+extra A3 A3 projection degrees [324, 295] H factors [(2, 1), (18, 1), (18, 2)]
+A3 A3 (2, 1) raw 11 5 verified
+A3 A3 (18, 1) slope 23 15 verified
+A3 A3 (18, 2) taps 31 1 verified
+extra A3 S projection degrees [261, 232] H factors [(18, 1), (18, 2)]
+A3 S (18, 1) slope 23 15 verified
+A3 S (18, 2) taps 31 1 verified
+extra S A2 projection degrees [270, 241] H factors [(6, 3), (9, 4)]
+S A2 (6, 3) slope 19 16 verified
+S A2 (9, 4) taps 13 2 verified
+extra S A3 projection degrees [268, 241] H factors [(6, 3), (9, 4)]
+S A3 (6, 3) slope 19 16 verified
+S A3 (9, 4) taps 13 10 verified
+extra S S projection degrees [197, 169] H factors [(2, 1), (6, 3), (9, 4)]
+S S (2, 1) raw 11 5 verified
+S S (6, 3) slope 19 16 verified
+S S (9, 4) taps 13 2 verified
+all nine extra-D overlap phase charts excluded

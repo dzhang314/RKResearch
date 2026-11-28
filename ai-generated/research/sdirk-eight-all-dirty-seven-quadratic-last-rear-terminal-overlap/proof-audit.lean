@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticTwoSOneExtraTerminalOverlap
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSOneExtraTerminalOverlap.front_singleton_scaled
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSOneExtraTerminalOverlap.rear_singleton_scaled

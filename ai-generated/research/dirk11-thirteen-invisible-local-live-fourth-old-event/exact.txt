@@ -1,0 +1,13 @@
+Exact old-event triple norm, two direct nested scalar audits: irreducible degree276 after ordinary guards, live linear fifth ratio
+F101: exact r and old-event x reconstruction ratios live
+F101: next fourth repeat unit
+F101: both remaining old repeat roots unit
+F101: next silent at fifth/origin after old marked completion units
+F101: consecutive fifth nonzero diagonal unit
+F101: consecutive fifth zero diagonal unit
+F107: exact r and old-event x reconstruction ratios live
+F107: next fourth repeat unit
+F107: both remaining old repeat roots unit
+F107: next silent at fifth/origin after old marked completion units
+F107: consecutive fifth nonzero diagonal unit
+F107: consecutive fifth zero diagonal unit

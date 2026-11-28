@@ -21,9 +21,11 @@ unrestricted DIRK methods of order eleven need fourteen stages.
   forces its reverse head to be nonzero. An immediate completion of an
   earlier marked pair [requires a nonzero companion](../dirk11-thirteen-invisible-local-old-repeat-companion/README.md).
 
-The remaining immediate next rows are a marked old completion with live
-companion, a silent slack at an earlier clock, or the consecutive
-fifth weighted nonendpoint debut. The
+The [old-clock event exclusion](../dirk11-thirteen-invisible-local-live-fourth-old-event/README.md)
+rules out both a marked old completion (including live companion) and
+a silent slack at an earlier clock. After the remaining exclusions
+below, the only surviving immediate next row is the consecutive fifth
+weighted nonendpoint debut. The
 [future-fifth-clock silence exclusion](../dirk11-thirteen-invisible-local-live-fourth-fifth-silent/README.md)
 removes that possible reuse, paying both an immediate weighted twin
 and the possible intervening old or fourth repeat. The

@@ -1,0 +1,10 @@
+'RKResearch.ERK11NonaliasedCenterQuadraticGate.bilinearElimination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NonaliasedCenterQuadraticGate.centeredConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11NonaliasedCenterQuadraticGate.centroidPole' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11NonaliasedCenterQuadraticGate.centeredPoolMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

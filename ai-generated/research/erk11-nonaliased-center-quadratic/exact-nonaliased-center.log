@@ -1,0 +1,8 @@
+widths 2/5 1/3 exact Schur redundancy of all 4 mixed coefficients
+widths 1/5 2/5 exact Schur redundancy of all 4 mixed coefficients
+widths 1/3 3/4 exact Schur redundancy of all 4 mixed coefficients
+a=1/5,d=2/5: quadratic coefficient degrees (9,6,3), joint zeta gcd 1; discriminant degree 12
+closed interval 133/200 67/100 : all 13 exact homogeneous discriminant coefficients negative
+closed interval 7/10 3/4 : all 13 exact homogeneous discriminant coefficients negative
+all exact nonalias quadratic and ordered checks passed
+wall 0.078 s; user 0.057 s; sys 0.016 s

@@ -1,0 +1,4 @@
+First-three equation, exceptional coefficient, and two singular roots verified.
+Cubic donor-pivot coefficient verified.
+Fourth-site terminal elimination identity verified.
+Both propagated singular branches contradict the paid bush moments.

@@ -1,0 +1,27 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenVolterra.forward_cut.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 11 A b)
+  {u : Fin s → K} (hu : u ∈ RKResearch.Certified.Graded.treeSpace A 4) {i : Fin s} (pre : ∀ j < i, u j = 0) :
+  (RKResearch.Certified.Graded.volterra A) u ∈ RKResearch.Certified.Graded.zeroSpace A 6 ∧
+    (∀ j < i, (RKResearch.Certified.Graded.volterra A) u j = 0) ∧
+      (RKResearch.Certified.Graded.volterra A) u i = -A i i ^ 2 * u i
+RKResearch.Certified.Graded.OrderElevenVolterra.backward_pivot.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Matrix (Fin s) (Fin s) K} (ha : A.IsLowerTriangular) (i : Fin s) (v : Fin s → K)
+  (after : ∀ (j : Fin s), i < j → v j = 0) : (reverseComm A) v i = -A i i ^ 2 * v i
+RKResearch.Certified.Graded.OrderElevenVolterra.backward_paid.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Matrix (Fin s) (Fin s) K} {b : Fin s → K} (ho : RKResearch.HasOrder 11 A b) {z : Fin s → K}
+  (hz : z ∈ RKResearch.Certified.Graded.treeSpace A 4) :
+  (reverseComm A) ((RKResearch.Certified.Graded.diag b) z) ∈
+    RKResearch.Certified.Graded.Reverse.annih (RKResearch.Certified.Graded.treeSpace A 4)
+RKResearch.Certified.Graded.OrderElevenVolterra.backward_terminal_zero.{u_1} {K : Type u_1} [Field K] {s : ℕ}
+  {A : Matrix (Fin s) (Fin s) K} (t : Fin s) (hc : ∀ (i : Fin s), A i t = 0) (w : Fin s → K) : (reverseComm A) w t = 0
+'RKResearch.Certified.Graded.OrderElevenVolterra.forward_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenVolterra.backward_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenVolterra.backward_paid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenVolterra.backward_terminal_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

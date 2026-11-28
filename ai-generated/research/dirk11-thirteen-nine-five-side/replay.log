@@ -1,0 +1,18 @@
+universal D0/D1 3 17
+exact zero-slope S=1 affine gcd degree 0
+exact zero-slope S!=1 affine gcd degree 0
+chart 1 aff vector degrees 27
+chart 1 resultant degree 188
+exact factor 1 multiplicity 28 excised by ['cubic origin', 'zero slope']
+exact factor 4 multiplicity 1 excised by ['G at a clean clock', 'origin clean']
+exact factor 4 multiplicity 2 excised by ['terminal clean']
+exact factor 4 multiplicity 14 excised by ['cubic origin', 'zero slope']
+exact factor 6 multiplicity 2 excised by ['cubic origin']
+exact factor 10 multiplicity 2 excised by ['G at a clean clock']
+prime 23 component 1 p,e determined; A0(e) and D1 nonzero
+prime 23 component 2 p,e determined; A0(e) and D1 nonzero
+prime 23 component 14 p,e determined; A0(e) and D1 nonzero
+prime 23 component 14 p,e determined; A0(e) and D1 nonzero
+prime 23 component 14 p,e determined; A0(e) and D1 nonzero
+prime 23 component 15 p,e determined; A0(e) and D1 nonzero
+PASS: exceptional chart tests and rank-480 finite quotient exclusion modulo 23

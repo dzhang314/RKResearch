@@ -1,0 +1,9 @@
+'RKResearch.Certified.ERK10RankThreePortLabelScalars.weighted_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10RankThreePortLabelScalars.primitive_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10RankThreePortLabelScalars.primitive_not_quadratic_multiple' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

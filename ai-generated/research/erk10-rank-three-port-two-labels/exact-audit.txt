@@ -1,0 +1,3 @@
+singleton/singleton normalized pressure: q**2*(p - q)**2/4
+first repeat 1 initial tap -s*(s - 1) slopes (-(3*s - 2)/(6*a*(s - 1)), -(2*s - 1)/(6*a)) (s*(2*s - 3)/(6*b*(s - 1)), s**2*(s - 2)/(6*b*(3*s - 2))) determinant s*(s - 1)/(12*a*b)
+first repeat s initial tap s**2*(s - 1)/(2*s - 3) slopes (s*(2*s - 3)/(6*a*(s - 1)), -s*(s - 2)*(2*s - 3)/(6*a)) (-(3*s - 2)/(6*b*(s - 1)), -(2*s - 1)/(6*b)) determinant -s*(s - 1)*(2*s - 3)/(12*a*b)

@@ -1,0 +1,21 @@
+/tmp/astra_erk10_paid16/ai-generated/lean/RKCert/ReviewedNative/ERK10RankThreePortTwoLabels.lean:31:4: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/astra_erk10_paid16/ai-generated/lean/RKCert/ReviewedNative/ERK10RankThreePortTwoLabels.lean:31:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/tmp/astra_erk10_paid16/ai-generated/lean/RKCert/ReviewedNative/ERK10RankThreePortTwoLabels.lean:45:4: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/astra_erk10_paid16/ai-generated/lean/RKCert/ReviewedNative/ERK10RankThreePortTwoLabels.lean:45:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'RKResearch.Certified.ERK10RankThreePortTwoLabels.singleton_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10RankThreePortTwoLabels.repeat_first_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10RankThreePortTwoLabels.repeat_second_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,20 @@
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+profile coefficient shape [(6, 0, 9, 1), (6, 0, 12, 1), (4, 0, 10, 1), (4, 0, 13, 1), (9, 0, 12, 1)] det guard factors [2, 1, 1, 0, 0, 0, 0, 0, 0]
+G-pivot homogeneous profile [(4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 10, 1), (4, 0, 9, 1), (3, 0, 8, 1)] [1, 1, 1, 0, 0, 0, 0, 0, 0]
+G-pivot exact fourth (4, 3, 12, 1) [1, 1, 1, 0, 0, 0, 0, 0, 0]
+F-pivot profile degrees and guards [(6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 9, 1), (6, 0, 8, 1), (5, 0, 7, 1)] [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] actual fourth in s (6, 3, 11, 1) [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+actual z as s amplitude (9, 0, 12, 1) (9, 0, 12, 1) (9, 0, 12, 1) [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+small exact shape CRT 3 3 8 1.34
+small CRT exact 3 3 (150, 84) 9 527 1.57
+actual ordinary fourth minor and compact pivot eliminant (22, 3, 39, 1) (83, 0, 150, 1) (73, 0, 130, 1) [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] u outer cap 7258
+exact true F1 saturation [1] [3] (24, 0, 35, 1) (55, 0, 97, 1) new outer cap 4253
+stage5 both independent split images preserve degree 4181
+stage5 bounded CRT cap and coefficient bits 4253 15174
+stage5 exact diagonal CRT progress 32 10.15
+stage5 exact diagonal CRT progress 64 16.28
+stage5 exact diagonal CRT progress 96 22.92
+stage5 exact diagonal CRT progress 128 30.35
+stage5 exact diagonal CRT progress 160 37.7
+stage5 exact diagonal CRT progress 192 45.5
+stage5 exact diagonal CRT progress 224 52.87
+stage5 exact geometric terminal-clock result 4253 664 4181 3517 253 15174 63.24

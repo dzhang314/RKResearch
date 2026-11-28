@@ -1,0 +1,4 @@
+c26b6cdbb8a1e7d86dec1a02b86270172328498cf5a21144c48738baf1ef1075  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicDigits.lean
+9dbf1a256d384482566d1ed2d24478506238ad7fc2dd177686bfbf5652b5ce22  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicLimit.lean
+d43fd86e2172e36b4c6cce7007f394119cbde364723aa1cfb532572ffb44caf4  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-LIMIT.md
+5cf1b0a0cf1784a9d24c3f3ed98217b43717db983e9fa774d87ae648d36c73dc  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-limit-4.36-audit.txt

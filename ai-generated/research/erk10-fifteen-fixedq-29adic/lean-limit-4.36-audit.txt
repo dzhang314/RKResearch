@@ -1,0 +1,5 @@
+'RKResearch.Certified.ERK10FixedQ29Adic.Digits.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Digits.lift_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Digits.simpleLift_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Digits.unique_of_simple_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Digits.scalar_existence_limit' depends on axioms: [propext, Classical.choice, Quot.sound]

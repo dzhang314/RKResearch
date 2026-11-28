@@ -1,0 +1,21 @@
+star gate degrees [56, 56, 56, 106, 106, 106, 195, 195, 195]
+star element degrees [349, 471, 159, 159, 158]
+star norm degree 3636
+star norm degree 4368
+star norm degree 1632
+star norm degree 1632
+star norm degree 1620
+star exact gcd degree 3378 non-leading factor degrees [1, 1, 4, 4, 9, 18]
+star exact gcd degree 1476 non-leading factor degrees [1, 1, 4, 4, 9, 18]
+star regular 0 m degree 1 gcd in R [6, 6, 6, 6] guards [('diag', 6)] leftover 0
+star regular 1 m degree 1 gcd in R [4, 4, 4, 4] guards [('early Gauss', 4)] leftover 0
+star regular 2 m degree 4 gcd in R [2, 2, 2, 2] guards [('early Gauss', 2)] leftover 0
+star regular 3 m degree 4 gcd in R [6, 6, 6, 6] guards [('early Gauss', 6)] leftover 0
+star regular 4 m degree 9 gcd in R [2, 2, 2, 2] guards [('pivot', 2)] leftover 0
+star regular 5 m degree 18 gcd in R [2, 2, 2, 2] guards [('early discr', 2)] leftover 0
+star singular 0 m degree 1 gcd in R [6, 6, 6, 6, 6, 6, 6] guards [('diag', 6)] leftover 0
+star singular 1 m degree 1 gcd in R [4, 4, 4, 4, 4, 4, 4] guards [('early Gauss', 4)] leftover 0
+star singular 2 m degree 4 gcd in R [2, 2, 2, 2, 2, 2, 2] guards [('early Gauss', 2)] leftover 0
+star singular 3 m degree 4 gcd in R [6, 6, 6, 6, 6, 6, 6] guards [('early Gauss', 6)] leftover 0
+star singular 4 m degree 9 gcd in R [2, 2, 2, 2, 2, 2, 2] guards [('pivot', 2)] leftover 0
+star singular 5 m degree 18 gcd in R [2, 2, 2, 2, 2, 2, 2] guards [('early discr', 2)] leftover 0

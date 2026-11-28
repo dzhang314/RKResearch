@@ -1,0 +1,19 @@
+arith gate degrees [45, 45, 45, 87, 87, 87, 153, 153, 153]
+arith element degrees [276, 381, 129, 129, 128]
+arith norm degree 2898
+arith norm degree 3582
+arith norm degree 1326
+arith norm degree 1326
+arith norm degree 1296
+arith exact gcd degree 2670 non-leading factor degrees [1, 4, 4, 4, 8, 16]
+arith exact gcd degree 1170 non-leading factor degrees [1, 4, 4, 4, 8, 16]
+arith regular 0 m degree 16 gcd in R [2, 2, 2, 2] guards [('early discr', 2)] leftover 0
+arith regular 2 m degree 4 gcd in R [6, 6, 6, 6] guards [('early Gauss', 6)] leftover 0
+arith regular 3 m degree 4 gcd in R [2, 2, 2, 2] guards [('early Gauss', 2)] leftover 0
+arith regular 4 m degree 4 gcd in R [1, 1, 1, 1] guards [('diag', 1)] leftover 0
+arith regular 5 m degree 8 gcd in R [2, 2, 2, 2] guards [('pivot', 2)] leftover 0
+arith singular 0 m degree 16 gcd in R [2, 2, 2, 2, 2, 2, 2] guards [('early discr', 2)] leftover 0
+arith singular 2 m degree 4 gcd in R [6, 6, 6, 6, 6, 6, 6] guards [('early Gauss', 6)] leftover 0
+arith singular 3 m degree 4 gcd in R [2, 2, 2, 2, 2, 2, 2] guards [('early Gauss', 2)] leftover 0
+arith singular 4 m degree 4 gcd in R [1, 1, 1, 1, 1, 1, 1] guards [('diag', 1)] leftover 0
+arith singular 5 m degree 8 gcd in R [2, 2, 2, 2, 2, 2, 2] guards [('pivot', 2)] leftover 0

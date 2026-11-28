@@ -1,0 +1,4 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.SDIRKEightDirtySevenAffineOneDoubleEnd.arithmetic_root_sum' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightDirtySevenAffineOneDoubleEnd.star_root_sum' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightDirtySevenAffineOneDoubleEnd.arithmetic_third_terminal' depends on axioms: [propext]

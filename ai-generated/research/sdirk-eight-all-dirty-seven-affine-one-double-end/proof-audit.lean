@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenAffineOneDoubleEnd
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineOneDoubleEnd.arithmetic_root_sum
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineOneDoubleEnd.star_root_sum
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineOneDoubleEnd.arithmetic_third_terminal

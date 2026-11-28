@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightAsymmetricSingularPivots
+open RKResearch.Certified.SDIRKEightAsymmetricSingularPivots
+#check gap_singular
+#check opposite_gaps_nonsingular
+#check gap_anchor_support
+#print axioms gap_singular
+#print axioms opposite_gaps_nonsingular
+#print axioms gap_anchor_support

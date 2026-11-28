@@ -1,0 +1,27 @@
+
+>>> check_gap.py
+diagonal and two actual anchors paid support 4939055927
+rear A joint paid support 1
+rear Z joint paid support 1
+
+>>> check_diagonal_minor.py
+exception exact minor 59 9 50
+exception exact minor 6359 2219 3726
+
+>>> check_diagonal_norms.py
+both anchor support bitlength 900
+after A 4 norm support gcd 11 bits 4
+after Z 6 norm support gcd 1 bits 1
+after Z 9 norm support gcd 1 bits 1
+phase norm gcds [11, 1]
+
+>>> check_census.py
+p,fiber,total splitting degree 11 x^2 + 3*x + 6 12
+p,fiber,total splitting degree 11 x^5 + 9*x^4 + 9*x^3 + 10*x^2 + 7*x + 2 10
+p,fiber,total splitting degree 59 x + 11 3
+p,fiber,total splitting degree 59 x + 43 6
+p,fiber,total splitting degree 59 x^5 + 47*x^4 + 32*x^3 + 16*x^2 + 50*x + 25 15
+p,fiber,total splitting degree 6359 x + 1541 2
+p,fiber,total splitting degree 6359 x^6 + 3411*x^5 + 1608*x^4 + 2357*x^3 + 3054*x^2 + 585*x + 4763 12
+p,fiber,total splitting degree 59 x + 50 2
+p,fiber,total splitting degree 6359 x + 4140 3

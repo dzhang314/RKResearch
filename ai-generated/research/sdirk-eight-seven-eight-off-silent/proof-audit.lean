@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightMultiClockRowTwo
+
+open RKResearch.Certified.SDIRKEightMultiClockRowTwo
+
+#print axioms affine_residual_detects
+#print axioms second_doubled_residual_ne_zero
+#print axioms front_zero_ratio_localizes

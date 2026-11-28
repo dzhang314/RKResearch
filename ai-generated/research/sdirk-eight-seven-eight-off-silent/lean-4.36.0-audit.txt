@@ -1,0 +1,9 @@
+'RKResearch.Certified.SDIRKEightMultiClockRowTwo.affine_residual_detects' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightMultiClockRowTwo.second_doubled_residual_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightMultiClockRowTwo.front_zero_ratio_localizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

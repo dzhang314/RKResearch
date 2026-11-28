@@ -1,0 +1,6 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFinite.finite_of_nonzero_norm_cover.{u_1, u_2}
+  {K : Type u_1} {ι : Type u_2} [Field K] [Finite ι] (S : Set K) (norm : ι → Polynomial K)
+  (live : ∀ (i : ι), norm i ≠ 0) (cover : ∀ x ∈ S, ∃ i, (Polynomial.aeval x) (norm i) = 0) : S.Finite
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFinite.finite_of_nonzero_norm_cover' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

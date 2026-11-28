@@ -1,0 +1,4 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixCubicLiveFinite
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFinite.finite_of_nonzero_norm_cover
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFinite.finite_of_nonzero_norm_cover

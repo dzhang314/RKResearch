@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticFiveDPrefix
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticFiveDPrefix.cleared_singleton_trace
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticFiveDPrefix.affine_singleton_product

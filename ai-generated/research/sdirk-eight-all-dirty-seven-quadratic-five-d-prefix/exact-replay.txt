@@ -1,0 +1,31 @@
+('AM', 0, 'A', 3) identically forbidden guard
+('AM', 1, 'A', 2) identically forbidden guard
+('AM', 1, 'A', 3) degree 10 factors [(10, 1)]
+('AM', 1, 'S', 2) degree 7 factors [(7, 1)]
+('AM', 1, 'S', 3) degree 7 factors [(7, 1)]
+('AN', 0, 'A', 2) degree 4 factors [(4, 1)]
+('AN', 0, 'S', 2) degree 4 factors [(4, 1)]
+('AN', 0, 'S', 3) degree 4 factors [(4, 1)]
+('S1', 0, 'A', 2) degree 5 factors [(1, 1), (4, 1)]
+('S1', 0, 'S', 2) degree 4 factors [(4, 1)]
+('S1', 0, 'S', 3) degree 4 factors [(4, 1)]
+('S2', 0, 'A', 2) degree 5 factors [(1, 1), (4, 1)]
+('S2', 0, 'S', 2) degree 4 factors [(4, 1)]
+('S2', 0, 'S', 3) degree 4 factors [(4, 1)]
+('C_A', 1, 'A', 2) identically forbidden guard
+('C_A', 2, 'A', 3) identically forbidden guard
+('AM', 1, 'A', 3) 10 repeated W? False rank outcome rank mismatch
+('AM', 1, 'S', 2) 7 repeated W? False rank outcome rank mismatch
+('AM', 1, 'S', 3) 7 repeated W? False rank outcome rank mismatch
+('AN', 0, 'A', 2) 4 reverse singleton is graph zero
+('AN', 0, 'S', 2) 4 repeated W? False rank outcome rank mismatch
+('AN', 0, 'S', 3) 4 repeated W? False rank outcome rank mismatch
+('S1', 0, 'A', 2) 1 repeated W? False rank outcome rank mismatch
+('S1', 0, 'A', 2) 4 repeated W? False rank outcome rank mismatch
+('S1', 0, 'S', 2) 4 reverse singleton is graph zero
+('S1', 0, 'S', 3) 4 reverse singleton is graph zero
+('S2', 0, 'A', 2) 1 repeated W? False rank outcome rank mismatch
+('S2', 0, 'A', 2) 4 repeated W? False rank outcome rank mismatch
+('S2', 0, 'S', 2) 4 reverse singleton is graph zero
+('S2', 0, 'S', 3) 4 reverse singleton is graph zero
+all shared and distinct endpoint five-D boundary patterns excluded

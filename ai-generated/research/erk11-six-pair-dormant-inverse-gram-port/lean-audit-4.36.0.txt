@@ -1,0 +1,3 @@
+'RKResearch.Certified.ERK11DormantInverseGramPort.central' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK11DormantInverseGramPort.one_sided' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK11DormantInverseGramPort.denominator_clearing' does not depend on any axioms

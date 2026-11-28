@@ -1,0 +1,14 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewA2Ingress.arithmetic_third_half_amplitude' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewA2Ingress.paid_affine_factor_quadratic_coefficient' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewA2Ingress.rear_arithmetic_equal_defects' depends on axioms: [propext,
+ Quot.sound]
+verified nominal row degrees [(18, 18, 0), (10, 11, 3), (22, 26, 2), (16, 17, 8), (26, 27, 8)]
+verified first nodal projection (84, 100, 0)
+terminal-new A2 exclusion not certified
+A2 front half amplitude: E and Q degree in H 15 65 common and guarded 0 0
+A2 v=2 axis projections [82, 80, 84] H factors [(1, 1), (3, 1)]
+rear v=2 exact H degree 1 excluded
+rear v=2 exact H degree 3 excluded
+both A2 special charts excluded; general A2 remains open

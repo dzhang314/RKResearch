@@ -1,0 +1,3 @@
+paid Jacobi and d-ratio 17 11 24
+univariate V coefficients residues and quotient [7, 11, 22] [0, 25, 0, 1]
+Z output at e and f exact in decic algebra only

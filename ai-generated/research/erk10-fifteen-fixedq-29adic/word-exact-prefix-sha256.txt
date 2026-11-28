@@ -1,0 +1,8 @@
+6015b9b3f3b667788bbce6b789ee6c62f4742e45150e6d675a5173eab5d74779  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicHeadBi.lean
+030db77d46254cebf264bac01a42f827dade7121353b0748421107307900a92f  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicHeadBiChecks.lean
+65235a8d012c219382355bc644d924bcf5999af38357a5f90fabeb74f8fda11e  ai-generated/research/erk10-fifteen-fixedq-29adic/WORD-EXACT-PREFIX.md
+55a322120fda48ec319b79d5de38378d577cfe688d44a924c5dc9f444cc1cbf5  ai-generated/research/erk10-fifteen-fixedq-29adic/exact-quad.py
+690687a7ed015f1a63d3a67108d056d163f2bd2f40586c2f3042e8f2eabe46f5  ai-generated/research/erk10-fifteen-fixedq-29adic/exact-prefix-replay.txt
+8d4520a19d6aa9cb4eee362429402970883858860056e67b050230d84ed33063  ai-generated/research/erk10-fifteen-fixedq-29adic/z-tail.py
+87a7870a3b5f6a658b8384771fa6380fada669e27e40d3ab40dd89e251703ffe  ai-generated/research/erk10-fifteen-fixedq-29adic/z-tail-replay.txt
+1ad94cad73766ed7b0822f4e1304007f7a646021834280b2d237ee980722aea5  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-bivariate-prefix-checks-4.36.log

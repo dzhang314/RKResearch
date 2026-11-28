@@ -1,0 +1,4 @@
+Lean 4.36.0
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.HeadBi.cert_ratioB' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.HeadBi.cert_ratioD' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.HeadBi.cert_ratioE' depends on axioms: [propext]

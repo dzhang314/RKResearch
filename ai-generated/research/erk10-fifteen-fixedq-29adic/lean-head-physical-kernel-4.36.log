@@ -1,0 +1,4 @@
+Lean 4.36.0, persistent Lean file worker
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_head_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_singleton_Z_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

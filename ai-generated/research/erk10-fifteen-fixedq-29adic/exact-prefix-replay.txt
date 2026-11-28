@@ -1,0 +1,14 @@
+exact paid head scalar spectrum and monic quadratic: [2, 17, 11, 20]
+all exact literal head ratios, poles []
+all pair and nonlinear contacts exact
+coordinate denominator-paid raw lanes {'ys': [True, True, True, True, True, True, True, True, True, True, True], 'w': [True, True, True, True, True, True, True, True, True, True, True], 'u': [True, True, True, True, True, True, True, True, True, True, True], 'eta': [True, True, True, True, True, True, True, True, True, True, True]}
+three chronological exact forward taps ['(deg=[10, 0], denDigits=116, residue=6)', '(deg=[10, 0], denDigits=232, residue=3)', '(deg=[10, 0], denDigits=263, residue=13)']
+all 8 exact identities row 0 against 0 preceding solved columns den-paid []
+all 8 exact identities row 1 against 1 preceding solved columns den-paid [True]
+all 8 exact identities row 2 against 2 preceding solved columns den-paid [True, True]
+all 8 exact identities row 3 against 3 preceding solved columns den-paid [True, True, True]
+all 8 exact identities row 4 against 4 preceding solved columns den-paid [True, True, True, True]
+all 8 exact identities row 5 against 5 preceding solved columns den-paid [True, True, True, True, True]
+all 8 exact identities row 6 against 6 preceding solved columns den-paid [True, True, True, True, True, True]
+all 8 exact identities row 7 against 7 preceding solved columns den-paid [True, True, True, True, True, True, True]
+complete algebraic prefix, actual row count 8

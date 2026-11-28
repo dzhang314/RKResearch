@@ -1,0 +1,3 @@
+'RKResearch.Certified.Graded.Reverse.dirk_order12_nonC2_floor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

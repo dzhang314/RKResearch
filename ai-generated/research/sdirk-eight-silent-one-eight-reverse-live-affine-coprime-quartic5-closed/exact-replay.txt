@@ -1,0 +1,37 @@
+aq4 exact raw shapes True True (2, 0, 14, 0) (6, 0, 24, 1)
+six peg determinant True True (6, 3, 28, 0) (6, 3, 20, 0) [1, 1]
+small CRT exact 2 3 (52, 12) 3 151
+six peg exact gap projection True True (12, 0, 52, 1) (12, 0, 40, 1) [1]
+small exact shape CRT 2 12 8
+small CRT exact 2 12 (248, 0) 12 664
+six peg exact γ projection True True (0, 0, 248, 0) (0, 0, 144, 0) [24, 4, 4, 4]
+affine coprime silent fifth True True 1129 203 degree 144 all (diagonal degree,multiplicity,common gap degree) [(4, 2, 2), (6, 2, 2), (14, 2, 2), (48, 2, 2)] determinant-only and joint cuts 0 4
+aq4 exact raw shapes True False (5, 0, 14, 0) (6, 0, 24, 1)
+six peg determinant True False (6, 3, 28, 0) (6, 3, 20, 0) [1, 1]
+small CRT exact 2 3 (52, 12) 3 152
+six peg exact gap projection True False (12, 0, 52, 1) (12, 0, 40, 1) [1]
+small exact shape CRT 5 12 8
+small exact shape CRT 5 12 16
+small CRT exact 5 12 (368, 0) 17 1016
+six peg exact γ projection True False (0, 0, 368, 1) (0, 0, 264, 1) [24, 4, 4, 4]
+affine coprime silent fifth True False 1129 203 degree 264 all (diagonal degree,multiplicity,common gap degree) [(1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (1, 1, 1), (2, 1, 1), (4, 1, 1), (40, 1, 1), (79, 1, 1), (125, 1, 1)] determinant-only and joint cuts 0 19
+aq4 exact raw shapes False True (2, 0, 14, 1) (6, 0, 24, 1)
+six peg determinant False True (6, 3, 28, 1) (6, 3, 20, 1) [1, 1]
+small CRT exact 2 3 (52, 12) 4 196
+six peg exact gap projection False True (12, 0, 52, 1) (12, 0, 40, 1) [1]
+small exact shape CRT 2 12 8
+small exact shape CRT 2 12 16
+small CRT exact 2 12 (248, 0) 16 907
+six peg exact γ projection False True (0, 0, 248, 1) (0, 0, 144, 1) [24, 4, 4, 4]
+affine coprime silent fifth False True 1129 203 degree 144 all (diagonal degree,multiplicity,common gap degree) [(2, 2, 2), (8, 2, 2), (17, 2, 2), (45, 2, 2)] determinant-only and joint cuts 0 4
+aq4 exact raw shapes False False (5, 0, 14, 1) (6, 0, 24, 1)
+six peg determinant False False (6, 3, 28, 1) (6, 3, 20, 1) [1, 1]
+small CRT exact 2 3 (52, 12) 4 197
+six peg exact gap projection False False (12, 0, 52, 1) (12, 0, 40, 1) [1]
+small exact shape CRT 5 12 8
+small exact shape CRT 5 12 16
+small CRT exact 5 12 (368, 0) 23 1323
+six peg exact γ projection False False (0, 0, 368, 1) (0, 0, 264, 1) [24, 4, 4, 4]
+affine coprime silent fifth False False 1129 203 degree 264 all (diagonal degree,multiplicity,common gap degree) [(2, 1, 1), (3, 1, 1), (6, 1, 1), (9, 1, 1), (12, 1, 1), (13, 1, 1), (29, 1, 1), (35, 1, 1), (36, 1, 1), (119, 1, 1)] determinant-only and joint cuts 0 10
+full affine-coprime silent fifth census [(4, 576, 0, 4), (19, 528, 0, 19), (4, 576, 0, 4), (10, 528, 0, 10)]
+all four characteristic-zero affine-coprime quartic silent fifth orientations excluded

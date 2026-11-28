@@ -1,0 +1,10 @@
+0.17 side 0 first field degree 9 diagonal degree 4 factor degrees [(4, 1)]
+0.33 side 1 first field degree 9 diagonal degree 4 factor degrees [(4, 1)]
+0.16 side 0 first field degree 9 diagonal degree 4 factor degrees [(4, 1)]
+0 silent verified exact-field residue (61, 29, 38, 52, 4, (4, 0))
+0 arithmetic verified exact-field residue (61, 29, 38, 52, 4, (9, 0))
+0 star verified exact-field residue (61, 29, 38, 52, 4, (22, 27, 12, 0))
+0.38 side 1 first field degree 9 diagonal degree 4 factor degrees [(4, 1)]
+1 silent verified exact-field residue (41, 29, 35, 35, 17, (4, 0))
+1 arithmetic verified exact-field residue (41, 29, 35, 35, 17, (9, 0))
+1 star verified exact-field residue (41, 29, 35, 35, 26, (38, 3, 1, 0))

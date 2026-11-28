@@ -1,0 +1,10 @@
+import RKCert.Research.SDIRKEightSevenZeroDistinctScalar
+
+namespace RKResearch.Certified.SDIRKEightSevenZeroDistinctScalar
+
+#print axioms shared_line_cancel
+#print axioms star_recovery_cancel
+#print axioms arithmetic_rear_sextic_identity
+#print axioms arithmetic_rear_sextic
+
+end RKResearch.Certified.SDIRKEightSevenZeroDistinctScalar

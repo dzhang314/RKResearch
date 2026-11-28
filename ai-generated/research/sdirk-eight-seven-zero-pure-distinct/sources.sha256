@@ -1,0 +1,7 @@
+a53e7229fdcb83d0707f388b0b3f5ac1ff3dc3631299a4f10ac0fba758902e8d  ai-generated/research/sdirk-eight-seven-zero-pure-distinct/README.md
+affa7c5da9283e003e14cbf9fce752d59f8b815f8db71bbe51ed0f367daea922  ai-generated/research/sdirk-eight-seven-zero-pure-distinct/check_rear.py
+90564600a3a7efd6c268dc982f9a5775c01ad6ff54f772be7ce7ebd1551e8a8d  ai-generated/research/sdirk-eight-seven-zero-pure-distinct/forward_clock_tower.py
+db59f2e124fb16a503e87d535491828fada400c769861c68a6f0a813002fb4b3  ai-generated/research/sdirk-eight-seven-zero-pure-distinct/exact-replay.txt
+56884f514d0a946384ea297b81b944f3d966750170a84849d138bac5a078c097  ai-generated/research/sdirk-eight-seven-zero-pure-distinct/lean-4.36.0-audit.txt
+e367a910a72ea7c36ce91376165cf4fff93f7c5340333db6988926d9bfbcb4c3  ai-generated/research/sdirk-eight-seven-zero-pure-distinct/proof-audit.lean
+7066750b76c9f505b04a801efdce775085d01e828ba604aaa1e90c2006033dcf  ai-generated/lean/RKCert/Research/SDIRKEightSevenZeroDistinctScalar.lean

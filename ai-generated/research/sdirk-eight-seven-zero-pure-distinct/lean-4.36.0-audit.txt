@@ -1,0 +1,7 @@
+'RKResearch.Certified.SDIRKEightSevenZeroDistinctScalar.shared_line_cancel' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroDistinctScalar.star_recovery_cancel' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightSevenZeroDistinctScalar.arithmetic_rear_sextic_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroDistinctScalar.arithmetic_rear_sextic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,9 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticOneSingletonArithmetic.graph_leading_numerator' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticOneSingletonArithmetic.graph_third_value_clear' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticOneSingletonArithmetic.monic_quadratic_product_remainder' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticOneSingletonArithmetic.opposite_roots_force_zero_intercept' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

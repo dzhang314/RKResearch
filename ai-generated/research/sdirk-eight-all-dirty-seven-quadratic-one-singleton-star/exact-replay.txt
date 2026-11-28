@@ -1,0 +1,4 @@
+projected h factors [(9, 1)]
+triple D phase equations False False
+one-extra D phase guards [True, True, True]
+all SSS stars excluded opposite doubled endpoint

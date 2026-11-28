@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticOneSingletonStar
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticOneSingletonStar.star_graph
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticOneSingletonStar.singleton_nodal_remainder

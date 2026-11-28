@@ -1,0 +1,4 @@
+AA base [((2, 1), ['D3 hits S first']), ((2, 3), ['h=0', 'D1 hits S first'])] parity [((3, 1), ['D3 centered']), ((3, 2), ['D2/D3 opposite'])] survive [((1, 2), '-H - v'), ((1, 3), '-H - 2*v')]
+AS base [] parity [((2, 1), ['D2 centered']), ((3, 1), ['D3 centered'])] survive [((1, 2), '-H - v'), ((1, 3), '-H + v - 2'), ((2, 3), '-H + 3*v - 2'), ((3, 2), '-H - 3*v + 4')]
+SA base [] parity [] survive [((1, 2), '2*H - v - 2'), ((1, 3), '2*H - 2*v - 2'), ((2, 1), '2*H - v - 2'), ((2, 3), '2*H - 3*v - 2'), ((3, 1), '2*H - 2*v - 2'), ((3, 2), '2*H - 3*v - 2')]
+SS base [] parity [((2, 3), ['D2/D3 opposite']), ((3, 2), ['D2/D3 opposite'])] survive [((1, 2), '2*H - v - 2'), ((1, 3), '2*H + v - 4'), ((2, 1), '2*H - v - 2'), ((3, 1), '2*H + v - 4')]

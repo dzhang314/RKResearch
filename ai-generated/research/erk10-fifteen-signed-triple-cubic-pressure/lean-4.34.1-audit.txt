@@ -1,0 +1,4 @@
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.affine_residue_pairs' does not depend on any axioms
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.affine_rank_three_and_nonsplit' depends on axioms: [propext]
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.no_integral_a_pole_d' does not depend on any axioms
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.boundary_nonsplits' does not depend on any axioms

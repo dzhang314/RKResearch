@@ -1,0 +1,8 @@
+mod 1013: all padded first-event charts excluded after exact boundary factors
+singleton: 600
+spent1: 480
+spent2: 480
+spent3: 480
+spent4: 480
+literal_origin_skipped: 480
+mixed: 2

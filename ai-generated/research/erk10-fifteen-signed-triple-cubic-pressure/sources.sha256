@@ -1,3 +1,9 @@
-404e50b729f201c64ea6e1f033265c795aa5ab8a38bce91e6c7a76288ee9d592  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/README.md
-8a610f9d30cd1dee76b363100fe46f85eb6931fa0f1d0fbe0d403587338917bb  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/audit.py
-1f0e7b5120edd3c2bed1ac6f9a17effc6a51b1a4d8daf917354f4b68cd450088  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/exact-audit.txt
+f3045f7fb97dcb356bba33995e4a606586f4d541976422e97221c4e80b4fed54  ai-generated/lean/RKCert/ReviewedNative/ERK10FifteenSignedTripleCubicPressureMod.lean
+0fd0295835b6d598c00c20ce298984951e3ffbc4c2b16a610818619ce65a6e24  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/README.md
+be793f08be0e7c9027977e643c6daef400687e02693688c83f3ad1fd8da15853  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/ACTUAL-ORDER-ADAPTER.md
+dd48c5bf99f602ea1b3bd2b2839d2072294d5acd00855faf44ad0db195c3e8a8  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/audit.py
+ba6d6546f427f52af2bca8d16cda4915b800c4017d65f340ca5aa2012132da6c  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/exact-audit.txt
+3f3dbe346548a6b285841198f2517fff8498cd46baa9b5304ba35b535dfe63b6  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/lean-4.34.1-audit.txt
+6367d724d9226d333db7886d192aa6924e349332ef3ca88fcaf3d96d7f9e3213  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/lean-4.35.0-audit.txt
+6367d724d9226d333db7886d192aa6924e349332ef3ca88fcaf3d96d7f9e3213  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/lean-4.36.0-audit.txt
+6367d724d9226d333db7886d192aa6924e349332ef3ca88fcaf3d96d7f9e3213  ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/lean-4.37.0-rc1-audit.txt

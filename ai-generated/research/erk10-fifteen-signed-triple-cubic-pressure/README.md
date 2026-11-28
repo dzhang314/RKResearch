@@ -171,4 +171,12 @@ cubic factor reductions, and verifies both leading cofactor vectors.
     python3 -B audit.py
     # From the repository root: sha256sum -c ai-generated/research/erk10-fifteen-signed-triple-cubic-pressure/sources.sha256
 
-The physical reduction and valuation argument are mathematical; the finite residue table and nonsplitting checks have exact Python replay.
+The physical reduction and valuation argument above are
+mathematical. The separate Lean Core arithmetic receipt verifies
+the finite residue table and its nonsplitting checks, not those
+reductions.
+
+The four finite arithmetic endpoints were replayed on Lean 4.34.1,
+4.35.0, 4.36.0 and 4.37.0-rc1 with only standard axioms. For the
+literal rooted adapter that generically earns the cubic tests, see
+[the actual-order adapter](ACTUAL-ORDER-ADAPTER.md).

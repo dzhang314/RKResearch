@@ -1,0 +1,12 @@
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.affine_residue_pairs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.affine_rank_three_and_nonsplit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.no_integral_a_pole_d' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FifteenSignedTripleCubicPressureMod.boundary_nonsplits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

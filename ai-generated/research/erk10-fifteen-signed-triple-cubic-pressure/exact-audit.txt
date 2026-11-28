@@ -18,3 +18,4 @@ affine residue branches: 14
 boundary 3 valuation exponent -3 unit-power 0 cofactor [5, -35, 70, -42] scale 4939200
 boundary -1 valuation exponent -6 unit-power 3 cofactor [-1, 9, -21, 14] scale 117600
 boundary quadratic discriminants: nonsquares 10 and 14 modulo 19
+actual canonical donor minor and literal pure-r exceptional row checked

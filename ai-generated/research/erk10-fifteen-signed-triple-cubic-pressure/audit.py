@@ -109,3 +109,12 @@ for e,(want,scale),erho,wexp in ((3,one,0,-3),(-1,two,3,-6)):
 squares={i*i%p for i in range(p)}
 assert 105%19==10 and 33%19==14 and not({10,14}&squares)
 print('boundary quadratic discriminants: nonsquares 10 and 14 modulo 19')
+# Canonical p,q donor pair, reusing the two formal scalar variables.
+p0,q0=a,d
+Qp=-p0**4*F(1,36)
+Vp=3*p0*F(1,4)
+Qq=5*p0*q0**3*F(1,9)-p0**2*q0**2*F(1,3)-q0**4*F(1,4)
+Vqnum=q0**2*(9*p0-6*q0)
+assert Qp*Vqnum-4*p0**2*Qq*Vp==F(3,4)*p0**3*q0**2*(p0-q0)**2
+assert all(F(1,2)*F(1,3)**j+F(2,5)*F(5,6)**j==F(1,j+1) for j in (1,2,3))
+print('actual canonical donor minor and literal pure-r exceptional row checked')

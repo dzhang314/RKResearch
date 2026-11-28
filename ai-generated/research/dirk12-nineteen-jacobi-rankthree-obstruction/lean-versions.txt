@@ -1,0 +1,12 @@
+4.34.1
+'RKResearch.Certified.DIRK12JacobiRankThree.numerator_all_residues' does not depend on any axioms
+'RKResearch.Certified.DIRK12JacobiRankThree.quartic_all_residues' does not depend on any axioms
+4.35.0
+'RKResearch.Certified.DIRK12JacobiRankThree.numerator_all_residues' does not depend on any axioms
+'RKResearch.Certified.DIRK12JacobiRankThree.quartic_all_residues' does not depend on any axioms
+4.36.0
+'RKResearch.Certified.DIRK12JacobiRankThree.numerator_all_residues' does not depend on any axioms
+'RKResearch.Certified.DIRK12JacobiRankThree.quartic_all_residues' does not depend on any axioms
+4.37.0-rc1
+'RKResearch.Certified.DIRK12JacobiRankThree.numerator_all_residues' does not depend on any axioms
+'RKResearch.Certified.DIRK12JacobiRankThree.quartic_all_residues' does not depend on any axioms

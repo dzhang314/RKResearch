@@ -1,0 +1,5 @@
+actual low size-six, mini scalar/cubic and Jacobi determinants: exact
+Jacobi weighted moments and rank-two minor: exact
+degree-12 numerator / mod11: [4, 1, 4, 9, 5, 3, 9, 9, 2, 8, 4]
+Jacobi quartic / mod13: [1, 1, 2, 2, 10, 7, 11, 12, 11, 7, 10, 2, 2]
+all scoped arithmetic gates passed

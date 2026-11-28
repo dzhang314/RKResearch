@@ -1,0 +1,11 @@
+Finite live-cubic box: exact clock resultants and degree-bounded Macaulay rank.
+finite m1 beta 1 d 12 p 103 Macaulay rank 120 / 120 degrees [2, 2, 7]
+finite m1 beta 2 d 12 p 103 Macaulay rank 120 / 120 degrees [2, 2, 5]
+finite mY2 beta 1 d 12 p 103 Macaulay rank 120 / 120 degrees [2, 2, 7]
+finite mY2 beta 2 d 12 p 103 Macaulay rank 120 / 120 degrees [2, 2, 5]
+finite contact beta 1 d 48 p 101 Macaulay rank 480 / 480 degrees [2, 2, 7]
+finite contact beta 2 d 48 p 101 Macaulay rank 480 / 480 degrees [2, 2, 5]
+finite Fn-loss beta 1 d 24 p 103 Macaulay rank 240 / 240 degrees [2, 2, 7]
+finite Fn-loss beta 2 d 24 p 103 Macaulay rank 240 / 240 degrees [2, 2, 5]
+finite r0 beta 1 d 24 p 103 Macaulay rank 240 / 240 degrees [2, 2, 7]
+finite r0 beta 2 d 24 p 103 Macaulay rank 240 / 240 degrees [2, 2, 5]

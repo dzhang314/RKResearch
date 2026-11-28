@@ -1,0 +1,7 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+'RKResearch.Certified.DIRK12MidpointRealInterval.ordinary_scalar_of_reflected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointRealInterval.ordinary_scalar_with_physical_weights' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

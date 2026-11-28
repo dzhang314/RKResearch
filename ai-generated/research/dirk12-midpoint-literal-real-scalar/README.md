@@ -27,3 +27,5 @@ and DIRK12MidpointRealPhysicalWeights after the named real interval
 and Q36 scalar packets, then run AuditDIRK12MidpointRealSupport.lean.
 The imported check was run on Lean 4.36.0 with matched Mathlib,
 and reports only propext, Classical.choice, and Quot.sound.
+
+The [ordinary normalization](../dirk12-midpoint-ordinary-scalar/README.md) connects these reflected moments to the exact ordinary scalar premise of the sufficient low-flag criterion.

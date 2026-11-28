@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticMidpointVsArithmetic
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticMidpointVsArithmetic.quadratic_clock_difference
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticMidpointVsArithmetic.cleared_midpoint_ratio

@@ -1,0 +1,6 @@
+symbolic trace built [(5, 6), (12, 11), (10, 11)]
+ingress bidegrees [((4, 3), 6), ((16, 7), 22), ((19, 3), 20), ((22, 8), 29)]
+resultant degree 74 guarded gcd degree 62
+resultant degree 66 guarded gcd degree 0
+resultant degree 96 guarded gcd degree 0
+all genuine midpoint reverse-arithmetic fibres excluded

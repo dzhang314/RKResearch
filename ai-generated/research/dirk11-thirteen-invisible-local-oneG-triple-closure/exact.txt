@@ -1,0 +1,14 @@
+before other 840
+early 825 surviving-prefix next labels ABCSX
+late 1314 surviving-prefix next labels ABCSX
+middle 801 surviving-prefix next labels ABCSX
+Exact marked-triple census: 3,780 literal words, and all five next-event fibres at each paid driver prefix
+Exact pre-fourth primitive/Hankel exclusion and degree55 clock projection: z^13 J4^3 D30, unique live r ratio
+F103: all immediate repeats after fourth impossible (4 labels, both complement assignments)
+F103: matched D0 on marked triple second return after fourth is impossible
+F103: third marked-triple member cannot be the same-clock next row (paid full-class primitive unit)
+F103: old marked returns and the unmarked G return impossible after fifth (full rank120)
+F107: all immediate repeats after fourth impossible (4 labels, both complement assignments)
+F107: matched D0 on marked triple second return after fourth is impossible
+F107: third marked-triple member cannot be the same-clock next row (paid full-class primitive unit)
+F107: old marked returns and the unmarked G return impossible after fifth (full rank120)

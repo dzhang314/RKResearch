@@ -1,0 +1,50 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.affine_head_shift.{u_1} {K : Type u_1} [Field K]
+  (h s l₀ l₁ z : K) (hn : h ≠ 0) (h0 : h * l₁ + z = 0) (h1 : h * l₀ - 2 * h * l₁ - z * s = 0) : l₀ = (2 - s) * l₁
+RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.recurrence_at_pencil.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (s l : K)
+  (h :
+    RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J5 s +
+        l * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J4 s =
+      0) :
+  (s - (1 / 2 - 7 * l / 22)) * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J4 s =
+    2 / 11 * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J3 s
+RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pair_jacobi_identity.{u_1} {K : Type u_1} [Field K]
+  (a b : K) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J5 a *
+        RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J4 b -
+      RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J5 b *
+        RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J4 a =
+    (a - b) * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pairJacobi (a + b) (a * b)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pair_terminal_identity.{u_1} {K : Type u_1} [Field K]
+  (a b : K) :
+  a ^ 2 * (2 * b - a) * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J3 b -
+      b ^ 2 * (2 * a - b) * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J3 a =
+    (a - b) * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pairTerminal (a + b) (a * b)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pair_from_paid_heads.{u_1} {K : Type u_1} [Field K]
+  (a b h q l : K) (a0 : a ≠ 0) (b0 : b ≠ 0) (ab : a ≠ b) (h0 : h ≠ 0)
+  (r0 : h * a ^ 3 * (2 * b - a) = q * a * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J3 a)
+  (r1 : h * b ^ 3 * (2 * a - b) = q * b * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J3 b)
+  (p0 :
+    RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J5 a +
+        l * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J4 a =
+      0)
+  (p1 :
+    RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J5 b +
+        l * RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.J4 b =
+      0) :
+  RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pairJacobi (a + b) (a * b) = 0 ∧
+    RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pairTerminal (a + b) (a * b) = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.affine_head_shift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.recurrence_at_pencil' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pair_jacobi_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pair_terminal_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixConstantPair.pair_from_paid_heads' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,4 @@
+Exact Jacobi pair resultant degree: 12; linear subresultant present
+mod 101: finite-free ranks 12, 24, 72, 144
+Inverse products checked: 75 (by level: [1, 16, 15, 19, 24])
+The first-ghost Sylvester residual is a unit for every ordered clock candidate

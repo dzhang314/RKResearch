@@ -1,0 +1,17 @@
+Alias o row divisors (1, 0) (0, 1) slope divisors (1, 0) (0, 0)
+ lside True E scale (5, 0) DT (10, 6) raw g [(22, 15), (27, 18)] g gcd (9, 5) red g [(13, 10), (18, 13)] raw P (41, 29) (41, 29) P gcd (11, 6) red P [(30, 23), (30, 23)]
+ lside False E scale (0, 1) DT (7, 8) raw g [(23, 26), (27, 29)] g gcd (12, 15) red g [(11, 11), (15, 14)] raw P (33, 33) (33, 33) P gcd (7, 8) red P [(26, 25), (26, 25)]
+Independent first line mark raw (56, 48) factor types [((56, 48), 1)]
+endpoint D and independent first-pool mark bidegrees (10,8),(56,48); all ten second-pool minors identically zero
+coefficient a=6 mod19: D degree8, unit gcd against projective mark and six raw mask equations
+regular exact projection degree 922, irreducible factors: [(1, 9), (4, 1), (4, 3), (4, 22), (8, 8), (12, 7), (36, 1), (625, 1)]
+degree 1: a=0
+quartic power 3: actual d degrees 7,45; exact gcd 1
+quartic power 22: right raw initial slope zero for all d
+factor (4, 1) : exact shared d root has d=0 ; whole D/mark residue gcd linear at (17, 14, 0)
+factor (8, 8) : exact shared d root has H=0 ; whole D/mark residue gcd linear at (17, 8, 7)
+factor (12, 7) : exact shared d root has z_D=0 ; whole D/mark residue gcd linear at (23, 20, 19)
+factor (36, 1) : exact shared d root has z_N=0 ; whole D/mark residue gcd linear at (23, 2, 6)
+degree 625: simple (37,34,15), x,z=4,28, scale=29; left paid pair tuple (14,16,29,36,14), mark=26
+entire regular endpoint alias excluded; all six raw mask loci retained
+six exact exceptional projection degrees: [51, 32, 115, 126, 363, 436]

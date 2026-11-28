@@ -1,0 +1,73 @@
+generic plus exceptional constant nine-site front False s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 1) (0, 21, 1) only exact gamma/EarlyGauss factors [12, 3, 3]
+regular star exact False 2 (0, 9, 61, 1) (0, 26, 160, 1) stripped (0, 9, 29, 1) (0, 26, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+literal exact CRT start 2 1465 5266
+literal CRT progress 2 12 2.4
+literal CRT progress 2 24 4.7
+literal CRT progress 2 36 7.3
+literal CRT progress 2 48 9.7
+literal CRT progress 2 60 12.5
+literal CRT progress 2 72 14.7
+literal CRT progress 2 84 16.9
+exact quadratic literal resultant 2 1465 valuation 265 primes 88 17.9
+literal exact rational norm and factors 2 2400 [(336, 1), (34, 3), (22, 3), (2, 6), (6, 6), (22, 6), (54, 6), (42, 24), (16, 24)]
+exact fixed quartic [(0, 14, 44, 1), (0, 14, 43, 1), (0, 14, 42, 1), (0, 14, 41, 1), (0, 13, 40, 1)] [(0, 8, 24, 1), (0, 8, 23, 1), (0, 8, 22, 1), (0, 8, 21, 1), (0, 7, 20, 1)] [2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+exact reduced centered tail coefficients [(0, 3, 11, 1), (0, 3, 11, 1)] [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact arith ordinary/silent fifth cubic (6, 10, 11, 1) (3, 5, 9, 1) [1, 1, 1, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0]
+literal actual complete components 2 336 1129 203 {'orientation': 6, 'fifth': 4} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 2, 34, 17) 121 0.15
+exact paired CRT proposal verified ('guard', 'scale', 17, 3) 421 0.06
+literal actual complete components 2 17 1129 203 {'no_s': 2} open [] suggest {}
+literal actual complete components 2 22 1129 203 {'fifth': 3, 'orientation': 3} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 2, 2, 1) 61 0.0
+exact entire diagonal collides with actual terminal 2 1
+exact paired CRT proposal verified ('orientation', 2, 6, 3) 61 0.0
+exact paired CRT proposal verified ('guard', 'B', 3, 1) 61 0.0
+literal actual complete components 2 3 1129 203 {'no_s': 1} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 2, 22, 11) 121 0.09
+exact paired CRT proposal verified ('guard', 'rear_a', 11, 3) 301 0.05
+literal actual complete components 2 11 1129 203 {'no_s': 2} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 2, 54, 27) 241 0.58
+exact paired CRT proposal verified ('guard', 'terminal_h', 27, 3) 1081 0.42
+literal actual complete components 2 27 1129 203 {'no_s': 3} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 2, 42, 21) 181 0.08
+exact paired CRT proposal verified ('guard', 'nodal_lead', 21, 3) 901 0.6
+literal actual complete components 2 21 1129 203 {'no_s': 3} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 2, 16, 8) 121 0.06
+exact paired CRT proposal verified ('guard', 'nodal_lead', 8, 6) 301 0.13
+literal actual complete components 2 8 1129 203 {'no_s': 2} open [] suggest {}
+actual silent literal complete 2 {'orientation': 9, 'fifth': 7, 'no_s': 13} 1
+regular star exact False 3 (0, 9, 61, 1) (0, 26, 160, 1) stripped (0, 9, 29, 1) (0, 26, 79, 1) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+literal exact CRT start 3 1465 5269
+literal CRT progress 3 12 3.5
+literal CRT progress 3 24 5.8
+literal CRT progress 3 36 8.2
+literal CRT progress 3 48 10.6
+literal CRT progress 3 60 13.5
+literal CRT progress 3 72 16.1
+literal CRT progress 3 84 18.3
+exact quadratic literal resultant 3 1465 valuation 265 primes 88 19.1
+literal exact rational norm and factors 3 2400 [(336, 1), (34, 3), (22, 3), (2, 6), (6, 6), (22, 6), (54, 6), (42, 24), (16, 24)]
+literal actual complete components 3 336 1129 203 {'fifth': 4, 'orientation': 6} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 3, 34, 17) 121 0.13
+exact paired CRT proposal verified ('guard', 'scale', 17, 3) 421 0.06
+literal actual complete components 3 17 1129 203 {'no_s': 3} open [] suggest {}
+literal actual complete components 3 22 1129 203 {'fifth': 3, 'orientation': 3} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 3, 2, 1) 61 0.0
+exact entire diagonal collides with actual terminal 3 1
+exact paired CRT proposal verified ('orientation', 3, 6, 3) 61 0.0
+exact paired CRT proposal verified ('guard', 'B', 3, 1) 61 0.0
+literal actual complete components 3 3 1129 203 {'no_s': 1} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 3, 22, 11) 121 0.09
+exact paired CRT proposal verified ('guard', 'rear_b', 11, 3) 361 0.04
+literal actual complete components 3 11 1129 203 {'no_s': 1} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 3, 54, 27) 241 0.39
+exact paired CRT proposal verified ('guard', 'terminal_h', 27, 3) 1081 0.29
+literal actual complete components 3 27 1129 203 {'no_s': 3} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 3, 42, 21) 181 0.05
+exact paired CRT proposal verified ('guard', 'nodal_lead', 21, 3) 901 0.39
+literal actual complete components 3 21 1129 203 {'no_s': 3} open [] suggest {}
+exact paired CRT proposal verified ('orientation', 3, 16, 8) 121 0.06
+exact paired CRT proposal verified ('guard', 'nodal_lead', 8, 6) 301 0.11
+literal actual complete components 3 8 1129 203 {'no_s': 2} open [] suggest {}
+actual silent literal complete 3 {'fifth': 7, 'orientation': 9, 'no_s': 13} 1
+both arithmetic-front star-rear nonzero literal placements excluded

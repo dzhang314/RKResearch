@@ -1,0 +1,3 @@
+actual first-Legendre-root third-Jacobi rank: nonzero bracket at k(y)=0
+unique double-zero Jacobi profile and its physical fixed quartic
+prime 73, simple roots [24, 36, 47, 65], nonzero L6' [58, 7, 34, 54], ordered pair checks [[13, 69, 37], [9, 26, 32], [21, 4, 1], [61, 30, 8]]

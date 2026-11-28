@@ -1,0 +1,3 @@
+actual third reverse gate, symmetric equation and total degree five
+complete constant-B line coefficient cases
+variable-B pole, constant and linear-coefficient contradictions

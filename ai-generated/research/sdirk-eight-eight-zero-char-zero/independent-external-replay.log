@@ -1,0 +1,32 @@
+0.12 primitive degree 6
+0.19 biv degrees [(6, 1), (7, 1), (7, 1), (19, 3), (17, 3)]
+0.23 norm degrees 20 16 16 0
+0.26 norm degrees 22 18 18 0
+0.33 norm degrees 22 18 18 0
+0.77 singular pivot gcd 0
+1.02 norm degrees 62 50 46 4
+1.27 norm degrees 58 46 42 4
+15.33 ordinary fourth-v-fifth gcd 0
+15.36 leading drop read gcd 0
+15.36 leading drop pivot gcd 0
+verified complete external live-star exclusion
+0.21 primitive degree 18
+0.33 nonzero phase Hankel pivot
+0.68 biv degrees [(6, 1), (7, 1), (7, 1), (19, 3), (17, 3)]
+0.74 norm degrees 20 16 16 0
+0.78 norm degrees 22 18 18 0
+0.83 norm degrees 22 18 18 0
+1.42 norm degrees 62 50 46 4
+1.83 norm degrees 58 46 42 4
+exact degree-preserving gcd degrees 0 0 0 0
+verified ghost 59 1
+0.65 primitive degree 36
+3.35 nonzero phase Hankel pivot
+5.25 biv degrees [(6, 1), (7, 1), (7, 1), (19, 3), (17, 3)]
+5.79 norm degrees 20 16 16 0
+6.12 norm degrees 22 18 18 0
+6.47 norm degrees 22 18 18 0
+10.87 norm degrees 62 50 46 4
+13.74 norm degrees 58 46 42 4
+exact degree-preserving gcd degrees 0 0 0 0
+verified arith 103 65

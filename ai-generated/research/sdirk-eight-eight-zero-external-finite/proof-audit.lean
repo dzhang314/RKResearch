@@ -1,0 +1,5 @@
+import RKCert.Research.SDIRKEightEightZeroExternalFinite
+open RKResearch.Certified.SDIRKEightEightZeroExternalFinite
+#print axioms divided_phase_mean
+#print axioms collapse_phase_rows
+#print axioms fourth_unmultiplied

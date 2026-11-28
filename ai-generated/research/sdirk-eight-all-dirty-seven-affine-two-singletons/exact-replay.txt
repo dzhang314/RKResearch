@@ -1,0 +1,7 @@
+A T bidegrees [(9, 24), (6, 27), (4, 16)] prep 0.04721411100035766
+A T only guarded denominator power 27 elapsed 0.2747374350001337
+S T bidegrees [(9, 24), (6, 27), (4, 16)] prep 0.04676451200066367
+S T only guarded denominator power 27 elapsed 0.0844006109982729
+T T bidegrees [(27, 24), (24, 27), (16, 16)] prep 0.2678077469972777
+T T only guarded denominator power 111 elapsed 9.420211863995064
+verified every arithmetic-late-singleton phase pair

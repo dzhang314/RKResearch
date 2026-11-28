@@ -1,0 +1,13 @@
+# Deduplicated corrected ordinary-hole8 ledger
+
+This closes the genuine degree-five \(S\), affine \(T\), shared-root branch where the root \(r\) is the ordinary physical-eight clock and continued amplitude \(H(r)\ne0\). The shared hypotheses are strict ten-stage SDIRK8 in characteristic zero, only first quadratic defect, first ordinarily and reversely silent, eight distinct ordinary clocks, and one other ordinarily silent reverse-live row at a separate ninth clock.
+
+| Branch | Closure and distinct finite checks |
+| --- | --- |
+| Ordinary star rear | [Impossible from the actual zero eighth amplitude](../sdirk-eight-silent-one-eight-reverse-live-affine-shared-quintic-hole-literal-closed/README.md#corrected-kernel-and-genuine-early-rank-loss); no diagonal factors counted. |
+| Arithmetic rear, early rank loss | Same [rank-loss proof](../sdirk-eight-silent-one-eight-reverse-live-affine-shared-quintic-hole-literal-closed/README.md#corrected-kernel-and-genuine-early-rank-loss) checks the complete degree-four diagonal and fixed gap cubic. It is reused, not counted again in each placement. |
+| Arithmetic rear, actual silent 2, 3 or 4 | [Literal model](../sdirk-eight-silent-one-eight-reverse-live-affine-shared-quintic-hole8-literal-closed/README.md): six front/placement orientations, 59 components checked with their true distinct known pegs and actual silent fourth where applicable. |
+| Arithmetic rear, actual silent 5, 6 or 7 | [Middle model](README.md): both fronts and each physical placement, but **45 components checked only once**, before any of their differing later assignments. |
+| Actual silent 8 | Cannot share physical position with the ordinary weighted hole8. |
+
+The 59 and 45 counts refer to the two displayed regular proof families, not all coefficients or all global ten-stage tableaux. [No ordinary hole](../sdirk-eight-silent-one-eight-reverse-live-affine-shared-quintic-nohole-closed/README.md), [agreement at an ordinary hole](../sdirk-eight-silent-one-eight-reverse-live-affine-shared-quintic-hole-literal-closed/README.md#agreement-at-the-ordinary-hole-really-gives-the-complete-quartic-amplitude-profile), and [all corrected hole4 placements](../sdirk-eight-silent-one-eight-reverse-live-affine-shared-quintic-hole4-silent8-closed/README.md) are separate. An ordinary hole at physical 2 or 3 contradicts their actual nonzero literal amplitudes; physical 9 or 10 cannot be the root because their actual reverse reads are nonzero. Within the specified shared genuine-quintic chart the surviving corrected ordinary-hole positions are 5, 6 and 7. This is not a global ten-stage exclusion; the unrestricted **10–11** interval remains unchanged.

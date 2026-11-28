@@ -1,0 +1,6 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveSharedGaussProjection.quadraticPairNorm' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveSharedGaussProjection.quadraticLinearContact' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveSharedGaussProjection.singletonNodalMask' depends on axioms: [propext,
+ Quot.sound]

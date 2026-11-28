@@ -1,0 +1,129 @@
+shared-one-front literal degrees True 0 (0, 2, 3, 3, 1) (2, 5, 3, 3, 1) (2, 5, 3, 3, 1)
+fifth Gauss hole immediate gcd True 0 4 11 0
+shared-one-front exact early projections True 0 fifth y/s (0, 16, 12, 3, 1) raw gamma 72 leading Phi s 3
+shared-one-front diagonal retained True 0 66 star nonhole gcd 0 Gauss eighth gcd 3 row-four lower gamma 3
+shared-one-front gamma branch True 0 True gamma 3 s lower 0 s forbidden 3 gap lower 0
+exact exceptional size True 0 True 3
+exact early refined components True 0 True [(0, None), (3, 0)]
+shared-one-front monic models True 0 True []
+shared-one-front gamma branch True 0 False gamma 66 s lower 3 s forbidden 9 gap lower 0
+exact exceptional size True 0 False 12
+exact early refined components True 0 False [(30, None), (3, 0), (9, 0)]
+shared-one-front monic models True 0 False [(30, 2, 3)]
+shared one-front candidate fifth True 0 1129 203 100 1 1 1
+shared one-front candidate fifth True 0 1129 203 100 1 1 1
+shared one-front candidate fifth True 0 1129 203 100 1 2 1
+shared one-front candidate fifth True 0 1129 203 100 2 2 1
+shared one-front candidate fifth True 0 1129 203 100 3 1 1
+shared one-front candidate fifth True 0 1129 203 100 3 1 1
+shared one-front candidate fifth True 0 1129 203 100 3 2 1
+shared one-front candidate fifth True 0 1129 203 100 10 1 1
+shared one-front candidate fifth True 0 1129 203 214 5 1 1
+shared one-front candidate fifth True 0 1129 203 214 5 1 1
+shared one-front candidate fifth True 0 1129 203 214 6 2 1
+shared one-front candidate fifth True 0 1129 203 214 8 1 1
+shared one-front candidate fifth True 0 1129 203 916 1 1 1
+shared one-front candidate fifth True 0 1129 203 916 1 2 1
+shared one-front candidate fifth True 0 1129 203 916 4 1 1
+shared one-front candidate fifth True 0 1129 203 916 5 2 1
+shared one-front candidate fifth True 0 1129 203 916 13 1 1
+shared one-front candidate fifth True 0 1129 203 1030 1 2 1
+shared one-front candidate fifth True 0 1129 203 1030 1 2 1
+shared one-front candidate fifth True 0 1129 203 1030 4 2 1
+shared one-front candidate fifth True 0 1129 203 1030 18 1 1
+excluded shared-Gauss one-front phase True 0 (21, 21, 21, 21)
+shared-one-front literal degrees True 1 (0, 2, 3, 3, 1) (2, 5, 3, 3, 1) (2, 5, 3, 3, 1)
+fifth Gauss hole immediate gcd True 1 4 11 0
+shared-one-front exact early projections True 1 fifth y/s (0, 16, 12, 3, 1) raw gamma 72 leading Phi s 3
+shared-one-front diagonal retained True 1 66 star nonhole gcd 0 Gauss eighth gcd 3 row-four lower gamma 3
+shared-one-front gamma branch True 1 True gamma 3 s lower 0 s forbidden 3 gap lower 0
+exact exceptional size True 1 True 3
+exact early refined components True 1 True [(0, None), (3, 0)]
+shared-one-front monic models True 1 True []
+shared-one-front gamma branch True 1 False gamma 66 s lower 3 s forbidden 9 gap lower 0
+exact exceptional size True 1 False 12
+exact early refined components True 1 False [(30, None), (3, 0), (9, 0)]
+shared-one-front monic models True 1 False [(30, 2, 3)]
+shared one-front candidate fifth True 1 1129 203 100 1 1 1
+shared one-front candidate fifth True 1 1129 203 100 1 2 1
+shared one-front candidate fifth True 1 1129 203 100 2 2 1
+shared one-front candidate fifth True 1 1129 203 100 3 1 1
+shared one-front candidate fifth True 1 1129 203 100 3 2 1
+shared one-front candidate fifth True 1 1129 203 100 14 1 1
+shared one-front candidate fifth True 1 1129 203 214 1 1 1
+shared one-front candidate fifth True 1 1129 203 214 2 1 1
+shared one-front candidate fifth True 1 1129 203 214 6 1 1
+shared one-front candidate fifth True 1 1129 203 214 6 2 1
+shared one-front candidate fifth True 1 1129 203 214 9 1 1
+shared one-front candidate fifth True 1 1129 203 916 1 1 1
+shared one-front candidate fifth True 1 1129 203 916 1 1 1
+shared one-front candidate fifth True 1 1129 203 916 1 1 1
+shared one-front candidate fifth True 1 1129 203 916 1 2 1
+shared one-front candidate fifth True 1 1129 203 916 2 1 1
+shared one-front candidate fifth True 1 1129 203 916 5 1 1
+shared one-front candidate fifth True 1 1129 203 916 5 2 1
+shared one-front candidate fifth True 1 1129 203 916 8 1 1
+shared one-front candidate fifth True 1 1129 203 1030 1 1 1
+shared one-front candidate fifth True 1 1129 203 1030 1 2 1
+shared one-front candidate fifth True 1 1129 203 1030 1 2 1
+shared one-front candidate fifth True 1 1129 203 1030 4 2 1
+shared one-front candidate fifth True 1 1129 203 1030 8 1 1
+shared one-front candidate fifth True 1 1129 203 1030 9 1 1
+excluded shared-Gauss one-front phase True 1 (25, 25, 25, 25)
+shared-one-front literal degrees False 0 (0, 2, 3, 3, 1) (2, 5, 3, 3, 1) (2, 5, 3, 3, 1)
+fifth Gauss hole immediate gcd False 0 4 11 0
+shared-one-front exact early projections False 0 fifth y/s (0, 16, 12, 3, 1) raw gamma 72 leading Phi s 3
+shared-one-front diagonal retained False 0 66 star nonhole gcd 0 Gauss eighth gcd 0 row-four lower gamma 3
+Gauss-eighth early exclusion False 0
+shared-one-front gamma branch False 0 False gamma 66 s lower 3 s forbidden 9 gap lower 0
+exact exceptional size False 0 False 12
+exact early refined components False 0 False [(30, None), (3, 0), (9, 0)]
+shared-one-front monic models False 0 False [(30, 2, 3)]
+shared one-front candidate fifth False 0 1559 529 564 8 1 1
+shared one-front candidate fifth False 0 1559 529 564 9 1 1
+shared one-front candidate fifth False 0 1559 529 564 13 1 1
+shared one-front candidate fifth False 0 1559 529 593 14 1 1
+shared one-front candidate fifth False 0 1559 529 593 16 1 1
+shared one-front candidate fifth False 0 1559 529 967 2 1 1
+shared one-front candidate fifth False 0 1559 529 967 3 1 1
+shared one-front candidate fifth False 0 1559 529 967 4 1 1
+shared one-front candidate fifth False 0 1559 529 967 5 1 1
+shared one-front candidate fifth False 0 1559 529 967 16 1 1
+shared one-front candidate fifth False 0 1559 529 996 1 1 1
+shared one-front candidate fifth False 0 1559 529 996 1 1 1
+shared one-front candidate fifth False 0 1559 529 996 1 1 1
+shared one-front candidate fifth False 0 1559 529 996 27 1 1
+excluded shared-Gauss one-front phase False 0 (14, 14, 14, 14)
+shared-one-front literal degrees False 1 (0, 2, 3, 3, 1) (2, 5, 3, 3, 1) (2, 5, 3, 3, 1)
+fifth Gauss hole immediate gcd False 1 4 11 0
+shared-one-front exact early projections False 1 fifth y/s (0, 16, 12, 3, 1) raw gamma 72 leading Phi s 3
+shared-one-front diagonal retained False 1 66 star nonhole gcd 0 Gauss eighth gcd 0 row-four lower gamma 3
+Gauss-eighth early exclusion False 1
+shared-one-front gamma branch False 1 False gamma 66 s lower 3 s forbidden 9 gap lower 0
+exact exceptional size False 1 False 12
+exact early refined components False 1 False [(30, None), (3, 0), (9, 0)]
+shared-one-front monic models False 1 False [(30, 2, 3)]
+shared one-front candidate fifth False 1 1129 203 100 1 1 1
+shared one-front candidate fifth False 1 1129 203 100 3 1 1
+shared one-front candidate fifth False 1 1129 203 100 3 1 1
+shared one-front candidate fifth False 1 1129 203 100 3 1 1
+shared one-front candidate fifth False 1 1129 203 100 5 1 1
+shared one-front candidate fifth False 1 1129 203 100 15 1 1
+shared one-front candidate fifth False 1 1129 203 214 2 1 1
+shared one-front candidate fifth False 1 1129 203 214 2 1 1
+shared one-front candidate fifth False 1 1129 203 214 5 1 1
+shared one-front candidate fifth False 1 1129 203 214 7 1 1
+shared one-front candidate fifth False 1 1129 203 214 14 1 1
+shared one-front candidate fifth False 1 1129 203 916 1 1 1
+shared one-front candidate fifth False 1 1129 203 916 1 1 1
+shared one-front candidate fifth False 1 1129 203 916 1 1 1
+shared one-front candidate fifth False 1 1129 203 916 4 1 1
+shared one-front candidate fifth False 1 1129 203 916 23 1 1
+shared one-front candidate fifth False 1 1129 203 1030 1 1 1
+shared one-front candidate fifth False 1 1129 203 1030 1 1 1
+shared one-front candidate fifth False 1 1129 203 1030 2 1 1
+shared one-front candidate fifth False 1 1129 203 1030 3 1 1
+shared one-front candidate fifth False 1 1129 203 1030 8 1 1
+shared one-front candidate fifth False 1 1129 203 1030 15 1 1
+excluded shared-Gauss one-front phase False 1 (22, 22, 22, 22)
+all four shared-Gauss one-front phases excluded

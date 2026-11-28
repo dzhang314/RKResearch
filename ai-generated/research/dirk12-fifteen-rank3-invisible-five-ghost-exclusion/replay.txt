@@ -1,0 +1,3 @@
+mod 1013, third debut: 30
+mod 1013, anchored quartic: 120
+mod 1013, unanchored quartic: 360

@@ -1,0 +1,26 @@
+
+>>> check_norms.py
+unequal singular determinant support 11449
+unequal regular norm support 2615661328256882567836845446802888358100794137191581976183481468540458889292350994614953641
+equal-gap linear-pin norm 42994249
+paid rational coefficient denominators verified
+
+>>> prime_certificates.py
+certified prime 13
+certified prime 59
+certified prime 79
+certified prime 83
+certified prime 107
+certified prime 1129
+certified prime 6011194025914915991
+
+>>> check_fibers.py
+unequal singular 107 95*u + 103 12*u + 55 1
+unequal singular 107 12*u + 55 95*u + 103 1
+equal 79 surviving fibers []
+equal 83 surviving fibers []
+unequal regular 13 surviving fibers []
+unequal regular 59 surviving fibers []
+unequal regular 107 surviving fibers []
+unequal regular 1129 surviving fibers []
+unequal regular 6011194025914915991 surviving fibers []

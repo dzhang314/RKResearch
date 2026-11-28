@@ -1,0 +1,15 @@
+S rows [(18, 9, 0), (10, 5, 3), (22, 11, 2), (16, 8, 8), (26, 12, 8)] E factors [((18, 9, 0), 1)]
+S nodal v projection (84, 43, 0)
+S first only H degree 772 H factors [(4, 1), (54, 1), (166, 1), (1, 2), (2, 3), (12, 9), (6, 24), (9, 32)]
+static guard certificate (4, 1) 23 0 9 6
+direct finite place (54, 1) 43 32 [18]
+direct finite place (166, 1) 11 4 [2]
+direct finite place (1, 2) 17 2 [0]
+direct finite place (2, 3) 11 5 [0]
+direct finite place (12, 9) 101 24 [1, 23, 58]
+static guard certificate (6, 24) 19 16 9 6
+static guard certificate (9, 32) 13 10 9 3
+all terminal-new front-star arithmetic-rear factors excluded
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewStarFront.paid_affine_factor_quadratic_coefficient' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewStarFront.four_singletons_nodal_minor' depends on axioms: [propext]

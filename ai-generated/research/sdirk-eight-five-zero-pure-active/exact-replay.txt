@@ -1,0 +1,9 @@
+pure two-active: ordinary fifth sites and forward second gate gcd degree 0
+canceled chart active clock at 1 star nonzero mapped third Hankel
+canceled chart active clock at 1 arith nonzero mapped third Hankel
+canceled chart active clock at 2 star nonzero mapped third Hankel
+canceled chart active clock at 2 arith nonzero mapped third Hankel
+nonzero aggregate active clock at 1 star two-clock G gcd 0
+nonzero aggregate active clock at 1 arith two-clock G gcd 0
+nonzero aggregate active clock at 2 star two-clock G gcd 0
+nonzero aggregate active clock at 2 arith two-clock G gcd 0

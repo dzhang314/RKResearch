@@ -1,0 +1,129 @@
+literal terminal shared projection True 0 None 1 3 True
+before silent pseudo-remainder True 0 1 (0, 27, 54, 1)
+after silent pseudo-remainder True 0 1 [279, 279, 279]
+silent-only zero factor projections True 0 1 351 hole 12
+silent exact H4 guard factors True 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors True 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors True 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection True 0 None -1 3 True
+before silent pseudo-remainder True 0 -1 (0, 27, 54, 1)
+after silent pseudo-remainder True 0 -1 [279, 279, 279]
+silent-only zero factor projections True 0 -1 351 hole 12
+silent exact H4 guard factors True 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors True 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors True 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection True 0 True 1 0 True
+active8 four peg diagonal True 0 True 1 True 10
+active8 four peg diagonal True 0 True 1 False 55
+literal terminal shared projection True 0 True -1 0 True
+active8 four peg diagonal True 0 True -1 True 10
+active8 four peg diagonal True 0 True -1 False 55
+literal terminal shared projection True 0 False 1 0 True
+active8 four peg diagonal True 0 False 1 True 10
+active8 four peg diagonal True 0 False 1 False 55
+literal terminal shared projection True 0 False -1 0 True
+active8 four peg diagonal True 0 False -1 True 10
+active8 four peg diagonal True 0 False -1 False 55
+literal terminal shared projection True 1 None 1 3 True
+before silent pseudo-remainder True 1 1 (0, 27, 54, 1)
+after silent pseudo-remainder True 1 1 [279, 279, 279]
+silent-only zero factor projections True 1 1 351 hole 12
+silent exact H4 guard factors True 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors True 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors True 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection True 1 None -1 3 True
+before silent pseudo-remainder True 1 -1 (0, 27, 54, 1)
+after silent pseudo-remainder True 1 -1 [279, 279, 279]
+silent-only zero factor projections True 1 -1 351 hole 12
+silent exact H4 guard factors True 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors True 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors True 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection True 1 True 1 0 True
+active8 four peg diagonal True 1 True 1 True 10
+active8 four peg diagonal True 1 True 1 False 55
+literal terminal shared projection True 1 True -1 0 True
+active8 four peg diagonal True 1 True -1 True 10
+active8 four peg diagonal True 1 True -1 False 55
+literal terminal shared projection True 1 False 1 0 True
+active8 four peg diagonal True 1 False 1 True 10
+active8 four peg diagonal True 1 False 1 False 55
+literal terminal shared projection True 1 False -1 0 True
+active8 four peg diagonal True 1 False -1 True 10
+active8 four peg diagonal True 1 False -1 False 55
+literal terminal shared projection False 0 None 1 3 True
+before silent pseudo-remainder False 0 1 (0, 27, 54, 1)
+after silent pseudo-remainder False 0 1 [279, 279, 279]
+silent-only zero factor projections False 0 1 351 hole 12
+silent exact H4 guard factors False 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors False 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors False 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection False 0 None -1 3 True
+before silent pseudo-remainder False 0 -1 (0, 27, 54, 1)
+after silent pseudo-remainder False 0 -1 [279, 279, 279]
+silent-only zero factor projections False 0 -1 351 hole 12
+silent exact H4 guard factors False 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors False 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors False 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection False 0 True 1 0 True
+active8 four peg diagonal False 0 True 1 True 10
+active8 four peg diagonal False 0 True 1 False 55
+literal terminal shared projection False 0 True -1 0 True
+active8 four peg diagonal False 0 True -1 True 10
+active8 four peg diagonal False 0 True -1 False 55
+literal terminal shared projection False 0 False 1 0 True
+active8 four peg diagonal False 0 False 1 True 10
+active8 four peg diagonal False 0 False 1 False 55
+literal terminal shared projection False 0 False -1 0 True
+active8 four peg diagonal False 0 False -1 True 10
+active8 four peg diagonal False 0 False -1 False 55
+literal terminal shared projection False 1 None 1 3 True
+before silent pseudo-remainder False 1 1 (0, 27, 54, 1)
+after silent pseudo-remainder False 1 1 [279, 279, 279]
+silent-only zero factor projections False 1 1 351 hole 12
+silent exact H4 guard factors False 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors False 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors False 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection False 1 None -1 3 True
+before silent pseudo-remainder False 1 -1 (0, 27, 54, 1)
+after silent pseudo-remainder False 1 -1 [279, 279, 279]
+silent-only zero factor projections False 1 -1 351 hole 12
+silent exact H4 guard factors False 0 12 []
+guarded silent early leading split hole 3 0 12
+silent exact H4 guard factors False 0 0 []
+guarded silent early leading split constant 3 0 0
+silent exact H4 guard factors False 12 315 [(12, 2)]
+guarded silent early leading split coprime 3 8 99
+literal terminal shared projection False 1 True 1 0 True
+active8 four peg diagonal False 1 True 1 True 10
+active8 four peg diagonal False 1 True 1 False 55
+literal terminal shared projection False 1 True -1 0 True
+active8 four peg diagonal False 1 True -1 True 10
+active8 four peg diagonal False 1 True -1 False 55
+literal terminal shared projection False 1 False 1 0 True
+active8 four peg diagonal False 1 False 1 True 10
+active8 four peg diagonal False 1 False 1 False 55
+literal terminal shared projection False 1 False -1 0 True
+active8 four peg diagonal False 1 False -1 True 10
+active8 four peg diagonal False 1 False -1 False 55
+one-front zero-factor seven-distinct checks: 40 32 8

@@ -1,0 +1,4 @@
+true K0=K1 dropout: exact degree-21 fiber contradicted
+exact degree-17 width fiber: linear gcd forces y=1
+exact degree-21 width fiber: linear gcd forces K0=0 (already closed full dropout)
+exact degree-27 width fiber: linear gcd forces y=d

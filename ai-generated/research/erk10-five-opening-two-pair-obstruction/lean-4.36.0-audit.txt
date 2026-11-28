@@ -1,0 +1,2 @@
+'RKResearch.Certified.ERK10FiveOpeningTwoPairScalars.no_helper_determinant' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10FiveOpeningTwoPairScalars.first_helper_determinant' depends on axioms: [propext, Quot.sound]

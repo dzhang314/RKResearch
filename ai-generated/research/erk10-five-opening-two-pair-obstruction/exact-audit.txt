@@ -1,0 +1,5 @@
+no prior helper determinant (integer scaled): -3*a*(-a + s)**2
+one prior helper determinant (integer scaled): -3*t**2*(-3*a + 2*t)*(s - t)**2
+shifted Hilbert 5 determinant 1/67212633600000
+helper Ly, Ly², Lu tap formulas checked
+forward residual proportionality forces r²(r−1)²=0

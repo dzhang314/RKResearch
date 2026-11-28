@@ -1,0 +1,4 @@
+case 0 fiber degree 4 common T degree 1 guard covers True
+case 0 fiber degree 10 common T degree 1 guard covers True
+case 1 fiber degree 4 common T degree 1 guard covers True
+case 1 fiber degree 10 common T degree 1 guard covers True

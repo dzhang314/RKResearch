@@ -1,0 +1,5 @@
+factor S degree 4 Tzero False Deltazero True
+factor S degree 6 Tzero True Deltazero False
+factor S degree 10 Tzero False Deltazero True
+degree-42 live line saved without rational inversion
+Exact degree-42 ring: 16 left repeat, 4 right repeat, 4 determinant units.

@@ -1,4 +1,6 @@
 d10d0ed571889b163e81071d961a82937ebc8e1e0c25ed0627bbf270087041ef  ai-generated/lean/RKCert/Research/SDIRKEightOrdinaryHankelPivot.lean
-cfbbde0927141a0995709c94a08ae96aa804b0561e1b51438b69bfd7132fbd61  ai-generated/research/sdirk-eight-ordinary-hankel-pivot/README.md
+ef89ce058f6b565a74aaf35e695b28d5763de2799a06e92da9e83f4b6a7cc579  ai-generated/lean/RKCert/Research/SDIRKEightOrdinaryGaussGuard.lean
+d0810f54a396bf9481a21465672ce9c1e8373cfbaac75a3dcbb97193a79ef012  ai-generated/research/sdirk-eight-ordinary-hankel-pivot/README.md
 3f022aa1cfeaa783aa1ebaef00326e9ec53b1ceb33e2b533fc6df57194391698  ai-generated/research/sdirk-eight-ordinary-hankel-pivot/proof-audit.lean
 a05ef0018b31c4d4b28338286f6883a314651d8986cef9060e3c81f59339ccb0  ai-generated/research/sdirk-eight-ordinary-hankel-pivot/lean-4.36.0.txt
+9ac3b74686aea836dfa08f0d287f7a182771c42a6c75f93321c2352b333733c8  ai-generated/research/sdirk-eight-ordinary-hankel-pivot/gauss-lean-4.36.0.txt

@@ -1,0 +1,5 @@
+'RKResearch.Certified.gaussFour_ne_zero_of_five_live_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.fullSupport_of_vanishing_moments' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.eval_ne_zero_on_live_sites_of_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

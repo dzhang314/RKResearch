@@ -1,0 +1,11 @@
+verified width determinant, two whole-algebra coefficient tests
+F4 fixed left: raw shifted degrees 10,10, gcd 1
+F4 fixed right: raw shifted degrees 10,10, gcd 1
+F6 left-null regular, orientation 0: shifted gcd 1
+F6 left-null regular, orientation 1: shifted gcd 1
+F6 both forced roots, R/0: shifted gcd 1
+F6 both forced roots, R/1: shifted gcd 1
+F6 both forced roots, L/0: shifted gcd 1
+F6 both forced roots, L/1: shifted gcd 1
+F6 right-null, orientation 0: singular and regular gcds 1
+F6 right-null, orientation 1: singular and regular gcds 1

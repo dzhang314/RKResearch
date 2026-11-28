@@ -1,0 +1,2 @@
+Exact primitive and centered determinant identities
+Half-half determinant exact factorization and both coefficient gcds certified

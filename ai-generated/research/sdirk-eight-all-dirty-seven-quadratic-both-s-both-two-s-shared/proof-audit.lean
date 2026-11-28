@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightDirtySevenBothSingletonBothTwoSShared
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonBothTwoSShared.consistent_scale_minor
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonBothTwoSShared.proportional_remainders
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenBothSingletonBothTwoSShared.fourth_gate_cleared

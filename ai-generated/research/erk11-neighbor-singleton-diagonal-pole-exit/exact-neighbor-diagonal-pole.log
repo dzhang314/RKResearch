@@ -1,0 +1,12 @@
+small pole exits: a=0, negative discriminant quadratics, exact b-gcd degrees 0,1(H),3(H),1(J)
+degree60 good place (31,10,5), all width guards; alternative slope/cross determinants 6,9
+unconditional u-projection retains degree12; all six residue factors accounted for
+ factor x + 25 restored actual temporal projectivity 21
+ u+13: guarded right fallback temporal t=29, remainder 20Y^2+18Y+16
+ factor x^2 + 23*x + 24 corrected ghost-fit and paid left pair mark 23*z + 8
+ factor x^2 + 27*x + 24 restored actual temporal projectivity 3*z + 22
+ factor x^2 + x + 15 corrected ghost-fit and paid left pair mark 16*z + 3
+ factor x^2 + 6*x + 27 corrected ghost-fit and paid left pair mark 30*z + 23
+all degree60 u factors excluded
+neighboring singleton diagonal pole excluded over ordered fields; other width curve/pivots not covered
+wall 3.606 s; user 2.834 s; sys 0.136 s

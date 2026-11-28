@@ -53,3 +53,5 @@ The complementary [nonzero-ratio exclusion](../sdirk-eight-silent-one-eight-reve
 The [silent-second and silent-third closure](../sdirk-eight-silent-one-eight-reverse-live-star23-regular-closed/README.md) excludes both remaining literal silent placements for the regular star–star constant-numerator chart. Nonliteral silent placements and other front or rear phases are separate.
 
 For an interior silent physical row 5, 6, or 7, the [zero-tail exclusion](../sdirk-eight-silent-one-eight-reverse-live-star567-zero-tail/README.md) closes the regular star–star branch with both centered coefficients zero. The nonzero centered relation remains separate.
+
+The [interior nonzero-tail closure](../sdirk-eight-silent-one-eight-reverse-live-star567-regular-closed/README.md) treats silent physical rows 5–7. With the preceding zero-tail and literal results, the regular star–star branch is excluded whenever physical row 8 is ordinarily active. The ordinarily silent eighth row has a separate reverse chronology.

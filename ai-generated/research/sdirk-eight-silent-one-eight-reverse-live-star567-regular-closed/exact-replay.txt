@@ -1,0 +1,53 @@
+generic plus exceptional constant nine-site front True s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 0) (0, 21, 0) only exact gamma/EarlyGauss factors [12, 3, 3]
+regular nonliteral star exact True (0, 1, 2) (0, 21, 126, 0) (0, 18, 55, 1) [14, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact True (0, 1, 3) (0, 20, 125, 0) (0, 17, 54, 1) [14, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact True (0, 2, 3) (0, 19, 124, 0) (0, 16, 54, 1) [13, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+regular nonliteral star exact True (1, 2, 3) (0, 19, 123, 0) (0, 16, 54, 1) [12, 6, 6, 1, 0, 0, 0, 0, 0, 0, 0]
+exact resultant begin 1 (55, 18) (54, 17)
+exact bounded integer CRT 18 17 91 5438
+exact resultant done 1 1871 310 gcd 1561 26.882494587996916
+exact resultant begin 2 (55, 18) (54, 16)
+exact bounded integer CRT 18 16 88 5232
+exact resultant done 2 1810 302 gcd 1213 49.267674689996056
+exact resultant begin 3 (55, 18) (54, 16)
+exact bounded integer CRT 18 16 88 5232
+exact resultant done 3 1816 316 gcd 1213 72.66690397999628
+exact factor begin 1213
+squarefree 1 257 72.88149273299496
+factor 1 257 72.93967757000064
+squarefree 2 46 72.93971936299931
+factor 2 35 72.94111374899512
+factor 2 2 72.94116416500037
+factor 2 9 72.94146378699952
+squarefree 3 27 72.94146925599489
+factor 3 27 72.94249014699744
+squarefree 6 4 72.94250039299368
+factor 6 4 72.94293840399769
+squarefree 25 21 72.94294334199367
+factor 25 21 72.94569303499884
+squarefree 27 5 72.94570523299626
+factor 27 1 72.94775716199365
+factor 27 4 72.95036684399383
+squarefree 33 3 72.95037338399561
+factor 33 3 72.95374946299853
+exact common gamma factorization [(257, 1), (35, 2), (2, 2), (9, 2), (27, 3), (4, 6), (21, 25), (1, 27), (4, 27), (3, 33)]
+local trials 257 1129 203 pass 2 bad []
+complete diagonal factor 257 1 None 0 2
+local trials 35 1129 203 pass 4 bad []
+complete diagonal factor 35 2 regular_scale 2 4
+local trials 2 1129 203 pass 2 bad []
+complete diagonal factor 2 2 regular_scale 2 2
+local trials 9 1129 203 pass 4 bad []
+complete diagonal factor 9 2 regular_scale 2 4
+local trials 27 1129 203 pass 4 bad []
+complete diagonal factor 27 3 terminal_h 3 4
+local trials 4 1129 203 pass 2 bad []
+complete diagonal factor 4 6 regular_scale 4 2
+local trials 21 1129 203 pass 2 bad []
+complete diagonal factor 21 25 rear_a 5 2
+local trials 1 1129 203 pass 1 bad []
+complete diagonal factor 1 27 rear_a 9 1
+exact entire gamma component forces k=0 4 27
+local trials 3 1129 203 pass 1 bad []
+complete diagonal factor 3 33 rear_a 3 1
+all regular nonzero-tail silent physical 5/6/7 cases excluded

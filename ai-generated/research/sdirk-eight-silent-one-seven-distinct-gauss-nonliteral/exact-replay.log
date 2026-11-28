@@ -1,0 +1,43 @@
+verified cubic star diagonal: True 0 1129 5
+hole8 exact H4 degrees True 0 3 2 1
+tail eliminated root degree arith 3
+front Gauss residual degrees True 0 (0, 16, 12, 3, 1)
+literal fifth projection exact degrees True 0 114 7 intersection 0
+exact fourth splits True 0 ord 114 9 96 [(9, 1, 2), (30, 2, 2), (3, 1, 1)]
+verified finite literal front and tail: True 0 ord arith 1559 43
+tail eliminated root degree silent 3
+verified finite literal front and tail: True 0 ord silent 1129 65
+exact fourth splits True 0 hole 7 0 7 [(7, 2, 2)]
+verified finite literal front and tail: True 0 hole arith 1129 20
+verified finite literal front and tail: True 0 hole silent 1129 20
+verified cubic star diagonal: True 1 1129 5
+hole8 exact H4 degrees True 1 3 2 1
+front Gauss residual degrees True 1 (0, 16, 12, 3, 1)
+literal fifth projection exact degrees True 1 114 7 intersection 0
+exact fourth splits True 1 ord 114 9 96 [(9, 1, 2), (30, 2, 2), (3, 1, 1)]
+verified finite literal front and tail: True 1 ord arith 1129 69
+verified finite literal front and tail: True 1 ord silent 1129 69
+exact fourth splits True 1 hole 7 0 7 [(7, 2, 2)]
+verified finite literal front and tail: True 1 hole arith 1129 20
+verified finite literal front and tail: True 1 hole silent 1129 20
+verified cubic star diagonal: False 0 1129 5
+hole8 exact H4 degrees False 0 3 2 2
+front Gauss residual degrees False 0 (0, 16, 12, 3, 1)
+literal fifth projection exact degrees False 0 114 7 intersection 0
+exact fourth splits False 0 ord 114 9 96 [(9, 1, 2), (30, 2, 2), (3, 1, 1)]
+verified finite literal front and tail: False 0 ord arith 1559 33
+verified finite literal front and tail: False 0 ord silent 1559 33
+exact fourth splits False 0 hole 7 0 7 [(7, 2, 2)]
+verified finite literal front and tail: False 0 hole arith 1129 12
+verified finite literal front and tail: False 0 hole silent 1129 12
+verified cubic star diagonal: False 1 1129 5
+hole8 exact H4 degrees False 1 3 2 2
+front Gauss residual degrees False 1 (0, 16, 12, 3, 1)
+literal fifth projection exact degrees False 1 114 7 intersection 0
+exact fourth splits False 1 ord 114 9 96 [(9, 1, 2), (30, 2, 2), (3, 1, 1)]
+verified finite literal front and tail: False 1 ord arith 1129 54
+verified finite literal front and tail: False 1 ord silent 1129 54
+exact fourth splits False 1 hole 7 0 7 [(7, 2, 2)]
+verified finite literal front and tail: False 1 hole arith 1129 12
+verified finite literal front and tail: False 1 hole silent 1129 12
+Gauss distinct nonliteral reverse-root checks: 4 4 16

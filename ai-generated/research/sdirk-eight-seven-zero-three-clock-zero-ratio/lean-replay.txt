@@ -1,0 +1,5 @@
+'RKResearch.Certified.SDIRKEightSevenZeroThreeClockZeroRatio.terminal_pair_adjustment' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightSevenZeroThreeClockZeroRatio.front_first_primitive_cubic' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroThreeClockZeroRatio.equal_barycentric_multiplier' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightSevenZeroSupportedQuartic.arithmetic_quartic_determinant' depends on axioms: [propext,

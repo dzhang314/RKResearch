@@ -78,3 +78,5 @@ The simple root of \(v^2-2v-1\) embeds the coefficient field into \(\mathbb Q_p\
 ## 5. Replay and scope
 
 Run `python check_zero_ratio.py REAR PLACEMENT` with `REAR=star,arith` and `PLACEMENT=s,new`, SymPy 1.14 and python-flint 0.8. The four checks use fixed primes and complete geometric roots, not a numerical or bounded integer search. The saturated flag, literal ingress, and finite projection are mathematical plus exact replay. They are not an end-to-end Lean tableau theorem.
+
+The [Lean scalar companion](../../lean/RKCert/Research/SDIRKEightSevenZeroThreeClockZeroRatio.lean) and local proof audit pass on Lean/Mathlib 4.36.0. The full tableau argument remains mathematical.

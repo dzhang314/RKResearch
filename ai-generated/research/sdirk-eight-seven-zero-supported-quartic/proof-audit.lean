@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightSevenZeroSupportedQuartic
+
+open RKResearch.Certified.SDIRKEightSevenZeroSupportedQuartic
+
+#print axioms arithmetic_quartic_determinant
+#print axioms ghost_front_bezout
+#print axioms no_live_arithmetic

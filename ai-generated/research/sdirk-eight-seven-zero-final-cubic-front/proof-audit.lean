@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightSevenZeroFinalCubicFront
+
+open RKResearch.Certified.SDIRKEightSevenZeroFinalCubicFront
+
+#print axioms affine_fourth_reverse
+#print axioms star_fourth_gap_factor

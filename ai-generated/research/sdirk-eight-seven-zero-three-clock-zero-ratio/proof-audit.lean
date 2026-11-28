@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightSevenZeroThreeClockZeroRatio
+
+open RKResearch.Certified.SDIRKEightSevenZeroThreeClockZeroRatio
+
+#print axioms terminal_pair_adjustment
+#print axioms front_first_primitive_cubic
+#print axioms equal_barycentric_multiplier

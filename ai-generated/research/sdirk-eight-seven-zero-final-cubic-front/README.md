@@ -58,3 +58,5 @@ All relevant leading coefficients and ordinary and graph pivots are checked in t
 ## 4. Replay and scope
 
 Run `python check_fixed_front.py star` and `python check_fixed_front.py ghost` using SymPy 1.14 and python-flint 0.8. Saturated rooted ingress and the algebraic elimination are source-level. The chart with first three off rows in arithmetic and first zero at physical four is not excluded by this packet.
+
+The [Lean scalar companion](../../lean/RKCert/Research/SDIRKEightSevenZeroFinalCubicFront.lean) and local proof audit pass on Lean/Mathlib 4.36.0. The full tableau argument remains mathematical.

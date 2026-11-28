@@ -76,3 +76,5 @@ is impossible in the paid field. This proof does not require the arithmetic sext
 ## 4. Scope and replay
 
 Run `python check_scalar.py` for the independent determinant and Bézout checks. The full tableau ingress above uses saturation and paid-field integration; no unconditional bound over arbitrary commutative rings or small-characteristic fields is asserted. The pure proof of (1) and the actual diagonal ingress at physical row 8 are source-level, not hidden inside a native rooted-tableau theorem.
+
+The [Lean scalar companion](../../lean/RKCert/Research/SDIRKEightSevenZeroSupportedQuartic.lean) and local proof audit pass on Lean/Mathlib 4.36.0. The full tableau argument remains mathematical.

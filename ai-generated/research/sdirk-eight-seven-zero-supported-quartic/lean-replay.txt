@@ -1,0 +1,5 @@
+'RKResearch.Certified.SDIRKEightSevenZeroSupportedQuartic.arithmetic_quartic_determinant' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroSupportedQuartic.ghost_front_bezout' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroSupportedQuartic.no_live_arithmetic' depends on axioms: [propext,
+ Classical.choice,

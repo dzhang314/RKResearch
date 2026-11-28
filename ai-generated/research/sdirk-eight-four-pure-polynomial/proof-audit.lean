@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightFourPurePolynomial
+open RKResearch.Certified.SDIRKEightFourPurePolynomial
+#check opposite_zero_gaps
+#check determinant_quadratic_norm
+#check literal_augmented_norms
+#print axioms opposite_zero_gaps
+#print axioms determinant_quadratic_norm
+#print axioms literal_augmented_norms

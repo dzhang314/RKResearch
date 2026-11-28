@@ -1,0 +1,7 @@
+'RKResearch.Certified.ERK10NineLabelHeadScalars.reducedHeadDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10NineLabelHeadScalars.closedRepeatAnchors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10NineLabelHeadScalars.halfReadExit' depends on axioms: [propext, Classical.choice, Quot.sound]

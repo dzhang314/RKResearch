@@ -1,0 +1,1 @@
+exact four reduced entries and the denominator-cleared 2x2 determinant pass

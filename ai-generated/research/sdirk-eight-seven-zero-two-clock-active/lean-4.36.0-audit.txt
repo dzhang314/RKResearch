@@ -1,0 +1,7 @@
+'RKResearch.Certified.SDIRKEightSevenZeroActiveScalar.forward_primitive_pivot' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroActiveScalar.ordinary_pencil' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroActiveScalar.arith_rear_primitive' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroActiveScalar.star_rear_primitive' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroActiveScalar.reverse_third_clear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

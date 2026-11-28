@@ -1,0 +1,14 @@
+0.07 primitive degree 12
+0.44 side 0 third-zero degrees [(2, 1)]
+0.85 side 1 third-zero degrees [(2, 1)]
+0 star ordinary rank 3, two-coefficient pivot nonzero, third-clock gate excludes all 4 candidate labels
+0 arith ordinary rank 3, two-coefficient pivot nonzero, third-clock gate excludes all 4 candidate labels
+1 star ordinary rank 3, two-coefficient pivot nonzero, third-clock gate excludes all 4 candidate labels
+1 arith ordinary rank 3, two-coefficient pivot nonzero, third-clock gate excludes all 4 candidate labels
+0.06 primitive degree 12
+0.41 side 0 third-zero degrees [(2, 1)]
+0.81 side 1 third-zero degrees [(2, 1)]
+0.82 0 star simple good reduction 113 0 (6, 94, 63, 2) ((31, (56, 5, 110)), (86, (30, 55, 73)))
+0.82 0 arith simple good reduction 79 10 (54, 51, 71, 2) ((43, (15, 49, 41)), (71, (55, 31, 6)))
+0.82 1 star simple good reduction 127 19 (28, 21, 112, 30) ((18, (119, 81, 106)), (72, (14, 59, 99)))
+0.82 1 arith simple good reduction 79 10 (54, 51, 71, 56) ((40, (32, 65, 55)), (53, (36, 29, 30)))

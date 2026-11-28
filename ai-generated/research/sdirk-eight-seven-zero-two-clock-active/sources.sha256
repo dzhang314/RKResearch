@@ -1,0 +1,7 @@
+ca0f88af7d4877d746b28f74553cc1c3b4cc953ef2a615da3d5de2b25768a017  ai-generated/research/sdirk-eight-seven-zero-two-clock-active/README.md
+56b34d935d16e16c833ae15d3524d46fc10d6a9b00d3a25b540a14135c03c0e1  ai-generated/research/sdirk-eight-seven-zero-two-clock-active/check_seven_labels.py
+bd9f69260ff711496b8d48f8228e55aef228235a03de5cfd49c5a77a3125bf84  ai-generated/research/sdirk-eight-seven-zero-two-clock-active/check_six_or_fewer.py
+dcc57d11c7ea47c599e1826c5cc0d08e540197a83d940f6fdf6013d565533a50  ai-generated/research/sdirk-eight-seven-zero-two-clock-active/exact-replay.txt
+a99428edaa0fd903f78b01d1d726b679919688acb87cd3edda06a55d146cceaf  ai-generated/research/sdirk-eight-seven-zero-two-clock-active/lean-4.36.0-audit.txt
+5eed263a13d34fb61599357f2626564be4e4e58b72b6691ca66f12e26c84a603  ai-generated/research/sdirk-eight-seven-zero-two-clock-active/proof-audit.lean
+773a45f60320a5c50d5437d12f0a4f07f18b7a181fd4d4fda61abfb64d413078  ai-generated/lean/RKCert/Research/SDIRKEightSevenZeroActiveScalar.lean

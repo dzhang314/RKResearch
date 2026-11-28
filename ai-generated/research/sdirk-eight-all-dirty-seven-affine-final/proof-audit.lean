@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenAffineFinal
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineFinal.late_singleton_homogeneous
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineFinal.norm_on_two_choices

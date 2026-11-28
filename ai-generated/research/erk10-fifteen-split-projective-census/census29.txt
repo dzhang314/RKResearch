@@ -1,0 +1,44 @@
+center (15,20,22): generic=0 origin=0
+prime 29
+outer projective triples 27000
+ambiguous h outer triples 32
+ambiguous f outer triples 84
+projective (outer,h,f) sextuples 30364
+proved closed outer triples 15369
+proved closed finite-outer triples 14385
+nonambiguous outer / closed 26884 15369
+outer survivors in both branches 1335
+projective scalar candidates before nonlinear filter 1916180
+projective reciprocal survivors before true phase generic / origin 1226788 1056034
+projective nonlinear survivors after true phase generic / origin 1221833 1056034
+disjoint outer classes: closed 15369, finite regular 696, finite distinct but nonregular 150, projective distinct with a pole required 256, only collisions/scale loss 10529
+any: generic 11091, origin 1875 (finite outer 9511, 907)
+all finite and distinct: generic 564, origin 306 (finite outer 564, 306)
+projectively distinct: generic 772, origin 368 (finite outer 717, 342)
+tau=0 residue: generic 4037, origin 1875 (finite outer 2889, 907)
+at least one pole: generic 3842, origin 1712 (finite outer 2262, 744)
+collision or lost de: generic 10639, origin 1875 (finite outer 9090, 907)
+h/f ambiguity: generic 116, origin 100 (finite outer 72, 56)
+scale lost: generic 1055, origin 1055 (finite outer 149, 149)
+head row rank drop: generic 3962, origin 1167 (finite outer 2862, 254)
+reciprocal column rank five: generic 10126, origin 1731 (finite outer 8774, 888)
+regular generic example 2 4 27 21 28 12 16 17
+regular generic example 2 8 5 27 9 27 17 23
+regular generic example 2 21 3 24 26 4 10 13
+regular generic example 2 21 27 4 28 12 16 17
+regular generic example 2 24 3 21 26 4 10 13
+regular generic example 2 24 3 26 21 4 10 13
+regular generic example 2 26 3 24 21 4 10 13
+regular generic example 2 27 5 8 9 27 17 23
+regular generic example 4 2 8 12 10 25 13 17
+regular generic example 4 2 22 28 15 11 11 18
+regular origin example 2 6 10 21 11 6 14 25
+regular origin example 2 6 10 21 11 8 19 22
+regular origin example 2 6 10 21 11 21 4 14
+regular origin example 2 6 15 22 7 6 11 20
+regular origin example 2 6 15 22 7 21 3 14
+regular origin example 2 6 21 10 11 8 5 20
+regular origin example 2 6 22 15 7 15 3 4
+regular origin example 2 10 6 21 11 21 17 26
+regular origin example 2 10 21 6 11 8 5 20
+regular origin example 2 15 6 22 7 7 12 25

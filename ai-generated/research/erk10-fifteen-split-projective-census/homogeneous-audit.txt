@@ -1,0 +1,1 @@
+all projective outer and head-form common scales verified symbolically

@@ -1,0 +1,8 @@
+53f2ed20e543d927dc78d8684c6f4130332c9c82ee733f8219774a452352b273  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/README.md
+edc7c94bc479ed5d1731c8558ccb1ff0ab6ffc5c984ae2ffbe9bb6aaad8fd5aa  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/check_coprime_diagonal_minor.py
+d52b1c227493eb5e1e76300ccb643043dc29eb137d6d694631e25023a392047e  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/coprime_generic_front.py
+9ad1907093df49886bf0ee29a125456c99a47711f901d7e13036278800a03c54  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/coprime_one_front_finiteness.py
+65232ce230ab101f6ec8048feb80fd3bc7434568b0cf84120bceccab7962e931  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/coprime_one_front_matrix.py
+fc5e2e100f529b0ed1b4fa40a0c8ab3d02dcff05a4e7fbf171484d202d677625  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/exact-replay.txt
+6deb86fb7cc7e0fc717bb393bb5c788fa43a872c2c94d8c2f5895826ecd6d25a  ai-generated/research/sdirk-eight-silent-one-eight-coprime-one-front-finite/lean-4.36.0-audit.txt
+c8ecad90ac7c9f4a0003429643e91b350baddfa90ba4c1a90fcd7975e6012248  ai-generated/lean/RKCert/ReviewedNative/SDIRK8EightActiveCoprimeDiagonalMinor.lean

@@ -27,6 +27,14 @@
 
 The lower bounds apply to all ordered fields. A construction over the real algebraic numbers need not be defined over every ordered subfield. For conclusions over arbitrary rings or unordered characteristic-zero fields, see the [lower-bound table](lower-bounds/README.md).
 
+## Recent equality-case restrictions
+
+These narrow the search at the lower endpoints; they do not change the real stage intervals above.
+
+- **Strict SDIRK8, ten stages.** In the eight-distinct-active, reverse-silent, one-active-front chart with nonconstant coprime numerator, the [exact diagonal projection](research/sdirk-eight-silent-one-eight-coprime-one-front-finite/README.md) confines the common diagonal to a finite algebraic set in characteristic zero. When the literal terminal clock is Gaussian, the [separate exclusion](research/sdirk-eight-silent-one-eight-coprime-one-front-terminal/README.md) rules out all eight phases. The finite diagonal set outside that case has not been exhausted.
+- **DIRK11, thirteen stages.** In the normalized fourth-clean, invisible-six cubic chart, the [three-to-one profile-factor reduction](research/dirk11-thirteen-invisible-six-cubic-live-f3/README.md) leaves at most six instead of eighteen profile pairs per fixed ordinary clock configuration. The exact characteristic-zero elimination has separate scalar Lean gates.
+- **DIRK12, fifteen stages.** In the real \(C(2),f_5=3\) equality frame with a live zero clock and the entire pure grade-six space supported on zero-weight rows, the [ghost-annihilator proof](research/dirk12-fifteen-rank3-invisible-ghost-annihilator/README.md) excludes five or six zero-weight rows and constrains seven or eight. The [fixed arithmetic receipt](lean/RKCert/ReviewedNative/DIRKOrderTwelveFifteenInvisibleCountGrid.lean) checks on Lean 4.34.1 through 4.37.0-rc1; the support and chronology argument is mathematical.
+
 ## Improved ERK lower bounds over arbitrary rings
 
 The [paid Beta-moment argument](lower-bounds/paid-beta/01-PAID-GRADE-FIVE-SURPLUS.md) raises the arbitrary-ring ERK floors at orders 10 through 17 by at least one stage. At order 12 the [full paid proof](lower-bounds/paid-beta/05-PAID-ORDER-TWELVE.md) raises the floor to 18, matching characteristic zero. At order 14, a [separate paid argument](lower-bounds/paid-beta/04-PAID-ORDER-FOURTEEN.md) raises the floor further to 21, matching characteristic zero. A [finite paid-field argument](lower-bounds/paid-beta/03-PAID-ORDER-EIGHTEEN-NINETEEN.md) gives 27 and 29 stages at orders 18 and 19, two more than the earlier arbitrary-ring bounds. [Its doubling extension](lower-bounds/paid-beta/02-PAID-DOUBLING-SURPLUS.md) raises order 20 from 28 to 30. These are mathematical proofs over all nonzero commutative unital rings using the denominator-cleared order equations; the ordered-field and characteristic-zero columns do not change.

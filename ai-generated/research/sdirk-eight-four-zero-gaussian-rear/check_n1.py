@@ -47,7 +47,7 @@ for p,(gamma,number,frontcount) in complete.items():
                     assert all(P(t)==z for t,z in zip(xs,zs))
                     for aa in gs:
                         if aa in (y,z):continue
-                        a=(1+aa)/(2*ga)
+                        a=(1-aa)/(2*ga)
                         D=P(a)-J(P)(a);N=a*P(a)-J(P*X)(a)
                         assert xd*D!=N
                         ct+=1

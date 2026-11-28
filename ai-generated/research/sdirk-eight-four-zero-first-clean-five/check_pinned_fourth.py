@@ -25,7 +25,7 @@ for p in (13,17,103,131,7793):
     nr+=1
     for aa in gs:
      if aa in (y,z):continue
-     a=(1+aa)/(2*ga)
+     a=(1-aa)/(2*ga)
      k=1+2*U-U*U
      for mode in ('S','A'):
       if mode=='S':

@@ -63,7 +63,7 @@ $$
 \beta \eta_6^2+[q(x_6)-m(x_6)]\eta_6+(Js-s)(x_6)=0,\qquad
 \mu \eta_6^2+\ell(x_6)\eta_6-L(d)=0.
 $$
-At every admissible irreducible factor of the cleared opening equation (1), the exact degree-two gcd in the residue polynomial field is constant. Counts at $13,17,103,131,7793$ respectively are $28,14,11,28,19$ factors across the Gaussian controls and both opening phases. This includes two singular factors at characteristic 17 where $\sigma=\rho=0$: the independent cubic $B(\eta_4-P(x_4))=D R(x_4)$ has $B\ne0$, so it still recovers $\eta_4$ uniquely. Neither a free $\eta_4$ branch nor a singular $D=N=0$ branch is dropped. Factoring the opening polynomial over the entire Gaussian control field and taking a gcd over each resulting exact quotient proves the result in any higher algebraic extension as well.
+At every admissible irreducible factor of the cleared opening equation (1), the exact degree-two gcd in the residue polynomial field is constant. Counts at $13,17,103,131,7793$ respectively are $28,14,15,36,15$ factors across the Gaussian controls and both opening phases. This includes two singular factors at characteristic 17 where $\sigma=\rho=0$: the independent cubic $B(\eta_4-P(x_4))=D R(x_4)$ has $B\ne0$, so it still recovers $\eta_4$ uniquely. Neither a free $\eta_4$ branch nor a singular $D=N=0$ branch is dropped. Factoring the opening polynomial over the entire Gaussian control field and taking a gcd over each resulting exact quotient proves the result in any higher algebraic extension as well.
 
 ## 4. Remaining chronology and verification
 

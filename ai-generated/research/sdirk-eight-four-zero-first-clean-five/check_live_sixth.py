@@ -114,11 +114,11 @@ for p in (13,17,103,131,7793):
     ga=(1+y)/(2*(1+v));d=1-ga
     for aa in gs:
      if aa in (y,z):continue
-     a=(1+aa)/(2*ga)
+     a=(1-aa)/(2*ga)
      for mode in ('S','A'):
       n,ns,L=solve(F,R,U,p,mode,ga,a,d/ga)
       cnt+=n;nc+=ns
       if L:out.append((p,y,z,v,a,mode,L))
- assert not out and cnt=={13:28,17:14,103:11,131:28,7793:19}[p]
+ assert not out and cnt=={13:28,17:14,103:15,131:36,7793:15}[p]
  assert nc==(2 if p==17 else 0)
  print(p,cnt,"irreducible opening factors, including",nc,"singular sigma",flush=True)

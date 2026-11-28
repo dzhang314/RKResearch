@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenClock
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenClock.two_copy_defect_norm
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenClock.constant_graph_opener_numerator

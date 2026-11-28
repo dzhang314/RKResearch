@@ -1,0 +1,25 @@
+opposite temporal laws raw/deflated [(58, 65), (68, 66)] [(48, 44), (58, 55)]
+first affine norm degree 924 CRT count 78 bound bits 4671 modulus bits 4681
+a=0 and a=1 excluded by exact width guards
+exact small fiber 3 true b degrees [19, 21, 34] gcd degree 0 guard removals []
+exact small fiber 3 true b degrees [19, 21, 34] gcd degree 0 guard removals []
+exact small fiber 3 true b degrees [20, 22, 35] gcd degree 1 guard removals [1]
+exact small fiber 3 true b degrees [20, 22, 35] gcd degree 1 guard removals [1]
+exact small fiber 2 true b degrees [17, 20, 32] gcd degree 0 guard removals []
+exact small fiber 2 true b degrees [20, 22, 35] gcd degree 2 guard removals [1, 1]
+saturated fiber (8, 2, 6300) whole unit after [1, 1] at 31 9 simple derivative 30 b degrees [18, 22, 35]
+saturated fiber (8, 2, 22680) whole unit after [] at 19 8 simple derivative 14 b degrees [19, 21, 34]
+saturated fiber (12, 2, 12251250) whole unit after [1] at 23 20 simple derivative 20 b degrees [19, 21, 34]
+saturated fiber (12, 2, 948062981250) whole unit after [1] at 17 6 simple derivative 7 b degrees [19, 22, 35]
+saturated fiber (12, 3, None) whole unit after [1, 1] at 37 7 simple derivative 30 b degrees [18, 22, 35]
+saturated fiber (8, 4, None) whole unit after [1] at 17 14 simple derivative 6 b degrees [19, 22, 35]
+saturated fiber (8, 36, None) whole unit after [1, 1, 1, 1, 1, 1] at 19 13 simple derivative 4 b degrees [14, 22, 35]
+large empty fiber 114 17 11 simple derivative 4 retained b degrees [20, 22, 35]
+large empty fiber 124 23 13 simple derivative 6 retained b degrees [20, 22, 35]
+large whole simple width 20 23 20 5 derivatives 6 20 b degrees [20, 21, 34]
+exact guard norm 6 degree 250 CRT count 22 bound bits 1267 modulus bits 1321
+large whole simple width 60 31 10 5 derivatives 13 15 b degrees [20, 22, 35]
+exact guard norm 16 degree 694 CRT count 57 bound bits 3397 modulus bits 3421
+large whole simple width 56 23 6 13 derivatives 7 11 b degrees [20, 22, 35]
+degree 56 actual right temporal row and unit cofactors [0, 0, 0, 16, 14] [18, 7, 11, 0, 0]
+entire actual temporal rank-loss / right raw affine loss excluded on F_R

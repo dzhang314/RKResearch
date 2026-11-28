@@ -1,0 +1,3 @@
+'RKResearch.Certified.ERK10FifteenF17.order_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF17.exact_f17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FifteenF17.exact_of_char17' depends on axioms: [propext, Classical.choice, Quot.sound]

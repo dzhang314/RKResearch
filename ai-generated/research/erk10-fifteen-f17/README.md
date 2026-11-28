@@ -22,7 +22,10 @@ The unique unital map from (mathbb F_{17}) to any nonzero
 commutative ring of characteristic 17 preserves the literal order
 equations, and that defect maps to a unit, so exactness is preserved.
 The bound therefore applies to every such ring, not just the field.
-A lift to higher powers of 17 is not asserted. The real and rational
-stage intervals and the universal factorial-localized bound are
-unchanged. Native Lean certification of this literal is tracked
-separately from the exact calculation here.
+The [native Lean certificate](LEAN.md) checks exact order ten and
+strict explicitness for this literal and its transfer to every
+nonzero commutative ring of characteristic 17. A [separate mathematical
+lifting proof](../erk10-fifteen-17-power/README.md) extends this result
+to all powers of 17 and the 17-adic integers and field. The real and
+rational stage intervals and the universal factorial-localized bound
+are unchanged.

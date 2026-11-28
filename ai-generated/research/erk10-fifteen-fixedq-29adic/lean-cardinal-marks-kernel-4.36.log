@@ -1,0 +1,12 @@
+Lean 4.36.0
+'RKResearch.Certified.PaidBarycentric.interp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.PaidBarycentric.low_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_weight_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_weights_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_mu_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.cardinal_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.true_cardinal_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.weighted_mark_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.eliminated_marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.completed_u_marks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_noncenter_contact' depends on axioms: [propext, Classical.choice, Quot.sound]

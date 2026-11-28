@@ -1,0 +1,9 @@
+'_private.AuditDIRK12MidpointOpeningThird.0.auditRealOpeningG3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AuditDIRK12MidpointOpeningThird.0.auditPhysicalRowSeven' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'_private.AuditDIRK12MidpointOpeningThird.0.auditThirdRemainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

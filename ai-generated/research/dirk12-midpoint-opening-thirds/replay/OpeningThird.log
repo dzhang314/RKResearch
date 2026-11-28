@@ -1,0 +1,6 @@
+'RKResearch.Certified.DIRK12MidpointForward.Opening.third_kernel_payment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Opening.third_reads' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

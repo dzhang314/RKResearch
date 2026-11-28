@@ -1,0 +1,1 @@
+G3 terms=34; substituted degree=180; quotient degree=144; packing bits=2628; source bytes=110914

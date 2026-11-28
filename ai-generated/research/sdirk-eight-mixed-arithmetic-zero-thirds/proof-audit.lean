@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightMixedArithmeticZeroThirds
+open RKResearch.Certified.SDIRKEightMixedArithmeticZeroThirds
+#check arithmetic_gap_factor
+#check inverse_gap_coordinate
+#check characteristic_support
+#print axioms arithmetic_gap_factor
+#print axioms inverse_gap_coordinate
+#print axioms characteristic_support

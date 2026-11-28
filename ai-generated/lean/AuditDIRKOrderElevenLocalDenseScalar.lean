@@ -1,0 +1,8 @@
+import RKCert.ReviewedNative.DIRKOrderElevenLocalDenseScalar
+
+#check RKResearch.Certified.Graded.OrderElevenLocalDense.duplicate_weight_defect
+#check RKResearch.Certified.Graded.OrderElevenLocalDense.jacobi_four_weighted_zero
+#check RKResearch.Certified.Graded.OrderElevenLocalDense.jacobi_four_weighted_square
+#print axioms RKResearch.Certified.Graded.OrderElevenLocalDense.duplicate_weight_defect
+#print axioms RKResearch.Certified.Graded.OrderElevenLocalDense.jacobi_four_weighted_zero
+#print axioms RKResearch.Certified.Graded.OrderElevenLocalDense.jacobi_four_weighted_square

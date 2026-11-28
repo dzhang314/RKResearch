@@ -1,0 +1,7 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleFive.calibrate_pure_row.{u_1, u_2} {K : Type u_1} {I : Type u_2}
+  [Field K] (B D H raw p : I → K) (j : I) (a w k l e : K) (live : B j ≠ 0) (dj : D j = w * B j) (hj : H j = 0)
+  (single : ∀ (i : I), B i ≠ 0 → p i = p j) (hraw : ∀ (i : I), raw i = a * B i + p i * D i + e * H i)
+  (atj : raw j + l * B j - k * D j = 0) (i : I) : raw i + l * B i - k * D i = (p i - k) * (D i - w * B i) + e * H i
+'RKResearch.Certified.Graded.OrderElevenInvisibleFive.calibrate_pure_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

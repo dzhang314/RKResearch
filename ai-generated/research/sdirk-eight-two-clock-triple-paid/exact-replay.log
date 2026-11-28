@@ -1,0 +1,27 @@
+
+>>> check_norms.py
+mixed support {107: 2}
+mirror support {19: 4, 139: 2, 227: 2, 233: 4, 241: 2, 509: 2, 739: 2, 10067: 4, 234847: 4, 1207117: 4, 1352963: 2, 127835437: 2, 3716728837183: 2}
+plus directly checked primitive-coordinate exception 13
+
+>>> check_primes.py
+13 splitting degree 2 both-end survivors 0
+19 splitting degree 2 both-end survivors 0
+107 splitting degree 1 both-end survivors 0
+139 splitting degree 2 both-end survivors 1
+227 splitting degree 2 both-end survivors 0
+233 splitting degree 1 both-end survivors 0
+241 splitting degree 2 both-end survivors 0
+509 splitting degree 1 both-end survivors 1
+739 splitting degree 1 both-end survivors 1
+10067 splitting degree 1 both-end survivors 0
+234847 splitting degree 2 both-end survivors 0
+1352963 splitting degree 2 both-end survivors 1
+1207117 splitting degree 2 both-end survivors 0
+127835437 splitting degree 2 both-end survivors 0
+3716728837183 splitting degree 1 both-end survivors 1
+fourth 139 21*x^3 + 96*x^2 + 45*x + 119 offzero [(8, 1)] [(132, 1)] zero [] [] singleton obstruction 137
+fourth 509 251*x^3 + 374*x^2 + 95*x + 133 offzero [] [] zero [302] [208] singleton obstruction 486
+fourth 739 473*x^3 + 26*x^2 + 444*x + 364 offzero [(670, 1)] [(70, 1)] zero [] [] singleton obstruction 116
+fourth 1352963 1210324*x^3 + 623071*x^2 + 891537*x + 320799 offzero [(1095488, 1)] [(257476, 1)] zero [] [] singleton obstruction 734659
+fourth 3716728837183 1071469941119*x^3 + 466911247045*x^2 + 245818882924*x + 394055458511 offzero [] [] zero [3244963624905] [471765212279] singleton obstruction 173968155201

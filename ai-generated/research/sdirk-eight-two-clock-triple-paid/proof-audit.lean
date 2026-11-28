@@ -1,0 +1,10 @@
+import RKCert.Research.SDIRKEightTwoClockTriplePaid
+open RKResearch.Certified.SDIRKEightTwoClockTriplePaid
+#check gauss_pair_difference
+#check mirror_primitive_reversal
+#check mirror_singleton_cleared
+#check singleton_five_survivors
+#print axioms gauss_pair_difference
+#print axioms mirror_primitive_reversal
+#print axioms mirror_singleton_cleared
+#print axioms singleton_five_survivors

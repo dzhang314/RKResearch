@@ -1,0 +1,9 @@
+RKResearch.Certified.Graded.OrderElevenThirteen.GroupedReverseCut.{u_1} {K : Type u_1} [Field K]
+  (A : Matrix (Fin 13) (Fin 13) K) (b : Fin 13 → K) : Type u_1
+RKResearch.Certified.Graded.OrderElevenThirteen.no_grouped_reverse_cut.{u_1} {K : Type u_1} [Field K] [CharZero K]
+  {A : Matrix (Fin 13) (Fin 13) K} {b : Fin 13 → K} (ha : A.IsLowerTriangular) (ho : RKResearch.HasOrder 11 A b)
+  (N : RKResearch.Certified.Graded.OrderElevenThirteen.Normalized A b)
+  (Cut : RKResearch.Certified.Graded.OrderElevenThirteen.GroupedReverseCut A b) : False
+'RKResearch.Certified.Graded.OrderElevenThirteen.no_grouped_reverse_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

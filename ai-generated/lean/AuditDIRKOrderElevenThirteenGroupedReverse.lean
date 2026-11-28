@@ -1,0 +1,5 @@
+import RKCert.ReviewedNative.DIRKOrderElevenThirteenGroupedReverse
+
+#check RKResearch.Certified.Graded.OrderElevenThirteen.GroupedReverseCut
+#check RKResearch.Certified.Graded.OrderElevenThirteen.no_grouped_reverse_cut
+#print axioms RKResearch.Certified.Graded.OrderElevenThirteen.no_grouped_reverse_cut

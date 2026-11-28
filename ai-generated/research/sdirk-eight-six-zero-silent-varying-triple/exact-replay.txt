@@ -1,0 +1,122 @@
+0 star forward gate gcd 0
+0 arith forward gate gcd 0
+1 star forward gate gcd 0
+1 arith forward gate gcd 0
+3 0 10 single unseen ordinary label contradiction
+3 0 9 single unseen ordinary label contradiction
+3 1 10 single unseen ordinary label contradiction
+3 1 9 ordinary recurrence possible; forward gate gcd degree zero
+6 0 10 single unseen ordinary label contradiction
+6 0 9 single unseen ordinary label contradiction
+6 1 10 single unseen ordinary label contradiction
+6 1 9 single unseen ordinary label contradiction
+0 three coefficient pivot True
+0 guarded forward gcd 0
+1 three coefficient pivot True
+1 guarded forward gcd 0
+guarded H degree 9
+silent zero exact forward norm gcd degree 0
+minor (0, 1, 2) 1 9 18
+minor (0, 1, 3) 3 10 38
+minor (0, 2, 3) 1 8 16
+minor (1, 2, 3) 1 9 18
+resultant pair 0 1 degree g 37
+projection running gcd degree 37
+resultant pair 0 2 degree g 17
+projection running gcd degree 11
+resultant pair 1 2 degree g 34
+projection running gcd degree 11
+resultant pair 0 3 degree g 18
+projection running gcd degree 11
+resultant pair 1 3 degree g 37
+projection running gcd degree 11
+resultant pair 2 3 degree g 17
+projection running gcd degree 11
+projected factors [(1, 2), (9, 1)]
+g 2
+0.88 star 0 projected coefficient degree 1
+0.88 star 0 an actual unit guard vanishes identically
+0.88 star 0 projected coefficient degree 9
+1.15 star 0 four actual minors gap gcd degree 1
+1.45 star 0 guarded gap degree 1
+1.72 star 0 forward norm regular? True ordinary principal pivot? True
+minor (0, 1, 2) 1 9 18
+minor (0, 1, 3) 3 10 38
+minor (0, 2, 3) 1 8 16
+minor (1, 2, 3) 1 9 18
+resultant pair 0 1 degree g 37
+projection running gcd degree 37
+resultant pair 0 2 degree g 17
+projection running gcd degree 11
+resultant pair 1 2 degree g 34
+projection running gcd degree 11
+resultant pair 0 3 degree g 18
+projection running gcd degree 11
+resultant pair 1 3 degree g 37
+projection running gcd degree 11
+resultant pair 2 3 degree g 17
+projection running gcd degree 11
+projected factors [(1, 2), (9, 1)]
+g 2
+1.56 star 1 projected coefficient degree 1
+1.56 star 1 an actual unit guard vanishes identically
+1.56 star 1 projected coefficient degree 9
+1.99 star 1 four actual minors gap gcd degree 1
+2.49 star 1 guarded gap degree 1
+3.2 star 1 forward norm regular? True ordinary principal pivot? True
+minor (0, 1, 2) 5 10 56
+minor (0, 1, 3) 7 10 78
+minor (0, 2, 3) 7 8 69
+minor (1, 2, 3) 8 9 84
+resultant pair 0 1 degree g 120
+projection running gcd degree 120
+resultant pair 0 2 degree g 110
+projection running gcd degree 84
+resultant pair 1 2 degree g 126
+projection running gcd degree 82
+resultant pair 0 3 degree g 125
+projection running gcd degree 82
+resultant pair 1 3 degree g 143
+projection running gcd degree 82
+resultant pair 2 3 degree g 127
+projection running gcd degree 82
+projected factors [(1, 1), (1, 8), (4, 1), (69, 1)]
+g - 1/2 1
+g 8
+171.84 arith 0 projected coefficient degree 1
+171.84 arith 0 an actual unit guard vanishes identically
+171.84 arith 0 projected coefficient degree 1
+171.84 arith 0 an actual unit guard vanishes identically
+171.84 arith 0 projected coefficient degree 4
+172.1 arith 0 four actual minors gap gcd degree 1
+172.11 arith 0 guarded gap degree 0
+172.11 arith 0 projected coefficient degree 69
+172.13 arith 0 simple good reduction and forward gd1 17 16 14 [(0, 1)]
+minor (0, 1, 2) 5 10 56
+minor (0, 1, 3) 7 10 78
+minor (0, 2, 3) 7 8 69
+minor (1, 2, 3) 8 9 84
+resultant pair 0 1 degree g 120
+projection running gcd degree 120
+resultant pair 0 2 degree g 110
+projection running gcd degree 84
+resultant pair 1 2 degree g 126
+projection running gcd degree 82
+resultant pair 0 3 degree g 125
+projection running gcd degree 82
+resultant pair 1 3 degree g 143
+projection running gcd degree 82
+resultant pair 2 3 degree g 127
+projection running gcd degree 82
+projected factors [(1, 1), (1, 8), (4, 1), (69, 1)]
+g - 2*u**2/17 + 8*u/17 - 19/34 1
+g 8
+178.96 arith 1 projected coefficient degree 1
+178.96 arith 1 an actual unit guard vanishes identically
+178.96 arith 1 projected coefficient degree 1
+178.96 arith 1 an actual unit guard vanishes identically
+178.96 arith 1 projected coefficient degree 4
+179.26 arith 1 four actual minors gap gcd degree 1
+179.27 arith 1 guarded gap degree 0
+179.27 arith 1 projected coefficient degree 69
+179.28 arith 1 simple good reduction and forward gd1 11 3 2 [(0, 1)]

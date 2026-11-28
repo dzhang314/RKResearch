@@ -1,0 +1,9 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneCompletion.counts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneCompletion.zero_reciprocal_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneCompletion.zero_reciprocal_z6_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

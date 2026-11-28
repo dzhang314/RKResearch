@@ -1,0 +1,7 @@
+Cold verify.py on the tracked dependency source tree exited 0.
+The exact replay checks 30 frozen dependency manifests and 195 files,
+the lower-degree and both zero-reciprocal proof engines, and the old A1 source.
+It does not rerun the live dependency engines; their audited manifests,
+exact receipts, and scoped inputs are cited in the README.
+The new scalar and count module was checked with Lean/Mathlib 4.36.0.
+The positive standard-axiom audit is in axioms.txt; no whole-order kernel claim.

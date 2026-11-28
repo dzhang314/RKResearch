@@ -1,0 +1,115 @@
+Checked 30 exact dependency manifests and all 195 listed files.
+Exact Jacobi pair resultant degree: 12; linear subresultant present
+mod 101: finite-free ranks 12, 24, 72, 144
+Inverse products checked: 75 (by level: [1, 16, 15, 19, 24])
+The first-ghost Sylvester residual is a unit for every ordered clock candidate
+old monic quotient built
+F7 degree after clean-contact cancellation 3
+ghost quadratic determinant degree 8
+cleared guard factors (s - 1)**2*(63*s**4 - 252*s**3 + 357*s**2 - 210*s + 43)**2/3969 (s - 1)**10*(63*s**4 - 252*s**3 + 357*s**2 - 210*s + 43)**10/984930291881790849
+Exact clock guards and leader norm passed
+Thirteen exact polynomial leader divisions passed
+Exact regular factors: degrees 6,30,42; the old-clock collision norm is the degree-30 factor.
+Exact sum-one cubic passed
+exact p pivot of degree 6
+exact pair J5-J4 zero flags [True, True]
+Degree six: lambda=-1 forces forbidden interior clock 1
+degree 30 : p and rho leading pivots are units
+degree 42 : p and rho leading pivots are units
+Residual zero flags, alpha1 then alpha2 [[False, False], [False, False]]
+alpha 1 excluded by unit
+alpha 2 excluded by unit
+s=1 unit
+guard den remove only dead H pair factors [1]
+valid H pairs pair degree 3
+rho cubic degree observed 3
+First ghost exclusion for all gap shapes: valid H pairs
+guard orig remove only dead H pair factors [1]
+valid H pairs pair degree 3
+rho cubic degree observed 3
+First ghost exclusion for all gap shapes: valid H pairs
+guard lead remove only dead H pair factors []
+leading drop pair degree 1
+rho cubic degree observed 2
+First ghost exclusion for all gap shapes: leading drop
+regular lead pair degree 3
+rho cubic degree observed 3
+First ghost exclusion for all gap shapes: regular lead
+All linear-profile branches excluded (exact project + characteristic-zero clock-algebra unit lifts).
+curvature factorization -1/216000 [(1, 1), (1, 1), (9, 1)]
+relative degree 3 16 removed 257887113122317441862694076416*(a - 1)**2*(42*a**4 - 84*a**3 + 56*a**2 - 14*a + 1)**12
+exact projection degrees [(4, 4), (60, 1)]
+unweighted-alpha quartic residue is a unit in the degree-60 clock field 101
+checked inversions [('F', 0), ('second forward clean a', 13), ('forward U cubic', 1), ('old reflected cubic', 2)]
+    0.08 common m scale normalized coefficient degree 16 guarded content degree 0
+    3.35 E6 input normalized coefficient degree 76 guarded content degree 86
+    3.39 E6 relative normalized coefficient degree 180 guarded content degree 48
+    3.41 E6 exact projection degree 720
+    3.41 Adj input normalized coefficient degree 72 guarded content degree 22
+    3.44 Adj relative normalized coefficient degree 168 guarded content degree 48
+    3.46 Adj exact projection degree 672
+    3.51 exact joint degree 588 forbidden factors (39, 9) other support [(120, 6375864437904605062500000000), (12, 16227), (12, 54123)]
+    3.79 residue ranks over F_103 120 6375864437904605062500000000 degree 11 beta1 None 132 beta2 unit 132
+    4.09 residue ranks over F_103 12 16227 degree 12 beta1 profile-ratio 132 beta2 unit 144
+    4.19 residue ranks over F_103 12 54123 degree 4 beta1 c2 36 beta2 unit 48
+    4.19 both beta counts excluded in Fn0
+    0.04 common m scale normalized coefficient degree 12 guarded content degree 0
+    1.74 E6 input normalized coefficient degree 52 guarded content degree 86
+    1.75 E6 relative normalized coefficient degree 92 guarded content degree 64
+    1.76 E6 exact projection degree 368
+    1.79 exact joint degree 368 forbidden factors (17, 24) other support [(24, 364663909217), (108, -16344301879687500000000000000), (24, 72)]
+    1.84 residue ranks over F_103 24 364663909217 degree 3 beta1 zq 33 beta2 unit 36
+    1.87 residue ranks over F_103 108 -16344301879687500000000000000 degree 1 beta1 None 12 beta2 unit 12
+    1.89 residue ranks over F_103 24 72 degree 1 beta1 None 12 beta2 unit 12
+    1.89 both beta counts excluded in F10
+    0.06 common m scale normalized coefficient degree 24 guarded content degree 0
+    3.78 E6 input normalized coefficient degree 64 guarded content degree 110
+    3.80 E6 relative normalized coefficient degree 128 guarded content degree 64
+    3.81 E6 exact projection degree 512
+    3.82 Adj input normalized coefficient degree 60 guarded content degree 46
+    3.84 Adj relative normalized coefficient degree 116 guarded content degree 64
+    3.85 Adj exact projection degree 464
+    3.85 A1 input normalized coefficient degree 48 guarded content degree 16
+    3.86 A1 relative normalized coefficient degree 88 guarded content degree 56
+    3.87 A1 exact projection degree 352
+    3.89 exact joint degree 224 forbidden factors (26, 30) other support []
+    3.89 both beta counts excluded in F1x
+    0.04 common m scale normalized coefficient degree 24 guarded content degree 0
+    3.74 E6 input normalized coefficient degree 64 guarded content degree 110
+    3.76 E6 relative normalized coefficient degree 128 guarded content degree 64
+    3.77 E6 exact projection degree 512
+    3.78 Adj input normalized coefficient degree 60 guarded content degree 46
+    3.79 Adj relative normalized coefficient degree 116 guarded content degree 64
+    3.80 Adj exact projection degree 464
+    3.80 A1 input normalized coefficient degree 48 guarded content degree 16
+    3.82 A1 relative normalized coefficient degree 88 guarded content degree 56
+    3.82 A1 exact projection degree 352
+    3.84 exact joint degree 224 forbidden factors (26, 30) other support []
+    3.84 both beta counts excluded in F2x
+    0.08 common m scale normalized coefficient degree 40 guarded content degree 0
+    8.03 E6 input normalized coefficient degree 112 guarded content degree 110
+    8.09 E6 relative normalized coefficient degree 288 guarded content degree 48
+    8.15 E6 exact projection degree 1152
+    8.16 Adj input normalized coefficient degree 108 guarded content degree 46
+    8.26 Adj relative normalized coefficient degree 276 guarded content degree 48
+    8.32 Adj exact projection degree 1104
+    8.32 A1 input normalized coefficient degree 80 guarded content degree 16
+    8.36 A1 relative normalized coefficient degree 192 guarded content degree 48
+    8.38 A1 exact projection degree 768
+    8.64 exact joint degree 576 forbidden factors (54, 24) other support [(48, 41521530286435), (12, 54123)]
+    8.72 residue ranks over F_103 48 41521530286435 degree 1 beta1 zq 11 beta2 unit 12
+    8.91 residue ranks over F_103 12 54123 degree 4 beta1 c2 36 beta2 unit 48
+    8.91 both beta counts excluded in Fnx
+m1 beta 1 ordinary degree 12 p 103 rank 12 / 12
+m1 beta 2 ordinary degree 12 p 103 rank 12 / 12
+mY2 beta 1 ordinary degree 12 p 103 rank 12 / 12
+mY2 beta 2 ordinary degree 12 p 103 rank 12 / 12
+contact beta 1 ordinary degree 48 p 103 rank 48 / 48
+contact beta 2 ordinary degree 48 p 103 rank 48 / 48
+Fn-loss beta 1 ordinary degree 12 p 103 rank 24 / 24
+Fn-loss beta 2 ordinary degree 12 p 103 rank 24 / 24
+r0 beta 1 ordinary degree 24 p 103 rank 24 / 24
+r0 beta 2 ordinary degree 24 p 103 rank 24 / 24
+Exact first-gap profile resultant, contact gates and both pivot-conditional branches checked
+exact source of the A1 coefficients and the three known D-roots audited
+All lower-degree and zero-reciprocal exact replays exited successfully.

@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightFiveZeroPureLiveEighth
+open RKResearch.Certified.SDIRKEightFiveZeroPureLiveEighth
+#check fifth_node_moment_is_nonzero
+#check fifth_node_moment_minors
+#check rear_star_pair
+#print axioms fifth_node_moment_is_nonzero
+#print axioms fifth_node_moment_minors
+#print axioms rear_star_pair

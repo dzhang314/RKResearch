@@ -1,0 +1,36 @@
+Official Lean 4.36.0; canonical standalone direct compiler module builds.
+All six module bodies were emitted under their canonical RKCert import names.
+All reviewed proof names use only standard axioms.
+The final physical exact-order theorem requires MinimalEdgeReceipts.
+
+ERK10FixedQ29AdicOrderSlots source SHA256 2e86915678e81031b0c75c52eeee459e9a039c422bf6e1f89e62f6a8be3a9c5a
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.sum_slots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.tableau15_raw_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_tableau_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicOrderAnn source SHA256 466028e0fe790aad99e4bfc478e2cdb380a034ee340779584dd871abbfd7f0e4
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.rawAnn_markPow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_lineAnn5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_line_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_line_ann_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicOrderAttach source SHA256 2b579e701b23f06decba5b68fcff8c77884b09f76e666c5838972b257bb209ea
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.rawTreeEdge_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.rawTreeErr_attach' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_attach_grade' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_error_output_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicOrderOutput source SHA256 8f218561f1ab551c1ac19ae330b0d4d3a024f478829f8bb6f831f747d3c7d096
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.treeScale_childDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_weight_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_hasOrder10_of_receipts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_is_ERK' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicOrderMinimal source SHA256 93b129ad5a2b576c86c890990d651998d0464fc96b6c71565c415d0004465a57
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.MinimalEdgeReceipts.toAttach' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_hasOrder10_of_three_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ERK10FixedQ29AdicOrderBush source SHA256 238ec8c29fb3833f5f54dfa0ba751b439e19968e61baa759dd14a443a808d537
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_raw_clock_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_bush_failure_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_exact10_of_three_edges' depends on axioms: [propext, Classical.choice, Quot.sound]

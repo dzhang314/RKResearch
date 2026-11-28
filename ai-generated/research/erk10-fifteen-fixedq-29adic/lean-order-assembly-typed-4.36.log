@@ -1,0 +1,15 @@
+@actual_exact10_of_three_edges : ∀ {R : Type u_1} [inst : CommRing R]
+  (ρ : R →+* RKResearch.Certified.ERK10FixedQ29Adic.F) [IsLocalHom ρ] (c a b : R),
+  Polynomial.eval c (RKResearch.Certified.ERK10FixedQ29Adic.decic R) = 0 →
+    ρ c = 2 →
+      ρ a = 11 →
+        ρ b = 20 →
+          Polynomial.eval a (RKResearch.Certified.ERK10FixedQ29Adic.headQuadratic c) = 0 →
+            b = RKResearch.Certified.ERK10FixedQ29Adic.headSum c - a →
+              MinimalEdgeReceipts c a b →
+                RKResearch.ERK (tableau15 c a b (actualK c a b)) ∧
+                  RKResearch.HasOrder 10 (tableau15 c a b (actualK c a b)) (tableauWeights c a b) ∧
+                    ¬RKResearch.HasOrder 11 (tableau15 c a b (actualK c a b)) (tableauWeights c a b)
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_exact10_of_three_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

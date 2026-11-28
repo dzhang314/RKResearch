@@ -54,7 +54,7 @@ The literal arithmetic is checked by exact replay. The [generic Lean ring transf
 
 ### Native compact witness
 
-The compact 5/4-horizon tableau now has its own unconditional Lean/Mathlib 4.36.0 certificate, under `RKResearch.Certified.ERK10MirrorCompact`. The endpoints `order_ten` and `exists_exact_of_unit` check the literal rooted order conditions and the two-tree exact-order obstruction over any nontrivial commutative ring inverting this chart's common denominator. `exists_exact_rat` specializes to rational coefficients. The arithmetic uses 488 profiles, 221 actions, and 985 joins; only standard axioms appear in the end-to-end receipts. The other newly generated chart endpoints are not asserted certified here.
+The compact 5/4-horizon tableau now has its own unconditional Lean/Mathlib 4.36.0 certificate, under `RKResearch.Certified.ERK10MirrorCompact`. The endpoints `order_ten` and `exists_exact_of_unit` check the literal rooted order conditions and the two-tree exact-order obstruction over any nontrivial commutative ring inverting this chart's common denominator. `exists_exact_rat` specializes to rational coefficients. The arithmetic uses 488 profiles, 221 actions, and 985 joins; only standard axioms appear in the end-to-end receipts. The independent horizon-four and 13-unit charts now have the analogous literal kernel receipts under `RKResearch.Certified.ERK10MirrorThetaFour` and `RKResearch.Certified.ERK10MirrorUnit13`, respectively, on the same pinned Lean/Mathlib version; their generated source manifests are listed below.
 
 From `ai-generated/lean`:
 
@@ -64,3 +64,6 @@ From this research directory:
 
     sha256sum -c compact-native-sha256.txt
     python3 -B generate_native.py compact /tmp/rk-compact-regenerated
+
+    sha256sum -c theta-four-native-sha256.txt
+    sha256sum -c unit13-native-sha256.txt

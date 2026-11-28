@@ -1,0 +1,4 @@
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticFinalBothD.even_nodal_linear_coefficient' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticFinalBothD.forward_ratio_clear' depends on axioms: [propext,
+ Quot.sound]

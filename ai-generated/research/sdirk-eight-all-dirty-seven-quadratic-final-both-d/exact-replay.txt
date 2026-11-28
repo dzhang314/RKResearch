@@ -1,0 +1,32 @@
+equal polynomials (4, 3) (11, 5)
+equal projected factors [((3, 0), 1), ((4, 0), 1), ((38, 0), 1)]
+equal 3 raw gcd 1
+equal 3 guarded gcd 0
+equal 4 raw gcd 1
+equal 4 guarded gcd 0
+equal 38 raw gcd 1
+equal 38 guarded gcd 1
+fourth rejects
+distinct sum polynomials [(8, 2), (5, 2)] projection [((4, 0), 2), ((1, 0), 3)]
+unequal 4 sum degree 2
+unequal pair poly 2 guarded 0
+unequal pair poly 2 guarded 0
+unequal 1 sum degree 0
+unequal endpoint+trace+fourth census Counter({'guarded pair empty': 2})
+split raw [(4, 2, 0, 0), (2, 1, 3, 0), (2, 1, 0, 3), (6, 4, 2, 2)]
+split v (19, 10, 6, 0)
+split u (60, 30, 0, 0)
+split projected factors [((60, 0, 0, 0), 2), ((4, 0, 0, 0), 6)]
+split h degree 4 d raw degree 2
+split quartic u raw 1
+split quartic u guarded 0
+split quartic u raw 3
+split quartic u guarded 3
+v raw 1
+split quartic v guarded 0
+split endpoint+trace+fourth census Counter()
+split raw [(4, 2, 0, 0), (2, 1, 3, 0), (2, 1, 0, 3), (6, 4, 2, 2)]
+split v (19, 10, 6, 0)
+split u (60, 30, 0, 0)
+split projected factors [((60, 0, 0, 0), 2), ((4, 0, 0, 0), 6)]
+fixed simple reduction 43 33 [(14, 18, 22, 29), (29, 22, 18, 23)]

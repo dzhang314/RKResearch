@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticFinalBothD
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticFinalBothD.even_nodal_linear_coefficient
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticFinalBothD.forward_ratio_clear

@@ -1,0 +1,17 @@
+no active literal front zero factor True 0 True 1 3 True
+no active literal front zero factor True 0 True -1 3 True
+no active literal front zero factor True 0 False 1 3 True
+no active literal front zero factor True 0 False -1 3 True
+no active literal front zero factor True 1 True 1 3 True
+no active literal front zero factor True 1 True -1 3 True
+no active literal front zero factor True 1 False 1 3 True
+no active literal front zero factor True 1 False -1 3 True
+no active literal front zero factor False 0 True 1 3 True
+no active literal front zero factor False 0 True -1 3 True
+no active literal front zero factor False 0 False 1 3 True
+no active literal front zero factor False 0 False -1 3 True
+no active literal front zero factor False 1 True 1 3 True
+no active literal front zero factor False 1 True -1 3 True
+no active literal front zero factor False 1 False 1 3 True
+no active literal front zero factor False 1 False -1 3 True
+neither-front seven-distinct zero-factor checks: 16

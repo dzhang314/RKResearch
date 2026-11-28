@@ -22,8 +22,8 @@ gluing of the four nonlinear tableaux from the
 [19-stage local and finite-characteristic portfolio](../dirk12-nineteen-field-local-portfolio/README.md),
 and not a claim about the unrestricted rational or real minimum.
 The rational upper from that separate work remains 19, and
-the real minimum is fifteen. This packet's full proof is exact
-arithmetic; a separate native Lean certificate would be needed.
+the real minimum is fifteen. The arithmetic replays are independent of the [end-to-end Lean certificate](NATIVE.md),
+which verifies the same 20-stage bound on the matched Lean/Mathlib 4.36.0 toolchain.
 
 ## Literal opening and scalar weights
 

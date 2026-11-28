@@ -1,0 +1,42 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib commit: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+
+Seven source modules, compiled in listed order.
+
+ScaledIntegerFlagReplay: passed
+'RKResearch.Certified.ScaledIntegerFlagReplay.paid_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ScaledIntegerFlagReplay.transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+DIRK12FactorialTwentyFlagData: passed
+
+DIRK12FactorialTwentyFlagChecks: passed
+
+DIRK12FactorialTwentyFlagActionsEarly: passed
+
+DIRK12FactorialTwentyFlagActionsLate: passed
+
+DIRK12FactorialTwentyFlagProducts: passed
+/workspace/scratch/1263d52f6918/dirk12-native20/publish/ai-generated/lean/RKCert/ReviewedNative/DIRK12FactorialTwentyFlagProducts.lean:41:6: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+
+DIRK12FactorialTwentyFlag: passed
+'RKResearch.Certified.DIRK12FactorialTwentyFlag.rational_order12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12FactorialTwentyFlag.target_not_order13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12FactorialTwentyFlag.exists_exact_factorial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+Independent typed final import:
+@exists_exact_factorial : ∀ {R : Type u_1} [inst : CommRing R] [Nontrivial R],
+  IsUnit ↑(Nat.factorial 12) →
+    ∃ U w, U.IsLowerTriangular ∧ U 0 0 = 0 ∧ 16 * U 1 1 = 1 ∧ HasOrder 12 U w ∧ ¬HasOrder 13 U w
+'RKResearch.Certified.DIRK12FactorialTwentyFlag.exists_exact_factorial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ScaledIntegerFlagReplay.transport' depends on axioms: [propext, Classical.choice, Quot.sound]

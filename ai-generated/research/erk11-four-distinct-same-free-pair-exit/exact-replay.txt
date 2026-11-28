@@ -1,0 +1,6 @@
+D 6 6 6 terms 28
+Delta 4 4 4 terms 15
+contact 12 11 12 terms 78
+cross 39 39 39 terms 820
+fiber degree 4 common T degree 1 divides Delta² True
+fiber degree 10 common T degree 1 divides Delta² True

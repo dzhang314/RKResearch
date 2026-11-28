@@ -1,0 +1,4 @@
+Exact affine determinant identity passed
+Exact resultants: only J4(a) and degree 24
+Exact linear relation has a unit pair pivot modulo 101
+The exact five-zero-read determinant is a unit modulo 101

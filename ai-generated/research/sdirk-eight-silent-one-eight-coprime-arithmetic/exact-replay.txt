@@ -1,0 +1,98 @@
+arithmetic raw data True F (0, 5, 14, 0) Y [(0, 10, 35, 0), (0, 10, 36, 0), (0, 10, 37, 0), (0, 10, 38, 0)] E5 (3, 0, 4, 0)
+common powers before reconstruction True [(1, 1), (18, 1), (19, 1), (20, 1), (21, 1)]
+arithmetic first exact resultant True (0, 15, 78, 0)
+arithmetic primitive resultant True (0, 15, 78, 0) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact resultant with Bareiss True
+exact arithmetic degree True 600
+exact removed 1 33
+exact removed 20 180
+exact removed 5 30
+exact square-free guarded True 285
+exact removed 1 8
+exact removed 4 8
+arithmetic exact separated Gauss eighth factor True 36
+exact removed 36 36
+arithmetic noTailGauss regular vs contact True 249 36
+arithmetic gap reduced True 1097 345 1 1
+arithmetic fifth reduced True 1097 345 1 1 1
+arithmetic gap reduced True 1097 345 2 1
+arithmetic fifth reduced True 1097 345 2 1 1
+arithmetic gap reduced True 1097 345 2 1
+arithmetic fifth reduced True 1097 345 2 1 1
+arithmetic gap reduced True 1097 345 16 1
+arithmetic fifth reduced True 1097 345 16 1 1
+arithmetic gap reduced True 1097 345 228 1
+arithmetic fifth reduced True 1097 345 228 1 1
+d-contact exact rank certificate True 1097 345 1 1
+d-contact exact rank certificate True 1097 345 2 1
+d-contact exact rank certificate True 1097 345 2 1
+d-contact exact rank certificate True 1097 345 3 1
+d-contact exact rank certificate True 1097 345 4 1
+d-contact exact rank certificate True 1097 345 4 1
+d-contact exact rank certificate True 1097 345 8 1
+d-contact exact rank certificate True 1097 345 12 1
+Gauss root parameter mode True 0 raw 5 retained 5
+Gauss root arithmetic unit True 0 1097 345 1 5
+Gauss root arithmetic unit True 0 1097 345 1 5
+Gauss root arithmetic unit True 0 1097 345 2 5
+Gauss root parameter mode True 1 raw 19 retained 12
+Gauss root arithmetic unit True 1 1097 345 1 12
+Gauss root arithmetic unit True 1 1097 345 1 12
+Gauss root arithmetic unit True 1 1097 345 2 12
+Gauss root parameter mode True 2 raw 11 retained 9
+Gauss root arithmetic unit True 2 1097 345 1 9
+Gauss root arithmetic unit True 2 1097 345 1 9
+Gauss root arithmetic unit True 2 1097 345 2 9
+complete arithmetic front phase excluded True
+arithmetic raw data False F (0, 5, 14, 1) Y [(0, 10, 35, 1), (0, 10, 36, 1), (0, 10, 37, 1), (0, 10, 38, 1)] E5 (3, 0, 4, 1)
+common powers before reconstruction False [(1, 1), (18, 1), (19, 1), (20, 1), (21, 1)]
+arithmetic first exact resultant False (0, 15, 78, 1)
+arithmetic primitive resultant False (0, 15, 78, 1) [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+exact resultant with Bareiss False
+exact arithmetic degree False 600
+exact removed 1 33
+exact removed 20 180
+exact removed 5 30
+exact square-free guarded False 357
+exact removed 1 8
+exact removed 4 8
+arithmetic exact separated Gauss eighth factor False 36
+exact removed 36 108
+arithmetic noTailGauss regular vs contact False 249 36
+arithmetic gap reduced False 1097 345 1 1
+arithmetic fifth reduced False 1097 345 1 1 1
+arithmetic gap reduced False 1097 345 4 1
+arithmetic fifth reduced False 1097 345 4 1 1
+arithmetic gap reduced False 1097 345 7 1
+arithmetic fifth reduced False 1097 345 7 1 1
+arithmetic gap reduced False 1097 345 15 1
+arithmetic fifth reduced False 1097 345 15 1 1
+arithmetic gap reduced False 1097 345 46 1
+arithmetic fifth reduced False 1097 345 46 1 1
+arithmetic gap reduced False 1097 345 56 1
+arithmetic fifth reduced False 1097 345 56 1 1
+arithmetic gap reduced False 1097 345 120 1
+arithmetic fifth reduced False 1097 345 120 1 1
+d-contact exact rank certificate False 1097 345 1 1
+d-contact exact rank certificate False 1097 345 1 1
+d-contact exact rank certificate False 1097 345 2 1
+d-contact exact rank certificate False 1097 345 2 1
+d-contact exact rank certificate False 1097 345 3 1
+d-contact exact rank certificate False 1097 345 4 1
+d-contact exact rank certificate False 1097 345 5 1
+d-contact exact rank certificate False 1097 345 8 1
+d-contact exact rank certificate False 1097 345 10 1
+Gauss root parameter mode False 0 raw 5 retained 5
+Gauss root arithmetic unit False 0 1097 345 1 5
+Gauss root arithmetic unit False 0 1097 345 1 5
+Gauss root arithmetic unit False 0 1097 345 2 5
+Gauss root parameter mode False 1 raw 19 retained 12
+Gauss root arithmetic unit False 1 1097 345 1 12
+Gauss root arithmetic unit False 1 1097 345 1 12
+Gauss root arithmetic unit False 1 1097 345 2 12
+Gauss root parameter mode False 2 raw 11 retained 9
+Gauss root arithmetic unit False 2 1097 345 1 9
+Gauss root arithmetic unit False 2 1097 345 1 9
+Gauss root arithmetic unit False 2 1097 345 2 9
+complete arithmetic front phase excluded False
+all complete eight-active coprime arithmetic modes excluded

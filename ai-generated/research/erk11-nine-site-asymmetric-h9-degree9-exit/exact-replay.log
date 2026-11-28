@@ -1,0 +1,53 @@
+gate F (5, 16, 15)
+gate G (5, 7, 9)
+gate R (6, 20, 23)
+gate L (3, 9, 11)
+gate Q (4, 12, 12)
+gate S (6, 15, 15)
+SMALL M (3, 5, 8) [(0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (1, (0, 1, 0)), (17, (1, 0, 1))]
+SMALL K (6, 14, 20) [(0, (0, 0, 1)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0))]
+WIDTH MG (46, 59) 0.2
+WIDTH MQ (56, 62) 0.41
+gcd (0, 0) []
+WIDTH MF (73, 82) 1.49
+gcd (0, 0) []
+WIDTH MS (75, 87) 3.71
+gcd (0, 0) []
+gate F (5, 16, 15)
+gate G (5, 7, 9)
+gate R (6, 20, 23)
+gate L (3, 9, 11)
+gate Q (4, 12, 12)
+gate S (6, 15, 15)
+SMALL M (3, 5, 8) [(0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (1, (0, 1, 0)), (17, (1, 0, 1))]
+SMALL K (6, 14, 20) [(0, (0, 0, 1)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0))]
+WIDTH GQ (74, 72) 3.96
+WIDTH GF (87, 88) 22.5
+gcd (0, 0) []
+gate F (5, 16, 15)
+gate G (5, 7, 9)
+gate R (6, 20, 23)
+gate L (3, 9, 11)
+gate Q (4, 12, 12)
+gate S (6, 15, 15)
+SMALL M (3, 5, 8) [(0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (0, (0, 0, 1)), (1, (0, 1, 0)), (17, (1, 0, 1))]
+SMALL K (6, 14, 20) [(0, (0, 0, 1)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0)), (1, (0, 1, 0))]
+projection Q (0, 1212)
+projection F (0, 1596)
+projection ZQ (0, 1536)
+projection ZF (0, 1830)
+a gcd 33 factors [(2, 1), (3, 1), (4, 1), (24, 1)]
+residue a degree 2 pivot degree b 9 b gcd degree 1
+at common b residue: full z degrees ['F', 'G', 'R', 'L', 'Q', 'S', 'M'] z gcd 0
+residue a degree 3 pivot degree b 9 b gcd degree 1
+at common b residue: full z degrees ['F', 'G', 'R', 'L', 'Q', 'S', 'M'] z gcd 0
+residue a degree 4 pivot degree b 9 b gcd degree 1
+at common b residue: full z degrees ['F', 'G', 'R', 'L', 'Q', 'S', 'M'] z gcd 0
+residue a degree 24 pivot degree b 9 b gcd degree 1
+at common b residue: full z degrees ['F', 'G', 'R', 'L', 'Q', 'S', 'M'] z gcd 0
+failures []
+degree upper 1230 required vanishing at infinity 18
+valuation progress 9 nullity 9 sec 0.03
+valuation progress 15 nullity 6 sec 0.07
+valuation progress 18 nullity 3 sec 0.12
+Finite integral residue tower contradiction in characteristic zero.

@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphThirdLiveEighth
+open RKResearch.Certified.SDIRKEightFiveZeroGraphThirdLiveEighth
+#check common_graph_parameter_elimination
+#check two_mode_three_read_det
+#check quadratic_orientation_norm
+#print axioms common_graph_parameter_elimination
+#print axioms two_mode_three_read_det
+#print axioms quadratic_orientation_norm

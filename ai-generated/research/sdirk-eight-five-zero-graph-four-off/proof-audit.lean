@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphFourOff
+open RKResearch.Certified.SDIRKEightFiveZeroGraphFourOff
+#check affine_divides_primitive_is_monomial
+#check quadratic_divides_primitive_is_monomial
+#print axioms affine_divides_primitive_is_monomial
+#print axioms quadratic_divides_primitive_is_monomial

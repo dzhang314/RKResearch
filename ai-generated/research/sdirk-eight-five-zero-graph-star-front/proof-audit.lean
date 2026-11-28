@@ -1,0 +1,4 @@
+import RKCert.Research.SDIRKEightFiveZeroGraphStarFront
+open RKResearch.Certified.SDIRKEightFiveZeroGraphStarFront
+#check star_baseline_first_zero_cubic
+#print axioms star_baseline_first_zero_cubic

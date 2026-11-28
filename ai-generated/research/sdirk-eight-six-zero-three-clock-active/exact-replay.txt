@@ -1,0 +1,118 @@
+=== arith-front-arith-0.log ===
+0.1 element degrees 99 96 9
+0.3 inner norms 255 216
+0.55 projected degrees [681, 564, 681, 24, 24, 24, 24]
+0.8 singular exact guarded common degree 0
+0.82 delta factor degrees [(9, 1)]
+1.3 exact divisor, gcd degree upper bound by good reduction (19, [(1, 'base', 300), (1, 'base', 39), (9, 'delta', 20)], 519)
+1.46 delta fiber 9 exact simple reduction proves only singular first-clock root (23, 6, 14)
+=== arith-front-arith-1.log ===
+0.21 element degrees 203 200 21
+0.88 inner norms 459 420
+1.84 projected degrees [1185, 1050, 1185, 42, 42, 42, 42]
+2.65 singular exact guarded common degree 0
+2.74 delta factor degrees [(27, 1)]
+3.42 exact divisor, gcd degree upper bound by good reduction (19, [(1, 'base', 300), (1, 'base', 39), (27, 'delta', 20)], 879)
+3.66 delta fiber 27 exact simple reduction proves only singular first-clock root (31, 9, 4)
+=== arith-front-arith-2.log ===
+0.26 element degrees 203 200 21
+1.01 inner norms 459 420
+2.09 projected degrees [1185, 1050, 1185, 42, 42, 42, 42]
+3.09 singular exact guarded common degree 0
+3.17 delta factor degrees [(27, 1)]
+3.86 exact divisor, gcd degree upper bound by good reduction (19, [(1, 'base', 300), (1, 'base', 39), (27, 'delta', 20)], 879)
+4.08 delta fiber 27 exact simple reduction proves only singular first-clock root (23, 19, 9)
+=== arith-front-star-0.log ===
+0.09 element degrees 99 96 9
+0.29 inner norms 255 216
+0.43 projected degrees [681, 564, 681, 24, 24, 24, 24]
+0.82 singular exact guarded common degree 0
+0.83 delta factor degrees [(9, 1)]
+1.03 exact divisor, gcd degree upper bound by good reduction (19, [(1, 'base', 300), (1, 'base', 39), (9, 'delta', 20)], 519)
+1.13 delta fiber 9 exact simple reduction proves only singular first-clock root (127, 17, 38)
+=== arith-front-star-1.log ===
+0.21 element degrees 203 200 21
+0.69 inner norms 459 420
+1.2 projected degrees [1185, 1050, 1185, 42, 42, 42, 42]
+1.52 singular exact guarded common degree 0
+1.56 delta factor degrees [(27, 1)]
+2.03 exact divisor, gcd degree upper bound by good reduction (29, [(1, 'base', 300), (1, 'base', 39), (27, 'delta', 20)], 879)
+2.17 delta fiber 27 exact simple reduction proves only singular first-clock root (23, 6, 12)
+=== arith-front-star-2.log ===
+0.11 element degrees 203 200 21
+0.54 inner norms 459 420
+0.94 projected degrees [1185, 1050, 1185, 42, 42, 42, 42]
+1.26 singular exact guarded common degree 0
+1.31 delta factor degrees [(27, 1)]
+2.09 exact divisor, gcd degree upper bound by good reduction (29, [(1, 'base', 300), (1, 'base', 39), (27, 'delta', 20)], 879)
+2.21 delta fiber 27 exact simple reduction proves only singular first-clock root (23, 6, 17)
+=== early.log ===
+0 star three-coefficient pivot True
+third reverse zero gate gcd degree 0
+0 arith three-coefficient pivot True
+third reverse zero gate gcd degree 0
+1 star three-coefficient pivot True
+third reverse zero gate gcd degree 0
+1 arith three-coefficient pivot True
+third reverse zero gate gcd degree 0
+=== front-arith.log ===
+0.57 singular coefficient projection gcd, guarded 6 0
+0.6 delta factors [(1, 6), (6, 1)]
+0.6 singular coefficient factors []
+1.3 raw norm 312
+60.59 guarded norm degree 18
+61.16 factors [(18, 1)]
+118.96 forward projected degree 27 common 0 []
+=== front-star.log ===
+0.58 singular coefficient projection gcd, guarded 6 0
+0.63 delta factors [(1, 6), (6, 1)]
+0.63 singular coefficient factors []
+1.19 raw norm 312
+20.5 guarded norm degree 14
+20.88 factors [(14, 1)]
+58.99 forward projected degree 27 common 0 []
+=== late-arith.log ===
+0.62 singular coefficient projection gcd, guarded 6 0
+0.64 delta factors [(1, 6), (6, 1)]
+0.64 singular coefficient factors []
+1.27 raw norm 312
+51.45 guarded norm degree 18
+51.81 factors [(18, 1)]
+51.81 factor degree 18 multiplicity 1
+51.82 fourth reverse exact obstruction modulo 31 primitive 22 u,v,D,r: 5 24 11 16
+51.82 good reduction proof [31, 22, 5, 24, 11, 16]
+=== late-star.log ===
+0.32 singular coefficient projection gcd, guarded 6 0
+0.37 delta factors [(1, 6), (6, 1)]
+0.37 singular coefficient factors []
+0.94 raw norm 312
+22.79 guarded norm degree 14
+23.17 factors [(14, 1)]
+23.17 factor degree 14 multiplicity 1
+23.18 fourth reverse exact obstruction modulo 89 primitive 87 u,v,D,r: 35 26 62 54
+23.18 good reduction proof [89, 87, 35, 26, 62, 54]
+=== mono.log ===
+1 0 star ordinary linear pivot True
+raw reverse gcd 0
+1 0 arith ordinary linear pivot True
+raw reverse gcd 0
+1 1 star ordinary linear pivot True
+raw reverse gcd 0
+1 1 arith ordinary linear pivot True
+raw reverse gcd 0
+1 2 star ordinary linear pivot True
+raw reverse gcd 0
+1 2 arith ordinary linear pivot True
+raw reverse gcd 0
+2 0 star ordinary linear pivot True
+raw reverse gcd 0
+2 0 arith ordinary linear pivot True
+raw reverse gcd 0
+2 1 star ordinary linear pivot True
+raw reverse gcd 0
+2 1 arith ordinary linear pivot True
+raw reverse gcd 0
+2 2 star ordinary linear pivot True
+raw reverse gcd 0
+2 2 arith ordinary linear pivot True
+raw reverse gcd 0

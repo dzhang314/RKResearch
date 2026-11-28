@@ -1,0 +1,6 @@
+'RKResearch.Certified.SDIRKEightSixZeroReverseSupportedScalar.cardinal_diagonal_clear' depends on axioms: [propext]
+'RKResearch.Certified.SDIRKEightSixZeroReverseSupportedScalar.reverseTest_at_first' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSixZeroReverseSupportedScalar.reverseTest_at_second' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSixZeroReverseSupportedScalar.clear_graph_parameter' depends on axioms: [propext]

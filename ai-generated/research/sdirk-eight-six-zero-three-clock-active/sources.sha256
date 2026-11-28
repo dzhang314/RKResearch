@@ -1,0 +1,10 @@
+3a6b35c6774f030d3a4dc2844fae028c82db603d0548811fdb062c0b575f6301  ai-generated/research/sdirk-eight-six-zero-three-clock-active/README.md
+c88dfdb37273b187456dcfb6da84bbc8ad72e39c229e3bd67b94d30331dde193  ai-generated/research/sdirk-eight-six-zero-three-clock-active/check_arithmetic_front.py
+5bd7822f5e0f4c55f66be050ff997e2a6beb8e1a48b89450ba21df65de98c771  ai-generated/research/sdirk-eight-six-zero-three-clock-active/check_early_mate.py
+c6ec354aa71765a1de473fd0a9f4a3dd53321fcd55bfa52cb8609118eb266478  ai-generated/research/sdirk-eight-six-zero-three-clock-active/check_late_mate.py
+71b384c6eb5e70481aadd697abc60b3a263d5e00e69a36615c4aa1bb4d2c7286  ai-generated/research/sdirk-eight-six-zero-three-clock-active/check_monomial_front.py
+3810b61fd2b2921dd307f589440648fbba4a42e838747315a970132d177425dd  ai-generated/research/sdirk-eight-six-zero-three-clock-active/check_star_front.py
+78061ab7234feed9aaa67f4098eb2867fd5c146dabd8a3fb882e80e4c668fceb  ai-generated/research/sdirk-eight-six-zero-three-clock-active/exact-replay.txt
+749ae69ce30249ac66654af7feb211af40d7c8cb79f6a4200dc7536e7ce76721  ai-generated/research/sdirk-eight-six-zero-three-clock-active/lean-4.36.0-audit.txt
+7c4f4a5554707ff27b9c2c28e2cf00bfebdab4080f287db17805c9155311bfbd  ai-generated/research/sdirk-eight-six-zero-three-clock-active/proof-audit.lean
+765948677b04395a9edb87fa545eefa2067b3358fb1a0b363c9a700581ef5b99  ai-generated/lean/RKCert/Research/SDIRKEightSixZeroReverseSupportedScalar.lean

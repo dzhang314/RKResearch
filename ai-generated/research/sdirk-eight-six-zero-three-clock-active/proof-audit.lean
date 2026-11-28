@@ -1,0 +1,10 @@
+import RKCert.Research.SDIRKEightSixZeroReverseSupportedScalar
+
+namespace RKResearch.Certified.SDIRKEightSixZeroReverseSupportedScalar
+
+#print axioms cardinal_diagonal_clear
+#print axioms reverseTest_at_first
+#print axioms reverseTest_at_second
+#print axioms clear_graph_parameter
+
+end RKResearch.Certified.SDIRKEightSixZeroReverseSupportedScalar

@@ -1,0 +1,8 @@
+import RKCert.Research.SDIRKEightFourSupportedPairedZero
+open RKResearch.Certified.SDIRKEightFourSupportedPairedZero
+#check opposite_second_ratio
+#check homogeneous_centered_pin
+#check literal_inner_pins
+#print axioms opposite_second_ratio
+#print axioms homogeneous_centered_pin
+#print axioms literal_inner_pins

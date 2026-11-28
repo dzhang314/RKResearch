@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10ContiguousEndpointScalars.forwardSecondDifference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10ContiguousEndpointScalars.singleDonorExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

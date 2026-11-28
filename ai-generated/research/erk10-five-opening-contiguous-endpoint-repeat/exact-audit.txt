@@ -1,0 +1,4 @@
+paid physical counts (endpoint multiplicity, distinct labels, interior excess): [(2, 7, 2), (2, 8, 1), (2, 9, 0), (3, 7, 1), (3, 8, 0), (4, 7, 0)]
+shifted Hilbert determinant: 1/67212633600000
+first-two-forward-coordinate second difference: q**2*(q - 1)**2
+single scalar donor after paid Y,Y²,Y³ has incompatible ratio square: 1/4

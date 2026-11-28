@@ -1,0 +1,3 @@
+6e21449941ab3584ee9dbd3daad66a780662bd9d3dbd49064edaa01c46d5228c  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicOrigin.lean
+b4d642af072e9a4485df4cc0ab7d78d940177842da1750797e079c2da247ed8f  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-ORIGIN.md
+74b87ee7a58ac5ed6e319e268ea0ac9e00e356edc0762169847d76e86f074a20  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-origin-4.36-audit.txt

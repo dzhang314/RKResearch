@@ -1,0 +1,2 @@
+'RKResearch.Certified.ERK10FixedQ29Adic.origin_clear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.origin_zero_of_decic' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,17 @@
+3 0 equal first-and-terminal H nonzero? False
+second is other terminal possible? False unseen gcd 0
+3 1 equal first-and-terminal H nonzero? True
+3 four-known exact ordinary gcd 2
+guarded 0
+6 0 equal first-and-terminal H nonzero? True
+6 1 equal first-and-terminal H nonzero? True
+6 four-known exact ordinary gcd 2
+guarded 0
+fixed ordinary pivot True
+fixed second gate gcd 0
+regular projection factors [(9, 1)]
+field degree 9 terminal gate True quadratic norm True
+fixed ordinary pivot True
+fixed second gate gcd 0
+regular projection factors [(9, 1)]
+field degree 9 terminal gate True quadratic norm True

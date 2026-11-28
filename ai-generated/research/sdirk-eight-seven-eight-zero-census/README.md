@@ -1,0 +1,45 @@
+# Seven and eight physical quadratic zeros: coefficient-field census
+
+Consider a strict ten-stage SDIRK tableau of ordinary order at least eight. Let \(G=\operatorname{diag}(\mathbf g)\), with \(\mathbf g=A\mathbf c-\mathbf c^{\odot2}/2\), and put \(U=\ker G\). Assume \(k\ge7\) physical zeros and \(o=10-k\) physical off-zero rows. The statements below are structural restrictions, not a global 11-stage lower bound.
+
+## 1. Paid rank census
+
+Use the [saturated support identity](../sdirk-eight-two-zero-line/README.md). Let \(r_j\) be the off restriction rank of \(E_j\), and \(w_j\) the off restriction rank of \(W_j\). Since the grade dimensions are \(4\) and \(6\) at \(j=2,3\),
+\[
+ w_2=o-r_3,\qquad w_3=o-r_2 .
+\]
+The off forward evaluation spans are \((1,c,c^2,g)\) and \((1,c,c^2,c^3,g,cg)\). All rows in the table follow by scalar clock interpolation and, at a repeated clock, by checking whether the physical residual values there differ. With live off weights, weighting \(E_2\) identifies it with \(W_2\) (the ordinary scalar Hilbert pairing detects the trace and a weighted nonzero residual detects the pure line); hence \(w_2\) also detects the rank on active off rows. If every off row is silent, \(w_2\le1\) because only \(Z_2\) may be nonzero off.
+
+| Zero count | Physical off configuration | \((r_2,r_3)\) | \((w_2,w_3)\) | Possible active off weights |
+| ---: | --- | --- | --- | --- |
+| 7 | Three distinct clocks | \((3,3)\) | \((0,0)\) | None; genuine graph |
+| 7 | Two clocks, varying residual at the double clock | \((3,3)\) | \((0,0)\) | None; pure supported quadratic |
+| 7 | Two clocks, equal residuals at the double clock | \((2,2)\) | \((1,1)\) | None, or the canceled pair at the double clock |
+| 7 | One clock, varying physical residuals | \((2,2)\) | \((1,1)\) | None, or a canceled same-residual pair and a silent different residual |
+| 7 | One clock, three equal residuals | \((1,1)\) | \((2,2)\) | Impossible: \(w_2\le1\) with or without activity |
+| 8 | Two distinct clocks | \((2,2)\) | \((0,0)\) | None |
+| 8 | One clock, two different residuals | \((2,2)\) | \((0,0)\) | None |
+| 8 | One clock, equal residuals | \((1,1)\) | \((1,1)\) | None, or the canceled pair |
+| 9 | One physical nonzero residual | \((1,1)\) | \((0,0)\) | None; separate one-nonzero lane |
+
+The first three pure residual moments force cancellation of every live residual class when there are at most three off rows in one physical clock group; at two different clocks the constant and clock-linear residual probes separate the groups. These facts give the pair descriptions rather than just counts of weighted clocks.
+
+In every active case in the table, \(\mathbf z^\mathsf T=-\mathbf b^\mathsf T(CA-AC-A^2)/2\) is the nonzero active pair difference and contains the terminal coordinate. The reflected ratio \(\kappa_R=0\), and rows 8 and 9 are distinct live zeros by the literal rear and ghost gates. The other pure reverse row \(\boldsymbol\eta^\mathsf T=\mathbf z^\mathsf T(A-\gamma I)\) vanishes off: the \(W_3\) off direction is the pair, whereas \(\eta_{10}=0\). If all physical off rows have one clock, \(\gamma=c_1=c_{10}=1-\gamma\) pins \(\gamma=1/2\). These statements use only paid field structure (characteristic zero or greater than seven).
+
+## 2. Extra seven-zero chronology when \(r_2=r_3=3\)
+
+Work now in characteristic zero. These are the first two rows of the seven-zero part of the table. Both \(\mathbf z,\boldsymbol\eta\) are supported on the seven zero rows and all off weights are silent. The six scalar moments of \(\mathbf z\) through degree five vanish; the five scalar moments of \(\boldsymbol\eta\) through degree four vanish.
+
+- If \(\kappa_R=0\), \(\mathbf z\) is supported at the terminal clock and its aggregate zero forces a duplicate physical zero there. Stage 8 is live (the silent ghost would require a nonzero \(z_8\) at a different clock), and the literal two rear strict taps make \(\eta_8,\eta_9\) nonzero. At five or fewer actual zero labels, Vandermonde forces their aggregates to vanish, requiring duplicates at both rows 8 and 9 in addition to the terminal duplicate. This leaves at most four labels, all Gaussian by ordinary rank, contradicted by the [reflected two-Gauss zero-ratio projection](../sdirk-eight-five-zero-graph-one-active/README.md#2-four-ordinary-sites-are-impossible). Thus there are **six** literal zero labels with exactly one duplicate at row 10. At least five aggregates are live (otherwise the distinct singleton rear rows 8,9 would be Gaussian). The \(\boldsymbol\eta\) aggregates are the six-label barycentric row, with the same strict-tap cardinal ratio as the [six-zero active profile](../sdirk-eight-six-zero-three-clock-active/README.md#1-literal-support-fixed-rear-and-exact-cardinal-mode). The terminal duplicate aggregate need not be live.
+- If \(\kappa_R\ne0\) but there are at most six literal labels, Vandermonde makes all \(\mathbf z\) aggregates zero. Its terminal coordinates \(z_{10},z_9\) are nonzero at distinct clocks, so both require duplicate mates. Silent off-row 8 is impossible since \(z_8\ne0\) there would contradict off support. A silent zero row 8 or a live row 8 with \(z_8\ne0\) would require a third distinct duplicate, leaving at most four Gaussian labels, impossible by the [no-active rear projections](../sdirk-eight-four-zero-native-rear/README.md) in characteristic zero. Thus row 8 is a live zero with \(z_8=0\), forcing the reflected arithmetic third-zero cubic \(Q(v)=4v^3-12v^2+3v+2=0\), since the star would leave the residual nonzero. The only possible count is **five** literal zero labels, with exactly one duplicate at each of rows 9 and 10.
+- If \(\kappa_R\ne0\) and there are **seven** distinct literal zero clocks, \(\mathbf z\) is their nonzero barycentric row and has no zero coordinate on them. A silent stage 8 must itself be a zero, not off; its ghost cubic then applies. For each live rear zero the ordinary cardinal numerator satisfies the literal ratio, for example \(\kappa_R B(x_9)=B(x_{10})\). This leaves a well-defined separate seven-label chart, not an exclusion.
+
+## 3. Exact low-label exclusion for the two-clock varying pure branch
+
+In the pure branch of section 2, the initial two distinct off clocks are \(1,1+u\) after scaling by \(\gamma\), so the third physical clock is a zero \(a=1+2u\) with \(Q(u)=0\). The supported trace is \(P(T)=(T-1)(T-1-u)\), and at its first zero the pure \(L_4\) line has nonzero value by the first \(M P(\mathbf x)\) diagonal. Its usual [second forward scalar gate](../sdirk-eight-five-zero-graph-arithmetic-silent/README.md#2-three-supported-equations-in-the-same-arithmetic-pencil) applies.
+
+With \(\kappa_R\ne0\) and five literal zero labels, the only four-ordinary-mass case has one of the terminal duplicate groups canceled. Otherwise both terminal labels would be Gauss, as would the live singleton row 8, contradicting the Gaussian arithmetic suffix. The canceled group's label is the only non-Gaussian one; the nonzero first supported pure value forces \(a\) to equal it. With \(Q(u)=Q(v)=0\) this pins \(D=1+a\) or \(1+a+v\). In all exact cubic tensor frames the other terminal label or row 8 is non-Gaussian, contradicting its nonzero ordinary Gaussian mass. With five live labels, if \(a\) is a new label the four-known ordinary moment gcd is supported only on the forbidden \(D=0\) in both gap tensor components. If \(a\) equals a rear duplicate, the fixed-diagonal mask gives a nonzero ordinary Hankel determinant in three of the four frames. In the only frame with determinant zero, the second forward gate fails both at the other terminal duplicate and at either root of the recovered ordinary quadratic. This covers cancellations without assuming all the individual rear weights equal aggregate weights.
+
+With \(\kappa_R=0\) and six literal labels, use the extra barycentric ratio on the **aggregates** of \(\boldsymbol\eta\) from section 2. If \(a\) equals the duplicate terminal, \(D=1+a\) is fixed, and the two ordinary moment equations plus that ratio give an exact monic cubic on the three other labels. The second forward gate has constant gcd with it for both rear phases. Otherwise four distinct labels are known, and the three ordinary and ratio rows on the two remaining coefficients give a determinantal projection in \(D\). Its guarded factor has degree nine for each rear phase. Exact local pivots are checked; the second forward gate fails at the repeated terminal label and has nonzero norm at the two unseen labels.
+
+Run `python check_nonzero_ratio.py` and `python check_zero_ratio.py star` / `python check_zero_ratio.py arith` with SymPy 1.14. The concluded pure two-clock varying chart, in characteristic zero, can therefore only have **seven distinct literal zero labels and nonzero reflected ratio**. The other table rows and that last chart remain separate. No ordinary stage interval changes and no new native end-to-end rooted theorem are claimed.

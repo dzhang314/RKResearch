@@ -1,0 +1,4 @@
+75f069236afd40d1c77b2e51f2c7bee7ba724530bb56c1fc4d93bacf63c4d8e3  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicAdjointCore.lean
+b384a9de90fb3714c888bbd54c63c1925f185e2f5c35600e58c6917a0778badf  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicAdjointMoments.lean
+eec70966fbc380c5b62b26eb9611a07fda9a90d51db249adfc74f6f8200f1ed2  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-ADJOINT-MOMENTS.md
+7bbb6b9e1cb359aa1ff6e2e436bef309e0330ef222016361727b995b3c2d8803  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-adjoint-moments-kernel-4.36.log

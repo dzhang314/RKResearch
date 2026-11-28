@@ -1,0 +1,13 @@
+== ERK10FixedQ29AdicAdjointCore.lean (Lean 4.36.0, standalone) ==
+'RKResearch.Certified.ERK10AdjointCore.beta_grid' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10AdjointCore.jacobi_grid' does not depend on any axioms
+== ERK10FixedQ29AdicAdjointMoments.lean (Lean 4.36.0, standalone) ==
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_cofactor_mixed_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_beta_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_jacobi_mixed_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

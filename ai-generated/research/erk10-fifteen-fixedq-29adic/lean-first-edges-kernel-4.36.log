@@ -1,0 +1,41 @@
+== ERK10FixedQ29AdicRetainedRows.lean (Lean 4.36.0, standalone) ==
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.retained_linear_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.retained_quadratic_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.retainedTreeProfile_attach' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== ERK10FixedQ29AdicRetainedLow.lean (Lean 4.36.0, standalone) ==
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.tree_order_four' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.retained_projected_chain4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.retained_projected_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== ERK10FixedQ29AdicRetainedDecode.lean (Lean 4.36.0, standalone) ==
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.host_projected_geometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.quad_eq_of_reads' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_retained_as_quad' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_retained_eval_prim' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+== ERK10FixedQ29AdicFirstEdges.lean (Lean 4.36.0, standalone) ==
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_first_edges_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_low_edge_of_host_laws' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FixedQ29Adic.Physical.actual_fourth_edge_of_host_laws' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

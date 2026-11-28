@@ -1,0 +1,15 @@
+opposite temporal laws raw/deflated [(58, 65), (68, 66)] [(48, 44), (58, 55)]
+single endpoint width and actual opposite temporal equations exact bivariate gcd 1 on both sides
+side True raw degrees [(54, 51), (61, 55), (76, 69)] deflated [(52, 48), (36, 32), (51, 46)] fixed irreducibles [(16, 14), (36, 34)]
+shared affine factor exactly own endpoint-width factor; affine residual pair coprime (16, 14)
+fixed factor (16, 14) at (19, 6, 18) cofactor side 1 physical P mark 12 oriented P lines [[13, 12], [13, 14]]
+fixed factor (36, 34) at (17, 12, 3) cofactor side 0 physical P mark 14 oriented P lines [[6, 10], [12, 4]]
+side False raw degrees [(49, 51), (56, 60), (68, 72)] deflated [(44, 41), (43, 43), (55, 56)] fixed irreducibles [(21, 21), (23, 20)]
+shared affine factor exactly own endpoint-width factor; affine residual pair coprime (21, 21)
+fixed factor (21, 21) at (17, 14, 1) cofactor side 0 physical P mark 9 oriented P lines [[11], [12, 7]]
+fixed factor (23, 20) at (17, 6, 8) cofactor side 0 physical P mark 10 oriented P lines [[16, 11], [4]]
+all K-nonzero neighboring fixed/affine masks finite; no stage-count exclusion
+
+real	0m2.935s
+user	0m2.846s
+sys	0m0.080s

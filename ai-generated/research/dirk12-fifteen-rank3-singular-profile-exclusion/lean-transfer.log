@@ -1,0 +1,3 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularAnomalyTransfer.transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

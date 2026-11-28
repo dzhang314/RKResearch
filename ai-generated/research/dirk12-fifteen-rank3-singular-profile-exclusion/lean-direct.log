@@ -1,0 +1,4 @@
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesDirect.gridReceipt' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesDirect.primeReceipt' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesDirect.allShort' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesDirect.allLong' depends on axioms: [propext]

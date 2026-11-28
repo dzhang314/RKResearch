@@ -1,0 +1,28 @@
+Lean 4.34.1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.gridReceipt' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.primeReceipt' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allShort' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allLong' depends on axioms: [propext]
+exit=0
+
+Lean 4.35.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.gridReceipt' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.primeReceipt' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allShort' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allLong' depends on axioms: [propext]
+exit=0
+
+Lean 4.36.0
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.gridReceipt' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.primeReceipt' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allShort' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allLong' depends on axioms: [propext]
+exit=0
+
+Lean 4.37.0-rc1
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.gridReceipt' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.primeReceipt' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allShort' depends on axioms: [propext,
+ Classical.choice]
+'RKResearch.Certified.Graded.OrderTwelveFifteen.SingularProfilesArithmetic.allLong' depends on axioms: [propext]
+exit=0

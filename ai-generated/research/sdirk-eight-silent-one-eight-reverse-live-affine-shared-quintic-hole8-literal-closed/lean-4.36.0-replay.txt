@@ -1,0 +1,5 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleEightLiteral.arithmeticGapUnits' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleEightLiteral.recoverActualFourth' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleEightLiteral.fourthHomogeneousNoLeading' depends on axioms: [propext]

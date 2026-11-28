@@ -91,6 +91,8 @@ The [complete field classification](research/strict-sdirk-endpoints/MINIMA.md) g
 
 The [balanced reverse-defect analysis](research/ERK10-INVISIBLE-GHOST-BALANCED-REVERSE-FOUR-PAIRS.md) confines one characteristic-zero single-invisible-stage case to four paired abscissae split by a genuine grade-five defect, with a fixed Simpson fifth stage. The remaining paired chart is not excluded; its scalar gates check on all four tested Lean releases.
 
+The [single-invisible-stage rank-four exclusion](research/ERK10-INVISIBLE-GHOST-RANK-FOUR-MULTICLOCK-EXCLUSION.md) rules out every characteristic-zero case with at least three distinct reverse quadratic-defect clocks when the original grade-four defect rank is four. It covers balanced and nonzero pooled weights, with standalone scalar gates checked on all four Lean versions. One or two reverse clocks, smaller rank, and other zero-weight patterns require separate arguments.
+
 The [all-nonzero-weight completeness proof](research/ERK10-ALL-LIVE-COMPLETENESS.md) now rules out every fourteen-stage order-ten ERK tableau with all output weights nonzero over any characteristic-zero field. Thus any fourteen-stage real candidate must have at least one zero output weight. This is a mathematical atlas with Lean-checked scalar gates, not an end-to-end formal theorem on all tableaux. The unrestricted real bound remains 14–15.
 
 The known 15-stage order-ten ERK upper bound now has an [end-to-end Lean certificate](research/erk10-stepanov-native-upper/README.md) for Stepanov's literal tableau over the reals and real algebraic numbers. It also gives 15-stage upper bounds in the stated finite coefficient fields and nilpotent thickenings, not equality with the lower bound.

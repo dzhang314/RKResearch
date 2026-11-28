@@ -1,0 +1,5 @@
+Exact pre-fourth primitive/Hankel exclusion and degree55 clock projection: z^13 J4^3 D30, unique live r ratio
+F103: all immediate repeats after fourth impossible (4 labels, both complement assignments)
+F103: old marked returns and the unmarked G return impossible after fifth (full rank120)
+F107: all immediate repeats after fourth impossible (4 labels, both complement assignments)
+F107: old marked returns and the unmarked G return impossible after fifth (full rank120)

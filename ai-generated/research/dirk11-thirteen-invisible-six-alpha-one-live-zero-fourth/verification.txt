@@ -1,0 +1,30 @@
+Exact direct Fn zero-diagonal projection and image ranks.
+common m scale normalized coefficient degree 16 guarded content degree 0
+old common adjugate normalized coefficient degree 48 guarded content degree 0
+tapzero input normalized coefficient degree 76 guarded content degree 26
+tapzero relative normalized coefficient degree 180 guarded content degree 48
+tapzero exact norm degree 720
+forward01 input normalized coefficient degree 87 guarded content degree 73
+forward01 relative normalized coefficient degree 209 guarded content degree 52
+forward01 exact norm degree 836
+forward02 input normalized coefficient degree 87 guarded content degree 69
+forward02 relative normalized coefficient degree 209 guarded content degree 52
+forward02 exact norm degree 836
+forward12 input normalized coefficient degree 87 guarded content degree 65
+forward12 relative normalized coefficient degree 209 guarded content degree 52
+forward12 exact norm degree 836
+exact joint degree 588
+exact remaining factor (60, 17286671927043) guard carrier-V cap 11
+exact remaining factor (60, -1461941766456) guard old-norm cap 11
+exact remaining factor (12, 16227) guard profile-ratio cap 11
+forbidden ordinary factor (4, 3) 6
+exact remaining factor (12, 54123) guard c2 cap 9
+forbidden ordinary factor (4, 1) 48
+exact capped image rank carrier-V residue degree 3 rank 33
+exact capped image rank old-norm residue degree 1 rank 11
+exact capped image rank profile-ratio residue degree 12 rank 132
+exact capped image rank c2 residue degree 4 rank 36
+All dV=0 live-pivot direct Fn evaluations excluded.
+Exact exceptional L0(V)=0 projection:
+Exact resultants: only J4(a) and degree 24
+W0(V) is a unit on the exact L0(V)=0 direct Fn rank72 algebra at 103

@@ -1,0 +1,61 @@
+gate X (0, 4, 7, 7)
+gate D (0, 2, 12, 12)
+gate F (0, 4, 16, 16)
+gate B (0, 4, 16, 16)
+gate G (0, 2, 8, 8)
+gate H (0, 2, 8, 8)
+gate FL (0, 7, 21, 24)
+gate BL (0, 7, 21, 24)
+gate NL (0, 12, 30, 36)
+gate FR (0, 7, 24, 21)
+gate BR (0, 7, 24, 21)
+gate NR (0, 12, 36, 30)
+res X (50, 50) 3.88
+res F (40, 40) 4.24
+common (0, 0) []
+res FL (82, 88) 11.93
+common (0, 0) []
+res FR (88, 82) 19.09
+common (0, 0) []
+opposite exact determinant degree: X 1960
+degree upper 2000 required vanishing at infinity 40
+valuation progress 4 nullity 4 sec 10.84
+valuation progress 8 nullity 4 sec 12.88
+valuation progress 12 nullity 4 sec 14.72
+valuation progress 16 nullity 4 sec 16.6
+valuation progress 19 nullity 3 sec 18.89
+valuation progress 22 nullity 3 sec 20.53
+valuation progress 25 nullity 3 sec 22.06
+valuation progress 28 nullity 3 sec 23.75
+valuation progress 30 nullity 2 sec 25.52
+valuation progress 32 nullity 2 sec 26.87
+valuation progress 34 nullity 2 sec 28.15
+valuation progress 36 nullity 2 sec 29.77
+valuation progress 37 nullity 1 sec 31.6
+valuation progress 38 nullity 1 sec 32.49
+valuation progress 39 nullity 1 sec 33.57
+valuation progress 40 nullity 1 sec 34.52
+opposite exact determinant degree: M 3384
+degree upper 3520 required vanishing at infinity 136
+valuation progress 40 nullity 40 sec 0.78
+valuation progress 62 nullity 22 sec 20.98
+valuation progress 76 nullity 14 sec 42.99
+valuation progress 87 nullity 11 sec 61.08
+valuation progress 96 nullity 9 sec 77.75
+valuation progress 102 nullity 6 sec 93.17
+valuation progress 106 nullity 4 sec 103.14
+valuation progress 110 nullity 4 sec 109.17
+valuation progress 113 nullity 3 sec 116.21
+valuation progress 116 nullity 3 sec 121.02
+valuation progress 119 nullity 3 sec 125.98
+valuation progress 122 nullity 3 sec 131.3
+valuation progress 124 nullity 2 sec 137.47
+valuation progress 126 nullity 2 sec 141.49
+valuation progress 128 nullity 2 sec 145.3
+valuation progress 130 nullity 2 sec 149.33
+valuation progress 132 nullity 2 sec 154.07
+valuation progress 133 nullity 1 sec 158.47
+valuation progress 134 nullity 1 sec 161.05
+valuation progress 135 nullity 1 sec 164.28
+valuation progress 136 nullity 1 sec 168.67
+opposite degree preservation and gcd implication checked.

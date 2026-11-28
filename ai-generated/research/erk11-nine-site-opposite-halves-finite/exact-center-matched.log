@@ -1,0 +1,60 @@
+gate X (0, 4, 7, 7)
+gate D (0, 2, 12, 12)
+gate F (0, 4, 16, 16)
+gate B (0, 4, 16, 16)
+gate G (0, 2, 8, 8)
+gate H (0, 2, 8, 8)
+gate FL (0, 6, 19, 22)
+gate BL (0, 6, 19, 22)
+gate NL (0, 8, 22, 28)
+gate FR (0, 6, 22, 19)
+gate BR (0, 6, 22, 19)
+gate NR (0, 8, 28, 22)
+res X (50, 50) 1.37
+res F (38, 38) 1.65
+common (0, 0) []
+res FL (64, 70) 4.01
+common (0, 0) []
+res FR (70, 64) 6.51
+common (0, 0) []
+matched exact determinant degree: X 1820
+degree upper 1900 required vanishing at infinity 80
+valuation progress 16 nullity 16 sec 3.29
+valuation progress 32 nullity 16 sec 5.79
+valuation progress 48 nullity 16 sec 8.43
+valuation progress 57 nullity 9 sec 11.9
+valuation progress 66 nullity 9 sec 14.04
+valuation progress 68 nullity 2 sec 17.59
+valuation progress 70 nullity 2 sec 18.41
+valuation progress 72 nullity 2 sec 19.3
+valuation progress 74 nullity 2 sec 20.05
+valuation progress 76 nullity 2 sec 20.85
+valuation progress 77 nullity 1 sec 21.81
+valuation progress 78 nullity 1 sec 22.28
+valuation progress 79 nullity 1 sec 22.69
+valuation progress 80 nullity 1 sec 23.16
+valuation progress 4 nullity 4 sec 15.1
+valuation progress 6 nullity 2 sec 18.04
+valuation progress 8 nullity 2 sec 19.76
+lifted (S-2)^8 exact rank witness X [4, 2, 2]
+matched exact determinant degree: M 2544
+degree upper 2660 required vanishing at infinity 116
+valuation progress 38 nullity 38 sec 0.29
+valuation progress 54 nullity 16 sec 12.04
+valuation progress 70 nullity 16 sec 18.95
+valuation progress 86 nullity 16 sec 26.43
+valuation progress 95 nullity 9 sec 37.41
+valuation progress 104 nullity 9 sec 43.82
+valuation progress 106 nullity 2 sec 52.44
+valuation progress 108 nullity 2 sec 54.45
+valuation progress 110 nullity 2 sec 56.67
+valuation progress 112 nullity 2 sec 59.02
+valuation progress 113 nullity 1 sec 62.04
+valuation progress 114 nullity 1 sec 63.3
+valuation progress 115 nullity 1 sec 64.87
+valuation progress 116 nullity 1 sec 66.39
+valuation progress 4 nullity 4 sec 33.08
+valuation progress 6 nullity 2 sec 41.62
+valuation progress 8 nullity 2 sec 46.02
+lifted (S-2)^8 exact rank witness M [4, 2, 2]
+matched degree preservation and gcd implication checked.

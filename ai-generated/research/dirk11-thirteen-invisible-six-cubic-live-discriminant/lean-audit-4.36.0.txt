@@ -1,0 +1,11 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.cubic_double_factor.{u_1} {K : Type u_1}
+  [CommRing K] (a b c d t x : K) (ht : a * t ^ 3 + b * t ^ 2 + c * t + d = 0) (hd : 3 * a * t ^ 2 + 2 * b * t + c = 0) :
+  a * x ^ 3 + b * x ^ 2 + c * x + d = (x - t) ^ 2 * (a * x + b + 2 * a * t)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.repeated_cubic_slots.{u_1} {K : Type u_1}
+  [Field K] (a b c d t x : K) (ht : a * t ^ 3 + b * t ^ 2 + c * t + d = 0) (hd : 3 * a * t ^ 2 + 2 * b * t + c = 0)
+  (hx : a * x ^ 3 + b * x ^ 2 + c * x + d = 0) : x = t ∨ a * x + b + 2 * a * t = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.cubic_double_factor' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.repeated_cubic_slots' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

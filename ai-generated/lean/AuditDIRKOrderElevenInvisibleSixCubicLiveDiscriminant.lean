@@ -1,0 +1,6 @@
+import RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixCubicLiveDiscriminant
+
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.cubic_double_factor
+#check RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.repeated_cubic_slots
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.cubic_double_factor
+#print axioms RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveDiscriminant.repeated_cubic_slots

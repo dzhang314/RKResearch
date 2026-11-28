@@ -1,0 +1,9 @@
+first-root field QQ : degree20 retained; exact discarded factors [[2, 1], ['actual y=t'], [4, 2], [1, 5], [1, 7]]
+first-root field QQ<aa> : degree20 retained; exact discarded factors [[2, 1], ['actual y=t'], [1, 2], [2, 2], [1, 2], [1, 5], [1, 7]]
+Nonroot exact double resultants; a factors 5,30,105,6 and exact lifted collision roots
+first-root half: p=17; 6 residue fields, total degree 20; fourth physical gate nonzero
+first-root quartic: p=19; 2 residue fields, total degree 80; fourth physical gate nonzero
+nonroot degree 5: p=19; [5]; exact characteristic-zero collision is sole fibre
+nonroot degree 30: p=19; [11, 19]; exact characteristic-zero collision is sole fibre
+nonroot degree 105: p=17; [93, 12]; fourth physical gate nonzero
+nonroot degree 6: p=19; [1, 2, 3]; exact characteristic-zero collision is sole fibre

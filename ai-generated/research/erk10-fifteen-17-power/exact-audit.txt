@@ -1,0 +1,9 @@
+power 1 strict 15 all ordinary checks 1205 unit eleventh bush defect 8
+power 2 strict 15 all ordinary checks 1205 unit eleventh bush defect 178
+power 3 strict 15 all ordinary checks 1205 unit eleventh bush defect 3935
+power 4 strict 15 all ordinary checks 1205 unit eleventh bush defect 48152
+power 5 strict 15 all ordinary checks 1205 unit eleventh bush defect 298715
+power 6 strict 15 all ordinary checks 1205 unit eleventh bush defect 298715
+power 7 strict 15 all ordinary checks 1205 unit eleventh bush defect 338224681
+power 8 strict 15 all ordinary checks 1205 unit eleventh bush defect 1979579373
+power 9 strict 15 all ordinary checks 1205 unit eleventh bush defect 50809881460

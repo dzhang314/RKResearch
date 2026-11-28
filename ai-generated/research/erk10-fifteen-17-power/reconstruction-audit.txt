@@ -1,0 +1,20 @@
+Jacobian pivot determinant 10
+base unit guards {'observer_coordinate_determinant': 8, 'first_two_kernel_determinant': 7, 'DE_extra_response_determinant': 8, 'B_h_difference': 9, 'first_six_read_determinant': 10, 'first_five_read_determinant': 1}
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 8)
+strict actual tableau power 1 modulus 17 unit witness 8
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 178)
+strict actual tableau power 2 modulus 289 unit witness 178
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 3935)
+strict actual tableau power 3 modulus 4913 unit witness 3935
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 48152)
+strict actual tableau power 4 modulus 83521 unit witness 48152
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 298715)
+strict actual tableau power 5 modulus 1419857 unit witness 298715
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 298715)
+strict actual tableau power 6 modulus 24137569 unit witness 298715
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 338224681)
+strict actual tableau power 7 modulus 410338673 unit witness 338224681
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 1979579373)
+strict actual tableau power 8 modulus 6975757441 unit witness 1979579373
+All 1205 literal rooted checks; first checked order-11 failure (((), (), (), (), (), (), (), (), (), ()), 50809881460)
+strict actual tableau power 9 modulus 118587876497 unit witness 50809881460

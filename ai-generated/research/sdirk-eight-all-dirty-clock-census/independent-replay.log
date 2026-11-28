@@ -1,0 +1,51 @@
+./check_clock_census.py
+('arith', 'm - 1', '0') ()
+('arith', 'm - 1', 'j') ('m**4 - 7*m**3 + 14*m**2 - 21*m/2 + 21/8',)
+('arith', 'm - 1', '-j') ('m**4 - 7*m**3 + 14*m**2 - 21*m/2 + 21/8',)
+('arith', '0', 'm - 1') identical
+('arith', '0', 'j') ()
+('arith', '0', '-j') ()
+('arith', 'j', 'm - 1') ()
+('arith', 'j', '0') ('m**4 - 7*m**3 - 21*m**2/2 + 14*m - 7/2',)
+('arith', 'j', '-j') ('m**4 - 7*m**3 + 7*m/2 - 7/8',)
+('arith', '-j', 'm - 1') ()
+('arith', '-j', '0') ('m**4 - 7*m**3 - 21*m**2/2 + 14*m - 7/2',)
+('arith', '-j', 'j') ('m**4 - 7*m**3 + 7*m/2 - 7/8',)
+('star', 'm - 1', '0') ('m - 5/3', ('j**2 - 485/231',))
+('star', 'm - 1', 'j') ('m**4 - 42*m**3/5 + 343*m**2/15 - 70*m/3 + 175/24',)
+('star', 'm - 1', '-j') ('m**4 - 42*m**3/5 + 343*m**2/15 - 70*m/3 + 175/24',)
+('star', '0', 'm - 1') ('m - 5/3', ('j**2 - 485/231',))
+('star', '0', 'j') ('m**4 - 231*m**3/25 + 1463*m**2/50 - 168*m/5 + 56/5',)
+('star', '0', '-j') ('m**4 - 231*m**3/25 + 1463*m**2/50 - 168*m/5 + 56/5',)
+('star', 'j', 'm - 1') ('m**4 - 42*m**3/5 + 343*m**2/15 - 70*m/3 + 175/24',)
+('star', 'j', '0') ('m**4 - 231*m**3/25 + 1463*m**2/50 - 168*m/5 + 56/5',)
+('star', 'j', '-j') ('m - 2', ('j**2 - 156/49',))
+('star', '-j', 'm - 1') ('m**4 - 42*m**3/5 + 343*m**2/15 - 70*m/3 + 175/24',)
+('star', '-j', '0') ('m**4 - 231*m**3/25 + 1463*m**2/50 - 168*m/5 + 56/5',)
+('star', '-j', 'j') ('m - 2', ('j**2 - 156/49',))
+midpoint arithmetic both-end guard 4*(m - 1)**2*(m**2 - 4*m + 2)*(2*m**7 - 38*m**6 + 270*m**5 - 882*m**4 + 1365*m**3 - 985*m**2 + 315*m - 35)/35
+midpoint arithmetic degrees [(1, 2), (2, 1), (7, 1)]
+half {'arith': ['u**4 - 3*u**2/4 + 3/28'], 'star': ['u**4 - 4*u**3 + 14*u**2/5 + 12*u/5 - 69/35']}
+verified complete centered clock census
+./check_end_fits.py
+A_h_j degree 4 four-prefix fits 4 free g 0 free B 0
+A_h_j surviving end combinations []
+A_j_0 degree 4 four-prefix fits 4 free g 0 free B 0
+A_j_0 surviving end combinations []
+A_j_minusj degree 4 four-prefix fits 4 free g 0 free B 0
+A_j_minusj surviving end combinations []
+S_h_j degree 4 four-prefix fits 6 free g 0 free B 0
+S_h_j surviving end combinations []
+S_0_j degree 4 four-prefix fits 6 free g 0 free B 0
+S_0_j surviving end combinations []
+S_5_3 degree 2 four-prefix fits 4 free g 0 free B 0
+S_5_3 surviving end combinations []
+S_2 degree 2 four-prefix fits 5 free g 1 free B 1
+S_2 surviving end combinations []
+half_A degree 4 four-prefix fits 4 free g 0 free B 0
+half_A surviving end combinations []
+half_S degree 4 four-prefix fits 4 free g 0 free B 0
+half_S surviving end combinations []
+mid_AA degree 14 four-prefix fits 2 free g 0 free B 0
+mid_AA surviving end combinations []
+verified all exact five-double end fits excluded

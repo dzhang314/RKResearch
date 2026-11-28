@@ -1,0 +1,5 @@
+import RKCert.Research.SDIRKEightAllDirtyClockCensus
+open RKResearch.Certified.SDIRKEightAllDirtyClockCensus
+#print axioms symmetric_intercept
+#print axioms same_clock_product
+#print axioms reflected_scale_fit

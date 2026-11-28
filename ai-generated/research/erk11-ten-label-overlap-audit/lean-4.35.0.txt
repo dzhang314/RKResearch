@@ -1,0 +1,11 @@
+'RKResearch.ERK11SharedClockPrimitiveGate.singletonRankOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11SharedClockPrimitiveGate.pairRankOneDefect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11SharedClockPrimitiveGate.endpointAndTwoClockMask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11SharedClockPrimitiveGate.primitiveBeforeCancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11SharedClockPrimitiveGate.primitiveAtLiveMask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

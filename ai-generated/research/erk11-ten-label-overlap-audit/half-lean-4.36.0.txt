@@ -1,0 +1,5 @@
+'RKResearch.ERK11TenLabelHalfOverlapGate.specializedValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TenLabelHalfOverlapGate.specializedDerivatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11TenLabelHalfOverlapGate.halfOverlapBezout' depends on axioms: [propext, Classical.choice, Quot.sound]

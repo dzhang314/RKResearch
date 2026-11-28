@@ -1,0 +1,1 @@
+Ten-label half-overlap minors and integer Bezout verified.

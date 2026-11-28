@@ -1,0 +1,5 @@
+31584ef95061501edd6304fd2beef4141fb9fb871e37152b8948ecea697a3ad7  lean/RKCert/ReviewedNative/ERK10RankThreePortOneLabel.lean
+f4cb5e9579a5064d95f3ec04be93fbad57546fbf4154b6ce0d08501f7748bad6  research/erk10-rank-three-port-one-label/README.md
+e57b432d21d08c8bbe1fa055742d3def5c90a0daea80e66b5a19bb4aa01089b9  research/erk10-rank-three-port-one-label/audit.py
+f3f4ad7090aa5a2814f881fb26932fc66aac3d6713c396f0a4cd9d266641cf33  research/erk10-rank-three-port-one-label/exact-audit.txt
+604c6ed757359f2f37d297a20aca69d17c4d2e6f8b8d4b31a93c1cccf7c110a2  research/erk10-rank-three-port-one-label/lean-4.36-audit.txt

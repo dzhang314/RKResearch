@@ -1,0 +1,2 @@
+equal defect fifth row: final constraint J*r**2*(r - 2)*(r - 1)*(2*r - 3)/2
+third dirty row: G−d/2+V−W/2 = (x - y)*(2*x + 1)/(16*y)

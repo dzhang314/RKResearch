@@ -1,0 +1,6 @@
+'RKResearch.Certified.ERK10RankThreePortOneLabel.equal_defect_fifth_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10RankThreePortOneLabel.third_dirty_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

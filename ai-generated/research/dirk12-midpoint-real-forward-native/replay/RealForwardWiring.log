@@ -1,0 +1,16 @@
+'RKResearch.Certified.DIRK12MidpointForward.real_nodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.real_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.real_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.real_not_order13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.first_live_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.first_live_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.literal_terminal_diag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.real_fw_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

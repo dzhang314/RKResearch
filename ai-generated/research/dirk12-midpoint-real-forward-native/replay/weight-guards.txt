@@ -1,0 +1,10 @@
+0 numerator - b in (2295014, 2295016) / 10^8
+1 numerator + b in (1939260, 1939265) / 10^8
+2 numerator + b in (34002318, 34002374) / 10^8
+3 numerator - b in (9765142, 9765160) / 10^8
+4 numerator + b in (-81068357, -81067836) / 10^8
+5 numerator + b in (9797820, 9797898) / 10^8
+6 numerator - b in (4956369, 4956490) / 10^8
+7 numerator - b in (21001952, 21001956) / 10^8
+8 numerator + b in (13354536, 13354539) / 10^8
+9 numerator + b in (83954988, 83956098) / 10^8

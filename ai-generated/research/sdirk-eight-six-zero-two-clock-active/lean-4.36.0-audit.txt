@@ -1,0 +1,7 @@
+'RKResearch.Certified.SDIRKEightSixZeroPairScalar.literal_first_tap' depends on axioms: [propext, Quot.sound]
+'RKResearch.Certified.SDIRKEightSixZeroPairScalar.same_gap_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSixZeroPairScalar.opposite_gap_obstruction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

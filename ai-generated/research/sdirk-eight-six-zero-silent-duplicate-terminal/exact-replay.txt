@@ -1,0 +1,30 @@
+star first equals terminal ordinary: True
+ordinary gcd raw 2
+ordinary gcd guarded 0 1
+arith first equals terminal ordinary: True
+ordinary gcd raw 2
+ordinary gcd guarded 0 1
+star monomial first zero 1 ordinary gcd 0
+star monomial first zero 2 ordinary gcd 0
+guarded H degree 9
+0 front star gcd 0 guarded 0
+0 arith reg gcd 0 guarded 0
+0 arith sing gcd 0 guarded 0
+1 front star gcd 0 guarded 0
+1 arith reg gcd 0 guarded 0
+1 arith sing gcd 0 guarded 0
+2 front star gcd 0 guarded 0
+2 arith reg gcd 0 guarded 0
+2 arith sing gcd 0 guarded 0
+arith monomial first zero 1 ordinary gcd 0
+arith monomial first zero 2 ordinary gcd 0
+guarded H degree 9
+0 front star gcd 0 guarded 0
+0 arith reg gcd 0 guarded 0
+0 arith sing gcd 0 guarded 0
+1 front star gcd 0 guarded 0
+1 arith reg gcd 0 guarded 0
+1 arith sing gcd 0 guarded 0
+2 front star gcd 0 guarded 0
+2 arith reg gcd 0 guarded 0
+2 arith sing gcd 0 guarded 0

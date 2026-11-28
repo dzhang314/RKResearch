@@ -1,0 +1,8 @@
+0 star three-coefficient pivot True
+forward gate gcd degree 0
+0 arith three-coefficient pivot True
+forward gate gcd degree 0
+1 star three-coefficient pivot True
+forward gate gcd degree 0
+1 arith three-coefficient pivot True
+forward gate gcd degree 0

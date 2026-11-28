@@ -1,0 +1,9 @@
+import RKCert.Research.SDIRKEightSixZeroPairScalar
+
+namespace RKResearch.Certified.SDIRKEightSixZeroPairScalar
+
+#print axioms literal_first_tap
+#print axioms same_gap_obstruction
+#print axioms opposite_gap_obstruction
+
+end RKResearch.Certified.SDIRKEightSixZeroPairScalar

@@ -1,0 +1,31 @@
+# Six physical zero rows: support and activity census
+
+At the strict ten-stage SDIRK order-eight floor, take \(U=\ker G\), where \(G=\operatorname{diag}(\mathbf g)\) and \(\mathbf g=A\mathbf c-\mathbf c^{\odot2}/2\). Assume exactly six physical entries of \(\mathbf g\) vanish. Define \(d_j=\dim(E_j\cap U)\), \(m\) to be the number of physical off-zero clocks, and \(n\) the number of those clocks with a nonzero weight on a physical off-zero row. Thus \(m\le4\) and \(n\) counts activity, not the number of nonzero aggregates.
+
+## 1. Zero supported grade-two dimension is impossible
+
+This paragraph holds over every paid field (characteristic zero or greater than seven). The [support restriction identity](../sdirk-eight-two-zero-line/README.md) says \(\dim(W_3\cap U_{\mathrm{row}})=6-d_2\). If \(d_2=0\), \(W_3=U_{\mathrm{row}}\), so no off-zero weight is active, and \(F_4=\operatorname{Ann}(W_3)\) is clean on every zero row. The coordinate row at each of those six stages lies in \(W_3\); the [same degree-four cardinal argument](../sdirk-eight-five-zero-support-rank/README.md#1-zero-support-is-impossible), independent of the count five in that packet, makes its clock Gaussian. Ordinary Hilbert rank forces exactly four distinct live Gaussian labels. The six literal zero coordinates therefore contain a two-dimensional space of same-clock duplicate differences. Each difference annihilates \(E_4\): equal scalar clock profiles and \(F_4=0\) on \(U\) give equal entries. These differences span the entire \(Z_3=\operatorname{Ann}(E_4)\), of dimension two, so \(Z_3\) is supported on the zero rows.
+
+The literal last two rows are live zero rows at distinct clocks. If stage 8 is silent, its nonzero \(z_8\) forces it to be a physical zero because \(Z_3\) is supported on \(U\). Its own Gaussian clock and the two rear ones form a literal arithmetic triple, excluded over every paid field by the degree-four [Gaussian arithmetic identity](../sdirk-eight-four-zero-native-rear/README.md) (forced constant \(30\)). The same identity covers a live arithmetic third. If stage 8 is live star, the three Gaussian nodes force characteristic in \(\{37,269,379\}\). If its second reflected ratio were zero, the two rear zero clocks at rows 8 and 9 would also satisfy the paid canceled-star ratio polynomial of the same native supplement, forcing characteristic in \(\{13,131\}\), disjoint. Thus \(\kappa_R\ne0\), and \(\mathbf z^\mathsf T\) has nonzero values at all three distinct rear clocks (the star third has the same normalized residual ratio as the second). Every \(Z_3\) row is \(\mathbf z^\mathsf T\) times an affine clock function, by the [literal reverse relation](../sdirk-eight-four-zero-gaussian-rear/README.md). No such nonzero row can be supported at a single clock: at least two of the three rear clocks outside it would force the affine function to vanish identically. This contradicts any of the literal duplicate differences.
+
+## 2. No repeated scalar/residual signature if off weights are silent
+
+Now work in characteristic zero. If no off weight is active, \(W_1\) is supported on \(U\) and has dimension two; the support identity gives \(d_4=4\). Thus the off restriction of \(E_4\) has the full physical rank four. If \(d_2=1\), then \(GE_2\) is a three-dimensional subspace of \(F_4\) supported off. The scalar quartic \(L_4(\mathbf c)\) belongs to \(F_4\) by ordinary orthogonality. If any zero clock is not Gaussian, \(L_4(\mathbf c)\notin GE_2\), and these columns together span \(F_4\). Equal \((c_i,g_i)\) at two off-zero rows would then make all of \(E_4\) equal at these rows, contradicting full off rank. Indeed both ordinary scalar polynomials and \(GE_2\) are equal on such a pair, as is \(L_4\).
+
+If all zero clocks are Gaussian, the live last-two and literal stage-8 rear characteristic projections in the [Gaussian rear supplement](../sdirk-eight-four-zero-native-rear/README.md) exclude it in characteristic zero, even with silence. Thus a characteristic-zero no-active case with \(d_2=1\) necessarily has **four distinct physical pairs \((c_i,g_i)\)**.
+
+## 3. Remaining support configurations
+
+A single physical off clock is [excluded over characteristic zero](../sdirk-eight-six-zero-one-clock/README.md). With two physical off clocks, let \(\nu\) be the number of groups at which the residual varies. The dimensions are \(d_2=2-\mathbf1_{\nu>0}\), \(d_3=4-\nu\); the \(W_2\) off rank is therefore \(2-\nu\). Two constant groups require two active clock groups and are [excluded over paid fields](../sdirk-eight-six-zero-two-clock-active/README.md). An active varying case requires exactly one varying group, one active canceled pair, and is excluded over characteristic zero in the same packet. With no active off weight, the four-distinct-signature rule leaves exactly two physical group configurations: a varying triple of three distinct nonzero residuals plus one singleton, or a pair with two distinct nonzero residuals at each of the two clocks. Both have pure-polynomial supported trace, since no graph can interpolate a varying residual at one clock.
+
+With \(m\ge3\) the line of supported degree-two columns is necessarily a genuine graph (a nonzero scalar quadratic cannot vanish at three distinct clocks); thus residual is a fixed quadratic function of clock on the off rows. At each clock the residual moments through degree three give zero ordinary aggregate. At \(m=4\) all four are singleton silent rows. At \(m=3\) there is exactly one double occurrence, which must be an active canceled pair, since the repeated \((c_i,g_i)\) signature would otherwise violate section 2.
+
+Consequently the following are the only candidates after these arguments, before applying any further exact chronological exclusions:
+
+| Physical off clocks | Support and activity |
+| --- | --- |
+| 2 | Pure supported trace; two varying silent pairs or one varying silent triple and singleton |
+| 3 | Genuine graph; one live canceled pair and two silent singleton clocks |
+| 4 | Genuine graph; four silent singleton clocks |
+
+The support identities and constant two-group contradiction are field statements, not arbitrary ring exclusions. Beyond the stated paid subcases the exact scope is characteristic zero. No overall stage interval is changed.

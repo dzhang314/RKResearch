@@ -1,0 +1,3 @@
+import RKCert.Research.SDIRKEightDirtySevenAffineTwoDoublePrefixes
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineTwoDoublePrefixes.ordered_pair_norm
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenAffineTwoDoublePrefixes.opposite_arithmetic_pair

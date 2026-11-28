@@ -1,0 +1,33 @@
+A A 0 1 excluded by endpoint distinction or opposite D labels
+A A 0 2 linear 0 [-16, 4, 4] -20 0 degs [(1, 2), (2, 2), (8, 2)]
+literal phase A A (0, 2) outcomes [(8, 'rank'), (8, 'rank')]
+A A 1 0 excluded by endpoint distinction or opposite D labels
+A A 1 2 linear 0 [-8, -4, 4] -12 -8 degs [(1, 2), (2, 2), (18, 1)]
+literal phase A A (1, 2) outcomes [(18, 'rank')]
+A A 2 0 linear 0 [-4, 4, -8] 4 12 degs [(1, 2), (2, 2), (18, 1)]
+literal phase A A (2, 0) outcomes [(18, 'rank')]
+A A 2 1 linear 0 [-8, 8, -8] 0 16 degs [(1, 2), (2, 2), (8, 2)]
+literal phase A A (2, 1) outcomes [(8, 'rank'), (8, 'rank')]
+A S 0 1 linear -2 [-9, 3, 0] -9 3 degs [(1, 4), (2, 4), (12, 1)]
+literal phase A S (0, 1) outcomes [(12, 'rank')]
+A S 0 2 linear -2 [-9, 4, -1] -8 5 degs [(1, 2), (2, 2), (18, 1)]
+literal phase A S (0, 2) outcomes [(18, 'rank')]
+A S 1 0 linear -2 [-9, 3, 0] -9 3 degs [(1, 4), (2, 4), (12, 1)]
+literal phase A S (1, 0) outcomes [(12, 'rank')]
+A S 1 2 linear -2 [-8, 3, -1] -7 4 degs [(1, 2), (2, 2), (18, 1)]
+literal phase A S (1, 2) outcomes [(18, 'rank')]
+A S 2 0 linear -2 [-9, 4, -1] -8 5 degs [(1, 2), (2, 2), (18, 1)]
+literal phase A S (2, 0) outcomes [(18, 'rank')]
+A S 2 1 linear -2 [-8, 3, -1] -7 4 degs [(1, 2), (2, 2), (18, 1)]
+literal phase A S (2, 1) outcomes [(18, 'rank')]
+S S 0 1 excluded by endpoint distinction or opposite D labels
+S S 0 2 linear 0 [-2, -1, -1] -1 0 degs [(1, 2), (2, 2), (8, 2)]
+literal phase S S (0, 2) outcomes [(8, 'rank'), (8, 'rank')]
+S S 1 0 excluded by endpoint distinction or opposite D labels
+S S 1 2 linear 0 [-1, -2, -1] 0 -1 degs [(1, 2), (2, 2), (8, 2)]
+literal phase S S (1, 2) outcomes [(8, 'rank'), (8, 'rank')]
+S S 2 0 linear 0 [-2, -1, -1] -1 0 degs [(1, 2), (2, 2), (8, 2)]
+literal phase S S (2, 0) outcomes [(8, 'rank'), (8, 'rank')]
+S S 2 1 linear 0 [-1, -2, -1] 0 -1 degs [(1, 2), (2, 2), (8, 2)]
+literal phase S S (2, 1) outcomes [(8, 'rank'), (8, 'rank')]
+verified all both-singleton endpoint S,D,D / S,D,D phases 20

@@ -1,0 +1,29 @@
+actual zero fifth determinant True (4, 1, 0, 0) (0, 0, 0, 0) (0, 0, 0, 0)
+silent8 two normalized signed gates [3, 1, 1, 0, 2, 0, 0, 0] [2, 0, 0, 0, 1, 0, 0, 0] [[(10, 3, 24, 0), (10, 3, 25, 0), (10, 3, 26, 0), (10, 3, 27, 0)], [(10, 10, 28, 0), (10, 10, 29, 0), (10, 10, 30, 0), (10, 9, 30, 0)]]
+noncubic star Ψ front (5, 0, 9, 1) [1, 0, 0, 0, 0, 0, 0, 0]
+small CRT exact 4 3 (138, 61) 6 351
+true silent8 gap projection False raw gate (13, 3, 27, 0) (13, 3, 27, 0) [0, 0, 0, 0, 0, 0, 0, 0] Q exact (61, 0, 138, 1) Q guards (46, 0, 90, 0) [6, 0, 2, 0, 0, 3, 0, 0] 0 0 0
+small exact shape CRT 5 46 8
+small exact shape CRT 5 46 16
+small exact shape CRT 5 46 24
+small exact shape CRT 5 46 32
+small CRT exact 5 46 (864, 0) 39 2308
+true silent8 outer projection False exact (0, 0, 744, 0) guarded (0, 0, 504, 0) [168, 18, 0, 0] non L (0, 0, 492, 0) [4]
+true silent8 specialized degrees (4, 0, 2, 1) (42, 0, 2, 0)
+small CRT exact 5 3 (72, 0) 4 187
+affine exact rank locus (0, 0, 60, 0) (0, 0, 30, 1) [18, 3, 0, 0] 30
+affine exact rank guard fiber 30 4 removed Y multiplicity 1 remaining Y degree 4 all unit components 3 retained 372
+true silent8 complete local False 1129 203 usual kept 372 done [('signed', ('usual', 1, 1, 1)), ('signed', ('usual', 6, 1, 1)), ('signed', ('usual', 10, 1, 1)), ('signed', ('usual', 77, 1, 1)), ('signed', ('usual', 278, 1, 1))] bad []
+true silent8 complete local False 1129 203 degenerate kept 3 done [('no_Y', ('degenerate', 3, 1, 0))] bad []
+small exact shape CRT 4 6 8
+small exact shape CRT 4 6 16
+small CRT exact 4 6 (372, 20) 20 1161
+true silent8 gap projection True raw gate (2, 6, 84, 1) (2, 6, 78, 1) [6, 0, 0, 0, 0, 0, 0, 0] Q exact (2, 0, 372, 0) Q guards (2, 0, 210, 1) [12, 0, 0, 0, 0, 0, 0, 0] 7 4 8
+small exact shape CRT 3 2 8
+small exact shape CRT 3 2 16
+small exact shape CRT 3 2 24
+small exact shape CRT 3 2 32
+small CRT exact 3 2 (630, 0) 32 1894
+true silent8 outer projection True exact (0, 0, 630, 1) guarded (0, 0, 630, 1) [0, 0, 0, 0] non L (0, 0, 630, 1) [0]
+true silent8 complete local True 1129 203 usual kept 630 done [('signed', ('usual', 1, 1, 1)), ('signed', ('usual', 1, 1, 1)), ('signed', ('usual', 1, 1, 1)), ('signed', ('usual', 1, 6, 1)), ('signed', ('usual', 1, 6, 1)), ('signed', ('usual', 2, 1, 1)), ('signed', ('usual', 3, 1, 1)), ('signed', ('usual', 4, 1, 1)), ('signed', ('usual', 4, 1, 1)), ('signed', ('usual', 4, 6, 1)), ('signed', ('usual', 5, 6, 1)), ('signed', ('usual', 7, 1, 1)), ('signed', ('usual', 7, 1, 1)), ('signed', ('usual', 8, 1, 1)), ('signed', ('usual', 9, 6, 1)), ('signed', ('usual', 10, 6, 1)), ('signed', ('usual', 24, 1, 1)), ('signed', ('usual', 27, 1, 1)), ('signed', ('usual', 29, 1, 1)), ('signed', ('usual', 29, 1, 1)), ('signed', ('usual', 53, 1, 1)), ('signed', ('usual', 77, 1, 1)), ('signed', ('usual', 84, 1, 1)), ('signed', ('usual', 89, 1, 1))] bad []
+regular ordinary hole5 star-front actual silent eighth excluded

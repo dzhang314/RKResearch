@@ -1,0 +1,9 @@
+finite mesh count 7
+('AN', 4) ratio deg 6 gcd pre/post guards 3 0
+('S1', 1) ratio deg 6 gcd pre/post guards 3 0
+('S1', 4) ratio deg 6 gcd pre/post guards 3 0
+('S2', 1) ratio deg 6 gcd pre/post guards 3 0
+('S2', 4) ratio deg 6 gcd pre/post guards 3 0
+('C_A', 4) ratio deg 6 gcd pre/post guards 3 0
+('C_S', 4) ratio deg 5 gcd pre/post guards 3 0
+verified seven finite actual reverse-arithmetic meshes

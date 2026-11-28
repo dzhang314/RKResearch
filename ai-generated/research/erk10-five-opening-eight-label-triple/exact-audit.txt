@@ -1,0 +1,7 @@
+a,a,b next-singleton determinant: a*(-a + z)*(-b + z)**2/(4*(3*a - 2*b))
+a,a,b,a at b=a/2: the two h-reads differ by 3*a^2*T/8
+a,b,a next-singleton determinant: -b*(-a + z)**2*(-b + z)/(4*(2*a - 3*b))
+a,b,c next-singleton determinant: b*(-b + z)*(-c + z)**2/(4*(3*b - 2*c))
+a,b,c,a2 exact coefficient determinant: -a**2*b**2*c*(a - b)*(a - c)**2*(b - c)/(4*(3*b - 2*c))
+a,b,c,a2 denominator-cleared determinant checked
+blind primitive transfer and three-site cofactor checked without score divisions

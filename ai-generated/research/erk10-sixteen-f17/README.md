@@ -10,6 +10,12 @@ is a unit and therefore remains nonzero under every such map.
 The construction uses a retuned eight-row dense order-five prefix
 and a nine-row reverse block, identifying the latter's last row
 with the prefix's actual endpoint, at clock 14 in the residue field.
+The retuning uses the [Owren–Zennaro continuous family](https://doi.org/10.1090/S0025-5718-1991-1068811-2).
+The [archived prefix](prefix.json) has a three-dimensional size-six
+residual space. The [prefix replay](prefix-replay.log) checks all 17
+dense identities through five, the actual rank across all 20 size-six
+profiles, and equality of the integrated decoder to the actual endpoint
+row. Run `python3 -B check_prefix.py` to reproduce those checks.
 It is a different rank-three prefix chart from the rejected
 [compressed four-read splice](../erk10-four-read-dense-prefix-obstruction/README.md).
 The archived auxiliary reverse matrix and weights are provenance;

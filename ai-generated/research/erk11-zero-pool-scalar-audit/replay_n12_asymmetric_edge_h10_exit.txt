@@ -1,0 +1,50 @@
+Replaying final fields with an already exact external projection checkpoint.
+G (28, 27) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+R (55, 49) [(0, (1, 0)), (0, (1, 0))]
+F (48, 44) []
+Q (62, 54) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0))]
+S (44, 39) []
+T (54, 46) []
+forbidden x 264
+a factor 57 2 specialized b degrees [27, 44, 49, 39, 46, 54]
+ LIFT 57 103 42 ['G', 'F', 'R', 'S', 'T', 'Q'] 63.41
+a factor 50 2 specialized b degrees [27, 44, 49, 39, 46, 54]
+ LIFT 50 103 44 ['G', 'F', 'R', 'S', 'T', 'Q'] 63.54
+Hankel guard subresultant chain b degrees [12, 6, 5, 4, 3, 2, 1, 0] 14.68
+affine residue degrees 131 131 14.69
+exact B factor through Hankel guard 16 17.63
+exact B factor through Hankel guard 18 21.44
+exact B factor through Hankel guard 19 24.44
+exact B factor through Hankel guard 25 25.11
+testing mod place 95
+Degree-132 fiber exact forbidden factor + whole unit lift done 107 95
+a factor 3 4 specialized b degrees [26, 42, 47, 38, 45, 52]
+ LIFT 3 103 3 ['G', 'F', 'R', 'S', 'T', 'Q'] 88.79
+a factor 4 4 specialized b degrees [27, 44, 49, 39, 46, 54]
+ exact guard power 4 G 1
+ exact guard power 4 F 2
+ exact guard power 4 R 2
+ exact guard power 4 S 1
+ exact guard power 4 T 1
+ exact guard power 4 Q 2
+ LIFT 4 103 1 ['G', 'F', 'R', 'S', 'T', 'Q'] 88.84
+a factor 8 4 specialized b degrees [26, 42, 47, 38, 45, 52]
+ LIFT 8 103 1 ['G', 'F', 'R', 'S', 'T', 'Q'] 88.9
+forbidden x + (-1) 5
+a factor 15 30 specialized b degrees [27, 44, 49, 39, 46, 54]
+ exact guard power 15 G 5
+ exact guard power 15 F 5
+ exact guard power 15 R 5
+ exact guard power 15 S 5
+ exact guard power 15 T 5
+ exact guard power 15 Q 5
+ LIFT 15 103 2 ['G', 'F', 'R', 'S', 'T', 'Q'] 89.01
+a factor 6 30 specialized b degrees [27, 44, 49, 39, 46, 54]
+ exact guard power 6 G 5
+ exact guard power 6 F 5
+ exact guard power 6 R 5
+ exact guard power 6 S 5
+ exact guard power 6 T 5
+ exact guard power 6 Q 5
+ LIFT 6 103 1 ['G', 'F', 'R', 'S', 'T', 'Q'] 89.08
+forbidden x + (-2) 98

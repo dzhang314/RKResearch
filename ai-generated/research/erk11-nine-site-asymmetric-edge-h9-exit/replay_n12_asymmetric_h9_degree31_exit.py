@@ -324,7 +324,7 @@ def certify():
                 C1=flint.fq_default_ctx(modulus=bb,fq_type='FQ_NMOD')
                 Cpoly=flint.fq_default_poly_ctx(C1)
                 a1,b=C1(int(-q[0]/q[1])),C1.gen()
-            assert b
+            assert b!=0
             def evaluate(f):
                 f=primitive(f)
                 c=[C1.zero() for _ in range(max(k for k,_,_ in f)+1)]

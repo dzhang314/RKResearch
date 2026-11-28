@@ -1,0 +1,30 @@
+RLR (50, 45) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+RLG (51, 45) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+RRG (57, 52) [(0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+QL (58, 50) [(0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+QR (70, 64) [(0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1))]
+QG (44, 40) [(0, (1, 0)), (0, (1, 0)), (1, (0, 1)), (1, (0, 1)), (17, (14, 12))]
+Using the archived exact projection checkpoint.
+linear source b degrees [4, 4, 3, 2, 1, 0]
+linear source b degrees [12, 6, 5, 4, 3, 2, 1, 0]
+running exact guards 132
+guard linear degrees 132 131 131
+exact forbidden guard 132 0
+exact forbidden guard 132 1
+exact forbidden guard 132 2
+whole one-place unit lift 132 107 15 ['QG', 'RLR', 'RLG', 'RRG', 'QL', 'QR']
+running exact guards 2
+whole one-place unit lift 2 107 1 ['QG', 'RLR', 'RLG', 'RRG', 'QL', 'QR']
+running exact guards 2
+whole one-place unit lift 2 107 1 ['QG', 'RLR', 'RLG', 'RRG', 'QL', 'QR']
+running exact guards 15
+guard linear degrees 15 14 14
+exact forbidden guard 15 0
+exact forbidden guard 15 1
+whole one-place unit lift 15 107 15 ['QG', 'RLR', 'RLG', 'RRG', 'QL', 'QR']
+running exact guards 6
+guard linear degrees 6 5 5
+exact forbidden guard 6 0
+exact forbidden guard 6 1
+whole one-place unit lift 6 107 1 ['QG', 'RLG', 'QL']
+All characteristic-zero opposite-central width fibers close.

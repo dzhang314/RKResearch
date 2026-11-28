@@ -235,13 +235,13 @@ def lift(G,L,M,K,F):
             Kp=flint.fq_default_ctx(modulus=f,fq_type='FQ_NMOD');R=flint.fq_default_poly_ctx(Kp);a=Kp.gen()
             pa=[a**j for j in range(K.degree())]
             rv=lambda q:sum((Kp(rd(c))*v for c,v in zip(q.coeffs(),pa)),Kp.zero())
-            if not rv(L):continue
+            if rv(L)==0:continue
             b0=-rv(M)/rv(L);lin=R([-b0,Kp.one()]);print('testing mod place',f.degree(),flush=True)
             def cv(q):
                 a2=[a**i for i in range(q.degrees()[0]+1)];t=[Kp.zero() for i in range(q.degrees()[1]+1)]
                 for (i,j),v in q.to_dict().items():t[j]+=Kp(rd(v))*a2[i]
                 return R(t)
-            assert a and b0 and cv(G[26])(b0)
+            assert a!=0 and b0!=0 and cv(G[26])(b0)!=0
             raw={k:cv(F[k]) for k in names}
             assert all(not t%lin for t in raw.values())
             assert any(t.degree()==F[k].degrees()[1] for k,t in raw.items())

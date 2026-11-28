@@ -1,0 +1,7 @@
+# Explicit finite-field scalar zero tests
+
+The scalar python-flint fq_default element returns true when passed to bool, even if it is zero. The affected fq_default_poly objects correctly use their polynomial zero status. The five replacement scripts listed in the source-hash ledger preserve the existing formulas and exact width projections; they replace only potentially misleading scalar truth tests with explicit comparisons against zero.
+
+All four complete focused replays over the archived exact preprojection/factor checkpoints passed after correction: opposite-center, canonical degree-31 H9, right fixed E, H10. Unlike the other three, the H9 script recomputes its exact modular degree projections (its --fiber-only argument is immaterial). The distinct-three-center edit needs only its final affected quotient check; the receipt calls L,N=pivot12(); final_u_quotient(L,N) directly and checks all 24 a-width fibers without repeating its earlier unaffected CRT reconstruction. Archived factor checkpoints are included for standalone reruns. Run with python-flint/SymPy and SYMPY_GROUND_TYPES=flint.
+
+No mathematical exclusion changed. The latest standard-library q9 and q10 overlap receipts do not use fq_default. The separate new q9 middle scalar-zero correction is frozen independently. This audit concerns the relevant zero-pool chart receipts using fq_default, not an assertion about unrelated repositories or all historical scratch experiments.

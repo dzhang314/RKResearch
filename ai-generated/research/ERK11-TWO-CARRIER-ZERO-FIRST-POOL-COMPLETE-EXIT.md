@@ -93,3 +93,5 @@ mixed grade-five bridges; they do not require full ordinary reverse
 order eleven. The inner arithmetic is characteristic zero; the
 separation and earlier triple/low-site exits use ordering. The
 ordinary seventeen-versus-eighteen question remains open.
+
+The [explicit scalar-zero audit](erk11-zero-pool-scalar-audit/README.md) replaces Python finite-field scalar truthiness tests in five supporting replays and records the passing focused reruns. The exclusion and its hypotheses are unchanged.

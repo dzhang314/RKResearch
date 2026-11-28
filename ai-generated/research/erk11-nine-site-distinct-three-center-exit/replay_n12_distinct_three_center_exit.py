@@ -278,7 +278,7 @@ def final_u_quotient(L,N,prime=101):
                 a=-Tt[0];b=s-a;total+=1
                 def v(r):
                     return sum((K(rd(c))*a**i*b**j for (i,j),c in r.items()),K.zero())
-                assert v(I0) and v(A)
+                assert v(I0)!=0 and v(A)!=0
                 fromu=lambda r:P([v(r.get((i,),R.zero)) for i in range(r.degree()+1)])
                 assert fromu(ell).degree()==1
                 assert reduce(lambda f,h:f.gcd(h),map(fromu,(ell,D,F))).degree()==0

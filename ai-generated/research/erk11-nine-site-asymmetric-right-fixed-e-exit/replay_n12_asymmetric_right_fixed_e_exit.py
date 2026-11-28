@@ -233,12 +233,12 @@ def local(W,G,E,N,q):
     p0={k:pol(v) for k,v in QQ.items()}
     if n==108:
      la,mu=at(L),at(M)
-     if not la:continue
+     if la==0:continue
      b0=-mu/la;lin=R([-b0,Kp.one()]);assert all(not v%lin for v in p0.values())
      # Width-only factors removed from the five normalized constraints at the
      # Hankel fiber, plus the true affine pivot. See the structural proof.
-     for i in range(10): assert pol(cvpoly(G[i]))(b0)
-     assert pol(cvpoly(E))(b0)
+     for i in range(10): assert pol(cvpoly(G[i]))(b0)!=0
+     assert pol(cvpoly(E))(b0)!=0
      prs={k:v//lin for k,v in p0.items()}
     else:prs=p0
     top=[k for k,v in p0.items() if v and v.degree()==len(QQ[k])-1]

@@ -235,9 +235,9 @@ def verify(data0,fs):
                     U=flint.fq_default_poly_ctx(R);av=R.gen()
                     ap=[av**i for i in range(d)]
                     vv=lambda q:sum((R(rd(c))*t for c,t in zip(q.coeffs(),ap)),R.zero())
-                    if not vv(L):continue
+                    if vv(L)==0:continue
                     b0=-vv(M)/vv(L)
-                    if power and (not av or not b0):continue
+                    if power and (av==0 or b0==0):continue
                     bf=U([-b0,R.one()])**power
                     Fp={k:U([vv(c) for c in T[k]]) for k in names}
                     assert all(not f%bf for f in Fp.values())

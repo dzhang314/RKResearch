@@ -1,0 +1,8 @@
+658bf1d5953b01a47a82209fe13dc467240ef49ad0701353af63e639b3df1eca  lean/RKCert/ReviewedNative/ERK10DirtySixthInvisibleCollisionMod.lean
+55fddbf87478f2e739b38be040abd65c7f669d164aa209f46b551729292d86d0  research/erk10-dirty-sixth-invisible-collision/README.md
+23e96059fe52caafc12a234eb83aba68106eb02a2c659232b30d0691f409d6f4  research/erk10-dirty-sixth-invisible-collision/audit.py
+067ddeb7253ab4d6f777a6778f3db07ac9fb0b6ce4e9ea458af1cc9f0b488f9c  research/erk10-dirty-sixth-invisible-collision/exact-audit.txt
+9c8e0821dc470ecbf36a82ea18c5221c6084f4b24a523479ecea7bca182d01ce  research/erk10-dirty-sixth-invisible-collision/lean-4.34.1-audit.txt
+9c8e0821dc470ecbf36a82ea18c5221c6084f4b24a523479ecea7bca182d01ce  research/erk10-dirty-sixth-invisible-collision/lean-4.35.0-audit.txt
+9c8e0821dc470ecbf36a82ea18c5221c6084f4b24a523479ecea7bca182d01ce  research/erk10-dirty-sixth-invisible-collision/lean-4.36.0-audit.txt
+9c8e0821dc470ecbf36a82ea18c5221c6084f4b24a523479ecea7bca182d01ce  research/erk10-dirty-sixth-invisible-collision/lean-4.37.0-rc1-audit.txt

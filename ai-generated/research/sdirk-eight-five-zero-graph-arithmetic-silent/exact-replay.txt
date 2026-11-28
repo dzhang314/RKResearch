@@ -1,0 +1,6 @@
+three gate rows [21, 21, 21, 38, 38, 38, 67, 67, 67]
+raw substituted polynomial degrees 124 175
+norm degrees (654, 954, 348, 348, 342)
+exact divisor and degree-preserving residue gcd 504 quotient degrees (150, 450)
+exact divisor and degree-preserving residue gcd 252 quotient degrees (96, 96, 90)
+The regular and singular gcd supports are wholly structurally forbidden.

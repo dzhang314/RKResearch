@@ -1,0 +1,21 @@
+Four QQ symbolic-carrier probes verify the actual adjacent scale and discriminant completion identity.
+    0.00 common m scale normalized coefficient degree 16 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 48 guarded content degree 0
+    0.87 adjacent coefficient normalized coefficient degree 213 guarded content degree 24
+    1.29 adjacent discriminant normalized coefficient degree 258 guarded content degree 48
+    1.65 relative norm normalized coefficient degree 702 guarded content degree 72
+    1.65 norm stage 702
+    2.31 norm stage 2808
+raw/squarefree 2808 260
+forbidden-1
+forbidden-0
+exact factor ratio 12 16227
+exact factor c2 12 54123
+exact factor q 48 1865429207937
+exact factor old 60 -1461941766456
+exact factor full 120 1224003691778934976981908885504
+verified ratio residue degree 12 exact cap 11 discriminant and pinned middle rank 132 of 132
+verified c2 residue degree 4 exact cap 9 discriminant and pinned middle rank 36 of 36
+verified q residue degree 1 exact cap 11 discriminant and pinned middle rank 11 of 11
+verified old residue degree 1 exact cap 11 discriminant and pinned middle rank 11 of 11
+verified full residue degree 1 exact cap 12 discriminant and pinned middle rank 12 of 12

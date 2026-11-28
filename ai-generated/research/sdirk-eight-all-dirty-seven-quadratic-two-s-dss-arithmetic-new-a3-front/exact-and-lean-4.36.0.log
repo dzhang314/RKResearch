@@ -1,0 +1,16 @@
+A3 rows [(18, 9, 0), (10, 5, 3), (22, 11, 2), (16, 8, 8), (26, 18, 8)] E factors [((18, 9, 0), 1)]
+A3 nodal v projection (84, 43, 0)
+A3 first only H degree 773 H factors [(3, 1), (4, 1), (56, 1), (170, 1), (12, 3), (24, 3), (18, 8), (18, 16)]
+direct finite place (3, 1) 11 4 [0]
+static guard certificate (4, 1) 11 7 9 8
+direct finite place (56, 1) 11 0 [4]
+direct finite place (170, 1) 11 2 [7]
+direct finite place (12, 3) 17 5 [8]
+direct finite place (24, 3) 101 15 [59]
+static guard certificate (18, 8) 23 15 9 8
+static guard certificate (18, 16) 31 1 9 7
+all terminal-new front-A3 arithmetic-rear factors excluded
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewA3Front.arithmetic_second_singleton_value' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightDirtySevenQuadraticTwoSDssArithmeticNewA3Front.paid_affine_factor_quadratic_coefficient' depends on axioms: [propext,
+ Quot.sound]

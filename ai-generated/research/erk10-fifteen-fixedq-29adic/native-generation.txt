@@ -1,0 +1,2 @@
+Modulus 12200509765705829 normalized eleventh bush 3554644188177161 unit defect inverse 9738106248624930
+Normalized profiles [1, 1, 2, 4, 8, 16, 35, 76, 167, 366] total 676 actions 310 joins 1430

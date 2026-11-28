@@ -1,0 +1,9 @@
+'RKResearch.Certified.DIRK12MidpointForward.Feed.nodes_tableau' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Feed.genuine_DIRK' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Feed.paid_adjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

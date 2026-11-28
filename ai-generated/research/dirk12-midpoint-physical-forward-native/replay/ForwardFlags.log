@@ -1,0 +1,5 @@
+'RKResearch.Certified.DIRK12MidpointForward.Feed.fw_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Feed.fw_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12MidpointForward.Feed.fw_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,4 +1,7 @@
-import Init.Data.Rat.Lemmas
+module
+public import Init.Data.Rat.Lemmas
+
+@[expose] public section
 
 /-! Exact arithmetic for the four hidden rows of the fifteen-stage midpoint
 DIRK order-twelve tableau. These are normalized by the first live clock. -/

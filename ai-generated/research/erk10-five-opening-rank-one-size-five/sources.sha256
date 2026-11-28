@@ -1,0 +1,8 @@
+47a61732b2df76010c280f8f82fc1034eaad9e938ad492a7048d2c3f16b9cc4d  ai-generated/research/erk10-five-opening-rank-one-size-five/README.md
+8b658b3d525fa8ba6c5aaffb2eade56839d736109c5920827e05cff4f16882cc  ai-generated/research/erk10-five-opening-rank-one-size-five/SPLIT-EVALUATION.md
+652a86ede21cd8ac8d560ad44b7248731497b54f7dfc833eb2b493df17c28ef5  ai-generated/research/erk10-five-opening-rank-one-size-five/LEAN.md
+56c4b153a4baf2cb7ae12a4189dcccadadad19c454aea58a5eebaedb695c54a6  ai-generated/research/erk10-five-opening-rank-one-size-five/audit.py
+fab8225b1353dd161c83e1c4aa7168794aebd18561f3bd33a158f1215b8c07b2  ai-generated/research/erk10-five-opening-rank-one-size-five/exact-audit.txt
+5bb034146f017d26c73f30c4612ce50ca09db83551bea018d63a267d236ac7fc  ai-generated/lean/RKCert/ReviewedNative/ERK10RankOneTiltScalars.lean
+c299a4f6a68da196e3bc1d82c6aaccc806fa63f09b37f0ded0551c77ca158b59  ai-generated/lean/RKCert/ReviewedNative/ERK10DirtyPlateauRank.lean
+a209bd108953226ab878805aa72c0738b74e4c914d13facd1f374b9f04a25035  ai-generated/lean/RKCert/ReviewedNative/ERK10TiltSilentErasure.lean

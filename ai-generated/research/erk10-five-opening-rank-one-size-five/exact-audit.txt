@@ -1,0 +1,8 @@
+two-functional cubic probe and primitive commutator checked exactly
+split-root rank-one exception requires sqrt(6)
+generic old model-zero four pivots recover full pure input despite nonzero literal dirt
+exceptional actual tilt functional on X,...,X^4: [32/9, -16/3, -24, -44]
+all 17 actual profiles and pure marked input growth verified in the exceptional fixture
+split fixed decoder: actual ell(f) = (1024/729) f(9/4); all reclassified pure sources checked
+fixed decoder split old-host scalar equation checked symbolically
+all 63 short raw words agree after erasing a nontrivial output-silent donor axis

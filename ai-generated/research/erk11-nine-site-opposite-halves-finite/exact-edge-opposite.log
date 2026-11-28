@@ -1,0 +1,54 @@
+G (4, 27, 24)
+M (3, 12, 10)
+L (4, 19, 18)
+P (6, 37, 34)
+X (4, 39, 37)
+A (3, 14, 14)
+B (3, 14, 14)
+X (4, 7, 7) []
+D (3, 12, 12) [(0, (0, 0, 1)), (1, (0, 1, 0))]
+F (4, 16, 16) [(0, (0, 0, 1)), (0, (0, 0, 1)), (1, (0, 1, 0)), (1, (0, 1, 0))]
+B (4, 12, 12) [(17, (2, 4, 4))]
+G (2, 8, 8) [(0, (0, 0, 1)), (1, (0, 1, 0))]
+H (1, 4, 4) [(17, (2, 4, 4))]
+result edge opposite B (76, 76) 1.1
+degree upper 4312 required vanishing at infinity 68
+valuation progress 12 nullity 12 sec 18.11
+valuation progress 24 nullity 12 sec 26.5
+valuation progress 32 nullity 8 sec 35.83
+valuation progress 38 nullity 6 sec 42.48
+valuation progress 43 nullity 5 sec 47.84
+valuation progress 48 nullity 5 sec 52.25
+valuation progress 53 nullity 5 sec 56.68
+valuation progress 56 nullity 3 sec 61.63
+valuation progress 58 nullity 2 sec 64.95
+valuation progress 60 nullity 2 sec 67.12
+valuation progress 62 nullity 2 sec 69.38
+valuation progress 64 nullity 2 sec 72.09
+valuation progress 65 nullity 1 sec 75.11
+valuation progress 66 nullity 1 sec 76.72
+valuation progress 67 nullity 1 sec 78.24
+valuation progress 68 nullity 1 sec 79.92
+valuation progress 8 nullity 8 sec 47.82
+valuation progress 16 nullity 8 sec 66.13
+AM characteristic-zero degree 4244 exact (a-2) power witness [8, 8]
+degree upper 5456 required vanishing at infinity 24
+valuation progress 4 nullity 4 sec 22.47
+valuation progress 7 nullity 3 sec 26.63
+valuation progress 10 nullity 3 sec 29.93
+valuation progress 12 nullity 2 sec 33.79
+valuation progress 14 nullity 2 sec 36.02
+valuation progress 16 nullity 2 sec 38.18
+valuation progress 18 nullity 2 sec 40.26
+valuation progress 20 nullity 2 sec 42.18
+valuation progress 21 nullity 1 sec 44.41
+valuation progress 22 nullity 1 sec 45.47
+valuation progress 23 nullity 1 sec 46.36
+valuation progress 24 nullity 1 sec 47.59
+valuation progress 4 nullity 4 sec 91.79
+valuation progress 8 nullity 4 sec 107.4
+valuation progress 12 nullity 4 sec 123.82
+valuation progress 14 nullity 2 sec 143.01
+valuation progress 16 nullity 2 sec 152.84
+ZB characteristic-zero degree 5432 exact (a-2) power witness [4, 4, 4, 2, 2]
+Exact degrees and both common-factor lifts verified.

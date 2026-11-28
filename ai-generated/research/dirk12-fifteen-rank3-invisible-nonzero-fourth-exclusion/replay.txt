@@ -1,0 +1,4 @@
+literal commute-and-shift factor gives an exact fifth double root
+all monomial coefficients in the paid twofold primitive integral
+adjacent primitive equations give the three exact paid moment recurrences
+guarded factors force the fifth reflected label to be the remaining reverse u

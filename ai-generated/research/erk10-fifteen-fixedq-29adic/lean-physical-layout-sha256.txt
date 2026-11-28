@@ -1,0 +1,4 @@
+2951f7f65ad13dbf8288565d9b08b11a0d23cb688adf85fb2deac211a52bbc4b  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicRawReadout.lean
+d8f67ee212f8217826a493b05529d813d10ade9f6a8336ad63c099dcb560a113  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicPhysicalLayout.lean
+d6694e098223e9fea218d1447711503c10bf7743809fddfa3f31fd891726d5b1  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-PHYSICAL-LAYOUT.md
+dfca6679d900515727c285bf3a5af55b134554497abe5d4c73643184fbe4bd0a  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-physical-layout-kernel-4.36.log

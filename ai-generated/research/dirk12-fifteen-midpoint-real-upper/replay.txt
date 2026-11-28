@@ -1,0 +1,6 @@
+exact early repeated-pair, singleton, barycentric amplitudes and zero u diagonal
+exact homogeneous support: both B12 endpoint integrals and four paid Q primitive pairings
+exact affine reverse quartic correction on all three unordered roots
+all first-five literal ordinal read fits through scalar input degree five
+all five physical reverse quartic gates exactly zero in characteristic zero (no quotient-field inversions)
+real construction formulas reduce to all 225 literal F17^3 entries, with exact order-13 bush defect 11+7z+12z^2

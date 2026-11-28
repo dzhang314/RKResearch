@@ -13,7 +13,7 @@
 | 9 | 13 | 10 | 14 |
 | 10 | 15 | 12 | 17 |
 | 11 | 18 | 14 | 20 |
-| 12 | 21 | 16 | 23 |
+| 12 | 21 | **15** | 23 |
 | 13 | 23 | 18 | 26 |
 | 14 | 26 | 21 | 30 |
 | 15 | 31 | 24 | 34 |
@@ -25,5 +25,6 @@
 
 We seek constructive witnesses over the **real algebraic numbers**, and over **the rationals** wherever a rational witness is verified. A real algebraic label does not assert that rational coefficients are impossible. The [literal 14-stage strict SDIRK9 construction](real-algebraic/sdirk14-order9-movable-double-merge/README.md) includes its defining equations, certified real root, actual tableau, and all-rooted-condition replay.
 
+- [Exact fifteen-stage order-twelve real-algebraic DIRK](../research/dirk12-fifteen-midpoint-real-upper/README.md)
 - [Rational constructions and fixtures](rational/README.md)
 - [Real algebraic constructions](real-algebraic/README.md)

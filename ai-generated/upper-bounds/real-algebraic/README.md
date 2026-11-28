@@ -15,6 +15,8 @@ This first batch includes exact radical or isolated algebraic-root constructions
 - [sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123_replay.md](sdirk_p15_34_genuine_nonlinear_gram_target_and_double_literal_merge_20261123_replay.md)
 - [sdirk_p15_34_witnessed_dyadic_center_checkpoint_20261123.md](sdirk_p15_34_witnessed_dyadic_center_checkpoint_20261123.md)
 
+- [Exact 15-stage DIRK order twelve](../../research/dirk12-fifteen-midpoint-real-upper/README.md), matching the lower bound.
+
 ## Additional constructions and replays
 
 These include exact new tableaux, alternate tableaux at existing upper bounds, and explicitly labeled local-stage construction lemmas.

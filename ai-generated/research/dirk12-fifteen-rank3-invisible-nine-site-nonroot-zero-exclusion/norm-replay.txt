@@ -1,0 +1,2 @@
+literal augmented determinant, cubic and quartic typing and exact leading guard
+actual stripped b gate, degree-(33,15) resultant, exact degree-132 ordinary clock factor

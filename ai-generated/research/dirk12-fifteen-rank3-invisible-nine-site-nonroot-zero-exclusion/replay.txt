@@ -1,0 +1,16 @@
+ordinary a residue degree 1: unique h and second lift; no true third clock
+ordinary a residue degree 1: unique h and second lift; no true third clock
+ordinary a residue degree 9: unique h and second lift; no true third clock
+ordinary a residue degree 20: unique h and second lift; no true third clock
+ordinary a residue degree 49: unique h and second lift; no true third clock
+ordinary a residue degree 52: unique h and second lift; no true third clock
+generic nonroot part: exact good reduction in all 132 ordinary clock residue degrees
+singular a degree 3, prime 73, a=18: h degrees [1, 3], no second clock
+singular a degree 3, prime 73, a=40: h degrees [1, 1, 2], no second clock
+singular a degree 3, prime 73, a=65: h degrees [1, 1, 2], no second clock
+singular degree 3: 8 h fields of total residue degree 12
+singular a degree 4, prime 37, a=6: h degrees [3], no second clock
+singular a degree 4, prime 37, a=8: h degrees [1, 2], no second clock
+singular a degree 4, prime 37, a=30: h degrees [1, 2], no second clock
+singular a degree 4, prime 37, a=32: h degrees [1, 2], no second clock
+singular degree 4: 7 h fields of total residue degree 12

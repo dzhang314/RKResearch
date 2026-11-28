@@ -1,0 +1,4 @@
+actual first-root t and third equations: exact outer factor degrees 2,4,13,18
+degree-13 factor: every exact third root repeats at the fourth row
+degree-18 factor with quadratic y: exact repeated-root fifth polynomial
+exact reconstructed reverse cubic contains the already fixed fifth live label

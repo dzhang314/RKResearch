@@ -1,0 +1,35 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.prefix_quotient_units.{u_1} {K : Type u_1}
+  [CommRing K] (x ξ j ell s : K) (hell : IsUnit ell) (hs : IsUnit s) (h : (x - ξ) * j = ell * s) :
+  IsUnit (x - ξ) ∧ IsUnit j
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.prefix_ratio_identity.{u_1} {K : Type u_1}
+  [CommRing K] (x ξ j jInv ell s t : K) (hj : j * jInv = 1) (ht : t = s * jInv) (h : (x - ξ) * j = ell * s) :
+  ell * t = x - ξ
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.prefix_location_clear.{u_1} {K : Type u_1}
+  [CommRing K] (ell ξ t₀ t₁ : K) (h₀ : ell * t₀ = -ξ) (h₁ : ell * t₁ = 1) : ξ * t₁ + t₀ = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.third_gap_tap.{u_1} {K : Type u_1} [CommRing K]
+  (u z w c d t q : K) (hq : q = c * (u - z) * (u - w)) (ht : (w - z) * t + (u - z) * d = q)
+  (hd : (1 + c) * d = c * (u - w)) : (1 + c) * (w - z) * t = c ^ 2 * (u - z) * (u - w)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.third_gap_diagonal.{u_1} {K : Type u_1}
+  [Field K] (u z w c d t q : K) (hz : u ≠ z) (hw : u ≠ w) (hq : q = c * (u - z) * (u - w))
+  (ht : (w - z) * t + (u - z) * d = q) (hc : (u - w) * (w - z) * t = d * q) : (1 + c) * d = c * (u - w)
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.prefix_quotient_units' depends on axioms: [propext]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.prefix_ratio_identity' does not depend on any axioms
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.prefix_location_clear' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.third_gap_tap' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.third_gap_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.divided_quintic.{u_1} {K : Type u_1} [Field K]
+  (z w uz uw fz fw du df : K) (hzw : w ≠ z) (hu : uw - uz = (w - z) * du) (hf : fw - fz = (w - z) * df)
+  (h : fw * uz - fz * uw = 0) : uz * df - fz * du = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.divided_commutator.{u_1} {K : Type u_1}
+  [Field K] (z w uz uw d t du dt : K) (hzw : w ≠ z) (hu : uw - uz = (w - z) * du) (ht : t - d = (w - z) * dt)
+  (h : uz * (w - z - d) * t + uw * d ^ 2 = 0) : uz * t - uz * d * dt + d ^ 2 * du = 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.divided_quintic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLivePrefixThird.divided_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

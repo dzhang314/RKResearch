@@ -1,0 +1,19 @@
+=== grade7.py
+rho pivot, exact alpha/gamma path, and grade-seven crossing in both rational negative controls
+=== next_reverse.py
+literal E/C forward/reverse and paid low/mixed arithmetic in both rational negative controls
+=== rebuild.py
+q factors [((5, 4, 2), 1)]
+E2 (5, 4, 2) 0.3662405770010082
+q factors [((1, 0, 0), 1), ((0, 1, 0), 1), ((1, 0, 0), 1), ((0, 1, 0), 1), ((1, 1, 0), 1), ((6, 5, 3), 1)]
+E3 (6, 5, 3) 2.544902796005772
+t-result (27, 22, 0) [((27, 22, 0), 1)] 2.553778184003022
+Degree-36 and degree-20 midpoint projection with exact guard discards
+=== verify.py
+degree20 excluded by literal fourth commutator in residues [4, 4, 16, 16]; degree36 irreducible modulo 137
+=== recover-field.py
+formed y input 0.003926525998394936
+ygcd 1 19.564375887995993
+formed t input 19.57394805999502
+tgcd 1 19.7571207699948
+unique rational y,t; exact surviving fifth cubic in the degree-36 midpoint field

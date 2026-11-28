@@ -1,0 +1,5 @@
+372f2eaed422424fbbf0d1a3ced5665311fc659cd41c1d23f1e82dc0d969f0e4  lean/RKCert/ReviewedNative/ERK10PaidPrefixCleanClock.lean
+f0a44bd8a38c5416162530628f83a01ba5eb1817b9e6e930b950f82db7ee194a  research/erk10-paid-doubled-prefix/README.md
+347a73c7e32595c2fd267f8f33a5fab8ef7384186a37aa3e594c7947611f20fa  research/erk10-paid-doubled-prefix/horizons.py
+3ea1051dbf25748edf7e5d8bd79359931a39632823328c8ed700d8e5e4e8a3fc  research/erk10-paid-doubled-prefix/exact-audit.txt
+f42aca88ca7f3ddd0bedd414ecb2a390c5058832aec8681f00a26ac22bf0d068  research/erk10-paid-doubled-prefix/lean-4.36-audit.txt

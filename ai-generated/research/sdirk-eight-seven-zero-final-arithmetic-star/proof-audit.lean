@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightSevenZeroFinalArithmeticStar
+
+open RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticStar
+
+#print axioms arithmetic_graph_cube
+#print axioms division_free_arithmetic_cofactors
+#print axioms reflected_star_conversion

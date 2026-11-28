@@ -1,0 +1,6 @@
+'RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticStar.arithmetic_graph_cube' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticStar.division_free_arithmetic_cofactors' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.SDIRKEightSevenZeroFinalArithmeticStar.reflected_star_conversion' depends on axioms: [propext,
+ Quot.sound]

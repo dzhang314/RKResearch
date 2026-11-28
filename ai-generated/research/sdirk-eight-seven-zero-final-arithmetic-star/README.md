@@ -123,3 +123,5 @@ One such simple residue factor per irreducible **exact** factor suffices. An act
 ## 5. Replay and native scope
 
 Run `python check_star.py` with SymPy 1.14 and python-flint 0.8. The fraction-free norm and exact guard division take about twenty seconds; the six fixed residue checks are much shorter. The full tableau ingress, exact number-field projections, and finite geometric fiber checks are recorded separately above.
+
+The [scalar Lean companion](../../lean/RKCert/Research/SDIRKEightSevenZeroFinalArithmeticStar.lean) passes on Lean/Mathlib 4.36.0. It verifies the cleared graph cubic and cofactor and reflection identities; the full number-field and tableau proof remains mathematical.

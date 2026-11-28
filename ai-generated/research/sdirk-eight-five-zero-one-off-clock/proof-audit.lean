@@ -1,0 +1,7 @@
+import RKCert.Research.SDIRKEightFiveZeroOneOffClock
+open RKResearch.Certified.SDIRKEightFiveZeroOneOffClock
+#check fifth_clock_moment_elimination
+#check fifth_clock_pinned_when_nonzero
+#print axioms fifth_clock_moment_elimination
+#print axioms fifth_clock_pinned_when_nonzero
+#print axioms literal_projection_numerators

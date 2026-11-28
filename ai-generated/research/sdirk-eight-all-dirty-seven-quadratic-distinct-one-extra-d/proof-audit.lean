@@ -1,0 +1,2 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticDistinctOneExtraD
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticDistinctOneExtraD.simultaneous_affine_d_fibre

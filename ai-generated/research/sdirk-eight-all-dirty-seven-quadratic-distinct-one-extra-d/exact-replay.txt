@@ -1,0 +1,34 @@
+match even A2 A2 literal guard
+match even A2 A3 literal guard
+match even A2 S literal guard
+match even A3 A3 literal guard
+match even A3 S guarded factor degrees []
+match even S S literal guard
+match split A2 A2 guarded factor degrees [(58, 1)]
+exact simultaneous d fibre A2 58 det nonzero? True
+match split A2 A3 guarded factor degrees []
+match split A2 S guarded factor degrees []
+match split A3 A3 guarded factor degrees [(58, 1)]
+exact simultaneous d fibre A3 58 det nonzero? True
+match split A3 S guarded factor degrees []
+match split S S guarded factor degrees [(32, 1)]
+exact simultaneous d fibre S 32 det nonzero? True
+one-reuse even A2 A2 literal guard
+one-reuse even A2 A3 guarded factor degrees []
+one-reuse even A2 S guarded factor degrees []
+one-reuse even A3 A2 literal guard
+one-reuse even A3 A3 literal guard
+one-reuse even A3 S literal guard
+one-reuse even S A2 literal guard
+one-reuse even S A3 guarded factor degrees []
+one-reuse even S S guarded factor degrees []
+one-reuse split A2 A2 guarded factor degrees []
+one-reuse split A2 A3 guarded factor degrees []
+one-reuse split A2 S guarded factor degrees []
+one-reuse split A3 A2 literal guard
+one-reuse split A3 A3 literal guard
+one-reuse split A3 S literal guard
+one-reuse split S A2 guarded factor degrees []
+one-reuse split S A3 guarded factor degrees []
+one-reuse split S S guarded factor degrees []
+all nonmutual distinct one-extra-D cases excluded

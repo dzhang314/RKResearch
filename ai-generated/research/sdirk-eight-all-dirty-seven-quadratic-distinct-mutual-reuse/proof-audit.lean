@@ -1,0 +1,2 @@
+import RKCert.Research.SDIRKEightDirtySevenQuadraticDistinctMutualReuse
+#print axioms RKResearch.Certified.SDIRKEightDirtySevenQuadraticDistinctMutualReuse.mutual_reuse_mixed_product

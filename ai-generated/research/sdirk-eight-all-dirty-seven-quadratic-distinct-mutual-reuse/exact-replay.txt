@@ -1,0 +1,25 @@
+symbolic even trace factors [(13, 1)]
+degree 13 geometric fiber degree 1
+even A A 13 trace fails? False
+actual fourth D/S gcd degrees 0 0
+even A A trace fibres checked by fourth read 1
+degree 5 geometric fiber degree 1
+even A S 5 trace fails? True
+even A S trace fibres checked by fourth read 0
+symbolic even trace factors [(7, 1)]
+degree 7 geometric fiber degree 1
+even S S 7 trace fails? False
+actual fourth D/S gcd degrees 0 0
+even S S trace fibres checked by fourth read 1
+degree 10 geometric fiber degree 2
+split A A 10 trace fails? True
+split A A 10 trace fails? True
+split A A trace fibres checked by fourth read 0
+degree 18 geometric fiber degree 1
+split A S 18 trace fails? True
+split A S trace fibres checked by fourth read 0
+degree 4 geometric fiber degree 2
+split S S 4 trace fails? True
+split S S 4 trace fails? True
+split S S trace fibres checked by fourth read 0
+all distinct mutual-reuse cases excluded

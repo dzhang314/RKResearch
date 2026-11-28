@@ -1,0 +1,4 @@
+actual precursor anchor factorization and blind primitive identity: exact
+three exact primitive/moment forms yield the stated cubic by 3×3 minors
+projective modulo-eight root counts: [0, 0, 16, 0, 0, 0, 0, 0]
+constant and leading parameter coefficients projectively rootless modulo 2 and 17

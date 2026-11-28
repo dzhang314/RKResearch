@@ -1,0 +1,6 @@
+Alias o row divisors (1, 0) (0, 1) slope divisors (1, 0) (0, 0)
+right raw slopes: F4=66a^4-120a^3+72a^2-16a+1 irreducible; exact common d-gcd degree 4; remove only d-1
+right fallback: (p,a)=(23,15), all d roots in cubic d^3+2d^2+17d+5; live actual R9/L7 fits; first-pool mark 2d^2+15d+1 nonzero
+left raw slopes: projections 51,75 and joint 27; a^3, F4^3, degree12.
+left degree12: exact common d-gcd linear, z_D=z_N=S=U=0.
+both initial-slope masks excluded; remaining fixed-moment and affine masks separate

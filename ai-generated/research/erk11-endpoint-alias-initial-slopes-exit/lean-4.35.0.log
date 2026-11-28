@@ -1,0 +1,2 @@
+'RKResearch.ERK11EndpointInitialSlopesGate.secondSlopeZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11EndpointInitialSlopesGate.cubicPlaceBezout' depends on axioms: [propext, Classical.choice, Quot.sound]

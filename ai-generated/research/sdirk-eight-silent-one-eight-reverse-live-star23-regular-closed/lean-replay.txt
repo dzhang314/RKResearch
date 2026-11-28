@@ -1,0 +1,8 @@
+'RKCert.ReviewedNative.SDIRK8EightActiveLateralStarReads.lateralSwap_involutive' depends on axioms: [propext]
+'RKCert.ReviewedNative.SDIRK8EightActiveLateralStarReads.lateralSwapAboveZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveLateralStarReads.conjugateNorm' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8EightActiveLateralStarReads.boundedCongruent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

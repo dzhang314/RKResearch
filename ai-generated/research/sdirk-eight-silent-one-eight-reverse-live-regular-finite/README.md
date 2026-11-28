@@ -49,3 +49,5 @@ Install sympy==1.14.0 and python-flint==0.9.0 and run **python3 check_eight_reve
 The separate [identically-zero centered star branch](../sdirk-eight-silent-one-eight-reverse-live-star4-zero-tail/README.md) is now excluded on the regular silent-fourth star front/rear chart.
 
 The complementary [nonzero-ratio exclusion](../sdirk-eight-silent-one-eight-reverse-live-star4-regular-closed/README.md) now covers all twelve exact diagonal factors, so the specified regular star-front/star-rear chart with silent physical row 4 is closed.
+
+The [silent-second and silent-third closure](../sdirk-eight-silent-one-eight-reverse-live-star23-regular-closed/README.md) excludes both remaining literal silent placements for the regular star–star constant-numerator chart. Nonliteral silent placements and other front or rear phases are separate.

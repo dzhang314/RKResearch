@@ -1,0 +1,33 @@
+old monic quotient built
+F7 degree after clean-contact cancellation 3
+ghost quadratic determinant degree 8
+cleared guard factors (s - 1)**2*(63*s**4 - 252*s**3 + 357*s**2 - 210*s + 43)**2/3969 (s - 1)**10*(63*s**4 - 252*s**3 + 357*s**2 - 210*s + 43)**10/984930291881790849
+Exact clock guards and leader norm passed
+Thirteen exact polynomial leader divisions passed
+Exact regular factors: degrees 6,30,42; the old-clock collision norm is the degree-30 factor.
+Exact sum-one cubic passed
+exact p pivot of degree 6
+exact pair J5-J4 zero flags [True, True]
+Degree six: lambda=-1 forces forbidden interior clock 1
+degree 30 : p and rho leading pivots are units
+degree 42 : p and rho leading pivots are units
+Residual zero flags, alpha1 then alpha2 [[False, False], [False, False]]
+alpha 1 excluded by unit
+alpha 2 excluded by unit
+s=1 unit
+guard den remove only dead H pair factors [1]
+valid H pairs pair degree 3
+rho cubic degree observed 3
+First ghost exclusion for all gap shapes: valid H pairs
+guard orig remove only dead H pair factors [1]
+valid H pairs pair degree 3
+rho cubic degree observed 3
+First ghost exclusion for all gap shapes: valid H pairs
+guard lead remove only dead H pair factors []
+leading drop pair degree 1
+rho cubic degree observed 2
+First ghost exclusion for all gap shapes: leading drop
+regular lead pair degree 3
+rho cubic degree observed 3
+First ghost exclusion for all gap shapes: regular lead
+All linear-profile branches excluded (exact project + characteristic-zero clock-algebra unit lifts).

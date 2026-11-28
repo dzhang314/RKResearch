@@ -1,0 +1,4 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveArithmeticMiddle.monicSignedSixPegCuts' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineSharedQuinticHoleFiveArithmeticMiddle.quadraticPairProjection' depends on axioms: [propext,
+ Quot.sound]

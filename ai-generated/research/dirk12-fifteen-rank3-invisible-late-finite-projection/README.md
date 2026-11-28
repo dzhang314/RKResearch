@@ -167,3 +167,5 @@ Run the local exact symbolic checks and the independent existing specialization 
 The first uses exact SymPy polynomials and rational functions. The second uses the Python standard library and exhaustively verifies the eleven residue fields of total degree 25. No floating-point data, positivity of signed individual weights, reduced unknown tableau, or unpaid moment assertion enters the result. The stage-space and finite-free-algebra argument is mathematical; no full native Lean proof is claimed here.
 
 The [actual fourth-diagonal split](../dirk12-fifteen-rank3-invisible-late-fourth-diagonal/README.md) further gives a fixed fourth ratio on the nonzero-diagonal branch and low-degree root equations on the zero-diagonal branch.
+
+The [early-zero late-fourth extension](../dirk12-fifteen-rank3-invisible-late-early-zero/README.md) proves the same scalar geometry and finiteness when the third early ghost has numerical clock zero. Thus all late-fourth placements in the two specified high-site charts satisfy this live-clock projection.

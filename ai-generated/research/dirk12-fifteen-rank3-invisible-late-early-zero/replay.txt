@@ -1,0 +1,3 @@
+bare cubic primitive, exact late amplitude and residue without early-zero input
+identical geometry-free moments, degree-six cancellation and physical B(x) scale
+both genuine late grade-five physical-row residuals are already paid identities

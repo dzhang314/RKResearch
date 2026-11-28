@@ -64,3 +64,8 @@ enumeration.
 
 To run the [Core receipt](../../lean/RKCert/ReviewedNative/ERKOriginDegreeNineMod.lean), use the corresponding standalone Lean compiler.
 The quadrature-to-parity reduction itself is argued above.
+
+The [ramification refinement](RAMIFICATION.md) shows that a six-site
+origin-anchored rule forces index divisible by four at any discrete
+place above 2. Its separate exact arithmetic replay is
+**python3 -B check_ramification.py**.

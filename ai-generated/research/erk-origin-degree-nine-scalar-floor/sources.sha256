@@ -1,5 +1,8 @@
 1ad0b5de553d39bbc5257e9de11f050e51a9e729189650f029c983ef32306553  ai-generated/lean/RKCert/ReviewedNative/ERKOriginDegreeNineMod.lean
-37b58a9e55b3735025dab6cb5e18ce5f4418a695c35b18b1c34ee5b3b8d0b441  ai-generated/research/erk-origin-degree-nine-scalar-floor/README.md
+33f13ef1bf798fccb9bede4d50e263f1603879201851e447f15188f373145144  ai-generated/research/erk-origin-degree-nine-scalar-floor/README.md
+e2e0e3c71757deae7364171563353d651dcc34964536a5a2f91dce7b15251f21  ai-generated/research/erk-origin-degree-nine-scalar-floor/RAMIFICATION.md
+d5ae0d5c7bf4f83bd3bdd82e7c2483669d3caf9c74489fc0b025973b2ae432a6  ai-generated/research/erk-origin-degree-nine-scalar-floor/check_ramification.py
+4c72723412bf77190402a10da9555e25dd665f328403f99237dad39370d28279  ai-generated/research/erk-origin-degree-nine-scalar-floor/ramification-exact.txt
 1301ea7073231ddc078b3cfc0f73c89ad9546645bdfd01e2b46964ba40019414  ai-generated/research/erk-origin-degree-nine-scalar-floor/audit.py
 b79632256fb73d2e3cc79e907a3d4aaf5251908927dfa12c53477f449d41e9b4  ai-generated/research/erk-origin-degree-nine-scalar-floor/exact-audit.txt
 faecc02d3b627442eeb66c77ea9aac8cc7fc41c77a8b02e0a0257b5131eb1104  ai-generated/research/erk-origin-degree-nine-scalar-floor/lean-4.34.1-audit.txt

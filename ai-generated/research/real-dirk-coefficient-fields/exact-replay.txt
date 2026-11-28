@@ -1,0 +1,6 @@
+exact real place: gb in (0.160057,0.160058), quadratic signs opposite
+DIRK10: front residues mod 13 [1, 4, 11, 5, 8, 3, 12, 5, 4, 5, 4, 10, 6]
+DIRK10: irreducible suffix mod 23; nonsquare discriminant 2 mod 11
+DIRK10: literal row sums recover the front generator and all suffix roots
+DIRK11: independent grid square classes; last discriminant 42 nonsquare mod 43
+DIRK11: literal row sums and the weighted transpose recover all four generators

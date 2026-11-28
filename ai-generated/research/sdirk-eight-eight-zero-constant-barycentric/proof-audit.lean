@@ -1,0 +1,6 @@
+import RKCert.Research.SDIRKEightEightZeroConstantBarycentric
+
+open RKResearch.Certified.SDIRKEightEightZeroConstantBarycentric
+
+#print axioms cleared_legendre_third
+#print axioms shape_rank_factor

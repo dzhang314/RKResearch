@@ -193,3 +193,5 @@ mathematical. The exact replay checks every scalar change of
 basis and the final two polynomial cancellations. Portable
 Lean scalar evidence is tracked separately from the full
 tableau implication.
+
+The [portable scalar checks](LEAN.md) passed on all four target Lean releases. The cyclic-span and full tableau reductions remain mathematical.

@@ -1,0 +1,7 @@
+'RKResearch.Certified.ERK10FourfoldInteriorScalars.feedback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10FourfoldInteriorScalars.singletonSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10FourfoldInteriorScalars.singletonExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

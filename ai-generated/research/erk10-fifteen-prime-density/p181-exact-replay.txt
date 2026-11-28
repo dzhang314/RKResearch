@@ -1,0 +1,4 @@
+Signed-pair nonic gcd degrees [0, 0, 3]
+Stepanov: 3 square, 7 and norm of the coupled radicand nonsquare; minimum degree 4
+Strict 15-stage literal: 1205 rooted conditions; eleventh-bush defect (101, 136, 106)
+Matched actual reflected generators and two simple-root Hensel derivatives

@@ -13,6 +13,8 @@ to exact order ten, with finitely many bad primes omitted.
 | 3 | 913/82944 | 1.100742670% |
 | 4 | 175979/2903040 | 6.061886850% |
 
+The [literal at 181](P181.md) realizes the degree-three class with an exact rooted order replay.
+
 The density of primes covered over the **specified quadratic field**
 \(\mathbb F_{p^2}\) is **1347553/1451520 (92.837370481%)**. The
 corresponding density over \(\mathbb F_{p^3}\) is

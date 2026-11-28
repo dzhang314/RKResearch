@@ -1,0 +1,29 @@
+shared silent8 front residual degrees True 0 (0, 27, 162, 1)
+shared silent8 pseudo degrees True 0 [863, 863, 863]
+shared silent8 deflated projection degree True 0 1245
+shared literal silent8 exact gap projection True 0 757
+shared silent8 H4 intersection True 0 36 649
+exact shared silent8 fourth splits True 0 757 36 649 [(36, 2, 3), (311, 3, 3), (26, 2, 2)]
+verified full shared silent eight: True 0 1103 24
+shared silent8 front residual degrees True 1 (0, 27, 162, 1)
+shared silent8 pseudo degrees True 1 [863, 863, 863]
+shared silent8 deflated projection degree True 1 1245
+shared literal silent8 exact gap projection True 1 757
+shared silent8 H4 intersection True 1 36 649
+exact shared silent8 fourth splits True 1 757 36 649 [(36, 2, 3), (311, 3, 3), (26, 2, 2)]
+verified full shared silent eight: True 1 1103 26
+shared silent8 front residual degrees False 0 (0, 27, 162, 1)
+shared silent8 pseudo degrees False 0 [863, 863, 863]
+shared silent8 deflated projection degree False 0 1245
+shared literal silent8 exact gap projection False 0 757
+shared silent8 H4 intersection False 0 36 649
+exact shared silent8 fourth splits False 0 757 36 649 [(36, 2, 3), (311, 3, 3), (26, 2, 2)]
+verified full shared silent eight: False 0 1103 19
+shared silent8 front residual degrees False 1 (0, 27, 162, 1)
+shared silent8 pseudo degrees False 1 [863, 863, 863]
+shared silent8 deflated projection degree False 1 1245
+shared literal silent8 exact gap projection False 1 757
+shared silent8 H4 intersection False 1 36 649
+exact shared silent8 fourth splits False 1 757 36 649 [(36, 2, 3), (311, 3, 3), (26, 2, 2)]
+verified full shared silent eight: False 1 1103 18
+coprime shared literal silent-eighth checks: 4

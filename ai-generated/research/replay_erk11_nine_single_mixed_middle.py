@@ -21,22 +21,22 @@ def data(p):
     K=flint.fq_default_ctx(modulus=factors[0][0],fq_type='FQ_NMOD')
     F=flint.fq_default_poly_ctx(K);X=F.gen();Z=X
     a=K.gen();d=2*a-1;b=1-d;h=a/2
-    assert a and b and a!=d
+    assert a!=0 and b!=0 and a!=d
     R4=F([1,-14,56,-84,42])
     R5=F([-1,20,-120,300,-330,132])
-    assert R4(a) and R5(a)
+    assert R4(a)!=0 and R5(a)!=0
     R=R5(a)*R4-R4(a)*R5
     assert R.degree()==5
     dd=(X-a)*(X-d)
     assert not R%dd and R.gcd(R.derivative()).degree()==0
     Q0=R//dd
-    assert Q0.degree()==3 and Q0(h)
+    assert Q0.degree()==3 and Q0(h)!=0
     Q=a*a/(8*Q0(h))*Q0
     L=X*X*(a-X)/a
     Cleft=(Q-L)//(X-h)
     assert not (Q-L)%(X-h) and Cleft.degree()==2
     Cleft=Cleft/Cleft[2]
-    assert Cleft[0] and Cleft(a)
+    assert Cleft[0]!=0 and Cleft(a)!=0
     l0=Cleft(a);l1=-Cleft[0]
     t0=F(T0)
     u0=F([F(row)(b) for row in U0])(a)

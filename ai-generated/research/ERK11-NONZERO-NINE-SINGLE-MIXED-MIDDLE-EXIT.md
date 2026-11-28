@@ -212,3 +212,8 @@ are the mathematical proof.
 The [kernel logs and exact replay](erk11-nine-single-mixed-middle-audit/)
 document the scalar checks. The [portable norm identities](../lean/RKCert/ReviewedNative/ERK11CubicRemainderNormGate.lean)
 pass on all four requested core Lean versions; the physical chart proof is mathematical.
+
+**Replay correction.** Finite-field scalar guards now compare explicitly to
+zero, rather than relying on truthiness of a python-flint field element.
+All four explicit checks, the remaining residue tests, and the recorded
+output pass unchanged; no mathematical premise or conclusion changes.

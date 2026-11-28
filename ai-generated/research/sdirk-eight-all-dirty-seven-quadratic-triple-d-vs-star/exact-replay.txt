@@ -1,0 +1,2 @@
+distinct midpoint guarded rank gcd 0 1
+shared clock guarded rank gcd 0 1

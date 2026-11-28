@@ -1,0 +1,10 @@
+Alias d row divisors (1, 0) (0, 1) slope divisors (0, 0) (0, 1)
+ lside True E scale (1, 0) DT (8, 7) raw g [(26, 23), (29, 27)] g gcd (15, 12) red g [(11, 11), (14, 15)] raw P (33, 33) (33, 33) P gcd (8, 7) red P [(25, 26), (25, 26)]
+ lside False E scale (0, 5) DT (6, 10) raw g [(15, 22), (18, 27)] g gcd (5, 9) red g [(10, 13), (13, 18)] raw P (29, 41) (29, 41) P gcd (6, 11) red P [(23, 30), (23, 30)]
+Independent first line mark raw (48, 56) factor types [((48, 56), 1)]
+degree-1 factor fixes a=0, forbidden.
+width factor 3 multiplicity 3 : exactly masked d root width d=1 ; remaining quotient gcd 1 at 17 component degree 3
+width factor 8 multiplicity 8 : exactly masked d root left affine pivot ; remaining quotient gcd 1 at 17 component degree 7
+width factor 12 multiplicity 6 : exactly masked d root left initial slope ; remaining quotient gcd 1 at 17 component degree 4
+width factor 12 multiplicity 7 : exactly masked d root right initial slope ; remaining quotient gcd 1 at 17 component degree 2
+All smaller regular width factors are forbidden or accounted for by a named exceptional mask.

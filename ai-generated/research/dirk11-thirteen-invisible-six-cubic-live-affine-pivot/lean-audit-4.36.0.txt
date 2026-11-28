@@ -1,0 +1,17 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveAffinePivot.unit_cofactor_unique.{u_1} {K : Type u_1}
+  [Field K] (a b x y : K) (ha : a ≠ 0) (hx : a * x + b = 0) (hy : a * y + b = 0) : x = y
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveAffinePivot.quadratic_other_root.{u_1} {K : Type u_1}
+  [Field K] (a b c x y : K) (hxy : x ≠ y) (hx : a * x ^ 2 + b * x + c = 0) (hy : a * y ^ 2 + b * y + c = 0) :
+  a * (x + y) + b = 0
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveAffinePivot.two_roots_exhaust.{u_1} {K : Type u_1} [Field K]
+  (a b c x y z : K) (ha : a ≠ 0) (hxy : x ≠ y) (hx : a * x ^ 2 + b * x + c = 0) (hy : a * y ^ 2 + b * y + c = 0)
+  (hz : a * z ^ 2 + b * z + c = 0) : z = x ∨ z = y
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveAffinePivot.unit_cofactor_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveAffinePivot.quadratic_other_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveAffinePivot.two_roots_exhaust' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,5 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticShared.actualOrdinaryHole' does not depend on any axioms
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticShared.deflatedConstantRead' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticShared.starCubicTail' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticShared.oneMissingMask' depends on axioms: [propext]

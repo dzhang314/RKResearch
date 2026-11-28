@@ -1,0 +1,29 @@
+hole with both fronts exact diagonal factors True [12]
+shared live actual fourth exact quotient degree True 12 1
+shared live early/early-hole/rear pilots True 12 True True True 0 False
+checked exact field units: physical 4/5/8 hole and ordinary star rear True 12
+shared live actual nonhole fifth exact quotient degree True 12 1
+shared live forced fifth guards True False actual ordinary pegs may be used only if fifth weighted
+shared live exact necessary gap True 2 0
+shared live exact necessary gap True 3 0
+shared live exact necessary gap True 4 0
+shared live exact necessary gap True 5 0
+shared live exact necessary gap True 6 3
+deflated full cubic gap units True 6 1103 161 4
+shared live exact necessary gap True 8 3
+deflated full cubic gap units True 8 1103 161 4
+hole with both fronts exact diagonal factors False [12]
+shared live actual fourth exact quotient degree False 12 1
+shared live early/early-hole/rear pilots False 12 True True True 0 False
+checked exact field units: physical 4/5/8 hole and ordinary star rear False 12
+shared live actual nonhole fifth exact quotient degree False 12 1
+shared live forced fifth guards False False actual ordinary pegs may be used only if fifth weighted
+shared live exact necessary gap False 2 0
+shared live exact necessary gap False 3 0
+shared live exact necessary gap False 4 0
+shared live exact necessary gap False 5 0
+shared live exact necessary gap False 6 3
+deflated full cubic gap units False 6 1103 161 2
+shared live exact necessary gap False 8 3
+deflated full cubic gap units False 8 1103 161 2
+all actual reverse-live affine quartic shared-root strata excluded

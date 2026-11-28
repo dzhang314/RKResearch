@@ -1,0 +1,8 @@
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+'RKResearch.Certified.ERK10CenterCore.read1_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10CenterCore.read2_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10CenterCore.read3_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10CenterCore.readU_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10CenterCore.readYU_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10CenterCore.vary2_exact' depends on axioms: [propext]
+'RKResearch.Certified.ERK10CenterCore.vary3_exact' depends on axioms: [propext]

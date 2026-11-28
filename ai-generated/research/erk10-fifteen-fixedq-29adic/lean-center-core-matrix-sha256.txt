@@ -1,0 +1,8 @@
+61f6b83e1226cc46094c732a17969e9606dd1dbc7402e467a7f6cdfa6ed5b49b  ai-generated/lean/RKCert/ReviewedNative/ERK10FixedQ29AdicCenterCore.lean
+a75f7ff8c8a9568fa1d462aa3cfcf806df6bc081ae18ab4a853882d1e078a068  ai-generated/research/erk10-fifteen-fixedq-29adic/generate-center-scalar.py
+a2e26d9d8cce7220d599062fbc05a1ccc7afa2805e8697adafc52f152a190c3e  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-CENTER-CORE.md
+1d17656ee14bb64c9a23d7a6d253c0d6d884ffd649b607d1eaf59b873f75c56b  ai-generated/research/erk10-fifteen-fixedq-29adic/LEAN-CENTER-CORE-MATRIX.md
+e90d84166aaa041e5b1a2cf1098efc052d9b006d729fb5ea3425e3af80007f56  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-center-core-kernel-4.34.1.log
+bfe1159a5f7ef0a064f143c2b7b655843c11f9211b410cce719bd5ba3caf636b  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-center-core-kernel-4.35.0.log
+1d1fa9e4ab4a8b5620e99bfe43c2e9bc875990697b6123f7730f063a096f498e  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-center-core-kernel-4.36.log
+75ceab2dbab58feea1fc6f18f5529ce6175139dc87ac2ef3992b7ddce87b23bf  ai-generated/research/erk10-fifteen-fixedq-29adic/lean-center-core-kernel-4.37.0-rc1.log

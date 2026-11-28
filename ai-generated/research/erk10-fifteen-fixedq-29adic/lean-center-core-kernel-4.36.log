@@ -1,0 +1,8 @@
+Lean 4.36.0
+'RKResearch.Certified.ERK10CenterCore.read1_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterCore.read2_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterCore.read3_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterCore.readU_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterCore.readYU_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterCore.vary2_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.ERK10CenterCore.vary3_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

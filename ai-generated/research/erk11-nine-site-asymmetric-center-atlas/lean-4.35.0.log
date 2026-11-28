@@ -1,0 +1,4 @@
+'RKResearch.ERK11AsymmetricKernelWidthGate.kernelCompatibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11AsymmetricKernelWidthGate.affineConsistency' depends on axioms: [propext, Classical.choice, Quot.sound]

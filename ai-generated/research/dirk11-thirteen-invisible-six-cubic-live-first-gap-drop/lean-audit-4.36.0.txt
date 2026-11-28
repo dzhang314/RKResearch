@@ -1,0 +1,17 @@
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFirstGapDrop.shared_primitive_projection.{u_1}
+  {K : Type u_1} [Field K] (d₁ d₂ δ η r s c₀ c₁ c₂ : K) (hδ : δ ≠ 0) (h2 : 2 ≠ 0) (hr : 12 * δ * d₁ = r)
+  (hs : 4 * δ * d₂ = s) (h₁ : 60 * η * d₁ = 8 * c₁ - 3 * r * c₂) (h₂ : 20 * η * d₂ = 6 * c₀ - s * c₂) :
+  4 * c₁ * s = r * (3 * c₀ + c₂ * s)
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFirstGapDrop.fourth_phi_relation.{u_1} {K : Type u_1}
+  [CommRing K] (δ r t V : K) (hr : r = 12 * δ * (t - r)) (hv : (1 - 4 * δ) * V = 2 * δ * t) :
+  r * (t + 8 * V) = 6 * V * t
+RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFirstGapDrop.phi_live.{u_1} {K : Type u_1} [Field K]
+  [CharZero K] (r t V : K) (hv : V ≠ 0) (h : r * (t + 8 * V) = 6 * V * t) : t + 8 * V ≠ 0
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFirstGapDrop.shared_primitive_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFirstGapDrop.fourth_phi_relation' depends on axioms: [propext,
+ Quot.sound]
+'RKResearch.Certified.Graded.OrderElevenInvisibleSixCubicLiveFirstGapDrop.phi_live' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

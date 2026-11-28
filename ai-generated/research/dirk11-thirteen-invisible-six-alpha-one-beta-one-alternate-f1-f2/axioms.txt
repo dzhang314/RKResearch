@@ -1,0 +1,4 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaOneAlternatePins.synthetic_divided_second_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaOneAlternatePins.marked_quadratic_pin' depends on axioms: [propext]

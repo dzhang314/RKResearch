@@ -1,0 +1,6 @@
+   16.45 exact physical V/B transposition on the same degree-48 field
+   16.45 exact ordinary V degree 48 constant -14638292540815408663567 exact B gcd linear and pivot unit
+   19.16 exact a gcd and every pivot [(4, 3), (3, 2)] monic linear, a live
+   19.21 literal cubic beta1 x + 25 dimensions 1 ranks 8 10 of 10 intrinsic degrees [2, 2, 7]
+    0.29 exact F2a clock degree 24, constant 3176523, both cubic leaders and linear s pivot live
+    0.36 literal cubic beta1 x + 21 dimensions 2 ranks 16 20 of 20 intrinsic degrees [2, 2, 7]

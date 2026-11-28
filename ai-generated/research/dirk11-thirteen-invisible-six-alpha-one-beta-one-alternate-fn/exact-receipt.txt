@@ -1,0 +1,8 @@
+    0.89 exact physical V/B transposition on the same ordinary field
+    0.89 exact ordinary V degree 36 constant -7295157 exact B gcd linear and pivot unit
+    0.98 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+    1.06 literal cubic beta1 x^4 + 16*x^3 + 54*x^2 + 101*x + 100 dimensions 2 ranks 16 20 of 20 intrinsic degrees [2, 2, 7]
+   32.66 exact physical V/B transposition on the same ordinary field
+   32.66 exact ordinary V degree 60 constant -10289767396352176431 exact B gcd linear and pivot unit
+   37.14 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+   37.23 literal cubic beta1 x^4 + 64*x^3 + 102*x^2 + 54*x + 44 dimensions 2 ranks 16 20 of 20 intrinsic degrees [2, 2, 7]

@@ -1,0 +1,31 @@
+First primitive pin only: finite m1
+    0.55 exact ordinary V degree 12 constant 54123 exact B gcd linear and pivot unit
+    0.55 residue x^4 + 40*x^3 + 73*x^2 + 90*x + 50 ranks 1 1 dimension 1 J1 rank 1 adjugate rank 1 q rank 1
+First primitive pin only: finite mY2
+    0.04 exact ordinary V degree 12 constant 16227 exact B gcd linear and pivot unit
+    0.04 residue x^12 + 14*x^11 + 71*x^10 + 95*x^9 + 80*x^8 + 44*x^7 + 101*x^6 + 29*x^5 + 98*x^4 + 14*x^3 + 67*x^2 + 64*x + 91 ranks 1 1 dimension 1 J1 rank 1 adjugate rank 1 q rank 1
+First primitive pin only: finite contact
+    3.30 exact ordinary V degree 48 constant 41521530286435 exact B gcd linear and pivot unit
+    3.31 residue x^2 + 44*x + 48 ranks 1 1 dimension 1 J1 rank 1 adjugate rank 1 q rank 1
+First primitive pin only: finite Fn-loss
+    0.03 exact ordinary V degree 12 constant 54123 exact B gcd linear and pivot unit
+    0.04 residue x^4 + 40*x^3 + 73*x^2 + 90*x + 50 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2
+First primitive pin only: F1
+   14.90 exact physical V/B transposition on the same degree-48 field
+   14.90 exact ordinary V degree 48 constant -14638292540815408663567 exact B gcd linear and pivot unit
+   17.36 exact a gcd and every pivot [(4, 3), (3, 2)] monic linear, a live
+   17.38 residue x + 25 ranks 1 1 dimension 1 J1 rank 1 adjugate rank 1 q rank 1
+First primitive pin only: F2
+    0.21 exact F2a clock degree 24, constant 3176523, both cubic leaders and linear s pivot live
+    0.22 residue x + 21 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2
+First primitive pin only: Fn H3
+    0.72 exact physical V/B transposition on the same ordinary field
+    0.72 exact ordinary V degree 36 constant -7295157 exact B gcd linear and pivot unit
+    0.81 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+    0.83 residue x^4 + 16*x^3 + 54*x^2 + 101*x + 100 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2
+First primitive pin only: Fn H5
+   36.13 exact physical V/B transposition on the same ordinary field
+   36.13 exact ordinary V degree 60 constant -10289767396352176431 exact B gcd linear and pivot unit
+   41.07 exact repeated s gcd and every pivot [(4, 3), (3, 2)] monic linear, no triple root
+   41.10 residue x^4 + 64*x^3 + 102*x^2 + 54*x + 44 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2
+All selected first-pin ranks independently checked.

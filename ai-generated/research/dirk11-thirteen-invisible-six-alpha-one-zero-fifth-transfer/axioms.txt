@@ -1,0 +1,8 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroFifthTransfer.prefix_row_only_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroFifthTransfer.opposite_literal_ingress' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroFifthTransfer.homogeneous_first_pin' depends on axioms: [propext,
+ Quot.sound]

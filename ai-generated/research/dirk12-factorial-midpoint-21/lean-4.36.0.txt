@@ -1,0 +1,22 @@
+Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+Mathlib commit: fc4f59e577feb1a4956671bc04ac18aaaf8cd842
+'RKResearch.Certified.DIRK12Midpoint21.normal_read' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Midpoint21.monomial_silent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Midpoint21.integer_tall_defect' depends on axioms: [propext]
+'RKResearch.Certified.DIRK12Midpoint21.gen_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Midpoint21.rational_order_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+/tmp/dirk12_rational_midpoint21/publish/ai-generated/lean/RKCert/ReviewedNative/DIRK12Midpoint21Rings.lean:23:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/tmp/dirk12_rational_midpoint21/publish/ai-generated/lean/RKCert/ReviewedNative/DIRK12Midpoint21Rings.lean:27:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+'RKResearch.Certified.DIRK12Midpoint21.unit_next_tall_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.Certified.DIRK12Midpoint21.exists_exact_factorial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.DIRK12Midpoint21.exists_exact_iff_factorial_unit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

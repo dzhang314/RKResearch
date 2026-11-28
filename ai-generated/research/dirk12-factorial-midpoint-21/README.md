@@ -1,6 +1,6 @@
 # Exact order-twelve ordinary DIRK in 21 factorial-paid stages
 
-A [separate 20-stage tableau](../dirk12-twenty-factorial-two-ports/README.md) improves the general factorial-unit upper. The midpoint-specific result here is unchanged.
+A [separate 20-stage tableau](../dirk12-twenty-factorial-two-ports/README.md) improves the general factorial-unit upper. The midpoint-specific result here is unchanged and now has an [end-to-end Lean/Mathlib 4.36.0 certificate](NATIVE.md).
 
 This is the order-twelve specialization of the archived implicit-midpoint
 extrapolation family. Use six independent midpoint branches with one through

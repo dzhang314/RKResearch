@@ -1,0 +1,38 @@
+generic plus exceptional constant nine-site front True s/g (3, 8, 1) (3, 11, 1) projected (0, 57, 0) (0, 21, 0) only exact gamma/EarlyGauss factors [12, 3, 3]
+regular star exact True 4 (0, 10, 61, 0) (0, 24, 160, 0) stripped (0, 10, 29, 0) (0, 24, 79, 0) guard powers [8, 3, 3, 0, 0, 0, 0, 0, 0, 0] [17, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+exact degree-1198 diagonal factorization [(28, 1), (131, 1), (35, 2), (9, 2), (27, 6), (1, 7), (2, 7), (4, 9), (21, 24), (1, 24), (4, 27), (3, 32)]
+exact common gauge removed before independent cofactors [1, 1, 1] [1, 1, 1]
+exact true fourth guard 28 1 regular_scale 1 9
+independent fifth exact factor replay 28 1129 203 covered factors 2 nonfinal []
+complete exact gamma factor excluded 28 1
+independent fifth exact factor replay 131 1129 203 covered factors 4 nonfinal []
+complete exact gamma factor excluded 131 1
+exact true fourth guard 35 2 regular_scale 1 9
+independent fifth exact factor replay 35 1129 203 covered factors 4 nonfinal []
+complete exact gamma factor excluded 35 2
+exact true fourth guard 9 2 x_equals_q 1 9
+independent fifth exact factor replay 9 1129 203 covered factors 4 nonfinal []
+complete exact gamma factor excluded 9 2
+exact true fourth guard 27 6 terminal_defect 3 7
+independent fifth exact factor replay 27 1129 203 covered factors 4 nonfinal []
+complete exact gamma factor excluded 27 6
+exact true fourth guard 1 7 gap_w2 3 7
+independent fifth exact factor replay 1 1129 203 covered factors 1 nonfinal []
+complete exact gamma factor excluded 1 7
+exact true fourth guard 2 7 gap_w2 3 7
+independent fifth exact factor replay 2 1129 203 covered factors 2 nonfinal []
+complete exact gamma factor excluded 2 7
+exact true fourth guard 4 9 gap_w2 3 7
+independent fifth exact factor replay 4 1129 203 covered factors 2 nonfinal []
+complete exact gamma factor excluded 4 9
+exact true fourth guard 21 24 rear_equals_literal 3 7
+independent fifth exact factor replay 21 1129 203 covered factors 2 nonfinal []
+complete exact gamma factor excluded 21 24
+exact true fourth guard 1 24 rear_equals_literal 6 4
+independent fifth exact factor replay 1 1129 203 covered factors 1 nonfinal []
+complete exact gamma factor excluded 1 24
+exact gamma factor forces actual forbidden k=0 4 27
+complete exact gamma factor excluded 4 27
+exact common fourth leading cubic has all common support in the nonzero quintic guard 3 32
+complete exact gamma factor excluded 3 32
+all twelve regular star-star literal silent-fourth factors excluded

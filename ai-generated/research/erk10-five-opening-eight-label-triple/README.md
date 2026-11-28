@@ -434,3 +434,5 @@ two-read factors, the unweighted tap exception and the algebra
 transfers. Reuse the separately archived nonic replay for the
 rational arithmetic. The physical rank, chronology and repeated
 tap reduction are mathematical, not a full native tableau theorem.
+
+The [portable scalar receipts](LEAN.md) pass on all four target Lean releases; the word-rank and physical tableau transfer remain mathematical.

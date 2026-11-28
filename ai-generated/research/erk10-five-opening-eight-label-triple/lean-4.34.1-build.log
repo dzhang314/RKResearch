@@ -1,0 +1,9 @@
+'RKResearch.Certified.ERK10EightLabelTripleScalars.delayedSecondCopyDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10EightLabelTripleScalars.thirdCopyScalarDeterminant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.Certified.ERK10EightLabelTripleScalars.halfTapExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,3 @@
+exact moment/bilinear replay: determinant degree 34 squarefree 32
+Sturm variations [19, 13] and discriminant sign-query variations [13, 19]
+Every possible real determinant root has a strictly negative discriminant.

@@ -1,0 +1,18 @@
+raw and cleaned degs (5, 5) (15, 10) (10, 15) (4, 4) (12, 8) (8, 12)
+a resultants 80 80 common 60 [(60, 1)]
+exact PRS degrees [(8, 12), (4, 4), (3, 32), (2, 48), (1, 64), (0, 80)]
+b polynomial degree 59 denom bits 2391
+exact simple b reconstruction from subresultant b=−M/L; selected (31,7,19)
+simple exact width place (31,7,19), full b-degree4 and whole joint gcd b-19
+raw temporal degs True (77, 73)
+actual first-three temporal determinant exactly zero True (32, 29) 244
+raw temporal degs False (74, 80)
+actual first-three temporal determinant exactly zero False (44, 39) 332
+flank restored / endpoint separate 19 [0, 18, 13] 1
+flank restored / endpoint separate 3 [0, 5, 6] 25
+all four endpoint masks excluded: Q ranks 2/3/3; both-live P determinant 4
+full corrected moment rank loss excluded; individual fixed/affine losses not excluded
+
+real	0m3.806s
+user	0m3.689s
+sys	0m0.088s

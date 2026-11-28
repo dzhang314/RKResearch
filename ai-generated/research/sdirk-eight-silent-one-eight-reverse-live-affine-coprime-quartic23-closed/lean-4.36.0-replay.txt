@@ -1,0 +1,9 @@
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.identifyAffineNumerator' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.noActualSitePole' does not depend on any axioms
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.ordinaryDeflation' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.literalQuarticQuotient' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.clearLiteralRear' depends on axioms: [propext, Quot.sound]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.clearThreeReadTail' depends on axioms: [propext]
+'RKCert.ReviewedNative.SDIRK8ReverseLiveAffineQuarticLiteral.clearLinearFifth' depends on axioms: [propext]

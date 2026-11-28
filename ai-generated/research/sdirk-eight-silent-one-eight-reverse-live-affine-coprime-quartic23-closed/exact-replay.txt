@@ -1,0 +1,42 @@
+tail exact shape True True 2 (2, 0, 14, 0) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 2 3 (62, 0) 3 164
+diagonal exact before guards True True 2 (0, 0, 62, 1)
+diagonal exact after guards (0, 0, 26, 1) [6, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular True True 2 1129 203 diagonal degree 26 all (diagonal degree,multiplicity,common gap degree) [(2, 2, 2), (5, 2, 2), (6, 2, 2)]
+tail exact shape True True 3 (2, 0, 14, 0) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 2 3 (62, 0) 3 164
+diagonal exact before guards True True 3 (0, 0, 62, 1)
+diagonal exact after guards (0, 0, 26, 1) [6, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular True True 3 1129 203 diagonal degree 26 all (diagonal degree,multiplicity,common gap degree) [(1, 2, 2), (5, 2, 2), (7, 2, 2)]
+tail exact shape True False 2 (5, 0, 14, 0) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 5 3 (92, 0) 5 247
+diagonal exact before guards True False 2 (0, 0, 92, 1)
+diagonal exact after guards (0, 0, 55, 1) [7, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular True False 2 1129 203 diagonal degree 55 all (diagonal degree,multiplicity,common gap degree) [(4, 1, 1), (5, 1, 1), (22, 1, 1), (24, 1, 1)]
+tail exact shape True False 3 (5, 0, 14, 0) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 5 3 (92, 0) 5 247
+diagonal exact before guards True False 3 (0, 0, 92, 1)
+diagonal exact after guards (0, 0, 55, 1) [7, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular True False 3 1129 203 diagonal degree 55 all (diagonal degree,multiplicity,common gap degree) [(1, 1, 1), (1, 1, 1), (3, 1, 1), (4, 1, 1), (6, 1, 1), (9, 1, 1), (31, 1, 1)]
+tail exact shape False True 2 (2, 0, 14, 1) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 2 3 (62, 0) 4 232
+diagonal exact before guards False True 2 (0, 0, 62, 1)
+diagonal exact after guards (0, 0, 26, 1) [6, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular False True 2 1129 203 diagonal degree 26 all (diagonal degree,multiplicity,common gap degree) [(13, 2, 2)]
+tail exact shape False True 3 (2, 0, 14, 1) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 2 3 (62, 0) 4 233
+diagonal exact before guards False True 3 (0, 0, 62, 1)
+diagonal exact after guards (0, 0, 26, 1) [6, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular False True 3 1129 203 diagonal degree 26 all (diagonal degree,multiplicity,common gap degree) [(1, 2, 2), (2, 2, 2), (3, 2, 2), (7, 2, 2)]
+tail exact shape False False 2 (5, 0, 14, 1) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 5 3 (92, 0) 6 340
+diagonal exact before guards False False 2 (0, 0, 92, 1)
+diagonal exact after guards (0, 0, 55, 1) [7, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular False False 2 1129 203 diagonal degree 55 all (diagonal degree,multiplicity,common gap degree) [(7, 1, 1), (11, 1, 1), (15, 1, 1), (22, 1, 1)]
+tail exact shape False False 3 (5, 0, 14, 1) (3, 0, 10, 1) (0, 2, 4, 1)
+small CRT exact 5 3 (92, 0) 6 343
+diagonal exact before guards False False 3 (0, 0, 92, 1)
+diagonal exact after guards (0, 0, 55, 1) [7, 0, 1, 1, 0, 0, 0, 2, 0, 0, 1]
+complete affine modular False False 3 1129 203 diagonal degree 55 all (diagonal degree,multiplicity,common gap degree) [(25, 1, 1), (30, 1, 1)]
+full affine-coprime literal 2/3 census [(3, 104), (3, 104), (4, 110), (7, 110), (1, 104), (4, 104), (4, 110), (2, 110)]
+all eight characteristic-zero affine-coprime quartic literal orientations excluded

@@ -1,0 +1,54 @@
+arithmetic nonzero resultant 22934064120100000000 prime factors {2: 8, 5: 8, 7: 5, 17: 1, 103: 1, 7793: 1}
+star nonzero resultant 2920662406109593600000000 prime factors {2: 30, 5: 8, 7: 4, 13: 2, 131: 2}
+star 0 primitive degree 2 H_m degree 15
+guarded nonzero H degree 9
+norm residue degrees 8 remaining 0
+norm residue degrees 8 remaining 0
+final 0
+star 1 primitive degree 2 H_m degree 15
+guarded nonzero H degree 9
+norm residue degrees 8 remaining 0
+norm residue degrees 8 remaining 0
+final 0
+star third primitive degree 6 H_m degree 15
+guarded nonzero H degree 9
+norm residue degrees -inf remaining 9
+norm residue degrees -inf remaining 9
+norm residue degrees 8 remaining 0
+final 0
+three gate rows [21, 21, 21, 38, 38, 38, 67, 67, 67]
+raw substituted polynomial degrees 124 175
+norm degrees (126, 234, 402)
+fixed pair star 72
+verified exact guard and reduced gcd 72
+three gate rows [21, 21, 21, 38, 38, 38, 67, 67, 67]
+raw substituted polynomial degrees 124 175
+norm degrees (654, 954, 348, 348, 342)
+verified exact guard and reduced gcd 504
+verified exact guard and reduced gcd 252
+arith 0 primitive degree 2 H_m degree 15
+guarded nonzero H degree 9
+norm residue degrees 8 remaining 0
+norm residue degrees 8 remaining 0
+final 0
+arith 1 primitive degree 2 H_m degree 15
+guarded nonzero H degree 9
+norm residue degrees 8 remaining 0
+norm residue degrees 8 remaining 0
+final 0
+arith third primitive degree 6 H_m degree 15
+guarded nonzero H degree 9
+norm residue degrees -inf remaining 9
+norm residue degrees -inf remaining 9
+norm residue degrees 8 remaining 0
+final 0
+three gate rows [21, 21, 21, 38, 38, 38, 67, 67, 67]
+raw substituted polynomial degrees 124 175
+norm degrees (126, 234, 402)
+fixed pair star 72
+verified exact guard and reduced gcd 72
+three gate rows [21, 21, 21, 38, 38, 38, 67, 67, 67]
+raw substituted polynomial degrees 124 175
+norm degrees (654, 954, 348, 348, 342)
+verified exact guard and reduced gcd 504
+verified exact guard and reduced gcd 252

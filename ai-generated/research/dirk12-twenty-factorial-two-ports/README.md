@@ -25,6 +25,8 @@ The rational upper from that separate work remains 19, and
 the real minimum is fifteen. The arithmetic replays are independent of the [end-to-end Lean certificate](NATIVE.md),
 which verifies the same 20-stage bound on the matched Lean/Mathlib 4.36.0 toolchain.
 
+The [fixed-function stability bound](STABILITY-MINIMUM.md) rules out compressing this literal to nineteen stages while preserving its entire scalar stability function. It does not rule out a different nineteen-stage order-twelve method.
+
 ## Literal opening and scalar weights
 
 Use ten old stages with clocks

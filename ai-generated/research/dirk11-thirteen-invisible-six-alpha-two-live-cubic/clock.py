@@ -273,6 +273,8 @@ J0=JV*W2*wedge(q,u)+pV*wedge(rr,u)
 J1=JV*wedge(q,rr)+mV*wedge(rr,u)
 E1=lV*J0-qV*J1
 C=[lV*U[i]-qV*R3[i]for i in range(3)]+[-qV]
+# HISTORICAL ERROR: the last line reduces modulo c instead of cx.
+# This archived gate and any general exclusion using it are invalid.
 def seventh(c):
     cx=refl(c); rf=pscale(refl(R3),-one)
     H=[zero,*J4p]

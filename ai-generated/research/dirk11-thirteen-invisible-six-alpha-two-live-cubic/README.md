@@ -1,4 +1,12 @@
-# Both live cubic alpha-two profiles are impossible
+# Alpha-two live cubic: partial exclusions and correction
+
+## Correction: the general live-cubic exclusion is withdrawn
+
+The general exclusion asserted in the original report below is **not established**. The grade-seven replay computes its numerator and the other columns in forward coordinates, using the reflected carrier `cx = refl(c)`, but forms their pseudo-remainders modulo the unreflected carrier `c`. The argument requires reduction modulo `cx`. The archived `clock.py` and its historical output therefore do not certify an exclusion of the regular and singular cubic-profile towers. They are retained here to make the error and the research history reproducible, not as validated evidence.
+
+The separate lost-quartic-coefficient argument in §2 and the finite cases checked by `finite.py` use only the actual reverse eliminant and do not depend on `seventh`. The earlier quadratic-carrier and zero-multiplier cubic exclusions are unaffected. Both general nonzero-multiplier cubic counts are again open. The real stage interval remains **13–14**. The adjacent alpha-one zero-multiplier arithmetic uses the shared tower representation, not this erroneous grade-seven computation.
+
+## Archived original report (general conclusion superseded)
 
 **Result.** The normalized no-late invisible-six thirteen-stage
 DIRK11 chart has no cubic carrier with live reciprocal multiplier

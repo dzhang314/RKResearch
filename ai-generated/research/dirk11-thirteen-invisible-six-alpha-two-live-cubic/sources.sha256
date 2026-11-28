@@ -1,6 +1,6 @@
 1591483d4c10fd7344e3f2ee117ea5ea6015a2b8b39cb4b96e34fff58aad976c  lean/RKCert/ReviewedNative/DIRKOrderElevenInvisibleSixAlphaTwoLiveCubic.lean
-c454fe2f38817fa98e0ee150fbcf104e8538981df18ef688b59e21d70a9079ae  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/README.md
-7c3f3e9c3e35c34cf9671b548915eaed2013c5a27f7ba2e0bbd8589cdb50851f  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/clock.py
+d3fd03521a30f6a31857e23e3c61d7605acaadc4ee27528ea237cca585237867  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/README.md
+3f0fafae6fd2d6897f308ec421891e4fecc31cad6534a90368632097f10605a9  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/clock.py
 229623fda7d52be68f7440e8cf4ce621ecbad42de166270af890a15b20fdf71e  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/finite.py
 58d6213e869bc325b367d850cf55b57a89672c514aaf0184d5c74d59f7aa3570  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/verification.txt
 3989f57631145c0961bdb32938b4768bbeccdde89cc733e451a9826de6a037af  research/dirk11-thirteen-invisible-six-alpha-two-live-cubic/lean-audit-4.36.0.txt

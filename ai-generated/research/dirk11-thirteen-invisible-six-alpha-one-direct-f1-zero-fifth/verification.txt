@@ -1,0 +1,16 @@
+Exact direct-F1 coordinate checks: signed adjacent tap, affine x, two homogeneous gates, reflected primitive.
+    0.00 common m scale normalized coefficient degree 12 guarded content degree 0
+    0.01 old common adjugate normalized coefficient degree 32 guarded content degree 0
+    0.36 A coefficient normalized coefficient degree 128 guarded content degree 33
+    0.36 first clean coefficient normalized coefficient degree 55 guarded content degree 0
+    0.47 quadratic-linear resultant normalized coefficient degree 96 guarded content degree 72
+    0.54 relative norm normalized coefficient degree 184 guarded content degree 104
+dB0 raw degree 736 squarefree degree 356
+forbidden jacobi-0 4
+forbidden jacobi-2 4
+forbidden jacobi-1 4
+forbidden jacobi-3 8
+genuine projected factor q 24 364663909217
+genuine projected factor full 312 -228808552699533265449912993275321236409487922118498226736798427670481180047200467647901921875000000
+base x^3 + 97*x^2 + 7*x + 10 rank g 33 J pivot 33 pinned old and middle 33 relative 11 11 11
+base x + 2 rank g 12 J pivot 12 pinned old and middle 12 relative 12 12 12

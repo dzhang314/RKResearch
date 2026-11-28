@@ -1,0 +1,51 @@
+Lean 4.36.0 / rho:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneBridge.cleared_rho_identity' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneBridge.rho_at_early_clock' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneBridge.ratio_from_mark' depends on axioms: [propext,
+ Quot.sound]
+
+Lean 4.36.0 / GapFixed:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneGapDiagonals.sixth_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneGapDiagonals.seventh_pivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneGapDiagonals.apply_first_commutator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneGapDiagonals.first_diagonal_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneGapDiagonals.kernel_transfer' depends on axioms: [propext,
+ Quot.sound]
+
+Lean 4.36.0 / ShiftB:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaTwoZeroFifth.center_fourth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneBetaTwoZeroFifth.old_column' depends on axioms: [propext,
+ Quot.sound]
+
+Lean 4.36.0 / ZeroV:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroFourth.zero_tap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroFourth.coincident_old_primitive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneZeroFourth.quartic_tap_eliminant' depends on axioms: [propext]
+
+Lean 4.34.1 / core:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneCoefficientReplay.exact_integer_coefficients' does not depend on any axioms
+
+Lean 4.35.0 / core:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneCoefficientReplay.exact_integer_coefficients' does not depend on any axioms
+
+Lean 4.36.0 / core:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneCoefficientReplay.exact_integer_coefficients' does not depend on any axioms
+
+Lean 4.37.0-rc1 / core:
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixSlopeMinusOneCoefficientReplay.exact_integer_coefficients' does not depend on any axioms

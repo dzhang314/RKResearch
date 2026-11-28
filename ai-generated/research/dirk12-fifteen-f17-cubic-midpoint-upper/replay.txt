@@ -1,0 +1,2 @@
+F17 cubic field; 15 ordinary DIRK stages; rooted counts [1, 1, 2, 4, 9, 20, 48, 115, 286, 719, 1842, 4766], total 7813
+scaled degree-12 bush defect (order-13) [11, 7, 12]; exact order 12

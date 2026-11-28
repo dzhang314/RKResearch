@@ -1,0 +1,2 @@
+Ordinary 15-stage DIRK literal: 7813 rooted conditions; thirteenth-bush defect (11, 7, 12)
+Cubic irreducible; actual stage times, both explicit endpoint diagonals and four zero weights checked.

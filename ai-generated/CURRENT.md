@@ -27,6 +27,10 @@
 
 The lower bounds apply to all ordered fields. A construction over the real algebraic numbers need not be defined over every ordered subfield. For conclusions over arbitrary rings or unordered characteristic-zero fields, see the [lower-bound table](lower-bounds/README.md).
 
+## Exact order-twelve DIRK over the cubic field at 17
+
+The [literal 15-stage DIRK tableau over the field of size 4913](research/dirk12-fifteen-f17-cubic-midpoint-upper/README.md) passes all 7,813 rooted conditions through order twelve and has a nonzero thirteenth-bush defect. The [arbitrary-ring lower bound](lower-bounds/paid-beta/DIRK-PAID-GRADE-SIX.md) makes fifteen optimal over this field and every nonzero commutative algebra over it. The real interval still remains 15–16.
+
 ## Recent equality-case restrictions
 
 These narrow the search at the lower endpoints; they do not change the real stage intervals above.

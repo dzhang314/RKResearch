@@ -1,0 +1,10 @@
+'RKResearch.ERK11TwelveActivePairGate.recoverSecondResponse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.ordinaryResponseHullPivot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.twoNodeVariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.clearCenteredMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.centeredAliasNumerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.aliasHalfFirst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.aliasHalfSecond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RKResearch.ERK11TwelveActivePairGate.aliasExteriorRight' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,2 @@
+Twice-dormant center at d=0: exact sextic from all six rational clock integrals.
+All coefficients positive in the two exterior and two rational interior charts.

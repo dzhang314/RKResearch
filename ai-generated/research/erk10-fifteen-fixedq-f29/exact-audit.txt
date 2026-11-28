@@ -1,0 +1,3 @@
+strict 15-stage F29 tableau and all 1,205 exact rooted conditions: [1, 1, 2, 4, 9, 20, 48, 115, 286, 719]
+order-eleven normalized bush defect 10; inverse 3 modulo 29
+literal fixed-q old opening and every high-to-old decoder column checked

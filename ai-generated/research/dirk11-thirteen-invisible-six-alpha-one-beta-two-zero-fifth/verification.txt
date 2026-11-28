@@ -1,0 +1,8 @@
+Independent exact coordinate audit:
+pure determinant factors [(4, 1), (8, 1)]
+Independent rational audit: reverse primitives and eight literal three-clock samples agree.
+Exact ordinary projection:
+pure determinant factors [(4, 1), (8, 1)]
+content 140157989764595334512640*(42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1)**11 B-degree 3
+pure ordinary factors [(4, 6, 1, '66*V**4 - 120*V**3 + 72*V**2 - 16*V + 1'), (4, 12, 1, '42*V**4 - 84*V**3 + 56*V**2 - 14*V + 1')]
+Only the two forbidden ordinary factors survive over QQ.

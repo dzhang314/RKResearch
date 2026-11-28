@@ -1,0 +1,20 @@
+Exact QQ quadratic-linear resultant and symbolic/8 rational forward-reverse primitive checks passed.
+common m scale normalized coefficient degree 16 guarded content degree 0
+old common adjugate normalized coefficient degree 48 guarded content degree 0
+A coefficient normalized coefficient degree 184 guarded content degree 33
+first clean coefficient normalized coefficient degree 71 guarded content degree 0
+quadratic-linear resultant normalized coefficient degree 152 guarded content degree 72
+relative norm normalized coefficient degree 392 guarded content degree 64
+dB0 raw degree 1568 squarefree degree 428
+forbidden Jacobi factor 2 4
+forbidden Jacobi factor 1 4
+forbidden Jacobi factor 0 4
+forbidden Jacobi factor 3 8
+exact support ratio 12 16227
+exact support c2 12 54123
+exact support old 60 -1461941766456
+exact support full 324 -196415617829388101367598168434035849954392817069628809690733476419730006372538565705036836672
+verified ratio exact cap 11 residue degree 12 J pivot rank 132 pinned old and middle rank 132
+verified c2 exact cap 9 residue degree 4 J pivot rank 36 pinned old and middle rank 36
+verified old exact cap 11 residue degree 1 J pivot rank 11 pinned old and middle rank 11
+verified full exact cap 12 residue degree 1 J pivot rank 12 pinned old and middle rank 12

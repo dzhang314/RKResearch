@@ -1,0 +1,8 @@
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneQuadraticBoundary.cubic_parameter_zero' depends on axioms: [propext,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneQuadraticBoundary.zero_fifth_of_cancelled_old_reads' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RKCert.ReviewedNative.DIRKOrderElevenInvisibleSixAlphaOneQuadraticBoundary.second_distinct_homogeneous_read' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

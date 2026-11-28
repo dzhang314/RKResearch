@@ -1,0 +1,4 @@
+all twelve different quartic contact pairs excluded True 2
+all twelve different quartic contact pairs excluded True 3
+all twelve different quartic contact pairs excluded False 2
+all twelve different quartic contact pairs excluded False 3

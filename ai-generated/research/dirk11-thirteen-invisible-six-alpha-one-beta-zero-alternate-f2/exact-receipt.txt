@@ -1,0 +1,3 @@
+Exact alternate F2 old affinity, affine remainder, old determinant, and survivor coordinates checked.
+    0.23 exact F2a clock degree 24, constant 3176523, both cubic leaders and linear s pivot live
+    0.24 residue x + 21 ranks 2 2 dimension 2 J1 rank 2 adjugate rank 2 q rank 2

@@ -9,6 +9,8 @@ weighted transpose, which is order **ten**: no reverse order eleven
 or reverse dense first eleven is assumed. The field is characteristic
 zero, with ordering needed only for the later real central test.
 
+**Additional hypothesis for this version.** The response \(r=As\) is zero at physical stage 13. This has not been established for the full sole-late-carrier chart. The upstream all-loads-zero statement is insufficient to infer it for an independent response. All conclusions below are restricted to this additional hypothesis.
+
 There are either two or three carriers in total. In the latter case
 their physical positions are \(2,9,16\).
 Both fronts have an exact five-row clean-clock repeat, an independently
@@ -28,8 +30,7 @@ Let \(s\) be the carrier indicator and \(r=As\), and put
 \(B=\operatorname{diag}(b_i)\), \(A^\star=B^{-1}A^\mathsf{T}B\).
 The [sole-late-carrier data](ERK11-ALL-LIVE-ENDPOINT-REDUCTION.md#sole-late-carrier-at-16-exact-localization-of-the-second-seed)
 give a common carrier clock \(\theta=c_{16}\ne0,1\), \(r=0\)
-on *all* carriers, exactly three active late noncarriers (12,14,15),
-and at most two early carriers. The first carrier is 2: otherwise
+on *all* carriers and at most two early carriers. With the additional zero-response hypothesis at row 13, the active late noncarriers under consideration are 12, 14 and 15. The first carrier is 2: otherwise
 the all-zero-clock initial rows would duplicate the origin in the
 full literal first-eleven \(E_5\). The fourth-row argument of
 [the weighted transpose note](ERK11-ONE-SPARE-WEIGHTED-TRANSPOSE.md#four-quadratic-carriers-in-the-half-clock-two-carrier-branch)

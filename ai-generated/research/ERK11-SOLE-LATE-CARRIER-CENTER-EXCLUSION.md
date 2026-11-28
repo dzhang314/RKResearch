@@ -1,6 +1,7 @@
 # Ordered ERK11 central carrier: exclusion when both boundaries are new
 
 **Scope.** Continue [the sole-late-carrier two-front reduction](ERK11-SOLE-LATE-CARRIER-TWO-FRONT.md).
+Keep its extra hypothesis that the response at physical stage 13 is zero; removing that hypothesis from the tableau bridge remains under review.
 Assume the actual maximal half-clock 17-stage chart has three
 quadratic carriers. They are necessarily physical \(2,9,16\).
 Assume also that both seventh-stage boundaries (physical 7 and 11)

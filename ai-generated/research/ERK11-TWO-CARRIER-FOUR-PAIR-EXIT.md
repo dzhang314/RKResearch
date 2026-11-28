@@ -5,6 +5,7 @@
 with exactly two physical carriers (2,16), all weights live,
 and both seventh boundary clocks genuinely new. Let \(r=As\)
 be the actual grade-three pure response to the carrier indicator.
+Assume in addition that the response at physical stage 13 is zero. This need not follow from the other chart premises and is used in the count of active sites.
 Assume the pooled ordinary charges \(b_i r_i\) vanish at every
 distinct active noncarrier clock, where active means \(r_i\ne0\).
 If there are at most five distinct active clocks, then there

@@ -1,0 +1,23 @@
+[
+  {"field": 97, "theta": "64", "raw": [1, 0, 20, 28, 26, 15, 12, 66, 37], "pressure_simple_derivative": 59, "next_failure_value": 95, "next_failure_at_square": 8631},
+  {"field": 131, "theta": "86", "raw": [1, 0, 82, 49, 80, 41, 58, 70, 2], "pressure_simple_derivative": 11, "next_failure_value": 118, "next_failure_at_square": 14397},
+  {"field": 167, "theta": "145", "raw": [1, 0, 56, 61, 160, 30, 17, 34, 5], "pressure_simple_derivative": 19, "next_failure_value": 68, "next_failure_at_square": 7583},
+  {"field": 173, "theta": "111", "raw": [1, 0, 67, 108, 56, 104, 144, 118, 43], "pressure_simple_derivative": 102, "next_failure_value": 26, "next_failure_at_square": 15942},
+  {"field": 263, "theta": "203", "raw": [1, 0, 134, 253, 144, 145, 203, 150, 23], "pressure_simple_derivative": 123, "next_failure_value": 182, "next_failure_at_square": 43840},
+  {"field": 277, "theta": "202", "raw": [1, 0, 254, 110, 208, 201, 224, 105, 205], "pressure_simple_derivative": 67, "next_failure_value": 115, "next_failure_at_square": 46651},
+  {"field": 419, "theta": "44", "raw": [1, 0, 184, 49, 133, 28, 357, 134, 349], "pressure_simple_derivative": 18, "next_failure_value": 375, "next_failure_at_square": 135712},
+  {"field": 491, "theta": "427", "raw": [1, 0, 283, 88, 285, 340, 228, 421, 76], "pressure_simple_derivative": 146, "next_failure_value": 356, "next_failure_at_square": 51911},
+  {"field": 613, "theta": "526", "raw": [1, 0, 299, 476, 161, 2, 130, 280, 150], "pressure_simple_derivative": 177, "next_failure_value": 261, "next_failure_at_square": 156576},
+  {"field": 881, "theta": "860", "raw": [1, 0, 587, 281, 188, 745, 685, 328, 433], "pressure_simple_derivative": 352, "next_failure_value": 29, "next_failure_at_square": 591180},
+  {"field": 1091, "theta": "108", "raw": [1, 0, 44, 131, 548, 161, 999, 926, 945], "pressure_simple_derivative": 131, "next_failure_value": 993, "next_failure_at_square": 514854},
+  {"field": 1307, "theta": "1086", "raw": [1, 0, 1232, 738, 611, 579, 54, 97, 899], "pressure_simple_derivative": 494, "next_failure_value": 94, "next_failure_at_square": 1341076},
+  {"field": 3137, "theta": "1652", "raw": [1, 0, 2315, 942, 2426, 1249, 1564, 1393, 978], "pressure_simple_derivative": 2688, "next_failure_value": 648, "next_failure_at_square": 9483799},
+  {"field": 4111, "theta": "3992", "raw": [1, 0, 1841, 1907, 2796, 2303, 1150, 912, 997], "pressure_simple_derivative": 3786, "next_failure_value": 4021, "next_failure_at_square": 1582645},
+  {"field": 8747, "theta": "7869", "raw": [1, 0, 5154, 10, 6896, 8426, 8011, 1245, 1738], "pressure_simple_derivative": 7310, "next_failure_value": 7982, "next_failure_at_square": 15787570},
+  {"field": 23117, "theta": "19657", "raw": [1, 0, 16559, 14535, 20496, 7390, 12850, 11755, 17856], "pressure_simple_derivative": 8254, "next_failure_value": 19472, "next_failure_at_square": 59568864},
+  {"field": 80273, "theta": "26523", "raw": [1, 0, 4283, 66783, 37653, 39099, 64214, 11708, 49953], "pressure_simple_derivative": 29462, "next_failure_value": 76779, "next_failure_at_square": 4612804178},
+  {"field": 138323, "theta": "82814", "raw": [1, 0, 134676, 39807, 9108, 122424, 128156, 97454, 50565], "pressure_simple_derivative": 34302, "next_failure_value": 107186, "next_failure_at_square": 10299499443},
+  {"field": 930617, "theta": "792159", "raw": [1, 0, 367856, 42199, 574000, 432177, 385540, 271724, 144569], "pressure_simple_derivative": 51931, "next_failure_value": 637467, "next_failure_at_square": 616548359222},
+  {"field": 2327539, "theta": "1462418", "raw": [1, 0, 1281456, 703865, 2199508, 841757, 1739402, 163362, 1330335], "pressure_simple_derivative": 1139015, "next_failure_value": 604663, "next_failure_at_square": 100140642599},
+  {"field": 3595702991173, "theta": "3470969533786", "raw": [1, 0, 2657867914179, 515497729987, 731345596735, 2116130877983, 1299716570402, 2171141384812, 1526541228345], "pressure_simple_derivative": 982502710197, "next_failure_value": 2613423123178, "next_failure_at_square": 2185502108230729492240716}
+]
